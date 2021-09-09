@@ -1,0 +1,733 @@
+Mind Map Editor
+====================
+
+```todo
+
+The library includes a special *Editor mode* with a set of in-built tools that will help you to accelerate the process of customizing shapes of Mind Map and their content. To initialize a mind map in this mode, use a separate instance called *DiagramEditor*.
+
+The constructor of the editor is similar to that of diagram. The constructor function takes as parameters either an HTML container or the document body, and a configuration object. To initialize a Mind Map editor, you need to set the obligatory **type:"mindmap"** option in the configuration object:
+
+~~~js
+var editor = new dhx.DiagramEditor(document.body, { 
+	type: "mindmap" 
+});
+~~~
+
+To populate the editor with [an appropriate data set](common_guides/loading_data.md#preparingdatatoload), use the api/data/methods/parse.md method:
+
+~~~js
+editor.parse(data);
+~~~
+
+
+Configuration properties
+--------------------
+
+You can use the following properties specific for the Mind Map Editor in its configuration object:
+
+- **type** - (*string*) the type of the edited diagram, "mindmap" to render a mind map
+- **defaults** - (*object*) the default configuration of a shape. For more details about the property, see the api/diagram_defaults_config.md configuration option of Diagram
+- **scale** - (*number*) defines the mind map editor scale
+- **shapeType** - (*string*) the type of the shapes, "topic" by default. This value is applied, if the shape config doesn't contain the "type" property
+- **shapeToolbar** - (*boolean, array*) defines configuration of the toolbar with controls for editing shapes. See the details [below](#configuringtoolbarforshapes).
+- api/diagram_gridstep_config.md - (*number*) sets the size of a grid cell that defines the step of moving a shape, 10 by default
+- **editMode** - (*boolean*) switches the editor mode off and shows the preview mode, and vice versa
+- **controls** - (*object*) shows/hides specified controls in the editor. The object can contain a set of *control_name:value* pairs where value is *true* (by default) or *false*. Here are the list of available controls:
+	- **apply** - (*boolean*) enables the **Apply All** button 
+	- **reset** - (*boolean*) enables the **Reset Changes** button  
+	- **export** - (*boolean*) enables the **Export Data** button 
+	- **import** - (*boolean*) enables the **Import Data** button 
+	- **historyManager** - (*boolean*) enables the **Undo** and **Redo** buttons
+	- **editManager** - (*boolean*) enables the **Edit Mode** button
+	- **scale** - (*boolean*) enables the **Zoom** group of buttons
+	- **gridStep** - (*boolean*) enables the **Grid Step** sidebar in the right panel of the editor
+
+~~~js
+var editor = new dhx.DiagramEditor(document.body, {
+	type: "mindmap",
+	controls: { 
+		import: true,
+		export: true,
+		gridStep: false,
+		apply: false,
+		reset: false
+	}
+});
+~~~
+
+Interface
+-------------
+
+The interface of a mind map in the editor mode consists of three parts: 
+
+<img src="mindmap_editor.png">
+
+- the **_toolbar with buttons_** for controlling the editing process<br><br>
+<img src="toolbar_diagram_editor.png"><br><br>
+The toolbar can contain the following buttons:
+
+	- the **Reset Changes** button. This button is shown by default and can be hidden via the *reset* option of the [controls](mindmap_guides/editor_mode.md#configurationproperties) config property. The button works in tandem with the [ResetButton](mindmap_guides/editor_mode.md#editorapi) event and is useful if you want to reset all the applied changes to the previous state. 
+	- the **Apply All** button. This button is shown by default and can be hidden via the *apply* option of the [controls](mindmap_guides/editor_mode.md#configurationproperties) config property.
+The button works in tandem with the [ApplyButton](mindmap_guides/editor_mode.md#editorapi) event and is useful if you
+want to apply changes made in the editor to the diagram. 
+	- the **Export Data** button. This button is shown by default and can be hidden via the *export* option of the [controls](mindmap_guides/editor_mode.md#configurationproperties) config property. The button works in tandem with the [ExportData](mindmap_guides/editor_mode.md#editorapi) event and is useful if you want to export the data of the org chart to the JSON format. 
+	- the **Import Data** button. This button is shown by default and can be hidden via the *import* option of the [controls](mindmap_guides/editor_mode.md#configurationproperties) config property. The button works in tandem with the [ImportData](mindmap_guides/editor_mode.md#editorapi) event and is useful if you want to import the data from a JSON file to the org chart. 
+	- the **Undo** and **Redo** buttons for undoing and redoing changes. They can be hidden via the *historyManager* option of the [controls](mindmap_guides/editor_mode.md#configurationproperties) config property.
+    - the **Edit Mode** button to hide and show the editor mode; can be hidden via the *editManager* option of the [controls](mindmap_guides/editor_mode.md#configurationproperties) config property.
+    - the **Zoom** group of buttons to zoom a diagram in the editor in and out; can be hidden via the *scale* option of the [controls](mindmap_guides/editor_mode.md#configurationproperties) config property.
+- the **_grid area_** for editing the diagram. It is an area intended for editing the mind map and its shapes. It allows setting exact position for the shapes;
+- the **_sidebar_** with a property sheet that provides fields for modifying values of the shapes' attributes
+	- the **Grid Step** sidebar option provides a field for modifying the step of moving a shape. This sidebar is shown by default and can be hidden via the *gridStep* option of the [controls](mindmap_guides/editor_mode.md#configurationproperties) config property.
+
+Modes of Editing
+-------------
+
+###Editing via the interface elements
+
+You can drag shapes to place them on the desired positions relative to the root shape, or drag the root shape to move the whole diagram. If you drag the parent shape, the shape will be moved with all its child shapes.
+
+In the editing mode each selected shape gets resizing handles. You can pull the handles of an editable shape to change its sizes.
+
+When you click any shape, it becomes editable and gets a personal toolbar with editing options.
+
+<img src="editing_mindmap_shape.png">
+
+The toolbar allows:
+
+- adding a new child for the selected shape
+- deleting the selected shape (except for the root one)
+
+There is also the ability to configure the toolbar according to your needs. Read the details [below](#configuringtoolbarforshapes).
+
+###Editing via the sidebar options
+
+The sidebar of the editor allows adjusting the attributes of the shape:
+
+<table>
+<tr><td><img  src="mindmap_sidebar_settings.png"></td>
+<td><ul>
+	<li>modify the step of moving a shape;</li><br>
+    <li>set the left and top offsets to define the position <br>of a shape;</li><br>
+    <li>set the width and height of a shape;</li><br>
+	<li>modify the color of a shape via the related colorpicker;</li><br>
+	<li>change the outline of a shape: set its color, type and width;</li><br>
+	<li>edit the text of a shape;</li><br> 
+    <li>adjust the text settings:<ul> 
+    	<li>font size, weight, style and color;</li> 
+        <li>line spacing;</li>
+        <li>horizontal and vertical text alignment.</li></ul>
+    </li>	
+</ul></td></tr>
+</table>
+
+The image above presents a sidebar for editing mindmap shapes. The sidebars for editing [flow-chart shapes](diagram_guides/editor_mode.md#editingshapes) and [org-chart](orgchart_guides/editor_mode.md#modesofediting) ones look a little different.
+
+You can also create a sidebar with the necessary set of options for editing a custom shape; see details [here](mindmap_guides/editor_mode.md#rightpanelcustomization).
+
+Configuring Toolbar for Shapes
+-----------------------
+
+The default toolbar controls of the Mind Map shapes are: 
+
+<table>
+<tr><td><img src="mindmap_toolbar/default_mindmap_toolbar.png"></td>
+<td><ul>
+	<li>"add"</li>
+	<li>"addLeft"</li>
+    <li>"addRight"</li>	
+    <li>"remove"</li>	
+</ul></td></tr>
+</table> 
+
+**Note**, that the set of default controls displayed in the shape toolbar depends on the internal settings of the shape. For example, the toolbar of the root shape does not contain the "add" and "remove" controls but includes the "addLeft" and "addRight" ones.
+
+<img src="mindmap_toolbar/default_mindmap_toolbar1.png">
+
+You can configure or customize the per-shape toolbar according to your needs via using the **shapeToolbar** configuration property of the Mind Map editor. 
+
+{{note Try out the **shapeToolbar** option directly in our <a href="https://snippet.dhtmlx.com/b2agwets" target="_blank">Snippet Tool</a>. The example is shown for the org-chart editor, but you can change the `type: "org"` option to `type: "mindmap"` to initialize a mindmap editor. }}
+
+The **shapeToolbar** property can be either a boolean value or an array. The array can contain:
+
+- **string values** with the names of the toolbar controls: "add" | "addLeft" | "addRight" | "remove";
+- boolean ***true/false*** values - to enable/disable the default set of toolbar controls;
+- **icon objects**. Each icon object can have the following properties:
+  - **id** - (*string*) the id of the icon.
+  - **content** - (*string*) the content of the icon. It can contain an HTML element with the name of the icon class. 
+  - **check** - (*function*) checks whether the icon should be applied to the shape. The function takes a shape object and returns *true*, if the icon will be rendered for this shape.
+  - **css** - (*function*) the function which returns the name(s) of CSS class(es) that should be applied to the shape.
+
+### Disabling the default toolbar configuration
+
+To disable the default configuration of the per-shape toolbar, toggle the **shapeToolbar** configuration option of the Mind Map editor to *false*:
+
+~~~js
+const editor = new dhx.DiagramEditor("editor-container", {
+    type: "mindmap",
+    shapeToolbar: false,
+});
+~~~
+
+or pass an empty array to **shapeToolbar**:
+
+~~~js
+const editor = new dhx.DiagramEditor("editor-container", {
+    type: "mindmap",
+    shapeToolbar: [],
+});
+~~~
+
+### Changing the default toolbar configuration 
+
+There is the ability to change the default configuration of the per-shape toolbar.
+For example, you can show only the desired controls via setting string values with the names of the necessary controls to the **shapeToolbar** array:
+
+~~~js
+const editor = new dhx.DiagramEditor("editor-container", {
+    type: "mindmap",
+    shapeToolbar: ["remove"]
+});
+~~~
+
+As a result, the "remove" control will be shown in the per-shape toolbar, whereas the others controls will be hidden.
+
+<img src="mindmap_toolbar/configure_mindmap_toolbar.png">
+
+To change the structure of the toolbar, you need to enumerate the controls in the desired order inside the **shapeToolbar** array:
+
+~~~js
+const editor = new dhx.DiagramEditor("editor-container", {
+    type: "mindmap",
+    shapeToolbar: ["remove", "add"]
+});
+~~~
+
+The result will be the following:
+
+<img src="mindmap_toolbar/mindmap_toolbar_controls.png">
+
+### Toolbar customization
+
+You can add a new control into the toolbar via setting an icon object to the **shapeToolbar** array. 
+
+~~~js
+const editor = new dhx.DiagramEditor("editor-container", {
+    type: "mindmap",
+    shapeToolbar: [{ id: "download", content:"<i class='dxi dxi-download'></i>" }] /*!*/
+});
+~~~
+
+An icon object can have the following properties:
+
+- **id** - (*string*) the id of the icon.
+- **content** - (*string*) the content of the icon. It can contain an HTML element with the name of the icon class. 
+- **check** - (*function*) checks whether the icon should be applied to the shape. The function takes a shape object and returns *true*, if the icon will be rendered for this shape.
+- **css** - (*function*) the function which returns the name(s) of CSS class(es) that should be applied to the shape.
+
+{{note Beware, the use of the default names of the toolbar controls as ids of new controls is prohibited. For example, you can't create a new control with *id: "add"*.}}
+
+Here is an example of how you can combine the desired default toolbar controls and the newly added one:
+
+~~~js
+const editor = new dhx.DiagramEditor("editor-container", {
+    type: "mindmap",
+    shapeToolbar: [/*!*/
+	  "add", { id: "download", content:"<i class='dxi dxi-download'></i>" }/*!*/
+	] /*!*/
+});
+~~~
+
+The result:
+
+<img src="mindmap_toolbar/custom_toolbar_control.png">
+
+But the most recommended option is to enable the default set of controls by defining *true* value in the **shapeToolbar** array and create your own control(s) by adding an icon object(s) to the array:
+
+~~~js
+const editor = new dhx.DiagramEditor("editor-container", {
+    type: "mindmap",
+    shapeToolbar: [ /*!*/
+		true, { id: "download", content:"<i class='dxi dxi-download'></i>" } /*!*/
+	] /*!*/
+});
+~~~
+
+where *true* value includes the default set of controls: "add", "addLeft", "addRight", "remove".
+
+The result:
+
+<img src="mindmap_toolbar/fullcustom_toolbar_control.png">
+
+You can also change the order the controls will be displayed in the toolbar by changing the order of the values in the array:
+
+~~~js
+const editor = new dhx.DiagramEditor("editor-container", {
+    type: "mindmap",
+    shapeToolbar: [ /*!*/
+		{ id: "download", content:"<i class='dxi dxi-download'></i>" }, true /*!*/
+	]/*!*/
+});
+~~~
+
+The result:
+
+<img src="mindmap_toolbar/fullcustom_toolbar_control1.png">
+
+{{note The sequence the values are put in the array defines the order the controls will be displayed in the toolbar.}}
+
+Manipulating multiple shapes
+--------------------------------
+
+It is possible to select several shapes via hovering them over with the left mouse button pressed. You can also select necessary shapes using keyboard shortcuts - Shift+Left Click.
+
+<img src="select_mindmaps.png">
+
+You can operate all the selected shapes at once, namely:
+
+- to drag the shapes;
+- to delete this shapes.
+
+
+Using hotkeys
+---------------
+
+There is a set of hotkeys you can use while creating a mind map in the editor:
+
+- **Shift+Left Click** - to select several shapes
+- **Ctrl+A** or **Cmd+A** (for MAC) - to select all shapes and connectors
+- **Ctrl+Z** - to revert the latest action
+- **Del** - to delete a shape/shapes
+- **Arrows** - to move a shape left/right/up/down
+
+
+Right Panel Customization
+----------------------------
+
+Right panel of Mind Map Editor possesses a set of defined sidebar options for each shape provided by dhtmlxDiagram.
+These options can't be changed and completely depend on the type of the shape and on the configuration of the shape. 
+
+But, in case you are creating your custom shape in the editor, you can define the sidebar options to be rendered in the right panel for editing the attributes of the custom shape. To do this, you need to make use of the **properties** attribute of the [addShape](api/diagram_addshape.md) method:
+
+~~~js
+const editor = new dhx.DiagramEditor("editor", {
+    type: "mindmap",
+    shapeType: "flowView",
+    controls: { 
+        gridStep: false
+    }
+});
+
+function template({ title, view, cr, br, conversion, link }) {
+    ...
+}
+
+editor.diagram.addShape("flowView", {
+    template: template,
+    defaults: {
+        width: 190,
+        height: 97,
+        title: "New page",
+        cr: 0,
+        br: 0,
+        conversion: 0,
+        view: "../img_01.png",
+        info: "Additional Information",
+        link: "https://dhtmlx.com/",
+    },
+    properties: [
+        { type: "img", label: "View",  property: "view" },
+        { type: "title", },
+        { type: "text", label: "CR", property: "cr" },
+        { type: "text", label: "BR", property: "br" },
+        { type: "text", label: "Conversion", property: "conversion" },
+        { type: "text", label: "Info", property: "info" },
+        { type: "text", label: "Link", property: "link" },
+    ],
+    eventHandlers: {
+        onclick: {
+            info: function(event, item) {
+                openModalInfo(item.title, item.info);
+            }
+        }
+    }
+});
+
+diagram.data.load("../dataset.json");
+~~~
+
+{{editor    https://snippet.dhtmlx.com/do1jwmw1	Diagram. Site map and user flow example with custom shapes}}
+
+The **properties** attribute contains a set of objects that defines which sidebar options will be rendered in the right panel of the editor for the shape. 
+
+The order of the objects in the array defines the order the sidebar options will be displayed in the right panel.  
+
+<img style="margin: 20px auto 20px auto;display: block;" src="customshape_mindmap_editor.png">
+
+You need to use the <b>type</b> attribute together with the <b>property</b> one to specify the sidebar option for editing a custom property. For example:
+
+~~~js
+{ type: "text", label: "Conversion", property: "conversion" }
+~~~
+
+As a result, you can edit the custom <i>conversion</i> attribute of the "flowView" shapes via the text sidebar option with the *Conversion* label.
+
+{{note For details about the types that you can use for editing a custom property, see the api/diagram_addshape.md#typesofsidebaroptions article.}}
+
+Localization
+----------------
+
+It is possible to localize the interface of the Mind Map editor into a desired language. For this, you need to provide the corresponding locale settings via the **dhx.i18n.setLocale** method.
+The method takes two parameters: the diagram container and an object that contains rules of localization for a particular country.
+
+~~~js
+//an example of English locale
+var locale = {
+    applyAll: "Apply all",
+    exportData: "Export Data",
+    importData: "Import Data",
+    resetChanges: "Reset Changes",
+    
+    arrange: "Arrange",
+    position: "Position",
+    size: "Size",
+    color: "Color",
+    title: "Title",
+    text: "Text",
+    image: "Image",
+    fill: "Fill",
+    textProps: "Text",
+    stroke: "Stroke",
+    gridStep: "Grid step",
+ 
+    imageUpload: "Click to upload",
+    emptyState: "Select a shape or a connector"     
+};
+ 
+dhx.i18n.setLocale("diagram", locale);
+~~~
+
+After that, you need to initialize the editor and check how the labels' names have changed.
+
+~~~js
+var editor = new dhx.DiagramEditor(document.body, { 
+	type: "mindmap" 
+    // other config options
+});
+~~~
+
+Editor API Methods
+-----------------------
+
+The Mind Map Editor object possesses the following methods:
+
+<ul id="parse">
+<li>
+	<b>parse(data)</b> - loads data into the editor from a local data source<br>
+The method takes as a parameter the data that should be parsed into the editor.
+</li></ul>
+<ul>
+~~~js
+var data = [
+    // shapes
+    { id: "1", text: "Chairman & CEO" },
+    { id: "2", text: "Manager" },
+    { id: "3", text: "Technical Director" },
+    { id: "4", text: "Manager" },
+    { id: "5", text: "Technical Director" },
+    // connectors
+    { "id": "1-2", "from": "1", "to": "2", "type": "dash" },
+    { "id": "1-3", "from": "1", "to": "3", "type": "dash" },
+    { "id": "1-4", "from": "1", "to": "4", "type": "line" },
+    { "id": "1-5", "from": "1", "to": "5", "type": "line" },
+];
+
+var editor = new dhx.DiagramEditor("editor_container", {type: "mindmap"}); 
+editor.parse(data);
+~~~ 
+<br><br>
+You can load data in any supported data format. See the details in the api/data/methods/parse.md article.
+<br>
+</ul>
+
+<ul id="serialize">
+<li><b>serialize()</b> - serializes the data of the editor into an array of JSON objects</li>
+</ul>
+<ul>
+~~~js
+var data = editor.serialize();
+~~~
+<br>
+The method returns an array of JSON objects for each shape and link from the editor data.<br><br>
+</ul>
+
+<ul id="import">
+  <li><b>import(diagram)</b> - imports data from an existing diagram into the editor<br>
+The method takes the diagram object as a parameter.<br>
+</li></ul>
+<ul>
+~~~js
+editor.import(diagram);
+~~~
+<br>
+</ul>
+
+<ul id="paint">
+	<li><b>paint()</b> - repaints the editor</li></ul>
+<ul>
+~~~js
+editor.paint();
+~~~
+</ul>
+
+
+Editor API Events
+--------------------
+
+The Mind Map Editor object possesses the following events:
+
+<ul id="beforeshapeiconclick">
+<li><b>BeforeShapeIconClick(iconId, shape)</b> - fires before clicking a control in the per-shape toolbar 
+<ul>
+          	<li><b><i>iconId</i></b> - (<i>string</i>) the type or id of the toolbar control</li>
+          	<li><b><i>shape</i></b> - (<i>object</i>) an object with the shape configuration</li>
+        </ul>
+</li></ul>
+
+<ul>
+~~~js
+editor.events.on("beforeShapeIconClick", function(iconId, shape) {
+    console.log("You will click the", iconId, "toolbar control", shape);
+    return true;
+});
+~~~
+<br>
+The event is blockable. Return <i>false</i> to prevent the toolbar control from being clicked.
+<br>
+</ul>
+
+<ul id="aftershapeiconclick">
+<li><b>AfterShapeIconClick(iconId, shape)</b> - fires after clicking a control in the per-shape toolbar 
+<ul>
+          	<li><b><i>iconId</i></b> - (<i>string</i>) the type or id of the toolbar control</li>
+          	<li><b><i>shape</i></b> - (<i>object</i>) an object with the shape configuration</li>
+        </ul>
+</li></ul>
+
+<ul>
+~~~js
+editor.events.on("afterShapeIconClick", function(iconId, shape) {
+    console.log("You've clicked the", iconId, "toolbar control", shape);
+    return true;
+});
+~~~
+<br>
+</ul>
+
+<ul id="applybutton">
+	<li><b>ApplyButton()</b> - fires after the <b>Apply All</b> button has been clicked 
+	</li></ul>
+<ul>
+~~~js
+editor.events.on("applyButton", function(){
+	console.log("The changes are applied");
+});
+~~~
+<br></ul>
+
+<ul id="exportdata">
+<li><b>ExportData()</b> - fires after the <b>Export Data</b> button has been clicked
+</li></ul>
+<ul>
+~~~js
+editor.events.on("exportData", function() {
+    console.log("The data are exported to the JSON format");
+});
+~~~
+<br></ul>
+
+<ul id="importdata">
+	<li>
+		<b>ImportData(data)</b> - fires after the <b>Import Data</b> button has been clicked<br>
+		The event takes the imported data as a parameter.
+	</li>
+</ul>
+<ul>
+~~~js
+editor.events.on("importData", function(data) {
+    console.log("The data are imported from the JSON file");
+});
+~~~
+<br></ul>
+
+<ul id="changegridstep">
+	<li>
+		<b>ChangeGridStep(step)</b> - fires after the value of the <a href="api/diagram_gridstep_config.md">grid step</a> has been changed
+	<br>
+	The event takes the current value of the grid step as a parameter.
+	</li>
+</ul>
+<ul>
+~~~js
+editor.events.on("changeGridStep", function(step) {
+    console.log("The grid step is changed to:", step);
+});
+~~~
+<br></ul>
+
+
+<ul id="resetbutton">
+	<li><b>ResetButton()</b> - fires after the <b>Reset Changes</b> button has been clicked
+	</li>
+</ul> 
+<ul>
+~~~js
+editor.events.on("resetButton",function(){
+	console.log("The changes are reset");
+});
+~~~
+<br></ul>
+
+<ul id="beforeshapemove">
+<li><b>beforeShapeMove(events, id, coordinates)</b> - fires before a shape is moved
+	<ul>
+    	<li><b><i>events</i></b> - (<i>Event</i>) a native event object</li>
+		<li><b><i>id</i></b> - (<i>string/number</i>) the id of a shape</li>
+		<li><b><i>coordinates</i></b> - (<i>number</i>) the x and y coordinates of the shape position before movement</li>
+    </ul>
+</li></ul>
+<ul>
+~~~js
+editor.events.on("beforeShapeMove", (event, id, coordinates) => {
+    console.log(`
+		Shape ${id} is position:
+			x: ${coordinates.x}
+			y: ${coordinates.y}
+	`);
+    return true;
+});
+~~~
+<br>
+The event is blockable. Return <i>false</i> to prevent the shape from being moved.
+<br><br>
+added in v3.1
+<br>
+parameters <b>id</b> and <b>coordinates</b> are added in v4.0
+</ul>
+
+<ul id="aftershapemove">
+	<li><b>afterShapeMove(events, id, coordinates)</b> - fires when a shape is moving
+		<ul>
+    		<li><b><i>events</i></b> - (<i>Event</i>) a native event object</li>
+			<li><b><i>id</i></b> - (<i>string/number</i>) the id of a shape</li>
+			<li><b><i>coordinates</i></b> - (<i>number</i>) the x and y coordinates of the shape position before movement</li>
+    	</ul>
+	</li>
+</ul>
+<ul>
+~~~js
+editor.events.on("afterShapeMove", (event, id, coordinates) => {
+    console.log(`
+		Shape ${id} is position:
+			x: ${coordinates.x}
+			y: ${coordinates.y}
+	`);
+});
+~~~
+<br>
+added in v3.1
+<br>
+parameters <b>id</b> and <b>coordinates</b> are added in v4.0
+</ul>
+
+<ul id="shapemoveend">
+	<li><b>shapeMoveEnd(events, id, coordinates)</b> - fires after a shape has been moved
+		<ul>
+    		<li><b><i>events</i></b> - (<i>Event</i>) a native event object</li>
+			<li><b><i>id</i></b> - (<i>string/number</i>) the id of a shape</li>
+			<li><b><i>coordinates</i></b> - (<i>number</i>) the x and y coordinates of the shape position after movement</li>
+    	</ul>
+	</li>
+</ul>
+<ul>
+~~~js
+editor.events.on("shapeMoveEnd", (event, id, coordinates) => {
+	console.log(`
+		Shape ${id} is position:
+			x: ${coordinates.x}
+			y: ${coordinates.y}
+	`);
+});
+~~~
+<br>
+added in v4.0
+</ul>
+
+<ul id="shaperesize">
+	<li>
+		<b>ShapeResize()</b> - fires after a shape has been resized
+	</li>
+</ul>
+<ul>
+~~~js
+editor.events.on("shapeResize", function() {
+    console.log("The shape is resized");
+});
+~~~
+<br></ul>
+
+<ul id="visibility">
+	<li>
+		<b>Visibility()</b> - fires after the <b>Visibility</b> button has been clicked 
+	</li>
+</ul>
+<ul>
+~~~js
+editor.events.on("visibility", function() {
+    console.log("The side panels are hidden");
+});
+~~~
+<br></ul>
+
+<ul id="zoomin">
+	<li>
+		<b>ZoomIn()</b> - fires after the <b>Zoom In</b> button has been clicked
+	</li>
+</ul>
+<ul>
+~~~js
+editor.events.on("zoomIn", function() {
+    console.log("The diagram in the editor is zoomed in");
+});
+~~~
+<br></ul>
+
+<ul id="zoomout">
+	<li>
+		<b>ZoomOut()</b> - fires after the <b>Zoom Out</b> button has been clicked
+	</li>
+</ul>
+<ul>
+~~~js
+editor.events.on("zoomOut", function() {
+    console.log("The diagram in the editor is zoomed out");
+});
+~~~
+<br></ul>
+
+In addition to the events listed above, you may also apply [events of the diagram object](api/refs/diagram_events.md) while working in the editor view. Here is an example of applying the [itemClick](api/diagram_itemclick_event.md) event of Diagram in the editor:
+
+~~~js
+editor.diagram.events.on("itemClick", (id, event) => {
+    console.log(id, event);
+});
+~~~
+
+You can find the full list of the Diagram API events [here](api/refs/diagram_events.md).
+
+Editor API Properties
+----------------------
+
+See the full list of available properties applied to the Mind Map Editor object in the [Configuration properties](mindmap_guides/editor_mode.md#configurationproperties) section.
+
+   
+```todo

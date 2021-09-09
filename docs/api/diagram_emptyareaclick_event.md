@@ -1,0 +1,25 @@
+emptyAreaClick
+===================
+
+@short:
+	fires on clicking an empty space in the editor (not a shape or a connector)
+    
+@params:
+- e			Event		a native event object	
+
+@example:
+diagram.events.on("emptyAreaClick",function(e){
+	console.log("An empty space has been clicked");
+});
+
+// For diagram editor
+editor.diagram.events.on("emptyAreaClick",function(e){
+	console.log("An empty space has been clicked");
+});
+
+@template: api_event
+@descr:
+
+@relatedsample:
+https://snippet.dhtmlx.com/7h2hgb3g	Diagram. Events
+https://snippet.dhtmlx.com/l38pct7c	Diagram. Org chart events

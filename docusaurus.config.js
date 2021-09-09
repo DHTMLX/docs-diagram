@@ -125,15 +125,16 @@ const onAfterDataTransformation = (data) => {
 };
 
 module.exports = {
-    title: 'DHTMLX Suite 7 Docs',
-    tagline: 'DHTMLX Suite 7 Docs',
+    noIndex: true, // todo: delete before release
+    title: 'DHTMLX Diagram Doc',
+    tagline: 'DHTMLX Diagram Doc',
     url: 'https://docs.dhtmlx.com',
-    baseUrl: '/suite/',
+    baseUrl: '/diagramalt/',
     onBrokenLinks: 'warn',
     onBrokenMarkdownLinks: 'warn',
     favicon: 'img/favicon.ico',
     organizationName: 'DHTMLX', // Usually your GitHub org/user name
-    projectName: 'docs-suite', // Usually your repo name
+    projectName: 'docs-diagram', // Usually your repo name
     trailingSlash: true,
     themeConfig: {
         colorMode: {
@@ -179,9 +180,9 @@ module.exports = {
             darkTheme: require('prism-react-renderer/themes/dracula'),
         },
         navbar: {
-            title: 'Suite Documentation',
+            title: 'Diagram Documentation',
             logo: {
-                alt: 'DHTMLX Suite Documentation',
+                alt: 'DHTMLX Diagram Documentation',
                 src: 'img/dhtmlx_logo.svg',
                 href: 'https://docs.dhtmlx.com/',
 
