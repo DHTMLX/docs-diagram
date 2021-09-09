@@ -26,7 +26,8 @@ diagram.events.on("AfterSelect", function(id) {
 	- api/selection/events/diagram_onbeforeunselect_event.md
 	- api/selection/events/diagram_onafterunselect_event.md
 
-@relatedsample:	https://snippet.dhtmlx.com/l38pct7c	Diagram. Org chart events
+**Related sample**:
+- [Diagram. Org chart events](https://snippet.dhtmlx.com/l38pct7c)
 
     
 @related:

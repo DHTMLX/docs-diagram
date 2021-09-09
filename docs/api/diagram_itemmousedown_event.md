@@ -26,9 +26,9 @@ api/diagram_itemdblclick_event.md
 api/diagram_itemmouseout_event.md
 api/diagram_itemmouseover_event.md
 
-@relatedsample:
-https://snippet.dhtmlx.com/7h2hgb3g	Diagram. Events
-https://snippet.dhtmlx.com/l38pct7c	Diagram. Org chart events
+**Related samples**:
+- [Diagram. Events](https://snippet.dhtmlx.com/7h2hgb3g)
+- [Diagram. Org chart events](https://snippet.dhtmlx.com/l38pct7c)
 
 @changelog:
 Added in v4.0

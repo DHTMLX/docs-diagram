@@ -47,6 +47,7 @@ The other child shapes that are not set in the **side** option will be arranged 
 {{note You can use either the **direction** option set to *"left"/"right"* or the **side** option. }}
 
 
-@relatedsample: https://snippet.dhtmlx.com/pzllujx3	Mindmap. Direction ("left" | "right")
+**Related sample**:
+- [Mindmap. Direction ("left" | "right")](https://snippet.dhtmlx.com/pzllujx3)
 
 @changelog: added in v3.1. 

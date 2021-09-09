@@ -25,8 +25,8 @@ editor.diagram.events.on("beforeExpand", function(id, dir) {
 @descr:
 Returning *false* from the handler will block the selection.
 
-@relatedsample:
-https://snippet.dhtmlx.com/l38pct7c	Diagram. Org chart events
+**Related sample**:
+- [Diagram. Org chart events](https://snippet.dhtmlx.com/l38pct7c)
 
 @relatedapi:
 api/diagram_onafterexpand_event.md

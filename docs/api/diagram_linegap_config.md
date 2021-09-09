@@ -22,5 +22,5 @@ The result of applying the **lineGap** property is shown in the image below:
 @related:
 common_guides/initialization.md#initializingdiagram
 
-@relatedsample:
-https://snippet.dhtmlx.com/a9t2z2dt	Diagram. Activity diagram
+**Related sample**:
+- [Diagram. Activity diagram](https://snippet.dhtmlx.com/a9t2z2dt)

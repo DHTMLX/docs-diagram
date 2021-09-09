@@ -21,4 +21,5 @@ Event can be used to provide default values or a default formatting for the shap
 @relatedapi:
 	- api/data/events/diagram_onbeforeadd_event.md
 
-@relatedsample:	https://snippet.dhtmlx.com/l38pct7c	Diagram. Org chart events
+**Related sample**:
+- [Diagram. Org chart events](https://snippet.dhtmlx.com/l38pct7c)

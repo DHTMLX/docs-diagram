@@ -37,5 +37,5 @@ The toolbar is set as an array of icons objects. Each icon object can have the f
 @related:
 	common_guides/configuration.md#settingtoolbarforshapes
 
-@relatedsample:
-https://snippet.dhtmlx.com/4if395hd	Diagram. Per-shape toolbar
+**Related sample**:
+- [Diagram. Per-shape toolbar](https://snippet.dhtmlx.com/4if395hd)

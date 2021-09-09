@@ -16,4 +16,5 @@ diagram.events.on("Load", function(){
 @template:	api_event
 @descr:
 
-@relatedsample:	https://snippet.dhtmlx.com/l38pct7c	Diagram. Org chart events
+**Related sample**:
+- [Diagram. Org chart events](https://snippet.dhtmlx.com/l38pct7c)

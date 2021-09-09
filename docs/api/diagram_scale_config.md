@@ -15,6 +15,6 @@ var diagram = new dhx.Diagram("diagram_container", {
 @descr:
 
 
-@relatedsample:
-https://snippet.dhtmlx.com/9h89c3gl	Diagram. Scaled Org chart
-https://snippet.dhtmlx.com/09o8t3o2	Diagram. Zoom template
+**Related samples**:
+- [Diagram. Scaled Org chart](https://snippet.dhtmlx.com/9h89c3gl)
+- [Diagram. Zoom template](https://snippet.dhtmlx.com/09o8t3o2)

@@ -29,7 +29,8 @@ Returning *false* from the event handler will block unselection.
 	- api/selection/events/diagram_onafterselect_event.md
 	- api/selection/events/diagram_onafterunselect_event.md
 
-@relatedsample:	https://snippet.dhtmlx.com/l38pct7c	Diagram. Org chart events
+**Related sample**:
+- [Diagram. Org chart events](https://snippet.dhtmlx.com/l38pct7c)
     
 @related:
 	common_guides/configuration.md#selectingshapes

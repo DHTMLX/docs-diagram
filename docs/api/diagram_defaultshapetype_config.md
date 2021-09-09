@@ -25,5 +25,5 @@ diagram_guides/shapes_arrows_list.md#shapestypes
 orgchart_guides/orgchart_shapes_types.md
 mindmap_guides/mindmap_shapes_connectors.md
 
-@relatedsample:
-https://snippet.dhtmlx.com/qnx3ekin	Diagram. Org chart with images
+**Related sample**:
+- [Diagram. Org chart with images](https://snippet.dhtmlx.com/qnx3ekin)

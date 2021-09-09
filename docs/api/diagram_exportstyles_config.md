@@ -46,7 +46,8 @@ var diagram = new dhx.Diagram("diagram_container", {
 
 @related: common_guides/data_export.md
  
-@relatedsample: https://snippet.dhtmlx.com/jm8if6nh	Diagram. Export styles
+**Related sample**:
+- [Diagram. Export styles](https://snippet.dhtmlx.com/jm8if6nh)
 
 @changelog: added in v3.1
 

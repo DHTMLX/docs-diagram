@@ -23,4 +23,5 @@ Returning *false* from the event handler will prevent shape adding.
 @relatedapi:
 	- api/data/events/diagram_onafteradd_event.md
 
-@relatedsample:	https://snippet.dhtmlx.com/l38pct7c	Diagram. Org chart events
+**Related sample**:
+- [Diagram. Org chart events](https://snippet.dhtmlx.com/l38pct7c)

@@ -20,6 +20,6 @@ editor.diagram.events.on("emptyAreaClick",function(e){
 @template: api_event
 @descr:
 
-@relatedsample:
-https://snippet.dhtmlx.com/7h2hgb3g	Diagram. Events
-https://snippet.dhtmlx.com/l38pct7c	Diagram. Org chart events
+**Related samples**:
+- [Diagram. Events](https://snippet.dhtmlx.com/7h2hgb3g)
+- [Diagram. Org chart events](https://snippet.dhtmlx.com/l38pct7c)

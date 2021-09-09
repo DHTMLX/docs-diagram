@@ -21,8 +21,8 @@ editor.diagram.events.on("afterExpand", function(id,dir) {
 @template:	api_event
 @descr:
 
-@relatedsample:
-https://snippet.dhtmlx.com/l38pct7c	Diagram. Org chart events
+**Related sample**:
+- [Diagram. Org chart events](https://snippet.dhtmlx.com/l38pct7c)
 
 @relatedapi:
 api/diagram_onbeforeexpand_event.md
