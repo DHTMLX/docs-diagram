@@ -6,7 +6,7 @@ The chapter is divided into task-oriented manuals that assist you in performing 
 The articles come around key procedures and problem-solving activities. 
 
 
-<table  style='border-left:none !important;' cellspacing="0" cellpadding="5" border="0">
+<table cellspacing="0" cellpadding="5" border="0">
 	<tbody>
     <tr>
 		<td id="data" class='topics'>

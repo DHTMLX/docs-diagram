@@ -30,7 +30,7 @@ The autoplacement object can contain the following options:
 
 ### Modes of connecting shapes
 
-<table  style='border-left:none !important;' cellspacing="0" cellpadding="1" border="0">
+<table cellspacing="0" cellpadding="1" border="0">
 	<tbody>
     
 	 <tr>
