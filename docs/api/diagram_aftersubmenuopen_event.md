@@ -1,5 +1,10 @@
-afterSubmenuOpen
-================
+---
+sidebar_label: afterSubmenuOpen
+title: afterSubmenuOpen
+description: text
+---
+
+# afterSubmenuOpen
 
 @short: fires after the menu of the subheader is opened
 

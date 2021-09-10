@@ -1,5 +1,10 @@
-serialize
-==========
+---
+sidebar_label: serialize()
+title: serialize
+description: text
+---
+
+# serialize()
 
 @short:
 	serializes the diagram data into an array of JSON objects

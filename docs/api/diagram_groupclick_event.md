@@ -1,5 +1,10 @@
-groupClick
-==========
+---
+sidebar_label: groupClick
+title: groupClick
+description: text
+---
+
+# groupClick
 
 @short: fires on clicking a group
 

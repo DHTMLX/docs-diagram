@@ -1,5 +1,10 @@
-margin
-=============
+---
+sidebar_label: margin
+title: margin
+description: text
+---
+
+# margin
 
 @short: margins for autoplacement in the diagram
 	

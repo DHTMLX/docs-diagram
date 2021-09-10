@@ -1,5 +1,10 @@
-autoplacement
-=============
+---
+sidebar_label: autoplacement
+title: autoplacement
+description: text
+---
+
+# autoplacement
 
 @short: sets configuration for autoplacement
 	

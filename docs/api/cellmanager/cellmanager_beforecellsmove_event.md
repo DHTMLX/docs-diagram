@@ -1,5 +1,10 @@
-beforeCellsMove
-===============
+---
+sidebar_label: beforeCellsMove
+title: beforeCellsMove 
+description: text
+---
+
+# beforeCellsMove
 
 @short: fires before cells of the swimlane are moved
 

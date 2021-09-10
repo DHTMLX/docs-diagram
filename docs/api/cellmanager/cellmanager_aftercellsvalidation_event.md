@@ -1,5 +1,10 @@
-afterCellsValidation
-====================
+---
+sidebar_label: afterCellsValidation
+title: afterCellsValidation 
+description: text
+---
+
+# afterCellsValidation
 
 @short: fires after cells of the swimlane are validated
 

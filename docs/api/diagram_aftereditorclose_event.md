@@ -1,5 +1,10 @@
-afterEditorClose
-=========
+---
+sidebar_label: afterEditorClose
+title: afterEditorClose
+description: text
+---
+
+# afterEditorClose
 
 @short:
 	fires after the inline editor of the item is closed 

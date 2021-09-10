@@ -1,5 +1,10 @@
-afterAdd
-=============
+---
+sidebar_label: afterAdd
+title: afterAdd
+description: text
+---
+
+# afterAdd
 
 @short: fires after adding a shape
 	

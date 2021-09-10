@@ -1,5 +1,10 @@
-resetSwimlane
-=============
+---
+sidebar_label: resetSwimlane()
+title: resetSwimlane
+description: text
+---
+
+# resetSwimlane()
 
 @short: resets active swimlane
 

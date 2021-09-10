@@ -1,5 +1,10 @@
-beforeEditorEditing
-=========
+---
+sidebar_label: beforeEditorEditing
+title: beforeEditorEditing
+description: text
+---
+
+# beforeEditorEditing
 
 @short:
 	fires before the text value of an item is edited via the inline editor 

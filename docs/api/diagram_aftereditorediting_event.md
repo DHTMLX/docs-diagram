@@ -1,5 +1,10 @@
-afterEditorEditing
-=========
+---
+sidebar_label: afterEditorEditing
+title: afterEditorEditing
+description: text
+---
+
+# afterEditorEditing
 
 @short:
 	fires after the text value of an item is edited via the inline editor  

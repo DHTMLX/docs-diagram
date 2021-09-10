@@ -1,5 +1,10 @@
-removeAll
-=============
+---
+sidebar_label: removeAll()
+title: removeAll
+description: text
+---
+
+# removeAll()
 
 
 @short:

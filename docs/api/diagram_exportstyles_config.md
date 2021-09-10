@@ -1,5 +1,10 @@
-exportStyles
-============
+---
+sidebar_label: exportStyles
+title: exportStyles
+description: text
+---
+
+# exportStyles
 
 @short:
 	defines the styles that will be sent to the export service when exporting the diagram

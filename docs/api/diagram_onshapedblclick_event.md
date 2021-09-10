@@ -1,5 +1,10 @@
-shapeDblClick
-=============
+---
+sidebar_label: shapeDblClick
+title: shapeDblClick
+description: text
+---
+
+# shapeDblClick
 
 @short:
 	fires on double-clicking a shape

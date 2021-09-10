@@ -1,5 +1,10 @@
-filter
-==========
+---
+sidebar_label: filter()
+title: filter
+description: text
+---
+
+# filter()
 
 @short:
 filters item in the diagram by the specified key 

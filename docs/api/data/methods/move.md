@@ -1,5 +1,10 @@
-move
-==========
+---
+sidebar_label: move()
+title: move
+description: text
+---
+
+# move()
 
 @short:
 	moves an item to the defined position

@@ -1,5 +1,10 @@
-setSwimlane
-===========
+---
+sidebar_label: setSwimlane()
+title: setSwimlane
+description: text
+---
+
+# setSwimlane()
 
 @short: sets active swimlane for further actions with it
 

@@ -1,5 +1,10 @@
-beforeCellsValidation
-=====================
+---
+sidebar_label: beforeCellsValidation
+title: beforeCellsValidation 
+description: text
+---
+
+# beforeCellsValidation
  
 @short: fires before cells of the swimlane are validated
 

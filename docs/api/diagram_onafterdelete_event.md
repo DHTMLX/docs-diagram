@@ -1,5 +1,10 @@
-afterDelete
-=============
+---
+sidebar_label: afterDelete
+title: afterDelete
+description: text
+---
+
+# afterDelete
 
 @short: fires after deleting a shape
 	

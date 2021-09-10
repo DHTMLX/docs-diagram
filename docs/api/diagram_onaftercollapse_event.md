@@ -1,5 +1,10 @@
-afterCollapse
-=============
+---
+sidebar_label: afterCollapse
+title: afterCollapse
+description: text
+---
+
+# afterCollapse
 
 
 @short:

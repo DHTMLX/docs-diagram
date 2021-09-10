@@ -1,5 +1,10 @@
-getCellIndex
-============
+---
+sidebar_label: getCellIndex()
+title: getCellIndex
+description: text
+---
+
+# getCellIndex()
 
 @short: returns the index of the cell of the swimlane by the id
 

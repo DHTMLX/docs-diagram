@@ -1,5 +1,10 @@
-groupHeaderClick
-================
+---
+sidebar_label: groupHeaderClick
+title: groupHeaderClick
+description: text
+---
+
+# groupHeaderClick
 
 @short: fires on clicking a header of a group
 

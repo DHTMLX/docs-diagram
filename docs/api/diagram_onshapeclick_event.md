@@ -1,5 +1,10 @@
-shapeClick
-=============
+---
+sidebar_label: shapeClick
+title: shapeClick
+description: text
+---
+
+# shapeClick
 
 @short:
 	fires on clicking a shape

@@ -1,5 +1,10 @@
-type
-=============
+---
+sidebar_label: type
+title: type
+description: text
+---
+
+# type
 
 ```todo
 

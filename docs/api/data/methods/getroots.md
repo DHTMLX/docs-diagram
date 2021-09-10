@@ -1,5 +1,10 @@
-getRoots
-===========
+---
+sidebar_label: getRoots()
+title: getRoots
+description: text
+---
+
+# getRoots()
 
 @short: 
 	returns an array with ids of all root items of the diagram

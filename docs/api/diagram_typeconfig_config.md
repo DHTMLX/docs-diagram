@@ -1,5 +1,10 @@
-typeConfig
-=============
+---
+sidebar_label: typeConfig
+title: typeConfig
+description: text
+---
+
+# typeConfig
 
 @short:
 	optional, defines the direction of the shapes in the mind map

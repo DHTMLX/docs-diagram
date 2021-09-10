@@ -1,5 +1,10 @@
-parse
-=========
+---
+sidebar_label: parse()
+title: parse
+description: text
+---
+
+# parse()
 
 @short:
 	loads data from a local data source 

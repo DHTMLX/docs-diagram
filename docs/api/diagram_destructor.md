@@ -1,5 +1,10 @@
-destructor
-=============
+---
+sidebar_label: destructor()
+title: destructor
+description: text
+---
+
+# destructor
 
 @short:
 	removes a diagram instance and releases occupied resources

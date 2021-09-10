@@ -1,5 +1,10 @@
-groupDblClick
-=============
+---
+sidebar_label: groupDblClick
+title: groupDblClick
+description: text
+---
+
+# groupDblClick
 
 @short: fires on double-clicking a group
 

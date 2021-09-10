@@ -1,5 +1,10 @@
-lineMouseDown
-=============
+---
+sidebar_label: lineMouseDown
+title: lineMouseDown
+description: text
+---
+
+# lineMouseDown
 
 @short: fires when a pointing device button is pressed while the pointer is over a connector line
 

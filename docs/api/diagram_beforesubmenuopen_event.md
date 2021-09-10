@@ -1,5 +1,10 @@
-beforeSubmenuOpen
-=================
+---
+sidebar_label: beforeSubmenuOpen
+title: beforeSubmenuOpen
+description: text
+---
+
+# beforeSubmenuOpen
 
 @short: fires before the menu of the subheader is opened
 

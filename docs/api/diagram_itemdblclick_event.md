@@ -1,5 +1,10 @@
-itemDblClick
-============
+---
+sidebar_label: itemDblClick
+title: itemDblClick
+description: text
+---
+
+# itemDblClick
 
 @short: fires on double-clicking an item
 

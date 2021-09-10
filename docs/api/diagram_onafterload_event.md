@@ -1,5 +1,10 @@
-afterLoad
-=============
+---
+sidebar_label: afterLoad
+title: afterLoad
+description: text
+---
+
+# afterLoad
 
 @short: fires after loading data into the widget
 	

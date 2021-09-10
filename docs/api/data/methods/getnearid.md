@@ -1,5 +1,10 @@
-getNearId
-===========
+---
+sidebar_label: getNearId()
+title: getNearId
+description: text
+---
+
+# getNearId()
 
 @short:
  	looks for a nearest item relative to the specified one

@@ -1,5 +1,10 @@
-load
-=======
+---
+sidebar_label: load()
+title: load
+description: text
+---
+
+# load()
 
 @short:
 	loads data from an external file

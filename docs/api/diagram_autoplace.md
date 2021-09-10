@@ -1,5 +1,10 @@
-autoPlace
-=============
+---
+sidebar_label: autoPlace()
+title: autoPlace
+description: text
+---
+
+# autoPlace
 
 @short:automatically arranges connected diagram shapes in the hierarchical structure
 

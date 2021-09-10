@@ -1,5 +1,10 @@
-itemClick
-=========
+---
+sidebar_label: itemClick
+title: itemClick
+description: text
+---
+
+# itemClick
 
 @short: fires on clicking an item
 

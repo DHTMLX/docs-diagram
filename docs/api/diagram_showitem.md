@@ -1,5 +1,10 @@
-showItem
-=============
+---
+sidebar_label: showItem
+title: showItem
+description: text
+---
+
+# showItem
 
 
 @short: adjusts scroll to make the target item visible

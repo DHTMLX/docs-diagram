@@ -1,5 +1,10 @@
-addShape
-=============
+---
+sidebar_label: addShape()
+title: addShape
+description: text
+---
+
+# addShape()
 
 ```todo
 

@@ -1,5 +1,10 @@
-remove
-==========
+---
+sidebar_label: remove()
+title: remove
+description: text
+---
+
+# remove()
 
 @short: unselects a previously selected item
 

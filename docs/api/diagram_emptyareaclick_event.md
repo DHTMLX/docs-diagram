@@ -1,5 +1,10 @@
-emptyAreaClick
-===================
+---
+sidebar_label: emptyAreaClick
+title: emptyAreaClick
+description: text
+---
+
+# emptyAreaClick
 
 @short:
 	fires on clicking an empty space in the editor (not a shape or a connector)

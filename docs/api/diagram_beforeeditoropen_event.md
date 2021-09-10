@@ -1,5 +1,10 @@
-beforeEditorOpen
-=========
+---
+sidebar_label: beforeEditorOpen
+title: beforeEditorOpen
+description: text
+---
+
+# beforeEditorOpen
 
 @short:
 	fires before the inline editor of an item is opened 

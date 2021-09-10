@@ -1,5 +1,10 @@
-beforeUnSelect
-=============
+---
+sidebar_label: beforeUnSelect
+title: beforeUnSelect
+description: text
+---
+
+# beforeUnSelect
 
 @short: fires on unselecting an item, but before the item is really unselected
 

@@ -1,5 +1,10 @@
-beforeDelete
-=============
+---
+sidebar_label: beforeDelete
+title: beforeDelete
+description: text
+---
+
+# beforeDelete
 
 @short: fires before deleting a shape
 	

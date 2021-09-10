@@ -1,5 +1,10 @@
-beforeAdd
-=============
+---
+sidebar_label: beforeAdd
+title: beforeAdd
+description: text
+---
+
+# beforeAdd
 
 @short: fires before adding a shape
 	

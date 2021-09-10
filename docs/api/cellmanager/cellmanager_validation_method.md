@@ -1,5 +1,10 @@
-validation
-==========
+---
+sidebar_label: validation()
+title: validation
+description: text
+---
+
+# validation()
 
 @short: validates cells of the swimlane by the direction and action type
 

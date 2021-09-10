@@ -1,5 +1,10 @@
-beforeCollapse
-=============
+---
+sidebar_label: beforeCollapse
+title: beforeCollapse
+description: text
+---
+
+# beforeCollapse
 
 @short:
 	fires before collapsing an item

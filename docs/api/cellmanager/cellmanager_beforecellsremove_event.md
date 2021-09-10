@@ -1,5 +1,10 @@
-beforeCellsRemove
-=================
+---
+sidebar_label: beforeCellsRemove
+title: beforeCellsRemove 
+description: text
+---
+
+# beforeCellsRemove
 
 @short: fires before cells of the swimlane are removed
 

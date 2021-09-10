@@ -1,5 +1,10 @@
-itemMouseOut
-============
+---
+sidebar_label: itemMouseOut
+title: itemMouseOut
+description: text
+---
+
+# itemMouseOut
 
 @short: fires when a pointing device is out of an item
 

@@ -1,5 +1,10 @@
-addItem
-=============
+---
+sidebar_label: addItem()
+title: addItem
+description: text
+---
+
+# addItem()
 
 @short:
 	adds a new shape to the diagram

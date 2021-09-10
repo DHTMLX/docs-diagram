@@ -1,5 +1,10 @@
-getSubHeaderCellIndex
-=====================
+---
+sidebar_label: getSubHeaderCellIndex()
+title: getSubHeaderCellIndex
+description: text
+---
+
+# getSubHeaderCellIndex()
 
 @short: returns the index of the cell of the swimlane by the subheader id
 

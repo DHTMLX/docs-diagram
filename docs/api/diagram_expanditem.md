@@ -1,5 +1,10 @@
-expandItem
-=============
+---
+sidebar_label: expandItem()
+title: expandItem
+description: text
+---
+
+# expandItem()
 
 @short:
 	shows all children of the target shape or expands the group/swimlane

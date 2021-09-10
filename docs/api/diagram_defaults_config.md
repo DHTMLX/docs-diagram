@@ -1,5 +1,10 @@
-defaults
-=============
+---
+sidebar_label: defaults
+title: defaults
+description: text
+---
+
+# defaults
 
 @short: the default configuration of a shape
 	

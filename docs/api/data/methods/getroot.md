@@ -1,5 +1,10 @@
-getRoot
-===========
+---
+sidebar_label: getRoot()
+title: getRoot
+description: text
+---
+
+# getRoot()
 
 @short:
  	returns the id of the root item by the id of its child

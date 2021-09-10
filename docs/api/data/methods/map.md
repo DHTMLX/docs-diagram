@@ -1,5 +1,10 @@
-map
-=========
+---
+sidebar_label: map()
+title: map
+description: text
+---
+
+# map()
 
 @short:
 iterates through all items of the diagram

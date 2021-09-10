@@ -1,5 +1,10 @@
-beforeEditorClose
-=========
+---
+sidebar_label: beforeEditorClose
+title: beforeEditorClose
+description: text
+---
+
+# beforeEditorClose
 
 @short:
 	fires before the inline editor of an item is closed 

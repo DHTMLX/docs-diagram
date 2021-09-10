@@ -1,5 +1,10 @@
-lineDblClick
-============
+---
+sidebar_label: lineDblClick
+title: lineDblClick
+description: text
+---
+
+# lineDblClick
 
 @short: fires on double-clicking a connector line
 

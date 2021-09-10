@@ -1,5 +1,10 @@
-afterUnSelect
-=============
+---
+sidebar_label: afterUnSelect
+title: afterUnSelect
+description: text
+---
+
+# afterUnSelect
 
 @short: fires after unselecting an item
 

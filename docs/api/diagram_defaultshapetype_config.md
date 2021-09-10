@@ -1,5 +1,10 @@
-defaultShapeType
-=============
+---
+sidebar_label: defaultShapeType
+title: defaultShapeType
+description: text
+---
+
+# defaultShapeType
 
 @short: the default type of a shape
 	

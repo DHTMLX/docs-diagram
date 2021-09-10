@@ -1,5 +1,10 @@
-beforeCellsAdd
-==============
+---
+sidebar_label: beforeCellsAdd
+title: beforeCellsAdd 
+description: text
+---
+
+# beforeCellsAdd
 
 @short: fires before new cells are added to a swimlane
 

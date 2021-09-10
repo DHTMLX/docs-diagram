@@ -1,5 +1,10 @@
-getScrollState
-=============
+---
+sidebar_label: getScrollState()
+title: getScrollState
+description: text
+---
+
+# getScrollState()
 
 
 @short: returns the position of the diagram inner scroll

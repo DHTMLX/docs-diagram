@@ -1,5 +1,10 @@
-defaultLinkType
-=============
+---
+sidebar_label: defaultLinkType
+title: defaultLinkType
+description: text
+---
+
+# defaultLinkType
 
 @short: the default type of a connector
 	

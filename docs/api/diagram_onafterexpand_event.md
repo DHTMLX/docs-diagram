@@ -1,5 +1,10 @@
-afterExpand
-=============
+---
+sidebar_label: afterExpand
+title: afterExpand
+description: text
+---
+
+# afterExpand
 
 @short:
 	fires after an item has been expanded

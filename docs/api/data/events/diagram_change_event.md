@@ -1,5 +1,10 @@
-change
-=========
+---
+sidebar_label: change
+title: change
+description: text
+---
+
+# change
 
 @short:
 	fires on changes in the dataset of the diagram

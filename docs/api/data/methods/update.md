@@ -1,5 +1,10 @@
-update
-========
+---
+sidebar_label: update()
+title: update
+description: text
+---
+
+# update()
 
 @short: updates properties of the item
 	

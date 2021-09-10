@@ -1,5 +1,10 @@
-afterCellsMove
-==============
+---
+sidebar_label: afterCellsMove
+title: afterCellsMove 
+description: text
+---
+
+# afterCellsMove
 
 @short: fires after cells of the swimlane are moved
 

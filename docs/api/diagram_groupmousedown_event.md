@@ -1,5 +1,10 @@
-groupMouseDown
-==============
+---
+sidebar_label: groupMouseDown
+title: groupMouseDown
+description: text
+---
+
+# groupMouseDown
 
 @short: fires when a pointing device button is pressed while the pointer is over a group
 

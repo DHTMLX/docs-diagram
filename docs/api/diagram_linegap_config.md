@@ -1,5 +1,10 @@
-lineGap
-============
+---
+sidebar_label: lineGap
+title: lineGap
+description: text
+---
+
+# lineGap
 
 @short:
 	adds an offset for two connected shapes, and fills the gap with an additional line

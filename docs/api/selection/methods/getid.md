@@ -1,5 +1,10 @@
-getId
-============
+---
+sidebar_label: getId()
+title: getId
+description: text
+---
+
+# getId()
 
 @short: returns the id of a selected item
 	

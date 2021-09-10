@@ -1,5 +1,10 @@
-load
-========
+---
+sidebar_label: load
+title: load
+description: text
+---
+
+# load
 
 @short: fires when data is loaded into the diagram
 	

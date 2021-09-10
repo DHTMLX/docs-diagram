@@ -1,5 +1,10 @@
-remove
-======
+---
+sidebar_label: remove()
+title: remove
+description: text
+---
+
+# remove()
 
 @short: removes cells of the swimlane as rows or columns
 

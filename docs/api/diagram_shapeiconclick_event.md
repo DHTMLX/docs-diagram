@@ -1,5 +1,10 @@
-shapeIconClick
-================
+---
+sidebar_label: shapeIconClick
+title: shapeIconClick
+description: text
+---
+
+# shapeIconClick
 
 @short:
 fires on clicking a toolbar icon

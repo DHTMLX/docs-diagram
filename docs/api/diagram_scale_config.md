@@ -1,5 +1,10 @@
-scale
-=============
+---
+sidebar_label: scale
+title: scale
+description: text
+---
+
+# scale
 
 @short:
 	defines the diagram scale

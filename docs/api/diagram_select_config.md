@@ -1,5 +1,10 @@
-select
-=============
+---
+sidebar_label: select
+title: select
+description: text
+---
+
+# select
 
 @short:
 	enables selection in the diagram

@@ -1,5 +1,10 @@
-lineClick
-=============
+---
+sidebar_label: lineClick
+title: lineClick
+description: text
+---
+
+# lineClick
 
 @short: fires on clicking a connector line
 	

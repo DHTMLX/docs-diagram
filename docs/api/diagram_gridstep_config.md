@@ -1,5 +1,10 @@
-gridStep
-=============
+---
+sidebar_label: gridStep
+title: gridStep
+description: text
+---
+
+# gridStep
 
 @short:
 	sets the size of a grid step that defines the step of moving a shape/group/swimlane

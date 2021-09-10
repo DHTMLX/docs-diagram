@@ -1,5 +1,10 @@
-locate
-===========
+---
+sidebar_label: locate()
+title: locate
+description: text
+---
+
+# locate()
 
 @short:
 	gets the id of an item from the specified HTML event or tag

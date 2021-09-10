@@ -1,5 +1,10 @@
-afterCellsRemove
-================
+---
+sidebar_label: afterCellsRemove
+title: afterCellsRemove 
+description: text
+---
+
+# afterCellsRemove
 
 @short: fires after cells of the swimlane are removed
 

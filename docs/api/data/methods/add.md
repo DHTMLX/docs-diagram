@@ -1,5 +1,10 @@
-add
-========
+---
+sidebar_label: add()
+title: add
+description: text
+---
+
+# add()
 
 
 @short:

@@ -1,5 +1,10 @@
-attachEvent
-=============
+---
+sidebar_label: attachEvent
+title: attachEvent
+description: text
+---
+
+# attachEvent
 
 @short:attaches a handler to an inner event of Diagram
 	

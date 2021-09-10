@@ -1,5 +1,10 @@
-copy
-=========
+---
+sidebar_label: copy()
+title: copy
+description: text
+---
+
+# copy()
 
 @short:
 	creates a copy of a shape at the defined position

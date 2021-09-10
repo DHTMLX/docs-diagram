@@ -1,5 +1,10 @@
-groupHeaderDblClick
-===================
+---
+sidebar_label: groupHeaderDblClick
+title: groupHeaderDblClick
+description: text
+---
+
+# groupHeaderDblClick
 
 @short: fires on double-clicking a header of a group
 

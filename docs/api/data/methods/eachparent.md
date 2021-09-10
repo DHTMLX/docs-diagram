@@ -1,5 +1,10 @@
-eachParent
-===========
+---
+sidebar_label: eachParent()
+title: eachParent
+description: text
+---
+
+# eachParent()
 
 @short: 
 	iterates through all parents of the specified item

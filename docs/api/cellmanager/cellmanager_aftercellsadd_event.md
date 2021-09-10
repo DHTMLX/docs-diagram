@@ -1,5 +1,10 @@
-afterCellsAdd
-=============
+---
+sidebar_label: afterCellsAdd
+title: afterCellsAdd 
+description: text
+---
+
+# afterCellsAdd
 
 @short: fires after new cells are added to a swimlane
 

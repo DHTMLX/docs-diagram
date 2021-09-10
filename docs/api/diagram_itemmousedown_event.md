@@ -1,5 +1,10 @@
-itemMouseDown
-=============
+---
+sidebar_label: itemMouseDown
+title: itemMouseDown
+description: text
+---
+
+# itemMouseDown
 
 @short: fires when a pointing device button is pressed while the pointer is over an item
 

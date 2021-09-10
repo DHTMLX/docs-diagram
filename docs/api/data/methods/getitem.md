@@ -1,5 +1,10 @@
-getItem
-===========
+---
+sidebar_label: getItem()
+title: getItem
+description: text
+---
+
+# getItem()
 
 @short: 
 	returns the object of an item by its id

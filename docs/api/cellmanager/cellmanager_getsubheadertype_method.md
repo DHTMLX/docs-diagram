@@ -1,5 +1,10 @@
-getSubHeaderType
-================
+---
+sidebar_label: getSubHeaderType()
+title: getSubHeaderType
+description: text
+---
+
+# getSubHeaderType()
 
 @short: returns the type of direction to count the index by the subheader id of the swimlane
 

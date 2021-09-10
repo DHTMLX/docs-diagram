@@ -1,5 +1,10 @@
-move
-====
+---
+sidebar_label: move()
+title: move
+description: text
+---
+
+# move()
 
 @short: moves cells of the swimlane as rows or columns
 

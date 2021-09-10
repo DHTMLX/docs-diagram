@@ -1,5 +1,10 @@
-pdf
-==========
+---
+sidebar_label: pdf()
+title: pdf
+description: text
+---
+
+# pdf()
 
 @short:
 exports a diagram to a PDF file

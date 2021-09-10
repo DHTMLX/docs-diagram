@@ -1,5 +1,10 @@
-beforeExpand
-=============
+---
+sidebar_label: beforeExpand
+title: beforeExpand
+description: text
+---
+
+# beforeExpand
 
 
 @short:

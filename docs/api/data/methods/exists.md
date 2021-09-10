@@ -1,5 +1,10 @@
-exists
-========
+---
+sidebar_label: exists()
+title: exists
+description: text
+---
+
+# exists()
 
 @short:
 checks whether the specified item exists in the diagram

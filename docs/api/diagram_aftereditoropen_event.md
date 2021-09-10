@@ -1,5 +1,10 @@
-afterEditorOpen
-=========
+---
+sidebar_label: afterEditorOpen
+title: afterEditorOpen
+description: text
+---
+
+# afterEditorOpen
 
 @short:
 	fires after the inline editor of an item is opened 

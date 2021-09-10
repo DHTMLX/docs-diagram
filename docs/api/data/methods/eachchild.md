@@ -1,5 +1,10 @@
-eachChild
-=========
+---
+sidebar_label: eachChild()
+title: eachChild
+description: text
+---
+
+# eachChild()
 
 @short:
 iterates through the children of the specified item

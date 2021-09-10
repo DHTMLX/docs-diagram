@@ -1,5 +1,10 @@
-toolbar
-==========
+---
+sidebar_label: toolbar
+title: toolbar
+description: text
+---
+
+# toolbar
 
 
 @short:
