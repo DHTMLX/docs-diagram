@@ -7,7 +7,7 @@ description: text
 # emptyAreaClick
 
 @short:
-	fires on clicking an empty space in the editor (not a shape or a connector)
+	fires on clicking an empty space in the current diagram area
     
 @params:
 - e			Event		a native event object	
