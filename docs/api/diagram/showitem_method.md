@@ -1,7 +1,7 @@
 ---
-sidebar_label: showItem
+sidebar_label: showItem()
 title: showItem
-description: text
+description: text()
 ---
 
 # showItem

@@ -11,6 +11,7 @@ adds an offset for two connected shapes, and fills the gap with an additional li
 
 @type: number
 @default: 10
+
 @example:
 const editor = new dhx.DiagramEditor(document.body, {
     lineGap: 5

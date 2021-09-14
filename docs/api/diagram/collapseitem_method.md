@@ -7,7 +7,7 @@ description: text
 # collapseItem()
 
 @short:
-	hides all children of the target shape or collapses the group/swimlane
+hides all children of the target shape or collapses the group/swimlane
 
 @params:
 - id		string,number		the id of the item
@@ -35,4 +35,5 @@ diagram.collapseItem("main", "left");
 @related:
 common_guides/manipulating_shapes.md
 
-@changelog: The **dir** parameter was added in v3.1.
+@changelog:
+The **dir** parameter was added in v3.1.

@@ -4,7 +4,7 @@ title: destructor
 description: text
 ---
 
-# destructor
+# destructor()
 
 @short:
 	removes a diagram instance and releases occupied resources

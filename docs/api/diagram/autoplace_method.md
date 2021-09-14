@@ -4,14 +4,14 @@ title: autoPlace
 description: text
 ---
 
-# autoPlace
+# autoPlace()
 
-@short:automatically arranges connected diagram shapes in the hierarchical structure
+@short: automatically arranges connected diagram shapes in the hierarchical structure
 
-@params: 
-- config    object      optional, an object with configuration settings of the autoplacement. If not specified, the default settings will be applied.
+@params:
+`config: object` - optional, an object with configuration settings of the autoplacement. If not specified, the default settings will be applied.
 
-@example: 
+@example:
 var diagram = new dhx.Diagram("diagram");
 diagram.data.parse(data);
 
@@ -19,15 +19,14 @@ diagram.autoPlace({
 	mode: "edges"
 });
 
-@template:	api_method
+@descr:
+
 @relatedapi:api/diagram_autoplacement_config.md
 
 @relatedsample:
 https://snippet.dhtmlx.com/f3uekgjw	Diagram. Autoplacement
 
 
-
-@descr:
 {{note The **autoPlace** method works for [Diagram](diagram_guides.md) not [Org Chart](org_chart_guides.md). The **autoPlace** method does not work if you use groups or swimlanes.}}
 
 The method can take a config object as a parameter. The object contains two optional properties:

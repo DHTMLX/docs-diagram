@@ -1,10 +1,10 @@
 ---
-sidebar_label: scrollTo
+sidebar_label: scrollTo()
 title: scrollTo
 description: text
 ---
 
-# scrollTo
+# scrollTo()
 
 @short: sets the inner scroll of the diagram to the specified position
 	
