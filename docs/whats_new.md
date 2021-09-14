@@ -1,14 +1,11 @@
-What's New
-=============
-```todo
-<style>
-.rel_date_pivot{
-	color: #a0a0a0;
-    font-size: 13px;
-    margin-left: 20px;
-}
-</style>
-```todo
+---
+sidebar_label: What's new
+title: What's New 
+description: text
+---
+
+# What's New
+
 If you are updating Diagram from an older version, check [Migration to Newer Version](migration.md) for details.
 
 Version 4.0
