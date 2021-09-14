@@ -28,7 +28,7 @@ https://snippet.dhtmlx.com/f3uekgjw	Diagram. Autoplacement
 
 
 @descr:
-{{note The **autoPlace** method works for [Diagram](diagram_guides.html) not [Org Chart](org_chart_guides.md). The **autoPlace** method does not work if you use groups or swimlanes.}}
+{{note The **autoPlace** method works for [Diagram](diagram_guides.md) not [Org Chart](org_chart_guides.md). The **autoPlace** method does not work if you use groups or swimlanes.}}
 
 The method can take a config object as a parameter. The object contains two optional properties:
 
@@ -37,7 +37,7 @@ The method can take a config object as a parameter. The object contains two opti
 
 ### Modes of connecting shapes
 
-<table  style='border-left:none !important;' cellspacing="0" cellpadding="1" border="0">
+<table cellspacing="0" cellpadding="1" border="0">
 	<tbody>
     
 	 <tr>
