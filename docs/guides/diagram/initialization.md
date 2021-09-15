@@ -149,7 +149,7 @@ diagram.config.scale = 0.7; /*!*/
 diagram.paint();
 ~~~
 
-Load data into Diagram
+Loading data into Diagram
 ----------------------------
 
 Detailed information on loading data into DHTMLX Diagram is given in the [Loading and Storing Data](common_guides/loading_data.md) article.
