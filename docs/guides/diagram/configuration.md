@@ -1,5 +1,10 @@
-Configuring Diagram
-=====================
+---
+sidebar_label: Configuration 
+title: Diagram Configuration
+description: text
+---
+
+# Diagram Configuration 
 
 dhtmlxDiagram provides a wide range of options for configuration. You can zoom into and out from a diagram, change the type of shapes and their margins, create your own types of shapes,
 apply selection, define the size of grid cells and set a toolbar with icons for the shapes.

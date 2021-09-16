@@ -1,5 +1,10 @@
-Toolbar
-===========
+---
+sidebar_label: Toolbar
+title: Toolbar
+description: text
+---
+
+# Toolbar
 
 Default
 -------------

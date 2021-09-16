@@ -1,5 +1,11 @@
-Integration with Vue.js
-=========================
+---
+sidebar_label: Integration with Vue.js
+title: Integration with Vue.js
+description: text
+---
+
+# Integration with Vue.js
+
 
 DHTMLX Diagram can be easily integrated into an application built with the Vue.js framework. 
 

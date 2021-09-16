@@ -1,5 +1,10 @@
-Loading and Storing Data
-===================
+---
+sidebar_label: Loading and storing data
+title: Loading and Storing Data
+description: text
+---
+
+# Loading and Storing Data
 
 You can populate Diagram, Org Chart, or Mind Map with data in the following ways:
 

@@ -1,5 +1,10 @@
-Overview
-============
+---
+sidebar_label: Overview
+title: Editor Overview
+description: text
+---
+
+# Diagram Editor Overview
 
 There are four functional parts in the interface of the Diagram editor. They are presented in the image below:
 

@@ -1,5 +1,10 @@
-Grid area
-==========
+---
+sidebar_label: Grid area
+title: Grid Area
+description: text
+---
+
+# Grid Area
 
 - the **_grid area_** for editing the diagram. It is an area intended for editing shapes and connections between them. It allows setting exact position for the shapes;
 - the **_grid area_** for editing the diagram. It is an area intended for editing the org chart and its shapes. It allows setting exact position for the shapes;

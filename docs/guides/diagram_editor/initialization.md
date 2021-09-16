@@ -1,5 +1,10 @@
-Initialization
-===============
+---
+sidebar_label: How to start with Editor
+title: How to start with Editor
+description: text
+---
+
+# How to start with Diagram Editor
 
 The dhtmlxDiagram component provides a special Editor mode that allows you to try and apply your designer skills in building neat and nice-looking diagrams. 
 

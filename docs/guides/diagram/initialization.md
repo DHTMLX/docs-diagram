@@ -1,5 +1,10 @@
-Creating dhtmlxDiagram 
-=============================
+---
+sidebar_label: How to start with Diagram
+title: How to start with Diagram
+description: text
+---
+
+# How to start with Diagram
 
 In this article we will discuss the stages of adding dhtmlxDiagram on a page. This process presupposes several simple steps:
 

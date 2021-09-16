@@ -1,55 +1,10 @@
 ---
-sidebar_label: Group overview
-title: Group Overview 
+sidebar_label: Group properties
+title: Group Properties 
 description: text
 ---
 
-# Group overview
-
-A group is a separate kind of the Diagram elements. You can put several shapes or other groups into a group and move them as a unit, copy, or delete.
-
-<img style="display:block; margin-left:auto;margin-right:auto;" src="group.png">
-
-To add a group, specify *"$group"* as a value of the **type** attribute inside the group object while preparing a dataset for loading into the diagram or diagram editor.
-
-~~~js
-const data = [
-    // configuring a group
-    {
-        type: "$group", id: 1,
-        width: 350, height: 200,
-        x: 0, y: 0,
-        header: {
-            text: "Group",
-            editable: true,
-            closable: true,
-        },
-        // the first-level child items of the group 
-        groupChildren: ["1", "2"],
-    },
-    // configuring shapes to be put into the group
-    {
-        type: "rectangle", id: 1, x: 20, y: 75, text: "Shape 1"
-    },
-    {
-        type: "rectangle", id: 2, x: 180, y: 75, text: "Shape 2"
-    }
-];
-
-// initializing a diagram
-var diagram = new dhx.Diagram("diagram");
-diagram.data.parse(data);
-~~~
-
-When working in the [editor mode](diagram_guides/editor_mode.md), you can use a group(s) included to the left panel of the editor by default. You can also create any number of groups with different configurations, and [add them into the left panel of the editor](diagram_guides__editor_mode.html#multiple_customized_items) for further work. 
-
-{{editor	https://snippet.dhtmlx.com/4gxy38ek	Diagram. Groups and shapes interaction}}
-
-{{editor	https://snippet.dhtmlx.com/6hunrja8	Diagram. Group. Header position and text settings}}
-
-{{editor	https://snippet.dhtmlx.com/0hf8ahrb	Diagram. Virtual private cloud architecture}}
-
-<h3 id="group_properties"><b>Properties of a group object</b></h3>
+# Group properties
 
 The Diagram groups are not configured automatically. A group object contains a list of configuration properties which allow you to configure the positioning and appearance of the group:
 

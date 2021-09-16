@@ -22,14 +22,14 @@ const editor = new dhx.DiagramEditor(document.body, {
 ```todo
 Добавить информацию из п. https://docs.dhtmlx.com/diagram/diagram_guides__editor_mode.html#configuringtoolbarforshapes
 ```
-
+```todo
 Configuring Toolbar for Shapes
 -----------------------
 
 The default toolbar controls of the Diagram shapes are: 
 
 <table>
-<tr><td><img src="diagram_toolbar/default_diagram_toolbar.png"></td>
+<tr><td><img src="diagram_toolbar/default_diagram_toolbar.png"/></td>
 <td><ul>
 	<li>"copy"</li>
 	<li>"connect"</li>
@@ -85,7 +85,7 @@ const editor = new dhx.DiagramEditor("editor-container", {
 
 As a result, the "connect" and "remove" controls will be shown in the per-shape toolbar, whereas the "copy" control will be hidden.
 
-<img src="diagram_toolbar/configure_diagram_toolbar.png">
+<img src="diagram_toolbar/configure_diagram_toolbar.png"/>
 
 To change the structure of the toolbar, you need to enumerate the controls in the desired order inside the **shapeToolbar** array:
 
@@ -98,7 +98,7 @@ const editor = new dhx.DiagramEditor("editor-container", {
 
 The result will be the following:
 
-<img src="diagram_toolbar/diagram_toolbar_controls.png">
+<img src="diagram_toolbar/diagram_toolbar_controls.png"/>
 
 ### Toolbar customization
 
@@ -150,7 +150,7 @@ where *true* value includes default set of controls: "copy","connect","remove".
 
 The result:
 
-<img src="diagram_toolbar/fullcustom_toolbar_control.png">
+<img src="diagram_toolbar/fullcustom_toolbar_control.png"/>
 
 You can also change the order the controls will be displayed by changing the order of the values in the array:
 
@@ -165,7 +165,7 @@ const editor = new dhx.DiagramEditor("editor-container", {
 
 The result:
 
-<img src="diagram_toolbar/fullcustom_toolbar_control1.png">
+<img src="diagram_toolbar/fullcustom_toolbar_control1.png"/>
 
 {{note The sequence the values are put in the array defines the order the controls will be displayed in the toolbar.}} 
 
@@ -179,7 +179,7 @@ The default toolbar controls of the Org Chart shapes are:
 
 
 <table>
-<tr><td><img src="orgchart_toolbar/default_orgshape_toolbar.png"></td>
+<tr><td><img src="orgchart_toolbar/default_orgshape_toolbar.png"/></td>
 <td><ul>
 	<li>"add"</li>
 	<li>"horizontal"</li>
@@ -238,7 +238,7 @@ const editor = new dhx.DiagramEditor("editor-container", {
 
 As a result, the "add" and "remove" controls will be shown in the per-shape toolbar, whereas the "horizontal" and "vertical" controls will be hidden.
 
-<img src="orgchart_toolbar/configure_orgshape_toolbar.png">
+<img src="orgchart_toolbar/configure_orgshape_toolbar.png"/>
 
 To change the structure of the toolbar, you need to enumerate the controls in the desired order inside the **shapeToolbar** array:
 
@@ -286,7 +286,7 @@ const editor = new dhx.DiagramEditor("editor-container", {
 
 The result:
 
-<img src="orgchart_toolbar/custom_toolbar_control.png">
+<img src="orgchart_toolbar/custom_toolbar_control.png"/>
 
 But the most recommended option is to enable the default set of controls by defining *true* value in the **shapeToolbar** array and create your own control(s) by adding an icon object to the array:
 
@@ -303,7 +303,7 @@ where *true* value includes default set of controls: "add", "horizontal", "verti
 
 The result:
 
-<img src="orgchart_toolbar/fullcustom_toolbar_control.png">
+<img src="orgchart_toolbar/fullcustom_toolbar_control.png"/>
 
 You can also change the order the controls will be displayed by changing the order of the values in the array:
 
@@ -318,7 +318,7 @@ const editor = new dhx.DiagramEditor("editor-container", {
 
 The result:
 
-<img src="orgchart_toolbar/fullcustom_toolbar_control1.png">
+<img src="orgchart_toolbar/fullcustom_toolbar_control1.png"/>
 
 {{note The sequence the values are put in the array defines the order the controls will be displayed in the toolbar.}}
 
@@ -328,7 +328,7 @@ Configuring Toolbar for Shapes (mindmap mode)
 The default toolbar controls of the Mind Map shapes are: 
 
 <table>
-<tr><td><img src="mindmap_toolbar/default_mindmap_toolbar.png"></td>
+<tr><td><img src="mindmap_toolbar/default_mindmap_toolbar.png"/></td>
 <td><ul>
 	<li>"add"</li>
 	<li>"addLeft"</li>
@@ -339,7 +339,7 @@ The default toolbar controls of the Mind Map shapes are:
 
 **Note**, that the set of default controls displayed in the shape toolbar depends on the internal settings of the shape. For example, the toolbar of the root shape does not contain the "add" and "remove" controls but includes the "addLeft" and "addRight" ones.
 
-<img src="mindmap_toolbar/default_mindmap_toolbar1.png">
+<img src="mindmap_toolbar/default_mindmap_toolbar1.png"/>
 
 You can configure or customize the per-shape toolbar according to your needs via using the **shapeToolbar** configuration property of the Mind Map editor. 
 
@@ -389,7 +389,7 @@ const editor = new dhx.DiagramEditor("editor-container", {
 
 As a result, the "remove" control will be shown in the per-shape toolbar, whereas the others controls will be hidden.
 
-<img src="mindmap_toolbar/configure_mindmap_toolbar.png">
+<img src="mindmap_toolbar/configure_mindmap_toolbar.png"/>
 
 To change the structure of the toolbar, you need to enumerate the controls in the desired order inside the **shapeToolbar** array:
 
@@ -474,3 +474,4 @@ The result:
 {{note The sequence the values are put in the array defines the order the controls will be displayed in the toolbar.}}
 
 
+```

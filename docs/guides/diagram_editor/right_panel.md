@@ -1,5 +1,10 @@
-Right panel
-============
+---
+sidebar_label: Right panel
+title: Right Panel
+description: text
+---
+
+# Right Panel
 
 - the right panel with a **property sheet** that provides fields for modifying values of the shapes' attributes
 	- the **Grid Step** sidebar provides a field for modifying the step of moving a shape. This sidebar option is shown by default and can be hidden via the *gridStep* option of the [controls](diagram_guides/editor_mode.md#configurationproperties) config property.

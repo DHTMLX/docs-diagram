@@ -1,7 +1,12 @@
-Left panel
-============
+---
+sidebar_label: Left panel
+title: Left Panel
+description: text
+---
 
-- the left panel with a full **list of shapes**; 
+# Left Panel
+
+- the left panel with a full **list of items**; 
 
 Left Panel Customization
 ------------------------

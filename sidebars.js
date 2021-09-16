@@ -3,14 +3,7 @@ module.exports = {
     type: "doc",
     id: "overview",
   },
-  // {
-  //   type: "category",
-  //   label: "What's new and migration",
-  //   items: [
-  //     "whatsnew",
-  //     "migration",
-  //   ],
-  // },
+
   // Diagram API
   {
     type: "category",
@@ -93,14 +86,14 @@ module.exports = {
   // Editor API
   {
     type: "category",
-    label: "Editor API",
+    label: "Diagram Editor API",
     collapsed: true,
     items: [
       "api/editor/api_overview",
       {
         type: "category",
         label: "Editor methods",
-        collapsed: false,
+        collapsed: true,
         items: [
           "api/editor/import_method",
           "api/editor/paint_method",
@@ -327,5 +320,98 @@ module.exports = {
         ]
       },
     ]
-  }
+  },
+
+  // Diagram Items
+  {
+    type: "category",
+    label: "Diagram items",
+    collapsed: true,
+    items: [
+      // Shapes
+      {
+        type: "category",
+        label: "Shapes",
+        items: [
+          "shapes/shape_types",
+          "shapes/configuration_properties",
+        ],
+      },
+      // Lines
+      {
+        type: "category",
+        label: "Lines",
+        items: [
+          "lines/line_types",
+          "lines/configuration_properties",
+        ],
+      },
+      // Groups
+      {
+        type: "category",
+        label: "Groups",
+        items: [
+          "groups/index",
+          "groups/configuration_properties",
+        ],
+      },
+      // Swimlanes
+      {
+        type: "category",
+        label: "Swimlanes",
+        items: [
+          "swimlanes/index",
+          "swimlanes/configuration_properties",
+        ],
+      },
+    ]
+  },
+  
+  // Guides
+  {
+    type: "category",
+    label: "Guides",
+    collapsed: true,
+    items: [
+      {
+        type: "category",
+        label: "Diagram",
+        items: [
+          "guides/diagram/initialization",
+          "guides/diagram/configuration",
+        ],
+      },
+      {
+        type: "category",
+        label: "Diagram Editor",
+        items: [
+          "guides/diagram_editor/overview",
+          "guides/diagram_editor/initialization",
+          "guides/diagram_editor/toolbar",
+          "guides/diagram_editor/left_panel",
+          "guides/diagram_editor/grid_area",
+          "guides/diagram_editor/right_panel",
+          "guides/diagram_editor/localization",
+        ],
+      },
+      "guides/loading_data",
+      "guides/manipulating_items",
+      "guides/customization",
+      "guides/scrolling_diagram",
+      "guides/data_export",
+      "guides/event_handling",
+      "guides/using_typescript",
+      "guides/angular_integration",
+      "guides/react_integration",
+      "guides/vue_integration",
+    ]
+  },
+  {
+    type: "category",
+    label: "What's new and migration",
+    items: [
+      "whats_new",
+      "migration",
+    ],
+  },
 ]};
