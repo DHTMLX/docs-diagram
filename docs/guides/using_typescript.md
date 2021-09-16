@@ -1,5 +1,11 @@
-Using Diagram with TypeScript
-=========================
+---
+sidebar_label: Using Diagram with TypeScript
+title: Using Diagram with TypeScript
+description: text
+---
+
+# Using Diagram with TypeScript
+
 
 Starting from v3.1, the library of DHTMLX Diagram provides the ability to use TypeScript definitions. The built-in support of TypeScript should work out of the box.
 

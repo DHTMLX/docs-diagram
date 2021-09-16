@@ -1,5 +1,11 @@
-Scrolling Diagram
-=======================
+---
+sidebar_label: Scrolling Diagram
+title: Scrolling Diagram
+description: text
+---
+
+# Scrolling Diagram
+
 
 By default the component's size is set automatically to fit the content. If necessary, the component will take the size of the HTML container and render horizontal and vertical inner scrolls to fit the content.
 

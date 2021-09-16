@@ -1,5 +1,10 @@
-Integration with Angular
-=========================
+---
+sidebar_label: Integration with Angular
+title: Integration with Angular
+description: text
+---
+
+# Integration with Angular
 
 DHTMLX Diagram can be easily integrated into an application created with the Angular framework. 
 

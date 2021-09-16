@@ -1,5 +1,10 @@
-Integration with React
-=========================
+---
+sidebar_label: Integration with React
+title: Integration with React
+description: text
+---
+
+# Integration with React
 
 DHTMLX Diagram can be easily integrated into an application built with the React framework. 
 

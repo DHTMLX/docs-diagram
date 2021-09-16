@@ -1,5 +1,10 @@
-Creating dhtmlxDiagram 
-=============================
+---
+sidebar_label: How to start with Diagram
+title: How to start with Diagram
+description: text
+---
+
+# How to start with Diagram
 
 In this article we will discuss the stages of adding dhtmlxDiagram on a page. This process presupposes several simple steps:
 
@@ -149,7 +154,7 @@ diagram.config.scale = 0.7; /*!*/
 diagram.paint();
 ~~~
 
-Load data into Diagram
+Loading data into Diagram
 ----------------------------
 
 Detailed information on loading data into DHTMLX Diagram is given in the [Loading and Storing Data](common_guides/loading_data.md) article.

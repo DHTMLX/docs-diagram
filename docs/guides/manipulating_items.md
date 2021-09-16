@@ -1,5 +1,10 @@
-Manipulating Shapes
-======================
+---
+sidebar_label: Manipulating items
+title: Manipulating Items
+description: text
+---
+
+# Manipulating Items
 
 It is easy to manipulate the shapes of dhtmlxDiagram via the component's API. You can perform a range of operations over shapes, in particular:
 

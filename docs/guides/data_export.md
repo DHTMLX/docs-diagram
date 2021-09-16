@@ -1,5 +1,10 @@
-Exporting Diagram
-====================
+---
+sidebar_label: Exporting Diagram
+title: Exporting Diagram
+description: text
+---
+
+# Exporting Diagram
 
 You can easily export a diagram into the PDF or PNG format. Check the related sections for details.
 
