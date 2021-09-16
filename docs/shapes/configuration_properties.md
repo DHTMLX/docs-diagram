@@ -182,3 +182,32 @@ var diagram = new dhx.Diagram("diagram", {
 });
 diagram.data.parse(data);
 ~~~
+
+
+
+## Custom Shape Configuration
+
+You may want to [create a mind map with custom shapes](mindmap_guides/mindmap_shapes_connectors.md#creatingcustomshape). In this case, besides the [standard options](#configurationofshapeobjects) of the "topic"- type shape, you can set custom attributes for your custom shapes when preparing a data set.   
+
+~~~js
+var customShapeData = [
+    {
+		"id": "main",
+		"title": "Main page",
+		"cr": 33,
+		"br": 12,
+		"conversion": 25,
+		"view": "../img_01.png",
+		"info": "Develop enterprise web and mobile applications with rich interface",
+		"link": "https://dhtmlx.com/"
+    },
+];
+~~~
+
+In the code snippet above, all properties are custom except for "id". 
+
+{{note Overriding of the internal properties of the mind map shape is forbidden as it causes the incorrect work of the mind map and its editor.}}
+
+{{note The [editable](mindmap_guides/mindmap_shapes_connectors.md#configurationoftheshape) property of a shape is not available for a custom shape.}}
+
+For details about interaction between custom properties and the Mind Map Editor, see the [Configuring Right Panel](mindmap_guides/editor_mode.md) article.
