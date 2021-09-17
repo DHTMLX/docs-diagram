@@ -9,8 +9,7 @@ description: text
 @short: gets the id of an item from the specified HTML event or tag
     
 @params:
-
-- e		Event			a native event object
+`e: Event` - a native event object
 
 
 @returns:

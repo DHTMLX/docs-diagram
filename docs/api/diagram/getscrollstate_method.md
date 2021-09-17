@@ -8,10 +8,10 @@ description: text
 
 
 @short: returns the position of the diagram inner scroll
-	
-@returns:
 
-- scroll	object		an object which stores positions of scrolls
+@returns:
+An object which stores positions of scrolls.
+
 
 @example:
 

@@ -9,7 +9,7 @@ description: text
 @short: loads data into the editor from a local data source
 
 @params:
-- data      any     the data that should be parsed into the editor
+- `data: any` - the data that should be parsed into the editor
 
 @example:
 const data = [

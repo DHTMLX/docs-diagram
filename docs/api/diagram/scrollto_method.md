@@ -10,9 +10,8 @@ description: text
 	
 
 @params:
-
-- x		number		horizontal scroll position
-- y		number		vertical scroll position
+- `x: number` - horizontal scroll position
+- `y: number` - vertical scroll position
 
 
 @example:

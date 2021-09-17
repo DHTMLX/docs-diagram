@@ -9,8 +9,8 @@ description: text
 @short: fires when a pointing device button is pressed while the pointer is over a connector line
 
 @params:
-- id		    string|number		the id of a connector
-- e     	    MouseEvent		    a native HTML event object
+- `id: string | number` - the id of a connector
+- `e: MouseEvent` - a native HTML event object
 
 @example:
 diagram.events.on("lineMouseDown", (id, event) => {

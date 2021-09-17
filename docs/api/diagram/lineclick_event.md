@@ -9,8 +9,8 @@ description: text
 @short: fires on clicking a connector line
 	
 @params:
-- id		string|number		the id of a connector
-- e     	Event		a native event object
+- `id: string | number` - the id of a connector
+- `e: Event` - a native event object
 
 @example:
 diagram.events.on("lineClick", function(id, events) {

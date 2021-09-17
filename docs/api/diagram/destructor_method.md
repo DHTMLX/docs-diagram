@@ -8,8 +8,6 @@ description: text
 
 @short: removes a diagram instance and releases occupied resources
 
-@params:
-
 @example:
 diagram.destructor();
 

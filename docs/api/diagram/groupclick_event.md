@@ -9,8 +9,8 @@ description: text
 @short: fires on clicking a group
 
 @params:
-- id        string|number   the id of a group
-- event     MouseEvent      a native HTML event object
+- `id: string | number` - the id of a group
+- `event: MouseEvent` - a native HTML event object
 
 @example:
 diagram.events.on("groupClick", (id, event) => {

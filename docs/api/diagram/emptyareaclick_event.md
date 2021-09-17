@@ -9,7 +9,7 @@ description: text
 @short: fires on clicking an empty space in the current diagram area
     
 @params:
-- e			Event		a native event object	
+`e: Event` - a native event object	
 
 @example:
 diagram.events.on("emptyAreaClick",function(e){

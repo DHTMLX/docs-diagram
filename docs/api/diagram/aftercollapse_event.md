@@ -10,8 +10,8 @@ description: text
 @short: fires after an item has been collapsed
 
 @params:
-- id		string,number		the id of an item which has been collapsed
-- dir       string              optional, the side the children were hidden in relation to the parent shape <br>("left" or "right" for <i>type:"topic"</i>, otherwise - undefined)
+- `id: string | number` - the id of an item which has been collapsed
+- `dir: string` - optional, the side the children were hidden in relation to the parent shape <br>("left" or "right" for <i>type:"topic"</i>, otherwise - undefined)
 
 @example:
 diagram.events.on("afterCollapse", function(id, dir) {

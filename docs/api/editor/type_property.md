@@ -10,6 +10,7 @@ description: text
 
 @type: string
 @default: "default"
+
 @values: "default", "org", "mindmap"
 
 @example:

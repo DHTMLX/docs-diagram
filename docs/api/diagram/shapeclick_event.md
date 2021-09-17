@@ -9,7 +9,7 @@ description: text
 @short: fires on clicking a shape
 
 @params:
-- id	 	string,number 		the shape id
+`id: string | number` - the shape id
 
 @example:
 diagram.events.on("shapeClick", function(id) {

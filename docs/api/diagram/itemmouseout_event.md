@@ -9,8 +9,8 @@ description: text
 @short: fires when a pointing device is out of an item
 
 @params:
-- id        string|number   the id of an item
-- event     MouseEvent      a native HTML event object
+- `id: string | number` - the id of an item
+- `event: MouseEvent` - a native HTML event object
 
 @example:
 diagram.events.on("itemMouseOut", (id, event) => {

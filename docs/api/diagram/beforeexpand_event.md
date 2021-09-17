@@ -10,8 +10,8 @@ description: text
 @short: fires before expanding an item
 
 @params:
-- id		string,number		the id of an item 
-- dir       string              optional, the side the children will be shown in relation to the parent shape <br>("left" or "right" for <i>type:"topic"</i>, otherwise - undefined)
+- `id: string | number` - the id of an item 
+- `dir: string` - optional, the side the children will be shown in relation to the parent shape <br>("left" or "right" for <i>type:"topic"</i>, otherwise - undefined)
   
 @example:
 diagram.events.on("beforeExpand", function(id, dir) {

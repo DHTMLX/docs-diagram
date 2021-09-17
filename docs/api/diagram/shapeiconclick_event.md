@@ -9,7 +9,7 @@ description: text
 @short: fires on clicking a toolbar icon
 
 @params:
-- id	 	string,number 		the id of the icon
+`id: string | number` - the id of the icon
 
 @example:
 var diagram = new dhx.Diagram("diagram_container", { 
