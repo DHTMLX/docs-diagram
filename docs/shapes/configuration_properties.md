@@ -6,26 +6,44 @@ description: text
 
 # Shape properties
 
-
-
-Properties of a shape object (default mode)
--------------------------------------------------------
-
-The Diagram shapes are not configured automatically. Their positioning and appearance totally depend on the applied configuration settings. Thus, a shape object can have the following attributes:
+## Common properties of a shape object
 
 - **id** - (*string/number*) the unique id of a shape;
-- **type** - (*string*) the type of the shape. See the full list of shapes types in the related sample:<br>
-{{editor	https://snippet.dhtmlx.com/loz7yh2y	Diagram. Flow-Chart shapes}}
+- **type** - (*string*) the type of the shape (by default: "card" in the org chart mode, "topic" in the mindmap mode);
 - **x** - (*number*) the x coordinate of the shape position;
 - **y** - (*number*) the y coordinate of the shape position;
-- **angle** - (*number*) the angle of shape rotation;
-- **text** - (*string*) the text to be rendered in a shape. The property can be set as an array of string values while [preparing a data set for a **custom shape** only](common_guides/configuration.md#creatingcustomshapes);
+- **text** - (*string | string[]*) the text to be rendered in a shape. The property can be set as an array of string values while [configuring a **custom shape** only](common_guides/configuration.md#creatingcustomshapes); ```todo поменять ссылку```
 - **editable** - (*boolean*) enables/disables the ability to edit the text of the shape by double-clicking on it; *true* by default;
-- **height** - (*number*) the height of a shape, 90 by default;
-- **width** - (*number*) the width of a shape, 140 by default;
+- **height** - (*number*) the height of a shape;
+- **width** - (*number*) the width of a shape;
 - **fixed** - (*boolean*) enables/disables movement and resizing of a shape, *false* by default;
 - **hidden** - (*boolean*) defines, whether a shape will be hidden;
 - **css** - (*string*) the name of the CSS class that should be applied to the shape;
+
+### Properties specific for the default mode
+
+- **angle** - (*number*) the angle of shape rotation
+
+### Properties specific for the org chart mode
+
+- **parent** - (*string|number*) the id of the parent shape;
+- **dx** - (*number*) the left offset of the shape;
+- **dy** - (*number*) the top offset of the shape;
+- **dir** - (*string*) the direction of shapes connecting. To connect shapes vertically, set the attribute to the "vertical" value<br> {{editor	https://snippet.dhtmlx.com/98tzmzpg	Diagram. With nested vertical lists}}
+- **open** - (*boolean*) defines, whether the child items of the current shape will be shown. *True* by default;
+
+### Properties specific for the mindmap mode
+
+- **parent** - (*string|number*) the id of the parent shape;
+- **dx** - (*number*) the left offset of the shape;
+- **dy** - (*number*) the top offset of the shape;
+- **open** - (*boolean*) defines, whether the child items of the current shape will be shown. *True* by default;
+- **openDir** - (*object*) shows/hides the child items of the root shape. The object takes two attributes:
+    - **left** - (*boolean*) -  shows/hides the child items to the left of the root shape
+    - **right** - (*boolean*) - shows/hides the child items to the right of the root shape
+
+### Properties specific for "topic" and flow chart shapes
+
 - **fill** - (*string*) the color of the shape, "#DEDEDE" by default;
 - **stroke** - (*string*) the color of the shape outline, "#DEDEDE" by default;
 - **strokeWidth** - (*number*) the width of the shape outline, 1 by default;
@@ -39,175 +57,17 @@ The Diagram shapes are not configured automatically. Their positioning and appea
 - **textVerticalAlign** - (*string*) - the vertical alignment of text in a shape:"top","center"(default),"bottom";
 - **lineHeight** - (*number*) the height of a line, 14 by default.
 
+### Properties specific for "img-card" shapes
 
-
-
-
-
-
-
-
-
-Properties of a shape object (org chart mode)
--------------------------------------------------------
-
-The shapes of Org Chart are configured automatically. You can set the following options for a shape of an org chart:
-
-- **id** - (*string|number*) the unique id of a shape;
-- **text** - (*string|string[]*) the text to be rendered in a shape. The property can be set as an array of string values while [preparing a data set for a **custom shape** only](common_guides/configuration.md#creatingcustomshapes);
-- **editable** - (*boolean*) enables/disables the ability to edit the text of the shape by double-clicking on the shape; *true* by default;
-- **parent** - (*string|number*) the id of the parent shape;
-- **type** - (*string*) the type of the shape. [See the list of shapes types for Org Chart](orgchart_guides/orgchart_shapes_types.md);
 - **img** - (*string*) the image of a shape;
-- **dx** - (*number*) the left offset of the shape;
-- **dy** - (*number*) the top offset of the shape;
 - **title** - (*string*) the title of a shape;
-- **height** - (*number*) the height of a shape;
-- **width** - (*number*) the width of a shape;
-- **fixed** - (*boolean*) enables/disables movement and resizing of a shape, *false* by default;
-- **dir** - (*string*) the direction of shapes connecting. To connect shapes vertically, set the attribute to the "vertical" value<br> {{editor	https://snippet.dhtmlx.com/98tzmzpg	Diagram. With nested vertical lists}}
-- **open** - (*boolean*) defines, whether the child items of the current shape will be shown. *True* by default;
 - **headerColor** - (*string*) the color of the header of the shape, any CSS legal color value;
-- **css** - (*string*) the name of the CSS class that should be applied to the shape.
 
 
-Properties of a shape object (mindmap mode)
--------------------------------------------------------
+## Custom properties of a shape object
 
-The shapes of Mind Map are configured automatically. You can set the following attributes for a shape of a mind map:
-
-- **id** - (*string|number*) the unique id of a shape;
-- **text** - (*string|string[]*) the text to be rendered in a shape. The property can be set as an array of string values while [preparing a data set for a **custom shape** only](common_guides/configuration.md#creatingcustomshapes);
-- **editable** - (*boolean*) enables/disables the ability to edit the text of the shape by double-clicking on the shape; *true* by default;
-- **parent** - (*string|number*) the id of the parent shape;
-- **type** - (*string*) the type of the shape ("topic", by default)
-- **dx** - (*number*) the left offset of the shape;
-- **dy** - (*number*) the top offset of the shape;
-- **height** - (*number*) the height of a shape;
-- **width** - (*number*) the width of a shape;
-- **fixed** - (*boolean*) enables/disables movement and resizing of a shape, *false* by default;
-- **open** - (*boolean*) defines, whether the child items of the current shape will be shown. *True* by default;
-- **openDir** - (*object*) shows/hides the child items of the parent shape. The object takes two attributes:
-    - **left** - (*boolean*) -  shows/hides the child items to the left of the parent shape
-    - **right** - (*boolean*) - shows/hides the child items to the right of the parent shape
-- **hidden** - (*boolean*) defines, whether a shape will be hidden;
-- **css** - (*string*) the name of the CSS class that should be applied to the shape;
-- **fill** - (*string*) the color of the shape;
-- **stroke** - (*string*) the color of the shape outline;
-- **strokeWidth** - (*number*) the width of the shape outline, 1 by default;
-- **strokeType** - (*string*) the type of the stroke outline, "line" (default), "dash" for a dashed line;
-- **fontColor** - (*string*) the color of the text font, "#4C4C4C" by default;
-- **fontStyle** - (*string*) the style of the text font, can be "normal" (default), "italic" or "oblique";
-- **fontWeight** - (*string*) the text font weight, possible values are: "normal" (default), "bold", "bolder", "lighter", values "100"-"900", where "400" is the same as normal, and "600"+ is the boldest font;
-- **fontSize** - (*number*) - the size of the font in pixels, 14 by default;
-- **textAlign** - (*string*) - the alignment of text in a shape:"left","center"(default),"right";
-- **textVerticalAlign** - (*string*) - the vertical alignment of text in a shape:"top","center"(default),"bottom";
-- **lineHeight** - (*number*) the height of a line, 14 by default.
-
-
-
-<h3 id="customprop">Custom properties of a shape object</h3>
-
-Starting from v3.0, it is also possible to set custom options as for a custom shape of a diagram as for a custom shape of a diagram editor. 
-
-~~~js
-var customShapeData = [
-    {
-        "id": "1",
-        "type": "template",
-        "title": "Milena Hunter",
-        "post": "Attending physician", /*!*/
-        "phone": "(124) 622-1256", /*!*/
-        "email": "mhunter@gmail.com", /*!*/
-        "img": "../avatar-25.jpg",
-
-        "height": 115, "width": 330
-    }
-];
-~~~
-
-The "post", "phone" and "email" properties are custom. 
-
-{{note Overriding the internal properties of the diagram shape is forbidden as it causes the incorrect work of the diagram and its editor.}}
-
-{{note The [editable](diagram_guides/shapes_arrows_list.md#shapeattrs) property of a shape is not available for a custom shape.}}
-
-For details about interaction between custom properties and the Diagram Editor, see the [Configuring Right Panel](diagram_guides/editor_mode.md) article.
-
-### Custom properties of a shape object
-
-Starting from v3.0, it is also possible to set custom options as for a custom shape of an org chart as for a custom shape of an org chart editor. 
-
-~~~js
-var customShapeData = [
-    {
-        "id": "1",
-        "type": "template",
-        "title": "Milena Hunter",
-        "post": "Attending physician", /*!*/
-        "phone": "(124) 622-1256", /*!*/
-        "email": "mhunter@gmail.com", /*!*/
-        "img": "../avatar-25.jpg",
-
-        "height": 115, "width": 330
-    }
-];
-~~~
-
-The "post", "phone" and "email" properties are custom. 
-
-{{note Overriding of the internal properties of the org chart shape is forbidden as it causes the incorrect work of the org chart and its editor.}}
-
-{{note The [editable](orgchart_guides/orgchart_shapes_types.md#shapeattrs) property of a shape is not available for a custom shape.}}
-
-For details about interaction between custom properties and the Org Chart Editor, see the [Configuring Right Panel](orgchart_guides/editor_mode.md) article.
+- **[key: string]** - (*any*) - your own property
 
 
 
 
-~~~js
-const data = [
-	// shapes
-    { id: "1", text: "Chairman & CEO" },
-    { id: "2", text: "Manager", parent: "1" },
-    { id: "3", text: "Technical Director", parent: "1" },
-    { id: "4", text: "Manager", parent: "1" },
-    { id: "5", text: "Technical Director", parent: "1" },
-    { id: "2.1", text: "Marketer", parent: "2" },
-    { id: "2.2", text: "Team Lead ", parent: "2" },
-];
-
-var diagram = new dhx.Diagram("diagram", {
-	type: "mindmap",
-});
-diagram.data.parse(data);
-~~~
-
-
-
-## Custom Shape Configuration
-
-You may want to [create a mind map with custom shapes](mindmap_guides/mindmap_shapes_connectors.md#creatingcustomshape). In this case, besides the [standard options](#configurationofshapeobjects) of the "topic"- type shape, you can set custom attributes for your custom shapes when preparing a data set.   
-
-~~~js
-var customShapeData = [
-    {
-		"id": "main",
-		"title": "Main page",
-		"cr": 33,
-		"br": 12,
-		"conversion": 25,
-		"view": "../img_01.png",
-		"info": "Develop enterprise web and mobile applications with rich interface",
-		"link": "https://dhtmlx.com/"
-    },
-];
-~~~
-
-In the code snippet above, all properties are custom except for "id". 
-
-{{note Overriding of the internal properties of the mind map shape is forbidden as it causes the incorrect work of the mind map and its editor.}}
-
-{{note The [editable](mindmap_guides/mindmap_shapes_connectors.md#configurationoftheshape) property of a shape is not available for a custom shape.}}
-
-For details about interaction between custom properties and the Mind Map Editor, see the [Configuring Right Panel](mindmap_guides/editor_mode.md) article.

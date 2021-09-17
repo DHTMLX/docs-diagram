@@ -8,34 +8,27 @@ description: text
 
 ## Default Diagram shapes
 
-The DHTMLX Diagram library provides you with a set of default types of shapes that you can use to build your diagram. 
+The DHTMLX Diagram library provides you with a set of default types of shapes that you can use to build your diagram. The default shapes include:
 
-{{note Any of these shapes can be added into the diagram of the necessary mode ("default", "org", or "mindmap" mode). }}
-### Shapes typical of a diagram in the "default" mode
-
-The flow chart shapes that you can use to build your diagram are presented below.
+- a set of the flow chart shapes:
 
 <iframe src="https://snippet.dhtmlx.com/loz7yh2y?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="650"></iframe>
 
-Use the name of the necessary shape as a value of the **type** attribute inside the shape object, while [preparing a data set for loading into the diagram](common_guides/loading_data.md#preparingdatatoload).
+Tip: Use the name of the necessary shape as a value of the **type** attribute inside the shape object, while [preparing a data set for loading into the diagram](common_guides/loading_data.md#preparingdatatoload).
 
-### Shapes typical of a diagram in the "org chart" mode
-
-There are two types of shapes:
-
-- `type: "card"` - the default type for a diagram in the "org chart" mode
+- the `"card"` type that is the default type of shapes in the "org chart" mode of Diagram:
 
 <iframe src="https://snippet.dhtmlx.com/5ign6fyy?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="550"></iframe>
 
-- `type: "img-card"`- for adding shapes with images. Don't forget to provide images for cards via the **img** attribute of the shape object.
+- the `"img-card"` type that can be used for adding shapes with images. Don't forget to provide images for cards via the **img** attribute of the shape object.
 
 <iframe src="https://snippet.dhtmlx.com/qnx3ekin?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="550"></iframe>
 
-### Shapes typical of a diagram in the "mindmap" mode
-
-There is one shape with `type:"topic"`.
+- the `"topic"` type that is the default type of shapes in the "mindmap" mode of Diagram.
 
 <iframe src="https://snippet.dhtmlx.com/3igf1gd5?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="350"></iframe>
+
+{{note Any of the above shapes can be added into the diagram of any mode ("default", "org", or "mindmap" one). }}
 
 ## Configuring shapes
 
@@ -43,55 +36,10 @@ Diagram shapes are configured when you create a data set for loading into the di
 
 The list of configuration properties of a shape object is given in the [Shape properties](shapes/configuration_properties.md) article.
 
-Setting the type of a shape
-----------------------
-
-### Setting the default shape type
-
-You can set the default type for all the shapes via the [](../api/diagram/defaultshapetype_property.md) attribute of the diagram config object:
-
-~~~js
-var diagram = new dhx.Diagram("diagram_container", {
-    type: "default", // or type: "org", or type: "mindmap" 
-    defaultShapeType: "rectangle"
-});
-diagram.data.parse(data);
-~~~
-
-This value is applied, if the configuration object of the shape doesn't contain the `type` property.
-
-{{note In the "org" or "mindmap" mode of Diagram, the type of child shapes will be the same as the type of the parent shapes.
-}}
-
-### Setting individual type for a shape
-
-It is also possible to specify individual types for separate shapes via the related `type` attribute of the data item object.
-
-~~~js
-// data to load
-var data = [
-    // shapes
-    { "id": "1", "x": 100, "y": 40,  "text": "Start", "type": "start", "height": 50 },
-    { "id": "2", "x": 100, "y": 170, "text": "Operation 1", "type": "output" },
-    { "id": "3", "x": 100, "y": 300, "text": "Operation 2", "type": "input" },
- 
-    // connectors
-    { "id": "1-2", "from": "1", "to": "2" },
-    { "id": "2-3", "from": "2", "to": "3" }
-]
- 
-// initializing a diagram
-var diagram = new dhx.Diagram("diagram_container");
-diagram.data.parse(data);
-~~~
-
-{{note This way allows you to create a diagram which will include shapes typical of different Diagram modes. To configure the shape, you should apply the properties peculiar to the type that is set for the shape.
-
-**Related samples**: [Diagram. Mixed](https://snippet.dhtmlx.com/15acqc24) and [Diagram. Org chart. Mixed.](https://snippet.dhtmlx.com/yd6l6grr)
-}}
-
 Adding a custom shape
 -----------------------------
+
+```
 
 To create a new type of a shape, you need to use the [](../api/diagram/addshape_method.md) method. 
 
@@ -169,9 +117,119 @@ diagram.data.parse(networkDiagram);
 
 {{note You can find out more about the **addShape** method in the [related article](api/diagram_addshape.md).}}
 
-Adding Event Handlers for the Custom Shape
-----------------------------
+```
 
+### Custom properties of a shape object
+
+
+
+ set custom options as for a custom shape of a diagram as for a custom shape of a diagram editor. 
+
+~~~js
+var customShapeData = [
+    {
+        "id": "1",
+        "type": "template",
+        "title": "Milena Hunter",
+        "post": "Attending physician", /*!*/
+        "phone": "(124) 622-1256", /*!*/
+        "email": "mhunter@gmail.com", /*!*/
+        "img": "../avatar-25.jpg",
+
+        "height": 115, "width": 330
+    }
+];
+~~~
+
+The "post", "phone" and "email" properties are custom. 
+
+{{note Overriding the internal properties of the diagram shape is forbidden as it causes the incorrect work of the diagram and its editor.}}
+
+{{note The [editable](diagram_guides/shapes_arrows_list.md#shapeattrs) property of a shape is not available for a custom shape.}}
+
+For details about interaction between custom properties and the Diagram Editor, see the [Configuring Right Panel](diagram_guides/editor_mode.md) article.
+
+### Custom properties of a shape object
+
+Starting from v3.0, it is also possible to set custom options as for a custom shape of an org chart as for a custom shape of an org chart editor. 
+
+~~~js
+var customShapeData = [
+    {
+        "id": "1",
+        "type": "template",
+        "title": "Milena Hunter",
+        "post": "Attending physician", /*!*/
+        "phone": "(124) 622-1256", /*!*/
+        "email": "mhunter@gmail.com", /*!*/
+        "img": "../avatar-25.jpg",
+
+        "height": 115, "width": 330
+    }
+];
+~~~
+
+The "post", "phone" and "email" properties are custom. 
+
+{{note Overriding of the internal properties of the org chart shape is forbidden as it causes the incorrect work of the org chart and its editor.}}
+
+{{note The [editable](orgchart_guides/orgchart_shapes_types.md#shapeattrs) property of a shape is not available for a custom shape.}}
+
+For details about interaction between custom properties and the Org Chart Editor, see the [Configuring Right Panel](orgchart_guides/editor_mode.md) article.
+
+
+
+
+~~~js
+const data = [
+	// shapes
+    { id: "1", text: "Chairman & CEO" },
+    { id: "2", text: "Manager", parent: "1" },
+    { id: "3", text: "Technical Director", parent: "1" },
+    { id: "4", text: "Manager", parent: "1" },
+    { id: "5", text: "Technical Director", parent: "1" },
+    { id: "2.1", text: "Marketer", parent: "2" },
+    { id: "2.2", text: "Team Lead ", parent: "2" },
+];
+
+var diagram = new dhx.Diagram("diagram", {
+	type: "mindmap",
+});
+diagram.data.parse(data);
+~~~
+
+
+
+## Custom Shape Configuration
+
+You may want to [create a mind map with custom shapes](mindmap_guides/mindmap_shapes_connectors.md#creatingcustomshape). In this case, besides the [standard options](#configurationofshapeobjects) of the "topic"- type shape, you can set custom attributes for your custom shapes when preparing a data set.   
+
+~~~js
+var customShapeData = [
+    {
+		"id": "main",
+		"title": "Main page",
+		"cr": 33,
+		"br": 12,
+		"conversion": 25,
+		"view": "../img_01.png",
+		"info": "Develop enterprise web and mobile applications with rich interface",
+		"link": "https://dhtmlx.com/"
+    },
+];
+~~~
+
+In the code snippet above, all properties are custom except for "id". 
+
+{{note Overriding of the internal properties of the mind map shape is forbidden as it causes the incorrect work of the mind map and its editor.}}
+
+{{note The [editable](mindmap_guides/mindmap_shapes_connectors.md#configurationoftheshape) property of a shape is not available for a custom shape.}}
+
+For details about interaction between custom properties and the Mind Map Editor, see the [Configuring Right Panel](mindmap_guides/editor_mode.md) article.
+
+### Adding event handlers for the custom shape
+
+```todo
 Starting with v3.1, you can add custom event handlers to the custom shapes via the **eventHandlers** attribute of the [addShape()](api/diagram_addshape.md) method:
 
 ~~~js
@@ -224,133 +282,85 @@ We recommend that you use different css classes for different custom shapes.
 
 {{note The functionality is also available in the editor mode.}}
 
-
-Creating Custom Shape (mindmap mode)
----------------------------------------
-
-It is possible to customize a mind map. For this, you need to create a new type of a shape via the [addShape()](api/diagram_addshape.md) method and set the new shape type as the default type for the mind map shapes. For instance:
-
-~~~js
-const diagram = new dhx.Diagram("diagram", {
-    type: "mindmap",
-    // specifies the new shape type as a type for all shapes
-    defaultShapeType: "flowView",
-    typeConfig: {
-        side: {
-            right: ["suite"]
-        }
-    },
-});
-
-function template({ title, view, cr, br, conversion, link }){
-    ...
-}
-
-function openModalInfo(title, text) {
-     ...
-}
-
-diagram.addShape("flowView", {
-    template: template,
-    defaults: {
-        width: 190,
-        height: 97,
-    },
-    eventHandlers: {
-        onclick: {
-            info: function(event, item) {
-                openModalInfo(item.title, item.info);
-            }
-        }
-    }
-});
-
-
-const customShape = [
-    {
-		"id": "main",
-		"title": "Main page",
-		"cr": 33,
-		"br": 12,
-		"conversion": 25,
-		"view": "../img_01.png",
-		"info": "Develop enterprise web and mobile applications with rich interface",
-		"link": "https://dhtmlx.com/"
-    },
-    {
-		"id": "gantt",
-		"title": "DHTMLX Gantt Chart",
-		"cr": 45,
-		"br": 10,
-		"conversion": 25,
-		"view": "../img_02.png",
-		"info": "DHTMLX Gantt is a full-featured Gantt chart for cross-browser app.",
-		"link": "https://dhtmlx.com/docs/products/dhtmlxGantt/",
-		"parent": "main"
-    },
-    // more options
-];
-
-diagram.data.parse(customShape);
-~~~
-
 {{editor    https://snippet.dhtmlx.com/do1jwmw1	Diagram. Site map and user flow example with custom shapes}}
 
 For more details on creating a custom shape, see the [Creating Custom Shapes](common_guides/configuration.md#creatingcustomshapes) article.
 
+```
 
 
-Arrangement of Shapes
+
+
+Setting the type of a shape
+----------------------
+
+### Setting the default shape type
+
+You can set the default type for all the shapes via the [](../api/diagram/defaultshapetype_property.md) attribute of the diagram config object:
+
+~~~js
+var diagram = new dhx.Diagram("diagram_container", {
+    type: "default", // or type: "org", or type: "mindmap" 
+    defaultShapeType: "rectangle"
+});
+diagram.data.parse(data);
+~~~
+
+This value is applied, if the configuration object of the shape doesn't contain the `type` property.
+
+{{note In the "org" or "mindmap" mode of Diagram, the type of child shapes will be the same as the type of the parent shapes.
+}}
+
+### Setting individual type for a shape
+
+It is also possible to specify individual types for separate shapes via the related `type` attribute of the data item object.
+
+~~~js
+// data to load
+var data = [
+    // shapes
+    { "id": "1", "x": 100, "y": 40,  "text": "Start", "type": "start", "height": 50 },
+    { "id": "2", "x": 100, "y": 170, "text": "Operation 1", "type": "output" },
+    { "id": "3", "x": 100, "y": 300, "text": "Operation 2", "type": "input" },
+ 
+    // connectors
+    { "id": "1-2", "from": "1", "to": "2" },
+    { "id": "2-3", "from": "2", "to": "3" }
+]
+ 
+// initializing a diagram
+var diagram = new dhx.Diagram("diagram_container");
+diagram.data.parse(data);
+~~~
+
+{{note To configure the shape, you should apply the properties peculiar to the type that is set for the shape. <br>See [the full list of configuration properties of a shape object](shapes/configuration_properties.md).
+
+**Related samples**: [Diagram. Mixed](https://snippet.dhtmlx.com/15acqc24) and [Diagram. Org chart. Mixed.](https://snippet.dhtmlx.com/yd6l6grr)
+}}
+
+Arrangement of shapes in the mindmap mode of Diagram
 --------------------
 
-By default. the arrangement of the child shapes relative to the root shape is defined automatically by the main algorithm. 
-But you can set the desired direction of the child shapes on initialization of the Mind Map via the [typeConfig](api/diagram_typeconfig_config.md) option. 
+In the `mindmap` mode of Diagram, the arrangement of child shapes relative to the root shape is defined automatically by the main algorithm. 
+To change the default direction of the child shapes, use the [](../api/diagram/typeconfig_property.md) configuration property on initialization of the diagram.
 
-<img style="display:block; margin-left:auto;margin-right:auto;" src="mindmap_direction.png">
+{{note The **typeConfig** configuration property is not available in Diagram Editor.}}
 
-{{editor    https://snippet.dhtmlx.com/pzllujx3	Mind Map. Direction of the shapes}}
+The property allows you:
+- [to set the direction for all child shapes at once](#setting-direction-for-all-child-shapes)
+- [to specify individual direction for specific child shapes](#setting-direction-for-individual-child-shape)
 
-The [typeConfig](api/diagram_typeconfig_config.md) configuration option of the diagram object allows you:
+### Setting direction for all child shapes
 
-- to set the child shapes of the mind map to the right of the root shape via the **direction: "right"** attribute of [typeConfig](api/diagram_typeconfig_config.md):
+To set the child shapes to the right/left of the root shape, use the **direction** attribute of the [](../api/diagram/typeconfig_property.md) property:
 
-~~~js
-const diagram = new dhx.Diagram("diagram", { 
-    type: "mindmap",
-    typeConfig: {
-        direction: "right",
-    }
-});
-diagram.data.parse(data);
-~~~
+<iframe src="https://snippet.dhtmlx.com/pzllujx3?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="300"></iframe>
 
-- to set the child shapes of the mind map to the left of the root shape via the **direction: "left"** attribute of [typeConfig](api/diagram_typeconfig_config.md):
+### Setting direction for individual child shape
 
-~~~js
-const diagram = new dhx.Diagram("diagram", { 
-    type: "mindmap",
-    typeConfig: {
-        direction: "left",
-    }
-});
-diagram.data.parse(data);
-~~~
+You can set the mandatory direction for specific child shapes via the **side** attribute of the [](../api/diagram/typeconfig_property.md) property. The attribute is an object that contains a set of *key:value* pairs where *key* is the direction of the shapes (left, right) and *value* is an array with the ids of the shapes.
 
-- to define the mandatory direction for the specific child shapes via the **side** attribute of [typeConfig](api/diagram_typeconfig_config.md). The attribute is an object that contains a set of *key:value* pairs where *key* is the direction of the shapes (left, right) and *value* is an array with the ids of the shapes.
-
-~~~js
-const diagram = new dhx.Diagram("container", { 
-    type: "mindmap",
-    typeConfig: {
-        side: {
-            left: ["2", "3"],
-            right: ["4", "5"],
-        }
-    }
-});
-diagram.data.parse(data);
-~~~
+<iframe src="https://snippet.dhtmlx.com/atto9ckg?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="300"></iframe>
 
 The other child shapes that are not set in the side option will be arranged automatically according to the main algorithm.
 
-{{note The **typeConfig** configuration option is not available in Mind Map Editor.}}
