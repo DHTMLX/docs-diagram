@@ -6,8 +6,7 @@ description: text
 
 # afterItemMove
 
-@short:
-fires when an item is moving
+@short: fires when an item is moving
 
 @params:
 - `events: Event` - a native event object

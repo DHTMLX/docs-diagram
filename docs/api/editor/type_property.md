@@ -6,8 +6,7 @@ description: text
 
 # type
 
-@short:
-specifies the mode of the diagram editor
+@short: specifies the mode of the diagram editor
 
 @type: string
 @default: "default"

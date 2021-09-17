@@ -6,8 +6,7 @@ description: text
 
 # import()
 
-@short:
-imports data from an existing diagram into the editor
+@short: imports data from an existing diagram into the editor
 
 @params:
 - diagram      object     the diagram object

@@ -6,8 +6,7 @@ description: text
 
 # zoomIn
 
-@short:
-fires after the Zoom In button has been clicked
+@short: fires after the Zoom In button has been clicked
 
 @example:
 editor.events.on("zoomIn", function() {

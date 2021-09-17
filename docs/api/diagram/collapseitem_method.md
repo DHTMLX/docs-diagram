@@ -6,8 +6,7 @@ description: text
 
 # collapseItem()
 
-@short:
-hides all children of the target shape or collapses the group/swimlane
+@short: hides all children of the target shape or collapses the group/swimlane
 
 @params:
 - id		string,number		the id of the item

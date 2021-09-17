@@ -6,8 +6,7 @@ description: text
 
 # paint()
 
-@short:
-	repaints the diagram 
+@short: repaints the diagram 
 
 @params:
 

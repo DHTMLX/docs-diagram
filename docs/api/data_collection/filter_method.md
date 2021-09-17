@@ -6,8 +6,7 @@ description: text
 
 # filter()
 
-@short:
-filters item in the diagram by the specified key 
+@short: filters item in the diagram by the specified key 
 
 @params:
 - criteria			object,function				the filtering criteria (either the key of the item attribute or a filtering function)

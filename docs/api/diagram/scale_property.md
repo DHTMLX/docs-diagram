@@ -6,8 +6,7 @@ description: text
 
 # scale
 
-@short:
-	defines the diagram scale
+@short: defines the diagram scale
 
 @default:1
 @type: number

@@ -6,8 +6,7 @@ description: text
 
 # beforeCollapse
 
-@short:
-	fires before collapsing an item
+@short: fires before collapsing an item
 
 @params:
 - id		string,number		the id of an item 

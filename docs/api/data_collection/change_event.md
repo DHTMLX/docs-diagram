@@ -6,8 +6,7 @@ description: text
 
 # change
 
-@short:
-	fires on changes in the dataset of the diagram
+@short: fires on changes in the dataset of the diagram
     
 @params:
 * id    		string,number		the id of the changed item

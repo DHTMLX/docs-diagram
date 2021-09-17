@@ -6,8 +6,7 @@ description: text
 
 # move()
 
-@short:
-	moves an item to the defined position
+@short: moves an item to the defined position
     
 @params:
 - id 			string,number		the id of an item to move

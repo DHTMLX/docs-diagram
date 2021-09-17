@@ -6,8 +6,7 @@ description: text
 
 # eachParent()
 
-@short: 
-	iterates through all parents of the specified item
+@short: iterates through all parents of the specified item
 	
 @params:
 - id		string,number		the id of the item

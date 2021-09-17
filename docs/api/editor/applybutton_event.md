@@ -6,8 +6,7 @@ description: text
 
 # applyButton
 
-@short:
-fires after the Apply All button has been clicked
+@short: fires after the Apply All button has been clicked
 
 @example:
 editor.events.on("applyButton", function(){

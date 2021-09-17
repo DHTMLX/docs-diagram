@@ -6,8 +6,7 @@ description: text
 
 # exportData
 
-@short:
-fires after the Export Data button has been clicked
+@short: fires after the Export Data button has been clicked
 
 @example:
 editor.events.on("exportData", function() {

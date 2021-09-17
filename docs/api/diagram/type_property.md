@@ -8,8 +8,7 @@ description: text
 
 ```todo
 
-@short:
-	defines the type of a diagram
+@short: defines the type of a diagram
 
 @type: string
 

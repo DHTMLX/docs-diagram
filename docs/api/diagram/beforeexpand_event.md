@@ -7,8 +7,7 @@ description: text
 # beforeExpand
 
 
-@short:
-	fires before expanding an item
+@short: fires before expanding an item
 
 @params:
 - id		string,number		the id of an item 

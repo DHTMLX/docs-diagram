@@ -7,8 +7,7 @@ description: text
 # add()
 
 
-@short:
-	adds a new shape to the diagram
+@short: adds a new shape to the diagram
 
 @params:
 - new_item		object		the object of a new item 

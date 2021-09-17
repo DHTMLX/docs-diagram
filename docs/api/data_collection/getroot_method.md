@@ -6,8 +6,7 @@ description: text
 
 # getRoot()
 
-@short:
- 	returns the id of the root item by the id of its child
+@short:  	returns the id of the root item by the id of its child
     
     
 @params:

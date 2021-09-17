@@ -6,8 +6,7 @@ description: text
 
 # autoplacement
 
-@short:
-sets configuration for autoplacement
+@short: sets configuration for autoplacement
 
 @type: object
 

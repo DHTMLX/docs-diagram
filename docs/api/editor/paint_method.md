@@ -6,8 +6,7 @@ description: text
 
 # paint()
 
-@short:
-repaints the editor
+@short: repaints the editor
 
 @example:
 editor.paint();

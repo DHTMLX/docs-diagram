@@ -6,8 +6,7 @@ description: text
 
 # gridStep
 
-@short:
-	sets the size of a grid step that defines the step of moving a shape/group/swimlane
+@short: sets the size of a grid step that defines the step of moving a shape/group/swimlane
 
 @default:10
 @values: >=1

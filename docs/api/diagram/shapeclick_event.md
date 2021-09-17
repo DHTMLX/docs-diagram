@@ -6,8 +6,7 @@ description: text
 
 # shapeClick
 
-@short:
-	fires on clicking a shape
+@short: fires on clicking a shape
 
 @params:
 - id	 	string,number 		the shape id

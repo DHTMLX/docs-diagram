@@ -6,8 +6,7 @@ description: text
 
 # afterShapeIconClick
 
-@short:
-fires after clicking a control in the per-shape toolbar
+@short: fires after clicking a control in the per-shape toolbar
 
 @params:
 - `iconId: string` - the type or id of the toolbar control

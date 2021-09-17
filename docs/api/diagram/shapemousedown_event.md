@@ -6,8 +6,7 @@ description: text
 
 # shapeMouseDown
 
-@short:
-	fires when a pointing device button is pressed while the pointer is over a shape
+@short: fires when a pointing device button is pressed while the pointer is over a shape
     
 @params:
 - id	 	string,number 		the id of a shape

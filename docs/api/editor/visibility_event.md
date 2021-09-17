@@ -6,8 +6,7 @@ description: text
 
 # visibility
 
-@short:
-fires after the Visibility button has been clicked
+@short: fires after the Visibility button has been clicked
 
 @example:
 editor.events.on("visibility", function() {

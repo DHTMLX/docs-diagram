@@ -6,8 +6,7 @@ description: text
 
 # remove()
 
-@short:
-deletes the specified item from the diagram
+@short: deletes the specified item from the diagram
 
 @params:
 - id 		string,number			the id of the item that should be deleted

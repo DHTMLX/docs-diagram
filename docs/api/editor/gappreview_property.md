@@ -6,8 +6,7 @@ description: text
 
 # gapPreview
 
-@short:
-specifies the space between the items rendered in the left panel
+@short: specifies the space between the items rendered in the left panel
 
 @type: number | string
 @default: "6px 8px" (sets 6px gap for the top and bottom sides and 8px gap for the right and left sides)

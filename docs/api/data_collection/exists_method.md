@@ -6,8 +6,7 @@ description: text
 
 # exists()
 
-@short:
-checks whether the specified item exists in the diagram
+@short: checks whether the specified item exists in the diagram
 
 @params:
 - id 			string,number			the id of the item in question

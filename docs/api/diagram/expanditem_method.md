@@ -6,8 +6,7 @@ description: text
 
 # expandItem()
 
-@short:
-	shows all children of the target shape or expands the group/swimlane
+@short: shows all children of the target shape or expands the group/swimlane
 
 @params:
 - id		string,number		the id of the item

@@ -6,8 +6,7 @@ description: text
 
 # load()
 
-@short:
-	loads data from an external file
+@short: loads data from an external file
 
 @params:
 

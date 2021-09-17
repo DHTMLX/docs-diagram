@@ -6,8 +6,7 @@ description: text
 
 # defaults
 
-@short:
-specifies default configuration settings of the items
+@short: specifies default configuration settings of the items
 
 @type: object
 

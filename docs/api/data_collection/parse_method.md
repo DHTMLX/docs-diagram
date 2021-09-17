@@ -6,8 +6,7 @@ description: text
 
 # parse()
 
-@short:
-	loads data from a local data source 
+@short: loads data from a local data source 
 
 @params:
 

@@ -6,8 +6,7 @@ description: text
 
 # find()
 
-@short:
-finds the item that corresponds to the specified parameters
+@short: finds the item that corresponds to the specified parameters
 
 @params:
 - by 				string,function			the search criterion (either the key of the item attribute or a filtering function)

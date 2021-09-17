@@ -6,8 +6,7 @@ description: text
 
 # afterExpand
 
-@short:
-	fires after an item has been expanded
+@short: fires after an item has been expanded
 
 @params:
 - id		string,number		the id of an item which has been expanded

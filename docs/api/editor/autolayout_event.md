@@ -6,8 +6,7 @@ description: text
 
 # autoLayout
 
-@short:
-fires after the Auto Layout button has been clicked
+@short: fires after the Auto Layout button has been clicked
 
 @example:
 editor.events.on("autoLayout", function() {

@@ -6,8 +6,7 @@ description: text
 
 # editMode
 
-@short:
-switches the editor mode off and shows the preview mode, and vice versa
+@short: switches the editor mode off and shows the preview mode, and vice versa
 
 @type: boolean
 

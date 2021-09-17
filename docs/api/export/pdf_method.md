@@ -6,8 +6,7 @@ description: text
 
 # pdf()
 
-@short:
-exports a diagram to a PDF file
+@short: exports a diagram to a PDF file
 
 @params:
 

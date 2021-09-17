@@ -6,8 +6,7 @@ description: text
 
 # beforeEditorClose
 
-@short:
-	fires before the inline editor of an item is closed 
+@short: fires before the inline editor of an item is closed 
     
 @params:
 - id    	    string|number		the id of the item

@@ -6,8 +6,7 @@ description: text
 
 # afterEditorOpen
 
-@short:
-	fires after the inline editor of an item is opened 
+@short: fires after the inline editor of an item is opened 
     
 @params:
 - id    	    string|number		the id of the item

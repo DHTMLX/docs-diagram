@@ -6,8 +6,7 @@ description: text
 
 # resetButton
 
-@short:
-fires after the Reset Changes button has been clicked
+@short: fires after the Reset Changes button has been clicked
 
 @example:
 editor.events.on("resetButton",function(){

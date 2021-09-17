@@ -6,8 +6,7 @@ description: text
 
 # lineGap
 
-@short:
-	adds an offset for two connected shapes, and fills the gap with an additional line
+@short: adds an offset for two connected shapes, and fills the gap with an additional line
    
 
 @default:10

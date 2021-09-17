@@ -6,8 +6,7 @@ description: text
 
 # gridStep
 
-@short:
-sets the size of a grid step that defines the step of moving an item
+@short: sets the size of a grid step that defines the step of moving an item
 
 @type: number
 @default: 10

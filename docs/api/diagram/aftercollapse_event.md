@@ -7,8 +7,7 @@ description: text
 # afterCollapse
 
 
-@short:
-	fires after an item has been collapsed
+@short: fires after an item has been collapsed
 
 @params:
 - id		string,number		the id of an item which has been collapsed

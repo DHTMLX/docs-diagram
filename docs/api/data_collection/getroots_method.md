@@ -6,8 +6,7 @@ description: text
 
 # getRoots()
 
-@short: 
-	returns an array with ids of all root items of the diagram
+@short: returns an array with ids of all root items of the diagram
 
 @returns:
 - param    	array      	an array with ids of the root items

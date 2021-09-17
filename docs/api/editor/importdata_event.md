@@ -6,8 +6,7 @@ description: text
 
 # importData
 
-@short:
-fires after the Import Data button has been clicked
+@short: fires after the Import Data button has been clicked
 
 @params:
 - data  any the imported data
