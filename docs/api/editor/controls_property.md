@@ -6,8 +6,7 @@ description: text
 
 # controls
 
-@short:
-shows/hides specified controls in the editor
+@short: shows/hides specified controls in the editor
 
 @type: object
 

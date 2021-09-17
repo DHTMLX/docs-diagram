@@ -6,8 +6,7 @@ description: text
 
 # serialize()
 
-@short:
-serializes the data of the editor into an array of JSON objects
+@short: serializes the data of the editor into an array of JSON objects
 
 @returns:
 An array of JSON objects for each shape and link from the editor data.

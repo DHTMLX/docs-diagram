@@ -8,12 +8,11 @@ description: text
 
 ```todo
 
-@short:
-	creates a custom shape; sets sidebar options for its editing in the right panel of the editor
+@short: creates a custom shape; sets sidebar options for its editing in the right panel of the editor
 
 @params:
-- type      string      the unique name of a type of a shape
-- parameters     object    an object with the additional parameters of the <i>addShape</i> function 
+- `type: string` - the unique name of a type of a shape
+- `parameters: object` - an object with the additional parameters of the <i>addShape</i> function 
 
 @example:
 const diagram = new dhx.Diagram("diagram", {

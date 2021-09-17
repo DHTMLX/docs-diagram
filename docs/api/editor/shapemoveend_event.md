@@ -6,8 +6,7 @@ description: text
 
 # shapeMoveEnd
 
-@short:
-fires after a shape has been moved
+@short: fires after a shape has been moved
 
 @params:
 - `events: Event` - a native event object

@@ -6,8 +6,7 @@ description: text
 
 # png
 
-@short:
-exports a diagram to a PNG file
+@short: exports a diagram to a PNG file
 
 @params:
 

@@ -6,8 +6,7 @@ description: text
 
 # serialize()
 
-@short:
-	serializes the diagram data into an array of JSON objects
+@short: serializes the diagram data into an array of JSON objects
 
 @params:
 

@@ -6,8 +6,7 @@ description: text
 
 # beforeEditorEditing
 
-@short:
-	fires before the text value of an item is edited via the inline editor 
+@short: fires before the text value of an item is edited via the inline editor 
     
 @params:
 - value         string              the new value of the item

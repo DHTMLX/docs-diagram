@@ -6,8 +6,7 @@ description: text
 
 # beforeItemMove
 
-@short:
-fires before an item is moved
+@short: fires before an item is moved
 
 @params:
 - `events: Event` - a native event object

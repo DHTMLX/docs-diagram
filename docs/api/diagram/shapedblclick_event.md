@@ -6,11 +6,10 @@ description: text
 
 # shapeDblClick
 
-@short:
-	fires on double-clicking a shape
+@short: fires on double-clicking a shape
 
 @params:
-- id	 	string,number		the shape id
+`id: string | number` - the shape id
 
 
 @example:

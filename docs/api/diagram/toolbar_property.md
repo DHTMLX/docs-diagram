@@ -7,8 +7,7 @@ description: text
 # toolbar
 
 
-@short:
-sets a toolbar with buttons for shapes
+@short: sets a toolbar with buttons for shapes
 
 @type:array
 @example:

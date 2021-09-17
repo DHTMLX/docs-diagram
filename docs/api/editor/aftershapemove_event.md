@@ -6,8 +6,7 @@ description: text
 
 # afterShapeMove
 
-@short:
-fires when a shape is moving
+@short: fires when a shape is moving
 
 @params:
 - `events: Event` - a native event object

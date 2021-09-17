@@ -6,8 +6,7 @@ description: text
 
 # scalePreview
 
-@short:
-defines the scale of items rendered in the left panel of the editor
+@short: defines the scale of items rendered in the left panel of the editor
 
 @type: number
 

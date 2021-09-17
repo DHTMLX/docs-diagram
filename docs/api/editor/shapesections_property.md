@@ -6,8 +6,7 @@ description: text
 
 # shapeSections
 
-@short:
-specifies sections for structuring items in the left panel
+@short: specifies sections for structuring items in the left panel
 
 @type: object
 @example:

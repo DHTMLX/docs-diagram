@@ -6,8 +6,7 @@ description: text
 
 # afterEditorEditing
 
-@short:
-	fires after the text value of an item is edited via the inline editor  
+@short: fires after the text value of an item is edited via the inline editor  
     
 @params:
 - value         string              the new value of the item

@@ -9,8 +9,8 @@ description: text
 @short: fires on clicking an item
 
 @params:
-- id        string|number   the id of an item
-- event     MouseEvent      a native HTML event object
+- `id: string | number` - the id of an item
+- `event: MouseEvent` - a native HTML event object
 
 @example:
 diagram.events.on("itemClick", (id, event) => {

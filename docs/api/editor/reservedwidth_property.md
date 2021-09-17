@@ -6,8 +6,7 @@ description: text
 
 # reservedWidth
 
-@short:
-defines the left offset for the diagram
+@short: defines the left offset for the diagram
 
 @type: number
 @example:

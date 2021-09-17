@@ -6,8 +6,7 @@ description: text
 
 # typeConfig
 
-@short:
-	optional, defines the direction of the shapes in the mind map
+@short: optional, defines the direction of the shapes in the mind map
 
 @type: object
 

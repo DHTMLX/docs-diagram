@@ -9,9 +9,9 @@ description: text
 @short: fires on double-clicking a header of a group
 
 @params:
-- id            string|number   the id of a group
-- event         MouseEvent      a native HTML event object
-- subHeaderId   string          optional, the id of a subheader of a swimlane
+- `id: string | number` - the id of a group
+- `event: MouseEvent` - a native HTML event object
+- `subHeaderId: string` - optional, the id of a subheader of a swimlane
 
 
 @example:

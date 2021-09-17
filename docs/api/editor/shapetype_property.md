@@ -6,8 +6,7 @@ description: text
 
 # shapeType
 
-@short:
-the type of the items
+@short: the type of the items
 
 @type: string
 @default: "card" in the "default"/"org" mode; "topic" in the "mindmap" mode

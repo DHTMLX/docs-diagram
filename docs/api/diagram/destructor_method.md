@@ -6,10 +6,7 @@ description: text
 
 # destructor()
 
-@short:
-	removes a diagram instance and releases occupied resources
-
-@params:
+@short: removes a diagram instance and releases occupied resources
 
 @example:
 diagram.destructor();

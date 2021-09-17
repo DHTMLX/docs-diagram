@@ -7,11 +7,10 @@ description: text
 # scroll
 
 
-@short:
-	fires when a diagram is being scrolled
+@short: fires when a diagram is being scrolled
 
 @params:
-- pos		object			the position of a scroll		
+`pos: object` - the position of a scroll		
 
 @example:
 var diagram = new dhx.Diagram("diagram_container", { 

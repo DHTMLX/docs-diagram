@@ -6,8 +6,7 @@ description: text
 
 # beforeGroupMove
 
-@short:
-fires before a group or swimlane is moved
+@short: fires before a group or swimlane is moved
 
 @params:
 - `events: Event` - a native event object

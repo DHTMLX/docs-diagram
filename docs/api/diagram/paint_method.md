@@ -6,10 +6,7 @@ description: text
 
 # paint()
 
-@short:
-	repaints the diagram 
-
-@params:
+@short: repaints the diagram
 
 @example:
 diagram.paint();

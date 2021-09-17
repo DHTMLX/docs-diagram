@@ -6,8 +6,7 @@ description: text
 
 # findAll()
 
-@short:
-finds all the items that correspond to the specified parameters
+@short: finds all the items that correspond to the specified parameters
 
 @params:
 - by			string,function			 the search criterion (either the key of the item attribute or a filtering function)

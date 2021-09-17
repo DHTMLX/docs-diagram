@@ -6,8 +6,7 @@ description: text
 
 # zoomOut
 
-@short:
-fires after the Zoom Out button has been clicked
+@short: fires after the Zoom Out button has been clicked
 
 @example:
 editor.events.on("zoomOut", function() {

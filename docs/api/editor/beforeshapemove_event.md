@@ -6,8 +6,7 @@ description: text
 
 # beforeShapeMove
 
-@short:
-fires before a shape is moved
+@short: fires before a shape is moved
 
 @params:
 - `events: Event` - a native event object

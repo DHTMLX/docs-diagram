@@ -6,8 +6,7 @@ description: text
 
 # copy()
 
-@short:
-	creates a copy of a shape at the defined position
+@short: creates a copy of a shape at the defined position
     
 @params:
 - id 			string,number		the id of a shape to copy

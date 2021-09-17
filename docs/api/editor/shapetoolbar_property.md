@@ -6,8 +6,7 @@ description: text
 
 # shapeToolbar
 
-@short:
-defines configuration of the toolbar with controls for editing items
+@short: defines configuration of the toolbar with controls for editing items
 
 @type: boolean, array
 

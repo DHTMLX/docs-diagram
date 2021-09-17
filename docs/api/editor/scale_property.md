@@ -6,8 +6,7 @@ description: text
 
 # scale
 
-@short:
-defines the diagram editor scale
+@short: defines the diagram editor scale
 
 @type: number
 @default: 1

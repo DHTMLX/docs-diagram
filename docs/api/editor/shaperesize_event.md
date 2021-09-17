@@ -6,8 +6,7 @@ description: text
 
 # shapeResize
 
-@short:
-fires after a shape has been resized
+@short: fires after a shape has been resized
 
 @example:
 editor.events.on("shapeResize", function() {

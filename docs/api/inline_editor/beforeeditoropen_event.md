@@ -6,8 +6,7 @@ description: text
 
 # beforeEditorOpen
 
-@short:
-	fires before the inline editor of an item is opened 
+@short: fires before the inline editor of an item is opened 
     
 @params:
 - id    	    string|number		the id of the item

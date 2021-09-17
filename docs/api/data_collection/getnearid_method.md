@@ -6,8 +6,7 @@ description: text
 
 # getNearId()
 
-@short:
- 	looks for a nearest item relative to the specified one
+@short:  	looks for a nearest item relative to the specified one
     
     
 @params:

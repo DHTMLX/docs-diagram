@@ -6,8 +6,7 @@ description: text
 
 # select
 
-@short:
-	enables selection in the diagram
+@short: enables selection in the diagram
 
 @default:false
 @type: boolean

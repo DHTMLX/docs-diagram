@@ -9,8 +9,8 @@ description: text
 @short: fires on double-clicking a connector line
 
 @params:
-- id		string|number		the id of a connector
-- e     	MouseEvent		a native HTML event object
+- `id: string | number` - the id of a connector
+- `e: MouseEvent` - a native HTML event object
 
 @example:
 diagram.events.on("lineDblClick", (id, event) => {

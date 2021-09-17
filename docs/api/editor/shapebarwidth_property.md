@@ -6,8 +6,7 @@ description: text
 
 # shapeBarWidth
 
-@short:
-sets the width of the left panel of the editor
+@short: sets the width of the left panel of the editor
 
 @type: number, string
 

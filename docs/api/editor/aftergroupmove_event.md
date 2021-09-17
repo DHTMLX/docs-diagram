@@ -6,8 +6,7 @@ description: text
 
 # afterGroupMove
 
-@short:
-fires when a group or swimlane is moving
+@short: fires when a group or swimlane is moving
 
 @params:
 - `events: Event` - a native event object

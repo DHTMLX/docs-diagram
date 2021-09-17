@@ -6,8 +6,7 @@ description: text
 
 # getIndex()
 
-@short:
-returns the index of the item by its id
+@short: returns the index of the item by its id
 
 @params:
 

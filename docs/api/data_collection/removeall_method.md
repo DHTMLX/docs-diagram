@@ -7,8 +7,7 @@ description: text
 # removeAll()
 
 
-@short:
-	deletes all items from the diagram
+@short: deletes all items from the diagram
 
 @example:
 diagram.data.removeAll();

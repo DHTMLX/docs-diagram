@@ -6,8 +6,7 @@ description: text
 
 # exportStyles
 
-@short:
-	defines the styles that will be sent to the export service when exporting the diagram
+@short: defines the styles that will be sent to the export service when exporting the diagram
    
 
 @default:true

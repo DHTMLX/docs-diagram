@@ -6,11 +6,10 @@ description: text
 
 # changeGridStep
 
-@short:
-fires after the value of the grid step has been changed
+@short: fires after the value of the grid step has been changed
 
 @params:
-- step  number  the current value of the grid step
+- `step: number` - the current value of the grid step
 
 @example:
 editor.events.on("changeGridStep", function(step) {

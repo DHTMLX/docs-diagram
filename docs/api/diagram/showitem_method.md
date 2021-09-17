@@ -12,7 +12,7 @@ description: text()
 
 @params:
 
-- id		string,number		the id of the target item
+`id: string | number` - the id of the target item
 
 
 @example:
