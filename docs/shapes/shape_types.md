@@ -36,261 +36,6 @@ Diagram shapes are configured when you create a data set for loading into the di
 
 The list of configuration properties of a shape object is given in the [Shape properties](shapes/configuration_properties.md) article.
 
-Adding a custom shape
------------------------------
-
-```
-
-To create a new type of a shape, you need to use the [](../api/diagram/addshape_method.md) method. 
-
-<iframe src="https://snippet.dhtmlx.com/u1xqyo9w?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="700"></iframe>
-
-Let's consider a simple example of adding a custom shape into your Diagram:
-
-1) First, you need to initialize a diagram:
-
-~~~js
-// initialize Diagram
-var diagram = new dhx.Diagram("diagram");
-~~~ 
-
-2) Then, using the **addShape** method you need to create a custom shape, i.e. specify the unique name for the type of this shape and define a template for your custom shape: 
-
-~~~js
-diagram.addShape("networkCard", {
-    template: config => (
-        `<section class='network_template'>
-            <img src='${config.img}' alt='${config.text}'></img>
-            <span>${config.text}</span>
-            <span>${config.ip}</span>
-        </section>`
-    ),
-	defaults: {
-		width: 160,
-		height: 160,
-		img: "../network_image/desktop.svg",
-		text: "Network Card",
-		ip: "138.68.41.78"
-    }
-});
-~~~
-
-You can also define the default configuration for each shape with the custom type with the help of the **defaults** attribute. <br>In the code example above, we've defined the default *width, height, img, text and ip* values for all shapes of the *networkCard* type. 
-
-{{note **Note**, that all HTML and SVG tags must be closed in the template. 
-
-~~~js
-For example, an <img src="" alt=""> tag should look like this: 
-<img src="" alt=""></img>
-~~~ 
-
-}}
-
-3) After that, set the new custom type for a shape via the **type** attribute of the configuration object of the shape while preparing a data set for loading into the diagram:
-
-~~~js
-var networkDiagram = [
-    {
-        "id": 1,
-        "type": "networkCard", /*!*/
-        "x": 0,
-        "y": 0,
-        "text": "Remote expert desktop",
-        "ip": "192.168.32.2"
-    },
-    // more options
-]
-~~~
-
-To override values of the *text and ip* attributes set in the default config, we've specified the same properties with the new values in the data set. 
-Thus, the *"Network Card"* text value will be replaced with the *"Remote expert desktop"* one and the *"138.68.41.78"* ip value will be replaced with *"192.168.32.2"*. 
-
-**Note**, that the *ip* property is custom. For more details, see the [Custom properties of a shape object](diagram_guides/shapes_arrows_list.md#customprop) article.
-
-4) Finally, you need to load the prepared data set into the Diagram:
-
-~~~js
-diagram.data.parse(networkDiagram);
-~~~
-
-{{note The functionality is also available in the editor mode.}}
-
-{{note You can find out more about the **addShape** method in the [related article](api/diagram_addshape.md).}}
-
-```
-
-### Custom properties of a shape object
-
-
-
- set custom options as for a custom shape of a diagram as for a custom shape of a diagram editor. 
-
-~~~js
-var customShapeData = [
-    {
-        "id": "1",
-        "type": "template",
-        "title": "Milena Hunter",
-        "post": "Attending physician", /*!*/
-        "phone": "(124) 622-1256", /*!*/
-        "email": "mhunter@gmail.com", /*!*/
-        "img": "../avatar-25.jpg",
-
-        "height": 115, "width": 330
-    }
-];
-~~~
-
-The "post", "phone" and "email" properties are custom. 
-
-{{note Overriding the internal properties of the diagram shape is forbidden as it causes the incorrect work of the diagram and its editor.}}
-
-{{note The [editable](diagram_guides/shapes_arrows_list.md#shapeattrs) property of a shape is not available for a custom shape.}}
-
-For details about interaction between custom properties and the Diagram Editor, see the [Configuring Right Panel](diagram_guides/editor_mode.md) article.
-
-### Custom properties of a shape object
-
-Starting from v3.0, it is also possible to set custom options as for a custom shape of an org chart as for a custom shape of an org chart editor. 
-
-~~~js
-var customShapeData = [
-    {
-        "id": "1",
-        "type": "template",
-        "title": "Milena Hunter",
-        "post": "Attending physician", /*!*/
-        "phone": "(124) 622-1256", /*!*/
-        "email": "mhunter@gmail.com", /*!*/
-        "img": "../avatar-25.jpg",
-
-        "height": 115, "width": 330
-    }
-];
-~~~
-
-The "post", "phone" and "email" properties are custom. 
-
-{{note Overriding of the internal properties of the org chart shape is forbidden as it causes the incorrect work of the org chart and its editor.}}
-
-{{note The [editable](orgchart_guides/orgchart_shapes_types.md#shapeattrs) property of a shape is not available for a custom shape.}}
-
-For details about interaction between custom properties and the Org Chart Editor, see the [Configuring Right Panel](orgchart_guides/editor_mode.md) article.
-
-
-
-
-~~~js
-const data = [
-	// shapes
-    { id: "1", text: "Chairman & CEO" },
-    { id: "2", text: "Manager", parent: "1" },
-    { id: "3", text: "Technical Director", parent: "1" },
-    { id: "4", text: "Manager", parent: "1" },
-    { id: "5", text: "Technical Director", parent: "1" },
-    { id: "2.1", text: "Marketer", parent: "2" },
-    { id: "2.2", text: "Team Lead ", parent: "2" },
-];
-
-var diagram = new dhx.Diagram("diagram", {
-	type: "mindmap",
-});
-diagram.data.parse(data);
-~~~
-
-
-
-## Custom Shape Configuration
-
-You may want to [create a mind map with custom shapes](mindmap_guides/mindmap_shapes_connectors.md#creatingcustomshape). In this case, besides the [standard options](#configurationofshapeobjects) of the "topic"- type shape, you can set custom attributes for your custom shapes when preparing a data set.   
-
-~~~js
-var customShapeData = [
-    {
-		"id": "main",
-		"title": "Main page",
-		"cr": 33,
-		"br": 12,
-		"conversion": 25,
-		"view": "../img_01.png",
-		"info": "Develop enterprise web and mobile applications with rich interface",
-		"link": "https://dhtmlx.com/"
-    },
-];
-~~~
-
-In the code snippet above, all properties are custom except for "id". 
-
-{{note Overriding of the internal properties of the mind map shape is forbidden as it causes the incorrect work of the mind map and its editor.}}
-
-{{note The [editable](mindmap_guides/mindmap_shapes_connectors.md#configurationoftheshape) property of a shape is not available for a custom shape.}}
-
-For details about interaction between custom properties and the Mind Map Editor, see the [Configuring Right Panel](mindmap_guides/editor_mode.md) article.
-
-### Adding event handlers for the custom shape
-
-```todo
-Starting with v3.1, you can add custom event handlers to the custom shapes via the **eventHandlers** attribute of the [addShape()](api/diagram_addshape.md) method:
-
-~~~js
-const diagram = new dhx.Diagram("diagram", {
-    type: "mindmap", // or type: "default", or type: "org"
-    defaultShapeType: "flowView",
-    typeConfig: {
-        side: {
-            right: ["suite"]
-        }
-    },
-});
-
-function template({ title, view, cr, br, conversion, link }) {
-    ...
-}
-
-function openModalInfo(title, text) {
-     ...
-}
-
-diagram.addShape("template", {
-	template: template,
-	defaults: {
-		height: 190,
-		width: 97
-	},
-	eventHandlers: { /*!*/
-        onclick: { /*!*/
-            info: function(event, item) { /*!*/
-                openModalInfo(item.title, item.info); /*!*/
-            } /*!*/
-        } /*!*/
-    }/*!*/
-});
-
-diagram.data.load("../dataset.json");
-~~~
-
-{{editor    https://snippet.dhtmlx.com/do1jwmw1	Diagram. Site map and user flow example with custom shapes}}
-
-The **eventHandlers** object includes a set of *key:value* pairs, where:
-
-- *key* - the name of the event. Note, that at the beginning of the event name the **'on'** prefix is used (onclick, onmouseover).
-- *value* - an object that contains a *key:value* pair, where *key* is the css class name that the handler will be applied to and *value* is a function that takes two parameters:
-	- **event** - an event object
-	- **shape** - the shape object
-
-We recommend that you use different css classes for different custom shapes.
-
-{{note The functionality is also available in the editor mode.}}
-
-{{editor    https://snippet.dhtmlx.com/do1jwmw1	Diagram. Site map and user flow example with custom shapes}}
-
-For more details on creating a custom shape, see the [Creating Custom Shapes](common_guides/configuration.md#creatingcustomshapes) article.
-
-```
-
-
-
-
 Setting the type of a shape
 ----------------------
 
@@ -337,6 +82,106 @@ diagram.data.parse(data);
 
 **Related samples**: [Diagram. Mixed](https://snippet.dhtmlx.com/15acqc24) and [Diagram. Org chart. Mixed.](https://snippet.dhtmlx.com/yd6l6grr)
 }}
+
+Adding a custom shape
+-----------------------------
+
+To create a custom shape, you need to use the [](../api/diagram/addshape_method.md) method.
+
+Let's imagine, you want to create a new `networkCard` shape which should render an image, text, and IP address.
+
+<iframe src="https://snippet.dhtmlx.com/u1xqyo9w?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="550"></iframe>
+
+To do that, you need to take the following two steps:
+
+1\. Set the unique name for the type of a custom shape and specify a template for rendering the shape in the diagram via the [](../api/diagram/addshape_method.md) method:
+
+~~~js
+diagram.addShape("networkCard", {
+    template: ({ img, text, ip }) => (`
+        <section class="dhx-diagram-demo_network-card">
+            <img src="${img}" alt="${text}"></img>
+            <span>${text}</span>
+            <span>${ip}</span>
+        </section>
+    `),
+	defaults: {
+		width: 160,
+		height: 160,
+		img: path.network + "desktop.svg",
+		text: "Network Card",
+		ip: "138.68.41.78"
+    }
+});
+~~~
+
+In the code example above, we've also defined the default *width, height, img, text and ip* values for all shapes of the *networkCard* type via the **defaults** attribute.
+
+{{note **Note**, that all HTML and SVG tags must be closed in the template. 
+
+For example, an `<img src="" alt="">` tag should look like this: `<img src="" alt=""></img>`.
+
+}}
+
+2\. Use the unique name of the new shape type as a value of the **type** attribute inside the shape object while preparing a data set for loading into the diagram:
+
+~~~js {4}
+const networkDiagram = [
+    {
+        "id": 1,
+        "type": "networkCard",
+        "x": 0,
+        "y": 380,
+        // redefine the default values of the text and ip attributes
+        "text": "Remote expert desktop",
+        "ip": "192.168.32.2"
+    },
+    // more options
+]
+~~~
+
+To override the default values of the *text* and *ip* attributes, we've specified the same properties with the new values in the configuration of a shape. 
+Thus, the *"Network Card"* text value will be replaced with the *"Remote expert desktop"* one and the *"138.68.41.78"* ip value will be replaced with *"192.168.32.2"*. 
+
+### Configuring custom shapes
+
+Except for the configuration properties provided by DHTMLX Diagram, you can add [your own properties](shapes/configuration_properties.md/#custom-properties-of-a-shape-object) into the configuration object of a custom shape:
+
+~~~js {8}
+const customShapeData = [
+    {
+        "id": 1,
+        "type": "networkCard",
+        "x": 0,
+        "y": 380,
+        "text": "Remote expert desktop",
+        "ip": "192.168.32.2"
+    },
+];
+~~~
+
+The "ip" property is custom. 
+
+{{note Overriding the internal properties of the diagram shape is forbidden as it causes the incorrect work of the diagram and its editor.}}
+
+{{note The **[editable](../configuration_properties/)** property of a shape is not available for a custom shape.}}
+
+## Event handlers for custom shapes
+
+You may need to add handlers to the events occurred when the user interacts with custom shapes. It can be done by adding event handlers to HTML elements of a custom template of a shape via the **eventHandlers** attribute of the [](../api/diagram/addshape_method.md) method. 
+
+In the example below, a context menu will be opened after the user clicks on the icon with the **toggle_container** class:
+
+<iframe src="https://snippet.dhtmlx.com/8fubjmlz?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="550"></iframe>
+
+The **eventHandlers** object includes a set of *key:value* pairs, where:
+
+- *key* - the name of the event. Note, that at the beginning of the event name the **'on'** prefix is used (onclick, onmouseover).
+- *value* - an object that contains a *key:value* pair, where *key* is the css class name that the handler will be applied to and *value* is a function that takes two parameters:
+	- **event** - an event object
+	- **shape** - the shape object
+
+**We recommend that you use different css classes for different custom shapes.**
 
 Arrangement of shapes in the mindmap mode of Diagram
 --------------------
