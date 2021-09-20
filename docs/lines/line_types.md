@@ -4,172 +4,43 @@ title: Line Types
 description: text
 ---
 
-
 # Line types
 
-Org chart mode
----------------
+## Diagram connector lines
 
-The look and the order of connecting org chart shapes is defined by the configuration of the connector objects. You can: 
-
-- specify the starting and ending shapes;
-- set the type of the connector line.
-
-<br>
-
-<img style="display:block; margin-left:auto;margin-right:auto;" src="orgchart_connectors.png">
-
-
-Default mode
-------------
-
-The look and the way of connecting shapes is defined by the configuration of the connector objects. You can: 
-
-- specify the starting and ending shapes;
-- set the type of the connector line and the arrow;
-- define particular sides of shapes that should perform as the initial/final points of the connector line.
-
-<img style="display:block; margin-left:auto;margin-right:auto;" src="diagram_with_arrows.png">
-
-
-
-Setting Type of Connector
--------------------------
-
-### Setting the default connector type
-
-You can set a common type for all the connectors of the diagram via the api/diagram_defaultlinktype_config.md property of the diagram config object:
-
-~~~js
-var diagram = new dhx.Diagram("diagram_container", { 
-    defaultLinkType:"dash"        /*!*/
-});
-~~~
-
-This value is applied, if the connector config doesn't contain the "type" property.
-
-### Setting the type for a separate connector
-
-Use the name of the necessary type as a value of the **type** attribute inside the connector object, while preparing a data set for loading into the [DHTMLX Diagram](common_guides/loading_data.md#preparingdatatoload):
-
-~~~js
-// data to load
-var data = [
-   // connectors
-   { "id": "1-2", "from": "1", "to": "2", "type": "line", "forwardArrow": "filled" },
-   { "id": "2-3", "from": "2", "to": "3", "type": "dash", "toSide": "bottom", 
-   		"forwardArrow": "filled" },
-   { "id": "2-4", "from": "2", "to": "4", "type": "dash", "toSide": "top", 
-   		"forwardArrow": "filled" }
-]
-
-// initializing a diagram
-var diagram = new dhx.Diagram("diagram_container");
-diagram.data.parse(data);
-~~~
-
-
-Setting the default connector type (org chart)
-------------------------------
-
-You can set a common type for all the connectors of the Org Chart via the api/diagram_defaultlinktype_config.md property of the diagram config object:
-
-~~~js
-var diagram = new dhx.Diagram("diagram_container", { 
-    type: "org", 
-    defaultLinkType:"line"        /*!*/
-});
-~~~
-
-This value is applied, if the connector config doesn't contain the "type" property.
-
-Setting type for a separate connector
---------------------------------------
-
-Use the name of the necessary type as a value of the **type** attribute inside the connector object, while [preparing a data set for loading into the org chart](common_guides/loading_data.md#preparingdatatoload).
-
-~~~js
-// data to load
-var data = [
-	// shapes
-	{ "id": "1", "text": "Chairman & CEO"},
-	{ "id": "2", "text": "Manager"},
-	{ "id": "3", "text": "Technical Director"},
-    
-	// connectors
-	{ "id": "1-2", "from": "1", "to": "2"},
-	{ "id": "1-3", "from": "1", "to": "3", "type": "dash" } /*!*/
-]
-
-// initializing an org chart
-var diagram = new dhx.Diagram("diagram_container", { type: "org" });
-diagram.data.parse(data);
-~~~
-
-API properties
---------------------
+The look and the way of connecting shapes is defined by the mode you initialize a diagram in: [default](#default-mode), [org](#org-mode), or [mindmap](#mindmap-mode).
 
 ### Default mode
 
-<h3 id="connectorattrs">Properties of a connector object</h3>
+In this mode, various shapes can be connected in the necessary sequence to make up a scheme of a particular process.
 
-A connector object can have the following properties:
+<iframe src="https://snippet.dhtmlx.com/e6zm6wh1?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="650"></iframe>
 
-- **id** - (*string*/*number*) the id of a connector;
-- **from** - (*string*/*number*) the id of the parent shape;
-- **to** - (*string*/*number*) the id of the child shape;
-- **type** - (*string*) the type of the connector line: "*line*" (default) or "*dash*";
-- **forwardArrow** - (*string*) sets a forward arrow connector and defines the type of the arrow ("filled" by default);
-- **backArrow** - (*string*) sets a back arrow connector and defines the type of the arrow ("filled" by default);
-- **fromSide** - (*string*) the side of the shape from which connection will start ("*top*","*bottom*","*left*","*right*","*center*");
-- **toSide** - (*string*) the side of the shape to which a different shape will be attached ("*top*","*bottom*","*left*","*right*","*center*");
-- **cornersRadius** - (*number*) the radius of rounding corners of a connector.
+### Org mode
 
-### Org chart mode/Mind map mode
+This mode of a diagram represents an organizational chart that contains a set of shapes connected by lines in a hierarchical order.
 
-A connector object can have the following properties:
+<iframe src="https://snippet.dhtmlx.com/98tzmzpg?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="650"></iframe>
 
-- **id** - the unique id of the connector;
-- **from** - the id of the parent shape;
-- **to** - the id of the child shape;
-- **type** - the type of the connector:"*line*" (default) or "*dash*".
+It is possible to define vertical direction of connecting shapes for the parent shape via the **dir: "vertical"** configuration attribute of the shape object.
 
+### Mindmap mode
 
-Connections between shapes (mindmap/orgchart)
--------------------------
+The mindmap mode is used to render one more kind of a hierarchical diagram. The shapes are connected by curved lines and arranged around a central shape.
+<iframe src="https://snippet.dhtmlx.com/lo1vm0e8?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="650"></iframe>
 
-<img style="display:block; margin-left:auto;margin-right:auto;" src="connector_mindmap.png">
+The mode is useful when you need to represent a core topic or idea surrounded by the branches of the subtopics. 
 
-To connect shapes in the mind map, you can apply one of the following two ways:
+## Configuring connector lines
 
-- **using the "parent attribute"**
+To connect shapes in Diagram, you can apply one of the following two ways:
 
-You can specify the **parent** property in the configuration object of the shape and set the id of its parent shape as the value:
+- **using connector line objects**
+
+You need to specify separate objects that will describe the logic of connecting shapes. For example: 
 
 ~~~js
-var data = [
-	// shapes
-	{ id: "1", text: "Chairman & CEO" },
-    { id: "2", text: "Manager", parent: "1" },
-    { id: "3", text: "Technical Director", parent: "1" },
-    { id: "4", text: "Manager", parent: "1" },
-    { id: "5", text: "Technical Director", parent: "1" }
-];
-~~~
-
-In this case, all the connectors will have the same type. 
-
-- **using connector objects**
-
-This way allows you to define the look of the connectors because you can set the type of the connector line in the configuration of the connector object. The object can have the following properties:
-
-- **id** - the unique id of the connector;
-- **from** - the id of the parent shape;
-- **to** - the id of the child shape;
-- **type** - optional, the type of the connector:"line" (default) or "dash".
-
-~~~js
-var data = [
+const data = [
 	// shapes
 	{ id: "1", text: "Chairman & CEO" },
     { id: "2", text: "Manager" },
@@ -184,31 +55,59 @@ var data = [
 ];
 ~~~
 
+See [the full list of configuration properties of a connector line object](../configuration_properties/).
 
+- **using the "parent attribute"**
 
-Connectors configuration (default mode)
-----------------------------
+{{note This way does not work in the default mode of Diagram.}}
 
-To connect shapes in a diagram, you need to specify separate objects that will describe the logic of connecting shapes. For example:
+You can specify the **parent** property in the configuration object of the shape and set the id of its parent shape as the value:
 
 ~~~js
-var data = [
+const data = [
 	// shapes
-   	{ "id": 1, "x": 200, "y": 0, "text": "Arrival", "type": "process" },
-	{ "id": 2, "x": 200, "y": 130, "text": "Load", "type": "process" },
-	{ "id": 2.1, "x": 480, "y": 130, "text": "Part", "type": "process" },
-	{ "id": 3, "x": 200, "y": 260, "text": "Process Plan", "type": "process" },
-	{ "id": 3.1, "x": 0, "y": 240, "text": "Unit Load", "type": "process" },
-    
-    // connectors
-    { "id": "1-2", "from":"1", "to":"2", "type":"line", "forwardArrow":"filled" },
-	{ "id": "2-3", "from":"2", "to":"3", "type":"line", "forwardArrow":"filled" },
-	{ "id": "2-2.1", "from":"2", "to":"2.1", "type":"line", "backArrow":"filled" },
-	{ "id": "2-3.1", "from":"2", "to":"3.1", "type":"line", "forwardArrow":"filled", 
-      "toSide":"top" 
-    }
+	{ id: "1", text: "Chairman & CEO" },
+    { id: "2", text: "Manager", parent: "1" },
+    { id: "3", text: "Technical Director", parent: "1" },
+    { id: "4", text: "Manager", parent: "1" },
+    { id: "5", text: "Technical Director", parent: "1" }
 ];
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/fq22oqkz	Diagram. Arrow Connectors}}
+In this case, all the connectors will have the same type. 
 
+Setting the type of a connector line
+-------------------------
+
+### Setting the default connector type
+
+You can set a common type for all the connectors of the diagram via the api/diagram_defaultlinktype_config.md property of the diagram config object:
+
+~~~js
+const diagram = new dhx.Diagram("diagram_container", {
+    type: "default",
+    defaultLinkType:"dash"
+});
+diagram.data.parse(data);
+~~~
+
+This value is applied, if the connector config doesn't contain the "type" property.
+
+### Setting the type for a separate connector
+
+Use the name of the necessary type as a value of the **type** attribute inside the connector line object, while [preparing a data set for loading into Diagram](../../guides/loading_data/#preparing-data-to-load):
+
+~~~js
+// data to load
+const data = [
+   // connectors
+    { from: 1, to: 2, type: "dash", forwardArrow: "filled", stroke: "#7D8495" },
+    { from: 2, to: 3, type: "dash", toSide: "bottom", forwardArrow: "filled", stroke: "#7D8495" },
+    { from: 2, to: 7.5, type: "dash", fromSide: "bottom", toSide: "top", backArrow:"filled", stroke: "#7D8495" },
+    { from: 2, to: 3.2, type: "dash", fromSide: "top", toSide: "top", stroke: "#7D8495" },
+]
+
+// initializing a diagram
+const diagram = new dhx.Diagram("diagram_container");
+diagram.data.parse(data);
+~~~
