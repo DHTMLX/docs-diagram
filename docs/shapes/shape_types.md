@@ -32,7 +32,17 @@ Tip: Use the name of the necessary shape as a value of the **type** attribute in
 
 ## Configuring shapes
 
-Diagram shapes are configured when you create a data set for loading into the diagram. You can find some examples of data sets in the [Preparing data to load](../../guides/loading_data/#preparing-data-to-load) article.
+Diagram shapes are configured when you create a data set for loading into the diagram. For example:
+
+~~~js
+const data = [
+    { id: 1, x: 280, y: 0, text: "Start", type: "start" },
+    { id: 2, x: 280, y: 120, text: "Read N", type: "output" },
+    { id: 3, x: 280, y: 240, text: "M=1\nF=2", type: "process" },
+    { id: 4, x: 280, y: 360, text: "F=F*M", type: "process" },
+    { id: 5, x: 280, y: 480, text: "Is M=N?", type: "decision" },
+];
+~~~
 
 The list of configuration properties of a shape object is given in the [Shape properties](shapes/configuration_properties.md) article.
 
