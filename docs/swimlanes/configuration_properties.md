@@ -6,7 +6,7 @@ description: text
 
 # Swimlane and Swimlane cell properties
 
-<h3 id="swimlane_properties"><b>Properties of a swimlane object</b></h3>
+## Properties of a swimlane
 
 A swimlane object can include the following configuration properties:
 
@@ -71,12 +71,13 @@ A swimlane object can include the following configuration properties:
   - the other attributes of **subHeaderCols** are the same as the attributes of **subHeaderRows** (check the details above);
 - **[key: string]: any**  - your own property with your own logic to be implemented under the hood.
 
+```todo
 {{note Check the related sample: [Diagram. Configuring columns and rows in swimlanes](https://snippet.dhtmlx.com/uzx5ulal).}}
+```
 
-The configuration properties of a swimlane cell are given [below](diagram_guides/shapes_arrows_list.md#swimlane_cell_configuration).
+## Properties of a swimlane cell
 
-
-### Properties of a swimlane cell
+The configuration properties of a swimlane cell are given below:
 
 - **type** - (*string*) the type of a swimlane cell, set it to "$sgroup";
 - **id** - (*string, number*) the unique id of a swimlane cell;

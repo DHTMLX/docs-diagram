@@ -83,6 +83,7 @@ You can select the necessary connector and update its attributes via the sidebar
 
 Editing groups
 -----------------
+You can put several shapes or other groups into a group and move them as a unit, copy, or delete.
 
 ### Editing via interface elements
 
