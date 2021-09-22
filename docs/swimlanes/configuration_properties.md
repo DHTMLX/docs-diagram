@@ -1,6 +1,6 @@
 ---
-sidebar_label: Swimlane properties
-title: Swimlane Properties 
+sidebar_label: Swimlane API properties
+title: Swimlane API Properties 
 description: text
 ---
 

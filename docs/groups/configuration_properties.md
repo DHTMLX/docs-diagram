@@ -1,6 +1,6 @@
 ---
-sidebar_label: Group properties
-title: Group Properties 
+sidebar_label: Group API properties
+title: Group API Properties 
 description: text
 ---
 

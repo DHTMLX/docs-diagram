@@ -1,10 +1,12 @@
 ---
-sidebar_label: Group overview
-title: Group Overview 
+sidebar_label: Configuring groups
+title: Configuring Groups 
 description: text
 ---
 
-# Group overview
+# Configuring Groups
+
+## Group overview
 
 A group is a separate kind of the Diagram items. You can draw simple or more complicated schemes by grouping shapes or other groups in different ways. It is possible to create as one-level groups as nested groups, to configure their appearance and behavior. 
 

@@ -333,8 +333,10 @@ module.exports = {
         type: "category",
         label: "Shapes",
         items: [
-          "shapes/shape_types",
           "shapes/configuration_properties",
+          "shapes/default_shapes",
+          "shapes/custom_shape",
+          //"shapes/shape_types",
         ],
       },
       // Lines
@@ -342,8 +344,8 @@ module.exports = {
         type: "category",
         label: "Lines",
         items: [
-          "lines/line_types",
           "lines/configuration_properties",
+          "lines/line_types",
         ],
       },
       // Groups
@@ -351,8 +353,8 @@ module.exports = {
         type: "category",
         label: "Groups",
         items: [
-          "groups/index",
           "groups/configuration_properties",
+          "groups/index",
         ],
       },
       // Swimlanes
@@ -360,8 +362,8 @@ module.exports = {
         type: "category",
         label: "Swimlanes",
         items: [
-          "swimlanes/index",
           "swimlanes/configuration_properties",
+          "swimlanes/index",
         ],
       },
     ]
