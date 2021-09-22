@@ -1,22 +1,22 @@
 ---
-sidebar_label: Line types
-title: Line Types
+sidebar_label: Configuring lines
+title: Configuring Lines
 description: text
 ---
 
-# Line types
+# Configuring Lines
 
-## Diagram connector lines
+## Overview
 
 The look and the way of connecting shapes is defined by the mode you initialize a diagram in: [default](#default-mode), [org](#org-mode), or [mindmap](#mindmap-mode).
 
-### Default mode
+### Lines in the default mode
 
 In this mode, various shapes can be connected in the necessary sequence to make up a scheme of a particular process.
 
 <iframe src="https://snippet.dhtmlx.com/e6zm6wh1?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="650"></iframe>
 
-### Org mode
+### Lines in the org mode
 
 This mode of a diagram represents an organizational chart that contains a set of shapes connected by lines in a hierarchical order.
 
@@ -24,14 +24,17 @@ This mode of a diagram represents an organizational chart that contains a set of
 
 It is possible to define vertical direction of connecting shapes for the parent shape via the **dir: "vertical"** configuration attribute of the shape object.
 
-### Mindmap mode
+### Lines in the mindmap mode
 
 The mindmap mode is used to render one more kind of a hierarchical diagram. The shapes are connected by curved lines and arranged around a central shape.
 <iframe src="https://snippet.dhtmlx.com/lo1vm0e8?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="650"></iframe>
 
 The mode is useful when you need to represent a core topic or idea surrounded by the branches of the subtopics. 
 
-## Configuring connector lines
+The arrangement of child shapes relative to the root shape is defined automatically by the main algorithm. 
+To change the default direction of the child shapes, use the [](../api/diagram/typeconfig_property.md) configuration property on initialization of the diagram.
+
+## Setting connections between shapes
 
 To connect shapes in Diagram, you can apply one of the following two ways:
 

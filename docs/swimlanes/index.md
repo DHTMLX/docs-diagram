@@ -1,10 +1,12 @@
 ---
-sidebar_label: Swimlane overview
-title: Swimlane Overview 
+sidebar_label: Configuring swimlanes
+title: Configuring Swimlanes 
 description: text
 ---
 
-# Swimlane overview 
+# Configuring Swimlanes
+
+## Swimlane overview
 
 A swimlane represents a rectangular element of Diagram that consists of cells (or lanes) arranged vertically or horizontally. Each cell (*type: "$sgroup"*) can include child items such as shapes, or groups. 
 

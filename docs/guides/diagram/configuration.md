@@ -6,7 +6,7 @@ description: text
 
 # Diagram Configuration 
 
-dhtmlxDiagram provides a wide range of options for configuration. You can zoom into and out from a diagram, change the type of shapes and their margins, create your own types of shapes,
+DHTMLX Diagram provides a wide range of options for configuration. You can zoom into and out from a diagram, change the type of shapes and their margins, create your own types of shapes,
 apply selection, define the size of grid cells and set a toolbar with icons for the shapes.
 
 [Check the list of possible config properties](common_guides/initialization.md#listofproperties).
@@ -87,7 +87,7 @@ var diagram = new dhx.Diagram("diagram_container", { type: "org",
 Configuring Autoplacement
 ------------------------------
 
-Starting from v3.0, the dhtmlxDiagram library lets you configure settings for automatically arranging connected shapes of Diagram in the hierarchical structure. You can specify the api/diagram_autoplacement_config.md property in the configuration object of Diagram and configure the mode of connecting shapes and distance between unconnected diagrams:
+Starting from v3.0, the DHTMLX Diagram library lets you configure settings for automatically arranging connected shapes of Diagram in the hierarchical structure. You can specify the api/diagram_autoplacement_config.md property in the configuration object of Diagram and configure the mode of connecting shapes and distance between unconnected diagrams:
 
 ~~~js
 var diagram = new dhx.Diagram("container", {
@@ -129,7 +129,7 @@ diagram.data.parse(data);
 Setting Toolbar for Shapes
 --------------------------
 
-dhtmlxDiagram allows you to specify a toolbar with icons for Diagram shapes to simplify interaction with shapes. You can enable the toolbar via the 
+DHTMLX Diagram allows you to specify a toolbar with icons for Diagram shapes to simplify interaction with shapes. You can enable the toolbar via the 
 api/diagram_toolbar_config.md option of the diagram config object: 
 
 ~~~js
@@ -172,11 +172,12 @@ var diagram = new dhx.Diagram("diagram_container", {
 
 You can also define the way of processing the behavior of the diagram during selecting/unselecting of shapes via the predefined set of events:
 
+```todo  добавить ссылку
 - api/selection/events/diagram_onbeforeselect_event.md
 - api/selection/events/diagram_onafterselect_event.md
 - api/selection/events/diagram_onafterunselect_event.md
 - api/selection/events/diagram_onafterunselect_event.md
-
+```
 
 
 

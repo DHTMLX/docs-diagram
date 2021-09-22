@@ -8,7 +8,7 @@ description: text
 
 ## Default Diagram shapes
 
-The DHTMLX Diagram library provides you with a set of default types of shapes that you can use to build your diagram. The default shapes include:
+The DHTMLX Diagram library provides you with a set of default shapes that you can use to build your diagram. The default shapes include:
 
 - a set of the flow chart shapes:
 
@@ -16,23 +16,23 @@ The DHTMLX Diagram library provides you with a set of default types of shapes th
 
 Tip: Use the name of the necessary shape as a value of the **type** attribute inside the shape object, while [preparing a data set for loading into the diagram](common_guides/loading_data.md#preparingdatatoload).
 
-- the `"card"` type that is the default type of shapes in the "org chart" mode of Diagram:
+- the `"card"` shape that is the default shape in the "org chart" mode of Diagram:
 
 <iframe src="https://snippet.dhtmlx.com/5ign6fyy?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="550"></iframe>
 
-- the `"img-card"` type that can be used for adding shapes with images. Don't forget to provide images for cards via the **img** attribute of the shape object.
+- the `"img-card"` shape that contains an image. Don't forget to provide images for cards via the **img** attribute of the shape object.
 
 <iframe src="https://snippet.dhtmlx.com/qnx3ekin?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="550"></iframe>
 
-- the `"topic"` type that is the default type of shapes in the "mindmap" mode of Diagram.
+- the `"topic"` shape that is the default shape in the "mindmap" mode of Diagram.
 
 <iframe src="https://snippet.dhtmlx.com/3igf1gd5?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="350"></iframe>
 
 {{note Any of the above shapes can be added into the diagram of any mode ("default", "org", or "mindmap" one). }}
 
-## Configuring shapes
+## Setting the type of a shape
 
-Diagram shapes are configured when you create a data set for loading into the diagram. For example:
+To set the type of a shape, specify the name of the shape as a value of the [type](../configuration_properties/) property inside the shape object while preparing a related JSON structure to load into the diagram:
 
 ~~~js
 const data = [
@@ -44,7 +44,10 @@ const data = [
 ];
 ~~~
 
-The list of configuration properties of a shape object is given in the [Shape properties](shapes/configuration_properties.md) article.
+{{note To configure the shape, you should apply the properties peculiar to the type that is set for the shape. <br>See [the full list of configuration properties of a shape object](shapes/configuration_properties.md).
+
+**Related samples**: [Diagram. Mixed](https://snippet.dhtmlx.com/15acqc24) and [Diagram. Org chart. Mixed.](https://snippet.dhtmlx.com/yd6l6grr)
+}}
 
 Setting the type of a shape
 ----------------------
@@ -88,10 +91,7 @@ var diagram = new dhx.Diagram("diagram_container");
 diagram.data.parse(data);
 ~~~
 
-{{note To configure the shape, you should apply the properties peculiar to the type that is set for the shape. <br>See [the full list of configuration properties of a shape object](shapes/configuration_properties.md).
 
-**Related samples**: [Diagram. Mixed](https://snippet.dhtmlx.com/15acqc24) and [Diagram. Org chart. Mixed.](https://snippet.dhtmlx.com/yd6l6grr)
-}}
 
 Adding a custom shape
 -----------------------------
@@ -202,6 +202,7 @@ To change the default direction of the child shapes, use the [](../api/diagram/t
 {{note The **typeConfig** configuration property is not available in Diagram Editor.}}
 
 The property allows you:
+
 - [to set the direction for all child shapes at once](#setting-direction-for-all-child-shapes)
 - [to specify individual direction for specific child shapes](#setting-direction-for-individual-child-shape)
 

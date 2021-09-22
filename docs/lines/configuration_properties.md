@@ -1,10 +1,10 @@
 ---
-sidebar_label: Line properties
-title: Line Properties 
+sidebar_label: Line API properties
+title: Line API Properties 
 description: text
 ---
 
-# Line properties
+# Line API properties
 
 ## Common properties
 
