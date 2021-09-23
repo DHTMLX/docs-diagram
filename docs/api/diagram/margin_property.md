@@ -33,3 +33,5 @@ The default values of margins are:
 ~~~js
 { x:40, y:40, itemX:40, itemY: 40 }
 ~~~
+
+{{note The property works only in the org mode of Diagram.}}

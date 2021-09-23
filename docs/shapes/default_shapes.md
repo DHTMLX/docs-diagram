@@ -32,7 +32,7 @@ Tip: Use the name of the necessary shape as a value of the **type** attribute in
 
 ## Setting the type of a shape
 
-To set the type of a shape, specify the type of the shape as a value of the [type](../configuration_properties/) property inside the shape object while preparing a related JSON structure to load into the diagram:
+To set the type of a shape, use the [type](../configuration_properties/) property inside the shape object while preparing a related JSON structure to load into the diagram:
 
 ~~~js
 const data = [
@@ -44,10 +44,12 @@ const data = [
 ];
 ~~~
 
+```todo перенести в data loading?
 {{note To configure the shape, you should apply the properties peculiar to the type that is set for the shape. <br>See [the full list of configuration properties of a shape object](shapes/configuration_properties.md).
 
 **Related samples**: [Diagram. Mixed](https://snippet.dhtmlx.com/15acqc24) and [Diagram. Org chart. Mixed.](https://snippet.dhtmlx.com/yd6l6grr)
 }}
+```
 
 ### Setting the default shape type
 
@@ -63,7 +65,7 @@ diagram.data.parse(data);
 
 This value will be applied, if the configuration object of the shape doesn't contain the `type` property.
 
-{{note In the "org" and "mindmap" modes of Diagram, the type of child shapes will be the same as the type of the parent shapes.
+{{note In the org and mindmap modes of Diagram, the type of child shapes will be the same as the type of the parent shapes.
 }}
 
 Arrangement of shapes in the mindmap mode of Diagram

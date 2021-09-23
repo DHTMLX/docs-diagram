@@ -45,6 +45,10 @@ const data = [
         text: "Login Server"
     },
 ];
+
+// initializing a diagram
+const diagram = new dhx.Diagram("diagram");
+diagram.data.parse(data);
 ~~~
 
 ### Properties

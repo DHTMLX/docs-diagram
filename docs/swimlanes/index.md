@@ -35,7 +35,7 @@ const data = [
 ];
 
 // initializing a diagram
-var diagram = new dhx.Diagram("diagram");
+const diagram = new dhx.Diagram("diagram");
 diagram.data.parse(data);
 ~~~
 
@@ -183,10 +183,12 @@ const data = [
 	    ],
         header: {
             position: "left",
+            height: 40
         },
         subHeaderRows: {
             enable: true,
-            position: "left"
+            position: "left",
+            height: 40
         },
     }
 ];
@@ -212,10 +214,12 @@ const data = [
 	    ],
         header: {
             position: "top",
+            height: 40
         },
         subHeaderCols: {
             enable: true,
-            position: "top"
+            position: "top",
+            height: 40
         },
     }
 ];
