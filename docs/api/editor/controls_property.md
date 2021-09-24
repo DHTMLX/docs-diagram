@@ -34,4 +34,4 @@ The object can contain a set of *control_name:value* pairs where *value* is *tru
 - **historyManager** - (*boolean*) enables the Undo and Redo buttons
 - **editManager** - (*boolean*) enables the Edit Mode button
 - **scale** - (*boolean*) enables the Zoom group of buttons
-- **gridStep** - (*boolean*) enables the Grid Step sidebar in the right panel of the editor
+- **gridStep** - (*boolean*) enables the Grid Step sidebar option in the right panel of the editor
