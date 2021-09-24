@@ -8,6 +8,8 @@ description: text
 
 @short: fires after the value of the grid step has been changed
 
+@signature: {``}
+
 @params:
 - `step: number` - the current value of the grid step
 

@@ -8,6 +8,8 @@ description: text
 
 @short: fires after a group or swimlane is moved
 
+@signature: {``}
+
 @params:
 - `events: Event` - a native event object
 - `id: string | number` - the id of an item

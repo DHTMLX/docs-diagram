@@ -8,6 +8,8 @@ description: text
 
 @short: specifies default configuration settings of the items
 
+@signature: {``}
+
 @type: object
 
 @example:

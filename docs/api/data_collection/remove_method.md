@@ -8,6 +8,8 @@ description: text
 
 @short: deletes the specified item from the diagram
 
+@signature: {``}
+
 @params:
 - id 		string,number			the id of the item that should be deleted
 
@@ -15,8 +17,6 @@ description: text
 
 diagram.data.remove("2");
 
-
-@template: api_method
 @descr:
 In case of organogram, deleting a shape will remove the link to this shape and all child shapes as well.
 

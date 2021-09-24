@@ -6,10 +6,12 @@ description: text
 
 # toolbar
 
-
 @short: sets a toolbar with buttons for shapes
 
+@signature: {``}
+
 @type:array
+
 @example:
 var diagram = new dhx.Diagram("diagram_container", { 
 	type:"org", 
@@ -27,8 +29,6 @@ var diagram = new dhx.Diagram("diagram_container", {
     }]
 });
 
-
-@template: api_config
 @descr:
 The toolbar is set as an array of icons objects. Each icon object can have the following properties:
 

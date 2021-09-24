@@ -8,6 +8,8 @@ description: text
 
 @short: sets configuration for autoplacement
 
+@signature: {``}
+
 @type: object
 
 @example:

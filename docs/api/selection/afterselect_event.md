@@ -8,6 +8,8 @@ description: text
 
 @short: fires after selecting an item
 
+@signature: {``}
+
 @params:
 - id	 	string,number 		the item id
 
@@ -23,7 +25,6 @@ diagram.events.on("AfterSelect", function(id) {
 });
 
 
-@template:	api_event
 @descr:
 
 @relatedapi:

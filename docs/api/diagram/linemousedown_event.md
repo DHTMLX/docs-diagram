@@ -8,6 +8,8 @@ description: text
 
 @short: fires when a pointing device button is pressed while the pointer is over a connector line
 
+@signature: {``}
+
 @params:
 - `id: string | number` - the id of a connector
 - `e: MouseEvent` - a native HTML event object
@@ -21,7 +23,7 @@ editor.diagram.events.on("lineMouseDown", (id, event) => {
     console.log(id, event);
 });
 
-@template: api_event
+
 @descr:
 
 @relatedapi:

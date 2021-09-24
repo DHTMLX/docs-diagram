@@ -8,6 +8,8 @@ description: text
 
 @short: shows/hides specified controls in the editor
 
+@signature: {``}
+
 @type: object
 
 @example:

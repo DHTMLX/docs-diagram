@@ -8,6 +8,8 @@ description: text
 
 @short: filters item in the diagram by the specified key 
 
+@signature: {``}
+
 @params:
 - criteria			object,function				the filtering criteria (either the key of the item attribute or a filtering function)
 * mode 				boolean						optional, <i>true</i> to define that each next filtering will be applied to the already filtered data, not to the initial data
@@ -21,7 +23,6 @@ diagram.data.filter(function(shape){
 	if(shape.text==="Manager"||shape.text==="Marketer"){return true}
 });
 
-@template: api_method
 @descr:
 The **criteria** parameter set as object has the following attributes:
 

@@ -7,7 +7,9 @@ description: text
 # defaultLinkType
 
 @short: the default type of a connector
-	
+
+@signature: {``}
+
 @default:"line" 
 @values: "line", "dash"
 @type: string
@@ -17,12 +19,9 @@ var diagram = new dhx.Diagram("diagram_container", {
 });
 
 
-
-@template:	api_config
 @descr:
 
 This value is applied, if the connector config doesn't contain the "type" property.
-
 
 @relatedapi:
 api/diagram_defaultshapetype_config.md

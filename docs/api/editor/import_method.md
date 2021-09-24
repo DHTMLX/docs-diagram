@@ -8,6 +8,8 @@ description: text
 
 @short: imports data from an existing diagram into the editor
 
+@signature: {``}
+
 @params:
 - `diagram: object` - the diagram object
 
@@ -15,7 +17,6 @@ description: text
 editor.import(diagram);
 
 @descr:
-
 
 @relatedsample:
 https://snippet.dhtmlx.com/bng7ego7 Diagram. Org Chart Editor. Live org chart edit

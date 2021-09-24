@@ -8,6 +8,8 @@ description: text
 
 @short: returns an array with ids of all root items of the diagram
 
+@signature: {``}
+
 @returns:
 - param    	array      	an array with ids of the root items
 
@@ -15,7 +17,6 @@ description: text
 diagram.data.getRoots();
 
 
-@template:	api_method
 @descr:
 
 @changelog: Added in v4.0

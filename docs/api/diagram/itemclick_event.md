@@ -8,6 +8,8 @@ description: text
 
 @short: fires on clicking an item
 
+@signature: {``}
+
 @params:
 - `id: string | number` - the id of an item
 - `event: MouseEvent` - a native HTML event object
@@ -21,7 +23,6 @@ editor.diagram.events.on("itemClick", (id, event) => {
     console.log(id, event);
 });
 
-@template: api_event
 @descr:
 If a click is done over a swimlane, the event will be fired on the cell of the swimlane.
 

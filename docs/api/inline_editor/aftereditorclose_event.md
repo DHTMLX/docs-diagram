@@ -7,7 +7,9 @@ description: text
 # afterEditorClose
 
 @short: fires after the inline editor of the item is closed 
-    
+
+@signature: {``}
+
 @params:
 - id    	    string|number		the id of an item
 - key 		    string				the name of the edited property
@@ -22,7 +24,6 @@ editor.diagram.events.on("afterEditorClose", (id, key, subheaderId) => {
     console.log(id, key, subheaderId);
 });
 
-@template: api_event
 @descr:
 
 **Related samples**:

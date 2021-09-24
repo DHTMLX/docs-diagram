@@ -8,6 +8,8 @@ description: text
 
 @short: repaints the editor
 
+@signature: {``}
+
 @example:
 editor.paint();
 

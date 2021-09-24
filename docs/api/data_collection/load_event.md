@@ -7,7 +7,8 @@ description: text
 # load
 
 @short: fires when data is loaded into the diagram
-	
+
+@signature: {``}
 
 @params:
 
@@ -18,7 +19,6 @@ diagram.events.on("Load", function(){
 });
 
 
-@template:	api_event
 @descr:
 
 **Related sample**:

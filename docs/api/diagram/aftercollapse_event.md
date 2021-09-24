@@ -6,8 +6,9 @@ description: text
 
 # afterCollapse
 
-
 @short: fires after an item has been collapsed
+
+@signature: {``}
 
 @params:
 - `id: string | number` - the id of an item which has been collapsed
@@ -23,7 +24,6 @@ editor.diagram.events.on("afterCollapse", function(id, dir) {
     console.log(editor.diagram.data.getItem(id).text + " was collapsed", dir);
 });
 
-@template:	api_event
 @descr:
 
 **Related sample**:

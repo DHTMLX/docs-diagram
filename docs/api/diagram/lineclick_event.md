@@ -7,7 +7,9 @@ description: text
 # lineClick
 
 @short: fires on clicking a connector line
-	
+
+@signature: {``}
+
 @params:
 - `id: string | number` - the id of a connector
 - `e: Event` - a native event object
@@ -22,7 +24,6 @@ diagram.events.on("lineClick", function(id, events) {
     console.log(id);
 });
 
-@template:	api_event
 
 @relatedapi:
 api/diagram_linedblclick_event.md

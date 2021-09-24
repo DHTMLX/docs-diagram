@@ -7,7 +7,9 @@ description: text
 # beforeAdd
 
 @short: fires before adding a shape
-	
+
+@signature: {``}
+
 @params:
 
 - id		string,number		the id of a shape which will be added
@@ -20,7 +22,6 @@ diagram.events.on("BeforeAdd", function(id){
 });
 
 
-@template:	api_event
 @descr:
 
 Returning *false* from the event handler will prevent shape adding.

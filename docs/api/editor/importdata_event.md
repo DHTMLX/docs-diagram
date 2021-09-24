@@ -8,6 +8,8 @@ description: text
 
 @short: fires after the Import Data button has been clicked
 
+@signature: {``}
+
 @params:
 - `data: any` - the imported data
 

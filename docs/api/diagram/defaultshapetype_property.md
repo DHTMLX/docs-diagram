@@ -7,16 +7,19 @@ description: text
 # defaultShapeType
 
 @short: the default type of a shape
-	
+
+@signature: {``}
+
 @default:"card" (for org chart), "topic" (for mind map)
+
 @type: string
+
 @example:
 var diagram = new dhx.Diagram("diagram_container", { 
     defaultShapeType: "img-card"
 });
 
 
-@template:	api_config
 @descr:
 
 This value is applied, if the shape config doesn't contain the "type" property.

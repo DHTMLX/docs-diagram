@@ -8,6 +8,8 @@ description: text
 
 @short: fires before the menu of the subheader is opened
 
+@signature: {``}
+
 @params:
 - `id: string | number` - the id of a swimlane
 - `event: MouseEvent` - a native HTML event object
@@ -27,7 +29,6 @@ editor.diagram.events.on("beforeSubmenuOpen", (id, event, subheaderId) => {
     return true;
 });
 
-@template: api_event
 @descr:
 
 @relatedapi:

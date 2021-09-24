@@ -8,6 +8,8 @@ description: text
 
 @short: fires when a shape is moving
 
+@signature: {``}
+
 @params:
 - `events: Event` - a native event object
 - `id: string | number` - the id of a shape

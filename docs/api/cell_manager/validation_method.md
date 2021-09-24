@@ -8,6 +8,8 @@ description: text
 
 @short: validates cells of the swimlane by the direction and action type
 
+@signature: {``}
+
 @params:
 - cellIndex     number                          the start index of a cell in a layout
 - dir           "up"|"down"|"left"|"right"      the direction of the action
@@ -43,5 +45,3 @@ The count of the index starts from 0.
 
 @changelog:
 Added in v4.0
-
-@template: api_method

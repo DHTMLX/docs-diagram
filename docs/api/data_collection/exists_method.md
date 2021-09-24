@@ -8,6 +8,8 @@ description: text
 
 @short: checks whether the specified item exists in the diagram
 
+@signature: {``}
+
 @params:
 - id 			string,number			the id of the item in question
 
@@ -18,8 +20,6 @@ description: text
 @example:
 var shape = diagram.data.exists("1"); 
 
-
-@template:	api_method
 @descr:
 
 @related:

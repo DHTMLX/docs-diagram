@@ -8,6 +8,8 @@ description: text
 
 @short: fires on double-clicking a connector line
 
+@signature: {``}
+
 @params:
 - `id: string | number` - the id of a connector
 - `e: MouseEvent` - a native HTML event object
@@ -21,7 +23,6 @@ editor.diagram.events.on("lineDblClick", (id, event) => {
     console.log(id, event);
 });
 
-@template: api_event
 @descr:
 
 @relatedapi:

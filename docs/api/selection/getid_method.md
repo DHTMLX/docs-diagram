@@ -7,7 +7,9 @@ description: text
 # getId()
 
 @short: returns the id of a selected item
-	
+
+@signature: {``}
+
 @returns:
 
 - id	string,number	the id of a selected item
@@ -17,7 +19,6 @@ description: text
 var id = diagram.selection.getId(); // -> "2"
 
 
-@template:	api_method
 @descr:
 
 @relatedapi:

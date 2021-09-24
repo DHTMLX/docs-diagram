@@ -8,6 +8,8 @@ description: text
 
 @short: fires after the Apply All button has been clicked
 
+@signature: {``}
+
 @example:
 editor.events.on("applyButton", function(){
     console.log("The changes are applied");

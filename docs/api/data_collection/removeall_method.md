@@ -6,14 +6,14 @@ description: text
 
 # removeAll()
 
-
 @short: deletes all items from the diagram
+
+@signature: {``}
 
 @example:
 diagram.data.removeAll();
 
 
-@template:	api_method
 @descr:
 
 

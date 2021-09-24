@@ -8,6 +8,8 @@ description: text
 
 @short: fires after the Auto Layout button has been clicked
 
+@signature: {``}
+
 @example:
 editor.events.on("autoLayout", function() {
     console.log("The shapes are arranged automatically");

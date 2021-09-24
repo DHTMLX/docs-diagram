@@ -7,7 +7,9 @@ description: text
 # move()
 
 @short: moves an item to the defined position
-    
+
+@signature: {``}
+
 @params:
 - id 			string,number		the id of an item to move
 - index			number				the index to move an item to
@@ -19,7 +21,6 @@ description: text
 diagram.data.move("4",5); // moves the shape with id=4 to the position with index 5
 
 
-@template: api_method
 @descr:
 
 @relatedapi:

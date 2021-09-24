@@ -8,6 +8,8 @@ description: text
 
 @short: switches the editor mode off and shows the preview mode, and vice versa
 
+@signature: {``}
+
 @type: boolean
 
 @example:

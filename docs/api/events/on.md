@@ -2,7 +2,8 @@ on
 ==========
 
 @short:attaches a handler to an inner event of Diagram
-	
+
+@signature: {``}
 
 @params: 
 - name			string			the event's name, case-insensitive
@@ -19,8 +20,6 @@ editor.diagram.events.on("ShapeClick", function(id) {
 	alert("You've just clicked an item with id="+id);
 })
 
-
-@template:	api_method
 
 @relatedapi:
 	api/events/detach.md

@@ -8,7 +8,10 @@ description: text
 
 @short: specifies sections for structuring items in the left panel
 
+@signature: {``}
+
 @type: object
+
 @example:
 const editor = new dhx.DiagramEditor(document.body, {
     shapeSections: {

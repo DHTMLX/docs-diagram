@@ -7,7 +7,9 @@ description: text
 # locate()
 
 @short: gets the id of an item from the specified HTML event or tag
-    
+
+@signature: {``}
+
 @params:
 `e: Event` - a native event object
 
@@ -19,6 +21,5 @@ description: text
 @example:
 var id = diagram.locate(e);
 
-@template: api_method
-@descr:
 
+@descr:
