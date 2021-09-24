@@ -7,7 +7,9 @@ description: text
 # beforeEditorOpen
 
 @short: fires before the inline editor of an item is opened 
-    
+
+@signature: {``}
+
 @params:
 - id    	    string|number		the id of the item
 - key 		    string				the name of the property to be edited
@@ -28,7 +30,7 @@ editor.diagram.events.on("beforeEditorOpen", (id, key, subheaderId) => {
     return true;
 });
 
-@template: api_event
+
 @descr:
 
 **Related samples**:

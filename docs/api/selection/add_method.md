@@ -8,6 +8,8 @@ description: text
 
 @short: selects the specified item
 
+@signature: {``}
+
 @params:
 - id		string,number		the item id
 
@@ -20,7 +22,6 @@ diagram.data.parse(data);
 diagram.selection.add("2");
 
 
-@template:	api_method
 @descr:
 
 

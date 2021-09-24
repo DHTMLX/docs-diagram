@@ -8,6 +8,8 @@ description: text
 
 @short: fires after the Zoom In button has been clicked
 
+@signature: {``}
+
 @example:
 editor.events.on("zoomIn", function() {
     console.log("The diagram in the editor is zoomed in");

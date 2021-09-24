@@ -7,9 +7,11 @@ description: text
 # defaults
 
 @short: the default configuration of a shape
-	
+
+@signature: {``}
 
 @type: object
+
 @example:
 // the default configuration for all shapes of the "rectangle" type
 var diagram = new dhx.Diagram("diagram_container", {

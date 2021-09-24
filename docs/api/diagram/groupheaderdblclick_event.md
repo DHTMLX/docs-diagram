@@ -8,6 +8,8 @@ description: text
 
 @short: fires on double-clicking a header of a group
 
+@signature: {``}
+
 @params:
 - `id: string | number` - the id of a group
 - `event: MouseEvent` - a native HTML event object
@@ -23,7 +25,6 @@ editor.diagram.events.on("groupHeaderDblClick", (id, event, subheaderId) => {
     console.log(id, event, subheaderId);
 });
 
-@template: api_event
 @descr:
 If a double-click is done over a header of a swimlane, the event will be fired on the subheader of the swimlane.
 

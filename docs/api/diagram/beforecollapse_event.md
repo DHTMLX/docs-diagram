@@ -8,6 +8,8 @@ description: text
 
 @short: fires before collapsing an item
 
+@signature: {``}
+
 @params:
 - `id: string | number` - the id of an item 
 - `dir: string` - optional, the side the children will be hidden in relation to the parent shape <br>("left" or "right" for <i>type:"topic"</i>, otherwise - undefined)
@@ -24,7 +26,6 @@ editor.diagram.events.on("beforeCollapse", function(id, dir) {
     return true;
 });
 
-@template:	api_event
 @descr:
 Returning *false* from the handler will block the selection.
 

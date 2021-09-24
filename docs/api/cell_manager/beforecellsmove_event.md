@@ -8,6 +8,8 @@ description: text
 
 @short: fires before cells of the swimlane are moved
 
+@signature: {``}
+
 @params:
 - swimlaneId    string|number	the id of the item
 
@@ -29,5 +31,3 @@ diagram.events.on("beforeCellsMove", (swimlaneId) => {
 
 @changelog:
 Added in v4.0
-
-@template: api_event

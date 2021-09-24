@@ -8,6 +8,8 @@ description: text
 
 @short: sets active swimlane for further actions with it
 
+@signature: {``}
+
 @params:
 - id    string|number       the id of the swimlane
 
@@ -33,5 +35,3 @@ diagram.cellManager.setSwimlane("main"); // sets active swimlane
 
 @changelog:
 Added in v4.0
-
-@template: api_method

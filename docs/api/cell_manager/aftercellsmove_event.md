@@ -8,6 +8,8 @@ description: text
 
 @short: fires after cells of the swimlane are moved
 
+@signature: {``}
+
 @params:
 - swimlaneId    string|number	the id of the item
 
@@ -25,5 +27,3 @@ diagram.events.on("afterCellsMove", (swimlaneId) => {
 
 @changelog:
 Added in v4.0
-
-@template: api_event

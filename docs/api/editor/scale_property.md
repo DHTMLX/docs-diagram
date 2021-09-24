@@ -8,7 +8,10 @@ description: text
 
 @short: defines the diagram editor scale
 
+@signature: {``}
+
 @type: number
+
 @default: 1
 
 @example:

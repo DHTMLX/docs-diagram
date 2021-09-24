@@ -8,6 +8,8 @@ description: text
 
 @short: finds all the items that correspond to the specified parameters
 
+@signature: {``}
+
 @params:
 - by			string,function			 the search criterion (either the key of the item attribute or a filtering function)
 - match 		string					 the value of the item attribute
@@ -25,7 +27,6 @@ var shapes = diagram.data.findAll(function(shapes){
 	if(shapes.text==="Manager"||shapes.text==="Marketer"){return true}
 });
 
-@template: api_method
 @descr:
 
 @relatedapi:

@@ -7,7 +7,9 @@ description: text
 # shapeMouseDown
 
 @short: fires when a pointing device button is pressed while the pointer is over a shape
-    
+
+@signature: {``}
+
 @params:
 `id: string | number` - the id of a shape
 
@@ -21,7 +23,7 @@ editor.diagram.events.on("shapeMouseDown", function(id) {
   console.log('An item "' + editor.diagram.data.getItem(id).text + '"will be clicked');
 });
 
-@template: api_event
+
 @descr:
 
 @relatedapi:

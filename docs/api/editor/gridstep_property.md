@@ -8,9 +8,14 @@ description: text
 
 @short: sets the size of a grid step that defines the step of moving an item
 
+@signature: {``}
+
 @type: number
+
 @default: 10
+
 @values: >=1
+
 @example:
 const editor = new dhx.DiagramEditor(document.body, {
     gridStep:20

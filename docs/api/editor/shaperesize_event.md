@@ -8,6 +8,8 @@ description: text
 
 @short: fires after a shape has been resized
 
+@signature: {``}
+
 @example:
 editor.events.on("shapeResize", function() {
     console.log("The shape is resized");

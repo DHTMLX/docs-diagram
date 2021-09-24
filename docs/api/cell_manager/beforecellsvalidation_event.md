@@ -8,6 +8,8 @@ description: text
  
 @short: fires before cells of the swimlane are validated
 
+@signature: {``}
+
 @params:
 - swimlaneId    string|number	the id of the item
 - action        "move"|"remove"|"add"   the type of the action
@@ -31,4 +33,3 @@ diagram.events.on("beforeCellsValidation", (swimlaneId, action) => {
 @changelog:
 Added in v4.0
 
-@template: api_event

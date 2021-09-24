@@ -2,11 +2,12 @@ detach
 ============
 
 @short:detaches a handler from an event (which was attached before by the on() method)
-	
+
+@signature: {``}
+
 @params: 
 - name			string			the name of event to detach
 * context  		any				a context marker
-
 
 @example:
 diagram.events.on("ShapeClick", function(id) {
@@ -20,7 +21,6 @@ diagram.events.detach("ShapeClick");
 	api/events/on.md
 	 
 
-@template:	api_method
 @descr:
 By default **detach()** removes all event handlers from the target event. You can detach particular event handlers by using the context marker.
 

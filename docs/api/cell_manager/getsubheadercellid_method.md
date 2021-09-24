@@ -8,6 +8,8 @@ description: text
 
 @short: returns the id of the cell of the swimlane by the subheader id
 
+@signature: {``}
+
 @params:
 - subheaderId     string      the id of the subheader of a swimlane
 
@@ -41,5 +43,3 @@ The count of the index starts from 0.
 
 @changelog:
 Added in v4.0
-
-@template: api_method

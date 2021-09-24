@@ -8,7 +8,10 @@ description: text
 
 @short: adds an offset for two connected shapes, and fills the gap with an additional line
 
+@signature: {``}
+
 @type: number
+
 @default: 10
 
 @example:

@@ -8,6 +8,8 @@ description: text
 
 @short: unselects a previously selected item
 
+@signature: {``}
+
 @params:
 - id		string,number		optional, the item id
 
@@ -19,7 +21,6 @@ diagram.selection.remove("1"); // -> true
 diagram.paint();
 
 
-@template:	api_method
 @descr:
 {{note Please note that you need to call the paint() method to repaint the diagram after removing selection.}}
 
@@ -33,4 +34,3 @@ diagram.paint();
 @related:
 	common_guides/manipulating_shapes.md#selectingshapes
 	common_guides/configuration.md#selectingshapes
-

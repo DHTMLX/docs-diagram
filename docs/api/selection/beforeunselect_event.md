@@ -8,6 +8,8 @@ description: text
 
 @short: fires on unselecting an item, but before the item is really unselected
 
+@signature: {``}
+
 @params:
 - id	 	string,number 		the item id
 
@@ -24,7 +26,6 @@ diagram.events.on("BeforeUnSelect", function(id) {
 });
 
 
-@template:	api_event
 @descr:
 
 Returning *false* from the event handler will block unselection.

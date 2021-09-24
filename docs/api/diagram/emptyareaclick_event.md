@@ -7,9 +7,11 @@ description: text
 # emptyAreaClick
 
 @short: fires on clicking an empty space in the current diagram area
-    
+
+@signature: {``}
+
 @params:
-`e: Event` - a native event object	
+`e: Event` - a native event object
 
 @example:
 diagram.events.on("emptyAreaClick",function(e){
@@ -21,7 +23,6 @@ editor.diagram.events.on("emptyAreaClick",function(e){
 	console.log("An empty space has been clicked");
 });
 
-@template: api_event
 @descr:
 
 **Related samples**:

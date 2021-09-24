@@ -8,6 +8,8 @@ description: text
 
 @short: returns the id of the item by its index
 
+@signature: {``}
+
 @params:
 - index		number		the index of the item
 
@@ -17,7 +19,6 @@ description: text
 @example:
 var id = diagram.data.getId(0); // -> returns "1"
 
-@template: api_method
 @descr:
 
 @relatedapi:

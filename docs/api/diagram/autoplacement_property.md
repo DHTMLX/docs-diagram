@@ -7,10 +7,8 @@ description: text
 # autoplacement
 
 @short: sets configuration for autoplacement
-	
 
-@type: object
-
+@signature: {``}
 
 @example:
 
@@ -23,8 +21,6 @@ var diagram = new dhx.Diagram("diagram_container", {
 
 diagram.parse(autoData);
 
-
-@template:	api_config
 @descr:
 {{note The **autoplacement** property works for [Diagram and Diagram Editor](diagram_guides.md) but does not work for [Organizational Chart and Org Chart Editor](org_chart_guides.md). The **autoplacement** property does not work if you use groups or swimlanes.}}
 

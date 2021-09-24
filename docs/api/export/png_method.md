@@ -8,6 +8,8 @@ description: text
 
 @short: exports a diagram to a PNG file
 
+@signature: {``}
+
 @params:
 
 * config			object			optional, an object with export settings (see the list below)
@@ -23,7 +25,6 @@ diagram.export.png({
 	fullPage:true
 });
 
-@template: api_method
 @descr:
 {{note To avoid problems during export, all images for Diagram shapes must be set either in base64 format or via an absolute URL.}}
 

@@ -8,6 +8,8 @@ description: text
 
 @short: fires after cells of the swimlane are validated
 
+@signature: {``}
+
 @params:
 - swimlaneId    string|number	        the id of the item
 - validate      boolean                 validated or not validated
@@ -27,5 +29,3 @@ diagram.events.on("afterCellsValidation", (swimlaneId, validate, action) => {
 
 @changelog:
 Added in v4.0
-
-@template: api_event

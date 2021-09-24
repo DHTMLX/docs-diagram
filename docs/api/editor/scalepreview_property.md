@@ -8,6 +8,8 @@ description: text
 
 @short: defines the scale of items rendered in the left panel of the editor
 
+@signature: {``}
+
 @type: number
 
 @default: 0.5

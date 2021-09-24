@@ -8,6 +8,8 @@ description: text
 
 @short: iterates through the children of the specified item
 
+@signature: {``}
+
 @params:
 - id    string, number  the id of the item
 - callback  function    the function that will be applied to each child of the item
@@ -18,7 +20,6 @@ diagram.data.eachChild("id_1", (item) => {
     console.log(item);
 }, true);
 
-@template: api_method
 @descr:
 
 @relatedapi:	

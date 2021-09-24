@@ -8,6 +8,8 @@ description: text
 
 @short: shows all children of the target shape or expands the group/swimlane
 
+@signature: {``}
+
 @params:
 - `id: string | number` - the id of the item
 - `dir: string` - optional, defines the side the children will be shown in relation to the parent shape: "left", "right"
@@ -16,7 +18,6 @@ description: text
 diagram.expandItem(123);
 
 
-@template:	api_method
 @descr:
 **Note**, that the **dir** attribute can be used only in Mind Maps (type:"mindmap").
 

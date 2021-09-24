@@ -8,11 +8,10 @@ description: text
 
 @short: repaints the diagram
 
+@signature: {``}
+
 @example:
 diagram.paint();
 
-@template:	api_method
+
 @descr:
-
-
-

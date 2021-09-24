@@ -6,8 +6,9 @@ description: text
 
 # beforeExpand
 
-
 @short: fires before expanding an item
+
+@signature: {``}
 
 @params:
 - `id: string | number` - the id of an item 
@@ -25,7 +26,6 @@ editor.diagram.events.on("beforeExpand", function(id, dir) {
     return true;
 });
 
-@template:	api_event
 @descr:
 Returning *false* from the handler will block the selection.
 

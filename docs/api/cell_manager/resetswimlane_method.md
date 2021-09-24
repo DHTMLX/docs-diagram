@@ -8,6 +8,8 @@ description: text
 
 @short: resets active swimlane
 
+@signature: {``}
+
 @params:
 
 @example:
@@ -33,5 +35,3 @@ diagram.cellManager.resetSwimlane(); // resets active swimlane
 
 @changelog:
 Added in v4.0
-
-@template: api_method

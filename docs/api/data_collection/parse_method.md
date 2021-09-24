@@ -6,7 +6,9 @@ description: text
 
 # parse()
 
-@short: loads data from a local data source 
+@short: loads data from a local data source
+
+@signature: {``}
 
 @params:
 
@@ -41,11 +43,9 @@ var data = [
 var diagram = new dhx.Diagram("diagram_container", { type: "org" });
 diagram.data.parse(data);
 
-
-@template:	api_method
 @descr:
 
-You can load data in any supported data format. 
+You can load data in any supported data format.
 
 For now, Diagram supports two JSON formats:
 

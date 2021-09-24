@@ -8,6 +8,8 @@ description: text
 
 @short: adds cells as rows or columns to a swimlane
 
+@signature: {``}
+
 @params:
 - cellIndex     number                          the start index of a cell in a layout
 - dir           "up"|"down"|"left"|"right"      the direction of the action
@@ -37,5 +39,3 @@ The **add** method is automatically validated by the system. The cell won't be a
 
 @changelog:
 Added in v4.0
-
-@template: api_method
