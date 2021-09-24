@@ -38,7 +38,7 @@ To change the default direction of the child shapes, use the [](../api/diagram/t
 
 To connect shapes in Diagram, you can apply one of the following two ways:
 
-- **using connector line objects**
+- **using line objects**
 
 You need to specify separate objects that will describe the logic of connecting shapes. For example: 
 
@@ -58,7 +58,7 @@ const data = [
 ];
 ~~~
 
-See [the full list of configuration properties of a connector line object](../configuration_properties/).
+The **type** property specified in the line object allows you to specify individual type for a separate line.
 
 - **using the "parent attribute"**
 
@@ -79,38 +79,16 @@ const data = [
 
 In this case, all the connectors will have the same type. 
 
-Setting the type of a connector line
--------------------------
+### Setting the default line type
 
-### Setting the default connector type
-
-You can set a common type for all the connectors of the diagram via the api/diagram_defaultlinktype_config.md property of the diagram config object:
+You can set a common type for all the connector lines of the diagram via the [](../api/diagram/defaultlinktype_property.md) property of the diagram config object:
 
 ~~~js
 const diagram = new dhx.Diagram("diagram_container", {
     type: "default",
-    defaultLinkType:"dash"
+    defaultLinkType:"dash" // "dash" | "line"
 });
 diagram.data.parse(data);
 ~~~
 
-This value is applied, if the connector config doesn't contain the "type" property.
-
-### Setting the type for a separate connector
-
-Use the name of the necessary type as a value of the **type** attribute inside the connector line object, while [preparing a data set for loading into Diagram](../../guides/loading_data/#preparing-data-to-load):
-
-~~~js
-// data to load
-const data = [
-   // connectors
-    { from: 1, to: 2, type: "dash", forwardArrow: "filled", stroke: "#7D8495" },
-    { from: 2, to: 3, type: "dash", toSide: "bottom", forwardArrow: "filled", stroke: "#7D8495" },
-    { from: 2, to: 7.5, type: "dash", fromSide: "bottom", toSide: "top", backArrow:"filled", stroke: "#7D8495" },
-    { from: 2, to: 3.2, type: "dash", fromSide: "top", toSide: "top", stroke: "#7D8495" },
-]
-
-// initializing a diagram
-const diagram = new dhx.Diagram("diagram_container");
-diagram.data.parse(data);
-~~~
+This value is applied, if the line object doesn't contain the **type** property.

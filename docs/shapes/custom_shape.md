@@ -54,8 +54,6 @@ const networkDiagram = [
 ]
 ~~~
 
-{{note You can add custom properties into the configuration object of a custom shape. In our example, the `"ip"` property is custom.}}
-
 ## Event handlers for custom shapes
 
 You may need to add handlers to the events occurred when the user interacts with custom shapes. It can be done by adding event handlers to HTML elements of a custom template of a shape via the **eventHandlers** attribute of the [](../api/diagram/addshape_method.md) method. 
