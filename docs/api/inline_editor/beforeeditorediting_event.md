@@ -7,7 +7,9 @@ description: text
 # beforeEditorEditing
 
 @short: fires before the text value of an item is edited via the inline editor 
-    
+
+@signature: {``}
+
 @params:
 - value         string              the new value of the item
 - currentValue  string              the old value of the item
@@ -29,7 +31,6 @@ editor.diagram.events.on("beforeEditorEditing", (value, id, key, subheaderId) =>
     return true;
 });
 
-@template: api_event
 @descr:
 
 **Related samples**:

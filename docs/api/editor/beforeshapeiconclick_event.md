@@ -8,6 +8,8 @@ description: text
 
 @short: fires before clicking a control in the per-shape toolbar
 
+@signature: {``}
+
 @params:
 - `iconId: string` - the type or id of the toolbar control
 - `shape: object` - an object with the shape configuration

@@ -2,7 +2,9 @@ fire
 ========
 
 @short: triggers an inner event
-	
+
+@signature: {``}
+
 @params:
 - name		string		the event's name, case-insensitive
 - params	array		an array of the event-related data
@@ -17,8 +19,6 @@ diagram.events.on("CustomEvent", function(param1, param2){
 
 var res = diagram.events.fire("CustomEvent", [12, "abc"]);
 
-
-@template:	api_method
 @relatedapi:
 	api/events/detach.md
 	api/events/on.md

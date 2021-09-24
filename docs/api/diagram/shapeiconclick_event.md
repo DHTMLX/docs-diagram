@@ -8,6 +8,8 @@ description: text
 
 @short: fires on clicking a toolbar icon
 
+@signature: {``}
+
 @params:
 `id: string | number` - the id of the icon
 
@@ -36,7 +38,6 @@ editor.diagram.events.on("shapeIconClick", function(icon){
     alert(icon + " was clicked for id = " + id);
 });
 
-@template: api_event
 @descr:
 
 @relatedapi:

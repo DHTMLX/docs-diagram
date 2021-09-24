@@ -8,9 +8,10 @@ description: text
 
 @short: fires on double-clicking a shape
 
+@signature: {``}
+
 @params:
 `id: string | number` - the shape id
-
 
 @example:
 diagram.events.on("shapeDblClick", function(id) {
@@ -22,7 +23,6 @@ editor.diagram.events.on("shapeDblClick", function(id) {
     console.log('An item"' + editor.diagram.data.getItem(id).text + '"double-clicked');
 });
 
-@template:	api_event
 @descr:
 
 @relatedapi:

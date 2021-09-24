@@ -8,7 +8,10 @@ description: text
 
 @short: specifies the mode of the diagram editor
 
+@signature: {``}
+
 @type: string
+
 @default: "default"
 
 @values: "default", "org", "mindmap"

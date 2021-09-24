@@ -8,6 +8,8 @@ description: text
 
 @short: fires before an item is moved
 
+@signature: {``}
+
 @params:
 - `events: Event` - a native event object
 - `id: string | number` - the id of an item

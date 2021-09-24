@@ -8,14 +8,17 @@ description: text
 
 @short: defines the diagram scale
 
+@signature: {``}
+
 @default:1
+
 @type: number
+
 @example:
 var diagram = new dhx.Diagram("diagram_container", { 
   	scale: 0.7
 });
 
-@template:	api_config
 @descr:
 
 

@@ -8,8 +8,9 @@ description: text
 
 @short: optional, defines the direction of the shapes in the mind map
 
-@type: object
+@signature: {``}
 
+@type: object
 
 @example:
 const diagram = new dhx.Diagram("diagram_container", { 
@@ -19,7 +20,7 @@ const diagram = new dhx.Diagram("diagram_container", {
     },
 });
 
-@template:	api_config
+
 @descr:
 
 If you don't apply the config, the child shapes of the mind map will be arranged automatically according to the main algorithm.

@@ -8,6 +8,8 @@ description: text
 
 @short: returns the object of the selected item
 
+@signature: {``}
+
 @returns:
 - shape		object		the object of a selected item
 

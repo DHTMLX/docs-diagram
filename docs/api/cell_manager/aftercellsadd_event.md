@@ -8,6 +8,8 @@ description: text
 
 @short: fires after new cells are added to a swimlane
 
+@signature: {``}
+
 @params:
 - swimlaneId    string|number	the id of the item
 
@@ -25,5 +27,3 @@ diagram.events.on("afterCellsAdd", (swimlaneId) => {
 
 @changelog:
 Added in v4.0
-
-@template: api_event

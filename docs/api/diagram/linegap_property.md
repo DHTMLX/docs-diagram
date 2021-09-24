@@ -7,7 +7,8 @@ description: text
 # lineGap
 
 @short: adds an offset for two connected shapes, and fills the gap with an additional line
-   
+
+@signature: {``}
 
 @default:10
 @type: number
@@ -16,7 +17,7 @@ var diagram = new dhx.Diagram("diagram_container", {
   	lineGap:30
 });
 
-@template:	api_config
+
 @descr:
 
 The result of applying the **lineGap** property is shown in the image below:

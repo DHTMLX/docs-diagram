@@ -7,8 +7,9 @@ description: text
 # getNearId()
 
 @short:  	looks for a nearest item relative to the specified one
-    
-    
+
+@signature: {``}
+
 @params:
 
 - id		string,number		the id of an item
@@ -21,5 +22,4 @@ description: text
 @example:
 var nearId = diagram.data.getNearId(id);
 
-@template: api_method
 @descr:

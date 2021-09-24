@@ -8,10 +8,11 @@ description: text
 
 @short: removes a diagram instance and releases occupied resources
 
+@signature: {``}
+
 @example:
 diagram.destructor();
 
-@template:	api_method
 @descr:
 
 @changelog: added in v3.0

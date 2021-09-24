@@ -7,7 +7,9 @@ description: text
 # afterEditorEditing
 
 @short: fires after the text value of an item is edited via the inline editor  
-    
+
+@signature: {``}
+
 @params:
 - value         string              the new value of the item
 - id    	    string|number		the id of the item
@@ -23,7 +25,6 @@ editor.diagram.events.on("afterEditorEditing", (value, id, key, subheaderId) => 
     console.log(value, id, key, subheaderId);
 });
 
-@template: api_event
 @descr:
 
 **Related samples**:

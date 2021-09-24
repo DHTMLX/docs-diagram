@@ -8,6 +8,8 @@ description: text
 
 @short: iterates through all items of the diagram
 
+@signature: {``}
+
 @params:
 - handler			function		a function that will be called for each item of a diagram
 
@@ -18,5 +20,4 @@ diagram.data.map(function(item){
 });
 
 
-@template: api_method
 @descr:

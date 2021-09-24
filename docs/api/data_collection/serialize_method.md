@@ -8,6 +8,8 @@ description: text
 
 @short: serializes the diagram data into an array of JSON objects
 
+@signature: {``}
+
 @params:
 
 @returns:
@@ -16,7 +18,6 @@ description: text
 @example:
 var data = diagram.data.serialize();
 
-@template:	api_method
 @descr:
 
 

@@ -8,6 +8,8 @@ description: text
 
 @short: returns the id of the cell of the swimlane by the index
 
+@signature: {``}
+
 @params:
 - cellIndex     number           the start index of a cell in a layout
 - type          "row"|"col"      the type of direction to count the index
@@ -42,5 +44,3 @@ The count of the index starts from 0.
 
 @changelog:
 Added in v4.0
-
-@template: api_method

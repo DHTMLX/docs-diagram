@@ -7,7 +7,8 @@ description: text
 # margin
 
 @short: margins for autoplacement in the diagram
-	
+
+@signature: {``}
 
 @type: object
 @example:
@@ -19,8 +20,6 @@ var diagram = new dhx.Diagram("diagram_container", {
 });
 
 
-
-@template:	api_config
 @descr:
 
 - **itemX** - horizontal space between two shapes

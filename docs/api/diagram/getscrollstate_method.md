@@ -6,12 +6,12 @@ description: text
 
 # getScrollState()
 
-
 @short: returns the position of the diagram inner scroll
+
+@signature: {``}
 
 @returns:
 An object which stores positions of scrolls.
-
 
 @example:
 
@@ -19,7 +19,6 @@ var state = diagram.getScrollState();
 // diagram.scrollTo( state.x, state.y );
 
 
-@template:	api_method
 @descr:
 
 A resulting object has two properties:

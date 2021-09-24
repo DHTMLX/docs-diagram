@@ -8,6 +8,8 @@ description: text
 
 @short: removes cells of the swimlane as rows or columns
 
+@signature: {``}
+
 @params:
 - cellIndex     number                          the start index of a cell in a layout
 - type          "row"|"col"        the type of direction to count the index
@@ -38,5 +40,3 @@ The **remove** method is automatically validated by the system. The cell won't b
 
 @changelog:
 Added in v4.0
-
-@template: api_method

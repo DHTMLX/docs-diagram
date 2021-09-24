@@ -8,6 +8,8 @@ description: text
 
 @short: loads data from an external file
 
+@signature: {``}
+
 @params:
 
 - url			string		the URL of an external file
@@ -20,7 +22,6 @@ description: text
 diagram.data.load("../common/data.json");
 
 
-@template:	api_method
 @descr:
 
 The component will make an AJAX call and expect the remote URL to provide valid JSON data.

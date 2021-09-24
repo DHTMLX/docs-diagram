@@ -7,7 +7,8 @@ description: text
 # exportStyles
 
 @short: defines the styles that will be sent to the export service when exporting the diagram
-   
+
+@signature: {``}
 
 @default:true
 @type: boolean, array
@@ -20,8 +21,6 @@ var diagram = new dhx.Diagram("diagram_container", {
 });
 
 
-
-@template:	api_config
 @descr:
 
 By default, all css styles included to the page are sent to the export service when exporting a dhtmlxDiagram. As a result, the size of the request increases that can cause the request to fail.

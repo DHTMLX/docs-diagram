@@ -10,6 +10,8 @@ description: text
 
 @short: creates a custom shape; sets sidebar options for its editing in the right panel of the editor
 
+@signature: {``}
+
 @params:
 - `type: string` - the unique name of a type of a shape
 - `parameters: object` - an object with the additional parameters of the <i>addShape</i> function 
@@ -30,7 +32,6 @@ diagram.addShape("template", {
 
 diagram.data.parse(data);
 
-@template:	api_method
 @descr:
 
 

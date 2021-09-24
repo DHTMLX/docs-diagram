@@ -10,6 +10,8 @@ description: text
 
 @short: defines the type of a diagram
 
+@signature: {``}
+
 @type: string
 
 @values: "default", "org", "mindmap"
@@ -21,7 +23,6 @@ var diagram = new dhx.Diagram("diagram_container", {
 });
 
 
-@template:	api_config
 @descr:
 - The **type:"default"** option initializes a Diagram.
 - The **type:"org"** option is used to initialize an organizational chart (an organogram). 

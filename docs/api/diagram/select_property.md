@@ -8,16 +8,18 @@ description: text
 
 @short: enables selection in the diagram
 
+@signature: {``}
+
 @default:false
+
 @type: boolean
+
 @example:
 var diagram = new dhx.Diagram("diagram_container", { 
     select: true
 });
 
 
-
-@template:	api_config
 @descr:
 
 @related:

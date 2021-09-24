@@ -8,6 +8,8 @@ description: text
 
 @short: fires on selecting an item, but before the item is really selected
 
+@signature: {``}
+
 @params:
 - id	 	string,number 		the item id
 
@@ -24,7 +26,6 @@ diagram.events.on("BeforeSelect", function(id) {
 });
 
 
-@template:	api_event
 @descr:
 
 Returning *false* from the handler will block the selection.

@@ -6,21 +6,18 @@ description: text()
 
 # showItem
 
-
 @short: adjusts scroll to make the target item visible
-	
+
+@signature: {``}
 
 @params:
 
 `id: string | number` - the id of the target item
 
-
 @example:
 
 diagram.showItem(123);
 
-
-@template:	api_method
 @descr:
 
 

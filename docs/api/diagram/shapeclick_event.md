@@ -8,6 +8,8 @@ description: text
 
 @short: fires on clicking a shape
 
+@signature: {``}
+
 @params:
 `id: string | number` - the shape id
 
@@ -21,7 +23,6 @@ editor.diagram.events.on("shapeClick", function(id) {
     console.log('An item "' + editor.diagram.data.getItem(id).text + '" is clicked');
 });
 
-@template: api_event
 @descr:
 
 **Related samples**:

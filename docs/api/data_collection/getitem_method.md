@@ -7,7 +7,9 @@ description: text
 # getItem()
 
 @short: returns the object of an item by its id
-	
+
+@signature: {``}
+
 @params:
 
 - id		string,number		the id of a selected item
@@ -21,7 +23,6 @@ description: text
 var shape = diagram.data.getItem(123);
 
 
-@template:	api_method
 @descr:
 
 You can access the original properties of an item like this:

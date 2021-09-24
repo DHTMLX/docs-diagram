@@ -8,6 +8,8 @@ description: text
 
 @short: automatically arranges connected diagram shapes in the hierarchical structure
 
+@signature: {``}
+
 @params:
 `config: object` - optional, an object with configuration settings of the autoplacement. If not specified, the default settings will be applied.
 

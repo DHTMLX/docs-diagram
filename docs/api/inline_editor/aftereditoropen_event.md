@@ -7,7 +7,9 @@ description: text
 # afterEditorOpen
 
 @short: fires after the inline editor of an item is opened 
-    
+
+@signature: {``}
+
 @params:
 - id    	    string|number		the id of the item
 - key 		    string				the name of the edited property
@@ -22,7 +24,6 @@ editor.diagram.events.on("afterEditorOpen", (id, key, subheaderId) => {
     console.log(id, key, subheaderId);
 });
 
-@template: api_event
 @descr:
 
 **Related samples**:

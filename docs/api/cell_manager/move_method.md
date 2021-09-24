@@ -8,6 +8,8 @@ description: text
 
 @short: moves cells of the swimlane as rows or columns
 
+@signature: {``}
+
 @params:
 - cellIndex     number                          the start index of a cell in a layout
 - dir           "up"|"down"|"left"|"right"      the direction of the action
@@ -38,4 +40,3 @@ The **move** method is automatically validated by the system. The cell won't be 
 @changelog:
 Added in v4.0
 
-@template: api_method
