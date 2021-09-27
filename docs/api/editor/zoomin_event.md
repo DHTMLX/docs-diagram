@@ -8,7 +8,7 @@ description: text
 
 @short: fires after the Zoom In button has been clicked
 
-@signature: {``}
+@signature: {`zoomIn: () => void;`}
 
 @example:
 editor.events.on("zoomIn", function() {

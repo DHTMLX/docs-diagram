@@ -8,7 +8,7 @@ description: text
 
 @short: removes a diagram instance and releases occupied resources
 
-@signature: {``}
+@signature: {`destructor(): void;`}
 
 @example:
 diagram.destructor();
@@ -16,4 +16,3 @@ diagram.destructor();
 @descr:
 
 @changelog: added in v3.0
-

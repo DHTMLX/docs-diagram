@@ -8,7 +8,7 @@ description: text
 
 @short: fires before the menu of the subheader is opened
 
-@signature: {``}
+@signature: {`beforeSubmenuOpen: (id: Id, event: MouseEvent, subHeaderId?: string) => boolean | void;`}
 
 @params:
 - `id: string | number` - the id of a swimlane
@@ -16,7 +16,7 @@ description: text
 - `subHeaderId: string` - the id of a subheader of a swimlane
 
 @returns:
-- param     boolean     false - to block opening the subheader, otherwise true
+*False* to block opening the subheader, otherwise *true*.
 
 @example:
 diagram.events.on("beforeSubmenuOpen", (id, event, subheaderId) => {

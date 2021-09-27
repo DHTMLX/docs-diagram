@@ -8,10 +8,10 @@ description: text
 
 @short: fires when a pointing device is onto an item
 
-@signature: {``}
+@signature: {`itemMouseOver: (id: Id, event: MouseEvent) => void;`}
 
 @params:
-- `id: string|number` - the id of an item
+- `id: string | number` - the id of an item
 - `event: MouseEvent` - a native HTML event object
 
 @example:

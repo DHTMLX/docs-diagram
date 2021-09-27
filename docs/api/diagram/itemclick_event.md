@@ -8,7 +8,7 @@ description: text
 
 @short: fires on clicking an item
 
-@signature: {``}
+@signature: {`itemClick: (id: Id, event: MouseEvent) => void;`}
 
 @params:
 - `id: string | number` - the id of an item

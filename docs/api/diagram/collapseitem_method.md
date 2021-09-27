@@ -8,7 +8,7 @@ description: text
 
 @short: hides all children of the target shape or collapses the group/swimlane
 
-@signature: {``}
+@signature: {`collapseItem(id: string, dir?: TreeDirection): void;`}
 
 @params:
 - `id: string | number` - the id of the item
@@ -16,7 +16,6 @@ description: text
 
 @example:
 diagram.collapseItem(123);
-
 
 @descr:
 **Note**, that the **dir** attribute can be used only in Mind Maps (type:"mindmap").
@@ -31,7 +30,8 @@ diagram.collapseItem("main", "left");
 ~~~
 
 @relatedapi:
-	api/diagram_expanditem.md
+api/diagram_expanditem.md
+
 @related:
 common_guides/manipulating_shapes.md
 

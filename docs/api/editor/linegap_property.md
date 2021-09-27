@@ -8,9 +8,7 @@ description: text
 
 @short: adds an offset for two connected shapes, and fills the gap with an additional line
 
-@signature: {``}
-
-@type: number
+@signature: {`lineGap?: number;`}
 
 @default: 10
 

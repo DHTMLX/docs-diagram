@@ -8,10 +8,10 @@ description: text
 
 @short: fires on clicking an empty space in the current diagram area
 
-@signature: {``}
+@signature: {`emptyAreaClick: (event: MouseEvent) => void;`}
 
 @params:
-`e: Event` - a native event object
+`event: MouseEvent` - a native HTML event object
 
 @example:
 diagram.events.on("emptyAreaClick",function(e){

@@ -8,7 +8,7 @@ description: text
 
 @short: fires after the menu of the subheader is opened
 
-@signature: {``}
+@signature: {`afterSubmenuOpen: (id: Id, event: MouseEvent, subHeaderId?: string) => void;`}
 
 @params:
 - `id: string | number` - the id of a swimlane

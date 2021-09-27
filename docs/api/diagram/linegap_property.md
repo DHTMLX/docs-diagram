@@ -8,15 +8,14 @@ description: text
 
 @short: adds an offset for two connected shapes, and fills the gap with an additional line
 
-@signature: {``}
+@signature: {`lineGap?: number;`}
 
 @default:10
-@type: number
+
 @example:
 var diagram = new dhx.Diagram("diagram_container", { 
   	lineGap:30
 });
-
 
 @descr:
 

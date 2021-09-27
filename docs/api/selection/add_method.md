@@ -8,7 +8,7 @@ description: text
 
 @short: selects the specified item
 
-@signature: {``}
+@signature: {`add(id: Id, subId?: Id): void;`}
 
 @params:
 - id		string,number		the item id

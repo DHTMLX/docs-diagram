@@ -8,9 +8,7 @@ description: text
 
 @short: the type of the items
 
-@signature: {``}
-
-@type: string
+@signature: {`shapeType?: string;`}
 
 @default: "card" in the "default"/"org" mode; "topic" in the "mindmap" mode
 

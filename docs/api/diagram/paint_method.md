@@ -8,10 +8,9 @@ description: text
 
 @short: repaints the diagram
 
-@signature: {``}
+@signature: {`paint(): void;`}
 
 @example:
 diagram.paint();
-
 
 @descr:

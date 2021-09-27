@@ -8,12 +8,12 @@ description: text
 
 @short: fires before a shape is moved
 
-@signature: {``}
+@signature: {`beforeShapeMove: (events: MouseEvent, id: Id, coord: IBaseCoords) => boolean | void;`}
 
 @params:
-- `events: Event` - a native event object
+- `events: MouseEvent` - a native HTML event object
 - `id: string | number` - the id of a shape
-- `coordinates: number` - the x and y coordinates of the shape position before movement
+- `coord: number` - the x and y coordinates of the shape position before movement
 
 @returns:
 Return `false` to prevent the shape from being moved; otherwise, `true`. 

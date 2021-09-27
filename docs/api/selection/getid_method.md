@@ -8,7 +8,7 @@ description: text
 
 @short: returns the id of a selected item
 
-@signature: {``}
+@signature: {`getId(): Id;`}
 
 @returns:
 

@@ -8,10 +8,11 @@ description: text
 
 @short: fires on clicking a toolbar icon
 
-@signature: {``}
+@signature: {`shapeIconClick: (id: string, event: MouseEvent) => void;`}
 
 @params:
-`id: string | number` - the id of the icon
+- `id: string | number` - the id of the icon
+- `event: MouseEvent` - a native HTML event object
 
 @example:
 var diagram = new dhx.Diagram("diagram_container", { 

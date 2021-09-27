@@ -8,12 +8,13 @@ description: text
 
 @short: fires after a shape has been moved
 
-@signature: {``}
+@signature: {`shapeMoveEnd: (events: MouseEvent, id: Id, coord: IBaseCoords) => void;
+`}
 
 @params:
-- `events: Event` - a native event object
+- `events: MouseEvent` - a native HTML event object
 - `id: string | number` - the id of a shape
-- `coordinates: number` - the x and y coordinates of the shape position before movement
+- `coord: number` - the x and y coordinates of the shape position before movement
 
 @example:
 editor.events.on("shapeMoveEnd", (event, id, coordinates) => {

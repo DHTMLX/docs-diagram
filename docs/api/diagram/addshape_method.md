@@ -8,7 +8,7 @@ description: text
 
 @short: creates a custom shape; sets sidebar options for its editing in the right panel of the editor
 
-@signature: {``}
+@signature: {`addShape(type: string, parameters: ICustomShapeParam): void;`}
 
 @params:
 - `type: string` - the unique name of a type of a shape

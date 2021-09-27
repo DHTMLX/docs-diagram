@@ -8,7 +8,7 @@ description: text
 
 @short: serializes the data of the editor into an array of JSON objects
 
-@signature: {``}
+@signature: {`serialize(): IDataItem[];`}
 
 @returns:
 An array of JSON objects for each shape and link from the editor data.

@@ -8,9 +8,7 @@ description: text
 
 @short: defines the scale of items rendered in the left panel of the editor
 
-@signature: {``}
-
-@type: number
+@signature: {`scalePreview?: string | number;`}
 
 @default: 0.5
 

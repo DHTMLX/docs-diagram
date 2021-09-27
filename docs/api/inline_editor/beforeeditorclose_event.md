@@ -6,17 +6,17 @@ description: text
 
 # beforeEditorClose
 
-@short: fires before the inline editor of an item is closed 
+@short: fires before the inline editor of an item is closed
 
-@signature: {``}
+@signature: {`beforeEditorClose: (id: Id, key: string, subHeaderId?: string) => boolean | void;`}
 
 @params:
-- id    	    string|number		the id of the item
-- key 		    string				the name of the property to be edited
-- subheaderId	string|undefined	optional, the id of the edited subheader of a swimlane
+- `id: string | number` - the id of the item
+- `key: string` - the name of the property to be edited
+- `subheaderId: string | undefined` - optional, the id of the edited subheader of a swimlane
 
 @returns:
-- param     boolean     false - to block closing of the inline editor, otherwise true
+`False` to block closing of the inline editor, otherwise `true`.
 
 @example:
 diagram.events.on("beforeEditorClose", (id, key, subheaderId) => {

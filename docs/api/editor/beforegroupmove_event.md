@@ -8,15 +8,15 @@ description: text
 
 @short: fires before a group or swimlane is moved
 
-@signature: {``}
+@signature: {`beforeGroupMove: (events: MouseEvent, id: Id, coord: IBaseCoords) => boolean | void;`}
 
 @params:
-- `events: Event` - a native event object
+- `events: MouseEvent` - a native HTML event object
 - `id: string | number` - the id of an item
-- `coordinates: number` - the x and y coordinates of the group or swimlane position before movement
+- `coord: number` - the x and y coordinates of the group or swimlane position before movement
 
 @returns:
-Return false to prevent the group or swimlane from being moved; otherwise, `true`.
+Return `false` to prevent the group or swimlane from being moved; otherwise, `true`.
 
 @example:
 editor.events.on("beforeGroupMove", (event, id, coordinates) => {

@@ -8,10 +8,10 @@ description: text
 
 @short: fires when a diagram is being scrolled
 
-@signature: {``}
+@signature: {`scroll: (position: ICoords) => void;`}
 
 @params:
-`pos: object` - the position of a scroll
+`position: object` - the position of a scroll
 
 @example:
 var diagram = new dhx.Diagram("diagram_container", { 
@@ -25,7 +25,6 @@ diagram.events.on("scroll", function(pos){
 
 // For editor
 
-
 editor.diagram.events.on("scroll", function(pos){
 	console.log("The diagram has been scrolled")
 });
@@ -35,8 +34,8 @@ editor.diagram.events.on("scroll", function(pos){
 The *pos* object contains x and y coordinates of the current scroll position, e.g.: {x: 67, y: 130}
 
 @related:
-	common_guides/configuration.md#scrollingdiagram
-    
+common_guides/configuration.md#scrollingdiagram
+
 **Related samples**:
 - [Diagram. Events](https://snippet.dhtmlx.com/7h2hgb3g)
 - [Diagram. Org chart events](https://snippet.dhtmlx.com/l38pct7c)

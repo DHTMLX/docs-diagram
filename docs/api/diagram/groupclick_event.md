@@ -8,7 +8,7 @@ description: text
 
 @short: fires on clicking a group
 
-@signature: {``}
+@signature: {`groupClick: (id: Id, event: MouseEvent) => void;`}
 
 @params:
 - `id: string | number` - the id of a group

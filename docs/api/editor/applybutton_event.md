@@ -8,7 +8,7 @@ description: text
 
 @short: fires after the Apply All button has been clicked
 
-@signature: {``}
+@signature: {`applyButton: () => void;`}
 
 @example:
 editor.events.on("applyButton", function(){

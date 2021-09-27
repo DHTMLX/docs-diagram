@@ -10,13 +10,12 @@ description: text
 
 @short: defines the type of a diagram
 
-@signature: {``}
-
-@type: string
+@signature: {`type?: DiagramType;`}
 
 @values: "default", "org", "mindmap"
 
 @default: "default"
+
 @example:
 var diagram = new dhx.Diagram("diagram_container", { 
     type:"org"
@@ -30,7 +29,7 @@ var diagram = new dhx.Diagram("diagram_container", {
 
 
 @related:
-	common_guides/initialization.md#initializingdiagram
+common_guides/initialization.md#initializingdiagram
 
 @changelog: The **"mindmap"** and **"default"** values have been added in v3.1. 
 

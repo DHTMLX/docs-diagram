@@ -6,14 +6,14 @@ description: text
 
 # afterEditorOpen
 
-@short: fires after the inline editor of an item is opened 
+@short: fires after the inline editor of an item is opened
 
-@signature: {``}
+@signature: {`afterEditorOpen: (id: Id, key: string, subHeaderId?: string) => void;`}
 
 @params:
-- id    	    string|number		the id of the item
-- key 		    string				the name of the edited property
-- subheaderId	string|undefined	optional, the id of the edited subheader of a swimlane
+- `id: string | number` - the id of the item
+- `key: string` - the name of the edited property
+- `subheaderId: string | undefined` - optional, the id of the edited subheader of a swimlane
 
 @example:
 diagram.events.on("afterEditorOpen", (id, key, subheaderId) => {
