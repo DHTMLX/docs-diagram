@@ -8,9 +8,7 @@ description: text
 
 @short: specifies default configuration settings of the items
 
-@signature: {``}
-
-@type: object
+@signature: {`defaults?: any;`}
 
 @example:
 // the default configuration settings for all shapes of the "rectangle" type

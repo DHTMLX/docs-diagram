@@ -8,7 +8,7 @@ description: text
 
 @short: repaints the editor
 
-@signature: {``}
+@signature: {`paint(): void;`}
 
 @example:
 editor.paint();

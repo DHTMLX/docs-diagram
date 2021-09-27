@@ -8,9 +8,7 @@ description: text
 
 @short: shows/hides specified controls in the editor
 
-@signature: {``}
-
-@type: object
+@signature: {`controls?: IEditorControls;`}
 
 @example:
 const editor = new dhx.DiagramEditor(document.body, {

@@ -8,12 +8,12 @@ description: text
 
 @short: fires after an item is moved
 
-@signature: {``}
+@signature: {`itemMoveEnd: (events: MouseEvent, id: Id, coord: IBaseCoords) => void;`}
 
 @params:
-- `events: Event` - a native event object
+- `events: MouseEvent` - a native HTML event object
 - `id: string | number` - the id of an item
-- `coordinates: number` - the x and y coordinates of the item position before movement
+- `coord: number` - the x and y coordinates of the item position before movement
 
 @example:
 editor.events.on("itemMoveEnd", (event, id, coordinates) => {

@@ -8,7 +8,7 @@ description: text
 
 @short: fires after the Import Data button has been clicked
 
-@signature: {``}
+@signature: {`importData: (data) => void;`}
 
 @params:
 - `data: any` - the imported data

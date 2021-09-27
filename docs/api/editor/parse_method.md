@@ -8,7 +8,7 @@ description: text
 
 @short: loads data into the editor from a local data source
 
-@signature: {``}
+@signature: {`parse(data: IDataItem[]): void;`}
 
 @params:
 - `data: any` - the data that should be parsed into the editor

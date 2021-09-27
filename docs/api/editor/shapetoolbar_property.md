@@ -8,9 +8,7 @@ description: text
 
 @short: defines configuration of the toolbar with controls for editing items
 
-@signature: {``}
-
-@type: boolean, array
+@signature: {`shapeToolbar: boolean | DefaultShapeToolbar;`}
 
 @example:
 const editor = new dhx.DiagramEditor(document.body, {

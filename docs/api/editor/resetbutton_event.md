@@ -8,7 +8,7 @@ description: text
 
 @short: fires after the Reset Changes button has been clicked
 
-@signature: {``}
+@signature: {`resetButton: () => void;`}
 
 @example:
 editor.events.on("resetButton",function(){

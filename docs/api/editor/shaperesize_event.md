@@ -8,7 +8,7 @@ description: text
 
 @short: fires after a shape has been resized
 
-@signature: {``}
+@signature: {`shapeResize: () => void;`}
 
 @example:
 editor.events.on("shapeResize", function() {

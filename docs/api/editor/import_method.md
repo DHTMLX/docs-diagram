@@ -8,7 +8,7 @@ description: text
 
 @short: imports data from an existing diagram into the editor
 
-@signature: {``}
+@signature: {`import(diagram: Diagram): void;`}
 
 @params:
 - `diagram: object` - the diagram object

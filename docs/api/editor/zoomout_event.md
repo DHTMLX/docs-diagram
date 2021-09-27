@@ -8,7 +8,7 @@ description: text
 
 @short: fires after the Zoom Out button has been clicked
 
-@signature: {``}
+@signature: {`zoomOut: () => void;`}
 
 @example:
 editor.events.on("zoomOut", function() {

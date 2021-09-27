@@ -8,12 +8,12 @@ description: text
 
 @short: fires when a group or swimlane is moving
 
-@signature: {``}
+@signature: {`afterGroupMove]: (events: MouseEvent, id: Id, coord: IBaseCoords) => void;`}
 
 @params:
-- `events: Event` - a native event object
+- `events: MouseEvent` - a native HTML event object
 - `id: string | number` - the id of an item
-- `coordinates: number` - the x and y coordinates of the group or swimlane position before movement
+- `coord: number` - the x and y coordinates of the group or swimlane position before movement
 
 @example:
 editor.events.on("afterGroupMove", (event, id, coordinates) => {
