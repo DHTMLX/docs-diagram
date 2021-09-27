@@ -3,10 +3,8 @@ sidebar_label: addShape()
 title: addShape
 description: text
 ---
-
+```
 # addShape()
-
-```todo
 
 @short: creates a custom shape; sets sidebar options for its editing in the right panel of the editor
 
@@ -34,26 +32,24 @@ diagram.data.parse(data);
 
 @descr:
 
-
 {{note Do not use default names of types of the dhtmlxDiagram library as names of types of your custom shapes. }}
-
+```todo
 The **parameters** attribute contains the following attributes:
 
 - **template** - (*function*) mandatory, the function that returns either an HTML or SVG template. The function takes the config of a shape as a parameter.
-- **defaults** - (object) optional, the default configuration for a created shape. See the full list of the configuration object properties for [Diagram](diagram_guides/shapes_arrows_list.md#shapesconfiguration), [Org Chart](orgchart_guides/orgchart_shapes_types.md#shapesconfiguration) and [Mind Map](mindmap_guides/mindmap_shapes_connectors.md#configurationoftheshape) shapes.
+- **defaults** - (object) optional, the default configuration for a created shape. See [the full list of the configuration properties of a shape](shapes/configuration_properties/);
 - **properties** - (*array*) optional, an array of objects that defines which sidebar options will be rendered in the [right panel of the editor](diagram_guides/editor_mode.md#rightpanelcustomization) for the shape. Each object of a separate sidebar option can contain the following properties:
     - **type** - (*string*) mandatory, the type of a sidebar option for editing attributes of a shape. See the list of available types [below](api/diagram_addshape.md#typesofsidebaroptions).
     - **label** - (*string*) optional, specifies the label for the sidebar option in the right panel
     - **property** - (*string*) optional, a custom configuration property of a shape
-  <br>
-<ul><b>Note</b>, that the <b>properties</b> attribute is available only in the editor mode (diagram_guides/editor_mode.md#rightpanelcustomization, orgchart_guides/editor_mode.md#rightpanelcustomization, mindmap_guides/editor_mode.md#rightpanelcustomization)</ul>
+**Note**, that the **properties** attribute is available only in the editor mode
 - **eventHandlers** - (*object*) optional, adds custom event handlers to HTML elements of a custom template of Diagram shapes. The **eventHandlers** object includes a set of *key:value* pairs, where:
 	- *key* - the name of the event. Note, that at the beginning of the event name the **'on'** prefix is used (onclick, onmouseover).
 	- *value* - an object that contains a *key:value* pair, where *key* is the css class name that the handler will be applied to and *value* is a function that takes two parameters:
 		- **event** - an event object
 		- **shape** - the shape object
-<br>
-<ul><i>We recommend that you use different css classes for different custom shapes when initializing custom event handlers.</i></ul>
+We recommend that you use different css classes for different custom shapes when initializing custom event handlers.
+
 
 ### Formats of the shape template
 
@@ -232,6 +228,7 @@ You can configure the preview of the custom shape via the **preview** property o
 
 Types of sidebar options
 --------------------------
+
 <table  style='border-left:none !important;' cellspacing="0" cellpadding="1" border="0">
 	<tbody>
     <tr>
@@ -245,11 +242,9 @@ Types of sidebar options
         </td>
 		<td class='topic_description'>
 		<ul>
-	```todo
     <li>set the position of a shape via x and y coordinates;</li>
 	<li>define the width and height of a shape;</li>
     <li>set the angle of rotation;</li></ul>
-   
     This type allows editing the <i>width, height, angle, x, y</i> attributes of a shape.
 	{{note The properties can't be overridden. The Arrange sidebar option can be used only in Diagram Editor. It does not work in Org Chart Editor}}
         </td>				
@@ -358,14 +353,16 @@ Types of sidebar options
 				<img src="textprops_type.png">
             </ul>
         </td>
-		<td class='topic_description'><ul><li>adjust the text settings:<ul> 
+		<td class='topic_description'><ul><li>adjust the text settings:
+        <ul> 
     	<li>font size, weight, style and color;</li> 
         <li>line spacing;</li>
-        <li>horizontal and vertical text alignment.</li></ul></ul>
+        <li>horizontal and vertical text alignment.</li></ul>
+        </ul>
     </li>
     The type allows editing the <i>textAlign, lineHeight, fontStyle, textVerticalAlign, fontSize</i> attributes of a shape. You need to define all of these attributes in the data set for correct work of the <b>Text</b> sidebar option.
 	{{note The properties can't be overridden.}}
-        </td>		
+    </td>		
 	</tr>
     <br>
      <tr>
@@ -373,7 +370,7 @@ Types of sidebar options
 		    <h4>
 		         - type: "strokeProps"
 		    </h4>
-		    <ul id="data_sublist" >
+		    <ul id="data_sublist">
 				<img src="stroke_type.png">
             </ul>
         </td>
@@ -407,12 +404,7 @@ Types of sidebar options
 - the method is added in v3.0
 - the **eventHandlers** attribute is added in v3.1
 
-@related: common_guides/configuration.md#creatingcustomshapes
-diagram_guides/editor_mode.md#rightpanelcustomization
-orgchart_guides/editor_mode.md#rightpanelcustomization
-mindmap_guides/editor_mode.md#rightpanelcustomization
-
-
 @relatedsample:
 https://snippet.dhtmlx.com/do1jwmw1	Diagram. Site map and user flow example with custom shapes
-```todo
+
+```

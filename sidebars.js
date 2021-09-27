@@ -160,7 +160,10 @@ module.exports = {
     label: "Common API",
     collapsed: true,
     items: [
-
+      "shapes/configuration_properties",
+      "lines/configuration_properties",
+      "groups/configuration_properties",
+      "swimlanes/configuration_properties",
       // Cell manager API
       {
         type: "category",
@@ -333,7 +336,6 @@ module.exports = {
         type: "category",
         label: "Shapes",
         items: [
-          "shapes/configuration_properties",
           "shapes/default_shapes",
           "shapes/custom_shape",
           //"shapes/shape_types",
@@ -344,7 +346,6 @@ module.exports = {
         type: "category",
         label: "Lines",
         items: [
-          "lines/configuration_properties",
           "lines/line_types",
         ],
       },
@@ -353,7 +354,6 @@ module.exports = {
         type: "category",
         label: "Groups",
         items: [
-          "groups/configuration_properties",
           "groups/index",
         ],
       },
@@ -362,7 +362,6 @@ module.exports = {
         type: "category",
         label: "Swimlanes",
         items: [
-          "swimlanes/configuration_properties",
           "swimlanes/index",
         ],
       },
