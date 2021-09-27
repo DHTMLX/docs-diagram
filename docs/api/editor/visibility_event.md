@@ -8,7 +8,7 @@ description: text
 
 @short: fires after the Visibility button has been clicked
 
-@signature: {``}
+@signature: {`visibility: () => void;`}
 
 @example:
 editor.events.on("visibility", function() {

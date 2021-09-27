@@ -8,9 +8,7 @@ description: text
 
 @short: sets the size of a grid step that defines the step of moving an item
 
-@signature: {``}
-
-@type: number
+@signature: {`gridStep?: number;`}
 
 @default: 10
 

@@ -8,7 +8,7 @@ description: text()
 
 @short: adjusts scroll to make the target item visible
 
-@signature: {``}
+@signature: {`showItem(id: string): void;`}
 
 @params:
 
@@ -20,10 +20,9 @@ diagram.showItem(123);
 
 @descr:
 
-
 @relatedapi:
-	api/diagram_getscrollstate.md
-	api/diagram_scrollto.md
-    
+api/diagram_getscrollstate.md
+api/diagram_scrollto.md
+
 @relatedsample:
 https://snippet.dhtmlx.com/d7kvzq4r	Diagram. Shape search

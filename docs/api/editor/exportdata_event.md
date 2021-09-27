@@ -8,7 +8,7 @@ description: text
 
 @short: fires after the Export Data button has been clicked
 
-@signature: {``}
+@signature: {`exportData: () => void;`}
 
 @example:
 editor.events.on("exportData", function() {

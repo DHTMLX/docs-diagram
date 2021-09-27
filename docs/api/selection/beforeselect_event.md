@@ -8,10 +8,10 @@ description: text
 
 @short: fires on selecting an item, but before the item is really selected
 
-@signature: {``}
+@signature: {`beforeSelect: (id: Id, subId?: Id | undefined) => void | boolean;`}
 
 @params:
-- id	 	string,number 		the item id
+`id: string | number` - the item id
 
 
 @example:

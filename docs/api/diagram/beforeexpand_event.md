@@ -8,7 +8,7 @@ description: text
 
 @short: fires before expanding an item
 
-@signature: {``}
+@signature: {`beforeExpand: (id: Id, dir?: TreeDirection) => boolean | void;`}
 
 @params:
 - `id: string | number` - the id of an item 

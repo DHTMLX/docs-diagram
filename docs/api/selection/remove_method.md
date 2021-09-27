@@ -8,7 +8,7 @@ description: text
 
 @short: unselects a previously selected item
 
-@signature: {``}
+@signature: {`remove(id?: Id, subId?: Id): boolean`}
 
 @params:
 - id		string,number		optional, the item id

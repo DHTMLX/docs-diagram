@@ -8,11 +8,11 @@ description: text
 
 @short: fires when a pointing device button is pressed while the pointer is over a connector line
 
-@signature: {``}
+@signature: {`lineMouseDown: (id: Id, event: MouseEvent) => void;`}
 
 @params:
 - `id: string | number` - the id of a connector
-- `e: MouseEvent` - a native HTML event object
+- `event: MouseEvent` - a native HTML event object
 
 @example:
 diagram.events.on("lineMouseDown", (id, event) => {
@@ -33,7 +33,6 @@ api/diagram_linedblclick_event.md
 **Related samples**:
 - [Diagram. Events](https://snippet.dhtmlx.com/7h2hgb3g)
 - [Diagram. Org chart events](https://snippet.dhtmlx.com/l38pct7c)
-
 
 @changelog:
 Added in v4.0

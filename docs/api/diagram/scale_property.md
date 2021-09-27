@@ -8,11 +8,9 @@ description: text
 
 @short: defines the diagram scale
 
-@signature: {``}
+@signature: {`scale?: number;`}
 
 @default:1
-
-@type: number
 
 @example:
 var diagram = new dhx.Diagram("diagram_container", { 
@@ -20,7 +18,6 @@ var diagram = new dhx.Diagram("diagram_container", {
 });
 
 @descr:
-
 
 **Related samples**:
 - [Diagram. Scaled Org chart](https://snippet.dhtmlx.com/9h89c3gl)

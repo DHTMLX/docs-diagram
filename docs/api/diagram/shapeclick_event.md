@@ -8,10 +8,11 @@ description: text
 
 @short: fires on clicking a shape
 
-@signature: {``}
+@signature: {`shapeClick: (id: Id, event: MouseEvent) => void;`}
 
 @params:
-`id: string | number` - the shape id
+- `id: string | number` - the shape id
+- `event: MouseEvent` - a native HTML event object
 
 @example:
 diagram.events.on("shapeClick", function(id) {

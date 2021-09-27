@@ -8,7 +8,7 @@ description: text
 
 @short: sets configuration for autoplacement
 
-@signature: {``}
+@signature: {`autoplacement?: IAutoPlacement;`}
 
 @example:
 

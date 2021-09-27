@@ -8,11 +8,11 @@ description: text
 
 @short: fires on clicking a connector line
 
-@signature: {``}
+@signature: {`lineClick: (id: Id, event: MouseEvent) => void;`}
 
 @params:
 - `id: string | number` - the id of a connector
-- `e: Event` - a native event object
+- `event: MouseEvent` -  a native HTML event object
 
 @example:
 diagram.events.on("lineClick", function(id, events) {

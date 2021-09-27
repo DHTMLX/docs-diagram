@@ -8,7 +8,7 @@ description: text
 
 @short: fires after clicking a control in the per-shape toolbar
 
-@signature: {``}
+@signature: {`afterShapeIconClick: (iconId: string, shape: IDataItem) => void;`}
 
 @params:
 - `iconId: string` - the type or id of the toolbar control

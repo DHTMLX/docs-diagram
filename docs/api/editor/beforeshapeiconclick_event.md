@@ -8,7 +8,7 @@ description: text
 
 @short: fires before clicking a control in the per-shape toolbar
 
-@signature: {``}
+@signature: {`beforeShapeIconClick: (iconId: string, shape: IDataItem) => boolean | void;`}
 
 @params:
 - `iconId: string` - the type or id of the toolbar control

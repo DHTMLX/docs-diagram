@@ -8,6 +8,8 @@ description: text
 
 @short: fires after the Auto Layout button has been clicked
 
+`todo: check`
+
 @signature: {``}
 
 @example:

@@ -8,9 +8,7 @@ description: text
 
 @short: the default configuration of a shape
 
-@signature: {``}
-
-@type: object
+@signature: {`defaults?: IDefaultShapeConfig;`}
 
 @example:
 // the default configuration for all shapes of the "rectangle" type
@@ -28,7 +26,6 @@ var diagram = new dhx.Diagram("diagram_container", {
 });
 
 
-@template:	api_config
 @descr:
 The **defaults** object can contain a number of *key:value* pairs where *key* is a type of a shape and *value* is the default config of the shape.
 
@@ -40,6 +37,3 @@ After specifying the properties for the shape of the *rectangle* type by default
 diagram_guides/editor_mode.md#settingpreview
 
 @changelog: added in v3.0
-
-
-

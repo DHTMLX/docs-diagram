@@ -8,9 +8,7 @@ description: text
 
 @short: specifies the mode of the diagram editor
 
-@signature: {``}
-
-@type: string
+@signature: {`type?: DiagramType;`}
 
 @default: "default"
 

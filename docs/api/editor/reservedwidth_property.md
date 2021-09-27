@@ -8,9 +8,7 @@ description: text
 
 @short: defines the left offset for the diagram
 
-@signature: {``}
-
-@type: number
+@signature: {`reservedWidth: number;`}
 
 @example:
 const editor = new dhx.DiagramEditor(document.body, {

@@ -8,9 +8,7 @@ description: text
 
 @short: switches the editor mode off and shows the preview mode, and vice versa
 
-@signature: {``}
-
-@type: boolean
+@signature: {`editMode?: boolean;`}
 
 @example:
 const editor = new dhx.DiagramEditor(document.body, {

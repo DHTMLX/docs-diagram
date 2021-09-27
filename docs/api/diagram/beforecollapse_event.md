@@ -8,7 +8,7 @@ description: text
 
 @short: fires before collapsing an item
 
-@signature: {``}
+@signature: {`beforeCollapse: (id: Id, dir?: TreeDirection) => boolean | void;`}
 
 @params:
 - `id: string | number` - the id of an item 

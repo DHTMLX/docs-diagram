@@ -8,10 +8,11 @@ description: text
 
 @short: fires when a pointing device button is pressed while the pointer is over a shape
 
-@signature: {``}
+@signature: {`shapeMouseDown: (id: Id, event: MouseEvent) => void;`}
 
 @params:
-`id: string | number` - the id of a shape
+- `id: string | number` - the id of a shape
+- `event: MouseEvent` - a native HTML event object
 
 @example:
 diagram.events.on("shapeMouseDown", function(id) {
@@ -22,7 +23,6 @@ diagram.events.on("shapeMouseDown", function(id) {
 editor.diagram.events.on("shapeMouseDown", function(id) {
   console.log('An item "' + editor.diagram.data.getItem(id).text + '"will be clicked');
 });
-
 
 @descr:
 

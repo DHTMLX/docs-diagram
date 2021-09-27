@@ -8,15 +8,17 @@ description: text
 
 @short: fires before an item is moved
 
-@signature: {``}
+`todo: check - $mov: ICoords`
+
+@signature: {`beforeItemMove: (events: MouseEvent, id: Id, coord: IBaseCoords, $mov: ICoords) => boolean | void;`}
 
 @params:
-- `events: Event` - a native event object
+- `events: MouseEvent` - a native HTML event object
 - `id: string | number` - the id of an item
-- `coordinates: number` - the x and y coordinates of the item position before movement
+- `coord: number` - the x and y coordinates of the item position before movement
 
 @returns:
-Return false to prevent the item from being moved; otherwise, `true`.
+Return `false` to prevent the item from being moved; otherwise, `true`.
 
 @example:
 editor.events.on("beforeItemMove", (event, id, coordinates) => {

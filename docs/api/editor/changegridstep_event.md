@@ -8,7 +8,7 @@ description: text
 
 @short: fires after the value of the grid step has been changed
 
-@signature: {``}
+@signature: {`changeGridStep: (step: number) => void;`}
 
 @params:
 - `step: number` - the current value of the grid step

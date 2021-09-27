@@ -8,7 +8,7 @@ description: text
 
 @short: fires when a pointing device is out of an item
 
-@signature: {``}
+@signature: {`itemMouseOut: (id: Id, event: MouseEvent) => void;`}
 
 @params:
 - `id: string | number` - the id of an item

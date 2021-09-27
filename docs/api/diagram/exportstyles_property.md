@@ -8,10 +8,10 @@ description: text
 
 @short: defines the styles that will be sent to the export service when exporting the diagram
 
-@signature: {``}
+@signature: {`exportStyles?: boolean | string[];`}
 
 @default:true
-@type: boolean, array
+
 @example:
 var diagram = new dhx.Diagram("diagram_container", { 
   	exportStyles:[
@@ -19,7 +19,6 @@ var diagram = new dhx.Diagram("diagram_container", {
         "https://mySite.com/secondExportStyle.css"
     ]
 });
-
 
 @descr:
 
@@ -46,11 +45,9 @@ var diagram = new dhx.Diagram("diagram_container", {
 
 **Note**, that you must use only absolute paths not relative ones.
 
-
 @related: common_guides/data_export.md
  
 **Related sample**:
 - [Diagram. Export styles](https://snippet.dhtmlx.com/jm8if6nh)
 
 @changelog: added in v3.1
-

@@ -8,9 +8,7 @@ description: text
 
 @short: sets configuration for autoplacement
 
-@signature: {``}
-
-@type: object
+@signature: {`autoplacement?: IAutoPlacement;`}
 
 @example:
 const editor = new dhx.DiagramEditor(document.body, {
