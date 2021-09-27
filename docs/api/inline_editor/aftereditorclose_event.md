@@ -6,14 +6,14 @@ description: text
 
 # afterEditorClose
 
-@short: fires after the inline editor of the item is closed 
+@short: fires after the inline editor of the item is closed
 
-@signature: {``}
+@signature: {`afterEditorClose: (id: Id, key: string, subHeaderId?: string) => void;`}
 
 @params:
-- id    	    string|number		the id of an item
-- key 		    string				the name of the edited property
-- subheaderId	string|undefined	optional, the id of the edited subheader of a swimlane
+- `id: string | number` - the id of an item
+- `key: string` - the name of the edited property
+- `subheaderId: string | undefined` - optional, the id of the edited subheader of a swimlane
 
 @example:
 diagram.events.on("afterEditorClose", (id, key, subheaderId) => {
