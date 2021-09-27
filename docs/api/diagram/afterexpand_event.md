@@ -8,7 +8,7 @@ description: text
 
 @short: fires after an item has been expanded
 
-@signature: {``}
+@signature: {`afterExpand: (id: Id, dir?: TreeDirection) => void;`}
 
 @params:
 - `id: string | number` - the id of an item which has been expanded

@@ -8,7 +8,7 @@ description: text
 
 @short: sets the inner scroll of the diagram to the specified position
 
-@signature: {``}
+@signature: {`scrollTo(x: number, y: number): void;`}
 
 @params:
 - `x: number` - horizontal scroll position
@@ -18,13 +18,11 @@ description: text
 
 diagram.scrollTo(100, 80);
 
-
 @descr:
 
-
 @relatedapi:
-	api/diagram_getscrollstate.md
-	api/diagram_showitem.md
-    
+api/diagram_getscrollstate.md
+api/diagram_showitem.md
+
 @related:
 common_guides/configuration.md#scrollingdiagram

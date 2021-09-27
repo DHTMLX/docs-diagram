@@ -8,17 +8,14 @@ description: text
 
 @short: enables selection in the diagram
 
-@signature: {``}
+@signature: {`select?: boolean;`}
 
 @default:false
-
-@type: boolean
 
 @example:
 var diagram = new dhx.Diagram("diagram_container", { 
     select: true
 });
-
 
 @descr:
 

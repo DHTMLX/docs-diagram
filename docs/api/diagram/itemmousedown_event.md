@@ -8,7 +8,7 @@ description: text
 
 @short: fires when a pointing device button is pressed while the pointer is over an item
 
-@signature: {``}
+@signature: {`itemMouseDown: (id: Id, event: MouseEvent, position?: ICoords) => void;`}
 
 @params:
 - `id: string | number` - the id of an item

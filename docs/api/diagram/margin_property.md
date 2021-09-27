@@ -8,9 +8,8 @@ description: text
 
 @short: margins for autoplacement in the diagram
 
-@signature: {``}
+@signature: {`margin?: IMarginConfig;`}
 
-@type: object
 @example:
 var diagram = new dhx.Diagram("diagram_container", { 
     margin:{
@@ -19,7 +18,6 @@ var diagram = new dhx.Diagram("diagram_container", {
     }
 });
 
-
 @descr:
 
 - **itemX** - horizontal space between two shapes
@@ -27,7 +25,7 @@ var diagram = new dhx.Diagram("diagram_container", {
 - **x** - horizontal space between the start of a diagram and the first item
 - **y** - vertical space between the start of a diagram and the first item
 
-The default values of margins are: 
+The default values of margins are:
 
 ~~~js
 { x:40, y:40, itemX:40, itemY: 40 }

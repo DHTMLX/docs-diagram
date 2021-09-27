@@ -8,7 +8,7 @@ description: text
 
 @short: fires when a pointing device button is pressed while the pointer is over a group
 
-@signature: {``}
+@signature: {`groupMouseDown: (id: Id, event: MouseEvent) => void;`}
 
 @params:
 - `id: string | number` - the id of a group

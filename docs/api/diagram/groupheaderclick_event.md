@@ -8,7 +8,7 @@ description: text
 
 @short: fires on clicking a header of a group
 
-@signature: {``}
+@signature: {`groupHeaderClick: (id: Id, event: MouseEvent, subHeaderId?: string) => void;`}
 
 @params:
 - `id: string | number` - the id of a group

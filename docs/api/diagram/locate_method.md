@@ -8,15 +8,14 @@ description: text
 
 @short: gets the id of an item from the specified HTML event or tag
 
-@signature: {``}
+@signature: {`locate(event: Event): IBaseShape;`}
 
 @params:
-`e: Event` - a native event object
-
+`event: Event` - a native event object
 
 @returns:
 
-- id		string,number		the id of the shape that the event/tag relates to
+The id of the shape that the event/tag relates to.
 
 @example:
 var id = diagram.locate(e);

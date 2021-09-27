@@ -8,10 +8,10 @@ description: text
 
 @short: fires on double-clicking a group
 
-@signature: {``}
+@signature: {`groupDblClick: (id: Id, event: MouseEvent) => void;`}
 
 @params:
-- `id: string|number` - the id of a group
+- `id: string | number` - the id of a group
 - `event: MouseEvent` - a native HTML event object
 
 @example:
