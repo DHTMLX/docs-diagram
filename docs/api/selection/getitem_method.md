@@ -8,7 +8,7 @@ description: text
 
 @short: returns the object of the selected item
 
-@signature: {``}
+@signature: {`getItem(): any;`}
 
 @returns:
 - shape		object		the object of a selected item
