@@ -6,7 +6,7 @@ description: text
 
 # Toolbar
 
-The toolbar of the Editor helps to control the editing process and can look like:
+Toolbar is a top part of Editor that helps to control the editing process and can look like:
 
 ![](../../assets/toolbar.png)
 

@@ -44,6 +44,12 @@ description: text
 ## Properties specific for the default mode
 
 - **angle** - (*number*) the angle of shape rotation;
+- **preview** - (*string|object*) either a path to the image/a base64 image or an object with settings [to configure the shape preview displayed in the left panel of the editor](../../guides/diagram_editor/left_panel/#setting-shape-preview). The object can contain a set of optional properties:
+  - **img** - (*string*) a path to the image or a base64 image;
+  - **width** - (*number|string*) - the width of the image;
+  - **height** - (*number|string*) - the height of the image;
+  - **gap** - (*number|string*) sets the value of the [](../api/editor/gappreview_property.md) property for the specified type of a shape;
+  - **scale** - (*number*) sets the value of the [](../api/editor/scalepreview_property.md) property for the specified type of a shape. It can't be applied together with the **img**, **width**, **height** properties.
 
 ## Properties specific for the org chart mode
 
