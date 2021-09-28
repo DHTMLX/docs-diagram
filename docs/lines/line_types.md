@@ -62,7 +62,7 @@ The **type** property specified in the line object allows you to specify individ
 
 - **using the "parent attribute"**
 
-{{note This way does not work in the default mode of Diagram.}}
+{{note This way does not work in the default mode of Diagram/Diagram Editor.}}
 
 You can specify the **parent** property in the configuration object of the shape and set the id of its parent shape as the value:
 

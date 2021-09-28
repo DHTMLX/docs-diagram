@@ -10,6 +10,8 @@ description: text
 
 A group is a separate kind of the Diagram items. You can draw simple or more complicated schemes by grouping shapes or other groups in different ways. It is possible to create as one-level groups as nested groups, to configure their appearance and behavior. 
 
+{{note Groups are available only in the default mode of Diagram/Diagram Editor (type: "default").}}
+
 <iframe src="https://snippet.dhtmlx.com/0hf8ahrb?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="550"></iframe>
 
 ## Creating groups
