@@ -6,36 +6,109 @@ description: text
 
 # Right Panel
 
-- the right panel with a **property sheet** that provides fields for modifying values of the shapes' attributes
-	- the **Grid Step** sidebar provides a field for modifying the step of moving a shape. This sidebar option is shown by default and can be hidden via the *gridStep* option of the [controls](diagram_guides/editor_mode.md#configurationproperties) config property.
+Right panel is a part of the editor with a *property sheet* that provides fields for modifying values of the attributes of the diagram items.
 
-- the **_sidebar_** with a property sheet that provides fields for modifying values of the shapes' attributes
-	- the **Grid Step** sidebar option provides a field for modifying the step of moving a shape. This sidebar option is shown by default and can be hidden via the *gridStep* option of the [controls](orgchart_guides/editor_mode.md#configurationproperties) config property.
+You can select an item and edit its attributes via the related sidebar options.
 
-- the **_sidebar_** with a property sheet that provides fields for modifying values of the shapes' attributes
-	- the **Grid Step** sidebar option provides a field for modifying the step of moving a shape. This sidebar is shown by default and can be hidden via the *gridStep* option of the [controls](mindmap_guides/editor_mode.md#configurationproperties) config property.
+## Sidebar options for editing shapes
+
+### Grid step
+
+Use to modify the step of moving a shape. The option can be hidden via the **gridStep** attribute of the [controls](../../../api/editor/controls_property/) property of the editor.
+
+![](../../assets/editor/grid_step.png)
+
+### Arrange
+
+Use to set the position of a shape via x and y coordinates; to define the width and height of a shape and set the angle of rotation.
+
+*The option is available for flow chart shapes only.*
+
+![](../../assets/editor/arrange.png)
+
+### Position
+
+Use to set the left and top offsets to define the position of a shape.
+
+*The option is available for "card", "img-card", and "topic" shapes.*
+
+![](../../assets/editor/position.png)
+
+### Size
+
+Use to set the width and height of a shape.
+
+*The option is available for "card", "img-card", and "topic" shapes.*
+
+![](../../assets/editor/size.png)
 
 
-### Editing shapes via sidebar options
+### Fill
+
+Use to modify the color of a shape via the related colorpicker.
+
+*The option is available for "topic" and flow chart shapes.*|
+
+![](../../assets/editor/fill.png)
+
+
+### Color
+
+Use to modify the color of a shape header via the related colorpicker.
+
+*The option is available for "img-card" shapes.*
+
+![](../../assets/editor/color.png)
+
+### Text
+
+Use to edit the text of a shape.
+
+![](../../assets/editor/text.png)
+
+### Stroke
+
+Use to change the outline of a shape: set its color, type and width.
+
+*The option is available for "topic" and flow chart shapes.*
+
+![](../../assets/editor/stroke.png)
+
+### Text settings
+
+Use to adjust the text settings:
+
+- font size, weight, style and color;
+- line spacing;
+- horizontal and vertical text alignment.
+
+*The option is available for "topic" and flow chart shapes.*
+
+![](../../assets/editor/text_settings.png)
+
+### Title
+
+Use to edit the title. 
+
+*The option is available for "img-card" shapes.*
+
+![](../../assets/editor/title.png)
+
+### Image
+
+Use to load an image for the card and update it. An image is loaded from the computer and saved in the base64 format right into the data.
+
+*The option is available for "img-card" shapes.* 
+
+![](../../assets/editor/image.png)
+
+
+## Editing shapes via sidebar options
+
+- the **Grid Step** sidebar option provides a field for modifying the step of moving a shape. This sidebar option is shown by default and can be hidden via the *gridStep* option of the [controls](orgchart_guides/editor_mode.md#configurationproperties) config property.
 
 You can select a shape and use the sidebar to edit its attributes:
 
-<table>
-<tr><td><img src="sidebar_options.png"></td>
-<td><ul>
-	<li>modify the step of moving a shape;</li><br>
-	<li>set the position of a shape via x and y coordinates;</li><br>
-	<li>define the width and height of a shape and set the angle of rotation;</li><br>
-	<li>modify the color of a shape via the related colorpicker;</li><br>
-	<li>edit the text of a shape;</li><br> 
-    <li>change the outline of a shape: set its color, type and width;</li><br>
-    <li>adjust the text settings:<ul> 
-    	<li>font size, weight, style and color;</li> 
-        <li>line spacing;</li>
-        <li>horizontal and vertical text alignment.</li></ul>
-    </li>
-</ul></td></tr>
-</table>
 
 
 The image above presents a sidebar for editing flow-chart shapes. The sidebar for editing org-chart shapes looks [a little different](orgchart_guides/editor_mode.md#modesofediting).
@@ -43,25 +116,10 @@ The image above presents a sidebar for editing flow-chart shapes. The sidebar fo
 You can also create a sidebar with the necessary set of options for editing a custom shape; see details [here](diagram_guides/editor_mode.md#rightpanelcustomization).
 
 
-### Org chart mode
 
 The sidebar of the editor allows adjusting the attributes of the shape:
 
-<table>
-<tr><td><img src="sidebar_settings.png"></td>
-<td><ul>
-	<li>modify the step of moving a shape;</li><br>
-	<li>modify the color of a shape header via the related colorpicker;</li><br>
-    <li>set the left and top offsets to define the position of a shape;</li><br>
-    <li>set the width and height of a shape;</li><br>
-	<li>edit the title (for the "img-card" type);</li><br>
-	<li>edit the text of a shape;</li><br> 
-    <li>load an image for the card and update it (for the "img-card" type).<br>An image is loaded from the computer and saved in the base64 format right into the data.
-   </li><br>	
-</ul></td></tr>
-</table>
 
-The image above presents a sidebar for editing org-chart shapes. The sidebar for editing flow-chart shapes looks [a little different](diagram_guides/editor_mode.md#editingshapes).
 
 You can also create a sidebar with the necessary set of options for editing a custom shape; see details [here](orgchart_guides/editor_mode.md#rightpanelcustomization).
 
