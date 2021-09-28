@@ -8,7 +8,7 @@ description: text
 
 @short: finds the item that corresponds to the specified parameters
 
-@signature: {``}
+@signature: {`find(rule: IFilterMode): T;`}
 
 @params:
 - by 				string,function			the search criterion (either the key of the item attribute or a filtering function)

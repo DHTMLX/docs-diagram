@@ -8,7 +8,7 @@ description: text
 
 @short: loads data from a local data source
 
-@signature: {``}
+@signature: {`parse(data: T[], driver?: DataDriver | IDataDriver): void;`}
 
 @params:
 

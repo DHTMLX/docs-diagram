@@ -11,7 +11,7 @@ description: text
 A swimlane object can include the following configuration properties:
 
 - **type** - (*string*) required, the type of an element, set it to "$swimlane";
-- **id** - (*string, number*) the unique id of a swimlane;
+- **id** - (*string | number*) the unique id of a swimlane;
 - **width** - (*number*) required, the width of the swimlane, including its header (*position: left/right*);
 - **height** - (*number*) required, the height of the swimlane, including its header (*position: top/bottom*);
 - **x** - (*number*) the x coordinate of the swimlane position;
@@ -80,7 +80,7 @@ A swimlane object can include the following configuration properties:
 The configuration properties of a swimlane cell are given below:
 
 - **type** - (*string*) the type of a swimlane cell, set it to "$sgroup";
-- **id** - (*string, number*) the unique id of a swimlane cell;
+- **id** - (*string | number*) the unique id of a swimlane cell;
 - **groupChildren** - (*array*) an array with ids of the first-level child items of a cell;
 - **style** - (*object*) an object with the style settings of the cell. The object can contain the following properties:
   - **fill** - (*string*) the background color of the cell;
@@ -93,4 +93,3 @@ The configuration properties of a swimlane cell are given below:
   - **padding** - (*number*) defines the padding between the cell and the edge of the item when moving the item inside the cell. <br> The attribute is available if *groupBehavior: "boundNoBorderExtension"*.
 
   {{note You can manipulate the Swimlane cells via the API of the [cellManager](api/cellmanager/cellmanager.md) object.}}
-

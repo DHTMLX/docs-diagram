@@ -8,7 +8,7 @@ description: text
 
 @short: returns the id of the item by its index
 
-@signature: {``}
+@signature: {`getId(index: number): Id;`}
 
 @params:
 - index		number		the index of the item

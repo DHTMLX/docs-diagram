@@ -8,7 +8,7 @@ description: text
 
 @short: fires after adding a shape
 
-@signature: {``}
+@signature: {`afterAdd: (newItem: any) => void;`}
 
 @params:
 

@@ -8,7 +8,7 @@ description: text
 
 @short: deletes the specified item from the diagram
 
-@signature: {``}
+@signature: {`remove(id: Id | Id[]): void;`}
 
 @params:
 - id 		string,number			the id of the item that should be deleted

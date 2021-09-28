@@ -8,7 +8,7 @@ description: text
 
 @short: filters item in the diagram by the specified key 
 
-@signature: {``}
+@signature: {`filter(rule?: IFilterMode | IFilterCallback, config?: IFilterConfig): void;`}
 
 @params:
 - criteria			object,function				the filtering criteria (either the key of the item attribute or a filtering function)

@@ -6,9 +6,9 @@ description: text
 
 # getRoot()
 
-@short:  	returns the id of the root item by the id of its child
+@short: returns the id of the root item by the id of its child
 
-@signature: {``}
+@signature: {`getRoot(): Id;`}
 
 @params:
 - id		string,number		the id of the child item
