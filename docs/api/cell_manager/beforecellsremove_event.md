@@ -8,13 +8,13 @@ description: text
 
 @short: fires before cells of the swimlane are removed
 
-@signature: {``}
+@signature: {`beforeCellsRemove: (swimlaneId: Id) => boolean | void;`}
 
 @params:
-- swimlaneId    string|number	the id of the item
+`swimlaneId: string | number` - the id of the item
 
 @returns:
-- param     boolean     false - to prevent removing of the cells, otherwise true
+`False` to prevent removing of the cells, otherwise `true`.
 
 @example:
 diagram.events.on("beforeCellsRemove", (swimlaneId) => {

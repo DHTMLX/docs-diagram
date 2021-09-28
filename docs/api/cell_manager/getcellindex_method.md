@@ -8,14 +8,14 @@ description: text
 
 @short: returns the index of the cell of the swimlane by the id
 
-@signature: {``}
+@signature: {`getCellIndex(cellId: Id, type: ICellType): number | undefined;`}
 
 @params:
-- cellId     string|number      the id of a cell
-- type       "row"|"col"        the type of direction to count the index
+- `cellId: string | number` - the id of a cell
+- `type: "row" | "col"` - the type of direction to count the index
 
 @returns:
-- id    number|undefined    the index of the cell
+The index of the cell.
 
 @example:
 // initialization of the diagram

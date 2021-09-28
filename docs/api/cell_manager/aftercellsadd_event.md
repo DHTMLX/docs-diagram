@@ -8,10 +8,10 @@ description: text
 
 @short: fires after new cells are added to a swimlane
 
-@signature: {``}
+@signature: {`afterCellsAdd: (swimlaneId: Id) => void;`}
 
 @params:
-- swimlaneId    string|number	the id of the item
+`swimlaneId: string | number` - the id of the item
 
 @example:
 diagram.events.on("afterCellsAdd", (swimlaneId) => {

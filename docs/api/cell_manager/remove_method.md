@@ -8,11 +8,11 @@ description: text
 
 @short: removes cells of the swimlane as rows or columns
 
-@signature: {``}
+@signature: {`remove(cellIndex: number, type: ICellType, unstrict?: boolean): void;`}
 
 @params:
-- cellIndex     number                          the start index of a cell in a layout
-- type          "row"|"col"        the type of direction to count the index
+- `cellIndex: number` - the start index of a cell in a layout
+- `type: "row" | "col"` - the type of direction to count the index
 
 @example:
 

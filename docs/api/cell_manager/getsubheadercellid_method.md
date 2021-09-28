@@ -8,13 +8,13 @@ description: text
 
 @short: returns the id of the cell of the swimlane by the subheader id
 
-@signature: {``}
+@signature: {`getSubHeaderCellId(subheaderId: string): Id;`}
 
 @params:
-- subheaderId     string      the id of the subheader of a swimlane
+- `subheaderId: string` - the id of the subheader of a swimlane
 
 @returns:
-- id    string|number    the id of the cell
+The id of the cell.
 
 @example:
 // initialization of the diagram

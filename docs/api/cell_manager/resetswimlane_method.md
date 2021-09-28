@@ -8,9 +8,7 @@ description: text
 
 @short: resets active swimlane
 
-@signature: {``}
-
-@params:
+@signature: {`resetSwimlane(): void;`}
 
 @example:
 // initialization of the diagram
