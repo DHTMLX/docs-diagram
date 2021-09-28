@@ -11,15 +11,12 @@ description: text
 @signature: {`getItem(): any;`}
 
 @returns:
-- shape		object		the object of a selected item
-
+The object of a selected item.
 
 @example:
 var shape = diagram.selection.getItem();
 // -> {id: "3", text: "Technical Director", title: "Jerry Wagner", …}
 
-
-@template: api_method
 @descr:
 Check all available properties of shapes, groups and swimlanes objects in [Diagram](diagram_guides/shapes_arrows_list.md#shapeattrs) and in [Org Chart](orgchart_guides/orgchart_shapes_types.md#shapeattrs).
 
@@ -29,5 +26,5 @@ Check all available properties of shapes, groups and swimlanes objects in [Diagr
 - api/selection/methods/remove.md
 
 @related:
-    common_guides/manipulating_shapes.md#selectingshapes
-    common_guides/configuration.md#selectingshapes
+common_guides/manipulating_shapes.md#selectingshapes
+common_guides/configuration.md#selectingshapes
