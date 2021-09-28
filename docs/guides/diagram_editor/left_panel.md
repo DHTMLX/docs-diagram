@@ -43,12 +43,12 @@ To customize the appearance of the shapes rendered in the left panel of the edit
 
 The property can be applied in two cases:
 
-- when setting the default configuration of the default shape via the [](../../api/editor/defaults_property.md) property of the editor object;
-- when setting the default configuration of the custom shape via the **defaults** attribute of the [](../../api/diagram/addshape_method.md) method. 
+- when setting the default configuration of a default shape via the [](../../api/editor/defaults_property.md) property of the editor object;
+- when setting the default configuration of a custom shape via the **defaults** attribute of the [](../../api/diagram/addshape_method.md) method. 
 
-Let's consider three examples of configuring the shape preview:
+Let's consider three examples of configuring a shape preview:
 
-1\. You can specify an image to be shown in the left panel for the custom shape. For this purpose, you need to pass either an URL to load an image from or a base64 image as a string value to the **preview** property:
+1\. You can specify an image to be shown in the left panel for a custom shape. For this purpose, you need to pass either an URL to load an image from or a base64 image as a string value to the **preview** property:
 
 ~~~js {3}
 const defaults = {
@@ -82,7 +82,7 @@ editor.diagram.addShape("template", {
 
 {{note You can set the precise width and height of the image, but there is no ability to set the scale of the image.}}
 
-3\. You can redefine the scale of the specific shape rendered in the left panel via the **scale** property:
+3\. You can redefine the scale of a specific shape rendered in the left panel via the **scale** property:
 
 ~~~js {5-7}
 const defaults = {
