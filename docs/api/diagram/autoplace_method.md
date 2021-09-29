@@ -21,13 +21,10 @@ diagram.autoPlace({
 	mode: "edges"
 });
 
-@descr:
-
-@relatedapi:api/diagram_autoplacement_config.md
-
 @relatedsample:
-https://snippet.dhtmlx.com/f3uekgjw	Diagram. Autoplacement
+**Related sample**: [Diagram. Autoplacement](https://snippet.dhtmlx.com/f3uekgjw)
 
+@descr:
 
 {{note The **autoPlace** method works for [Diagram](diagram_guides.md) not [Org Chart](org_chart_guides.md). The **autoPlace** method does not work if you use groups or swimlanes.}}
 
@@ -53,7 +50,8 @@ The method can take a config object as a parameter. The object contains two opti
    	</tbody>
 </table>
 
-@related: common_guides/manipulating_shapes.md#arrangingshapesautomatically
- 
+**Related articles**
 
+common_guides/manipulating_shapes.md#arrangingshapesautomatically
+ 
 @changelog: added in v3.0

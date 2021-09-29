@@ -18,6 +18,7 @@ const editor = new dhx.DiagramEditor(document.body, {
 });
 
 @descr:
+
 {{note The property is available only in the default mode of the editor (*type:"default"*). The property does not work if you use groups or swimlanes.}}
 
 ```todo

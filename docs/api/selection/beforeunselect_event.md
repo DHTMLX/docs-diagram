@@ -26,14 +26,10 @@ diagram.events.on("BeforeUnSelect", function(id) {
 
 @descr:
 
-Returning *false* from the event handler will block unselection.
-
-@relatedapi:
-	- api/selection/events/diagram_onbeforeselect_event.md
-	- api/selection/events/diagram_onafterselect_event.md
-	- api/selection/events/diagram_onafterunselect_event.md
-
 **Related sample**: [Diagram. Org chart events](https://snippet.dhtmlx.com/l38pct7c)
 
-@related:
+Returning *false* from the event handler will block unselection.
+
+**Related articles**
+
 common_guides/configuration.md#selectingshapes

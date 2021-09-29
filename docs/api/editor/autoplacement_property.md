@@ -18,6 +18,12 @@ const editor = new dhx.DiagramEditor(document.body, {
     }
 });
 
+@relatedsample:
+**Related samples**:
+- [Diagram. Autoplacement](https://snippet.dhtmlx.com/f3uekgjw)
+- [Diagram. Diagram Editor. Autoplacement direct mode](https://snippet.dhtmlx.com/p1ybrkz2)
+- [Diagram. Diagram Editor. Autoplacement edges mode](https://snippet.dhtmlx.com/1i65txcw)
+
 @descr:
 {{note The property is available only in the default mode of the editor (*type:"default"*). The property does not work if you use groups or swimlanes.}}
 
@@ -44,14 +50,9 @@ The autoplacement object can contain the following options:
 </table>
 
 
-@relatedapi: api/diagram_autoplace.md
+**Related articles**
 
-@related: common_guides/configuration.md#configuringautoplacement
-
-**Related samples**:
-- [Diagram. Autoplacement](https://snippet.dhtmlx.com/f3uekgjw)
-- [Diagram. Diagram Editor. Autoplacement direct mode](https://snippet.dhtmlx.com/p1ybrkz2)
-- [Diagram. Diagram Editor. Autoplacement edges mode](https://snippet.dhtmlx.com/1i65txcw)
+common_guides/configuration.md#configuringautoplacement
 
 @changelog: added in v3.0
 

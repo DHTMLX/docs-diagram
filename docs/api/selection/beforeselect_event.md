@@ -13,7 +13,6 @@ description: text
 @params:
 `id: string | number` - the item id
 
-
 @example:
 var diagram = new dhx.Diagram("diagram_container", { 
     type: "org", 
@@ -25,19 +24,11 @@ diagram.events.on("BeforeSelect", function(id) {
 	return true;
 });
 
-
 @descr:
+**Related sample**: [Diagram. Org chart events](https://snippet.dhtmlx.com/l38pct7c)
 
 Returning *false* from the handler will block the selection.
 
-@relatedapi:
-	- api/selection/events/diagram_onafterselect_event.md
-	- api/selection/events/diagram_onbeforeunselect_event.md
-	- api/selection/events/diagram_onafterunselect_event.md
+**Related articles**
 
-**Related sample**:
-- [Diagram. Org chart events](https://snippet.dhtmlx.com/l38pct7c)
-    
-    
-@related:
-	common_guides/configuration.md#selectingshapes
+common_guides/configuration.md#selectingshapes

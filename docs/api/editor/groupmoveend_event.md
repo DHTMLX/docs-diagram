@@ -13,7 +13,7 @@ description: text
 @params:
 - `events: MouseEvent` - a native HTML event object
 - `id: string | number` - the id of an item
-- `coord: number` - the x and y coordinates of the group or swimlane position before movement
+- `coord: number` - the x and y coordinates of the group or swimlane position after movement
 
 @example:
 editor.events.on("groupMoveEnd", (event, id, coordinates) => {

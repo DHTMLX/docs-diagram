@@ -20,9 +20,6 @@ diagram.scrollTo(100, 80);
 
 @descr:
 
-@relatedapi:
-api/diagram_getscrollstate.md
-api/diagram_showitem.md
+**Related articles**
 
-@related:
 common_guides/configuration.md#scrollingdiagram

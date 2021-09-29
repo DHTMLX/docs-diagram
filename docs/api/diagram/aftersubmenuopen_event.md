@@ -26,8 +26,5 @@ editor.diagram.events.on("afterSubmenuOpen", (id, event, subheaderId) => {
 
 @descr:
 
-@relatedapi:
-api/diagram_beforesubmenuopen_event.md
-
 @changelog:
 Added in v4.0

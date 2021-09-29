@@ -31,8 +31,5 @@ editor.diagram.events.on("beforeSubmenuOpen", (id, event, subheaderId) => {
 
 @descr:
 
-@relatedapi:
-api/diagram_aftersubmenuopen_event.md
-
 @changelog:
 Added in v4.0

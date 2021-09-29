@@ -18,4 +18,5 @@ const editor = new dhx.DiagramEditor(document.body, {
 });
 
 @descr:
+
 {{note The property is available only in the default mode of the editor (*type:"default"*).}}

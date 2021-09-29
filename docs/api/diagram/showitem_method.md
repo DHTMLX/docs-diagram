@@ -20,9 +20,4 @@ diagram.showItem(123);
 
 @descr:
 
-@relatedapi:
-api/diagram_getscrollstate.md
-api/diagram_scrollto.md
-
-@relatedsample:
-https://snippet.dhtmlx.com/d7kvzq4r	Diagram. Shape search
+**Related sample**: [Diagram. Shape search](https://snippet.dhtmlx.com/d7kvzq4r)

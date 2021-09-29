@@ -33,14 +33,9 @@ diagram.cellManager.getSubHeaderCellIndex("sub01"); // gets the index of the cel
 
 The count of the index starts from 0.
 
-@relatedapi:
-- api/cellmanager/cellmanager_getcellid_method.md
-- api/cellmanager/cellmanager_getcellindex_method.md
-- api/cellmanager/cellmanager_getsubheadercellid_method.md
-- api/cellmanager/cellmanager_getsubheadercellindex_method.md
-- api/cellmanager/cellmanager_getsubheadertype_method.md
+**Related articles**
 
-@related: diagram_guides/shapes_arrows_list.md#swimlaneconfiguration
+diagram_guides/shapes_arrows_list.md#swimlaneconfiguration
 
 @changelog:
 Added in v4.0

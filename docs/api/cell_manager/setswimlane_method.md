@@ -27,11 +27,9 @@ diagram.cellManager.setSwimlane("main"); // sets active swimlane
 
 @descr:
 
-@relatedapi:
-- api/cellmanager/cellmanager_resetswimlane_method.md
-- api/cellmanager/cellmanager_validation_method.md
+**Related articles**
 
-@related: diagram_guides/shapes_arrows_list.md#swimlaneconfiguration
+diagram_guides/shapes_arrows_list.md#swimlaneconfiguration
 
 @changelog:
 Added in v4.0

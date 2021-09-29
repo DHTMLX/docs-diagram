@@ -29,7 +29,6 @@ editor.diagram.events.on("beforeEditorClose", (id, key, subheaderId) => {
     return true;
 });
 
-
 @descr:
 
 **Related samples**:

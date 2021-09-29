@@ -20,10 +20,9 @@ diagram.events.on("afterCellsAdd", (swimlaneId) => {
 
 @descr:
 
-@relatedapi:
-- api/cellmanager/cellmanager_beforecellsadd_event.md
+**Related articles**
 
-@related: diagram_guides/shapes_arrows_list.md#swimlaneconfiguration
+diagram_guides/shapes_arrows_list.md#swimlaneconfiguration
 
 @changelog:
 Added in v4.0

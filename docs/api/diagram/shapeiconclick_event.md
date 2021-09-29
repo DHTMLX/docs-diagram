@@ -40,8 +40,3 @@ editor.diagram.events.on("shapeIconClick", function(icon){
 });
 
 @descr:
-
-@relatedapi:
-api/diagram_onshapeclick_event.md
-api/diagram_onshapedblclick_event.md
-api/diagram_shapemousedown_event.md
