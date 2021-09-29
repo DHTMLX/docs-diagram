@@ -44,12 +44,10 @@ const data = [
 ];
 ~~~
 
-```todo перенести в data loading?
 {{note To configure the shape, you should apply the properties peculiar to the type that is set for the shape. <br>See [the full list of configuration properties of a shape object](shapes/configuration_properties.md).
 
 **Related samples**: [Diagram. Mixed](https://snippet.dhtmlx.com/15acqc24) and [Diagram. Org chart. Mixed.](https://snippet.dhtmlx.com/yd6l6grr)
 }}
-```
 
 ### Setting the default shape type
 
