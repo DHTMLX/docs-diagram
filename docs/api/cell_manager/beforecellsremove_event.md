@@ -24,10 +24,9 @@ diagram.events.on("beforeCellsRemove", (swimlaneId) => {
 
 @descr:
 
-@relatedapi:
-- api/cellmanager/cellmanager_aftercellsremove_event.md
+**Related articles**
 
-@related: diagram_guides/shapes_arrows_list.md#swimlaneconfiguration
+diagram_guides/shapes_arrows_list.md#swimlaneconfiguration
 
 @changelog:
 Added in v4.0

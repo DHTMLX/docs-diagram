@@ -37,11 +37,9 @@ diagram.cellManager.validation(0, "down", "move") ;
 
 The count of the index starts from 0.
 
-@relatedapi:
-- api/cellmanager/cellmanager_resetswimlane_method.md
-- api/cellmanager/cellmanager_setswimlane_method.md
+**Related articles**
 
-@related: diagram_guides/shapes_arrows_list.md#swimlaneconfiguration
+diagram_guides/shapes_arrows_list.md#swimlaneconfiguration
 
 @changelog:
 Added in v4.0

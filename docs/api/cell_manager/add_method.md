@@ -31,11 +31,9 @@ The count of the index starts from 0.
 
 The **add** method is automatically validated by the system. The cell won't be added if it is not possible according to the structure of the swimlane.
 
-@relatedapi:
-- api/cellmanager/cellmanager_move_method.md
-- api/cellmanager/cellmanager_remove_method.md
+**Related articles**
 
-@related: diagram_guides/shapes_arrows_list.md#swimlaneconfiguration
+diagram_guides/shapes_arrows_list.md#swimlaneconfiguration
 
 @changelog:
 Added in v4.0
