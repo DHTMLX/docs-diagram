@@ -17,7 +17,6 @@ Grid area is an area intended for editing diagram.
 You can drag shapes from the left panel into the grid area to place them on the desired positions and connect them.
 
 ![](../../assets/default_shape_toolbar.png)
-![](../../assets/line_toolbar.png)
 
 When you click on any shape, it becomes editable and gets personal interface elements:
 
@@ -67,6 +66,12 @@ When you click on any shape, it becomes editable and gets personal interface ele
 - resizing handles (pull the handles of the editable shape to change its sizes).
 
 Double-click the text of a shape to edit it.
+
+## Managing lines
+
+When the connection mode is enabled for a shape, you can set links to other shapes, adjust their position and form, as well as delete unnecessary links.
+
+![](../../assets/line_toolbar.png)
 
 ## Managing groups
 
