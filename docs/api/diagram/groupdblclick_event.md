@@ -26,11 +26,5 @@ editor.diagram.events.on("groupDblClick", (id, event) => {
 @descr:
 If a double-click is done over a swimlane, the event will be fired on the cell of the swimlane.
 
-@relatedapi:
-api/diagram_groupclick_event.md
-api/diagram_groupheaderclick_event.md
-api/diagram_groupheaderdblclick_event.md
-api/diagram_groupmousedown_event.md
-
 @changelog:
 Added in v4.0

@@ -12,7 +12,7 @@ description: text
 
 @params:
 - `id: string | number` - the id of an item 
-- `dir: string` - optional, the side the children will be shown in relation to the parent shape <br>("left" or "right" for <i>type:"topic"</i>, otherwise - undefined)
+- `dir: string` - optional, the side the children will be shown in relation to the parent shape ("left" or "right" for *type:"topic"*, otherwise - undefined)
   
 @example:
 diagram.events.on("beforeExpand", function(id, dir) {
@@ -26,13 +26,10 @@ editor.diagram.events.on("beforeExpand", function(id, dir) {
     return true;
 });
 
+@relatedsample:
+**Related sample**: [Diagram. Org chart events](https://snippet.dhtmlx.com/l38pct7c)
+
 @descr:
 Returning *false* from the handler will block the selection.
-
-**Related sample**:
-- [Diagram. Org chart events](https://snippet.dhtmlx.com/l38pct7c)
-
-@relatedapi:
-api/diagram_onafterexpand_event.md
 
 @changelog: The **dir** parameter was added in v3.1.

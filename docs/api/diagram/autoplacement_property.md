@@ -21,7 +21,14 @@ var diagram = new dhx.Diagram("diagram_container", {
 
 diagram.parse(autoData);
 
+@relatedsample:
+**Related samples**:
+- [Diagram. Autoplacement](https://snippet.dhtmlx.com/f3uekgjw)
+- [Diagram. Diagram Editor. Autoplacement direct mode](https://snippet.dhtmlx.com/p1ybrkz2)
+- [Diagram. Diagram Editor. Autoplacement edges mode](https://snippet.dhtmlx.com/1i65txcw)
+
 @descr:
+
 {{note The **autoplacement** property works for [Diagram and Diagram Editor](diagram_guides.md) but does not work for [Organizational Chart and Org Chart Editor](org_chart_guides.md). The **autoplacement** property does not work if you use groups or swimlanes.}}
 
 The autoplacement object can contain the following options:
@@ -46,14 +53,8 @@ The autoplacement object can contain the following options:
    	</tbody>
 </table>
 
+**Related articles**
 
-@relatedapi: api/diagram_autoplace.md
-
-@related: common_guides/configuration.md#configuringautoplacement
-
-**Related samples**:
-- [Diagram. Autoplacement](https://snippet.dhtmlx.com/f3uekgjw)
-- [Diagram. Diagram Editor. Autoplacement direct mode](https://snippet.dhtmlx.com/p1ybrkz2)
-- [Diagram. Diagram Editor. Autoplacement edges mode](https://snippet.dhtmlx.com/1i65txcw)
+common_guides/configuration.md#configuringautoplacement
 
 @changelog: added in v3.0

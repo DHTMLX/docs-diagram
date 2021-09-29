@@ -14,7 +14,7 @@ description: text
 @params:
 - `events: MouseEvent` - a native HTML event object
 - `id: string | number` - the id of a shape
-- `coord: number` - the x and y coordinates of the shape position before movement
+- `coord: number` - the x and y coordinates of the shape position after movement
 
 @example:
 editor.events.on("shapeMoveEnd", (event, id, coordinates) => {

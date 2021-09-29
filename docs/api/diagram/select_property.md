@@ -19,5 +19,6 @@ var diagram = new dhx.Diagram("diagram_container", {
 
 @descr:
 
-@related:
+**Related articles**
+
 common_guides/configuration.md#enablingselection

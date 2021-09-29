@@ -23,8 +23,6 @@ var diagram = new dhx.Diagram("diagram_container", {
 
 This value is applied, if the connector config doesn't contain the "type" property.
 
-@relatedapi:
-api/diagram_defaultshapetype_config.md
+**Related articles**
 
-@related:
 diagram_guides/shapes_arrows_list.md#connectorstypes

@@ -20,5 +20,4 @@ The id of the shape that the event/tag relates to.
 @example:
 var id = diagram.locate(e);
 
-
 @descr:

@@ -29,10 +29,8 @@ diagram.parse(data);
 diagram.collapseItem("main", "left");
 ~~~
 
-@relatedapi:
-api/diagram_expanditem.md
+**Related articles**
 
-@related:
 common_guides/manipulating_shapes.md
 
 @changelog:

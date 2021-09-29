@@ -27,11 +27,5 @@ editor.diagram.events.on("groupHeaderDblClick", (id, event, subheaderId) => {
 @descr:
 If a double-click is done over a header of a swimlane, the event will be fired on the subheader of the swimlane.
 
-@relatedapi:
-api/diagram_groupclick_event.md
-api/diagram_groupdblclick_event.md
-api/diagram_groupheaderclick_event.md
-api/diagram_groupmousedown_event.md
-
 @changelog:
 Added in v4.0

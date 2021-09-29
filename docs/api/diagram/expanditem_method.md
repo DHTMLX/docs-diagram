@@ -18,6 +18,7 @@ description: text
 diagram.expandItem(123);
 
 @descr:
+
 **Note**, that the **dir** attribute can be used only in Mind Maps (type:"mindmap").
 
 ~~~js
@@ -29,10 +30,8 @@ diagram.parse(data);
 diagram.expandItem("main", "left");
 ~~~
 
-@relatedapi:
-api/diagram_collapseitem.md
+**Related articles**
 
-@related:
 common_guides/manipulating_shapes.md
 
 @changelog: The **dir** parameter was added in v3.1.

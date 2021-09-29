@@ -23,14 +23,7 @@ editor.diagram.events.on("itemMouseOver", (id, event) => {
     console.log(id, event);
 });
 
-
 @descr:
-
-@relatedapi:
-api/diagram_itemclick_event.md
-api/diagram_itemdblclick_event.md
-api/diagram_itemmousedown_event.md
-api/diagram_itemmouseout_event.md
 
 **Related samples**:
 - [Diagram. Events](https://snippet.dhtmlx.com/7h2hgb3g)
