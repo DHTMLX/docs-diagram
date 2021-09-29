@@ -10,6 +10,8 @@ description: text
 
 A swimlane represents a rectangular element of Diagram that consists of cells (or lanes) arranged vertically or horizontally. Each cell (*type: "$sgroup"*) can include child items such as shapes, or groups. 
 
+{{note Swimlanes are available only in the default mode of Diagram/Diagram Editor (type: "default").}}
+
 ![](../assets/swimlane.png)
 
 **Related sample:** [Diagram. Swimlane template](https://snippet.dhtmlx.com/z6x5m3gb)
