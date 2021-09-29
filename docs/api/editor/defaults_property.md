@@ -26,6 +26,7 @@ const editor = new dhx.DiagramEditor(document.body, {
 });
 
 @descr:
+
 The **defaults** object can contain a number of *key:value* pairs where *key* is the type of an item and *value* is a set of configuration settings of the item.
 
 {{note The *type* and *id* attributes can not be defined in the default configuration of a shape.}}

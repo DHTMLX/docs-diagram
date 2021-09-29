@@ -8,8 +8,7 @@ description: text
 
 @short: fires after a shape has been moved
 
-@signature: {`shapeMoveEnd: (events: MouseEvent, id: Id, coord: IBaseCoords) => void;
-`}
+@signature: {`shapeMoveEnd: (events: MouseEvent, id: Id, coord: IBaseCoords) => void;`}
 
 @params:
 - `events: MouseEvent` - a native HTML event object

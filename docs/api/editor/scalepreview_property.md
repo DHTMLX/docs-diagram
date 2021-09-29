@@ -18,6 +18,7 @@ const editor = new dhx.DiagramEditor(document.body, {
 });
 
 @descr:
+
 {{note The property is available only in the default mode of the editor (*type:"default"*).}}
 
 The value of the property can be redefined for a separate type of an item via the **scale** attribute of the **preview** property of default settings.
