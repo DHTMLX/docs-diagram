@@ -8,7 +8,7 @@ description: text
 
 @short: loads data from an external file
 
-@signature: {``}
+@signature: {`load(url: IDataProxy | string, driver?: IDataDriver | DataDriver): Promise<any>;`}
 
 @params:
 

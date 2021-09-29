@@ -8,11 +8,11 @@ description: text
 
 @short: adds cells as rows or columns to a swimlane
 
-@signature: {``}
+@signature: {`add(cellIndex: number, dir: ActionDirection, unstrict?: boolean): void;`}
 
 @params:
-- cellIndex     number                          the start index of a cell in a layout
-- dir           "up"|"down"|"left"|"right"      the direction of the action
+- `cellIndex: number` - the start index of a cell in a layout
+- `dir: "up" | "down" | "left" | "right"` - the direction of the action
 
 @example:
 // initialization of the diagram

@@ -8,13 +8,13 @@ description: text
 
 @short: sets active swimlane for further actions with it
 
-@signature: {``}
+@signature: {`setSwimlane(id: Id): boolean;`}
 
 @params:
-- id    string|number       the id of the swimlane
+- `id: string | number` - the id of the swimlane
 
 @returns:
-- param     boolean     true if the swimlane is set, otherwise false
+`True` if the swimlane is set, otherwise `false`.
 
 @example:
 // initialization of the diagram

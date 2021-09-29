@@ -8,12 +8,12 @@ description: text
 
 @short: moves an item to the defined position
 
-@signature: {``}
+@signature: {`move(id: Id | Id[], index: number, target?: DataCollection | TreeCollection, targetId?: Id): Id | Id[];`}
 
 @params:
 - id 			string,number		the id of an item to move
 - index			number				the index to move an item to
-* target		object				optional, the target data collection object
+- target		object				optional, the target data collection object
 
 
 

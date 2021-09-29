@@ -8,14 +8,14 @@ description: text
  
 @short: fires before cells of the swimlane are validated
 
-@signature: {``}
+@signature: {`beforeCellsValidation: (swimlaneId: Id, action: ActionValidate) => boolean | void;`}
 
 @params:
-- swimlaneId    string|number	the id of the item
-- action        "move"|"remove"|"add"   the type of the action
+- `swimlaneId: string | number` - the id of the item
+- `action: "move" | "remove" | "add"` - the type of the action
 
 @returns:
-- param     boolean     false - to prevent validation of new cells, otherwise true
+`False` to prevent validation of new cells, otherwise `true`.
 
 @example:
 diagram.events.on("beforeCellsValidation", (swimlaneId, action) => {

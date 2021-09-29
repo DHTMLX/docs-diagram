@@ -8,13 +8,13 @@ description: text
 
 @short: returns the index of the cell of the swimlane by the subheader id
 
-@signature: {``}
+@signature: {`getSubHeaderCellIndex(subheaderId: string): number;`}
 
 @params:
-- subheaderId     string      the id of the subheader of a swimlane
+- `subheaderId: string` - the id of the subheader of a swimlane
 
 @returns:
-- index    number    the index of the cell
+The index of the cell.
 
 @example:
 // initialization of the diagram

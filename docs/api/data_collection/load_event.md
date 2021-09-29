@@ -8,7 +8,7 @@ description: text
 
 @short: fires when data is loaded into the diagram
 
-@signature: {``}
+@signature: {`load: () => void;`}
 
 @params:
 

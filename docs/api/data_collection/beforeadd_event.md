@@ -8,7 +8,7 @@ description: text
 
 @short: fires before adding a shape
 
-@signature: {``}
+@signature: {`beforeAdd: (newItem: any) => boolean | void;`}
 
 @params:
 

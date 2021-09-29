@@ -8,11 +8,11 @@ description: text
 
 @short: moves cells of the swimlane as rows or columns
 
-@signature: {``}
+@signature: {`move(cellIndex: number, dir: ActionDirection, unstrict?: boolean): void;`}
 
 @params:
-- cellIndex     number                          the start index of a cell in a layout
-- dir           "up"|"down"|"left"|"right"      the direction of the action
+- `cellIndex: number` - the start index of a cell in a layout
+- `dir: "up" | "down" | "left" | "right"` - the direction of the action
 
 @example:
 // initialization of the diagram
@@ -39,4 +39,3 @@ The **move** method is automatically validated by the system. The cell won't be 
 
 @changelog:
 Added in v4.0
-
