@@ -29,13 +29,14 @@ editor.diagram.events.on("scroll", function(pos){
 	console.log("The diagram has been scrolled")
 });
 
+@relatedsample:
+**Related samples**:
+- [Diagram. Events](https://snippet.dhtmlx.com/7h2hgb3g)
+- [Diagram. Org chart events](https://snippet.dhtmlx.com/l38pct7c)
 
 @descr:
 The *pos* object contains x and y coordinates of the current scroll position, e.g.: {x: 67, y: 130}
 
-@related:
-common_guides/configuration.md#scrollingdiagram
+**Related articles**
 
-**Related samples**:
-- [Diagram. Events](https://snippet.dhtmlx.com/7h2hgb3g)
-- [Diagram. Org chart events](https://snippet.dhtmlx.com/l38pct7c)
+common_guides/configuration.md#scrollingdiagram

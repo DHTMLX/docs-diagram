@@ -8,13 +8,13 @@ description: text
 
 @short: returns the type of direction to count the index by the subheader id of the swimlane
 
-@signature: {``}
+@signature: {`getSubHeaderType(subheaderId: string): ICellType | undefined;`}
 
 @params:
-- subheaderId     string      the id of the subheader of a swimlane
+- `subheaderId: string` - the id of the subheader of a swimlane
 
 @returns:
-- type    "row"|"col"|undefined   the type of direction to count the index
+The type of direction to count the index: "row" | "col" | undefined.
 
 @example:
 // initialization of the diagram
@@ -33,13 +33,9 @@ diagram.cellManager.getSubHeaderType("sub01"); // gets the type of direction
 
 The count of the index starts from 0.
 
-@relatedapi:
-- api/cellmanager/cellmanager_getcellid_method.md
-- api/cellmanager/cellmanager_getcellindex_method.md
-- api/cellmanager/cellmanager_getsubheadercellid_method.md
-- api/cellmanager/cellmanager_getsubheadercellindex_method.md
+**Related articles**
 
-@related: diagram_guides/shapes_arrows_list.md#swimlaneconfiguration
+diagram_guides/shapes_arrows_list.md#swimlaneconfiguration
 
 @changelog:
 Added in v4.0

@@ -20,6 +20,9 @@ var diagram = new dhx.Diagram("diagram_container", {
     ]
 });
 
+@relatedsample:
+**Related sample**: [Diagram. Export styles](https://snippet.dhtmlx.com/jm8if6nh)
+
 @descr:
 
 By default, all css styles included to the page are sent to the export service when exporting a dhtmlxDiagram. As a result, the size of the request increases that can cause the request to fail.
@@ -45,9 +48,8 @@ var diagram = new dhx.Diagram("diagram_container", {
 
 **Note**, that you must use only absolute paths not relative ones.
 
-@related: common_guides/data_export.md
- 
-**Related sample**:
-- [Diagram. Export styles](https://snippet.dhtmlx.com/jm8if6nh)
+**Related articles**
+
+common_guides/data_export.md
 
 @changelog: added in v3.1

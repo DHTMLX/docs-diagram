@@ -23,12 +23,7 @@ editor.diagram.events.on("lineMouseDown", (id, event) => {
     console.log(id, event);
 });
 
-
 @descr:
-
-@relatedapi:
-api/diagram_lineclick_event.md
-api/diagram_linedblclick_event.md
 
 **Related samples**:
 - [Diagram. Events](https://snippet.dhtmlx.com/7h2hgb3g)

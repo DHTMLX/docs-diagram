@@ -26,11 +26,6 @@ editor.diagram.events.on("shapeDblClick", function(id) {
 
 @descr:
 
-@relatedapi:
-api/diagram_onshapeclick_event.md
-api/diagram_shapeiconclick_event.md
-api/diagram_shapemousedown_event.md
-
 **Related samples**:
 - [Diagram. Events](https://snippet.dhtmlx.com/7h2hgb3g)
 - [Diagram. Org chart events](https://snippet.dhtmlx.com/l38pct7c)

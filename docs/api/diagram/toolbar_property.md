@@ -27,6 +27,9 @@ var diagram = new dhx.Diagram("diagram_container", {
     }]
 });
 
+@relatedsample:
+**Related sample**: [Diagram. Per-shape toolbar](https://snippet.dhtmlx.com/4if395hd)
+
 @descr:
 The toolbar is set as an array of icons objects. Each icon object can have the following properties:
 
@@ -35,8 +38,6 @@ The toolbar is set as an array of icons objects. Each icon object can have the f
 - **check** - (*function*) checks whether the icon should be applied to the shape. The function takes a shape object and returns *true*, if the icon will be rendered for this shape.
 - **css** - (*function*) the function which returns the name(s) of CSS class(es) that should be applied to the shape.
 
-@related:
-common_guides/configuration.md#settingtoolbarforshapes
+**Related articles**
 
-**Related sample**:
-- [Diagram. Per-shape toolbar](https://snippet.dhtmlx.com/4if395hd)
+common_guides/configuration.md#settingtoolbarforshapes

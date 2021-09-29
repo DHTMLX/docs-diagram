@@ -16,7 +16,7 @@ description: text
 - `coord: number` - the x and y coordinates of the shape position before movement
 
 @returns:
-Return `false` to prevent the shape from being moved; otherwise, `true`. 
+Return `false` to prevent the shape from being moved; otherwise, `true`.
 
 @example:
 editor.events.on("beforeShapeMove", (event, id, coordinates) => {

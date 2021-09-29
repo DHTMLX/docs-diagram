@@ -24,11 +24,7 @@ diagram.events.on("lineClick", function(id, events) {
     console.log(id);
 });
 
-
-@relatedapi:
-api/diagram_linedblclick_event.md
-api/diagram_linemousedown_event.md
-
+@relatedsample:
 **Related samples**:
 - [Diagram. Events](https://snippet.dhtmlx.com/7h2hgb3g)
 - [Diagram. Org chart events](https://snippet.dhtmlx.com/l38pct7c)

@@ -8,15 +8,15 @@ description: text
 
 @short: validates cells of the swimlane by the direction and action type
 
-@signature: {``}
+@signature: {`validation(cellIndex: number, dir: ActionDirection, action: ActionValidate): boolean;`}
 
 @params:
-- cellIndex     number                          the start index of a cell in a layout
-- dir           "up"|"down"|"left"|"right"      the direction of the action
-- action        "move"|"remove"|"add"           the type of the action
+- `cellIndex: number` - the start index of a cell in a layout
+- `dir: "up" | "down" | "left" | "right"` - the direction of the action
+- `action: "move" | "remove" | "add"` - the type of the action
 
 @returns:
-- param     boolean     true if the cell is validated, otherwise false
+`True` if the cell is validated, otherwise `false`.
 
 @example:
 // initialization of the diagram
@@ -37,11 +37,9 @@ diagram.cellManager.validation(0, "down", "move") ;
 
 The count of the index starts from 0.
 
-@relatedapi:
-- api/cellmanager/cellmanager_resetswimlane_method.md
-- api/cellmanager/cellmanager_setswimlane_method.md
+**Related articles**
 
-@related: diagram_guides/shapes_arrows_list.md#swimlaneconfiguration
+diagram_guides/shapes_arrows_list.md#swimlaneconfiguration
 
 @changelog:
 Added in v4.0

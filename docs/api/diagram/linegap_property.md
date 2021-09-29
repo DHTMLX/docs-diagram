@@ -17,14 +17,15 @@ var diagram = new dhx.Diagram("diagram_container", {
   	lineGap:30
 });
 
+@relatedsample:
+**Related sample**: [Diagram. Activity diagram](https://snippet.dhtmlx.com/a9t2z2dt)
+
 @descr:
 
 The result of applying the **lineGap** property is shown in the image below:
 
 <img src="linegap_config.png">
 
-@related:
-common_guides/initialization.md#initializingdiagram
+**Related articles**
 
-**Related sample**:
-- [Diagram. Activity diagram](https://snippet.dhtmlx.com/a9t2z2dt)
+common_guides/initialization.md#initializingdiagram

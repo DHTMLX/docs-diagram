@@ -8,13 +8,13 @@ description: text
 
 @short: returns the index of the cell of the swimlane by the subheader id
 
-@signature: {``}
+@signature: {`getSubHeaderCellIndex(subheaderId: string): number;`}
 
 @params:
-- subheaderId     string      the id of the subheader of a swimlane
+- `subheaderId: string` - the id of the subheader of a swimlane
 
 @returns:
-- index    number    the index of the cell
+The index of the cell.
 
 @example:
 // initialization of the diagram
@@ -33,14 +33,9 @@ diagram.cellManager.getSubHeaderCellIndex("sub01"); // gets the index of the cel
 
 The count of the index starts from 0.
 
-@relatedapi:
-- api/cellmanager/cellmanager_getcellid_method.md
-- api/cellmanager/cellmanager_getcellindex_method.md
-- api/cellmanager/cellmanager_getsubheadercellid_method.md
-- api/cellmanager/cellmanager_getsubheadercellindex_method.md
-- api/cellmanager/cellmanager_getsubheadertype_method.md
+**Related articles**
 
-@related: diagram_guides/shapes_arrows_list.md#swimlaneconfiguration
+diagram_guides/shapes_arrows_list.md#swimlaneconfiguration
 
 @changelog:
 Added in v4.0

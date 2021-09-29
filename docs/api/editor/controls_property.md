@@ -23,6 +23,7 @@ const editor = new dhx.DiagramEditor(document.body, {
 });
 
 @descr:
+
 The object can contain a set of *control_name:value* pairs where *value* is *true* (by default) or *false*. Here are the list of available controls:
 - **apply** - (*boolean*) enables the Apply All button
 - **reset** - (*boolean*) enables the Reset Changes button

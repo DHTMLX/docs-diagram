@@ -18,5 +18,4 @@ const data = editor.serialize();
 
 @descr:
 
-@relatedsample:
-https://snippet.dhtmlx.com/bng7ego7 Diagram. Org Chart Editor. Live org chart edit
+**Related samples**: [Diagram. Org Chart Editor. Live org chart edit](https://snippet.dhtmlx.com/bng7ego7)

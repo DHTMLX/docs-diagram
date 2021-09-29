@@ -8,7 +8,7 @@ description: text
 
 @short: updates properties of the item
 
-@signature: {``}
+@signature: {`update(id: Id, newItem: IUpdateObject, silent?: boolean): void;`}
 
 @params:
 

@@ -8,14 +8,14 @@ description: text
 
 @short: returns the id of the cell of the swimlane by the index
 
-@signature: {``}
+@signature: {`getCellId(cellIndex: number, type: ICellType): Id | undefined;`}
 
 @params:
-- cellIndex     number           the start index of a cell in a layout
-- type          "row"|"col"      the type of direction to count the index
+- `cellIndex: number` - the start index of a cell in a layout
+- `type: "row" | "col"` - the type of direction to count the index
 
 @returns:
-- id    id|undefined    the id of the cell
+The id of the cell.
 
 @example:
 // initialization of the diagram
@@ -34,13 +34,9 @@ diagram.cellManager.getCellId(0, "row"); // gets the id of the cell
 
 The count of the index starts from 0.
 
-@relatedapi:
-- api/cellmanager/cellmanager_getcellindex_method.md
-- api/cellmanager/cellmanager_getsubheadercellid_method.md
-- api/cellmanager/cellmanager_getsubheadercellindex_method.md
-- api/cellmanager/cellmanager_getsubheadertype_method.md
+**Related articles**
 
-@related: diagram_guides/shapes_arrows_list.md#swimlaneconfiguration
+diagram_guides/shapes_arrows_list.md#swimlaneconfiguration
 
 @changelog:
 Added in v4.0

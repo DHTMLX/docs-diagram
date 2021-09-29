@@ -8,7 +8,7 @@ description: text
 
 @short: returns an array with ids of all root items of the diagram
 
-@signature: {``}
+@signature: {`getRoots(): Id[]`}
 
 @returns:
 - param    	array      	an array with ids of the root items

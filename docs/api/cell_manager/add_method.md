@@ -8,11 +8,11 @@ description: text
 
 @short: adds cells as rows or columns to a swimlane
 
-@signature: {``}
+@signature: {`add(cellIndex: number, dir: ActionDirection, unstrict?: boolean): void;`}
 
 @params:
-- cellIndex     number                          the start index of a cell in a layout
-- dir           "up"|"down"|"left"|"right"      the direction of the action
+- `cellIndex: number` - the start index of a cell in a layout
+- `dir: "up" | "down" | "left" | "right"` - the direction of the action
 
 @example:
 // initialization of the diagram
@@ -31,11 +31,9 @@ The count of the index starts from 0.
 
 The **add** method is automatically validated by the system. The cell won't be added if it is not possible according to the structure of the swimlane.
 
-@relatedapi:
-- api/cellmanager/cellmanager_move_method.md
-- api/cellmanager/cellmanager_remove_method.md
+**Related articles**
 
-@related: diagram_guides/shapes_arrows_list.md#swimlaneconfiguration
+diagram_guides/shapes_arrows_list.md#swimlaneconfiguration
 
 @changelog:
 Added in v4.0

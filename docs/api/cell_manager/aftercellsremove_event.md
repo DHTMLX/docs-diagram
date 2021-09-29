@@ -8,10 +8,10 @@ description: text
 
 @short: fires after cells of the swimlane are removed
 
-@signature: {``}
+@signature: {`afterCellsRemove: (swimlaneId: Id) => void;`}
 
 @params:
-- swimlaneId    string|number	the id of the item
+`swimlaneId: string |number` - the id of the item
 
 @example:
 diagram.events.on("afterCellsRemove", (swimlaneId) => {
@@ -20,10 +20,9 @@ diagram.events.on("afterCellsRemove", (swimlaneId) => {
 
 @descr:
 
-@relatedapi:
-- api/cellmanager/cellmanager_aftercellsremove_event.md
+**Related articles**
 
-@related: diagram_guides/shapes_arrows_list.md#swimlaneconfiguration
+diagram_guides/shapes_arrows_list.md#swimlaneconfiguration
 
 @changelog:
 Added in v4.0

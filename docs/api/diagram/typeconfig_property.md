@@ -18,6 +18,9 @@ const diagram = new dhx.Diagram("diagram_container", {
     },
 });
 
+@relatedsample:
+**Related sample**: [Mindmap. Direction ("left" | "right")](https://snippet.dhtmlx.com/pzllujx3)
+
 @descr:
 
 If you don't apply the config, the child shapes of the mind map will be arranged automatically according to the main algorithm.
@@ -47,8 +50,5 @@ const diagram = new dhx.Diagram("container", {
 The other child shapes that are not set in the **side** option will be arranged automatically according to the main algorithm.
 
 {{note You can use either the **direction** option set to *"left"/"right"* or the **side** option. }}
-
-**Related sample**:
-- [Mindmap. Direction ("left" | "right")](https://snippet.dhtmlx.com/pzllujx3)
 
 @changelog: added in v3.1.

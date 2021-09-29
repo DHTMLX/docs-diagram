@@ -11,7 +11,7 @@ description: text
 @signature: {`parse(data: IDataItem[]): void;`}
 
 @params:
-- `data: any` - the data that should be parsed into the editor
+`data: any` - the data that should be parsed into the editor
 
 @example:
 const data = [
@@ -41,16 +41,14 @@ const data = [
         "type": "line"
     },
 ]
- 
+
 const editor = new dhx.FreeEditor("editor_container"); 
 editor.parse(data);
 
 @descr:
 
-
-@relatedsample:
-https://snippet.dhtmlx.com/xshe9ut7	Diagram. Diagram Editor. Basic editor
-https://snippet.dhtmlx.com/og4qm3ja Diagram. Org Chart Editor. Basic editor
-
+**Related samples**:
+- [Diagram. Diagram Editor. Basic editor](https://snippet.dhtmlx.com/xshe9ut7)
+- [Diagram. Org Chart Editor. Basic editor](https://snippet.dhtmlx.com/og4qm3ja)
 
 You can load data in any supported data format. See the details in the [parse](api/data/methods/parse.md) article.

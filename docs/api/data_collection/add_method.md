@@ -8,10 +8,11 @@ description: text
 
 @short: adds a new shape to the diagram
 
-@signature: {``}
+@signature: {`add(newItem: IDataItem | IDataItem[], index?: number): Id | Id[];`}
 
 @params:
-- new_item		object		the object of a new item 
+- `newItem: object` - the object of a new item
+- `index: number` - optional, the index of the position starting from which new items will be added `todo: check`
 
 @example:
 diagram.data.add({ id: "3.2", text: "New Item", parent: "3" });

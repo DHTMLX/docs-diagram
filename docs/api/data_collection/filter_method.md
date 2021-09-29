@@ -8,11 +8,11 @@ description: text
 
 @short: filters item in the diagram by the specified key 
 
-@signature: {``}
+@signature: {`filter(rule?: IFilterMode | IFilterCallback, config?: IFilterConfig): void;`}
 
 @params:
 - criteria			object,function				the filtering criteria (either the key of the item attribute or a filtering function)
-* mode 				boolean						optional, <i>true</i> to define that each next filtering will be applied to the already filtered data, not to the initial data
+- mode 				boolean						optional, <i>true</i> to define that each next filtering will be applied to the already filtered data, not to the initial data
 
 @example:
 // filtering by the key of the shape attribute
@@ -22,6 +22,9 @@ diagram.data.filter({by:"text",match:"Manager"});
 diagram.data.filter(function(shape){
 	if(shape.text==="Manager"||shape.text==="Marketer"){return true}
 });
+
+@relatedsample:
+**Related sample**: [Diagram. Filtering shapes](https://snippet.dhtmlx.com/tm43bsgn)
 
 @descr:
 The **criteria** parameter set as object has the following attributes:
@@ -35,7 +38,6 @@ The method will render only the items that meet the filtering criteria. To rever
 diagram.data.filter();
 ~~~
 
-@relatedsample:	https://snippet.dhtmlx.com/tm43bsgn	Diagram. Filtering shapes
+**Related articles**
 
-@related:
-	common_guides/manipulating_shapes.md#filteringshapes
+common_guides/manipulating_shapes.md#filteringshapes

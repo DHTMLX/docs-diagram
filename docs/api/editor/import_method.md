@@ -11,14 +11,13 @@ description: text
 @signature: {`import(diagram: Diagram): void;`}
 
 @params:
-- `diagram: object` - the diagram object
+`diagram: object` - the diagram object
 
 @example:
 editor.import(diagram);
 
 @descr:
 
-@relatedsample:
-https://snippet.dhtmlx.com/bng7ego7 Diagram. Org Chart Editor. Live org chart edit
+**Related samples**: [Diagram. Org Chart Editor. Live org chart edit](https://snippet.dhtmlx.com/bng7ego7)
 
 You can load data in any supported data format. See the details in the [parse](api/data/methods/parse.md) article.

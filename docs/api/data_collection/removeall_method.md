@@ -8,7 +8,7 @@ description: text
 
 @short: deletes all items from the diagram
 
-@signature: {``}
+@signature: {`removeAll(): void;`}
 
 @example:
 diagram.data.removeAll();

@@ -8,7 +8,7 @@ description: text
 
 @short: returns the object of an item by its id
 
-@signature: {``}
+@signature: {`getItem(id: Id): T;`}
 
 @params:
 

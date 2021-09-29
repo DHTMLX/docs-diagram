@@ -8,7 +8,7 @@ description: text
 
 @short: serializes the diagram data into an array of JSON objects
 
-@signature: {``}
+@signature: {`serialize(driver?: DataDriver): T[];`}
 
 @params:
 

@@ -11,8 +11,7 @@ description: text
 @signature: {`add(id: Id, subId?: Id): void;`}
 
 @params:
-- id		string,number		the item id
-
+- `id: string | number` - the item id
 
 @example:
 // diagram must be created with the "select:true" option
@@ -21,17 +20,12 @@ diagram.data.parse(data);
 
 diagram.selection.add("2");
 
-
 @descr:
 
+**Related sample**: [Diagram. Org chart item selection](https://snippet.dhtmlx.com/jyoxn5h7)
 
-@relatedapi:
-	api/selection/methods/remove.md
-	api/selection/methods/getid.md
-    api/selection/methods/getitem.md
-	
-@relatedsample:	https://snippet.dhtmlx.com/jyoxn5h7	Diagram. Org chart item selection
+**Related articles**
 
-@related:
-	common_guides/manipulating_shapes.md#selectingshapes
-	common_guides/configuration.md#selectingshapes
+common_guides/manipulating_shapes.md#selectingshapes
+
+common_guides/configuration.md#selectingshapes
