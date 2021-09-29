@@ -22,13 +22,10 @@ diagram.selection.add("2");
 
 @descr:
 
-@relatedapi:
-api/selection/methods/remove.md
-api/selection/methods/getid.md
-api/selection/methods/getitem.md
-
 **Related sample**: [Diagram. Org chart item selection](https://snippet.dhtmlx.com/jyoxn5h7)
 
-@related:
+**Related articles**
+
 common_guides/manipulating_shapes.md#selectingshapes
+
 common_guides/configuration.md#selectingshapes

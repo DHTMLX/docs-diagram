@@ -20,11 +20,8 @@ var id = diagram.selection.getId(); // -> "2"
 
 @descr:
 
-@relatedapi:
-api/selection/methods/add.md
-api/selection/methods/getitem.md
-api/selection/methods/remove.md
+**Related articles**
 
-@related:
 common_guides/manipulating_shapes.md#selectingshapes
+
 common_guides/configuration.md#selectingshapes

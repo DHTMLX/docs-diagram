@@ -6,7 +6,7 @@ description: text
 
 # beforeEditorEditing
 
-@short: fires before the text value of an item is edited via the inline editor 
+@short: fires before the text value of an item is edited via the inline editor
 
 @signature: {`beforeEditorEditing: (value: string, currentValue: string, id: Id, key: string, subHeaderId?: string) => boolean | void;`}
 

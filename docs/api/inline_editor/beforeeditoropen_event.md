@@ -30,7 +30,6 @@ editor.diagram.events.on("beforeEditorOpen", (id, key, subheaderId) => {
     return true;
 });
 
-
 @descr:
 
 **Related samples**:

@@ -8,11 +8,11 @@ description: text
 
 @short: exports a diagram to a PNG file
 
-@signature: {``}
+@signature: {`png(config): void;`}
 
 @params:
 
-* config			object			optional, an object with export settings (see the list below)
+`config: object` - optional, an object with export settings (see the list below)
 
 @example:
 
@@ -25,7 +25,11 @@ diagram.export.png({
 	fullPage:true
 });
 
+@relatedsample:
+**Related samples**: [Diagram. Export diagram](https://snippet.dhtmlx.com/ybpmz0zk)
+
 @descr:
+
 {{note To avoid problems during export, all images for Diagram shapes must be set either in base64 format or via an absolute URL.}}
 
 You can specify the following settings for export to PNG:
@@ -40,11 +44,6 @@ You can specify the following settings for export to PNG:
 	- **height** - (*number*) the height of clipping area.
 - **omitBackground** -  (*boolean*) hides the default white background and allows capturing screenshots with transparency. 
 
-@related:
-	common_guides/data_export.md
+**Related articles**
 
-@relatedsample:
-https://snippet.dhtmlx.com/ybpmz0zk	Diagram. Export diagram
-
-@relatedapi:
-    api/export/pdf.md
+common_guides/data_export.md

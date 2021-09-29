@@ -21,15 +21,12 @@ diagram.selection.remove("1"); // -> true
 diagram.paint();
 
 @descr:
-{{note Please note that you need to call the paint() method to repaint the diagram after removing selection.}}
-
-@relatedapi:
-api/selection/methods/add.md
-api/selection/methods/getid.md
-api/selection/methods/getitem.md
-
 **Related sample**: [Diagram. Org chart item selection](https://snippet.dhtmlx.com/jyoxn5h7)
 
-@related:
+{{note Please note that you need to call the paint() method to repaint the diagram after removing selection.}}
+
+**Related articles**
+
 common_guides/manipulating_shapes.md#selectingshapes
+
 common_guides/configuration.md#selectingshapes
