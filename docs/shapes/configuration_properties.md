@@ -19,7 +19,7 @@ description: text
 - **fixed** - (*boolean*) enables/disables movement and resizing of a shape, *false* by default;
 - **hidden** - (*boolean*) defines, whether a shape will be hidden;
 - **css** - (*string*) the name of the CSS class that should be applied to the shape;
-- **[key: string]** - (*any*) your own property. For details, check the [Custom shape](../custom_shape/) article. <br>*Overriding the internal properties of the diagram shape object is forbidden as it causes the incorrect work of the diagram and its editor.*
+- **[key: string]** - (*any*) a custom property for a custom shape. For details, check the [Custom shape](../custom_shape/) article. <br>*Use unique names as names for custom properties. Overriding the internal properties of the diagram shape object is forbidden as it causes the incorrect work of the diagram and its editor.*
 ## Properties specific for "topic" and flow chart shapes
 
 - **fill** - (*string*) the color of the shape, "#DEDEDE" by default;

@@ -35,9 +35,11 @@ diagram.addShape("networkCard", {
 });
 ~~~
 
-The **defaults** attribute is used to define the default configuration of a "networkCard" shape. The values of the specified properties can be overridden in the configuration objects of separate shapes if needed.
+The **defaults** attribute is used to define the default configuration of a "networkCard" shape. The values of the specified properties can be changed in the configuration objects of separate shapes if needed.
 
-2\. Use the unique name of the shape as a value of the **type** attribute inside the shape object while preparing a data set for loading into the diagram:
+2\. Use the unique name of the shape as a value of the **type** attribute inside the shape object while preparing a data set for loading into the diagram.
+
+{{note The data object of a custom shape can include any [configuration properties of a shape](../../shapes/configuration_properties/).}} 
 
 ~~~js
 const networkDiagram = [
@@ -46,13 +48,17 @@ const networkDiagram = [
         "type": "networkCard",
         "x": 0,
         "y": 380,
-        // override the default values of the text and ip attributes
+        // change the default values of the text and ip attributes
         "text": "Remote expert desktop",
-        "ip": "192.168.32.2"
+        "ip": "192.168.32.2" // a custom property
     },
     // more options
 ]
 ~~~
+
+To change the default values of the *text* and *ip* properties, we've specified the same properties with the new values in the configuration object of a shape. 
+Thus, the *"Network Card"* text value will be replaced with the *"Remote expert desktop"* one and the *"138.68.41.78"* ip value will be replaced with *"192.168.32.2"*.
+
 
 ## Event handlers for custom shapes
 
