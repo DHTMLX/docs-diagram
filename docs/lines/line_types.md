@@ -27,6 +27,7 @@ It is possible to define vertical direction of connecting shapes for the parent 
 ### Lines in the mindmap mode
 
 The mindmap mode is used to render one more kind of a hierarchical diagram. The shapes are connected by curved lines and arranged around a central shape.
+
 <iframe src="https://snippet.dhtmlx.com/lo1vm0e8?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="650"></iframe>
 
 The mode is useful when you need to represent a core topic or idea surrounded by the branches of the subtopics. 

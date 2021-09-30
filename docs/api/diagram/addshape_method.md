@@ -3,7 +3,7 @@ sidebar_label: addShape()
 title: addShape
 description: text
 ---
-```
+
 # addShape()
 
 @short: creates a custom shape; sets sidebar options for its editing in the right panel of the editor
@@ -33,7 +33,7 @@ diagram.data.parse(data);
 @descr:
 
 {{note Do not use default names of types of the dhtmlxDiagram library as names of types of your custom shapes. }}
-```todo
+
 The **parameters** attribute contains the following attributes:
 
 - **template** - (*function*) mandatory, the function that returns either an HTML or SVG template. The function takes the config of a shape as a parameter.
@@ -51,7 +51,7 @@ The **parameters** attribute contains the following attributes:
 We recommend that you use different css classes for different custom shapes when initializing custom event handlers.
 
 
-### Formats of the shape template
+## Formats of the shape template
 
 The **template** function can return either an HTML or SVG template.
 
@@ -93,7 +93,7 @@ For example, an <img src="" alt=""> tag should look like this:
 
 }}
 
-### Setting the default configuration for the custom shape
+## Setting the default configuration for the custom shape
 
 You can define the default configuration for each shape with the custom type with the help of the **defaults** attribute.
 For example:
@@ -135,7 +135,7 @@ var data = [
 diagram.data.parse(data);
 ~~~
 
-### Adding custom event handlers
+## Adding custom event handlers
 
 Starting with v3.1, you can add custom event handlers to the custom shapes via the **eventHandlers** attribute of the **addShape()** method:
 
@@ -180,7 +180,7 @@ diagram.data.load("../dataset.json");
 {{editor	https://snippet.dhtmlx.com/do1jwmw1	Diagram. Site map and user flow example with custom shapes}}
 
 
-### Customization of the right panel of the editor
+## Customization of the right panel of the editor
 
 When you add a custom shape into the editor (for example, [Diagram Editor](diagram_guides/editor_mode.md)), you may want to customize the right panel of the editor in order to be able to edit the attributes of the custom shape via the sidebar options. 
 In this case, you can use the **properties** attribute of the **addShape()** method:
@@ -209,7 +209,7 @@ editor.diagram.addShape("networkCard", {
 - **properties** - (*array*) optional, an array of objects that defines which sidebar options will be rendered in the [right panel of the editor](diagram_guides/editor_mode.md#rightpanelcustomization) for the shape. Each object of a separate sidebar option can contain the following properties:
     - **type** - (*string*) mandatory, the type of a sidebar option for editing attributes of a shape. See the list of available types [below](api/diagram_addshape.md#typesofsidebaroptions).
     - **label** - (*string*) optional, specifies the label for the sidebar option in the right panel
-    - **property** - (*string*) optional, a custom configuration property of a shape
+    - **property** - (*string*) optional, a custom property of a shape
 
 You need to use the <b>type</b> attribute together with the <b>property</b> one to specify the sidebar option for editing a custom property. For example:
 
@@ -219,185 +219,50 @@ You need to use the <b>type</b> attribute together with the <b>property</b> one 
 
 As a result, you can edit the custom <i>ip</i> attribute of the "networkCard" shapes via the text sidebar option with the *IP* label.
 
-### Configuring preview of the custom shape in the left panel of Diagram Editor
+```todo
+To define which sidebar option should be provided for editing a custom property of a shape, you need to use the **type** attribute together with the **property** one while preparing objects for rendering sidebar objects:
+
+~~~js
+editor.diagram.addShape("template", {
+    template: template,
+    properties: [
+        { type: "position" },
+        { type: "size" },
+        // the custom 
+        { type: "text", label: "Name", property: "name" },
+        ...
+    ],
+});
+~~~
+
+As you can see from the code snippet above, we've renamed the "Text" sidebar option to "Name" and specified that the option will be used for editing the custom <i>name</i> property.
+
+The order of the objects in the array defines the order the sidebar options will be displayed in the right panel.
+```
+
+### Types of sidebar options
+
+The available values of the **type** attribute are:
+
+- **"arrange"** - provides interface for editing the *width*, *height*, *angle*, *x*, *y* properties of a shape. The properties can't be overridden. The type is available only in the default mode of the editor.
+- **"position"** - provides interface for editing either the *x*/*y*, or *dx*/*dy* properties of a shape. The properties can't be overridden.
+- **"size"** - provides interface for editing the *width* and *height* properties of a shape. The properties can't be overridden.
+- **"title"** - provides interface for editing text values of a shape. By default, this type allows editing the *title* property of a shape.
+- **"text"** - provides interface for editing text values of a shape. By default, this type allows editing the *text* property of a shape.
+- **"img"** - provides interface for editing an image of a shape. By default, this type allows editing the *img* property of a shape. 
+- **"fill"** - provides interface for editing color values of a shape. By default, this type allows editing the *fill* property of a shape.
+- **"textProps"** - provides interface for editing the *textAlign*, *lineHeight*, *fontStyle*, *textVerticalAlign*, *fontSize* properties of a shape. The properties can't be overridden. You need to specify all of these properties in the data set for correct work of the **Text** sidebar option.
+- **"strokeProps"** - provides interface for editing the *stroke*, *strokeType*, *strokeWidth* properties of a shape. The properties can't be overridden. You need to specify all of these properties in the data set for correct work of the **Stroke** sidebar option.
+- **"grid"** - provides interface for editing the step of moving a shape. The visibility of the option is adjusted via the **controls** property of the editor.
+
+## Configuring preview of the custom shape in the left panel of Diagram Editor
 
 The left panel of the Diagram Editor renders the previews of all shapes provided by dhtmlxDiagram as well as previews of custom shapes added via the **addShape()** method. 
 
 You can configure the preview of the custom shape via the **preview** property of the **defaults** attribute of the **addShape()** method. Check the details in the [related article](diagram_guides/editor_mode.md#settingpreview).
 
 
-Types of sidebar options
---------------------------
 
-<table  style='border-left:none !important;' cellspacing="0" cellpadding="1" border="0">
-	<tbody>
-    <tr>
-		<td id="data" class='topics'>
-		    <h4>
-		        - type: "arrange"
-		    </h4>
-		    <ul id="data_sublist" >
-				<img src="arrange_type.png">
-            </ul>
-        </td>
-		<td class='topic_description'>
-		<ul>
-    <li>set the position of a shape via x and y coordinates;</li>
-	<li>define the width and height of a shape;</li>
-    <li>set the angle of rotation;</li></ul>
-    This type allows editing the <i>width, height, angle, x, y</i> attributes of a shape.
-	{{note The properties can't be overridden. The Arrange sidebar option can be used only in Diagram Editor. It does not work in Org Chart Editor}}
-        </td>				
-	</tr>
-	 <tr>
-		<td id="data">
-		    <h4>
-		         - type: "position"
-		    </h4>
-		    <ul id="data_sublist" >
-				<img src="position_type.png">
-            </ul>
-        </td>
-		<td class='topic_description'>
-        <ul>
-        <li>set the left and top offsets to define the position of a shape;</li>
-        </ul>
-        This type allows editing the <i>dx, dy</i> coordinate attributes of an org chart shape and <i>x,y</i> coordinate attributes of a diagram shape.
-		{{note The properties can't be overridden.}}
-        </td>		
-	</tr>
-    <tr>
-		<td id="data">
-		    <h4>
-		         - type: "size"
-		    </h4>
-		    <ul id="data_sublist" >
-				<img src="size_type.png">
-            </ul>
-        </td>
-		<td class='topic_description'>
-        <ul>
-        <li>define the width and height of a shape;</li>
-        </ul>
-        This type allows editing the <i>width</i> and <i>height</i> attributes of a shape.
-		{{note The properties can't be overridden.}}
-        </td>		
-	</tr>
-    <tr>
-		<td id="data" class='topics'>
-		    <h4>
-		         - type: "title"
-		    </h4>
-		    <ul id="data_sublist" >
-				<img src="title_type.png">
-            </ul>
-        </td>
-		<td class='topic_description'><ul><li>edit the text of a shape;</li></ul> By default the type allows editing the <i>title</i> attribute of a shape. 
-		<br>The property can be overridden.
-        </td> 		
-	</tr>
-    <tr>
-		<td id="data" class='topics'>
-		    <h4>
-		         - type: "text"
-		    </h4>
-		    <ul id="data_sublist" >
-				<img src="text_type.png">
-            </ul>
-        </td>
-		<td class='topic_description'>
-            <ul>
-                <li>edit the text of a shape;</li>
-            </ul> By default the type allows editing the <i>text</i> attribute of a shape. 
-			<br>The property can be overridden.
-        </td>		
-	</tr>
-    <tr>
-		<td id="data" class='topics'>
-		    <h4>
-		         - type: "img"
-		    </h4>
-		    <ul id="data_sublist" >
-				<img src="img_type.png">
-            </ul>
-        </td>
-		<td class='topic_description'>
-            <ul>
-                <li>load an image for the card and update it <br> An image is loaded from the computer and saved in the base64 format right into the data.
-	</li>
-            </ul>
-            By default the type allows editing the <i>img</i> attribute of a shape. <br>The property can be overridden.
-        </td>		
-	</tr>
-    <tr>
-		<td id="data" class='topics'>
-		    <h4>
-		         - type: "fill"
-		    </h4>
-		    <ul id="data_sublist" >
-				<img src="fill_type.png">
-            </ul>
-        </td>
-		<td class='topic_description'>
-        <ul>
-        <li>modify the color of a shape via the related colorpicker;</li></ul> By default the type allows editing the <i>fill</i> attribute of a shape. <br>The property can be overridden.
-        </td>		
-	</tr>
-    <br>
-    <tr>
-		<td id="data" class='topics'>
-		    <h4>
-		         - type: "textProps"
-		    </h4>
-		    <ul id="data_sublist" >
-				<img src="textprops_type.png">
-            </ul>
-        </td>
-		<td class='topic_description'><ul><li>adjust the text settings:
-        <ul> 
-    	<li>font size, weight, style and color;</li> 
-        <li>line spacing;</li>
-        <li>horizontal and vertical text alignment.</li></ul>
-        </ul>
-    </li>
-    The type allows editing the <i>textAlign, lineHeight, fontStyle, textVerticalAlign, fontSize</i> attributes of a shape. You need to define all of these attributes in the data set for correct work of the <b>Text</b> sidebar option.
-	{{note The properties can't be overridden.}}
-    </td>		
-	</tr>
-    <br>
-     <tr>
-		<td id="data" class='topics'>
-		    <h4>
-		         - type: "strokeProps"
-		    </h4>
-		    <ul id="data_sublist">
-				<img src="stroke_type.png">
-            </ul>
-        </td>
-		<td class='topic_description'><ul><li>change the outline of a shape: set its color, type and width</li></ul>
-        The type allows editing the <i>stroke, strokeWidth</i> attributes of a shape. You need to define all of these attributes in the data set for correct work of the <b>Stroke</b> sidebar option.
-		{{note The properties can't be overridden.}}
-        </td>		
-	</tr>
-    <tr>
-		<td id="data" class='topics'>
-		    <h4>
-		         - type: "grid"
-		    </h4>
-		    <ul id="data_sublist" >
-				<img src="grid_type.png">
-            </ul>
-        </td>
-		<td class='topic_description'>
-        <ul>
-        <li>modify the step of moving a shape
-        </li>
-        </ul>
-		{{note The Grid Step sidebar will appear only when you set the <b>showGridStep</b> config option to <i>true</i>. Otherwise, the sidebar won't be displayed.}}
-        </td>		
-	</tr>
-   	</tbody>
-</table>
 
 
 @changelog: 
@@ -406,5 +271,3 @@ Types of sidebar options
 
 @relatedsample:
 https://snippet.dhtmlx.com/do1jwmw1	Diagram. Site map and user flow example with custom shapes
-
-```
