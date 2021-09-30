@@ -11,7 +11,7 @@ description: text
 @signature: {`afterUnSelect: (id: Id, subId?: Id | undefined) => void;`}
 
 @params:
-`id: string,number` - the item id
+`id: string | number` - the item id
 
 @example:
 var diagram = new dhx.Diagram("diagram_container", { 
