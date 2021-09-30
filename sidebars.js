@@ -346,7 +346,7 @@ module.exports = {
         type: "category",
         label: "Lines",
         items: [
-          "lines/line_types",
+          "lines/index",
         ],
       },
       // Groups
