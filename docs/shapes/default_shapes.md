@@ -16,7 +16,7 @@ The DHTMLX Diagram library provides you with a set of default types of shapes th
 
 Tip: Use the name of the necessary shape as a value of the **type** attribute inside the shape object, while [preparing a data set for loading into the diagram](common_guides/loading_data.md#preparingdatatoload).
 
-- the `"card"` type that is the default type of shapes in the "org chart" mode of Diagram:
+- the `"card"` type that is the default type of shapes in the "org chart" mode of Diagram. Each shape has a text and a colored header line. Shapes located on the same level have headers of identical color.
 
 <iframe src="https://snippet.dhtmlx.com/5ign6fyy?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="550"></iframe>
 
@@ -24,7 +24,7 @@ Tip: Use the name of the necessary shape as a value of the **type** attribute in
 
 <iframe src="https://snippet.dhtmlx.com/qnx3ekin?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="550"></iframe>
 
-- the `"topic"` type that is the default type of shapes in the "mindmap" mode of Diagram.
+- the `"topic"` type that is the default type of shapes in the "mindmap" mode of Diagram. Each shape has a text and a colored border. The color of the outline depends on the level the shape belongs to.
 
 <iframe src="https://snippet.dhtmlx.com/3igf1gd5?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="350"></iframe>
 
