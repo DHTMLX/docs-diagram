@@ -29,9 +29,13 @@ var shape = diagram.data.find(function(shape){
 	if(shape.text==="Manager"||shape.text==="Marketer"){return true}
 });
 
+@relatedsample:
+**Related sample**: [Diagram. Finding necessary shape](https://snippet.dhtmlx.com/sete9z73)
+
 @descr:
 
-@relatedsample:	https://snippet.dhtmlx.com/sete9z73	Diagram. Finding necessary shape
 
-@related:
-	common_guides/manipulating_shapes.md#findingnecessaryshape
+
+**Related articles**
+
+common_guides/manipulating_shapes.md#findingnecessaryshape

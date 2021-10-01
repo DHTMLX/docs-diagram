@@ -18,5 +18,6 @@ var data = diagram.data.serialize();
 
 @descr:
 
-@related:
+**Related articles**
+
 common_guides/loading_data.md#savingandrestoringstate

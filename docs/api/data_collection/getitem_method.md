@@ -29,5 +29,6 @@ var shape = diagram.data.getItem(123);
 var text = shape.text;
 ~~~
 
-@related:
+**Related articles**
+
 common_guides/manipulating_shapes.md#gettingshape

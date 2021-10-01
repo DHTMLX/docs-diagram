@@ -22,7 +22,7 @@ A promise of data loading.
 diagram.data.load("../common/data.json");
 
 @relatedsample:
-https://snippet.dhtmlx.com/09isp2d8	Diagram. Org chart load data
+**Related sample**: [Diagram. Org chart load data](https://snippet.dhtmlx.com/09isp2d8)
 
 @descr:
 
@@ -36,5 +36,6 @@ diagram.data.load("../some/data").then(function(){
 });
 ~~~
 
-@related:
+**Related articles**
+
 common_guides/loading_data.md

@@ -17,6 +17,9 @@ description: text
 @example:
 diagram.data.add({ id: "3.2", text: "New Item", parent: "3" });
 
+@relatedsample:
+**Related sample**: [Diagram. Org chart add/delete item](https://snippet.dhtmlx.com/8wi20uop)
+
 @descr:
 
 ## Details
@@ -66,8 +69,6 @@ The "type" in the above code is the type of a shape or a connector, it can have 
 
 [Read about connectors configuration options](diagram_guides/shapes_arrows_list.md#connectorstypes).
 
-@relatedsample:	https://snippet.dhtmlx.com/8wi20uop	Diagram. Org chart add/delete item
+**Related articles**
 
-@related:
 common_guides/manipulating_shapes.md#addingshape
-	

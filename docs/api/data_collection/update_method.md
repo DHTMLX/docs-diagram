@@ -22,5 +22,6 @@ diagram.data.update(123, { text:"New text" });
 
 The command can't be used to change the *id* or *type* of the shape.
 
-@related:
+**Related articles**
+
 common_guides/manipulating_shapes.md#updatingshape

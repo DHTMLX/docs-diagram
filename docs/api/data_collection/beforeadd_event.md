@@ -21,9 +21,9 @@ diagram.events.on("BeforeAdd", function(id){
 	return true;
 });
 
+@relatedsample:
+**Related sample**: [Diagram. Org chart events](https://snippet.dhtmlx.com/l38pct7c)
+
 @descr:
 
 Returning *false* from the event handler will prevent item adding.
-
-
-**Related sample**: [Diagram. Org chart events](https://snippet.dhtmlx.com/l38pct7c)

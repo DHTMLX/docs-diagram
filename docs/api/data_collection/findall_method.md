@@ -31,7 +31,6 @@ var shapes = diagram.data.findAll(function(shapes){
 
 @descr:
 
-@relatedapi:
-	api/data/methods/find.md
-@related:
-	common_guides/manipulating_shapes.md#findingnecessaryshape
+**Related articles**
+
+common_guides/manipulating_shapes.md#findingnecessaryshape

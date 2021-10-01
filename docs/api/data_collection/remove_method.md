@@ -17,10 +17,12 @@ description: text
 
 diagram.data.remove("2");
 
+@relatedsample:
+**Related sample**: [Diagram. Org chart add/delete item](https://snippet.dhtmlx.com/8wi20uop)
+
 @descr:
 In case of organogram, deleting a shape will remove the link to this shape and all child shapes as well.
 
-@relatedsample:	https://snippet.dhtmlx.com/8wi20uop	Diagram. Org chart add/delete item
+**Related articles**
 
-@related:
 common_guides/manipulating_shapes.md#deletingshapes

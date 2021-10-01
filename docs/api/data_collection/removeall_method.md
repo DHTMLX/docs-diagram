@@ -13,9 +13,11 @@ description: text
 @example:
 diagram.data.removeAll();
 
+@relatedsample:
+**Related sample**: [Diagram. Org chart add/delete item](https://snippet.dhtmlx.com/8wi20uop)
+
 @descr:
 
-@relatedsample:	https://snippet.dhtmlx.com/8wi20uop	Diagram. Org chart add/delete item
+**Related articles**
 
-@related:
 common_guides/manipulating_shapes.md

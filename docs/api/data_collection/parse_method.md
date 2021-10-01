@@ -42,7 +42,8 @@ var data = [
 var diagram = new dhx.Diagram("diagram_container", { type: "org" });
 diagram.data.parse(data);
 
-@relatedsample:	https://snippet.dhtmlx.com/5ign6fyy	Diagram. Org Chart initialization
+@relatedsample:
+**Related sample**: [Diagram. Org Chart initialization](https://snippet.dhtmlx.com/5ign6fyy)
 
 @descr:
 
@@ -55,5 +56,6 @@ For now, Diagram supports two JSON formats:
 
 Read more about the ways of setting connection between links for [Org Chart](orgchart_guides/orgchart_connectors.md) and [Diagram](diagram_guides/diagram_connectors.md).
 
-@related:
+**Related articles**
+
 common_guides/loading_data.md
