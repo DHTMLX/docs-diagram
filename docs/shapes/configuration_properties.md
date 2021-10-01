@@ -19,7 +19,11 @@ description: text
 - **fixed** - (*boolean*) enables/disables movement and resizing of a shape, *false* by default;
 - **hidden** - (*boolean*) defines, whether a shape will be hidden;
 - **css** - (*string*) the name of the CSS class that should be applied to the shape;
+
+## Custom properties
+
 - **[key: string]** - (*any*) a custom property for a custom shape. For details, check the [Custom shape](../custom_shape/) article. <br>*Use unique names as names for custom properties. Overriding the internal properties of the diagram shape object is forbidden as it causes the incorrect work of the diagram and its editor.*
+
 ## Properties specific for "topic" and flow chart shapes
 
 - **fill** - (*string*) the color of the shape, "#DEDEDE" by default;
@@ -69,3 +73,4 @@ description: text
 - **openDir** - (*object*) shows/hides the child items of the root shape. The object takes two attributes:
     - **left** - (*boolean*) shows/hides the child items to the left of the root shape;
     - **right** - (*boolean*) shows/hides the child items to the right of the root shape.
+

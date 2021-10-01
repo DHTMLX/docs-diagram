@@ -40,7 +40,7 @@ The **defaults** attribute is used to define the default configuration of a "net
 
 2\. Use the unique name of the shape as a value of the **type** attribute inside the shape object while preparing a data set for loading into the diagram.
 
-{{note The data object of a custom shape can include any [configuration properties of a shape](../../shapes/configuration_properties/).}} 
+{{note The data object of a custom shape can contain any [configuration properties](../../shapes/configuration_properties/) including custom ones.}} 
 
 ~~~js
 const networkDiagram = [
