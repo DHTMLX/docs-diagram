@@ -8,15 +8,14 @@ description: text
 
 @short: loads data from a local data source
 
-@signature: {`parse(data: T[], driver?: DataDriver | IDataDriver): void;`}
+@signature: {`parse(data: T[] | string, driver?: IDataDriver | DataDriver): void;`}
 
 @params:
 
-- data			any 		the data to load
-
+- `data: array | string` - the data to load
+- `driver: object | string` - optional, DataDriver or type of data ("json", "csv", "xml"), "json" by default
 
 @example:
-
 var data = [
 	{
 		id: "1",
@@ -43,6 +42,9 @@ var data = [
 var diagram = new dhx.Diagram("diagram_container", { type: "org" });
 diagram.data.parse(data);
 
+@relatedsample:
+**Related sample**: [Diagram. Org Chart initialization](https://snippet.dhtmlx.com/5ign6fyy)
+
 @descr:
 
 You can load data in any supported data format.
@@ -54,11 +56,6 @@ For now, Diagram supports two JSON formats:
 
 Read more about the ways of setting connection between links for [Org Chart](orgchart_guides/orgchart_connectors.md) and [Diagram](diagram_guides/diagram_connectors.md).
 
-@related:
-	common_guides/loading_data.md
-    
-@relatedapi:
-	api/data/methods/load.md
-    api/data/methods/serialize.md
-    
-@relatedsample:	https://snippet.dhtmlx.com/5ign6fyy	Diagram. Org Chart initialization
+**Related articles**
+
+common_guides/loading_data.md

@@ -8,7 +8,7 @@ description: text
 
 @short: fires after unselecting an item
 
-@signature: {`afterUnSelect: (id: Id, subId?: Id | undefined) => void;`}
+@signature: {`afterUnSelect: (id: Id) => void;`}
 
 @params:
 `id: string | number` - the item id

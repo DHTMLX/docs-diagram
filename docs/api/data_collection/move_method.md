@@ -8,20 +8,17 @@ description: text
 
 @short: moves an item to the defined position
 
-@signature: {`move(id: Id | Id[], index: number, target?: DataCollection | TreeCollection, targetId?: Id): Id | Id[];`}
+@signature: {`move(id: Id | Id[], index: number, target?: DataCollection): Id | Id[];`}
 
 @params:
-- id 			string,number		the id of an item to move
-- index			number				the index to move an item to
-- target		object				optional, the target data collection object
+- `id: string | string[]` - the ids of an item to move
+- `index: number` - the index to move items to
+- `target: object` - optional, the target data collection object
 
-
+@returns:
+A new array of items where each item is the result of the callback function.
 
 @example:
 diagram.data.move("4",5); // moves the shape with id=4 to the position with index 5
 
-
 @descr:
-
-@relatedapi:
-api/data/methods/copy.md

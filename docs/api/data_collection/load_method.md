@@ -8,19 +8,21 @@ description: text
 
 @short: loads data from an external file
 
-@signature: {`load(url: IDataProxy | string, driver?: IDataDriver | DataDriver): Promise<any>;`}
+@signature: {`load?(url: IDataProxy | string, driver?: DataDriver): Promise<any>;`}
 
 @params:
 
-- url			string		the URL of an external file
+- `url: IDataProxy | string` - the URL of an external file or DataProxy with the URL configured
+- `driver: string` - optional, DataDriver or type of data ("json", "csv", "xml"), "json" by default
 
 @returns:
-
-- loaded		promise		a promise of data loading
+A promise of data loading.
 
 @example:
 diagram.data.load("../common/data.json");
 
+@relatedsample:
+**Related sample**: [Diagram. Org chart load data](https://snippet.dhtmlx.com/09isp2d8)
 
 @descr:
 
@@ -34,8 +36,6 @@ diagram.data.load("../some/data").then(function(){
 });
 ~~~
 
-@relatedapi:
-	api/data/methods/parse.md
-@relatedsample:	https://snippet.dhtmlx.com/09isp2d8	Diagram. Org chart load data 
-@related:
-	common_guides/loading_data.md
+**Related articles**
+
+common_guides/loading_data.md

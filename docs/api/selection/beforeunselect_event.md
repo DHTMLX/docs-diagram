@@ -8,7 +8,7 @@ description: text
 
 @short: fires on unselecting an item, but before the item is really unselected
 
-@signature: {`beforeUnSelect: (id: Id, subId?: Id | undefined) => void | boolean;`}
+@signature: {`beforeUnSelect: (id: Id) => void | boolean;`}
 
 @params:
 `id: string | number` - the item id

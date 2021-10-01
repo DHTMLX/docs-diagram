@@ -6,9 +6,11 @@ description: text
 
 # findAll()
 
+`todo: check`
+
 @short: finds all the items that correspond to the specified parameters
 
-@signature: {`findAll(rule: IFilterMode): T[];`}
+@signature: {`findAll(rule: IFilterMode | DataCallback<T>): T[];`}
 
 @params:
 - by			string,function			 the search criterion (either the key of the item attribute or a filtering function)
@@ -29,7 +31,6 @@ var shapes = diagram.data.findAll(function(shapes){
 
 @descr:
 
-@relatedapi:
-	api/data/methods/find.md
-@related:
-	common_guides/manipulating_shapes.md#findingnecessaryshape
+**Related articles**
+
+common_guides/manipulating_shapes.md#findingnecessaryshape

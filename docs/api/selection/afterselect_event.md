@@ -8,7 +8,7 @@ description: text
 
 @short: fires after selecting an item
 
-@signature: {`afterSelect: (id: Id, subId?: Id | undefined) => void;`}
+@signature: {`afterSelect: (id: Id) => void;`}
 
 @params:
 `id: string | number` - the item id
