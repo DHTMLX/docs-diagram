@@ -39,7 +39,7 @@ To do that, you need to:
 
 ## Setting shape preview
 
-To customize the appearance of the shapes rendered in the left panel of the editor, you can apply the [preview](../../../shapes/configuration_properties/) configuration property of a shape object.
+To customize the appearance of the shapes rendered in the left panel of the editor, you can apply the [preview](../../../shapes/configuration_properties/#properties-specific-for-the-default-mode) configuration property of a shape object.
 
 The property can be applied in two cases:
 
