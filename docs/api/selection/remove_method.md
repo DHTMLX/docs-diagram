@@ -6,15 +6,12 @@ description: text
 
 # remove()
 
-`todo: check - privet?, 4.1?`
-
 @short: unselects a previously selected item
 
-@signature: {`remove(id?: Id, subId?: Id): boolean`}
+@signature: {`remove(id?: Id): boolean`}
 
 @params:
 - `id: string | number` - optional, the item id
-- `subId: Id` - `todo`
 
 @returns:
 `True` if the item is unselected, otherwise `false`.
