@@ -117,9 +117,7 @@ After selecting an item in the grid area, you can update its attributes [via the
 
 ## Configuring toolbar per-item
 
-```todo
-There is also the ability to configure the toolbar according to your needs. Read the details [below](#configuringtoolbarforshapes).
-```
+You can customize the personal toolbar of shapes, groups, swimlanes according to your needs via the [shapeToolbar](../../../api/editor/shapetoolbar_property/) property of the editor.
 
 Using hotkeys
 ---------------
