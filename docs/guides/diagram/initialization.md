@@ -9,10 +9,10 @@ description: text
 In this article we will discuss the stages of adding DHTMLX Diagram on a page. This process presupposes several simple steps:
 
 - [Download the DHTMLX Diagram package](https://dhtmlx.com/docs/products/dhtmlxDiagram/download.shtml) and unpack it into a folder of your project
-- [Include the DHTMLX Diagram source files on a page](common_guides/initialization.md#includingrequiredcodefiles).
-- [Create a container to place the Diagram into](common_guides/initialization.md#creatingcontainer).
-- [Initialize the Diagram with the object constructor](common_guides/initialization.md#initializingdiagram).
-- [Load data into the Diagram](#loaddataintodiagram).
+- [Include the DHTMLX Diagram source files on a page](#including-required-code-files).
+- [Create a container to place the Diagram into](#creating-a-container).
+- [Initialize the Diagram with the object constructor](#initializing-diagram).
+- [Load data into the Diagram](#loading-data-into-diagram).
 
 
 ~~~html
@@ -48,10 +48,10 @@ In this article we will discuss the stages of adding DHTMLX Diagram on a page. T
 </html>
 ~~~
 
-Including Required Code Files
+Including required code files
 -------------------
 
-To create DHTMLX Diagram, you need to include 2 source files on your page:
+To create Editor, you need to include 2 source files on your page:
 
 - **diagram.js**
 - **diagram.css**
@@ -59,8 +59,8 @@ To create DHTMLX Diagram, you need to include 2 source files on your page:
 Make sure that you set correct relative paths to these files:
 
 ~~~html
-<script type="text/javascript" src="codebase/diagram.js"></script>	
-<link rel="stylesheet" href="codebase/diagram.css">
+<script type="text/javascript" src="../codebase/diagram.js"></script>	
+<link rel="stylesheet" href="../codebase/diagram.css">
 ~~~
 
 The structure of DHTMLX Diagram package is the following: 
@@ -72,7 +72,7 @@ The structure of DHTMLX Diagram package is the following:
 - **samples** - the code samples;
 - **codebase** - the packed code files of the library. These files are much smaller and intended for use in production. **In your apps you need to use files from this folder**.
 
-Creating container
+Creating a container
 ---------------------
 
 It's high time to add an HTML container for our diagram. Let's give it the id "diagram_container":
@@ -105,11 +105,12 @@ const diagram = new dhx.Diagram(document.body, {
 
 ### Configuration properties
 
-To change the configuration of a diagram, you can specify the desired property in the config object passed as a second
-parameter of the constructor function. 
+To change the configuration of a diagram, you can specify the desired property in the config object passed as a second parameter of the constructor function. 
 
 ~~~js
-const diagram = new dhx.Diagram("diagram_container", {scale:0.7});
+const diagram = new dhx.Diagram("diagram_container", {
+	scale:0.7
+});
 ~~~
 
 {{editor	https://snippet.dhtmlx.com/4d4k3o8p	Diagram. Wide flowchart}}

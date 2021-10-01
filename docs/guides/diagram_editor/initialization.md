@@ -6,65 +6,113 @@ description: text
 
 # How to start with Diagram Editor
 
-The dhtmlxDiagram component provides a special Editor mode that allows you to try and apply your designer skills in building neat and nice-looking diagrams. 
+This article covers the process of displaying a Diagram editor on a page. In order to initialize the editor, you need to include source files specific for Editor and use the *DiagramEditor* instance. In all other aspects the initialization stage is the same as for the Diagram component:
 
-Default mode
------------
+- [Download the DHTMLX Diagram package](https://dhtmlx.com/docs/products/dhtmlxDiagram/download.shtml) and unpack it into a folder of your project;
+- [Include the source files on a page](#including-required-code-files);
+- [Create a container to place the Editor into](#creating-a-container);
+- [Initialize the Editor with the object constructor](#initializing-editor);
+- [Load data into the Editor](#loading-data-into-editor).
 
-In order to initialize a Diagram editor, you need to use the *DiagramEditor* instance. In all other aspects the initialization stage is the same as for the Diagram component: the constructor function takes as parameters either an HTML container or the document body and a configuration object.
+~~~html
+<!DOCTYPE html>
+<html>
+<head>
+  	<script type="text/javascript" src="../codebase/diagramWithEditor.js"></script>
+	<link rel="stylesheet" href="../codebase/diagramWithEditor.css">
+</head>
 
-~~~js
-var editor = new dhx.DiagramEditor(document.body, {// editor config settings});
+<body>
+	<div id="editor_container"></div>
+	<script>
+		// preparing data
+		const data = [ 
+    		{ id: 1, x: 100, y: 40, text: "Start", type: "start", height: 50 },
+			{ id: 2, x: 100, y: 170, text: "Operation 1", type: "output" },
+			{ id: 3, x: 100, y: 300, text: "Operation 2", type: "input" },
+			{ from: 1, to: 2 },
+			{ from: 2, to: 3 },
+    		// more objects
+		];
+
+		// creating Editor
+		const editor = new dhx.DiagramEditor("editor_container", {
+			// config options
+		});
+
+		// loading data into the editor
+		editor.parse(data);
+	</script>
+</body>
+</html>
 ~~~
 
-It is possible to load an [appropriate data set](common_guides/loading_data.md#preparingdatatoload) into the editor via the api/data/methods/parse.md method.
+Including required code files
+-------------------
 
-~~~js
-editor.parse(data);
+To create Editor, you need to include 2 source files on your page:
+
+- **diagramWithEditor.js**
+- **diagramWithEditor.css**
+
+Make sure that you set correct relative paths to these files:
+
+~~~html
+<script type="text/javascript" src="../codebase/diagramWithEditor.js"></script>
+<link rel="stylesheet" href="../codebase/diagramWithEditor.css">
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/xshe9ut7	Diagram. Diagram Editor. Basic editor}}
+Creating a container
+---------------------
 
+Add an HTML container for the Editor and give it an id, for example "editor_container":
 
-Configuration properties - add link
-
-
-Org chart mode
-----------
-
-You can modify the arrangement of the Org Chart shapes and their content in the special editor mode. To initialize an org chart in this mode, use a separate instance called *DiagramEditor*.
-
-The constructor of the editor doesn't differ much from that of the diagram. The constructor function takes as parameters either an HTML container or the document body, and a configuration object. 
-It is obligatory to set the **type:"org"** config option in this object to initialize Org Chart editor:
-
-~~~js
-var editor = new dhx.DiagramEditor(document.body, { type: "org" });
+~~~html
+<div id="editor_container"></div>
 ~~~
 
-The editor is populated with data that has the same structure as [the data of an Org Chart](common_guides/loading_data.md#preparingdatatoload). 
-Use the api/data/methods/parse.md method to load data into the editor:
+Initializing Editor
+----------------
+
+To initialize the Editor, you should use the `dhx.DiagramEditor` constructor. The constructor function takes two parameters:
+
+- a container to place an Editor into. The one we have created at the previous step.
+- an object with [configuration properties](#configuration-properties). If this argument is not passed to the constructor, the settings will be default.
 
 ~~~js
-editor.parse(data);
-~~~
-
-{{editor	https://snippet.dhtmlx.com/og4qm3ja	Diagram. Org Chart Editor. Basic editor}}
-
-Mindmap mode
-------------
-
-The library includes a special *Editor mode* with a set of in-built tools that will help you to accelerate the process of customizing shapes of Mind Map and their content. To initialize a mind map in this mode, use a separate instance called *DiagramEditor*.
-
-The constructor of the editor is similar to that of diagram. The constructor function takes as parameters either an HTML container or the document body, and a configuration object. To initialize a Mind Map editor, you need to set the obligatory **type:"mindmap"** option in the configuration object:
-
-~~~js
-var editor = new dhx.DiagramEditor(document.body, { 
-	type: "mindmap" 
+const editor = new dhx.DiagramEditor("editor_container", {
+	type: "default" // "default" | "org" | "mindmap"
 });
 ~~~
 
-To populate the editor with [an appropriate data set](common_guides/loading_data.md#preparingdatatoload), use the api/data/methods/parse.md method:
+It is also possible to skip setting a container for Editor and to add it right into the document's body:
 
 ~~~js
-editor.parse(data);
+const editor = new dhx.DiagramEditor(document.body, {
+	type: "default" // "default" | "org" | "mindmap"
+});
 ~~~
+
+### Configuration properties
+
+To change the configuration of the editor, you can specify the desired property in the config object passed as a second parameter of the constructor function. 
+
+~~~js
+const editor = new dhx.DiagramEditor(document.body, {
+	type: "default" // "default" | "org" | "mindmap",
+	shapeBarWidth: 320,
+	lineGap: 20
+});
+~~~
+
+### Properties
+
+Check [the full list of configuration properties of Editor](../../../api/editor/api_overview/#editor-properties).
+
+Loading data into Editor
+----------------------------
+
+It is possible to load an [appropriate data set](common_guides/loading_data.md#preparingdatatoload) into the editor via the [](../../api/editor/parse_method.md) method of the editor.
+
+<iframe src="https://snippet.dhtmlx.com/xshe9ut7?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="200"></iframe>
+

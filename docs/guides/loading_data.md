@@ -4,112 +4,102 @@ title: Loading and Storing Data
 description: text
 ---
 
-# Loading and Storing Data
+# Loading and storing data
 
-You can populate Diagram, Org Chart, or Mind Map with data in the following ways:
+You can populate DHTMLX Diagram with data in the following ways:
 
 - [load data from an external file](#externaldataloading)
 - [load data from a local data source](#loadingfromalocalsource)
 
-Preparing Data to Load
--------------------------
+## Preparing data to load
 
-In order to load data into the DHTMLX Diagram, you need to prepare an appropriate data set in the JSON format. Here are examples of JSON format templates for all the available types of diagrams:
+DHTMLX Diagram takes data in the JSON format. It is an array that contains a set of data objects. There are 4 types of objects:
 
-1\. **[Org chart](org_chart_guides.md)** template:
+- **shape objects**
 
 ~~~js
 const data = [
-	{ "id": "1", "text": "Chairman & CEO" },
-	{ "id": "2", "text": "Manager", "parent": "1" },
-	{ "id": "3", "text": "Technical Director", "parent": "1" },
-	{ "id": "2.1", "text": "Marketer", "parent": "2" },
-	{ "id": "3.1", "text": "Team Lead ", "parent": "3" }
+	{ "id": "start", "x": 200, "y": 0, "text": "Start", "type": "start" },
+    { "id": 1, "x": 200, "y": 120, "text": "Call Client and \n set-up Appointment", "type": "process" },
+    { "id": 2, "x": 200, "y": 240, "text": "Decision", "type": "decision" },
 ];
 ~~~
 
-Check the details on configuration of the org chart shapes and connector lines in the related articles: [Org Chart Shapes](orgchart_guides/orgchart_shapes_types.md) and [Org Chart Connectors](orgchart_guides/orgchart_connectors.md).
+The library provides you with [various types of default shapes](../../shapes/default_shapes/) which have both common and specific options. Check the full list of available properties of a shape object in the [API reference](shapes/configuration_properties.md). <br>
+Besides, you may create [your own type of shapes](../../shapes/custom_shape/) and add any custom properties to shape objects.
 
-2\. **[Diagram](diagram_guides.md)** templates:
-
-- Shapes and Connectors template:
-
-~~~js
-const data = [
-	// shapes    
-	{ "id":"1", "x":100, "y":40,  "text":"Start", "type":"start", "height":50 },
-	{ "id":"2", "x":100, "y":170, "text":"Operation 1", "type":"output" },
-	{ "id":"3", "x":100, "y":300, "text":"Operation 2", "type":"input" },
-    
-	// connectors
-	{ "id":"1-2", "from": "1", "to": "2" },
-	{ "id":"2-3", "from": "2", "to": "3" }
-]; 
-~~~
-
-Check the details on configuration of the diagram shapes and connector lines in the related articles: [Diagram Shapes, Groups, Swimlanes](diagram_guides/shapes_arrows_list.md#shapesconfiguration) and [Diagram Connectors](diagram_guides/diagram_connectors.md#connectorsconfiguration).
-
-- Group template:
+- **line objects**
 
 ~~~js
 const data = [
-	// a group
-    {
-        type: "$group", id: 1, width: 400, height: 200, x: 0, y: 0,
-        header: { text: "Group 1", editable: true, closable: true },
-        groupChildren: ["1.1", "1.2"], open: false
-    },
-
-	// shapes
-    { type: "rectangle", id: 1.1, x: 50, y: 75, text: "Shape 1.1" },
-    { type: "rectangle", id: 1.2, x: 200, y: 75, text: "Shape 1.2" }
-];
-~~~
-
-Check the details on configuration of groups in the related article: [Diagram Shapes, Groups, Swimlanes](diagram_guides/shapes_arrows_list.md#groupsconfiguration).
-
-- Swimlane template:
-
-~~~js
-const data = [
-    {
-        type: "$swimlane",
-        id: "a",
-        height: 500,
-        width: 850,
-        layout: [
-            ["a1", "a2", "a3"]
-        ],
-        subHeaderCols: {
-            enable: true,
-        }
-    },
-];
-~~~
-
-Check the details on configuration of swimlanes in the related article: [Diagram Shapes, Groups, Swimlanes](diagram_guides/shapes_arrows_list.md#swimlaneconfiguration).
-
-3\. **[Mind Map](mindmap_guides.md)** template:
-
-~~~js
-const data = [
-	// shapes
-	{ id: "1", text: "Chairman & CEO" },
-    { id: "2", text: "Manager" },
-    { id: "3", text: "Technical Director" },
-    { id: "4", text: "Manager" },
-    { id: "5", text: "Technical Director" },
-    // connectors
     { "id": "1-2", "from": "1", "to": "2", "type": "dash" },
-    { "id": "1-3", "from": "1", "to": "3", "type": "dash" },
-	{ "id": "1-4", "from": "1", "to": "4", "type": "line" },
-    { "id": "1-5", "from": "1", "to": "5", "type": "line" },
+    { "id": "1-3", "from": "1", "to": "3", "type": "line" },
 ];
 ~~~
 
-Check the details on configuration of a mind map in the related article: [Mind Map Shapes](mindmap_guides/mindmap_shapes_connectors.md).
+The presence or absence of line objects in the data set depends on the chosen [way of shapes connection](../../lines/index/#setting-connections-between-shapes)
 
-External Data Loading
+- **group objects**
+
+~~~js
+const data = [    
+    {
+        type: "$group",
+        id: 1,
+        width: 400,
+        height: 200,
+        x: 0,
+        y: 0,
+        header: {
+            text: "Top and collapsed header with tеxt alignment",
+            editable: true,
+            closable: true,
+            textAlign: "left", // "left", "center", "right"
+            textVerticalAlign: "center", // "top", "center", "bottom"
+        },
+      	// the child items of the group
+        groupChildren: ["1.1", "1.2"],
+        open: false,
+    },
+  	// configuring shapes to put into the group
+    { type: "rectangle", id: 1.1, x: 50, y: 75, text: "Shape 1.1" },
+    { type: "rectangle", id: 1.2, x: 200, y: 75, text: "Shape 1.2" },
+];
+~~~
+
+Check the full list of available properties of a group object in the [API reference](groups/configuration_properties.md).
+
+- **swimlane object**
+
+~~~js
+const data = [
+    {
+		"id": "main",
+		"type": "$swimlane",
+		"height": 730,
+		"width": 1195,
+		"header": {
+			"closable": true,
+			"text": "Waterfall diagram template"
+		 },
+		"layout": [
+			[1, 2, 3, 4]
+		],
+		"subHeaderCols": {
+			"headers": [
+				{ "text": "September", "fill": "rgba(243, 92, 79, 0.4)" },
+				{ "text": "October", "fill": "rgba(155, 96, 248, 0.4)" },
+				{ "text": "November", "fill": "rgba(255, 174, 18, 0.4)" },
+				{ "text": "December", "fill": "rgba(60, 201, 122, 0.4)" }
+			]
+		}
+	},
+];
+~~~
+
+Check the full list of available properties of a swimlane object in the [API reference](swimlanes/configuration_properties.md).
+
+External data loading
 -------------------
 
 To load data from an external file, make use of the api/data/methods/load.md method. It takes the URL of the file with data as a parameter:
@@ -130,7 +120,7 @@ diagram.data.load("/some/data").then(function(){
 
 {{editor	https://snippet.dhtmlx.com/09isp2d8	Diagram. Org chart load data}}
 
-Loading from a Local Source
+Loading from a local source
 --------------------
 
 To load data from a local data source, use the api/data/methods/parse.md method. As a parameter you need to pass an array of [predefined data objects](#preparingdatatoload):
@@ -141,7 +131,15 @@ diagram.data.parse(data);
 
 {{editor	https://snippet.dhtmlx.com/4d4k3o8p	Diagram. Wide flowchart}}
 
-Saving and Restoring State
+To load a data set into the editor, use the [](../api/editor/parse_method.md) method of the editor.
+
+~~~js
+editor.parse(data);
+~~~
+
+**Related sample:** [Diagram. Diagram Editor. Basic editor](https://snippet.dhtmlx.com/xshe9ut7)
+
+Saving and restoring state
 ----------------------------
 
 To save the current state of a diagram, use the api/data/methods/serialize.md method. It converts the data of the diagram into an array of JSON objects. 

@@ -8,7 +8,7 @@ description: text
 
 ## Overview
 
-The look and the way of connecting shapes is defined by the mode you initialize a diagram in: [default](#default-mode), [org](#org-mode), or [mindmap](#mindmap-mode).
+The look and the way of connecting shapes is defined by the mode you initialize a diagram in: [default](#default-mode), [org](#org-mode), or [mindmap](#mindmap-mode) one.
 
 ### Lines in the default mode
 

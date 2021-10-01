@@ -106,13 +106,13 @@ Use to load an image for the card and update it. An image is loaded from the com
 
 ## Configuring options for editing custom shapes
 
-When you create a custom shape with standard configuration (i.e. without adding custom properties), the options of the right panel will be rendered automatically depending on the data set of the shape.
+When you create a custom shape with a standard configuration (i.e. without adding custom properties), the options of the right panel will be rendered automatically depending on the data set of the shape.
 
 In case you create more complex shape, you can change the structure of the right panel and specify additional options for editing custom properties of the shape. To do this, you need to make use of the **properties** attribute of the [](../../api/diagram/addshape_method.md) method.
 
 <iframe src="https://snippet.dhtmlx.com/8fubjmlz?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
-The **properties** attribute contains a set of objects that defines which sidebar options will be rendered in the right panel of the editor for the shape. 
+The **properties** attribute contains a set of objects that defines which sidebar options will be rendered in the right panel of the editor for the shape. [Check the full list of available types of the options you can apply while configuring the right panel](../../../api/diagram/addshape_method/#types-of-sidebar-options).
 
 The order of the objects in the array defines the order the sidebar options will be displayed in the right panel.
 
