@@ -25,6 +25,7 @@ diagram.addShape("networkCard", {
             <span>${ip}</span>
         </section>
     `),
+    // the default configuration for the shapes with type:"networkCard"
 	defaults: {
 		width: 160,
 		height: 160,
@@ -39,7 +40,7 @@ The **defaults** attribute is used to define the default configuration of a "net
 
 2\. Use the unique name of the shape as a value of the **type** attribute inside the shape object while preparing a data set for loading into the diagram.
 
-{{note The data object of a custom shape can include any [configuration properties of a shape](../../shapes/configuration_properties/).}} 
+{{note The data object of a custom shape can contain any [configuration properties](../../shapes/configuration_properties/) including custom ones.}} 
 
 ~~~js
 const networkDiagram = [
@@ -62,7 +63,7 @@ Thus, the *"Network Card"* text value will be replaced with the *"Remote expert 
 
 ## Event handlers for custom shapes
 
-You may need to add handlers to the events occurred when the user interacts with custom shapes. It can be done by adding event handlers to HTML elements of a custom template of a shape via the **eventHandlers** attribute of the [](../api/diagram/addshape_method.md) method. 
+You may need to add handlers to the events occurred when the user interacts with custom shapes. It can be done by adding event handlers to HTML elements of the template of a shape via the **eventHandlers** attribute of the [](../api/diagram/addshape_method.md) method. 
 
 In the example below, a context menu will be opened after the user clicks on the icon with the **toggle_container** class:
 
@@ -75,5 +76,5 @@ The **eventHandlers** object includes a set of *key:value* pairs, where:
 	- **event** - an event object
 	- **shape** - the shape object
 
-**We recommend that you use different css classes for different custom shapes.**
+*We recommend that you use different CSS classes for different custom shapes.*
 

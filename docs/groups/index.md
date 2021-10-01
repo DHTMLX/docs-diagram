@@ -56,10 +56,3 @@ diagram.data.parse(data);
 ### Properties
 
 See [the full list of configuration properties of a group object](../configuration_properties/) which allow you to configure the positioning and appearance of the group.
-
-```
-## Configuring the behavior of group items
-
-{{editor	https://snippet.dhtmlx.com/4gxy38ek	Diagram. Groups and shapes interaction}}
-
-```

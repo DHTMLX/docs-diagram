@@ -4,6 +4,8 @@ title: Editor Overview
 description: text
 ---
 
+The DHTMLX Diagram component provides you with Editor that allows you to try and apply your designer skills in building neat and nice-looking diagrams. 
+
 # Diagram Editor Overview
 
 There are four functional parts in the interface of the Diagram editor. They are presented in the image below:
