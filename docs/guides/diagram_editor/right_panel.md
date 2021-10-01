@@ -6,13 +6,13 @@ description: text
 
 # Right Panel
 
-Right panel is a part of the editor with a *property sheet* that provides sidebar options for modifying values of the attributes of the diagram items.
+Right panel is a part of the editor with a *property sheet* that provides options for modifying values of the attributes of the diagram items.
 
 You can select a necessary item and edit its attributes via the related sidebar options.
 
 ## Sidebar options for editing shapes
 
-Right panel provides a set of sidebar options for editing various attributes of a shape. The presence or absence of the options in the right panel completely depends on the type and configuration of the shape, and the mode of Diagram initialization. 
+Right panel can contain different sidebar options for editing various attributes of a shape. The presence or absence of the options in the right panel completely depends on the type and configuration of the shape, and the mode of Diagram initialization. 
 
 ### Grid step
 
@@ -24,7 +24,7 @@ Use to modify the step of moving a shape. The option can be hidden via the **gri
 
 Use to set the position of a shape via x and y coordinates; to define the width and height of a shape and set the angle of rotation.
 
-*The option is available for flow chart shapes only.*
+*The option is available for flow chart shapes in the default mode of the editor only.*
 
 ![](../../assets/editor/arrange.png)
 
@@ -108,25 +108,13 @@ Use to load an image for the card and update it. An image is loaded from the com
 
 When you create a custom shape with standard configuration (i.e. without adding custom properties), the options of the right panel will be rendered automatically depending on the data set of the shape.
 
-In case you create more complex shape, you can change the structure of the right panel and provide additional options for editing custom properties of the shape. To do this, you need to make use of the **properties** attribute of the [](../../api/diagram/addshape_method.md) method.
+In case you create more complex shape, you can change the structure of the right panel and specify additional options for editing custom properties of the shape. To do this, you need to make use of the **properties** attribute of the [](../../api/diagram/addshape_method.md) method.
 
 <iframe src="https://snippet.dhtmlx.com/8fubjmlz?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
-The **properties** attribute contains a set of objects that defines which sidebar options will be rendered in the right panel of the editor for the shape.
+The **properties** attribute contains a set of objects that defines which sidebar options will be rendered in the right panel of the editor for the shape. 
 
 The order of the objects in the array defines the order the sidebar options will be displayed in the right panel.
-
-```todo удалить, так как есть в описании метода
-You need to use the <b>type</b> attribute together with the <b>property</b> one to specify the sidebar option for editing a custom property. For example:
-
-~~~js
-{ type: "text", label: "Name", property: "name" }
-~~~
-
-As a result, you can edit the custom <i>name</i> property of the shape via the text sidebar option which has the *Name* label.
-
-{{note For details about the types that you can use for editing a custom property, see the api/diagram_addshape.md#typesofsidebaroptions article.}}
-```
 
 ## Sidebar options for editing lines
 
