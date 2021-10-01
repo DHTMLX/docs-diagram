@@ -11,21 +11,12 @@ description: text
 @signature: {`getIndex(id: Id): number;`}
 
 @params:
-
-- id		string			the id of the item
-
+`id: string` - the id of the item
 
 @returns:
-
-- index		number			the index of the item
-
+The index of the item.
 
 @example:
 var index = diagram.data.getIndex("1"); // -> returns 0
 
-
 @descr:
-
-@relatedapi:
-api/data/methods/getid.md
-api/data/methods/getitem.md

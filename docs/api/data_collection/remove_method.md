@@ -11,7 +11,7 @@ description: text
 @signature: {`remove(id: Id | Id[]): void;`}
 
 @params:
-- id 		string,number			the id of the item that should be deleted
+- `id: string | number` - the ids of the items that should be deleted
 
 @example:
 
@@ -22,9 +22,5 @@ In case of organogram, deleting a shape will remove the link to this shape and a
 
 @relatedsample:	https://snippet.dhtmlx.com/8wi20uop	Diagram. Org chart add/delete item
 
-@relatedapi:
-api/data/methods/add.md
-api/data/methods/removeall.md
-
 @related:
-    common_guides/manipulating_shapes.md#deletingshapes
+common_guides/manipulating_shapes.md#deletingshapes

@@ -12,14 +12,11 @@ description: text
 
 @params:
 
-
 @example:
 diagram.events.on("Load", function(){
 	// some logic here
 });
 
-
 @descr:
 
-**Related sample**:
-- [Diagram. Org chart events](https://snippet.dhtmlx.com/l38pct7c)
+**Related sample**: [Diagram. Org chart events](https://snippet.dhtmlx.com/l38pct7c)

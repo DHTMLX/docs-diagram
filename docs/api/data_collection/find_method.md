@@ -6,9 +6,11 @@ description: text
 
 # find()
 
+`todo: check`
+
 @short: finds the item that corresponds to the specified parameters
 
-@signature: {`find(rule: IFilterMode): T;`}
+@signature: {`find(rule: IFilterMode | DataCallback<T>): T;`}
 
 @params:
 - by 				string,function			the search criterion (either the key of the item attribute or a filtering function)
@@ -28,9 +30,6 @@ var shape = diagram.data.find(function(shape){
 });
 
 @descr:
-
-@relatedapi:
-api/data/methods/findall.md
 
 @relatedsample:	https://snippet.dhtmlx.com/sete9z73	Diagram. Finding necessary shape
 

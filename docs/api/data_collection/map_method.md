@@ -11,13 +11,15 @@ description: text
 @signature: {`map(callback: DataCallback<T>): T[];`}
 
 @params:
-- handler			function		a function that will be called for each item of a diagram
+- `callback: function` - a function that will be called for each item of a component
+
+@returns:
+A new array of items where each item is the result of the callback function.
 
 @example:
 //getting ids of all elements of the diagram (shapes, links, groups, swimlanes)
 diagram.data.map(function(item){
     console.log(item.id);
 });
-
 
 @descr:

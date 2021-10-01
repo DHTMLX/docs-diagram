@@ -11,15 +11,11 @@ description: text
 @signature: {`getRoots(): Id[]`}
 
 @returns:
-- param    	array      	an array with ids of the root items
+An array with the ids of the root items.
 
 @example:
 diagram.data.getRoots();
 
-
 @descr:
 
 @changelog: Added in v4.0
-
-@relatedapi:	
-	api/data/methods/getroot.md

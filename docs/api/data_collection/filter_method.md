@@ -6,9 +6,11 @@ description: text
 
 # filter()
 
+`todo: check`
+
 @short: filters item in the diagram by the specified key 
 
-@signature: {`filter(rule?: IFilterMode | IFilterCallback, config?: IFilterConfig): void;`}
+@signature: {`filter(rule?: IFilterCallback | IFilterMode, config?: IFilterConfig): void;`}
 
 @params:
 - criteria			object,function				the filtering criteria (either the key of the item attribute or a filtering function)
@@ -27,6 +29,7 @@ diagram.data.filter(function(shape){
 **Related sample**: [Diagram. Filtering shapes](https://snippet.dhtmlx.com/tm43bsgn)
 
 @descr:
+
 The **criteria** parameter set as object has the following attributes:
 
 - **by** - (*string*) the key of the item attribute

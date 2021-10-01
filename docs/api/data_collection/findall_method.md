@@ -6,9 +6,11 @@ description: text
 
 # findAll()
 
+`todo: check`
+
 @short: finds all the items that correspond to the specified parameters
 
-@signature: {`findAll(rule: IFilterMode): T[];`}
+@signature: {`findAll(rule: IFilterMode | DataCallback<T>): T[];`}
 
 @params:
 - by			string,function			 the search criterion (either the key of the item attribute or a filtering function)

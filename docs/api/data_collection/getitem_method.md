@@ -11,17 +11,13 @@ description: text
 @signature: {`getItem(id: Id): T;`}
 
 @params:
-
-- id		string,number		the id of a selected item
+`id: string | number` - the id of a selected item
 
 @returns:
-
-- shape    	object      	the object of an item
+The object of an item.
 
 @example:
-
 var shape = diagram.data.getItem(123);
-
 
 @descr:
 
@@ -33,10 +29,5 @@ var shape = diagram.data.getItem(123);
 var text = shape.text;
 ~~~
 
-@relatedapi:	
-	api/data/methods/getid.md
-	api/data/methods/getindex.md
-    api/data/methods/update.md
-	
 @related:
-	common_guides/manipulating_shapes.md#gettingshape
+common_guides/manipulating_shapes.md#gettingshape

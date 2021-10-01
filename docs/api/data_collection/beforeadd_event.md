@@ -6,13 +6,13 @@ description: text
 
 # beforeAdd
 
-@short: fires before adding a shape
+@short: fires before adding an item
 
 @signature: {`beforeAdd: (newItem: any) => boolean | void;`}
 
 @params:
 
-- id		string,number		the id of a shape which will be added
+- `newItem: object` - the object of an added item
 
 @example:
 diagram.events.on("BeforeAdd", function(id){
@@ -21,13 +21,9 @@ diagram.events.on("BeforeAdd", function(id){
 	return true;
 });
 
-
 @descr:
 
-Returning *false* from the event handler will prevent shape adding.
+Returning *false* from the event handler will prevent item adding.
 
-@relatedapi:
-	- api/data/events/diagram_onafteradd_event.md
 
-**Related sample**:
-- [Diagram. Org chart events](https://snippet.dhtmlx.com/l38pct7c)
+**Related sample**: [Diagram. Org chart events](https://snippet.dhtmlx.com/l38pct7c)
