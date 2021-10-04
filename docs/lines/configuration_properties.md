@@ -21,4 +21,9 @@ description: text
 - **toSide** - *(string)* the side of the shape to which a different shape will be attached ("*top*","*bottom*","*left*","*right*","*center*")
 - **cornersRadius** - *(number)* the radius of rounding corners of a connector
 
+strokeWidth?: number;
+	strokeType?: StrokeType;
+	stroke?: string;
+    customGap
+
 `todo` - check the full list of properties

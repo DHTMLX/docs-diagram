@@ -18,7 +18,6 @@ description: text
 - **width** - (*number*) the width of a shape;
 - **fixed** - (*boolean*) enables/disables movement and resizing of a shape, *false* by default;
 - **hidden** - (*boolean*) defines, whether a shape will be hidden;
-- **css** - (*string*) the name of the CSS class that should be applied to the shape;
 
 ## Custom properties
 

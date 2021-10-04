@@ -192,7 +192,7 @@ Use to define the position of the header of an item.
 
 ### Header
 
-Use to show/hide the header of an item. If you hide the header, such options as *Header text*, *Header style*, *Header fill*, *Header position* will become disabled.
+Use to show/hide the header of an item. If you hide the header, such options as *Header text*, *Header style*, *Header fill*, *Header position* will become hidden.
 
 ![](../../assets/editor/header.png)
 

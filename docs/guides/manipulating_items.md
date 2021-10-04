@@ -72,7 +72,7 @@ var id = diagram.data.getIndex("1"); // -> returns 0
 Deleting Shapes
 ---------------
 
-###Deleting a single shape
+### Deleting a single shape
 
 To delete an unnecessary shape, make use of the api/data/methods/remove.md method of the **data** object and pass as a parameter the id of the shape under question:
 
@@ -82,7 +82,7 @@ diagram.data.remove("3.2");
 
 {{note In case of Org Chart, deleting a shape will remove its connectors and all child shapes as well.}}
 
-###Deleting all the shapes
+### Deleting all the shapes
 
 If necessary, you can clear the diagram, by deleting all the shapes at once. For this, apply the api/data/methods/removeall.md method of the **data** object:
 
@@ -121,7 +121,7 @@ var shapeExists = diagram.data.exists("1");
 Selecting Shapes
 ---------------
 
-###Selecting a shape
+### Selecting a shape
 
 To select shapes, you need firstly [enable selection](common_guides/configuration.md#selectingshapes) for the diagram and then call the api/selection/methods/add.md method of the **selection** object to select a desired shape. 
 
@@ -134,7 +134,7 @@ diagram.selection.add("2");
 
 The method takes the shape id as a parameter.
 
-###Unselecting a shape
+### Unselecting a shape
 
 To unselect a selected shape, make use of the api/selection/methods/remove.md method of the **selection** object:
 
@@ -142,7 +142,7 @@ To unselect a selected shape, make use of the api/selection/methods/remove.md me
 diagram.selection.remove("2");
 ~~~
 
-###Getting the id of a selected shape
+### Getting the id of a selected shape
 
 You can get the id of the currently selected shape with the api/selection/methods/getid.md method of the **selection** object:
 
@@ -234,7 +234,7 @@ var shape = diagram.data.find(function(shape){
 
 {{editor	https://snippet.dhtmlx.com/sete9z73	Diagram. Finding necessary shape}}
 
-###Finding all the shapes that meet the search criteria
+### Finding all the shapes that meet the search criteria
 
 You can also find all the shapes that meet the set criteria via the api/data/methods/findall.md of the **data** collection method. The method takes the same parameters as the **find()**
 method and returns an array of shape objects:
