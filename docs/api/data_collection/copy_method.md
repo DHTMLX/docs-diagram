@@ -11,12 +11,12 @@ description: text
 @signature: {`id: Id | Id[], index: number, target?: IDataCollection): Id | Id[];`}
 
 @params:
-- `id: string | number` - the id of an item to copy
+- `id: string | number | array` - the id(s) of an item(s) to copy
 - `index: number` - the index to create a copy at
 - `target: object` - optional, the target data collection object
 
 @returns:
-The item's id or an array with ids of items. `todo: check`
+The item's id or an array with ids of items.
 
 @example:
 diagram.data.copy("4",5); // copies the shape with id=4 to the position with index 5

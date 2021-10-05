@@ -11,11 +11,13 @@ description: text
 @signature: {`beforeAdd: (newItem: any) => boolean | void;`}
 
 @params:
-
 - `newItem: object` - the object of an added item
 
+@returns:
+Return `false` to prevent adding an item into a data collection; otherwise, `true`.
+
 @example:
-diagram.events.on("BeforeAdd", function(id){
+diagram.events.on("beforeAdd", function(id){
 	if (some_check)
 		return false;
 	return true;

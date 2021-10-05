@@ -18,11 +18,6 @@ diagram.events.on("emptyAreaClick",function(e){
 	console.log("An empty space has been clicked");
 });
 
-// For diagram editor
-editor.diagram.events.on("emptyAreaClick",function(e){
-	console.log("An empty space has been clicked");
-});
-
 @descr:
 
 **Related samples**:

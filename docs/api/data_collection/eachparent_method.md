@@ -7,7 +7,8 @@ description: text
 # eachParent()
 
 @short: iterates through all parents of the specified item
-@signature: {`eachParent(id: Id, callback: Callback, self = false): void`}
+
+@signature: {`eachParent(id: Id, callback: Callback, self?: boolean): void`}
 
 @params:
 - `id: string | number` - the id of the item

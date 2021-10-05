@@ -19,10 +19,6 @@ description: text
 diagram.events.on("groupHeaderDblClick", (id, event, subheaderId) => {
     console.log(id, event, subheaderId);
 });
-// For diagram editor
-editor.diagram.events.on("groupHeaderDblClick", (id, event, subheaderId) => {
-    console.log(id, event, subheaderId);
-});
 
 @descr:
 If a double-click is done over a header of a swimlane, the event will be fired on the subheader of the swimlane.

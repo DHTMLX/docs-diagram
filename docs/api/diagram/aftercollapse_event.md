@@ -19,13 +19,9 @@ diagram.events.on("afterCollapse", function(id, dir) {
     console.log(diagram.data.getItem(id).text + " was collapsed", dir);
 });
 
-// For editor
-editor.diagram.events.on("afterCollapse", function(id, dir) {
-    console.log(editor.diagram.data.getItem(id).text + " was collapsed", dir);
-});
-
 @descr:
 
 **Related sample**: [Diagram. Org chart events](https://snippet.dhtmlx.com/l38pct7c)
 
-@changelog: The **dir** parameter was added in v3.1.
+@changelog:
+The **dir** parameter has been added in v3.1.

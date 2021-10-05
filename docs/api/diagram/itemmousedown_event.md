@@ -18,10 +18,6 @@ description: text
 diagram.events.on("itemMouseDown", (id, event) => {
     console.log(id, event);
 });
-// For diagram editor
-editor.diagram.events.on("itemMouseDown", (id, event) => {
-    console.log(id, event);
-});
 
 @relatedsample:
 **Related samples**:

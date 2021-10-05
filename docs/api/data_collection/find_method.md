@@ -6,19 +6,15 @@ description: text
 
 # find()
 
-`todo: check`
-
 @short: finds the item that corresponds to the specified parameters
 
 @signature: {`find(rule: IFilterMode | DataCallback<T>): T;`}
 
 @params:
-- by 				string,function			the search criterion (either the key of the item attribute or a filtering function)
-- match 			string					the value of the item attribute
+`rule: object | function` - the search criteria
 
 @returns:
-
-- shape		object		the object of the matching item
+The first object of the item that matches the specified criteria.
 
 @example:
 //searching for a shape by the attribute key
@@ -33,7 +29,12 @@ var shape = diagram.data.find(function(shape){
 **Related sample**: [Diagram. Finding necessary shape](https://snippet.dhtmlx.com/sete9z73)
 
 @descr:
+The **rule** parameter:
 
+- if set as an `IFilterMode` object, the parameter contains the following attributes:
+	- **by** - (*string,function*) the search criterion (either the key of the item attribute or a search function)
+	- **match** - (*string*) the value of the item attribute
+- if set as `DataCallback(item: T, index?: number, array?: T[])`, the search will be applied by the rule specified in the function.
 
 
 **Related articles**

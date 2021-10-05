@@ -18,10 +18,6 @@ description: text
 diagram.events.on("groupMouseDown", (id, event) => {
     console.log(id, event);
 });
-// For diagram editor
-editor.diagram.events.on("groupMouseDown", (id, event) => {
-    console.log(id, event);
-});
 
 @descr:
 If a pointing device button is pressed while the pointer is over a swimlane, the event will be fired on the cell of the swimlane.

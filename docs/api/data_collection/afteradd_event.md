@@ -14,7 +14,7 @@ description: text
 `newItem: object` - the object of an added item
 
 @example:
-diagram.events.on("AfterAdd", function(id){
+diagram.events.on("afterAdd", function(id){
 	console.log("A new item is added");
 });
 

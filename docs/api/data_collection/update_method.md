@@ -20,7 +20,7 @@ diagram.data.update(123, { text:"New text" });
 
 @descr:
 
-The command can't be used to change the *id* or *type* of the shape.
+The command can't be used to change the *id* or *type* of the item.
 
 **Related articles**
 

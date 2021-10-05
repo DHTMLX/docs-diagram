@@ -34,7 +34,7 @@ diagram.export.pdf({
 
 You can specify the following settings for export to PDF:
 
-- **url** - (*string*) the url of the service that executes export and returns an exported file. The default value is **https://export.dhtmlx.com/diagram/2.0.0/pdf**;
+- **url** - (*string*) the url of the service that executes export and returns an exported file. The default value is `https://export.dhtmlx.com/diagram/2.0.0/pdf`;
 - **name** - (*string*) the name of the exported file;
 - **header** - (*string*) specifies the header that will be added to the resulted PDF file. You can use any HTML here;
 - **footer** - (*string*) specifies the footer that will be added to the resulted PDF file. You can use any HTML here;

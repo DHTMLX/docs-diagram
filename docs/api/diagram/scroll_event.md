@@ -23,12 +23,6 @@ diagram.events.on("scroll", function(pos){
 	console.log("The diagram has been scrolled")
 });
 
-// For editor
-
-editor.diagram.events.on("scroll", function(pos){
-	console.log("The diagram has been scrolled")
-});
-
 @relatedsample:
 **Related samples**:
 - [Diagram. Events](https://snippet.dhtmlx.com/7h2hgb3g)

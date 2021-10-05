@@ -10,10 +10,8 @@ description: text
 
 @signature: {`load: () => void;`}
 
-@params:
-
 @example:
-diagram.events.on("Load", function(){
+diagram.events.on("load", function(){
 	// some logic here
 });
 
