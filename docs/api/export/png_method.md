@@ -8,7 +8,7 @@ description: text
 
 @short: exports a diagram to a PNG file
 
-@signature: {`png(config): void;`}
+@signature: {`png(config: any): void;`}
 
 @params:
 

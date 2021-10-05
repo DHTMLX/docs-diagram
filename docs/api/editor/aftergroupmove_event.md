@@ -8,7 +8,7 @@ description: text
 
 @short: fires when a group or swimlane is moving
 
-@signature: {`afterGroupMove]: (events: MouseEvent, id: Id, coord: IBaseCoords) => void;`}
+@signature: {`afterGroupMove: (events: MouseEvent, id: Id, coord: IBaseCoords) => void;`}
 
 @params:
 - `events: MouseEvent` - a native HTML event object

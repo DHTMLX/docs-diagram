@@ -8,7 +8,7 @@ description: text
 
 @short: iterates through the children of the specified item
 
-@signature: {`eachChild(id: Id, callback: Callback, isTree = true): void;`}
+@signature: {`eachChild(id: Id, callback: Callback, isTree?: boolean): void;`}
 
 @params:
 - `id: string | number` - the id of the item

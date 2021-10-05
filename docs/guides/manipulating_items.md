@@ -247,12 +247,7 @@ Finding the Necessary Shape
 --------------------
 
 You can use the API of the Diagram component to find the necessary item in the diagram. The [](../api/data_collection/find_method.md) method of the **data** collection will help you to perform this task.
-The method takes the following parameters:
-
-- **by** - (*string|function*) the search criterion (either the key of the shape attribute or a function)
-- **match** - (*string*) the value of the shape attribute
-
-and returns the first object of the shape that matches the specified criteria:
+The method takes the search criteria as a parameter and returns the first object of the shape that matches the specified criteria:
 
 ~~~js
 // searching for a shape by the attribute key
@@ -288,10 +283,6 @@ Filtering items
 ----------------
 
 It is possible to filter the diagram and render only the items that meet the filter criteria via the [](../api/data_collection/filter_method.md) method of the **data** collection.
-The method takes the parameters listed below:
-
-- **criteria** - (*object,function*) the filtering criteria (either the key of the item's attribute or a filtering function)
-- **mode** - (*boolean*) optional, <i>true</i> to define that each next filtering will be applied to the already filtered data, not to the initial data
 
 An example of filtering shapes:
 
@@ -304,11 +295,6 @@ diagram.data.filter(function(shape){
 	if(shape.text==="Manager"||shape.text==="Marketer"){return true}
 });
 ~~~
-
-The **criteria** parameter set as object has the following attributes:
-
-- **by** - (*string*) the key of the item attribute
-- **match** - (*string*) the value of the item attribute
 
 The method will show only the filtered items, hiding the rest of shapes, lines, groups, swimlanes. 
 

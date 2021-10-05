@@ -34,4 +34,5 @@ diagram.expandItem("main", "left");
 
 common_guides/manipulating_shapes.md
 
-@changelog: The **dir** parameter was added in v3.1.
+@changelog:
+The **dir** parameter was added in v3.1.
