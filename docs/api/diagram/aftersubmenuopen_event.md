@@ -19,10 +19,6 @@ description: text
 diagram.events.on("afterSubmenuOpen", (id, event, subheaderId) => {
     console.log(id, event, subheaderId);
 });
-// For diagram editor
-editor.diagram.events.on("afterSubmenuOpen", (id, event, subheaderId) => {
-    console.log(id, event, subheaderId);
-});
 
 @descr:
 

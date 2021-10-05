@@ -33,10 +33,4 @@ diagram.events.on("shapeIconClick", function(icon){
 	alert(icon + " was clicked for id = " + id);
 });
 
-// For editor
-editor.diagram.events.on("shapeIconClick", function(icon){
-    var id = editor.diagram.selection.getId();
-    alert(icon + " was clicked for id = " + id);
-});
-
 @descr:

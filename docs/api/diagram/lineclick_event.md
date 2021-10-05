@@ -17,11 +17,6 @@ description: text
 @example:
 diagram.events.on("lineClick", function(id, events) {
     console.log(id);
-}); 
-
-// For diagram editor
-diagram.events.on("lineClick", function(id, events) {
-    console.log(id);
 });
 
 @relatedsample:

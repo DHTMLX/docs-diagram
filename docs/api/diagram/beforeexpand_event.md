@@ -20,16 +20,11 @@ diagram.events.on("beforeExpand", function(id, dir) {
     return true;
 });
 
-// For editor
-editor.diagram.events.on("beforeExpand", function(id, dir) {
-    console.log("Expanding " + editor.diagram.data.getItem(id).text, dir);
-    return true;
-});
-
 @relatedsample:
 **Related sample**: [Diagram. Org chart events](https://snippet.dhtmlx.com/l38pct7c)
 
 @descr:
 Returning *false* from the handler will block the selection.
 
-@changelog: The **dir** parameter was added in v3.1.
+@changelog:
+The **dir** parameter has been added in v3.1.

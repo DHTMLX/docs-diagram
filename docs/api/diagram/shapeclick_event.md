@@ -19,11 +19,6 @@ diagram.events.on("shapeClick", function(id) {
 	console.log('An item "' + diagram.data.getItem(id).text + '" is clicked');
 });
 
-// For editor
-editor.diagram.events.on("shapeClick", function(id) {
-    console.log('An item "' + editor.diagram.data.getItem(id).text + '" is clicked');
-});
-
 @descr:
 
 **Related samples**:

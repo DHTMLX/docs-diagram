@@ -19,11 +19,6 @@ diagram.events.on("shapeMouseDown", function(id) {
 	console.log('An item "' + diagram.data.getItem(id).text + '"will be clicked');
 });
 
-// For editor
-editor.diagram.events.on("shapeMouseDown", function(id) {
-  console.log('An item "' + editor.diagram.data.getItem(id).text + '"will be clicked');
-});
-
 @descr:
 
 **Related samples**:

@@ -18,10 +18,6 @@ description: text
 diagram.events.on("groupClick", (id, event) => {
     console.log(id, event);
 });
-// For diagram editor
-editor.diagram.events.on("groupClick", (id, event) => {
-    console.log(id, event);
-});
 
 @descr:
 If a click is done over a swimlane, the event will be fired on the cell of the swimlane.

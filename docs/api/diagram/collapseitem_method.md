@@ -34,4 +34,4 @@ diagram.collapseItem("main", "left");
 common_guides/manipulating_shapes.md
 
 @changelog:
-The **dir** parameter was added in v3.1.
+The **dir** parameter has been added in v3.1.

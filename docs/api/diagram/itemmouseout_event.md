@@ -18,10 +18,6 @@ description: text
 diagram.events.on("itemMouseOut", (id, event) => {
     console.log(id, event);
 });
-// For diagram editor
-editor.diagram.events.on("itemMouseOut", (id, event) => {
-    console.log(id, event);
-});
 
 @descr:
 

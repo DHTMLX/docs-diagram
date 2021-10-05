@@ -54,4 +54,5 @@ The method can take a config object as a parameter. The object contains two opti
 
 common_guides/manipulating_shapes.md#arrangingshapesautomatically
  
-@changelog: added in v3.0
+@changelog:
+added in v3.0

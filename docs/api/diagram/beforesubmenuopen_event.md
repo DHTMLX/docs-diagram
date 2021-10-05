@@ -23,11 +23,6 @@ diagram.events.on("beforeSubmenuOpen", (id, event, subheaderId) => {
     console.log(id, event, subheaderId);
     return true;
 });
-// For diagram editor
-editor.diagram.events.on("beforeSubmenuOpen", (id, event, subheaderId) => {
-    console.log(id, event, subheaderId);
-    return true;
-});
 
 @descr:
 
