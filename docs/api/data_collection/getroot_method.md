@@ -8,18 +8,16 @@ description: text
 
 @short: returns the id of the root item by the id of its child
 
-@signature: {`getRoot(): Id;`}
+@signature: {`getRoot(id: Id): Id;`}
 
 @params:
-- id		string,number		the id of the child item
-
+`id: string | number` - the id of the child item
 
 @returns:
-- param		string		the id of the root item
+The id of the root item.
 
 @example:
 diagram.data.getRoot("id_1.1.1"); -> "id_1"
-
 
 @descr:
 
@@ -27,6 +25,3 @@ The root item is the first item of a tree structure.
 
 @changelog:
 Added in v4.0
-
-@relatedapi:	
-	api/data/methods/getroots.md

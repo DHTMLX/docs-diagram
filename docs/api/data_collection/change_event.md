@@ -8,12 +8,12 @@ description: text
 
 @short: fires on changes in the dataset of the diagram
 
-@signature: {`change: (id?: Id, status?: Statuses, updatedItem?: any) => void;`}
+@signature: {`change: (id?: string, status?: Statuses, updatedItem?: any) => void;`}
 
 @params:
-- id    		string,number		the id of the changed item
-- status 		string				the status of the change:"add","update","delete"
-- shape			object				the object of the changed item
+- `id: string | number` - the id of the changed item
+- `status: string` - the status of the change: "add", "update", "delete"
+- `updatedItem: object` - the object of the changed item
 
 @example:
 diagram.events.on("Change",function(id,status,shape){

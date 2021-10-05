@@ -8,14 +8,17 @@ description: text
 
 @short: adds a new shape to the diagram
 
-@signature: {`add(newItem: IDataItem | IDataItem[], index?: number): Id | Id[];`}
+@signature: {`add(new_item: IDataItem | IDataItem[], index?: number): Id | Id[];`}
 
 @params:
-- `newItem: object` - the object of a new item
-- `index: number` - optional, the index of the position starting from which new items will be added `todo: check`
+- `new_item: object | array` - the object of a new item or an array of item objects
+- `index: number` - optional, the index of the position starting from which new items will be added
 
 @example:
 diagram.data.add({ id: "3.2", text: "New Item", parent: "3" });
+
+@relatedsample:
+**Related sample**: [Diagram. Org chart add/delete item](https://snippet.dhtmlx.com/8wi20uop)
 
 @descr:
 
@@ -66,13 +69,6 @@ The "type" in the above code is the type of a shape or a connector, it can have 
 
 [Read about connectors configuration options](diagram_guides/shapes_arrows_list.md#connectorstypes).
 
-@relatedsample:	https://snippet.dhtmlx.com/8wi20uop	Diagram. Org chart add/delete item
+**Related articles**
 
-@related:
-	common_guides/manipulating_shapes.md#addingshape
-	
-@relatedapi:
-	api/data/methods/getitem.md
-	api/data/methods/parse.md
-	api/data/methods/removeall.md
-	api/data/methods/remove.md
+common_guides/manipulating_shapes.md#addingshape

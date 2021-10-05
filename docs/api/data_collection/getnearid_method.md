@@ -6,18 +6,16 @@ description: text
 
 # getNearId()
 
-@short:  	looks for a nearest item relative to the specified one
+@short: looks for a nearest item relative to the specified one
 
-@signature: {``}
+@signature: {`getNearId(id: Id): Id;`}
 
 @params:
 
-- id		string,number		the id of an item
-
+- `id: string | number` - the id of an item
 
 @returns:
-- nearId		string,number		the id of the nearest item
-
+The id of the nearest item.
 
 @example:
 var nearId = diagram.data.getNearId(id);

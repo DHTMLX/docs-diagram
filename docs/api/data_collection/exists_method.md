@@ -11,11 +11,10 @@ description: text
 @signature: {`exists(id: Id): boolean;`}
 
 @params:
-`id: string| number` - the id of the item in question
+`id: string | number` - the id of the item in question
 
 @returns:
 `True` if the item exists, otherwise `false`.
-
 
 @example:
 var shape = diagram.data.exists("1"); 
