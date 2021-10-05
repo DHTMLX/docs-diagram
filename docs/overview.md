@@ -57,36 +57,24 @@ The shapes are connected by curved lines and arranged around a central shape of 
 The DHTMLX Diagram component provides you with Editor that allows you to try and apply your designer skills in building neat and nice-looking diagrams.
 
 ### Editor in the default mode
--------------- 
 
-There are four functional parts in the interface of the Diagram editor. They are presented in the image below:
+The interface of the editor initialized in the default mode consists of four functional parts: toolbar, left panel, grid area, and right panel.
 
-<img src="diagram_editor_new2.png">
+![](assets/diagram_editor_new2.png)
 
-The interface of an org chart in the editor mode consists of three parts: 
-
-<img src="orgchart_editor.png">
-
-The interface of a mind map in the editor mode consists of three parts: 
-
-<img src="mindmap_editor.png">
-
-Modes of editor
-
-- Default
-- Org chart
-- Mind map
-
-DHTMLX Diagram goes with an editor that lets you build your own diagram: you need just to choose desired shapes, groups, swimlanes, set connectors between the shapes. Besides you can adjust the attributes of the items via sidebar options of the right panel.
-
+To build a diagram, you need either to drag the necessary items from the left panel or create a copy of the items via the per-item toolbar. You can adjust the attributes of the items via sidebar options of the right panel.
 
 <iframe src="https://snippet.dhtmlx.com/4d4k3o8p?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
-If you need to edit a custom diagram, you may configure the toolbar of the editor, customize the left panel, and configure the right panel for editing a custom shape.
+If you need to edit a custom diagram, you may configure the toolbar of the editor, customize the left panel, and configure the right panel according to the attributes of your shape.
 
 <iframe src="https://snippet.dhtmlx.com/u1xqyo9w?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
 ### Editor in the org mode
+
+The interface of the editor initialized in the org mode consists of three parts: toolbar, grid area, and right panel.
+
+![](assets/orgchart_editor.png)
 
 To build a diagram in the org mode of the editor, you need to select a shape and add a new child for it. Also you can:
 
@@ -98,6 +86,10 @@ To build a diagram in the org mode of the editor, you need to select a shape and
 <iframe src="https://snippet.dhtmlx.com/vghuunmd?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
 ### Editor in the mindmap mode
+
+The interface of the editor initialized in the mindmap mode consists of three parts: toolbar, grid area, and right panel.
+
+![](assets/mindmap_editor.png)
 
 The mindmap mode of the editor makes building and editing a mind map quick and easy. To add a new shape, select a shape and add a new child for it. Aside from that, you can:
 
