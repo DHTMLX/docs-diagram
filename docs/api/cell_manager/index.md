@@ -1,5 +1,5 @@
 ---
-sidebar_label: Cell manager overview
+sidebar_label: Overview
 title: Cell Manager overview
 description: text
 ---

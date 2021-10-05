@@ -11,7 +11,7 @@ Starting from v3.1, the library of DHTMLX Diagram provides the ability to use Ty
 
 {{note You can try out the functionality directly in our <a href="https://snippet.dhtmlx.com/ybpmz0zk"  target="_blank">Snippet Tool</a>.}}
 
-<a href="https://snippet.dhtmlx.com/ybpmz0zk"  target="_blank"><img src="typescript.png"/></a>
+![](../assets/typescript.png)
 
 Advantages of using TypeScript
 ------------------------------
