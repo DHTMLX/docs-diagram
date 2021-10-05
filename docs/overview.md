@@ -51,6 +51,63 @@ The mindmap mode is used to represent a core topic or idea surrounded by the bra
 
 The shapes are connected by curved lines and arranged around a central shape of the diagram. Each shape has a text and a colored border. The color of the outline depends on the level the shape belongs to. But you can change the look and feel of the shapes depending on your needs.
 
+
+## Diagram Editor
+
+The DHTMLX Diagram component provides you with Editor that allows you to try and apply your designer skills in building neat and nice-looking diagrams.
+
+### Editor in the default mode
+-------------- 
+
+There are four functional parts in the interface of the Diagram editor. They are presented in the image below:
+
+<img src="diagram_editor_new2.png">
+
+The interface of an org chart in the editor mode consists of three parts: 
+
+<img src="orgchart_editor.png">
+
+The interface of a mind map in the editor mode consists of three parts: 
+
+<img src="mindmap_editor.png">
+
+Modes of editor
+
+- Default
+- Org chart
+- Mind map
+
+DHTMLX Diagram goes with an editor that lets you build your own diagram: you need just to choose desired shapes, groups, swimlanes, set connectors between the shapes. Besides you can adjust the attributes of the items via sidebar options of the right panel.
+
+
+<iframe src="https://snippet.dhtmlx.com/4d4k3o8p?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
+
+If you need to edit a custom diagram, you may configure the toolbar of the editor, customize the left panel, and configure the right panel for editing a custom shape.
+
+<iframe src="https://snippet.dhtmlx.com/u1xqyo9w?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
+
+### Editor in the org mode
+
+To build a diagram in the org mode of the editor, you need to select a shape and add a new child for it. Also you can:
+
+- set precise positioning for shapes;
+- define their width and height;
+- edit the content of a shape;
+- set a suitable color of a shape header.
+
+<iframe src="https://snippet.dhtmlx.com/vghuunmd?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
+
+### Editor in the mindmap mode
+
+The mindmap mode of the editor makes building and editing a mind map quick and easy. To add a new shape, select a shape and add a new child for it. Aside from that, you can:
+
+- set the left-top position of a shape;
+- define the size of a shape;
+- define the look of a shape: set a suitable shape color, define outline settings, insert a text inside and adjust its look and feel;
+
+<iframe src="https://snippet.dhtmlx.com/lo1vm0e8?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
+
+
 Custom Diagram
 --------------
 
@@ -65,41 +122,6 @@ You can build your own diagram by creating custom shapes of the desired appearan
 |---|---|
 |![](assets/medical_hierarchy.png)|![](assets/network.png)|
 
-
-Editor in the default mode
---------------
-
-DHTMLX Diagram goes with an editor that lets you build your own diagram: you need just to choose desired shapes, groups, swimlanes, set connectors between the shapes. Besides you can adjust the attributes of the items via sidebar options of the right panel.
-
-
-<iframe src="https://snippet.dhtmlx.com/4d4k3o8p?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
-
-If you need to edit a custom diagram, you may configure the toolbar of the editor, customize the left panel, and configure the right panel for editing a custom shape.
-
-<iframe src="https://snippet.dhtmlx.com/u1xqyo9w?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
-
-Editor in the org mode
---------------------
-
-To build a diagram in the org mode of the editor, you need to select a shape and add a new child for it. Also you can:
-
-- set precise positioning for shapes;
-- define their width and height;
-- edit the content of a shape;
-- set a suitable color of a shape header.
-
-<iframe src="https://snippet.dhtmlx.com/vghuunmd?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
-
-Editor in the mindmap mode
--------------------
-
-The mindmap mode of the editor makes building and editing a mind map quick and easy. To add a new shape, select a shape and add a new child for it. Aside from that, you can:
-
-- set the left-top position of a shape;
-- define the size of a shape;
-- define the look of a shape: set a suitable shape color, define outline settings, insert a text inside and adjust its look and feel;
-
-<iframe src="https://snippet.dhtmlx.com/lo1vm0e8?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
 Shape Search
 ---------------

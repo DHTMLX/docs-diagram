@@ -12,6 +12,7 @@ description: text
 - **from** - *(string | number)* the id of the parent shape
 - **to** - *(string | number)* the id of the child shape
 - **type** - *(string)* the type of the connector line: "*line*" (default) or "*dash*"
+- **connectType** - (*string*) the type of the connector line: ["straight"](../../lines/index/#lines-in-the-default-mode), ["elbow"](../../lines/index/#lines-in-the-org-mode), ["curved"](../../lines/index/#lines-in-the-mindmap-mode). 
 
 ### Properties specific for the default mode
 
@@ -20,10 +21,6 @@ description: text
 - **fromSide** - *(string)* the side of the shape from which connection will start ("*top*","*bottom*","*left*","*right*","*center*")
 - **toSide** - *(string)* the side of the shape to which a different shape will be attached ("*top*","*bottom*","*left*","*right*","*center*")
 - **cornersRadius** - *(number)* the radius of rounding corners of a connector
-
-strokeWidth?: number;
-	strokeType?: StrokeType;
-	stroke?: string;
-    customGap
-
-`todo` - check the full list of properties
+- **strokeWidth** - (*number*) the width of the line, 2 by default;
+- **stroke** - (*string*) the color of the line, "#2198F3" by default;
+- **customGap** - (*number*) sets the value of the [](../api/diagram/linegap_property.md) property for the line

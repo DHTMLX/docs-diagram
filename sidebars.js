@@ -386,7 +386,7 @@ module.exports = {
         type: "category",
         label: "Diagram Editor",
         items: [
-          "guides/diagram_editor/overview",
+          // "guides/diagram_editor/overview",
           "guides/diagram_editor/initialization",
           "guides/diagram_editor/toolbar",
           "guides/diagram_editor/left_panel",

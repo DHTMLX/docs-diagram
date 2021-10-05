@@ -12,13 +12,13 @@ The look and the way of connecting shapes is defined by the mode you initialize 
 
 ### Lines in the default mode
 
-In this mode, various shapes can be connected in the necessary sequence to make up a scheme of a particular process.
+In the default mode of Diagram, various shapes can be connected by ["straight" (by default) or "elbow"](../../lines/configuration_properties/) lines in the necessary sequence to make up a scheme of a particular process.
 
 <iframe src="https://snippet.dhtmlx.com/e6zm6wh1?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="650"></iframe>
 
 ### Lines in the org mode
 
-This mode of a diagram represents an organizational chart that contains a set of shapes connected by lines in a hierarchical order.
+The org mode of Diagram represents an organizational chart that contains a set of shapes connected by ["elbow" lines](../../lines/configuration_properties/) in a hierarchical order.
 
 <iframe src="https://snippet.dhtmlx.com/98tzmzpg?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="650"></iframe>
 
@@ -26,7 +26,7 @@ It is possible to define vertical direction of connecting shapes for the parent 
 
 ### Lines in the mindmap mode
 
-The mindmap mode is used to render one more kind of a hierarchical diagram. The shapes are connected by curved lines and arranged around a central shape.
+The mindmap mode of Diagram is used to render one more kind of a hierarchical diagram. The shapes are connected by ["curved" lines](../../lines/configuration_properties/) and arranged around a central shape.
 
 <iframe src="https://snippet.dhtmlx.com/lo1vm0e8?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="650"></iframe>
 
@@ -60,6 +60,9 @@ const data = [
 ~~~
 
 The **type** property specified in the line object allows you to specify individual type for a separate line.
+
+{{note See [the full list of configuration properties of a line object](lines/configuration_properties.md).
+}}
 
 - **using the "parent attribute"**
 
