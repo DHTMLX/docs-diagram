@@ -10,19 +10,18 @@ description: text
 
 @signature: {`defaultShapeType?: string;`}
 
-@default: "card" (for org chart), "topic" (for mind map)
+@default: "card" (in the default and org modes of Diagram), "topic" (in the mindmap mode of Diagram)
 
 @example:
 var diagram = new dhx.Diagram("diagram_container", { 
     defaultShapeType: "img-card"
 });
 
-@relatedsample:
-**Related sample**: [Diagram. Org chart with images](https://snippet.dhtmlx.com/qnx3ekin)
 
 @descr:
+**Related sample**: [Diagram. Org chart with images](https://snippet.dhtmlx.com/qnx3ekin)
 
-This value is applied, if the shape config doesn't contain the "type" property.
+This value is applied, if the shape object doesn't contain the "type" property.
 
 **Related articles**
 

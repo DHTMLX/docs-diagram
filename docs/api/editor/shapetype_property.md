@@ -10,7 +10,7 @@ description: text
 
 @signature: {`shapeType?: string;`}
 
-@default: "card" in the "default"/"org" mode; "topic" in the "mindmap" mode
+@default: "card" (in the default and org modes), "topic" (in the mindmap mode)
 
 @example:
 const editor = new dhx.DiagramEditor(document.body, {
@@ -19,4 +19,4 @@ const editor = new dhx.DiagramEditor(document.body, {
 
 @descr:
 
-This value is applied, if the configuration object of an item doesn't contain the "type" property.
+This value is applied, if the shape object doesn't contain the "type" property.

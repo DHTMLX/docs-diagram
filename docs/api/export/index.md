@@ -6,6 +6,7 @@ description: text
 
 # Export overview
 
+The API methods of the **diagram.export** object allow you to export data from the Diagram or Diagram Editor.
 ## Methods
 
 | Name                         | Description                         |

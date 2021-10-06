@@ -27,35 +27,8 @@ const editor = new dhx.DiagramEditor(document.body, {
 
 @descr:
 
-The **defaults** object can contain a number of *key:value* pairs where *key* is the type of an item and *value* is a set of configuration settings of the item.
+The **defaults** object can contain a number of *key:value* pairs where *key* is the type of a shape and *value* is a set of [configuration settings of the shape](../../../shapes/configuration_properties/).
 
 {{note The *type* and *id* attributes can not be defined in the default configuration of a shape.}}
 
-After defining the default properties for the shape of a separate type, you can either omit or redefine them while [preparing a data set to load](https://docs.dhtmlx.com/diagram/common_guides__loading_data.html#preparingdatatoload). 
-
-```todo
-добавить пример как это сделать
-```
-
-```todo
-preview property
-
-You can redefine the scale of the specific type of the shape rendered in the left panel via the **scale** property:
-
-~~~js
-const defaults = {card: {
-	preview: {
-		scale: 0.72, 
-	}
-}
-
-var editor = new dhx.DiagramEditor(document.body, {
-	shapeSections: {
-		"org chart shapes": ["card", "img-card"],
-		"flowchart shapes": [true]
-    },
-    scalePreview: 0.65,
-	defaults: defaults		
-});
-~~~
-```
+After defining the default settings for the shape of a separate type, you can either omit these properties or redefine their values while preparing a data set for the shapes of this type.

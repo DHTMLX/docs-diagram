@@ -52,7 +52,6 @@ Normally, events are called automatically and you don't need to use this method.
 
 Check the full list of Diagram events in the [API Reference](../../api/diagram/api_overview/#diagram-events). 
 
-
 ### Editor events
 
 The list of events of the Diagram Editor object is given in the [API section](../../api/editor/api_overview/#editor-events).

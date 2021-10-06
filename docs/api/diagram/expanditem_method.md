@@ -8,7 +8,7 @@ description: text
 
 @short: shows all children of the target shape or expands the group/swimlane
 
-@signature: {`expandItem(id: string, dir?: TreeDirection): void;`}
+@signature: {`expandItem(id: Id, dir?: TreeDirection): void;`}
 
 @params:
 - `id: string | number` - the id of the item
@@ -19,7 +19,7 @@ diagram.expandItem(123);
 
 @descr:
 
-**Note**, that the **dir** attribute can be used only in Mind Maps (type:"mindmap").
+**Note**, that the **dir** parameter can be used only in the diagram that is initialized in the mindmap mode (type:"mindmap").
 
 ~~~js
 var diagram = new dhx.Diagram("diagram_container", {

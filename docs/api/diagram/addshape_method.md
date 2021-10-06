@@ -32,6 +32,8 @@ diagram.data.parse(data);
 
 @descr:
 
+{{note The **addShape()** method can be used as in the diagram as in the editor. <br>Check the related sample: **[Diagram. Site map and user flow example with custom shapes](https://snippet.dhtmlx.com/do1jwmw1)**}}
+
 The `parameters` object can contain the following attributes:
 
 - **template** - (*function*) mandatory, the function that returns either an HTML or SVG template. The function takes the config of a shape as a parameter. Check [the available formats of the template](#formats-of-the-shape-template).
@@ -48,7 +50,7 @@ The `parameters` object can contain the following attributes:
 
 ### Types of sidebar options
 
-The available values of the **type** property are:
+While specifying sidebar options for editing custom shapes, you can apply the following values of the **type** property:
 
 - **"arrange"** - provides interface for editing the *width*, *height*, *angle*, *x*, *y* properties of a shape. The properties can't be overridden. The type is available only in the default mode of the editor.
 - **"position"** - provides interface for editing either the *x*/*y*, or *dx*/*dy* properties of a shape. The properties can't be overridden.

@@ -24,12 +24,6 @@ diagram.events.on("beforeEditorOpen", (id, key, subheaderId) => {
     return true;
 });
 
-// For diagram editor
-editor.diagram.events.on("beforeEditorOpen", (id, key, subheaderId) => {
-    console.log(id, key, subheaderId);
-    return true;
-});
-
 @descr:
 
 **Related samples**:

@@ -21,7 +21,7 @@ const editor = new dhx.DiagramEditor(document.body, {
 
 {{note The property is available only in the default mode of the editor (*type:"default"*).}}
 
-The value of the property can be redefined for a separate type of an item via the **scale** attribute of the **preview** property of default settings.
+The value of the property can be redefined for a separate type of a shape via the **scale** attribute of the [preview](../../../shapes/configuration_properties/#properties-specific-for-the-default-mode) property of the shape object:
 
 ~~~js
 const defaults = {card: {
@@ -42,8 +42,3 @@ const editor = new dhx.DiagramEditor(document.body, {
 ~~~
 
 While the scale of the "card"-type shapes is 0.72, the scale of the other shapes in the left panel is 0.65.
-
-
-```todo
-посмотреть, что можно еще сюда добавить
-```

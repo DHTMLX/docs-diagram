@@ -16,7 +16,7 @@ description: text
 - `subHeaderId: string` - the id of a subheader of a swimlane
 
 @returns:
-*False* to block opening the subheader, otherwise *true*.
+Return `false` to block opening the subheader; otherwise, `true`.
 
 @example:
 diagram.events.on("beforeSubmenuOpen", (id, event, subheaderId) => {

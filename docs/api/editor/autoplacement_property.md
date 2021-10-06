@@ -6,7 +6,7 @@ description: text
 
 # autoplacement
 
-@short: sets configuration for autoplacement
+@short: sets configuration for auto-placement of shapes
 
 @signature: {`autoplacement?: IAutoPlacement;`}
 
@@ -25,29 +25,19 @@ const editor = new dhx.DiagramEditor(document.body, {
 - [Diagram. Diagram Editor. Autoplacement edges mode](https://snippet.dhtmlx.com/1i65txcw)
 
 @descr:
-{{note The property is available only in the default mode of the editor (*type:"default"*). The property does not work if you use groups or swimlanes.}}
+{{note The **autoplacement** property works only in the default mode of the editor (*type:"default"*) and only for shapes.}}
 
-The autoplacement object can contain the following options:
+The `autoplacement` object can contain the following options:
 
 - **mode** - (*string*) the mode of connecting shapes, "direct" (by default) or "edges"
 - **graphPadding** - (*number*) sets the distance between unconnected diagrams, *"200"* by default
 
 ### Modes of connecting shapes
 
-<table cellspacing="0" cellpadding="1" border="0">
-	<tbody>
-    
-	 <tr>
-		<td><ul><b>"direct" mode </b></ul><ul>Connectors are aligned "from center to center"; they are straight and diagonal.</ul>
-			<img src="direct_mode.png"> 
-		
-        </td>
-		<td><ul><b>"edges" mode</b></ul><ul>Connectors are aligned "from side to side"; they are straight and 90-degree curved. </ul>
-    		<img src="edges_mode.png">
-		</td>	
-	</tr>
-   	</tbody>
-</table>
+| mode: "direct"                                                                  | mode: "edges"                                                                       |
+| :------------------------------------------------------------------------------ | :---------------------------------------------------------------------------------- |
+| Connectors are aligned "from center to center"; they are straight and diagonal. | Connectors are aligned "from side to side"; they are straight and 90-degree curved. |
+| ![](../../assets/direct_mode.png)                                               | ![](../../assets/edges_mode.png)                                                    |
 
 
 **Related articles**
@@ -55,7 +45,3 @@ The autoplacement object can contain the following options:
 common_guides/configuration.md#configuringautoplacement
 
 @changelog: added in v3.0
-
-```todo
-проверить пример и описание
-```

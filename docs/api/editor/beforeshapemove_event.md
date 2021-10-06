@@ -13,7 +13,7 @@ description: text
 @params:
 - `events: MouseEvent` - a native HTML event object
 - `id: string | number` - the id of a shape
-- `coord: number` - the x and y coordinates of the shape position before movement
+- `coord: object` - an object with the x and y coordinates of the shape position before movement
 
 @returns:
 Return `false` to prevent the shape from being moved; otherwise, `true`.

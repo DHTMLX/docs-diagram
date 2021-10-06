@@ -6,7 +6,7 @@ description: text
 
 # defaultLinkType
 
-@short: the default type of a connector
+@short: the default type of a connector line
 
 @signature: {`defaultLinkType?: string;`}
 
@@ -21,7 +21,7 @@ var diagram = new dhx.Diagram("diagram_container", {
 
 @descr:
 
-This value is applied, if the connector config doesn't contain the "type" property.
+This value is applied, if the line object doesn't contain the "type" property.
 
 **Related articles**
 

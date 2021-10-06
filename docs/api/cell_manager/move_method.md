@@ -8,7 +8,7 @@ description: text
 
 @short: moves cells of the swimlane as rows or columns
 
-@signature: {`move(cellIndex: number, dir: ActionDirection, unstrict?: boolean): void;`}
+@signature: {`move(cellIndex: number, dir: ActionDirection): void;`}
 
 @params:
 - `cellIndex: number` - the start index of a cell in a layout

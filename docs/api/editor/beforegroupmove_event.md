@@ -13,7 +13,7 @@ description: text
 @params:
 - `events: MouseEvent` - a native HTML event object
 - `id: string | number` - the id of an item
-- `coord: number` - the x and y coordinates of the group or swimlane position before movement
+- `coord: object` - am object with the x and y coordinates of the group or swimlane position before movement
 
 @returns:
 Return `false` to prevent the group or swimlane from being moved; otherwise, `true`.

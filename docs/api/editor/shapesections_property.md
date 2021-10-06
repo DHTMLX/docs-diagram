@@ -6,7 +6,7 @@ description: text
 
 # shapeSections
 
-@short: specifies sections for structuring items in the left panel
+@short: specifies sections of items that will be shown in the left panel of the editor
 
 @signature: {`shapeSections?: IShapeSections;`}
 
@@ -22,20 +22,17 @@ const editor = new dhx.DiagramEditor(document.body, {
     },
 });
 
-@relatedsample:
-**Related samples**: [Diagram. Diagram Editor. Left panel customization](https://snippet.dhtmlx.com/2z0a18oz)
+
 
 @descr:
-
-The default sections of the left panel are: shapes, groups,swimlanes.
-
-The **shapeSections** object should contain a set of *key:value* pairs where *key* is the name of a section and *value* is an array with the types of the items to be rendered in the section.
-
-{{note Setting boolean *true* as a value of the array will display all available [flow-chart](diagram_guides/shapes_arrows_list.md#shapesconfiguration) shapes in the section.}}
-
-```todo
-добавить секции по дефолту, проверить описание
-п. diagram_guides__editor_mode.html#leftpanelcustomization
-```
+**Related samples**: [Diagram. Diagram Editor. Left panel customization](https://snippet.dhtmlx.com/2z0a18oz)
 
 {{note The property is available only in the default mode of the editor (*type:"default"*).}}
+
+The [default sections of the left panel](../../../guides/diagram_editor/left_panel/#default-sections) are: *Shapes, Groups, Swimlanes*.
+
+You can specify your own sections of the left panel via the **shapeSections** property. The property is an object that contains a set of *key:value* pairs where *key* is the name of a section and *value* is an array with the types of the items to be rendered in the section.
+
+{{note Setting boolean *true* as a value of the array will display all available [flow-chart](../../../shapes/default_shapes/#shapes-overview) shapes in the section.}}
+
+

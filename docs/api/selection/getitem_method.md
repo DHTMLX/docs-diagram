@@ -19,8 +19,6 @@ var shape = diagram.selection.getItem();
 
 @descr:
 
-Check all available properties of shapes, groups and swimlanes objects in [Diagram](diagram_guides/shapes_arrows_list.md#shapeattrs) and in [Org Chart](orgchart_guides/orgchart_shapes_types.md#shapeattrs).
-
 **Related articles**
 
 common_guides/manipulating_shapes.md#selectingshapes

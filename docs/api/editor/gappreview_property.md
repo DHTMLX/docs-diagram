@@ -18,8 +18,9 @@ const editor = new dhx.DiagramEditor("editor", {
 });
 
 @descr:
+{{note The property is available only in the default mode of the editor (*type:"default"*).}}
 
-The value of the property can be redefined for a separate item via the **gap** attribute of the preview property of default settings.
+The value of the `gapPreview` property can be redefined for a separate shape via the **gap** attribute of the [preview](../../../shapes/configuration_properties/#properties-specific-for-the-default-mode) property of the shape object:
 
 ~~~js
 const defaults = {card: {
@@ -38,9 +39,3 @@ const editor = new dhx.DiagramEditor(document.body, {
     defaults: defaults         
 });
 ~~~
-
-{{note The property is available only in the default mode of the editor (*type:"default"*).}}
-
-```todo
-проверить пример и описание
-```

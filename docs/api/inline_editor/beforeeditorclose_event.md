@@ -23,11 +23,6 @@ diagram.events.on("beforeEditorClose", (id, key, subheaderId) => {
     console.log(id, key, subheaderId);
     return true;
 });
-// For diagram editor
-editor.diagram.events.on("beforeEditorClose", (id, key, subheaderId) => {
-    console.log(id, key, subheaderId);
-    return true;
-});
 
 @descr:
 

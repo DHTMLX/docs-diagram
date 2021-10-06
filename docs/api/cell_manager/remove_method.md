@@ -8,7 +8,7 @@ description: text
 
 @short: removes cells of the swimlane as rows or columns
 
-@signature: {`remove(cellIndex: number, type: ICellType, unstrict?: boolean): void;`}
+@signature: {`remove(cellIndex: number, type: ICellType): void;`}
 
 @params:
 - `cellIndex: number` - the start index of a cell in a layout

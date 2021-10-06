@@ -8,7 +8,7 @@ description: text
 
 @short: adds cells as rows or columns to a swimlane
 
-@signature: {`add(cellIndex: number, dir: ActionDirection, unstrict?: boolean): void;`}
+@signature: {`add(cellIndex: number, dir: ActionDirection): void;`}
 
 @params:
 - `cellIndex: number` - the start index of a cell in a layout

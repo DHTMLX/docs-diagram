@@ -22,9 +22,11 @@ var diagram = new dhx.Diagram("diagram_container", {
 
 @descr:
 
+{{note The property is available only in the default mode of the diagram (*type:"default"*). The property does not work if you use groups or swimlanes.}}
+
 The result of applying the **lineGap** property is shown in the image below:
 
-<img src="linegap_config.png">
+![](../../assets/linegap_config.png)
 
 **Related articles**
 

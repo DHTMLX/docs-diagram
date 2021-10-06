@@ -6,13 +6,13 @@ description: text
 
 # afterShapeIconClick
 
-@short: fires after clicking a control in the per-shape toolbar
+@short: fires after clicking a control in the per-item toolbar
 
 @signature: {`afterShapeIconClick: (iconId: string, shape: IDataItem) => void;`}
 
 @params:
 - `iconId: string` - the type or id of the toolbar control
-- `shape: object` - an object with the shape configuration
+- `shape: object` - an object with the item configuration
 
 @example:
 editor.events.on("afterShapeIconClick", function(iconId, shape) {

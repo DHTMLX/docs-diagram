@@ -71,10 +71,6 @@ A swimlane object can include the following configuration properties:
   - the other attributes of **subHeaderCols** are the same as the attributes of **subHeaderRows** (check the details above);
 - **[key: string]: any**  - your own property with your own logic to be implemented under the hood.
 
-```todo
-{{note Check the related sample: [Diagram. Configuring columns and rows in swimlanes](https://snippet.dhtmlx.com/uzx5ulal).}}
-```
-
 ## Properties of a swimlane cell
 
 The configuration properties of a swimlane cell are given below:
@@ -91,5 +87,3 @@ The configuration properties of a swimlane cell are given below:
       - *"unbound"* (by default) - the user can move an item into or outside the cell;
       - *"boundNoBorderExtension"* - the user can move an item into the cell but cannot drag the item outside the cell if the item has been dropped inside the cell. The item won't expand the borders of the cell when trying to drag the item outside the cell;
   - **padding** - (*number*) defines the padding between the cell and the edge of the item when moving the item inside the cell. <br> The attribute is available if *groupBehavior: "boundNoBorderExtension"*.
-
-  {{note You can manipulate the Swimlane cells via the API of the [cellManager](api/cellmanager/cellmanager.md) object.}}

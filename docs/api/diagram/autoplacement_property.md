@@ -6,7 +6,7 @@ description: text
 
 # autoplacement
 
-@short: sets configuration for autoplacement
+@short: sets configuration for auto-placement of shapes
 
 @signature: {`autoplacement?: IAutoPlacement;`}
 
@@ -29,29 +29,20 @@ diagram.parse(autoData);
 
 @descr:
 
-{{note The **autoplacement** property works for [Diagram and Diagram Editor](diagram_guides.md) but does not work for [Organizational Chart and Org Chart Editor](org_chart_guides.md). The **autoplacement** property does not work if you use groups or swimlanes.}}
+{{note The **autoplacement** property works only in the default mode of the diagram and only for shapes.}}
 
-The autoplacement object can contain the following options:
+The `autoplacement` object can contain the following options:
 
 - **mode** - (*string*) the mode of connecting shapes, "direct" (by default) or "edges"
 - **graphPadding** - (*number*) sets the distance between unconnected diagrams, *"200"* by default
 
 ### Modes of connecting shapes
 
-<table cellspacing="0" cellpadding="1" border="0">
-	<tbody>
-    
-	 <tr>
-		<td><ul><b>"direct" mode </b></ul><ul>Connectors are aligned "from center to center"; they are straight and diagonal.</ul>
-			<img src="direct_mode.png"> 
-		
-        </td>
-		<td><ul><b>"edges" mode</b></ul><ul>Connectors are aligned "from side to side"; they are straight and 90-degree curved. </ul>
-    		<img src="edges_mode.png">
-		</td>	
-	</tr>
-   	</tbody>
-</table>
+| mode: "direct"                                                                  | mode: "edges"                                                                       |
+| :------------------------------------------------------------------------------ | :---------------------------------------------------------------------------------- |
+| Connectors are aligned "from center to center"; they are straight and diagonal. | Connectors are aligned "from side to side"; they are straight and 90-degree curved. |
+| ![](../../assets/direct_mode.png)                                               | ![](../../assets/edges_mode.png)                                                    |
+
 
 **Related articles**
 

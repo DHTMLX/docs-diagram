@@ -20,10 +20,6 @@ description: text
 diagram.events.on("afterEditorEditing", (value, id, key, subheaderId) => {
     console.log(value, id, key, subheaderId);
 });
-// For diagram editor
-editor.diagram.events.on("afterEditorEditing", (value, id, key, subheaderId) => {
-    console.log(value, id, key, subheaderId);
-});
 
 @descr:
 
