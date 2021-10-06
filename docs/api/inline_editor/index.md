@@ -6,6 +6,7 @@ description: text
 
 # Inline Editor overview
 
+The API set for controlling the process of editing the text of items by double-click on the text. The API can be used as in the diagram as in the editor. 
 ## Events
 
 | Name                                               | Description                                               |

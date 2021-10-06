@@ -19,10 +19,6 @@ description: text
 diagram.events.on("afterEditorOpen", (id, key, subheaderId) => {
     console.log(id, key, subheaderId);
 });
-// For diagram editor
-editor.diagram.events.on("afterEditorOpen", (id, key, subheaderId) => {
-    console.log(id, key, subheaderId);
-});
 
 @descr:
 

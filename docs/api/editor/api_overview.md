@@ -42,8 +42,7 @@ description: text
 | [](api/editor/zoomout_event.md)              | @getshort(api/editor/zoomout_event.md)              |
 
 
-```todo remove?
-In addition to the events listed above, you may also apply [events of the diagram object](api/refs/diagram_events.md) while working in the editor view. Here is an example of applying the [itemClick](api/diagram_itemclick_event.md) event of Diagram in the editor:
+In addition to the events listed above, you may also apply [events of the diagram object](../../../api/diagram/api_overview/#diagram-events) while working in the editor. Here is an example of applying the [itemClick](../../../api/diagram/itemclick_event/) event of the Diagram object in the editor:
 
 ~~~js
 editor.diagram.events.on("itemClick", (id, event) => {
@@ -51,8 +50,6 @@ editor.diagram.events.on("itemClick", (id, event) => {
 });
 ~~~
 
-You can find the full list of the Diagram API events [here](api/refs/diagram_events.md).
-```
 
 ## Editor properties
 

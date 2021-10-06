@@ -305,3 +305,8 @@ diagram.data.filter();
 ~~~
 
 {{editor	https://snippet.dhtmlx.com/tm43bsgn	Diagram. Filtering shapes}}
+
+
+## Manipulating swimlane cells
+
+To operate the cells of a swimlane dynamically, use [Cell Manager API](../../api/cell_manager/index/).
