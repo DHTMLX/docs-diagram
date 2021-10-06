@@ -81,7 +81,7 @@ Check [the full list of configuration properties of a shape](../../../shapes/con
 Positioning Diagram and shapes
 --------------------
 
-You can specify the position of a diagram on a page and set margins for shapes inside the [](../../api/diagram/margin_property.md) attribute of the diagram config object.
+You can specify the position of a diagram on a page and set margins for shapes inside the [](../../api/diagram/margin_property.md) attribute of the diagram configuration object.
 
 The margin object contains a set of properties: 
 
@@ -92,7 +92,8 @@ The margin object contains a set of properties:
 
 ~~~js
 // setting margins for an org chart
-const diagram = new dhx.Diagram("diagram_container", { type: "org",
+const diagram = new dhx.Diagram("diagram_container", { 
+    type: "org",
     margin: {
         x: 20, 
         y: 20,

@@ -11,7 +11,7 @@ description: text
 @signature: {`lineDblClick: (id: Id, event: MouseEvent) => void;`}
 
 @params:
-- `id: string | number` - the id of a connector
+- `id: string | number` - the id of a connector line
 - `event: MouseEvent` - a native HTML event object
 
 @example:

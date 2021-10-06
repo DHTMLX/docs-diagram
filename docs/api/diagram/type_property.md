@@ -6,9 +6,7 @@ description: text
 
 # type
 
-```todo
-
-@short: defines the type of a diagram
+@short: defines the mode of Diagram initialization 
 
 @signature: {`type?: DiagramType;`}
 
@@ -23,14 +21,12 @@ var diagram = new dhx.Diagram("diagram_container", {
 
 
 @descr:
-- The **type:"default"** option initializes a Diagram.
-- The **type:"org"** option is used to initialize an organizational chart (an organogram). 
-- The **type:"mindmap"** option is used to initialize a mind map diagram. 
+DHTMLX Diagram can be initialized in one of three modes:
+
+- Use **type:"default"** to initialize a Diagram in the default mode.
+- Use **type:"org"** to initialize a Diagram in the org mode. 
+- Use **type:"mindmap"** to initialize a Diagram in the mindmap mode. 
 
 
 @related:
 common_guides/initialization.md#initializingdiagram
-
-@changelog: The **"mindmap"** and **"default"** values have been added in v3.1. 
-
-```todo

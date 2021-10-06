@@ -25,7 +25,7 @@ var diagram = new dhx.Diagram("diagram_container", {
 
 @descr:
 
-By default, all css styles included to the page are sent to the export service when exporting a dhtmlxDiagram. As a result, the size of the request increases that can cause the request to fail.
+By default, all css styles included to the page are sent to the export service when exporting a DHTMLX Diagram. As a result, the size of the request increases that can cause the request to fail.
 
 To avoid this problem, you can reduce the size of the exported data. For example, setting the **exportStyles** property to *false* will prevent all styles from being sent to the export service:
 

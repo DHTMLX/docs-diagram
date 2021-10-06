@@ -48,7 +48,7 @@ The `parameters` object can contain the following attributes:
 
 ### Types of sidebar options
 
-The available values of the **type** property are:
+While specifying sidebar options for editing custom shapes, you can apply the following values of the **type** property:
 
 - **"arrange"** - provides interface for editing the *width*, *height*, *angle*, *x*, *y* properties of a shape. The properties can't be overridden. The type is available only in the default mode of the editor.
 - **"position"** - provides interface for editing either the *x*/*y*, or *dx*/*dy* properties of a shape. The properties can't be overridden.

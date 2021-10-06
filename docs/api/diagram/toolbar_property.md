@@ -6,7 +6,7 @@ description: text
 
 # toolbar
 
-@short: sets a toolbar with buttons for shapes
+@short: sets a toolbar with buttons for items
 
 @signature: {`toolbar?: IShapeToolbarConfig[];`}
 
@@ -35,8 +35,8 @@ The toolbar is set as an array of icons objects. Each icon object can have the f
 
 - **id** - (*string*) the id of the icon.
 - **content** - (*string*) the content of the icon. It can contain an HTML element with the name of the icon class. 
-- **check** - (*function*) checks whether the icon should be applied to the shape. The function takes a shape object and returns *true*, if the icon will be rendered for this shape.
-- **css** - (*function*) the function which returns the name(s) of CSS class(es) that should be applied to the shape.
+- **check** - (*function*) checks whether the icon should be applied to the item. The function takes an item object and returns *true*, if the icon will be rendered for this item.
+- **css** - (*function*) the function which returns the name(s) of CSS class(es) that should be applied to the item.
 
 **Related articles**
 

@@ -11,14 +11,20 @@ description: text
 @signature: {`margin?: IMarginConfig;`}
 
 @example:
-var diagram = new dhx.Diagram("diagram_container", { 
-    margin:{
-        x:20, y:20,
-        itemX:50, itemY:50
+var diagram = new dhx.Diagram("diagram_container", {
+    type: "org", 
+    margin: {
+        x: 20, y: 20,
+        itemX: 50, itemY: 50
     }
 });
 
 @descr:
+**Related sample:** [Diagram. Margin between shapes](https://snippet.dhtmlx.com/bwe9vm6i)
+
+{{note The property works only in the org mode of Diagram.}}
+
+The `margin` object can contain the following properties:
 
 - **itemX** - horizontal space between two shapes
 - **itemY** - vertical space between two shapes
@@ -28,7 +34,6 @@ var diagram = new dhx.Diagram("diagram_container", {
 The default values of margins are:
 
 ~~~js
-{ x:40, y:40, itemX:40, itemY: 40 }
+{ x: 40, y: 40, itemX: 40, itemY: 40 }
 ~~~
 
-{{note The property works only in the org mode of Diagram.}}
