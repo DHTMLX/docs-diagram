@@ -6,7 +6,7 @@ description: text
 
 # editMode
 
-@short: switches the editor mode off and shows the preview mode, and vice versa
+@short: hides/shows the panels of the editor
 
 @signature: {`editMode?: boolean;`}
 

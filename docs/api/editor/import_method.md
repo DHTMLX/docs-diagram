@@ -20,4 +20,4 @@ editor.import(diagram);
 
 **Related samples**: [Diagram. Org Chart Editor. Live org chart edit](https://snippet.dhtmlx.com/bng7ego7)
 
-You can load data in any supported data format. See the details in the [parse](api/data/methods/parse.md) article.
+You can load data in any supported data format. See the details in the [](api/data_collection/parse_method.md) article.

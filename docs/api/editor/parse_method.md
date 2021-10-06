@@ -33,7 +33,7 @@ const data = [
         "text": "Shape 2"
     },
  
-    // connector
+    // connector line
     {
         "id": "ab",
         "from":"a",
@@ -51,4 +51,4 @@ editor.parse(data);
 - [Diagram. Diagram Editor. Basic editor](https://snippet.dhtmlx.com/xshe9ut7)
 - [Diagram. Org Chart Editor. Basic editor](https://snippet.dhtmlx.com/og4qm3ja)
 
-You can load data in any supported data format. See the details in the [parse](api/data/methods/parse.md) article.
+You can load data in any supported data format. See the details in the [](api/data_collection/parse_method.md) article.

@@ -6,7 +6,7 @@ description: text
 
 # autoplacement
 
-@short: sets configuration for autoplacement
+@short: sets configuration for auto-placement of shapes
 
 @signature: {`autoplacement?: IAutoPlacement;`}
 

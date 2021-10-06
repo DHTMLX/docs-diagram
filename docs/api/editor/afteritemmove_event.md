@@ -6,14 +6,14 @@ description: text
 
 # afterItemMove
 
-@short: fires when an item is moving
+@short: fires when an item is moved one grid step
 
 @signature: {`afterItemMove: (events: MouseEvent, id: Id, coord: IBaseCoords) => void;`}
 
 @params:
 - `events: MouseEvent` - a native HTML event object
 - `id: string | number` - the id of an item
-- `coord: number` - the x and y coordinates of the item position before movement
+- `coord: object` - an object with the x and y coordinates of the item position after movement
 
 @example:
 editor.events.on("afterItemMove", (event, id, coordinates) => {
@@ -25,7 +25,7 @@ editor.events.on("afterItemMove", (event, id, coordinates) => {
 });
 
 @descr:
-The event doesn't work with the connector object.
+The event doesn't work with the line object.
 
 @changelog:
 Added in v4.0.

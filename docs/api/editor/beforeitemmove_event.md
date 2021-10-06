@@ -8,14 +8,12 @@ description: text
 
 @short: fires before an item is moved
 
-`todo: check - $mov: ICoords`
-
-@signature: {`beforeItemMove: (events: MouseEvent, id: Id, coord: IBaseCoords, $mov: ICoords) => boolean | void;`}
+@signature: {`beforeItemMove: (events: MouseEvent, id: Id, coord: IBaseCoords) => boolean | void;`}
 
 @params:
 - `events: MouseEvent` - a native HTML event object
 - `id: string | number` - the id of an item
-- `coord: number` - the x and y coordinates of the item position before movement
+- `coord: object` - an object with the x and y coordinates of the item position before movement
 
 @returns:
 Return `false` to prevent the item from being moved; otherwise, `true`.
@@ -31,7 +29,7 @@ editor.events.on("beforeItemMove", (event, id, coordinates) => {
 });
 
 @descr:
-The event doesn't work with the connector object.
+The event doesn't work with the line object.
 
 @changelog:
 Added in v4.0.

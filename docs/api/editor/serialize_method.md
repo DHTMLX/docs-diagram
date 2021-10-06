@@ -11,7 +11,7 @@ description: text
 @signature: {`serialize(): IDataItem[];`}
 
 @returns:
-An array of JSON objects for each shape and link from the editor data.
+An array of JSON objects for each item from the editor data.
 
 @example:
 const data = editor.serialize();

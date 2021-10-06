@@ -21,8 +21,8 @@ const editor = new dhx.DiagramEditor("editor", {
 
 @descr:
 
-```todo
-The "default" type is used to render a diagram in the default mode.
-The "org" type is used to render a diagram in the org chart mode.
-Thr "mindmap" type is used to render a diagram in the mind map mode.
-```
+DHTMLX Diagram Editor can be initialized in one of three modes:
+
+- Use **type:"default"** to initialize the editor in the default mode.
+- Use **type:"org"** to initialize the editor in the org mode.
+- Use **type:"mindmap"** to initialize the editor in the mindmap mode.

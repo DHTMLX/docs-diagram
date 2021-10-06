@@ -6,7 +6,7 @@ description: text
 
 # margin
 
-@short: margins for autoplacement in the diagram
+@short: margins for positioning items in the diagram
 
 @signature: {`margin?: IMarginConfig;`}
 

@@ -21,6 +21,6 @@ const editor = new dhx.DiagramEditor(document.body, {
 
 {{note The property is available only in the default mode of the editor (*type:"default"*). The property does not work if you use groups or swimlanes.}}
 
-```todo
-добавить картинку
-```
+The result of applying the **lineGap** property is shown in the image below:
+
+![](../../assets/linegap_config.png)

@@ -8,9 +8,7 @@ description: text
 
 @short: fires after the Auto Layout button has been clicked
 
-`todo: check`
-
-@signature: {``}
+@signature: {`autoLayout: () => void;`}
 
 @example:
 editor.events.on("autoLayout", function() {
