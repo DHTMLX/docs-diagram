@@ -14,5 +14,5 @@ You can clone or download it, and use it for your projects. To run the demo, fol
 
 If you use some other frameworks, check the available examples below:
 
-- [Integration with Angular](common_guides/angular_integration.md)
-- [Integration with Vue.js](common_guides/vue_integration.md)
+- [Integration with Angular](../../guides/angular_integration/)
+- [Integration with Vue.js](../../guides/vue_integration/)

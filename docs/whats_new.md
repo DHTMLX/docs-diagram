@@ -15,33 +15,33 @@ Released on September 7, 2021
 ### New functionality
 
 
-- New diagram items are added: [Groups](diagram_guides/shapes_arrows_list.md#groupsconfiguration), [Swimlanes](diagram_guides/shapes_arrows_list.md#swimlaneconfiguration)
-- New sections in the left panel of the Diagram Editor are added: Groups, Swimlanes
-- New sidebar options are added in the right panel of the editor for Groups, Swimlanes
-- The ability to edit [Groups](diagram_guides/editor_mode.md#editinggroups) and [Swimlanes](diagram_guides/editor_mode.md#editingswimlanes) via UI
-- Extended list of [locale options](diagram_guides/editor_mode.md#localization)
-- The ability to operate the cells of a swimlane via [CellManager API](api/cellmanager/cellmanager.md)
+- New diagram items are added: [Groups](../groups/index/), [Swimlanes](../swimlanes/index/)
+- New sections in the left panel of the Diagram Editor are added: [Groups, Swimlanes](../guides/diagram_editor/left_panel/#default-sections)
+- [New sidebar options are added in the right panel of the editor for Groups, Swimlanes](../guides/diagram_editor/right_panel/#sidebar-options-for-editing-groups-swimlanes)
+- The ability to edit [Groups](../guides/diagram_editor/grid_area/#managing-groups) and [Swimlanes](../guides/diagram_editor/grid_area/#managing-swimlanes) via UI
+- Extended list of [locale options](../guides/localization/)
+- The ability to operate the cells of a swimlane via [CellManager API](../api/cell_manager/index/)
 - The ability to edit the text of an item by double-clicking on it
-- [DHTMLX Diagram with Angular](common_guides/angular_integration.md) demo is added
-- [DHTMLX Diagram with React](common_guides/react_integration.md) demo is added
-- [DHTMLX Diagram with Vue.js](common_guides/vue_integration.md) demo is added
-- The ability [to add identical items with different styles and settings to the left panel of the editor](diagram_guides/editor_mode.md#multiple_customized_items)
+- [DHTMLX Diagram with Angular](../guides/angular_integration/) demo is added
+- [DHTMLX Diagram with React](../guides/react_integration/) demo is added
+- [DHTMLX Diagram with Vue.js](../guides/vue_integration/) demo is added
+- The ability [to add identical items with different styles and settings to the left panel of the editor](../guides/diagram_editor/left_panel/#adding-identical-items-with-different-settings-into-the-left-panel)
 
 ### API
 
-- New [CellManager API](api/cellmanager/cellmanager.md) methods: [add()](api/cellmanager/cellmanager_add_method.md), [getCellId()](api/cellmanager/cellmanager_getcellid_method.md), [getCellIndex()](api/cellmanager/cellmanager_getcellindex_method.md), [getSubHeaderCellId()](api/cellmanager/cellmanager_getsubheadercellid_method.md), [getSubHeaderCellIndex()](api/cellmanager/cellmanager_getsubheadercellindex_method.md), [getSubHeaderType()](api/cellmanager/cellmanager_getsubheadertype_method.md), [move()](api/cellmanager/cellmanager_move_method.md), [remove()](api/cellmanager/cellmanager_remove_method.md), [resetSwimlane()](api/cellmanager/cellmanager_resetswimlane_method.md), [setSwimlane()](api/cellmanager/cellmanager_setswimlane_method.md), [validation()](api/cellmanager/cellmanager_validation_method.md)
-- New [CellManager API](api/cellmanager/cellmanager.md) events: [afterCellsAdd](api/cellmanager/cellmanager_aftercellsadd_event.md), [afterCellsMove](api/cellmanager/cellmanager_aftercellsmove_event.md), [afterCellsRemove](api/cellmanager/cellmanager_aftercellsremove_event.md), [afterCellsValidation](api/cellmanager/cellmanager_aftercellsvalidation_event.md), [beforeCellsAdd](api/cellmanager/cellmanager_beforecellsadd_event.md), [beforeCellsMove](api/cellmanager/cellmanager_beforecellsmove_event.md), [beforeCellsRemove](api/cellmanager/cellmanager_beforecellsremove_event.md), [beforeCellsValidation](api/cellmanager/cellmanager_beforecellsvalidation_event.md)
-- New events of the diagram object: [afterSubmenuOpen](api/diagram_aftersubmenuopen_event.md), [beforeSubmenuOpen](api/diagram_beforesubmenuopen_event.md), [groupClick](api/diagram_groupclick_event.md), [groupDblClick](api/diagram_groupdblclick_event.md), [groupHeaderClick](api/diagram_groupheaderclick_event.md), [groupHeaderDblClick](api/diagram_groupheaderdblclick_event.md), [groupMouseDown](api/diagram_groupmousedown_event.md), [itemClick](api/diagram_itemclick_event.md), [itemDblClick](api/diagram_itemdblclick_event.md), [itemMouseDown](api/diagram_itemmousedown_event.md), [itemMouseOut](api/diagram_itemmouseout_event.md), [itemMouseOver](api/diagram_itemmouseover_event.md), [lineDblClick](api/diagram_linedblclick_event.md), [lineMouseDown](api/diagram_linemousedown_event.md)
-- New events of the editor object:  [shapeMoveEnd](diagram_guides/editor_mode.md#shapemoveend), [beforeItemMove](diagram_guides/editor_mode.md#beforeitemmove), [afterItemMove](diagram_guides/editor_mode.md#afteritemmove), [itemMoveEnd](diagram_guides/editor_mode.md#itemmoveend), [beforeGroupMove](diagram_guides/editor_mode.md#beforegroupmove), [afterGroupMove](diagram_guides/editor_mode.md#aftergroupmove), [groupMoveEnd](diagram_guides/editor_mode.md#groupmoveend)
-- New methods of the shape collection: [eachChild()](api/data/methods/eachchild.md), [eachParent()](api/data/methods/eachparent.md), [getRoot()](api/data/methods/getroot.md), [getRoots()](api/data/methods/getroots.md)
-- New inline editing events: [afterEditorClose](api/diagram_aftereditorclose_event.md), [afterEditorEditing](api/diagram_aftereditorediting_event.md), [afterEditorOpen](api/diagram_aftereditoropen_event.md), [beforeEditorClose](api/diagram_beforeeditorclose_event.md), [beforeEditorEditing](api/diagram_beforeeditorediting_event.md), [beforeEditorOpen](api/diagram_beforeeditoropen_event.md)
-- New "editable" and "fixed" configuration attributes of the shape object
+- New [CellManager API](../api/cell_manager/index/) methods: [add()](../api/cell_manager/add_method/), [getCellId()](../api/cell_manager/getcellid_method/), [getCellIndex()](../api/cell_manager/getcellindex_method/), [getSubHeaderCellId()](../api/cell_manager/getsubheadercellid_method/), [getSubHeaderCellIndex()](../api/cell_manager/getsubheadercellindex_method/), [getSubHeaderType()](../api/cell_manager/getsubheadertype_method/), [move()](../api/cell_manager/move_method/), [remove()](../api/cell_manager/remove_method/), [resetSwimlane()](../api/cell_manager/resetswimlane_method/), [setSwimlane()](../api/cell_manager/setswimlane_method/), [validation()](../api/cell_manager/validation_method/)
+- New [CellManager API](../api/cell_manager/index/) events: [afterCellsAdd](../api/cell_manager/aftercellsadd_event/), [afterCellsMove](../api/cell_manager/aftercellsmove_event/), [afterCellsRemove](../api/cell_manager/aftercellsremove_event/), [afterCellsValidation](../api/cell_manager/aftercellsvalidation_event/), [beforeCellsAdd](../api/cell_manager/beforecellsadd_event/), [beforeCellsMove](../api/cell_manager/beforecellsmove_event/), [beforeCellsRemove](../api/cell_manager/beforecellsremove_event/), [beforeCellsValidation](../api/cell_manager/beforecellsvalidation_event/)
+- New events of the Diagram object: [afterSubmenuOpen](../api/diagram/aftersubmenuopen_event/), [beforeSubmenuOpen](../api/diagram/beforesubmenuopen_event/), [groupClick](../api/diagram/groupclick_event/), [groupDblClick](../api/diagram/groupdblclick_event/), [groupHeaderClick](../api/diagram/groupheaderclick_event/), [groupHeaderDblClick](../api/diagram/groupheaderdblclick_event/), [groupMouseDown](../api/diagram/groupmousedown_event/), [itemClick](../api/diagram/itemclick_event/), [itemDblClick](../api/diagram/itemdblclick_event/), [itemMouseDown](../api/diagram/itemmousedown_event/), [itemMouseOut](../api/diagram/itemmouseout_event/), [itemMouseOver](../api/diagram/itemmouseover_event/), [lineDblClick](../api/diagram/linedblclick_event/), [lineMouseDown](../api/diagram/linemousedown_event/)
+- New events of the Editor object:  [shapeMoveEnd](../api/editor/shapemoveend_event/), [beforeItemMove](../api/editor/beforeitemmove_event/), [afterItemMove](../api/editor/afteritemmove_event/), [itemMoveEnd](../api/editor/itemmoveend_event/), [beforeGroupMove](../api/editor/beforegroupmove_event/), [afterGroupMove](../api/editor/aftergroupmove_event/), [groupMoveEnd](../api/editor/groupmoveend_event/)
+- New methods of DataCollection: [eachChild()](../api/data_collection/eachchild_method/), [eachParent()](../api/data_collection/eachparent_method/), [getRoot()](../api/data_collection/getroot_method/), [getRoots()](../api/data_collection/getroots_method/)
+- New events of Inline editor: [afterEditorClose](../api/inline_editor/aftereditorclose_event/), [afterEditorEditing](../api/inline_editor/aftereditorediting_event/), [afterEditorOpen](../api/inline_editor/aftereditoropen_event/), [beforeEditorClose](../api/inline_editor/beforeeditorclose_event/), [beforeEditorEditing](../api/inline_editor/beforeeditorediting_event/), [beforeEditorOpen](../api/inline_editor/beforeeditoropen_event/)
+- New "editable" and "fixed" configuration attributes of the [shape object](../shapes/configuration_properties/)
 
 ### Updates
 
 - Improved keyboard navigation
 - Redesigned shapes
-- Updated events of the editor object: [beforeShapeMove](diagram_guides/editor_mode.md#beforeshapemove) and [afterShapeMove](diagram_guides/editor_mode.md#aftershapemove)
+- Updated events of the Editor object: [beforeShapeMove](../api/editor/beforeshapemove_event/) and [afterShapeMove](../api/editor/aftershapemove_event/)
 - Upgraded structure of Shape Collection API
 
 ### Fixes
@@ -58,24 +58,24 @@ Released on April 15, 2021
 
 ### New functionality
 
-- [TypeScript Support](common_guides/using_typescript.md)
-- New type of dhtmlxDiagram is added: [Mind Map](mindmap_guides.md)
+- [TypeScript Support](../guides/using_typescript/)
+- New mindmap mode ([type:"mindmap"](../api/diagram/type_property/)) of DHTMLX Diagram is added
 - [New CSS template for DHTMLX Diagram](https://snippet.dhtmlx.com/diagram_template_b)
-- The ability [to configure the direction of the child shapes relative to the root shape in Mind Map](mindmap_guides/mindmap_shapes_connectors.md#arrangementofshapes) via the [typeConfig](api/diagram_typeconfig_config.md) configuration property of the diagram object
-- The ability [to add custom event handlers for custom shapes](common_guides/configuration.md#addingeventhandlersforthecustomshape) via the "eventHandlers" attribute of the [addShape()](api/diagram_addshape.md) method
-- The ability to customize the toolbar for editing shapes in [Diagram](diagram_guides/editor_mode.md#configuringtoolbarforshapes), [Org Chart](orgchart_guides/editor_mode.md#configuringtoolbarforshapes), and [Mind Map](mindmap_guides/editor_mode.md#configuringtoolbarforshapes) Editors 
-- New events for all Editor objects: [BeforeShapeIconClick](diagram_guides/editor_mode.md#beforeshapeiconclick) and [AfterShapeIconClick](diagram_guides/editor_mode.md#aftershapeiconclick), [BeforeShapeMove](diagram_guides/editor_mode.md#beforeshapemove) and [AfterShapeMove](diagram_guides/editor_mode.md#aftershapemove)
-- The ability to cancel sending CSS styles to the export service via the [exportStyles](api/diagram_exportstyles_config.md) configuration option of the diagram object
+- The ability [to configure the direction of the child shapes relative to the root shape in the mindmap mode of Diagram](../shapes/default_shapes/#arrangement-of-shapes-in-the-mindmap-mode-of-diagram) via the [typeConfig](../api/diagram/typeconfig_property/) configuration property of the diagram object
+- The ability [to add custom event handlers for custom shapes](../shapes/custom_shape/#event-handlers-for-custom-shapes) via the "eventHandlers" attribute of the [addShape()](../api/diagram/addshape_method/) method
+- The ability to customize the personal toolbars for editing items in the [grid area](../guides/diagram_editor/grid_area/) via the [shapeToolbar](../api/editor/shapetoolbar_property/) property of the Editor object
+- New events of the Editor object: [BeforeShapeIconClick](../api/editor/beforeshapeiconclick_event/) and [AfterShapeIconClick](../api/editor/aftershapeiconclick_event/), [BeforeShapeMove](../api/editor/beforeshapemove_event/) and [AfterShapeMove](../api/editor/aftershapeiconclick_event/)
+- The ability to cancel sending CSS styles to the export service via the [exportStyles](../api/diagram/exportstyles_property/) configuration option of the diagram object
   
 ### Updates
 
-- The [type](api/diagram_type_config.md) configuration property of the diagram object is updated: new "default" and "mindmap" values are added
-- The [collapseItem](api/diagram_collapseitem.md) and [expandItem](api/diagram_expanditem.md) methods are updated: the second "dir" parameter is added
-- The [BeforeCollapse](api/diagram_onbeforecollapse_event.md), [AfterCollapse](api/diagram_onaftercollapse_event.md), [BeforeExpand](api/diagram_onbeforeexpand_event.md) and [AfterExpand](api/diagram_onafterexpand_event.md) events are updated: the second "dir" parameter is added
+- The [type](../api/diagram/type_property/) configuration property of the diagram object is updated: new "default" and "mindmap" values are added
+- The [collapseItem()](../api/diagram/collapseitem_method/) and [expandItem()](../api/diagram/expanditem_method/) methods are updated: the second "dir" parameter is added
+- The [beforeCollapse](../api/diagram/beforecollapse_event/), [afterCollapse](../api/diagram/aftercollapse_event/), [beforeExpand](../api/diagram/beforeexpand_event/) and [afterExpand](../api/diagram/afterexpand_event/) events are updated: the second "dir" parameter is added
 
 ### Fixes
 
-- Fix the issue with the selection module for all types of dhtmlxDiagram
+- Fix the issue with the selection module for all types of DHTMLX Diagram
 - Fix the issue with the scroll of the diagram when applying the "showItem()" method to the scaled diagram
 - Fix the incorrect work of DOM Parser with HTML templates
 - Fix the issue that caused the root shape to be collapsed after collapsing any child shape
@@ -103,7 +103,7 @@ Released on January 27, 2021
 
 - Fix the incorrect behavior of the shape selected in Diagram Editor when working with the input field on the page
 - Fix the issue that caused a collapsed/expanded item not to work with its parent 
-- Fix the incorrect work of the [showItem()](api/diagram_showitem.md) method when the child item is hidden
+- Fix the incorrect work of the [showItem()](../api/diagram/showitem_method/) method when the child item is hidden
 
 Version 3.0.3
 ------------------
@@ -122,9 +122,9 @@ Released on July 14, 2020
 
 ### Fixes
 
-- Fix issue with import data from JSON to Org Chart Editor
-- Fix the incorrect work of the addShape() method while configuring Right Panel
-- Improved behavior of historyManager in Editors (Undo/Redo buttons)
+- Fix issue with importing data from JSON to the Editor in the org mode
+- Fix the incorrect work of the [addShape()](../api/diagram/addshape_method/) method while configuring Right Panel
+- Improved behavior of the historyManager control of the toolbar in the Editor
 
 Version 3.0.1
 ------------------
@@ -133,7 +133,7 @@ Released on May 29, 2020
 
 ### Fixes
 
-- Fix issue with the [autoPlace()](api/diagram_autoplace.md) method
+- Fix issue with the [autoPlace()](../api/diagram/autoplace_method/) method
 - Fix issue with PNG/PDF export modules
 
 Version 3.0
@@ -143,33 +143,31 @@ Released on May 12, 2020
 
 ### Breaking changes
 
-The new update introduces some changes and improvements. Check the [Migration](migration.md) article to keep in step with the latest version.
+The new update introduces some changes and improvements. Check the [Migration](../migration/#22---30) article to keep in step with the latest version.
 
-###New functionality
+### New functionality
 
-- New api/diagram_autoplace.md method and api/diagram_autoplacement_config.md property are added for [auto-arranging connected diagram shapes](common_guides/manipulating_shapes.md#arrangingshapesautomatically) in the hierarchical structure
-- [Ability to set the default configuration of a shape](common_guides/configuration.md#settingthedefaultconfigurationofashape)
-- The [addShape](api/diagram_addshape.md) method for [creating custom shapes](common_guides/configuration.md#creatingcustomshapes) in Diagram and Org Chart is added
-- Ability to create custom shapes in [Diagram Editor](diagram_guides/editor_mode.md#rightpanelcustomization) and [Org Chart Editor](orgchart_guides/editor_mode.md#rightpanelcustomization) via the [addShape](api/diagram_addshape.md) method of Diagram
-- New configuration properties of [Diagram Editor](diagram_guides/editor_mode.md#configurationproperties): defaults, shapeSections, shapeBarWidth, scalePreview, scale, gapPreview, controls
-- New configuration properties of [Org Chart Editor](orgchart_guides/editor_mode.md#configurationproperties): defaults, scale, controls
-- The *Grid Step* sidebar option is added to [Diagram](diagram_guides/editor_mode.md) and [Org Chart](orgchart_guides/editor_mode.md) editors
-- Ability to hide/show any toolbar button of Editors as well as the *Grid Step* sidebar option via the `controls` configuration property
-- Ability to specify sidebar options for editing custom properties in the right panel of [Diagram Editor](diagram_guides/editor_mode.md#rightpanelcustomization) and [Org Chart Editor](orgchart_guides/editor_mode.md#rightpanelcustomization) via the `properties` attribute of the [addShape](api/diagram_addshape.md) method
-- [Ability to create sections for structuring shapes in the left panel of the diagram editor](diagram_guides/editor_mode.md#leftpanelcustomization)
-- [Possibility to customize the appearance of shapes rendered in the left panel of Diagram Editor](diagram_guides__editor_mode.html#leftpanelcustomization) via the `preview` property of the [defaults](diagram_guides/editor_mode.md#configurationproperties) attribute 
-- Ability to select, copy, paste, delete, move several shapes in [Diagram Editor](diagram_guides/editor_mode.md#manipulatingmultipleshapes) and [Org Chart Editor](orgchart_guides/editor_mode.md#manipulatingmultipleshapes)
-- Ability to select and delete several connectors in [Diagram Editor](diagram_guides/editor_mode.md#manipulatingmultipleshapes)
-- Ability to import data from a JSON file to a [diagram](diagram_guides/editor_mode.md) or [org chart](orgchart_guides/editor_mode.md) editor via the "Import Data" button 
-- The api/diagram_destructor.md method is added
+- New [autoPlace()](../api/diagram/autoplace_method/) method and [autoplacement](../api/diagram/autoplacement_property/) property are added for [auto-arranging connected shapes](../guides/manipulating_items/#arranging-shapes-automatically) in the hierarchical structure
+- [Ability to set the default configuration of a shape](../guides/diagram/configuration/#setting-the-default-configuration-of-a-shape) via the `defaults` property when initializing [Diagram](../api/diagram/defaults_property/) or [Diagram Editor](../api/editor/defaults_property/)
+- The [addShape()](../api/diagram/addshape_method/) method for [creating custom shapes](../shapes/custom_shape/) in Diagram and Diagram Editor is added
+- New properties of the Editor object: [controls](../api/editor/controls_property/), [defaults](../api/editor/defaults_property/), [shapeSections](../api/editor/shapesections_property/), [shapeBarWidth](../api/editor/shapebarwidth_property/), [scalePreview](../api/editor/scalepreview_property/), [scale](../api/editor/scale_property/), [gapPreview](../api/editor/gappreview_property/) 
+- The *Grid Step* sidebar option is added to the [right panel of the Editor](../guides/diagram_editor/right_panel/)
+- Ability to hide/show any toolbar buttons of the Editor as well as the *Grid Step* sidebar option via the [controls](../api/editor/controls_property/) property of the Editor
+- Ability [to configure sidebar options for editing attributes of the custom shapes in the right panel of the editor](../guides/diagram_editor/right_panel/#configuring-options-for-editing-custom-shapes) via the `properties` attribute of the [addShape()](../api/diagram/addshape_method/) method
+- [Ability to customize sections in the left panel of the Editor](../guides/diagram_editor/left_panel/#custom-sections)
+- [Possibility to customize the appearance of shapes rendered in the left panel of the Editor](../guides/diagram_editor/left_panel/#setting-shape-preview) via the [preview](../shapes/configuration_properties/#properties-specific-for-the-default-mode) property of the shape object
+- Ability [to select, copy, paste, delete, move several shapes in the Editor]((../guides/diagram_editor/grid_area/#manipulating-multiple-items))
+- Ability [to select and delete several connector lines in the default mode of the Editor](../guides/diagram_editor/grid_area/#manipulating-multiple-items)
+- Ability to import data from a JSON file to the Editor via the ["Import Data"](../guides/diagram_editor/toolbar/) button of the toolbar 
+- The [destructor()](../api/diagram/destructor_method/) method is added
 
-###Updates
+### Updates
 
 - Ability to use custom HTML templates in IE
-- Diagram and Org Chart Editor UI was updated and improved
+- Diagram Editor UI was updated and improved
 - Ability to connect shapes from center to center
-- A set of hotkeys for the editor mode is updated
-- The ability to set a connector line to the *text* shape of Diagram Editor
+- A set of hotkeys for the Editor is updated
+- The ability to set a connector line to the *text* shape in Diagram Editor
 - Auto-fit of the content width of the *text* shape is added
 
 
@@ -179,7 +177,7 @@ Version 2.2.1
 
 Released on December 30, 2019
 
-###Fixes
+### Fixes
 
 - Issue with IE support for the image loader in Diagram editor
 
@@ -187,14 +185,14 @@ Version 2.2
 ------------------
 Released on November 27, 2019
 
-###New functionality
+### New functionality
 
-- Ability to create custom types of shapes for [Diagram](diagram_guides/shapes_arrows_list.md#templatesforshapes) and [Org Chart](orgchart_guides/orgchart_shapes_types.md#templatesforshapes) via using SVG and HTML templates
-- Ability [to build mixed diagrams](diagram_guides/shapes_arrows_list.md#creatingmixeddiagram) and [org charts](orgchart_guides/orgchart_shapes_types.md#creatingmixedorgchart)
-- Ability to export data from the [Diagram Editor](diagram_guides/editor_mode.md#configurationproperties) and [Org Chart Editor](orgchart_guides/editor_mode.md#configurationproperties) to the JSON format
-- The showExport option and ExportData event are added in [Diagram Editor](diagram_guides/editor_mode.md) and [Org Chart Editor](orgchart_guides/editor_mode.md)
+- Ability to create custom shapes via using SVG and HTML templates
+- Ability to build diagrams with different types of shapes
+- The ability to export data from the Diagram Editor to the JSON format via the Export data button of the [toolbar](../guides/diagram_editor/toolbar/)
+- The [showExport](../migration/#toolbar-buttons-in-editors) option and [exportData](../api/editor/exportdata_event/) event are added in Diagram Editor
 
-###Fixes
+### Fixes
 
 - Fix the issue with exporting a diagram into the PDF and PNG formats
 - Fix incorrect work of the mouse events
@@ -207,46 +205,46 @@ Version 2.1.1
 ------------------
 Released on October 11, 2019
 
-###Fixes
+### Fixes
 - Issues with an img-card in IE
 
 Version 2.1
 ------------------
 Released on May 22, 2017
 
-###New functionality
+### New functionality
 
-- Handy [Diagram editor](diagram_guides/editor_mode.md) for building clear-cut diagrams
-- Enriched set of configuration options for shapes and connectors of [Diagram](diagram_guides/shapes_arrows_list.md) and [Org Chart](orgchart_guides/orgchart_shapes_types.md)
-- Greater possibilities for customizing [Diagrams](diagram_guides/customization.md) and [Org Charts](orgchart_guides/customization.md)
+- Handy [Diagram editor](../guides/diagram_editor/initialization/) for building clear-cut diagrams
+- Enriched set of configuration options for [shapes](../shapes/configuration_properties/) and [lines](../lines/configuration_properties/)
+- Greater possibilities for customizing [Diagrams](../guides/customization/)
 
-###Updates
+### Updates
 
-- [Hotkeys](diagram_guides/editor_mode.md#hotkeys) are added for the editor mode
-- New events api/diagram_shapehover_event.md and api/diagram_emptyareaclick_event.md are added
-- The api/diagram_linegap_config.md config option is added
+- [Hotkeys](../guides/diagram_editor/grid_area/#using-hotkeys) are added for editing Diagram in the editor
+- New event [emptyAreaClick](../api/diagram/emptyareaclick_event/) is added
+- The [lineGap](../api/diagram/linegap_property/) configuration option is added
 
 Version 2.0
 -------------
 Released on February 15, 2017
 
-###Breaking Change
+### Breaking Change
 
-The API structure was totally reorganized and improved to simplify work with it. Follow the [Migration](migration.md) article to learn all the changes.
+The API structure was totally reorganized and improved to simplify work with it. Follow the [Migration](../migration/#11---20) article to learn all the changes.
 
 
-###New functionality
+### New functionality
 
-- Ability to [create diagrams of any type](overview.md) and stylize them
-- [Variety of shapes and connectors](diagram_guides/shapes_arrows_list.md)
-- [Export to PDF format](common_guides/data_export.md#exportingdiagramtopdf)
-- [Export to PNG format](common_guides/data_export.md#exportingdiagramtopng)
+- Ability to create different diagrams and stylize them
+- Variety of [shapes](../shapes/default_shapes/) and [lines](../lines/index/)
+- [Export to PDF format](../guides/data_export/#exporting-diagram-to-pdf)
+- [Export to PNG format](../guides/data_export/#exporting-diagram-to-png)
 
-###Updates
+### Updates
 
-- Ability to [find necessary shapes](common_guides/manipulating_shapes.md#findingnecessaryshape)
-- Ability to [filter shapes by specified criteria](common_guides/manipulating_shapes.md#filteringshapes)
-- Ability to [add a toolbar with icons for shapes](common_guides/configuration.md#settingtoolbarforshapes) to simplify interaction with them
+- Ability to [find necessary shapes](../guides/manipulating_items/#finding-the-necessary-item)
+- Ability to [filter shapes by specified criteria](../guides/manipulating_items/#filtering-items)
+- Ability to [add a toolbar with icons for shapes](../guides/diagram/configuration/#setting-toolbar-for-items) to simplify interaction with them
 - Enhanced performance 
 - Ability to adjust to any HTML container and built-in auto-sizing
 
@@ -255,22 +253,22 @@ Version 1.1
 -------------------
 Released on December 5, 2017
 
-###New functionality
+### New functionality
 
-- [Using Organization Chart in the editor mode](orgchart_guides/editor_mode.md)
-- Ability to [save and restore the state](common_guides/configuration.md#savingandrestoringstate)
-- Extended [customization possibilities](diagram_guides/customization.md)
+- [Using Editor in the org mode](../api/editor/type_property/)
+- Ability to [save and restore the state](../guides/loading_data/#saving-and-restoring-state)
+- Extended [customization possibilities](../guides/customization/)
 
-###Updates
+### Updates
 
-- [Extended API](api/refs/diagram.md): new methods, properties and events
+- [Extended API](../api/diagram/api_overview/): new methods, properties and events
 
 Version 1.0 
 -------------------------
 
 Released on September 29, 2017
 
-###Initial functionality
+### Initial functionality
 
 - Organogram mode
 - Vertical and horizontal autoplacement strategies
