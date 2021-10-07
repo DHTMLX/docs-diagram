@@ -243,7 +243,7 @@ diagram.showItem("2.1");
 
 You can [read more about scrolling in DHTMLX Diagram](../../guides/scrolling_diagram/).
 
-Finding the Necessary Shape
+Finding the necessary item
 --------------------
 
 You can use the API of the Diagram component to find the necessary item in the diagram. The [](../api/data_collection/find_method.md) method of the **data** collection will help you to perform this task.
@@ -262,7 +262,7 @@ var shape = diagram.data.find(function(shape){
 
 {{editor	https://snippet.dhtmlx.com/sete9z73	Diagram. Finding necessary shape}}
 
-### Finding all the shapes that meet the search criteria
+### Finding all the items that meet the search criteria
 
 You can also find all the items that meet the set criteria via the [](../api/data_collection/findall_method.md) of the **data** collection method. The method takes the same parameters as the **find()** method and returns an array of item objects:
 
