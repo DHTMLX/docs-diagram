@@ -31,6 +31,6 @@ diagram.events.on("scroll", function(pos){
 @descr:
 The *pos* object contains x and y coordinates of the current scroll position, e.g.: {x: 67, y: 130}
 
-**Related articles**
+#### Related articles
 
-common_guides/configuration.md#scrollingdiagram
+[Scrolling Diagram](../../../guides/scrolling_diagram/)

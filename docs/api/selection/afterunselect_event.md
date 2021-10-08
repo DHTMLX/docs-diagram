@@ -27,6 +27,7 @@ diagram.events.on("AfterUnSelect", function (id) {
 
 **Related sample**: [Diagram. Org chart events](https://snippet.dhtmlx.com/l38pct7c)
 
-**Related articles**
+#### Related articles
 
-common_guides/configuration.md#selectingshapes
+- [diagram.config.select](../../../api/diagram/select_property/)
+- [Selecting items](../../../guides/manipulating_items/#selecting-items)

@@ -27,7 +27,3 @@ var diagram = new dhx.Diagram("diagram_container", {
 The result of applying the **lineGap** property is shown in the image below:
 
 ![](../../assets/linegap_config.png)
-
-**Related articles**
-
-common_guides/initialization.md#initializingdiagram

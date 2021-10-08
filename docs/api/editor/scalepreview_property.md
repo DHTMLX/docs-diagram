@@ -42,3 +42,7 @@ const editor = new dhx.DiagramEditor(document.body, {
 ~~~
 
 While the scale of the "card"-type shapes is 0.72, the scale of the other shapes in the left panel is 0.65.
+
+#### Related articles
+
+[Left Panel](../../../guides/diagram_editor/left_panel/)

@@ -28,5 +28,7 @@ DHTMLX Diagram can be initialized in one of three modes:
 - Use **type:"mindmap"** to initialize a Diagram in the mindmap mode. 
 
 
-@related:
-common_guides/initialization.md#initializingdiagram
+#### Related articles
+
+- [Overview](../../../)
+- [How to start with Diagram](../../../guides/diagram/initialization/)

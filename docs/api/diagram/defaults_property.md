@@ -34,10 +34,11 @@ After specifying the properties for the shape of the *rectangle* type by default
 
 {{note There is no possibility to define *type* and *id* in the default configuration of a shape.}}
 
-**Related articles**
-
-common_guides/configuration.md#settingthedefaultconfigurationofashape
-
-diagram_guides/editor_mode.md#settingpreview
-
 @changelog: added in v3.0
+
+@descr:
+#### Related articles
+
+- [Setting the default configuration of a shape](../../../guides/diagram/configuration/#setting-the-default-configuration-of-a-shape)
+- [Setting shape preview](../../../guides/diagram_editor/left_panel/#setting-shape-preview)
+

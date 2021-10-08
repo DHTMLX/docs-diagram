@@ -17,7 +17,7 @@ Released on September 7, 2021
 
 - New diagram items are added: [Groups](../groups/index/), [Swimlanes](../swimlanes/index/)
 - New sections in the left panel of the Diagram Editor are added: [Groups, Swimlanes](../guides/diagram_editor/left_panel/#default-sections)
-- [New sidebar options are added in the right panel of the editor for Groups, Swimlanes](../guides/diagram_editor/right_panel/#sidebar-options-for-editing-groups-swimlanes)
+- [New sidebar options are added to the right panel of the editor for Groups, Swimlanes](../guides/diagram_editor/right_panel/#sidebar-options-for-editing-groups-swimlanes)
 - The ability to edit [Groups](../guides/diagram_editor/grid_area/#managing-groups) and [Swimlanes](../guides/diagram_editor/grid_area/#managing-swimlanes) via UI
 - Extended list of [locale options](../guides/localization/)
 - The ability to operate the cells of a swimlane via [CellManager API](../api/cell_manager/index/)
@@ -76,22 +76,22 @@ Released on April 15, 2021
 ### Fixes
 
 - Fix the issue with the selection module for all types of DHTMLX Diagram
-- Fix the issue with the scroll of the diagram when applying the "showItem()" method to the scaled diagram
+- Fix the issue with the scroll of the diagram, which is initialized in the default mode, when applying the "showItem()" method to the scaled diagram
 - Fix the incorrect work of DOM Parser with HTML templates
 - Fix the issue that caused the root shape to be collapsed after collapsing any child shape
-- Fix the issue with formatting of the shape text
+- Fix the issue with formatting the shape text
 - Fix the issue that appeared after adding long text into the textarea field of the right panel of the editor
-- Fix the issue with adding of special chars to the text of custom shapes
+- Fix the issue with adding special chars to the text of custom shapes
 - Fix the issue with warnings shown in the console for custom shapes
 - Fix the script error thrown after deleting the root shape in the editor
-- Fix the issue with the error shown in the console after applying the "Auto Layout" button in Diagram Editor when the editor is not configured
-- Fix the issue that caused the type of the shape outline not to be applied after its changing in Diagram Editor
-- Fix the issue with tracking of the shape parameters in the right panel of Diagram Editor
-- Fix the issue with removing focus from the shape in Diagram Editor
-- Fix the issue with setting connectors between the shapes in the necessary order in Diagram Editor
-- Fix the incorrect work of the "Ctrl+A" combination in Org Chart Editor
+- Fix the issue with the error shown in the console after applying the "Auto Layout" button in the editor when the editor is not configured
+- Fix the issue that caused the type of the shape outline not to be applied after its changing in the default mode of the editor
+- Fix the issue with tracking the shape parameters in the right panel of the editor which is initialized in the default mode
+- Fix the issue with removing focus from the shape in the default mode of the editor
+- Fix the issue with setting connectors between the shapes in the necessary order when the editor is initialized in the default mode
+- Fix the incorrect work of the "Ctrl+A" combination in the org mode of the editor
 - Fix the issue that caused the shapes to be pasted without connectors when the connected shapes are copied
-- Now there is no the ability to remove the root shape from Org Chart Editor using keyboard navigation
+- Now there is no the ability to remove the root shape from the editor using keyboard navigation when the editor is initialized in the org mode
 
 Version 3.0.4
 ------------------
@@ -101,7 +101,7 @@ Released on January 27, 2021
 
 ### Fixes
 
-- Fix the incorrect behavior of the shape selected in Diagram Editor when working with the input field on the page
+- Fix the incorrect behavior of the shape selected in the Editor, which is initialized in the default mode, when working with the input field on the page
 - Fix the issue that caused a collapsed/expanded item not to work with its parent 
 - Fix the incorrect work of the [showItem()](../api/diagram/showitem_method/) method when the child item is hidden
 
@@ -122,8 +122,8 @@ Released on July 14, 2020
 
 ### Fixes
 
-- Fix issue with importing data from JSON to the Editor in the org mode
-- Fix the incorrect work of the [addShape()](../api/diagram/addshape_method/) method while configuring Right Panel
+- Fix issue with importing data from JSON to the Editor which is initialized in the org mode
+- Fix the incorrect work of the [addShape()](../api/diagram/addshape_method/) method while configuring the right panel of the editor
 - Improved behavior of the historyManager control of the toolbar in the Editor
 
 Version 3.0.1
@@ -152,12 +152,12 @@ The new update introduces some changes and improvements. Check the [Migration](.
 - The [addShape()](../api/diagram/addshape_method/) method for [creating custom shapes](../shapes/custom_shape/) in Diagram and Diagram Editor is added
 - New properties of the Editor object: [controls](../api/editor/controls_property/), [defaults](../api/editor/defaults_property/), [shapeSections](../api/editor/shapesections_property/), [shapeBarWidth](../api/editor/shapebarwidth_property/), [scalePreview](../api/editor/scalepreview_property/), [scale](../api/editor/scale_property/), [gapPreview](../api/editor/gappreview_property/) 
 - The *Grid Step* sidebar option is added to the [right panel of the Editor](../guides/diagram_editor/right_panel/)
-- Ability to hide/show any toolbar buttons of the Editor as well as the *Grid Step* sidebar option via the [controls](../api/editor/controls_property/) property of the Editor
+- Ability to hide/show any toolbar buttons of the Editor as well as the *Grid Step* sidebar option via the [controls](../api/editor/controls_property/) property of the Editor object
 - Ability [to configure sidebar options for editing attributes of the custom shapes in the right panel of the editor](../guides/diagram_editor/right_panel/#configuring-options-for-editing-custom-shapes) via the `properties` attribute of the [addShape()](../api/diagram/addshape_method/) method
 - [Ability to customize sections in the left panel of the Editor](../guides/diagram_editor/left_panel/#custom-sections)
 - [Possibility to customize the appearance of shapes rendered in the left panel of the Editor](../guides/diagram_editor/left_panel/#setting-shape-preview) via the [preview](../shapes/configuration_properties/#properties-specific-for-the-default-mode) property of the shape object
 - Ability [to select, copy, paste, delete, move several shapes in the Editor]((../guides/diagram_editor/grid_area/#manipulating-multiple-items))
-- Ability [to select and delete several connector lines in the default mode of the Editor](../guides/diagram_editor/grid_area/#manipulating-multiple-items)
+- Ability [to select and delete several connector lines](../guides/diagram_editor/grid_area/#manipulating-multiple-items) in the editor which is initialized in the default mode
 - Ability to import data from a JSON file to the Editor via the ["Import Data"](../guides/diagram_editor/toolbar/) button of the toolbar 
 - The [destructor()](../api/diagram/destructor_method/) method is added
 
@@ -166,8 +166,8 @@ The new update introduces some changes and improvements. Check the [Migration](.
 - Ability to use custom HTML templates in IE
 - Diagram Editor UI was updated and improved
 - Ability to connect shapes from center to center
-- A set of hotkeys for the Editor is updated
-- The ability to set a connector line to the *text* shape in Diagram Editor
+- A set of hotkeys is updated for the Editor
+- The ability to set a connector line to the *text* shape in the editor which is initialized in the default mode
 - Auto-fit of the content width of the *text* shape is added
 
 
@@ -190,13 +190,13 @@ Released on November 27, 2019
 - Ability to create custom shapes via using SVG and HTML templates
 - Ability to build diagrams with different types of shapes
 - The ability to export data from the Diagram Editor to the JSON format via the Export data button of the [toolbar](../guides/diagram_editor/toolbar/)
-- The [showExport](../migration/#toolbar-buttons-in-editors) option and [exportData](../api/editor/exportdata_event/) event are added in Diagram Editor
+- The [showExport](../migration/#toolbar-buttons-in-editors) option and [exportData](../api/editor/exportdata_event/) event are added into Diagram Editor
 
 ### Fixes
 
 - Fix the issue with exporting a diagram into the PDF and PNG formats
 - Fix incorrect work of the mouse events
-- Fix the issue with deleting child shapes in org charts
+- Fix the issue with deleting child shapes from the diagram which is initialized in the org mode
 - Fix incorrect work of the right and left panels in Diagram Editor
 - Fix the issue with auto-generating of the unique id's of shapes and connectors
 

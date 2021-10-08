@@ -34,9 +34,10 @@ diagram.cellManager.getCellIndex("r01", "row"); // gets the index of the cell
 
 The count of the index starts from 0.
 
-**Related articles**
-
-diagram_guides/shapes_arrows_list.md#swimlaneconfiguration
-
 @changelog:
 Added in v4.0
+
+@descr:
+#### Related articles
+
+[Configuring Swimlanes](../../../swimlanes/index/)

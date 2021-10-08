@@ -25,9 +25,10 @@ diagram.cellManager.resetSwimlane(); // resets active swimlane
 
 @descr:
 
-**Related articles**
-
-diagram_guides/shapes_arrows_list.md#swimlaneconfiguration
-
 @changelog:
 Added in v4.0
+
+@descr:
+#### Related articles
+
+[Configuring Swimlanes](../../../swimlanes/index/)

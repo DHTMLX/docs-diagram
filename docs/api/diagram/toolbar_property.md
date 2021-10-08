@@ -38,6 +38,6 @@ The toolbar is set as an array of icons objects. Each icon object can have the f
 - **check** - (*function*) checks whether the icon should be applied to the item. The function takes an item object and returns *true*, if the icon will be rendered for this item.
 - **css** - (*function*) the function which returns the name(s) of CSS class(es) that should be applied to the item.
 
-**Related articles**
+#### Related articles
 
-common_guides/configuration.md#settingtoolbarforshapes
+[Setting toolbar for items](../../../guides/diagram/configuration/#setting-toolbar-for-items)

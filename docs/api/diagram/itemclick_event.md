@@ -19,12 +19,12 @@ diagram.events.on("itemClick", (id, event) => {
     console.log(id, event);
 });
 
-@relatedsample:
-**Related samples**:
+
+@descr:
+#### Related samples:
 - [Diagram. Events](https://snippet.dhtmlx.com/7h2hgb3g)
 - [Diagram. Org chart events](https://snippet.dhtmlx.com/l38pct7c)
 
-@descr:
 If a click is done over a swimlane, the event will be fired on the cell of the swimlane.
 
 @changelog:

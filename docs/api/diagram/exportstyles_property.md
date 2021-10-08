@@ -48,8 +48,10 @@ var diagram = new dhx.Diagram("diagram_container", {
 
 **Note**, that you must use only absolute paths not relative ones.
 
-**Related articles**
-
-common_guides/data_export.md
-
 @changelog: added in v3.1
+
+@descr:
+#### Related articles
+
+[Exporting Diagram](../../../guides/data_export/)
+

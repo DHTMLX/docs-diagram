@@ -25,8 +25,7 @@ diagram.paint();
 
 {{note Please note that you need to call the paint() method to repaint the diagram after removing selection.}}
 
-**Related articles**
+#### Related articles
 
-common_guides/manipulating_shapes.md#selectingshapes
-
-common_guides/configuration.md#selectingshapes
+- [diagram.config.select](../../../api/diagram/select_property/)
+- [Selecting items](../../../guides/manipulating_items/#selecting-items)

@@ -29,9 +29,10 @@ diagram.parse(data);
 diagram.collapseItem("main", "left");
 ~~~
 
-**Related articles**
-
-common_guides/manipulating_shapes.md
 
 @changelog:
 The **dir** parameter has been added in v3.1.
+
+#### Related articles
+
+[Expanding/collapsing items](../../../guides/manipulating_items/#expandingcollapsing-items)

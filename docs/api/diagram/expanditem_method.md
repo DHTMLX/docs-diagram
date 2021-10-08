@@ -30,9 +30,11 @@ diagram.parse(data);
 diagram.expandItem("main", "left");
 ~~~
 
-**Related articles**
-
-common_guides/manipulating_shapes.md
-
 @changelog:
 The **dir** parameter was added in v3.1.
+
+
+#### Related articles
+
+[Expanding/collapsing items](../../../guides/manipulating_items/#expandingcollapsing-items)
+

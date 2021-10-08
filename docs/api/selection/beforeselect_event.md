@@ -29,6 +29,7 @@ diagram.events.on("BeforeSelect", function(id) {
 
 Returning *false* from the handler will block the selection.
 
-**Related articles**
+#### Related articles
 
-common_guides/configuration.md#selectingshapes
+- [diagram.config.select](../../../api/diagram/select_property/)
+- [Selecting items](../../../guides/manipulating_items/#selecting-items)

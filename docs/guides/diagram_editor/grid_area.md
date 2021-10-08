@@ -143,3 +143,5 @@ You can operate all the selected items at once, namely:
 - to paste the items (*in the default mode only*);
 - to drag the items;
 - to delete the items.
+
+You can select and delete lines when the editor is initialized in the default mode only.

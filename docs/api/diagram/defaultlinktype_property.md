@@ -23,6 +23,6 @@ var diagram = new dhx.Diagram("diagram_container", {
 
 This value is applied, if the line object doesn't contain the "type" property.
 
-**Related articles**
+#### Related articles
 
-diagram_guides/shapes_arrows_list.md#connectorstypes
+[Setting connections between shapes](../../../lines/index/#setting-connections-between-shapes)

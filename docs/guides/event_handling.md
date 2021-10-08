@@ -37,8 +37,6 @@ diagram.events.detach("ShapeClick");
 
 To call events, use the **diagram.events.fire()**.
 
-For a diagram:
-
 ~~~js
 diagram.events.fire("CustomEvent", args);
 // where args is an array of arguments

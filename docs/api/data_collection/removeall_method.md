@@ -18,6 +18,6 @@ diagram.data.removeAll();
 
 @descr:
 
-**Related articles**
+#### Related articles
 
-common_guides/manipulating_shapes.md
+[Deleting items](../../../guides/manipulating_items/#deleting-items)

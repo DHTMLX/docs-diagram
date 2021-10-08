@@ -12,9 +12,15 @@ description: text
 
 ### API
 
-The **shapeHover** event has been deprecated in v4.0. Starting with v4.0, use the new [itemMouseOver](api/diagram_itemmouseover_event.md) event instead:
+The **shapeHover** event has been deprecated in v4.0. Starting with v4.0, use the new [itemMouseOver](../api/diagram/itemmouseover_event/) event instead.
 
-~~~js
+~~~js title="Before v3.1"
+diagram.events.on("shapeHover",function(id,e){
+    console.log("An item"+ diagram.data.getItem(id).text +"has been hovered over");
+});
+~~~
+
+~~~js title="After v3.1"
 diagram.events.on("itemMouseOver", (id, event) => {
     console.log(id, event);
 });
@@ -30,9 +36,15 @@ editor.diagram.events.on("itemMouseOver", (id, event) => {
 
 ### Editor API
 
-The **shapeMove** event of the editor object has been deprecated in v3.1. Starting with v3.1, use the new **BeforeShapeMove** and **AfterShapeMove** events instead:
+The **shapeMove** event of the editor object has been deprecated in v3.1. Starting with v3.1, use the new **BeforeShapeMove** and **AfterShapeMove** events instead.
 
-~~~js
+~~~js title="Before v3.1"
+editor.events.on("shapeMove",function() {
+    console.log("The shape is moved");
+});
+~~~
+
+~~~js title="From v3.1"
 // BeforeShapeMove event
 editor.events.on("BeforeShapeMove", function(events) {
     console.log("Before the shape is moved:", events);
@@ -50,16 +62,16 @@ editor.events.on("AfterShapeMove", function(events) {
 
 ### Creating Custom Shapes
 
-The way of creating custom shapes in Diagram and Org Chart has been changed, simplified and improved. 
+The way of creating custom shapes has been changed, simplified and improved. 
 
 Starting from v3.0, in order to create your own types of shapes, the new **addShape** method should be used instead of the *diagram.flowShapes* object. 
-The method provides you with the ability to create HTML templates that will work in different browsers. Besides, the method allows creating and editing custom shapes in Diagram and Org Chart Editors. 
+The method provides you with the ability to create HTML templates that will work in different browsers. Besides, the method allows creating and editing custom shapes in Diagram Editor. 
 
 Despite the *diagram.flowShapes* object has been deprecated, it will still continue working.
 
 ### Toolbar buttons in Editors
 
-Before version 3.0 you were able to show/hide toolbar buttons in Diagram and Org Chart editors via the related *showApply, showReset, showExport* configuration properties of the Editors.
+Before version 3.0 you were able to show/hide toolbar buttons in Diagram Editor via the related *showApply, showReset, showExport* configuration properties of the Editor.
 
 In the version 3.0 these properties are deprecated and removed. Instead, the **controls** config property that contains a set of *control_name:value* pairs is added. Thus, the properties are replaced with:
 
@@ -78,32 +90,32 @@ var editor = new dhx.DiagramEditor(document.body, {
 ~~~
 To enable/disable a toolbar button you need to specify the value of the control to *true* (by default) or *false*.
 
-See the full lists of the available controls in the diagram_guides/editor_mode.md#configurationproperties and orgchart_guides/editor_mode.md#configurationproperties articles.
+See the full list of the available controls in the [Toolbar](../guides/diagram_editor/toolbar/) article.
 
 1.1 -> 2.0
 -------------
 
-###Removed API
+### Removed API
 
 - diagram.eachChild
 
-###Changed API
+### Changed API
 
-- diagram.addItem -> [diagram.data.add](api/data/methods/add.md)
-- diagram.attachEvent -> [diagram.events.on](api/events/on.md)
-- diagram.callEvent -> [diagram.events.fire](api/events/fire.md)
-- diagram.clearAll -> [diagram.data.removeAll](api/data/methods/removeall.md)
-- diagram.deleteItem -> [diagram.data.remove](api/data/methods/remove.md)
-- diagram.detachEvent -> [diagram.events.detach](api/events/detach.md)
-- diagram.eachItem -> [diagram.data.map](api/data/methods/map.md)
-- diagram.getItem -> [diagram.data.getItem](api/data/methods/getitem.md)
-- diagram.getSelectedId -> [diagram.selection.getId](api/selection/methods/getid.md)
-- diagram.load -> [diagram.data.load](api/data/methods/load.md) 
-- diagram.parse -> [diagram.data.parse](api/data/methods/parse.md)
-- diagram.selectItem -> [diagram.selection.add](api/selection/methods/add.md)
-- diagram.serialize -> [diagram.data.serialize](api/data/methods/serialize.md)
-- diagram.unselectItem -> [diagram.selection.remove](api/selection/methods/remove.md)
-- diagram.updateItem -> [diagram.data.update](api/data/methods/update.md)
+- diagram.addItem -> [diagram.data.add](../api/data_collection/add_method/)
+- diagram.attachEvent -> [diagram.events.on](../guides/event_handling/#attaching-event-listeners)
+- diagram.callEvent -> [diagram.events.fire](../guides/event_handling/#calling-events)
+- diagram.clearAll -> [diagram.data.removeAll](../api/data_collection/removeall_method/)
+- diagram.deleteItem -> [diagram.data.remove](../api/data_collection/remove_method/)
+- diagram.detachEvent -> [diagram.events.detach](../guides/event_handling/#detaching-event-listeners)
+- diagram.eachItem -> [diagram.data.map](../api/data_collection/map_method/)
+- diagram.getItem -> [diagram.data.getItem](../api/data_collection/getitem_method/)
+- diagram.getSelectedId -> [diagram.selection.getId](../api/selection/getid_method/)
+- diagram.load -> [diagram.data.load](../api/data_collection/load_method/) 
+- diagram.parse -> [diagram.data.parse](../api/data_collection/parse_method/)
+- diagram.selectItem -> [diagram.selection.add](../api/selection/add_method/)
+- diagram.serialize -> [diagram.data.serialize](../api/data_collection/serialize_method/)
+- diagram.unselectItem -> [diagram.selection.remove](../api/selection/remove_method/)
+- diagram.updateItem -> [diagram.data.update](../api/data_collection/update_method/)
 
 
 

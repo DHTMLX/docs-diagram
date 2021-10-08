@@ -21,10 +21,10 @@ diagram.autoPlace({
 	mode: "edges"
 });
 
-@relatedsample:
-**Related sample**: [Diagram. Autoplacement](https://snippet.dhtmlx.com/f3uekgjw)
 
 @descr:
+**Related sample**: [Diagram. Autoplacement](https://snippet.dhtmlx.com/f3uekgjw)
+
 {{note The **autoPlace()** method works only in the default mode of the diagram and only for shapes.}}
 
 The `config` object contains two optional properties:
@@ -40,9 +40,10 @@ The `config` object contains two optional properties:
 | Connectors are aligned "from center to center"; they are straight and diagonal. | Connectors are aligned "from side to side"; they are straight and 90-degree curved. |
 | ![](../../assets/direct_mode.png)                                               | ![](../../assets/edges_mode.png)                                                    |
 
-**Related articles**
-
-common_guides/manipulating_shapes.md#arrangingshapesautomatically
  
 @changelog:
 added in v3.0
+
+#### Related articles
+
+[Arranging shapes automatically](../../../guides/manipulating_items/#arranging-shapes-automatically)
