@@ -20,6 +20,6 @@ diagram.scrollTo(100, 80);
 
 @descr:
 
-**Related articles**
+#### Related articles
 
-common_guides/configuration.md#scrollingdiagram
+[Scrolling Diagram](../../../guides/scrolling_diagram/)

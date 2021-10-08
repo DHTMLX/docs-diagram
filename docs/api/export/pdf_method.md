@@ -60,6 +60,6 @@ You can specify the following settings for export to PDF:
 	- **bottom** (*string*) bottom margin, accepts values labeled with units;
 	- **left** (*string*) left margin, accepts values labeled with units.
 
-**Related articles**
+#### Related articles
 
 common_guides/data_export.md

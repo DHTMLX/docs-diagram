@@ -44,6 +44,6 @@ You can specify the following settings for export to PNG:
 	- **height** - (*number*) the height of clipping area.
 - **omitBackground** -  (*boolean*) hides the default white background and allows capturing screenshots with transparency. 
 
-**Related articles**
+#### Related articles
 
 common_guides/data_export.md

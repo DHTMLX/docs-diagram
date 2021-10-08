@@ -27,7 +27,7 @@ diagram.cellManager.setSwimlane("main"); // sets active swimlane
 
 @descr:
 
-**Related articles**
+#### Related articles
 
 diagram_guides/shapes_arrows_list.md#swimlaneconfiguration
 

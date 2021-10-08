@@ -28,6 +28,6 @@ A resulting object has two properties:
 - **x**	- horizontal scroll position
 - **y** - vertical scroll position
 
-**Related articles**
+#### Related articles
 
-common_guides/configuration.md#scrollingdiagram
+[Scrolling Diagram](../../../guides/scrolling_diagram/)

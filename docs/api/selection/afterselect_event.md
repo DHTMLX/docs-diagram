@@ -27,6 +27,6 @@ diagram.events.on("AfterSelect", function(id) {
 
 **Related sample**: [Diagram. Org chart events](https://snippet.dhtmlx.com/l38pct7c)
 
-**Related articles**
+#### Related articles
 
 common_guides/configuration.md#selectingshapes

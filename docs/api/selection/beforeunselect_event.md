@@ -30,6 +30,6 @@ diagram.events.on("BeforeUnSelect", function(id) {
 
 Returning *false* from the event handler will block unselection.
 
-**Related articles**
+#### Related articles
 
 common_guides/configuration.md#selectingshapes

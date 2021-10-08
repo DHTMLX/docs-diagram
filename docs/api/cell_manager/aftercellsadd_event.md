@@ -20,7 +20,7 @@ diagram.events.on("afterCellsAdd", (swimlaneId) => {
 
 @descr:
 
-**Related articles**
+#### Related articles
 
 diagram_guides/shapes_arrows_list.md#swimlaneconfiguration
 

@@ -112,3 +112,7 @@ For example, an <img src="" alt=""> tag should look like this:
 
 @relatedsample:
 https://snippet.dhtmlx.com/do1jwmw1	Diagram. Site map and user flow example with custom shapes
+
+#### Related articles 
+
+[Custom Shape](../../../shapes/custom_shape/)

@@ -24,7 +24,7 @@ diagram.events.on("beforeCellsRemove", (swimlaneId) => {
 
 @descr:
 
-**Related articles**
+#### Related articles
 
 diagram_guides/shapes_arrows_list.md#swimlaneconfiguration
 

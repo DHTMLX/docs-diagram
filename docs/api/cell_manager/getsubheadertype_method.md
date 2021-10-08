@@ -33,7 +33,7 @@ diagram.cellManager.getSubHeaderType("sub01"); // gets the type of direction
 
 The count of the index starts from 0.
 
-**Related articles**
+#### Related articles
 
 diagram_guides/shapes_arrows_list.md#swimlaneconfiguration
 

@@ -93,6 +93,6 @@ The **config** parameter may contain two properties:
     </tbody>
 </table>
 
-**Related articles**
+#### Related articles
 
 common_guides/manipulating_shapes.md#filteringshapes

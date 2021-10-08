@@ -19,7 +19,7 @@ var shape = diagram.selection.getItem();
 
 @descr:
 
-**Related articles**
+#### Related articles
 
 common_guides/manipulating_shapes.md#selectingshapes
 

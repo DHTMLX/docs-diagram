@@ -41,6 +41,6 @@ diagram.data.add({ type: "line",  from: "3", to: "3.2" });
 ~~~
 ```
 
-**Related articles**
+#### Related articles
 
 common_guides/manipulating_shapes.md#addingshape

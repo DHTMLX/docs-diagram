@@ -22,7 +22,7 @@ diagram.events.on("afterCellsValidation", (swimlaneId, validate, action) => {
 
 @descr:
 
-**Related articles**
+#### Related articles
 
 diagram_guides/shapes_arrows_list.md#swimlaneconfiguration
 

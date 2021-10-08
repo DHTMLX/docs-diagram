@@ -20,7 +20,7 @@ var id = diagram.selection.getId(); // -> "2"
 
 @descr:
 
-**Related articles**
+#### Related articles
 
 common_guides/manipulating_shapes.md#selectingshapes
 

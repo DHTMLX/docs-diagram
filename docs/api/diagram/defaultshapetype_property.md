@@ -23,10 +23,6 @@ var diagram = new dhx.Diagram("diagram_container", {
 
 This value is applied, if the shape object doesn't contain the "type" property.
 
-**Related articles**
+#### Related articles
 
-diagram_guides/shapes_arrows_list.md#shapestypes
-
-orgchart_guides/orgchart_shapes_types.md
-
-mindmap_guides/mindmap_shapes_connectors.md
+[Setting the type of a shape](../../../shapes/default_shapes/#setting-the-type-of-a-shape)

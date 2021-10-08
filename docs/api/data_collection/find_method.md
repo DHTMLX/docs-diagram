@@ -37,6 +37,6 @@ The **rule** parameter:
 - if set as `DataCallback(item: T, index?: number, array?: T[])`, the search will be applied by the rule specified in the function.
 
 
-**Related articles**
+#### Related articles
 
 common_guides/manipulating_shapes.md#findingnecessaryshape

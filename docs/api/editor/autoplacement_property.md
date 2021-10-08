@@ -40,7 +40,7 @@ The `autoplacement` object can contain the following options:
 | ![](../../assets/direct_mode.png)                                               | ![](../../assets/edges_mode.png)                                                    |
 
 
-**Related articles**
+#### Related articles
 
 common_guides/configuration.md#configuringautoplacement
 

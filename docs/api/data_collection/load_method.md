@@ -36,6 +36,6 @@ diagram.data.load("../some/data").then(function(){
 });
 ~~~
 
-**Related articles**
+#### Related articles
 
 common_guides/loading_data.md

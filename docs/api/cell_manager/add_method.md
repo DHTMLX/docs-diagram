@@ -31,7 +31,7 @@ The count of the index starts from 0.
 
 The **add** method is automatically validated by the system. The cell won't be added if it is not possible according to the structure of the swimlane.
 
-**Related articles**
+#### Related articles
 
 diagram_guides/shapes_arrows_list.md#swimlaneconfiguration
 

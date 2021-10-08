@@ -33,7 +33,7 @@ diagram.cellManager.getSubHeaderCellId("sub01"); // gets the id of the cell
 
 The count of the index starts from 0.
 
-**Related articles**
+#### Related articles
 
 diagram_guides/shapes_arrows_list.md#swimlaneconfiguration
 

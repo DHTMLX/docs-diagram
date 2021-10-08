@@ -50,3 +50,8 @@ The other child shapes that are not set in the **side** option will be arranged 
 {{note You can either use the **direction** option and set it to *"left"/"right"* or apply the **side** option. }}
 
 @changelog: added in v3.1.
+
+@descr:
+#### Related articles
+
+[Arrangement of shapes in the mindmap mode of Diagram](../../../shapes/default_shapes/#arrangement-of-shapes-in-the-mindmap-mode-of-diagram)

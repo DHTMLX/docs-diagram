@@ -23,6 +23,6 @@ diagram.data.remove("2");
 @descr:
 If the diagram is initialized in the org (*type: "org"*) or mindmap (*type: "mindmap"*) mode, deleting a shape will remove the link to this shape and all child shapes as well.
 
-**Related articles**
+#### Related articles
 
 common_guides/manipulating_shapes.md#deletingshapes
