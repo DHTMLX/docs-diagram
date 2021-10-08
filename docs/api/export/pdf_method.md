@@ -62,4 +62,4 @@ You can specify the following settings for export to PDF:
 
 #### Related articles
 
-common_guides/data_export.md
+[Exporting Diagram](../../../guides/data_export/)

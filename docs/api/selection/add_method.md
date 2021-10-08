@@ -26,6 +26,5 @@ diagram.selection.add("2");
 
 #### Related articles
 
-common_guides/manipulating_shapes.md#selectingshapes
-
-common_guides/configuration.md#selectingshapes
+- [diagram.config.select](../../../api/diagram/select_property/)
+- [Selecting items](../../../guides/manipulating_items/#selecting-items)

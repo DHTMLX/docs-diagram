@@ -39,3 +39,7 @@ const editor = new dhx.DiagramEditor(document.body, {
     defaults: defaults         
 });
 ~~~
+
+#### Related articles
+
+[Left Panel](../../../guides/diagram_editor/left_panel/)

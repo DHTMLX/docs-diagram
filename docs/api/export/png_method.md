@@ -46,4 +46,4 @@ You can specify the following settings for export to PNG:
 
 #### Related articles
 
-common_guides/data_export.md
+[Exporting Diagram](../../../guides/data_export/)

@@ -39,4 +39,4 @@ The **rule** parameter:
 
 #### Related articles
 
-common_guides/manipulating_shapes.md#findingnecessaryshape
+[Finding the necessary item](../../../guides/manipulating_items/#finding-the-necessary-item)

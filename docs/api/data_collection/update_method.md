@@ -24,4 +24,4 @@ The command can't be used to change the *id* or *type* of the item.
 
 #### Related articles
 
-common_guides/manipulating_shapes.md#updatingshape
+[Updating an item](../../../guides/manipulating_items/#updating-an-item)

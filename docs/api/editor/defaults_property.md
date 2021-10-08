@@ -32,3 +32,8 @@ The **defaults** object can contain a number of *key:value* pairs where *key* is
 {{note The *type* and *id* attributes can not be defined in the default configuration of a shape.}}
 
 After defining the default settings for the shape of a separate type, you can either omit these properties or redefine their values while preparing a data set for the shapes of this type.
+
+#### Related articles
+
+- [Setting the default configuration of a shape](../../../guides/diagram/configuration/#setting-the-default-configuration-of-a-shape)
+- [Setting shape preview](../../../guides/diagram_editor/left_panel/#setting-shape-preview)

@@ -31,4 +31,4 @@ var text = shape.text;
 
 #### Related articles
 
-common_guides/manipulating_shapes.md#gettingshape
+[Getting an item](../../../guides/manipulating_items/#getting-an-item)

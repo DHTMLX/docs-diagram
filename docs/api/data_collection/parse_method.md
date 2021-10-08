@@ -51,4 +51,4 @@ You can load data in any supported data format.
 
 #### Related articles
 
-common_guides/loading_data.md
+[Loading and storing data](../../../guides/loading_data/)

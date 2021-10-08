@@ -25,4 +25,4 @@ If the diagram is initialized in the org (*type: "org"*) or mindmap (*type: "min
 
 #### Related articles
 
-common_guides/manipulating_shapes.md#deletingshapes
+[Deleting items](../../../guides/manipulating_items/#deleting-items)

@@ -34,3 +34,7 @@ The `shapeToolbar` property can be either a **boolean** value or an **array**. T
     - `css: function` - the function which returns the name(s) of CSS class(es) that should be applied to the shape.
 
 The most recommended option is to enable the default set of controls by specifying *true* value in the **shapeToolbar** array and create your own control(s) by adding an icon object to the array. 
+
+#### Related articles
+
+[Grid Area](../../../guides/diagram_editor/grid_area/)

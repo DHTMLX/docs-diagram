@@ -95,4 +95,4 @@ The **config** parameter may contain two properties:
 
 #### Related articles
 
-common_guides/manipulating_shapes.md#filteringshapes
+[Filtering items](../../../guides/manipulating_items/#filtering-items)

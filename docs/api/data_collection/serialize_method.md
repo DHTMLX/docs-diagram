@@ -20,4 +20,4 @@ var data = diagram.data.serialize();
 
 #### Related articles
 
-common_guides/loading_data.md#savingandrestoringstate
+[Saving and restoring state](../../../guides/loading_data/#saving-and-restoring-state)

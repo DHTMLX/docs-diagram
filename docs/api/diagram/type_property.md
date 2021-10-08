@@ -29,4 +29,6 @@ DHTMLX Diagram can be initialized in one of three modes:
 
 
 #### Related articles
-[Overview](../../../)
+
+- [Overview](../../../)
+- [How to start with Diagram](../../../guides/diagram/initialization/)

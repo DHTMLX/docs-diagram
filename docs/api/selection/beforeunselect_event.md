@@ -32,4 +32,5 @@ Returning *false* from the event handler will block unselection.
 
 #### Related articles
 
-common_guides/configuration.md#selectingshapes
+- [diagram.config.select](../../../api/diagram/select_property/)
+- [Selecting items](../../../guides/manipulating_items/#selecting-items)

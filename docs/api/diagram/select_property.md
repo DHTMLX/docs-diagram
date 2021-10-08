@@ -21,4 +21,5 @@ var diagram = new dhx.Diagram("diagram_container", {
 
 #### Related articles
 
-[Selecting items](../../../guides/diagram/configuration/#selecting-items)
+- [Selecting items](../../../guides/diagram/configuration/#selecting-items)
+- [Selecting items](../../../guides/manipulating_items/#selecting-items)

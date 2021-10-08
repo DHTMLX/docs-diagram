@@ -38,4 +38,4 @@ diagram.data.load("../some/data").then(function(){
 
 #### Related articles
 
-common_guides/loading_data.md
+[Loading and storing data](../../../guides/loading_data/)

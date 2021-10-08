@@ -20,4 +20,4 @@ diagram.data.removeAll();
 
 #### Related articles
 
-common_guides/manipulating_shapes.md
+[Deleting items](../../../guides/manipulating_items/#deleting-items)

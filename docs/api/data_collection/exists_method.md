@@ -21,5 +21,3 @@ var shape = diagram.data.exists("1");
 
 @descr:
 
-@related:
-common_guides/manipulating_shapes.md#checkingexistenceofshape

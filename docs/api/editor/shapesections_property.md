@@ -35,4 +35,6 @@ You can specify your own sections of the left panel via the **shapeSections** pr
 
 {{note Setting boolean *true* as a value of the array will display all available [flow-chart](../../../shapes/default_shapes/#shapes-overview) shapes in the section.}}
 
+#### Related articles
 
+[Left Panel](../../../guides/diagram_editor/left_panel/)

@@ -12,7 +12,7 @@ description: text
 - **type** - (*string*) the type of the shape (by default: "card" in the org chart mode, "topic" in the mindmap mode);
 - **x** - (*number*) the x coordinate of the shape position;
 - **y** - (*number*) the y coordinate of the shape position;
-- **text** - (*string | string[]*) the text to be rendered in a shape. The property can be set as an array of string values while [configuring a **custom shape** only](common_guides/configuration.md#creatingcustomshapes); ```todo поменять ссылку```
+- **text** - (*string | string[]*) the text to be rendered in a shape. The property can be set as an array of string values while [configuring a **custom shape** only](../../shapes/custom_shape/);
 - **editable** - (*boolean*) enables/disables the ability to edit the text of the shape by double-clicking on it; *true* by default. <br>*The property is not available for a custom shape.*
 - **height** - (*number*) the height of a shape;
 - **width** - (*number*) the width of a shape;

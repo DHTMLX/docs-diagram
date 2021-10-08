@@ -26,21 +26,20 @@ diagram.data.add({ id: "3.2", text: "New Item", parent: "3" });
 
 ## Details
 
-```todo оставлять или удалить?
 There are two ways to link shapes, you can add a shape with a parent ID defined:
 
 ~~~js
 diagram.data.add({ id: "3.2", text: "New Item", type: "card", parent: "3" });
 ~~~
 
-or you can add a shape and a connector:
+or you can add a shape and a connector line objects:
 
 ~~~js
 diagram.data.add({ type: "card", id: "3.2", text: "New Item" });
 diagram.data.add({ type: "line",  from: "3", to: "3.2" });
 ~~~
-```
+
 
 #### Related articles
 
-common_guides/manipulating_shapes.md#addingshape
+[Adding an item](../../../guides/manipulating_items/#adding-an-item)

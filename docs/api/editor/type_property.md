@@ -26,3 +26,8 @@ DHTMLX Diagram Editor can be initialized in one of three modes:
 - Use **type:"default"** to initialize the editor in the default mode.
 - Use **type:"org"** to initialize the editor in the org mode.
 - Use **type:"mindmap"** to initialize the editor in the mindmap mode.
+
+#### Related articles
+
+- [Overview](../../../)
+- [How to start with Diagram Editor](../../../guides/diagram_editor/initialization/)
