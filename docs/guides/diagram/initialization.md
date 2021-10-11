@@ -130,6 +130,6 @@ See [the full list of configuration properties of Diagram](../../../api/diagram/
 Loading data into Diagram
 ----------------------------
 
-Detailed information on loading data into DHTMLX Diagram is given in the [Loading and Storing Data](common_guides/loading_data.md) article.
+Detailed information on loading data into DHTMLX Diagram is given in the [Loading and Storing Data](../../../guides/loading_data/) article.
 
 
