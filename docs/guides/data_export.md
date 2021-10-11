@@ -11,7 +11,7 @@ You can easily export a diagram into the PDF or PNG format. Check the related se
 Exporting Diagram to PDF
 ----------------------
 
-You can export a digram to a PDF file via the related method api/export/pdf.md of the Export object:
+You can export a diagram to a PDF file via the related [](../api/export/pdf_method.md) method of the Export object:
 
 ~~~js
 // default export
@@ -63,7 +63,7 @@ You can specify the following settings for export to PDF:
 Exporting Diagram to PNG
 ------------------------
 
-The dhtmlxDiagram component allows you to export a ready diagram to the PNG format. For this you need to use the api/export/png.md method as follows:
+The DHTMLX Diagram component allows you to export a ready diagram to the PNG format. For this you need to use the [](../api/export/png_method.md) method as follows:
 
 ~~~js
 // default export
@@ -72,7 +72,7 @@ diagram.export.png();
 
 {{editor	https://snippet.dhtmlx.com/ybpmz0zk	Diagram. Export diagram}}
 
-You can also define necessary export settings and pass them as an object to the api/export/png.md method:
+You can also define necessary export settings and pass them as an object to the [](../api/export/png_method.md) method:
 
 ~~~js
 // export with config settings
@@ -101,7 +101,7 @@ Exporting styles
 
 By default, all css styles included to the Diagram page are sent to the export service when exporting the diagram. As a result, the size of the request increases that can cause the request to fail.
 
-To avoid this problem, you can reduce the size of the exported data. For example, setting the [exportStyles](api/diagram_exportstyles_config.md) configuration property of the Diagram object to *false* will prevent all styles from being sent to the export service:
+To avoid this problem, you can reduce the size of the exported data. For example, setting the [](../api/diagram/exportstyles_property.md) configuration property of the Diagram object to *false* will prevent all styles from being sent to the export service:
 
 ~~~js
 var diagram = new dhx.Diagram("diagram_container", { 

@@ -14,7 +14,6 @@ Released on September 7, 2021
 
 ### New functionality
 
-
 - New diagram items are added: [Groups](../groups/index/), [Swimlanes](../swimlanes/index/)
 - New sections in the left panel of the Diagram Editor are added: [Groups, Swimlanes](../guides/diagram_editor/left_panel/#default-sections)
 - [New sidebar options are added to the right panel of the editor for Groups, Swimlanes](../guides/diagram_editor/right_panel/#sidebar-options-for-editing-groups-swimlanes)
