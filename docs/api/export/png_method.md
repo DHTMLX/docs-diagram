@@ -26,7 +26,7 @@ diagram.export.png({
 });
 
 @relatedsample:
-**Related samples**: [Diagram. Export diagram](https://snippet.dhtmlx.com/ybpmz0zk)
+**Related samples**: [Diagram. Export. Export diagram](https://snippet.dhtmlx.com/ybpmz0zk)
 
 @descr:
 
