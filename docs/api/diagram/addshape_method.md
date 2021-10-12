@@ -86,7 +86,7 @@ function template(config) {
 };
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/9y51k3fl	Diagram. Diagram Editor. Custom shape in editor with IE}}
+**Related sample:** [Diagram editor. Default mode. Custom shape in editor with IE](https://snippet.dhtmlx.com/9y51k3fl)
 
 An example of creating an HTML template using ES6+:
 
