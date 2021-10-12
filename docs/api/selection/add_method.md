@@ -22,7 +22,7 @@ diagram.selection.add("2");
 
 @descr:
 
-**Related sample**: [Diagram. Org chart item selection](https://snippet.dhtmlx.com/jyoxn5h7)
+**Related sample**: [Diagram. Selection. Item selection](https://snippet.dhtmlx.com/jyoxn5h7)
 
 #### Related articles
 

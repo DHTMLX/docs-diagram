@@ -22,4 +22,4 @@ diagram.events.on("afterAdd", function(id){
 
 Event can be used to provide default values or a default formatting for the item data.
 
-**Related sample**: [Diagram. Org chart events](https://snippet.dhtmlx.com/l38pct7c)
+**Related sample**: [Diagram. Org chart mode. Events](https://snippet.dhtmlx.com/l38pct7c)

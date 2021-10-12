@@ -8,15 +8,13 @@ description: text
 
 @short: the default type of a connector line
 
-@signature: {`defaultLinkType?: string;`}
+@signature: {`defaultLinkType?: "line" | "dash";`}
 
 @default:"line"
 
-@values: "line", "dash"
-
 @example:
 var diagram = new dhx.Diagram("diagram_container", { 
-    defaultLinkType:"dash"
+    defaultLinkType: "dash"
 });
 
 @descr:

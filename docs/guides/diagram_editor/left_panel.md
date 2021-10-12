@@ -109,11 +109,11 @@ editor.diagram.addShape("personalCard", {
 });
 ~~~
 
-**Related sample:** [Diagram. Diagram Editor. Custom image shape](https://snippet.dhtmlx.com/d5hcx01h)
+**Related sample:** [Diagram editor. Default mode. Custom image shape](https://snippet.dhtmlx.com/d5hcx01h)
 
 While the scale of the "personalCard"-type shapes is 0.72, the scale of the other shapes in the left panel is 0.65.
 
-{{note **Note**, that the **preview** property will be omitted while exporting data to the JSON format. }}
+{{note **Note**, that the **preview** property will be omitted when exporting data to the JSON format. }}
 
 ## Width of the panel
 

@@ -10,6 +10,11 @@ description: text
 
 @signature: {`shapeType?: string;`}
 
+```
+TODO:
+- В diagram 4.1 изменен порядок создания фигур по-умолчания. Теперь для default mode фигурой по-умолчанию является rectangle
+```
+
 @default: "card" (in the default and org modes), "topic" (in the mindmap mode)
 
 @example:

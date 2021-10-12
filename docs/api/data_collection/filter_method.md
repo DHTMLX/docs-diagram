@@ -26,7 +26,7 @@ diagram.data.filter(function (shape) {
 });
 
 @relatedsample:
-**Related sample**: [Diagram. Filtering shapes](https://snippet.dhtmlx.com/tm43bsgn)
+**Related sample**: [Diagram. Data. Filtering shapes](https://snippet.dhtmlx.com/tm43bsgn)
 
 To revert the diagram to the initial state, call the **filter()** method without parameters.
 

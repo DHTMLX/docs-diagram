@@ -202,4 +202,4 @@ const data = [
 ];
 ~~~
 
-**Related sample**: [Diagram. Waterfall diagram template](https://snippet.dhtmlx.com/k5vlvj8i)
+**Related sample**: [Diagram. Default mode. Waterfall diagram template](https://snippet.dhtmlx.com/k5vlvj8i)

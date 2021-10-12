@@ -20,7 +20,7 @@ Either a string with the item's id or an array of string values with ids of item
 diagram.data.add({ id: "3.2", text: "New Item", parent: "3" });
 
 @relatedsample:
-**Related sample**: [Diagram. Org chart add/delete item](https://snippet.dhtmlx.com/8wi20uop)
+**Related sample**: [Diagram. Data. Add/delete item](https://snippet.dhtmlx.com/8wi20uop)
 
 @descr:
 

@@ -20,9 +20,9 @@ const editor = new dhx.DiagramEditor(document.body, {
 
 @descr:
 **Related samples**:
-- [Diagram. Autoplacement](https://snippet.dhtmlx.com/f3uekgjw)
-- [Diagram. Diagram Editor. Autoplacement direct mode](https://snippet.dhtmlx.com/p1ybrkz2)
-- [Diagram. Diagram Editor. Autoplacement edges mode](https://snippet.dhtmlx.com/1i65txcw)
+- [Diagram. Default mode. Autoplacement](https://snippet.dhtmlx.com/f3uekgjw)
+- [Diagram editor. Default mode. Autoplacement direct mode](https://snippet.dhtmlx.com/p1ybrkz2)
+- [Diagram editor. Default mode. Autoplacement edges mode](https://snippet.dhtmlx.com/1i65txcw)
 
 {{note The **autoplacement** property works only in the default mode of the editor (*type:"default"*) and only for shapes.}}
 

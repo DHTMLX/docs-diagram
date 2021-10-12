@@ -19,7 +19,10 @@ diagram.collapseItem(123);
 
 @descr:
 **Note**, that the **dir** parameter can be used only in the diagram that is initialized in the mindmap mode (type:"mindmap").
-
+```
+TODO:
+- Можно дополнить, что направление работает в mindmap mode у корневого элемента
+```
 ~~~js
 var diagram = new dhx.Diagram("diagram_container", {
 	type:"mindmap"

@@ -113,7 +113,7 @@ const diagram = new dhx.Diagram("diagram_container", {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/4d4k3o8p	Diagram. Wide flowchart}}
+**Related sample:**	[Diagram. Default mode. Wide flowchart](https://snippet.dhtmlx.com/4d4k3o8p)	
 
 Alternatively, you can get access to some option and set/modify its value via the diagram **config**. Don't forget to call the [](../../api/diagram/paint_method.md) method to re-render the diagram with a new configuration:
 

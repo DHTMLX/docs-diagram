@@ -20,7 +20,7 @@ const diagram = new dhx.Diagram("diagram_container", {
 
 
 @descr:
-**Related sample**: [Mindmap. Direction ("left" | "right")](https://snippet.dhtmlx.com/pzllujx3)
+**Related sample**: [Diagram. Mindmap mode. Direction ("left" | "right")](https://snippet.dhtmlx.com/pzllujx3)
 
 If you don't apply the config, the child shapes will be arranged automatically according to the main algorithm.
 

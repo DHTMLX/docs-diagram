@@ -21,7 +21,7 @@ var diagram = new dhx.Diagram("diagram_container", {
 });
 
 @relatedsample:
-**Related sample**: [Diagram. Export styles](https://snippet.dhtmlx.com/jm8if6nh)
+**Related sample**: [Diagram. Export. Export styles](https://snippet.dhtmlx.com/jm8if6nh)
 
 @descr:
 

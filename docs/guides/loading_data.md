@@ -8,8 +8,8 @@ description: text
 
 You can populate DHTMLX Diagram with data in the following ways:
 
-- [load data from an external file](#externaldataloading)
-- [load data from a local data source](#loadingfromalocalsource)
+- [load data from an external file](#external-data-loading)
+- [load data from a local data source](#loading-from-a-local-source)
 
 ## Preparing data to load
 
@@ -102,7 +102,7 @@ Check the full list of available properties of a swimlane object in the [API ref
 External data loading
 -------------------
 
-To load data from an external file, make use of the api/data/methods/load.md method. It takes the URL of the file with data as a parameter:
+To load data from an external file, make use of the [](../api/data_collection/load_method.md) method. It takes the URL of the file with data as a parameter:
 
 ~~~js
 diagram.data.load("../common/data.json");
@@ -123,7 +123,7 @@ diagram.data.load("/some/data").then(function(){
 Loading from a local source
 --------------------
 
-To load data from a local data source, use the api/data/methods/parse.md method. As a parameter you need to pass an array of [predefined data objects](#preparingdatatoload):
+To load data from a local data source, use the [](../api/data_collection/parse_method.md) method. As a parameter you need to pass an array of [predefined data objects](#preparing-data-to-load):
 
 ~~~js
 diagram.data.parse(data);
@@ -137,12 +137,12 @@ To load a data set into the editor, use the [](../api/editor/parse_method.md) me
 editor.parse(data);
 ~~~
 
-**Related sample:** [Diagram. Diagram Editor. Basic editor](https://snippet.dhtmlx.com/xshe9ut7)
+**Related sample:** [Diagram editor. Default mode. Basic initialization](https://snippet.dhtmlx.com/xshe9ut7)
 
 Saving and restoring state
 ----------------------------
 
-To save the current state of a diagram, use the api/data/methods/serialize.md method. It converts the data of the diagram into an array of JSON objects. 
+To save the current state of a diagram, use the [](../api/data_collection/serialize_method.md) method. It converts the data of the diagram into an array of JSON objects. 
 Each JSON object contains the configuration of a separate shape.
 
 ~~~js

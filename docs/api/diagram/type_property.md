@@ -8,9 +8,7 @@ description: text
 
 @short: defines the mode of Diagram initialization 
 
-@signature: {`type?: DiagramType;`}
-
-@values: "default", "org", "mindmap"
+@signature: {`type: "default" | "org" | "mindmap"`}
 
 @default: "default"
 

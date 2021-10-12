@@ -22,7 +22,7 @@ A promise of data loading.
 diagram.data.load("../common/data.json");
 
 @relatedsample:
-**Related sample**: [Diagram. Org chart load data](https://snippet.dhtmlx.com/09isp2d8)
+**Related sample**: [Diagram. Data. Data loading](https://snippet.dhtmlx.com/09isp2d8)
 
 @descr:
 

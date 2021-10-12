@@ -21,7 +21,7 @@ diagram.events.on("afterExpand", function(id, dir) {
 
 @descr:
 
-**Related sample**: [Diagram. Org chart events](https://snippet.dhtmlx.com/l38pct7c)
+**Related sample**: [Diagram. Org chart mode. Events](https://snippet.dhtmlx.com/l38pct7c)
 
 @changelog:
 The **dir** parameter has been added in v3.1.
