@@ -10,7 +10,11 @@ as a scheme, chart, organizational chart, mind map, etc. The diagram makes it ea
 
 Diagram in the default mode
 ------------------------
-
+```
+TODO:
+- Убрать из описания упоминание custom CSS classes.
+- Добавить раздел с описанием возможностей custom shapes
+```
 DHTMLX Diagram provides the possibility to make various diagrams using a predefined set of shapes and connectors, and experiment with their look and feel via the "native" and custom CSS classes.
 
 You can choose shapes of desired types, link them by suitable connectors and build any type of a diagram that will show the sequence of some operations making up a particular process, like this:
@@ -60,21 +64,43 @@ The DHTMLX Diagram component provides you with Editor that allows you to try and
 
 The interface of the editor initialized in the default mode consists of four functional parts: toolbar, left panel, grid area, and right panel.
 
+```
+TODO:
+- По возможности заменить картинку размер в ширину желательно 940px + на изображении устарел UI
+```
+
 ![](assets/diagram_editor_new2.png)
 
 To build a diagram, you need either to drag the necessary items from the left panel or create a copy of the items via the per-item toolbar. You can adjust the attributes of the items via sidebar options of the right panel.
 
 <iframe src="https://snippet.dhtmlx.com/4d4k3o8p?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
+```
+TODO:
+- Заменен пример ниже
+```
+
 If you need to edit a custom diagram, you may configure the toolbar of the editor, customize the left panel, and configure the right panel according to the attributes of your shape.
 
-<iframe src="https://snippet.dhtmlx.com/u1xqyo9w?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
+<iframe src="https://snippet.dhtmlx.com/2z0a18oz?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
 ### Editor in the org mode
 
 The interface of the editor initialized in the org mode consists of three parts: toolbar, grid area, and right panel.
 
+```
+TODO:
+- По возможности заменить картинку размер в ширину желательно 940px + на изображении устарел UI
+```
+
 ![](assets/orgchart_editor.png)
+
+```
+TODO:
+Ниже перечислен стандартный набор функций, актуальный для фигуры type: "card".
+Что является неполным списком возможностей по отношению к другим типам фигур, в том числе и пользовательским.
+Эта информация устарела. Думаю, что нужно либо дополнять, с учетом новых возможностей, либо убрать сославшись на API редактора в режиме "org"
+```
 
 To build a diagram in the org mode of the editor, you need to select a shape and add a new child for it. Also you can:
 
@@ -89,7 +115,17 @@ To build a diagram in the org mode of the editor, you need to select a shape and
 
 The interface of the editor initialized in the mindmap mode consists of three parts: toolbar, grid area, and right panel.
 
+```
+TODO:
+- По возможности заменить картинку размер в ширину желательно 940px + на изображении устарел UI
+```
+
 ![](assets/mindmap_editor.png)
+
+```
+TODO:
+Возможностей гораздо больше, все зависит от выбранного типа фигуры, актуально и для org mode;
+```
 
 The mindmap mode of the editor makes building and editing a mind map quick and easy. To add a new shape, select a shape and add a new child for it. Aside from that, you can:
 

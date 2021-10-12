@@ -13,6 +13,11 @@ description: text
 @params:
 `data: any` - the data that should be parsed into the editor
 
+```
+TODO:
+- Обратите внимание, что создаваемый обьект редактора должен называться DiagramEditor, и никак иначе. Есть старые названия, которые нужно убрать, при их наличии.
+```
+
 @example:
 const data = [
     // shapes
@@ -42,7 +47,7 @@ const data = [
     },
 ]
 
-const editor = new dhx.FreeEditor("editor_container"); 
+const editor = new dhx.DiagramEditor("container"); 
 editor.parse(data);
 
 @descr:
@@ -50,5 +55,11 @@ editor.parse(data);
 **Related samples**:
 - [Diagram. Diagram Editor. Basic editor](https://snippet.dhtmlx.com/xshe9ut7)
 - [Diagram. Org Chart Editor. Basic editor](https://snippet.dhtmlx.com/og4qm3ja)
+
+
+```
+TODO:
+- Можно добавить mindmap редактор в примеры;
+```
 
 You can load data in any supported data format. See the details in the [](api/data_collection/parse_method.md) article.

@@ -10,6 +10,13 @@ description: text
 
 @signature: {`autoplacement?: IAutoPlacement;`}
 
+@params:
+
+- **mode** - (*string*) the mode of connecting shapes, "direct" (by default) or "edges"
+- **graphPadding** - (*number*) sets the distance between unconnected diagrams, *"200"* by default
+
+{{note The **autoplacement** property works only in the default mode of the diagram and only for shapes.}}
+
 @example:
 var diagram = new dhx.Diagram("diagram_container", {
     autoplacement: {
@@ -20,18 +27,13 @@ var diagram = new dhx.Diagram("diagram_container", {
 
 diagram.parse(autoData);
 
+
 @descr:
 **Related samples**:
 - [Diagram. Autoplacement](https://snippet.dhtmlx.com/f3uekgjw)
 - [Diagram. Diagram Editor. Autoplacement direct mode](https://snippet.dhtmlx.com/p1ybrkz2)
 - [Diagram. Diagram Editor. Autoplacement edges mode](https://snippet.dhtmlx.com/1i65txcw)
 
-{{note The **autoplacement** property works only in the default mode of the diagram and only for shapes.}}
-
-The `autoplacement` object can contain the following options:
-
-- **mode** - (*string*) the mode of connecting shapes, "direct" (by default) or "edges"
-- **graphPadding** - (*number*) sets the distance between unconnected diagrams, *"200"* by default
 
 ### Modes of connecting shapes
 
