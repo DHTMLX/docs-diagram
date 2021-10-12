@@ -25,8 +25,8 @@ diagram.events.on("scroll", function(pos){
 
 @relatedsample:
 **Related samples**:
-- [Diagram. Events](https://snippet.dhtmlx.com/7h2hgb3g)
-- [Diagram. Org chart events](https://snippet.dhtmlx.com/l38pct7c)
+- [Diagram. Default mode. Events](https://snippet.dhtmlx.com/7h2hgb3g)
+- [Diagram. Org chart mode. Events](https://snippet.dhtmlx.com/l38pct7c)
 
 @descr:
 The *pos* object contains x and y coordinates of the current scroll position, e.g.: {x: 67, y: 130}

@@ -24,7 +24,7 @@ diagram.events.on("beforeExpand", function(id, dir) {
 });
 
 @relatedsample:
-**Related sample**: [Diagram. Org chart events](https://snippet.dhtmlx.com/l38pct7c)
+**Related sample**: [Diagram. Org chart mode. Events](https://snippet.dhtmlx.com/l38pct7c)
 
 @descr:
 

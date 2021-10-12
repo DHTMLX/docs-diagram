@@ -40,7 +40,7 @@ diagram.autoPlace({ /*!*/
 }); /*!*/
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/f3uekgjw	Diagram. Autoplacement}}
+**Related sample:**	[Diagram. Default mode. Autoplacement](https://snippet.dhtmlx.com/f3uekgjw)
 
 In case you don't pass the parameter to the method, the default settings will be applied.
 
@@ -239,7 +239,7 @@ For this, you need to apply the [](../api/diagram/showitem_method.md) method, wh
 diagram.showItem("2.1");  
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/f970hbym	Diagram. Scroll content}}
+**Related sample:**	[Diagram. Scroll content](https://snippet.dhtmlx.com/f970hbym)
 
 You can [read more about scrolling in DHTMLX Diagram](../../guides/scrolling_diagram/).
 
@@ -256,7 +256,9 @@ var shape = diagram.data.find({by:"text",match:"Manager"});
  
 // searching for a shape by the function
 var shape = diagram.data.find(function(shape){
-    if(shape.text==="Manager"||shape.text==="Marketer"){return true}
+    if(shape.text==="Manager"||shape.text==="Marketer"){
+        return true
+    }
 });
 ~~~
 
@@ -272,7 +274,9 @@ var shapes = diagram.data.findAll({by:"text",match:"Manager"});
  
 // searching for shapes by the function
 var shapes = diagram.data.findAll(function(shapes){
-    if(shapes.text==="Manager"||shapes.text==="Marketer"){return true}
+    if(shapes.text==="Manager"||shapes.text==="Marketer"){
+        return true
+    }
 });
 // ->{id:"2",text:"Manager",title:"Mildred Kim",img:"../avatar-2.png",type:"card", …}
 // ->{id:"2.1",text:"Marketer",title:"Charles Little", img: "../avatar-4.png", …}
@@ -292,7 +296,9 @@ diagram.data.filter({ by: "text", match: "Operation 1" });
 
 // filtering by the function
 diagram.data.filter(function(shape){
-	if(shape.text==="Manager"||shape.text==="Marketer"){return true}
+	if(shape.text==="Manager"||shape.text==="Marketer"){
+        return true
+    }
 });
 ~~~
 

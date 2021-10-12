@@ -59,8 +59,7 @@ description: text
 - **parent** - (*string | number*) the id of the parent shape;
 - **dx** - (*number*) the left offset of the shape;
 - **dy** - (*number*) the top offset of the shape;
-- **dir** - (*string*) the direction of shapes connecting. To connect shapes vertically, set the attribute to the "vertical" value;
-**Related samples**: [Diagram. With nested vertical lists](https://snippet.dhtmlx.com/98tzmzpg)
+- **dir** - (*string*) the direction of shapes connecting. To connect shapes vertically, set the attribute to the "vertical" value;<br>**Related samples**: [Diagram. Org chart mode. Nested vertical lists](https://snippet.dhtmlx.com/98tzmzpg)
 - **open** - (*boolean*) defines, whether the child items of the current shape will be shown. *True* by default;
 
 ## Properties specific for the mindmap mode

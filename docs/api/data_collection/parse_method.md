@@ -43,7 +43,7 @@ var diagram = new dhx.Diagram("diagram_container", { type: "org" });
 diagram.data.parse(data);
 
 @relatedsample:
-**Related sample**: [Diagram. Org Chart initialization](https://snippet.dhtmlx.com/5ign6fyy)
+**Related sample**: [Diagram. Org chart mode. Basic initialization](https://snippet.dhtmlx.com/5ign6fyy)
 
 @descr:
 

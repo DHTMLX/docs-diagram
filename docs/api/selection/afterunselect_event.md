@@ -25,7 +25,7 @@ diagram.events.on("AfterUnSelect", function (id) {
 
 @descr:
 
-**Related sample**: [Diagram. Org chart events](https://snippet.dhtmlx.com/l38pct7c)
+**Related sample**: [Diagram. Org chart mode. Events](https://snippet.dhtmlx.com/l38pct7c)
 
 #### Related articles
 

@@ -14,7 +14,7 @@ A swimlane represents a rectangular element of Diagram that consists of cells (o
 
 ![](../assets/swimlane.png)
 
-**Related sample:** [Diagram. Swimlane template](https://snippet.dhtmlx.com/z6x5m3gb)
+**Related sample:** [Diagram. Default mode. Swimlane template](https://snippet.dhtmlx.com/z6x5m3gb)
 
 Swimlanes will help you to visualize any process (be it a business process, manufacturing or service one, and any other processes) or its separate parts from start to finish.
 
@@ -147,7 +147,7 @@ The result:
 
 ![](../assets/swimlane_merge_cell_col.png)
 
-{{editor	https://snippet.dhtmlx.com/uzx5ulal	Diagram. Configuring columns and rows in swimlanes}}
+**Related sample:**	[Diagram editor. Default mode. Configuring columns and rows in swimlanes](https://snippet.dhtmlx.com/uzx5ulal)
 
 ## Sizes of a swimlane and its cells
 

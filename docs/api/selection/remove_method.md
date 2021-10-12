@@ -21,7 +21,7 @@ diagram.selection.remove("1"); // -> true
 diagram.paint();
 
 @descr:
-**Related sample**: [Diagram. Org chart item selection](https://snippet.dhtmlx.com/jyoxn5h7)
+**Related sample**: [Diagram. Selection. Item selection](https://snippet.dhtmlx.com/jyoxn5h7)
 
 {{note Please note that you need to call the paint() method to repaint the diagram after removing selection.}}
 

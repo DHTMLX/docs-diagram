@@ -26,7 +26,7 @@ var shape = diagram.data.find(function(shape){
 });
 
 @relatedsample:
-**Related sample**: [Diagram. Finding necessary shape](https://snippet.dhtmlx.com/sete9z73)
+**Related sample**: [Diagram. Data. Finding necessary shape](https://snippet.dhtmlx.com/sete9z73)
 
 @descr:
 The **rule** parameter:
