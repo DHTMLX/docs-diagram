@@ -22,5 +22,5 @@ diagram.events.on("shapeDblClick", function(id) {
 @descr:
 
 **Related samples**:
-- [Diagram. Events](https://snippet.dhtmlx.com/7h2hgb3g)
-- [Diagram. Org chart events](https://snippet.dhtmlx.com/l38pct7c)
+- [Diagram. Default mode. Events](https://snippet.dhtmlx.com/7h2hgb3g)
+- [Diagram. Org chart mode. Events](https://snippet.dhtmlx.com/l38pct7c)

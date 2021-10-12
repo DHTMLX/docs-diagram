@@ -53,8 +53,8 @@ editor.parse(data);
 @descr:
 
 **Related samples**:
-- [Diagram. Diagram Editor. Basic editor](https://snippet.dhtmlx.com/xshe9ut7)
-- [Diagram. Org Chart Editor. Basic editor](https://snippet.dhtmlx.com/og4qm3ja)
+- [Diagram editor. Default mode. Basic initialization](https://snippet.dhtmlx.com/xshe9ut7)
+- [Diagram editor. Org chart mode. Basic initialization](https://snippet.dhtmlx.com/og4qm3ja)
 
 
 ```

@@ -19,7 +19,7 @@ var diagram = new dhx.Diagram("diagram_container", {
 
 
 @descr:
-**Related sample**: [Diagram. Org chart with images](https://snippet.dhtmlx.com/qnx3ekin)
+**Related sample**: [Diagram. Org chart mode. Shapes with images](https://snippet.dhtmlx.com/qnx3ekin)
 
 This value is applied, if the shape object doesn't contain the "type" property.
 

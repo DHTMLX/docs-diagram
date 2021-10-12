@@ -23,7 +23,7 @@ diagram.autoPlace({
 
 
 @descr:
-**Related sample**: [Diagram. Autoplacement](https://snippet.dhtmlx.com/f3uekgjw)
+**Related sample**: [Diagram. Default mode. Autoplacement](https://snippet.dhtmlx.com/f3uekgjw)
 
 {{note The **autoPlace()** method works only in the default mode of the diagram and only for shapes.}}
 

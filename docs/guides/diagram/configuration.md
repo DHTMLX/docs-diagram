@@ -70,7 +70,7 @@ const diagram = new dhx.Diagram("diagram", {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/7bn52dl1	Diagram. Decision tree}}
+**Related sample:**	[Diagram. Default mode. Decision tree](https://snippet.dhtmlx.com/7bn52dl1)
 
 The **defaults** object contains a number of *key:value* pairs where *key* is a type of a shape and *value* is the default config of the shape.
 
@@ -103,7 +103,7 @@ const diagram = new dhx.Diagram("diagram_container", {
 })
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/bwe9vm6i	Diagram. Margin between shapes}}
+**Related sample:**	[Diagram. Org chart mode. Margin between shapes](https://snippet.dhtmlx.com/bwe9vm6i)
 
 Configuring autoplacement for shapes
 ------------------------------
@@ -137,13 +137,14 @@ For example:
 
 ~~~js
 const diagram = new dhx.Diagram("diagram_container", { 
-    type: "org", 
-    scale: 0.7
+    type: "org",
+    defaultShapeType: "img-card",
+    scale : 0.8
 });
 diagram.data.parse(data);
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/9h89c3gl	Diagram. Scaled Org chart}}
+**Related sample:** [Diagram. Configuration. Scaled diagram](https://snippet.dhtmlx.com/9h89c3gl)
 
 Setting toolbar for items
 --------------------------
@@ -172,7 +173,7 @@ The toolbar is set as an array of icons objects. Each icon object can have the f
 - **check** - (*function*) checks whether the icon should be applied to the item. The function takes an item object and returns *true*, if the icon will be rendered for this item.
 - **css** - (*function*) the function which returns the name(s) of CSS class(es) that should be applied to the item.
 
-{{editor	https://snippet.dhtmlx.com/4if395hd	Diagram. Per-shape toolbar}}
+**Related sample:**	[Diagram. Configuration. Per-shape toolbar](https://snippet.dhtmlx.com/4if395hd)
 
 Selecting items
 -------------
@@ -186,7 +187,7 @@ const diagram = new dhx.Diagram("diagram_container", {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/jyoxn5h7	Diagram. Org chart item selection}}
+**Related sample:** [Diagram. Selection. Item selection](https://snippet.dhtmlx.com/jyoxn5h7)
 
 You can also define the way of processing the behavior of the diagram during selecting/unselecting of items via [the predefined set of events](../../../api/selection/index/#events).
 

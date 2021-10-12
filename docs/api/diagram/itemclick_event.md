@@ -22,8 +22,8 @@ diagram.events.on("itemClick", (id, event) => {
 
 @descr:
 #### Related samples:
-- [Diagram. Events](https://snippet.dhtmlx.com/7h2hgb3g)
-- [Diagram. Org chart events](https://snippet.dhtmlx.com/l38pct7c)
+- [Diagram. Default mode. Events](https://snippet.dhtmlx.com/7h2hgb3g)
+- [Diagram. Org chart mode. Events](https://snippet.dhtmlx.com/l38pct7c)
 
 If a click is done over a swimlane, the event will be fired on the cell of the swimlane.
 

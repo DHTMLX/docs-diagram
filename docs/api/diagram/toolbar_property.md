@@ -28,7 +28,7 @@ var diagram = new dhx.Diagram("diagram_container", {
 });
 
 @relatedsample:
-**Related sample**: [Diagram. Per-shape toolbar](https://snippet.dhtmlx.com/4if395hd)
+**Related sample**: [Diagram. Configuration. Per-shape toolbar](https://snippet.dhtmlx.com/4if395hd)
 
 @descr:
 The toolbar is set as an array of icons objects. Each icon object can have the following properties:

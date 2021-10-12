@@ -32,7 +32,7 @@ diagram.data.parse(data);
 
 @descr:
 
-{{note The **addShape()** method can be used as in the diagram as in the editor. <br>Check the related sample: **[Diagram. Site map and user flow example with custom shapes](https://snippet.dhtmlx.com/do1jwmw1)**}}
+{{note The **addShape()** method can be used as in the diagram as in the editor. <br>Check the related sample: **[Diagram. Mindmap mode. Site map and user flow example](https://snippet.dhtmlx.com/do1jwmw1)**}}
 
 The `parameters` object can contain the following attributes:
 

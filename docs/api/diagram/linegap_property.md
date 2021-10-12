@@ -18,7 +18,7 @@ var diagram = new dhx.Diagram("diagram_container", {
 });
 
 @relatedsample:
-**Related sample**: [Diagram. Activity diagram](https://snippet.dhtmlx.com/a9t2z2dt)
+**Related sample**: [Diagram. Default mode. Activity diagram](https://snippet.dhtmlx.com/a9t2z2dt)
 
 @descr:
 

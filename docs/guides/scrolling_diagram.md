@@ -48,4 +48,4 @@ diagram.events.on("Scroll", function(position) {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/f970hbym	Diagram. Scroll content}}
+**Related sample:**	[Diagram. Scroll content](https://snippet.dhtmlx.com/f970hbym)

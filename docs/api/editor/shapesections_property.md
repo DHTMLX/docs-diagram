@@ -25,7 +25,7 @@ const editor = new dhx.DiagramEditor(document.body, {
 
 
 @descr:
-**Related samples**: [Diagram. Diagram Editor. Left panel customization](https://snippet.dhtmlx.com/2z0a18oz)
+**Related samples**: [Diagram editor. Default mode. Left panel customization](https://snippet.dhtmlx.com/2z0a18oz)
 
 {{note The property is available only in the default mode of the editor (*type:"default"*).}}
 

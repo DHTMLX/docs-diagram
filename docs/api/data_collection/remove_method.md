@@ -18,7 +18,7 @@ description: text
 diagram.data.remove("2");
 
 @relatedsample:
-**Related sample**: [Diagram. Org chart add/delete item](https://snippet.dhtmlx.com/8wi20uop)
+**Related sample**: [Diagram. Data. Add/delete item](https://snippet.dhtmlx.com/8wi20uop)
 
 @descr:
 If the diagram is initialized in the org (*type: "org"*) or mindmap (*type: "mindmap"*) mode, deleting a shape will remove the link to this shape and all child shapes as well.
