@@ -154,16 +154,24 @@ module.exports = {
     ]
   },
 
+  // Items API
+  {
+    type: "category",
+    label: "Items API",
+    items: [
+      "shapes/configuration_properties",
+      "lines/configuration_properties",
+      "groups/configuration_properties",
+      "swimlanes/configuration_properties",
+    ],
+  },
+
   // Common API
   {
     type: "category",
     label: "Common API",
     collapsed: true,
     items: [
-      "shapes/configuration_properties",
-      "lines/configuration_properties",
-      "groups/configuration_properties",
-      "swimlanes/configuration_properties",
       // Cell manager API
       {
         type: "category",
@@ -324,56 +332,52 @@ module.exports = {
       },
     ]
   },
-
-  // Diagram Items
-  {
-    type: "category",
-    label: "Diagram items",
-    collapsed: true,
-    items: [
-      // Shapes
-      {
-        type: "category",
-        label: "Shapes",
-        items: [
-          "shapes/default_shapes",
-          "shapes/custom_shape",
-          //"shapes/shape_types",
-        ],
-      },
-      // Lines
-      {
-        type: "category",
-        label: "Lines",
-        items: [
-          "lines/index",
-        ],
-      },
-      // Groups
-      {
-        type: "category",
-        label: "Groups",
-        items: [
-          "groups/index",
-        ],
-      },
-      // Swimlanes
-      {
-        type: "category",
-        label: "Swimlanes",
-        items: [
-          "swimlanes/index",
-        ],
-      },
-    ]
-  },
-  
   // Guides
   {
     type: "category",
     label: "Guides",
     collapsed: true,
     items: [
+      // Diagram Items
+      {
+        type: "category",
+        label: "Diagram items",
+        items: [
+          // Shapes
+          {
+            type: "category",
+            label: "Shapes",
+            items: [
+              "shapes/default_shapes",
+              "shapes/custom_shape",
+            ],
+          },
+          // Lines
+          {
+            type: "category",
+            label: "Lines",
+            items: [
+              "lines/index",
+            ],
+          },
+          // Groups
+          {
+            type: "category",
+            label: "Groups",
+            items: [
+              "groups/index",
+            ],
+          },
+          // Swimlanes
+          {
+            type: "category",
+            label: "Swimlanes",
+            items: [
+              "swimlanes/index",
+            ],
+          },
+        ]
+      },
       {
         type: "category",
         label: "Diagram",
