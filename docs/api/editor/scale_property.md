@@ -13,7 +13,7 @@ description: text
 @default: 1
 
 @example:
-const editor = new dhx.DiagramEditor(document.body, {
+const editor = new dhx.DiagramEditor("editor_container", {
     scale: 0.9
 });
 

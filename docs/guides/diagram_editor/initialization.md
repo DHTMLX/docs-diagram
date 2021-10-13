@@ -98,7 +98,7 @@ const editor = new dhx.DiagramEditor(document.body, {
 To change the configuration of the editor, you can specify the desired property in the config object passed as a second parameter of the constructor function. 
 
 ~~~js
-const editor = new dhx.DiagramEditor(document.body, {
+const editor = new dhx.DiagramEditor("editor_container", {
 	type: "default" // "default" | "org" | "mindmap",
 	shapeBarWidth: 320,
 	lineGap: 20

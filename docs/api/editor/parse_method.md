@@ -47,7 +47,7 @@ const data = [
     },
 ]
 
-const editor = new dhx.DiagramEditor("container"); 
+const editor = new dhx.DiagramEditor("editor_container"); 
 editor.parse(data);
 
 @descr:

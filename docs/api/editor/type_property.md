@@ -15,7 +15,7 @@ description: text
 @values: "default", "org", "mindmap"
 
 @example:
-const editor = new dhx.DiagramEditor("editor", {
+const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
 });
 

@@ -18,7 +18,7 @@ TODO:
 @default: "card" (in the default and org modes), "topic" (in the mindmap mode)
 
 @example:
-const editor = new dhx.DiagramEditor(document.body, {
+const editor = new dhx.DiagramEditor("editor_container", {
     shapeType: "rectangle",
 });
 

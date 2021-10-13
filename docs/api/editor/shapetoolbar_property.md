@@ -11,7 +11,7 @@ description: text
 @signature: {`shapeToolbar: boolean | DefaultShapeToolbar;`}
 
 @example:
-const editor = new dhx.DiagramEditor(document.body, {
+const editor = new dhx.DiagramEditor("editor_container", {
     type: "org",
     shapeToolbar: ["add", "remove", {id: "info", content:"<i class='dxi dxi-download'></i>"}],
 });

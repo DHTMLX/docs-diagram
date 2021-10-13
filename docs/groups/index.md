@@ -49,7 +49,7 @@ const data = [
 ];
 
 // initializing a diagram
-const diagram = new dhx.Diagram("diagram");
+const diagram = new dhx.Diagram("diagram_container");
 diagram.data.parse(data);
 ~~~
 

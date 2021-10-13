@@ -11,7 +11,7 @@ description: text
 @signature: {`controls?: IEditorControls;`}
 
 @example:
-const editor = new dhx.DiagramEditor(document.body, {
+const editor = new dhx.DiagramEditor("editor_container", {
     controls: { 
         import: true,
         export: true,

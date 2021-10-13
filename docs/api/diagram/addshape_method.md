@@ -15,7 +15,7 @@ description: text
 - `parameters: object` - an object with the additional parameters of the <i>addShape</i> function 
 
 @example:
-const diagram = new dhx.Diagram("diagram", {
+const diagram = new dhx.Diagram("diagram_container", {
 	type: "default" //  or type: "org", or type: "mindmap"
 });
 

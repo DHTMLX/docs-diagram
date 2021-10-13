@@ -153,7 +153,7 @@ Then you can parse the data stored in the saved state array to a different diagr
 
 ~~~js
 // creating a new diagram
-var diagram2 = new dhx.Diagram(document.body);
+var diagram2 = new dhx.Diagram("diagram_container");
 // parsing the state of the diagram1 into diagram2
 diagram2.data.parse(state);
 ~~~

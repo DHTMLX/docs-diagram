@@ -80,7 +80,7 @@ In the version 3.0 these properties are deprecated and removed. Instead, the **c
 - showExport -> controls.export
 
 ~~~js
-var editor = new dhx.DiagramEditor(document.body, {
+var editor = new dhx.DiagramEditor("editor_container", {
     controls: { 
         apply: false,
         reset: false,

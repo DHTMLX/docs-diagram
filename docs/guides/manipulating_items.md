@@ -31,7 +31,7 @@ To perform the auto-placement, you need to make use of the [](../api/diagram/aut
     - **graphPadding** - (*number*) sets the distance between unconnected diagrams, *"200"* by default
 
 ~~~js
-var diagram = new dhx.Diagram("diagram");
+var diagram = new dhx.Diagram("diagram_container");
 diagram.data.parse(data);
 
 diagram.autoPlace({ /*!*/
@@ -45,7 +45,7 @@ diagram.autoPlace({ /*!*/
 In case you don't pass the parameter to the method, the default settings will be applied.
 
 ~~~js
-var diagram = new dhx.Diagram("diagram");
+var diagram = new dhx.Diagram("diagram_container");
 diagram.data.parse(data);
 
 diagram.autoPlace(); /*!*/

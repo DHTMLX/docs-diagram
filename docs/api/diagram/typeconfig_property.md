@@ -34,7 +34,7 @@ The **typeConfig** object has two options:
 - **side** - (*object*) optional, sets the mandatory direction for the specified child shapes. The object contains a set of *key:value* pairs where *key* is the direction of the shapes (left, right) and *value* is an array with the ids of the shapes.
 
 ~~~js
-const diagram = new dhx.Diagram("container", { 
+const diagram = new dhx.Diagram("diagram_container", { 
     type: "mindmap",
     typeConfig: {
         side: {
