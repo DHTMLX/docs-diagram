@@ -52,7 +52,7 @@ const data = [
 It is also possible to set the default type for all the shapes via the [](../api/diagram/defaultshapetype_property.md) attribute of the diagram config object:
 
 ~~~js
-var diagram = new dhx.Diagram("diagram_container", {
+const diagram = new dhx.Diagram("diagram_container", {
     type: "default", // or type: "org", or type: "mindmap" 
     defaultShapeType: "rectangle"
 });

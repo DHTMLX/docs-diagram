@@ -18,10 +18,10 @@ An array of matching item objects.
 
 @example:
 //searching for shapes by the attribute key
-var shapes = diagram.data.findAll({ by: "text", match: "Manager" });
+const shapes = diagram.data.findAll({ by: "text", match: "Manager" });
 
 //searching for shapes by the function
-var shapes = diagram.data.findAll(function (shapes) {
+const shapes = diagram.data.findAll(function (shapes) {
 	if( shapes.text === "Manager" || shapes.text === "Marketer" ){
 		return true
 	}

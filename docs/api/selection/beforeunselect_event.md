@@ -14,7 +14,7 @@ description: text
 `id: string | number` - the item id
 
 @example:
-var diagram = new dhx.Diagram("diagram_container", { 
+const diagram = new dhx.Diagram("diagram_container", { 
     type: "org", 
     select: true        
 });

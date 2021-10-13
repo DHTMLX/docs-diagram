@@ -11,7 +11,7 @@ description: text
 @signature: {`margin?: IMarginConfig;`}
 
 @example:
-var diagram = new dhx.Diagram("diagram_container", {
+const diagram = new dhx.Diagram("diagram_container", {
     type: "org", 
     margin: {
         x: 20, y: 20,

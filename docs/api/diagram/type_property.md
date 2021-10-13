@@ -13,7 +13,7 @@ description: text
 @default: "default"
 
 @example:
-var diagram = new dhx.Diagram("diagram_container", { 
+const diagram = new dhx.Diagram("diagram_container", { 
     type:"org"
 });
 

@@ -13,7 +13,7 @@ description: text
 @default: "card" (in the default and org modes of Diagram), "topic" (in the mindmap mode of Diagram)
 
 @example:
-var diagram = new dhx.Diagram("diagram_container", { 
+const diagram = new dhx.Diagram("diagram_container", { 
     defaultShapeType: "img-card"
 });
 

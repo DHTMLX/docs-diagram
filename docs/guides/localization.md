@@ -11,7 +11,7 @@ The method takes two parameters: the diagram container and an object that contai
 
 ~~~js
 //an example of English locale
-var locale = {
+const locale = {
 	applyAll: "Apply all",
     exportData: "Export Data",
     importData: "Import Data",
