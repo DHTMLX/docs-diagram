@@ -1,10 +1,10 @@
 ---
-sidebar_label: Shape API properties
-title: Shape API Properties 
+sidebar_label: Shape properties
+title: Shape Properties 
 description: text
 ---
 
-# Shape API properties
+# Shape properties
 
 ## Common properties
 
