@@ -17,6 +17,6 @@ description: text
 The index of the item.
 
 @example:
-var index = diagram.data.getIndex("1"); // -> returns 0
+const index = diagram.data.getIndex("1"); // -> returns 0
 
 @descr:

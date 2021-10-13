@@ -12,7 +12,7 @@ description: text
 
 @example:
 // the default configuration settings for all shapes of the "rectangle" type
-const editor = new dhx.DiagramEditor(document.body, {
+const editor = new dhx.DiagramEditor("editor_container", {
     defaults: {
         rectangle: {
             fill: "#CEEFE1",

@@ -118,7 +118,7 @@ diagram.data.load("/some/data").then(function(){
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/09isp2d8	Diagram. Org chart load data}}
+**Related sample:** [Diagram. Data. Data loading](https://snippet.dhtmlx.com/09isp2d8)
 
 Loading from a local source
 --------------------
@@ -129,7 +129,7 @@ To load data from a local data source, use the [](../api/data_collection/parse_m
 diagram.data.parse(data);
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/4d4k3o8p	Diagram. Wide flowchart}}
+**Related sample:** [Diagram. Default mode. Wide flowchart](https://snippet.dhtmlx.com/4d4k3o8p)
 
 To load a data set into the editor, use the [](../api/editor/parse_method.md) method of the editor.
 
@@ -146,14 +146,14 @@ To save the current state of a diagram, use the [](../api/data_collection/serial
 Each JSON object contains the configuration of a separate shape.
 
 ~~~js
-var state = diagram1.data.serialize();
+const state = diagram1.data.serialize();
 ~~~
 
 Then you can parse the data stored in the saved state array to a different diagram. For example:
 
 ~~~js
 // creating a new diagram
-var diagram2 = new dhx.Diagram(document.body);
+const diagram2 = new dhx.Diagram("diagram_container");
 // parsing the state of the diagram1 into diagram2
 diagram2.data.parse(state);
 ~~~

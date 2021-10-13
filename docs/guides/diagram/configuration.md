@@ -65,7 +65,7 @@ const defaults = {
 	}
 };
 
-const diagram = new dhx.Diagram("diagram", {
+const diagram = new dhx.Diagram("diagram_container", {
 	defaults: defaults
 });
 ~~~
@@ -111,7 +111,7 @@ Configuring autoplacement for shapes
 Starting from v3.0, the DHTMLX Diagram library lets you configure settings for automatically arranging connected shapes of Diagram in the hierarchical structure. You can specify the [](../../api/diagram/autoplacement_property.md) property in the configuration object of Diagram and configure the mode of connecting shapes and distance between unconnected diagrams:
 
 ~~~js
-const diagram = new dhx.Diagram("container", {
+const diagram = new dhx.Diagram("diagram_container", {
     autoplacement: {
         mode: "edges",
         graphPadding: 100

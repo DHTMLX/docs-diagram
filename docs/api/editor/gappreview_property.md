@@ -13,7 +13,7 @@ description: text
 @default: "6px 8px" (sets 6px gap for the top and bottom sides and 8px gap for the right and left sides)
 
 @example:
-const editor = new dhx.DiagramEditor("editor", {
+const editor = new dhx.DiagramEditor("editor_container", {
     gapPreview: 10
 });
 
@@ -30,7 +30,7 @@ const defaults = {card: {
     }
 }
  
-const editor = new dhx.DiagramEditor(document.body, {
+const editor = new dhx.DiagramEditor("editor_container", {
     shapeSections: {
         "org chart shapes": ["card", "img-card"],
         "flowchart shapes": [true]

@@ -11,7 +11,7 @@ description: text
 @signature: {`reservedWidth: number;`}
 
 @example:
-const editor = new dhx.DiagramEditor(document.body, {
+const editor = new dhx.DiagramEditor("editor_container", {
     reservedWidth: 150
 });
 

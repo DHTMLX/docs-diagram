@@ -1,6 +1,6 @@
 ---
-sidebar_label: Group API properties
-title: Group API Properties 
+sidebar_label: Group properties
+title: Group Properties 
 description: text
 ---
 
@@ -19,7 +19,7 @@ The Diagram groups are not configured automatically. A group object contains a l
 - **fixed** - (*boolean*) enables/disables the ability to move and resize the group; *false* by default;
 - **style** - (*object*) an object with the style settings of the group. The object can contain the following attributes:
   - **strokeWidth** - (*number*) the width of the group border, 1 by default;
-  - **stroke** - (*string*) the color of the border of the group (in the HEX, RGBA, RGB, XSL formats), "#DEDEDE" by default;
+  - **stroke** - (*string*) the color of the border of the group (in the HEX, RGBA, RGB, HSL formats), "#DEDEDE" by default;
   - **fill** - (*string*) the background color of the group;
   - **overFill** - (*string*) the background color of the group when the user is holding the item and moving it into/outside the group *providing that the whole item is inside the group*;
   - **partiallyFill** - (*string*) the background color of the group when the user is holding the item and moving it into/outside the group *providing that a part of the item is out of the group and other settings are not defined via the **exitArea** attribute*;
@@ -27,8 +27,7 @@ The Diagram groups are not configured automatically. A group object contains a l
   - **groupBehavior** - (*string*) the behavior of the child item of the group when the user is moving it out of the group: 
       - *"unbound"* (by default) - the user can move an item into or outside the group;
       - *"boundNoBorderExtension"* - the user can move an item into the group but cannot drag the item outside the group if the item has been dropped inside the group. The item won't expand the borders of the group when trying to drag the item outside the group;
-      - *"boundBorderExtension"* - the user can move an item into the group but cannot drag the item outside the group if the item has been dropped inside the group. The item will expand the borders of the group when trying to drag the item outside the group; <br>
-    {{editor	https://snippet.dhtmlx.com/4gxy38ek	Diagram. Groups and shapes interaction}}
+      - *"boundBorderExtension"* - the user can move an item into the group but cannot drag the item outside the group if the item has been dropped inside the group. The item will expand the borders of the group when trying to drag the item outside the group; <br>**Related sample:** [Diagram editor. Default mode. Groups and shapes interaction](https://snippet.dhtmlx.com/4gxy38ek)
   - **padding** - (*number*) defines the padding between the group and the edge of the item when moving the item inside the group; <br> 
   The attribute is available if *groupBehavior: "boundNoBorderExtension" | "boundBorderExtension"*;
 - **header** - (*object*) an object with configuration attributes of the header of the group. The attributes are:
@@ -46,6 +45,10 @@ The Diagram groups are not configured automatically. A group object contains a l
   - **position** - (*string*) the positioning of the group header: "top" (default) | "bottom" | "left" | "right";
   - **editable** - (*boolean*) enables/disables the ability to edit the text of the header by double-clicking on it; *true* by default;
   - **closable** - (*boolean*) shows/hides an icon intended to expand/collapse a group; *false* by default;
-  - **enable** - (*boolean*) shows/hides the header of the group; *true* by default; <br>
-{{editor	https://snippet.dhtmlx.com/6hunrja8	Diagram. Group. Header position and text settings}}
+  - **enable** - (*boolean*) shows/hides the header of the group; *true* by default; <br>**Related sample:** [Diagram. Default mode. Group. Header position and text settings](https://snippet.dhtmlx.com/6hunrja8)
 - **[key: string]: any**  - your own property with your own logic to be implemented under the hood.
+
+```
+TODO: 
+- (in the HEX, RGBA, RGB, HSL, HSLA formats) <- Относится ко всем свойствам которые ответственные за изменение цвета чего либо
+```

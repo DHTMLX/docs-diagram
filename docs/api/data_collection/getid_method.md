@@ -17,6 +17,6 @@ description: text
 The id of the item.
 
 @example:
-var id = diagram.data.getId(0); // -> returns "1"
+const id = diagram.data.getId(0); // -> returns "1"
 
 @descr:

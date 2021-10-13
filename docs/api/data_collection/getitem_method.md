@@ -17,7 +17,7 @@ description: text
 The object of an item.
 
 @example:
-var shape = diagram.data.getItem(123);
+const shape = diagram.data.getItem(123);
 
 @descr:
 
@@ -25,8 +25,8 @@ You can access the original properties of an item like this:
 
 ~~~js
 // accessing the properties of the shape
-var shape = diagram.data.getItem(123);
-var text = shape.text;
+const shape = diagram.data.getItem(123);
+const text = shape.text;
 ~~~
 
 #### Related articles

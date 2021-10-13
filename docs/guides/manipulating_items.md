@@ -31,7 +31,7 @@ To perform the auto-placement, you need to make use of the [](../api/diagram/aut
     - **graphPadding** - (*number*) sets the distance between unconnected diagrams, *"200"* by default
 
 ~~~js
-var diagram = new dhx.Diagram("diagram");
+const diagram = new dhx.Diagram("diagram_container");
 diagram.data.parse(data);
 
 diagram.autoPlace({ /*!*/
@@ -45,7 +45,7 @@ diagram.autoPlace({ /*!*/
 In case you don't pass the parameter to the method, the default settings will be applied.
 
 ~~~js
-var diagram = new dhx.Diagram("diagram");
+const diagram = new dhx.Diagram("diagram_container");
 diagram.data.parse(data);
 
 diagram.autoPlace(); /*!*/
@@ -72,7 +72,7 @@ For example, we've added a new shape object that has the following attributes:
 
 You can check all available properties of shape objects in the [API section](../../shapes/configuration_properties/).
 
-{{editor	https://snippet.dhtmlx.com/8wi20uop	Diagram. Org chart add/delete item}}
+**Related sample:** [Diagram. Data. Add/delete item](https://snippet.dhtmlx.com/8wi20uop)
 
 Getting an item
 ----------------
@@ -80,14 +80,14 @@ Getting an item
 You can get the object of an item by passing its id to the [](../api/data_collection/getitem_method.md)  method of the **data** object. For example:
 
 ~~~js
-var shape = diagram.data.getItem(1);
+const shape = diagram.data.getItem(1);
 ~~~
 
 After getting an item, you can access its original properties, as follows: 
 
 ~~~js
-var shape = diagram.data.getItem(1);
-var text = shape.text;
+const shape = diagram.data.getItem(1);
+const text = shape.text;
 ~~~
 
 Getting the id of an item 
@@ -96,7 +96,7 @@ Getting the id of an item
 If the id of an item is unknown, you can use the [](../api/data_collection/getid_method.md) method to get it. The method takes the index of the item as a parameter:
 
 ~~~js
-var id = diagram.data.getId(0); // -> returns "1"
+const id = diagram.data.getId(0); // -> returns "1"
 ~~~
 
 Getting the index of an item
@@ -105,7 +105,7 @@ Getting the index of an item
 You can get the index of an item by passing its id to the [](../api/data_collection/getindex_method.md) method:
 
 ~~~js
-var id = diagram.data.getIndex("1"); // -> returns 0
+const id = diagram.data.getIndex("1"); // -> returns 0
 ~~~
 
 Deleting items
@@ -129,7 +129,7 @@ If necessary, you can clear the diagram, by deleting all the items at once. For 
 diagram.data.removeAll();
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/8wi20uop	Diagram. Org chart add/delete item}}
+**Related sample:** [Diagram. Data. Add/delete item](https://snippet.dhtmlx.com/8wi20uop)
 
 Updating an item
 -----------------
@@ -145,7 +145,7 @@ As parameters, you need to pass two parameters:
 - **id** - (*string|number*) the id of the item 
 - **config** - (*object*) an object with updated configuration properties
 
-{{editor	https://snippet.dhtmlx.com/y8uk4sbj	Diagram. Org chart update item}}
+**Related sample:** [Diagram. Data. Update item](https://snippet.dhtmlx.com/y8uk4sbj)
 
 Checking existence of the item
 -------------------------
@@ -153,7 +153,7 @@ Checking existence of the item
 You can check whether an item exists in the diagram via the [](../api/data_collection/exists_method.md) method of the **data** collection. The method takes the id of the item as a parameter and returns *true*, if the item exists:
 
 ~~~js
-var shapeExists = diagram.data.exists("1");
+const shapeExists = diagram.data.exists("1");
 ~~~
 
 Selecting items
@@ -164,7 +164,7 @@ Selecting items
 To select items, you need firstly [enable selection](../../guides/diagram/configuration/#selecting-items) for the diagram and then call the [](../api/selection/add_method.md) method of the **selection** object to select a desired item. 
 
 ~~~js
-var diagram = new dhx.Diagram("diagram_container", { select: true });
+const diagram = new dhx.Diagram("diagram_container", { select: true });
 diagram.data.parse(data);
  
 diagram.selection.add("2");
@@ -185,7 +185,7 @@ diagram.selection.remove("2");
 You can get the id of the currently selected item with the [](../api/selection/getid_method.md) method of the **selection** object:
 
 ~~~js
-var selected = diagram.selection.getId();
+const selected = diagram.selection.getId();
 ~~~
 
 ### Getting the object of a selected item
@@ -193,10 +193,10 @@ var selected = diagram.selection.getId();
 It is also possible to get the object of a selected item using the [](../api/selection/getitem_method.md) method of the **selection** object:
 
 ~~~js
-var item = diagram.selection.getItem();
+const item = diagram.selection.getItem();
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/jyoxn5h7	Diagram. Org chart item selection}}
+**Related sample:** [Diagram. Selection. Item selection](https://snippet.dhtmlx.com/jyoxn5h7)
 
 Expanding/collapsing items
 ---------------------
@@ -219,7 +219,7 @@ diagram.collapseItem("3");
 **Note**, that the **dir** attribute can be used only in the mindmap mode of Diagram (type:"mindmap").
 
 ~~~js
-var diagram = new dhx.Diagram("diagram_container", {
+const diagram = new dhx.Diagram("diagram_container", {
 	type:"mindmap"
 });
 diagram.parse(data);
@@ -251,18 +251,18 @@ The method takes the search criteria as a parameter and returns the first object
 
 ~~~js
 // searching for a shape by the attribute key
-var shape = diagram.data.find({by:"text",match:"Manager"}); 
+const shape = diagram.data.find({by:"text",match:"Manager"}); 
 // ->{id:"2",text:"Manager",title:"Mildred Kim",img:"../avatar-2.png",type:"card", …}
  
 // searching for a shape by the function
-var shape = diagram.data.find(function(shape){
+const shape = diagram.data.find(function(shape){
     if(shape.text==="Manager"||shape.text==="Marketer"){
         return true
     }
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/sete9z73	Diagram. Finding necessary shape}}
+**Related sample:** [Diagram. Data. Finding necessary shape](https://snippet.dhtmlx.com/sete9z73)
 
 ### Finding all the items that meet the search criteria
 
@@ -270,10 +270,10 @@ You can also find all the items that meet the set criteria via the [](../api/dat
 
 ~~~js
 // searching for shapes by the attribute key
-var shapes = diagram.data.findAll({by:"text",match:"Manager"});
+const shapes = diagram.data.findAll({by:"text",match:"Manager"});
  
 // searching for shapes by the function
-var shapes = diagram.data.findAll(function(shapes){
+const shapes = diagram.data.findAll(function(shapes){
     if(shapes.text==="Manager"||shapes.text==="Marketer"){
         return true
     }
@@ -310,7 +310,7 @@ To revert the diagram to the initial state, call the **filter()** method without
 diagram.data.filter();
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/tm43bsgn	Diagram. Filtering shapes}}
+**Related sample:** [Diagram. Data. Filtering shapes](https://snippet.dhtmlx.com/tm43bsgn)
 
 
 ## Manipulating swimlane cells

@@ -18,7 +18,7 @@ You can export a diagram to a PDF file via the related [](../api/export/pdf_meth
 diagram.export.pdf();
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/ybpmz0zk	Diagram. Export diagram}}
+**Related sample:** [Diagram. Export. Export diagram](https://snippet.dhtmlx.com/ybpmz0zk)
 
 It is possible to adjust the export settings by passing a configuration object with necessary options.
 
@@ -70,7 +70,7 @@ The DHTMLX Diagram component allows you to export a ready diagram to the PNG for
 diagram.export.png();
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/ybpmz0zk	Diagram. Export diagram}}
+**Related sample:** [Diagram. Export. Export diagram](https://snippet.dhtmlx.com/ybpmz0zk)
 
 You can also define necessary export settings and pass them as an object to the [](../api/export/png_method.md) method:
 
@@ -104,7 +104,7 @@ By default, all css styles included to the Diagram page are sent to the export s
 To avoid this problem, you can reduce the size of the exported data. For example, setting the [](../api/diagram/exportstyles_property.md) configuration property of the Diagram object to *false* will prevent all styles from being sent to the export service:
 
 ~~~js
-var diagram = new dhx.Diagram("diagram_container", { 
+const diagram = new dhx.Diagram("diagram_container", { 
   	exportStyles: false
 });
 ~~~
@@ -112,7 +112,7 @@ var diagram = new dhx.Diagram("diagram_container", {
 The alternative way is to define a set of styles that you want to be exported. For that, you need to set string values with the absolute paths to the desired styles to the **exportStyles** array:
 
 ~~~js
-var diagram = new dhx.Diagram("diagram_container", { 
+const diagram = new dhx.Diagram("diagram_container", { 
   	exportStyles:[
         "https://mySite.com/exportStyle.css",
         "https://mySite.com/secondExportStyle.css"
@@ -120,6 +120,6 @@ var diagram = new dhx.Diagram("diagram_container", {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/jm8if6nh	Diagram. Export styles}}
+**Related sample:** [Diagram. Export. Export styles](https://snippet.dhtmlx.com/jm8if6nh)
 
 **Note**, that you must use only absolute paths not relative ones.

@@ -6,11 +6,12 @@ description: text
 
 # autoplacement
 
-@short: sets configuration for auto-placement of shapes
+@short: an object with configuration settings for auto-placement of shapes
 
 @signature: {`autoplacement?: IAutoPlacement;`}
 
-@params:
+@descr:
+#### Object properties:
 
 - **mode** - (*string*) the mode of connecting shapes, "direct" (by default) or "edges"
 - **graphPadding** - (*number*) sets the distance between unconnected diagrams, *"200"* by default
@@ -18,7 +19,7 @@ description: text
 {{note The **autoplacement** property works only in the default mode of the diagram and only for shapes.}}
 
 @example:
-var diagram = new dhx.Diagram("diagram_container", {
+const diagram = new dhx.Diagram("diagram_container", {
     autoplacement: {
 		mode: "edges",
 		graphPadding: 100

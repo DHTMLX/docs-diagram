@@ -8,7 +8,7 @@ description: text
 
 ## Overview
 
-The look and the way of connecting shapes is defined by the mode you initialize a diagram in: [default](#default-mode), [org](#org-mode), or [mindmap](#mindmap-mode) one.
+The look and the way of connecting shapes is defined by the mode you initialize a diagram in: [default](#lines-in-the-default-mode), [org](#lines-in-the-org-chart-mode), or [mindmap](#lines-in-the-mindmap-mode) one.
 
 ### Lines in the default mode
 
@@ -16,9 +16,9 @@ In the default mode of Diagram, various shapes can be connected by ["straight" (
 
 <iframe src="https://snippet.dhtmlx.com/e6zm6wh1?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="650"></iframe>
 
-### Lines in the org mode
+### Lines in the org chart mode
 
-The org mode of Diagram represents an organizational chart that contains a set of shapes connected by ["elbow" lines](../../lines/configuration_properties/) in a hierarchical order.
+The org chart mode of Diagram represents an organizational chart that contains a set of shapes connected by ["elbow" lines](../../lines/configuration_properties/) in a hierarchical order.
 
 <iframe src="https://snippet.dhtmlx.com/98tzmzpg?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="650"></iframe>
 

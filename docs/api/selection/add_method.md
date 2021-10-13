@@ -15,7 +15,9 @@ description: text
 
 @example:
 // diagram must be created with the "select:true" option
-var diagram = new dhx.Diagram("diagram_container", { select: true });
+const diagram = new dhx.Diagram("diagram_container", { 
+    select: true 
+});
 diagram.data.parse(data);
 
 diagram.selection.add("2");

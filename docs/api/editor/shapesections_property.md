@@ -11,7 +11,7 @@ description: text
 @signature: {`shapeSections?: IShapeSections;`}
 
 @example:
-const editor = new dhx.DiagramEditor(document.body, {
+const editor = new dhx.DiagramEditor("editor_container", {
     shapeSections: {
         "custom shapes": ["networkCard", "medCard"],
         "sticky shapes": ["blue", "orange"],

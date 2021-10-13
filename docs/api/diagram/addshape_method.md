@@ -15,7 +15,7 @@ description: text
 - `parameters: object` - an object with the additional parameters of the <i>addShape</i> function 
 
 @example:
-const diagram = new dhx.Diagram("diagram", {
+const diagram = new dhx.Diagram("diagram_container", {
 	type: "default" //  or type: "org", or type: "mindmap"
 });
 
@@ -72,7 +72,22 @@ TODO:
 
 The **template** function can return either an HTML or SVG template.
 
-Creating an HTML template can be implemented either in ES5 or in ES6+ formats. But **note**, that Internet Explorer does not support versions starting from ES6 (ECMAScript 2015).
+Creating an HTML template can be implemented either in ES5 or in ES6+ formats.
+
+An example of creating an HTML template using ES6+:
+
+~~~js
+const template = config => (
+    `<section class='template'>
+        <h3>${config.title}</h3>
+        <ul><li>${config.text.join("</li><li>")}</li></ul>
+    </section>`
+);
+~~~
+
+**Related sample:**	[Diagram. Default mode. HTML template in ES6+ format](https://snippet.dhtmlx.com/z8ikyyek)
+
+**Related sample:**	[Diagram editor. Default mode. Custom shape template in ES6+ format](https://snippet.dhtmlx.com/9gb3l7el)
 
 An example of creating an HTML template using ES5:
 
@@ -86,20 +101,9 @@ function template(config) {
 };
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/9y51k3fl	Diagram. Diagram Editor. Custom shape in editor with IE}}
+**Related sample:** [Diagram. Default mode. HTML template in ES5 format](https://snippet.dhtmlx.com/p2m7nqbj)
 
-An example of creating an HTML template using ES6+:
-
-~~~js
-const template = config => (
-    `<section class='template'>
-        <h3>${config.title}</h3>
-        <ul><li>${config.text.join("</li><li>")}</li></ul>
-    </section>`
-);
-~~~
-
-{{editor	https://snippet.dhtmlx.com/9gb3l7el	Diagram. Diagram Editor. Custom shape in editor without IE}}
+**Related sample:** [Diagram editor. Default mode. Custom shape template in ES5 format](https://snippet.dhtmlx.com/9y51k3fl)
 
 {{note **Note**, that all HTML and SVG tags must be closed in the template. 
 
@@ -110,13 +114,9 @@ For example, an <img src="" alt=""> tag should look like this:
 }}
 
 
-
 @changelog:
 - The **eventHandlers** attribute is added in v3.1
 - The method is added in v3.0
-
-@relatedsample:
-https://snippet.dhtmlx.com/do1jwmw1	Diagram. Site map and user flow example with custom shapes
 
 #### Related articles 
 

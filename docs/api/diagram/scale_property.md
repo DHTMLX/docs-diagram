@@ -13,7 +13,7 @@ description: text
 @default:1
 
 @example:
-var diagram = new dhx.Diagram("diagram_container", { 
+const diagram = new dhx.Diagram("diagram_container", { 
   	scale: 0.7
 });
 
