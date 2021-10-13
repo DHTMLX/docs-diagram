@@ -88,9 +88,9 @@ Released on April 15, 2021
 - Fix the issue with tracking the shape parameters in the right panel of the editor which is initialized in the default mode
 - Fix the issue with removing focus from the shape in the default mode of the editor
 - Fix the issue with setting connectors between the shapes in the necessary order when the editor is initialized in the default mode
-- Fix the incorrect work of the "Ctrl+A" combination in the org mode of the editor
+- Fix the incorrect work of the "Ctrl+A" combination in the org chart mode of the editor
 - Fix the issue that caused the shapes to be pasted without connectors when the connected shapes are copied
-- Now there is no the ability to remove the root shape from the editor using keyboard navigation when the editor is initialized in the org mode
+- Now there is no the ability to remove the root shape from the editor using keyboard navigation when the editor is initialized in the org chart mode
 
 Version 3.0.4
 ------------------
@@ -121,7 +121,7 @@ Released on July 14, 2020
 
 ### Fixes
 
-- Fix issue with importing data from JSON to the Editor which is initialized in the org mode
+- Fix issue with importing data from JSON to the Editor which is initialized in the org chart mode
 - Fix the incorrect work of the [addShape()](../api/diagram/addshape_method/) method while configuring the right panel of the editor
 - Improved behavior of the historyManager control of the toolbar in the Editor
 
@@ -195,7 +195,7 @@ Released on November 27, 2019
 
 - Fix the issue with exporting a diagram into the PDF and PNG formats
 - Fix incorrect work of the mouse events
-- Fix the issue with deleting child shapes from the diagram which is initialized in the org mode
+- Fix the issue with deleting child shapes from the diagram which is initialized in the org chart mode
 - Fix incorrect work of the right and left panels in Diagram Editor
 - Fix the issue with auto-generating of the unique id's of shapes and connectors
 
@@ -254,7 +254,7 @@ Released on December 5, 2017
 
 ### New functionality
 
-- [Using Editor in the org mode](../api/editor/type_property/)
+- [Using Editor in the org chart mode](../api/editor/type_property/)
 - Ability to [save and restore the state](../guides/loading_data/#saving-and-restoring-state)
 - Extended [customization possibilities](../guides/customization/)
 

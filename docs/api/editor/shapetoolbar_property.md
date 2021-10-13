@@ -25,7 +25,7 @@ The `shapeToolbar` property can be either a **boolean** value or an **array**. T
 - a boolean *true/false* value - to show/hide the default toolbar;
 - string values with the names of the toolbar controls. The sequence the values are put in the array defines the order the controls will be displayed in the toolbar. The available values are:
     - in the default mode: *"copy" | "connect" | "remove" | "addRowLast" | "addColumnLast"*;
-    - in the org mode: *"add" | "horizontal" | "vertical" | "remove"*;
+    - in the org chart mode: *"add" | "horizontal" | "vertical" | "remove"*;
     - in the mindmap mode: *"add" | "addLeft" | "addRight" | "remove"*;
 - a set of icon objects. Each icon object can have the following properties:
     - `id: string` -  the id of an icon. Note, that the usage of the default names of the toolbar controls as ids of new controls is prohibited;

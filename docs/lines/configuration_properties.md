@@ -12,7 +12,7 @@ description: text
 - **from** - *(string | number)* the id of the parent shape
 - **to** - *(string | number)* the id of the child shape
 - **type** - *(string)* the type of the connector line: "*line*" (default) or "*dash*"
-- **connectType** - (*string*) the type of the connector line: ["straight"](../../lines/index/#lines-in-the-default-mode), ["elbow"](../../lines/index/#lines-in-the-org-mode), ["curved"](../../lines/index/#lines-in-the-mindmap-mode). 
+- **connectType** - (*string*) the type of the connector line: ["straight"](../../lines/index/#lines-in-the-default-mode), ["elbow"](../../lines/index/#lines-in-the-org-chart-mode), ["curved"](../../lines/index/#lines-in-the-mindmap-mode). 
 
 ### Properties specific for the default mode
 

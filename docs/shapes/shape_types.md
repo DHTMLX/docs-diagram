@@ -16,7 +16,7 @@ The DHTMLX Diagram library provides you with a set of default shapes that you ca
 
 Tip: Use the name of the necessary shape as a value of the **type** attribute inside the shape object, while [preparing a data set for loading into the diagram](common_guides/loading_data.md#preparingdatatoload).
 
-- the `"card"` shape that is the default shape in the "org chart" mode of Diagram:
+- the `"card"` shape that is the default shape in the org chart mode of Diagram:
 
 <iframe src="https://snippet.dhtmlx.com/5ign6fyy?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="550"></iframe>
 
@@ -66,7 +66,7 @@ diagram.data.parse(data);
 
 This value is applied, if the configuration object of the shape doesn't contain the `type` property.
 
-{{note In the "org" or "mindmap" mode of Diagram, the type of child shapes will be the same as the type of the parent shapes.
+{{note In the "org chart" or "mindmap" mode of Diagram, the type of child shapes will be the same as the type of the parent shapes.
 }}
 
 ### Setting individual type for a shape
