@@ -99,7 +99,7 @@ const template = config => (
 );
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/9gb3l7el	Diagram. Diagram Editor. Custom shape in editor without IE}}
+**Related sample:**	[Diagram editor. Default mode. Custom shape in editor without IE](https://snippet.dhtmlx.com/9gb3l7el)
 
 {{note **Note**, that all HTML and SVG tags must be closed in the template. 
 
@@ -114,9 +114,6 @@ For example, an <img src="" alt=""> tag should look like this:
 @changelog:
 - The **eventHandlers** attribute is added in v3.1
 - The method is added in v3.0
-
-@relatedsample:
-https://snippet.dhtmlx.com/do1jwmw1	Diagram. Site map and user flow example with custom shapes
 
 #### Related articles 
 

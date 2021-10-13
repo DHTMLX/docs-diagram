@@ -18,7 +18,7 @@ You can export a diagram to a PDF file via the related [](../api/export/pdf_meth
 diagram.export.pdf();
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/ybpmz0zk	Diagram. Export diagram}}
+**Related sample:** [Diagram. Export. Export diagram](https://snippet.dhtmlx.com/ybpmz0zk)
 
 It is possible to adjust the export settings by passing a configuration object with necessary options.
 
@@ -70,7 +70,7 @@ The DHTMLX Diagram component allows you to export a ready diagram to the PNG for
 diagram.export.png();
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/ybpmz0zk	Diagram. Export diagram}}
+**Related sample:** [Diagram. Export. Export diagram](https://snippet.dhtmlx.com/ybpmz0zk)
 
 You can also define necessary export settings and pass them as an object to the [](../api/export/png_method.md) method:
 
@@ -120,6 +120,6 @@ var diagram = new dhx.Diagram("diagram_container", {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/jm8if6nh	Diagram. Export styles}}
+**Related sample:** [Diagram. Export. Export styles](https://snippet.dhtmlx.com/jm8if6nh)
 
 **Note**, that you must use only absolute paths not relative ones.

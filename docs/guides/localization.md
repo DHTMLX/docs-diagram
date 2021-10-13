@@ -80,5 +80,6 @@ const editor = new dhx.DiagramEditor(document.body, {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/sivvpbyg	Diagram. Diagram Editor. Localization}}
-{{editor	https://snippet.dhtmlx.com/7qt2mfu2	Diagram. Org Chart Editor. Localization}}
+**Related sample:** [Diagram editor. Default mode. Localization](https://snippet.dhtmlx.com/sivvpbyg)
+
+**Related sample:** [Diagram editor. Org chart mode. Localization](https://snippet.dhtmlx.com/7qt2mfu2)

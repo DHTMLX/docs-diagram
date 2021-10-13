@@ -72,7 +72,7 @@ For example, we've added a new shape object that has the following attributes:
 
 You can check all available properties of shape objects in the [API section](../../shapes/configuration_properties/).
 
-{{editor	https://snippet.dhtmlx.com/8wi20uop	Diagram. Org chart add/delete item}}
+**Related sample:** [Diagram. Data. Add/delete item](https://snippet.dhtmlx.com/8wi20uop)
 
 Getting an item
 ----------------
@@ -129,7 +129,7 @@ If necessary, you can clear the diagram, by deleting all the items at once. For 
 diagram.data.removeAll();
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/8wi20uop	Diagram. Org chart add/delete item}}
+**Related sample:** [Diagram. Data. Add/delete item](https://snippet.dhtmlx.com/8wi20uop)
 
 Updating an item
 -----------------
@@ -145,7 +145,7 @@ As parameters, you need to pass two parameters:
 - **id** - (*string|number*) the id of the item 
 - **config** - (*object*) an object with updated configuration properties
 
-{{editor	https://snippet.dhtmlx.com/y8uk4sbj	Diagram. Org chart update item}}
+**Related sample:** [Diagram. Data. Update item](https://snippet.dhtmlx.com/y8uk4sbj)
 
 Checking existence of the item
 -------------------------
@@ -196,7 +196,7 @@ It is also possible to get the object of a selected item using the [](../api/sel
 var item = diagram.selection.getItem();
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/jyoxn5h7	Diagram. Org chart item selection}}
+**Related sample:** [Diagram. Selection. Item selection](https://snippet.dhtmlx.com/jyoxn5h7)
 
 Expanding/collapsing items
 ---------------------
@@ -262,7 +262,7 @@ var shape = diagram.data.find(function(shape){
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/sete9z73	Diagram. Finding necessary shape}}
+**Related sample:** [Diagram. Data. Finding necessary shape](https://snippet.dhtmlx.com/sete9z73)
 
 ### Finding all the items that meet the search criteria
 
@@ -310,7 +310,7 @@ To revert the diagram to the initial state, call the **filter()** method without
 diagram.data.filter();
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/tm43bsgn	Diagram. Filtering shapes}}
+**Related sample:** [Diagram. Data. Filtering shapes](https://snippet.dhtmlx.com/tm43bsgn)
 
 
 ## Manipulating swimlane cells

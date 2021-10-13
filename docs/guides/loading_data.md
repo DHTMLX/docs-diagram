@@ -118,7 +118,7 @@ diagram.data.load("/some/data").then(function(){
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/09isp2d8	Diagram. Org chart load data}}
+**Related sample:** [Diagram. Data. Data loading](https://snippet.dhtmlx.com/09isp2d8)
 
 Loading from a local source
 --------------------
@@ -129,7 +129,7 @@ To load data from a local data source, use the [](../api/data_collection/parse_m
 diagram.data.parse(data);
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/4d4k3o8p	Diagram. Wide flowchart}}
+**Related sample:** [Diagram. Default mode. Wide flowchart](https://snippet.dhtmlx.com/4d4k3o8p)
 
 To load a data set into the editor, use the [](../api/editor/parse_method.md) method of the editor.
 
