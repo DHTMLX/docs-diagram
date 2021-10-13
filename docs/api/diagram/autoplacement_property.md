@@ -6,11 +6,12 @@ description: text
 
 # autoplacement
 
-@short: sets configuration for auto-placement of shapes
+@short: an object with configuration settings for auto-placement of shapes
 
 @signature: {`autoplacement?: IAutoPlacement;`}
 
-@params:
+@descr:
+#### Object properties:
 
 - **mode** - (*string*) the mode of connecting shapes, "direct" (by default) or "edges"
 - **graphPadding** - (*number*) sets the distance between unconnected diagrams, *"200"* by default
