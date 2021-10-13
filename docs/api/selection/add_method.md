@@ -8,10 +8,11 @@ description: text
 
 @short: selects the specified item
 
-@signature: {`add(id: Id): void;`}
+@signature: {`add(id: Id, subId?: Id): void;`}
 
 @params:
 - `id: string | number` - the item id
+- `subId: string | number` - optional, the id of a text element of a line
 
 @example:
 // diagram must be created with the "select:true" option

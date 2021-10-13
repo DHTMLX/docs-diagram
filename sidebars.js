@@ -315,6 +315,7 @@ module.exports = {
               "api/selection/add_method",
               "api/selection/getid_method",
               "api/selection/getitem_method",
+              "api/selection/getsubid_method",
               "api/selection/remove_method",
             ],
           },

@@ -8,14 +8,14 @@ description: text
 
 @short: fires before the text value of an item is edited via the inline editor
 
-@signature: {`beforeEditorEditing: (value: string, currentValue: string, id: Id, key: string, subHeaderId?: string) => boolean | void;`}
+@signature: {`beforeEditorEditing: (value: string, currentValue: string, id: Id, key: string, subId?: string) => boolean | void;`}
 
 @params:
 - `value: string` - the new value of the item
 - `currentValue: string` - the old value of the item
 - `id: string | number` - the id of the item
 - `key: string` - the name of the property to be edited
-- `subheaderId: string | undefined` - optional, the id of the edited subheader of a swimlane
+- `subId: string` - optional, the id of the edited subheader of a swimlane or a text element of a line
 
 @returns:
 `False` to block saving changes after editing an item via the inline editor, otherwise `true`.

@@ -8,10 +8,11 @@ description: text
 
 @short: unselects a previously selected item
 
-@signature: {`remove(id?: Id): boolean`}
+@signature: {`remove(id?: Id, subId?: Id): boolean`}
 
 @params:
 - `id: string | number` - optional, the item id
+- `subId: string | number` - optional, the id of a text element of a line
 
 @returns:
 `True` if the item is unselected, otherwise `false`.

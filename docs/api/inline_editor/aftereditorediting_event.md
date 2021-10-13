@@ -8,13 +8,13 @@ description: text
 
 @short: fires after the text value of an item is edited via the inline editor  
 
-@signature: {`afterEditorEditing: (value: string, id: Id, key: string, subHeaderId?: string) => void;`}
+@signature: {`afterEditorEditing: (value: string, id: Id, key: string, subId?: string) => void;`}
 
 @params:
 - `value: string` - the new value of the item
 - `id: string | number`- the id of the item
 - `key: string` - the name of the edited property
-- `subheaderId: string | undefined` - optional, the id of the edited subheader of a swimlane
+- `subId: string` - optional, the id of the edited subheader of a swimlane or a text element of a line
 
 @example:
 diagram.events.on("afterEditorEditing", (value, id, key, subheaderId) => {

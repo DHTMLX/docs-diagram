@@ -161,7 +161,7 @@ Selecting items
 
 ### Selecting an item
 
-To select items, you need firstly [enable selection](../../guides/diagram/configuration/#selecting-items) for the diagram and then call the [](../api/selection/add_method.md) method of the **selection** object to select a desired item. 
+To select items, you need firstly [enable selection](../../guides/diagram/configuration/#selecting-items) for the diagram and then call the [](../api/selection/add_method.md) method of the **selection** object to select a desired item.
 
 ~~~js
 var diagram = new dhx.Diagram("diagram_container", { select: true });
@@ -186,6 +186,14 @@ You can get the id of the currently selected item with the [](../api/selection/g
 
 ~~~js
 var selected = diagram.selection.getId();
+~~~
+
+### Getting the subId of a selected item
+
+You can get the subId of the currently selected item with the [](../api/selection/getsubid_method.md) method of the **selection** object:
+
+~~~js
+const selected = diagram.selection.getSubId();
 ~~~
 
 ### Getting the object of a selected item
