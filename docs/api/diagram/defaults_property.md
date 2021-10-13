@@ -11,7 +11,9 @@ description: text
 @signature: {`defaults?: IDefaultShapeConfig;`}
 
 @descr:
-The **defaults** object can contain a number of *key:value* pairs where *key* is a type of a shape and *value* is the default configuration for the shape.
+The **defaults** object can contain a number of *key:value* pairs where *key* is a type of a shape and *value* is a set of [configuration settings of the shape](../../../shapes/configuration_properties/).
+
+{{note There is no possibility to define *type* and *id* in the default configuration of a shape.}}
 
 @example:
 // the default configuration for all shapes of the "rectangle" type
@@ -32,8 +34,6 @@ const diagram = new dhx.Diagram("diagram_container", {
 @descr:
 
 After specifying the properties for the shape of the *rectangle* type by default you can omit these attributes while preparing a data set for the "rectangle"-type shapes. But, if necessary, you can redefine any of the properties while specifying them in the configuration object of the shape.
-
-{{note There is no possibility to define *type* and *id* in the default configuration of a shape.}}
 
 @changelog: added in v3.0
 

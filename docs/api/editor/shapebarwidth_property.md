@@ -12,14 +12,15 @@ description: text
 
 @default: 295px
 
+@descr:
+{{note The property is available only in the default mode of the editor (*type:"default"*).}}
+
 @example:
 const editor = new dhx.DiagramEditor("editor_container", {
     shapeBarWidth: 190
 });
 
 @descr:
-
-{{note The property is available only in the default mode of the editor (*type:"default"*).}}
 
 #### Related articles
 

@@ -32,8 +32,6 @@ diagram.parse(autoData);
 @descr:
 **Related samples**:
 - [Diagram. Default mode. Autoplacement](https://snippet.dhtmlx.com/f3uekgjw)
-- [Diagram editor. Default mode. Autoplacement direct mode](https://snippet.dhtmlx.com/p1ybrkz2)
-- [Diagram editor. Default mode. Autoplacement edges mode](https://snippet.dhtmlx.com/1i65txcw)
 
 
 ### Modes of connecting shapes
