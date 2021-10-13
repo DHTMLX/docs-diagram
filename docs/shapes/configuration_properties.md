@@ -8,8 +8,8 @@ description: text
 
 ## Common properties
 
-- **id** - (*string | number*) the unique id of a shape;
 - **type** - (*string*) the type of the shape (by default: "card" in the org chart mode, "topic" in the mindmap mode);
+- **id** - (*string | number*) the unique id of a shape;
 - **x** - (*number*) the x coordinate of the shape position;
 - **y** - (*number*) the y coordinate of the shape position;
 - **text** - (*string | string[]*) the text to be rendered in a shape. The property can be set as an array of string values while [configuring a **custom shape** only](../../shapes/custom_shape/);
@@ -22,27 +22,6 @@ description: text
 ## Custom properties
 
 - **[key: string]** - (*any*) a custom property for a custom shape. For details, check the [Custom shape](../custom_shape/) article. <br>*Use unique names as names for custom properties. Overriding the internal properties of the diagram shape object is forbidden as it causes the incorrect work of the diagram and its editor.*
-
-## Properties specific for "topic" and flow chart shapes
-
-- **fill** - (*string*) the color of the shape, "#DEDEDE" by default;
-- **stroke** - (*string*) the color of the shape outline, "#DEDEDE" by default;
-- **strokeWidth** - (*number*) the width of the shape outline, 1 by default;
-- **strokeType** - (*string*) the type of the stroke outline, "line" (default), "dash" for a dashed line;
-- **strokeDash** - (*string*) the pattern of dashes and spaces for a dashed outline;
-- **fontColor** - (*string*) the color of the text font, "#4C4C4C" by default;
-- **fontStyle** - (*string*) the style of the text font, can be "normal" (default), "italic" or "oblique";
-- **fontWeight** - (*string*) the text font weight, possible values are: "normal" (default), "bold", "bolder", "lighter", values "100"-"900", where "400" is the same as normal, and "600"+ is the boldest font;
-- **fontSize** - (*number*) the size of the font in pixels, 14 by default;
-- **textAlign** - (*string*) the alignment of text in a shape:"left","center"(default),"right";
-- **textVerticalAlign** - (*string*) the vertical alignment of text in a shape:"top","center"(default),"bottom";
-- **lineHeight** - (*number*) the height of a line, 14 by default;
-
-## Properties specific for "img-card" shapes
-
-- **img** - (*string*) the image of a shape;
-- **title** - (*string*) the title of a shape;
-- **headerColor** - (*string*) the color of the header of the shape, any CSS legal color value;
 
 ## Properties specific for the default mode
 
@@ -72,3 +51,29 @@ description: text
     - **left** - (*boolean*) shows/hides the child items to the left of the root shape;
     - **right** - (*boolean*) shows/hides the child items to the right of the root shape.
 
+## Properties specific for "topic" and flow chart shapes
+
+- **fill** - (*string*) the color of the shape, "#DEDEDE" by default;
+- **stroke** - (*string*) the color of the shape outline, "#DEDEDE" by default;
+- **strokeWidth** - (*number*) the width of the shape outline, 1 by default;
+- **strokeType** - (*string*) the type of the stroke outline, "line" (default), "dash" for a dashed line;
+- **strokeDash** - (*string*) the pattern of dashes and spaces for a dashed outline;
+- **fontColor** - (*string*) the color of the text font, "#4C4C4C" by default;
+- **fontStyle** - (*string*) the style of the text font, can be "normal" (default), "italic" or "oblique";
+- **fontWeight** - (*string*) the text font weight, possible values are: "normal" (default), "bold", "bolder", "lighter", values "100"-"900", where "400" is the same as normal, and "600"+ is the boldest font;
+- **fontSize** - (*number*) the size of the font in pixels, 14 by default;
+- **textAlign** - (*string*) the alignment of text in a shape:"left","center"(default),"right";
+- **textVerticalAlign** - (*string*) the vertical alignment of text in a shape:"top","center"(default),"bottom";
+- **lineHeight** - (*number*) the height of a line, 14 by default;
+
+## Properties specific for "img-card" shapes
+
+- **img** - (*string*) the image of a shape;
+- **title** - (*string*) the title of a shape;
+- **headerColor** - (*string*) the color of the header of the shape, any CSS legal color value;
+
+```
+TODO:
+- Не нашел базовую фигуру с типом card, для нее уникальным свойством будет headerColor
+- Не нашел базовую фигуру text, она аналогична фигуре topic. При этом для фигур text/topic header/width расчитывается автоматически в зависимости от контента
+```
