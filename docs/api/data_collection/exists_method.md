@@ -17,7 +17,7 @@ description: text
 `True` if the item exists, otherwise `false`.
 
 @example:
-var shape = diagram.data.exists("1"); 
+const shape = diagram.data.exists("1"); 
 
 @descr:
 

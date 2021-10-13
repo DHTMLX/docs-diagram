@@ -14,7 +14,7 @@ description: text
 `config: object` - optional, an object with configuration settings of the autoplacement. If not specified, the default settings will be applied.
 
 @example:
-var diagram = new dhx.Diagram("diagram");
+const diagram = new dhx.Diagram("diagram_container");
 diagram.data.parse(data);
 
 diagram.autoPlace({

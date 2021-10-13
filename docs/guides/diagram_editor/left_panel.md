@@ -94,7 +94,7 @@ const defaults = {
     }
 };
 
-const editor = new dhx.DiagramEditor(document.body, {
+const editor = new dhx.DiagramEditor("editor_container", {
     shapeSections: {
         "Custom shapes": ["personalCard"],
         "OrgChart shapes": ["card", "img-card"]
@@ -120,7 +120,7 @@ While the scale of the "personalCard"-type shapes is 0.72, the scale of the othe
 The default width of the left panel is 295. You can change it and set any other width via the [](../../api/editor/shapebarwidth_property.md) property, e.g.:
 
 ~~~js
-const editor = new dhx.DiagramEditor(document.body, {
+const editor = new dhx.DiagramEditor("editor_container", {
     shapeBarWidth: 350	
 });
 ~~~

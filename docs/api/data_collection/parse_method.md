@@ -16,7 +16,7 @@ description: text
 - `driver: object | string` - optional, DataDriver or type of data ("json", "csv", "xml"), "json" by default
 
 @example:
-var data = [
+const data = [
 	{
 		id: "1",
 		text: "Chairman & CEO",
@@ -39,7 +39,7 @@ var data = [
 	{ id: "1-3", from: "1", to: "3", type: "line" }
 ];
 
-var diagram = new dhx.Diagram("diagram_container", { type: "org" });
+const diagram = new dhx.Diagram("diagram_container", { type: "org" });
 diagram.data.parse(data);
 
 @relatedsample:

@@ -18,7 +18,7 @@ description: text
 {{note The **autoplacement** property works only in the default mode of the diagram and only for shapes.}}
 
 @example:
-var diagram = new dhx.Diagram("diagram_container", {
+const diagram = new dhx.Diagram("diagram_container", {
     autoplacement: {
 		mode: "edges",
 		graphPadding: 100

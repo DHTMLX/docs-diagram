@@ -18,6 +18,6 @@ description: text
 The id of the nearest item.
 
 @example:
-var nearId = diagram.data.getNearId(id);
+const nearId = diagram.data.getNearId(id);
 
 @descr:

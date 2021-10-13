@@ -13,7 +13,7 @@ description: text
 @default: 295px
 
 @example:
-const editor = new dhx.DiagramEditor(document.body, {
+const editor = new dhx.DiagramEditor("editor_container", {
     shapeBarWidth: 190
 });
 

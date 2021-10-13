@@ -15,10 +15,10 @@ TODO:
 - В diagram 4.1 изменен порядок создания фигур по-умолчания. Теперь для default mode фигурой по-умолчанию является rectangle
 ```
 
-@default: "card" (in the default and org modes), "topic" (in the mindmap mode)
+@default: "card" (in the default and org chart modes), "topic" (in the mindmap mode)
 
 @example:
-const editor = new dhx.DiagramEditor(document.body, {
+const editor = new dhx.DiagramEditor("editor_container", {
     shapeType: "rectangle",
 });
 

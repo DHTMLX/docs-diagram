@@ -16,7 +16,7 @@ The DHTMLX Diagram library provides you with a set of default shapes that you ca
 
 Tip: Use the name of the necessary shape as a value of the **type** attribute inside the shape object, while [preparing a data set for loading into the diagram](common_guides/loading_data.md#preparingdatatoload).
 
-- the `"card"` shape that is the default shape in the "org chart" mode of Diagram:
+- the `"card"` shape that is the default shape in the org chart mode of Diagram:
 
 <iframe src="https://snippet.dhtmlx.com/5ign6fyy?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="550"></iframe>
 
@@ -57,7 +57,7 @@ Setting the type of a shape
 You can set the default type for all the shapes via the [](../api/diagram/defaultshapetype_property.md) attribute of the diagram config object:
 
 ~~~js
-var diagram = new dhx.Diagram("diagram_container", {
+const diagram = new dhx.Diagram("diagram_container", {
     type: "default", // or type: "org", or type: "mindmap" 
     defaultShapeType: "rectangle"
 });
@@ -66,7 +66,7 @@ diagram.data.parse(data);
 
 This value is applied, if the configuration object of the shape doesn't contain the `type` property.
 
-{{note In the "org" or "mindmap" mode of Diagram, the type of child shapes will be the same as the type of the parent shapes.
+{{note In the "org chart" or "mindmap" mode of Diagram, the type of child shapes will be the same as the type of the parent shapes.
 }}
 
 ### Setting individual type for a shape
@@ -75,7 +75,7 @@ It is also possible to specify individual types for separate shapes via the rela
 
 ~~~js
 // data to load
-var data = [
+const data = [
     // shapes
     { "id": "1", "x": 100, "y": 40,  "text": "Start", "type": "start", "height": 50 },
     { "id": "2", "x": 100, "y": 170, "text": "Operation 1", "type": "output" },
@@ -87,7 +87,7 @@ var data = [
 ]
  
 // initializing a diagram
-var diagram = new dhx.Diagram("diagram_container");
+const diagram = new dhx.Diagram("diagram_container");
 diagram.data.parse(data);
 ~~~
 

@@ -11,7 +11,7 @@ description: text
 @signature: {`autoplacement?: IAutoPlacement;`}
 
 @example:
-const editor = new dhx.DiagramEditor(document.body, {
+const editor = new dhx.DiagramEditor("editor_container", {
     autoplacement: {
         graphPadding: 100,
         mode: "edges"

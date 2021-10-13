@@ -12,7 +12,7 @@ description: text
 
 @example:
 // the default configuration for all shapes of the "rectangle" type
-var diagram = new dhx.Diagram("diagram_container", {
+const diagram = new dhx.Diagram("diagram_container", {
     defaults: {
         rectangle: {
             fill: "#CEEFE1",

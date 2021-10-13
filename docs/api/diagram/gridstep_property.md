@@ -15,7 +15,7 @@ description: text
 @values: >=1
 
 @example:
-var diagram = new dhx.Diagram("diagram_container", { 
+const diagram = new dhx.Diagram("diagram_container", { 
   	gridStep:20
 });
 

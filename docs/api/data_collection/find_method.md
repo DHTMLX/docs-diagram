@@ -18,10 +18,10 @@ The first object of the item that matches the specified criteria.
 
 @example:
 //searching for a shape by the attribute key
-var shape = diagram.data.find({by:"text",match:"Manager"});
+const shape = diagram.data.find({by:"text",match:"Manager"});
 
 //searching for a shape by the function
-var shape = diagram.data.find(function(shape){
+const shape = diagram.data.find(function(shape){
 	if(shape.text==="Manager"||shape.text==="Marketer"){return true}
 });
 

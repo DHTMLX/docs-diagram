@@ -146,14 +146,14 @@ To save the current state of a diagram, use the [](../api/data_collection/serial
 Each JSON object contains the configuration of a separate shape.
 
 ~~~js
-var state = diagram1.data.serialize();
+const state = diagram1.data.serialize();
 ~~~
 
 Then you can parse the data stored in the saved state array to a different diagram. For example:
 
 ~~~js
 // creating a new diagram
-var diagram2 = new dhx.Diagram(document.body);
+const diagram2 = new dhx.Diagram("diagram_container");
 // parsing the state of the diagram1 into diagram2
 diagram2.data.parse(state);
 ~~~

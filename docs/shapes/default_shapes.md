@@ -16,7 +16,7 @@ The DHTMLX Diagram library provides you with a set of default types of shapes th
 
 Tip: Use the name of the necessary shape as a value of the **type** attribute inside the shape object, while [preparing a data set for loading into the diagram](common_guides/loading_data.md#preparingdatatoload).
 
-- the `"card"` type that is the default type of shapes in the "org chart" mode of Diagram. Each shape has a text and a colored header line. Shapes located on the same level have headers of identical color.
+- the `"card"` type that is the default type of shapes in the org chart mode of Diagram. Each shape has a text and a colored header line. Shapes located on the same level have headers of identical color.
 
 <iframe src="https://snippet.dhtmlx.com/5ign6fyy?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="550"></iframe>
 
@@ -52,7 +52,7 @@ const data = [
 It is also possible to set the default type for all the shapes via the [](../api/diagram/defaultshapetype_property.md) attribute of the diagram config object:
 
 ~~~js
-var diagram = new dhx.Diagram("diagram_container", {
+const diagram = new dhx.Diagram("diagram_container", {
     type: "default", // or type: "org", or type: "mindmap" 
     defaultShapeType: "rectangle"
 });

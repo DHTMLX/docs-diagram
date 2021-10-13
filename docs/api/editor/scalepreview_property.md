@@ -13,7 +13,7 @@ description: text
 @default: 0.5
 
 @example:
-const editor = new dhx.DiagramEditor(document.body, {
+const editor = new dhx.DiagramEditor("editor_container", {
     scalePreview: 0.6,
 });
 
@@ -31,7 +31,7 @@ const defaults = {card: {
     }
 }
  
-const editor = new dhx.DiagramEditor(document.body, {
+const editor = new dhx.DiagramEditor("editor_container", {
     shapeSections: {
         "org chart shapes": ["card", "img-card"],
         "flowchart shapes": [true]

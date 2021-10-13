@@ -17,7 +17,7 @@ DHTMLX Diagram allows you to get the current position of the scroll via the rela
 
 ~~~js
 // returning the initial scroll position
-var coords = diagram.getScrollState();	// -> {x:0,y:0}
+const coords = diagram.getScrollState();	// -> {x:0,y:0}
 ~~~
 
 It returns an object with the horizontal and vertical scroll position.

@@ -39,10 +39,10 @@ Usage of swimlanes of the DHTMLX Diagram library lets you represent any process 
 
 <iframe src="https://snippet.dhtmlx.com/z6x5m3gb?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="700"></iframe>
 
-Diagram in the org mode
+Diagram in the org chart mode
 -----------------------
 
-There is also an org mode of diagram that presents a set of shapes connected by lines in a hierarchical order. 
+There is also an org chart mode of diagram that presents a set of shapes connected by lines in a hierarchical order. 
 
 <iframe src="https://snippet.dhtmlx.com/qnx3ekin?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
 
@@ -84,9 +84,9 @@ If you need to edit a custom diagram, you may configure the toolbar of the edito
 
 <iframe src="https://snippet.dhtmlx.com/2z0a18oz?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
-### Editor in the org mode
+### Editor in the org chart mode
 
-The interface of the editor initialized in the org mode consists of three parts: toolbar, grid area, and right panel.
+The interface of the editor initialized in the org chart mode consists of three parts: toolbar, grid area, and right panel.
 
 ```
 TODO:
@@ -102,7 +102,7 @@ TODO:
 Эта информация устарела. Думаю, что нужно либо дополнять, с учетом новых возможностей, либо убрать сославшись на API редактора в режиме "org"
 ```
 
-To build a diagram in the org mode of the editor, you need to select a shape and add a new child for it. Also you can:
+To build a diagram in the org chart mode of the editor, you need to select a shape and add a new child for it. Also you can:
 
 - set precise positioning for shapes;
 - define their width and height;

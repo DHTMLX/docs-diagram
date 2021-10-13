@@ -14,7 +14,7 @@ description: text
 `position: object` - the position of a scroll
 
 @example:
-var diagram = new dhx.Diagram("diagram_container", { 
+const diagram = new dhx.Diagram("diagram_container", { 
 	type: "org", 
     scroll: true 		
 });

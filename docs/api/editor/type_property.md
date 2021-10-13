@@ -15,7 +15,7 @@ description: text
 @values: "default", "org", "mindmap"
 
 @example:
-const editor = new dhx.DiagramEditor("editor", {
+const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
 });
 
@@ -24,7 +24,7 @@ const editor = new dhx.DiagramEditor("editor", {
 DHTMLX Diagram Editor can be initialized in one of three modes:
 
 - Use **type:"default"** to initialize the editor in the default mode.
-- Use **type:"org"** to initialize the editor in the org mode.
+- Use **type:"org"** to initialize the editor in the org chart mode.
 - Use **type:"mindmap"** to initialize the editor in the mindmap mode.
 
 ```

@@ -13,7 +13,7 @@ description: text
 @default: 10
 
 @example:
-const editor = new dhx.DiagramEditor(document.body, {
+const editor = new dhx.DiagramEditor("editor_container", {
     lineGap: 5
 });
 

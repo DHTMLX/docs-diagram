@@ -13,7 +13,7 @@ description: text
 @default:10
 
 @example:
-var diagram = new dhx.Diagram("diagram_container", { 
+const diagram = new dhx.Diagram("diagram_container", { 
   	lineGap:30
 });
 

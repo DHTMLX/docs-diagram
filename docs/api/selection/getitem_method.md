@@ -14,7 +14,7 @@ description: text
 The object of a selected item.
 
 @example:
-var shape = diagram.selection.getItem();
+const shape = diagram.selection.getItem();
 // -> {id: "3", text: "Technical Director", title: "Jerry Wagner", …}
 
 @descr:

@@ -15,7 +15,7 @@ description: text
 @values: >=1
 
 @example:
-const editor = new dhx.DiagramEditor(document.body, {
+const editor = new dhx.DiagramEditor("editor_container", {
     gridStep:20
 });
 

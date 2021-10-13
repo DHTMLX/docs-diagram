@@ -11,7 +11,7 @@ description: text
 @signature: {`margin?: IMarginConfig;`}
 
 @example:
-var diagram = new dhx.Diagram("diagram_container", {
+const diagram = new dhx.Diagram("diagram_container", {
     type: "org", 
     margin: {
         x: 20, y: 20,
@@ -22,7 +22,7 @@ var diagram = new dhx.Diagram("diagram_container", {
 @descr:
 **Related sample:** [Diagram. Org chart mode. Margin between shapes](https://snippet.dhtmlx.com/bwe9vm6i)
 
-{{note The property works only in the org mode of Diagram.}}
+{{note The property works only in the org chart mode of Diagram.}}
 
 The `margin` object can contain the following properties:
 

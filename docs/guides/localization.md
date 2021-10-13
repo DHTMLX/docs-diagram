@@ -11,7 +11,7 @@ The method takes two parameters: the diagram container and an object that contai
 
 ~~~js
 //an example of English locale
-var locale = {
+const locale = {
 	applyAll: "Apply all",
     exportData: "Export Data",
     importData: "Import Data",
@@ -74,7 +74,7 @@ dhx.i18n.setLocale("diagram", locale);
 After that, you need to initialize the editor and check how the labels' names have changed.
 
 ~~~js
-const editor = new dhx.DiagramEditor(document.body, {
+const editor = new dhx.DiagramEditor("editor_container", {
     type: "default" // "default" | "org" | "mindmap"
     // other config options
 });

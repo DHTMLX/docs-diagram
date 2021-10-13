@@ -10,7 +10,6 @@ This article covers the process of displaying a Diagram editor on a page. In ord
 
 - [Download the DHTMLX Diagram package](https://dhtmlx.com/docs/products/dhtmlxDiagram/download.shtml) and unpack it into a folder of your project;
 - [Include the source files on a page](#including-required-code-files);
-- [Create a container to place the Editor into](#creating-a-container);
 - [Initialize the Editor with the object constructor](#initializing-editor);
 - [Load data into the Editor](#loading-data-into-editor).
 
@@ -62,28 +61,30 @@ Make sure that you set correct relative paths to these files:
 <link rel="stylesheet" href="../codebase/diagramWithEditor.css">
 ~~~
 
-Creating a container
----------------------
-
-Add an HTML container for the Editor and give it an id, for example "editor_container":
-
-~~~html
-<div id="editor_container"></div>
-~~~
-
 Initializing Editor
 ----------------
 
-To initialize the Editor, you should use the `dhx.DiagramEditor` constructor. The constructor function takes two parameters:
+You can initialize a Diagram Editor in a container, in the document body, or in a layout cell.
 
-- a container to place an Editor into. The one we have created at the previous step.
+### Initialization in a container
+
+To initialize a diagram in a container, use the `dhx.DiagramEditor` constructor and pass the following two parameters to the constructor function:
+
+- a container to place an Editor into, let's give it the id "editor_container":
+
+~~~html title="index.html"
+<div id="editor_container"></div>
+~~~
+
 - an object with [configuration properties](#configuration-properties). If this argument is not passed to the constructor, the settings will be default.
 
-~~~js
+~~~js title="index.js"
 const editor = new dhx.DiagramEditor("editor_container", {
 	type: "default" // "default" | "org" | "mindmap"
 });
 ~~~
+
+### Initialization in the document body
 
 It is also possible to skip setting a container for Editor and to add it right into the document's body:
 
@@ -93,12 +94,31 @@ const editor = new dhx.DiagramEditor(document.body, {
 });
 ~~~
 
+### Initialization in a layout cell
+
+You can also initialize an editor inside [a Layout cell](https://docs.dhtmlx.com/suite/layout/index/). In this case use *null* instead of a container:
+
+~~~js
+const editor = new dhx.DiagramEditor(null, {
+	type: "default" // "default" | "org" | "mindmap"
+});
+const layout = new dhx.Layout("layout", {
+    cols: [
+        {
+            id: "diagram_editor"
+        },
+    ]
+});
+
+layout.getCell("diagram_editor").attach(editor);
+~~~
+
 ### Configuration properties
 
 To change the configuration of the editor, you can specify the desired property in the config object passed as a second parameter of the constructor function. 
 
 ~~~js
-const editor = new dhx.DiagramEditor(document.body, {
+const editor = new dhx.DiagramEditor("editor_container", {
 	type: "default" // "default" | "org" | "mindmap",
 	shapeBarWidth: 320,
 	lineGap: 20
