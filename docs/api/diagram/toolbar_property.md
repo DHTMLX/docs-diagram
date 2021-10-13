@@ -6,7 +6,7 @@ description: text
 
 # toolbar
 
-@short: sets a toolbar with buttons for items
+@short: An array of icon objects which sets a toolbar with buttons for items
 
 @signature: {`toolbar?: IShapeToolbarConfig[];`}
 
@@ -27,11 +27,10 @@ const diagram = new dhx.Diagram("diagram_container", {
     }]
 });
 
-@relatedsample:
+@descr:
 **Related sample**: [Diagram. Configuration. Per-shape toolbar](https://snippet.dhtmlx.com/4if395hd)
 
-@descr:
-The toolbar is set as an array of icons objects. Each icon object can have the following properties:
+Each icon object can have the following properties:
 
 - **id** - (*string*) the id of the icon.
 - **content** - (*string*) the content of the icon. It can contain an HTML element with the name of the icon class. 

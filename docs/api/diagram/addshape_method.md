@@ -72,7 +72,22 @@ TODO:
 
 The **template** function can return either an HTML or SVG template.
 
-Creating an HTML template can be implemented either in ES5 or in ES6+ formats. But **note**, that Internet Explorer does not support versions starting from ES6 (ECMAScript 2015).
+Creating an HTML template can be implemented either in ES5 or in ES6+ formats.
+
+An example of creating an HTML template using ES6+:
+
+~~~js
+const template = config => (
+    `<section class='template'>
+        <h3>${config.title}</h3>
+        <ul><li>${config.text.join("</li><li>")}</li></ul>
+    </section>`
+);
+~~~
+
+**Related sample:**	[Diagram. Default mode. HTML template in ES6+ format](https://snippet.dhtmlx.com/z8ikyyek)
+
+**Related sample:**	[Diagram editor. Default mode. Custom shape template in ES6+ format](https://snippet.dhtmlx.com/9gb3l7el)
 
 An example of creating an HTML template using ES5:
 
@@ -86,20 +101,9 @@ function template(config) {
 };
 ~~~
 
-**Related sample:** [Diagram editor. Default mode. Custom shape in editor with IE](https://snippet.dhtmlx.com/9y51k3fl)
+**Related sample:** [Diagram. Default mode. HTML template in ES5 format](https://snippet.dhtmlx.com/p2m7nqbj)
 
-An example of creating an HTML template using ES6+:
-
-~~~js
-const template = config => (
-    `<section class='template'>
-        <h3>${config.title}</h3>
-        <ul><li>${config.text.join("</li><li>")}</li></ul>
-    </section>`
-);
-~~~
-
-**Related sample:**	[Diagram editor. Default mode. Custom shape in editor without IE](https://snippet.dhtmlx.com/9gb3l7el)
+**Related sample:** [Diagram editor. Default mode. Custom shape template in ES5 format](https://snippet.dhtmlx.com/9y51k3fl)
 
 {{note **Note**, that all HTML and SVG tags must be closed in the template. 
 
@@ -108,7 +112,6 @@ For example, an <img src="" alt=""> tag should look like this:
 <img src="" alt=""></img>
 ~~~ 
 }}
-
 
 
 @changelog:
