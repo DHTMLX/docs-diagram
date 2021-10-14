@@ -19,7 +19,7 @@ The Diagram groups are not configured automatically. A group object contains a l
 - **fixed** - (*boolean*) enables/disables the ability to move and resize the group; *false* by default;
 - **style** - (*object*) an object with the style settings of the group. The object can contain the following attributes:
   - **strokeWidth** - (*number*) the width of the group border, 1 by default;
-  - **stroke** - (*string*) the color of the border of the group (in the HEX, RGBA, RGB, HSL formats), "#DEDEDE" by default;
+  - **stroke** - (*string*) the color of the border of the group, "#DEDEDE" by default;
   - **fill** - (*string*) the background color of the group;
   - **overFill** - (*string*) the background color of the group when the user is holding the item and moving it into/outside the group *providing that the whole item is inside the group*;
   - **partiallyFill** - (*string*) the background color of the group when the user is holding the item and moving it into/outside the group *providing that a part of the item is out of the group and other settings are not defined via the **exitArea** attribute*;
@@ -48,7 +48,36 @@ The Diagram groups are not configured automatically. A group object contains a l
   - **enable** - (*boolean*) shows/hides the header of the group; *true* by default; <br>**Related sample:** [Diagram. Default mode. Group. Header position and text settings](https://snippet.dhtmlx.com/6hunrja8)
 - **[key: string]: any**  - your own property with your own logic to be implemented under the hood.
 
-```
-TODO: 
-- (in the HEX, RGBA, RGB, HSL, HSLA formats) <- Относится ко всем свойствам которые ответственные за изменение цвета чего либо
-```
+{{note While specifying color values of the item, you can use the following formats: HEX, RGBA, RGB, HSL, or HSLA.}}
+
+### Example
+
+~~~js
+const data = [    
+    {
+        type: "$group",
+        id: 1,
+        width: 400,
+        height: 200,
+        x: 0,
+        y: 0,
+        header: {
+            text: "Top and collapsed header with tеxt alignment",
+            editable: true,
+            closable: true,
+            textAlign: "left", // "left", "center", "right"
+            textVerticalAlign: "center", // "top", "center", "bottom"
+        },
+      	// the child items of the group
+        groupChildren: ["1.1", "1.2"],
+        open: false,
+    },
+  	// configuring shapes to put into the group
+    { type: "rectangle", id: 1.1, x: 50, y: 75, text: "Shape 1.1" },
+    { type: "rectangle", id: 1.2, x: 200, y: 75, text: "Shape 1.2" },
+];
+~~~
+
+## Related articles
+
+- [Configuring groups](../../groups/index/)
