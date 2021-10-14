@@ -17,7 +17,7 @@ description: text
 - `coord: object` - an object with the x and y coordinates of the text element position after movement
 
 @example:
-editor.events.on("afterLineTitleMove", (event, id, coordinates) => {
+editor.events.on("afterLineTitleMove", (event, lineId, titleId, coordinates) => {
     console.log(`
         LineTitle ${id} is position:
             x: ${coordinates.x}

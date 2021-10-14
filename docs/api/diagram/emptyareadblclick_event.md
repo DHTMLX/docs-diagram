@@ -1,0 +1,29 @@
+---
+sidebar_label: emptyAreaDblClick
+title: emptyAreaDblClick
+description: text
+---
+
+# emptyAreaDblClick
+
+@short: fires on double-clicking an empty space in the current diagram area
+
+@signature: {`emptyAreaDblClick: (event: MouseEvent) => void;`}
+
+@params:
+`event: MouseEvent` - a native HTML event object
+
+@example:
+diagram.events.on("emptyAreaDblClick", () => {
+	console.log("emptyAreaDblClick");
+});
+
+@descr:
+
+**Related samples**:
+- [Diagram. Default mode. Events](https://snippet.dhtmlx.com/7h2hgb3g)
+- [Diagram. Org chart mode. Events](https://snippet.dhtmlx.com/l38pct7c)
+
+@changelog:
+
+Added in v4.1.

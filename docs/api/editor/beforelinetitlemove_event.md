@@ -20,7 +20,7 @@ description: text
 Return `false` to prevent the text element of a line from being moved; otherwise, `true`.
 
 @example:
-editor.events.on("beforeLineTitleMove", (event, id, coordinates) => {
+editor.events.on("beforeLineTitleMove", (event, lineId, titleId, coordinates) => {
     console.log(`
         LineTitle ${id} is position:
             x: ${coordinates.x}
