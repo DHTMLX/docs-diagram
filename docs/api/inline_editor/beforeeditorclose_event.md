@@ -8,12 +8,12 @@ description: text
 
 @short: fires before the inline editor of an item is closed
 
-@signature: {`beforeEditorClose: (id: Id, key: string, subHeaderId?: string) => boolean | void;`}
+@signature: {`beforeEditorClose: (id: Id, key: string, subId?: string) => boolean | void;`}
 
 @params:
 - `id: string | number` - the id of the item
 - `key: string` - the name of the property to be edited
-- `subheaderId: string | undefined` - optional, the id of the edited subheader of a swimlane
+- `subId: string` - optional, the id of the edited subheader of a swimlane
 
 @returns:
 `False` to block closing of the inline editor, otherwise `true`.
