@@ -14,7 +14,7 @@ description: text
 - `events: MouseEvent` - a native HTML event object
 - `lineId: string | number` - the id of a line
 - `titleId: string | number` - the id of a text element of a line
-- `coord: object` - an object with the x and y coordinates of the text element of a line position before movement
+- `coord: object` - an object with the x and y coordinates of the text element position before movement
 
 @returns:
 Return `false` to prevent the text element of a line from being moved; otherwise, `true`.
