@@ -78,11 +78,6 @@ const data = [
 ];
 ~~~
 
-```
-TODO: 
-- (in the HEX, RGBA, RGB, HSL, HSLA formats) <- Относится ко всем свойствам которые ответственные за изменение цвета чего либо
-```
-
 ## Related articles
 
 - [Configuring groups](../../groups/index/)

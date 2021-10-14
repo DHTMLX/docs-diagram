@@ -150,10 +150,6 @@ const data = [
 ];
 ~~~
 
-
-
-
-
 ## Related articles
 
 - [Configuring swimlanes](../../swimlanes/index/)
