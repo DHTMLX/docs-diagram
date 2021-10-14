@@ -58,7 +58,7 @@ const data = [
             textVerticalAlign: "center", // "top", "center", "bottom"
         },
       	// the child items of the group
-        groupChildren: ["1.1", "1.2"],
+        groupChildren: [1.1, 1.2],
         open: false,
     },
   	// configuring shapes to put into the group
@@ -96,6 +96,11 @@ const data = [
 	},
 ];
 ~~~
+
+```
+TODO:
+- Можно показать пример с swimlane + swimlane cell
+```
 
 Check the full list of available properties of a swimlane object in the [API reference](swimlanes/configuration_properties.md).
 
@@ -158,3 +163,7 @@ const diagram2 = new dhx.Diagram("diagram_container");
 diagram2.data.parse(state);
 ~~~
 
+```
+TODO:
+- Не показан вариант когда мы можем импортировать diagram в diagram editor. Это реализовано почти во всех примерах с diagram + diagram editor на странице
+```
