@@ -6,6 +6,13 @@ description: text
 
 # Manipulating Items
 
+```
+TODO:
+- Можно добавить, что для более простой работы с элементами можно воспользоватся редактором диаграм
+- Возможно не хвататет раздела про встроенное редактирование текста у фигур
+- Возможно не хватает раздела про работу с Group/Swimlane (можно что-то взять из статьи к релизу diagram 4.0)
+```
+
 It is easy to manipulate the items of DHTMLX Diagram via the component's API. You can perform a range of operations over items, in particular:
 
 - [add](#adding-an-item)/[update](#updating-an-item)/[delete](#deleting-an-item) items
@@ -34,10 +41,10 @@ To perform the auto-placement, you need to make use of the [](../api/diagram/aut
 const diagram = new dhx.Diagram("diagram_container");
 diagram.data.parse(data);
 
-diagram.autoPlace({ /*!*/
-	mode: "edges", /*!*/
-    graphPadding: 100 /*!*/
-}); /*!*/
+diagram.autoPlace({
+	mode: "edges",
+    graphPadding: 100,
+});
 ~~~
 
 **Related sample:**	[Diagram. Default mode. Autoplacement](https://snippet.dhtmlx.com/f3uekgjw)
@@ -48,7 +55,7 @@ In case you don't pass the parameter to the method, the default settings will be
 const diagram = new dhx.Diagram("diagram_container");
 diagram.data.parse(data);
 
-diagram.autoPlace(); /*!*/
+diagram.autoPlace();
 ~~~
 
 There is also the ability to configure settings for the auto-placement by using the [](../api/diagram/autoplacement_property.md) configuration option of Diagram and applying the **autoPlace()** method.
