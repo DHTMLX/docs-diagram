@@ -6,6 +6,8 @@ description: text
 
 # Shape properties
 
+{{note While specifying color values of the item, you can use the following formats: HEX, RGBA, RGB, HSL, or HSLA.}}
+
 ## Common properties
 
 - **type** - (*string*) the type of the shape (by default: "card" in the org chart mode, "topic" in the mindmap mode);
@@ -17,11 +19,26 @@ description: text
 - **height** - (*number*) the height of a shape;
 - **width** - (*number*) the width of a shape;
 - **fixed** - (*boolean*) enables/disables movement and resizing of a shape, *false* by default;
-- **hidden** - (*boolean*) defines, whether a shape will be hidden;
+- **hidden** - (*boolean*) defines, whether a shape will be hidden.
+
+{{note The values of the **height** and **width** are calculated automatically for a "text"/"topic" shape, depending on the content of the shape.}}
 
 ## Custom properties
 
 - **[key: string]** - (*any*) a custom property for a custom shape. For details, check the [Custom shape](../custom_shape/) article. <br>*Use unique names as names for custom properties. Overriding the internal properties of the diagram shape object is forbidden as it causes the incorrect work of the diagram and its editor.*
+
+~~~js
+const data = [
+    {
+        "id": "main",
+        "name": "Kristin Mccoy",
+        "post": "Medical director",
+        "phone": "(405) 555-0128",
+        "mail": "kmccoy@gmail.com",
+        "photo": "../img/avatar-01.jpg"
+    },
+]
+~~~
 
 ## Properties specific for the default mode
 
@@ -33,13 +50,34 @@ description: text
   - **gap** - (*number | string*) sets the value of the [](../api/editor/gappreview_property.md) property for the specified type of a shape;
   - **scale** - (*number*) sets the value of the [](../api/editor/scalepreview_property.md) property for the specified type of a shape. It can't be applied together with the **img**, **width**, **height** properties.
 
+~~~js
+const data = [
+    { id: 1, x: 280, y: 0, text: "Start", type: "start", angle: 10 },
+];
+~~~
+
 ## Properties specific for the org chart mode
 
 - **parent** - (*string | number*) the id of the parent shape;
 - **dx** - (*number*) the left offset of the shape;
 - **dy** - (*number*) the top offset of the shape;
 - **dir** - (*string*) the direction of shapes connecting. To connect shapes vertically, set the attribute to the "vertical" value;<br>**Related samples**: [Diagram. Org chart mode. Nested vertical lists](https://snippet.dhtmlx.com/98tzmzpg)
-- **open** - (*boolean*) defines, whether the child items of the current shape will be shown. *True* by default;
+- **open** - (*boolean*) defines, whether the child items of the current shape will be shown. *True* by default.
+
+~~~js
+const data = [
+    {
+        "id": 1,
+        "text": "item: 1",
+    },
+    {
+        "id": 2,
+        "text": "item: 2",
+        "parent": 1,
+        "dir": "vertical"
+    },
+];
+~~~
 
 ## Properties specific for the mindmap mode
 
@@ -51,7 +89,30 @@ description: text
     - **left** - (*boolean*) shows/hides the child items to the left of the root shape;
     - **right** - (*boolean*) shows/hides the child items to the right of the root shape.
 
-## Properties specific for "topic" and flow chart shapes
+~~~js
+const data = [
+    {
+        id: "1",
+        text: "main",
+        openDir: {
+            left: true,
+            right: false
+        }
+    },
+    {
+        id: "2",
+        text: "2",
+        parent: "1",
+    },
+    {
+        id: "3",
+        text: "3",
+        parent: "1",
+    },
+];
+~~~
+
+## Properties specific for "text", "topic" and flow chart shapes
 
 - **fill** - (*string*) the color of the shape, "#DEDEDE" by default;
 - **stroke** - (*string*) the color of the shape outline, "#DEDEDE" by default;
@@ -64,16 +125,75 @@ description: text
 - **fontSize** - (*number*) the size of the font in pixels, 14 by default;
 - **textAlign** - (*string*) the alignment of text in a shape:"left","center"(default),"right";
 - **textVerticalAlign** - (*string*) the vertical alignment of text in a shape:"top","center"(default),"bottom";
-- **lineHeight** - (*number*) the height of a line, 14 by default;
+- **lineHeight** - (*number*) the height of a line, 14 by default.
+
+~~~js
+const data = [
+    {
+        "id": "u1585139915192",
+        "type": "text",
+        "x": 25,
+        "y": 280,
+        "text": "Investment decision",
+        "width": 150,
+        "height": 16,
+        "lineHeight": 14,
+        "fontSize": "16",
+        "fontColor": "rgba(0,0,0,0.70)",
+    },
+];
+~~~
+
+## Properties specific for "card" shapes
+
+- **headerColor** - (*string*) the color of the header of the shape, any CSS legal color value.
+
+~~~js
+const data = [
+    {
+        "id": 1,
+        "type": "card",
+        "text": "item: 1",
+    },
+    {
+        "id": 2,
+        "type": "card",
+        "text": "item: 2",
+        "parent": 1,
+        "headerColor": "#5874CD"
+    },
+];
+~~~
 
 ## Properties specific for "img-card" shapes
 
 - **img** - (*string*) the image of a shape;
 - **title** - (*string*) the title of a shape;
-- **headerColor** - (*string*) the color of the header of the shape, any CSS legal color value;
+- **headerColor** - (*string*) the color of the header of the shape, any CSS legal color value.
 
-```
-TODO:
-- Не нашел базовую фигуру с типом card, для нее уникальным свойством будет headerColor
-- Не нашел базовую фигуру text, она аналогична фигуре topic. При этом для фигур text/topic header/width расчитывается автоматически в зависимости от контента
-```
+~~~js
+const data = [
+    {
+        "id": "1",
+        "type": "img-card",
+        "text": "Chairman & CEO",
+        "title": "Henry Bennett",
+        "img": "../img/avatar-01.png",
+        "headerColor": ""
+    },
+    {
+        "id": "2",
+        "type": "img-card",
+        "text": "QA Lead",
+        "title": "Emma Lynch",
+        "img": "../img/avatar-02.png",
+        "parent": 1,
+        "headerColor": "#5874CD" 
+    },
+];
+~~~
+
+## Related articles
+
+- [Default Shapes](../../shapes/default_shapes/)
+- [Custom Shape](../../shapes/custom_shape/)

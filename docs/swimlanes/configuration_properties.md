@@ -6,6 +6,8 @@ description: text
 
 # Swimlane and Swimlane cell properties
 
+{{note While specifying color values of the item, you can use the following formats: HEX, RGBA, RGB, HSL, or HSLA.}}
+
 ## Properties of a swimlane
 
 A swimlane object can include the following configuration properties:
@@ -21,7 +23,7 @@ A swimlane object can include the following configuration properties:
 - **open** - (*boolean*) defines whether the swimlane is initialized in the expanded (*true*, default) or collapsed(*false*) state; works when a **header** with the **closable** attribute is initialized;
 - **style** - (*object*) an object with the style settings of the swimlane. The object can contain the following attributes:
   - **strokeWidth** - (*number*) the width of the swimlane border, 1 by default;
-  - **stroke** - (*string*) the color of the border of the swimlane (in the HEX, RGBA, RGB, HSL, HSLA formats), "#DEDEDE" by default;
+  - **stroke** - (*string*) the color of the border of the swimlane, "#DEDEDE" by default;
   - **fill** - (*string*) the background color for all cells of the swimlane;
 - **header** - (*object*) an object with configuration attributes of the header of the swimlane. The attributes are:
   - **height** - (*number*) the height of the header, 40 by default;
@@ -71,6 +73,34 @@ A swimlane object can include the following configuration properties:
   - the other attributes of **subHeaderCols** are the same as the attributes of **subHeaderRows** (check the details above);
 - **[key: string]: any**  - your own property with your own logic to be implemented under the hood.
 
+### Example
+
+~~~js
+const data = [
+    {
+		"id": "main",
+		"type": "$swimlane",
+		"height": 730,
+		"width": 1195,
+		"header": {
+			"closable": true,
+			"text": "Waterfall diagram template"
+		},
+		"layout": [
+			[1, 2, 3, 4]
+		],
+		"subHeaderCols": {
+			"headers": [
+				{ "text": "September", "fill": "rgba(243, 92, 79, 0.4)" },
+				{ "text": "October", "fill": "rgba(155, 96, 248, 0.4)" },
+				{ "text": "November", "fill": "rgba(255, 174, 18, 0.4)" },
+				{ "text": "December", "fill": "rgba(60, 201, 122, 0.4)" }
+			]
+		}
+	},
+];
+~~~
+
 ## Properties of a swimlane cell
 
 The configuration properties of a swimlane cell are given below:
@@ -88,7 +118,42 @@ The configuration properties of a swimlane cell are given below:
       - *"boundNoBorderExtension"* - the user can move an item into the cell but cannot drag the item outside the cell if the item has been dropped inside the cell. The item won't expand the borders of the cell when trying to drag the item outside the cell;
   - **padding** - (*number*) defines the padding between the cell and the edge of the item when moving the item inside the cell. <br> The attribute is available if *groupBehavior: "boundNoBorderExtension"*.
 
-```
-TODO: 
-- (in the HEX, RGBA, RGB, HSL, HSLA formats) <- Относится ко всем свойствам которые ответственные за изменение цвета чего либо
-```
+### Example
+
+~~~js
+const data = [
+    // configuring a swimlane
+    {
+		"id": "main",
+		"type": "$swimlane",
+		"height": 730,
+		"width": 1195,
+		"layout": [
+			[1, 2, 3, 4]
+		],
+    },
+    // configuring a cell of the swimlane
+    {
+		"id": 1,
+		"type": "$sgroup",
+		"groupChildren": ["s1"],
+		"style": {
+			"fill": "rgba(243, 92, 79, 0.05)"
+		},
+		"x": 0,
+		"y": 80
+	},
+    // configuring a shape to put into the cell
+    {
+		"id": "s1", "type": "end", "text": "Step 1", "x": 20, "y": 110
+	},
+];
+~~~
+
+
+
+
+
+## Related articles
+
+- [Configuring swimlanes](../../swimlanes/index/)
