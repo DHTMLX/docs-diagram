@@ -24,7 +24,6 @@ This value will be applied, if the configuration object of the shape doesn't con
 
 ```
 TODO:
-- Примечание ниже (удалено) не соответствует действительности
 - defaultShapeType работает для всех типов диаграм идентично
 - По умолчанию, для default mode it's type "rectangle" (diagram 4.1), for mindmap mode it's type "topic", for org mode it's type "card"
 ```

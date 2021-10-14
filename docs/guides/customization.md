@@ -1,15 +1,10 @@
 ---
-sidebar_label: Customization
-title: Customization
+sidebar_label: Customizing items
+title: Customizing Items
 description: text
 ---
 
-```
-TODO:
-- Раздел можно переименовать в Customization Items, тут только про кастомизацию элементов описано.
-```
-
-# Customization
+# Customizing Items
 
 You can easily modify the appearance of diagram items by using various configuration properties inside their objects.
 

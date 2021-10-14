@@ -10,25 +10,22 @@ description: text
 
 @signature: {`type?: "default" | "org" | "mindmap";`}
 
-@default: "default"
-
-@example:
-const editor = new dhx.DiagramEditor("editor_container", {
-    type: "default",
-});
-
 @descr:
 
-DHTMLX Diagram Editor can be initialized in one of three modes:
+Diagram Editor can be initialized in one of three modes:
 
-- Use **type:"default"** to initialize the editor in the default mode.
-- Use **type:"org"** to initialize the editor in the org chart mode.
-- Use **type:"mindmap"** to initialize the editor in the mindmap mode.
+- **type:"default"** is used to initialize the editor in the default mode:
 
-```
-TODO:
-- Можно добавить ссылки на примеры, либо еще лучше будет добавить на страницу сниппеты с каждым типом диаграмм
-```
+<iframe src="https://snippet.dhtmlx.com/xshe9ut7?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="200"></iframe>
+
+- **type:"org"** is used to initialize the editor in the org chart mode:
+
+<iframe src="https://snippet.dhtmlx.com/og4qm3ja?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="200"></iframe>
+
+- **type:"mindmap"** is used to initialize the editor in the mindmap mode:
+
+<iframe src="https://snippet.dhtmlx.com/lo1vm0e8?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="200"></iframe>
+
 
 #### Related articles
 

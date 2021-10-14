@@ -12,14 +12,9 @@ A swimlane represents a rectangular element of Diagram that consists of cells (o
 
 {{note Swimlanes are available only in the default mode of Diagram/Diagram Editor (type: "default").}}
 
-```
-TODO:
-- Можно добавить больше вставко со снипет тула
-```
+<iframe src="https://snippet.dhtmlx.com/z6x5m3gb?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="700"></iframe>
 
-![](../assets/swimlane.png)
-
-**Related sample:** [Diagram. Default mode. Swimlane template](https://snippet.dhtmlx.com/z6x5m3gb)
+<iframe src="https://snippet.dhtmlx.com/k5vlvj8i?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="700"></iframe>
 
 Swimlanes will help you to visualize any process (be it a business process, manufacturing or service one, and any other processes) or its separate parts from start to finish.
 
