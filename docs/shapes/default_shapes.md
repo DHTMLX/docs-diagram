@@ -61,9 +61,6 @@ diagram.data.parse(data);
 
 This value will be applied, if the configuration object of the shape doesn't contain the `type` property.
 
-{{note In the org and mindmap modes of Diagram, the type of child shapes will be the same as the type of the parent shapes.
-}}
-
 Arrangement of shapes in the mindmap mode of Diagram
 --------------------
 
@@ -76,6 +73,11 @@ The property allows you:
 
 - [to set the direction for all child shapes at once](#setting-direction-for-all-child-shapes);
 - [to specify individual direction for specific child shapes](#setting-direction-for-individual-child-shape).
+
+```
+TODO:
+- То, что ниже, не относится к этому разделу. Рекомендовано переместить в раздел конфигурации диаграмм
+```
 
 ### Setting direction for all child shapes
 
