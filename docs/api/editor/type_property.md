@@ -8,11 +8,9 @@ description: text
 
 @short: specifies the mode of the diagram editor
 
-@signature: {`type?: DiagramType;`}
+@signature: {`type?: "default" | "org" | "mindmap";`}
 
 @default: "default"
-
-@values: "default", "org", "mindmap"
 
 @example:
 const editor = new dhx.DiagramEditor("editor_container", {

@@ -53,11 +53,6 @@ If you don't apply the **typeConfig** property, the child shapes will be arrange
 - [Diagram. Mindmap mode. Direction ("left" | "right")](https://snippet.dhtmlx.com/pzllujx3)
 - [Diagram. Mindmap mode. Custom sides](https://snippet.dhtmlx.com/atto9ckg)
 
-
-
-
-
-
 @changelog: added in v3.1.
 
 @descr:

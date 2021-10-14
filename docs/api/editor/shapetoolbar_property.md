@@ -10,17 +10,29 @@ description: text
 
 @signature: {`shapeToolbar: boolean | DefaultShapeToolbar;`}
 
-@example:
+@descr:
+
+The property can be set either as a **boolean** value:
+
+~~~js
+const editor = new dhx.DiagramEditor("editor_container", {
+    type: "org",
+    shapeToolbar: false, // true by default
+});
+~~~
+
+or as an **array**:
+
+~~~js
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "org",
     shapeToolbar: ["add", "remove", {id: "info", content:"<i class='dxi dxi-download'></i>"}],
 });
-
-@descr:
+~~~
 
 **Relate sample**: [Diagram. Diagram editor. Toolbar customization](https://snippet.dhtmlx.com/b2agwets)
 
-The `shapeToolbar` property can be either a **boolean** value or an **array**. The **array** can include:
+The array can include:
 
 - a boolean *true/false* value - to show/hide the default toolbar;
 - string values with the names of the toolbar controls. The sequence the values are put in the array defines the order the controls will be displayed in the toolbar. The available values are:

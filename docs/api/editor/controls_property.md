@@ -6,9 +6,12 @@ description: text
 
 # controls
 
-@short: shows/hides specified controls in the editor
+@short: an object with settings to define which controls should be shown/hidden in the toolbar of the editor
 
 @signature: {`controls?: IEditorControls;`}
+
+@descr:
+The object can contain a set of *control_name:value* pairs where *value* is *true* (by default) or *false*.
 
 @example:
 const editor = new dhx.DiagramEditor("editor_container", {
@@ -24,7 +27,8 @@ const editor = new dhx.DiagramEditor("editor_container", {
 
 @descr:
 
-The object can contain a set of *control_name:value* pairs where *value* is *true* (by default) or *false*. Here are the list of available controls:
+Here is the list of available controls:
+
 - **apply** - (*boolean*) enables the Apply All button
 - **reset** - (*boolean*) enables the Reset Changes button
 - **export** - (*boolean*) enables the Export Data button

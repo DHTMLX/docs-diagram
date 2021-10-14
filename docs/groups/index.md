@@ -56,3 +56,8 @@ diagram.data.parse(data);
 ### Properties
 
 See [the full list of configuration properties of a group object](../configuration_properties/) which allow you to configure the positioning and appearance of the group.
+
+```
+TODO:
+- Не хватает примеров и описания к ним как в релизной статье diagram 4.0
+```

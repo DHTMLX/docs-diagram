@@ -12,6 +12,11 @@ A swimlane represents a rectangular element of Diagram that consists of cells (o
 
 {{note Swimlanes are available only in the default mode of Diagram/Diagram Editor (type: "default").}}
 
+```
+TODO:
+- Можно добавить больше вставко со снипет тула
+```
+
 ![](../assets/swimlane.png)
 
 **Related sample:** [Diagram. Default mode. Swimlane template](https://snippet.dhtmlx.com/z6x5m3gb)

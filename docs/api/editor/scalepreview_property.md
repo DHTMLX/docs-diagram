@@ -12,14 +12,16 @@ description: text
 
 @default: 0.5
 
+@descr:
+
+{{note The property is available only in the default mode of the editor (*type:"default"*).}}
+
 @example:
 const editor = new dhx.DiagramEditor("editor_container", {
     scalePreview: 0.6,
 });
 
 @descr:
-
-{{note The property is available only in the default mode of the editor (*type:"default"*).}}
 
 The value of the property can be redefined for a separate type of a shape via the **scale** attribute of the [preview](../../../shapes/configuration_properties/#properties-specific-for-the-default-mode) property of the shape object:
 

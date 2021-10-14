@@ -4,6 +4,11 @@ title: Customization
 description: text
 ---
 
+```
+TODO:
+- Раздел можно переименовать в Customization Items, тут только про кастомизацию элементов описано.
+```
+
 # Customization
 
 You can easily modify the appearance of diagram items by using various configuration properties inside their objects.
@@ -42,6 +47,11 @@ const defaults = {
 
 ### Styling lines
 
+```
+TODO: 
+- Можно вставить такой пример для линий https://snippet.dhtmlx.com/um7gy2tb (предварительно добавив заголовка в snippet tool)
+```
+
 To change the look of connector lines, use the necessary configuration properties inside the line object:
 
 ~~~js
@@ -64,11 +74,21 @@ const data = [
 
 ## Defining the shape's template
 
+```
+TODO:
+- Я бы добавил примеров с шаблонами такими как https://snippet.dhtmlx.com/8fubjmlz?mode=wide&text=org для org mode и https://snippet.dhtmlx.com/do1jwmw1?mode=wide&text=mindmap for mindmap mode и тоже бы вынес их как вставки snippet tool
+```
+
 You can create a customized diagram by adding new types of shapes into the diagram and defining templates for them. For this purpose, use the [](../api/diagram/addshape_method.md) method of the diagram object.
 
 <iframe src="https://snippet.dhtmlx.com/2tzyfois?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
 ## Styling groups via the configuration properties
+
+```
+TODO:
+- Можно дополнить примерами. При диагональном чтении я потерялся*.
+```
 
 ### Styling the group
 
