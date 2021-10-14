@@ -8,7 +8,10 @@ description: text
 
 Grid area is an area intended for editing diagram.
 
-```todo добавить текст, переделать картинки все (toolbar in org mode + editing shape + group)```
+```
+TODO: 
+- Добавить текст, переделать картинки все (toolbar in org mode + editing shape + group)
+```
 
 ## Managing shapes
 

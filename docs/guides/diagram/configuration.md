@@ -22,8 +22,12 @@ diagram.data.parse(data);
 
 This value will be applied, if the configuration object of the shape doesn't contain the `type` property.
 
-{{note In the org and mindmap modes of Diagram, the type of child shapes will be the same as the type of the parent shapes.
-}}
+```
+TODO:
+- Примечание ниже (удалено) не соответствует действительности
+- defaultShapeType работает для всех типов диаграм идентично
+- По умолчанию, для default mode it's type "rectangle" (diagram 4.1), for mindmap mode it's type "topic", for org mode it's type "card"
+```
 
 ## Setting the default line type
 
@@ -80,6 +84,11 @@ Check [the full list of configuration properties of a shape](../../../shapes/con
 
 Positioning Diagram and shapes
 --------------------
+
+```
+TODO:
+- Добавить примечание, что itemX/itemY только для диаграм type mindmap/org
+```
 
 You can specify the position of a diagram on a page and set margins for shapes inside the [](../../api/diagram/margin_property.md) attribute of the diagram configuration object.
 
@@ -191,6 +200,8 @@ const diagram = new dhx.Diagram("diagram_container", {
 
 You can also define the way of processing the behavior of the diagram during selecting/unselecting of items via [the predefined set of events](../../../api/selection/index/#events).
 
-
-
-
+```
+TODO:
+- На мой взгляд не хватает описания свойства http://localhost:3000/diagramalt/api/diagram/typeconfig_property/ с живыми примерами, а они у нас есть в snippet tool. Можно часть информации взять из релизной статьи к diagram 4.0
+- Нужно в раздел Selecting items добавить пример работы с Selection в режиме default (пример помогу составить).
+```

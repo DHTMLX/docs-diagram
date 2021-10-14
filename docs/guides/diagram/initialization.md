@@ -130,7 +130,7 @@ To change the configuration of a diagram, you can specify the desired property i
 
 ~~~js
 const diagram = new dhx.Diagram("diagram_container", {
-	scale:0.7
+	scale: 0.7
 });
 ~~~
 
