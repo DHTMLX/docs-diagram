@@ -12,14 +12,15 @@ description: text
 
 @default: "6px 8px" (sets 6px gap for the top and bottom sides and 8px gap for the right and left sides)
 
+@descr:
+{{note The property is available only in the default mode of the editor (*type:"default"*).}}
+
 @example:
 const editor = new dhx.DiagramEditor("editor_container", {
     gapPreview: 10
 });
 
 @descr:
-{{note The property is available only in the default mode of the editor (*type:"default"*).}}
-
 The value of the `gapPreview` property can be redefined for a separate shape via the **gap** attribute of the [preview](../../../shapes/configuration_properties/#properties-specific-for-the-default-mode) property of the shape object:
 
 ~~~js

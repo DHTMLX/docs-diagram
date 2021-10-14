@@ -16,7 +16,7 @@ The id of a selected item.
 
 @example:
 
-var id = diagram.selection.getId(); // -> "2"
+const id = diagram.selection.getId(); // -> "2"
 
 @descr:
 

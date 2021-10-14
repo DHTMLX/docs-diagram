@@ -1,6 +1,6 @@
 ---
-sidebar_label: Swimlane API properties
-title: Swimlane API Properties 
+sidebar_label: Swimlane properties
+title: Swimlane Properties 
 description: text
 ---
 
@@ -21,7 +21,7 @@ A swimlane object can include the following configuration properties:
 - **open** - (*boolean*) defines whether the swimlane is initialized in the expanded (*true*, default) or collapsed(*false*) state; works when a **header** with the **closable** attribute is initialized;
 - **style** - (*object*) an object with the style settings of the swimlane. The object can contain the following attributes:
   - **strokeWidth** - (*number*) the width of the swimlane border, 1 by default;
-  - **stroke** - (*string*) the color of the border of the swimlane (in the HEX, RGBA, RGB, XSL formats), "#DEDEDE" by default;
+  - **stroke** - (*string*) the color of the border of the swimlane (in the HEX, RGBA, RGB, HSL, HSLA formats), "#DEDEDE" by default;
   - **fill** - (*string*) the background color for all cells of the swimlane;
 - **header** - (*object*) an object with configuration attributes of the header of the swimlane. The attributes are:
   - **height** - (*number*) the height of the header, 40 by default;
@@ -87,3 +87,8 @@ The configuration properties of a swimlane cell are given below:
       - *"unbound"* (by default) - the user can move an item into or outside the cell;
       - *"boundNoBorderExtension"* - the user can move an item into the cell but cannot drag the item outside the cell if the item has been dropped inside the cell. The item won't expand the borders of the cell when trying to drag the item outside the cell;
   - **padding** - (*number*) defines the padding between the cell and the edge of the item when moving the item inside the cell. <br> The attribute is available if *groupBehavior: "boundNoBorderExtension"*.
+
+```
+TODO: 
+- (in the HEX, RGBA, RGB, HSL, HSLA formats) <- Относится ко всем свойствам которые ответственные за изменение цвета чего либо
+```

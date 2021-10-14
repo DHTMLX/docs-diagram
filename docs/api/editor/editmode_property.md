@@ -6,7 +6,7 @@ description: text
 
 # editMode
 
-@short: hides/shows the panels of the editor
+@short: hides/shows the left/right panels of the editor
 
 @signature: {`editMode?: boolean;`}
 

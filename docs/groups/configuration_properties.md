@@ -1,6 +1,6 @@
 ---
-sidebar_label: Group API properties
-title: Group API Properties 
+sidebar_label: Group properties
+title: Group Properties 
 description: text
 ---
 
@@ -19,7 +19,7 @@ The Diagram groups are not configured automatically. A group object contains a l
 - **fixed** - (*boolean*) enables/disables the ability to move and resize the group; *false* by default;
 - **style** - (*object*) an object with the style settings of the group. The object can contain the following attributes:
   - **strokeWidth** - (*number*) the width of the group border, 1 by default;
-  - **stroke** - (*string*) the color of the border of the group (in the HEX, RGBA, RGB, XSL formats), "#DEDEDE" by default;
+  - **stroke** - (*string*) the color of the border of the group (in the HEX, RGBA, RGB, HSL formats), "#DEDEDE" by default;
   - **fill** - (*string*) the background color of the group;
   - **overFill** - (*string*) the background color of the group when the user is holding the item and moving it into/outside the group *providing that the whole item is inside the group*;
   - **partiallyFill** - (*string*) the background color of the group when the user is holding the item and moving it into/outside the group *providing that a part of the item is out of the group and other settings are not defined via the **exitArea** attribute*;
@@ -47,3 +47,8 @@ The Diagram groups are not configured automatically. A group object contains a l
   - **closable** - (*boolean*) shows/hides an icon intended to expand/collapse a group; *false* by default;
   - **enable** - (*boolean*) shows/hides the header of the group; *true* by default; <br>**Related sample:** [Diagram. Default mode. Group. Header position and text settings](https://snippet.dhtmlx.com/6hunrja8)
 - **[key: string]: any**  - your own property with your own logic to be implemented under the hood.
+
+```
+TODO: 
+- (in the HEX, RGBA, RGB, HSL, HSLA formats) <- Относится ко всем свойствам которые ответственные за изменение цвета чего либо
+```

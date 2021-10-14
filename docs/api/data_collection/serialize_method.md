@@ -14,7 +14,7 @@ description: text
 An array of JSON objects for each item and link from Diagram.
 
 @example:
-var data = diagram.data.serialize();
+const data = diagram.data.serialize();
 
 @descr:
 

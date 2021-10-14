@@ -31,7 +31,7 @@ When the connection mode is enabled for a shape, you can set links to other shap
 
 Double-click the text of a shape to edit it. 
 
-### Interface elements in the org mode
+### Interface elements in the org chart mode
 
 You can drag shapes to place them on the desired positions relative to the root shape, or drag the root shape to move the whole diagram.
 

@@ -104,7 +104,7 @@ By default, all css styles included to the Diagram page are sent to the export s
 To avoid this problem, you can reduce the size of the exported data. For example, setting the [](../api/diagram/exportstyles_property.md) configuration property of the Diagram object to *false* will prevent all styles from being sent to the export service:
 
 ~~~js
-var diagram = new dhx.Diagram("diagram_container", { 
+const diagram = new dhx.Diagram("diagram_container", { 
   	exportStyles: false
 });
 ~~~
@@ -112,7 +112,7 @@ var diagram = new dhx.Diagram("diagram_container", {
 The alternative way is to define a set of styles that you want to be exported. For that, you need to set string values with the absolute paths to the desired styles to the **exportStyles** array:
 
 ~~~js
-var diagram = new dhx.Diagram("diagram_container", { 
+const diagram = new dhx.Diagram("diagram_container", { 
   	exportStyles:[
         "https://mySite.com/exportStyle.css",
         "https://mySite.com/secondExportStyle.css"

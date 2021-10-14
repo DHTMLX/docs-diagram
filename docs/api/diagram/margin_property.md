@@ -6,12 +6,22 @@ description: text
 
 # margin
 
-@short: margins for positioning items in the diagram
+@short: An object with settings of margins for positioning items in the diagram
 
 @signature: {`margin?: IMarginConfig;`}
 
+@descr:
+#### Object properties:
+
+- **itemX** - horizontal space between two shapes
+- **itemY** - vertical space between two shapes
+- **x** - horizontal space between the start of a diagram and the first item
+- **y** - vertical space between the start of a diagram and the first item
+
+{{note The property works only in the org chart mode of Diagram.}}
+
 @example:
-var diagram = new dhx.Diagram("diagram_container", {
+const diagram = new dhx.Diagram("diagram_container", {
     type: "org", 
     margin: {
         x: 20, y: 20,
@@ -21,15 +31,6 @@ var diagram = new dhx.Diagram("diagram_container", {
 
 @descr:
 **Related sample:** [Diagram. Org chart mode. Margin between shapes](https://snippet.dhtmlx.com/bwe9vm6i)
-
-{{note The property works only in the org mode of Diagram.}}
-
-The `margin` object can contain the following properties:
-
-- **itemX** - horizontal space between two shapes
-- **itemY** - vertical space between two shapes
-- **x** - horizontal space between the start of a diagram and the first item
-- **y** - vertical space between the start of a diagram and the first item
 
 The default values of margins are:
 

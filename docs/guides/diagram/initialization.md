@@ -10,7 +10,6 @@ In this article we will discuss the stages of adding DHTMLX Diagram on a page. T
 
 - [Download the DHTMLX Diagram package](https://dhtmlx.com/docs/products/dhtmlxDiagram/download.shtml) and unpack it into a folder of your project
 - [Include the DHTMLX Diagram source files on a page](#including-required-code-files).
-- [Create a container to place the Diagram into](#creating-a-container).
 - [Initialize the Diagram with the object constructor](#initializing-diagram).
 - [Load data into the Diagram](#loading-data-into-diagram).
 
@@ -72,35 +71,57 @@ The structure of DHTMLX Diagram package is the following:
 - **samples** - the code samples;
 - **codebase** - the packed code files of the library. These files are much smaller and intended for use in production. **In your apps you need to use files from this folder**.
 
-Creating a container
----------------------
-
-It's high time to add an HTML container for our diagram. Let's give it the id "diagram_container":
-
-~~~html
-<div id="diagram_container"></div>
-~~~
 
 Initializing Diagram
 ----------------
 
-To initialize DHTMLX Diagram, you should use the `dhx.Diagram` constructor. The constructor function takes two parameters:
+You can initialize a Diagram in a container, in the document body, or in a layout cell.
 
-- a container to place a Diagram into. The one we have created at the previous step.
+### Initialization in a container
+
+To initialize a diagram in a container, use the `dhx.Diagram` constructor and pass the following two parameters to the constructor function:
+
+- a container to place a Diagram into, let's give it the id "diagram_container":
+
+~~~html title="index.html"
+<div id="diagram_container"></div>
+~~~
+
 - an object with [configuration properties](#configuration-properties). If this argument is not passed to the constructor, the settings will be default.
 
-~~~js
+~~~js title="index.js"
 const diagram = new dhx.Diagram("diagram_container", {
 	type: "default" // "default" | "org" | "mindmap"
 });
 ~~~
 
-It is also possible to skip setting a container for Diagram and to add it right into the document's body:
+### Initialization in the document body
+
+It is possible to skip setting a container for Diagram and to add it right into the document's body:
 
 ~~~js
 const diagram = new dhx.Diagram(document.body, {
 	type: "default" // "default" | "org" | "mindmap"
 });
+~~~
+
+### Initialization in a layout cell
+
+You can also initialize a diagram inside [a Layout cell](https://docs.dhtmlx.com/suite/layout/index/). In this case use *null* instead of a container:
+
+~~~js
+const diagram = new dhx.Diagram(null, {
+	type: "default" // "default" | "org" | "mindmap"
+});
+const layout = new dhx.Layout("layout", {
+    cols: [
+        {
+            id: "diagram"
+        },
+    ]
+});
+
+layout.getCell("diagram").attach(diagram);
 ~~~
 
 ### Configuration properties

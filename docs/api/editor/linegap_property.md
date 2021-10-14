@@ -12,14 +12,16 @@ description: text
 
 @default: 10
 
-@example:
-const editor = new dhx.DiagramEditor("editor_container", {
-    lineGap: 5
-});
-
 @descr:
 
 {{note The property is available only in the default mode of the editor (*type:"default"*). The property does not work if you use groups or swimlanes.}}
+
+@example:
+const editor = new dhx.DiagramEditor("editor_container", {
+    lineGap: 50
+});
+
+@descr:
 
 The result of applying the **lineGap** property is shown in the image below:
 

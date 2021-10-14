@@ -342,6 +342,14 @@ module.exports = {
       // Diagram Items
       {
         type: "category",
+        label: "Diagram",
+        items: [
+          "guides/diagram/initialization",
+          "guides/diagram/configuration",
+        ],
+      },
+      {
+        type: "category",
         label: "Diagram items",
         items: [
           // Shapes
@@ -378,14 +386,6 @@ module.exports = {
             ],
           },
         ]
-      },
-      {
-        type: "category",
-        label: "Diagram",
-        items: [
-          "guides/diagram/initialization",
-          "guides/diagram/configuration",
-        ],
       },
       {
         type: "category",

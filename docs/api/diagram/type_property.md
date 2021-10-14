@@ -13,7 +13,7 @@ description: text
 @default: "default"
 
 @example:
-var diagram = new dhx.Diagram("diagram_container", { 
+const diagram = new dhx.Diagram("diagram_container", { 
     type:"org"
 });
 
@@ -22,7 +22,7 @@ var diagram = new dhx.Diagram("diagram_container", {
 DHTMLX Diagram can be initialized in one of three modes:
 
 - Use **type:"default"** to initialize a Diagram in the default mode.
-- Use **type:"org"** to initialize a Diagram in the org mode. 
+- Use **type:"org"** to initialize a Diagram in the org chart mode. 
 - Use **type:"mindmap"** to initialize a Diagram in the mindmap mode. 
 
 

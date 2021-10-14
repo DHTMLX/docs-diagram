@@ -15,7 +15,7 @@ description: text
 - `subId: string | number | undefined` - optional, the id of the edited subheader of a swimlane or a text element of a line
 
 @example:
-var diagram = new dhx.Diagram("diagram_container", { 
+const diagram = new dhx.Diagram("diagram_container", { 
     type: "org", 
     select: true        
 });

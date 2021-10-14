@@ -15,7 +15,7 @@ An object which stores positions of scrolls.
 
 @example:
 
-var state = diagram.getScrollState();
+const state = diagram.getScrollState();
 // diagram.scrollTo( state.x, state.y );
 
 @relatedsample:

@@ -15,7 +15,7 @@ description: text
 - `event: MouseEvent` - a native HTML event object
 
 @example:
-var diagram = new dhx.Diagram("diagram_container", { 
+const diagram = new dhx.Diagram("diagram_container", { 
 	toolbar: [
       {
 		id:"download",
@@ -29,7 +29,7 @@ var diagram = new dhx.Diagram("diagram_container", {
 });
 
 diagram.events.on("shapeIconClick", function(icon){
-	var id = diagram.selection.getId();
+	const id = diagram.selection.getId();
 	alert(icon + " was clicked for id = " + id);
 });
 
