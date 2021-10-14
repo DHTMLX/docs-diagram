@@ -19,9 +19,9 @@ DHTMLX Diagram takes data in the JSON format. It is an array that contains a set
 
 ~~~js
 const data = [
-	{ "id": "start", "x": 200, "y": 0, "text": "Start", "type": "start" },
-    { "id": 1, "x": 200, "y": 120, "text": "Call Client and \n set-up Appointment", "type": "process" },
-    { "id": 2, "x": 200, "y": 240, "text": "Decision", "type": "decision" },
+	{ "id": 1, "x": 200, "y": 0, "text": "Start", "type": "start" },
+    { "id": 2, "x": 200, "y": 120, "text": "Call Client and \n set-up Appointment", "type": "process" },
+    { "id": 3, "x": 200, "y": 240, "text": "Decision", "type": "decision" },
 ];
 ~~~
 
@@ -33,7 +33,7 @@ Besides, you may create [your own type of shapes](../../shapes/custom_shape/) an
 ~~~js
 const data = [
     { "id": "1-2", "from": "1", "to": "2", "type": "dash" },
-    { "id": "1-3", "from": "1", "to": "3", "type": "line" },
+    { "id": "2-3", "from": "2", "to": "3", "type": "line" },
 ];
 ~~~
 
