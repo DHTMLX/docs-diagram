@@ -236,8 +236,8 @@ The API structure was totally reorganized and improved to simplify work with it.
 
 - Ability to create different diagrams and stylize them
 - Variety of [shapes](../shapes/default_shapes/) and [lines](../lines/index/)
-- [Export to PDF format](../guides/data_export/#exporting-diagram-to-pdf)
-- [Export to PNG format](../guides/data_export/#exporting-diagram-to-png)
+- [Export to PDF format](../guides/data_export/)
+- [Export to PNG format](../guides/data_export/)
 
 ### Updates
 

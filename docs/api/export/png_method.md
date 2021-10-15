@@ -32,6 +32,8 @@ diagram.export.png({
 
 {{note To avoid problems during export, all images for Diagram shapes must be set either in base64 format or via an absolute URL.}}
 
+### Object properties
+
 You can specify the following settings for export to PNG:
 
 - **type** - (*string*) specifies the file type, can be either jpeg or png (default);

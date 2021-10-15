@@ -22,12 +22,10 @@ diagram.data.parse(data);
 
 This value will be applied, if the configuration object of the shape doesn't contain the `type` property.
 
-```
-TODO:
-- Примечание ниже (удалено) не соответствует действительности
-- defaultShapeType работает для всех типов диаграм идентично
-- По умолчанию, для default mode it's type "rectangle" (diagram 4.1), for mindmap mode it's type "topic", for org mode it's type "card"
-```
+By default, the default types for all shapes are:
+
+- *"card"*  - for the diagram in the default or org chart mode;
+- *"topic"* - for the diagram in the mindmap mode.
 
 ## Setting the default line type
 
@@ -85,17 +83,12 @@ Check [the full list of configuration properties of a shape](../../../shapes/con
 Positioning Diagram and shapes
 --------------------
 
-```
-TODO:
-- Добавить примечание, что itemX/itemY только для диаграм type mindmap/org
-```
-
 You can specify the position of a diagram on a page and set margins for shapes inside the [](../../api/diagram/margin_property.md) attribute of the diagram configuration object.
 
 The margin object contains a set of properties: 
 
-- **itemX** - horizontal space between two shapes
-- **itemY** - vertical space between two shapes
+- **itemX** - horizontal space between two shapes (only for [type: "org" | "mindmap"](../../../api/diagram/type_property/))
+- **itemY** - vertical space between two shapes (only for [type: "org" | "mindmap"](../../../api/diagram/type_property/))
 - **x** - horizontal space between the start of a diagram and the first item
 - **y** - vertical space between the start of a diagram and the first item
 
