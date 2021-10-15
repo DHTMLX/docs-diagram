@@ -58,4 +58,4 @@ If you don't apply the **typeConfig** property, the child shapes will be arrange
 @descr:
 #### Related articles
 
-[Arrangement of shapes in the mindmap mode of Diagram](../../../shapes/default_shapes/#arrangement-of-shapes-in-the-mindmap-mode-of-diagram)
+[Arrangement of shapes in the mindmap mode of Diagram](../../../guides/diagram/configuration/#arranging-shapes-in-the-mindmap-mode-of-diagram)

@@ -83,7 +83,7 @@ For example, you can define the height of the header and its position, specify t
 
 Check [the full list of API properties of the group object](../../groups/configuration_properties/).
 
-### The icon for collapsing/expanding a group
+### A header icon
 
 To be able to collapse/expand a group, you need to enable the **closable** attribute of the [header](../../groups/configuration_properties/) property. As a result, an icon, which allows a user to expand/collapse a group, will be added to the header.
 
