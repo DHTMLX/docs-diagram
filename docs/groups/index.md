@@ -60,16 +60,54 @@ See [the full list of configuration properties of a group object](../configurati
 Configuring the group header
 -------------------------------
 
-https://snippet.dhtmlx.com/6hunrja8?mode=wide&text=diagram
+The header of the group is disabled by default. To create a group with the header, you should specify the **header** property in the configuration object of the group.
 
+~~~js
+const data = [
+    {
+        type: "$group", 
+        id: 1, 
+        width: 400,
+        height: 200,
+        x: 0,
+        y: 0,
+        header: {},
+    },
+];
+~~~
+
+The property contains a lot of attributes which allow you to easily adjust the configuration of the group header.
+For example, you can define the height of the header and its position, specify the text for your header and adjust its settings.
+
+<iframe src="https://snippet.dhtmlx.com/6hunrja8?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="470"></iframe>
+
+Check [the full list of API properties of the group object](../../groups/configuration_properties/).
+
+### The icon for collapsing/expanding a group
+
+To be able to collapse/expand a group, you need to enable the **closable** attribute of the [header](../../groups/configuration_properties/) property. As a result, an icon, which allows a user to expand/collapse a group, will be added to the header.
+
+~~~js
+const data = [
+    {
+        type: "$group", 
+        id: 1, 
+        width: 400,
+        height: 200,
+        x: 0,
+        y: 0,
+        header: {
+            text: "Top and collapsed header with tеxt alignment",
+            closable: true,
+        },
+    },
+];
+~~~
+
+You can change the color of the icon via the **iconColor** attribute of the [group object](../../groups/configuration_properties/).
 
 Configuring the behavior of group items
 ---------------------------------
-
-```
-TODO:
-- Не хватает примеров и описания к ним как в релизной статье diagram 4.0
-```
 
 By default, you can drag any child item of the group out of the group and drag it into another group.
 To change the behavior of the group items you need to use the **groupBehavior** and **padding** attributes of the **exitArea** property of the [group object](../../groups/configuration_properties/).
