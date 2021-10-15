@@ -52,21 +52,16 @@ The `parameters` object can contain the following attributes:
 
 While specifying sidebar options for editing custom shapes, you can apply the following values of the **type** property:
 
-```
-TODO:
-- Возможно стоит добавить изображения контролов, как это было в старой версии документации
-```
-
-- **"arrange"** - provides interface for editing the *width*, *height*, *angle*, *x*, *y* properties of a shape. The properties can't be overridden. The type is available only in the default mode of the editor.
-- **"position"** - provides interface for editing either the *x*/*y*, or *dx*/*dy* properties of a shape. The properties can't be overridden.
-- **"size"** - provides interface for editing the *width* and *height* properties of a shape. The properties can't be overridden.
-- **"title"** - provides interface for editing text values of a shape. By default, this type allows editing the *title* property of a shape.
-- **"text"** - provides interface for editing text values of a shape. By default, this type allows editing the *text* property of a shape.
-- **"img"** - provides interface for editing an image of a shape. By default, this type allows editing the *img* property of a shape. 
-- **"fill"** - provides interface for editing color values of a shape. By default, this type allows editing the *fill* property of a shape.
-- **"textProps"** - provides interface for editing the *textAlign*, *lineHeight*, *fontStyle*, *textVerticalAlign*, *fontSize* properties of a shape. The properties can't be overridden. You need to specify all of these properties in the data set for correct work of the **Text** sidebar option.
-- **"strokeProps"** - provides interface for editing the *stroke*, *strokeType*, *strokeWidth* properties of a shape. The properties can't be overridden. You need to specify all of these properties in the data set for correct work of the **Stroke** sidebar option.
-- **"grid"** - provides interface for editing the step of moving a shape. The visibility of the option is adjusted via the **controls** property of the editor.
+- ["arrange"](../../../guides/diagram_editor/right_panel/#arrange) - provides interface for editing the *width*, *height*, *angle*, *x*, *y* properties of a shape. The properties can't be overridden. The type is available only in the default mode of the editor.
+- ["position"](../../../guides/diagram_editor/right_panel/#position) - provides interface for editing either the *x*/*y*, or *dx*/*dy* properties of a shape. The properties can't be overridden.
+- ["size"](../../../guides/diagram_editor/right_panel/#size) - provides interface for editing the *width* and *height* properties of a shape. The properties can't be overridden.
+- ["title"](../../../guides/diagram_editor/right_panel/#title) - provides interface for editing text values of a shape. By default, this type allows editing the *title* property of a shape.
+- ["text"](../../../guides/diagram_editor/right_panel/#text) - provides interface for editing text values of a shape. By default, this type allows editing the *text* property of a shape.
+- ["img"](../../../guides/diagram_editor/right_panel/#image) - provides interface for editing an image of a shape. By default, this type allows editing the *img* property of a shape. 
+- ["fill"](../../../guides/diagram_editor/right_panel/#fill) - provides interface for editing color values of a shape. By default, this type allows editing the *fill* property of a shape.
+- ["textProps"](../../../guides/diagram_editor/right_panel/#text-settings) - provides interface for editing the *textAlign*, *lineHeight*, *fontStyle*, *textVerticalAlign*, *fontSize* properties of a shape. The properties can't be overridden. You need to specify all of these properties in the data set for correct work of the **Text** sidebar option.
+- ["strokeProps"](../../../guides/diagram_editor/right_panel/#stroke) - provides interface for editing the *stroke*, *strokeType*, *strokeWidth* properties of a shape. The properties can't be overridden. You need to specify all of these properties in the data set for correct work of the **Stroke** sidebar option.
+- ["grid"](../../../guides/diagram_editor/right_panel/#grid-step) - provides interface for editing the step of moving a shape. The visibility of the option is adjusted via the **controls** property of the editor.
 
 ## Formats of the shape template
 

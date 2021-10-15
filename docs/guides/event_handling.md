@@ -26,11 +26,9 @@ You can attach several handlers to the same event and all of them will be execut
 To detach events, use **diagram.events.detach()** method:
 
 ~~~js
-diagram.events.on("ShapeClick", function(id) {
-    alert("You've just clicked an item with id=" + id);
-});
+diagram.events.on("CustomEvent", args);
  
-diagram.events.detach("ShapeClick");
+diagram.events.detach("CustomEvent");
 ~~~
 
 ## Calling events
@@ -48,11 +46,13 @@ Normally, events are called automatically and you don't need to use this method.
 
 ### Diagram events
 
-Check the full list of Diagram events in the [API Reference](../../api/diagram/api_overview/#diagram-events). 
+Check the full list of the Diagram API events in the [API Reference](../../api/diagram/api_overview/#diagram-events). 
 
 ### Editor events
 
-The list of events of the Diagram Editor object is given in the [API section](../../api/editor/api_overview/#editor-events).
+The list of the Diagram editor API events is given in the [API section](../../api/editor/api_overview/#editor-events).
+
+#### Note
 
 In addition to the events of the Diagram editor, you may also apply [events of the diagram object](../../api/diagram/api_overview/#diagram-events) while working in the editor view. For example:
 
@@ -61,3 +61,23 @@ editor.diagram.events.on("ShapeClick", function(id) {
     alert("You've just clicked an item with id=" + id);
 });
 ~~~
+
+This way can be also used if you need to apply the events mentioned below in the editor view.
+
+### Cell manager events
+
+Check the full list of the Cell manager API events in the [API Reference](../../api/cell_manager/index/#events). 
+
+### DataCollection events
+
+Check the full list of the DataCollection API events in the [API Reference](../../api/data_collection/index/#events).
+
+### Inline editor events
+
+Check the full list of the Inline editor API events in the [API Reference](../../api/inline_editor/index/#events).
+
+### Selection events
+
+Check the full list of the Selection API events in the [API Reference](../../api/selection/index/#events).
+
+
