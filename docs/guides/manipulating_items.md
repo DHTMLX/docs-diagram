@@ -203,7 +203,7 @@ It is also possible to get the object of a selected item using the [](../api/sel
 const item = diagram.selection.getItem();
 ~~~
 
-**Related sample:** [Diagram. Selection. Item selection](https://snippet.dhtmlx.com/jyoxn5h7)
+**Related sample:** [Diagram. Org chart mode. Item selection](https://snippet.dhtmlx.com/jyoxn5h7)
 
 Expanding/collapsing items
 ---------------------

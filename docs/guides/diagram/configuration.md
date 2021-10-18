@@ -207,20 +207,14 @@ The toolbar is set as an array of icons objects. Each icon object can have the f
 Selecting items
 -------------
 
-It is possible to activate selection of items in a diagram. You need to make use of the [](../../api/diagram/select_property.md) attribute of the diagram config object:
+It is possible to activate selection of items in a diagram. You need to make use of the [](../../api/diagram/select_property.md) attribute of the diagram config object.
 
-~~~js 
-const diagram = new dhx.Diagram("diagram_container", { 
-	type: "org", 
-    select: true
-});
-~~~
+### Example in the org chart mode
 
-**Related sample:** [Diagram. Selection. Item selection](https://snippet.dhtmlx.com/jyoxn5h7)
+<iframe src="https://snippet.dhtmlx.com/jyoxn5h7?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="200"></iframe>
 
-You can also define the way of processing the behavior of the diagram during selecting/unselecting of items via [the predefined set of events](../../../api/selection/index/#events).
+### Example in the default mode
 
-```
-TODO:
-- Нужно в раздел Selecting items добавить пример работы с Selection в режиме default (пример помогу составить).
-```
+<iframe src="https://snippet.dhtmlx.com/tcny4obw?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="300"></iframe>
+
+{{note [The predefined set of events](../../../api/selection/index/#events) of the selection object can help you to define the way of processing the behavior of the diagram during selecting/unselecting items.}}
