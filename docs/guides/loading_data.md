@@ -178,7 +178,7 @@ diagram2.data.parse(state);
 Importing data into the editor
 -------------------------------------
 
-When you use a diagram together with an editor, you can import data from the diagram into the editor via the [](../api/editor/import_method.md) method of the data object:
+When you use a diagram together with an editor, you can import data from the diagram into the editor via the [](../api/editor/import_method.md) method of the editor object:
 
 ~~~js
 function runEditor() {
