@@ -12,12 +12,12 @@ description: text
 
 @params:
 - `id: string | number` - the item id
-- `subId: string | number | undefined` - optional, the id of the edited subheader of a swimlane or a text element of a line
+- `subId: string | number | undefined` - optional, the id of a subheader of a swimlane or a text element of a line
 
 @example:
-const diagram = new dhx.Diagram("diagram_container", { 
-    type: "org", 
-    select: true        
+const diagram = new dhx.Diagram("diagram_container", {
+    type: "org",
+    select: true
 });
 
 diagram.events.on("AfterUnSelect", function (id) {

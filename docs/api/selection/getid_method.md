@@ -6,13 +6,13 @@ description: text
 
 # getId()
 
-@short: returns the id of a selected item
+@short: returns the id of the selected item
 
 @signature: {`getId(): Id;`}
 
 @returns:
 
-The id of a selected item.
+The id of the selected item.
 
 @example:
 

@@ -8,7 +8,7 @@ description: text
 
 @short: fires when a pointing device button is pressed while the pointer is over a text element of a line
 
-@signature: {`lineTitleMouseDown]: ( lineId: Id, titleId: Id, event: MouseEvent) => void;`}
+@signature: {`lineTitleMouseDown: ( lineId: Id, titleId: Id, event: MouseEvent) => void;`}
 
 @params:
 - `lineId: string | number` - the id of a line

@@ -12,7 +12,7 @@ description: text
 
 @params:
 - `id: string | number` - optional, the item id
-- `subId: string | number` - optional, the id of a text element of a line
+- `subId: string | number` - optional, the id of a subheader of a swimlane or a text element of a line
 
 @returns:
 `True` if the item is unselected, otherwise `false`.
@@ -22,7 +22,7 @@ diagram.selection.remove("1"); // -> true
 diagram.paint();
 
 @descr:
-**Related samples**: 
+**Related samples**:
 
 - [Diagram. Org chart mode. Item selection](https://snippet.dhtmlx.com/jyoxn5h7)
 - [Diagram. Default mode. Item selection](https://snippet.dhtmlx.com/tcny4obw)

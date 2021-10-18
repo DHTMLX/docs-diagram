@@ -6,13 +6,13 @@ description: text
 
 # getSubId()
 
-@short: returns the subId (if any) of a selected item
+@short: returns the subId (if any) of the selected item
 
 @signature: {`getSubId(): Id;`}
 
 @returns:
 
-The subId (if any) of a selected item.
+The subId (if any) of the selected item.
 
 @example:
 
