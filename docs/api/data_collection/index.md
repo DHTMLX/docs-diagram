@@ -6,7 +6,7 @@ description: text
 
 # DataCollection overview
 
-A set of APIs that allow you to work with data of a diagram. The API can be used as in the diagram as in the editor.
+A set of APIs that allow you to work with data of a diagram. The API can be used both in the diagram and in the editor.
 
 ## Methods
 

@@ -211,7 +211,7 @@ It is also possible to get the object of a selected item using the [](../api/sel
 const item = diagram.selection.getItem();
 ~~~
 
-**Related sample:** [Diagram. Selection. Item selection](https://snippet.dhtmlx.com/jyoxn5h7)
+**Related sample:** [Diagram. Org chart mode. Item selection](https://snippet.dhtmlx.com/jyoxn5h7)
 
 Expanding/collapsing items
 ---------------------
@@ -256,7 +256,7 @@ diagram.showItem("2.1");
 
 **Related sample:**	[Diagram. Scroll content](https://snippet.dhtmlx.com/f970hbym)
 
-You can [read more about scrolling in DHTMLX Diagram](../../guides/scrolling_diagram/).
+You can [read more about scrolling in DHTMLX Diagram](../../guides/diagram/scrolling_diagram/).
 
 Finding the necessary item
 --------------------

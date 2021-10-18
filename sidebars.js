@@ -354,6 +354,7 @@ module.exports = {
         items: [
           "guides/diagram/initialization",
           "guides/diagram/configuration",
+          "guides/diagram/scrolling_diagram",
         ],
       },
       {
@@ -409,8 +410,8 @@ module.exports = {
       },
       "guides/loading_data",
       "guides/manipulating_items",
+      "guides/inline_editing",
       "guides/customization",
-      "guides/scrolling_diagram",
       "guides/data_export",
       "guides/event_handling",
       "guides/localization",

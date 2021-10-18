@@ -80,6 +80,33 @@ The **defaults** object contains a number of *key:value* pairs where *key* is a 
 
 Check [the full list of configuration properties of a shape](../../../shapes/configuration_properties/).
 
+Arranging shapes in the mindmap mode of Diagram
+--------------------
+
+In the mindmap mode of Diagram, the arrangement of child shapes relative to the root shape is defined automatically by the main algorithm. 
+To change the default direction of the child shapes, use the [](../../api/diagram/typeconfig_property.md) configuration property on initialization of the diagram.
+
+{{note The **typeConfig** configuration property is not available in Diagram Editor.}}
+
+The property allows you:
+
+- [to set the direction for all child shapes at once](#setting-direction-for-all-child-shapes);
+- [to specify individual direction for specific child shapes](#setting-direction-for-individual-child-shape).
+
+### Setting direction for all child shapes
+
+To set the child shapes to the right/left of the root shape, use the **direction** attribute of the [](../../api/diagram/typeconfig_property.md) property:
+
+<iframe src="https://snippet.dhtmlx.com/pzllujx3?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="300"></iframe>
+
+### Setting direction for individual child shape
+
+You can set the mandatory direction for specific child shapes via the **side** attribute of the [](../../api/diagram/typeconfig_property.md) property. The attribute is an object that contains a set of *key:value* pairs where *key* is the direction of the shapes (left, right) and *value* is an array with the ids of the shapes.
+
+<iframe src="https://snippet.dhtmlx.com/atto9ckg?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="300"></iframe>
+
+The other child shapes that are not set in the side option will be arranged automatically according to the main algorithm.
+
 Positioning Diagram and shapes
 --------------------
 
@@ -180,21 +207,14 @@ The toolbar is set as an array of icons objects. Each icon object can have the f
 Selecting items
 -------------
 
-It is possible to activate selection of items in a diagram. You need to make use of the [](../../api/diagram/select_property.md) attribute of the diagram config object:
+It is possible to activate selection of items in a diagram. You need to make use of the [](../../api/diagram/select_property.md) attribute of the diagram config object.
 
-~~~js 
-const diagram = new dhx.Diagram("diagram_container", { 
-	type: "org", 
-    select: true
-});
-~~~
+### Example in the org chart mode
 
-**Related sample:** [Diagram. Selection. Item selection](https://snippet.dhtmlx.com/jyoxn5h7)
+<iframe src="https://snippet.dhtmlx.com/jyoxn5h7?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="200"></iframe>
 
-You can also define the way of processing the behavior of the diagram during selecting/unselecting of items via [the predefined set of events](../../../api/selection/index/#events).
+### Example in the default mode
 
-```
-TODO:
-- На мой взгляд не хватает описания свойства http://localhost:3000/diagramalt/api/diagram/typeconfig_property/ с живыми примерами, а они у нас есть в snippet tool. Можно часть информации взять из релизной статьи к diagram 4.0
-- Нужно в раздел Selecting items добавить пример работы с Selection в режиме default (пример помогу составить).
-```
+<iframe src="https://snippet.dhtmlx.com/tcny4obw?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="300"></iframe>
+
+{{note [The predefined set of events](../../../api/selection/index/#events) of the selection object can help you to define the way of processing the behavior of the diagram during selecting/unselecting items.}}

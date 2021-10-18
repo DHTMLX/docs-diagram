@@ -6,7 +6,7 @@ description: text
 
 # Cell Manager overview
 
-The DHTMLX Diagram library provides you with a set of API to manipulate [a swimlane and its cells](../../../swimlanes/index/) dynamically. The API can be used as in the diagram as in the editor.
+The DHTMLX Diagram library provides you with a set of API to manipulate [a swimlane and its cells](../../../swimlanes/index/) dynamically. The API can be used both in the diagram and in the editor.
 
 
 ## Methods

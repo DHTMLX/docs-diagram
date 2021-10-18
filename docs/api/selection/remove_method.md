@@ -22,7 +22,10 @@ diagram.selection.remove("1"); // -> true
 diagram.paint();
 
 @descr:
-**Related sample**: [Diagram. Selection. Item selection](https://snippet.dhtmlx.com/jyoxn5h7)
+**Related samples**: 
+
+- [Diagram. Org chart mode. Item selection](https://snippet.dhtmlx.com/jyoxn5h7)
+- [Diagram. Default mode. Item selection](https://snippet.dhtmlx.com/tcny4obw)
 
 {{note Please note that you need to call the paint() method to repaint the diagram after removing selection.}}
 

@@ -22,4 +22,4 @@ diagram.scrollTo(100, 80);
 
 #### Related articles
 
-[Scrolling Diagram](../../../guides/scrolling_diagram/)
+[Scrolling Diagram](../../../guides/diagram/scrolling_diagram/)
