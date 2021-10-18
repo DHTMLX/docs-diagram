@@ -30,4 +30,4 @@ A resulting object has two properties:
 
 #### Related articles
 
-[Scrolling Diagram](../../../guides/scrolling_diagram/)
+[Scrolling Diagram](../../../guides/diagram/scrolling_diagram/)

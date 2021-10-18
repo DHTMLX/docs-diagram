@@ -248,7 +248,7 @@ diagram.showItem("2.1");
 
 **Related sample:**	[Diagram. Scroll content](https://snippet.dhtmlx.com/f970hbym)
 
-You can [read more about scrolling in DHTMLX Diagram](../../guides/scrolling_diagram/).
+You can [read more about scrolling in DHTMLX Diagram](../../guides/diagram/scrolling_diagram/).
 
 Finding the necessary item
 --------------------
