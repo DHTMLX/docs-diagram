@@ -67,9 +67,9 @@ const data = [
 ];
 ~~~
 
-Check the full list of available properties of a group object in the [API reference](groups/configuration_properties.md).
+Check the full list of the available properties of a group object in the [API reference](groups/configuration_properties.md).
 
-- **swimlane object**
+- **objects of a swimlane and its cell**
 
 ~~~js
 const data = [
@@ -94,15 +94,25 @@ const data = [
 			]
 		}
 	},
+    // configuring a cell of the swimlane
+    {
+		"id": 1,
+		"type": "$sgroup",
+		"groupChildren": ["s1"],
+		"style": {
+			"fill": "rgba(243, 92, 79, 0.05)"
+		},
+		"x": 0,
+		"y": 80
+	},
+    // configuring a shape to put into the cell
+    {
+		"id": "s1", "type": "end", "text": "Step 1", "x": 20, "y": 110
+	},
 ];
 ~~~
 
-```
-TODO:
-- Можно показать пример с swimlane + swimlane cell
-```
-
-Check the full list of available properties of a swimlane object in the [API reference](swimlanes/configuration_properties.md).
+Check the full list of the available configuration properties of the objects of a swimlane and its cells in the [API reference](swimlanes/configuration_properties.md).
 
 External data loading
 -------------------
@@ -136,6 +146,8 @@ diagram.data.parse(data);
 
 **Related sample:** [Diagram. Default mode. Wide flowchart](https://snippet.dhtmlx.com/4d4k3o8p)
 
+### Loading data into the editor
+
 To load a data set into the editor, use the [](../api/editor/parse_method.md) method of the editor.
 
 ~~~js
@@ -163,7 +175,18 @@ const diagram2 = new dhx.Diagram("diagram_container");
 diagram2.data.parse(state);
 ~~~
 
-```
-TODO:
-- Не показан вариант когда мы можем импортировать diagram в diagram editor. Это реализовано почти во всех примерах с diagram + diagram editor на странице
-```
+Importing data into the editor
+-------------------------------------
+
+When you use a diagram together with an editor, you can import data from the diagram into the editor via the [](../api/editor/import_method.md) method of the editor object:
+
+~~~js
+function runEditor() {
+    expand();
+    editor.import(diagram);
+}
+~~~
+
+**Related samples**: [Diagram editor. Org chart mode. Live editor](https://snippet.dhtmlx.com/4d4k3o8p)
+
+The diagram state will be imported into the editor on running the editor.

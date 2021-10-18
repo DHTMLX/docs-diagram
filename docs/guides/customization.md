@@ -42,66 +42,50 @@ const defaults = {
 
 ### Styling lines
 
-```
-TODO: 
-- Можно вставить такой пример для линий https://snippet.dhtmlx.com/um7gy2tb (предварительно добавив заголовка в snippet tool)
-```
-
-To change the look of connector lines, use the necessary configuration properties inside the line object:
+To change the look of connector lines, use the necessary configuration properties inside the line object. 
 
 ~~~js
 const data = [
     {
-        "stroke":"#7D8495",
-        "from": "start",
-        "to": 1,
-        "type": "line",
-        "forwardArrow": "filled",
-        "connectType": "elbow",
-        "fromSide": "bottom",
-        "toSide": "top",
+      id: "1-2",
+      from: "1",
+      to: "2",
+      type: "line",
+      strokeType: "dash",
+      stroke: "red",
     },
-    ...
 ];
 ~~~
 
 [See the full list of line object properties](../../lines/configuration_properties/).
 
-## Defining the shape's template
+Check the example:
 
-```
-TODO:
-- Я бы добавил примеров с шаблонами такими как https://snippet.dhtmlx.com/8fubjmlz?mode=wide&text=org для org mode и https://snippet.dhtmlx.com/do1jwmw1?mode=wide&text=mindmap for mindmap mode и тоже бы вынес их как вставки snippet tool
-```
+<iframe src="https://snippet.dhtmlx.com/um7gy2tb?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="400"></iframe>
+
+## Defining the shape's template
 
 You can create a customized diagram by adding new types of shapes into the diagram and defining templates for them. For this purpose, use the [](../api/diagram/addshape_method.md) method of the diagram object.
 
+### Example in the default mode
+
 <iframe src="https://snippet.dhtmlx.com/2tzyfois?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
-## Styling groups via the configuration properties
+### Example in the org chart mode
 
-```
-TODO:
-- Можно дополнить примерами. При диагональном чтении я потерялся*.
-```
+<iframe src="https://snippet.dhtmlx.com/8fubjmlz?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
+
+### Example in the mindmap mode
+
+<iframe src="https://snippet.dhtmlx.com/do1jwmw1?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
+
+## Styling groups via the configuration properties
 
 ### Styling the group
 
 To specify a custom style for a group, you can use the **style** property of the [group object](../../groups/configuration_properties/). For example:
 
-~~~js
-const data = [
-    {
-        type: "$group", 
-        id: 2, 
-        width: 400, height: 200,
-        x: 420, y: 0,
-		style: {
-			fill: "rgba(243, 92, 79, 0.05)"
-		},
-    },
-];
-~~~
+<iframe src="https://snippet.dhtmlx.com/pdkgis8g?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
 ### Styling the group header
 

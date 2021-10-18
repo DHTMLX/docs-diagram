@@ -60,35 +60,3 @@ diagram.data.parse(data);
 ~~~
 
 This value will be applied, if the configuration object of the shape doesn't contain the `type` property.
-
-Arrangement of shapes in the mindmap mode of Diagram
---------------------
-
-In the `mindmap` mode of Diagram, the arrangement of child shapes relative to the root shape is defined automatically by the main algorithm. 
-To change the default direction of the child shapes, use the [](../api/diagram/typeconfig_property.md) configuration property on initialization of the diagram.
-
-{{note The **typeConfig** configuration property is not available in Diagram Editor.}}
-
-The property allows you:
-
-- [to set the direction for all child shapes at once](#setting-direction-for-all-child-shapes);
-- [to specify individual direction for specific child shapes](#setting-direction-for-individual-child-shape).
-
-```
-TODO:
-- То, что ниже, не относится к этому разделу. Рекомендовано переместить в раздел конфигурации диаграмм
-```
-
-### Setting direction for all child shapes
-
-To set the child shapes to the right/left of the root shape, use the **direction** attribute of the [](../api/diagram/typeconfig_property.md) property:
-
-<iframe src="https://snippet.dhtmlx.com/pzllujx3?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="300"></iframe>
-
-### Setting direction for individual child shape
-
-You can set the mandatory direction for specific child shapes via the **side** attribute of the [](../api/diagram/typeconfig_property.md) property. The attribute is an object that contains a set of *key:value* pairs where *key* is the direction of the shapes (left, right) and *value* is an array with the ids of the shapes.
-
-<iframe src="https://snippet.dhtmlx.com/atto9ckg?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="300"></iframe>
-
-The other child shapes that are not set in the side option will be arranged automatically according to the main algorithm.

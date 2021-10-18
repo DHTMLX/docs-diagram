@@ -13,12 +13,10 @@ description: text
 @descr:
 #### Object properties:
 
-- **itemX** - horizontal space between two shapes
-- **itemY** - vertical space between two shapes
+- **itemX** - horizontal space between two shapes (only for [type: "org" | "mindmap"](../../../api/diagram/type_property/))
+- **itemY** - vertical space between two shapes (only for [type: "org" | "mindmap"](../../../api/diagram/type_property/))
 - **x** - horizontal space between the start of a diagram and the first item
 - **y** - vertical space between the start of a diagram and the first item
-
-{{note The property works only in the org chart mode of Diagram.}}
 
 @example:
 const diagram = new dhx.Diagram("diagram_container", {
