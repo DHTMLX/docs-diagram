@@ -62,7 +62,7 @@ editor.diagram.events.on("ShapeClick", function(id) {
 });
 ~~~
 
-This way can be also used if you need to apply the events mentioned below in the editor view.
+This way can be also used if you need to apply the events which are listed below.
 
 ### Cell manager events
 

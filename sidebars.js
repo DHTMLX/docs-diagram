@@ -401,6 +401,7 @@ module.exports = {
       },
       "guides/loading_data",
       "guides/manipulating_items",
+      "guides/inline_editing",
       "guides/customization",
       "guides/data_export",
       "guides/event_handling",
