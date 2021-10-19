@@ -9,7 +9,6 @@ description: text
 ```
 TODO:
 - Можно добавить, что для более простой работы с элементами можно воспользоватся редактором диаграм
-- Возможно не хвататет раздела про встроенное редактирование текста у фигур
 - Возможно не хватает раздела про работу с Group/Swimlane (можно что-то взять из статьи к релизу diagram 4.0)
 ```
 
@@ -327,7 +326,44 @@ diagram.data.filter();
 
 **Related sample:** [Diagram. Data. Filtering shapes](https://snippet.dhtmlx.com/tm43bsgn)
 
+## Drag-n-drop of group items
+
+The default settings of a group allow you to reorder child items in the group and drag items between groups. 
+
+If needed you can disable dragging child items to different groups and make it possible to drag the items only within their parent group. In addition, you can adjust the behavior of the borders of the parent group and define whether they should expand when a user is dragging a child item outside the group.
+
+For more details about how to configure the behavior of group items, read the [related article](../../groups/index/#configuring-the-behavior-of-group-items).
+
+## Manipulating swimlanes
+
+### Setting/resetting active swimlane
+
+### Getting the type of the subheader
 
 ## Manipulating swimlane cells
 
 To operate the cells of a swimlane dynamically, use [Cell Manager API](../../api/cell_manager/index/).
+
+to manage swimlanes programmatically with the help of the CellManager API. It provides methods for adding, moving, removing cells as rows or columns, validating cells, and much more. The CellManager API also includes new events intended to make the work with swimlanes fully interactive
+
+### Getting the id of a cell
+
+- getCellId 
+- getSubheaderCellId
+
+### Getting the index of a cell
+
+- getCellIndex
+- getSubHeaderCellIndex
+
+### Validating cells
+
+### Adding a cell
+
+### Removing a cell
+
+### Moving cells
+
+
+
+
