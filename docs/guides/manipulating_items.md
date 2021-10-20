@@ -6,21 +6,24 @@ description: text
 
 # Manipulating Items
 
-```
-TODO:
-- Можно добавить, что для более простой работы с элементами можно воспользоватся редактором диаграм
-- Возможно не хватает раздела про работу с Group/Swimlane (можно что-то взять из статьи к релизу diagram 4.0)
-```
+You can easily manipulate Diagram items via the [Diagram Editor](../../guides/diagram_editor/initialization/). 
+But in this article we'll explore the examples on how to manipulate the items of DHTMLX Diagram via the component's API. The article contains different sections that cover such questions as:
+- [how to automatically arrange shapes in the hierarchical order](#arranging-shapes-automatically);
+- how to perform a range of operations over items, in particular:
+    - [add](#adding-an-item)/[update](#updating-an-item)/[delete](#deleting-an-item) items;
+    - [check if an item exists](#checking-existence-of-an-item) in the diagram and [get it](#getting-an-item);
+    - [select a certain item](#selecting-items);
+    - [scroll to a necessary item](#showing-the-necessary-item) to make it visible on the screen, if there are many items in the diagram;
+    - [expand/collapse items](#expandingcollapsing-items);
+    - [find items](#finding-the-necessary-item) that meet some criteria;
+    - [filter diagram](#filtering-items) to render particular items;
+- [how to manage the drag-n-drop of child items of a group](#drag-n-drop-of-group-items);
+- [how to operate the swimlane and its cells](#working-with-swimlane-cells), namely:
+    - [set/reset the active swimlane](#settingresetting-the-active-swimlane);
+    - [get the type of the subheader of a swimlane](#getting-the-type-of-the-subheader);
+    - [add](#adding-a-columnrow)/[remove](#removing-a-columnrow)/[move](#moving-a-columnrow) a column/row;
+    - get the [id](#getting-the-id-of-a-cell)/[index](#getting-the-index-of-a-cell) of a cell and [check which actions can be done over the cell](#validating-cells).
 
-It is easy to manipulate the items of DHTMLX Diagram via the component's API. You can perform a range of operations over items, in particular:
-
-- [add](#adding-an-item)/[update](#updating-an-item)/[delete](#deleting-an-item) items
-- [check if an item exists](#checking-existence-of-an-item) in the diagram and [get it](#getting-an-item)
-- [select a certain item](#selecting-items) 
-- [scroll to a necessary item](#showing-the-necessary-item) to make it visible on the screen, if there are many items in the diagram
-- [expand/collapse items](#expandingcollapsing-items)
-- [find items](#finding-the-necessary-item) that meet some criteria
-- [filter diagram](#filtering-items) to render particular items
 
 Arranging shapes automatically
 --------------------------------
@@ -291,31 +294,9 @@ const shapes = diagram.data.findAll(function(shapes){
 Filtering items
 ----------------
 
-It is possible to filter the diagram and render only the items that meet the filter criteria via the [](../api/data_collection/filter_method.md) method of the **data** collection.
+It is possible to filter the diagram and render only the items that meet the filter criteria via the [](../api/data_collection/filter_method.md) method of the **data** collection. The method will show only the filtered items, hiding the rest of items.
 
-An example of filtering shapes:
-
-~~~js
-// filtering by the key of the shape attribute
-diagram.data.filter({ by: "text", match: "Operation 1" });
-
-// filtering by the function
-diagram.data.filter(function(shape){
-	if(shape.text==="Manager"||shape.text==="Marketer"){
-        return true
-    }
-});
-~~~
-
-The method will show only the filtered items, hiding the rest of shapes, lines, groups, swimlanes. 
-
-To revert the diagram to the initial state, call the **filter()** method without parameters.
-
-~~~js
-diagram.data.filter();
-~~~
-
-**Related sample:** [Diagram. Data. Filtering shapes](https://snippet.dhtmlx.com/tm43bsgn)
+<iframe src="https://snippet.dhtmlx.com/tm43bsgn?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
 
 ## Drag-n-drop of group items
 
@@ -426,7 +407,7 @@ diagram.cellManager.move(2, "left");
 
 ### Validating cells
 
-You can check whether such actions as adding, removing, or moving cells can be done over the cell at the specified position via the [](../api/cell_manager/validation_method.md) method of the cellManager object:
+You can check whether such actions as adding, removing, or moving cells can be done over the specified cell via the [](../api/cell_manager/validation_method.md) method of the cellManager object:
 
 ~~~js
 // checks whether a cell with index 0 can be moved down
@@ -438,7 +419,7 @@ diagram.cellManager.validation(0, "down", "move"); // true
 To return the type of the subheader of a swimlane, use the [](../api/cell_manager/getsubheadertype_method.md) method of the cellManager object. The method takes the id of a subheader as a parameter: 
 
 ~~~js
-diagram.cellManager.getSubHeaderType("s1"); // return "row"
+diagram.cellManager.getSubHeaderType("s1"); // returns "row"
 ~~~
 
 ### Getting the id of a cell
@@ -450,17 +431,17 @@ You can get the id of the first cell of a column/row the cell belongs to. It can
 
 ~~~js
 // return the id of the first cell of the first row
-diagram.cellManager.getCellId(0, "row"); // return 1
+diagram.cellManager.getCellId(0, "row"); // returns 1
 
 // return the id of the first cell of the third column
-diagram.cellManager.getCellId(2, "col"); // return 3
+diagram.cellManager.getCellId(2, "col"); // returns 3
 ~~~
 
 You can also get the id of a cell the subheader belongs to via using the [](../api/cell_manager/getsubheadercellid_method.md) method of the cellManager object. The method takes the id of the subheader of a swimlane as a parameter:
 
 ~~~js
 // return the id of the cell the subheader belongs to
-diagram.cellManager.getSubHeaderCellId("s2"); // return 4
+diagram.cellManager.getSubHeaderCellId("s2"); // returns 4
 ~~~
 
 ### Getting the index of a cell
@@ -482,23 +463,23 @@ layout: [
 
 ~~~js
 // return the index of the cell with id=2 if the cell belongs to a column
-diagram.cellManager.getCellIndex(2, "col"); // return 1
+diagram.cellManager.getCellIndex(2, "col"); // returns 1
 
 // return the index of the cell with id=5 if the cell belongs to a column
-diagram.cellManager.getCellIndex(8, "col"); // return 1
+diagram.cellManager.getCellIndex(8, "col"); // returns 1
 
 // return the index of the cell with id=2 if the cell belongs to a row
-diagram.cellManager.getCellIndex(2, "row"); // return 0
+diagram.cellManager.getCellIndex(2, "row"); // returns 0
 
 // return the index of the cell with id=5 if the cell belongs to a row
-diagram.cellManager.getCellIndex(8, "row"); // return 2
+diagram.cellManager.getCellIndex(8, "row"); // returns 2
 ~~~
 
 You can also get the index of a cell the subheader belongs to via using the [](../api/cell_manager/getsubheadercellindex_method.md) method of the cellManager object. The method takes the id of the subheader of a swimlane as a parameter:
 
 ~~~js
 // return the index of the cell the subheader belongs to
-diagram.cellManager.getSubHeaderCellIndex("s2"); // return 1
+diagram.cellManager.getSubHeaderCellIndex("s2"); // returns 1
 ~~~
 
 

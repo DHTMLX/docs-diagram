@@ -10,12 +10,8 @@ as a scheme, chart, organizational chart, mind map, etc. The diagram makes it ea
 
 Diagram in the default mode
 ------------------------
-```
-TODO:
-- Убрать из описания упоминание custom CSS classes.
-- Добавить раздел с описанием возможностей custom shapes
-```
-DHTMLX Diagram provides the possibility to make various diagrams using a predefined set of shapes and connectors, and experiment with their look and feel via the "native" and custom CSS classes.
+
+DHTMLX Diagram provides the possibility to make various diagrams using a predefined set of shapes and connectors, and experiment with their look and feel.
 
 You can choose shapes of desired types, link them by suitable connectors and build any type of a diagram that will show the sequence of some operations making up a particular process, like this:
    
@@ -26,6 +22,18 @@ You can choose shapes of desired types, link them by suitable connectors and bui
 |[Decision Tree](https://snippet.dhtmlx.com/7bn52dl1)|[Activity Diagram](https://snippet.dhtmlx.com/a9t2z2dt)|[Data Planning Model](https://snippet.dhtmlx.com/e6zm6wh1)|
 |-----|-----|---|
 |![](assets/icon_decision_tree.png)|![](assets/icon_activity.png)| ![](assets/icon_data_planning_model.png)  |
+
+### Custom shapes
+
+You can easily create your own templates of shapes and use them to design any diagram you need. For example, it is possible to create such famous types of custom diagrams as:
+
+|[Life Cycle Diagram](https://snippet.dhtmlx.com/y4k51owl)|[Venn Diagram](https://snippet.dhtmlx.com/2tzyfois)|[UML Class Diagram](https://snippet.dhtmlx.com/madymxt5)|
+|-----|-----|---|
+|![](assets/sticky.png)|![](assets/venn.png)| ![](assets/html.png)  |
+
+|[Network Diagram](https://snippet.dhtmlx.com/u1xqyo9w)|[Game levels and locations](https://snippet.dhtmlx.com/1h4j9gb3)|
+|---|---|
+|![](assets/network.png)|![](assets/game_levels.png)|
 
 ### Groups
 
@@ -46,6 +54,12 @@ There is also an org chart mode of diagram that presents a set of shapes connect
 
 <iframe src="https://snippet.dhtmlx.com/qnx3ekin?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
 
+### Custom shapes
+
+An example of adding custom shapes for creating a diagram to present the hierarchical organizational structure of a medical institution:
+
+<iframe src="https://snippet.dhtmlx.com/8fubjmlz?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
+
 Diagram in the mindmap mode
 --------------
 
@@ -53,8 +67,13 @@ The mindmap mode is used to represent a core topic or idea surrounded by the bra
 
 <iframe src="https://snippet.dhtmlx.com/twd25ww1?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
-The shapes are connected by curved lines and arranged around a central shape of the diagram. Each shape has a text and a colored border. The color of the outline depends on the level the shape belongs to. But you can change the look and feel of the shapes depending on your needs.
+The shapes are connected by curved lines and arranged around a central shape of the diagram.
 
+### Custom shapes
+
+An example of adding a custom template into the mindmap mode of the diagram to create a site map:
+
+<iframe src="https://snippet.dhtmlx.com/do1jwmw1?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
 ## Diagram Editor
 
@@ -64,77 +83,43 @@ The DHTMLX Diagram component provides you with Editor that allows you to try and
 
 The interface of the editor initialized in the default mode consists of four functional parts: toolbar, left panel, grid area, and right panel.
 
-```
-TODO:
-- По возможности заменить картинку размер в ширину желательно 940px + на изображении устарел UI
-```
-
-![](assets/diagram_editor_new2.png)
-
 To build a diagram, you need either to drag the necessary items from the left panel or create a copy of the items via the per-item toolbar. You can adjust the attributes of the items via sidebar options of the right panel.
 
-<iframe src="https://snippet.dhtmlx.com/4d4k3o8p?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
+![](assets/default_editor.gif)
 
-```
-TODO:
-- Заменен пример ниже
-```
+**Related sample:** [Diagram. Default mode. Wide flowchart](https://snippet.dhtmlx.com/4d4k3o8p)
 
-If you need to edit a custom diagram, you may configure the toolbar of the editor, customize the left panel, and configure the right panel according to the attributes of your shape.
+
+If you need to edit a custom shape you may customize the left panel and configure the right panel according to the attributes of your shape.
 
 <iframe src="https://snippet.dhtmlx.com/2z0a18oz?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
 ### Editor in the org chart mode
 
-The interface of the editor initialized in the org chart mode consists of three parts: toolbar, grid area, and right panel.
+The interface of the editor initialized in the org chart mode consists of three parts: toolbar, grid area, and right panel. Note, that the editor does not have the left panel. 
 
-```
-TODO:
-- По возможности заменить картинку размер в ширину желательно 940px + на изображении устарел UI
-```
+To build a diagram in the org chart mode of the editor, you need to select a shape and add a new child for it.
+You can adjust the attributes of the shapes via the available sidebar options of the right panel.
 
-![](assets/orgchart_editor.png)
+![](assets/orgchart_editor.gif)
 
-```
-TODO:
-Ниже перечислен стандартный набор функций, актуальный для фигуры type: "card".
-Что является неполным списком возможностей по отношению к другим типам фигур, в том числе и пользовательским.
-Эта информация устарела. Думаю, что нужно либо дополнять, с учетом новых возможностей, либо убрать сославшись на API редактора в режиме "org"
-```
-
-To build a diagram in the org chart mode of the editor, you need to select a shape and add a new child for it. Also you can:
-
-- set precise positioning for shapes;
-- define their width and height;
-- edit the content of a shape;
-- set a suitable color of a shape header.
+In the example below, you can notice that a set of sidebar options for editing the attributes of the shape with an image differs from the sidebar options for editing a simple card.
 
 <iframe src="https://snippet.dhtmlx.com/vghuunmd?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
+If you've added a custom shape to the editor in the org chart mode, you can configure the right panel to be able to edit custom properties of the shape.
+
 ### Editor in the mindmap mode
 
-The interface of the editor initialized in the mindmap mode consists of three parts: toolbar, grid area, and right panel.
+The interface of the editor initialized in the mindmap mode consists of three parts: toolbar, grid area, and right panel. Note, that the editor does not have the left panel. 
 
-```
-TODO:
-- По возможности заменить картинку размер в ширину желательно 940px + на изображении устарел UI
-```
+To build a diagram in the mindmap mode of the editor, you need to select a shape and add a new child for it. You can adjust the attributes of the shapes via the available sidebar options of the right panel.
 
-![](assets/mindmap_editor.png)
+![](assets/mindmap_editor.gif)
 
-```
-TODO:
-Возможностей гораздо больше, все зависит от выбранного типа фигуры, актуально и для org mode;
-```
+**Related sample:** [Diagram editor. Mindmap mode. Emotions mind map](https://snippet.dhtmlx.com/lo1vm0e8)
 
-The mindmap mode of the editor makes building and editing a mind map quick and easy. To add a new shape, select a shape and add a new child for it. Aside from that, you can:
-
-- set the left-top position of a shape;
-- define the size of a shape;
-- define the look of a shape: set a suitable shape color, define outline settings, insert a text inside and adjust its look and feel;
-
-<iframe src="https://snippet.dhtmlx.com/lo1vm0e8?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
-
+If you've added a custom shape to the editor in the org chart mode, you can configure the right panel to be able to edit custom properties of the shape.
 
 Custom Diagram
 --------------
@@ -146,9 +131,10 @@ You can build your own diagram by creating custom shapes of the desired appearan
 |![](assets/sticky.png)|![](assets/venn.png)| ![](assets/html.png)  |
 
 
-|[Medical Hierarchy](https://snippet.dhtmlx.com/8fubjmlz)|[Network Diagram](https://snippet.dhtmlx.com/u1xqyo9w)|
-|---|---|
-|![](assets/medical_hierarchy.png)|![](assets/network.png)|
+|[Medical Hierarchy](https://snippet.dhtmlx.com/8fubjmlz)|[Network Diagram](https://snippet.dhtmlx.com/u1xqyo9w)|[Site map and user flow](https://snippet.dhtmlx.com/do1jwmw1)
+|---|---|----|
+|![](assets/medical_hierarchy.png)|![](assets/network.png)|![](assets/sitemap.png)|
+
 
 
 Shape Search

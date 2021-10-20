@@ -6,8 +6,6 @@ description: text
 
 # filter()
 
-`todo: check`
-
 @short: filters items in the diagram
 
 @signature: {`filter(rule?: IFilterCallback | IFilterMode, config?: IFilterConfig): void;`}
