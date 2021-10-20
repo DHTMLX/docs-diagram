@@ -48,7 +48,8 @@ When you click on any shape, it becomes editable and gets personal interface ele
     - *"horizontal"* - to arrange children of the shape horizontally;
     - *"vertical"* - to arrange children of the shape vertically;
     - *"remove"* - to delete the selected shape (except for the root one);
-- resizing handles (pull the handles of the editable shape to change its sizes).
+- resizing handles (pull the handles of the editable shape to change its sizes);
+- an icon to collapse/expand child shapes.
 
 Double-click the text of a shape to edit it. 
 
@@ -66,7 +67,8 @@ When you click on any shape, it becomes editable and gets personal interface ele
     - *"addLeft"* - to add a new child to the left of the root shape;
     - *"addRight"* - to add a new child to the right of the root shape;
     - *"remove"* - to delete the selected shape (except for the root one);
-- resizing handles (pull the handles of the editable shape to change its sizes).
+- resizing handles (pull the handles of the editable shape to change its sizes);
+- an icon to collapse/expand child shapes.
 
 Double-click the text of a shape to edit it.
 
@@ -105,7 +107,7 @@ When you click on any swimlane, it becomes editable and gets personal interface 
     - *"addColumnLast"* - to add a new column at the end of the swimlane;
     - *"copy"* - to create a copy of the swimlane;
     - *"remove"* - to delete the selected group;
-- resizing handles (pull the handles of the editable swimlane to change its sizes). 
+- resizing handles (pull the handles of the editable swimlane to change its sizes).
 
 Besides, there are the abilities to add, move, or remove columns or rows of the swimlane via the options of the context menu. The context menu will appear after the user clicks on the icon of a swimlane subheader. 
 

@@ -294,31 +294,9 @@ const shapes = diagram.data.findAll(function(shapes){
 Filtering items
 ----------------
 
-It is possible to filter the diagram and render only the items that meet the filter criteria via the [](../api/data_collection/filter_method.md) method of the **data** collection.
+It is possible to filter the diagram and render only the items that meet the filter criteria via the [](../api/data_collection/filter_method.md) method of the **data** collection. The method will show only the filtered items, hiding the rest of items.
 
-An example of filtering shapes:
-
-~~~js
-// filtering by the key of the shape attribute
-diagram.data.filter({ by: "text", match: "Operation 1" });
-
-// filtering by the function
-diagram.data.filter(function(shape){
-	if(shape.text==="Manager"||shape.text==="Marketer"){
-        return true
-    }
-});
-~~~
-
-The method will show only the filtered items, hiding the rest of shapes, lines, groups, swimlanes. 
-
-To revert the diagram to the initial state, call the **filter()** method without parameters.
-
-~~~js
-diagram.data.filter();
-~~~
-
-**Related sample:** [Diagram. Data. Filtering shapes](https://snippet.dhtmlx.com/tm43bsgn)
+<iframe src="https://snippet.dhtmlx.com/tm43bsgn?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
 
 ## Drag-n-drop of group items
 

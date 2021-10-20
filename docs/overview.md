@@ -10,12 +10,8 @@ as a scheme, chart, organizational chart, mind map, etc. The diagram makes it ea
 
 Diagram in the default mode
 ------------------------
-```
-TODO:
-- Убрать из описания упоминание custom CSS classes.
-- Добавить раздел с описанием возможностей custom shapes
-```
-DHTMLX Diagram provides the possibility to make various diagrams using a predefined set of shapes and connectors, and experiment with their look and feel via the "native" and custom CSS classes.
+
+DHTMLX Diagram provides the possibility to make various diagrams using a predefined set of shapes and connectors, and experiment with their look and feel.
 
 You can choose shapes of desired types, link them by suitable connectors and build any type of a diagram that will show the sequence of some operations making up a particular process, like this:
    
@@ -26,6 +22,18 @@ You can choose shapes of desired types, link them by suitable connectors and bui
 |[Decision Tree](https://snippet.dhtmlx.com/7bn52dl1)|[Activity Diagram](https://snippet.dhtmlx.com/a9t2z2dt)|[Data Planning Model](https://snippet.dhtmlx.com/e6zm6wh1)|
 |-----|-----|---|
 |![](assets/icon_decision_tree.png)|![](assets/icon_activity.png)| ![](assets/icon_data_planning_model.png)  |
+
+### Custom shapes
+
+You can build your own diagram by creating custom shapes of the desired appearance and linking them by suitable connectors.
+
+|[Life Cycle Diagram](https://snippet.dhtmlx.com/y4k51owl)|[Venn Diagram](https://snippet.dhtmlx.com/2tzyfois)|[UML Class Diagram](https://snippet.dhtmlx.com/madymxt5)|
+|-----|-----|---|
+|![](assets/sticky.png)|![](assets/venn.png)| ![](assets/html.png)  |
+
+|[Medical Hierarchy](https://snippet.dhtmlx.com/8fubjmlz)|[Network Diagram](https://snippet.dhtmlx.com/u1xqyo9w)|
+|---|---|
+|![](assets/medical_hierarchy.png)|![](assets/network.png)|
 
 ### Groups
 
@@ -55,7 +63,6 @@ The mindmap mode is used to represent a core topic or idea surrounded by the bra
 
 The shapes are connected by curved lines and arranged around a central shape of the diagram. Each shape has a text and a colored border. The color of the outline depends on the level the shape belongs to. But you can change the look and feel of the shapes depending on your needs.
 
-
 ## Diagram Editor
 
 The DHTMLX Diagram component provides you with Editor that allows you to try and apply your designer skills in building neat and nice-looking diagrams.
@@ -64,21 +71,11 @@ The DHTMLX Diagram component provides you with Editor that allows you to try and
 
 The interface of the editor initialized in the default mode consists of four functional parts: toolbar, left panel, grid area, and right panel.
 
-```
-TODO:
-- По возможности заменить картинку размер в ширину желательно 940px + на изображении устарел UI
-```
-
-![](assets/diagram_editor_new2.png)
+![](assets/default_editor.gif)
 
 To build a diagram, you need either to drag the necessary items from the left panel or create a copy of the items via the per-item toolbar. You can adjust the attributes of the items via sidebar options of the right panel.
 
 <iframe src="https://snippet.dhtmlx.com/4d4k3o8p?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
-
-```
-TODO:
-- Заменен пример ниже
-```
 
 If you need to edit a custom diagram, you may configure the toolbar of the editor, customize the left panel, and configure the right panel according to the attributes of your shape.
 
@@ -88,12 +85,7 @@ If you need to edit a custom diagram, you may configure the toolbar of the edito
 
 The interface of the editor initialized in the org chart mode consists of three parts: toolbar, grid area, and right panel.
 
-```
-TODO:
-- По возможности заменить картинку размер в ширину желательно 940px + на изображении устарел UI
-```
-
-![](assets/orgchart_editor.png)
+![](assets/orgchart_editor.gif)
 
 ```
 TODO:
@@ -115,12 +107,7 @@ To build a diagram in the org chart mode of the editor, you need to select a sha
 
 The interface of the editor initialized in the mindmap mode consists of three parts: toolbar, grid area, and right panel.
 
-```
-TODO:
-- По возможности заменить картинку размер в ширину желательно 940px + на изображении устарел UI
-```
-
-![](assets/mindmap_editor.png)
+![](assets/mindmap_editor.gif)
 
 ```
 TODO:
@@ -135,7 +122,6 @@ The mindmap mode of the editor makes building and editing a mind map quick and e
 
 <iframe src="https://snippet.dhtmlx.com/lo1vm0e8?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
-
 Custom Diagram
 --------------
 
@@ -149,6 +135,7 @@ You can build your own diagram by creating custom shapes of the desired appearan
 |[Medical Hierarchy](https://snippet.dhtmlx.com/8fubjmlz)|[Network Diagram](https://snippet.dhtmlx.com/u1xqyo9w)|
 |---|---|
 |![](assets/medical_hierarchy.png)|![](assets/network.png)|
+
 
 
 Shape Search
