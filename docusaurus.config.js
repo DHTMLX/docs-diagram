@@ -189,12 +189,12 @@ module.exports = {
             },
             items: [{
                     label: 'Examples',
-                    href: 'https://snippet.dhtmlx.com',
+                    href: 'https://snippet.dhtmlx.com/xdvi4fek?text=%23diagram',
                     position: 'right',
                 },
                 {
                     label: 'Forum',
-                    href: 'https://forum.dhtmlx.com/c/suite7',
+                    href: 'https://forum.dhtmlx.com/c/widgets/diagram/',
                     position: 'right'
                 },
                 {
@@ -204,7 +204,7 @@ module.exports = {
                 },
                 {
                     label: 'Download',
-                    href: 'https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml',
+                    href: 'https://dhtmlx.com/docs/products/dhtmlxDiagram/download.shtml',
                     position: 'right',
                 },
             ],
@@ -214,13 +214,13 @@ module.exports = {
             links: [{
                     title: 'Development center',
                     items: [{
-                            label: 'Download Suite',
-                            href: 'https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml',
+                            label: 'Download Diagram',
+                            href: 'https://dhtmlx.com/docs/products/dhtmlxDiagram/download.shtml',
                             position: 'right',
                         },
                         {
                             label: 'Examples',
-                            href: 'https://snippet.dhtmlx.com',
+                            href: 'https://snippet.dhtmlx.com/xdvi4fek?text=%23diagram',
                             position: 'right',
                         },
                         {
@@ -229,7 +229,7 @@ module.exports = {
                         },
                         {
                             label: 'Forum',
-                            href: 'https://forum.dhtmlx.com/c/suite7',
+                            href: 'https://forum.dhtmlx.com/c/widgets/diagram/',
                             position: 'right'
                         },
                     ],
@@ -272,7 +272,7 @@ module.exports = {
                         },
                         {
                             label: 'Licensing',
-                            href: 'https://dhtmlx.com/docs/products/dhtmlxSuite/#licensing',
+                            href: 'https://dhtmlx.com/docs/products/dhtmlxDiagram/#licensing',
                         },
                     ],
                 },
