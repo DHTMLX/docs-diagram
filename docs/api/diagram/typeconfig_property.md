@@ -14,8 +14,8 @@ description: text
 #### Object properties:
 
 - **direction** - (*string*) optional, sets the direction of the graph:
-  - *"left"* - sets child shapes of the graph to the left of the root shape
-  - *"right"* - sets child shapes of the graph to the right of the root shape
+  - *"left"* - puts child shapes of the graph to the left of the root shape
+  - *"right"* - puts child shapes of the graph to the right of the root shape
 
 ~~~js
 const diagram = new dhx.Diagram("diagram_container", { 

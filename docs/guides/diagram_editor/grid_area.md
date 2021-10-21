@@ -6,12 +6,9 @@ description: text
 
 # Grid Area
 
-Grid area is an area intended for editing diagram.
+Grid area is an area intended for editing a diagram. You can easily add new items, change their appearance and positioning, or remove them.
 
-```
-TODO: 
-- Добавить текст, переделать картинки все (toolbar in org mode + editing shape + group)
-```
+In this section you will find what interface elements you have available for each diagram item depending on the mode the editor is initialized in. The section also explains how to facilitate ease of designing a diagram via using keyboard shortcuts or operating several selected items at once.
 
 ## Managing shapes
 
@@ -36,10 +33,9 @@ Double-click the text of a shape to edit it.
 
 ### Interface elements in the org chart mode
 
-You can drag shapes to place them on the desired positions relative to the root shape, or drag the root shape to move the whole diagram.
+You can drag shapes to place them on the desired positions relative to the root shape, or drag the root shape to move the whole diagram. To add a new shape, select a shape and add a new child for it.
 
 ![](../../assets/org_shape_toolbar.png)
-![](../../assets/child_shape_toolbar.png)
 
 When you click on any shape, it becomes editable and gets personal interface elements:
 
@@ -55,10 +51,9 @@ Double-click the text of a shape to edit it.
 
 ### Interface elements in the mindmap mode
 
-You can drag shapes to place them on the desired positions relative to the root shape, or drag the root shape to move the whole diagram. If you drag the parent shape, the shape will be moved with all its child shapes.
+You can drag shapes to place them on the desired positions relative to the root shape, or drag the root shape to move the whole diagram. If you drag the parent shape, the shape will be moved with all its child shapes. To add a new shape, select a shape and add a new child for it.
 
 ![](../../assets/mindmap_shape_toolbar.png)
-![](../../assets/child_shape_toolbar1.png)
 
 When you click on any shape, it becomes editable and gets personal interface elements:
 
@@ -74,7 +69,7 @@ Double-click the text of a shape to edit it.
 
 ## Managing lines
 
-When the connection mode is enabled for a shape, you can set links to other shapes, adjust their position and form, as well as delete unnecessary links.
+In the default mode of the editor, you can set links to other shapes, adjust their position and form, as well as delete unnecessary links.
 
 ![](../../assets/line_toolbar.png)
 
@@ -106,14 +101,14 @@ When you click on any swimlane, it becomes editable and gets personal interface 
     - *"addRowLast"* - to add a new row at the end of the swimlane;
     - *"addColumnLast"* - to add a new column at the end of the swimlane;
     - *"copy"* - to create a copy of the swimlane;
-    - *"remove"* - to delete the selected group;
+    - *"remove"* - to delete the selected swimlane;
 - resizing handles (pull the handles of the editable swimlane to change its sizes).
 
 Besides, there are the abilities to add, move, or remove columns or rows of the swimlane via the options of the context menu. The context menu will appear after the user clicks on the icon of a swimlane subheader. 
 
 ![](../../assets/swimlane_contextmenu.png)
 
-Note, that the options of moving the first/last columns and rows are deactivated by internal settings of a swimlane.
+Note, that some options of moving the first/last columns and rows are deactivated by internal settings of a swimlane.
 
 ## Editing attributes of an item
 
