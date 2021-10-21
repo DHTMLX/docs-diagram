@@ -338,6 +338,7 @@ module.exports = {
     label: "Guides",
     collapsed: true,
     items: [
+      "guides/overview",
       // Diagram Items
       {
         type: "category",
