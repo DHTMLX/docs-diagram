@@ -6,13 +6,13 @@ description: text
 
 # Guides
 
-The guidance information makes up the major part of the documentation and helps you in actual use of DHTMLX Diagram.
-The chapter is divided into task-oriented manuals that assist you in performing both simple and difficult, often and seldom used tasks. 
-The articles come around key procedures and problem-solving activities.
+The guidance information explores in detail how to create a diagram of any complexity using DHTMLX Diagram.
+The documentation is segmented into task-oriented manuals which discusses the principles of building and configuring a diagram, the ways of editing its items. The guides embodies a lot of tools to assist in actual use of DHTMLX Diagram: examples of usage, illustrations, animated images.
+
 
 ## Diagram
 
-Discusses how to add DHTMLX Diagram on a page, adjust its settings, scroll a diagram.
+The section details the process of adding DHTMLX Diagram on a page, describes the features of Diagram configuration, explains the way of scrolling a large diagram.
 
 - [How to start with Diagram](../../guides/diagram/initialization/)
 - [Diagram Configuration](../../guides/diagram/configuration/)
@@ -30,7 +30,12 @@ The section includes descriptions for all default diagram items (shapes, lines, 
 
 ## Diagram Editor
 
+Learn how to initialize Diagram Editor - a great tool which significantly accelerates the process of designing your diagram.
+
 - [How to start with Diagram Editor](../../guides/diagram_editor/initialization/)
+
+The guides give you a broad overview of all parts of the interface of the editor and their settings, present examples of customization of the interface elements you may have at your disposal.
+
 - [Toolbar](../../guides/diagram_editor/toolbar/)
 - [Left Panel](../../guides/diagram_editor/left_panel/)
 - [Grid Area](../../guides/diagram_editor/grid_area/)
@@ -54,14 +59,18 @@ Learn how to adapt the diagram to various languages and easily edit the text ele
 - [Localization](../../guides/localization/)
 - [Inline Editing](../../guides/inline_editing/)
 
-## Integration with Angular, React, and Vue.js
+## Integration guides
 
-DHTMLX Diagram is compatible with any client-side framework. There are code examples of how to use DHTMLX Diagram with Angular, React, and Vue.js available on our GitHub pages.
+The articles give you examples of usage a Diagram with different client-side frameworks.
+
+- [Integration with Angular](../../guides/angular_integration/)
+- [Integration with React](../../guides/react_integration/)
+- [Integration with Vue.js](../../guides/vue_integration/)
 
 ## TypeScript support
 
-The Diagram library is equipped with built-in type definitions allowing you to write clean code faster. Browse the TypeScript Support guide with code snippets to learn more.
+Browse the TypeScript Support guide with code snippets to learn more about built-in type definitions allowing you to write clean code faster.
 
-
+- [Using Diagram with TypeScript](../../guides/using_typescript/)
 
 
