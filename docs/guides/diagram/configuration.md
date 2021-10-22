@@ -48,31 +48,7 @@ There is a great possibility to escape operating with a big data set while prepa
 
 For this purpose, use the [](../../api/diagram/defaults_property.md) property of the diagram configuration object:
 
-~~~js
-const defaults = {
-   // the default configuration for all shapes of the "rectangle" type
-	rectangle: {
-		fill: "#44B3FC",
-		stroke: "#44B3FC"
-	},
-    // the default configuration for all shapes of the "circle" type
-	circle: {
-		fill: "#3DA0E3",
-		stroke: "#3DA0E3"
-	},
-    // the default configuration for all shapes of the "endpoint" type
-	endpoint: {
-		fill: "#307DB0",
-		stroke: "#307DB0"
-	}
-};
-
-const diagram = new dhx.Diagram("diagram_container", {
-	defaults: defaults
-});
-~~~
-
-**Related sample:**	[Diagram. Default mode. Decision tree](https://snippet.dhtmlx.com/7bn52dl1)
+<iframe src="https://snippet.dhtmlx.com/7bn52dl1?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
 
 The **defaults** object contains a number of *key:value* pairs where *key* is a type of a shape and *value* is the default config of the shape.
 
@@ -110,29 +86,9 @@ The other child shapes that are not set in the side option will be arranged auto
 Positioning Diagram and shapes
 --------------------
 
-You can specify the position of a diagram on a page and set margins for shapes inside the [](../../api/diagram/margin_property.md) attribute of the diagram configuration object.
+You can specify the position of a diagram on a page and set margins for shapes inside the [](../../api/diagram/margin_property.md) attribute of the diagram configuration object:
 
-The margin object contains a set of properties: 
-
-- **itemX** - horizontal space between two shapes (only for [type: "org" | "mindmap"](../../../api/diagram/type_property/))
-- **itemY** - vertical space between two shapes (only for [type: "org" | "mindmap"](../../../api/diagram/type_property/))
-- **x** - horizontal space between the start of a diagram and the first item
-- **y** - vertical space between the start of a diagram and the first item
-
-~~~js
-// setting margins for an org chart
-const diagram = new dhx.Diagram("diagram_container", { 
-    type: "org",
-    margin: {
-        x: 20, 
-        y: 20,
-        itemX: 50,
-        itemY: 50
-    }
-})
-~~~
-
-**Related sample:**	[Diagram. Org chart mode. Margin between shapes](https://snippet.dhtmlx.com/bwe9vm6i)
+<iframe src="https://snippet.dhtmlx.com/bwe9vm6i?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="400"></iframe>
 
 Configuring autoplacement for shapes
 ------------------------------
@@ -162,47 +118,14 @@ Zooming Diagram
 If necessary, you can scale a diagram to fit your application. It can be done with the help of the [](../../api/diagram/scale_property.md) option.
 By default, its value is set to 1. So, to zoom into a diagram, set the option to a value larger than 1 and to zoom out - smaller than 1, correspondingly.
 
-For example:
-
-~~~js
-const diagram = new dhx.Diagram("diagram_container", { 
-    type: "org",
-    defaultShapeType: "img-card",
-    scale : 0.8
-});
-diagram.data.parse(data);
-~~~
-
-**Related sample:** [Diagram. Configuration. Scaled diagram](https://snippet.dhtmlx.com/9h89c3gl)
+<iframe src="https://snippet.dhtmlx.com/9h89c3gl?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="400"></iframe>
 
 Setting toolbar for items
 --------------------------
 
 DHTMLX Diagram allows you to specify a toolbar with icons for Diagram items to simplify interaction with them. You can enable the toolbar via the [](../../api/diagram/toolbar_property.md) option of the diagram configuration object: 
 
-~~~js
-const diagram = new dhx.Diagram("diagram_container", { 
-    type: "org", 
-    select: true,
-    toolbar:[{
-        id: "download",
-        content: "<i class='dxi dxi-download'></i>"
-    },
-    {
-        id: "info",
-        content: "<i class='dxi dxi-information-outline'></i>"
-    }]
-});
-~~~
-
-The toolbar is set as an array of icons objects. Each icon object can have the following properties:
-
-- **id** - (*string*) the id of the icon.
-- **content** - (*string*) the content of the icon. It can contain an HTML element with the name of the icon class. 
-- **check** - (*function*) checks whether the icon should be applied to the item. The function takes an item object and returns *true*, if the icon will be rendered for this item.
-- **css** - (*function*) the function which returns the name(s) of CSS class(es) that should be applied to the item.
-
-**Related sample:**	[Diagram. Configuration. Per-shape toolbar](https://snippet.dhtmlx.com/4if395hd)
+<iframe src="https://snippet.dhtmlx.com/4if395hd?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="400"></iframe>
 
 Selecting items
 -------------
@@ -211,10 +134,10 @@ It is possible to activate selection of items in a diagram. You need to make use
 
 ### Example in the org chart mode
 
-<iframe src="https://snippet.dhtmlx.com/jyoxn5h7?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="200"></iframe>
+<iframe src="https://snippet.dhtmlx.com/jyoxn5h7?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="400"></iframe>
 
 ### Example in the default mode
 
-<iframe src="https://snippet.dhtmlx.com/tcny4obw?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="300"></iframe>
+<iframe src="https://snippet.dhtmlx.com/tcny4obw?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="400"></iframe>
 
 {{note [The predefined set of events](../../../api/selection/index/#events) of the selection object can help you to define the way of processing the behavior of the diagram during selecting/unselecting items.}}
