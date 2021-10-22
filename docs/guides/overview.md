@@ -7,7 +7,7 @@ description: text
 # Guides
 
 The guidance information explores in detail how to create a diagram of any complexity using DHTMLX Diagram.
-The documentation is segmented into task-oriented manuals which discusses the principles of building and configuring a diagram, the ways of editing its items. The guides embodies a lot of tools to assist in actual use of DHTMLX Diagram: examples of usage, illustrations, animated images.
+The documentation is segmented into task-oriented manuals which discuss the principles of building and configuring a diagram, the ways of editing its items. The guides embody a lot of tools to assist in actual use of DHTMLX Diagram: examples of usage, illustrations, animated images.
 
 
 ## Diagram
