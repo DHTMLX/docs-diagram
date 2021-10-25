@@ -31,9 +31,29 @@ Besides, you may create [your own type of shapes](../../shapes/custom_shape/) an
 - **line objects**
 
 ~~~js
+
 const data = [
-    { "id": "1-2", "from": "1", "to": "2", "type": "dash" },
-    { "id": "2-3", "from": "2", "to": "3", "type": "line" },
+    {
+		"id": "1-2", "from": "1", "to": "2", "type": "dash"
+	},
+    {
+        "id": "2-3", 
+        "from": "2", 
+        "to": "3", 
+        "type": "line", 
+        "title":
+        {
+            "fontSize":14,
+            "lineHeight":14,
+            "text":[
+                {
+                    "type":"$linetext",
+                    "id":"u1635150512709",
+                    "text":"text",
+                }
+            ]
+        }
+    },
 ];
 ~~~
 

@@ -22,10 +22,46 @@ description: text
 
 - **forwardArrow** - *(string)* sets a forward arrow connector and defines the type of the arrow ("filled" by default)
 - **backArrow** - *(string)* sets a back arrow connector and defines the type of the arrow ("filled" by default)
-- **fromSide** - *(string)* the side of the shape from which connection will start ("*top*","*bottom*","*left*","*right*","*center*")
-- **toSide** - *(string)* the side of the shape to which a different shape will be attached ("*top*","*bottom*","*left*","*right*","*center*")
+- **fromSide** - *(string)* the side of the shape from which connection will start ("*top*", "*bottom*", "*left*","*right*", "*center*")
+- **toSide** - *(string)* the side of the shape to which a different shape will be attached ("*top*", "*bottom*", "*left*", "*right*", "*center*")
 - **cornersRadius** - *(number)* the radius of rounding corners of a connector
 - **customGap** - (*number*) sets the value of the [](../api/diagram/linegap_property.md) property for the line
+- **title** - *(object)* sets a text element of a line. The title property presents an object with the following properties:
+
+  - **fontSize** - *(number | string)* the size of the font in pixels, 14 by default
+  - **lineHeight** - *(number | string)* the height of a line, 14 by default
+  - **textAlign** - *(string)* the alignment of text: "center"(default), "left", "right"
+  - **textVerticalAlign** - *(string)* the vertical alignment of text: "center"(default), "top", "bottom"
+  - **fontStyle** - *(string)* the style of the text font: "normal" (default), "italic", "oblique"
+  - **fontColor** - *(string)* the color of the text font, "#4C4C4C" by default
+  - **fontWeight** - *(string)* the text font weight, possible values are: "normal", "bold", "bolder", "lighter", values "100"-"900", where "400" is the same as normal, and "600"+ is the boldest font; "500" by default
+  - **fill** - *(string)* the background color of the text element
+  - **editable** - *(boolean)* enables/disables the ability to edit the text by double-clicking on it; *true* by default
+  - **hidden** - *(boolean)* defines, whether the text will be hidden
+  - **draggable** - *(boolean)* enables/disables the ability to drag the text
+  - **autoPosition** - *(boolean)* defines the direction of the text, *true* - the direction
+ of the text is the same as the line, *false* - the direction of the text is always horizontal
+  - **text** - *(array)* an array of text elements of a line. The text property presents an array of text elements of a line, each element contains the following configuration:
+
+    - **id** - *(string | number)* the id of the text elements of a line
+    - **type** - *(string)* the type of an element, set it to "$linetext"
+    - **width** - *(number)* the width of the text, calculated automatically
+    - **height** - *(number)* the height of text, calculated automatically
+    - **distance** - *(number)* defines the distance between the text and the parent shape, the value from 0 to 100
+    - **autoPosition** - *(boolean)* defines the direction of the text, *true* - the direction
+ of the text is the same as the line, *false* - the direction of the text is always horizontal
+    - **hidden** - *(boolean)* defines, whether the text will be hidden
+    - **editable** - *(boolean)* enables/disables the ability to edit the text by double-clicking on it; *true* by default
+    - **draggable** - *(boolean)* enables/disables the ability to drag the text
+    - **fill** - *(string)* the background color of the text element
+    - **text** - *(string)* the text to be rendered in the text elements of a line
+    - **fontSize** - *(number | string)*  the size of the font in pixels, 14 by default
+    - **lineHeight** - *(number | string)* the height of a line, 14 by default
+    - **fontStyle** - *(string)* the style of the text font: "normal" (default), "italic", "oblique"
+    - **fontColor** - *(string)* the color of the text font, "#4C4C4C" by default
+    - **fontWeight** - *(string)* the text font weight, possible values are: "normal", "bold", "bolder", "lighter", values "100"-"900", where "400" is the same as normal, and "600"+ is the boldest font; "500" by default
+    - **textAlign** - *(string)* the alignment of text: "center"(default), "left", "right"
+    - **textVerticalAlign** - *(string)* the vertical alignment of text: "center"(default), "top", "bottom"
 
 ## Example
 
