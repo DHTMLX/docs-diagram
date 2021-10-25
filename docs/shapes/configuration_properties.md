@@ -61,20 +61,31 @@ const data = [
 - **parent** - (*string | number*) the id of the parent shape;
 - **dx** - (*number*) the left offset of the shape;
 - **dy** - (*number*) the top offset of the shape;
-- **dir** - (*string*) the direction of shapes connecting. To connect shapes vertically, set the attribute to the "vertical" value;<br>**Related samples**: [Diagram. Org chart mode. Nested vertical lists](https://snippet.dhtmlx.com/98tzmzpg)
-- **open** - (*boolean*) defines, whether the child items of the current shape will be shown. *True* by default.
+- **dir** - (*string*) the direction of shapes connecting. To connect shapes vertically, set the attribute to the "vertical" value;
+
+**Related samples**: [Diagram. Org chart mode. Nested vertical lists](https://snippet.dhtmlx.com/98tzmzpg)
+
+- **open** - (*boolean*) defines, whether the child items of the current shape will be shown. *True* by default;
+- **assistant** - (*boolean*) defines, whether the shape is an assistant item for the parent shape.
 
 ~~~js
 const data = [
     {
-        "id": 1,
+        "id": "1",
         "text": "item: 1",
     },
     {
-        "id": 2,
+        "id": "2",
         "text": "item: 2",
         "parent": 1,
         "dir": "vertical"
+    },
+    {
+        "id": "1.1",
+        "text": "assistant 1.1",
+        "parent": 1,
+        "dir": "vertical",
+        "assistant": true
     },
 ];
 ~~~
