@@ -39,13 +39,18 @@ You can easily create your own templates of shapes and use them to design any di
 
 You can draw simple or more complicated schemes by grouping shapes in different ways with the help of such an element of Diagram as a group. It is possible to create as one-level groups as nested groups, to configure their appearance and behavior. Check the details in the [Groups configuration](diagram_guides/shapes_arrows_list.md#groupsconfiguration) article.
 
-<iframe src="https://snippet.dhtmlx.com/0hf8ahrb?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
+
+|[Diagram. Default mode. Virtual private cloud architecture](https://snippet.dhtmlx.com/0hf8ahrb)|
+|---|
+|![](assets/virtual_cloud.png)|
 
 ### Swimlanes
 
 Usage of swimlanes of the DHTMLX Diagram library lets you represent any process (be it a business process, manufacturing or service one, and any other processes) or its separate parts from start to finish.
 
-<iframe src="https://snippet.dhtmlx.com/z6x5m3gb?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="700"></iframe>
+|[Diagram. Default mode. Swimlane template](https://snippet.dhtmlx.com/z6x5m3gb)|
+|---|
+|![](assets/swimlane_overview.png)|
 
 Diagram in the org chart mode
 -----------------------
@@ -58,14 +63,18 @@ There is also an org chart mode of diagram that presents a set of shapes connect
 
 An example of adding custom shapes for creating a diagram to present the hierarchical organizational structure of a medical institution:
 
-<iframe src="https://snippet.dhtmlx.com/8fubjmlz?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
+|[Diagram. Org chart mode. Medical hierarchy diagram template](https://snippet.dhtmlx.com/8fubjmlz)|
+|---|
+|![](assets/medical_hierarchy_overview.png)|
 
 Diagram in the mindmap mode
 --------------
 
 The mindmap mode is used to represent a core topic or idea surrounded by the branches of the subtopics.
 
-<iframe src="https://snippet.dhtmlx.com/twd25ww1?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
+|[Diagram. Mindmap mode. Emotions mind map](https://snippet.dhtmlx.com/twd25ww1)|
+|---|
+|![](assets/mindmap_emotions.png)|
 
 The shapes are connected by curved lines and arranged around a central shape of the diagram.
 
@@ -85,9 +94,10 @@ The interface of the editor initialized in the default mode consists of four fun
 
 To build a diagram, you need either to drag the necessary items from the left panel or create a copy of the items via the per-item toolbar. You can adjust the attributes of the items via sidebar options of the right panel.
 
-![](assets/default_editor.gif)
 
-**Related sample:** [Diagram. Default mode. Wide flowchart](https://snippet.dhtmlx.com/4d4k3o8p)
+|[Diagram. Default mode. Wide flowchart](https://snippet.dhtmlx.com/4d4k3o8p)|
+|--|
+|![](assets/default_editor.gif)|
 
 
 If you need to edit a custom shape you may customize the left panel and configure the right panel according to the attributes of your shape.
@@ -101,7 +111,10 @@ The interface of the editor initialized in the org chart mode consists of three 
 To build a diagram in the org chart mode of the editor, you need to select a shape and add a new child for it.
 You can adjust the attributes of the shapes via the available sidebar options of the right panel.
 
-![](assets/orgchart_editor.gif)
+|[Diagram editor. Org chart mode. Basic initialization](https://snippet.dhtmlx.com/og4qm3ja)|
+|--|
+|![](assets/orgchart_editor.gif)|
+
 
 In the example below, you can notice that a set of sidebar options for editing the attributes of the shape with an image differs from the sidebar options for editing a simple card.
 
@@ -115,27 +128,11 @@ The interface of the editor initialized in the mindmap mode consists of three pa
 
 To build a diagram in the mindmap mode of the editor, you need to select a shape and add a new child for it. You can adjust the attributes of the shapes via the available sidebar options of the right panel.
 
-![](assets/mindmap_editor.gif)
-
-**Related sample:** [Diagram editor. Mindmap mode. Emotions mind map](https://snippet.dhtmlx.com/lo1vm0e8)
+|[Diagram editor. Mindmap mode. Emotions mind map](https://snippet.dhtmlx.com/lo1vm0e8)|
+|--|
+|![](assets/mindmap_editor.gif)|
 
 If you've added a custom shape to the editor in the org chart mode, you can configure the right panel to be able to edit custom properties of the shape.
-
-Custom Diagram
---------------
-
-You can build your own diagram by creating custom shapes of the desired appearance and linking them by suitable connectors, as well as create groups and swimlanes of different configurations.
-
-|[Life Cycle Diagram](https://snippet.dhtmlx.com/y4k51owl)|[Venn Diagram](https://snippet.dhtmlx.com/2tzyfois)|[UML Class Diagram](https://snippet.dhtmlx.com/madymxt5)|
-|-----|-----|---|
-|![](assets/sticky.png)|![](assets/venn.png)| ![](assets/html.png)  |
-
-
-|[Medical Hierarchy](https://snippet.dhtmlx.com/8fubjmlz)|[Network Diagram](https://snippet.dhtmlx.com/u1xqyo9w)|[Site map and user flow](https://snippet.dhtmlx.com/do1jwmw1)
-|---|---|----|
-|![](assets/medical_hierarchy.png)|![](assets/network.png)|![](assets/sitemap.png)|
-
-
 
 Shape Search
 ---------------
