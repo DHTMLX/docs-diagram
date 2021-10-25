@@ -50,7 +50,7 @@ Usage of swimlanes of the DHTMLX Diagram library lets you represent any process 
 
 |[Diagram. Default mode. Swimlane template](https://snippet.dhtmlx.com/z6x5m3gb)|
 |---|
-|![](assets/swimlane_overview.png)|
+|![](assets/swimlane.png)|
 
 Diagram in the org chart mode
 -----------------------
