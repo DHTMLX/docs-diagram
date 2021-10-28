@@ -55,7 +55,7 @@ Usage of swimlanes of the DHTMLX Diagram library lets you represent any process 
 Diagram in the org chart mode
 -----------------------
 
-There is also an org chart mode of Diagram that presents a set of shapes connected by lines in a hierarchical order. A parent shape of any level can also have an assistant item. The assistant item can't have any child.
+There is also an org chart mode of Diagram that presents a set of shapes connected by lines in a hierarchical order. A parent shape of any level can also have an assistant item. The assistant item can't have any child. The assistant item can be added in the [editor](#editor-in-the-org-chart-mode) or by  prepare a set of [data](guides/loading_data.md/#preparing-data-to-load).
 
 <iframe src="https://snippet.dhtmlx.com/qnx3ekin?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
 
@@ -108,7 +108,7 @@ If you need to edit a custom shape you may customize the left panel and configur
 
 The interface of the editor initialized in the org chart mode consists of three parts: toolbar, grid area, and right panel. Note, that the editor does not have the left panel.
 
-To build a diagram in the org chart mode of the editor, you need to select a shape and add a new child for it. You can also add an assistant item for a parent shape. You can adjust the attributes of the shapes via the available sidebar options of the right panel.
+To build a diagram in the org chart mode of the editor, you need to select a shape and add a new child for it. You can also add an assistant item for a parent shape of any level. You can adjust the attributes of the shapes via the available sidebar options of the right panel.
 
 
 |[Diagram editor. Org chart mode. Basic initialization](https://snippet.dhtmlx.com/og4qm3ja)|

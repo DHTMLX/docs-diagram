@@ -33,7 +33,7 @@ Double-click the text of a shape to edit it.
 
 ### Interface elements in the org chart mode
 
-You can drag shapes to place them on the desired positions relative to the root shape, or drag the root shape to move the whole diagram. To add a new shape, select a shape and add a new child for it.
+You can drag shapes to place them on the desired positions relative to the root shape, or drag the root shape to move the whole diagram. To add a new shape, select a shape and add a new child or assistant for it.
 
 ![](../../assets/org_shape_toolbar.png)
 
@@ -41,6 +41,7 @@ When you click on any shape, it becomes editable and gets personal interface ele
 
 - a toolbar with controls:
     - *"add"* - to add a new child for the selected shape;
+    - *"assistant"* - to add assistant for the selected shape;
     - *"horizontal"* - to arrange children of the shape horizontally;
     - *"vertical"* - to arrange children of the shape vertically;
     - *"remove"* - to delete the selected shape (except for the root one);
