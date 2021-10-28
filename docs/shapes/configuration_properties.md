@@ -10,7 +10,7 @@ description: text
 
 ## Common properties
 
-- **type** - (*string*) the type of the shape (by default: "card" in the org chart mode, "topic" in the mindmap mode);
+- **type** - (*string*) the type of the shape (by default: "rectangle" in the default mode, "card" in the org chart mode, "topic" in the mindmap mode);
 - **id** - (*string | number*) the unique id of a shape;
 - **x** - (*number*) the x coordinate of the shape position;
 - **y** - (*number*) the y coordinate of the shape position;
