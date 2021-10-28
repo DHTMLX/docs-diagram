@@ -82,7 +82,7 @@ const data = [
     },
     {
         "id": "1.1",
-        "text": "assistant 1.1",
+        "text": "assistant: 1.1",
         "parent": 1,
         "dir": "vertical",
         "assistant": true

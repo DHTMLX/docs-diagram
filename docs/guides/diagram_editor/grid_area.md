@@ -29,7 +29,7 @@ When you click on any shape, it becomes editable and gets personal interface ele
 
 When the connection mode is enabled for a shape, you can set links to other shapes, adjust their position and form, as well as delete unnecessary links via the "remove" toolbar control.
 
-Double-click the text of a shape to edit it. 
+Double-click the text of a shape to edit it.
 
 ### Interface elements in the org chart mode
 
@@ -47,7 +47,7 @@ When you click on any shape, it becomes editable and gets personal interface ele
 - resizing handles (pull the handles of the editable shape to change its sizes);
 - an icon to collapse/expand child shapes.
 
-Double-click the text of a shape to edit it. 
+Double-click the text of a shape to edit it.
 
 ### Interface elements in the mindmap mode
 
@@ -69,7 +69,7 @@ Double-click the text of a shape to edit it.
 
 ## Managing lines
 
-In the default mode of the editor, you can set links to other shapes, adjust their position and form, as well as delete unnecessary links.
+In the default mode of the editor, you can set links to other shapes, adjust their position and form, as well as delete unnecessary links. In the default mode, you can also add text to the line by double-clicking it. Double-click the text to edit it.
 
 ![](../../assets/line_toolbar.png)
 
