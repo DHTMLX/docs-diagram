@@ -36,13 +36,13 @@ const data = [
             "title":{
                 "fontSize":14,
                 "lineHeight":14,
-                "editable":true,
+                "editable":false, // disables inline editing of all text items of a line
                 "text":[
                     {
                         "type":"$linetext",
-                        "id":"u1635150512709",
+                        "id":"t1",
                         "text":"Follow the instruction",
-                        "editable":false, // disables inline editing for text content of a line
+                        "editable":false, // disables inline editing of the current text item of a line
                     }
                 ]
             }
