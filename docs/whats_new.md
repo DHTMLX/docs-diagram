@@ -8,6 +8,32 @@ description: text
 
 If you are updating Diagram from an older version, check [Migration to Newer Version](migration.md) for details.
 
+Version 4.1
+------------------
+Released on , 2021
+
+### New functionality
+
+
+
+### API
+
+New events of the Diagram object: [emptyAreaDblClick](../api/diagram/emptyareadblclick_event/), [emptyAreaMouseDown](../api/diagram/emptyareamousedown_event/), [lineTitleClick](../api/diagram/linetitleclick_event/), [lineTitleDblClick](../api/diagram/linetitledblclick_event/), [lineTitleMouseDown](../api/diagram/linetitlemousedown_event/)
+
+New events of the Editor object: [beforeLineTitleMove](../api/editor/beforelinetitlemove_event/), [afterLineTitleMove](../api/editor/afterlinetitlemove_event/), [lineTitleMoveEnd](../api/editor/linetitlemoveend_event/)
+
+New Selection API method: [getSubId()](../api/selection/getsubid_method/)
+
+### Updates
+
+Updated events of [Inline editor](../api/inline_editor/index/)
+
+Updated events of [Selection API](../api/selection/index/#events) 
+
+### Fixes
+
+
+
 Version 4.0
 ------------------
 Released on September 7, 2021
