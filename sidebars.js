@@ -183,13 +183,13 @@ module.exports = {
       // Cell manager API
       {
         type: "category",
-        label: "Cell manager API",
+        label: "CellManager API",
         collapsed: true,
         items: [
           "api/cell_manager/index",
           {
             type: "category",
-            label: "Cell manager methods",
+            label: "CellManager methods",
             items: [
               "api/cell_manager/add_method",
               "api/cell_manager/getcellid_method",
@@ -206,7 +206,7 @@ module.exports = {
           },
           {
             type: "category",
-            label: "Cell manager events",
+            label: "CellManager events",
             items: [
               "api/cell_manager/aftercellsadd_event",
               "api/cell_manager/aftercellsmove_event",
@@ -290,13 +290,13 @@ module.exports = {
       // Inline editor 
       {
         type: "category",
-        label: "Inline editor API",
+        label: "InlineEditor API",
         collapsed: true,
         items: [
           "api/inline_editor/index",
           {
             type: "category",
-            label: "Inline editor events",
+            label: "InlineEditor events",
             items: [
               "api/inline_editor/aftereditorclose_event",
               "api/inline_editor/aftereditorediting_event",

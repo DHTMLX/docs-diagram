@@ -125,12 +125,12 @@ const data = [
 
 ## Properties specific for "text", "topic" and flow chart shapes
 
-- **fill** - (*string*) the color of the shape, "#DEDEDE" by default;
-- **stroke** - (*string*) the color of the shape outline, "#DEDEDE" by default;
+- **fill** - (*string*) the color of the shape;
+- **stroke** - (*string*) the color of the shape outline;
 - **strokeWidth** - (*number*) the width of the shape outline, 1 by default;
 - **strokeType** - (*string*) the type of the stroke outline, "line" (default), "dash" for a dashed line;
 - **strokeDash** - (*string*) the pattern of dashes and spaces for a dashed outline;
-- **fontColor** - (*string*) the color of the text font, "#4C4C4C" by default;
+- **fontColor** - (*string*) the color of the text font;
 - **fontStyle** - (*string*) the style of the text font, can be "normal" (default), "italic" or "oblique";
 - **fontWeight** - (*string*) the text font weight, possible values are: "normal" (default), "bold", "bolder", "lighter", values "100"-"900", where "400" is the same as normal, and "600"+ is the boldest font;
 - **fontSize** - (*number*) the size of the font in pixels, 14 by default;
@@ -157,7 +157,7 @@ const data = [
 
 ## Properties specific for "card" shapes
 
-- **headerColor** - (*string*) the color of the header of the shape, any CSS legal color value.
+- **headerColor** - (*string*) the color of the header of the shape.
 
 ~~~js
 const data = [
@@ -180,7 +180,7 @@ const data = [
 
 - **img** - (*string*) the image of a shape;
 - **title** - (*string*) the title of a shape;
-- **headerColor** - (*string*) the color of the header of the shape, any CSS legal color value.
+- **headerColor** - (*string*) the color of the header of the shape.
 
 ~~~js
 const data = [

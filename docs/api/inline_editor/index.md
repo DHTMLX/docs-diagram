@@ -1,10 +1,10 @@
 ---
 sidebar_label: Overview
-title: Inline editor overview
+title: InlineEditor overview
 description: text
 ---
 
-# Inline Editor overview
+# InlineEditor overview
 
 The API set for controlling the process of editing the text of items by double-click on the text. The API can be used both in the diagram and in the editor.
 ## Events
