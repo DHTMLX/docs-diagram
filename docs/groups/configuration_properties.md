@@ -6,7 +6,9 @@ description: text
 
 # Group properties
 
-The Diagram groups are not configured automatically. A group object contains a list of configuration properties which allow you to configure the positioning and appearance of the group:
+{{note While specifying color values of the item, you can use the following formats: HEX, RGBA, RGB, HSL, or HSLA.}}
+
+A group object contains a list of configuration properties which allow you to configure the positioning and appearance of the group:
 
 - **type** - (*string*) the type of an element, set it to "$group";
 - **id** - (*string, number*) the unique id of a group;
@@ -48,8 +50,6 @@ The Diagram groups are not configured automatically. A group object contains a l
   - **enable** - (*boolean*) shows/hides the header of the group; *true* by default; <br>**Related sample:** [Diagram. Default mode. Group. Header position and text settings](https://snippet.dhtmlx.com/6hunrja8)
 - **[key: string]: any**  - your own property with your own logic to be implemented under the hood.
 
-{{note While specifying color values of the item, you can use the following formats: HEX, RGBA, RGB, HSL, or HSLA.}}
-
 ### Example
 
 ~~~js
@@ -69,7 +69,7 @@ const data = [
             textVerticalAlign: "center", // "top", "center", "bottom"
         },
       	// the child items of the group
-        groupChildren: ["1.1", "1.2"],
+        groupChildren: [1.1, 1.2],
         open: false,
     },
   	// configuring shapes to put into the group

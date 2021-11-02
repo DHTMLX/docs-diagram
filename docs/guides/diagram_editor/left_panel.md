@@ -35,7 +35,7 @@ To do that, you need to:
 - create separate objects with different configurations for the items of the necessary type. You can create as many objects as you need;
 - use the names of the created objects as the types of the items and add them into the sections of the left panel using the [](../../api/editor/shapesections_property.md) property.
 
-<iframe src="https://snippet.dhtmlx.com/2z0a18oz?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="700"></iframe>
+<iframe src="https://snippet.dhtmlx.com/2z0a18oz?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
 ## Setting shape preview
 

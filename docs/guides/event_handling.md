@@ -64,17 +64,17 @@ editor.diagram.events.on("ShapeClick", function(id) {
 
 This way can be also used if you need to apply the events which are listed below.
 
-### Cell manager events
+### CellManager events
 
-Check the full list of the Cell manager API events in the [API Reference](../../api/cell_manager/index/#events). 
+Check the full list of the CellManager API events in the [API Reference](../../api/cell_manager/index/#events). 
 
 ### DataCollection events
 
 Check the full list of the DataCollection API events in the [API Reference](../../api/data_collection/index/#events).
 
-### Inline editor events
+### InlineEditor events
 
-Check the full list of the Inline editor API events in the [API Reference](../../api/inline_editor/index/#events).
+Check the full list of the InlineEditor API events in the [API Reference](../../api/inline_editor/index/#events).
 
 ### Selection events
 
