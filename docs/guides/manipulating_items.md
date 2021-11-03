@@ -316,7 +316,7 @@ For more details about how to configure the behavior of group items, read the [r
 
 ## Working with swimlane cells
 
-You can manage swimlane cells with the help of the [Cell Manager API](../../api/cell_manager/index/). For example, you can add, move, remove cells as rows or columns, validate cells, and much more. 
+You can manage swimlane cells with the help of the [CellManager API](../../api/cell_manager/index/). For example, you can add, move, remove cells as rows or columns, validate cells, and much more. 
 
 Let's take a swimlane of the following configuration:
 
