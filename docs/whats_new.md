@@ -14,21 +14,39 @@ Released on , 2021
 
 ### New functionality
 
+Title for Lines in the default mode
 
+Assistant for Org mode
+
+Partner for Org mode
+
+Movement of shapes in org/mindmap mode with all their children from one parent to another
+
+Styling of target items
+
+Default "rectangle" type of shape in the default mode
 
 ### API
 
-New events of the Diagram object: [emptyAreaDblClick](../api/diagram/emptyareadblclick_event/), [emptyAreaMouseDown](../api/diagram/emptyareamousedown_event/), [lineTitleClick](../api/diagram/linetitleclick_event/), [lineTitleDblClick](../api/diagram/linetitledblclick_event/), [lineTitleMouseDown](../api/diagram/linetitlemousedown_event/)
+New events of the Diagram object: [emptyAreaDblClick](../api/diagram/emptyareadblclick_event/), [emptyAreaMouseDown](../api/diagram/emptyareamousedown_event/), [lineTitleClick](../api/diagram/linetitleclick_event/), [lineTitleDblClick](../api/diagram/linetitledblclick_event/), [lineTitleMouseDown](../api/diagram/linetitlemousedown_event/), itemTarget, beforeItemCatch, afterItemCatch
 
-New events of the Editor object: [beforeLineTitleMove](../api/editor/beforelinetitlemove_event/), [afterLineTitleMove](../api/editor/afterlinetitlemove_event/), [lineTitleMoveEnd](../api/editor/linetitlemoveend_event/)
+New Shape properties: assistant, partner, catchItem, giveItem
+
+New Line properties: title
+
+New events of the Editor object: [beforeLineTitleMove](../api/editor/beforelinetitlemove_event/), [afterLineTitleMove](../api/editor/afterlinetitlemove_event/), [lineTitleMoveEnd](../api/editor/linetitlemoveend_event/), itemTarget, beforeItemCatch, afterItemCatch
+
+New properties of the Editor object: itemsDraggable
 
 New Selection API method: [getSubId()](../api/selection/getsubid_method/)
 
 ### Updates
 
-Updated events of [Inline editor](../api/inline_editor/index/)
+Updated events of [InlineEditor](../api/inline_editor/index/)
 
-Updated events of [Selection API](../api/selection/index/#events) 
+Updated events of [Selection API](../api/selection/index/#events)
+
+Background in org/mindmap mode is changed `todo: check`
 
 ### Fixes
 
