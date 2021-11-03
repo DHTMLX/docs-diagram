@@ -43,7 +43,7 @@ const data = [
 ## Properties specific for the default mode
 
 - **angle** - (*number*) the angle of shape rotation;
-- **preview** - (*string|object*) either a path to the image/a base64 image or an object with settings [to configure the shape preview displayed in the left panel of the editor](../../guides/diagram_editor/left_panel/#setting-shape-preview). The object can contain a set of optional properties:
+- **preview** - (*string | object*) either a path to the image/a base64 image or an object with settings [to configure the shape preview displayed in the left panel of the editor](../../guides/diagram_editor/left_panel/#setting-shape-preview). The object can contain a set of optional properties:
   - **img** - (*string*) a path to the image or a base64 image;
   - **width** - (*number | string*) the width of the image;
   - **height** - (*number | string*) the height of the image;
@@ -66,7 +66,9 @@ const data = [
 **Related samples**: [Diagram. Org chart mode. Nested vertical lists](https://snippet.dhtmlx.com/98tzmzpg)
 
 - **open** - (*boolean*) defines, whether the child items of the current shape will be shown. *True* by default;
-- **assistant** - (*boolean*) defines, whether the shape is an assistant item for the parent shape.
+- **assistant** - (*boolean*) defines, whether the shape is an assistant item for the parent shape;
+- **catchItem** - (*boolean*) defines, whether the item can catch the moving item;
+- **giveItem** - (*boolean*) defines, whether the item can be moved.
 
 ~~~js
 const data = [
@@ -98,7 +100,9 @@ const data = [
 - **open** - (*boolean*) defines, whether the child items of the current shape will be shown. *True* by default;
 - **openDir** - (*object*) shows/hides the child items of the root shape. The object takes two attributes:
     - **left** - (*boolean*) shows/hides the child items to the left of the root shape;
-    - **right** - (*boolean*) shows/hides the child items to the right of the root shape.
+    - **right** - (*boolean*) shows/hides the child items to the right of the root shapeж;
+- **catchItem** - (*boolean*) defines, whether the item can catch the moving item;
+- **giveItem** - (*boolean*) defines, whether the item can be moved.
 
 ~~~js
 const data = [
