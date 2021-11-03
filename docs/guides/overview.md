@@ -48,7 +48,7 @@ Read the articles to learn the ways of loading data into the Diagram, serializin
 - [Loading and storing data](../../guides/loading_data/)
 - [Exporting Diagram](../../guides/data_export/)
 
-With the following articles you will be able to create a fully customized diagram and breath life into it: operate the diagram ans its items via the API, attach handlers to the necessary events.
+With the following articles you will be able to create a fully customized diagram and breath life into it: operate the diagram and its items via the API, attach handlers to the necessary events.
 
 - [Manipulating Items](../../guides/manipulating_items/)
 - [Customizing Items](../../guides/customization/)
