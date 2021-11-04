@@ -33,7 +33,7 @@ Double-click the text of a shape to edit it.
 
 ### Interface elements in the org chart mode
 
-You can drag shapes to place them on the desired positions relative to the root shape, or drag the root shape to move the whole diagram. To add a new shape, select a shape and add a new child or assistant for it.
+You can drag shapes to place them on the desired positions relative to the root shape, or drag the root shape to move the whole diagram. To add a new shape, select a shape and add a new child for it. You can also add assistant or partner items. The shapes are draggable from one parent item to another. The moved item is dragged with all its children items.
 
 ![](../../assets/org_shape_toolbar.png)
 
@@ -52,7 +52,8 @@ Double-click the text of a shape to edit it.
 
 ### Interface elements in the mindmap mode
 
-You can drag shapes to place them on the desired positions relative to the root shape, or drag the root shape to move the whole diagram. If you drag the parent shape, the shape will be moved with all its child shapes. To add a new shape, select a shape and add a new child for it.
+You can drag shapes to place them on the desired positions relative to the root shape, or drag the root shape to move the whole diagram. If you drag the parent shape, the shape will be moved with all its child shapes. To add a new shape, select a shape and add a new child for it. The shapes are draggable from one parent item to another. The moved item is dragged with all its children items.
+
 
 ![](../../assets/mindmap_shape_toolbar.png)
 

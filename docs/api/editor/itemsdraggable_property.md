@@ -14,13 +14,13 @@ description: text
 
 @example:
 const editor = new dhx.DiagramEditor(document.body, {
-    type: "org", //  or "mindmap" mode
+    type: "org", //  org" or "mindmap"
     itemsDraggable: false,
 });
 
 @descr:
 
-The moved item is dragged with all its children items. The property works in org chart and mindmap modes.
+The property works in org chart and mindmap modes. The moved item is dragged with all its children items.
 
 @changelog:
 
