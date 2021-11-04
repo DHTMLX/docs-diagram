@@ -20,12 +20,14 @@ description: text
 | Name                                         | Description                                         |
 | :------------------------------------------- | :-------------------------------------------------- |
 | [](api/editor/aftergroupmove_event.md)       | @getshort(api/editor/aftergroupmove_event.md)       |
+| [](api/editor/afteritemcatch_event.md)       | @getshort(api/editor/afteritemcatch_event.md)       |
 | [](api/editor/afteritemmove_event.md)        | @getshort(api/editor/afteritemmove_event.md)        |
 | [](api/editor/aftershapeiconclick_event.md)  | @getshort(api/editor/aftershapeiconclick_event.md)  |
 | [](api/editor/aftershapemove_event.md)       | @getshort(api/editor/aftershapemove_event.md)       |
 | [](api/editor/applybutton_event.md)          | @getshort(api/editor/applybutton_event.md)          |
 | [](api/editor/autolayout_event.md)           | @getshort(api/editor/autolayout_event.md)           |
 | [](api/editor/beforegroupmove_event.md)      | @getshort(api/editor/beforegroupmove_event.md)      |
+| [](api/editor/beforeitemcatch_event.md)      | @getshort(api/editor/beforeitemcatch_event.md)      |
 | [](api/editor/beforeitemmove_event.md)       | @getshort(api/editor/beforeitemmove_event.md)       |
 | [](api/editor/beforeshapeiconclick_event.md) | @getshort(api/editor/beforeshapeiconclick_event.md) |
 | [](api/editor/beforeshapemove_event.md)      | @getshort(api/editor/beforeshapemove_event.md)      |
@@ -34,6 +36,7 @@ description: text
 | [](api/editor/groupmoveend_event.md)         | @getshort(api/editor/groupmoveend_event.md)         |
 | [](api/editor/importdata_event.md)           | @getshort(api/editor/importdata_event.md)           |
 | [](api/editor/itemmoveend_event.md)          | @getshort(api/editor/itemmoveend_event.md)          |
+| [](api/editor/itemtarget_event.md)           | @getshort(api/editor/itemtarget_event.md)           |
 | [](api/editor/resetbutton_event.md)          | @getshort(api/editor/resetbutton_event.md)          |
 | [](api/editor/shapemoveend_event.md)         | @getshort(api/editor/shapemoveend_event.md)         |
 | [](api/editor/shaperesize_event.md)          | @getshort(api/editor/shaperesize_event.md)          |

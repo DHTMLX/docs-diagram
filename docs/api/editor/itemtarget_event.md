@@ -21,7 +21,9 @@ editor.events.on("itemTarget", (movedId, targetId, event) => {
 });
 
 @descr:
-The event works with org chart and mindmap modes of Diagram, **itemsDraggable** property should be *true*. The event doesn't work with parent item of the moved item and with the moved item with the property `giveItem: false`.
+The event works with org chart and mindmap modes of Diagram, **itemsDraggable** property should be *true*. 
+
+The event doesn't work with parent item of the moved item and with the moved item with the property `giveItem: false`.
 
 @changelog:
 
