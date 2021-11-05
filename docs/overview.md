@@ -54,7 +54,9 @@ Usage of swimlanes of the DHTMLX Diagram library lets you represent any process 
 Diagram in the org chart mode
 -----------------------
 
-There is also an org chart mode of Diagram that presents a set of shapes connected by lines in a hierarchical order. A parent shape of any level can also have assistant or partner items. The assistant and partner items can't be parent items. The assistant and partner items can be added in the [editor](#editor-in-the-org-chart-mode) or by  preparing a set of [data](guides/loading_data.md/#preparing-data-to-load).
+There is also an org chart mode of Diagram that presents a set of shapes connected by lines in a hierarchical order. A parent shape of any level can also have assistant or partner items. The assistant and partner items can't be parent items. The connection between parent shape and its partner is always horizontal.
+
+The assistant and partner items can be added in the [editor](#editor-in-the-org-chart-mode) or by  preparing a set of [data](guides/loading_data.md/#preparing-data-to-load).
 
 <iframe src="https://snippet.dhtmlx.com/qnx3ekin?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
 
@@ -105,7 +107,9 @@ If you need to edit a custom shape you may customize the left panel and configur
 
 The interface of the editor initialized in the org chart mode consists of three parts: toolbar, grid area, and right panel. Note, that the editor does not have the left panel.
 
-To build a diagram in the org chart mode of the editor, you need to select a shape and add a new child for it. You can also add assistant or partner items for a parent shape of any level. The assistant or partner items can't be parent items. The shapes are draggable from one parent item to another. The moved item is dragged with all its children items.
+To build a diagram in the org chart mode of the editor, you need to select a shape and add a new child for it. You can also add assistant or partner items for a parent shape of any level. The assistant or partner items can't be parent items. The connection between parent shape and its partner is always horizontal.
+
+The shapes are draggable from one parent item to another. The moved item is dragged with all its children items.
 
 You can adjust the attributes of the shapes via the available sidebar options of the right panel.
 

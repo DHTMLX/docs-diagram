@@ -67,6 +67,7 @@ const data = [
 
 - **open** - (*boolean*) defines, whether the child items of the current shape will be shown. *True* by default;
 - **assistant** - (*boolean*) defines, whether the shape is an assistant item for the parent shape;
+- **partner** - (*boolean*) defines, whether the shape is an partner item for the parent shape;
 - **catchItem** - (*boolean*) defines, whether the item can catch the moving item;
 - **giveItem** - (*boolean*) defines, whether the item can be moved.
 
@@ -74,20 +75,27 @@ const data = [
 const data = [
     {
         "id": "1",
-        "text": "item: 1",
+        "text": "item 1",
     },
     {
         "id": "2",
-        "text": "item: 2",
+        "text": "item 2",
         "parent": 1,
         "dir": "vertical"
     },
     {
         "id": "1.1",
-        "text": "assistant: 1.1",
+        "text": "assistant for 1",
         "parent": 1,
         "dir": "vertical",
         "assistant": true
+    },
+    {
+        "id": "1.2",
+        "text": "partner for 1",
+        "parent": 1,
+        "dir": "vertical",
+        "partner": true
     },
 ];
 ~~~
