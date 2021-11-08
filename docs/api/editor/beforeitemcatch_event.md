@@ -8,11 +8,11 @@ description: text
 
 @short: fires before an item is catched
 
-@signature: {`beforeItemCatch: (movedId: Id, movedId: Id, events: MouseEvent) => boolean | void;`}
+@signature: {`beforeItemCatch: (movedId: Id, targetId: Id, event: MouseEvent) => boolean | void;`}
 
 @params:
-- `movedId: string` - the id of the moved item
-- `targetId: string ` - the id of the target item
+- `movedId: string | number` - the id of the moved item
+- `targetId: string | number` - the id of the target item
 - `events: MouseEvent` - a native HTML event object
 
 @returns:
@@ -25,7 +25,7 @@ editor.events.on("beforeItemCatch", (movedId, targetId, event) => {
 });
 
 @descr:
-The event works with org chart and mindmap modes of Diagram, **itemsDraggable** property should be *true*.
+The event works with org chart and mindmap modes of Diagram, **itemsDraggable** property should be **true**.
 
 @changelog:
 

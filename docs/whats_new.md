@@ -24,19 +24,20 @@ Movement of shapes in org/mindmap mode with all their children from one parent t
 
 Styling of target items
 
-Default "rectangle" type of shape in the default mode
 
 ### API
 
 New events of the Diagram object: [emptyAreaDblClick](../api/diagram/emptyareadblclick_event/), [emptyAreaMouseDown](../api/diagram/emptyareamousedown_event/), [lineTitleClick](../api/diagram/linetitleclick_event/), [lineTitleDblClick](../api/diagram/linetitledblclick_event/), [lineTitleMouseDown](../api/diagram/linetitlemousedown_event/), itemTarget, beforeItemCatch, afterItemCatch
 
-New Shape properties: assistant, partner, catchItem, giveItem
+New [Shape properties](../shapes/configuration_properties/#properties-specific-for-the-org-chart-mode) specific for the org chart mode: assistant, partner, catchItem, giveItem
 
-New Line properties: title
+New [Shape properties](../shapes/configuration_properties/#properties-specific-for-the-mindmap-mode) specific for the mindmap mode: catchItem, giveItem
 
-New events of the Editor object: [beforeLineTitleMove](../api/editor/beforelinetitlemove_event/), [afterLineTitleMove](../api/editor/afterlinetitlemove_event/), [lineTitleMoveEnd](../api/editor/linetitlemoveend_event/), itemTarget, beforeItemCatch, afterItemCatch
+New [Line properties](../lines/configuration_properties/#properties-specific-for-the-default-mode) specific for the default mode: title
 
-New properties of the Editor object: itemsDraggable
+New events of the Editor object: [beforeLineTitleMove](../api/editor/beforelinetitlemove_event/), [afterLineTitleMove](../api/editor/afterlinetitlemove_event/), [lineTitleMoveEnd](../api/editor/linetitlemoveend_event/), [itemTarget](../api/editor/itemtarget_event/), [beforeItemCatch](../api/editor/beforeitemcatch_event/), [afterItemCatch](../api/editor/afteritemcatch_event/)
+
+New properties of the Editor object: [itemsDraggable](../api/editor/itemsdraggable_property/)
 
 New Selection API method: [getSubId()](../api/selection/getsubid_method/)
 
@@ -46,11 +47,11 @@ Updated events of [InlineEditor](../api/inline_editor/index/)
 
 Updated events of [Selection API](../api/selection/index/#events)
 
-Background in org/mindmap mode is changed `todo: check`
+The default type of the shape in the default mode is "rectangle"
 
 ### Fixes
 
-
+The performance is improved for all types of diagram
 
 Version 4.0
 ------------------
