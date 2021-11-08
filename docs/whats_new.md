@@ -24,10 +24,9 @@ Movement of shapes in org/mindmap mode with all their children from one parent t
 
 Styling of target items
 
-
 ### API
 
-New events of the Diagram object: [emptyAreaDblClick](../api/diagram/emptyareadblclick_event/), [emptyAreaMouseDown](../api/diagram/emptyareamousedown_event/), [lineTitleClick](../api/diagram/linetitleclick_event/), [lineTitleDblClick](../api/diagram/linetitledblclick_event/), [lineTitleMouseDown](../api/diagram/linetitlemousedown_event/), itemTarget, beforeItemCatch, afterItemCatch
+New events of the Diagram object: [emptyAreaDblClick](../api/diagram/emptyareadblclick_event/), [emptyAreaMouseDown](../api/diagram/emptyareamousedown_event/), [lineTitleClick](../api/diagram/linetitleclick_event/), [lineTitleDblClick](../api/diagram/linetitledblclick_event/), [lineTitleMouseDown](../api/diagram/linetitlemousedown_event/)
 
 New [Shape properties](../shapes/configuration_properties/#properties-specific-for-the-org-chart-mode) specific for the org chart mode: assistant, partner, catchItem, giveItem
 
