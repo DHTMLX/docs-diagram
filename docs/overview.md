@@ -54,11 +54,31 @@ Usage of swimlanes of the DHTMLX Diagram library lets you represent any process 
 Diagram in the org chart mode
 -----------------------
 
-There is also an org chart mode of Diagram that presents a set of shapes connected by lines in a hierarchical order. A parent shape of any level can also have assistant or partner items. The assistant and partner items can't be parent items. The connection between parent shape and its partner is always horizontal.
-
-The assistant and partner items can be added in the [editor](#editor-in-the-org-chart-mode) or by  preparing a set of [data](guides/loading_data.md/#preparing-data-to-load).
+There is also an org chart mode of Diagram that presents a set of shapes connected by lines in a hierarchical order.
 
 <iframe src="https://snippet.dhtmlx.com/qnx3ekin?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
+
+### Assistant and partner shapes
+
+A parent shape of any level can have assistant or partner items. The assistant and partner shapes can't be parent items. The assistant and partner items can be added in the [editor](#editor-in-the-org-chart-mode) or by preparing a set of [data](guides/loading_data.md/#preparing-data-to-load).
+
+In the hierarchical order, the assistant items are displayed between parent and children shapes.
+
+![](assets/orgchart_with_assistant.png)
+
+The connection between parent shape and its partner items is always horizontal. Also, the connections between parent shape and all its children become horizontal when you add the partner item for a parent, even if the connections were vertical before.
+
+The partner shapes are very useful for building a family tree.
+
+Here are examples of how the connections of parent shapes look like with one, two, three, and four partners.
+
+| One partner                               | Two  partners                              |
+| ----------------------------------------- | ------------------------------------------ |
+| ![](assets/orgchart_with_one_partner.png) | ![](assets/orgchart_with_two_partners.png) |
+
+| Three partner                                | Four partners                               |
+| -------------------------------------------- | ------------------------------------------- |
+| ![](assets/orgchart_with_three_partners.png) | ![](assets/orgchart_with_four_partners.png) |
 
 ### Custom shapes
 
@@ -107,7 +127,7 @@ If you need to edit a custom shape you may customize the left panel and configur
 
 The interface of the editor initialized in the org chart mode consists of three parts: toolbar, grid area, and right panel. Note, that the editor does not have the left panel.
 
-To build a diagram in the org chart mode of the editor, you need to select a shape and add a new child for it. You can also add assistant or partner items for a parent shape of any level. The assistant or partner items can't be parent items. The connection between parent shape and its partner is always horizontal.
+To build a diagram in the org chart mode of the editor, you need to select a shape and add a new child for it. You can also add assistant or partner items for a parent shape of any level. The assistant or partner items can't be parent items. The connection between parent shape and its partner is always horizontal. Also, the connections between parent shape and all its children become horizontal when you add the partner item for a parent, even if the connections were vertical before.
 
 The shapes are draggable from one parent item to another. The moved item is dragged with all its children items.
 
@@ -116,6 +136,15 @@ You can adjust the attributes of the shapes via the available sidebar options of
 | [Diagram editor. Org chart mode. Basic initialization](https://snippet.dhtmlx.com/og4qm3ja) |
 | ------------------------------------------------------------------------------------------- |
 | ![](assets/orgchart_editor.gif)                                                             |
+
+| [Diagram editor. Org chart mode. Basic initialization](https://snippet.dhtmlx.com/og4qm3ja) |
+| ------------------------------------------------------------------------------------------- |
+| ![](assets/orgchart_editor.gif)                                                             |
+
+| [Diagram editor. Org chart mode. Basic initialization](https://snippet.dhtmlx.com/og4qm3ja) |
+| ------------------------------------------------------------------------------------------- |
+| ![](assets/orgchart_editor.gif)                                                             |
+
 
 In the example below, you can notice that a set of sidebar options for editing the attributes of the shape with an image differs from the sidebar options for editing a simple card.
 
