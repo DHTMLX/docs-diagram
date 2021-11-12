@@ -87,14 +87,12 @@ const data = [
         "id": "1.1",
         "text": "assistant for 1",
         "parent": 1,
-        "dir": "vertical",
         "assistant": true
     },
     {
         "id": "1.2",
         "text": "partner for 1",
         "parent": 1,
-        "dir": "vertical",
         "partner": true
     },
 ];
