@@ -5,6 +5,8 @@ slug: /
 description: text
 ---
 
+# Overview
+
 DHTMLX Diagram is a client-side chart component that allows you to display relations between some objects, concepts or living beings in a visual form:
 as a scheme, chart, organizational chart, mind map, etc. The diagram makes it easier to present tangled and bulky information in a simple and accessible way.
 
@@ -14,7 +16,7 @@ Diagram in the default mode
 DHTMLX Diagram provides the possibility to make various diagrams using a predefined set of shapes and connectors, and experiment with their look and feel.
 
 You can choose shapes of desired types, link them by suitable connectors and build any type of a diagram that will show the sequence of some operations making up a particular process, like this:
-   
+
 |[Data Planning Model](https://snippet.dhtmlx.com/e6zm6wh1)|[Vertical Decision Tree](https://snippet.dhtmlx.com/t6t8ay80)|[Wide Flowchart](https://snippet.dhtmlx.com/4d4k3o8p)|
 |---|---|---|
 |![](assets/icon_data_planning_model.png)|![](assets/icon_vert_decision_tree.png)|![](assets/icon_wide_diagram.png)|
