@@ -81,7 +81,7 @@ You can create a customized diagram by adding new types of shapes into the diagr
 
 ## Styling target shapes
 
-In org chart mode you can add custom style for target items. The stylization doesn't work with the parent item of the moved item and with the moved item with the property `giveItem: false`.
+In org chart and mindmap mode you can add custom style for target items. The stylization doesn't work with the parent item of the moved item and with the moved item with the property `giveItem: false`.
 
 ~~~
 <style>

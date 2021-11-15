@@ -69,18 +69,29 @@ description: text
 const data = [
     // configuring shapes
     { "id": 1, "x": 200, "y": 0, "text": "Start", "type": "start" },
-    { "id": 2, "x": 200, "y": 120, "text": "Call Client and \n set-up Appointment", "type": "process" },
+    { "id": 2, "x": 200, "y": 320, "text": "Call Client and \n set-up Appointment", "type": "process" },
     // configuring lines
     {
-        type: "line",
-        stroke: "#0AB169",
-        connectType: "straight",
-        from: "1",
-        to: "2",
-        fromSide: "bottom",
-        toSide: "top",
-        forwardArrow: "filled"
-    }
+        "type": "line",
+        "stroke": "#0AB169",
+        "connectType": "straight",
+        "from": "1",
+        "to": "2",
+        "fromSide": "bottom",
+        "toSide": "top",
+        "forwardArrow": "filled",
+        "title": {
+            "fontSize":14,
+            "lineHeight":14,
+            "text": [
+                {
+                    "type":"$linetext",
+                    "id":"t2-3",
+                    "text":"Read the instruction",
+                }
+            ]
+        },
+    },
 ];
 ~~~
 

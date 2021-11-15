@@ -35,7 +35,7 @@ Double-click the text of a shape to edit it.
 
 You can drag shapes to place them on the desired positions relative to the root shape, or drag the root shape to move the whole diagram. To add a new shape, select a shape and add a new child for it. You can also add assistant or partner items. The connection between parent shape and its partner is always horizontal.
 
-The shapes are draggable from one parent item to another. The moved item is dragged with all its children items.
+The shapes are draggable from one parent item to another. The moved item is dragged with all its children.
 
 ![](../../assets/org_shape_toolbar.png)
 
@@ -59,8 +59,7 @@ Double-click the text of a shape to edit it.
 
 ### Interface elements in the mindmap mode
 
-You can drag shapes to place them on the desired positions relative to the root shape, or drag the root shape to move the whole diagram. If you drag the parent shape, the shape will be moved with all its child shapes. To add a new shape, select a shape and add a new child for it. The shapes are draggable from one parent item to another. The moved item is dragged with all its children items.
-
+You can drag shapes to place them on the desired positions relative to the root shape, or drag the root shape to move the whole diagram. If you drag the parent shape, the shape will be moved with all its child shapes. To add a new shape, select a shape and add a new child for it. The shapes are draggable from one parent item to another. The moved item is dragged with all its children.
 
 ![](../../assets/mindmap_shape_toolbar.png)
 
@@ -117,7 +116,7 @@ When you click on any swimlane, it becomes editable and gets personal interface 
     - *"remove"* - to delete the selected swimlane;
 - resizing handles (pull the handles of the editable swimlane to change its sizes).
 
-Besides, there are the abilities to add, move, or remove columns or rows of the swimlane via the options of the context menu. The context menu will appear after the user clicks on the icon of a swimlane subheader. 
+Besides, there are the abilities to add, move, or remove columns or rows of the swimlane via the options of the context menu. The context menu will appear after the user clicks on the icon of a swimlane subheader.
 
 ![](../../assets/swimlane_contextmenu.png)
 
@@ -127,13 +126,11 @@ Note, that some options of moving the first/last columns and rows are deactivate
 
 After selecting an item in the grid area, you can update its attributes [via the sidebar options in the right panel of the editor](../../../guides/diagram_editor/right_panel/).
 
-
 ## Configuring toolbar per-item
 
 You can customize the personal toolbar of shapes, groups, swimlanes according to your needs via the [shapeToolbar](../../../api/editor/shapetoolbar_property/) property of the editor.
 
-Using hotkeys
----------------
+## Using hotkeys
 
 There is a set of hotkeys you can use while creating a diagram in the editor:
 
@@ -145,8 +142,7 @@ There is a set of hotkeys you can use while creating a diagram in the editor:
 - **Del** - to delete an item(s);
 - **Arrows** - to move an item(s) left/right/up/down.
 
-Manipulating multiple items
---------------------------------
+## Manipulating multiple items
 
 It is possible to select several diagram items via hovering them over with the left mouse button pressed. You can also select necessary items using keyboard shortcuts - Shift+Left Click.
 

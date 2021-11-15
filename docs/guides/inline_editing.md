@@ -29,15 +29,15 @@ const data = [
         {   "id": 2, "x": 200, "y": 220, "text": "Step 1", "type": "process" },
         // configuring line
         {
-            "type":"line",
-            "from":"1",
-            "to":"2",
-            "id":"1-2",
-            "title":{
-                "fontSize":14,
-                "lineHeight":14,
-                "editable":false, // disables inline editing of all text items of a line
-                "text":[
+            "type": "line",
+            "from": "1",
+            "to": "2",
+            "id": "1-2",
+            "title": {
+                "fontSize": 14,
+                "lineHeight": 14,
+                "editable": false, // disables inline editing of all text items of a line
+                "text": [
                     {
                         "type":"$linetext",
                         "id":"t1",
@@ -45,9 +45,9 @@ const data = [
                         "editable":false, // disables inline editing of the current text item of a line
                     }
                 ]
-            }
-        }
-    ]
+            },
+        },
+    ];
 ~~~
 
 #### Shapes

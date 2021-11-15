@@ -41,18 +41,17 @@ const data = [
         "from": "2", 
         "to": "3", 
         "type": "line", 
-        "title":
-        {
+        "title": {
             "fontSize":14,
             "lineHeight":14,
-            "text":[
+            "text": [
                 {
                     "type":"$linetext",
                     "id":"t2-3",
                     "text":"text",
                 }
             ]
-        }
+        },
     },
 ];
 ~~~

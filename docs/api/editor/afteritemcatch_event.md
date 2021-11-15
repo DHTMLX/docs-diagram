@@ -21,7 +21,7 @@ editor.events.on("afterItemCatch", (movedId, targetId, event) => {
 });
 
 @descr:
-The event works with org chart and mindmap modes of Diagram, **itemsDraggable** property should be **true**.
+The event works in org chart and mindmap modes of Diagram, **itemsDraggable** property should be **true**.
 
 @changelog:
 

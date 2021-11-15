@@ -20,7 +20,7 @@ const editor = new dhx.DiagramEditor(document.body, {
 
 @descr:
 
-The property works in org chart and mindmap modes. The moved item is dragged with all its children items.
+The property works in org chart and mindmap modes. The moved item is dragged with all its children.
 
 @changelog:
 
