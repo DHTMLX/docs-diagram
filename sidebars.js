@@ -104,6 +104,9 @@ module.exports = {
           "api/editor/paint_method",
           "api/editor/parse_method",
           "api/editor/serialize_method",
+          "api/editor/setviewmode_method",
+          "api/editor/zoomin_method",
+          "api/editor/zoomout_method",
         ],
       },
       {
