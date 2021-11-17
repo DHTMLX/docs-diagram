@@ -18,6 +18,6 @@ editor.setViewMode("preview"); // "preview" or "edit"
 
 @descr:
 
-Preview mode is used to show the diagram. Most of the editing functions of Editor are not available. The left and right panels are hidden.
+**Preview** mode is used to show the diagram. Most of the editing functions of Editor are not available. The left and right panels are hidden.
 
-Edit mode is used to edit the diagram. All the functions of Editor are available. The left and right panels are shown.
+**Edit** mode is used to edit the diagram. All the functions of Editor are available. The left and right panels are shown.

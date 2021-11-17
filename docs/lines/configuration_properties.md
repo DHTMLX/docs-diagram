@@ -26,7 +26,7 @@ description: text
 - **toSide** - *(string)* the side of the shape to which a different shape will be attached ("*top*", "*bottom*", "*left*", "*right*", "*center*")
 - **cornersRadius** - *(number)* the radius of rounding corners of a connector
 - **customGap** - (*number*) sets the value of the [](../api/diagram/linegap_property.md) property for the line
-- **title** - *(object)* sets a text item of a line. The title property presents an object with the following properties:
+- **title** - *(object)* sets text items of a line. The title property presents an object with the following properties:
 
   - **fontSize** - *(number | string)* the size of the font in pixels, 14 by default
   - **lineHeight** - *(number | string)* the height of a line, 14 by default

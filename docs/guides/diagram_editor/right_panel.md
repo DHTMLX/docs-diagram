@@ -12,7 +12,7 @@ You can select a necessary item and edit its attributes via the related sidebar 
 
 ## Sidebar options for editing shapes
 
-Right panel can contain different sidebar options for editing various attributes of a shape. The presence or absence of the options in the right panel completely depends on the type and configuration of the shape, and the mode of Diagram initialization. 
+Right panel can contain different sidebar options for editing various attributes of a shape. The presence or absence of the options in the right panel completely depends on the type and configuration of the shape, and the mode of Diagram initialization.
 
 ### Grid step
 
@@ -44,7 +44,6 @@ Use to set the width and height of a shape.
 
 ![](../../assets/editor/size.png)
 
-
 ### Fill
 
 Use to modify the color of a shape via the related colorpicker.
@@ -52,7 +51,6 @@ Use to modify the color of a shape via the related colorpicker.
 *The option is available for "topic" and flow chart shapes.*
 
 ![](../../assets/editor/fill.png)
-
 
 ### Color
 
@@ -90,7 +88,7 @@ Use to adjust the text settings:
 
 ### Title
 
-Use to edit the title. 
+Use to edit the title.
 
 *The option is available for "img-card" shapes.*
 
@@ -135,6 +133,16 @@ Use to change the settings of a line:
 - to set the radius for rounded corners of a line.
 
 ![](../../assets/editor/line_stroke.png)
+
+## Sidebar options for editing title of lines
+
+Lines with title are available in the default mode only.
+
+![](../../assets/editor/line_title_fill.png)
+
+![](../../assets/editor/line_title_text.png)
+
+![](../../assets/editor/line_title_text_style.png)
 
 ## Sidebar options for editing groups, swimlanes
 
