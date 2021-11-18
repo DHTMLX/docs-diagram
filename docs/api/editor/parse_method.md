@@ -1,6 +1,6 @@
 ---
 sidebar_label: parse()
-title: parse
+title: parse Method of Editor
 description: text
 ---
 

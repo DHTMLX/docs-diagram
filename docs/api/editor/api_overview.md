@@ -1,6 +1,6 @@
 ---
 sidebar_label: API overview
-title: API Overview 
+title: Editor API Overview
 description: text
 ---
 

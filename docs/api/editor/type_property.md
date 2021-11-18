@@ -1,6 +1,6 @@
 ---
 sidebar_label: type
-title: type
+title: type Property of Editor
 description: text
 ---
 

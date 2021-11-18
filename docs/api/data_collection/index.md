@@ -1,6 +1,6 @@
 ---
 sidebar_label: Overview
-title: DataCollection overview
+title: DataCollection Overview
 description: text
 ---
 

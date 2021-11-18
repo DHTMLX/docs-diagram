@@ -1,6 +1,6 @@
 ---
 sidebar_label: afterCellsMove
-title: afterCellsMove 
+title: afterCellsMove Event of Cell Manager
 description: text
 ---
 

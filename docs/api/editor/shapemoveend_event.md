@@ -1,6 +1,6 @@
 ---
 sidebar_label: shapeMoveEnd
-title: shapeMoveEnd
+title: shapeMoveEnd Event of Editor
 description: text
 ---
 

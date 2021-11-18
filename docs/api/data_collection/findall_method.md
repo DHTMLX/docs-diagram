@@ -1,6 +1,6 @@
 ---
 sidebar_label: findAll()
-title: findAll
+title: findAll Method of Data Collection
 description: text
 ---
 

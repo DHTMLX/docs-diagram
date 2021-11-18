@@ -1,6 +1,6 @@
 ---
 sidebar_label: What's new
-title: What's New 
+title: What's New
 description: text
 ---
 

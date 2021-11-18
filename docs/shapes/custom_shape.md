@@ -6,7 +6,7 @@ description: text
 
 # Custom Shape
 
-If the default shapes don't meet your needs, you can create your custom shape. 
+If the default shapes don't meet your needs, you can create your custom shape.
 
 Let's imagine, you want to create a new `networkCard` shape which should render an image, text, and IP address.
 

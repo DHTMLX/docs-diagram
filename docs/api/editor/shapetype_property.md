@@ -1,6 +1,6 @@
 ---
 sidebar_label: shapeType
-title: shapeType
+title: shapeType Property of Editor
 description: text
 ---
 

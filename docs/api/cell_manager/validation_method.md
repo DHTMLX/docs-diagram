@@ -1,6 +1,6 @@
 ---
 sidebar_label: validation()
-title: validation
+title: validation Method of Cell Manager
 description: text
 ---
 

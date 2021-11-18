@@ -1,6 +1,6 @@
 ---
 sidebar_label: groupHeaderClick
-title: groupHeaderClick
+title: groupHeaderClick Event
 description: text
 ---
 

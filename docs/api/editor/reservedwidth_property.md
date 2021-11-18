@@ -1,6 +1,6 @@
 ---
 sidebar_label: reservedWidth
-title: reservedWidth
+title: reservedWidth Property of Editor
 description: text
 ---
 

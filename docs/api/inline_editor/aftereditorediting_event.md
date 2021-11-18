@@ -1,6 +1,6 @@
 ---
 sidebar_label: afterEditorEditing
-title: afterEditorEditing
+title: afterEditorEditing Event
 description: text
 ---
 

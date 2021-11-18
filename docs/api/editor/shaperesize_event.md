@@ -1,6 +1,6 @@
 ---
 sidebar_label: shapeResize
-title: shapeResize
+title: shapeResize Event of Editor
 description: text
 ---
 

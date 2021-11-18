@@ -1,6 +1,6 @@
 ---
 sidebar_label: autoplacement
-title: autoplacement
+title: autoplacement Property
 description: text
 ---
 

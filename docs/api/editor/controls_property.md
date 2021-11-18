@@ -1,6 +1,6 @@
 ---
 sidebar_label: controls
-title: controls
+title: controls Property of Editor
 description: text
 ---
 

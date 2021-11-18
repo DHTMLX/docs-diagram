@@ -1,6 +1,6 @@
 ---
 sidebar_label: gridStep
-title: gridStep
+title: gridStep Property of Editor
 description: text
 ---
 

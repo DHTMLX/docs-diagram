@@ -1,6 +1,6 @@
 ---
 sidebar_label: load
-title: load
+title: load Event of Data Collection
 description: text
 ---
 

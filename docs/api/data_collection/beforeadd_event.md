@@ -1,6 +1,6 @@
 ---
 sidebar_label: beforeAdd
-title: beforeAdd
+title: beforeAdd Event of Data Collection
 description: text
 ---
 

@@ -1,6 +1,6 @@
 ---
 sidebar_label: defaultShapeType
-title: defaultShapeType
+title: defaultShapeType Property
 description: text
 ---
 

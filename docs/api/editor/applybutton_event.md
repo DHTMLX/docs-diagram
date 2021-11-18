@@ -1,6 +1,6 @@
 ---
 sidebar_label: applyButton
-title: applyButton
+title: applyButton Event of Editor
 description: text
 ---
 

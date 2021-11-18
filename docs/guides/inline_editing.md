@@ -6,13 +6,13 @@ description: text
 
 # Inline Editing
 
-Inline editing lets you edit the text content of a diagram item by double-clicking on it. You can edit the items both in the diagram and in the editor 
+Inline editing lets you edit the text content of a diagram item by double-clicking on it. You can edit the items both in the diagram and in the editor.
 
 ![](../assets/inline_editing.gif)
 
 {{note Inline editing does not work for custom shapes.}}
 
-The functionality is enabled by default. 
+The functionality is enabled by default.
 
 To disable inline editing, you should use the **editable** property of the element, which you want to make uneditable, and set its value to *false*.
 
@@ -80,6 +80,3 @@ const data = [
 ## API events
 
 The library includes a set of helpful [API events](../../api/inline_editor/index/) which you can use to control the behavior of the editor on its opening/closing, as well as to control the process of editing the text of the items.
-
-
-

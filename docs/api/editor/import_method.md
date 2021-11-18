@@ -1,6 +1,6 @@
 ---
 sidebar_label: import()
-title: import
+title: import Method of Editor
 description: text
 ---
 

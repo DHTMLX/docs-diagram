@@ -1,6 +1,6 @@
 ---
 sidebar_label: margin
-title: margin
+title: margin Property
 description: text
 ---
 
@@ -35,4 +35,3 @@ The default values of margins are:
 ~~~js
 { x: 40, y: 40, itemX: 40, itemY: 40 }
 ~~~
-

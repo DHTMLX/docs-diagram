@@ -1,6 +1,6 @@
 ---
 sidebar_label: scalePreview
-title: scalePreview
+title: scalePreview Property of Editor
 description: text
 ---
 

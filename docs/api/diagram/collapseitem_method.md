@@ -1,6 +1,6 @@
 ---
 sidebar_label: collapseItem()
-title: collapseItem
+title: collapseItem Method
 description: text
 ---
 

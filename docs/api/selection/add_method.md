@@ -1,6 +1,6 @@
 ---
 sidebar_label: add()
-title: add
+title: add Method of Selection
 description: text
 ---
 

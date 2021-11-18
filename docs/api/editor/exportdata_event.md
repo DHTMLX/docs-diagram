@@ -1,6 +1,6 @@
 ---
 sidebar_label: exportData
-title: exportData
+title: exportData Event of Editor
 description: text
 ---
 

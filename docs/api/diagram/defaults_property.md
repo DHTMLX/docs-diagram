@@ -1,6 +1,6 @@
 ---
 sidebar_label: defaults
-title: defaults
+title: defaults Property
 description: text
 ---
 

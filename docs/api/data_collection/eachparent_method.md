@@ -1,6 +1,6 @@
 ---
 sidebar_label: eachParent()
-title: eachParent
+title: eachParent Method of Data Collection
 description: text
 ---
 

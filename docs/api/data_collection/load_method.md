@@ -1,6 +1,6 @@
 ---
 sidebar_label: load()
-title: load
+title: load Method of Data Collection
 description: text
 ---
 

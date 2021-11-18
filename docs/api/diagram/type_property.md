@@ -1,6 +1,6 @@
 ---
 sidebar_label: type
-title: type
+title: type Property
 description: text
 ---
 

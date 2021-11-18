@@ -1,6 +1,6 @@
 ---
 sidebar_label: editMode
-title: editMode
+title: editMode Property of Editor
 description: text
 ---
 

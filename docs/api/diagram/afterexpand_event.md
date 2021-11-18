@@ -1,6 +1,6 @@
 ---
 sidebar_label: afterExpand
-title: afterExpand
+title: afterExpand Event
 description: text
 ---
 

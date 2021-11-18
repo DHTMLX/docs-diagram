@@ -1,6 +1,6 @@
 ---
 sidebar_label: API overview
-title: API Overview 
+title: Diagram API Overview
 description: text
 ---
 

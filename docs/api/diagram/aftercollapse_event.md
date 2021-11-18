@@ -1,6 +1,6 @@
 ---
 sidebar_label: afterCollapse
-title: afterCollapse
+title: afterCollapse Event
 description: text
 ---
 

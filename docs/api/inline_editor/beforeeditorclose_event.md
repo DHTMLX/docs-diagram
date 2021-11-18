@@ -1,6 +1,6 @@
 ---
 sidebar_label: beforeEditorClose
-title: beforeEditorClose
+title: beforeEditorClose Event
 description: text
 ---
 

@@ -1,6 +1,6 @@
 ---
 sidebar_label: How to start with Diagram
-title: How to start with Diagram
+title: How to Start with Diagram
 description: text
 ---
 

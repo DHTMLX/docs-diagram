@@ -1,6 +1,6 @@
 ---
 sidebar_label: paint()
-title: paint
+title: paint Method
 description: text
 ---
 

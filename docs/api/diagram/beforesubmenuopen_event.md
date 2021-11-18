@@ -1,6 +1,6 @@
 ---
 sidebar_label: beforeSubmenuOpen
-title: beforeSubmenuOpen
+title: beforeSubmenuOpen Event
 description: text
 ---
 

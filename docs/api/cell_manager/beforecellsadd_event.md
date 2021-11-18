@@ -1,6 +1,6 @@
 ---
 sidebar_label: beforeCellsAdd
-title: beforeCellsAdd 
+title: beforeCellsAdd Event of Cell Manager
 description: text
 ---
 

@@ -1,6 +1,6 @@
 ---
 sidebar_label: addShape()
-title: addShape
+title: addShape Method
 description: text
 ---
 

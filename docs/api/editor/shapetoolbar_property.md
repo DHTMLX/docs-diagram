@@ -1,6 +1,6 @@
 ---
 sidebar_label: shapeToolbar
-title: shapeToolbar
+title: shapeToolbar Property of Editor
 description: text
 ---
 

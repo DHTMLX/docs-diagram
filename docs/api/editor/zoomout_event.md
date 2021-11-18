@@ -1,6 +1,6 @@
 ---
 sidebar_label: zoomOut
-title: zoomOut
+title: zoomOut Event of Editor
 description: text
 ---
 

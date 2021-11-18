@@ -1,6 +1,6 @@
 ---
 sidebar_label: beforeItemMove
-title: beforeItemMove
+title: beforeItemMove Event of Editor
 description: text
 ---
 

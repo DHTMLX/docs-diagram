@@ -1,6 +1,6 @@
 ---
 sidebar_label: afterShapeIconClick
-title: afterShapeIconClick
+title: afterShapeIconClick Event of Editor
 description: text
 ---
 

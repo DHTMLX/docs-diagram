@@ -1,6 +1,6 @@
 ---
 sidebar_label: afterSubmenuOpen
-title: afterSubmenuOpen
+title: afterSubmenuOpen Event
 description: text
 ---
 

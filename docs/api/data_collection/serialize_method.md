@@ -1,6 +1,6 @@
 ---
 sidebar_label: serialize()
-title: serialize
+title: serialize Method of Data Collection
 description: text
 ---
 

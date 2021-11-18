@@ -1,6 +1,6 @@
 ---
 sidebar_label: itemClick
-title: itemClick
+title: itemClick Event
 description: text
 ---
 

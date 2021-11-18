@@ -1,6 +1,6 @@
 ---
 sidebar_label: shapeSections
-title: shapeSections
+title: shapeSections Property of Editor
 description: text
 ---
 

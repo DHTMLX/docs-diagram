@@ -1,6 +1,6 @@
 ---
 sidebar_label: groupMouseDown
-title: groupMouseDown
+title: groupMouseDown Event
 description: text
 ---
 

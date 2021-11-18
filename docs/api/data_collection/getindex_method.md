@@ -1,6 +1,6 @@
 ---
 sidebar_label: getIndex()
-title: getIndex
+title: getIndex Method of Data Collection
 description: text
 ---
 
