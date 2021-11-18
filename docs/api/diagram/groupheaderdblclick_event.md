@@ -1,6 +1,6 @@
 ---
 sidebar_label: groupHeaderDblClick
-title: groupHeaderDblClick
+title: groupHeaderDblClick Event
 description: text
 ---
 

@@ -1,6 +1,6 @@
 ---
 sidebar_label: afterShapeMove
-title: afterShapeMove
+title: afterShapeMove Event of Editor
 description: text
 ---
 

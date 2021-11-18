@@ -1,6 +1,6 @@
 ---
 sidebar_label: autoLayout
-title: autoLayout
+title: autoLayout Event of Editor
 description: text
 ---
 

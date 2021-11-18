@@ -1,6 +1,6 @@
 ---
 sidebar_label: Grid area
-title: Grid Area
+title: Editor Guides - Grid Area
 description: text
 ---
 

@@ -1,6 +1,6 @@
 ---
 sidebar_label: scale
-title: scale
+title: scale Property of Editor
 description: text
 ---
 

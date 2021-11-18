@@ -1,6 +1,6 @@
 ---
 sidebar_label: shapeBarWidth
-title: shapeBarWidth
+title: shapeBarWidth Property of Editor
 description: text
 ---
 

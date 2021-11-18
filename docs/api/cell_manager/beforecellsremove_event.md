@@ -1,6 +1,6 @@
 ---
 sidebar_label: beforeCellsRemove
-title: beforeCellsRemove 
+title: beforeCellsRemove Event of Cell Manager
 description: text
 ---
 

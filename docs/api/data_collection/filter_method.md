@@ -1,6 +1,6 @@
 ---
 sidebar_label: filter()
-title: filter
+title: filter Method of Data Collection
 description: text
 ---
 

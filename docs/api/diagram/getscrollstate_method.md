@@ -1,6 +1,6 @@
 ---
 sidebar_label: getScrollState()
-title: getScrollState
+title: getScrollState Method
 description: text
 ---
 

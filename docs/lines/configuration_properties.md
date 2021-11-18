@@ -1,6 +1,6 @@
 ---
 sidebar_label: Line properties
-title: Line Properties 
+title: Line Properties
 description: text
 ---
 

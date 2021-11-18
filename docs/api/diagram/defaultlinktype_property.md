@@ -1,6 +1,6 @@
 ---
 sidebar_label: defaultLinkType
-title: defaultLinkType
+title: defaultLinkType Property
 description: text
 ---
 

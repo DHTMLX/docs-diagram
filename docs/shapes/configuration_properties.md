@@ -1,6 +1,6 @@
 ---
 sidebar_label: Shape properties
-title: Shape Properties 
+title: Shape Properties
 description: text
 ---
 

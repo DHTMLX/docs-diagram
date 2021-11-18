@@ -1,6 +1,6 @@
 ---
 sidebar_label: resetButton
-title: resetButton
+title: resetButton Event of Editor
 description: text
 ---
 

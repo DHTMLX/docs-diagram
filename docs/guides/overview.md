@@ -1,6 +1,6 @@
 ---
 sidebar_label: Guides overview
-title: Guides
+title: Diagram Guides
 description: text
 ---
 

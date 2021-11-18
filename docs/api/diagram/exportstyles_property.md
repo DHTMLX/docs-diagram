@@ -1,6 +1,6 @@
 ---
 sidebar_label: exportStyles
-title: exportStyles
+title: exportStyles Property
 description: text
 ---
 

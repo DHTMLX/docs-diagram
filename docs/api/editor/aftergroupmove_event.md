@@ -1,6 +1,6 @@
 ---
 sidebar_label: afterGroupMove
-title: afterGroupMove
+title: afterGroupMove Event of Editor
 description: text
 ---
 

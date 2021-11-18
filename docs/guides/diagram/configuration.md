@@ -4,7 +4,7 @@ title: Diagram Configuration
 description: text
 ---
 
-# Diagram Configuration 
+# Diagram Configuration
 
 DHTMLX Diagram provides a wide range of options for configuration. You can zoom into and out a diagram, set the default type of shapes and lines, set margins between shapes, apply selection, and set a toolbar with icons for the shapes.
 

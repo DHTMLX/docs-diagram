@@ -1,6 +1,6 @@
 ---
 sidebar_label: afterCellsValidation
-title: afterCellsValidation 
+title: afterCellsValidation Event of Cell Manager
 description: text
 ---
 

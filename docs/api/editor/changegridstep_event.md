@@ -1,6 +1,6 @@
 ---
 sidebar_label: changeGridStep
-title: changeGridStep
+title: changeGridStep Event of Editor
 description: text
 ---
 

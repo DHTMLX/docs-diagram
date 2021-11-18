@@ -1,6 +1,6 @@
 ---
 sidebar_label: afterItemMove
-title: afterItemMove
+title: afterItemMove Event of Editor
 description: text
 ---
 

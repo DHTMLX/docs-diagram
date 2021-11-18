@@ -1,6 +1,6 @@
 ---
 sidebar_label: showItem()
-title: showItem
+title: showItem Method
 description: text()
 ---
 

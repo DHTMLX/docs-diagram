@@ -1,6 +1,6 @@
 ---
 sidebar_label: itemMouseOver
-title: itemMouseOver
+title: itemMouseOver Event
 description: text
 ---
 

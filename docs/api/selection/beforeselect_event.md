@@ -1,6 +1,6 @@
 ---
 sidebar_label: beforeSelect
-title: beforeSelect
+title: beforeSelect Event of Selection
 description: text
 ---
 

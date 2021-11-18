@@ -1,6 +1,6 @@
 ---
 sidebar_label: shapeMouseDown
-title: shapeMouseDown
+title: shapeMouseDown Event
 description: text
 ---
 

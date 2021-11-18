@@ -6,8 +6,8 @@ description: text
 
 # Manipulating Items
 
-You can easily manipulate Diagram items via the [Diagram Editor](../../guides/diagram_editor/initialization/). 
-But in this article we'll explore the examples on how to manipulate the items of DHTMLX Diagram via the component's API. The article contains different sections that cover such questions as:
+You can easily manipulate Diagram items via the [Diagram Editor](../../guides/diagram_editor/initialization/). But in this article we'll explore the examples on how to manipulate the items of DHTMLX Diagram via the component's API. The article contains different sections that cover such questions as:
+
 - [how to automatically arrange shapes in the hierarchical order](#arranging-shapes-automatically);
 - how to perform a range of operations over items, in particular:
     - [add](#adding-an-item)/[update](#updating-an-item)/[delete](#deleting-an-item) items;

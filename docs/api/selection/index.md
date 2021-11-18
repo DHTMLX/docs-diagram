@@ -1,6 +1,6 @@
 ---
 sidebar_label: Overview
-title: Selection overview
+title: Selection Overview
 description: text
 ---
 

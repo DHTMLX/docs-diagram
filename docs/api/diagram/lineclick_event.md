@@ -1,6 +1,6 @@
 ---
 sidebar_label: lineClick
-title: lineClick
+title: lineClick Event
 description: text
 ---
 

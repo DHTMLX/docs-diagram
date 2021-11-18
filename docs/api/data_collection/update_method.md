@@ -1,6 +1,6 @@
 ---
 sidebar_label: update()
-title: update
+title: update Method of Data Collection
 description: text
 ---
 

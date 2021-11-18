@@ -1,6 +1,6 @@
 ---
 sidebar_label: getItem()
-title: getItem
+title: getItem Method of Selection
 description: text
 ---
 

@@ -1,6 +1,6 @@
 ---
 sidebar_label: add()
-title: add 
+title: add Method of Cell Manager
 description: text
 ---
 

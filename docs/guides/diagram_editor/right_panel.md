@@ -1,6 +1,6 @@
 ---
 sidebar_label: Right panel
-title: Right Panel
+title: Editor Guides - Right Panel
 description: text
 ---
 

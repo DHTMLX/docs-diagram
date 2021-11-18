@@ -1,6 +1,6 @@
 ---
 sidebar_label: lineMouseDown
-title: lineMouseDown
+title: lineMouseDown Event
 description: text
 ---
 

@@ -1,6 +1,6 @@
 ---
 sidebar_label: move()
-title: move
+title: move Method of Data Collection
 description: text
 ---
 

@@ -1,6 +1,6 @@
 ---
 sidebar_label: beforeCollapse
-title: beforeCollapse
+title: beforeCollapse Event
 description: text
 ---
 

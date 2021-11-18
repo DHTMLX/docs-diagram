@@ -1,6 +1,6 @@
 ---
 sidebar_label: groupClick
-title: groupClick
+title: groupClick Event
 description: text
 ---
 

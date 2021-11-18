@@ -1,6 +1,6 @@
 ---
 sidebar_label: itemDblClick
-title: itemDblClick
+title: itemDblClick Event
 description: text
 ---
 

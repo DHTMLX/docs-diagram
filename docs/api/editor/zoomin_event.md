@@ -1,6 +1,6 @@
 ---
 sidebar_label: zoomIn
-title: zoomIn
+title: zoomIn Event of Editor
 description: text
 ---
 

@@ -1,6 +1,6 @@
 ---
 sidebar_label: shapeDblClick
-title: shapeDblClick
+title: shapeDblClick Event
 description: text
 ---
 

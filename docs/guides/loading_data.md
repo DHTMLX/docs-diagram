@@ -1,6 +1,6 @@
 ---
 sidebar_label: Loading and storing data
-title: Loading and Storing Data
+title: Loading and Storing data
 description: text
 ---
 

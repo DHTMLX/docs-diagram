@@ -1,6 +1,6 @@
 ---
 sidebar_label: expandItem()
-title: expandItem
+title: expandItem Method
 description: text
 ---
 

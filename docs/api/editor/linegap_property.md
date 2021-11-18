@@ -1,6 +1,6 @@
 ---
 sidebar_label: lineGap
-title: lineGap
+title: lineGap Property of Editor
 description: text
 ---
 

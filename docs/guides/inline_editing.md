@@ -112,6 +112,3 @@ const data = [
 ## API events
 
 The library includes a set of helpful [API events](../../api/inline_editor/index/) which you can use to control the behavior of the editor on its opening/closing, as well as to control the process of editing the text of the items.
-
-
-

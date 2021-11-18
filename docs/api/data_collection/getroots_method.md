@@ -1,6 +1,6 @@
 ---
 sidebar_label: getRoots()
-title: getRoots
+title: getRoots Method of Data Collection
 description: text
 ---
 

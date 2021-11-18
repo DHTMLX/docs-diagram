@@ -1,6 +1,6 @@
 ---
 sidebar_label: beforeEditorOpen
-title: beforeEditorOpen
+title: beforeEditorOpen Event
 description: text
 ---
 

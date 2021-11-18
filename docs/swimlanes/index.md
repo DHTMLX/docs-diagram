@@ -1,6 +1,6 @@
 ---
 sidebar_label: Configuring swimlanes
-title: Configuring Swimlanes 
+title: Configuring Swimlanes
 description: text
 ---
 
