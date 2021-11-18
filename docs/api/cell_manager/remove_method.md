@@ -1,6 +1,6 @@
 ---
 sidebar_label: remove()
-title: remove
+title: remove Method of Cell Manager
 description: text
 ---
 

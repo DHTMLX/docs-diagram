@@ -1,6 +1,6 @@
 ---
 sidebar_label: beforeShapeIconClick
-title: beforeShapeIconClick
+title: beforeShapeIconClick Event of Editor
 description: text
 ---
 

@@ -1,6 +1,6 @@
 ---
 sidebar_label: afterEditorClose
-title: afterEditorClose
+title: afterEditorClose Event
 description: text
 ---
 

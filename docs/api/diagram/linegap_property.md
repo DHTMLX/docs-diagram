@@ -1,6 +1,6 @@
 ---
 sidebar_label: lineGap
-title: lineGap
+title: lineGap Property
 description: text
 ---
 

@@ -1,6 +1,6 @@
 ---
 sidebar_label: itemMoveEnd
-title: itemMoveEnd
+title: itemMoveEnd Event of Editor
 description: text
 ---
 

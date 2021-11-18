@@ -1,6 +1,6 @@
 ---
 sidebar_label: png()
-title: png
+title: png Method
 description: text
 ---
 

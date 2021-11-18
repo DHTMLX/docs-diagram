@@ -1,6 +1,6 @@
 ---
 sidebar_label: typeConfig
-title: typeConfig
+title: typeConfig Property
 description: text
 ---
 

@@ -1,6 +1,6 @@
 ---
 sidebar_label: change
-title: change
+title: change Event of Data Collection
 description: text
 ---
 

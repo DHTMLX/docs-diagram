@@ -1,6 +1,6 @@
 ---
 sidebar_label: gapPreview
-title: gapPreview
+title: gapPreview Property of Editor
 description: text
 ---
 

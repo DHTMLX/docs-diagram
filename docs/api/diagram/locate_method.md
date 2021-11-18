@@ -1,6 +1,6 @@
 ---
 sidebar_label: locate()
-title: locate
+title: locate Method
 description: text
 ---
 

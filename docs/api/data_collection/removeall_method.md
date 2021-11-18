@@ -1,6 +1,6 @@
 ---
 sidebar_label: removeAll()
-title: removeAll
+title: removeAll Method of Data Collection
 description: text
 ---
 

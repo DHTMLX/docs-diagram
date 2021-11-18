@@ -1,13 +1,12 @@
 ---
 sidebar_label: Overview
-title: Selection overview
+title: Selection Overview
 description: text
 ---
 
 # Selection overview
 
-A set of API that you can use when working with selection of the Diagram items. The API is available both in the diagram and in the editor. 
-
+A set of API that you can use when working with selection of the Diagram items. The API is available both in the diagram and in the editor.
 
 ## Methods
 

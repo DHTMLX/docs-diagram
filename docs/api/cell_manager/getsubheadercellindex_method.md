@@ -1,6 +1,6 @@
 ---
 sidebar_label: getSubHeaderCellIndex()
-title: getSubHeaderCellIndex
+title: getSubHeaderCellIndex Method of Cell Manager
 description: text
 ---
 

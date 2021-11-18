@@ -1,6 +1,6 @@
 ---
 sidebar_label: emptyAreaClick
-title: emptyAreaClick
+title: emptyAreaClick Event
 description: text
 ---
 

@@ -1,6 +1,6 @@
 ---
 sidebar_label: itemMouseOut
-title: itemMouseOut
+title: itemMouseOut Event
 description: text
 ---
 

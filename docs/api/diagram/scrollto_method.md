@@ -1,6 +1,6 @@
 ---
 sidebar_label: scrollTo()
-title: scrollTo
+title: scrollTo Method
 description: text
 ---
 

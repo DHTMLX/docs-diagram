@@ -1,6 +1,6 @@
 ---
 sidebar_label: importData
-title: importData
+title: importData Event of Editor
 description: text
 ---
 

@@ -1,6 +1,6 @@
 ---
 sidebar_label: visibility
-title: visibility
+title: visibility Event of Editor
 description: text
 ---
 

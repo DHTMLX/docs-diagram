@@ -1,6 +1,6 @@
 ---
 sidebar_label: getCellId()
-title: getCellId
+title: getCellId Method of Cell Manager
 description: text
 ---
 

@@ -1,6 +1,6 @@
 ---
 sidebar_label: select
-title: select
+title: select Property
 description: text
 ---
 

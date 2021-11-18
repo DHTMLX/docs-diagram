@@ -1,6 +1,6 @@
 ---
 sidebar_label: exists()
-title: exists
+title: exists Method of Data Collection
 description: text
 ---
 

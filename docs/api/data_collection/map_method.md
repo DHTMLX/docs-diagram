@@ -1,6 +1,6 @@
 ---
 sidebar_label: map()
-title: map
+title: map Method of Data Collection
 description: text
 ---
 

@@ -1,6 +1,6 @@
 ---
 sidebar_label: autoPlace()
-title: autoPlace
+title: autoPlace Method
 description: text
 ---
 

@@ -1,6 +1,6 @@
 ---
 sidebar_label: groupMoveEnd
-title: groupMoveEnd
+title: groupMoveEnd Event of Editor
 description: text
 ---
 

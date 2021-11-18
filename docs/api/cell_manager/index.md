@@ -1,13 +1,12 @@
 ---
 sidebar_label: Overview
-title: CellManager overview
+title: CellManager Overview
 description: text
 ---
 
 # CellManager overview
 
 The DHTMLX Diagram library provides you with a set of API to manipulate [a swimlane and its cells](../../../swimlanes/index/) dynamically. The API can be used both in the diagram and in the editor.
-
 
 ## Methods
 

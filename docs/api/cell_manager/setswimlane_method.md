@@ -1,6 +1,6 @@
 ---
 sidebar_label: setSwimlane()
-title: setSwimlane
+title: setSwimlane Method of Cell Manager
 description: text
 ---
 

@@ -1,6 +1,6 @@
 ---
 sidebar_label: afterUnSelect
-title: afterUnSelect
+title: afterUnSelect Event of Selection
 description: text
 ---
 

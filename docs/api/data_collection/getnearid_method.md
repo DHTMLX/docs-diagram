@@ -1,6 +1,6 @@
 ---
 sidebar_label: getNearId()
-title: getNearId
+title: getNearId Method of Data Collection
 description: text
 ---
 

@@ -1,6 +1,6 @@
 ---
 sidebar_label: copy()
-title: copy
+title: copy Method of Data Collection
 description: text
 ---
 

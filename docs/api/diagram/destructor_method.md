@@ -1,6 +1,6 @@
 ---
 sidebar_label: destructor()
-title: destructor
+title: destructor Method
 description: text
 ---
 

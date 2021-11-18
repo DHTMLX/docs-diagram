@@ -1,6 +1,6 @@
 ---
 sidebar_label: getId()
-title: getId
+title: getId Method of Data Collection
 description: text
 ---
 

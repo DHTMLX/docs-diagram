@@ -1,6 +1,6 @@
 ---
 sidebar_label: pdf()
-title: pdf
+title: pdf Method
 description: text
 ---
 

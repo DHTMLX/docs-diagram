@@ -1,6 +1,6 @@
 ---
 sidebar_label: toolbar
-title: toolbar
+title: toolbar Property
 description: text
 ---
 

@@ -1,11 +1,11 @@
 ---
 sidebar_label: beforeCellsValidation
-title: beforeCellsValidation 
+title: beforeCellsValidation Event of Cell Manager
 description: text
 ---
 
 # beforeCellsValidation
- 
+
 @short: fires before cells of the swimlane are validated
 
 @signature: {`beforeCellsValidation: (swimlaneId: Id, action: ActionValidate) => boolean | void;`}
