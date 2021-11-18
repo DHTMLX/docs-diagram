@@ -1,7 +1,7 @@
 ---
 sidebar_label: How to start with Diagram
 title: How to Start with Diagram
-description: text
+description: You can learn how to start with Diagram in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
 
 # How to start with Diagram
