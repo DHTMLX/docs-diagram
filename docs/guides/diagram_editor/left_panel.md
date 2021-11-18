@@ -1,6 +1,6 @@
 ---
 sidebar_label: Left panel
-title: Left Panel
+title: Editor Guides - Left Panel
 description: text
 ---
 

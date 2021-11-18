@@ -1,6 +1,6 @@
 ---
 sidebar_label: Toolbar
-title: Toolbar
+title: Editor Guides - Toolbar
 description: text
 ---
 

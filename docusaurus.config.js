@@ -126,8 +126,8 @@ const onAfterDataTransformation = (data) => {
 
 module.exports = {
     noIndex: true, // todo: delete before release
-    title: 'DHTMLX Diagram Doc',
-    tagline: 'DHTMLX Diagram Doc',
+    title: 'DHTMLX JavaScript Diagram Docs',
+    tagline: 'DHTMLX JavaScript Diagram Docs',
     url: 'https://docs.dhtmlx.com',
     baseUrl: '/diagramalt/',
     onBrokenLinks: 'warn',

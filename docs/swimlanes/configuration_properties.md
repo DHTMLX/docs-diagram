@@ -1,6 +1,6 @@
 ---
 sidebar_label: Swimlane properties
-title: Swimlane Properties 
+title: Swimlane and Swimlane Cell Properties
 description: text
 ---
 

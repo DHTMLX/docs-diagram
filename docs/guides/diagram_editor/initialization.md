@@ -1,6 +1,6 @@
 ---
 sidebar_label: How to start with Editor
-title: How to start with Editor
+title: How to Start with Diagram Editor
 description: text
 ---
 

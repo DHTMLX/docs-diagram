@@ -1,11 +1,11 @@
 ---
-sidebar_label: Overview
-title: Overview 
+sidebar_label: Diagram Overview
+title: Diagram Overview 
 slug: /
 description: text
 ---
 
-# Overview
+# Diagram Overview
 
 DHTMLX Diagram is a client-side chart component that allows you to display relations between some objects, concepts or living beings in a visual form:
 as a scheme, chart, organizational chart, mind map, etc. The diagram makes it easier to present tangled and bulky information in a simple and accessible way.
