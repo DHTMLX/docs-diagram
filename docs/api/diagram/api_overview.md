@@ -1,7 +1,7 @@
 ---
 sidebar_label: API overview
 title: Diagram API Overview
-description: text
+description: You can have an overview of Diagram API in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
 
 # Diagram API overview
