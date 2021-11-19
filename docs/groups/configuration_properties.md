@@ -1,7 +1,7 @@
 ---
 sidebar_label: Group properties
 title: Group Properties
-description: text
+description: You can learn about the Group properties in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
 
 # Group properties

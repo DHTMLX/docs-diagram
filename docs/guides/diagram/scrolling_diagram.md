@@ -1,13 +1,12 @@
 ---
 sidebar_label: Scrolling Diagram
 title: Scrolling Diagram
-description: text
+description: You can learn about scrolling Diagram in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
 
 # Scrolling Diagram
 
 By default the component's size is set automatically to fit the content. If necessary, the component will take the size of the HTML container and render horizontal and vertical inner scrolls to fit the content.
-
 
 Scrolling diagram
 ---------------

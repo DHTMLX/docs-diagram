@@ -1,7 +1,7 @@
 ---
 sidebar_label: Swimlane properties
 title: Swimlane and Swimlane Cell Properties
-description: text
+description: You can learn about the Swimlane and Swimlane cell properties in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
 
 # Swimlane and Swimlane cell properties
