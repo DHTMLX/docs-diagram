@@ -98,7 +98,7 @@ Use to edit the title.
 
 Use to load an image for the card and update it. An image is loaded from the computer and saved in the base64 format right into the data.
 
-*The option is available for "img-card" shapes.* 
+*The option is available for "img-card" shapes.*
 
 ![](../../assets/editor/image.png)
 
@@ -134,13 +134,28 @@ Use to change the settings of a line:
 
 ![](../../assets/editor/line_stroke.png)
 
-## Sidebar options for editing title of lines
+## Sidebar options for editing titles of lines
 
 Lines with title are available in the default mode only.
 
+### Fill
+
+Use to modify the background color of the text item of a line via the related colorpicker.
+
 ![](../../assets/editor/line_title_fill.png)
 
+### Text
+
+Use to edit the text of the text item of a line.
+
 ![](../../assets/editor/line_title_text.png)
+
+### Text Style
+
+Use to adjust the text settings:
+
+- font size, line spacing, weight, style
+- color, horizontal and vertical text alignment.
 
 ![](../../assets/editor/line_title_text_style.png)
 

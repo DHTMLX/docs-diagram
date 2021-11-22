@@ -10,8 +10,7 @@ description: You can have an overview of DHTMLX JavaScript Diagram library in th
 DHTMLX Diagram is a client-side chart component that allows you to display relations between some objects, concepts or living beings in a visual form:
 as a scheme, chart, organizational chart, mind map, etc. The diagram makes it easier to present tangled and bulky information in a simple and accessible way.
 
-Diagram in the default mode
-------------------------
+## Diagram in the default mode
 
 DHTMLX Diagram provides the possibility to make various diagrams using a predefined set of shapes and connectors, and experiment with their look and feel.
 
@@ -21,9 +20,9 @@ You can choose shapes of desired types, link them by suitable connectors and bui
 | ---------------------------------------------------------- | ------------------------------------------------------------- | ----------------------------------------------------- |
 | ![](assets/icon_data_planning_model.png)                   | ![](assets/icon_vert_decision_tree.png)                       | ![](assets/icon_wide_diagram.png)                     |
 
-|[Decision Tree](https://snippet.dhtmlx.com/7bn52dl1)|[Activity Diagram](https://snippet.dhtmlx.com/a9t2z2dt)|
-|-----|-----|
-|![](assets/icon_decision_tree.png)|![](assets/icon_activity.png)| 
+| [Decision Tree](https://snippet.dhtmlx.com/7bn52dl1) | [Activity Diagram](https://snippet.dhtmlx.com/a9t2z2dt) |
+| ---------------------------------------------------- | ------------------------------------------------------- |
+| ![](assets/icon_decision_tree.png)                   | ![](assets/icon_activity.png)                           |
 
 ### Custom shapes
 
@@ -53,8 +52,15 @@ Usage of swimlanes of the DHTMLX Diagram library lets you represent any process 
 | ------------------------------------------------------------------------------- |
 | ![](assets/swimlane.png)                                                        |
 
-Diagram in the org chart mode
------------------------
+### Title of Lines
+
+The title of Lines is enabled in the default mode of Diagram. You can add the text by double-clicking on a line. Use double-clicking also for editing the text.
+
+| [Diagram. Default mode. Data planning model](https://snippet.dhtmlx.com/e6zm6wh1) |
+| --------------------------------------------------------------------------------- |
+| ![](assets/defaultchart_with_title.png)                                           |
+
+## Diagram in the org chart mode
 
 There is also an org chart mode of Diagram that presents a set of shapes connected by lines in a hierarchical order.
 
@@ -62,7 +68,7 @@ There is also an org chart mode of Diagram that presents a set of shapes connect
 
 ### Assistant and partner shapes
 
-A parent shape of any level can have assistant or partner items. The assistant and partner shapes can't be parent items. The assistant and partner items can be added in the [editor](#editor-in-the-org-chart-mode) or by preparing a set of [data](guides/loading_data.md/#preparing-data-to-load).
+A parent shape of any level can have assistant or partner items. The assistant and partner shapes can't be parent items. The assistant and partner items can be added in the [editor](#editor-in-the-org-chart-mode) or by preparing a [data set](guides/loading_data.md/#preparing-data-to-load).
 
 In the hierarchical order, the assistant items are displayed between parent and children shapes.
 
@@ -90,8 +96,7 @@ An example of adding custom shapes for creating a diagram to present the hierarc
 | -------------------------------------------------------------------------------------------------- |
 | ![](assets/medical_hierarchy_overview.png)                                                         |
 
-Diagram in the mindmap mode
---------------
+## Diagram in the mindmap mode
 
 The mindmap mode is used to represent a core topic or idea surrounded by the branches of the subtopics.
 
@@ -147,7 +152,6 @@ You can adjust the attributes of the shapes via the available sidebar options of
 | ------------------------------------------------------------------------------------------- |
 | ![](assets/orgchart_editor.gif)                                                             |
 
-
 In the example below, you can notice that a set of sidebar options for editing the attributes of the shape with an image differs from the sidebar options for editing a simple card.
 
 <iframe src="https://snippet.dhtmlx.com/vghuunmd?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
@@ -168,16 +172,14 @@ You can adjust the attributes of the shapes via the available sidebar options of
 
 If you've added a custom shape to the editor in the org chart mode, you can configure the right panel to be able to edit custom properties of the shape.
 
-Shape Search
----------------
+## Shape Search
 
 DHTMLX Diagram provides you with a set of API that you can apply in order to make working with a Diagram more convenient.
 For example, you can implement a feature of searching a shape on request that helps you to simplify work with large diagrams.
 
 <iframe src="https://snippet.dhtmlx.com/d7kvzq4r?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
 
-Diagram Scale
-----------------
+## Diagram Scale
 
 You can apply the zoom template to your diagram to be able to change its appearance via zooming the diagram in or out. Besides, you can make it possible to user to get the detailed information on the selected shape.
 

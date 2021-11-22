@@ -77,18 +77,17 @@ Double-click the text of a shape to edit it.
 
 ## Managing lines
 
-In the default mode of the editor, you can set links to other shapes, adjust their position and form, as well as delete unnecessary links. In the default mode, you can also add text to the line by double-clicking on it. Click the text to set its properties. Double-click the text to edit it.
+In the default mode, you can set links to other shapes, adjust their position and form, as well as add text to the line and delete unnecessary links.
 
-![](../../assets/line_toolbar.png)
+![](../../assets/line_with_toolbar.png)
 
-In the default mode, you can also add text to the line by double-clicking on it. Click the text to set its properties. Double-click the text to edit it.
+In the default mode, you can also add text to the line by double-clicking on it. Click the text to define its direction or delete it. Double-click the text to edit it.
 
 ![](../../assets/line_with_text.png)
 
 ## Managing groups
 
-You can drag groups from the left panel into the grid area to place them on the desired positions.
-You can put several shapes or other groups into a group and move them as a unit, copy, or delete.
+You can drag groups from the left panel into the grid area to place them on the desired positions. You can put several shapes or other groups into a group and move them as a unit, copy, or delete.
 
 ![](../../assets/group_toolbar.png)
 

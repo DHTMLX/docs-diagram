@@ -45,14 +45,14 @@ description: You can learn about the Line properties in the documentation of the
 
     - **id** - *(string | number)* the id of the text item of a line
     - **type** - *(string)* the type of an item, set it to "$linetext"
-    - **width** - *(number)* the width of the text, calculated automatically
-    - **height** - *(number)* the height of text, calculated automatically
+    - **width** - *(number)* the width of the text item, calculated automatically
+    - **height** - *(number)* the height of text item, calculated automatically
     - **distance** - *(number)* defines the distance between the text and the parent shape, the value from 0 to 100
     - **autoPosition** - *(boolean)* defines the direction of the text, *true* - the direction
  of the text is the same as the line, *false* - the direction of the text is always horizontal
     - **hidden** - *(boolean)* defines, whether the text will be hidden
     - **editable** - *(boolean)* enables/disables the ability to edit the text of the item by double-clicking on it; *true* by default
-    - **draggable** - *(boolean)* enables/disables the ability to drag the text
+    - **draggable** - *(boolean)* enables/disables the ability to fix text item with set distance value
     - **fill** - *(string)* the background color of the text item
     - **text** - *(string)* the text to be rendered in the text item of a line
     - **fontSize** - *(number | string)*  the size of the font in pixels, 14 by default
