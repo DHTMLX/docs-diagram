@@ -21,9 +21,9 @@ You can choose shapes of desired types, link them by suitable connectors and bui
 | ---------------------------------------------------------- | ------------------------------------------------------------- | ----------------------------------------------------- |
 | ![](assets/icon_data_planning_model.png)                   | ![](assets/icon_vert_decision_tree.png)                       | ![](assets/icon_wide_diagram.png)                     |
 
-| [Decision Tree](https://snippet.dhtmlx.com/7bn52dl1) | [Activity Diagram](https://snippet.dhtmlx.com/a9t2z2dt) | [Data Planning Model](https://snippet.dhtmlx.com/e6zm6wh1) |
-| ---------------------------------------------------- | ------------------------------------------------------- | ---------------------------------------------------------- |
-| ![](assets/icon_decision_tree.png)                   | ![](assets/icon_activity.png)                           | ![](assets/icon_data_planning_model.png)                   |
+|[Decision Tree](https://snippet.dhtmlx.com/7bn52dl1)|[Activity Diagram](https://snippet.dhtmlx.com/a9t2z2dt)|
+|-----|-----|
+|![](assets/icon_decision_tree.png)|![](assets/icon_activity.png)| 
 
 ### Custom shapes
 
