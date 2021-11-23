@@ -54,7 +54,7 @@ Usage of swimlanes of the DHTMLX Diagram library lets you represent any process 
 
 ### Title of Lines
 
-The title of Lines is enabled in the default mode of Diagram. You can add the text by double-clicking on a line. Use double-clicking also for editing the text.
+The title of Line is enabled in the default mode of Diagram. You can add the text by double-clicking on a line. Use double-clicking also for editing the text.
 
 | [Diagram. Default mode. Data planning model](https://snippet.dhtmlx.com/e6zm6wh1) |
 | --------------------------------------------------------------------------------- |
@@ -72,11 +72,15 @@ A parent shape of any level can have assistant or partner items. The assistant a
 
 In the hierarchical order, the assistant items are displayed between parent and children shapes.
 
-![](assets/orgchart_with_assistant.png)
+| [Diagram editor. Org chart mode. Basic initialization](https://snippet.dhtmlx.com/og4qm3ja) |
+| ------------------------------------------------------------------------------------------- |
+| ![](assets/orgchart_with_assistant.png)                                                     |
 
 The connection between parent shape and its partner items is always horizontal. Also, the connections between parent shape and all its children become horizontal when you add the partner item for a parent, even if the connections were vertical before.
 
 The partner shapes are very useful for building a family tree.
+
+**Related sample:**	[Diagram. Org chart mode. Family tree](https://snippet.dhtmlx.com/5pfybpmz)
 
 Here are examples of how the connections of parent shapes look like with one, two, three, and four partners.
 
@@ -142,15 +146,15 @@ You can adjust the attributes of the shapes via the available sidebar options of
 
 | [Diagram editor. Org chart mode. Basic initialization](https://snippet.dhtmlx.com/og4qm3ja) |
 | ------------------------------------------------------------------------------------------- |
-| ![](assets/orgchart_editor.gif)                                                             |
+| ![](assets/orgchart_editor_draggable.gif)                                                   |
 
 | [Diagram editor. Org chart mode. Basic initialization](https://snippet.dhtmlx.com/og4qm3ja) |
 | ------------------------------------------------------------------------------------------- |
-| ![](assets/orgchart_editor.gif)                                                             |
+| ![](assets/orgchart_editor_draggable_assistant.gif)                                         |
 
 | [Diagram editor. Org chart mode. Basic initialization](https://snippet.dhtmlx.com/og4qm3ja) |
 | ------------------------------------------------------------------------------------------- |
-| ![](assets/orgchart_editor.gif)                                                             |
+| ![](assets/orgchart_editor_draggable_partner.gif)                                           |
 
 In the example below, you can notice that a set of sidebar options for editing the attributes of the shape with an image differs from the sidebar options for editing a simple card.
 
@@ -168,7 +172,7 @@ You can adjust the attributes of the shapes via the available sidebar options of
 
 | [Diagram editor. Mindmap mode. Emotions mind map](https://snippet.dhtmlx.com/lo1vm0e8) |
 | -------------------------------------------------------------------------------------- |
-| ![](assets/mindmap_editor.gif)                                                         |
+| ![](assets/mindmap_editor_draggable.gif)                                               |
 
 If you've added a custom shape to the editor in the org chart mode, you can configure the right panel to be able to edit custom properties of the shape.
 
