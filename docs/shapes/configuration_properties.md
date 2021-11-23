@@ -124,10 +124,17 @@ const data = [
         id: "2",
         text: "2",
         parent: "1",
+        giveItem: false,
     },
     {
         id: "3",
         text: "3",
+        parent: "1",
+        catchItem: false, 
+    },
+    {
+        id: "4",
+        text: "4",
         parent: "1",
     },
 ];
