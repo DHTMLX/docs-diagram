@@ -37,23 +37,25 @@ You can drag shapes to place them on the desired positions relative to the root 
 
 The shapes are draggable from one parent item to another. The moved item is dragged with all its children.
 
-![](../../assets/org_shape_toolbar.png)
+![](../../assets/orgchart_shape_toolbar_vertical.png)
+
+![](../../assets/orgchart_shape_toolbar_horizontal.png)
 
 When you click on any shape, it becomes editable and gets personal interface elements:
 
 - a toolbar with controls:
-    - *"add"* - to add a new child for the selected shape;
-    - *"assistant"* - to add assistant for the selected shape;
-    - *"partner"*  - to add partner for the selected shape;
-    - *"horizontal"* - to arrange children of the shape horizontally;
-    - *"vertical"* - to arrange children of the shape vertically;
-    - *"remove"* - to delete the selected shape (except for the root one);
+    - *"Add"* - to add a new child for the selected shape;
+    - *"Add assistant"* - to add assistant for the selected shape;
+    - *"Add partner"*  - to add partner for the selected shape;
+    - *"Align children vertically"* - to arrange children of the shape vertically;
+    - *"Align children horizontally"* - to arrange children of the shape horizontally;
+    - *"Delete"* - to delete the selected shape (except for the root one) with its children;
 - resizing handles (pull the handles of the editable shape to change its sizes);
 - an icon to collapse/expand child shapes.
 
 When you click on assistant or partner shape, it becomes editable and gets personal interface elements:
 
-- *"remove"* - to delete the selected shape
+- *"Delete"* - to delete the selected shape
 
 Double-click the text of a shape to edit it.
 
@@ -61,7 +63,7 @@ Double-click the text of a shape to edit it.
 
 You can drag shapes to place them on the desired positions relative to the root shape, or drag the root shape to move the whole diagram. If you drag the parent shape, the shape will be moved with all its child shapes. To add a new shape, select a shape and add a new child for it. The shapes are draggable from one parent item to another. The moved item is dragged with all its children.
 
-![](../../assets/mindmap_shape_toolbar.png)
+![](../../assets/mindmap_toolbar_of_shape.png)
 
 When you click on any shape, it becomes editable and gets personal interface elements:
 
@@ -69,7 +71,7 @@ When you click on any shape, it becomes editable and gets personal interface ele
     - *"add"* - to add a new child for the selected shape (except for the root one);
     - *"addLeft"* - to add a new child to the left of the root shape;
     - *"addRight"* - to add a new child to the right of the root shape;
-    - *"remove"* - to delete the selected shape (except for the root one);
+    - *"remove"* - to delete the selected shape (except for the root one) with its children;
 - resizing handles (pull the handles of the editable shape to change its sizes);
 - an icon to collapse/expand child shapes.
 
