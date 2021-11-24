@@ -71,6 +71,8 @@ const data = [
 - **catchItem** - (*boolean*) defines, whether the item can catch the moving item;
 - **giveItem** - (*boolean*) defines, whether the item can be moved.
 
+**Related samples**: [Diagram editor. Org chart mode. Image card editor](https://snippet.dhtmlx.com/vghuunmd)
+
 ~~~js
 const data = [
     {
@@ -106,9 +108,11 @@ const data = [
 - **open** - (*boolean*) defines, whether the child items of the current shape will be shown. *True* by default;
 - **openDir** - (*object*) shows/hides the child items of the root shape. The object takes two attributes:
     - **left** - (*boolean*) shows/hides the child items to the left of the root shape;
-    - **right** - (*boolean*) shows/hides the child items to the right of the root shapeж;
+    - **right** - (*boolean*) shows/hides the child items to the right of the root shape;
 - **catchItem** - (*boolean*) defines, whether the item can catch the moving item;
 - **giveItem** - (*boolean*) defines, whether the item can be moved.
+
+**Related samples**: [Diagram editor. Mindmap mode. Emotions mind map](https://snippet.dhtmlx.com/lo1vm0e8)
 
 ~~~js
 const data = [

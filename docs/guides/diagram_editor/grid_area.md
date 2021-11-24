@@ -44,18 +44,18 @@ The shapes are draggable from one parent item to another. The moved item is drag
 When you click on any shape, it becomes editable and gets personal interface elements:
 
 - a toolbar with controls:
-    - *"Add"* - to add a new child for the selected shape;
-    - *"Add assistant"* - to add assistant for the selected shape;
-    - *"Add partner"*  - to add partner for the selected shape;
-    - *"Align children vertically"* - to arrange children of the shape vertically;
-    - *"Align children horizontally"* - to arrange children of the shape horizontally;
-    - *"Delete"* - to delete the selected shape (except for the root one) with its children;
+    - *"add"* - to add a new child for the selected shape;
+    - *"add assistant"* - to add assistant for the selected shape;
+    - *"add partner"*  - to add partner for the selected shape;
+    - *"align vertically"* - to arrange children of the shape vertically;
+    - *"align horizontally"* - to arrange children of the shape horizontally;
+    - *"remove"* - to delete the selected shape (except for the root one) with its children;
 - resizing handles (pull the handles of the editable shape to change its sizes);
 - an icon to collapse/expand child shapes.
 
 When you click on assistant or partner shape, it becomes editable and gets personal interface elements:
 
-- *"Delete"* - to delete the selected shape
+- *"remove"* - to delete the selected shape
 
 Double-click the text of a shape to edit it.
 

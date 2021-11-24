@@ -155,7 +155,7 @@ Use to edit the text of the text item of a line.
 Use to adjust the text settings:
 
 - font size, line spacing, weight, style
-- color, horizontal and vertical text alignment.
+- color, horizontal text alignment.
 
 ![](../../assets/editor/line_title_text_style.png)
 
