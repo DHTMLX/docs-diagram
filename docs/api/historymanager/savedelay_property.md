@@ -13,3 +13,6 @@ description: You can learn about the disabled property of HistoryManager in the 
 @default: 500
 
 @descr:
+
+@changelog:
+Added in v4.1.

@@ -11,3 +11,6 @@ description: You can learn about the reset method of HistoryManager in the docum
 @signature: {`reset(): void;`}
 
 @descr:
+
+@changelog:
+Added in v4.1.

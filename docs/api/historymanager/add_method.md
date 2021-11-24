@@ -11,3 +11,6 @@ description: You can learn about the add method of HistoryManager in the documen
 @signature: {`add(newState: IDataItem[]): void;`}
 
 @descr:
+
+@changelog:
+Added in v4.1.

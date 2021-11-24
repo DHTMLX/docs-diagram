@@ -11,3 +11,6 @@ description: You can learn about the enable method of HistoryManager in the docu
 @signature: {`enable(): void;`}
 
 @descr:
+
+@changelog:
+Added in v4.1.

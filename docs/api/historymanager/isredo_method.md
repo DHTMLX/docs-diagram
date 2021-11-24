@@ -11,3 +11,6 @@ description: You can learn about the isUndo method of HistoryManager in the docu
 @signature: {`isUndo(): boolean;`}
 
 @descr:
+
+@changelog:
+Added in v4.1.

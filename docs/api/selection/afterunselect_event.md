@@ -32,3 +32,6 @@ diagram.events.on("AfterUnSelect", function (id) {
 
 - [diagram.config.select](../../../api/diagram/select_property/)
 - [Selecting items](../../../guides/manipulating_items/#selecting-items)
+
+@changelog:
+SubId parameter is added in v4.1.

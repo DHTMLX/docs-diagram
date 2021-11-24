@@ -17,3 +17,6 @@ description: text
 editor.zoomIn(0.1);
 
 @descr:
+
+@changelog:
+Added in v4.1.

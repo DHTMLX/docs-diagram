@@ -28,4 +28,5 @@ diagram.events.on("afterEditorEditing", (value, id, key, subheaderId) => {
 - [Diagram. Org chart mode. Events](https://snippet.dhtmlx.com/l38pct7c)
 
 @changelog:
-Added in v4.0
+- Added in v4.0
+- SubId parameter is updated in v4.1.

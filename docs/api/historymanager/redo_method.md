@@ -11,3 +11,6 @@ description: You can learn about the redo method of HistoryManager in the docume
 @signature: {`redo(): void;`}
 
 @descr:
+
+@changelog:
+Added in v4.1.

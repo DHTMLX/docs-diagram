@@ -35,3 +35,6 @@ Returning *false* from the event handler will block unselection.
 
 - [diagram.config.select](../../../api/diagram/select_property/)
 - [Selecting items](../../../guides/manipulating_items/#selecting-items)
+
+@changelog:
+SubId parameter is added in v4.1.

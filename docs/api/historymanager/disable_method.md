@@ -11,3 +11,6 @@ description: You can learn about the disable method of HistoryManager in the doc
 @signature: {`disable(): void;`}
 
 @descr:
+
+@changelog:
+Added in v4.1.

@@ -11,3 +11,6 @@ description: You can learn about the undo method of HistoryManager in the docume
 @signature: {`undo(first?: boolean): void;`}
 
 @descr:
+
+@changelog:
+Added in v4.1.
