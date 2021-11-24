@@ -166,6 +166,30 @@ module.exports = {
           "api/editor/type_property",
         ]
       },
+      //"api/historymanager/api_overview",
+      {
+        type: "category",
+        label: "HistoryManager methods",
+        collapsed: true,
+        items: [
+          "api/historymanager/add_method",
+          "api/historymanager/disable_method",
+          "api/historymanager/enable_method",
+          "api/historymanager/isredo_method",
+          "api/historymanager/redo_method",
+          "api/historymanager/reset_method",
+          "api/historymanager/undo_method",
+        ]
+      },
+      {
+        type: "category",
+        label: "HistoryManager properties",
+        collapsed: true,
+        items: [
+          "api/historymanager/disabled_property",
+          "api/historymanager/savedelay_property",
+        ]
+      }
     ]
   },
 

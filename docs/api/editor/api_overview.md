@@ -71,3 +71,27 @@ editor.diagram.events.on("itemClick", (id, event) => {
 | [](api/editor/shapetoolbar_property.md)  | @getshort(api/editor/shapetoolbar_property.md)  |
 | [](api/editor/shapetype_property.md)     | @getshort(api/editor/shapetype_property.md)     |
 | [](api/editor/type_property.md)          | @getshort(api/editor/type_property.md)          |
+
+## HistoryManager API
+
+
+
+### HistoryManager methods
+
+| Name                                 | Description                              |
+| :----------------------------------- | :--------------------------------------- |
+| [](api/historymanager/add_method.md) | @getshort(api/historymanager/add_method.md) |
+| [](api/historymanager/add_method.md) | @getshort(api/historymanager/add_method.md) |
+| [](api/historymanager/add_method.md) | @getshort(api/historymanager/add_method.md) |
+| [](api/historymanager/add_method.md) | @getshort(api/historymanager/add_method.md) |
+| [](api/historymanager/add_method.md) | @getshort(api/historymanager/add_method.md) |
+| [](api/historymanager/add_method.md) | @getshort(api/historymanager/add_method.md) |
+| [](api/historymanager/add_method.md) | @getshort(api/historymanager/add_method.md) |
+
+### HistoryManager properties
+
+| Name                                         | Description                                         |
+| :------------------------------------------- | :-------------------------------------------------- |
+| [](api/historymanager/disabled_property.md)  | @getshort(api/historymanager/disabled_property.md)  |
+| [](api/historymanager/savedelay_property.md) | @getshort(api/historymanager/savedelay_property.md) |
+

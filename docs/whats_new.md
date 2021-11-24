@@ -24,6 +24,10 @@ Movement of shapes in org/mindmap mode with all their children from one parent t
 
 Styling of target items
 
+History Manager
+
+The API for the toolbar buttons in Editor 
+
 ### API
 
 New events of the Diagram object: [emptyAreaDblClick](../api/diagram/emptyareadblclick_event/), [emptyAreaMouseDown](../api/diagram/emptyareamousedown_event/), [lineTitleClick](../api/diagram/linetitleclick_event/), [lineTitleDblClick](../api/diagram/linetitledblclick_event/), [lineTitleMouseDown](../api/diagram/linetitlemousedown_event/)
@@ -34,7 +38,7 @@ New [Shape properties](../shapes/configuration_properties/#properties-specific-f
 
 New [Line properties](../lines/configuration_properties/#properties-specific-for-the-default-mode) specific for the default mode: title
 
-New methods of the Editor object: setViewMode, zoomIn(), zoomOut()
+New methods of the Editor object: setViewMode(), zoomIn(), zoomOut()
 
 New events of the Editor object: [beforeLineTitleMove](../api/editor/beforelinetitlemove_event/), [afterLineTitleMove](../api/editor/afterlinetitlemove_event/), [lineTitleMoveEnd](../api/editor/linetitlemoveend_event/), [itemTarget](../api/editor/itemtarget_event/), [beforeItemCatch](../api/editor/beforeitemcatch_event/), [afterItemCatch](../api/editor/afteritemcatch_event/)
 
