@@ -6,7 +6,7 @@ description: You can learn about the enable method of HistoryManager in the docu
 
 # enable()
 
-@short: 
+@short: restarts the work of HistoryManager, the current state is saved as the beginning
 
 @signature: {`enable(): void;`}
 

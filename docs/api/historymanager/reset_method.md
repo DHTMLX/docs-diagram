@@ -6,7 +6,7 @@ description: You can learn about the reset method of HistoryManager in the docum
 
 # reset()
 
-@short: 
+@short: resets previous changes and saves the current state
 
 @signature: {`reset(): void;`}
 

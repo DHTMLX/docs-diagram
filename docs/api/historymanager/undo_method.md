@@ -6,9 +6,12 @@ description: You can learn about the undo method of HistoryManager in the docume
 
 # undo()
 
-@short: 
+@short: takes a step back in the history of changes
 
 @signature: {`undo(first?: boolean): void;`}
+
+@params:
+`first: boolean` - optional, *true* to move the history of changes to the beginning
 
 @descr:
 

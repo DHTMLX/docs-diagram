@@ -6,9 +6,11 @@ description: You can learn about the add method of HistoryManager in the documen
 
 # add()
 
-@short: 
+@short: adds new state
 
 @signature: {`add(newState: IDataItem[]): void;`}
+
+@params:
 
 @descr:
 

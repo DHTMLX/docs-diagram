@@ -6,7 +6,7 @@ description: You can learn about the redo method of HistoryManager in the docume
 
 # redo()
 
-@short: 
+@short: takes a step forward in the history of changes
 
 @signature: {`redo(): void;`}
 
