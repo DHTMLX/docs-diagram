@@ -1,7 +1,7 @@
 ---
 sidebar_label: What's new
 title: What's New
-description: You can learn a new information about of DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
+description: You can learn a new information about DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
 
 # What's New
