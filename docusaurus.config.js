@@ -129,7 +129,7 @@ module.exports = {
     title: 'DHTMLX JavaScript Diagram Docs',
     tagline: 'DHTMLX JavaScript Diagram Docs',
     url: 'https://docs.dhtmlx.com',
-    baseUrl: '/diagramalt/',
+    baseUrl: '/diagram/',
     onBrokenLinks: 'warn',
     onBrokenMarkdownLinks: 'warn',
     favicon: 'img/favicon.ico',
