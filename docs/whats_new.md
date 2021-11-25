@@ -8,6 +8,17 @@ description: You can learn a new information about DHTMLX JavaScript Diagram lib
 
 If you are updating Diagram from an older version, check [Migration to Newer Version](migration.md) for details.
 
+Version 4.0.1
+-------------------
+Released on September 16, 2021
+
+### Fixes
+
+- Fix the display of connectors when rotating the shape
+- Fix the minified styles of the diagram
+- Fix the work of the algorithm when adding new items into the diagram editor in the org chart/mindmap modes
+- Fix the work of the right panel of the editor when working with styles of the text
+
 Version 4.0
 ------------------
 Released on September 7, 2021
