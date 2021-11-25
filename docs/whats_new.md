@@ -14,49 +14,35 @@ Released on , 2021
 
 ### New functionality
 
-Title for Lines in the default mode
-
-Assistant for Org mode
-
-Partner for Org mode
-
-Movement of shapes in org/mindmap mode with all their children from one parent to another
-
-Styling of target items
-
-History Manager
-
-The API for the toolbar buttons in Editor 
+- Title for Lines in the default mode
+- Assistant for Org mode
+- Partner for Org mode
+- Movement of shapes in org/mindmap mode with all their children from one parent to another
+- Styling of target items
+- HistoryManager
+- The API for the Toolbar buttons in Editor
 
 ### API
 
-New events of the Diagram object: [emptyAreaDblClick](../api/diagram/emptyareadblclick_event/), [emptyAreaMouseDown](../api/diagram/emptyareamousedown_event/), [lineTitleClick](../api/diagram/linetitleclick_event/), [lineTitleDblClick](../api/diagram/linetitledblclick_event/), [lineTitleMouseDown](../api/diagram/linetitlemousedown_event/)
-
-New [Shape properties](../shapes/configuration_properties/#properties-specific-for-the-org-chart-mode) specific for the org chart mode: assistant, partner, catchItem, giveItem
-
-New [Shape properties](../shapes/configuration_properties/#properties-specific-for-the-mindmap-mode) specific for the mindmap mode: catchItem, giveItem
-
-New [Line properties](../lines/configuration_properties/#properties-specific-for-the-default-mode) specific for the default mode: title
-
-New methods of the Editor object: setViewMode(), zoomIn(), zoomOut()
-
-New events of the Editor object: [beforeLineTitleMove](../api/editor/beforelinetitlemove_event/), [afterLineTitleMove](../api/editor/afterlinetitlemove_event/), [lineTitleMoveEnd](../api/editor/linetitlemoveend_event/), [itemTarget](../api/editor/itemtarget_event/), [beforeItemCatch](../api/editor/beforeitemcatch_event/), [afterItemCatch](../api/editor/afteritemcatch_event/)
-
-New properties of the Editor object: [itemsDraggable](../api/editor/itemsdraggable_property/)
-
-New Selection API method: [getSubId()](../api/selection/getsubid_method/)
+- New events of the Diagram object: [emptyAreaDblClick](../api/diagram/emptyareadblclick_event/), [emptyAreaMouseDown](../api/diagram/emptyareamousedown_event/), [lineTitleClick](../api/diagram/linetitleclick_event/), [lineTitleDblClick](../api/diagram/linetitledblclick_event/), [lineTitleMouseDown](../api/diagram/linetitlemousedown_event/)
+- New [Shape properties](../shapes/configuration_properties/#properties-specific-for-the-org-chart-mode) specific for the org chart mode: assistant, partner, catchItem, giveItem
+- New [Shape properties](../shapes/configuration_properties/#properties-specific-for-the-mindmap-mode) specific for the mindmap mode: catchItem, giveItem
+- New [Line properties](../lines/configuration_properties/#properties-specific-for-the-default-mode) specific for the default mode: title
+- New methods of the Editor object: [setViewMode()](../api/editor/setviewmode_method/), [zoomIn()](../api/editor/zoomin_method/), [zoomOut()](../api/editor/zoomout_method/)
+- New events of the Editor object: [beforeLineTitleMove](../api/editor/beforelinetitlemove_event/), [afterLineTitleMove](../api/editor/afterlinetitlemove_event/), [lineTitleMoveEnd](../api/editor/linetitlemoveend_event/), [itemTarget](../api/editor/itemtarget_event/), [beforeItemCatch](../api/editor/beforeitemcatch_event/), [afterItemCatch](../api/editor/afteritemcatch_event/)
+- New properties of the Editor object: [itemsDraggable](../api/editor/itemsdraggable_property/)
+- New Selection API method: [getSubId()](../api/selection/getsubid_method/)
+- New HistoryManager [methods](../api/editor/api_overview/#historymanager-methods) and [properties](../api/editor/api_overview/#historymanager-properties)
 
 ### Updates
 
-Updated events of [InlineEditor](../api/inline_editor/index/)
-
-Updated events of [Selection API](../api/selection/index/#events)
-
-The default type of the shape in the default mode is "rectangle"
+- Updated events of [InlineEditor](../api/inline_editor/index/)
+- Updated events of [Selection API](../api/selection/index/#events)
+- The default type of the shape in the default mode is "rectangle"
 
 ### Fixes
 
-The performance is improved for all types of diagram
+- The performance is improved for all types of diagram
 
 Version 4.0.1
 -------------------
