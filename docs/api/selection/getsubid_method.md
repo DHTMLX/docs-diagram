@@ -20,9 +20,10 @@ const subid = diagram.selection.getSubId(); // -> "2"
 
 @descr:
 
+@changelog:
+Added in v4.1.
+
 #### Related articles
 
 [Selecting items](../../../guides/manipulating_items/#selecting-items)
 
-@changelog:
-Added in v4.1.

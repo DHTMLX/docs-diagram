@@ -28,10 +28,11 @@ diagram.events.on("AfterUnSelect", function (id) {
 
 **Related sample**: [Diagram. Org chart mode. Events](https://snippet.dhtmlx.com/l38pct7c)
 
+@changelog:
+SubId parameter is added in v4.1.
+
 #### Related articles
 
 - [diagram.config.select](../../../api/diagram/select_property/)
 - [Selecting items](../../../guides/manipulating_items/#selecting-items)
 
-@changelog:
-SubId parameter is added in v4.1.

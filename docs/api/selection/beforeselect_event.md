@@ -30,10 +30,10 @@ diagram.events.on("BeforeSelect", function(id) {
 
 Returning *false* from the handler will block the selection.
 
+@changelog:
+SubId parameter is added in v4.1.
+
 #### Related articles
 
 - [diagram.config.select](../../../api/diagram/select_property/)
 - [Selecting items](../../../guides/manipulating_items/#selecting-items)
-
-@changelog:
-SubId parameter is added in v4.1.

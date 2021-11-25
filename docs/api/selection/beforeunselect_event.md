@@ -31,10 +31,10 @@ diagram.events.on("BeforeUnSelect", function(id) {
 
 Returning *false* from the event handler will block unselection.
 
+@changelog:
+SubId parameter is added in v4.1.
+
 #### Related articles
 
 - [diagram.config.select](../../../api/diagram/select_property/)
 - [Selecting items](../../../guides/manipulating_items/#selecting-items)
-
-@changelog:
-SubId parameter is added in v4.1.
