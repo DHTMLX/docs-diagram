@@ -1,7 +1,7 @@
 ---
 sidebar_label: What's new
 title: What's New
-description: You can learn a new information about of DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
+description: You can learn a new information about DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
 
 # What's New
@@ -57,6 +57,17 @@ The default type of the shape in the default mode is "rectangle"
 ### Fixes
 
 The performance is improved for all types of diagram
+
+Version 4.0.1
+-------------------
+Released on September 16, 2021
+
+### Fixes
+
+- Fix the display of connectors when rotating the shape
+- Fix the minified styles of the diagram
+- Fix the work of the algorithm when adding new items into the diagram editor in the org chart/mindmap modes
+- Fix the work of the right panel of the editor when working with styles of the text
 
 Version 4.0
 ------------------
