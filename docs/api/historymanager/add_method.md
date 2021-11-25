@@ -11,8 +11,11 @@ description: You can learn about the add method of HistoryManager in the documen
 @signature: {`add(newState: IDataItem[]): void;`}
 
 @params:
+`newState: array` - an array of JSON objects of the current state
 
 @descr:
+
+Adding the new state is done automatically. Therefore this method is not recommended for manual usage.
 
 @changelog:
 Added in v4.1.

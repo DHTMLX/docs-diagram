@@ -74,23 +74,23 @@ editor.diagram.events.on("itemClick", (id, event) => {
 
 ## HistoryManager API
 
-
+HistoryManager works automatically by default. In case you need manual application of HistoryManager use the construction `editor.history`.
 
 ### HistoryManager methods
 
-| Name                                     | Description                                     |
-| :--------------------------------------- | :---------------------------------------------- |
-| [](api/historymanager/add_method.md)     | @getshort(api/historymanager/add_method.md)     |
-| [](api/historymanager/disable_method.md) | @getshort(api/historymanager/disable_method.md) |
-| [](api/historymanager/enable_method.md)  | @getshort(api/historymanager/enable_method.md)  |
-| [](api/historymanager/isredo_method.md)  | @getshort(api/historymanager/isredo_method.md)  |
-| [](api/historymanager/redo_method.md)    | @getshort(api/historymanager/redo_method.md)    |
-| [](api/historymanager/reset_method.md)   | @getshort(api/historymanager/reset_method.md)   |
-| [](api/historymanager/undo_method.md)    | @getshort(api/historymanager/undo_method.md)    |
+| Name                                    | Description                                    |
+| :-------------------------------------- | :--------------------------------------------- |
+| [](../historymanager/add_method.md)     | @getshort(../historymanager/add_method.md)     |
+| [](../historymanager/disable_method.md) | @getshort(../historymanager/disable_method.md) |
+| [](../historymanager/enable_method.md)  | @getshort(../historymanager/enable_method.md)  |
+| [](../historymanager/isredo_method.md)  | @getshort(../historymanager/isredo_method.md)  |
+| [](../historymanager/redo_method.md)    | @getshort(../historymanager/redo_method.md)    |
+| [](../historymanager/reset_method.md)   | @getshort(../historymanager/reset_method.md)   |
+| [](../historymanager/undo_method.md)    | @getshort(../historymanager/undo_method.md)    |
 
 ### HistoryManager properties
 
-| Name                                         | Description                                         |
-| :------------------------------------------- | :-------------------------------------------------- |
-| [](api/historymanager/disabled_property.md)  | @getshort(api/historymanager/disabled_property.md)  |
-| [](api/historymanager/savedelay_property.md) | @getshort(api/historymanager/savedelay_property.md) |
+| Name                                        | Description                                        |
+| :------------------------------------------ | :------------------------------------------------- |
+| [](../historymanager/disabled_property.md)  | @getshort(../historymanager/disabled_property.md)  |
+| [](../historymanager/savedelay_property.md) | @getshort(../historymanager/savedelay_property.md) |
