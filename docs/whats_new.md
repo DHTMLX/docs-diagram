@@ -14,15 +14,11 @@ Released on , 2021
 
 ### New functionality
 
-- The ability to add partner shapes in org chart  mode
-- The ability to add assistant shapes in org chart  mode
-- The ability to add titles to lines in the default mode
-- The ability to drag and drop shapes from one parent to another in Editor in org chart and mind map mode. The shapes are dragged with their children items
+- The ability to add [partner shapes](/#assistant-and-partner-shapes) in org chart  mode
+- The ability to add [assistant shapes](/#assistant-and-partner-shapes) in org chart  mode
+- The ability to add [titles to lines](/#title-of-lines) in the default mode
+- The ability to [drag and drop shapes](#editor-in-the-org-chart-mode)] from one parent to another in Editor in org chart and mind map mode. The shapes are dragged with their children items
 - The ability to [style target items](/guides/customization/#styling-target-shapes) in Editor in org chart and mindmap mode
-- The ability to manipulate the Toolbar buttons in Editor via the API
-
-- The [HistoryManager API](/api/editor/api_overview/#historymanager-api)
-- The API for the Toolbar buttons in Editor
 
 ### API
 
@@ -39,8 +35,8 @@ Released on , 2021
 
 ### Updates
 
-- Updated events of [InlineEditor](../api/inline_editor/index/): subHeaderId parameter is changed to subId
-- Updated events of [Selection API](../api/selection/index/#events): subId parameter is added
+- Updated events of [InlineEditor](../api/inline_editor/index/): subHeaderId parameter has been changed to subId
+- Updated events of [Selection API](../api/selection/index/#events): subId parameter has been added
 - The default type of the shape in the default mode is changed to "rectangle"
 
 ### Fixes

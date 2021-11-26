@@ -1,7 +1,7 @@
 ---
 sidebar_label: beforeLineTitleMove
-title: beforeLineTitleMove
-description: text
+title: beforeLineTitleMove Event of Editor
+description: You can learn about the beforeLineTitleMove event of editor in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
 
 # beforeLineTitleMove

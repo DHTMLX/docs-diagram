@@ -29,7 +29,7 @@ diagram.events.on("AfterSelect", function(id) {
 **Related sample**: [Diagram. Org chart mode. Events](https://snippet.dhtmlx.com/l38pct7c)
 
 @changelog:
-SubId parameter is added in v4.1.
+SubId parameter has been added in v4.1.
 
 #### Related articles
 

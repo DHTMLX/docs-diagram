@@ -32,7 +32,7 @@ diagram.events.on("BeforeUnSelect", function(id) {
 Returning *false* from the event handler will block unselection.
 
 @changelog:
-SubId parameter is added in v4.1.
+SubId parameter has been added in v4.1.
 
 #### Related articles
 

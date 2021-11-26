@@ -166,7 +166,6 @@ module.exports = {
           "api/editor/type_property",
         ]
       },
-      //"api/historymanager/api_overview",
       {
         type: "category",
         label: "HistoryManager methods",

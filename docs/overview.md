@@ -56,9 +56,7 @@ Usage of swimlanes of the DHTMLX Diagram library lets you represent any process 
 
 The title of Line is enabled in the default mode of Diagram. You can add the text by double-clicking on a line. Use double-clicking also for editing the text.
 
-| [Diagram. Default mode. Data planning model](https://snippet.dhtmlx.com/e6zm6wh1) |
-| --------------------------------------------------------------------------------- |
-| ![](assets/defaultchart_with_title.png)                                           |
+<iframe src="https://snippet.dhtmlx.com/e6zm6wh1?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
 
 ## Diagram in the org chart mode
 
