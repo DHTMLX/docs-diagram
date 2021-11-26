@@ -37,7 +37,7 @@ Released on , 2021
 
 - Updated events of [InlineEditor](../api/inline_editor/index/): subHeaderId parameter has been changed to subId
 - Updated events of [Selection API](../api/selection/index/#events): subId parameter has been added
-- The default type of the shape in the default mode is changed to "rectangle"
+- The default type of the shape in the default mode has been changed to "rectangle"
 
 ### Fixes
 
