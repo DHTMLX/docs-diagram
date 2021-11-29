@@ -164,7 +164,7 @@ module.exports = {
             // This is a read-only, search-only key served directly by the front-end, managed by Algolia via their
             // free DocSearch program. The key is not sensitive. See https://docsearch.algolia.com/ for more details.
             apiKey: '027f495bbecd54a44f3d5bf4f842e611',
-            indexName: 'diagramalt',
+            indexName: 'diagram',
 
             // Optional: see doc section bellow
             contextualSearch: true,
