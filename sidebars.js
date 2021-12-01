@@ -15,8 +15,9 @@ module.exports = {
   {
     type: "category",
     label: "API",
+    collapsible: true,
     collapsed: false,
-    items: [
+    items:[
       {
         type: "category",
         label: "Diagram API",
@@ -75,8 +76,8 @@ module.exports = {
               "api/diagram/shapedblclick_event",
               "api/diagram/shapeiconclick_event",
               "api/diagram/shapemousedown_event",
-             
             ]
+             
           },
           {
             type: "category",
