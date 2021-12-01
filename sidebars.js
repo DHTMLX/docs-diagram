@@ -11,13 +11,16 @@ module.exports = {
       "migration",
     ],
   },
-  // Diagram API
+
+  // API
   {
     type: "category",
     label: "API",
     collapsible: true,
     collapsed: false,
     items:[
+
+      // Diagram API
       {
         type: "category",
         label: "Diagram API",
@@ -77,7 +80,6 @@ module.exports = {
               "api/diagram/shapeiconclick_event",
               "api/diagram/shapemousedown_event",
             ]
-             
           },
           {
             type: "category",
@@ -101,6 +103,7 @@ module.exports = {
           },
         ]
       },
+
       // Editor API
       {
         type: "category",
@@ -330,6 +333,7 @@ module.exports = {
               },
             ]
           },
+
           // Inline editor 
           {
             type: "category",
@@ -385,7 +389,8 @@ module.exports = {
         ]
       },
     ]
-  },    
+  },
+
   // Guides
   {
     type: "category",
@@ -446,7 +451,6 @@ module.exports = {
         type: "category",
         label: "Diagram Editor",
         items: [
-          // "guides/diagram_editor/overview",
           "guides/diagram_editor/initialization",
           "guides/diagram_editor/toolbar",
           "guides/diagram_editor/left_panel",
