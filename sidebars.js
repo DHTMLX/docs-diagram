@@ -3,7 +3,14 @@ module.exports = {
     type: "doc",
     id: "overview",
   },
-
+  {
+    type: "category",
+    label: "What's new and migration",
+    items: [
+      "whats_new",
+      "migration",
+    ],
+  },
   // Diagram API
   {
     type: "category",
@@ -451,13 +458,5 @@ module.exports = {
       "guides/react_integration",
       "guides/vue_integration",
     ]
-  },
-  {
-    type: "category",
-    label: "What's new and migration",
-    items: [
-      "whats_new",
-      "migration",
-    ],
   },
 ]};
