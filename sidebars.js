@@ -18,7 +18,7 @@ module.exports = {
     label: "API",
     collapsible: true,
     collapsed: false,
-    items:[
+    items: [
 
       // Diagram API
       {
