@@ -5,13 +5,12 @@ slug: /
 description: You can have an overview of DHTMLX JavaScript Diagram library in the documentation. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
 
-# Diagram Overview
+# Diagram overview
 
 DHTMLX Diagram is a client-side chart component that allows you to display relations between some objects, concepts or living beings in a visual form:
 as a scheme, chart, organizational chart, mind map, etc. The diagram makes it easier to present tangled and bulky information in a simple and accessible way.
 
-Diagram in the default mode
-------------------------
+## Diagram in the default mode
 
 DHTMLX Diagram provides the possibility to make various diagrams using a predefined set of shapes and connectors, and experiment with their look and feel.
 
@@ -41,7 +40,6 @@ You can easily create your own templates of shapes and use them to design any di
 
 You can draw simple or more complicated schemes by grouping shapes in different ways with the help of such an element of Diagram as a group. It is possible to create as one-level groups as nested groups, to configure their appearance and behavior. Check the details in the [Groups configuration](diagram_guides/shapes_arrows_list.md#groupsconfiguration) article.
 
-
 |[Diagram. Default mode. Virtual private cloud architecture](https://snippet.dhtmlx.com/0hf8ahrb)|
 |---|
 |![](assets/virtual_cloud.png)|
@@ -54,8 +52,7 @@ Usage of swimlanes of the DHTMLX Diagram library lets you represent any process 
 |---|
 |![](assets/swimlane.png)|
 
-Diagram in the org chart mode
------------------------
+## Diagram in the org chart mode
 
 There is also an org chart mode of diagram that presents a set of shapes connected by lines in a hierarchical order. 
 
@@ -69,8 +66,7 @@ An example of adding custom shapes for creating a diagram to present the hierarc
 |---|
 |![](assets/medical_hierarchy_overview.png)|
 
-Diagram in the mindmap mode
---------------
+## Diagram in the mindmap mode
 
 The mindmap mode is used to represent a core topic or idea surrounded by the branches of the subtopics.
 
@@ -96,7 +92,6 @@ The interface of the editor initialized in the default mode consists of four fun
 
 To build a diagram, you need either to drag the necessary items from the left panel or create a copy of the items via the per-item toolbar. You can adjust the attributes of the items via sidebar options of the right panel.
 
-
 |[Diagram. Default mode. Wide flowchart](https://snippet.dhtmlx.com/4d4k3o8p)|
 |--|
 |![](assets/default_editor.gif)|
@@ -117,7 +112,6 @@ You can adjust the attributes of the shapes via the available sidebar options of
 |--|
 |![](assets/orgchart_editor.gif)|
 
-
 In the example below, you can notice that a set of sidebar options for editing the attributes of the shape with an image differs from the sidebar options for editing a simple card.
 
 <iframe src="https://snippet.dhtmlx.com/vghuunmd?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
@@ -136,16 +130,14 @@ To build a diagram in the mindmap mode of the editor, you need to select a shape
 
 If you've added a custom shape to the editor in the org chart mode, you can configure the right panel to be able to edit custom properties of the shape.
 
-Shape Search
----------------
+## Shape search
 
 DHTMLX Diagram provides you with a set of API that you can apply in order to make working with a Diagram more convenient.
 For example, you can implement a feature of searching a shape on request that helps you to simplify work with large diagrams. 
 
 <iframe src="https://snippet.dhtmlx.com/d7kvzq4r?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
 
-Diagram Scale
-----------------
+## Diagram scale
 
 You can apply the zoom template to your diagram to be able to change its appearance via zooming the diagram in or out. Besides, you can make it possible to user to get the detailed information on the selected shape.
 

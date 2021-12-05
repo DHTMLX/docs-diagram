@@ -4,7 +4,7 @@ title: Editor Guides - Grid Area
 description: You can learn about the Grid Area of editor in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
 
-# Grid Area
+# Grid area
 
 Grid area is an area intended for editing a diagram. You can easily add new items, change their appearance and positioning, or remove them.
 
@@ -114,13 +114,11 @@ Note, that some options of moving the first/last columns and rows are deactivate
 
 After selecting an item in the grid area, you can update its attributes [via the sidebar options in the right panel of the editor](../../../guides/diagram_editor/right_panel/).
 
-
 ## Configuring toolbar per-item
 
 You can customize the personal toolbar of shapes, groups, swimlanes according to your needs via the [shapeToolbar](../../../api/editor/shapetoolbar_property/) property of the editor.
 
-Using hotkeys
----------------
+## Using hotkeys
 
 There is a set of hotkeys you can use while creating a diagram in the editor:
 
@@ -132,8 +130,7 @@ There is a set of hotkeys you can use while creating a diagram in the editor:
 - **Del** - to delete an item(s);
 - **Arrows** - to move an item(s) left/right/up/down.
 
-Manipulating multiple items
---------------------------------
+## Manipulating multiple items
 
 It is possible to select several diagram items via hovering them over with the left mouse button pressed. You can also select necessary items using keyboard shortcuts - Shift+Left Click.
 

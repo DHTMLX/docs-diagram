@@ -1,10 +1,10 @@
 ---
-sidebar_label: How to start with Diagram
+sidebar_label: Initialization
 title: How to Start with Diagram
 description: You can learn how to start with Diagram in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
 
-# How to start with Diagram
+# Diagram initialization
 
 In this article we will discuss the stages of adding DHTMLX Diagram on a page. This process presupposes several simple steps:
 
@@ -12,7 +12,6 @@ In this article we will discuss the stages of adding DHTMLX Diagram on a page. T
 - [Include the DHTMLX Diagram source files on a page](#including-required-code-files).
 - [Initialize the Diagram with the object constructor](#initializing-diagram).
 - [Load data into the Diagram](#loading-data-into-diagram).
-
 
 ~~~html
 <!DOCTYPE html>
@@ -47,8 +46,7 @@ In this article we will discuss the stages of adding DHTMLX Diagram on a page. T
 </html>
 ~~~
 
-Including required code files
--------------------
+## Including required code files
 
 To create Editor, you need to include 2 source files on your page:
 
@@ -71,9 +69,7 @@ The structure of DHTMLX Diagram package is the following:
 - **samples** - the code samples;
 - **codebase** - the packed code files of the library. These files are much smaller and intended for use in production. **In your apps you need to use files from this folder**.
 
-
-Initializing Diagram
-----------------
+## Initializing Diagram
 
 You can initialize a Diagram in a container, in the document body, or in a layout cell.
 
@@ -148,9 +144,6 @@ diagram.paint();
 
 See [the full list of configuration properties of Diagram](../../../api/diagram/api_overview/#diagram-properties).
 
-Loading data into Diagram
-----------------------------
+## Loading data into Diagram
 
 Detailed information on loading data into DHTMLX Diagram is given in the [Loading and Storing Data](../../../guides/loading_data/) article.
-
-

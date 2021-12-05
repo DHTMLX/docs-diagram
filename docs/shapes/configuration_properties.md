@@ -193,7 +193,7 @@ const data = [
 ];
 ~~~
 
-## Related articles
+**Related articles:**
 
 - [Default Shapes](../../shapes/default_shapes/)
 - [Custom Shape](../../shapes/custom_shape/)

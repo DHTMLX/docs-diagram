@@ -8,8 +8,7 @@ description: You can learn about scrolling Diagram in the documentation of the D
 
 By default the component's size is set automatically to fit the content. If necessary, the component will take the size of the HTML container and render horizontal and vertical inner scrolls to fit the content.
 
-Scrolling diagram
----------------
+## Scrolling diagram
 
 You can scroll a diagram to the area where the necessary item is situated via the [](../../api/diagram/showitem_method.md) method of the diagram object.
 
@@ -31,8 +30,7 @@ const coords = diagram.getScrollState();	// -> {x:0,y:0}
 
 It returns an object with the horizontal and vertical scroll position.
 
-Catching diagram scrolling 
---------------------------
+## Catching diagram scrolling 
 
 You can catch the start of Diagram scrolling using the [](../../api/diagram/scroll_event.md) event. The handler function takes the position of the scroll as a parameter:
 

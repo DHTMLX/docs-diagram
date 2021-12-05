@@ -78,6 +78,6 @@ const data = [
 ];
 ~~~
 
-## Related articles
+**Related articles:**
 
 - [Configuring groups](../../groups/index/)

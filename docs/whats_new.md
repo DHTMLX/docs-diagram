@@ -4,12 +4,12 @@ title: What's New
 description: You can learn a new information about DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
 
-# What's New
+# What's new
 
 If you are updating Diagram from an older version, check [Migration to Newer Version](migration.md) for details.
 
-Version 4.0.1
--------------------
+## Version 4.0.1
+
 Released on September 16, 2021
 
 ### Fixes
@@ -19,8 +19,8 @@ Released on September 16, 2021
 - Fix the work of the algorithm when adding new items into the diagram editor in the org chart/mindmap modes
 - Fix the work of the right panel of the editor when working with styles of the text
 
-Version 4.0
-------------------
+## Version 4.0
+
 Released on September 7, 2021
 
 ### New functionality
@@ -61,8 +61,7 @@ Released on September 7, 2021
 - Now it is possible to resize an element only when the angle of its rotation is equal either to 0 or 360 degrees.
 - Significant optimization of Diagram styles
 
-Version 3.1
-------------------
+## Version 3.1
 
 Released on April 15, 2021
 
@@ -103,11 +102,9 @@ Released on April 15, 2021
 - Fix the issue that caused the shapes to be pasted without connectors when the connected shapes are copied
 - Now there is no the ability to remove the root shape from the editor using keyboard navigation when the editor is initialized in the org chart mode
 
-Version 3.0.4
-------------------
+## Version 3.0.4
 
 Released on January 27, 2021
-
 
 ### Fixes
 
@@ -115,18 +112,15 @@ Released on January 27, 2021
 - Fix the issue that caused a collapsed/expanded item not to work with its parent 
 - Fix the incorrect work of the [showItem()](../api/diagram/showitem_method/) method when the child item is hidden
 
-Version 3.0.3
-------------------
+## Version 3.0.3
 
 Released on December 23, 2020
-
 
 ### Fixes
 
 - Fix issue with the Diagram export service
 
-Version 3.0.2
-------------------
+## Version 3.0.2
 
 Released on July 14, 2020
 
@@ -136,8 +130,7 @@ Released on July 14, 2020
 - Fix the incorrect work of the [addShape()](../api/diagram/addshape_method/) method while configuring the right panel of the editor
 - Improved behavior of the historyManager control of the toolbar in the Editor
 
-Version 3.0.1
-------------------
+## Version 3.0.1
 
 Released on May 29, 2020
 
@@ -146,8 +139,7 @@ Released on May 29, 2020
 - Fix issue with the [autoPlace()](../api/diagram/autoplace_method/) method
 - Fix issue with PNG/PDF export modules
 
-Version 3.0
---------------------
+## Version 3.0
 
 Released on May 12, 2020
 
@@ -180,10 +172,7 @@ The new update introduces some changes and improvements. Check the [Migration](.
 - The ability to set a connector line to the *text* shape in the editor which is initialized in the default mode
 - Auto-fit of the content width of the *text* shape is added
 
-
-
-Version 2.2.1
-------------------
+## Version 2.2.1
 
 Released on December 30, 2019
 
@@ -191,8 +180,8 @@ Released on December 30, 2019
 
 - Issue with IE support for the image loader in Diagram editor
 
-Version 2.2
-------------------
+## Version 2.2
+
 Released on November 27, 2019
 
 ### New functionality
@@ -210,16 +199,15 @@ Released on November 27, 2019
 - Fix incorrect work of the right and left panels in Diagram Editor
 - Fix the issue with auto-generating of the unique id's of shapes and connectors
 
+## Version 2.1.1
 
-Version 2.1.1
-------------------
 Released on October 11, 2019
 
 ### Fixes
 - Issues with an img-card in IE
 
-Version 2.1
-------------------
+## Version 2.1
+
 Released on May 22, 2017
 
 ### New functionality
@@ -234,14 +222,13 @@ Released on May 22, 2017
 - New event [emptyAreaClick](../api/diagram/emptyareaclick_event/) is added
 - The [lineGap](../api/diagram/linegap_property/) configuration option is added
 
-Version 2.0
--------------
+## Version 2.0
+
 Released on February 15, 2017
 
 ### Breaking Change
 
 The API structure was totally reorganized and improved to simplify work with it. Follow the [Migration](../migration/#11---20) article to learn all the changes.
-
 
 ### New functionality
 
@@ -258,9 +245,8 @@ The API structure was totally reorganized and improved to simplify work with it.
 - Enhanced performance 
 - Ability to adjust to any HTML container and built-in auto-sizing
 
+## Version 1.1 
 
-Version 1.1 
--------------------
 Released on December 5, 2017
 
 ### New functionality
@@ -273,8 +259,7 @@ Released on December 5, 2017
 
 - [Extended API](../api/diagram/api_overview/): new methods, properties and events
 
-Version 1.0 
--------------------------
+## Version 1.0 
 
 Released on September 29, 2017
 
@@ -284,11 +269,3 @@ Released on September 29, 2017
 - Vertical and horizontal autoplacement strategies
 - Loading data from JSON
 - API to manage data and branch state
-
-
-
-
-
-
-
-

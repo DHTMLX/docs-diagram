@@ -4,7 +4,7 @@ title: Editor Guides - Right Panel
 description: You can learn about the Right Panel of editor in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
 
-# Right Panel
+# Right panel
 
 Right panel is a part of the editor with a *property sheet* that provides options for modifying values of the attributes of the diagram items.
 
@@ -44,7 +44,6 @@ Use to set the width and height of a shape.
 
 ![](../../assets/editor/size.png)
 
-
 ### Fill
 
 Use to modify the color of a shape via the related colorpicker.
@@ -52,7 +51,6 @@ Use to modify the color of a shape via the related colorpicker.
 *The option is available for "topic" and flow chart shapes.*
 
 ![](../../assets/editor/fill.png)
-
 
 ### Color
 
@@ -207,6 +205,3 @@ Use to show/hide the left/right subheadings of a swimlane.
 Use to show/hide the top/bottom subheadings of a swimlane.
 
 ![](../../assets/editor/subheader_cols.png)
-
-
-

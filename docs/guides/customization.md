@@ -4,7 +4,7 @@ title: Customizing Items
 description: You can learn about customizing items in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
 
-# Customizing Items
+# Customizing items
 
 You can easily modify the appearance of diagram items by using various configuration properties inside their objects.
 

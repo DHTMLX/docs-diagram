@@ -12,8 +12,7 @@ Starting from v3.1, the library of DHTMLX Diagram provides the ability to use Ty
 
 ![](../assets/typescript.png)
 
-Advantages of using TypeScript
-------------------------------
+## Advantages of using TypeScript
 
 Why we suggest that you use DHTMLX Diagram with TypeScript?
 

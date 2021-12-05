@@ -4,7 +4,7 @@ title: Inline Editing
 description: You can learn about inline editing in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
 
-# Inline Editing
+# Inline editing
 
 Inline editing lets you edit the text content of a diagram item by double-clicking on it. You can edit the items both in the diagram and in the editor.
 
@@ -18,7 +18,7 @@ To disable inline editing, you should use the **editable** property of the eleme
 
 You can find examples of disabling inline editing for diagram items below:
 
-#### Shapes
+## Shapes
 
 ~~~js title="Disabling the ability to edit the text content of a shape"
 const data = [
@@ -26,7 +26,7 @@ const data = [
 ];
 ~~~
 
-#### Groups
+## Groups
 
 ~~~js title="Disabling the ability to edit the text content of the header of a group"
 const data = [    
@@ -45,7 +45,7 @@ const data = [
 ];
 ~~~
 
-#### Swimlanes
+## Swimlanes
 
 ~~~js title="Configuring the ability to edit the text content of the header and subheaders of a swimlane"
 const data = [

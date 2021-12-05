@@ -122,34 +122,34 @@ The configuration properties of a swimlane cell are given below:
 
 ~~~js
 const data = [
-    // configuring a swimlane
-    {
-		"id": "main",
-		"type": "$swimlane",
-		"height": 730,
-		"width": 1195,
-		"layout": [
-			[1, 2, 3, 4]
-		],
+  // configuring a swimlane
+  {
+    "id": "main",
+    "type": "$swimlane",
+    "height": 730,
+    "width": 1195,
+    "layout": [
+      [1, 2, 3, 4]
+    ],
+  },
+  // configuring a cell of the swimlane
+  {
+    "id": 1,
+    "type": "$sgroup",
+    "groupChildren": ["s1"],
+    "style": {
+      "fill": "rgba(243, 92, 79, 0.05)"
     },
-    // configuring a cell of the swimlane
-    {
-		"id": 1,
-		"type": "$sgroup",
-		"groupChildren": ["s1"],
-		"style": {
-			"fill": "rgba(243, 92, 79, 0.05)"
-		},
-		"x": 0,
-		"y": 80
-	},
-    // configuring a shape to put into the cell
-    {
-		"id": "s1", "type": "end", "text": "Step 1", "x": 20, "y": 110
-	},
+    "x": 0,
+    "y": 80
+  },
+  // configuring a shape to put into the cell
+  {
+    "id": "s1", "type": "end", "text": "Step 1", "x": 20, "y": 110
+  },
 ];
 ~~~
 
-## Related articles
+**Related articles:**
 
 - [Configuring swimlanes](../../swimlanes/index/)

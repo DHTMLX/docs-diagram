@@ -4,11 +4,9 @@ title: Migration to Newer Versions
 description: You can learn about the Migration to Newer Versions in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
 
-# Migration to Newer Versions
+# Migration to newer versions
 
-
-3.1 -> 4.0
-------------
+## 3.1 -> 4.0
 
 ### API
 
@@ -29,7 +27,6 @@ editor.diagram.events.on("itemMouseOver", (id, event) => {
     console.log(id, event);
 });
 ~~~
-
 
 3.0 -> 3.1
 ------------
@@ -57,10 +54,9 @@ editor.events.on("AfterShapeMove", function(events) {
 });
 ~~~
 
-2.2 -> 3.0
-------------
+## 2.2 -> 3.0
 
-### Creating Custom Shapes
+### Creating custom shapes
 
 The way of creating custom shapes has been changed, simplified and improved. 
 
@@ -69,7 +65,7 @@ The method provides you with the ability to create HTML templates that will work
 
 Despite the *diagram.flowShapes* object has been deprecated, it will still continue working.
 
-### Toolbar buttons in Editors
+### Toolbar buttons in Editor
 
 Before version 3.0 you were able to show/hide toolbar buttons in Diagram Editor via the related *showApply, showReset, showExport* configuration properties of the Editor.
 
@@ -88,12 +84,12 @@ const editor = new dhx.DiagramEditor("editor_container", {
     },
 });
 ~~~
+
 To enable/disable a toolbar button you need to specify the value of the control to *true* (by default) or *false*.
 
 See the full list of the available controls in the [Toolbar](../guides/diagram_editor/toolbar/) article.
 
-1.1 -> 2.0
--------------
+## 1.1 -> 2.0
 
 ### Removed API
 
@@ -116,9 +112,3 @@ See the full list of the available controls in the [Toolbar](../guides/diagram_e
 - diagram.serialize -> [diagram.data.serialize](../api/data_collection/serialize_method/)
 - diagram.unselectItem -> [diagram.selection.remove](../api/selection/remove_method/)
 - diagram.updateItem -> [diagram.data.update](../api/data_collection/update_method/)
-
-
-
-
-
-
