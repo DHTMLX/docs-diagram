@@ -134,5 +134,5 @@ Loading data into Editor
 
 It is possible to load an [appropriate data set](../../../guides/loading_data/#preparing-data-to-load) into the editor via the [parse()](../../../api/editor/parse_method/) method of the editor.
 
-<iframe src="https://snippet.dhtmlx.com/xshe9ut7?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="200"></iframe>
+<iframe src="https://snippet.dhtmlx.com/xshe9ut7?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="400"></iframe>
 
