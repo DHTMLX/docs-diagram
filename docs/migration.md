@@ -6,7 +6,6 @@ description: You can learn about the Migration to Newer Versions in the document
 
 # Migration to Newer Versions
 
-
 3.1 -> 4.0
 ------------
 
@@ -14,13 +13,13 @@ description: You can learn about the Migration to Newer Versions in the document
 
 The **shapeHover** event has been deprecated in v4.0. Starting with v4.0, use the new [itemMouseOver](../api/diagram/itemmouseover_event/) event instead.
 
-~~~js title="Before v3.1"
+~~~js title="Before v4.0"
 diagram.events.on("shapeHover",function(id,e){
     console.log("An item"+ diagram.data.getItem(id).text +"has been hovered over");
 });
 ~~~
 
-~~~js title="After v3.1"
+~~~js title="From v4.0"
 diagram.events.on("itemMouseOver", (id, event) => {
     console.log(id, event);
 });
@@ -29,7 +28,6 @@ editor.diagram.events.on("itemMouseOver", (id, event) => {
     console.log(id, event);
 });
 ~~~
-
 
 3.0 -> 3.1
 ------------
@@ -62,10 +60,9 @@ editor.events.on("AfterShapeMove", function(events) {
 
 ### Creating Custom Shapes
 
-The way of creating custom shapes has been changed, simplified and improved. 
+The way of creating custom shapes has been changed, simplified and improved.
 
-Starting from v3.0, in order to create your own types of shapes, the new **addShape** method should be used instead of the *diagram.flowShapes* object. 
-The method provides you with the ability to create HTML templates that will work in different browsers. Besides, the method allows creating and editing custom shapes in Diagram Editor. 
+Starting from v3.0, in order to create your own types of shapes, the new **addShape** method should be used instead of the *diagram.flowShapes* object. The method provides you with the ability to create HTML templates that will work in different browsers. Besides, the method allows creating and editing custom shapes in Diagram Editor.
 
 Despite the *diagram.flowShapes* object has been deprecated, it will still continue working.
 
@@ -88,6 +85,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
     },
 });
 ~~~
+
 To enable/disable a toolbar button you need to specify the value of the control to *true* (by default) or *false*.
 
 See the full list of the available controls in the [Toolbar](../guides/diagram_editor/toolbar/) article.
