@@ -17,8 +17,8 @@ description: You can learn about the afterEditorEditing event in the documentati
 - `subId: string` - optional, the id of a subheader of a swimlane or a text element of a line
 
 @example:
-diagram.events.on("afterEditorEditing", (value, id, key, subheaderId) => {
-    console.log(value, id, key, subheaderId);
+diagram.events.on("afterEditorEditing", (value, id, key, subId) => {
+    console.log(value, id, key, subId);
 });
 
 @descr:

@@ -67,7 +67,7 @@ const data = [
 
 - **open** - (*boolean*) defines, whether the child items of the current shape will be shown. *True* by default;
 - **assistant** - (*boolean*) defines, whether the shape is an assistant item for the parent shape;
-- **partner** - (*boolean*) defines, whether the shape is an partner item for the parent shape;
+- **partner** - (*boolean*) defines, whether the shape is a partner item for the parent shape;
 - **catchItem** - (*boolean*) defines, whether the item can catch the moving item;
 - **giveItem** - (*boolean*) defines, whether the item can be moved.
 

@@ -16,8 +16,8 @@ description: You can learn about the afterEditorClose event in the documentation
 - `subId: string` - optional, the id of a subheader of a swimlane or a text element of a line
 
 @example:
-diagram.events.on("afterEditorClose", (id, key, subheaderId) => {
-    console.log(id, key, subheaderId);
+diagram.events.on("afterEditorClose", (id, key, subId) => {
+    console.log(id, key, subId);
 });
 
 @descr:

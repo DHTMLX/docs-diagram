@@ -19,8 +19,8 @@ description: You can learn about the beforeEditorClose event in the documentatio
 `False` to block closing of the inline editor, otherwise `true`.
 
 @example:
-diagram.events.on("beforeEditorClose", (id, key, subheaderId) => {
-    console.log(id, key, subheaderId);
+diagram.events.on("beforeEditorClose", (id, key, subId) => {
+    console.log(id, key, subId);
     return true;
 });
 

@@ -39,4 +39,5 @@ Each icon object can have the following properties:
 
 #### Related articles
 
-[Setting toolbar for items](../../../guides/diagram/configuration/#setting-toolbar-for-items)
+- [Setting toolbar for items](../../../guides/diagram/configuration/#setting-toolbar-for-items)
+- [Default icons](https://docs.dhtmlx.com/suite/helpers/icon/)

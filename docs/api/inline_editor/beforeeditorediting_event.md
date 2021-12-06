@@ -21,8 +21,8 @@ description: You can learn about the beforeEditorEditing event in the documentat
 `False` to block saving changes after editing an item via the inline editor, otherwise `true`.
 
 @example:
-diagram.events.on("beforeEditorEditing", (value, id, key, subheaderId) => {
-    console.log(value, id, key, subheaderId);
+diagram.events.on("beforeEditorEditing", (value, id, key, subId) => {
+    console.log(value, id, key, subId);
     return true;
 });
 

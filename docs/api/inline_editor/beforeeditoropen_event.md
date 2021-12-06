@@ -19,8 +19,8 @@ description: You can learn about the beforeEditorOpen event in the documentation
 `False` to block opening of the inline editor, otherwise `true`.
 
 @example:
-diagram.events.on("beforeEditorOpen", (id, key, subheaderId) => {
-    console.log(id, key, subheaderId);
+diagram.events.on("beforeEditorOpen", (id, key, subId) => {
+    console.log(id, key, subId);
     return true;
 });
 

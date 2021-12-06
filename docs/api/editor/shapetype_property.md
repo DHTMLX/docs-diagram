@@ -20,3 +20,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 @descr:
 
 This value is applied, if the shape object doesn't contain the "type" property.
+
+#### Related articles
+
+[Default Shapes](../../../shapes/default_shapes/)

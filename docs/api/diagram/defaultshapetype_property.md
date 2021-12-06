@@ -24,4 +24,4 @@ This value is applied, if the shape object doesn't contain the "type" property.
 
 #### Related articles
 
-[Setting the type of a shape](../../../shapes/default_shapes/#setting-the-type-of-a-shape)
+[Default Shapes](../../../shapes/default_shapes/)

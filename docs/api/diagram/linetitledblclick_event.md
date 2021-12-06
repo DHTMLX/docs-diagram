@@ -22,9 +22,7 @@ diagram.events.on("lineTitleDblClick", (lineId, titleId, event) => {
 
 @descr:
 
-**Related samples**:
-- [Diagram. Default mode. Events](https://snippet.dhtmlx.com/7h2hgb3g)
-- [Diagram. Org chart mode. Events](https://snippet.dhtmlx.com/l38pct7c)
+**Related samples**: [Diagram. Default mode. Events](https://snippet.dhtmlx.com/7h2hgb3g)
 
 @changelog:
 
