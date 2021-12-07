@@ -10,7 +10,7 @@ If you are updating Diagram from an older version, check [Migration to Newer Ver
 
 Version 4.1
 ------------------
-Released on December 8, 2021
+Released on December 7, 2021
 
 ### New functionality
 
@@ -22,7 +22,7 @@ Released on December 8, 2021
 
 ### API
 
-- New events of the Diagram object: [`emptyAreaDblClick`](/api/diagram/emptyareadblclick_event/), [``emptyAreaMouseDown``](/api/diagram/emptyareamousedown_event/), [`lineTitleClick`](/api/diagram/linetitleclick_event/), [`lineTitleDblClick`](/api/diagram/linetitledblclick_event/), [`lineTitleMouseDown`](/api/diagram/linetitlemousedown_event/)
+- New events of the Diagram object: [`emptyAreaDblClick`](/api/diagram/emptyareadblclick_event/), [`emptyAreaMouseDown`](/api/diagram/emptyareamousedown_event/), [`lineTitleClick`](/api/diagram/linetitleclick_event/), [`lineTitleDblClick`](/api/diagram/linetitledblclick_event/), [`lineTitleMouseDown`](/api/diagram/linetitlemousedown_event/)
 - New [Shape properties](/shapes/configuration_properties/#properties-specific-for-the-org-chart-mode) specific for the org chart mode: `assistant`, `partner`, `catchItem`, `giveItem`
 - New [Shape properties](/shapes/configuration_properties/#properties-specific-for-the-mindmap-mode) specific for the mindmap mode: `catchItem`, `giveItem`
 - New [Line properties](/lines/configuration_properties/#properties-specific-for-the-default-mode) specific for the default mode: `title`
