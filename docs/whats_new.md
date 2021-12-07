@@ -10,15 +10,15 @@ If you are updating Diagram from an older version, check [Migration to Newer Ver
 
 Version 4.1
 ------------------
-Released on , 2021
+Released on December 8, 2021
 
 ### New functionality
 
-- The ability to add [partner shapes](/#assistant-and-partner-shapes) in org chart  mode
-- The ability to add [assistant shapes](/#assistant-and-partner-shapes) in org chart  mode
+- The ability to add [partner shapes](/#assistant-and-partner-shapes) in the org chart  mode
+- The ability to add [assistant shapes](/#assistant-and-partner-shapes) in the org chart  mode
 - The ability to add [titles to lines](/#title-of-lines) in the default mode
-- The ability to [drag and drop shapes](/#editor-in-the-org-chart-mode) from one parent to another in Editor in org chart and mind map mode. The shapes are dragged with their children items
-- The ability to [style target items](/guides/customization/#styling-target-shapes) in Editor in org chart and mindmap mode
+- The ability to [drag and drop shapes](/#editor-in-the-org-chart-mode) from one parent to another in Editor in org chart and mind map modes. The shapes are dragged with their children items
+- The ability to [style target items](/guides/customization/#styling-target-shapes) in Editor in org chart and mindmap modes
 
 ### API
 
@@ -35,14 +35,14 @@ Released on , 2021
 
 ### Updates
 
-- Updated events of [InlineEditor](/api/inline_editor/index/): subHeaderId parameter has been changed to subId
-- Updated events of [Selection API](/api/selection/index/#events): subId parameter has been added
-- The default type of the shape in the default mode has been changed to ["rectangle"](/shapes/configuration_properties/#common-properties)
+- Updated events of [InlineEditor](/api/inline_editor/index/): *subHeaderId* parameter has been changed to *subId*
+- Updated events of [Selection API](/api/selection/index/#events): *subId* parameter has been added
+- The default type of the shape in the default mode has been changed to [*"rectangle"*](/shapes/configuration_properties/#common-properties)
 
 ### Fixes
 
-- The performance is improved for all types of diagrams
-- Fix the incorrect work of undo/redo buttons in Toolbar of Editor
+- The performance has been improved for all types of diagrams
+- Fix of the incorrect work of *undo/redo* buttons in Toolbar of Editor
 
 Version 4.0.1
 -------------------

@@ -86,7 +86,7 @@ Here are examples of how the connections of parent shapes look like with one, tw
 | ----------------------------------------- | ------------------------------------------ |
 | ![](assets/orgchart_with_one_partner.png) | ![](assets/orgchart_with_two_partners.png) |
 
-| Three partner                                | Four partners                               |
+| Three partners                               | Four partners                               |
 | -------------------------------------------- | ------------------------------------------- |
 | ![](assets/orgchart_with_three_partners.png) | ![](assets/orgchart_with_four_partners.png) |
 
