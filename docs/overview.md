@@ -138,7 +138,7 @@ The interface of the editor initialized in the org chart mode consists of three 
 
 To build a diagram in the org chart mode of the editor, you need to select a shape and add a new child for it. You can also add assistant or partner items for a parent shape of any level. The assistant or partner items can't be parent items. The connection between parent shape and its partner is always horizontal. Also, the connections between parent shape and all its children become horizontal when you add the partner item for a parent, even if the connections were vertical before.
 
-The shapes are draggable from one parent item to another. The moved item is dragged with all its children items.
+The shapes are draggable from one parent item to another. The moved item is dragged with all its child items.
 
 You can adjust the attributes of the shapes via the available sidebar options of the right panel.
 
@@ -164,7 +164,7 @@ If you've added a custom shape to the editor in the org chart mode, you can conf
 
 The interface of the editor initialized in the mindmap mode consists of three parts: toolbar, grid area, and right panel. Note, that the editor does not have the left panel.
 
-To build a diagram in the mindmap mode of the editor, you need to select a shape and add a new child for it. The shapes are draggable from one parent item to another. The moved item is dragged with all its children items.
+To build a diagram in the mindmap mode of the editor, you need to select a shape and add a new child for it. The shapes are draggable from one parent item to another. The moved item is dragged with all its child items.
 
 You can adjust the attributes of the shapes via the available sidebar options of the right panel.
 
