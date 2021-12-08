@@ -60,23 +60,24 @@ editor.diagram.events.on("itemClick", (id, event) => {
 
 ## Editor properties
 
-| Name                                     | Description                                     |
-| :--------------------------------------- | :---------------------------------------------- |
-| [](api/editor/autoplacement_property.md) | @getshort(api/editor/autoplacement_property.md) |
-| [](api/editor/controls_property.md)      | @getshort(api/editor/controls_property.md)      |
-| [](api/editor/defaults_property.md)      | @getshort(api/editor/defaults_property.md)      |
-| [](api/editor/editmode_property.md)      | @getshort(api/editor/editmode_property.md)      |
-| [](api/editor/gappreview_property.md)    | @getshort(api/editor/gappreview_property.md)    |
-| [](api/editor/gridstep_property.md)      | @getshort(api/editor/gridstep_property.md)      |
-| [](api/editor/linegap_property.md)       | @getshort(api/editor/linegap_property.md)       |
-| [](api/editor/reservedwidth_property.md) | @getshort(api/editor/reservedwidth_property.md) |
-| [](api/editor/scale_property.md)         | @getshort(api/editor/scale_property.md)         |
-| [](api/editor/scalepreview_property.md)  | @getshort(api/editor/scalepreview_property.md)  |
-| [](api/editor/shapebarwidth_property.md) | @getshort(api/editor/shapebarwidth_property.md) |
-| [](api/editor/shapesections_property.md) | @getshort(api/editor/shapesections_property.md) |
-| [](api/editor/shapetoolbar_property.md)  | @getshort(api/editor/shapetoolbar_property.md)  |
-| [](api/editor/shapetype_property.md)     | @getshort(api/editor/shapetype_property.md)     |
-| [](api/editor/type_property.md)          | @getshort(api/editor/type_property.md)          |
+| Name                                      | Description                                      |
+| :---------------------------------------- | :----------------------------------------------- |
+| [](api/editor/autoplacement_property.md)  | @getshort(api/editor/autoplacement_property.md)  |
+| [](api/editor/controls_property.md)       | @getshort(api/editor/controls_property.md)       |
+| [](api/editor/defaults_property.md)       | @getshort(api/editor/defaults_property.md)       |
+| [](api/editor/editmode_property.md)       | @getshort(api/editor/editmode_property.md)       |
+| [](api/editor/gappreview_property.md)     | @getshort(api/editor/gappreview_property.md)     |
+| [](api/editor/gridstep_property.md)       | @getshort(api/editor/gridstep_property.md)       |
+| [](api/editor/itemsdraggable_property.md) | @getshort(api/editor/itemsdraggable_property.md) |
+| [](api/editor/linegap_property.md)        | @getshort(api/editor/linegap_property.md)        |
+| [](api/editor/reservedwidth_property.md)  | @getshort(api/editor/reservedwidth_property.md)  |
+| [](api/editor/scale_property.md)          | @getshort(api/editor/scale_property.md)          |
+| [](api/editor/scalepreview_property.md)   | @getshort(api/editor/scalepreview_property.md)   |
+| [](api/editor/shapebarwidth_property.md)  | @getshort(api/editor/shapebarwidth_property.md)  |
+| [](api/editor/shapesections_property.md)  | @getshort(api/editor/shapesections_property.md)  |
+| [](api/editor/shapetoolbar_property.md)   | @getshort(api/editor/shapetoolbar_property.md)   |
+| [](api/editor/shapetype_property.md)      | @getshort(api/editor/shapetype_property.md)      |
+| [](api/editor/type_property.md)           | @getshort(api/editor/type_property.md)           |
 
 ## HistoryManager API
 
