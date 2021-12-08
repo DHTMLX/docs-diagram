@@ -32,6 +32,8 @@ description: You can have an overview of Diagram API in the documentation of the
 | [](api/diagram/beforeexpand_event.md)        | @getshort(api/diagram/beforeexpand_event.md)        |
 | [](api/diagram/beforesubmenuopen_event.md)   | @getshort(api/diagram/beforesubmenuopen_event.md)   |
 | [](api/diagram/emptyareaclick_event.md)      | @getshort(api/diagram/emptyareaclick_event.md)      |
+| [](api/diagram/emptyareadblclick_event.md)   | @getshort(api/diagram/emptyareadblclick_event.md)   |
+| [](api/diagram/emptyareamousedown_event.md)  | @getshort(api/diagram/emptyareamousedown_event.md)  |
 | [](api/diagram/groupclick_event.md)          | @getshort(api/diagram/groupclick_event.md)          |
 | [](api/diagram/groupdblclick_event.md)       | @getshort(api/diagram/groupdblclick_event.md)       |
 | [](api/diagram/groupheaderclick_event.md)    | @getshort(api/diagram/groupheaderclick_event.md)    |
@@ -45,6 +47,9 @@ description: You can have an overview of Diagram API in the documentation of the
 | [](api/diagram/lineclick_event.md)           | @getshort(api/diagram/lineclick_event.md)           |
 | [](api/diagram/linedblclick_event.md)        | @getshort(api/diagram/linedblclick_event.md)        |
 | [](api/diagram/linemousedown_event.md)       | @getshort(api/diagram/linemousedown_event.md)       |
+| [](api/diagram/linetitleclick_event.md)      | @getshort(api/diagram/linetitleclick_event.md)      |
+| [](api/diagram/linetitledblclick_event.md)   | @getshort(api/diagram/linetitledblclick_event.md)   |
+| [](api/diagram/linetitlemousedown_event.md)  | @getshort(api/diagram/linetitlemousedown_event.md)  |
 | [](api/diagram/scroll_event.md)              | @getshort(api/diagram/scroll_event.md)              |
 | [](api/diagram/shapeclick_event.md)          | @getshort(api/diagram/shapeclick_event.md)          |
 | [](api/diagram/shapedblclick_event.md)       | @getshort(api/diagram/shapedblclick_event.md)       |
