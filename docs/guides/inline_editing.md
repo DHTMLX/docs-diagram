@@ -8,6 +8,8 @@ description: You can learn about inline editing in the documentation of the DHTM
 
 Inline editing lets you edit the text content of a diagram item by double-clicking on it. You can edit the items both in the diagram and in the editor.
 
+Inline editing for Lines is enabled only in the default mode of Diagram.
+
 ![](../assets/inline_editing.gif)
 
 {{note Inline editing does not work for custom shapes.}}
@@ -17,6 +19,36 @@ The functionality is enabled by default.
 To disable inline editing, you should use the **editable** property of the element, which you want to make uneditable, and set its value to *false*.
 
 You can find examples of disabling inline editing for diagram items below:
+
+#### Lines
+
+~~~js title="Disabling the ability to edit the text content of a line"
+const data = [
+        // configuring shapes
+        {   "id": 1, "x": 200, "y": 0, "text": "Start", "type": "start" },
+        {   "id": 2, "x": 200, "y": 220, "text": "Step 1", "type": "process" },
+        // configuring line
+        {
+            "type": "line",
+            "from": "1",
+            "to": "2",
+            "id": "1-2",
+            "title": {
+                "fontSize": 14,
+                "lineHeight": 14,
+                "editable": false, // disables inline editing of text items of a line
+                "text": [
+                    {
+                        "type":"$linetext",
+                        "id":"t1",
+                        "text":"Follow the instruction",
+                        "editable": true, // enables inline editing of the current text item of a line
+                    }
+                ]
+            },
+        },
+    ];
+~~~
 
 #### Shapes
 

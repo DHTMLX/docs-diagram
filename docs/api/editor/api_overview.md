@@ -20,12 +20,14 @@ description: You can have an overview of the Editor API in the documentation of 
 | Name                                         | Description                                         |
 | :------------------------------------------- | :-------------------------------------------------- |
 | [](api/editor/aftergroupmove_event.md)       | @getshort(api/editor/aftergroupmove_event.md)       |
+| [](api/editor/afteritemcatch_event.md)       | @getshort(api/editor/afteritemcatch_event.md)       |
 | [](api/editor/afteritemmove_event.md)        | @getshort(api/editor/afteritemmove_event.md)        |
 | [](api/editor/aftershapeiconclick_event.md)  | @getshort(api/editor/aftershapeiconclick_event.md)  |
 | [](api/editor/aftershapemove_event.md)       | @getshort(api/editor/aftershapemove_event.md)       |
 | [](api/editor/applybutton_event.md)          | @getshort(api/editor/applybutton_event.md)          |
 | [](api/editor/autolayout_event.md)           | @getshort(api/editor/autolayout_event.md)           |
 | [](api/editor/beforegroupmove_event.md)      | @getshort(api/editor/beforegroupmove_event.md)      |
+| [](api/editor/beforeitemcatch_event.md)      | @getshort(api/editor/beforeitemcatch_event.md)      |
 | [](api/editor/beforeitemmove_event.md)       | @getshort(api/editor/beforeitemmove_event.md)       |
 | [](api/editor/beforeshapeiconclick_event.md) | @getshort(api/editor/beforeshapeiconclick_event.md) |
 | [](api/editor/beforeshapemove_event.md)      | @getshort(api/editor/beforeshapemove_event.md)      |
@@ -34,13 +36,13 @@ description: You can have an overview of the Editor API in the documentation of 
 | [](api/editor/groupmoveend_event.md)         | @getshort(api/editor/groupmoveend_event.md)         |
 | [](api/editor/importdata_event.md)           | @getshort(api/editor/importdata_event.md)           |
 | [](api/editor/itemmoveend_event.md)          | @getshort(api/editor/itemmoveend_event.md)          |
+| [](api/editor/itemtarget_event.md)           | @getshort(api/editor/itemtarget_event.md)           |
 | [](api/editor/resetbutton_event.md)          | @getshort(api/editor/resetbutton_event.md)          |
 | [](api/editor/shapemoveend_event.md)         | @getshort(api/editor/shapemoveend_event.md)         |
 | [](api/editor/shaperesize_event.md)          | @getshort(api/editor/shaperesize_event.md)          |
 | [](api/editor/visibility_event.md)           | @getshort(api/editor/visibility_event.md)           |
 | [](api/editor/zoomin_event.md)               | @getshort(api/editor/zoomin_event.md)               |
 | [](api/editor/zoomout_event.md)              | @getshort(api/editor/zoomout_event.md)              |
-
 
 In addition to the events listed above, you may also apply [events of the diagram object](../../../api/diagram/api_overview/#diagram-events) while working in the editor. Here is an example of applying the [itemClick](../../../api/diagram/itemclick_event/) event of the Diagram object in the editor:
 
@@ -49,7 +51,6 @@ editor.diagram.events.on("itemClick", (id, event) => {
     console.log(id, event);
 });
 ~~~
-
 
 ## Editor properties
 
@@ -70,3 +71,26 @@ editor.diagram.events.on("itemClick", (id, event) => {
 | [](api/editor/shapetoolbar_property.md)  | @getshort(api/editor/shapetoolbar_property.md)  |
 | [](api/editor/shapetype_property.md)     | @getshort(api/editor/shapetype_property.md)     |
 | [](api/editor/type_property.md)          | @getshort(api/editor/type_property.md)          |
+
+## HistoryManager API
+
+HistoryManager works automatically by default. In case you need manual application of HistoryManager use the construction `editor.history`.
+
+### HistoryManager methods
+
+| Name                                    | Description                                    |
+| :-------------------------------------- | :--------------------------------------------- |
+| [](../historymanager/add_method.md)     | @getshort(../historymanager/add_method.md)     |
+| [](../historymanager/disable_method.md) | @getshort(../historymanager/disable_method.md) |
+| [](../historymanager/enable_method.md)  | @getshort(../historymanager/enable_method.md)  |
+| [](../historymanager/isredo_method.md)  | @getshort(../historymanager/isredo_method.md)  |
+| [](../historymanager/redo_method.md)    | @getshort(../historymanager/redo_method.md)    |
+| [](../historymanager/reset_method.md)   | @getshort(../historymanager/reset_method.md)   |
+| [](../historymanager/undo_method.md)    | @getshort(../historymanager/undo_method.md)    |
+
+### HistoryManager properties
+
+| Name                                        | Description                                        |
+| :------------------------------------------ | :------------------------------------------------- |
+| [](../historymanager/disabled_property.md)  | @getshort(../historymanager/disabled_property.md)  |
+| [](../historymanager/savedelay_property.md) | @getshort(../historymanager/savedelay_property.md) |

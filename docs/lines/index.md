@@ -14,6 +14,10 @@ The look and the way of connecting shapes is defined by the mode you initialize 
 
 In the default mode of Diagram, various shapes can be connected by ["straight" (by default) or "elbow"](../../lines/configuration_properties/) lines in the necessary sequence to make up a scheme of a particular process.
 
+The [title](lines/configuration_properties.md/#properties-specific-for-the-default-mode) property is enabled in the default mode of Diagram. You can add the text for a line both in the diagram and in the editor by double-clicking on a line or use a toolbar of a line in the editor (click a line to activate). Use double-clicking also for editing the text both in the diagram and in the editor.
+
+Another way to add the text to a line and manipulate it is to prepare a [data set](guides/loading_data.md/#preparing-data-to-load).
+
 <iframe src="https://snippet.dhtmlx.com/e6zm6wh1?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="650"></iframe>
 
 ### Lines in the org chart mode

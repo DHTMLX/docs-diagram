@@ -8,10 +8,11 @@ description: teYou can learn about the afterSelect event in the documentation of
 
 @short: fires after selecting an item
 
-@signature: {`afterSelect: (id: Id) => void;`}
+@signature: {`afterSelect: (id: Id, subId?: Id | undefined) => void;`}
 
 @params:
-`id: string | number` - the item id
+- `id: string | number` - the item id
+- `subId: string | number | undefined` - optional, the id of a subheader of a swimlane or a text element of a line
 
 @example:
 const diagram = new dhx.Diagram("diagram_container", { 
@@ -26,6 +27,9 @@ diagram.events.on("AfterSelect", function(id) {
 @descr:
 
 **Related sample**: [Diagram. Org chart mode. Events](https://snippet.dhtmlx.com/l38pct7c)
+
+@changelog:
+SubId parameter has been added in v4.1.
 
 #### Related articles
 

@@ -14,11 +14,11 @@ description: You can learn about the afterEditorEditing event in the documentati
 - `value: string` - the new value of the item
 - `id: string | number`- the id of the item
 - `key: string` - the name of the edited property
-- `subId: string` - optional, the id of the edited subheader of a swimlane
+- `subId: string` - optional, the id of a subheader of a swimlane or a text element of a line
 
 @example:
-diagram.events.on("afterEditorEditing", (value, id, key, subheaderId) => {
-    console.log(value, id, key, subheaderId);
+diagram.events.on("afterEditorEditing", (value, id, key, subId) => {
+    console.log(value, id, key, subId);
 });
 
 @descr:
@@ -28,4 +28,5 @@ diagram.events.on("afterEditorEditing", (value, id, key, subheaderId) => {
 - [Diagram. Org chart mode. Events](https://snippet.dhtmlx.com/l38pct7c)
 
 @changelog:
-Added in v4.0
+- SubHeaderId parameter has been changed to subId in v4.1.
+- Added in v4.0.

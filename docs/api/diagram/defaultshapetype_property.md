@@ -10,13 +10,12 @@ description: You can learn about the defaultShapeType property in the documentat
 
 @signature: {`defaultShapeType?: string;`}
 
-@default: "card" (in the default and org chart modes of Diagram), "topic" (in the mindmap mode of Diagram)
+@default: "rectangle" (in the default mode of Diagram), "card" (in the org chart mode of Diagram), "topic" (in the mindmap mode of Diagram)
 
 @example:
-const diagram = new dhx.Diagram("diagram_container", { 
+const diagram = new dhx.Diagram("diagram_container", {
     defaultShapeType: "img-card"
 });
-
 
 @descr:
 **Related sample**: [Diagram. Org chart mode. Shapes with images](https://snippet.dhtmlx.com/qnx3ekin)
@@ -25,4 +24,4 @@ This value is applied, if the shape object doesn't contain the "type" property.
 
 #### Related articles
 
-[Setting the type of a shape](../../../shapes/default_shapes/#setting-the-type-of-a-shape)
+[Default Shapes](../../../shapes/default_shapes/)

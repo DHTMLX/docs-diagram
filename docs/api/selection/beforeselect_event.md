@@ -8,10 +8,11 @@ description: You can learn about the beforeSelect event in the documentation of 
 
 @short: fires on selecting an item, but before the item is really selected
 
-@signature: {`beforeSelect: (id: Id) => void | boolean;`}
+@signature: {`beforeSelect: (id: Id, subId?: Id | undefined) => void | boolean;`}
 
 @params:
-`id: string | number` - the item id
+- `id: string | number` - the item id
+- `subId: string | number | undefined` - optional, the id of a subheader of a swimlane or a text element of a line
 
 @example:
 const diagram = new dhx.Diagram("diagram_container", { 
@@ -28,6 +29,9 @@ diagram.events.on("BeforeSelect", function(id) {
 **Related sample**: [Diagram. Org chart mode. Events](https://snippet.dhtmlx.com/l38pct7c)
 
 Returning *false* from the handler will block the selection.
+
+@changelog:
+SubId parameter has been added in v4.1.
 
 #### Related articles
 

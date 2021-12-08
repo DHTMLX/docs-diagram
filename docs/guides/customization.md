@@ -79,6 +79,21 @@ You can create a customized diagram by adding new types of shapes into the diagr
 
 <iframe src="https://snippet.dhtmlx.com/do1jwmw1?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
+## Styling target shapes
+
+In Diagram Editor in org and mindmap charts, you can add custom style for target items. The stylization doesn't work with the parent item of the moved item and with the moved item with the property `giveItem: false`.
+
+~~~
+<style>
+    .dhx_diagram_item.dhx_action__target--take {
+        // styles for target item which can catch another item
+    }
+    .dhx_diagram_item.dhx_action__target--doesnt_take {
+        // styles for target item which can not catch another item
+    }
+</style>
+~~~
+
 ## Styling groups via the configuration properties
 
 ### Styling the group

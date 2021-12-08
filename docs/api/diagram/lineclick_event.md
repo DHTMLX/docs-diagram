@@ -6,7 +6,7 @@ description: You can learn about the lineClick event in the documentation of the
 
 # lineClick
 
-@short: fires on clicking a connector line
+@short: fires on clicking a line
 
 @signature: {`lineClick: (id: Id, event: MouseEvent) => void;`}
 

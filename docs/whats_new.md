@@ -8,6 +8,42 @@ description: You can learn a new information about DHTMLX JavaScript Diagram lib
 
 If you are updating Diagram from an older version, check [Migration to Newer Version](migration.md) for details.
 
+Version 4.1
+------------------
+Released on December 7, 2021
+
+### New functionality
+
+- The ability to add [partner shapes](/#assistant-and-partner-shapes) in the org chart  mode
+- The ability to add [assistant shapes](/#assistant-and-partner-shapes) in the org chart  mode
+- The ability to add [titles to lines](/#title-of-lines) in the default mode
+- The ability to [drag and drop shapes](/#editor-in-the-org-chart-mode) from one parent to another in Editor in org chart and mind map modes. The shapes are dragged with their children items
+- The ability to [style target items](/guides/customization/#styling-target-shapes) in Editor in org chart and mindmap modes
+
+### API
+
+- New events of the Diagram object: [`emptyAreaDblClick`](/api/diagram/emptyareadblclick_event/), [`emptyAreaMouseDown`](/api/diagram/emptyareamousedown_event/), [`lineTitleClick`](/api/diagram/linetitleclick_event/), [`lineTitleDblClick`](/api/diagram/linetitledblclick_event/), [`lineTitleMouseDown`](/api/diagram/linetitlemousedown_event/)
+- New [Shape properties](/shapes/configuration_properties/#properties-specific-for-the-org-chart-mode) specific for the org chart mode: `assistant`, `partner`, `catchItem`, `giveItem`
+- New [Shape properties](/shapes/configuration_properties/#properties-specific-for-the-mindmap-mode) specific for the mindmap mode: `catchItem`, `giveItem`
+- New [Line properties](/lines/configuration_properties/#properties-specific-for-the-default-mode) specific for the default mode: `title`
+- New methods of the Editor object: [`setViewMode()`](/api/editor/setviewmode_method/), [`zoomIn()`](/api/editor/zoomin_method/), [`zoomOut()`](/api/editor/zoomout_method/)
+- New events of the Editor object: [`beforeLineTitleMove`](/api/editor/beforelinetitlemove_event/), [`afterLineTitleMove`](/api/editor/afterlinetitlemove_event/), [`lineTitleMoveEnd`](/api/editor/linetitlemoveend_event/), [`itemTarget`](/api/editor/itemtarget_event/), [`beforeItemCatch`](/api/editor/beforeitemcatch_event/), [`afterItemCatch`](/api/editor/afteritemcatch_event/)
+- New properties of the Editor object: [`itemsDraggable`](/api/editor/itemsdraggable_property/)
+- New HistoryManager methods: [`add()`](/api/historymanager/add_method/), [`disable()`](/api/historymanager/disable_method/), [`enable()`](/api/historymanager/enable_method/), [`isRedo()`](/api/historymanager/isredo_method/), [`redo()`](/api/historymanager/redo_method/), [`reset()`](/api/historymanager/reset_method/), [`undo()`](/api/historymanager/undo_method/)
+- New HistoryManager properties: [`disabled`](/api/historymanager/disabled_property/), [`saveDelay`](/api/historymanager/savedelay_property/)
+- New Selection method: [`getSubId()`](/api/selection/getsubid_method/)
+
+### Updates
+
+- Updated events of [InlineEditor](/api/inline_editor/index/): *subHeaderId* parameter has been changed to *subId*
+- Updated events of [Selection API](/api/selection/index/#events): *subId* parameter has been added
+- The default type of the shape in the default mode has been changed to [*"rectangle"*](/shapes/configuration_properties/#common-properties)
+
+### Fixes
+
+- The performance has been improved for all types of diagrams
+- Fix of the incorrect work of *undo/redo* buttons in Toolbar of Editor
+
 Version 4.0.1
 -------------------
 Released on September 16, 2021

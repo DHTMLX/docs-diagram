@@ -6,7 +6,7 @@ description: You can learn about the lineMouseDown event in the documentation of
 
 # lineMouseDown
 
-@short: fires when a pointing device button is pressed while the pointer is over a connector line
+@short: fires when a pointing device button is pressed while the pointer is over a line
 
 @signature: {`lineMouseDown: (id: Id, event: MouseEvent) => void;`}
 

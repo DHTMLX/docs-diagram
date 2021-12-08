@@ -23,5 +23,7 @@ diagram.events.on("groupHeaderDblClick", (id, event, subheaderId) => {
 @descr:
 If a double-click is done over a header of a swimlane, the event will be fired on the subheader of the swimlane.
 
+**Related samples**: [Diagram. Default mode. Events](https://snippet.dhtmlx.com/7h2hgb3g)
+
 @changelog:
 Added in v4.0

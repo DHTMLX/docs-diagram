@@ -31,13 +31,32 @@ Besides, you may create [your own type of shapes](../../shapes/custom_shape/) an
 - **line objects**
 
 ~~~js
+
 const data = [
-    { "id": "1-2", "from": "1", "to": "2", "type": "dash" },
-    { "id": "2-3", "from": "2", "to": "3", "type": "line" },
+    {
+		"id": "1-2", "from": "1", "to": "2", "type": "dash"
+	},
+    {
+        "id": "2-3", 
+        "from": "2", 
+        "to": "3", 
+        "type": "line", 
+        "title": {
+            "fontSize":14,
+            "lineHeight":14,
+            "text": [
+                {
+                    "type":"$linetext",
+                    "id":"t2-3",
+                    "text":"text",
+                }
+            ]
+        },
+    },
 ];
 ~~~
 
-The presence or absence of line objects in the data set depends on the chosen [way of shapes connection](../../lines/index/#setting-connections-between-shapes)
+The presence or absence of line objects in the data set depends on the chosen [way of shapes connection](../../lines/index/#setting-connections-between-shapes). Check the full list of available properties of the line object in the [API reference](lines/configuration_properties.md).
 
 - **group objects**
 

@@ -12,13 +12,15 @@ module.exports = {
     ],
   },
 
-  // Diagram API
+  // API
   {
     type: "category",
     label: "API",
     collapsible: true,
     collapsed: false,
-    items:[
+    items: [
+
+      // Diagram API
       {
         type: "category",
         label: "Diagram API",
@@ -28,7 +30,7 @@ module.exports = {
           {
             type: "category",
             label: "Diagram methods",
-            //collapsed: true,
+            collapsed: true,
             items: [
               "api/diagram/addshape_method",
               "api/diagram/autoplace_method",
@@ -45,7 +47,7 @@ module.exports = {
           {
             type: "category",
             label: "Diagram events",
-            //collapsed: true,
+            collapsed: true,
             items: [
               "api/diagram/aftercollapse_event",
               "api/diagram/afterexpand_event",
@@ -54,6 +56,8 @@ module.exports = {
               "api/diagram/beforeexpand_event",
               "api/diagram/beforesubmenuopen_event",
               "api/diagram/emptyareaclick_event",
+              "api/diagram/emptyareadblclick_event",
+              "api/diagram/emptyareamousedown_event",          
               "api/diagram/groupclick_event",
               "api/diagram/groupdblclick_event",
               "api/diagram/groupheaderclick_event",
@@ -67,6 +71,9 @@ module.exports = {
               "api/diagram/lineclick_event",
               "api/diagram/linedblclick_event",
               "api/diagram/linemousedown_event",
+              "api/diagram/linetitleclick_event",
+              "api/diagram/linetitledblclick_event",
+              "api/diagram/linetitlemousedown_event",
               "api/diagram/scroll_event",
               "api/diagram/shapeclick_event",
               "api/diagram/shapedblclick_event",
@@ -77,7 +84,7 @@ module.exports = {
           {
             type: "category",
             label: "Diagram properties",
-            //collapsed: true,
+            collapsed: true,
             items: [
               "api/diagram/autoplacement_property",
               "api/diagram/defaultlinktype_property",
@@ -96,8 +103,9 @@ module.exports = {
           },
         ]
       },
+
       // Editor API
-      {  
+      {
         type: "category",
         label: "Diagram Editor API",
         collapsed: true,
@@ -112,6 +120,9 @@ module.exports = {
               "api/editor/paint_method",
               "api/editor/parse_method",
               "api/editor/serialize_method",
+              "api/editor/setviewmode_method",
+              "api/editor/zoomin_method",
+              "api/editor/zoomout_method",
             ],
           },
           {
@@ -120,13 +131,17 @@ module.exports = {
             collapsed: true,
             items: [
               "api/editor/aftergroupmove_event",
+              "api/editor/afteritemcatch_event",
               "api/editor/afteritemmove_event",
+              "api/editor/afterlinetitlemove_event",
               "api/editor/aftershapeiconclick_event",
               "api/editor/aftershapemove_event",
               "api/editor/applybutton_event",
               "api/editor/autolayout_event",
               "api/editor/beforegroupmove_event",
+              "api/editor/beforeitemcatch_event",
               "api/editor/beforeitemmove_event",
+              "api/editor/beforelinetitlemove_event",
               "api/editor/beforeshapeiconclick_event",
               "api/editor/beforeshapemove_event",
               "api/editor/changegridstep_event",
@@ -134,6 +149,8 @@ module.exports = {
               "api/editor/groupmoveend_event",
               "api/editor/importdata_event",
               "api/editor/itemmoveend_event",
+              "api/editor/itemtarget_event",
+              "api/editor/linetitlemoveend_event",
               "api/editor/resetbutton_event",
               "api/editor/shapemoveend_event",
               "api/editor/shaperesize_event",
@@ -153,6 +170,7 @@ module.exports = {
               "api/editor/editmode_property",
               "api/editor/gappreview_property",
               "api/editor/gridstep_property",
+              "api/editor/itemsdraggable_property",
               "api/editor/linegap_property",
               "api/editor/reservedwidth_property",
               "api/editor/scale_property",
@@ -164,6 +182,29 @@ module.exports = {
               "api/editor/type_property",
             ]
           },
+          {
+            type: "category",
+            label: "HistoryManager methods",
+            collapsed: true,
+            items: [
+              "api/historymanager/add_method",
+              "api/historymanager/disable_method",
+              "api/historymanager/enable_method",
+              "api/historymanager/isredo_method",
+              "api/historymanager/redo_method",
+              "api/historymanager/reset_method",
+              "api/historymanager/undo_method",
+            ]
+          },
+          {
+            type: "category",
+            label: "HistoryManager properties",
+            collapsed: true,
+            items: [
+              "api/historymanager/disabled_property",
+              "api/historymanager/savedelay_property",
+            ]
+          }
         ]
       },
 
@@ -178,7 +219,7 @@ module.exports = {
           "swimlanes/configuration_properties",
         ],
       },
-
+    
       // Common API
       {
         type: "category",
@@ -225,7 +266,7 @@ module.exports = {
               },
             ]
           },
-
+    
           // Data collection API
           {
             type: "category",
@@ -269,11 +310,12 @@ module.exports = {
                   "api/data_collection/beforeadd_event",
                   "api/data_collection/change_event",
                   "api/data_collection/load_event",
+                  
                 ],
               },
             ]
           },
-
+    
           // Export
           {
             type: "category",
@@ -291,6 +333,7 @@ module.exports = {
               },
             ]
           },
+
           // Inline editor 
           {
             type: "category",
@@ -312,7 +355,7 @@ module.exports = {
               },
             ]
           },
-
+    
           // Selection
           {
             type: "category",
@@ -327,6 +370,7 @@ module.exports = {
                   "api/selection/add_method",
                   "api/selection/getid_method",
                   "api/selection/getitem_method",
+                  "api/selection/getsubid_method",
                   "api/selection/remove_method",
                 ],
               },
@@ -346,7 +390,7 @@ module.exports = {
       },
     ]
   },
- 
+
   // Guides
   {
     type: "category",
@@ -407,7 +451,6 @@ module.exports = {
         type: "category",
         label: "Diagram Editor",
         items: [
-          // "guides/diagram_editor/overview",
           "guides/diagram_editor/initialization",
           "guides/diagram_editor/toolbar",
           "guides/diagram_editor/left_panel",

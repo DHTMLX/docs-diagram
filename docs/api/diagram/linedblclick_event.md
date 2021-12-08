@@ -6,7 +6,7 @@ description: You can learn about the lineDblClick event in the documentation of 
 
 # lineDblClick
 
-@short: fires on double-clicking a connector line
+@short: fires on double-clicking a line
 
 @signature: {`lineDblClick: (id: Id, event: MouseEvent) => void;`}
 

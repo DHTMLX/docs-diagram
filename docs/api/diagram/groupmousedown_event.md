@@ -22,5 +22,7 @@ diagram.events.on("groupMouseDown", (id, event) => {
 @descr:
 If a pointing device button is pressed while the pointer is over a swimlane, the event will be fired on the cell of the swimlane.
 
+**Related samples**: [Diagram. Default mode. Events](https://snippet.dhtmlx.com/7h2hgb3g)
+
 @changelog:
 Added in v4.0

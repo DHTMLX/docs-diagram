@@ -18,4 +18,6 @@ description: You can learn about the showItem method in the documentation of the
 diagram.showItem(123);
 
 @descr:
-**Related sample**: [Diagram. Shape search](https://snippet.dhtmlx.com/d7kvzq4r)
+**Related sample**:
+- [Diagram. Shape search](https://snippet.dhtmlx.com/d7kvzq4r)
+- [Diagram. Scroll content](https://snippet.dhtmlx.com/f970hbym)

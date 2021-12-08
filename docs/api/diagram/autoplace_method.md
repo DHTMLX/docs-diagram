@@ -21,7 +21,6 @@ diagram.autoPlace({
 	mode: "edges"
 });
 
-
 @descr:
 **Related sample**: [Diagram. Default mode. Autoplacement](https://snippet.dhtmlx.com/f3uekgjw)
 
@@ -32,15 +31,13 @@ The `config` object contains two optional properties:
 - **mode** - (*string*) the mode of connecting shapes, "direct" (by default) or "edges"
 - **graphPadding** - (*number*) sets the distance between unconnected diagrams, *"200"* by default
 
-
 ### Modes of connecting shapes
 
-| mode: "direct"                                                                  | mode: "edges"                                                                       |
-| :------------------------------------------------------------------------------ | :---------------------------------------------------------------------------------- |
-| Connectors are aligned "from center to center"; they are straight and diagonal. | Connectors are aligned "from side to side"; they are straight and 90-degree curved. |
-| ![](../../assets/direct_mode.png)                                               | ![](../../assets/edges_mode.png)                                                    |
+| mode: "direct"                                                             | mode: "edges"                                                                  |
+| :------------------------------------------------------------------------- | :----------------------------------------------------------------------------- |
+| Lines are aligned "from center to center"; they are straight and diagonal. | Lines are aligned "from side to side"; they are straight and 90-degree curved. |
+| ![](../../assets/direct_mode.png)                                          | ![](../../assets/edges_mode.png)                                               |
 
- 
 @changelog:
 added in v3.0
 

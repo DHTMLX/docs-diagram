@@ -10,7 +10,7 @@ description: You can learn about the Shape properties in the documentation of th
 
 ## Common properties
 
-- **type** - (*string*) the type of the shape (by default: "card" in the org chart mode, "topic" in the mindmap mode);
+- **type** - (*string*) the type of the shape (by default: "rectangle" in the default mode, "card" in the org chart mode, "topic" in the mindmap mode);
 - **id** - (*string | number*) the unique id of a shape;
 - **x** - (*number*) the x coordinate of the shape position;
 - **y** - (*number*) the y coordinate of the shape position;
@@ -43,7 +43,7 @@ const data = [
 ## Properties specific for the default mode
 
 - **angle** - (*number*) the angle of shape rotation;
-- **preview** - (*string|object*) either a path to the image/a base64 image or an object with settings [to configure the shape preview displayed in the left panel of the editor](../../guides/diagram_editor/left_panel/#setting-shape-preview). The object can contain a set of optional properties:
+- **preview** - (*string | object*) either a path to the image/a base64 image or an object with settings [to configure the shape preview displayed in the left panel of the editor](../../guides/diagram_editor/left_panel/#setting-shape-preview). The object can contain a set of optional properties:
   - **img** - (*string*) a path to the image or a base64 image;
   - **width** - (*number | string*) the width of the image;
   - **height** - (*number | string*) the height of the image;
@@ -61,20 +61,41 @@ const data = [
 - **parent** - (*string | number*) the id of the parent shape;
 - **dx** - (*number*) the left offset of the shape;
 - **dy** - (*number*) the top offset of the shape;
-- **dir** - (*string*) the direction of shapes connecting. To connect shapes vertically, set the attribute to the "vertical" value;<br>**Related samples**: [Diagram. Org chart mode. Nested vertical lists](https://snippet.dhtmlx.com/98tzmzpg)
-- **open** - (*boolean*) defines, whether the child items of the current shape will be shown. *True* by default.
+- **dir** - (*string*) the direction of shapes connecting. To connect shapes vertically, set the attribute to the "vertical" value;
+
+**Related samples**: [Diagram. Org chart mode. Nested vertical lists](https://snippet.dhtmlx.com/98tzmzpg)
+
+- **open** - (*boolean*) defines, whether the child items of the current shape will be shown. *True* by default;
+- **assistant** - (*boolean*) defines, whether the shape is an assistant item for the parent shape;
+- **partner** - (*boolean*) defines, whether the shape is a partner item for the parent shape;
+- **catchItem** - (*boolean*) defines, whether the item can catch the moving item;
+- **giveItem** - (*boolean*) defines, whether the item can be moved.
+
+**Related samples**: [Diagram editor. Org chart mode. Image card editor](https://snippet.dhtmlx.com/vghuunmd)
 
 ~~~js
 const data = [
     {
-        "id": 1,
-        "text": "item: 1",
+        "id": "1",
+        "text": "item 1",
     },
     {
-        "id": 2,
-        "text": "item: 2",
+        "id": "2",
+        "text": "item 2",
         "parent": 1,
         "dir": "vertical"
+    },
+    {
+        "id": "1.1",
+        "text": "assistant for 1",
+        "parent": 1,
+        "assistant": true
+    },
+    {
+        "id": "1.2",
+        "text": "partner for 1",
+        "parent": 1,
+        "partner": true
     },
 ];
 ~~~
@@ -87,7 +108,11 @@ const data = [
 - **open** - (*boolean*) defines, whether the child items of the current shape will be shown. *True* by default;
 - **openDir** - (*object*) shows/hides the child items of the root shape. The object takes two attributes:
     - **left** - (*boolean*) shows/hides the child items to the left of the root shape;
-    - **right** - (*boolean*) shows/hides the child items to the right of the root shape.
+    - **right** - (*boolean*) shows/hides the child items to the right of the root shape;
+- **catchItem** - (*boolean*) defines, whether the item can catch the moving item;
+- **giveItem** - (*boolean*) defines, whether the item can be moved.
+
+**Related samples**: [Diagram editor. Mindmap mode. Emotions mind map](https://snippet.dhtmlx.com/lo1vm0e8)
 
 ~~~js
 const data = [
@@ -103,10 +128,17 @@ const data = [
         id: "2",
         text: "2",
         parent: "1",
+        giveItem: false,
     },
     {
         id: "3",
         text: "3",
+        parent: "1",
+        catchItem: false, 
+    },
+    {
+        id: "4",
+        text: "4",
         parent: "1",
     },
 ];

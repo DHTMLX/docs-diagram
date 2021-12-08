@@ -29,31 +29,41 @@ When you click on any shape, it becomes editable and gets personal interface ele
 
 When the connection mode is enabled for a shape, you can set links to other shapes, adjust their position and form, as well as delete unnecessary links via the "remove" toolbar control.
 
-Double-click the text of a shape to edit it. 
+Double-click the text of a shape to edit it.
 
 ### Interface elements in the org chart mode
 
-You can drag shapes to place them on the desired positions relative to the root shape, or drag the root shape to move the whole diagram. To add a new shape, select a shape and add a new child for it.
+You can drag shapes to place them on the desired positions relative to the root shape, or drag the root shape to move the whole diagram. To add a new shape, select a shape and add a new child for it. You can also add assistant or partner items. The connection between parent shape and its partner is always horizontal.
 
-![](../../assets/org_shape_toolbar.png)
+The shapes are draggable from one parent item to another. The moved item is dragged with all its children.
+
+![](../../assets/orgchart_shape_toolbar_vertical.png)
+
+![](../../assets/orgchart_shape_toolbar_horizontal.png)
 
 When you click on any shape, it becomes editable and gets personal interface elements:
 
 - a toolbar with controls:
     - *"add"* - to add a new child for the selected shape;
-    - *"horizontal"* - to arrange children of the shape horizontally;
-    - *"vertical"* - to arrange children of the shape vertically;
-    - *"remove"* - to delete the selected shape (except for the root one);
+    - *"add assistant"* - to add assistant for the selected shape;
+    - *"add partner"*  - to add partner for the selected shape;
+    - *"align vertically"* - to arrange children of the shape vertically;
+    - *"align horizontally"* - to arrange children of the shape horizontally;
+    - *"remove"* - to delete the selected shape (except for the root one) with its children;
 - resizing handles (pull the handles of the editable shape to change its sizes);
 - an icon to collapse/expand child shapes.
 
-Double-click the text of a shape to edit it. 
+When you click on assistant or partner shape, it becomes editable and gets personal interface elements:
+
+- *"remove"* - to delete the selected shape
+
+Double-click the text of a shape to edit it.
 
 ### Interface elements in the mindmap mode
 
-You can drag shapes to place them on the desired positions relative to the root shape, or drag the root shape to move the whole diagram. If you drag the parent shape, the shape will be moved with all its child shapes. To add a new shape, select a shape and add a new child for it.
+You can drag shapes to place them on the desired positions relative to the root shape, or drag the root shape to move the whole diagram. If you drag the parent shape, the shape will be moved with all its child shapes. To add a new shape, select a shape and add a new child for it. The shapes are draggable from one parent item to another. The moved item is dragged with all its children.
 
-![](../../assets/mindmap_shape_toolbar.png)
+![](../../assets/mindmap_toolbar_of_shape.png)
 
 When you click on any shape, it becomes editable and gets personal interface elements:
 
@@ -61,7 +71,7 @@ When you click on any shape, it becomes editable and gets personal interface ele
     - *"add"* - to add a new child for the selected shape (except for the root one);
     - *"addLeft"* - to add a new child to the left of the root shape;
     - *"addRight"* - to add a new child to the right of the root shape;
-    - *"remove"* - to delete the selected shape (except for the root one);
+    - *"remove"* - to delete the selected shape (except for the root one) with its children;
 - resizing handles (pull the handles of the editable shape to change its sizes);
 - an icon to collapse/expand child shapes.
 
@@ -69,14 +79,17 @@ Double-click the text of a shape to edit it.
 
 ## Managing lines
 
-In the default mode of the editor, you can set links to other shapes, adjust their position and form, as well as delete unnecessary links.
+In the default mode, you can set links to other shapes, adjust their position and form, as well as add text to the line and delete unnecessary links.
 
-![](../../assets/line_toolbar.png)
+![](../../assets/line_with_toolbar.png)
+
+In the default mode, you can also add text to the line by double-clicking on it. Click the text to define its direction or delete it. Double-click the text to edit it.
+
+![](../../assets/line_with_text.png)
 
 ## Managing groups
 
-You can drag groups from the left panel into the grid area to place them on the desired positions.
-You can put several shapes or other groups into a group and move them as a unit, copy, or delete.
+You can drag groups from the left panel into the grid area to place them on the desired positions. You can put several shapes or other groups into a group and move them as a unit, copy, or delete.
 
 ![](../../assets/group_toolbar.png)
 
@@ -104,7 +117,7 @@ When you click on any swimlane, it becomes editable and gets personal interface 
     - *"remove"* - to delete the selected swimlane;
 - resizing handles (pull the handles of the editable swimlane to change its sizes).
 
-Besides, there are the abilities to add, move, or remove columns or rows of the swimlane via the options of the context menu. The context menu will appear after the user clicks on the icon of a swimlane subheader. 
+Besides, there are the abilities to add, move, or remove columns or rows of the swimlane via the options of the context menu. The context menu will appear after the user clicks on the icon of a swimlane subheader.
 
 ![](../../assets/swimlane_contextmenu.png)
 
@@ -114,13 +127,11 @@ Note, that some options of moving the first/last columns and rows are deactivate
 
 After selecting an item in the grid area, you can update its attributes [via the sidebar options in the right panel of the editor](../../../guides/diagram_editor/right_panel/).
 
-
 ## Configuring toolbar per-item
 
 You can customize the personal toolbar of shapes, groups, swimlanes according to your needs via the [shapeToolbar](../../../api/editor/shapetoolbar_property/) property of the editor.
 
-Using hotkeys
----------------
+## Using hotkeys
 
 There is a set of hotkeys you can use while creating a diagram in the editor:
 
@@ -132,8 +143,7 @@ There is a set of hotkeys you can use while creating a diagram in the editor:
 - **Del** - to delete an item(s);
 - **Arrows** - to move an item(s) left/right/up/down.
 
-Manipulating multiple items
---------------------------------
+## Manipulating multiple items
 
 It is possible to select several diagram items via hovering them over with the left mouse button pressed. You can also select necessary items using keyboard shortcuts - Shift+Left Click.
 
