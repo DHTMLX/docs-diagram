@@ -24,6 +24,7 @@ This value will be applied, if the configuration object of the shape doesn't con
 
 By default, the default types for all shapes are:
 
+- *"rectangle"* - for the diagram in the default mode;
 - *"card"*  - for the diagram in the default or org chart mode;
 - *"topic"* - for the diagram in the mindmap mode.
 
