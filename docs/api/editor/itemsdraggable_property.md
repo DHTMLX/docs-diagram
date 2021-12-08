@@ -6,7 +6,7 @@ description: You can learn about the itemsDraggable property of editor in the do
 
 # itemsDraggable
 
-@short: Enables/disables dragging the item from one parent item to another
+@short: enables/disables dragging the item from one parent item to another
 
 @signature: {`itemsDraggable?: boolean;`}
 
