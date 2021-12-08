@@ -8,12 +8,15 @@ description: You can have an overview of the Editor API in the documentation of 
 
 ## Editor methods
 
-| Name                               | Description                               |
-| :--------------------------------- | :---------------------------------------- |
-| [](api/editor/import_method.md)    | @getshort(api/editor/import_method.md)    |
-| [](api/editor/paint_method.md)     | @getshort(api/editor/paint_method.md)     |
-| [](api/editor/parse_method.md)     | @getshort(api/editor/parse_method.md)     |
-| [](api/editor/serialize_method.md) | @getshort(api/editor/serialize_method.md) |
+| Name                                 | Description                                 |
+| :----------------------------------- | :------------------------------------------ |
+| [](api/editor/import_method.md)      | @getshort(api/editor/import_method.md)      |
+| [](api/editor/paint_method.md)       | @getshort(api/editor/paint_method.md)       |
+| [](api/editor/parse_method.md)       | @getshort(api/editor/parse_method.md)       |
+| [](api/editor/serialize_method.md)   | @getshort(api/editor/serialize_method.md)   |
+| [](api/editor/setviewmode_method.md) | @getshort(api/editor/setviewmode_method.md) |
+| [](api/editor/zoomin_method.md)      | @getshort(api/editor/zoomin_method.md)      |
+| [](api/editor/zoomout_method.md)     | @getshort(api/editor/zoomout_method.md)     |
 
 ## Editor events
 
@@ -22,6 +25,7 @@ description: You can have an overview of the Editor API in the documentation of 
 | [](api/editor/aftergroupmove_event.md)       | @getshort(api/editor/aftergroupmove_event.md)       |
 | [](api/editor/afteritemcatch_event.md)       | @getshort(api/editor/afteritemcatch_event.md)       |
 | [](api/editor/afteritemmove_event.md)        | @getshort(api/editor/afteritemmove_event.md)        |
+| [](api/editor/afterlinetitlemove_event.md)   | @getshort(api/editor/afterlinetitlemove_event.md)   |
 | [](api/editor/aftershapeiconclick_event.md)  | @getshort(api/editor/aftershapeiconclick_event.md)  |
 | [](api/editor/aftershapemove_event.md)       | @getshort(api/editor/aftershapemove_event.md)       |
 | [](api/editor/applybutton_event.md)          | @getshort(api/editor/applybutton_event.md)          |
@@ -29,6 +33,7 @@ description: You can have an overview of the Editor API in the documentation of 
 | [](api/editor/beforegroupmove_event.md)      | @getshort(api/editor/beforegroupmove_event.md)      |
 | [](api/editor/beforeitemcatch_event.md)      | @getshort(api/editor/beforeitemcatch_event.md)      |
 | [](api/editor/beforeitemmove_event.md)       | @getshort(api/editor/beforeitemmove_event.md)       |
+| [](api/editor/beforelinetitlemove_event.md)  | @getshort(api/editor/beforelinetitlemove_event.md)  |
 | [](api/editor/beforeshapeiconclick_event.md) | @getshort(api/editor/beforeshapeiconclick_event.md) |
 | [](api/editor/beforeshapemove_event.md)      | @getshort(api/editor/beforeshapemove_event.md)      |
 | [](api/editor/changegridstep_event.md)       | @getshort(api/editor/changegridstep_event.md)       |
@@ -37,6 +42,7 @@ description: You can have an overview of the Editor API in the documentation of 
 | [](api/editor/importdata_event.md)           | @getshort(api/editor/importdata_event.md)           |
 | [](api/editor/itemmoveend_event.md)          | @getshort(api/editor/itemmoveend_event.md)          |
 | [](api/editor/itemtarget_event.md)           | @getshort(api/editor/itemtarget_event.md)           |
+| [](api/editor/linetitlemoveend_event.md)     | @getshort(api/editor/linetitlemoveend_event.md)     |
 | [](api/editor/resetbutton_event.md)          | @getshort(api/editor/resetbutton_event.md)          |
 | [](api/editor/shapemoveend_event.md)         | @getshort(api/editor/shapemoveend_event.md)         |
 | [](api/editor/shaperesize_event.md)          | @getshort(api/editor/shaperesize_event.md)          |
