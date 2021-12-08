@@ -38,7 +38,7 @@ You can easily create your own templates of shapes and use them to design any di
 
 ### Groups
 
-You can draw simple or more complicated schemes by grouping shapes in different ways with the help of such an element of Diagram as a group. It is possible to create as one-level groups as nested groups, to configure their appearance and behavior. Check the details in the [Groups configuration](diagram_guides/shapes_arrows_list.md#groupsconfiguration) article.
+You can draw simple or more complicated schemes by grouping shapes in different ways with the help of such an element of Diagram as a group. It is possible to create as one-level groups as nested groups, to configure their appearance and behavior. Check the details in the [Groups configuration](/diagram/groups/index/) article.
 
 | [Diagram. Default mode. Virtual private cloud architecture](https://snippet.dhtmlx.com/0hf8ahrb) |
 | ------------------------------------------------------------------------------------------------ |
@@ -78,7 +78,7 @@ The connection between parent shape and its partner items is always horizontal. 
 
 The partner shapes are very useful for building a family tree.
 
-**Related sample:**	[Diagram. Org chart mode. Family tree](https://snippet.dhtmlx.com/5pfybpmz)
+**Related sample:**	[Diagram editor. Org chart mode. Family tree](https://snippet.dhtmlx.com/5pfybpmz)
 
 Here are examples of how the connections of parent shapes look like with one, two, three, and four partners.
 
