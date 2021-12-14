@@ -1,23 +1,34 @@
 ---
-sidebar_label: locate()
+sidebar_label: locate()!
 title: locate Method
 description: You can learn about the locate method in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
 
 # locate()
 
-@short: gets the id of an item from the specified HTML event or tag
+### Description 
 
-@signature: {`locate(event: Event): IBaseShape;`}
+Gets the ID of an item from the specified HTML event or tag
 
-@params:
-`event: Event` - a native event object
+### Usage
 
-@returns:
+~~~jsx
+locate: (event: object) => any; // IBaseShape interface
+~~~
 
-The id of the shape that the event/tag relates to.
+### Parameters
 
-@example:
+`event: object` - (*mandatory*) a native event object
+
+### Returns
+
+The **locate()** method returns an **ID** of the shape that the event/tag relates to
+
+### Example
+
+~~~jsx {4}
+const diagram = new dhx.Diagram("diagram_container");
+diagram.parse(data);
+
 const id = diagram.locate(event);
-
-@descr:
+~~~

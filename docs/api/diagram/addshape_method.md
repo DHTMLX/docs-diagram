@@ -1,20 +1,60 @@
 ---
-sidebar_label: addShape()
+sidebar_label: addShape()!
 title: addShape Method
 description: You can learn about the addShape method in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
 
 # addShape()
 
-@short: creates a custom shape; sets sidebar options for its editing in the right panel of the editor
+### Description
 
-@signature: {`addShape(type: string, parameters: ICustomShapeParam): void;`}
+Creates a custom shape. 
+Sets sidebar options for its editing in the right panel of the editor
 
-@params:
-- `type: string` - the unique name for the type of a custom shape. The name must differ from the names of default shapes.
-- `parameters: object` - an object with the additional parameters of the <i>addShape</i> function 
+### Usage
 
-@example:
+~~~jsx 
+addShape: (
+    type: string, 
+    parameters: object // ICustomShapeParam interface
+) => void;
+~~~
+
+### Parameters
+
+- `type: string` - (*mandatory*) the unique name for the type of a custom shape. The name must differ from the names of default shapes
+
+- `parameters: object` - (*mandatory*) an object with the additional parameters of the *addShape* function. Here you can specify the following parameters:
+
+    - `template: function` - (*mandatory*) the function that returns either an HTML or SVG template. The function takes the config of a shape as a parameter. Check [the available formats of the template](#formats-of-the-shape-template)
+    
+    - [`defaults?: object`](../../../shapes/custom_shape/) - (*optional*) the default configuration for a created shape. See [the full list of the configuration properties of a shape](../../../shapes/configuration_properties/)
+
+    - [`eventHandlers?:object`](../../../shapes/custom_shape/#event-handlers-for-custom-shapes) - (*optional*) adds custom event handlers to HTML elements of the template of a shape. The **eventHandlers** object includes a set of *key:value* pairs, where:
+
+        - *`key: string`* - (*mandatory*) the name of the event. Note, that at the beginning of the event name the **'on'** prefix is used (onclick, onmouseover)
+
+        - *`value: object`* - (*mandatory*) an object that contains a *key:value* pair, where *key* is the CSS class name that the handler will be applied to and *value* is a function that takes two parameters:
+
+            - **`event: object`** - an event object
+
+            - **`shape: object`** - the shape object<br> *We recommend that you use different CSS classes for different custom shapes when initializing custom event handlers*
+
+    - [`properties?: array`](../../../guides/diagram_editor/right_panel/#configuring-options-for-editing-custom-shapes) - (*optional*) an array of objects that defines which sidebar options will be rendered in the right panel for editing a custom shape. Each object can contain a set of properties:
+
+        - **`type: string`** - (*mandatory*) the type of a sidebar option. See the list of available types [below](#types-of-sidebar-options)
+
+        - **`label?: string`** - (*optional*) specifies the label for the sidebar option
+
+        - **`property?: string`** - (*optional*) a custom property of the shape<br>
+        
+:::note
+_**Note**, that the **properties** attribute is available only in the editor mode_
+:::
+
+### Example
+
+~~~jsx {5-12}
 const diagram = new dhx.Diagram("diagram_container", {
 	type: "default" //  or type: "org", or type: "mindmap"
 });
@@ -29,24 +69,11 @@ diagram.addShape("template", {
 });
 
 diagram.data.parse(data);
+~~~
 
-@descr:
-
-{{note The **addShape()** method can be used both in the diagram and in the editor. <br>Check the related sample: **[Diagram. Mindmap mode. Site map and user flow example](https://snippet.dhtmlx.com/do1jwmw1)**}}
-
-The `parameters` object can contain the following attributes:
-
-- **template** - (*function*) mandatory, the function that returns either an HTML or SVG template. The function takes the config of a shape as a parameter. Check [the available formats of the template](#formats-of-the-shape-template).
-- [defaults](../../../shapes/custom_shape/) - (object) optional, the default configuration for a created shape. See [the full list of the configuration properties of a shape](../../../shapes/configuration_properties/).
-- [eventHandlers](../../../shapes/custom_shape/#event-handlers-for-custom-shapes) - (*object*) optional, adds custom event handlers to HTML elements of the template of a shape. The **eventHandlers** object includes a set of *key:value* pairs, where:
-    - *key* - the name of the event. Note, that at the beginning of the event name the **'on'** prefix is used (onclick, onmouseover).
-    - *value* - an object that contains a *key:value* pair, where *key* is the CSS class name that the handler will be applied to and *value* is a function that takes two parameters:
-        - **event** - an event object
-        - **shape** - the shape object<br> *We recommend that you use different CSS classes for different custom shapes when initializing custom event handlers.*
-- [properties](../../../guides/diagram_editor/right_panel/#configuring-options-for-editing-custom-shapes) - (*array*) optional, an array of objects that defines which sidebar options will be rendered in the right panel for editing a custom shape. Each object can contain a set of properties:
-    - **type** - (*string*) mandatory, the type of a sidebar option. See the list of available types [below](#types-of-sidebar-options).
-    - **label** - (*string*) optional, specifies the label for the sidebar option
-    - **property** - (*string*) optional, a custom property of the shape<br>_**Note**, that the **properties** attribute is available only in the editor mode_.
+:::note
+The **addShape()** method can be used both in the diagram and in the editor. <br>Check the related sample: **[Diagram. Mindmap mode. Site map and user flow example](https://snippet.dhtmlx.com/do1jwmw1)**
+:::
 
 ### Types of sidebar options
 
@@ -113,6 +140,4 @@ For example, an <img src="" alt=""> tag should look like this:
 - The **eventHandlers** attribute is added in v3.1
 - The method is added in v3.0
 
-#### Related articles 
-
-[Custom Shape](../../../shapes/custom_shape/)
+**Related articles:** [Custom Shape](../../../shapes/custom_shape/)

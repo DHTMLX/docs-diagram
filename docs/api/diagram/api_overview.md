@@ -10,16 +10,16 @@ description: You can have an overview of Diagram API in the documentation of the
 
 | Name                                     | Description                                     |
 | :--------------------------------------- | :---------------------------------------------- |
-| [](api/diagram/addshape_method.md)       | @getshort(api/diagram/addshape_method.md)       |
-| [](api/diagram/autoplace_method.md)      | @getshort(api/diagram/autoplace_method.md)      |
-| [](api/diagram/collapseitem_method.md)   | @getshort(api/diagram/collapseitem_method.md)   |
-| [](api/diagram/destructor_method.md)     | @getshort(api/diagram/destructor_method.md)     |
-| [](api/diagram/expanditem_method.md)     | @getshort(api/diagram/expanditem_method.md)     |
-| [](api/diagram/getscrollstate_method.md) | @getshort(api/diagram/getscrollstate_method.md) |
-| [](api/diagram/locate_method.md)         | @getshort(api/diagram/locate_method.md)         |
-| [](api/diagram/paint_method.md)          | @getshort(api/diagram/paint_method.md)          |
-| [](api/diagram/scrollto_method.md)       | @getshort(api/diagram/scrollto_method.md)       |
-| [](api/diagram/showitem_method.md)       | @getshort(api/diagram/showitem_method.md)       |
+| [](api/diagram/addshape_method.md)       | creates a custom shape and sets sidebar options for its editing in the right panel of the editor |
+| [](api/diagram/autoplace_method.md)      | automatically arranges connected diagram shapes in the hierarchical structure |
+| [](api/diagram/collapseitem_method.md)   | hides all children of the target shape or collapses the group/swimlane |
+| [](api/diagram/destructor_method.md)     | removes a diagram instance and releases occupied resources |
+| [](api/diagram/expanditem_method.md)     | shows all children of the target shape or expands the group/swimlane |
+| [](api/diagram/getscrollstate_method.md) | returns the position of the diagram inner scroll |
+| [](api/diagram/locate_method.md)         | gets the id of an item from the specified HTML event or tag |
+| [](api/diagram/paint_method.md)          | repaints the diagram |
+| [](api/diagram/scrollto_method.md)       | sets the inner scroll of the diagram to the specified position |
+| [](api/diagram/showitem_method.md)       | adjusts scroll to make the target item visible |
 
 ## Diagram events
 
