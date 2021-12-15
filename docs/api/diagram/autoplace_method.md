@@ -8,21 +8,22 @@ description: You can learn about the autoPlace method in the documentation of th
 
 ### Description
 
-Automatically arranges connected diagram shapes in the hierarchical structure
+@short: automatically arranges connected diagram shapes in the hierarchical structure
+@descr:
 
 ### Usage
 
 ~~~jsx
-autoPlace: (config?: object) => void; // IAutoPlacement interface
+autoPlace (config?: object) => void; // IAutoPlacement interface
 ~~~
 
 ### Parameters
 
-- `config?: object` - (*optional*) an object with configuration settings of the autoplacement. If not specified, the default settings will be applied. Here you can specify the following parameters:
+- `config?: object` - (optional) an object with configuration settings of the autoplacement. If not specified, the default settings will be applied. Here you can specify the following parameters:
 
-	- `mode: string` - the mode of connecting shapes, "direct" (by default) or "edges"
+	- `mode: string` - (mandatory) the mode of connecting shapes, "direct" (by default) or "edges"
 
-	- `graphPadding: number` - sets the distance between unconnected diagrams, *"200"* by default
+	- `graphPadding: number` - (mandatory) sets the distance between unconnected diagrams, **"200"** by default
 
 
 ### Example
@@ -39,7 +40,7 @@ diagram.autoPlace({
 **Related sample**: [Diagram. Default mode. Autoplacement](https://snippet.dhtmlx.com/f3uekgjw)
 
 :::note 
-The **autoPlace()** method works only in the default mode of the diagram and only for shapes.
+The **autoPlace()** method works only in the default mode of the diagram and only for shapes
 :::
 
 ### Modes of connecting shapes
@@ -49,8 +50,6 @@ The **autoPlace()** method works only in the default mode of the diagram and onl
 | Connectors are aligned "from center to center"; they are straight and diagonal. | Connectors are aligned "from side to side"; they are straight and 90-degree curved. |
 | ![](../../assets/direct_mode.png)                                               | ![](../../assets/edges_mode.png)                                                    |
 
-@changelog: 
-
-- Added in v3.0
+**Change log:** Added in v3.0
 
 **Related articles:** [Arranging shapes automatically](../../../guides/manipulating_items/#arranging-shapes-automatically)

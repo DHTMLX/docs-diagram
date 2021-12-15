@@ -8,12 +8,13 @@ description: You can learn about the getScrollState method in the documentation 
 
 ### Description
 
-Returns the position of the diagram inner scroll
+@short: returns the position of the diagram inner scroll
+@descr: 
 
 ### Usage 
 
 ~~~jsx 
-getScrollState: () => object; // ICoords interface
+getScrollState () => object; // ICoords interface
 ~~~
 
 ### Returns

@@ -8,12 +8,13 @@ description: You can learn about the expandItem method in the documentation of t
 
 ### Description
 
-Shows all children of the target shape or expands the group/swimlane
+@short: shows all children of the target shape or expands the group/swimlane
+@descr:
 
 ### Usage
 
 ~~~jsx
-expandItem: (
+expandItem (
 	id: string | number, 
 	dir?: string // TreeDirection interface
 ) => void;
@@ -21,8 +22,8 @@ expandItem: (
 
 ### Parameters
 
-- `id: string | number` - (*mandatory*) the **ID** of the item
-- `dir?: string` - (*optional*) defines the side the children will be shown in relation to the root shape: *"left"*, *"right"*
+- `id: string | number` - (mandatory) the **ID** of the item
+- `dir?: string` - (optional) defines the side the children will be shown in relation to the root shape: **"left"**, **"right"**
 
 ### Example
 
@@ -31,7 +32,7 @@ diagram.expandItem(123);
 ~~~
 
 :::note
-**Note**, that the **dir** parameter can be used only in the diagram that is initialized in the mindmap mode (type:"mindmap").
+Note, that the **dir** parameter can be used only in the diagram that is initialized in the mindmap mode (type:"mindmap").
 :::
 
 ~~~js {2,6}
@@ -43,8 +44,6 @@ diagram.parse(data);
 diagram.expandItem("main", "left");
 ~~~
 
-@changelog:
-
-- The **dir** parameter was added in v3.1.
+**Change log:** The **dir** parameter was added in v3.1
 
 **Related articles:** [Expanding/collapsing items](../../../guides/manipulating_items/#expandingcollapsing-items)

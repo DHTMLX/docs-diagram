@@ -8,12 +8,13 @@ description: You can learn about the paint method in the documentation of the DH
 
 ### Description
 
-Repaints the diagram
+@short: repaints the diagram
+@descr:
 
 ### Usage
 
 ~~~jsx
-paint: () => void;
+paint () => void;
 ~~~
 
 ### Example

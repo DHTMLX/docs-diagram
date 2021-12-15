@@ -8,18 +8,19 @@ description: You can learn about the scrollTo method in the documentation of the
 
 ### Description
 
-Sets the inner scroll of the diagram to the specified position
+@short: sets the inner scroll of the diagram to the specified position
+@descr:
 
 ### Usage
 
 ~~~jsx
-scrollTo: (x: number, y: number) => void;
+scrollTo (x: number, y: number) => void;
 ~~~
 
 ### Parameters
 
-- `x: number` - (*mandatory*) horizontal scroll position
-- `y: number` - (*mandatory*) vertical scroll position
+- `x: number` - (mandatory) horizontal scroll position
+- `y: number` - (mandatory) vertical scroll position
 
 ### Example
 

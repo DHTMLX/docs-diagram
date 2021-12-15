@@ -8,17 +8,18 @@ description: You can learn about the showItem method in the documentation of the
 
 ### Description
 
-Adjusts scroll to make the target item visible
+@short: adjusts scroll to make the target item visible
+@descr: 
 
 ### Usage
 
 ~~~jsx
-showItem: (id: string | number) => void;
+showItem (id: string | number) => void;
 ~~~
 
 ### Parameters
 
-`id: string | number` - the **ID** of the target item
+`id: string | number` - (mandatory) the **ID** of the target item
 
 ### Example
 

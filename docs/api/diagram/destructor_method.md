@@ -8,12 +8,13 @@ description: You can learn about the destructor method in the documentation of t
 
 ### Description
 
-Removes a diagram instance and releases occupied resources
+@short: removes a diagram instance and releases occupied resources
+@descr:
 
 ### Usage
 
 ~~~jsx
-destructor: () => void;
+destructor () => void;
 ~~~
 
 ### Example
@@ -24,6 +25,4 @@ diagram.data.parse(data);
 diagram.destructor();
 ~~~
 
-@changelog: 
-
-- Added in v3.0
+**Change log:** Added in v3.0

@@ -8,12 +8,13 @@ description: You can learn about the collapseItem method in the documentation of
 
 ### Description
 
-Hides all children of the target shape or collapses the group/swimlane
+@short: hides all children of the target shape or collapses the group/swimlane
+@descr:
 
 ### Usage
 
 ~~~jsx
-collapseItem: (
+collapseItem (
 	id: string | number, 
 	dir?: string // TreeDirection interface
 ) => void;
@@ -21,8 +22,8 @@ collapseItem: (
 
 ### Parameters
 
-- `id: string | number` - (*mandatory*) the **ID** of the item
-- `dir?: string` - (*optional*) defines the side, the children will be hidden in relation to the root shape: "left", "right"
+- `id: string | number` - (mandatory) the **ID** of the item
+- `dir?: string` - (optional) defines the side, the children will be hidden in relation to the root shape: "left", "right"
 
 ### Example
 
@@ -31,7 +32,7 @@ diagram.collapseItem(123);
 ~~~
 
 :::note
-**Note**, that the **dir** parameter can be used only in the diagram initialized in the mindmap mode (*type:"mindmap"*).
+Note, that the **dir** parameter can be used only in the diagram initialized in the mindmap mode (**type:"mindmap"**).
 :::
 
 ~~~jsx {2,6}
@@ -43,8 +44,6 @@ diagram.parse(data);
 diagram.collapseItem("main", "left");
 ~~~
 
-@changelog:
-
-- The **dir** parameter has been added in v3.1.
+**Change log:** The **dir** parameter has been added in v3.1
 
 **Related articles:** [Expanding/collapsing items](../../../guides/manipulating_items/#expandingcollapsing-items)
