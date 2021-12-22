@@ -19,9 +19,9 @@ getScrollState() => object; // ICoords interface
 
 ### Returns
 
-The `getScrollState()` method returns an object which stores positions of scrolls. It includes two properties:
+The **getScrollState()** method returns an object which stores positions of scrolls. It includes two properties:
 
-- `x`	- horizontal scroll position
+- `x` - horizontal scroll position
 - `y` - vertical scroll position
 
 ### Example

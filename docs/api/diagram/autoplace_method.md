@@ -20,11 +20,11 @@ autoPlace(config?: object) => void; // IAutoPlacement interface
 ### Parameters
 
 - `config?: object` - (optional) an object with configuration settings of the autoplacement. If not specified, the default settings will be applied. Here you can specify the following parameters:
-	- `mode: string` - (mandatory) the mode of connecting shapes, `"direct"` (by default) or `"edges"`
-	- `graphPadding: number` - (mandatory) sets the distance between unconnected diagrams, `"200"` by default
+	- `mode: string` - (mandatory) the mode of connecting shapes, "direct" (by default) or "edges"
+	- `graphPadding: number` - (mandatory) sets the distance between unconnected diagrams, "200" by default
 
 :::note 
-The `autoPlace()` method works only in the default mode of the diagram and only for shapes
+The **autoPlace()** method works only in the default mode of the diagram and only for shapes.
 :::
 
 ### Example

@@ -23,7 +23,7 @@ collapseItem(
 ### Parameters
 
 - `id: string | number` - (mandatory) the **ID** of the item
-- `dir?: string` - (optional) defines the side, the children will be hidden in relation to the root shape: `"left"`, or `"right"`
+- `dir?: string` - (optional) defines the side, the children will be hidden in relation to the root shape: "left", or "right"
 
 ### Example
 
@@ -32,7 +32,7 @@ diagram.collapseItem(123);
 ~~~
 
 :::note
-The second `dir` parameter can be used only in the diagram initialized in the mindmap mode (`type:"mindmap"`). See the example below.
+The second **dir** parameter can be used only in the diagram initialized in the mindmap mode (**type:"mindmap"**). See the example below.
 :::
 
 ~~~jsx title="index.js" {2,6}
@@ -45,6 +45,6 @@ diagram.collapseItem("main", "left");
 ~~~
 
 
-**Change log**: The `dir` parameter has been added in v3.1
+**Change log**: The **dir** parameter has been added in v3.1
 
 **Related articles**: [Expanding/collapsing items](../../../guides/manipulating_items/#expandingcollapsing-items)
