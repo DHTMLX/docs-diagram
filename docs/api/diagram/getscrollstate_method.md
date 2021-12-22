@@ -26,7 +26,7 @@ The `getScrollState()` method returns an object which stores positions of scroll
 
 ### Example
 
-~~~jsx
+~~~jsx {4}
 const diagram = new dhx.Diagram("diagram_container");
 diagram.parse(data);
 

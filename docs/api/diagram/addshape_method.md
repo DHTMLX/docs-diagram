@@ -48,7 +48,7 @@ Note, that the `properties` attribute is available only in the editor mode
 
 ### Example
 
-~~~jsx
+~~~jsx {6-12}
 const diagram = new dhx.Diagram("diagram_container", {
 	type: "default" //  or type: "org", or type: "mindmap"
 });

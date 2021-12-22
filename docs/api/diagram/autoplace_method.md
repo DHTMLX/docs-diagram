@@ -29,7 +29,7 @@ The `autoPlace()` method works only in the default mode of the diagram and only 
 
 ### Example
 
-~~~jsx
+~~~jsx {4-6}
 const diagram = new dhx.Diagram("diagram_container");
 diagram.data.parse(data);
 

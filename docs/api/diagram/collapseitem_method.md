@@ -35,7 +35,7 @@ diagram.collapseItem(123);
 The second `dir` parameter can be used only in the diagram initialized in the mindmap mode (`type:"mindmap"`). See the example below.
 :::
 
-~~~jsx title="index.js"
+~~~jsx title="index.js" {2,6}
 const diagram = new dhx.Diagram("diagram_container", {
 	type:"mindmap"
 });
