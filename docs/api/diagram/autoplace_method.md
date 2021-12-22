@@ -6,8 +6,12 @@ description: You can learn about the autoPlace method in the documentation of th
 
 # autoPlace()
 
+### Description
+
 @short: automatically arranges connected diagram shapes in the hierarchical structure
 @descr:
+
+### Usage
 
 ~~~jsx
 autoPlace(config?: object) => void; // IAutoPlacement interface
@@ -43,8 +47,6 @@ diagram.autoPlace({
 | Connectors are aligned "from center to center"; they are straight and diagonal. | Connectors are aligned "from side to side"; they are straight and 90-degree curved. |
 | ![](../../assets/direct_mode.png)                                               | ![](../../assets/edges_mode.png)                                                    |
 
-#### Change log:
-- Added in v3.0
+**Change log**: Added in v3.0
 
-#### Related articles:
-- [Arranging shapes automatically](../../../guides/manipulating_items/#arranging-shapes-automatically)
+**Related articles**: [Arranging shapes automatically](../../../guides/manipulating_items/#arranging-shapes-automatically)

@@ -6,8 +6,12 @@ description: You can learn about the collapseItem method in the documentation of
 
 # collapseItem()
 
+### Description
+
 @short: hides all children of the target shape or collapses the group/swimlane
 @descr:
+
+### Usage
 
 ~~~jsx
 collapseItem(
@@ -41,8 +45,6 @@ diagram.collapseItem("main", "left");
 ~~~
 
 
-#### Change log:
-- The `dir` parameter has been added in v3.1
+**Change log**: The `dir` parameter has been added in v3.1
 
-#### Related articles: 
-- [Expanding/collapsing items](../../../guides/manipulating_items/#expandingcollapsing-items)
+**Related articles**: [Expanding/collapsing items](../../../guides/manipulating_items/#expandingcollapsing-items)

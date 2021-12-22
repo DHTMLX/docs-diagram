@@ -6,8 +6,12 @@ description: You can learn about the addShape method in the documentation of the
 
 # addShape()
 
+### Description
+
 @short: creates a custom shape and sets sidebar options for its editing in the right panel of the editor
 @descr:
+
+### Usage
 
 ~~~jsx 
 addShape(
@@ -25,8 +29,11 @@ addShape(
     - [`eventHandlers?:object`](../../../shapes/custom_shape/#event-handlers-for-custom-shapes) - (optional) adds custom event handlers to HTML elements of the template of a shape. The `eventHandlers` object includes a set of `key:value` pairs, where:
         - `key: string` - (mandatory) the name of the event. Note, that at the beginning of the event name the 'on' prefix is used (onclick, onmouseover)
         - `value: object` - (mandatory) an object that contains a `key:value` pair, where 
-          - `key` is the CSS class name that the handler will be applied to <br>
+          - `key` is the CSS class name that the handler will be applied to
+          
+            :::tip
             **Note**, we recommend that you use different CSS classes for different custom shapes when initializing custom event handlers
+            :::
           - `value` is a function that takes two parameters:
             - `event: object` - (mandatory) an event object
             - `shape: object` - (mandatory) the shape object
@@ -119,9 +126,8 @@ Note, that all HTML and SVG tags must be closed in the template.
 For example, an `<img src="" alt="">` tag should look like `<img src="" alt=""></img>`
 :::
 
-#### Change log:
+**Change log**:
 - The `eventHandlers` attribute is added in v3.1
 - The method is added in v3.0
 
-#### Related articles:
-- [Custom Shape](../../../shapes/custom_shape/)
+**Related articles**: [Custom Shape](../../../shapes/custom_shape/)

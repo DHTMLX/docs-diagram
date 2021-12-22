@@ -6,8 +6,12 @@ description: You can learn about the getScrollState method in the documentation 
 
 # getScrollState()
 
+### Description
+
 @short: returns the position of the diagram inner scroll
 @descr: 
+
+### Usage
 
 ~~~jsx 
 getScrollState() => object; // ICoords interface
@@ -32,5 +36,4 @@ const state = diagram.getScrollState();
 
 **Related sample**: [Diagram. Scroll content](https://snippet.dhtmlx.com/f970hbym)
 
-#### Related articles:
-- [Scrolling Diagram](../../../guides/diagram/scrolling_diagram/)
+**Related articles**: [Scrolling Diagram](../../../guides/diagram/scrolling_diagram/)
