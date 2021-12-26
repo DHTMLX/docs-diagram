@@ -5,7 +5,7 @@ slug: /
 description: You can have an overview of DHTMLX JavaScript Diagram library in the documentation. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
 
-# Diagram Overview
+# Diagram overview
 
 DHTMLX Diagram is a client-side chart component that allows you to display relations between some objects, concepts or living beings in a visual form:
 as a scheme, chart, organizational chart, mind map, etc. The diagram makes it easier to present tangled and bulky information in a simple and accessible way.
@@ -52,7 +52,7 @@ Usage of swimlanes of the DHTMLX Diagram library lets you represent any process 
 | ------------------------------------------------------------------------------- |
 | ![](assets/swimlane.png)                                                        |
 
-### Title of Lines
+### Title of lines
 
 The title of Line is enabled in the default mode of Diagram. You can add the text by double-clicking on a line. Use double-clicking also for editing the text.
 
@@ -174,14 +174,14 @@ You can adjust the attributes of the shapes via the available sidebar options of
 
 If you've added a custom shape to the editor in the org chart mode, you can configure the right panel to be able to edit custom properties of the shape.
 
-## Shape Search
+## Shape search
 
 DHTMLX Diagram provides you with a set of API that you can apply in order to make working with a Diagram more convenient.
 For example, you can implement a feature of searching a shape on request that helps you to simplify work with large diagrams.
 
 <iframe src="https://snippet.dhtmlx.com/d7kvzq4r?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
 
-## Diagram Scale
+## Diagram scale
 
 You can apply the zoom template to your diagram to be able to change its appearance via zooming the diagram in or out. Besides, you can make it possible to user to get the detailed information on the selected shape.
 

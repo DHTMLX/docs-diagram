@@ -4,7 +4,7 @@ title: Custom Shape
 description: You can learn about the Custom Shape in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
 
-# Custom Shape
+# Custom shape
 
 If the default shapes don't meet your needs, you can create your custom shape.
 

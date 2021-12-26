@@ -4,7 +4,7 @@ title: Migration to Newer Versions
 description: You can learn about the Migration to Newer Versions in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
 
-# Migration to Newer Versions
+# Migration to newer versions
 
 3.1 -> 4.0
 ------------
@@ -58,7 +58,7 @@ editor.events.on("AfterShapeMove", function(events) {
 2.2 -> 3.0
 ------------
 
-### Creating Custom Shapes
+### Creating custom shapes
 
 The way of creating custom shapes has been changed, simplified and improved.
 

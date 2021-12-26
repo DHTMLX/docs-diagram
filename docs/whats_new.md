@@ -4,7 +4,7 @@ title: What's New
 description: You can learn a new information about DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
 
-# What's New
+# What's new
 
 If you are updating Diagram from an older version, check [Migration to Newer Version](migration.md) for details.
 
@@ -216,8 +216,6 @@ The new update introduces some changes and improvements. Check the [Migration](.
 - The ability to set a connector line to the *text* shape in the editor which is initialized in the default mode
 - Auto-fit of the content width of the *text* shape is added
 
-
-
 Version 2.2.1
 ------------------
 
@@ -246,7 +244,6 @@ Released on November 27, 2019
 - Fix incorrect work of the right and left panels in Diagram Editor
 - Fix the issue with auto-generating of the unique id's of shapes and connectors
 
-
 Version 2.1.1
 ------------------
 Released on October 11, 2019
@@ -274,10 +271,9 @@ Version 2.0
 -------------
 Released on February 15, 2017
 
-### Breaking Change
+### Breaking changes
 
 The API structure was totally reorganized and improved to simplify work with it. Follow the [Migration](../migration/#11---20) article to learn all the changes.
-
 
 ### New functionality
 
@@ -293,7 +289,6 @@ The API structure was totally reorganized and improved to simplify work with it.
 - Ability to [add a toolbar with icons for shapes](../guides/diagram/configuration/#setting-toolbar-for-items) to simplify interaction with them
 - Enhanced performance 
 - Ability to adjust to any HTML container and built-in auto-sizing
-
 
 Version 1.1 
 -------------------

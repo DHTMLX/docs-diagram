@@ -4,7 +4,7 @@ title: Manipulating Items
 description: You can learn about manipulating items in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
 
-# Manipulating Items
+# Manipulating items
 
 You can easily manipulate Diagram items via the [Diagram Editor](../../guides/diagram_editor/initialization/). But in this article we'll explore the examples on how to manipulate the items of DHTMLX Diagram via the component's API. The article contains different sections that cover such questions as:
 
