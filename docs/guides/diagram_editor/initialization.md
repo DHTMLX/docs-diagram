@@ -96,7 +96,7 @@ const editor = new dhx.DiagramEditor(document.body, {
 
 ### Initialization in a layout cell
 
-You can also initialize an editor inside [a Layout cell](https://docs.dhtmlx.com/suite/layout/index/). In this case use *null* instead of a container:
+You can also initialize an editor inside [a Layout cell](https://docs.dhtmlx.com/suite/layout/). In this case use *null* instead of a container:
 
 ~~~js
 const editor = new dhx.DiagramEditor(null, {

@@ -14,7 +14,7 @@ description: You can learn about the Line properties in the documentation of the
 - **id** - *(string | number)*  the id of a connector
 - **from** - *(string | number)* the id of the parent shape
 - **to** - *(string | number)* the id of the child shape
-- **connectType** - (*string*) the type of the connector line: ["straight"](../../lines/index/#lines-in-the-default-mode), ["elbow"](../../lines/index/#lines-in-the-org-chart-mode) (the default type in the default/org chart modes), ["curved"](../../lines/index/#lines-in-the-mindmap-mode) (the default type in the mindmap mode);
+- **connectType** - (*string*) the type of the connector line: ["straight"](../../lines/#lines-in-the-default-mode), ["elbow"](../../lines/#lines-in-the-org-chart-mode) (the default type in the default/org chart modes), ["curved"](../../lines/#lines-in-the-mindmap-mode) (the default type in the mindmap mode);
 - **strokeWidth** - (*number*) the width of the line, 2 by default;
 - **stroke** - (*string*) the color of the line; "#2198F3" in the default mode, and "#CCC" in the org chart/mindmap modes by default.
 
@@ -97,4 +97,4 @@ const data = [
 
 ## Related articles
 
-- [Configuring lines](../../lines/index/)
+- [Configuring lines](../../lines/)

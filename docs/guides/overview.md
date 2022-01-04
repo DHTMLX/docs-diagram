@@ -23,9 +23,9 @@ The section includes descriptions for all default diagram items (shapes, lines, 
 
 - [Default Shapes](../../shapes/default_shapes/)
 - [Custom Shape](../../shapes/custom_shape/)
-- [Configuring Lines](../../lines/index/)
-- [Configuring Groups](../../groups/index/)
-- [Configuring Swimlanes](../../swimlanes/index/)
+- [Configuring Lines](../../lines/)
+- [Configuring Groups](../../groups/)
+- [Configuring Swimlanes](../../swimlanes/)
 
 ## Diagram Editor
 

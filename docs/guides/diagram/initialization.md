@@ -107,7 +107,7 @@ const diagram = new dhx.Diagram(document.body, {
 
 ### Initialization in a layout cell
 
-You can also initialize a diagram inside [a Layout cell](https://docs.dhtmlx.com/suite/layout/index/). In this case use *null* instead of a container:
+You can also initialize a diagram inside [a Layout cell](https://docs.dhtmlx.com/suite/layout/). In this case use *null* instead of a container:
 
 ~~~js
 const diagram = new dhx.Diagram(null, {

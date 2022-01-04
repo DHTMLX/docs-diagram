@@ -23,4 +23,4 @@ This value is applied, if the line object doesn't contain the "type" property.
 
 #### Related articles
 
-[Setting connections between shapes](../../../lines/index/#setting-connections-between-shapes)
+[Setting connections between shapes](../../../lines/#setting-connections-between-shapes)

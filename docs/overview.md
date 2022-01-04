@@ -38,7 +38,7 @@ You can easily create your own templates of shapes and use them to design any di
 
 ### Groups
 
-You can draw simple or more complicated schemes by grouping shapes in different ways with the help of such an element of Diagram as a group. It is possible to create as one-level groups as nested groups, to configure their appearance and behavior. Check the details in the [Groups configuration](/diagram/groups/index/) article.
+You can draw simple or more complicated schemes by grouping shapes in different ways with the help of such an element of Diagram as a group. It is possible to create as one-level groups as nested groups, to configure their appearance and behavior. Check the details in the [Groups configuration](/diagram/groups/) article.
 
 | [Diagram. Default mode. Virtual private cloud architecture](https://snippet.dhtmlx.com/0hf8ahrb) |
 | ------------------------------------------------------------------------------------------------ |

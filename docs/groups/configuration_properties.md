@@ -80,4 +80,4 @@ const data = [
 
 ## Related articles
 
-- [Configuring groups](../../groups/index/)
+- [Configuring groups](../../groups/)

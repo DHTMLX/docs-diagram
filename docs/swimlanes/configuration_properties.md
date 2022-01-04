@@ -152,4 +152,4 @@ const data = [
 
 ## Related articles
 
-- [Configuring swimlanes](../../swimlanes/index/)
+- [Configuring swimlanes](../../swimlanes/)

@@ -37,4 +37,4 @@ Added in v4.0
 @descr:
 #### Related articles
 
-[Configuring Swimlanes](../../../swimlanes/index/)
+[Configuring Swimlanes](../../../swimlanes/)

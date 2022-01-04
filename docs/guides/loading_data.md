@@ -56,7 +56,7 @@ const data = [
 ];
 ~~~
 
-The presence or absence of line objects in the data set depends on the chosen [way of shapes connection](../../lines/index/#setting-connections-between-shapes). Check the full list of available properties of the line object in the [API reference](lines/configuration_properties.md).
+The presence or absence of line objects in the data set depends on the chosen [way of shapes connection](../../lines/#setting-connections-between-shapes). Check the full list of available properties of the line object in the [API reference](lines/configuration_properties.md).
 
 - **group objects**
 

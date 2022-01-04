@@ -35,8 +35,8 @@ Released on December 7, 2021
 
 ### Updates
 
-- Updated events of [InlineEditor](/api/inline_editor/index/): *subHeaderId* parameter has been changed to *subId*
-- Updated events of [Selection API](/api/selection/index/#events): *subId* parameter has been added
+- Updated events of [InlineEditor](/api/inline_editor/): *subHeaderId* parameter has been changed to *subId*
+- Updated events of [Selection API](/api/selection/#events): *subId* parameter has been added
 - The default type of the shape in the default mode has been changed to [*"rectangle"*](/shapes/configuration_properties/#common-properties)
 
 ### Fixes
@@ -61,12 +61,12 @@ Released on September 7, 2021
 
 ### New functionality
 
-- New diagram items are added: [Groups](../groups/index/), [Swimlanes](../swimlanes/index/)
+- New diagram items are added: [Groups](../groups/), [Swimlanes](../swimlanes/)
 - New sections in the left panel of the Diagram Editor are added: [Groups, Swimlanes](../guides/diagram_editor/left_panel/#default-sections)
 - [New sidebar options are added to the right panel of the editor for Groups, Swimlanes](../guides/diagram_editor/right_panel/#sidebar-options-for-editing-groups-swimlanes)
 - The ability to edit [Groups](../guides/diagram_editor/grid_area/#managing-groups) and [Swimlanes](../guides/diagram_editor/grid_area/#managing-swimlanes) via UI
 - Extended list of [locale options](../guides/localization/)
-- The ability to operate the cells of a swimlane via [CellManager API](../api/cell_manager/index/)
+- The ability to operate the cells of a swimlane via [CellManager API](../api/cell_manager/)
 - The ability to edit the text of an item by double-clicking on it
 - [DHTMLX Diagram with Angular](../guides/angular_integration/) demo is added
 - [DHTMLX Diagram with React](../guides/react_integration/) demo is added
@@ -75,8 +75,8 @@ Released on September 7, 2021
 
 ### API
 
-- New [CellManager API](../api/cell_manager/index/) methods: [add()](../api/cell_manager/add_method/), [getCellId()](../api/cell_manager/getcellid_method/), [getCellIndex()](../api/cell_manager/getcellindex_method/), [getSubHeaderCellId()](../api/cell_manager/getsubheadercellid_method/), [getSubHeaderCellIndex()](../api/cell_manager/getsubheadercellindex_method/), [getSubHeaderType()](../api/cell_manager/getsubheadertype_method/), [move()](../api/cell_manager/move_method/), [remove()](../api/cell_manager/remove_method/), [resetSwimlane()](../api/cell_manager/resetswimlane_method/), [setSwimlane()](../api/cell_manager/setswimlane_method/), [validation()](../api/cell_manager/validation_method/)
-- New [CellManager API](../api/cell_manager/index/) events: [afterCellsAdd](../api/cell_manager/aftercellsadd_event/), [afterCellsMove](../api/cell_manager/aftercellsmove_event/), [afterCellsRemove](../api/cell_manager/aftercellsremove_event/), [afterCellsValidation](../api/cell_manager/aftercellsvalidation_event/), [beforeCellsAdd](../api/cell_manager/beforecellsadd_event/), [beforeCellsMove](../api/cell_manager/beforecellsmove_event/), [beforeCellsRemove](../api/cell_manager/beforecellsremove_event/), [beforeCellsValidation](../api/cell_manager/beforecellsvalidation_event/)
+- New [CellManager API](../api/cell_manager/) methods: [add()](../api/cell_manager/add_method/), [getCellId()](../api/cell_manager/getcellid_method/), [getCellIndex()](../api/cell_manager/getcellindex_method/), [getSubHeaderCellId()](../api/cell_manager/getsubheadercellid_method/), [getSubHeaderCellIndex()](../api/cell_manager/getsubheadercellindex_method/), [getSubHeaderType()](../api/cell_manager/getsubheadertype_method/), [move()](../api/cell_manager/move_method/), [remove()](../api/cell_manager/remove_method/), [resetSwimlane()](../api/cell_manager/resetswimlane_method/), [setSwimlane()](../api/cell_manager/setswimlane_method/), [validation()](../api/cell_manager/validation_method/)
+- New [CellManager API](../api/cell_manager/) events: [afterCellsAdd](../api/cell_manager/aftercellsadd_event/), [afterCellsMove](../api/cell_manager/aftercellsmove_event/), [afterCellsRemove](../api/cell_manager/aftercellsremove_event/), [afterCellsValidation](../api/cell_manager/aftercellsvalidation_event/), [beforeCellsAdd](../api/cell_manager/beforecellsadd_event/), [beforeCellsMove](../api/cell_manager/beforecellsmove_event/), [beforeCellsRemove](../api/cell_manager/beforecellsremove_event/), [beforeCellsValidation](../api/cell_manager/beforecellsvalidation_event/)
 - New events of the Diagram object: [afterSubmenuOpen](../api/diagram/aftersubmenuopen_event/), [beforeSubmenuOpen](../api/diagram/beforesubmenuopen_event/), [groupClick](../api/diagram/groupclick_event/), [groupDblClick](../api/diagram/groupdblclick_event/), [groupHeaderClick](../api/diagram/groupheaderclick_event/), [groupHeaderDblClick](../api/diagram/groupheaderdblclick_event/), [groupMouseDown](../api/diagram/groupmousedown_event/), [itemClick](../api/diagram/itemclick_event/), [itemDblClick](../api/diagram/itemdblclick_event/), [itemMouseDown](../api/diagram/itemmousedown_event/), [itemMouseOut](../api/diagram/itemmouseout_event/), [itemMouseOver](../api/diagram/itemmouseover_event/), [lineDblClick](../api/diagram/linedblclick_event/), [lineMouseDown](../api/diagram/linemousedown_event/)
 - New events of the Editor object:  [shapeMoveEnd](../api/editor/shapemoveend_event/), [beforeItemMove](../api/editor/beforeitemmove_event/), [afterItemMove](../api/editor/afteritemmove_event/), [itemMoveEnd](../api/editor/itemmoveend_event/), [beforeGroupMove](../api/editor/beforegroupmove_event/), [afterGroupMove](../api/editor/aftergroupmove_event/), [groupMoveEnd](../api/editor/groupmoveend_event/)
 - New methods of DataCollection: [eachChild()](../api/data_collection/eachchild_method/), [eachParent()](../api/data_collection/eachparent_method/), [getRoot()](../api/data_collection/getroot_method/), [getRoots()](../api/data_collection/getroots_method/)
@@ -278,7 +278,7 @@ The API structure was totally reorganized and improved to simplify work with it.
 ### New functionality
 
 - Ability to create different diagrams and stylize them
-- Variety of [shapes](../shapes/default_shapes/) and [lines](../lines/index/)
+- Variety of [shapes](../shapes/default_shapes/) and [lines](../lines/)
 - [Export to PDF format](../guides/data_export/)
 - [Export to PNG format](../guides/data_export/)
 
