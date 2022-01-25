@@ -4,7 +4,7 @@ title: Event Handling
 description: You can learn about event handling in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
 
-# Event Handling
+# Event handling
 
 ## Attaching event listeners
 
@@ -12,7 +12,7 @@ You can add any user-defined handler to any of the available events. To do this,
 
 - **name** - (*string*) the name of the event
 - **handler** - (*function*) the handler function
- 
+
 ~~~js
 diagram.events.on("ShapeClick", function(id) {
     alert("You've just clicked an item with id="+id);
@@ -46,15 +46,15 @@ Normally, events are called automatically and you don't need to use this method.
 
 ### Diagram events
 
-Check the full list of the Diagram API events in the [API Reference](../../api/diagram/api_overview/#diagram-events). 
+Check the full list of the Diagram API events in the [API reference](../../api/diagram/api_overview/#diagram-events). 
 
 ### Editor events
 
 The list of the Diagram editor API events is given in the [API section](../../api/editor/api_overview/#editor-events).
 
-#### Note
-
+:::note
 In addition to the events of the Diagram editor, you may also apply [events of the diagram object](../../api/diagram/api_overview/#diagram-events) while working in the editor view. For example:
+:::
 
 ~~~js
 editor.diagram.events.on("ShapeClick", function(id) {
@@ -66,18 +66,16 @@ This way can be also used if you need to apply the events which are listed below
 
 ### CellManager events
 
-Check the full list of the CellManager API events in the [API Reference](../../api/cell_manager/index/#events). 
+Check the full list of the CellManager API events in the [API reference](../../api/cell_manager/index/#events). 
 
 ### DataCollection events
 
-Check the full list of the DataCollection API events in the [API Reference](../../api/data_collection/index/#events).
+Check the full list of the DataCollection API events in the [API reference](../../api/data_collection/index/#events).
 
 ### InlineEditor events
 
-Check the full list of the InlineEditor API events in the [API Reference](../../api/inline_editor/index/#events).
+Check the full list of the InlineEditor API events in the [API reference](../../api/inline_editor/index/#events).
 
 ### Selection events
 
-Check the full list of the Selection API events in the [API Reference](../../api/selection/index/#events).
-
-
+Check the full list of the Selection API events in the [API reference](../../api/selection/index/#events).

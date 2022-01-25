@@ -6,26 +6,37 @@ description: You can learn about the itemClick event in the documentation of the
 
 # itemClick
 
+### Description
+
 @short: fires on clicking an item
+@descr:
+If a click is done over a swimlane, the event will be fired on the cell of the swimlane
 
-@signature: {`itemClick: (id: Id, event: MouseEvent) => void;`}
+### Usage
 
-@params:
-- `id: string | number` - the id of an item
-- `event: MouseEvent` - a native HTML event object
+~~~js
+itemClick: (
+    id: string | number, 
+    event: MouseEvent
+) => void;
+~~~
 
-@example:
+### Parameters
+
+- `id` - (mandatory) the id of an item
+- `event` - (mandatory) a native HTML event object
+
+### Example
+
+~~~js
 diagram.events.on("itemClick", (id, event) => {
     console.log(id, event);
 });
+~~~
 
+**Change log**: Added in v4.0
 
-@descr:
-#### Related samples:
+**Related samples**:
 - [Diagram. Default mode. Events](https://snippet.dhtmlx.com/7h2hgb3g)
 - [Diagram. Org chart mode. Events](https://snippet.dhtmlx.com/l38pct7c)
 
-If a click is done over a swimlane, the event will be fired on the cell of the swimlane.
-
-@changelog:
-Added in v4.0

@@ -6,21 +6,33 @@ description: You can learn about the groupMouseDown event in the documentation o
 
 # groupMouseDown
 
+### Description
+
 @short: fires when a pointing device button is pressed while the pointer is over a group
+@descr:
+If a pointing device button is pressed while the pointer is over a swimlane, the event will be fired on the cell of the swimlane
 
-@signature: {`groupMouseDown: (id: Id, event: MouseEvent) => void;`}
+### Usage
 
-@params:
-- `id: string | number` - the id of a group
-- `event: MouseEvent` - a native HTML event object
+~~~js
+groupMouseDown: (
+    id: string | number, 
+    event: MouseEvent
+) => void;
+~~~
 
-@example:
+### Parameters
+
+- `id` - (mandatory) the id of a group
+- `event` - (mandatory) a native HTML event object
+
+### Example
+
+~~~js
 diagram.events.on("groupMouseDown", (id, event) => {
     console.log(id, event);
 });
-
-@descr:
-If a pointing device button is pressed while the pointer is over a swimlane, the event will be fired on the cell of the swimlane.
+~~~
 
 **Related samples**: [Diagram. Default mode. Events](https://snippet.dhtmlx.com/7h2hgb3g)
 

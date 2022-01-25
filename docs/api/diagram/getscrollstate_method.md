@@ -1,33 +1,39 @@
 ---
-sidebar_label: getScrollState()
+sidebar_label: getScrollState()!!
 title: getScrollState Method
 description: You can learn about the getScrollState method in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
 
 # getScrollState()
 
+### Description
+
 @short: returns the position of the diagram inner scroll
+@descr: 
 
-@signature: {`getScrollState(): ICoords;`}
+### Usage
 
-@returns:
-An object which stores positions of scrolls.
+~~~jsx 
+getScrollState(): object;
+~~~
 
-@example:
+### Returns
+
+The method returns an object which stores positions of scrolls. It includes two properties:
+
+- `x` - horizontal scroll position
+- `y` - vertical scroll position
+
+### Example
+
+~~~jsx {4}
+const diagram = new dhx.Diagram("diagram_container");
+diagram.parse(data);
 
 const state = diagram.getScrollState();
 // diagram.scrollTo( state.x, state.y );
+~~~
 
-@relatedsample:
+**Related articles**: [Scrolling Diagram](../../../guides/diagram/scrolling_diagram/)
+
 **Related sample**: [Diagram. Scroll content](https://snippet.dhtmlx.com/f970hbym)
-
-@descr:
-
-A resulting object has two properties:
-
-- **x**	- horizontal scroll position
-- **y** - vertical scroll position
-
-#### Related articles
-
-[Scrolling Diagram](../../../guides/diagram/scrolling_diagram/)

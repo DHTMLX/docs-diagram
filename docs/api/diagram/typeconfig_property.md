@@ -6,11 +6,15 @@ description: You can learn about the typeConfig property in the documentation of
 
 # typeConfig
 
+### Description
+
 @short: optional, an object which defines the direction of the shapes in the mindmap mode of Diagram
-
-@signature: {`typeConfig?: IMindMapConfig;`}
-
 @descr:
+
+### Usage
+
+ typeConfig?: IMindMapConfig;
+
 #### Object properties:
 
 - **direction** - (*string*) optional, sets the direction of the graph:
@@ -47,15 +51,12 @@ The other child shapes that are not set in the **side** option will be arranged 
 If you don't apply the **typeConfig** property, the child shapes will be arranged automatically according to the main algorithm.
 
 {{note The property does not work in the Editor.}}
-@descr:
+
+**Change log**: Added in v3.1.
+
+**Related articles**: [Arrangement of shapes in the mindmap mode of Diagram](../../../guides/diagram/configuration/#arranging-shapes-in-the-mindmap-mode-of-diagram)
+
 **Related samples**: 
 
 - [Diagram. Mindmap mode. Direction ("left" | "right")](https://snippet.dhtmlx.com/pzllujx3)
 - [Diagram. Mindmap mode. Custom sides](https://snippet.dhtmlx.com/atto9ckg)
-
-@changelog: added in v3.1.
-
-@descr:
-#### Related articles
-
-[Arrangement of shapes in the mindmap mode of Diagram](../../../guides/diagram/configuration/#arranging-shapes-in-the-mindmap-mode-of-diagram)

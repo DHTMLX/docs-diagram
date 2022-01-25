@@ -6,14 +6,24 @@ description: You can learn about the scroll event in the documentation of the DH
 
 # scroll
 
+### Description
+
 @short: fires when a diagram is being scrolled
+@descr:
 
-@signature: {`scroll: (position: ICoords) => void;`}
+### Usage
 
-@params:
-`position: object` - the position of a scroll
+~~~js
+scroll: (position: object) => void;
+~~~
 
-@example:
+### Parameters
+
+- `position` - (mandatory) the position of a scroll. The object contains x and y coordinates of the current scroll position, e.g.: {x: 67, y: 130}
+
+### Example
+
+~~~js
 const diagram = new dhx.Diagram("diagram_container", { 
 	type: "org", 
     scroll: true 		
@@ -22,15 +32,11 @@ const diagram = new dhx.Diagram("diagram_container", {
 diagram.events.on("scroll", function(pos){
 	console.log("The diagram has been scrolled")
 });
+~~~
 
-@relatedsample:
+**Related articles**: [Scrolling Diagram](../../../guides/diagram/scrolling_diagram/)
+
 **Related samples**:
 - [Diagram. Default mode. Events](https://snippet.dhtmlx.com/7h2hgb3g)
 - [Diagram. Org chart mode. Events](https://snippet.dhtmlx.com/l38pct7c)
 
-@descr:
-The *pos* object contains x and y coordinates of the current scroll position, e.g.: {x: 67, y: 130}
-
-#### Related articles
-
-[Scrolling Diagram](../../../guides/diagram/scrolling_diagram/)

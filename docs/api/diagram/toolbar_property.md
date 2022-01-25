@@ -6,29 +6,35 @@ description: You can learn about the toolbar property in the documentation of th
 
 # toolbar
 
+### Description
+
 @short: An array of icon objects which sets a toolbar with buttons for items
+@descr:
 
-@signature: {`toolbar?: IShapeToolbarConfig[];`}
+### Usage
 
-@example:
+ toolbar?: IShapeToolbarConfig[];
+
+### Example
+
+~~~js
 const diagram = new dhx.Diagram("diagram_container", { 
-	type:"org", 
-	select:true,
-	margin:{
-    	y:65
+	type: "org", 
+	select: true,
+	margin: {
+    	y: 65
     },
-    toolbar:[{
+    toolbar: [{
         id: "download",
-        content:"<i class='dxi dxi-download'></i>"
+        content: "<i class='dxi dxi-download'></i>"
     },
     {
         id: "info",
-        content:"<i class='dxi dxi-information-outline'></i>"
+        content: "<i class='dxi dxi-information-outline'></i>"
     }]
 });
+~~~
 
-@descr:
-**Related sample**: [Diagram. Configuration. Per-shape toolbar](https://snippet.dhtmlx.com/4if395hd)
 
 Each icon object can have the following properties:
 
@@ -37,7 +43,9 @@ Each icon object can have the following properties:
 - **check** - (*function*) checks whether the icon should be applied to the item. The function takes an item object and returns *true*, if the icon will be rendered for this item.
 - **css** - (*function*) the function which returns the name(s) of CSS class(es) that should be applied to the item.
 
-#### Related articles
+**Related articles**:
 
 - [Setting toolbar for items](../../../guides/diagram/configuration/#setting-toolbar-for-items)
 - [Default icons](https://docs.dhtmlx.com/suite/helpers/icon/)
+
+**Related sample**: [Diagram. Configuration. Per-shape toolbar](https://snippet.dhtmlx.com/4if395hd)

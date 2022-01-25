@@ -6,24 +6,36 @@ description: You can learn about the groupHeaderClick event in the documentation
 
 # groupHeaderClick
 
+### Description
+
 @short: fires on clicking a header of a group
+@descr:
+If a click is done over a header of a swimlane, the event will be fired on the subheader of the swimlane
 
-@signature: {`groupHeaderClick: (id: Id, event: MouseEvent, subHeaderId?: string) => void;`}
+### Usage
 
-@params:
-- `id: string | number` - the id of a group
-- `event: MouseEvent` - a native HTML event object
-- `subHeaderId: string` - optional, the id of a subheader of a swimlane
+~~~js
+groupHeaderClick: (
+    id: string | number,
+    event: MouseEvent, 
+    subHeaderId?: string
+) => void;
+~~~
 
-@example:
+### Parameters
+
+- `id` - (mandatory) the id of a group
+- `event` - (mandatory) a native HTML event object
+- `subHeaderId` - (optional) the id of a subheader of a swimlane
+
+### Example
+
+~~~js
 diagram.events.on("groupHeaderClick", (id, event, subheaderId) => {
     console.log(id, event, subheaderId);
 });
-
-@descr:
-If a click is done over a header of a swimlane, the event will be fired on the subheader of the swimlane.
+~~~
 
 **Related samples**: [Diagram. Default mode. Events](https://snippet.dhtmlx.com/7h2hgb3g)
 
-@changelog:
-Added in v4.0
+**Change log**: Added in v4.0

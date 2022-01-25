@@ -46,8 +46,7 @@ This article covers the process of displaying a Diagram editor on a page. In ord
 </html>
 ~~~
 
-Including required code files
--------------------
+## Including required code files
 
 To create Editor, you need to include 2 source files on your page:
 
@@ -61,8 +60,7 @@ Make sure that you set correct relative paths to these files:
 <link rel="stylesheet" href="../codebase/diagramWithEditor.css">
 ~~~
 
-Initializing Editor
-----------------
+## Initializing Editor
 
 You can initialize a Diagram Editor in a container, in the document body, or in a layout cell.
 
@@ -135,4 +133,3 @@ Loading data into Editor
 It is possible to load an [appropriate data set](../../../guides/loading_data/#preparing-data-to-load) into the editor via the [parse()](../../../api/editor/parse_method/) method of the editor.
 
 <iframe src="https://snippet.dhtmlx.com/xshe9ut7?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="400"></iframe>
-

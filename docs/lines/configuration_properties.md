@@ -95,6 +95,6 @@ const data = [
 ];
 ~~~
 
-## Related articles
+**Related articles:**
 
 - [Configuring lines](../../lines/index/)

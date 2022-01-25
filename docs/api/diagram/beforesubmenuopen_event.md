@@ -6,25 +6,38 @@ description: You can learn about the beforeSubmenuOpen event in the documentatio
 
 # beforeSubmenuOpen
 
+### Description
+
 @short: fires before the menu of the subheader is opened
+@descr:
 
-@signature: {`beforeSubmenuOpen: (id: Id, event: MouseEvent, subHeaderId?: string) => boolean | void;`}
+### Usage
 
-@params:
-- `id: string | number` - the id of a swimlane
-- `event: MouseEvent` - a native HTML event object
-- `subHeaderId: string` - the id of a subheader of a swimlane
+~~~js
+beforeSubmenuOpen: (
+    id: string | number, 
+    event: MouseEvent, 
+    subHeaderId?: string
+) => boolean | void;
+~~~
 
-@returns:
-Return `false` to block opening the subheader; otherwise, `true`.
+### Parameters
 
-@example:
+- `id` - (mandatory) the id of a swimlane
+- `event` - (mandatory) a native HTML event object
+- `subHeaderId` - (optional) the id of a subheader of a swimlane
+
+### Returns
+
+Return `false` to block opening the subheader; otherwise, `true`
+
+### Example
+
+~~~js
 diagram.events.on("beforeSubmenuOpen", (id, event, subheaderId) => {
     console.log(id, event, subheaderId);
     return true;
 });
+~~~
 
-@descr:
-
-@changelog:
-Added in v4.0
+**Change log**: Added in v4.0

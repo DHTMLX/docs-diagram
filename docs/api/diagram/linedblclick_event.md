@@ -6,23 +6,34 @@ description: You can learn about the lineDblClick event in the documentation of 
 
 # lineDblClick
 
+### Description
+
 @short: fires on double-clicking a line
+@descr:
 
-@signature: {`lineDblClick: (id: Id, event: MouseEvent) => void;`}
+### Usage
 
-@params:
-- `id: string | number` - the id of a connector line
-- `event: MouseEvent` - a native HTML event object
+~~~js
+lineDblClick: (
+    id: string | number, 
+    event: MouseEvent
+) => void;
+~~~
 
-@example:
+### Parameters
+
+- `id` - (mandatory) the id of a connector line
+- `event` - (mandatory) a native HTML event object
+
+### Example
+
+~~~js
 diagram.events.on("lineDblClick", (id, event) => {
     console.log(id, event);
 });
+~~~
 
-@descr:
+**Change log**: Added in v4.0
 
-**Related samples**:
-- [Diagram. Default mode. Events](https://snippet.dhtmlx.com/7h2hgb3g)
+**Related sample**: [Diagram. Default mode. Events](https://snippet.dhtmlx.com/7h2hgb3g)
 
-@changelog:
-Added in v4.0

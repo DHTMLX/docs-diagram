@@ -6,22 +6,34 @@ description: You can learn about the lineClick event in the documentation of the
 
 # lineClick
 
-@short: fires on clicking a line
+### Description
 
-@signature: {`lineClick: (id: Id, event: MouseEvent) => void;`}
+@short: fires on clicking a connector line
+@descr:
 
-@params:
-- `id: string | number` - the id of a connector line
-- `event: MouseEvent` -  a native HTML event object
+### Usage
 
-@example:
+~~~js
+lineClick: (
+    id: string | number, 
+    event: MouseEvent
+) => void;
+~~~
+
+### Parameters
+
+- `id` - (mandatory) the id of a connector line
+- `event` - (mandatory) a native HTML event object
+
+### Example
+
+~~~js
 diagram.events.on("lineClick", function(id, events) {
     console.log(id);
 });
+~~~
 
-@relatedsample:
-**Related samples**:
-- [Diagram. Default mode. Events](https://snippet.dhtmlx.com/7h2hgb3g)
+**Change log**: Added in v3.0
 
-@changelog:
-Added in v3.0
+**Related samples**: [Diagram. Default mode. Events](https://snippet.dhtmlx.com/7h2hgb3g)
+

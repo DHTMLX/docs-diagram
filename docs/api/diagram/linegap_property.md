@@ -6,23 +6,34 @@ description: You can learn about the lineGap property in the documentation of th
 
 # lineGap
 
+### Description
+
 @short: adds an offset for two connected shapes, and fills the gap with an additional line
+@descr:
+{{note The property is available only in the default mode of the diagram (*type:"default"*). The property does not work if you use groups or swimlanes.}}
 
-@signature: {`lineGap?: number;`}
+### Usage
 
-@default: 10
+~~~js
+lineGap?: number; // the property is optional
+~~~
 
-@example:
+### Default value
+
+~~~js
+lineGap: 10
+~~~
+
+### Example
+
+~~~js
 const diagram = new dhx.Diagram("diagram_container", { 
   	lineGap: 50
 });
-
-@relatedsample:
-**Related sample**: [Diagram. Default mode. Activity diagram](https://snippet.dhtmlx.com/a9t2z2dt)
-
-@descr:
-{{note The property is available only in the default mode of the diagram (*type:"default"*). The property does not work if you use groups or swimlanes.}}
+~~~
 
 The result of applying the **lineGap** property is shown in the image below:
 
 ![](../../assets/linegap_config.png)
+
+**Related sample**: [Diagram. Default mode. Activity diagram](https://snippet.dhtmlx.com/a9t2z2dt)

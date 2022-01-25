@@ -29,4 +29,3 @@ You can change the structure of the toolbar via the [controls](../../api/editor/
 Using the property you can define which controls to show/hide in the Editor.
 
 <iframe src="https://snippet.dhtmlx.com/w0ktaab3?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
-

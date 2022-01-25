@@ -6,22 +6,33 @@ description: You can learn about the afterCollapse event in the documentation of
 
 # afterCollapse
 
+### Description
+
 @short: fires after an item has been collapsed
+@descr:
 
-@signature: {`afterCollapse: (id: Id, dir?: TreeDirection) => void;`}
+### Usage
 
-@params:
-- `id: string | number` - the id of an item which has been collapsed
-- `dir: string` - optional, the side the children were hidden in relation to the parent shape ("left" or "right" for *type:"topic"*, otherwise - undefined)
+~~~js
+afterCollapse: (
+    id: string | number, 
+    dir?: string
+) => void;
+~~~
 
-@example:
+### Parameters
+
+- `id` - (mandatory) the id of an item which has been collapsed
+- `dir` - (optional) the side the children were hidden in relation to the parent shape ("left" or "right" for *type:"topic"*, otherwise - undefined)
+
+### Example
+
+~~~js
 diagram.events.on("afterCollapse", function(id, dir) {
     console.log(diagram.data.getItem(id).text + " was collapsed", dir);
 });
+~~~
 
-@descr:
+**Change log**: The **dir** parameter has been added in v3.1
 
 **Related sample**: [Diagram. Org chart mode. Events](https://snippet.dhtmlx.com/l38pct7c)
-
-@changelog:
-The **dir** parameter has been added in v3.1.

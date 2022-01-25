@@ -6,20 +6,32 @@ description: You can learn about the shapeDblClick event in the documentation of
 
 # shapeDblClick
 
+### Description
+
 @short: fires on double-clicking a shape
+@descr:
 
-@signature: {`shapeDblClick: (id: Id, event: MouseEvent) => void;`}
+### Usage
 
-@params:
-- `id: string | number` - the shape id
-- `event: MouseEvent` - a native HTML event object
+~~~js
+shapeDblClick: (
+	id: string | number, 
+	event: MouseEvent
+) => void;
+~~~
 
-@example:
+### Parameters
+
+- `id` - (mandatory) the shape id
+- `event` - (mandatory) a native HTML event object
+
+### Example
+
+~~~js
 diagram.events.on("shapeDblClick", function(id) {
 	console.log('An item "' + diagram.data.getItem(id).text + '"double-clicked');
 });
-
-@descr:
+~~~
 
 **Related samples**:
 - [Diagram. Default mode. Events](https://snippet.dhtmlx.com/7h2hgb3g)

@@ -6,20 +6,32 @@ description: You can learn about the shapeMouseDown event in the documentation o
 
 # shapeMouseDown
 
+### Description
+
 @short: fires when a pointing device button is pressed while the pointer is over a shape
+@descr:
 
-@signature: {`shapeMouseDown: (id: Id, event: MouseEvent) => void;`}
+### Usage
 
-@params:
-- `id: string | number` - the id of a shape
-- `event: MouseEvent` - a native HTML event object
+~~~js
+shapeMouseDown: (
+	id: string | number, 
+	event: MouseEvent
+) => void;
+~~~
 
-@example:
+### Parameters
+
+- `id` - (mandatory) the id of a shape
+- `event` - (mandatory) a native HTML event object
+
+### Example
+
+~~~js
 diagram.events.on("shapeMouseDown", function(id) {
 	console.log('An item "' + diagram.data.getItem(id).text + '"will be clicked');
 });
-
-@descr:
+~~~
 
 **Related samples**:
 - [Diagram. Default mode. Events](https://snippet.dhtmlx.com/7h2hgb3g)

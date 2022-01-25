@@ -6,22 +6,33 @@ description: You can learn about the afterExpand event in the documentation of t
 
 # afterExpand
 
+### Description
+
 @short: fires after an item has been expanded
+@descr:
 
-@signature: {`afterExpand: (id: Id, dir?: TreeDirection) => void;`}
+### Usage
 
-@params:
-- `id: string | number` - the id of an item which has been expanded
-- `dir: string` - optional, the side the children were shown in relation to the parent shape ("left" or "right" for *type:"topic"*, otherwise - undefined)
+~~~js
+afterExpand: (
+    id: string | number, 
+    dir?: string
+) => void;
+~~~
 
-@example:
+### Parameters
+
+- `id` - (mandatory) the id of an item which has been expanded
+- `dir` - (optional) the side the children were shown in relation to the parent shape ("left" or "right" for *type:"topic"*, otherwise - undefined)
+
+### Example
+
+~~~js
 diagram.events.on("afterExpand", function(id, dir) {
     console.log(diagram.data.getItem(id).text + " was expanded", dir);
 });
+~~~
 
-@descr:
+**Change log**: The **dir** parameter has been added in v3.1
 
 **Related sample**: [Diagram. Org chart mode. Events](https://snippet.dhtmlx.com/l38pct7c)
-
-@changelog:
-The **dir** parameter has been added in v3.1.

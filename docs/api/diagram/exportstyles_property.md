@@ -6,24 +6,29 @@ description: You can learn about the exportStyles property in the documentation 
 
 # exportStyles
 
-@short: defines the styles that will be sent to the export service when exporting the diagram
+### Description
 
-@signature: {`exportStyles?: boolean | string[];`}
+@short: defines the styles that will be sent to the export service when exporting the diagram
+@descr:
+
+### Usage
+
+ exportStyles?: boolean | string[];
 
 @default:true
 
-@example:
+### Example
+
+~~~js
 const diagram = new dhx.Diagram("diagram_container", { 
   	exportStyles:[
         "https://mySite.com/exportStyle.css",
         "https://mySite.com/secondExportStyle.css"
     ]
 });
+~~~
 
-@relatedsample:
 **Related sample**: [Diagram. Export. Export styles](https://snippet.dhtmlx.com/jm8if6nh)
-
-@descr:
 
 By default, all css styles included to the page are sent to the export service when exporting a DHTMLX Diagram. As a result, the size of the request increases that can cause the request to fail.
 
@@ -46,12 +51,11 @@ const diagram = new dhx.Diagram("diagram_container", {
 });
 ~~~
 
-**Note**, that you must use only absolute paths not relative ones.
+:::tip
+You must use only absolute paths not relative ones
+:::
 
-@changelog: added in v3.1
+**Change log**: Added in v3.1
 
-@descr:
-#### Related articles
-
-[Exporting Diagram](../../../guides/data_export/)
+**Related articles**: [Exporting Diagram](../../../guides/data_export/)
 

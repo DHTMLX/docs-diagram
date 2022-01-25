@@ -6,26 +6,37 @@ description: You can learn about the itemDblClick event in the documentation of 
 
 # itemDblClick
 
+### Description
+
 @short: fires on double-clicking an item
+@descr:
+If a double-click is done over a swimlane, the event will be fired on the cell of the swimlane
 
-@signature: {`itemDblClick: (id: Id, event: MouseEvent) => void;`}
+### Usage
 
-@params:
-- `id: string | number` - the id of an item
-- `event: MouseEvent` - a native HTML event object
+~~~js
+itemDblClick: (
+    id: string | number, 
+    event: MouseEvent
+) => void;
+~~~
 
-@example:
+### Parameters
+
+- `id` - (mandatory) the id of an item
+- `event` - (mandatory) a native HTML event object
+
+### Example
+
+~~~js
 diagram.events.on("itemDblClick", (id, event) => {
     console.log(id, event);
 });
+~~~
 
-@relatedsample:
+**Change log**: Added in v4.0
+
 **Related samples**:
 - [Diagram. Default mode. Events](https://snippet.dhtmlx.com/7h2hgb3g)
 - [Diagram. Org chart mode. Events](https://snippet.dhtmlx.com/l38pct7c)
 
-@descr:
-If a double-click is done over a swimlane, the event will be fired on the cell of the swimlane.
-
-@changelog:
-Added in v4.0

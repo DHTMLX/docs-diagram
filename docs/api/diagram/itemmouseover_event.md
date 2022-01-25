@@ -6,24 +6,36 @@ description: You can learn about the itemMouseOver event in the documentation of
 
 # itemMouseOver
 
+### Description
+
 @short: fires when a pointing device is onto an item
+@descr:
 
-@signature: {`itemMouseOver: (id: Id, event: MouseEvent) => void;`}
+### Usage
 
-@params:
-- `id: string | number` - the id of an item
-- `event: MouseEvent` - a native HTML event object
+~~~js
+itemMouseOver: (
+    id: string | number, 
+    event: MouseEvent
+) => void;
+~~~
 
-@example:
+### Parameters
+
+- `id` - (mandatory) the id of an item
+- `event` - (mandatory) a native HTML event object
+
+### Example
+
+~~~js
 diagram.events.on("itemMouseOver", (id, event) => {
     console.log(id, event);
 });
+~~~
 
-@descr:
+**Change log**: Added in v4.0
 
 **Related samples**:
 - [Diagram. Default mode. Events](https://snippet.dhtmlx.com/7h2hgb3g)
 - [Diagram. Org chart mode. Events](https://snippet.dhtmlx.com/l38pct7c)
 
-@changelog:
-Added in v4.0
