@@ -14,7 +14,7 @@ description: You can learn about the paint method in the documentation of the DH
 ### Usage
 
 ~~~jsx
-paint () => void;
+paint(): void;
 ~~~
 
 ### Example

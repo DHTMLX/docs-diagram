@@ -6,21 +6,32 @@ description: You can learn about the groupClick event in the documentation of th
 
 # groupClick
 
+### Description
+
 @short: fires on clicking a group
+@descr:
+If a click is done over a swimlane, the event will be fired on the cell of the swimlane
 
-@signature: {`groupClick: (id: Id, event: MouseEvent) => void;`}
+### Usage
 
-@params:
-- `id: string | number` - the id of a group
-- `event: MouseEvent` - a native HTML event object
+~~~js
+groupClick: (
+    id: string | number,
+    event: MouseEvent
+) => void;
+~~~
 
-@example:
+### Parameters
+
+- `id` - (mandatory) the id of a group
+- `event` - (mandatory) a native HTML event object
+
+### Example
+
+~~~js
 diagram.events.on("groupClick", (id, event) => {
     console.log(id, event);
 });
+~~~
 
-@descr:
-If a click is done over a swimlane, the event will be fired on the cell of the swimlane.
-
-@changelog:
-Added in v4.0
+**Change log**: Added in v4.0

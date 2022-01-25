@@ -6,27 +6,38 @@ description: You can learn about the beforeCollapse event in the documentation o
 
 # beforeCollapse
 
+### Description
+
 @short: fires before collapsing an item
+@descr:
 
-@signature: {`beforeCollapse: (id: Id, dir?: TreeDirection) => boolean | void;`}
+### Usage
 
-@params:
-- `id: string | number` - the id of an item 
-- `dir: string` - optional, the side the children will be hidden in relation to the parent shape ("left" or "right" for *type:"topic"*, otherwise - undefined)
+~~~js
+beforeCollapse: (
+    id: string | number, 
+    dir?: string
+) => boolean | void;
+~~~
 
-@returns:
-Return `false` to block collapsing an item; otherwise, `true`.
+### Parameters
 
-@example:
+- `id` - (mandatory) the id of an item 
+- `dir` - (optional) the side the children will be hidden in relation to the parent shape ("left" or "right" for *type:"topic"*, otherwise - undefined)
+
+### Returns
+
+Return `false` to block collapsing an item; otherwise, `true`
+
+### Example
+
+~~~js
 diagram.events.on("beforeCollapse", function(id, dir) {
     console.log("Collapsing " + diagram.data.getItem(id).text, dir);
     return true;
 });
+~~~
 
-@relatedsample:
+**Change log**: The **dir** parameter has been added in v3.1
+
 **Related sample**: [Diagram. Org chart mode. Events](https://snippet.dhtmlx.com/l38pct7c)
-
-@descr:
-
-@changelog:
-The **dir** parameter has been added in v3.1.

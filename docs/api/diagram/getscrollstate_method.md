@@ -14,12 +14,12 @@ description: You can learn about the getScrollState method in the documentation 
 ### Usage
 
 ~~~jsx 
-getScrollState() => object; // ICoords interface
+getScrollState(): object;
 ~~~
 
 ### Returns
 
-The **getScrollState()** method returns an object which stores positions of scrolls. It includes two properties:
+The method returns an object which stores positions of scrolls. It includes two properties:
 
 - `x` - horizontal scroll position
 - `y` - vertical scroll position
@@ -34,6 +34,6 @@ const state = diagram.getScrollState();
 // diagram.scrollTo( state.x, state.y );
 ~~~
 
-**Related sample**: [Diagram. Scroll content](https://snippet.dhtmlx.com/f970hbym)
-
 **Related articles**: [Scrolling Diagram](../../../guides/diagram/scrolling_diagram/)
+
+**Related sample**: [Diagram. Scroll content](https://snippet.dhtmlx.com/f970hbym)

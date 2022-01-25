@@ -6,18 +6,24 @@ description: You can learn about the scale property in the documentation of the 
 
 # scale
 
-@short: defines the diagram scale
+### Description
 
-@signature: {`scale?: number;`}
+@short: defines the diagram scale
+@descr:
+
+### Usage
+
+ scale?: number;
 
 @default:1
 
-@example:
+### Example
+
+~~~js
 const diagram = new dhx.Diagram("diagram_container", { 
   	scale: 0.7
 });
-
-@descr:
+~~~
 
 **Related samples**:
 - [Diagram. Configuration. Scaled diagram](https://snippet.dhtmlx.com/9h89c3gl)

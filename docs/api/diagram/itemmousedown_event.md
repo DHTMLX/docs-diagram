@@ -6,27 +6,37 @@ description: You can learn about the itemMouseDown event in the documentation of
 
 # itemMouseDown
 
+### Description
+
 @short: fires when a pointing device button is pressed while the pointer is over an item
+@descr:
+If a pointing device button is pressed while the pointer is over a swimlane, the event will be fired on the cell of the swimlane
 
-@signature: {`itemMouseDown: (id: Id, event: MouseEvent) => void;`}
+### Usage
 
-@params:
-- `id: string | number` - the id of an item
-- `event: MouseEvent` - a native HTML event object
+~~~js
+itemMouseDown: (
+    id: string | number, 
+    event: MouseEvent
+) => void;
+~~~
 
-@example:
+### Parameters
+
+- `id` - (mandatory) the id of an item
+- `event` - (mandatory) a native HTML event object
+
+### Example
+
+~~~js
 diagram.events.on("itemMouseDown", (id, event) => {
     console.log(id, event);
 });
+~~~
 
-@relatedsample:
+**Change log**: Added in v4.0
+
 **Related samples**:
 - [Diagram. Default mode. Events](https://snippet.dhtmlx.com/7h2hgb3g)
 - [Diagram. Org chart mode. Events](https://snippet.dhtmlx.com/l38pct7c)
 
-@descr:
-
-If a pointing device button is pressed while the pointer is over a swimlane, the event will be fired on the cell of the swimlane.
-
-@changelog:
-Added in v4.0

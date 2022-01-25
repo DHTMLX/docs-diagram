@@ -14,13 +14,13 @@ description: You can learn about the scrollTo method in the documentation of the
 ### Usage
 
 ~~~jsx
-scrollTo (x: number, y: number) => void;
+scrollTo(x: number, y: number): void;
 ~~~
 
 ### Parameters
 
-- `x: number` - (mandatory) horizontal scroll position
-- `y: number` - (mandatory) vertical scroll position
+- `x` - (mandatory) horizontal scroll position
+- `y` - (mandatory) vertical scroll position
 
 ### Example
 

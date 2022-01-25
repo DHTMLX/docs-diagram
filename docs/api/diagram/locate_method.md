@@ -14,16 +14,16 @@ description: You can learn about the locate method in the documentation of the D
 ### Usage
 
 ~~~jsx
-locate: (event: object) => any; // IBaseShape interface
+locate(event: object): any;
 ~~~
 
 ### Parameters
 
-`event: object` - (mandatory) a native event object
+- `event: object` - (mandatory) a native event object
 
 ### Returns
 
-The **locate()** method returns an **ID** of the shape that the event/tag relates to
+The method returns the ID of the shape that the event/tag relates to
 
 ### Example
 

@@ -6,23 +6,26 @@ description: You can learn about the defaultShapeType property in the documentat
 
 # defaultShapeType
 
-@short: the default type of a shape
+### Description
 
-@signature: {`defaultShapeType?: string;`}
+@short: the default type of a shape
+@descr:
+The value is applied, if the shape object doesn't contain the "type" property
+
+### Usage
+
+ defaultShapeType?: string;
 
 @default: "card" (in the default and org chart modes of Diagram), "topic" (in the mindmap mode of Diagram)
 
-@example:
+### Example
+
+~~~js
 const diagram = new dhx.Diagram("diagram_container", { 
     defaultShapeType: "img-card"
 });
+~~~
 
+**Related articles**: [Setting the type of a shape](../../../shapes/default_shapes/#setting-the-type-of-a-shape)
 
-@descr:
 **Related sample**: [Diagram. Org chart mode. Shapes with images](https://snippet.dhtmlx.com/qnx3ekin)
-
-This value is applied, if the shape object doesn't contain the "type" property.
-
-#### Related articles
-
-[Setting the type of a shape](../../../shapes/default_shapes/#setting-the-type-of-a-shape)

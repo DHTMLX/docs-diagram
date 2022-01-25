@@ -6,11 +6,15 @@ description: You can learn about the margin property in the documentation of the
 
 # margin
 
+### Description
+
 @short: An object with settings of margins for positioning items in the diagram
-
-@signature: {`margin?: IMarginConfig;`}
-
 @descr:
+
+### Usage
+
+ margin?: IMarginConfig;
+
 #### Object properties:
 
 - **itemX** - horizontal space between two shapes (only for [type: "org" | "mindmap"](../../../api/diagram/type_property/))
@@ -18,7 +22,9 @@ description: You can learn about the margin property in the documentation of the
 - **x** - horizontal space between the start of a diagram and the first item
 - **y** - vertical space between the start of a diagram and the first item
 
-@example:
+### Example
+
+~~~js
 const diagram = new dhx.Diagram("diagram_container", {
     type: "org", 
     margin: {
@@ -26,12 +32,12 @@ const diagram = new dhx.Diagram("diagram_container", {
         itemX: 50, itemY: 50
     }
 });
-
-@descr:
-**Related sample:** [Diagram. Org chart mode. Margin between shapes](https://snippet.dhtmlx.com/bwe9vm6i)
+~~~
 
 The default values of margins are:
 
 ~~~js
 { x: 40, y: 40, itemX: 40, itemY: 40 }
 ~~~
+
+**Related sample:** [Diagram. Org chart mode. Margin between shapes](https://snippet.dhtmlx.com/bwe9vm6i)

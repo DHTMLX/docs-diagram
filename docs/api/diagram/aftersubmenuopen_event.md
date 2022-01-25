@@ -6,21 +6,33 @@ description: You can learn about the afterSubmenuOpen event in the documentation
 
 # afterSubmenuOpen
 
+### Description
+
 @short: fires after the menu of the subheader is opened
+@descr:
 
-@signature: {`afterSubmenuOpen: (id: Id, event: MouseEvent, subHeaderId?: string) => void;`}
+### Usage
 
-@params:
-- `id: string | number` - the id of a swimlane
-- `event: MouseEvent` - a native HTML event object
-- `subHeaderId: string` - the id of a subheader of a swimlane
+~~~js
+afterSubmenuOpen: (
+    id: string | number, 
+    event: MouseEvent, 
+    subHeaderId?: string
+) => void;
+~~~
 
-@example:
+### Parameters
+
+- `id` - (mandatory) the id of a swimlane
+- `event` - (mandatory) a native HTML event object
+- `subHeaderId` - (mandatory) the id of a subheader of a swimlane
+
+### Example
+
+~~~js
 diagram.events.on("afterSubmenuOpen", (id, event, subheaderId) => {
     console.log(id, event, subheaderId);
 });
+~~~
 
-@descr:
-
-@changelog:
-Added in v4.0
+**Change log**: Added in v4.0

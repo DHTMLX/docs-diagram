@@ -6,11 +6,15 @@ description: You can learn about the type property in the documentation of the D
 
 # type
 
+### Description
+
 @short: defines the mode of Diagram initialization 
-
-@signature: {`type: "default" | "org" | "mindmap";`}
-
 @descr:
+
+### Usage
+
+ type: "default" | "org" | "mindmap";
+
 
 DHTMLX Diagram can be initialized in one of three modes:
 
@@ -26,7 +30,7 @@ DHTMLX Diagram can be initialized in one of three modes:
 
 <iframe src="https://snippet.dhtmlx.com/3igf1gd5?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="200"></iframe>
 
-#### Related articles
+**Related articles**:
 
 - [Overview](../../../)
 - [How to start with Diagram](../../../guides/diagram/initialization/)

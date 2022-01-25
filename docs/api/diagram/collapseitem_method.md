@@ -16,14 +16,14 @@ description: You can learn about the collapseItem method in the documentation of
 ~~~jsx
 collapseItem(
 	id: string | number, 
-	dir?: string // TreeDirection interface
-) => void;
+	dir?: string
+): void;
 ~~~
 
 ### Parameters
 
-- `id: string | number` - (mandatory) the **ID** of the item
-- `dir?: string` - (optional) defines the side, the children will be hidden in relation to the root shape: "left", or "right"
+- `id` - (mandatory) the **ID** of the item
+- `dir` - (optional) defines the side, the children will be hidden in relation to the root shape: "left", or "right"
 
 ### Example
 

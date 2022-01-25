@@ -6,19 +6,28 @@ description: You can learn about the emptyAreaClick event in the documentation o
 
 # emptyAreaClick
 
+### Description
+
 @short: fires on clicking an empty space in the current diagram area
+@descr:
 
-@signature: {`emptyAreaClick: (event: MouseEvent) => void;`}
+### Usage
 
-@params:
-`event: MouseEvent` - a native HTML event object
+~~~js
+emptyAreaClick: (event: MouseEvent) => void;
+~~~
 
-@example:
+### Parameters
+
+- `event` - (optional) a native HTML event object
+
+### Example
+
+~~~js
 diagram.events.on("emptyAreaClick",function(e){
 	console.log("An empty space has been clicked");
 });
-
-@descr:
+~~~
 
 **Related samples**:
 - [Diagram. Default mode. Events](https://snippet.dhtmlx.com/7h2hgb3g)

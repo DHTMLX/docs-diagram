@@ -6,21 +6,32 @@ description: You can learn about the groupDblClick event in the documentation of
 
 # groupDblClick
 
+### Description
+
 @short: fires on double-clicking a group
+@descr:
+If a double-click is done over a swimlane, the event will be fired on the cell of the swimlane
 
-@signature: {`groupDblClick: (id: Id, event: MouseEvent) => void;`}
+### Usage
 
-@params:
-- `id: string | number` - the id of a group
-- `event: MouseEvent` - a native HTML event object
+~~~js
+groupDblClick: (
+    id: string | number,
+    event: MouseEvent
+) => void;
+~~~
 
-@example:
+### Parameters
+
+- `id` - (mandatory) the id of a group
+- `event` - (mandatory) a native HTML event object
+
+### Example
+
+~~~js
 diagram.events.on("groupDblClick", (id, event) => {
     console.log(id, event);
 });
+~~~
 
-@descr:
-If a double-click is done over a swimlane, the event will be fired on the cell of the swimlane.
-
-@changelog:
-Added in v4.0
+**Change log**: Added in v4.0

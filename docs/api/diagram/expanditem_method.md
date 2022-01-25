@@ -16,14 +16,14 @@ description: You can learn about the expandItem method in the documentation of t
 ~~~jsx
 expandItem (
 	id: string | number, 
-	dir?: string // TreeDirection interface
-) => void;
+	dir?: string
+): void;
 ~~~
 
 ### Parameters
 
-- `id: string | number` - (mandatory) the **ID** of the item
-- `dir?: string` - (optional) defines the side the children will be shown in relation to the root shape: **"left"**, **"right"**
+- `id` - (mandatory) the ID of the item
+- `dir` - (optional) defines the side the children will be shown in relation to the root shape: **"left"**, **"right"**
 
 ### Example
 

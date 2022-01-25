@@ -14,12 +14,12 @@ description: You can learn about the autoPlace method in the documentation of th
 ### Usage
 
 ~~~jsx
-autoPlace(config?: object) => void; // IAutoPlacement interface
+autoPlace(config?: object): void;
 ~~~
 
 ### Parameters
 
-- `config?: object` - (optional) an object with configuration settings of the autoplacement. If not specified, the default settings will be applied. Here you can specify the following parameters:
+- `config` - (optional) an object with configuration settings of the autoplacement. If not specified, the default settings will be applied. Here you can specify the following parameters:
 	- `mode: string` - (mandatory) the mode of connecting shapes, "direct" (by default) or "edges"
 	- `graphPadding: number` - (mandatory) sets the distance between unconnected diagrams, "200" by default
 
@@ -38,8 +38,6 @@ diagram.autoPlace({
 });
 ~~~
 
-**Related sample**: [Diagram. Default mode. Autoplacement](https://snippet.dhtmlx.com/f3uekgjw)
-
 ### Modes of connecting shapes
 
 | mode: "direct"                                                                  | mode: "edges"                                                                       |
@@ -50,3 +48,5 @@ diagram.autoPlace({
 **Change log**: Added in v3.0
 
 **Related articles**: [Arranging shapes automatically](../../../guides/manipulating_items/#arranging-shapes-automatically)
+
+**Related sample**: [Diagram. Default mode. Autoplacement](https://snippet.dhtmlx.com/f3uekgjw)

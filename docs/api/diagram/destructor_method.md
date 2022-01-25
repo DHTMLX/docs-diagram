@@ -14,10 +14,11 @@ description: You can learn about the destructor method in the documentation of t
 ### Usage
 
 ~~~jsx
-destructor () => void;
+destructor(): void;
 ~~~
 
 ### Example
+
 ~~~jsx {4}
 const diagram = new dhx.Diagram("diagram_container");
 diagram.data.parse(data);
