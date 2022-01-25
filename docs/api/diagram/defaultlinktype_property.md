@@ -14,9 +14,15 @@ The value is applied, if the line object doesn't contain the "type" property
 
 ### Usage
 
- defaultLinkType?: "line" | "dash";
+~~~js
+defaultLinkType?: "line" | "dash";  // the property is optional
+~~~
 
-@default:"line"
+### Default config
+
+~~~js
+defaultLinkType: "line" 
+~~~
 
 ### Example
 

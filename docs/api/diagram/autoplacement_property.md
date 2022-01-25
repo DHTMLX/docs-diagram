@@ -10,17 +10,33 @@ description: You can learn about the autoplacement property in the documentation
 
 @short: an object with configuration settings for auto-placement of shapes
 @descr:
+{{note The **autoplacement** property works only in the default mode of the diagram and only for shapes.}}
 
 ### Usage
 
- autoplacement?: IAutoPlacement;
+~~~js
+// the property is optional
+autoplacement?: {
+	mode?: string, // "direct" | "edges"
+	graphPadding?: number
+};
+~~~
 
-#### Object properties:
+### Attributes
 
-- **mode** - (*string*) the mode of connecting shapes, "direct" (by default) or "edges"
-- **graphPadding** - (*number*) sets the distance between unconnected diagrams, *"200"* by default
+The **autoplacement** property has the following attributes:
 
-{{note The **autoplacement** property works only in the default mode of the diagram and only for shapes.}}
+- `mode` - (optional) the mode of connecting shapes, "direct" (by default) or "edges"
+- `graphPadding` - (optional) sets the distance between unconnected diagrams, *"200"* by default
+
+### Default value
+
+~~~js
+autoplacement: {
+	mode: "direct",
+	graphPadding: 200
+}
+~~~
 
 ### Example
 
@@ -32,7 +48,9 @@ const diagram = new dhx.Diagram("diagram_container", {
 	}
 });
 
-diagram.parse(autoData);
+diagram.parse(data);
+
+diagram.autoPlace();
 ~~~
 
 ### Modes of connecting shapes

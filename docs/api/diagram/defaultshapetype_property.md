@@ -14,9 +14,22 @@ The value is applied, if the shape object doesn't contain the "type" property
 
 ### Usage
 
- defaultShapeType?: string;
+~~~js
+defaultShapeType?: string; // the property is optional
+~~~
 
-@default: "card" (in the default and org chart modes of Diagram), "topic" (in the mindmap mode of Diagram)
+
+### Default config
+
+~~~js 
+// in the default and org chart modes of Diagram
+const diagram = new dhx.Diagram("diagram_container", { 
+    type: "default" | "org",
+    defaultShapeType: "card"
+});
+~~~
+
+"card" (in the default and org chart modes of Diagram), "topic" (in the mindmap mode of Diagram)
 
 ### Example
 

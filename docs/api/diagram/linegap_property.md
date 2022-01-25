@@ -14,9 +14,15 @@ description: You can learn about the lineGap property in the documentation of th
 
 ### Usage
 
- lineGap?: number;
+~~~js
+lineGap?: number; // the property is optional
+~~~
 
-@default: 10
+### Default value
+
+~~~js
+lineGap: 10
+~~~
 
 ### Example
 
