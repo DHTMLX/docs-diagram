@@ -1,5 +1,5 @@
 ---
-sidebar_label: expandItem()!
+sidebar_label: expandItem()
 title: expandItem Method
 description: You can learn about the expandItem method in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
@@ -14,7 +14,7 @@ description: You can learn about the expandItem method in the documentation of t
 ### Usage
 
 ~~~jsx
-expandItem (
+expandItem(
 	id: string | number, 
 	dir?: string
 ): void;
@@ -23,17 +23,20 @@ expandItem (
 ### Parameters
 
 - `id` - (mandatory) the ID of the item
-- `dir` - (optional) defines the side the children will be shown in relation to the root shape: **"left"**, **"right"**
+- `dir` - (optional) defines the side the children will be shown in relation to the root shape: **"left"**, **"right"**. The parameter can be used only when the diagram is initialized in the mindmap mode (**type:"mindmap"**)
 
-### Example
+### Examples
 
-~~~jsx
+~~~jsx {2,6}
+const diagram = new dhx.Diagram("diagram_container", {
+    type: "default"
+});
+diagram.parse(data);
+
 diagram.expandItem(123);
 ~~~
 
-:::note
-Note, that the **dir** parameter can be used only in the diagram that is initialized in the mindmap mode (type:"mindmap").
-:::
+or
 
 ~~~js {2,6}
 const diagram = new dhx.Diagram("diagram_container", {

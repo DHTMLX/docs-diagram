@@ -36,6 +36,9 @@ diagram.events.on("groupHeaderClick", (id, event, subheaderId) => {
 });
 ~~~
 
+**Change log**: Added in v4.0
+
+**Related article**: [Event Handling](../../../guides/event_handling/)
+
 **Related samples**: [Diagram. Default mode. Events](https://snippet.dhtmlx.com/7h2hgb3g)
 
-**Change log**: Added in v4.0

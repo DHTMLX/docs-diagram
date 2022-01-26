@@ -6,19 +6,22 @@ description: You can learn about the lineGap property in the documentation of th
 
 # lineGap
 
+:::info
+The property is available only in the default mode of the diagram (*type:"default"*). The property does not work if you use groups or swimlanes.
+:::
+
 ### Description
 
-@short: adds an offset for two connected shapes, and fills the gap with an additional line
+@short: optional, adds an offset for two connected shapes, and fills the gap with an additional line
 @descr:
-{{note The property is available only in the default mode of the diagram (*type:"default"*). The property does not work if you use groups or swimlanes.}}
 
 ### Usage
 
 ~~~js
-lineGap?: number; // the property is optional
+lineGap?: number;
 ~~~
 
-### Default value
+### Default config
 
 ~~~js
 lineGap: 10

@@ -56,7 +56,12 @@ The list of the Diagram editor API events is given in the [API section](../../ap
 In addition to the events of the Diagram editor, you may also apply [events of the diagram object](../../api/diagram/api_overview/#diagram-events) while working in the editor view. For example:
 :::
 
-~~~js
+~~~js {6-8}
+const editor = new dhx.DiagramEditor("editor_container", {
+    controls: { autoLayout: false }
+});
+editor.parse(data);
+
 editor.diagram.events.on("ShapeClick", function(id) {
     alert("You've just clicked an item with id=" + id);
 });

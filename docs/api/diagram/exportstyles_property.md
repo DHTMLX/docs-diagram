@@ -6,33 +6,34 @@ description: You can learn about the exportStyles property in the documentation 
 
 # exportStyles
 
+:::info
+By default, all css styles included to the page are sent to the export service when exporting a DHTMLX Diagram. As a result, the size of the request increases that can cause the request to fail.
+
+To avoid this problem, you can reduce the size of the exported data by applying the **exportStyles** property.
+:::
+
 ### Description
 
-@short: defines the styles that will be sent to the export service when exporting the diagram
+@short: optional, defines the styles that will be sent to the export service when exporting the diagram
 @descr:
 
 ### Usage
 
- exportStyles?: boolean | string[];
+~~~js
+exportStyles?: boolean;
+//or
+exportStyles?: string[];
+~~~
 
-@default:true
+### Default config
+
+~~~js
+exportStyles: true
+~~~
 
 ### Example
 
-~~~js
-const diagram = new dhx.Diagram("diagram_container", { 
-  	exportStyles:[
-        "https://mySite.com/exportStyle.css",
-        "https://mySite.com/secondExportStyle.css"
-    ]
-});
-~~~
-
-**Related sample**: [Diagram. Export. Export styles](https://snippet.dhtmlx.com/jm8if6nh)
-
-By default, all css styles included to the page are sent to the export service when exporting a DHTMLX Diagram. As a result, the size of the request increases that can cause the request to fail.
-
-To avoid this problem, you can reduce the size of the exported data. For example, setting the **exportStyles** property to *false* will prevent all styles from being sent to the export service:
+Set the **exportStyles** property to *false* to prevent all styles from being sent to the export service:
 
 ~~~js
 const diagram = new dhx.Diagram("diagram_container", { 
@@ -40,7 +41,7 @@ const diagram = new dhx.Diagram("diagram_container", {
 });
 ~~~
 
-Or you can define a set of styles you want to be exported. For that, you need to set string values with the absolute paths to the desired styles to the **exportStyles** array:
+Or define a set of styles you want to be exported. For that, you need to set string values with the absolute paths to the desired styles to the **exportStyles** array:
 
 ~~~js
 const diagram = new dhx.Diagram("diagram_container", { 
@@ -59,3 +60,4 @@ You must use only absolute paths not relative ones
 
 **Related articles**: [Exporting Diagram](../../../guides/data_export/)
 
+**Related sample**: [Diagram. Export. Export styles](https://snippet.dhtmlx.com/jm8if6nh)

@@ -8,14 +8,14 @@ description: You can learn about the defaultLinkType property in the documentati
 
 ### Description
 
-@short: the default type of a connector line
+@short: optional, the default type of a connector line
 @descr:
 The value is applied, if the line object doesn't contain the "type" property
 
 ### Usage
 
 ~~~js
-defaultLinkType?: "line" | "dash";  // the property is optional
+defaultLinkType?: "line" | "dash";
 ~~~
 
 ### Default config

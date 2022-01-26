@@ -1,10 +1,14 @@
 ---
-sidebar_label: autoPlace()!!
+sidebar_label: autoPlace()
 title: autoPlace Method
 description: You can learn about the autoPlace method in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
 
 # autoPlace()
+
+:::info
+The **autoPlace()** method works only in the default mode of the diagram and only for shapes
+:::
 
 ### Description
 
@@ -14,18 +18,18 @@ description: You can learn about the autoPlace method in the documentation of th
 ### Usage
 
 ~~~jsx
-autoPlace(config?: object): void;
+autoPlace(
+	config?: {
+		mode?: "direct" | "edges",
+		graphPadding?: number
+}): void;
 ~~~
 
 ### Parameters
 
 - `config` - (optional) an object with configuration settings of the autoplacement. If not specified, the default settings will be applied. Here you can specify the following parameters:
-	- `mode: string` - (mandatory) the mode of connecting shapes, "direct" (by default) or "edges"
-	- `graphPadding: number` - (mandatory) sets the distance between unconnected diagrams, "200" by default
-
-:::note 
-The **autoPlace()** method works only in the default mode of the diagram and only for shapes.
-:::
+	- `mode` - (optional) the mode of connecting shapes, "direct" (by default) or "edges"
+	- `graphPadding` - (optional) sets the distance between unconnected diagrams, 200 by default
 
 ### Example
 

@@ -8,14 +8,20 @@ description: You can learn about the scale property in the documentation of the 
 
 ### Description
 
-@short: defines the diagram scale
+@short: optional, defines the diagram scale
 @descr:
 
 ### Usage
 
- scale?: number;
+~~~js
+scale?: number;
+~~~
 
-@default:1
+### Default config
+
+~~~js
+scale: 1
+~~~
 
 ### Example
 

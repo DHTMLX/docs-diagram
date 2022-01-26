@@ -8,28 +8,35 @@ description: You can learn about the defaultShapeType property in the documentat
 
 ### Description
 
-@short: the default type of a shape
+@short: optional, the default type of a shape
 @descr:
 The value is applied, if the shape object doesn't contain the "type" property
 
 ### Usage
 
 ~~~js
-defaultShapeType?: string; // the property is optional
+defaultShapeType?: string;
 ~~~
-
 
 ### Default config
 
+- In the **default** mode of Diagram (type: "default")
+
 ~~~js 
-// in the default and org chart modes of Diagram
-const diagram = new dhx.Diagram("diagram_container", { 
-    type: "default" | "org",
-    defaultShapeType: "card"
-});
+defaultShapeType: "rectangle"
 ~~~
 
-"rectangle" (in the default mode of Diagram), "card" (in the org chart mode of Diagram), "topic" (in the mindmap mode of Diagram)
+- In the **org chart** mode of Diagram (type: "org")
+
+~~~js
+defaultShapeType: "card"
+~~~
+
+- In the **mindmap** mode of Diagram (type: "mindmap")
+
+~~~js
+defaultShapeType: "topic"
+~~~
 
 ### Example
 

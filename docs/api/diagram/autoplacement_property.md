@@ -6,16 +6,18 @@ description: You can learn about the autoplacement property in the documentation
 
 # autoplacement
 
+:::info
+The **autoplacement** property works only in the default mode of the diagram and only for shapes
+:::
+
 ### Description
 
-@short: an object with configuration settings for auto-placement of shapes
+@short: optional, an object with configuration settings for auto-placement of shapes
 @descr:
-{{note The **autoplacement** property works only in the default mode of the diagram and only for shapes.}}
 
 ### Usage
 
 ~~~js
-// the property is optional
 autoplacement?: {
 	mode?: string, // "direct" | "edges"
 	graphPadding?: number
@@ -29,7 +31,7 @@ The **autoplacement** property has the following attributes:
 - `mode` - (optional) the mode of connecting shapes, "direct" (by default) or "edges"
 - `graphPadding` - (optional) sets the distance between unconnected diagrams, *"200"* by default
 
-### Default value
+### Default config
 
 ~~~js
 autoplacement: {

@@ -34,7 +34,9 @@ diagram.events.on("scroll", function(pos){
 });
 ~~~
 
-**Related articles**: [Scrolling Diagram](../../../guides/diagram/scrolling_diagram/)
+**Related articles**: 
+- [Scrolling Diagram](../../../guides/diagram/scrolling_diagram/)
+- [Event Handling](../../../guides/event_handling/)
 
 **Related samples**:
 - [Diagram. Default mode. Events](https://snippet.dhtmlx.com/7h2hgb3g)

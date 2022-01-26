@@ -7,23 +7,36 @@ description: You can learn about the lineTitleClick event in the documentation o
 # lineTitleClick
 
 @short: fires on clicking a text element of a line
+@descr:
 
-@signature: {`lineTitleClick: (lineId: Id, titleId: Id, event: MouseEvent) => void;`}
+### Usage
 
-@params:
-- `lineId: string | number` - the id of a line
-- `titleId: string | number` - the id of a text element of a line
-- `event: MouseEvent` - a native HTML event object
+~~~js
+lineTitleClick: (
+	lineId: string | number, 
+	titleId: string | number, 
+	event: MouseEvent
+) => void;
+~~~
 
-@example:
+### Parameters
+
+- `lineId` - (required) the id of a line
+- `titleId` - (required) the id of a text element of a line
+- `event` - (required) a native HTML event object
+
+### Usage
+
+~~~js
 diagram.events.on("lineTitleClick", (lineId, titleId, event) => {
 	console.log("lineTitleClick");
 });
+~~~
 
-@descr:
+**Change log**: Added in v4.1
+
+**Related article**: [Event Handling](../../../guides/event_handling/)
 
 **Related samples**: [Diagram. Default mode. Events](https://snippet.dhtmlx.com/7h2hgb3g)
 
-@changelog:
 
-Added in v4.1.

@@ -40,4 +40,6 @@ diagram.events.on("beforeCollapse", function(id, dir) {
 
 **Change log**: The **dir** parameter has been added in v3.1
 
+**Related article**: [Event Handling](../../../guides/event_handling/)
+
 **Related sample**: [Diagram. Org chart mode. Events](https://snippet.dhtmlx.com/l38pct7c)

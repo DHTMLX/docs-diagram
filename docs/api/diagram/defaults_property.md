@@ -8,17 +8,18 @@ description: You can learn about the defaults property in the documentation of t
 
 ### Description
 
-@short: an object which sets the default configuration of a shape
+@short: optional, an object which sets the default configuration of a shape
 @descr:
 
 ### Usage
 
 ~~~js
-// the property is optional
 defaults?: {
     [type: string]: object
 };
 ~~~
+
+### Attributes
 
 The **defaults** object can contain a number of *key:value* pairs where *key* is a type of a shape and *value* is an object with a set of [configuration settings of the shape](../../../shapes/configuration_properties/).
 

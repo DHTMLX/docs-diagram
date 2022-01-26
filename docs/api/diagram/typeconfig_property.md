@@ -6,22 +6,50 @@ description: You can learn about the typeConfig property in the documentation of
 
 # typeConfig
 
+:::info 
+The property does not work in the Editor
+:::
+
 ### Description
 
 @short: optional, an object which defines the direction of the shapes in the mindmap mode of Diagram
 @descr:
+If you don't apply the **typeConfig** property, the child shapes will be arranged automatically according to the main algorithm.
+
+
 
 ### Usage
 
- typeConfig?: IMindMapConfig;
+~~~js
+typeConfig?: {
+    direction?: "left" | "right";
+}
 
-#### Object properties:
+//or
+typeConfig?: {
+    side?: {
+		left?: string[],
+		right?: string[],
+	}
+}	
+~~~
 
-- **direction** - (*string*) optional, sets the direction of the graph:
+:::tip
+You can use either the **direction** attribute or the **side** one. Don't use both of them at the same time!
+:::
+
+### Attributes:
+
+The **typeConfig** property has the following attributes:
+
+- `direction` - (optional) sets the direction of the graph:
   - *"left"* - puts child shapes of the graph to the left of the root shape
   - *"right"* - puts child shapes of the graph to the right of the root shape
+- `side` - (optional) an object which sets the mandatory direction for the specified child shapes. The object contains a set of *key:value* pairs where *key* is the direction of the shapes (left, right) and *value* is an array with the ids of the shapes
 
-~~~js
+### Example
+
+~~~js {3-5}
 const diagram = new dhx.Diagram("diagram_container", { 
     type: "mindmap",
     typeConfig: {
@@ -30,9 +58,9 @@ const diagram = new dhx.Diagram("diagram_container", {
 });
 ~~~
 
-- **side** - (*object*) optional, sets the mandatory direction for the specified child shapes. The object contains a set of *key:value* pairs where *key* is the direction of the shapes (left, right) and *value* is an array with the ids of the shapes.
+or
 
-~~~js
+~~~js {3-8}
 const diagram = new dhx.Diagram("diagram_container", { 
     type: "mindmap",
     typeConfig: {
@@ -46,11 +74,6 @@ const diagram = new dhx.Diagram("diagram_container", {
 
 The other child shapes that are not set in the **side** option will be arranged automatically according to the main algorithm.
 
-{{note You can either use the **direction** option and set it to *"left"/"right"* or apply the **side** option.}}
-
-If you don't apply the **typeConfig** property, the child shapes will be arranged automatically according to the main algorithm.
-
-{{note The property does not work in the Editor.}}
 
 **Change log**: Added in v3.1.
 

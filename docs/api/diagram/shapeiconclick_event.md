@@ -47,4 +47,6 @@ diagram.events.on("shapeIconClick", function(icon){
 });
 ~~~
 
+**Related article**: [Event Handling](../../../guides/event_handling/)
+
 **Related sample**: [Diagram. Configuration. Per-shape toolbar](https://snippet.dhtmlx.com/4if395hd)

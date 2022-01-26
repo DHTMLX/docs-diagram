@@ -8,14 +8,20 @@ description: You can learn about the select property in the documentation of the
 
 ### Description
 
-@short: enables selection in the diagram
+@short: optional, enables selection in the diagram
 @descr:
 
 ### Usage
 
- select?: boolean;
+~~~js
+select?: boolean;
+~~~
 
-@default:false
+### Default config
+
+~~~js
+select: false
+~~~
 
 ### Example
 

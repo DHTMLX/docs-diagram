@@ -35,5 +35,7 @@ diagram.events.on("lineClick", function(id, events) {
 
 **Change log**: Added in v3.0
 
+**Related article**: [Event Handling](../../../guides/event_handling/)
+
 **Related samples**: [Diagram. Default mode. Events](https://snippet.dhtmlx.com/7h2hgb3g)
 

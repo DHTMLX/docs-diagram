@@ -8,14 +8,24 @@ description: You can learn about the gridStep property in the documentation of t
 
 ### Description
 
-@short: sets the size of a grid step that defines the step of moving a shape/group/swimlane
+@short: optional, sets the size of a grid step that defines the step of moving a shape/group/swimlane
 @descr:
 
 ### Usage
 
- gridStep?: number;
+~~~js
+gridStep?: number;
+~~~
 
-@default:10
+:::info
+The specified number must be greater than or equal to 1
+:::
+
+### Default config
+
+~~~js
+gridStep: 10
+~~~
 
 ### Example
 
@@ -25,6 +35,8 @@ const diagram = new dhx.Diagram("diagram_container", {
 });
 ~~~
 
-{{note The value of the property can be a number which is greater than or equal to 1.}}
-
+:::note
 We recommend that you use arrows while moving an item in the editor. This way sets exactly one grid step of moving the item, whereas using a mouse can cause shift the item to several grid steps.
+:::
+
+

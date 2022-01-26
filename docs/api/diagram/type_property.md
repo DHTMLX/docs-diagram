@@ -8,13 +8,14 @@ description: You can learn about the type property in the documentation of the D
 
 ### Description
 
-@short: defines the mode of Diagram initialization 
+@short: required, defines the mode of Diagram initialization 
 @descr:
 
 ### Usage
 
- type: "default" | "org" | "mindmap";
-
+~~~js
+type: "default" | "org" | "mindmap";
+~~~
 
 DHTMLX Diagram can be initialized in one of three modes:
 

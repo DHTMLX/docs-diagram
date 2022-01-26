@@ -41,3 +41,5 @@ diagram.events.on("beforeSubmenuOpen", (id, event, subheaderId) => {
 ~~~
 
 **Change log**: Added in v4.0
+
+**Related article**: [Event Handling](../../../guides/event_handling/)
