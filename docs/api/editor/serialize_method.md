@@ -6,16 +6,24 @@ description: You can learn about the serialize method of editor in the documenta
 
 # serialize()
 
+### Description
+
 @short: serializes the data of the editor into an array of JSON objects
 
-@signature: {`serialize(): IDataItem[];`}
+### Usage
 
-@returns:
+~~~js
+serialize(): IDataItem[];
+~~~
+
+### Returns
+
 An array of JSON objects for each item from the editor data.
 
-@example:
-const data = editor.serialize();
+### Example
 
-@descr:
+~~~js
+const data = editor.serialize();
+~~~
 
 **Related samples**: [Diagram editor. Org chart mode. Live editor](https://snippet.dhtmlx.com/bng7ego7)

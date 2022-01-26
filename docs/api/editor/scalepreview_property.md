@@ -6,9 +6,15 @@ description: You can learn about the scalePreview property of editor in the docu
 
 # scalePreview
 
+### Description
+
 @short: defines the scale of items rendered in the left panel of the editor
 
-@signature: {`scalePreview?: string | number;`}
+### Usage
+
+~~~js
+scalePreview?: string | number;
+~~~
 
 @default: 0.5
 
@@ -16,12 +22,13 @@ description: You can learn about the scalePreview property of editor in the docu
 
 {{note The property is available only in the default mode of the editor (*type:"default"*).}}
 
-@example:
+### Example
+
+~~~js
 const editor = new dhx.DiagramEditor("editor_container", {
     scalePreview: 0.6,
 });
-
-@descr:
+~~~
 
 The value of the property can be redefined for a separate type of a shape via the **scale** attribute of the [preview](../../../shapes/configuration_properties/#properties-specific-for-the-default-mode) property of the shape object:
 
@@ -45,6 +52,4 @@ const editor = new dhx.DiagramEditor("editor_container", {
 
 While the scale of the "card"-type shapes is 0.72, the scale of the other shapes in the left panel is 0.65.
 
-#### Related articles
-
-[Left Panel](../../../guides/diagram_editor/left_panel/)
+**Related articles**:  [Left Panel](../../../guides/diagram_editor/left_panel/)

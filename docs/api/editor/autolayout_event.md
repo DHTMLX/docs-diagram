@@ -6,13 +6,20 @@ description: You can learn about the autoLayout event of editor in the documenta
 
 # autoLayout
 
+### Description
+
 @short: fires after the Auto Layout button has been clicked
 
-@signature: {`autoLayout: () => void;`}
+### Usage
 
-@example:
+~~~js
+autoLayout: () => void;
+~~~
+
+### Example
+
+~~~js
 editor.events.on("autoLayout", function() {
     console.log("The shapes are arranged automatically");
 });
-
-@descr:
+~~~

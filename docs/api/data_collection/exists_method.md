@@ -6,18 +6,27 @@ description: You can learn about the exists method of data collection in the doc
 
 # exists()
 
+### Description
+
 @short: checks whether the specified item exists in the diagram
 
-@signature: {`exists(id: Id): boolean;`}
+### Usage
 
-@params:
+~~~js
+exists(id: Id): boolean;
+~~~
+
+### Parameters
+
 `id: string | number` - the id of the item in question
 
-@returns:
+### Returns
+
 `True` if the item exists, otherwise `false`.
 
-@example:
-const shape = diagram.data.exists("1"); 
+### Example
 
-@descr:
+~~~js
+const shape = diagram.data.exists("1"); 
+~~~
 

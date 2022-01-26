@@ -6,22 +6,33 @@ description: You can learn about the load method of data collection in the docum
 
 # load()
 
+### Description
+
 @short: loads data from an external file
 
-@signature: {`load?(url: IDataProxy | string, driver?: DataDriver): Promise<any>;`}
+### Usage
 
-@params:
+~~~js
+load?(url: IDataProxy | string, driver?: DataDriver): Promise<any>;
+~~~
+
+### Parameters
+
 
 - `url: IDataProxy | string` - the URL of an external file or DataProxy with the URL configured
 - `driver: string` - optional, DataDriver or type of data ("json", "csv", "xml"), "json" by default
 
-@returns:
+### Returns
+
 A promise of data loading.
 
-@example:
-diagram.data.load("../common/data.json");
+### Example
 
-@relatedsample:
+~~~js
+diagram.data.load("../common/data.json");
+~~~
+
+
 **Related sample**: [Diagram. Data. Data loading](https://snippet.dhtmlx.com/09isp2d8)
 
 @descr:
@@ -36,6 +47,4 @@ diagram.data.load("../some/data").then(function(){
 });
 ~~~
 
-#### Related articles
-
-[Loading and storing data](../../../guides/loading_data/)
+**Related articles**:  [Loading and storing data](../../../guides/loading_data/)

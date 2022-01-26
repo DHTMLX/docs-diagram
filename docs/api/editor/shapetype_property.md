@@ -6,21 +6,26 @@ description: You can learn about the shapeType property of editor in the documen
 
 # shapeType
 
+### Description
+
 @short: the type of the items
 
-@signature: {`shapeType?: string;`}
+### Usage
+
+~~~js
+shapeType?: string;
+~~~
 
 @default: "rectangle" (in the default mode), "card" (in the org chart mode), "topic" (in the mindmap mode)
 
-@example:
+### Example
+
+~~~js
 const editor = new dhx.DiagramEditor("editor_container", {
     shapeType: "rectangle",
 });
-
-@descr:
+~~~
 
 This value is applied, if the shape object doesn't contain the "type" property.
 
-#### Related articles
-
-[Default Shapes](../../../shapes/default_shapes/)
+**Related articles**:  [Default Shapes](../../../shapes/default_shapes/)

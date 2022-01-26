@@ -6,15 +6,24 @@ description: You can learn about the beforeSelect event in the documentation of 
 
 # beforeSelect
 
+### Description
+
 @short: fires on selecting an item, but before the item is really selected
 
-@signature: {`beforeSelect: (id: Id, subId?: Id | undefined) => void | boolean;`}
+### Usage
 
-@params:
+~~~js
+beforeSelect: (id: Id, subId?: Id | undefined) => void | boolean;
+~~~
+
+### Parameters
+
 - `id: string | number` - the item id
 - `subId: string | number | undefined` - optional, the id of a subheader of a swimlane or a text element of a line
 
-@example:
+### Example
+
+~~~js
 const diagram = new dhx.Diagram("diagram_container", { 
     type: "org", 
     select: true        
@@ -24,16 +33,13 @@ diagram.events.on("BeforeSelect", function(id) {
 	console.log("Selecting " + diagram.data.getItem(id).text);
 	return true;
 });
+~~~
 
-@descr:
 **Related sample**: [Diagram. Org chart mode. Events](https://snippet.dhtmlx.com/l38pct7c)
 
 Returning *false* from the handler will block the selection.
 
-@changelog:
-SubId parameter has been added in v4.1.
+**Change log**: SubId parameter has been added in v4.1.
 
-#### Related articles
-
-- [diagram.config.select](../../../api/diagram/select_property/)
+**Related articles**:  - [diagram.config.select](../../../api/diagram/select_property/)
 - [Selecting items](../../../guides/manipulating_items/#selecting-items)

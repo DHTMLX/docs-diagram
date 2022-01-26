@@ -6,11 +6,19 @@ description: You can learn about the resetSwimlane method of Cell Manager in the
 
 # resetSwimlane()
 
+### Description
+
 @short: resets active swimlane
 
-@signature: {`resetSwimlane(): void;`}
+### Usage
 
-@example:
+~~~js
+resetSwimlane(): void;
+~~~
+
+### Example
+
+~~~js
 // initialization of the diagram
 const diagram = new dhx.Diagram("diagram_container", {
     // config options
@@ -22,13 +30,8 @@ diagram.cellManager.setSwimlane("main"); // sets active swimlane
 // your actions with swimlane
 
 diagram.cellManager.resetSwimlane(); // resets active swimlane
+~~~
 
-@descr:
+**Change log**: Added in v4.0
 
-@changelog:
-Added in v4.0
-
-@descr:
-#### Related articles
-
-[Configuring Swimlanes](../../../swimlanes/index/)
+**Related articles**: [Configuring Swimlanes](../../../swimlanes/index/)

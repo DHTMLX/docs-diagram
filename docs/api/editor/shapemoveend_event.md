@@ -6,16 +6,25 @@ description: You can learn about the shapeMoveEnd event of editor in the documen
 
 # shapeMoveEnd
 
+### Description
+
 @short: fires after a shape is moved
 
-@signature: {`shapeMoveEnd: (events: MouseEvent, id: Id, coord: IBaseCoords) => void;`}
+### Usage
 
-@params:
+~~~js
+shapeMoveEnd: (events: MouseEvent, id: Id, coord: IBaseCoords) => void;
+~~~
+
+### Parameters
+
 - `events: MouseEvent` - a native HTML event object
 - `id: string | number` - the id of a shape
 - `coord: object` - an object with the x and y coordinates of the shape position after movement
 
-@example:
+### Example
+
+~~~js
 editor.events.on("shapeMoveEnd", (event, id, coordinates) => {
     console.log(`
         Shape ${id} is position:
@@ -23,8 +32,6 @@ editor.events.on("shapeMoveEnd", (event, id, coordinates) => {
             y: ${coordinates.y}
     `);
 });
+~~~
 
-@descr:
-
-@changelog:
-Added in v4.0.
+**Change log**: Added in v4.0.

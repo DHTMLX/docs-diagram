@@ -6,9 +6,15 @@ description: You can learn about the shapeToolbar property of editor in the docu
 
 # shapeToolbar
 
+### Description
+
 @short: defines which controls should be shown in the personal toolbar of diagram items
 
-@signature: {`shapeToolbar: boolean | DefaultShapeToolbar;`}
+### Usage
+
+~~~js
+shapeToolbar: boolean | DefaultShapeToolbar;
+~~~
 
 @descr:
 
@@ -47,6 +53,4 @@ The array can include:
 
 The most recommended option is to enable the default set of controls by specifying *true* value in the **shapeToolbar** array and create your own control(s) by adding an icon object to the array. 
 
-#### Related articles
-
-[Grid Area](../../../guides/diagram_editor/grid_area/)
+**Related articles**:  [Grid Area](../../../guides/diagram_editor/grid_area/)

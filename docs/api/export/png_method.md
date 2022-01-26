@@ -6,15 +6,24 @@ description: You can learn about the png method in the documentation of the DHTM
 
 # png
 
+### Description
+
 @short: exports a diagram to a PNG file
 
-@signature: {`png(config: any): void;`}
+### Usage
 
-@params:
+~~~js
+png(config: any): void;
+~~~
+
+### Parameters
+
 
 `config: object` - optional, an object with export settings (see the list below)
 
-@example:
+### Example
+
+~~~js
 
 // default export
 diagram.export.png();
@@ -24,8 +33,9 @@ diagram.export.png({
 	type:"jpeg",
 	fullPage:true
 });
+~~~
 
-@relatedsample:
+
 **Related samples**: [Diagram. Export. Export diagram](https://snippet.dhtmlx.com/ybpmz0zk)
 
 @descr:
@@ -46,6 +56,4 @@ You can specify the following settings for export to PNG:
 	- **height** - (*number*) the height of clipping area.
 - **omitBackground** -  (*boolean*) hides the default white background and allows capturing screenshots with transparency. 
 
-#### Related articles
-
-[Exporting Diagram](../../../guides/data_export/)
+**Related articles**:  [Exporting Diagram](../../../guides/data_export/)

@@ -6,19 +6,29 @@ description: You can learn about the beforeGroupMove event of editor in the docu
 
 # beforeGroupMove
 
+### Description
+
 @short: fires before a group or swimlane is moved
 
-@signature: {`beforeGroupMove: (events: MouseEvent, id: Id, coord: IBaseCoords) => boolean | void;`}
+### Usage
 
-@params:
+~~~js
+beforeGroupMove: (events: MouseEvent, id: Id, coord: IBaseCoords) => boolean | void;
+~~~
+
+### Parameters
+
 - `events: MouseEvent` - a native HTML event object
 - `id: string | number` - the id of an item
 - `coord: object` - am object with the x and y coordinates of the group or swimlane position before movement
 
-@returns:
+### Returns
+
 Return `false` to prevent the group or swimlane from being moved; otherwise, `true`.
 
-@example:
+### Example
+
+~~~js
 editor.events.on("beforeGroupMove", (event, id, coordinates) => {
     console.log(`
         Group ${id} is position:
@@ -27,8 +37,6 @@ editor.events.on("beforeGroupMove", (event, id, coordinates) => {
     `);
     return true;
 });
+~~~
 
-@descr:
-
-@changelog:
-Added in v4.0.
+**Change log**: Added in v4.0.

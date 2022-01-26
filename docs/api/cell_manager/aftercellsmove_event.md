@@ -6,24 +6,28 @@ description: You can learn about the afterCellsMove event of Cell Manager in the
 
 # afterCellsMove
 
+### Description
+
 @short: fires after cells of the swimlane are moved
 
-@signature: {`afterCellsMove: (swimlaneId: Id) => void;`}
+### Usage
 
-@params:
+~~~js
+afterCellsMove: (swimlaneId: Id) => void;
+~~~
+
+### Parameters
+
 `swimlaneId: string | number` - the id of the item
 
-@example:
+### Example
+
+~~~js
 diagram.events.on("afterCellsMove", (swimlaneId) => {
     console.log(swimlaneId);
 });
+~~~
 
-@descr:
+**Change log**: Added in v4.0
 
-@changelog:
-Added in v4.0
-
-@descr:
-#### Related articles
-
-[Configuring Swimlanes](../../../swimlanes/index/)
+**Related articles**: [Configuring Swimlanes](../../../swimlanes/index/)

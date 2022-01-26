@@ -6,25 +6,34 @@ description: You can learn about the add method of data collection in the docume
 
 # add()
 
+### Description
+
 @short: adds a new item to the diagram
 
-@signature: {`add(new_item: IDataItem | IDataItem[]): Id | Id[];`}
+### Usage
 
-@params:
+~~~js
+add(new_item: IDataItem | IDataItem[]): Id | Id[];
+~~~
+
+### Parameters
+
 `new_item: object | array` - the object of a new item or an array of item objects
 
-@returns: 
+### Returns
+ 
 Either a string with the item's id or an array of string values with ids of items.
 
-@example:
-diagram.data.add({ id: "3.2", text: "New Item", parent: "3" });
+### Example
 
-@relatedsample:
+~~~js
+diagram.data.add({ id: "3.2", text: "New Item", parent: "3" });
+~~~
+
+
 **Related sample**: [Diagram. Data. Add/delete item](https://snippet.dhtmlx.com/8wi20uop)
 
-@descr:
-
-## Details
+### Details
 
 There are two ways to link shapes, you can add a shape with a parent ID defined:
 
@@ -40,6 +49,4 @@ diagram.data.add({ type: "line",  from: "3", to: "3.2" });
 ~~~
 
 
-#### Related articles
-
-[Adding an item](../../../guides/manipulating_items/#adding-an-item)
+**Related articles**:  [Adding an item](../../../guides/manipulating_items/#adding-an-item)

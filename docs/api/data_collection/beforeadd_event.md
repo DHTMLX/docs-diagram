@@ -6,26 +6,35 @@ description: You can learn about the beforeAdd event of data collection in the d
 
 # beforeAdd
 
+### Description
+
 @short: fires before adding an item
 
-@signature: {`beforeAdd: (newItem: any) => boolean | void;`}
+### Usage
 
-@params:
+~~~js
+beforeAdd: (newItem: any) => boolean | void;
+~~~
+
+### Parameters
+
 - `newItem: object` - the object of an added item
 
-@returns:
+### Returns
+
 Return `false` to prevent adding an item into a data collection; otherwise, `true`.
 
-@example:
+### Example
+
+~~~js
 diagram.events.on("beforeAdd", function(id){
 	if (some_check)
 		return false;
 	return true;
 });
+~~~
 
-@relatedsample:
+
 **Related sample**: [Diagram. Org chart mode. Events](https://snippet.dhtmlx.com/l38pct7c)
-
-@descr:
 
 Returning *false* from the event handler will prevent item adding.

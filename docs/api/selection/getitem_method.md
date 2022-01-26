@@ -6,20 +6,28 @@ description: You can learn about the getItem method of selection in the document
 
 # getItem()
 
+### Description
+
 @short: returns the object of the selected item
 
-@signature: {`getItem(): any;`}
+### Usage
 
-@returns:
+~~~js
+getItem(): any;
+~~~
+
+### Returns
+
 The object of a selected item.
 
-@example:
+### Example
+
+~~~js
 const shape = diagram.selection.getItem();
 // -> {id: "3", text: "Technical Director", title: "Jerry Wagner", …}
+~~~
 
-@descr:
-
-#### Related articles
+**Related articles**:  
 
 - [diagram.config.select](../../../api/diagram/select_property/)
 - [Selecting items](../../../guides/manipulating_items/#selecting-items)

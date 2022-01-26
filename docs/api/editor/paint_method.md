@@ -6,11 +6,18 @@ description: You can learn about the paint method of editor in the documentation
 
 # paint()
 
+### Description
+
 @short: repaints the editor
 
-@signature: {`paint(): void;`}
+### Usage
 
-@example:
+~~~js
+paint(): void;
+~~~
+
+### Example
+
+~~~js
 editor.paint();
-
-@descr:
+~~~

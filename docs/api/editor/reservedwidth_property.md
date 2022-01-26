@@ -6,13 +6,20 @@ description: You can learn about the reservedWidth property of editor in the doc
 
 # reservedWidth
 
+### Description
+
 @short: defines the left offset for the diagram
 
-@signature: {`reservedWidth: number;`}
+### Usage
 
-@example:
+~~~js
+reservedWidth: number;
+~~~
+
+### Example
+
+~~~js
 const editor = new dhx.DiagramEditor("editor_container", {
     reservedWidth: 150
 });
-
-@descr:
+~~~

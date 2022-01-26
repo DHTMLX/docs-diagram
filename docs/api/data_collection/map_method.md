@@ -6,20 +6,29 @@ description: You can learn about the map method of data collection in the docume
 
 # map()
 
+### Description
+
 @short: iterates through all items of the diagram
 
-@signature: {`map(callback: DataCallback<T>): T[];`}
+### Usage
 
-@params:
+~~~js
+map(callback: DataCallback<T>): T[];
+~~~
+
+### Parameters
+
 - `callback: function` - a function that will be called for each item of a diagram
 
-@returns:
+### Returns
+
 A new array of items where each item is the result of the callback function.
 
-@example:
+### Example
+
+~~~js
 //getting ids of all items of the diagram (shapes, links, groups, swimlanes)
 diagram.data.map(function(item){
     console.log(item.id);
 });
-
-@descr:
+~~~

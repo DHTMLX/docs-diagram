@@ -6,15 +6,24 @@ description: You can learn about the add method of Cell Manager in the documenta
 
 # add()
 
+### Description
+
 @short: adds cells as rows or columns to a swimlane
 
-@signature: {`add(cellIndex: number, dir: ActionDirection): void;`}
+### Usage
 
-@params:
+~~~js
+add(cellIndex: number, dir: ActionDirection): void;
+~~~
+
+### Parameters
+
 - `cellIndex: number` - the start index of a cell in a layout
 - `dir: "up" | "down" | "left" | "right"` - the direction of the action
 
-@example:
+### Example
+
+~~~js
 // initialization of the diagram
 const diagram = new dhx.Diagram("diagram_container", {
     // config options
@@ -24,6 +33,7 @@ diagram.data.parse(data);
 diagram.cellManager.setSwimlane("main"); // sets active swimlane
 
 diagram.cellManager.add(0, "down"); // adds cells as rows
+~~~
 
 @descr:
 
@@ -32,10 +42,6 @@ The count of the index starts from 0.
 The **add** method is automatically validated by the system. The cell won't be added if it is not possible according to the structure of the swimlane.
 
 
-@changelog:
-Added in v4.0
+**Change log**: Added in v4.0
 
-@descr:
-#### Related articles
-
-[Configuring Swimlanes](../../../swimlanes/index/)
+**Related articles**: [Configuring Swimlanes](../../../swimlanes/index/)

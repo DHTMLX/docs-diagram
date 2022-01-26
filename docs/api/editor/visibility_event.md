@@ -6,13 +6,20 @@ description: You can learn about the visibility event of editor in the documenta
 
 # visibility
 
+### Description
+
 @short: fires after the Visibility button has been clicked
 
-@signature: {`visibility: () => void;`}
+### Usage
 
-@example:
+~~~js
+visibility: () => void;
+~~~
+
+### Example
+
+~~~js
 editor.events.on("visibility", function() {
     console.log("The side panels are hidden");
 });
-
-@descr:
+~~~

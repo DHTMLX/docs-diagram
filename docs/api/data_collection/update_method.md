@@ -6,22 +6,28 @@ description: You can learn about the update method of data collection in the doc
 
 # update()
 
+### Description
+
 @short: updates properties of the item
 
-@signature: {`updateUrl?: (id: string | number, newItem: IUpdateObject) => void;`}
+### Usage
 
-@params:
+~~~js
+updateUrl?: (id: string | number, newItem: IUpdateObject) => void;
+~~~
+
+### Parameters
+
 
 - `id: string | number` - the id of the item which needs to be updated
 - `newItem: object` - a hash of properties which need to be updated
 
-@example:
-diagram.data.update(123, { text:"New text" });
+### Example
 
-@descr:
+~~~js
+diagram.data.update(123, { text:"New text" });
+~~~
 
 The command can't be used to change the *id* or *type* of the item.
 
-#### Related articles
-
-[Updating an item](../../../guides/manipulating_items/#updating-an-item)
+**Related articles**:  [Updating an item](../../../guides/manipulating_items/#updating-an-item)

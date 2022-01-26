@@ -6,17 +6,26 @@ description: You can learn about the getIndex method of data collection in the d
 
 # getIndex()
 
+### Description
+
 @short: returns the index of the item by its id
 
-@signature: {`getIndex(id: Id): number;`}
+### Usage
 
-@params:
+~~~js
+getIndex(id: Id): number;
+~~~
+
+### Parameters
+
 `id: string` - the id of the item
 
-@returns:
+### Returns
+
 The index of the item.
 
-@example:
-const index = diagram.data.getIndex("1"); // -> returns 0
+### Example
 
-@descr:
+~~~js
+const index = diagram.data.getIndex("1"); // -> returns 0
+~~~

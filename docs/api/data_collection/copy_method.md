@@ -6,19 +6,28 @@ description: You can learn about the copy method of data collection in the docum
 
 # copy()
 
+### Description
+
 @short: creates a copy of an item at the defined position
 
-@signature: {`id: Id | Id[], index: number, target?: IDataCollection): Id | Id[];`}
+### Usage
 
-@params:
+~~~js
+id: Id | Id[], index: number, target?: IDataCollection): Id | Id[];
+~~~
+
+### Parameters
+
 - `id: string | number | array` - the id(s) of an item(s) to copy
 - `index: number` - the index to create a copy at
 - `target: object` - optional, the target data collection object
 
-@returns:
+### Returns
+
 The item's id or an array with ids of items.
 
-@example:
-diagram.data.copy("4",5); // copies the shape with id=4 to the position with index 5
+### Example
 
-@descr:
+~~~js
+diagram.data.copy("4",5); // copies the shape with id=4 to the position with index 5
+~~~

@@ -6,16 +6,24 @@ description: You can learn about the getRoots method of data collection in the d
 
 # getRoots()
 
+### Description
+
 @short: returns an array with ids of all root items of the diagram
 
-@signature: {`getRoots(): Id[]`}
+### Usage
 
-@returns:
+~~~js
+getRoots(): Id[]
+~~~
+
+### Returns
+
 An array with the ids of the root items.
 
-@example:
+### Example
+
+~~~js
 diagram.data.getRoots();
+~~~
 
-@descr:
-
-@changelog: Added in v4.0
+**Change log**: Added in v4.0

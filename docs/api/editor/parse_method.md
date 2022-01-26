@@ -6,14 +6,23 @@ description: You can learn about the parse method of editor in the documentation
 
 # parse()
 
+### Description
+
 @short: loads data into the editor from a local data source
 
-@signature: {`parse(data: IDataItem[]): void;`}
+### Usage
 
-@params:
+~~~js
+parse(data: IDataItem[]): void;
+~~~
+
+### Parameters
+
 `data: any` - the data that should be parsed into the editor
 
-@example:
+### Example
+
+~~~js
 const data = [
     // shapes
     {
@@ -44,8 +53,7 @@ const data = [
 
 const editor = new dhx.DiagramEditor("editor_container"); 
 editor.parse(data);
-
-@descr:
+~~~
 
 **Related samples**:
 - [Diagram editor. Default mode. Basic initialization](https://snippet.dhtmlx.com/xshe9ut7)

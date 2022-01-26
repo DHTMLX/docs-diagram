@@ -6,26 +6,30 @@ description: You can learn about the afterCellsValidation event of Cell Manager 
 
 # afterCellsValidation
 
+### Description
+
 @short: fires after cells of the swimlane are validated
 
-@signature: {`afterCellsValidation: (swimlaneId: Id, validate: boolean, action: ActionValidate) => void;`}
+### Usage
 
-@params:
+~~~js
+afterCellsValidation: (swimlaneId: Id, validate: boolean, action: ActionValidate) => void;
+~~~
+
+### Parameters
+
 - `swimlaneId: string | number` - the id of the item
 - `validate: boolean` - validated or not validated
 - `action: "move" | "remove" | "add"` - the type of the action
 
-@example:
+### Example
+
+~~~js
 diagram.events.on("afterCellsValidation", (swimlaneId, validate, action) => {
     console.log(swimlaneId, validate, action);
 });
+~~~
 
-@descr:
+**Change log**: Added in v4.0
 
-@changelog:
-Added in v4.0
-
-@descr:
-#### Related articles
-
-[Configuring Swimlanes](../../../swimlanes/index/)
+**Related articles**: [Configuring Swimlanes](../../../swimlanes/index/)

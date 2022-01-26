@@ -6,19 +6,29 @@ description: You can learn about the beforeItemMove event of editor in the docum
 
 # beforeItemMove
 
+### Description
+
 @short: fires before an item is moved
 
-@signature: {`beforeItemMove: (events: MouseEvent, id: Id, coord: IBaseCoords) => boolean | void;`}
+### Usage
 
-@params:
+~~~js
+beforeItemMove: (events: MouseEvent, id: Id, coord: IBaseCoords) => boolean | void;
+~~~
+
+### Parameters
+
 - `events: MouseEvent` - a native HTML event object
 - `id: string | number` - the id of an item
 - `coord: object` - an object with the x and y coordinates of the item position before movement
 
-@returns:
+### Returns
+
 Return `false` to prevent the item from being moved; otherwise, `true`.
 
-@example:
+### Example
+
+~~~js
 editor.events.on("beforeItemMove", (event, id, coordinates) => {
     console.log(`
         Item ${id} is position: 
@@ -27,9 +37,8 @@ editor.events.on("beforeItemMove", (event, id, coordinates) => {
     `);
     return true;
 });
+~~~
 
-@descr:
 The event doesn't work with the line object.
 
-@changelog:
-Added in v4.0.
+**Change log**: Added in v4.0.

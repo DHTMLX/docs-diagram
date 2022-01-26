@@ -6,30 +6,35 @@ description: You can learn about the beforeCellsValidation event of Cell Manager
 
 # beforeCellsValidation
 
+### Description
+
 @short: fires before cells of the swimlane are validated
 
-@signature: {`beforeCellsValidation: (swimlaneId: Id, action: ActionValidate) => boolean | void;`}
+### Usage
 
-@params:
+~~~js
+beforeCellsValidation: (swimlaneId: Id, action: ActionValidate) => boolean | void;
+~~~
+
+### Parameters
+
 - `swimlaneId: string | number` - the id of the item
 - `action: "move" | "remove" | "add"` - the type of the action
 
-@returns:
+### Returns
+
 `False` to prevent validation of new cells, otherwise `true`.
 
-@example:
+### Example
+
+~~~js
 diagram.events.on("beforeCellsValidation", (swimlaneId, action) => {
     console.log(swimlaneId, action);
     return true;
 });
+~~~
 
-@descr:
+**Change log**: Added in v4.0
 
-@changelog:
-Added in v4.0
-
-@descr:
-#### Related articles
-
-[Configuring Swimlanes](../../../swimlanes/index/)
+**Related articles**: [Configuring Swimlanes](../../../swimlanes/index/)
 

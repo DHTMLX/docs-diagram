@@ -6,6 +6,8 @@ description: You can learn about the lineTitleClick event in the documentation o
 
 # lineTitleClick
 
+### Description
+
 @short: fires on clicking a text element of a line
 @descr:
 

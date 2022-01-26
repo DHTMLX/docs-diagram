@@ -6,21 +6,26 @@ description: You can learn about the getId method of selection in the documentat
 
 # getId()
 
+### Description
+
 @short: returns the id of the selected item
 
-@signature: {`getId(): Id;`}
+### Usage
 
-@returns:
+~~~js
+getId(): Id;
+~~~
+
+### Returns
 
 The id of the selected item.
 
-@example:
+### Example
 
+~~~js
 const id = diagram.selection.getId(); // -> "2"
+~~~
 
-@descr:
-
-#### Related articles
-
+**Related articles**:  
 - [diagram.config.select](../../../api/diagram/select_property/)
 - [Selecting items](../../../guides/manipulating_items/#selecting-items)

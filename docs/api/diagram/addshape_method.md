@@ -8,7 +8,7 @@ description: You can learn about the addShape method in the documentation of the
 
 :::info
 The **addShape()** method can be used both in the diagram and in the editor. <br>Check the **related sample**: [Diagram. Mindmap mode. Site map and user flow example](https://snippet.dhtmlx.com/do1jwmw1).
-::: 
+:::
 
 ### Description
 

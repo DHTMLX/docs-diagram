@@ -6,15 +6,24 @@ description: You can learn about the filter method of data collection in the doc
 
 # filter()
 
+### Description
+
 @short: filters items in the diagram
 
-@signature: {`filter(rule?: IFilterCallback | IFilterMode, config?: IFilterConfig): void;`}
+### Usage
 
-@params:
+~~~js
+filter(rule?: IFilterCallback | IFilterMode, config?: IFilterConfig): void;
+~~~
+
+### Parameters
+
 - `rule: function | object` - the filtering criteria
 - `config: object` - optional, defines the parameters of filtering
 
-@example:
+### Example
+
+~~~js
 // filtering by the key of the shape attribute
 diagram.data.filter({ by: "text", match: "Read N" });
 
@@ -22,8 +31,9 @@ diagram.data.filter({ by: "text", match: "Read N" });
 diagram.data.filter(function (shape) {
     return shape.id > 3;
 });
+~~~
 
-@relatedsample:
+
 **Related sample**: [Diagram. Data. Filtering shapes](https://snippet.dhtmlx.com/tm43bsgn)
 
 To revert the diagram to the initial state, call the **filter()** method without parameters.
@@ -91,6 +101,4 @@ The **config** parameter may contain two properties:
     </tbody>
 </table>
 
-#### Related articles
-
-[Filtering items](../../../guides/manipulating_items/#filtering-items)
+**Related articles**:  [Filtering items](../../../guides/manipulating_items/#filtering-items)

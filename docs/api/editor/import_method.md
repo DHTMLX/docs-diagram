@@ -6,17 +6,25 @@ description: You can learn about the import method of editor in the documentatio
 
 # import()
 
+### Description
+
 @short: imports data from an existing diagram into the editor
 
-@signature: {`import(diagram: Diagram): void;`}
+### Usage
 
-@params:
+~~~js
+import(diagram: Diagram): void;
+~~~
+
+### Parameters
+
 `diagram: object` - the diagram object
 
-@example:
-editor.import(diagram);
+### Example
 
-@descr:
+~~~js
+editor.import(diagram);
+~~~
 
 **Related samples**: [Diagram editor. Org chart mode. Live editor](https://snippet.dhtmlx.com/bng7ego7)
 

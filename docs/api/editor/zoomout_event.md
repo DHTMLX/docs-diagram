@@ -6,13 +6,20 @@ description: You can learn about the zoomOut event of editor in the documentatio
 
 # zoomOut
 
+### Description
+
 @short: fires after the Zoom Out button has been clicked
 
-@signature: {`zoomOut: () => void;`}
+### Usage
 
-@example:
+~~~js
+zoomOut: () => void;
+~~~
+
+### Example
+
+~~~js
 editor.events.on("zoomOut", function() {
     console.log("The diagram in the editor is zoomed out");
 });
-
-@descr:
+~~~

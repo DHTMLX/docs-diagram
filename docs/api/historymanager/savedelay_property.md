@@ -6,13 +6,18 @@ description: You can learn about the disabled property of HistoryManager in the 
 
 # saveDelay
 
+### Description
+
 @short: sets the time interval for saving the current state in ms
 
-@signature: {`saveDelay: number;`}
+### Usage
+
+~~~js
+saveDelay: number;
+~~~
 
 @default: 500
 
 @descr:
 
-@changelog:
-Added in v4.1.
+**Change log**: Added in v4.1.

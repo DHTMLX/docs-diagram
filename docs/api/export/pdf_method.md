@@ -6,15 +6,24 @@ description: You can learn about the pdf method in the documentation of the DHTM
 
 # pdf()
 
+### Description
+
 @short: exports a diagram to a PDF file
 
-@signature: {`pdf(config: any): void;`}
+### Usage
 
-@params:
+~~~js
+pdf(config: any): void;
+~~~
+
+### Parameters
+
 
 `config: object` - optional, an object with export settings (see the list below)
 
-@example:
+### Example
+
+~~~js
 
 // default export
 diagram.export.pdf();
@@ -24,8 +33,9 @@ diagram.export.pdf({
 	url: "https://export.dhtmlx.com/diagram/2.0.0/pdf",
 	name:"result.pdf"
 });
+~~~
 
-@relatedsample:
+
 **Related samples**: [Diagram. Export. Export diagram](https://snippet.dhtmlx.com/ybpmz0zk)
 
 @descr:
@@ -62,6 +72,4 @@ You can specify the following settings for export to PDF:
 		- **bottom** (*string*) bottom margin, accepts values labeled with units;
 		- **left** (*string*) left margin, accepts values labeled with units.
 
-#### Related articles
-
-[Exporting Diagram](../../../guides/data_export/)
+**Related articles**:  [Exporting Diagram](../../../guides/data_export/)

@@ -6,27 +6,36 @@ description: You can learn about the beforeItemCatch event of editor in the docu
 
 # beforeItemCatch
 
+### Description
+
 @short: fires before an item is catched
 
-@signature: {`beforeItemCatch: (movedId: Id, targetId: Id, event: MouseEvent) => boolean | void;`}
+### Usage
 
-@params:
+~~~js
+beforeItemCatch: (movedId: Id, targetId: Id, event: MouseEvent) => boolean | void;
+~~~
+
+### Parameters
+
 - `movedId: string | number` - the id of the moved item
 - `targetId: string | number` - the id of the target item
 - `events: MouseEvent` - a native HTML event object
 
-@returns:
+### Returns
+
 Return `false` to prevent the item from being catched; otherwise, `true`.
 
-@example:
+### Example
+
+~~~js
 editor.events.on("beforeItemCatch", (movedId, targetId, event) => {
     console.log("beforeItemCatch", movedId, targetId, event);
     if (targetId === "2.1") return false;
 });
+~~~
 
-@descr:
 The event works in org chart and mindmap modes of Diagram, **itemsDraggable** property should be **true**.
 
-@changelog:
-
+**Change log**: 
 Added in v4.1.

@@ -6,19 +6,27 @@ description: You can learn about the afterAdd event of data collection in the do
 
 # afterAdd
 
+### Description
+
 @short: fires after adding an item
 
-@signature: {`afterAdd: (newItem: any) => void;`}
+### Usage
 
-@params:
+~~~js
+afterAdd: (newItem: any) => void;
+~~~
+
+### Parameters
+
 `newItem: object` - the object of an added item
 
-@example:
+### Example
+
+~~~js
 diagram.events.on("afterAdd", function(id){
 	console.log("A new item is added");
 });
-
-@descr:
+~~~
 
 Event can be used to provide default values or a default formatting for the item data.
 

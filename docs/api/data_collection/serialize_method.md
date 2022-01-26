@@ -6,18 +6,24 @@ description: You can learn about the serialize method of data collection in the 
 
 # serialize()
 
+### Description
+
 @short: serializes the diagram data into an array of JSON objects
 
-@signature: {`serialize(): T[];`}
+### Usage
 
-@returns:
+~~~js
+serialize(): T[];
+~~~
+
+### Returns
+
 An array of JSON objects for each item and link from Diagram.
 
-@example:
+### Example
+
+~~~js
 const data = diagram.data.serialize();
+~~~
 
-@descr:
-
-#### Related articles
-
-[Saving and restoring state](../../../guides/loading_data/#saving-and-restoring-state)
+**Related articles**:  [Saving and restoring state](../../../guides/loading_data/#saving-and-restoring-state)

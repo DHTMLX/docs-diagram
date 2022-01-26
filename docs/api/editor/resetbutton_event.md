@@ -6,13 +6,20 @@ description: You can learn about the resetButton event of editor in the document
 
 # resetButton
 
+### Description
+
 @short: fires after the Reset Changes button has been clicked
 
-@signature: {`resetButton: () => void;`}
+### Usage
 
-@example:
+~~~js
+resetButton: () => void;
+~~~
+
+### Example
+
+~~~js
 editor.events.on("resetButton",function(){
     console.log("The changes are reset");
 });
-
-@descr:
+~~~

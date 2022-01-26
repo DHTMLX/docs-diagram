@@ -6,23 +6,27 @@ description: You can learn about the getSubId method of selection in the documen
 
 # getSubId()
 
+### Description
+
 @short: returns the subId (if any) of the selected item
 
-@signature: {`getSubId(): Id;`}
+### Usage
 
-@returns:
+~~~js
+getSubId(): Id;
+~~~
+
+### Returns
+
 
 The subId (if any) of the selected item.
 
-@example:
+### Example
 
+~~~js
 const subid = diagram.selection.getSubId(); // -> "2"
+~~~
 
-@descr:
+**Change log**: Added in v4.1.
 
-@changelog:
-Added in v4.1.
-
-#### Related articles
-
-[Selecting items](../../../guides/manipulating_items/#selecting-items)
+**Related articles**:  [Selecting items](../../../guides/manipulating_items/#selecting-items)

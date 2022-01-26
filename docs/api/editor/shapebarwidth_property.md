@@ -6,22 +6,27 @@ description: You can learn about the shapeBarWidth property of editor in the doc
 
 # shapeBarWidth
 
+### Description
+
 @short: sets the width of the left panel of the editor
 
-@signature: {`shapeBarWidth?: number;`}
+### Usage
+
+~~~js
+shapeBarWidth?: number;
+~~~
 
 @default: 295px
 
 @descr:
 {{note The property is available only in the default mode of the editor (*type:"default"*).}}
 
-@example:
+### Example
+
+~~~js
 const editor = new dhx.DiagramEditor("editor_container", {
     shapeBarWidth: 190
 });
+~~~
 
-@descr:
-
-#### Related articles
-
-[Left Panel](../../../guides/diagram_editor/left_panel/)
+**Related articles**:  [Left Panel](../../../guides/diagram_editor/left_panel/)

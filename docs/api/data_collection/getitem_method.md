@@ -6,20 +6,29 @@ description: You can learn about the getItem method of data collection in the do
 
 # getItem()
 
+### Description
+
 @short: returns the object of an item by its id
 
-@signature: {`getItem(id: Id): T;`}
+### Usage
 
-@params:
+~~~js
+getItem(id: Id): T;
+~~~
+
+### Parameters
+
 `id: string | number` - the id of a selected item
 
-@returns:
+### Returns
+
 The object of an item.
 
-@example:
-const shape = diagram.data.getItem(123);
+### Example
 
-@descr:
+~~~js
+const shape = diagram.data.getItem(123);
+~~~
 
 You can access the original properties of an item like this:
 
@@ -29,6 +38,4 @@ const shape = diagram.data.getItem(123);
 const text = shape.text;
 ~~~
 
-#### Related articles
-
-[Getting an item](../../../guides/manipulating_items/#getting-an-item)
+**Related articles**:  [Getting an item](../../../guides/manipulating_items/#getting-an-item)

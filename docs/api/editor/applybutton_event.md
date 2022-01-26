@@ -6,13 +6,20 @@ description: You can learn about the applyButton event of editor in the document
 
 # applyButton
 
+### Description
+
 @short: fires after the Apply All button has been clicked
 
-@signature: {`applyButton: () => void;`}
+### Usage
 
-@example:
+~~~js
+applyButton: () => void;
+~~~
+
+### Example
+
+~~~js
 editor.events.on("applyButton", function(){
     console.log("The changes are applied");
 });
-
-@descr:
+~~~

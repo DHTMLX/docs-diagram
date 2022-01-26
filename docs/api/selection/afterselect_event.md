@@ -6,15 +6,24 @@ description: teYou can learn about the afterSelect event in the documentation of
 
 # afterSelect
 
+### Description
+
 @short: fires after selecting an item
 
-@signature: {`afterSelect: (id: Id, subId?: Id | undefined) => void;`}
+### Usage
 
-@params:
+~~~js
+afterSelect: (id: Id, subId?: Id | undefined) => void;
+~~~
+
+### Parameters
+
 - `id: string | number` - the item id
 - `subId: string | number | undefined` - optional, the id of a subheader of a swimlane or a text element of a line
 
-@example:
+### Example
+
+~~~js
 const diagram = new dhx.Diagram("diagram_container", { 
     type: "org", 
     select: true        
@@ -23,15 +32,11 @@ const diagram = new dhx.Diagram("diagram_container", {
 diagram.events.on("AfterSelect", function(id) {
 	console.log(diagram.data.getItem(id).text + " was selected");
 });
-
-@descr:
+~~~
 
 **Related sample**: [Diagram. Org chart mode. Events](https://snippet.dhtmlx.com/l38pct7c)
 
-@changelog:
-SubId parameter has been added in v4.1.
+**Change log**: SubId parameter has been added in v4.1.
 
-#### Related articles
-
-- [diagram.config.select](../../../api/diagram/select_property/)
+**Related articles**:  - [diagram.config.select](../../../api/diagram/select_property/)
 - [Selecting items](../../../guides/manipulating_items/#selecting-items)

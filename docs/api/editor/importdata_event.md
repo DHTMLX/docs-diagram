@@ -6,16 +6,24 @@ description: You can learn about the importData event of editor in the documenta
 
 # importData
 
+### Description
+
 @short: fires after the Import Data button has been clicked
 
-@signature: {`importData: (data) => void;`}
+### Usage
 
-@params:
+~~~js
+importData: (data) => void;
+~~~
+
+### Parameters
+
 `data: any` - the imported data
 
-@example:
+### Example
+
+~~~js
 editor.events.on("importData", function(data) {
     console.log("The data are imported from the JSON file");
 });
-
-@descr:
+~~~

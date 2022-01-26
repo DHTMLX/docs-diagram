@@ -6,24 +6,30 @@ description: You can learn about the afterCellsAdd event of Cell Manager in the 
 
 # afterCellsAdd
 
+### Description
+
 @short: fires after new cells are added to a swimlane
 
-@signature: {`afterCellsAdd: (swimlaneId: Id) => void;`}
+### Usage
 
-@params:
+~~~js
+afterCellsAdd: (swimlaneId: Id) => void;
+~~~
+
+### Parameters
+
 `swimlaneId: string | number` - the id of the item
 
-@example:
+### Example
+
+~~~js
 diagram.events.on("afterCellsAdd", (swimlaneId) => {
     console.log(swimlaneId);
 });
+~~~
 
 @descr:
 
-@changelog:
-Added in v4.0
+**Change log**: Added in v4.0
 
-@descr:
-#### Related articles
-
-[Configuring Swimlanes](../../../swimlanes/index/)
+**Related articles**: [Configuring Swimlanes](../../../swimlanes/index/)

@@ -6,13 +6,20 @@ description: You can learn about the shapeResize event of editor in the document
 
 # shapeResize
 
+### Description
+
 @short: fires after a shape has been resized
 
-@signature: {`shapeResize: () => void;`}
+### Usage
 
-@example:
+~~~js
+shapeResize: () => void;
+~~~
+
+### Example
+
+~~~js
 editor.events.on("shapeResize", function() {
     console.log("The shape is resized");
 });
-
-@descr:
+~~~

@@ -6,17 +6,27 @@ description: You can learn about the findAll method of data collection in the do
 
 # findAll()
 
+### Description
+
 @short: finds all the items that correspond to the specified parameters
 
-@signature: {`findAll(rule: IFilterMode | DataCallback<T>): T[];`}
+### Usage
 
-@params:
+~~~js
+findAll(rule: IFilterMode | DataCallback<T>): T[];
+~~~
+
+### Parameters
+
 `rule: object | function` - the search criteria
 
-@returns:
+### Returns
+
 An array of matching item objects.
 
-@example:
+### Example
+
+~~~js
 //searching for shapes by the attribute key
 const shapes = diagram.data.findAll({ by: "text", match: "Manager" });
 
@@ -26,8 +36,7 @@ const shapes = diagram.data.findAll(function (shapes) {
 		return true
 	}
 });
-
-@descr:
+~~~
 
 The **rule** parameter:
 
@@ -36,6 +45,4 @@ The **rule** parameter:
 	- **match** - (*string*) the value of the item attribute
 - if set as `DataCallback(item: T, index?: number, array?: T[])`, the search will be applied by the rule specified in the function.
 
-#### Related articles
-
-[Finding the necessary item](../../../guides/manipulating_items/#finding-the-necessary-item)
+**Related articles**:  [Finding the necessary item](../../../guides/manipulating_items/#finding-the-necessary-item)

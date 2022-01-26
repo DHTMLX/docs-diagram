@@ -6,17 +6,24 @@ description: You can learn about the zoomIn method of editor in the documentatio
 
 # zoomIn()
 
+### Description
+
 @short: zooms in the diagram
 
-@signature: {`zoomIn(step?: number): void;`}
+### Usage
 
-@params:
+~~~js
+zoomIn(step?: number): void;
+~~~
+
+### Parameters
+
 `step: number` - the step of zooming in the diagram; *by default: 0.05*
 
-@example:
+### Example
+
+~~~js
 editor.zoomIn(0.1);
+~~~
 
-@descr:
-
-@changelog:
-Added in v4.1.
+**Change log**: Added in v4.1.

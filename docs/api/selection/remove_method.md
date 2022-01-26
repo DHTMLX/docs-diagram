@@ -6,22 +6,33 @@ description: You can learn about the remove method of selection in the documenta
 
 # remove()
 
+### Description
+
 @short: unselects a previously selected item
 
-@signature: {`remove(id?: Id, subId?: Id): boolean`}
+### Usage
 
-@params:
+~~~js
+remove(id?: Id, subId?: Id): boolean
+~~~
+
+### Parameters
+
 - `id: string | number` - optional, the item id
 - `subId: string | number` - optional, the id of a subheader of a swimlane or a text element of a line
 
-@returns:
+### Returns
+
 `True` if the item is unselected, otherwise `false`.
 
-@example:
+### Example
+
+~~~js
 diagram.selection.remove("1"); // -> true
 diagram.paint();
+~~~
 
-@descr:
+
 **Related samples**:
 
 - [Diagram. Org chart mode. Item selection](https://snippet.dhtmlx.com/jyoxn5h7)
@@ -29,7 +40,5 @@ diagram.paint();
 
 {{note Please note that you need to call the paint() method to repaint the diagram after removing selection.}}
 
-#### Related articles
-
-- [diagram.config.select](../../../api/diagram/select_property/)
+**Related articles**:  - [diagram.config.select](../../../api/diagram/select_property/)
 - [Selecting items](../../../guides/manipulating_items/#selecting-items)

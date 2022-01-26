@@ -6,25 +6,32 @@ description: You can learn about the itemTarget event of editor in the documenta
 
 # itemTarget
 
+### Description
+
 @short: fires when the moved item is under the target item
 
-@signature: {`itemTarget: (movedId: Id, targetId: Id, event: MouseEvent) => boolean | void;`}
+### Usage
 
-@params:
+~~~js
+itemTarget: (movedId: Id, targetId: Id, event: MouseEvent) => boolean | void;
+~~~
+
+### Parameters
+
 - `movedId: string | number` - the id of the moved item
 - `targetId: string | number` - the id of the target item
 - `events: MouseEvent` - a native HTML event object
 
-@example:
+### Example
+
+~~~js
 editor.events.on("itemTarget", (movedId, targetId, event) => {
     console.log("itemTarget", movedId, targetId, event);
 });
+~~~
 
-@descr:
 The event works in org chart and mindmap modes of Diagram, **itemsDraggable** property should be **true**.
 
 The event doesn't work with the parent item of the moved item and with the moved item with the property **giveItem: false**.
 
-@changelog:
-
-Added in v4.1.
+**Change log**: Added in v4.1

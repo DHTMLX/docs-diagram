@@ -6,14 +6,22 @@ description: You can learn about the controls property of editor in the document
 
 # controls
 
+### Description
+
 @short: an object with settings to define which controls should be shown/hidden in the toolbar of the editor
 
-@signature: {`controls?: IEditorControls;`}
+### Usage
+
+~~~js
+controls?: IEditorControls;
+~~~
 
 @descr:
 The object can contain a set of *control_name:value* pairs where *value* is *true* (by default) or *false*.
 
-@example:
+### Example
+
+~~~js
 const editor = new dhx.DiagramEditor("editor_container", {
     controls: { 
         import: true,
@@ -24,8 +32,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
         reset: false
     }
 });
-
-@descr:
+~~~
 
 Here is the list of available controls:
 
@@ -39,6 +46,4 @@ Here is the list of available controls:
 - **scale** - (*boolean*) enables the Zoom group of buttons
 - **gridStep** - (*boolean*) enables the Grid Step sidebar option in the right panel of the editor
 
-#### Related articles
-
-[Toolbar](../../../guides/diagram_editor/toolbar/)
+**Related articles**:  [Toolbar](../../../guides/diagram_editor/toolbar/)

@@ -6,16 +6,25 @@ description: You can learn about the groupMoveEnd event of editor in the documen
 
 # groupMoveEnd
 
+### Description
+
 @short: fires after a group or swimlane is moved
 
-@signature: {`groupMoveEnd: (events: MouseEvent, id: Id, coord: IBaseCoords) => void;`}
+### Usage
 
-@params:
+~~~js
+groupMoveEnd: (events: MouseEvent, id: Id, coord: IBaseCoords) => void;
+~~~
+
+### Parameters
+
 - `events: MouseEvent` - a native HTML event object
 - `id: string | number` - the id of an item
 - `coord: object` - an object with the x and y coordinates of the group or swimlane position after movement
 
-@example:
+### Example
+
+~~~js
 editor.events.on("groupMoveEnd", (event, id, coordinates) => {
     console.log(`
         Group ${id} is position: 
@@ -23,8 +32,6 @@ editor.events.on("groupMoveEnd", (event, id, coordinates) => {
             y: ${coordinates.y}
     `);
 });
+~~~
 
-@descr:
-
-@changelog:
-Added in v4.0.
+**Change log**: Added in v4.0.

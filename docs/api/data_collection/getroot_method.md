@@ -6,22 +6,30 @@ description: You can learn about the getRoot method of data collection in the do
 
 # getRoot()
 
+### Description
+
 @short: returns the id of the root item by the id of its child
 
-@signature: {`getRoot(id: Id): Id;`}
+### Usage
 
-@params:
+~~~js
+getRoot(id: Id): Id;
+~~~
+
+### Parameters
+
 `id: string | number` - the id of the child item
 
-@returns:
+### Returns
+
 The id of the root item.
 
-@example:
-diagram.data.getRoot("id_1.1.1"); -> "id_1"
+### Example
 
-@descr:
+~~~js
+diagram.data.getRoot("id_1.1.1"); -> "id_1"
+~~~
 
 The root item is the first item of a tree structure.
 
-@changelog:
-Added in v4.0
+**Change log**: Added in v4.0

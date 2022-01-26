@@ -6,13 +6,20 @@ description: You can learn about the exportData event of editor in the documenta
 
 # exportData
 
+### Description
+
 @short: fires after the Export Data button has been clicked
 
-@signature: {`exportData: () => void;`}
+### Usage
 
-@example:
+~~~js
+exportData: () => void;
+~~~
+
+### Example
+
+~~~js
 editor.events.on("exportData", function() {
     console.log("The data are exported to the JSON format");
 });
-
-@descr:
+~~~

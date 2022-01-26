@@ -6,17 +6,26 @@ description: You can learn about the getId method of data collection in the docu
 
 # getId()
 
+### Description
+
 @short: returns the id of the item by its index
 
-@signature: {`getId(index: number): Id;`}
+### Usage
 
-@params:
+~~~js
+getId(index: number): Id;
+~~~
+
+### Parameters
+
 `index: number` - the index of the item
 
-@returns:
+### Returns
+
 The id of the item.
 
-@example:
-const id = diagram.data.getId(0); // -> returns "1"
+### Example
 
-@descr:
+~~~js
+const id = diagram.data.getId(0); // -> returns "1"
+~~~

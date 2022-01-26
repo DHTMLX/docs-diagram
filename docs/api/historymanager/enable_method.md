@@ -6,11 +6,16 @@ description: You can learn about the enable method of HistoryManager in the docu
 
 # enable()
 
+### Description
+
 @short: restarts the work of HistoryManager, the current state is saved as the beginning
 
-@signature: {`enable(): void;`}
+### Usage
+
+~~~js
+enable(): void;
+~~~
 
 @descr:
 
-@changelog:
-Added in v4.1.
+**Change log**: Added in v4.1.

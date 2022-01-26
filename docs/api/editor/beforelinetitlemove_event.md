@@ -6,20 +6,30 @@ description: You can learn about the beforeLineTitleMove event of editor in the 
 
 # beforeLineTitleMove
 
+### Description
+
 @short: fires before a text element of a line is moved
 
-@signature: {`beforeLineTitleMove: (events: MouseEvent, lineId: Id, titleId: Id, coord: IBaseCoords) => boolean | void;`}
+### Usage
 
-@params:
+~~~js
+beforeLineTitleMove: (events: MouseEvent, lineId: Id, titleId: Id, coord: IBaseCoords) => boolean | void;
+~~~
+
+### Parameters
+
 - `events: MouseEvent` - a native HTML event object
 - `lineId: string | number` - the id of a line
 - `titleId: string | number` - the id of a text element of a line
 - `coord: object` - an object with the x and y coordinates of the text element position before movement
 
-@returns:
+### Returns
+
 Return `false` to prevent the text element of a line from being moved; otherwise, `true`.
 
-@example:
+### Example
+
+~~~js
 editor.events.on("beforeLineTitleMove", (event, lineId, titleId, coordinates) => {
     console.log(`
         LineTitle ${id} is position:
@@ -28,9 +38,7 @@ editor.events.on("beforeLineTitleMove", (event, lineId, titleId, coordinates) =>
     `);
     return true;
 });
+~~~
 
-@descr:
-
-@changelog:
-
+**Change log**: 
 Added in v4.1.

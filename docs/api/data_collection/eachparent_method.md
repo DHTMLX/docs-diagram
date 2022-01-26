@@ -6,21 +6,28 @@ description: You can learn about the eachParent method of data collection in the
 
 # eachParent()
 
+### Description
+
 @short: iterates through all parents of the specified item
 
-@signature: {`eachParent(id: Id, callback: Callback, self?: boolean): void`}
+### Usage
 
-@params:
+~~~js
+eachParent(id: Id, callback: Callback, self?: boolean): void
+~~~
+
+### Parameters
+
 - `id: string | number` - the id of the item
 - `callback: function` - the function that will be applied to each parent of the item
 - `self: boolean` - optional, defines whether the callback function should iterate over the specified item itself; *false* by default
 
-@example:
+### Example
+
+~~~js
 diagram.data.eachParent("id_1.1.1", (item) => {
     console.log(item);
 }, false);
+~~~
 
-@descr:
-
-@changelog:
-Added in v4.0
+**Change log**: Added in v4.0

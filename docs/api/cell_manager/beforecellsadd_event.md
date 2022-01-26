@@ -6,28 +6,33 @@ description: You can learn about the beforeCellsAdd event of Cell Manager in the
 
 # beforeCellsAdd
 
+### Description
+
 @short: fires before new cells are added to a swimlane
 
-@signature: {`beforeCellsAdd: (swimlaneId: Id) => boolean | void;`}
+### Usage
 
-@params:
+~~~js
+beforeCellsAdd: (swimlaneId: Id) => boolean | void;
+~~~
+
+### Parameters
+
 `swimlaneId: string | number` - the id of the item
 
-@returns:
+### Returns
+
 `False` to prevent adding of new cells, otherwise `true`.
 
-@example:
+### Example
+
+~~~js
 diagram.events.on("beforeCellsAdd", (swimlaneId) => {
     console.log(swimlaneId);
     return true;
 });
+~~~
 
-@descr:
+**Change log**: Added in v4.0
 
-@changelog:
-Added in v4.0
-
-@descr:
-#### Related articles
-
-[Configuring Swimlanes](../../../swimlanes/index/)
+**Related articles**: [Configuring Swimlanes](../../../swimlanes/index/)

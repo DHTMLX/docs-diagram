@@ -6,17 +6,26 @@ description: You can learn about the afterLineTitleMove event of editor in the d
 
 # afterLineTitleMove
 
+### Description
+
 @short: fires when a text element of a line is moved one grid step
 
-@signature: {`afterLineTitleMove: (events: MouseEvent, lineId: Id, titleId: Id, coord: IBaseCoords) => void;`}
+### Usage
 
-@params:
+~~~js
+afterLineTitleMove: (events: MouseEvent, lineId: Id, titleId: Id, coord: IBaseCoords) => void;
+~~~
+
+### Parameters
+
 - `events: MouseEvent` - a native HTML event object
 - `lineId: string | number` - the id of a line
 - `titleId: string | number` - the id of a text element of a line
 - `coord: object` - an object with the x and y coordinates of the text element position after movement
 
-@example:
+### Example
+
+~~~js
 editor.events.on("afterLineTitleMove", (event, lineId, titleId, coordinates) => {
     console.log(`
         LineTitle ${id} is position:
@@ -24,9 +33,6 @@ editor.events.on("afterLineTitleMove", (event, lineId, titleId, coordinates) => 
             y: ${coordinates.y}
     `);
 });
+~~~
 
-@descr:
-
-@changelog:
-
-Added in v4.1.
+**Change log**: Added in v4.1

@@ -6,7 +6,7 @@ description: You can learn about the locate method in the documentation of the D
 
 # locate()
 
-### Description 
+### Description
 
 @short: gets the ID of an item from the specified HTML event or tag
 @descr:

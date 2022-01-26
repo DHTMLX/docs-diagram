@@ -6,17 +6,27 @@ description: You can learn about the find method of data collection in the docum
 
 # find()
 
+### Description
+
 @short: finds the item that corresponds to the specified parameters
 
-@signature: {`find(rule: IFilterMode | DataCallback<T>): T;`}
+### Usage
 
-@params:
+~~~js
+find(rule: IFilterMode | DataCallback<T>): T;
+~~~
+
+### Parameters
+
 `rule: object | function` - the search criteria
 
-@returns:
+### Returns
+
 The first object of the item that matches the specified criteria.
 
-@example:
+### Example
+
+~~~js
 //searching for a shape by the attribute key
 const shape = diagram.data.find({by:"text",match:"Manager"});
 
@@ -24,11 +34,11 @@ const shape = diagram.data.find({by:"text",match:"Manager"});
 const shape = diagram.data.find(function(shape){
 	if(shape.text==="Manager"||shape.text==="Marketer"){return true}
 });
+~~~
 
-@relatedsample:
+
 **Related sample**: [Diagram. Data. Finding necessary shape](https://snippet.dhtmlx.com/sete9z73)
 
-@descr:
 The **rule** parameter:
 
 - if set as an `IFilterMode` object, the parameter contains the following attributes:
@@ -37,6 +47,4 @@ The **rule** parameter:
 - if set as `DataCallback(item: T, index?: number, array?: T[])`, the search will be applied by the rule specified in the function.
 
 
-#### Related articles
-
-[Finding the necessary item](../../../guides/manipulating_items/#finding-the-necessary-item)
+**Related articles**:  [Finding the necessary item](../../../guides/manipulating_items/#finding-the-necessary-item)

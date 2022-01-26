@@ -6,24 +6,30 @@ description: You can learn about the afterCellsRemove event of Cell Manager in t
 
 # afterCellsRemove
 
+### Description
+
 @short: fires after cells of the swimlane are removed
 
-@signature: {`afterCellsRemove: (swimlaneId: Id) => void;`}
+### Usage
 
-@params:
+~~~js
+afterCellsRemove: (swimlaneId: Id) => void;
+~~~
+
+### Parameters
+
 `swimlaneId: string | number` - the id of the item
 
-@example:
+### Example
+
+~~~js
 diagram.events.on("afterCellsRemove", (swimlaneId) => {
     console.log(swimlaneId);
 });
+~~~
 
 @descr:
 
-@changelog:
-Added in v4.0
+**Change log**: Added in v4.0
 
-@descr:
-#### Related articles
-
-[Configuring Swimlanes](../../../swimlanes/index/)
+**Related articles**: [Configuring Swimlanes](../../../swimlanes/index/)

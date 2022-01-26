@@ -6,18 +6,26 @@ description: You can learn about the getNearId method of data collection in the 
 
 # getNearId()
 
+### Description
+
 @short: looks for a nearest item relative to the specified one
 
-@signature: {`getNearId(id: Id): Id;`}
+### Usage
 
-@params:
+~~~js
+getNearId(id: Id): Id;
+~~~
+
+### Parameters
 
 - `id: string | number` - the id of an item
 
-@returns:
+### Returns
+
 The id of the nearest item.
 
-@example:
-const nearId = diagram.data.getNearId(id);
+### Example
 
-@descr:
+~~~js
+const nearId = diagram.data.getNearId(id);
+~~~

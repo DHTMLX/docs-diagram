@@ -6,24 +6,32 @@ description: You can learn about the beforeShapeIconClick event of editor in the
 
 # beforeShapeIconClick
 
+### Description
+
 @short: fires before clicking a control in the per-item toolbar
 
-@signature: {`beforeShapeIconClick: (iconId: string, shape: IDataItem) => boolean | void;`}
+### Usage
 
-@params:
+~~~js
+beforeShapeIconClick: (iconId: string, shape: IDataItem) => boolean | void;
+~~~
+
+### Parameters
+
 - `iconId: string` - the type or id of the toolbar control
 - `shape: object` - an object with the item configuration
 
-@returns:
+### Returns
+
 Return `false` to prevent the toolbar control from being clicked; otherwise, `true`.
 
-@example:
+### Example
+
+~~~js
 editor.events.on("beforeShapeIconClick", function(iconId, shape) {
     console.log("You will click the", iconId, "toolbar control", shape);
     return true;
 });
+~~~
 
-@descr:
-
-@changelog:
-Added in v3.1
+**Change log**: Added in v3.1

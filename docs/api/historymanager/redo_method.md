@@ -6,11 +6,16 @@ description: You can learn about the redo method of HistoryManager in the docume
 
 # redo()
 
+### Description
+
 @short: takes a step forward in the history of changes
 
-@signature: {`redo(): void;`}
+### Usage
+
+~~~js
+redo(): void;
+~~~
 
 @descr:
 
-@changelog:
-Added in v4.1.
+**Change log**: Added in v4.1.

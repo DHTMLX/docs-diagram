@@ -6,9 +6,15 @@ description: You can learn about the defaults property of editor in the document
 
 # defaults
 
+### Description
+
 @short: an object which sets the default configuration of a shape
 
-@signature: {`defaults?: any;`}
+### Usage
+
+~~~js
+defaults?: any;
+~~~
 
 @descr:
 
@@ -16,7 +22,9 @@ The **defaults** object can contain a number of *key:value* pairs where *key* is
 
 {{note The *type* and *id* attributes can not be defined in the default configuration of a shape.}}
 
-@example:
+### Example
+
+~~~js
 // the default configuration settings for all shapes of the "rectangle" type
 const editor = new dhx.DiagramEditor("editor_container", {
     defaults: {
@@ -30,11 +38,9 @@ const editor = new dhx.DiagramEditor("editor_container", {
         }
     }
 });
+~~~
 
-@descr:
 After defining the default settings for the shape of a separate type, you can either omit these properties or redefine their values while preparing a data set for the shapes of this type.
 
-#### Related articles
-
-- [Setting the default configuration of a shape](../../../guides/diagram/configuration/#setting-the-default-configuration-of-a-shape)
+**Related articles**:  - [Setting the default configuration of a shape](../../../guides/diagram/configuration/#setting-the-default-configuration-of-a-shape)
 - [Setting shape preview](../../../guides/diagram_editor/left_panel/#setting-shape-preview)

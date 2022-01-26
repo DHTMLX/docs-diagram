@@ -6,15 +6,22 @@ description: You can learn about the load event of data collection in the docume
 
 # load
 
+### Description
+
 @short: fires when data is loaded into the diagram
 
-@signature: {`load: () => void;`}
+### Usage
 
-@example:
+~~~js
+load: () => void;
+~~~
+
+### Example
+
+~~~js
 diagram.events.on("load", function(){
 	// some logic here
 });
-
-@descr:
+~~~
 
 **Related sample**: [Diagram. Org chart mode. Events](https://snippet.dhtmlx.com/l38pct7c)

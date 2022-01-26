@@ -6,17 +6,24 @@ description: You can learn about the zoomOut method of editor in the documentati
 
 # zoomOut()
 
+### Description
+
 @short: zooms out the diagram
 
-@signature: {`zoomOut(step?: number): void;`}
+### Usage
 
-@params:
+~~~js
+zoomOut(step?: number): void;
+~~~
+
+### Parameters
+
 `step: number` - the step of zooming out the diagram; *by default 0.05*
 
-@example:
+### Example
+
+~~~js
 editor.zoomOut(0.1);
+~~~
 
-@descr:
-
-@changelog:
-Added in v4.1.
+**Change log**: Added in v4.1.

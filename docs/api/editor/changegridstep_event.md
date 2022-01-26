@@ -6,16 +6,24 @@ description: You can learn about the changeGridStep event of editor in the docum
 
 # changeGridStep
 
+### Description
+
 @short: fires after the value of the grid step has been changed
 
-@signature: {`changeGridStep: (step: number) => void;`}
+### Usage
 
-@params:
+~~~js
+changeGridStep: (step: number) => void;
+~~~
+
+### Parameters
+
 `step: number` - the current value of the grid step
 
-@example:
+### Example
+
+~~~js
 editor.events.on("changeGridStep", function(step) {
     console.log("The grid step is changed to:", step);
 });
-
-@descr:
+~~~

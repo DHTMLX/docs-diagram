@@ -6,13 +6,20 @@ description: You can learn about the zoomIn event of editor in the documentation
 
 # zoomIn
 
+### Description
+
 @short: fires after the Zoom In button has been clicked
 
-@signature: {`zoomIn: () => void;`}
+### Usage
 
-@example:
+~~~js
+zoomIn: () => void;
+~~~
+
+### Example
+
+~~~js
 editor.events.on("zoomIn", function() {
     console.log("The diagram in the editor is zoomed in");
 });
-
-@descr:
+~~~

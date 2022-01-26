@@ -6,26 +6,33 @@ description: You can learn about the afterEditorOpen event in the documentation 
 
 # afterEditorOpen
 
+### Description
+
 @short: fires after the inline editor of an item is opened
 
-@signature: {`afterEditorOpen: (id: Id, key: string, subId?: string) => void;`}
+### Usage
 
-@params:
+~~~js
+afterEditorOpen: (id: Id, key: string, subId?: string) => void;
+~~~
+
+### Parameters
+
 - `id: string | number` - the id of the item
 - `key: string` - the name of the edited property
 - `subId: string` - optional, the id of a subheader of a swimlane or a text element of a line
 
-@example:
+### Example
+
+~~~js
 diagram.events.on("afterEditorOpen", (id, key, subId) => {
     console.log(id, key, subId);
 });
-
-@descr:
+~~~
 
 **Related samples**:
 - [Diagram. Default mode. Events](https://snippet.dhtmlx.com/7h2hgb3g)
 - [Diagram. Org chart mode. Events](https://snippet.dhtmlx.com/l38pct7c)
 
-@changelog:
-- SubHeaderId parameter has been changed to subId in v4.1.
+**Change log**: - SubHeaderId parameter has been changed to subId in v4.1.
 - Added in v4.0.

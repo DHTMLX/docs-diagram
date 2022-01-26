@@ -6,9 +6,15 @@ description: You can learn about the type property of editor in the documentatio
 
 # type
 
+### Description
+
 @short: specifies the mode of the diagram editor
 
-@signature: {`type?: "default" | "org" | "mindmap";`}
+### Usage
+
+~~~js
+type?: "default" | "org" | "mindmap";
+~~~
 
 @descr:
 
@@ -27,7 +33,5 @@ Diagram Editor can be initialized in one of three modes:
 <iframe src="https://snippet.dhtmlx.com/lo1vm0e8?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="200"></iframe>
 
 
-#### Related articles
-
-- [Overview](../../../)
+**Related articles**:  - [Overview](../../../)
 - [How to start with Diagram Editor](../../../guides/diagram_editor/initialization/)
