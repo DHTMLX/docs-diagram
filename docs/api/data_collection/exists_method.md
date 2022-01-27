@@ -10,15 +10,17 @@ description: You can learn about the exists method of data collection in the doc
 
 @short: checks whether the specified item exists in the diagram
 
+@descr:
+
 ### Usage
 
 ~~~js
-exists(id: Id): boolean;
+exists(id: string | number): boolean;
 ~~~
 
 ### Parameters
 
-`id: string | number` - the id of the item in question
+`id` - (mandatory) the id of the item in question
 
 ### Returns
 

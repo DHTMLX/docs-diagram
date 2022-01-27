@@ -10,10 +10,12 @@ description: You can learn about the remove method of data collection in the doc
 
 @short: deletes the specified item from the diagram
 
+@descr:
+
 ### Usage
 
 ~~~js
-remove(id: Id | Id[]): void;
+remove(id: string | number | Id[]): void;
 ~~~
 
 ### Parameters

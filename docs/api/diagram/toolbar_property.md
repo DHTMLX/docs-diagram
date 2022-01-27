@@ -11,6 +11,7 @@ description: You can learn about the toolbar property in the documentation of th
 @short: optional, an array of icon objects which sets a toolbar with buttons for items
 @descr:
 
+
 ### Usage
 
 ~~~js

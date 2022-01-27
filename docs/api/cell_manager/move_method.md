@@ -10,6 +10,8 @@ description: You can learn about the move method of Cell Manager in the document
 
 @short: moves cells of the swimlane as rows or columns
 
+@descr:
+
 ### Usage
 
 ~~~js

@@ -10,17 +10,19 @@ description: You can learn about the afterItemMove event of editor in the docume
 
 @short: fires when an item is moved one grid step
 
+@descr:
+
 ### Usage
 
 ~~~js
-afterItemMove: (events: MouseEvent, id: Id, coord: IBaseCoords) => void;
+afterItemMove: (event: MouseEvent, id: string | number, coord: object) => void;
 ~~~
 
 ### Parameters
 
-- `events: MouseEvent` - a native HTML event object
-- `id: string | number` - the id of an item
-- `coord: object` - an object with the x and y coordinates of the item position after movement
+- `event` - (mandatory) a native HTML event object
+- `id` - (mandatory) the id of an item
+- `coord` - (mandatory) an object with the x and y coordinates of the item position after movement
 
 ### Example
 

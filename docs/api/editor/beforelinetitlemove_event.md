@@ -10,18 +10,20 @@ description: You can learn about the beforeLineTitleMove event of editor in the 
 
 @short: fires before a text element of a line is moved
 
+@descr:
+
 ### Usage
 
 ~~~js
-beforeLineTitleMove: (events: MouseEvent, lineId: Id, titleId: Id, coord: IBaseCoords) => boolean | void;
+beforeLineTitleMove: (event: MouseEvent, lineId: string | number, titleId: string | number, coord: object) => boolean | void;
 ~~~
 
 ### Parameters
 
-- `events: MouseEvent` - a native HTML event object
-- `lineId: string | number` - the id of a line
-- `titleId: string | number` - the id of a text element of a line
-- `coord: object` - an object with the x and y coordinates of the text element position before movement
+- `event` - (mandatory) a native HTML event object
+- `lineId` - (mandatory) the id of a line
+- `titleId` - (mandatory) the id of a text element of a line
+- `coord` - (mandatory) an object with the x and y coordinates of the text element position before movement
 
 ### Returns
 

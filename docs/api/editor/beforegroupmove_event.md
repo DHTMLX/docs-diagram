@@ -10,17 +10,19 @@ description: You can learn about the beforeGroupMove event of editor in the docu
 
 @short: fires before a group or swimlane is moved
 
+@descr:
+
 ### Usage
 
 ~~~js
-beforeGroupMove: (events: MouseEvent, id: Id, coord: IBaseCoords) => boolean | void;
+beforeGroupMove: (event: MouseEvent, id: string | number, coord: object) => boolean | void;
 ~~~
 
 ### Parameters
 
-- `events: MouseEvent` - a native HTML event object
-- `id: string | number` - the id of an item
-- `coord: object` - am object with the x and y coordinates of the group or swimlane position before movement
+- `event` - (mandatory) a native HTML event object
+- `id` - (mandatory) the id of an item
+- `coord` - (mandatory) am object with the x and y coordinates of the group or swimlane position before movement
 
 ### Returns
 

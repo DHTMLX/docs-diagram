@@ -10,6 +10,8 @@ description: You can learn about the getId method of data collection in the docu
 
 @short: returns the id of the item by its index
 
+@descr:
+
 ### Usage
 
 ~~~js

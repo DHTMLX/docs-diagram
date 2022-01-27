@@ -10,15 +10,17 @@ description: You can learn about the getItem method of data collection in the do
 
 @short: returns the object of an item by its id
 
+@descr:
+
 ### Usage
 
 ~~~js
-getItem(id: Id): T;
+getItem(id: string | number): T;
 ~~~
 
 ### Parameters
 
-`id: string | number` - the id of a selected item
+`id` - (mandatory) the id of a selected item
 
 ### Returns
 

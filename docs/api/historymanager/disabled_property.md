@@ -10,6 +10,8 @@ description: You can learn about the disabled property of HistoryManager in the 
 
 @short: enables/disables the work of HistoryManager
 
+@descr:
+
 ### Usage
 
 ~~~js

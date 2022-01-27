@@ -11,6 +11,7 @@ description: You can learn about the afterSubmenuOpen event in the documentation
 @short: fires after the menu of the subheader is opened
 @descr:
 
+
 ### Usage
 
 ~~~js

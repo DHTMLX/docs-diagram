@@ -12,6 +12,8 @@ description: You can learn about the groupHeaderDblClick event in the documentat
 @descr:
 If a double-click is done over a header of a swimlane, the event will be fired on the subheader of the swimlane
 
+@descr:
+
 ### Usage
 
 ~~~js

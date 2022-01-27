@@ -11,6 +11,7 @@ description: You can learn about the paint method in the documentation of the DH
 @short: repaints the diagram
 @descr:
 
+
 ### Usage
 
 ~~~jsx

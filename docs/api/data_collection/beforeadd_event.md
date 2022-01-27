@@ -10,15 +10,17 @@ description: You can learn about the beforeAdd event of data collection in the d
 
 @short: fires before adding an item
 
+@descr:
+
 ### Usage
 
 ~~~js
-beforeAdd: (newItem: any) => boolean | void;
+beforeAdd: (newItem: object) => boolean | void;
 ~~~
 
 ### Parameters
 
-- `newItem: object` - the object of an added item
+- `newItem` - (mandatory) the object of an added item
 
 ### Returns
 

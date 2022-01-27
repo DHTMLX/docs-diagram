@@ -10,6 +10,8 @@ description: You can learn about the type property of editor in the documentatio
 
 @short: specifies the mode of the diagram editor
 
+@descr:
+
 ### Usage
 
 ~~~js

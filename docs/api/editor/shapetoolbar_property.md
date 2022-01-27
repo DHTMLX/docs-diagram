@@ -10,6 +10,8 @@ description: You can learn about the shapeToolbar property of editor in the docu
 
 @short: defines which controls should be shown in the personal toolbar of diagram items
 
+@descr:
+
 ### Usage
 
 ~~~js

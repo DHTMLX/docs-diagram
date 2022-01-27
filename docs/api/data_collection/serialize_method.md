@@ -10,6 +10,8 @@ description: You can learn about the serialize method of data collection in the 
 
 @short: serializes the diagram data into an array of JSON objects
 
+@descr:
+
 ### Usage
 
 ~~~js

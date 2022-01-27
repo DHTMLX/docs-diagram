@@ -10,15 +10,17 @@ description: You can learn about the setSwimlane method of Cell Manager in the d
 
 @short: sets active swimlane for further actions with it
 
+@descr:
+
 ### Usage
 
 ~~~js
-setSwimlane(id: Id): boolean;
+setSwimlane(id: string | number): boolean;
 ~~~
 
 ### Parameters
 
-- `id: string | number` - the id of the swimlane
+- `id` - (mandatory) the id of the swimlane
 
 ### Returns
 

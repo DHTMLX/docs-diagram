@@ -10,17 +10,19 @@ description: You can learn about the afterItemCatch event of editor in the docum
 
 @short: fires after an item is catched
 
+@descr:
+
 ### Usage
 
 ~~~js
-afterItemCatch: (movedId: Id, targetId: Id, event: MouseEvent) => void;
+afterItemCatch: (movedId: string | number, targetId: string | number, event: MouseEvent) => void;
 ~~~
 
 ### Parameters
 
-- `movedId: string | number` - the id of the moved item
-- `targetId: string | number` - the id of the target item
-- `events: MouseEvent` - a native HTML event object
+- `movedId` - (mandatory) the id of the moved item
+- `targetId` - (mandatory) the id of the target item
+- `event` - (mandatory) a native HTML event object
 
 ### Example
 

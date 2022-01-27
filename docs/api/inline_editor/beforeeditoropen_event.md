@@ -10,17 +10,19 @@ description: You can learn about the beforeEditorOpen event in the documentation
 
 @short: fires before the inline editor of an item is opened
 
+@descr:
+
 ### Usage
 
 ~~~js
-beforeEditorOpen: (id: Id, key: string, subId?: string) => boolean | void;
+beforeEditorOpen: (id: string | number, key: string, subId?: string) => boolean | void;
 ~~~
 
 ### Parameters
 
-- `id: string | number` - the id of the item
-- `key: string` - the name of the property to be edited
-- `subId: string` - optional, the id of a subheader of a swimlane or a text element of a line
+- `id` - (mandatory) the id of the item
+- `key` - (mandatory) the name of the property to be edited
+- `subId` - (optional) the id of a subheader of a swimlane or a text element of a line
 
 ### Returns
 

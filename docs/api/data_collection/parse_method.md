@@ -10,6 +10,8 @@ description: You can learn about the parse method of data collection in the docu
 
 @short: loads data from a local data source
 
+@descr:
+
 ### Usage
 
 ~~~js
@@ -17,7 +19,6 @@ parse(data: T[] | string, driver?: IDataDriver | DataDriver): void;
 ~~~
 
 ### Parameters
-
 
 - `data: array | string` - the data to load
 - `driver: object | string` - optional, DataDriver or type of data ("json", "csv", "xml"), "json" by default

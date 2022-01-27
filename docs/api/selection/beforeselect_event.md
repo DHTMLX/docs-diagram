@@ -10,16 +10,18 @@ description: You can learn about the beforeSelect event in the documentation of 
 
 @short: fires on selecting an item, but before the item is really selected
 
+@descr:
+
 ### Usage
 
 ~~~js
-beforeSelect: (id: Id, subId?: Id | undefined) => void | boolean;
+beforeSelect: (id: string | number, subId?: string | number | undefined) => void | boolean;
 ~~~
 
 ### Parameters
 
-- `id: string | number` - the item id
-- `subId: string | number | undefined` - optional, the id of a subheader of a swimlane or a text element of a line
+- `id` - (mandatory) the item id
+- `subId` - (optional) the id of a subheader of a swimlane or a text element of a line
 
 ### Example
 

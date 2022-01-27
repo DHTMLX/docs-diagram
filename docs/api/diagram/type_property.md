@@ -11,6 +11,7 @@ description: You can learn about the type property in the documentation of the D
 @short: required, defines the mode of Diagram initialization 
 @descr:
 
+
 ### Usage
 
 ~~~js

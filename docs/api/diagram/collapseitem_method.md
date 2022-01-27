@@ -11,6 +11,7 @@ description: You can learn about the collapseItem method in the documentation of
 @short: hides all children of the target shape or collapses the group/swimlane
 @descr:
 
+
 ### Usage
 
 ~~~jsx

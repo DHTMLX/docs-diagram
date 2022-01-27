@@ -10,6 +10,8 @@ description: You can learn about the validation method of Cell Manager in the do
 
 @short: validates cells of the swimlane by the direction and action type
 
+@descr:
+
 ### Usage
 
 ~~~js

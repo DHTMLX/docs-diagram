@@ -10,15 +10,17 @@ description: You can learn about the getRoot method of data collection in the do
 
 @short: returns the id of the root item by the id of its child
 
+@descr:
+
 ### Usage
 
 ~~~js
-getRoot(id: Id): Id;
+getRoot(id: string | number): Id;
 ~~~
 
 ### Parameters
 
-`id: string | number` - the id of the child item
+`id` - (mandatory) the id of the child item
 
 ### Returns
 

@@ -10,6 +10,8 @@ description: You can learn about the remove method of Cell Manager in the docume
 
 @short: removes cells of the swimlane as rows or columns
 
+@descr:
+
 ### Usage
 
 ~~~js

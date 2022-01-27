@@ -15,6 +15,7 @@ The **autoplacement** property works only in the default mode of the diagram and
 @short: optional, an object with configuration settings for auto-placement of shapes
 @descr:
 
+
 ### Usage
 
 ~~~js

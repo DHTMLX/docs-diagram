@@ -10,6 +10,8 @@ description: You can learn about the exportData event of editor in the documenta
 
 @short: fires after the Export Data button has been clicked
 
+@descr:
+
 ### Usage
 
 ~~~js

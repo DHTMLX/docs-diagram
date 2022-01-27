@@ -10,6 +10,8 @@ description: You can learn about the disable method of HistoryManager in the doc
 
 @short: blocks HistoryManager
 
+@descr:
+
 ### Usage
 
 ~~~js

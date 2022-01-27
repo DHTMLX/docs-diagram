@@ -10,6 +10,8 @@ description: You can learn about the getItem method of selection in the document
 
 @short: returns the object of the selected item
 
+@descr:
+
 ### Usage
 
 ~~~js

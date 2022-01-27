@@ -10,16 +10,18 @@ description: You can learn about the afterUnSelect event in the documentation of
 
 @short: fires after unselecting an item
 
+@descr:
+
 ### Usage
 
 ~~~js
-afterUnSelect: (id: Id, subId?: Id | undefined) => void;
+afterUnSelect: (id: string | number, subId?: string | number | undefined) => void;
 ~~~
 
 ### Parameters
 
-- `id: string | number` - the item id
-- `subId: string | number | undefined` - optional, the id of a subheader of a swimlane or a text element of a line
+- `id` - (mandatory) the item id
+- `subId` - (optional) the id of a subheader of a swimlane or a text element of a line
 
 ### Example
 

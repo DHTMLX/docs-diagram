@@ -10,15 +10,17 @@ description: You can learn about the afterCellsValidation event of Cell Manager 
 
 @short: fires after cells of the swimlane are validated
 
+@descr:
+
 ### Usage
 
 ~~~js
-afterCellsValidation: (swimlaneId: Id, validate: boolean, action: ActionValidate) => void;
+afterCellsValidation: (swimlaneId: string | number, validate: boolean, action: ActionValidate) => void;
 ~~~
 
 ### Parameters
 
-- `swimlaneId: string | number` - the id of the item
+- `swimlaneId` - (mandatory) the id of the item
 - `validate: boolean` - validated or not validated
 - `action: "move" | "remove" | "add"` - the type of the action
 

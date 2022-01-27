@@ -10,6 +10,8 @@ description: You can learn about the map method of data collection in the docume
 
 @short: iterates through all items of the diagram
 
+@descr:
+
 ### Usage
 
 ~~~js
@@ -18,7 +20,7 @@ map(callback: DataCallback<T>): T[];
 
 ### Parameters
 
-- `callback: function` - a function that will be called for each item of a diagram
+- `callback` - (mandatory) a callback function that will be called for each item of a diagram
 
 ### Returns
 

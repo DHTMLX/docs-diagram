@@ -10,13 +10,17 @@ description: You can learn about the disabled property of HistoryManager in the 
 
 @short: sets the time interval for saving the current state in ms
 
+@descr:
+
 ### Usage
 
 ~~~js
 saveDelay: number;
 ~~~
 
-@default: 500
+### Default config
+
+ 500
 
 @descr:
 

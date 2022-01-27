@@ -10,6 +10,8 @@ description: You can learn about the redo method of HistoryManager in the docume
 
 @short: takes a step forward in the history of changes
 
+@descr:
+
 ### Usage
 
 ~~~js

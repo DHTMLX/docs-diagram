@@ -10,15 +10,17 @@ description: You can learn about the afterCellsRemove event of Cell Manager in t
 
 @short: fires after cells of the swimlane are removed
 
+@descr:
+
 ### Usage
 
 ~~~js
-afterCellsRemove: (swimlaneId: Id) => void;
+afterCellsRemove: (swimlaneId: string | number) => void;
 ~~~
 
 ### Parameters
 
-`swimlaneId: string | number` - the id of the item
+`swimlaneId` - (mandatory) the id of the item
 
 ### Example
 

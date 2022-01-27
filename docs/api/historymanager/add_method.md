@@ -10,6 +10,8 @@ description: You can learn about the add method of HistoryManager in the documen
 
 @short: adds new state
 
+@descr:
+
 ### Usage
 
 ~~~js

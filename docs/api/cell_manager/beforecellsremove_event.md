@@ -10,15 +10,17 @@ description: You can learn about the beforeCellsRemove event of Cell Manager in 
 
 @short: fires before cells of the swimlane are removed
 
+@descr:
+
 ### Usage
 
 ~~~js
-beforeCellsRemove: (swimlaneId: Id) => boolean | void;
+beforeCellsRemove: (swimlaneId: string | number) => boolean | void;
 ~~~
 
 ### Parameters
 
-`swimlaneId: string | number` - the id of the item
+`swimlaneId` - (mandatory) the id of the item
 
 ### Returns
 

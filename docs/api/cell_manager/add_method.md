@@ -10,6 +10,8 @@ description: You can learn about the add method of Cell Manager in the documenta
 
 @short: adds cells as rows or columns to a swimlane
 
+@descr:
+
 ### Usage
 
 ~~~js

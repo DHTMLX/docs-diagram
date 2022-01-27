@@ -10,17 +10,19 @@ description: You can learn about the shapeMoveEnd event of editor in the documen
 
 @short: fires after a shape is moved
 
+@descr:
+
 ### Usage
 
 ~~~js
-shapeMoveEnd: (events: MouseEvent, id: Id, coord: IBaseCoords) => void;
+shapeMoveEnd: (event: MouseEvent, id: string | number, coord: object) => void;
 ~~~
 
 ### Parameters
 
-- `events: MouseEvent` - a native HTML event object
-- `id: string | number` - the id of a shape
-- `coord: object` - an object with the x and y coordinates of the shape position after movement
+- `event` - (mandatory) a native HTML event object
+- `id` - (mandatory) the id of a shape
+- `coord` - (mandatory) an object with the x and y coordinates of the shape position after movement
 
 ### Example
 

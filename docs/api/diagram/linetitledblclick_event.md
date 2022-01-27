@@ -11,6 +11,7 @@ description: You can learn about the lineTitleDblClick event in the documentatio
 @short: fires on double-clicking a text element of a line
 @descr:
 
+
 ### Usage
 
 ~~~js

@@ -10,6 +10,8 @@ description: You can learn about the zoomIn method of editor in the documentatio
 
 @short: zooms in the diagram
 
+@descr:
+
 ### Usage
 
 ~~~js

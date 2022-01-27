@@ -10,6 +10,8 @@ description: You can learn about the filter method of data collection in the doc
 
 @short: filters items in the diagram
 
+@descr:
+
 ### Usage
 
 ~~~js

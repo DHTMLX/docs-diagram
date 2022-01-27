@@ -10,17 +10,19 @@ description: You can learn about the itemMoveEnd event of editor in the document
 
 @short: fires after an item is moved
 
+@descr:
+
 ### Usage
 
 ~~~js
-itemMoveEnd: (events: MouseEvent, id: Id, coord: IBaseCoords) => void;
+itemMoveEnd: (event: MouseEvent, id: string | number, coord: object) => void;
 ~~~
 
 ### Parameters
 
-- `events: MouseEvent` - a native HTML event object
-- `id: string | number` - the id of an item
-- `coord: object` - an object with the x and y coordinates of the item position before movement
+- `event` - (mandatory) a native HTML event object
+- `id` - (mandatory) the id of an item
+- `coord` - (mandatory) an object with the x and y coordinates of the item position before movement
 
 ### Example
 

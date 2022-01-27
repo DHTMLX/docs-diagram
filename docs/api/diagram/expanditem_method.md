@@ -11,6 +11,7 @@ description: You can learn about the expandItem method in the documentation of t
 @short: shows all children of the target shape or expands the group/swimlane
 @descr:
 
+
 ### Usage
 
 ~~~jsx

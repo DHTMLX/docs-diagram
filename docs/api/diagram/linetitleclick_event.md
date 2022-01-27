@@ -11,6 +11,7 @@ description: You can learn about the lineTitleClick event in the documentation o
 @short: fires on clicking a text element of a line
 @descr:
 
+
 ### Usage
 
 ~~~js
@@ -26,6 +27,8 @@ lineTitleClick: (
 - `lineId` - (required) the id of a line
 - `titleId` - (required) the id of a text element of a line
 - `event` - (required) a native HTML event object
+
+@descr:
 
 ### Usage
 

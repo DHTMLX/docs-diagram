@@ -11,6 +11,7 @@ description: You can learn about the itemMouseOut event in the documentation of 
 @short: fires when a pointing device is out of an item
 @descr:
 
+
 ### Usage
 
 ~~~js

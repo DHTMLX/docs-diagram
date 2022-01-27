@@ -10,6 +10,8 @@ description: You can learn about the pdf method in the documentation of the DHTM
 
 @short: exports a diagram to a PDF file
 
+@descr:
+
 ### Usage
 
 ~~~js
@@ -18,13 +20,11 @@ pdf(config: any): void;
 
 ### Parameters
 
-
 `config: object` - optional, an object with export settings (see the list below)
 
 ### Example
 
 ~~~js
-
 // default export
 diagram.export.pdf();
 

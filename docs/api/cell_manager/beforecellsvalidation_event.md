@@ -10,15 +10,17 @@ description: You can learn about the beforeCellsValidation event of Cell Manager
 
 @short: fires before cells of the swimlane are validated
 
+@descr:
+
 ### Usage
 
 ~~~js
-beforeCellsValidation: (swimlaneId: Id, action: ActionValidate) => boolean | void;
+beforeCellsValidation: (swimlaneId: string | number, action: ActionValidate) => boolean | void;
 ~~~
 
 ### Parameters
 
-- `swimlaneId: string | number` - the id of the item
+- `swimlaneId` - (mandatory) the id of the item
 - `action: "move" | "remove" | "add"` - the type of the action
 
 ### Returns

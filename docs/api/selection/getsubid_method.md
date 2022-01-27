@@ -10,6 +10,8 @@ description: You can learn about the getSubId method of selection in the documen
 
 @short: returns the subId (if any) of the selected item
 
+@descr:
+
 ### Usage
 
 ~~~js

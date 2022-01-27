@@ -10,6 +10,8 @@ description: You can learn about the zoomOut method of editor in the documentati
 
 @short: zooms out the diagram
 
+@descr:
+
 ### Usage
 
 ~~~js

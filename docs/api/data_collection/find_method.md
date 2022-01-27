@@ -10,6 +10,8 @@ description: You can learn about the find method of data collection in the docum
 
 @short: finds the item that corresponds to the specified parameters
 
+@descr:
+
 ### Usage
 
 ~~~js

@@ -10,10 +10,12 @@ description: You can learn about the getIndex method of data collection in the d
 
 @short: returns the index of the item by its id
 
+@descr:
+
 ### Usage
 
 ~~~js
-getIndex(id: Id): number;
+getIndex(id: string | number): number;
 ~~~
 
 ### Parameters

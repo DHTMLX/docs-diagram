@@ -10,17 +10,19 @@ description: You can learn about the beforeItemMove event of editor in the docum
 
 @short: fires before an item is moved
 
+@descr:
+
 ### Usage
 
 ~~~js
-beforeItemMove: (events: MouseEvent, id: Id, coord: IBaseCoords) => boolean | void;
+beforeItemMove: (event: MouseEvent, id: string | number, coord: object) => boolean | void;
 ~~~
 
 ### Parameters
 
-- `events: MouseEvent` - a native HTML event object
-- `id: string | number` - the id of an item
-- `coord: object` - an object with the x and y coordinates of the item position before movement
+- `event` - (mandatory) a native HTML event object
+- `id` - (mandatory) the id of an item
+- `coord` - (mandatory) an object with the x and y coordinates of the item position before movement
 
 ### Returns
 

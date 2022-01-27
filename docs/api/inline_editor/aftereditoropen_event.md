@@ -10,17 +10,19 @@ description: You can learn about the afterEditorOpen event in the documentation 
 
 @short: fires after the inline editor of an item is opened
 
+@descr:
+
 ### Usage
 
 ~~~js
-afterEditorOpen: (id: Id, key: string, subId?: string) => void;
+afterEditorOpen: (id: string | number, key: string, subId?: string) => void;
 ~~~
 
 ### Parameters
 
-- `id: string | number` - the id of the item
-- `key: string` - the name of the edited property
-- `subId: string` - optional, the id of a subheader of a swimlane or a text element of a line
+- `id` - (mandatory) the id of the item
+- `key` - (mandatory) the name of the edited property
+- `subId` - (optional) the id of a subheader of a swimlane or a text element of a line
 
 ### Example
 

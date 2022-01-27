@@ -10,6 +10,8 @@ description: You can learn about the setViewMode method of editor in the documen
 
 @short: sets the mode of Diagram Editor
 
+@descr:
+
 ### Usage
 
 ~~~js

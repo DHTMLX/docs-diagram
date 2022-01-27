@@ -10,15 +10,17 @@ description: You can learn about the beforeCellsAdd event of Cell Manager in the
 
 @short: fires before new cells are added to a swimlane
 
+@descr:
+
 ### Usage
 
 ~~~js
-beforeCellsAdd: (swimlaneId: Id) => boolean | void;
+beforeCellsAdd: (swimlaneId: string | number) => boolean | void;
 ~~~
 
 ### Parameters
 
-`swimlaneId: string | number` - the id of the item
+`swimlaneId` - (mandatory) the id of the item
 
 ### Returns
 

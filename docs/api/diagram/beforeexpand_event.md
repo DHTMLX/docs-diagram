@@ -11,6 +11,7 @@ description: You can learn about the beforeExpand event in the documentation of 
 @short: fires before expanding an item
 @descr:
 
+
 ### Usage
 
 ~~~js

@@ -10,16 +10,18 @@ description: You can learn about the remove method of selection in the documenta
 
 @short: unselects a previously selected item
 
+@descr:
+
 ### Usage
 
 ~~~js
-remove(id?: Id, subId?: Id): boolean
+remove(id?: string | number, subId?: string | number): boolean
 ~~~
 
 ### Parameters
 
-- `id: string | number` - optional, the item id
-- `subId: string | number` - optional, the id of a subheader of a swimlane or a text element of a line
+- `id` - (optional) the item id
+- `subId` - (optional) the id of a subheader of a swimlane or a text element of a line
 
 ### Returns
 

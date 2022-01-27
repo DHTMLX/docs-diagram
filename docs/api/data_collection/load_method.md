@@ -10,6 +10,8 @@ description: You can learn about the load method of data collection in the docum
 
 @short: loads data from an external file
 
+@descr:
+
 ### Usage
 
 ~~~js
@@ -17,7 +19,6 @@ load?(url: IDataProxy | string, driver?: DataDriver): Promise<any>;
 ~~~
 
 ### Parameters
-
 
 - `url: IDataProxy | string` - the URL of an external file or DataProxy with the URL configured
 - `driver: string` - optional, DataDriver or type of data ("json", "csv", "xml"), "json" by default

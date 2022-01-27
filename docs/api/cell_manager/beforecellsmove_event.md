@@ -10,15 +10,17 @@ description: You can learn about the beforeCellsMove event of Cell Manager in th
 
 @short: fires before cells of the swimlane are moved
 
+@descr:
+
 ### Usage
 
 ~~~js
-beforeCellsMove: (swimlaneId: Id) => boolean | void;
+beforeCellsMove: (swimlaneId: string | number) => boolean | void;
 ~~~
 
 ### Parameters
 
-`swimlaneId: string | number` - the id of the item
+`swimlaneId` - (mandatory) the id of the item
 
 ### Returns
 

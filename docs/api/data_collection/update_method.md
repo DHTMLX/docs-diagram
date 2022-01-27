@@ -10,17 +10,18 @@ description: You can learn about the update method of data collection in the doc
 
 @short: updates properties of the item
 
+@descr:
+
 ### Usage
 
 ~~~js
-updateUrl?: (id: string | number, newItem: IUpdateObject) => void;
+updateUrl?: (id: string | number, newItem: object) => void;
 ~~~
 
 ### Parameters
 
-
-- `id: string | number` - the id of the item which needs to be updated
-- `newItem: object` - a hash of properties which need to be updated
+- `id` - (mandatory) the id of the item which needs to be updated
+- `newItem` - (mandatory) a hash of properties which need to be updated
 
 ### Example
 

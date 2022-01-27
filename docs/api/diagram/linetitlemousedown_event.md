@@ -11,6 +11,7 @@ description: You can learn about the lineTitleMouseDown event in the documentati
 @short: fires when a pointing device button is pressed while the pointer is over a text element of a line
 @descr:
 
+
 ### Usage
 
 ~~~js

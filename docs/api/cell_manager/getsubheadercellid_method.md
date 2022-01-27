@@ -10,6 +10,8 @@ description: You can learn about the getSubHeaderCellId method of Cell Manager i
 
 @short: returns the id of the cell of the swimlane by the subheader id
 
+@descr:
+
 ### Usage
 
 ~~~js

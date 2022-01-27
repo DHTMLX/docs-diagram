@@ -10,6 +10,8 @@ description: You can learn about the autoplacement property of editor in the doc
 
 @short: an object with configuration settings for auto-placement of shapes
 
+@descr:
+
 ### Usage
 
 ~~~js

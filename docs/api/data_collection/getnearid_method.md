@@ -10,15 +10,17 @@ description: You can learn about the getNearId method of data collection in the 
 
 @short: looks for a nearest item relative to the specified one
 
+@descr:
+
 ### Usage
 
 ~~~js
-getNearId(id: Id): Id;
+getNearId(id: string | number): Id;
 ~~~
 
 ### Parameters
 
-- `id: string | number` - the id of an item
+- `id` - (mandatory) the id of an item
 
 ### Returns
 

@@ -18,6 +18,8 @@ If you don't apply the **typeConfig** property, the child shapes will be arrange
 
 
 
+@descr:
+
 ### Usage
 
 ~~~js

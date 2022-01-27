@@ -10,19 +10,21 @@ description: You can learn about the beforeEditorEditing event in the documentat
 
 @short: fires before the text value of an item is edited via the inline editor
 
+@descr:
+
 ### Usage
 
 ~~~js
-beforeEditorEditing: (value: string, currentValue: string, id: Id, key: string, subId?: string) => boolean | void;
+beforeEditorEditing: (value: string, currentValue: string, id: string | number, key: string, subId?: string) => boolean | void;
 ~~~
 
 ### Parameters
 
-- `value: string` - the new value of the item
-- `currentValue: string` - the old value of the item
-- `id: string | number` - the id of the item
-- `key: string` - the name of the property to be edited
-- `subId: string` - optional, the id of a subheader of a swimlane or a text element of a line
+- `value` - (mandatory) the new value of the item
+- `currentValue` - (mandatory) the old value of the item
+- `id` - (mandatory) the id of the item
+- `key` - (mandatory) the name of the property to be edited
+- `subId` - (optional) the id of a subheader of a swimlane or a text element of a line
 
 ### Returns
 

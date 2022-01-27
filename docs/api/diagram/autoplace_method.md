@@ -15,6 +15,7 @@ The **autoPlace()** method works only in the default mode of the diagram and onl
 @short: automatically arranges connected diagram shapes in the hierarchical structure
 @descr:
 
+
 ### Usage
 
 ~~~jsx

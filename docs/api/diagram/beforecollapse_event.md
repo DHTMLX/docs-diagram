@@ -11,6 +11,7 @@ description: You can learn about the beforeCollapse event in the documentation o
 @short: fires before collapsing an item
 @descr:
 
+
 ### Usage
 
 ~~~js

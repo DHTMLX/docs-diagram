@@ -10,15 +10,17 @@ description: You can learn about the afterCellsMove event of Cell Manager in the
 
 @short: fires after cells of the swimlane are moved
 
+@descr:
+
 ### Usage
 
 ~~~js
-afterCellsMove: (swimlaneId: Id) => void;
+afterCellsMove: (swimlaneId: string | number) => void;
 ~~~
 
 ### Parameters
 
-`swimlaneId: string | number` - the id of the item
+`swimlaneId` - (mandatory) the id of the item
 
 ### Example
 

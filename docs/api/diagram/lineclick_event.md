@@ -11,6 +11,7 @@ description: You can learn about the lineClick event in the documentation of the
 @short: fires on clicking a connector line
 @descr:
 
+
 ### Usage
 
 ~~~js

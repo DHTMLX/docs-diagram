@@ -10,10 +10,12 @@ description: You can learn about the copy method of data collection in the docum
 
 @short: creates a copy of an item at the defined position
 
+@descr:
+
 ### Usage
 
 ~~~js
-id: Id | Id[], index: number, target?: IDataCollection): Id | Id[];
+id: string | number | Id[], index: number, target?: IDataCollection): Id | Id[];
 ~~~
 
 ### Parameters

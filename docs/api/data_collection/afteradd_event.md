@@ -10,15 +10,17 @@ description: You can learn about the afterAdd event of data collection in the do
 
 @short: fires after adding an item
 
+@descr:
+
 ### Usage
 
 ~~~js
-afterAdd: (newItem: any) => void;
+afterAdd: (newItem: object) => void;
 ~~~
 
 ### Parameters
 
-`newItem: object` - the object of an added item
+`newItem` - (mandatory) the object of an added item
 
 ### Example
 

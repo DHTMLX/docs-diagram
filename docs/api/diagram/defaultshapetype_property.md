@@ -12,6 +12,8 @@ description: You can learn about the defaultShapeType property in the documentat
 @descr:
 The value is applied, if the shape object doesn't contain the "type" property
 
+@descr:
+
 ### Usage
 
 ~~~js

@@ -10,17 +10,19 @@ description: You can learn about the beforeShapeMove event in of editor the docu
 
 @short: fires before a shape is moved
 
+@descr:
+
 ### Usage
 
 ~~~js
-beforeShapeMove: (events: MouseEvent, id: Id, coord: IBaseCoords) => boolean | void;
+beforeShapeMove: (event: MouseEvent, id: string | number, coord: object) => boolean | void;
 ~~~
 
 ### Parameters
 
-- `events: MouseEvent` - a native HTML event object
-- `id: string | number` - the id of a shape
-- `coord: object` - an object with the x and y coordinates of the shape position before movement
+- `event` - (mandatory) a native HTML event object
+- `id` - (mandatory) the id of a shape
+- `coord` - (mandatory) an object with the x and y coordinates of the shape position before movement
 
 ### Returns
 

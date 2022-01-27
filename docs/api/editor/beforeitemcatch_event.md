@@ -10,17 +10,19 @@ description: You can learn about the beforeItemCatch event of editor in the docu
 
 @short: fires before an item is catched
 
+@descr:
+
 ### Usage
 
 ~~~js
-beforeItemCatch: (movedId: Id, targetId: Id, event: MouseEvent) => boolean | void;
+beforeItemCatch: (movedId: string | number, targetId: string | number, event: MouseEvent) => boolean | void;
 ~~~
 
 ### Parameters
 
-- `movedId: string | number` - the id of the moved item
-- `targetId: string | number` - the id of the target item
-- `events: MouseEvent` - a native HTML event object
+- `movedId` - (mandatory) the id of the moved item
+- `targetId` - (mandatory) the id of the target item
+- `event` - (mandatory) a native HTML event object
 
 ### Returns
 

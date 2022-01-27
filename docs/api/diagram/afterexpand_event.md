@@ -11,6 +11,7 @@ description: You can learn about the afterExpand event in the documentation of t
 @short: fires after an item has been expanded
 @descr:
 
+
 ### Usage
 
 ~~~js

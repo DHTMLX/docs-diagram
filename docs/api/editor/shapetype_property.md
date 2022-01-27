@@ -10,13 +10,17 @@ description: You can learn about the shapeType property of editor in the documen
 
 @short: the type of the items
 
+@descr:
+
 ### Usage
 
 ~~~js
 shapeType?: string;
 ~~~
 
-@default: "rectangle" (in the default mode), "card" (in the org chart mode), "topic" (in the mindmap mode)
+### Default config
+
+ "rectangle" (in the default mode), "card" (in the org chart mode), "topic" (in the mindmap mode)
 
 ### Example
 

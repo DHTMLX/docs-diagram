@@ -11,6 +11,7 @@ description: You can learn about the emptyAreaMouseDown event in the documentati
 @short: fires when a pointing device button is pressed while the pointer is over an empty space in the current diagram area
 @descr:
 
+
 ### Usage
 
 ~~~js

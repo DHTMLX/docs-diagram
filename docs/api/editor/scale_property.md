@@ -10,13 +10,17 @@ description: You can learn about the scale property of editor in the documentati
 
 @short: defines the diagram editor scale
 
+@descr:
+
 ### Usage
 
 ~~~js
 scale?: number;
 ~~~
 
-@default: 1
+### Default config
+
+ 1
 
 ### Example
 

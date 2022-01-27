@@ -11,6 +11,7 @@ description: You can learn about the lineDblClick event in the documentation of 
 @short: fires on double-clicking a line
 @descr:
 
+
 ### Usage
 
 ~~~js

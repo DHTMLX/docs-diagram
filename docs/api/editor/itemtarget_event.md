@@ -10,17 +10,19 @@ description: You can learn about the itemTarget event of editor in the documenta
 
 @short: fires when the moved item is under the target item
 
+@descr:
+
 ### Usage
 
 ~~~js
-itemTarget: (movedId: Id, targetId: Id, event: MouseEvent) => boolean | void;
+itemTarget: (movedId: string | number, targetId: string | number, event: MouseEvent) => boolean | void;
 ~~~
 
 ### Parameters
 
-- `movedId: string | number` - the id of the moved item
-- `targetId: string | number` - the id of the target item
-- `events: MouseEvent` - a native HTML event object
+- `movedId` - (mandatory) the id of the moved item
+- `targetId` - (mandatory) the id of the target item
+- `event` - (mandatory) a native HTML event object
 
 ### Example
 

@@ -10,13 +10,17 @@ description: You can learn about the lineGap property of editor in the documenta
 
 @short: adds an offset for two connected shapes, and fills the gap with an additional line
 
+@descr:
+
 ### Usage
 
 ~~~js
 lineGap?: number;
 ~~~
 
-@default: 10
+### Default config
+
+ 10
 
 @descr:
 

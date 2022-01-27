@@ -10,13 +10,17 @@ description: You can learn about the itemsDraggable property of editor in the do
 
 @short: enables/disables dragging the item from one parent item to another
 
+@descr:
+
 ### Usage
 
 ~~~js
 itemsDraggable?: boolean;
 ~~~
 
-@default: true
+### Default config
+
+ true
 
 ### Example
 

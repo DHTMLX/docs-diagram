@@ -10,18 +10,20 @@ description: You can learn about the afterEditorEditing event in the documentati
 
 @short: fires after the text value of an item is edited via the inline editor  
 
+@descr:
+
 ### Usage
 
 ~~~js
-afterEditorEditing: (value: string, id: Id, key: string, subId?: string) => void;
+afterEditorEditing: (value: string, id: string | number, key: string, subId?: string) => void;
 ~~~
 
 ### Parameters
 
-- `value: string` - the new value of the item
-- `id: string | number`- the id of the item
-- `key: string` - the name of the edited property
-- `subId: string` - optional, the id of a subheader of a swimlane or a text element of a line
+- `value` - (mandatory) the new value of the item
+- `id`- (mandatory) the id of the item
+- `key` - (mandatory) the name of the edited property
+- `subId` - (optional) the id of a subheader of a swimlane or a text element of a line
 
 ### Example
 

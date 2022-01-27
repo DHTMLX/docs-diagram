@@ -11,6 +11,7 @@ description: You can learn about the shapeDblClick event in the documentation of
 @short: fires on double-clicking a shape
 @descr:
 
+
 ### Usage
 
 ~~~js

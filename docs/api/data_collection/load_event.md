@@ -10,6 +10,8 @@ description: You can learn about the load event of data collection in the docume
 
 @short: fires when data is loaded into the diagram
 
+@descr:
+
 ### Usage
 
 ~~~js

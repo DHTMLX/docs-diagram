@@ -10,6 +10,8 @@ description: You can learn about the autoLayout event of editor in the documenta
 
 @short: fires after the Auto Layout button has been clicked
 
+@descr:
+
 ### Usage
 
 ~~~js

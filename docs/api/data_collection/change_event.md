@@ -10,6 +10,8 @@ description: You can learn about the change event of data collection in the docu
 
 @short: fires on changes in the dataset of the diagram
 
+@descr:
+
 ### Usage
 
 ~~~js
@@ -18,7 +20,7 @@ change: (id?: string, status?: Statuses, updatedItem?: any) => void;
 
 ### Parameters
 
-- `id: string | number` - the id of the changed item
+- `id` - (optional) the id of the changed item
 - `status: string` - the status of the change: "add", "update", "delete"
 - `updatedItem: object` - the object of the changed item
 

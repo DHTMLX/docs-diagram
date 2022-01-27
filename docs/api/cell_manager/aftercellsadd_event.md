@@ -10,15 +10,17 @@ description: You can learn about the afterCellsAdd event of Cell Manager in the 
 
 @short: fires after new cells are added to a swimlane
 
+@descr:
+
 ### Usage
 
 ~~~js
-afterCellsAdd: (swimlaneId: Id) => void;
+afterCellsAdd: (swimlaneId: string | number) => void;
 ~~~
 
 ### Parameters
 
-`swimlaneId: string | number` - the id of the item
+`swimlaneId` - (mandatory) the id of the item
 
 ### Example
 

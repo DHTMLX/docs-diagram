@@ -10,6 +10,8 @@ description: You can learn about the getSubHeaderType method of Cell Manager in 
 
 @short: returns the type of direction to count the index by the subheader id of the swimlane
 
+@descr:
+
 ### Usage
 
 ~~~js

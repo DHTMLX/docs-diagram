@@ -10,6 +10,8 @@ description: You can learn about the serialize method of editor in the documenta
 
 @short: serializes the data of the editor into an array of JSON objects
 
+@descr:
+
 ### Usage
 
 ~~~js

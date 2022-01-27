@@ -10,16 +10,18 @@ description: You can learn about the beforeUnSelect event in the documentation o
 
 @short: fires on unselecting an item, but before the item is really unselected
 
+@descr:
+
 ### Usage
 
 ~~~js
-beforeUnSelect: (id: Id, subId?: Id | undefined) => void | boolean;
+beforeUnSelect: (id: string | number, subId?: string | number | undefined) => void | boolean;
 ~~~
 
 ### Parameters
 
-- `id: string | number` - the item id
-- `subId: string | number | undefined` - optional, the id of a subheader of a swimlane or a text element of a line
+- `id` - (mandatory) the item id
+- `subId` - (optional) the id of a subheader of a swimlane or a text element of a line
 
 ### Example
 

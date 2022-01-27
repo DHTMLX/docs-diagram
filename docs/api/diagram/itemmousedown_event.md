@@ -12,6 +12,8 @@ description: You can learn about the itemMouseDown event in the documentation of
 @descr:
 If a pointing device button is pressed while the pointer is over a swimlane, the event will be fired on the cell of the swimlane
 
+@descr:
+
 ### Usage
 
 ~~~js

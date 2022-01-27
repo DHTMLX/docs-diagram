@@ -12,6 +12,8 @@ description: You can learn about the defaultLinkType property in the documentati
 @descr:
 The value is applied, if the line object doesn't contain the "type" property
 
+@descr:
+
 ### Usage
 
 ~~~js

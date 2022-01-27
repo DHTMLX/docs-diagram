@@ -10,6 +10,8 @@ description: You can learn about the shapeSections property of editor in the doc
 
 @short: an object which specifies sections of items that will be shown in the left panel of the editor
 
+@descr:
+
 ### Usage
 
 ~~~js

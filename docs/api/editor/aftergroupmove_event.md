@@ -10,17 +10,19 @@ description: You can learn about the afterGroupMove event of editor in the docum
 
 @short: fires when a group or swimlane is moved one grid step
 
+@descr:
+
 ### Usage
 
 ~~~js
-afterGroupMove: (events: MouseEvent, id: Id, coord: IBaseCoords) => void;
+afterGroupMove: (event: MouseEvent, id: string | number, coord: object) => void;
 ~~~
 
 ### Parameters
 
-- `events: MouseEvent` - a native HTML event object
-- `id: string | number` - the id of an item
-- `coord: object` - an object with the x and y coordinates of the group or swimlane position after movement
+- `event` - (mandatory) a native HTML event object
+- `id` - (mandatory) the id of an item
+- `coord` - (mandatory) an object with the x and y coordinates of the group or swimlane position after movement
 
 ### Example
 

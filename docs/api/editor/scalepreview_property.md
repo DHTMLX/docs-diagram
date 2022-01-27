@@ -10,13 +10,17 @@ description: You can learn about the scalePreview property of editor in the docu
 
 @short: defines the scale of items rendered in the left panel of the editor
 
+@descr:
+
 ### Usage
 
 ~~~js
 scalePreview?: string | number;
 ~~~
 
-@default: 0.5
+### Default config
+
+ 0.5
 
 @descr:
 

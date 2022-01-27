@@ -10,6 +10,8 @@ description: You can learn about the getId method of selection in the documentat
 
 @short: returns the id of the selected item
 
+@descr:
+
 ### Usage
 
 ~~~js

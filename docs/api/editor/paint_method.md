@@ -10,6 +10,8 @@ description: You can learn about the paint method of editor in the documentation
 
 @short: repaints the editor
 
+@descr:
+
 ### Usage
 
 ~~~js

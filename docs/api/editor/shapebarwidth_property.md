@@ -10,13 +10,17 @@ description: You can learn about the shapeBarWidth property of editor in the doc
 
 @short: sets the width of the left panel of the editor
 
+@descr:
+
 ### Usage
 
 ~~~js
 shapeBarWidth?: number;
 ~~~
 
-@default: 295px
+### Default config
+
+ 295px
 
 @descr:
 {{note The property is available only in the default mode of the editor (*type:"default"*).}}
