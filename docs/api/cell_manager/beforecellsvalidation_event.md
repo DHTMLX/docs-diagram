@@ -15,17 +15,20 @@ description: You can learn about the beforeCellsValidation event of Cell Manager
 ### Usage
 
 ~~~js
-beforeCellsValidation: (swimlaneId: string | number, action: ActionValidate) => boolean | void;
+beforeCellsValidation: (
+    swimlaneId: string | number, 
+    action: "move" | "remove" | "add"
+) => boolean | void;
 ~~~
 
 ### Parameters
 
 - `swimlaneId` - (mandatory) the id of the item
-- `action: "move" | "remove" | "add"` - the type of the action
+- `action` - (mandatory) the type of the action
 
 ### Returns
 
-`False` to prevent validation of new cells, otherwise `true`.
+Return `false` to prevent validation of new cells, otherwise `true`
 
 ### Example
 

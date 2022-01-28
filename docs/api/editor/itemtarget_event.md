@@ -12,10 +12,20 @@ description: You can learn about the itemTarget event of editor in the documenta
 
 @descr:
 
+:::note
+The event works in the org chart and mindmap modes of Diagram, **itemsDraggable** property must be set to **true**.
+
+The event doesn't work with the parent item of the moved item and with the moved item with the property **giveItem: false**.
+:::
+
 ### Usage
 
 ~~~js
-itemTarget: (movedId: string | number, targetId: string | number, event: MouseEvent) => boolean | void;
+itemTarget: (
+    movedId: string | number, 
+    targetId: string | number, 
+    event: MouseEvent
+) => boolean | void;
 ~~~
 
 ### Parameters
@@ -31,9 +41,5 @@ editor.events.on("itemTarget", (movedId, targetId, event) => {
     console.log("itemTarget", movedId, targetId, event);
 });
 ~~~
-
-The event works in org chart and mindmap modes of Diagram, **itemsDraggable** property should be **true**.
-
-The event doesn't work with the parent item of the moved item and with the moved item with the property **giveItem: false**.
 
 **Change log**: Added in v4.1

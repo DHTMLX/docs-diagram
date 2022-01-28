@@ -15,38 +15,40 @@ description: You can learn about the find method of data collection in the docum
 ### Usage
 
 ~~~js
-find(rule: IFilterMode | DataCallback<T>): T;
+find(rule: {
+	by: string | function,
+	match: string
+}): object;
+
+// or
+
+find(rule: function): object;
 ~~~
 
 ### Parameters
 
-`rule: object | function` - the search criteria
+- `rule` - (mandatory) the search criteria which can be specified:
+  - as an object which contains the following parameters:
+    - `by` - the search criterion (either the key of the item attribute or a search function)
+    - `match` - the value of the item attribute
+  - as a function: `DataCallback(item: T, index?: number, array?: T[])`
 
 ### Returns
 
-The first object of the item that matches the specified criteria.
+The first object of the item that matches the specified criteria
 
 ### Example
 
 ~~~js
 //searching for a shape by the attribute key
-const shape = diagram.data.find({by:"text",match:"Manager"});
+const shape = diagram.data.find({ by: "text", match: "Manager" });
 
-//searching for a shape by the function
+//searching for a shape by the rule specified in the function
 const shape = diagram.data.find(function(shape){
 	if(shape.text==="Manager"||shape.text==="Marketer"){return true}
 });
 ~~~
 
+**Related articles**:  [Finding the necessary item](../../../guides/manipulating_items/#finding-the-necessary-item)
 
 **Related sample**: [Diagram. Data. Finding necessary shape](https://snippet.dhtmlx.com/sete9z73)
-
-The **rule** parameter:
-
-- if set as an `IFilterMode` object, the parameter contains the following attributes:
-	- **by** - (*string,function*) the search criterion (either the key of the item attribute or a search function)
-	- **match** - (*string*) the value of the item attribute
-- if set as `DataCallback(item: T, index?: number, array?: T[])`, the search will be applied by the rule specified in the function.
-
-
-**Related articles**:  [Finding the necessary item](../../../guides/manipulating_items/#finding-the-necessary-item)

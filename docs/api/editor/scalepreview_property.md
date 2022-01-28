@@ -6,9 +6,13 @@ description: You can learn about the scalePreview property of editor in the docu
 
 # scalePreview
 
+:::info
+The property is available only in the default mode of the editor (*type:"default"*)
+:::
+
 ### Description
 
-@short: defines the scale of items rendered in the left panel of the editor
+@short: optional, defines the scale of items rendered in the left panel of the editor
 
 @descr:
 
@@ -20,11 +24,9 @@ scalePreview?: string | number;
 
 ### Default config
 
- 0.5
-
-@descr:
-
-{{note The property is available only in the default mode of the editor (*type:"default"*).}}
+~~~js
+scalePreview: 0.5
+~~~
 
 ### Example
 

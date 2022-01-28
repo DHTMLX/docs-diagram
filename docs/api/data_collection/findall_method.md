@@ -15,16 +15,27 @@ description: You can learn about the findAll method of data collection in the do
 ### Usage
 
 ~~~js
-findAll(rule: IFilterMode | DataCallback<T>): T[];
+findAll(rule: {
+	by: string | function,
+	match: string
+}): array;
+
+// or
+
+findAll(rule: function): array;
 ~~~
 
 ### Parameters
 
-`rule: object | function` - the search criteria
+- `rule` - (mandatory) the search criteria
 
 ### Returns
 
-An array of matching item objects.
+An array of matching item objects which can be specified:
+  - as an object which contains the following parameters:
+    - `by` - the search criterion (either the key of the item attribute or a search function)
+    - `match` - the value of the item attribute
+  - as a function: `DataCallback(item: T, index?: number, array?: T[])`
 
 ### Example
 
@@ -39,12 +50,5 @@ const shapes = diagram.data.findAll(function (shapes) {
 	}
 });
 ~~~
-
-The **rule** parameter:
-
-- if set as an `IFilterMode` object, the parameter contains the following attributes:
-	- **by** - (*string,function*) the search criterion (either the key of the item attribute or a search function)
-	- **match** - (*string*) the value of the item attribute
-- if set as `DataCallback(item: T, index?: number, array?: T[])`, the search will be applied by the rule specified in the function.
 
 **Related articles**:  [Finding the necessary item](../../../guides/manipulating_items/#finding-the-necessary-item)

@@ -12,10 +12,18 @@ description: You can learn about the beforeItemMove event of editor in the docum
 
 @descr:
 
+:::note
+The event doesn't work with the line object
+:::
+
 ### Usage
 
 ~~~js
-beforeItemMove: (event: MouseEvent, id: string | number, coord: object) => boolean | void;
+beforeItemMove: (
+    event: MouseEvent, 
+    id: string | number, 
+    coord: object
+) => boolean | void;
 ~~~
 
 ### Parameters
@@ -26,7 +34,7 @@ beforeItemMove: (event: MouseEvent, id: string | number, coord: object) => boole
 
 ### Returns
 
-Return `false` to prevent the item from being moved; otherwise, `true`.
+Return `false` to prevent the item from being moved; otherwise, `true`
 
 ### Example
 
@@ -41,6 +49,4 @@ editor.events.on("beforeItemMove", (event, id, coordinates) => {
 });
 ~~~
 
-The event doesn't work with the line object.
-
-**Change log**: Added in v4.0.
+**Change log**: Added in v4.0

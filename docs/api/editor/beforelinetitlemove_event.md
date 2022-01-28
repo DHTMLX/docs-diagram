@@ -15,7 +15,12 @@ description: You can learn about the beforeLineTitleMove event of editor in the 
 ### Usage
 
 ~~~js
-beforeLineTitleMove: (event: MouseEvent, lineId: string | number, titleId: string | number, coord: object) => boolean | void;
+beforeLineTitleMove: (
+    event: MouseEvent, 
+    lineId: string | number, 
+    titleId: string | number, 
+    coord: object
+) => boolean | void;
 ~~~
 
 ### Parameters
@@ -27,7 +32,7 @@ beforeLineTitleMove: (event: MouseEvent, lineId: string | number, titleId: strin
 
 ### Returns
 
-Return `false` to prevent the text element of a line from being moved; otherwise, `true`.
+Return `false` to prevent the text element of a line from being moved; otherwise, `true`
 
 ### Example
 
@@ -42,5 +47,4 @@ editor.events.on("beforeLineTitleMove", (event, lineId, titleId, coordinates) =>
 });
 ~~~
 
-**Change log**: 
-Added in v4.1.
+**Change log**: Added in v4.1

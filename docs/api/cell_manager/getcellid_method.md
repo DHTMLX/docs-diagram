@@ -15,17 +15,20 @@ description: You can learn about the getCellId method of Cell Manager in the doc
 ### Usage
 
 ~~~js
-getCellId(cellIndex: number, type: ICellType): Id | undefined;
+getCellId(
+    cellIndex: number, 
+    type: "row" | "col"
+): string | number | undefined;
 ~~~
 
 ### Parameters
 
-- `cellIndex: number` - the start index of a cell in a layout
-- `type: "row" | "col"` - the type of direction to count the index
+- `cellIndex` - (required) the start index of a cell in a layout. The count of the index starts from 0
+- `type` - (required) the type of direction to count the index
 
 ### Returns
 
-The id of the cell.
+The id of the cell
 
 ### Example
 
@@ -36,14 +39,12 @@ const diagram = new dhx.Diagram("diagram_container", {
 });
 diagram.data.parse(data);
 
-diagram.cellManager.setSwimlane("main"); // sets active swimlane
+// sets active swimlane
+diagram.cellManager.setSwimlane("main"); 
 
-diagram.cellManager.getCellId(0, "row"); // gets the id of the cell
-
-// -> "r01"
+// gets the id of the cell
+diagram.cellManager.getCellId(0, "row"); // -> "r01"
 ~~~
-
-The count of the index starts from 0.
 
 **Change log**: Added in v4.0
 

@@ -15,14 +15,18 @@ description: You can learn about the validation method of Cell Manager in the do
 ### Usage
 
 ~~~js
-validation(cellIndex: number, dir: ActionDirection, action: ActionValidate): boolean;
+validation(
+    cellIndex: number, 
+    dir: "up" | "down" | "left" | "right", 
+    action: "move" | "remove" | "add"
+): boolean;
 ~~~
 
 ### Parameters
 
-- `cellIndex: number` - the start index of a cell in a layout
-- `dir: "up" | "down" | "left" | "right"` - the direction of the action
-- `action: "move" | "remove" | "add"` - the type of the action
+- `cellIndex` - (mandatory) the start index of a cell in a layout. The count of the index starts from 0
+- `dir` - (mandatory) the direction of the action
+- `action` - (mandatory) the type of the action
 
 ### Returns
 
@@ -41,12 +45,8 @@ diagram.data.parse(data);
 diagram.cellManager.setSwimlane("main");
 
 // validates if the cell with index 0 can be moved down
-diagram.cellManager.validation(0, "down", "move") ;
-
-// -> true
+diagram.cellManager.validation(0, "down", "move"); // -> true
 ~~~
-
-The count of the index starts from 0.
 
 **Change log**: Added in v4.0
 

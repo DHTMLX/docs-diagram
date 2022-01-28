@@ -16,10 +16,6 @@ The property does not work in the Editor
 @descr:
 If you don't apply the **typeConfig** property, the child shapes will be arranged automatically according to the main algorithm.
 
-
-
-@descr:
-
 ### Usage
 
 ~~~js

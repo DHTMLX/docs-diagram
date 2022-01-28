@@ -15,7 +15,12 @@ description: You can learn about the lineTitleMoveEnd event of editor in the doc
 ### Usage
 
 ~~~js
-lineTitleMoveEnd: (event: MouseEvent, lineId: string | number, titleId: string | number, coord: object) => void;
+lineTitleMoveEnd: (
+    event: MouseEvent, 
+    lineId: string | number, 
+    titleId: string | number, 
+    coord: object
+) => void;
 ~~~
 
 ### Parameters

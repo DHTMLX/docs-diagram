@@ -15,7 +15,12 @@ description: You can learn about the afterLineTitleMove event of editor in the d
 ### Usage
 
 ~~~js
-afterLineTitleMove: (event: MouseEvent, lineId: string | number, titleId: string | number, coord: object) => void;
+afterLineTitleMove: (
+    event: MouseEvent, 
+    lineId: string | number, 
+    titleId: string | number, 
+    coord: object
+) => void;
 ~~~
 
 ### Parameters

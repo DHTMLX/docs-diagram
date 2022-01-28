@@ -6,9 +6,13 @@ description: You can learn about the itemsDraggable property of editor in the do
 
 # itemsDraggable
 
+:::info
+The property works only in the org chart and mindmap modes. The moved item is dragged with all its children.
+:::
+
 ### Description
 
-@short: enables/disables dragging the item from one parent item to another
+@short: optional, enables/disables dragging the item from one parent item to another
 
 @descr:
 
@@ -20,7 +24,9 @@ itemsDraggable?: boolean;
 
 ### Default config
 
- true
+~~~js
+itemsDraggable: true
+~~~
 
 ### Example
 
@@ -31,7 +37,4 @@ const editor = new dhx.DiagramEditor(document.body, {
 });
 ~~~
 
-The property works in org chart and mindmap modes. The moved item is dragged with all its children.
-
-**Change log**: 
-Added in v4.1.
+**Change log**: Added in v4.1

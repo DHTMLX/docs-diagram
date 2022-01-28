@@ -15,7 +15,11 @@ description: You can learn about the afterShapeMove event of editor in the docum
 ### Usage
 
 ~~~js
-afterShapeMove: (event: MouseEvent, id: string | number, coord: object) => void;
+afterShapeMove: (
+    event: MouseEvent, 
+    id: string | number, 
+    coord: object
+) => void;
 ~~~
 
 ### Parameters
@@ -38,5 +42,5 @@ editor.events.on("afterShapeMove", (event, id, coordinates) => {
 
 **Change log**: 
 
-- The **id** and **coordinates** parameters are added in v4.0.
-- Added in v3.1.
+- The **id** and **coordinates** parameters are added in v4.0
+- Added in v3.1

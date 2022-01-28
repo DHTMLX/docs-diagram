@@ -15,17 +15,20 @@ description: You can learn about the beforeShapeIconClick event of editor in the
 ### Usage
 
 ~~~js
-beforeShapeIconClick: (iconId: string, shape: IDataItem) => boolean | void;
+beforeShapeIconClick: (
+    iconId: string, 
+    shape: IDataItem
+) => boolean | void;
 ~~~
 
 ### Parameters
 
-- `iconId: string` - the type or id of the toolbar control
+- `iconId` - (required) the type or id of the toolbar control
 - `shape: object` - an object with the item configuration
 
 ### Returns
 
-Return `false` to prevent the toolbar control from being clicked; otherwise, `true`.
+Return `false` to prevent the toolbar control from being clicked; otherwise, `true`
 
 ### Example
 

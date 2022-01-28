@@ -6,22 +6,29 @@ description: You can learn about the shapeSections property of editor in the doc
 
 # shapeSections
 
+:::info
+The property is available only in the default mode of the editor (*type:"default"*)
+:::
+
+Using the **shapeSections** property you can specify your own sections of the left panel. The [default sections of the left panel](../../../guides/diagram_editor/left_panel/#default-sections) are: *Shapes, Groups, Swimlanes*.
+
 ### Description
 
-@short: an object which specifies sections of items that will be shown in the left panel of the editor
+@short: optional, an object which specifies sections of items that will be shown in the left panel of the editor
 
 @descr:
 
 ### Usage
 
 ~~~js
-shapeSections?: IShapeSections;
+shapeSections?: {
+    [key: string]: any
+}
 ~~~
 
-@descr:
-The object contains a set of *key:value* pairs where *key* is the name of a section and *value* is an array with the types of the items to be rendered in the section.
+### Attributes
 
-{{note The property is available only in the default mode of the editor (*type:"default"*).}}
+The **shapeSections** object contains a set of **key:value** pairs where **key** is the name of a section and **value** is an array with the types of the items to be rendered in the section.
 
 ### Example
 
@@ -38,12 +45,11 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 ~~~
 
-**Related samples**: [Diagram editor. Default mode. Left panel customization](https://snippet.dhtmlx.com/2z0a18oz)
 
 {{note Setting boolean *true* as a value of the array will display all available [flow-chart](../../../shapes/default_shapes/#shapes-overview) shapes in the section.}}
 
-The [default sections of the left panel](../../../guides/diagram_editor/left_panel/#default-sections) are: *Shapes, Groups, Swimlanes*.
 
-Using the **shapeSections** property you can specify your own sections of the left panel.
 
 **Related articles**:  [Left Panel](../../../guides/diagram_editor/left_panel/)
+
+**Related samples**: [Diagram editor. Default mode. Left panel customization](https://snippet.dhtmlx.com/2z0a18oz)

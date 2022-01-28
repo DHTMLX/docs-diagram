@@ -15,12 +15,12 @@ description: You can learn about the pdf method in the documentation of the DHTM
 ### Usage
 
 ~~~js
-pdf(config: any): void;
+pdf(config?: object): void;
 ~~~
 
 ### Parameters
 
-`config: object` - optional, an object with export settings (see the list below)
+- `config` - (optional) an object with export settings (see the list below)
 
 ### Example
 

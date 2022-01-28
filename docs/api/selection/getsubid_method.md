@@ -15,11 +15,10 @@ description: You can learn about the getSubId method of selection in the documen
 ### Usage
 
 ~~~js
-getSubId(): Id;
+getSubId(): string | number;
 ~~~
 
 ### Returns
-
 
 The subId (if any) of the selected item.
 
@@ -29,6 +28,6 @@ The subId (if any) of the selected item.
 const subid = diagram.selection.getSubId(); // -> "2"
 ~~~
 
-**Change log**: Added in v4.1.
+**Change log**: Added in v4.1
 
 **Related articles**:  [Selecting items](../../../guides/manipulating_items/#selecting-items)

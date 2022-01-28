@@ -15,12 +15,15 @@ description: You can learn about the afterShapeIconClick event of editor in the 
 ### Usage
 
 ~~~js
-afterShapeIconClick: (iconId: string, shape: IDataItem) => void;
+afterShapeIconClick: (
+    iconId: string, 
+    shape: IDataItem
+) => void;
 ~~~
 
 ### Parameters
 
-- `iconId: string` - the type or id of the toolbar control
+- `iconId` - (required) the type or id of the toolbar control
 - `shape: object` - an object with the item configuration
 
 ### Example

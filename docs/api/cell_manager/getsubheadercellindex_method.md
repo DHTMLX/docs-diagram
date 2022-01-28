@@ -20,11 +20,11 @@ getSubHeaderCellIndex(subheaderId: string): number;
 
 ### Parameters
 
-- `subheaderId: string` - the id of the subheader of a swimlane
+- `subheaderId` - (required) the id of the subheader of a swimlane
 
 ### Returns
 
-The index of the cell.
+The index of the cell. The count of the index starts from 0
 
 ### Example
 
@@ -35,14 +35,12 @@ const diagram = new dhx.Diagram("diagram_container", {
 });
 diagram.data.parse(data);
 
-diagram.cellManager.setSwimlane("main"); // sets active swimlane
+// sets active swimlane
+diagram.cellManager.setSwimlane("main"); 
 
-diagram.cellManager.getSubHeaderCellIndex("sub01"); // gets the index of the cell
-
-// -> 0
+// gets the index of the cell
+diagram.cellManager.getSubHeaderCellIndex("sub01"); // -> 0
 ~~~
-
-The count of the index starts from 0.
 
 **Change log**: Added in v4.0
 

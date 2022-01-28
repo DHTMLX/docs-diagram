@@ -8,14 +8,22 @@ description: You can learn about the beforeItemCatch event of editor in the docu
 
 ### Description
 
-@short: fires before an item is catched
+@short: fires before an item is caught
 
 @descr:
+
+:::note
+The event works in the org chart and mindmap modes of Diagram, **itemsDraggable** property must be set to **true**
+:::
 
 ### Usage
 
 ~~~js
-beforeItemCatch: (movedId: string | number, targetId: string | number, event: MouseEvent) => boolean | void;
+beforeItemCatch: (
+    movedId: string | number, 
+    targetId: string | number, 
+    event: MouseEvent
+) => boolean | void;
 ~~~
 
 ### Parameters
@@ -26,7 +34,7 @@ beforeItemCatch: (movedId: string | number, targetId: string | number, event: Mo
 
 ### Returns
 
-Return `false` to prevent the item from being catched; otherwise, `true`.
+Return `false` to prevent the item from being caught; otherwise, `true`
 
 ### Example
 
@@ -37,7 +45,4 @@ editor.events.on("beforeItemCatch", (movedId, targetId, event) => {
 });
 ~~~
 
-The event works in org chart and mindmap modes of Diagram, **itemsDraggable** property should be **true**.
-
-**Change log**: 
-Added in v4.1.
+**Change log**: Added in v4.1

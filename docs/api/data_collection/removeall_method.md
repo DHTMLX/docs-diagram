@@ -24,9 +24,6 @@ removeAll(): void;
 diagram.data.removeAll();
 ~~~
 
+**Related articles**:  [Deleting items](../../../guides/manipulating_items/#deleting-items)
 
 **Related sample**: [Diagram. Data. Add/delete item](https://snippet.dhtmlx.com/8wi20uop)
-
-@descr:
-
-**Related articles**:  [Deleting items](../../../guides/manipulating_items/#deleting-items)

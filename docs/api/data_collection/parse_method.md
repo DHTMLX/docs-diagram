@@ -15,13 +15,16 @@ description: You can learn about the parse method of data collection in the docu
 ### Usage
 
 ~~~js
-parse(data: T[] | string, driver?: IDataDriver | DataDriver): void;
+parse(
+	data: array | string, 
+	driver?: object | string
+): void;
 ~~~
 
 ### Parameters
 
-- `data: array | string` - the data to load
-- `driver: object | string` - optional, DataDriver or type of data ("json", "csv", "xml"), "json" by default
+- `data` - (required) the data to load. You can load data in any supported data format
+- `driver` - (optional) DataDriver or type of data ("json", "csv", "xml"), "json" by default
 
 ### Example
 
@@ -53,11 +56,6 @@ const diagram = new dhx.Diagram("diagram_container", { type: "org" });
 diagram.data.parse(data);
 ~~~
 
+**Related articles**:  [Loading and storing data](../../../guides/loading_data/)
 
 **Related sample**: [Diagram. Org chart mode. Basic initialization](https://snippet.dhtmlx.com/5ign6fyy)
-
-@descr:
-
-You can load data in any supported data format.
-
-**Related articles**:  [Loading and storing data](../../../guides/loading_data/)

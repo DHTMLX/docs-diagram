@@ -15,16 +15,16 @@ description: You can learn about the getSubHeaderCellId method of Cell Manager i
 ### Usage
 
 ~~~js
-getSubHeaderCellId(subheaderId: string): Id;
+getSubHeaderCellId(subheaderId: string): string | number;
 ~~~
 
 ### Parameters
 
-- `subheaderId: string` - the id of the subheader of a swimlane
+- `subheaderId` - (required) the id of the subheader of a swimlane
 
 ### Returns
 
-The id of the cell.
+The id of the cell
 
 ### Example
 
@@ -35,14 +35,12 @@ const diagram = new dhx.Diagram("diagram_container", {
 });
 diagram.data.parse(data);
 
-diagram.cellManager.setSwimlane("main"); // sets active swimlane
+// sets active swimlane
+diagram.cellManager.setSwimlane("main"); 
 
-diagram.cellManager.getSubHeaderCellId("sub01"); // gets the id of the cell
-
-// -> "r01"
+// gets the id of the cell
+diagram.cellManager.getSubHeaderCellId("sub01"); // -> "r01"
 ~~~
-
-The count of the index starts from 0.
 
 **Change log**: Added in v4.0
 

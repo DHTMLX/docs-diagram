@@ -20,11 +20,11 @@ exists(id: string | number): boolean;
 
 ### Parameters
 
-`id` - (mandatory) the id of the item in question
+- `id` - (mandatory) the id of the item in question
 
 ### Returns
 
-`True` if the item exists, otherwise `false`.
+`True` if the item exists, otherwise `false`
 
 ### Example
 

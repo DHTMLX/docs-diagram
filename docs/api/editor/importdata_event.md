@@ -15,12 +15,12 @@ description: You can learn about the importData event of editor in the documenta
 ### Usage
 
 ~~~js
-importData: (data) => void;
+importData: (data: any) => void;
 ~~~
 
 ### Parameters
 
-`data: any` - the imported data
+- `data` - the imported data
 
 ### Example
 

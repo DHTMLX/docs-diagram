@@ -15,16 +15,16 @@ description: You can learn about the getItem method of data collection in the do
 ### Usage
 
 ~~~js
-getItem(id: string | number): T;
+getItem(id: string | number): object;
 ~~~
 
 ### Parameters
 
-`id` - (mandatory) the id of a selected item
+- `id` - (mandatory) the id of a selected item
 
 ### Returns
 
-The object of an item.
+The object of an item
 
 ### Example
 

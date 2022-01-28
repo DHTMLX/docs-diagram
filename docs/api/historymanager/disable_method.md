@@ -22,4 +22,4 @@ disable(): void;
 
 The Reset and HistoryManager buttons from the Toolbar work only in the custom event generation mode. Ctrl+z and Ctrl+Shift+z navigation is not available.
 
-**Change log**: Added in v4.1.
+**Change log**: Added in v4.1

@@ -18,7 +18,7 @@ description: You can learn about the type property of editor in the documentatio
 type?: "default" | "org" | "mindmap";
 ~~~
 
-@descr:
+### Details
 
 Diagram Editor can be initialized in one of three modes:
 
@@ -35,5 +35,6 @@ Diagram Editor can be initialized in one of three modes:
 <iframe src="https://snippet.dhtmlx.com/lo1vm0e8?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="200"></iframe>
 
 
-**Related articles**:  - [Overview](../../../)
+**Related articles**: 
+- [Overview](../../../)
 - [How to start with Diagram Editor](../../../guides/diagram_editor/initialization/)

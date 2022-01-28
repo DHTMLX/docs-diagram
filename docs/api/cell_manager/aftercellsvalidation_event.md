@@ -15,14 +15,18 @@ description: You can learn about the afterCellsValidation event of Cell Manager 
 ### Usage
 
 ~~~js
-afterCellsValidation: (swimlaneId: string | number, validate: boolean, action: ActionValidate) => void;
+afterCellsValidation: (
+    swimlaneId: string | number, 
+    validate: boolean, 
+    action: "move" | "remove" | "add"
+) => void;
 ~~~
 
 ### Parameters
 
 - `swimlaneId` - (mandatory) the id of the item
-- `validate: boolean` - validated or not validated
-- `action: "move" | "remove" | "add"` - the type of the action
+- `validate` - (mandatory) validated or not validated
+- `action` - (mandatory) the type of the action
 
 ### Example
 

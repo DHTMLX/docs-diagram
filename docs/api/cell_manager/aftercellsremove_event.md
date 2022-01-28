@@ -20,7 +20,7 @@ afterCellsRemove: (swimlaneId: string | number) => void;
 
 ### Parameters
 
-`swimlaneId` - (mandatory) the id of the item
+- `swimlaneId` - (mandatory) the id of the item
 
 ### Example
 

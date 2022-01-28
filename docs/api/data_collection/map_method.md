@@ -15,7 +15,7 @@ description: You can learn about the map method of data collection in the docume
 ### Usage
 
 ~~~js
-map(callback: DataCallback<T>): T[];
+map(callback: function): array;
 ~~~
 
 ### Parameters
@@ -24,7 +24,7 @@ map(callback: DataCallback<T>): T[];
 
 ### Returns
 
-A new array of items where each item is the result of the callback function.
+A new array of items where each item is the result of the callback function
 
 ### Example
 

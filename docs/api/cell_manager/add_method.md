@@ -6,6 +6,10 @@ description: You can learn about the add method of Cell Manager in the documenta
 
 # add()
 
+:::info
+The **add()** method is automatically validated by the system. The cell won't be added if it is not possible according to the structure of the swimlane.
+:::
+
 ### Description
 
 @short: adds cells as rows or columns to a swimlane
@@ -15,13 +19,16 @@ description: You can learn about the add method of Cell Manager in the documenta
 ### Usage
 
 ~~~js
-add(cellIndex: number, dir: ActionDirection): void;
+add(
+    cellIndex: number, 
+    dir: "up" | "down" | "left" | "right"
+): void;
 ~~~
 
 ### Parameters
 
-- `cellIndex: number` - the start index of a cell in a layout
-- `dir: "up" | "down" | "left" | "right"` - the direction of the action
+- `cellIndex` - (mandatory) the start index of a cell in a layout. The count of the index starts from 0
+- `dir` - (mandatory) the direction of the action
 
 ### Example
 
@@ -37,11 +44,9 @@ diagram.cellManager.setSwimlane("main"); // sets active swimlane
 diagram.cellManager.add(0, "down"); // adds cells as rows
 ~~~
 
-@descr:
 
-The count of the index starts from 0.
 
-The **add** method is automatically validated by the system. The cell won't be added if it is not possible according to the structure of the swimlane.
+
 
 
 **Change log**: Added in v4.0

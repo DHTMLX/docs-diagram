@@ -15,12 +15,12 @@ description: You can learn about the getRoots method of data collection in the d
 ### Usage
 
 ~~~js
-getRoots(): Id[]
+getRoots(): array
 ~~~
 
 ### Returns
 
-An array with the ids of the root items.
+An array with the ids of the root items
 
 ### Example
 

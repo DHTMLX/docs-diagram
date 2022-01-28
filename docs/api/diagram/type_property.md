@@ -18,6 +18,8 @@ description: You can learn about the type property in the documentation of the D
 type: "default" | "org" | "mindmap";
 ~~~
 
+### Details
+
 DHTMLX Diagram can be initialized in one of three modes:
 
 - **type:"default"** is used to initialize a Diagram in the default mode:

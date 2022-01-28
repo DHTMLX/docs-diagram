@@ -15,18 +15,18 @@ description: You can learn about the copy method of data collection in the docum
 ### Usage
 
 ~~~js
-id: string | number | Id[], index: number, target?: IDataCollection): Id | Id[];
+copy(id: string | number | array, index: number, target?: object): string | number | array;
 ~~~
 
 ### Parameters
 
-- `id: string | number | array` - the id(s) of an item(s) to copy
-- `index: number` - the index to create a copy at
-- `target: object` - optional, the target data collection object
+- `id` - (mandatory) the id(s) of an item(s) to copy
+- `index` - (mandatory) the index to create a copy at
+- `target` - (optional) the target data collection object
 
 ### Returns
 
-The item's id or an array with ids of items.
+The item's id or an array with ids of items
 
 ### Example
 

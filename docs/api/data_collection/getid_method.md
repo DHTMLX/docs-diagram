@@ -15,16 +15,16 @@ description: You can learn about the getId method of data collection in the docu
 ### Usage
 
 ~~~js
-getId(index: number): Id;
+getId(index: number): string | number;
 ~~~
 
 ### Parameters
 
-`index: number` - the index of the item
+- `index` - (required) the index of the item
 
 ### Returns
 
-The id of the item.
+The id of the item
 
 ### Example
 

@@ -15,7 +15,7 @@ description: You can learn about the getId method of selection in the documentat
 ### Usage
 
 ~~~js
-getId(): Id;
+getId(): string | number;
 ~~~
 
 ### Returns

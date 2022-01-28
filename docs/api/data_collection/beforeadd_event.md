@@ -24,7 +24,7 @@ beforeAdd: (newItem: object) => boolean | void;
 
 ### Returns
 
-Return `false` to prevent adding an item into a data collection; otherwise, `true`.
+Return `false` to prevent adding an item into a data collection; otherwise, `true`
 
 ### Example
 
@@ -36,7 +36,4 @@ diagram.events.on("beforeAdd", function(id){
 });
 ~~~
 
-
 **Related sample**: [Diagram. Org chart mode. Events](https://snippet.dhtmlx.com/l38pct7c)
-
-Returning *false* from the event handler will prevent item adding.

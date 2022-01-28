@@ -20,11 +20,11 @@ beforeCellsAdd: (swimlaneId: string | number) => boolean | void;
 
 ### Parameters
 
-`swimlaneId` - (mandatory) the id of the item
+- `swimlaneId` - (mandatory) the id of the item
 
 ### Returns
 
-`False` to prevent adding of new cells, otherwise `true`.
+Return `false` to prevent adding of new cells, otherwise `true`
 
 ### Example
 

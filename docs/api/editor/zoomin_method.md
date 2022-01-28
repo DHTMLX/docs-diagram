@@ -20,7 +20,7 @@ zoomIn(step?: number): void;
 
 ### Parameters
 
-`step: number` - the step of zooming in the diagram; *by default: 0.05*
+- `step` - (optional) the step of zooming in the diagram; *by default: 0.05*
 
 ### Example
 
@@ -28,4 +28,4 @@ zoomIn(step?: number): void;
 editor.zoomIn(0.1);
 ~~~
 
-**Change log**: Added in v4.1.
+**Change log**: Added in v4.1

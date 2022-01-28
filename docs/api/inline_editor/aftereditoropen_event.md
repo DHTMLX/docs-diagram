@@ -36,5 +36,6 @@ diagram.events.on("afterEditorOpen", (id, key, subId) => {
 - [Diagram. Default mode. Events](https://snippet.dhtmlx.com/7h2hgb3g)
 - [Diagram. Org chart mode. Events](https://snippet.dhtmlx.com/l38pct7c)
 
-**Change log**: - SubHeaderId parameter has been changed to subId in v4.1.
-- Added in v4.0.
+**Change log**: 
+- SubHeaderId parameter has been changed to subId in v4.1
+- Added in v4.0

@@ -15,12 +15,12 @@ description: You can learn about the serialize method of editor in the documenta
 ### Usage
 
 ~~~js
-serialize(): IDataItem[];
+serialize(): array;
 ~~~
 
 ### Returns
 
-An array of JSON objects for each item from the editor data.
+An array of JSON objects for each item from the editor data
 
 ### Example
 

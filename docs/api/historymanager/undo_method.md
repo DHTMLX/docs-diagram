@@ -20,8 +20,8 @@ undo(first?: boolean): void;
 
 ### Parameters
 
-`first: boolean` - optional, *true* to move the history of changes to the beginning
+- `first: boolean` - (optional) *true* to move the history of changes to the beginning
 
 @descr:
 
-**Change log**: Added in v4.1.
+**Change log**: Added in v4.1

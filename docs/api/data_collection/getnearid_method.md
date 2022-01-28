@@ -15,7 +15,7 @@ description: You can learn about the getNearId method of data collection in the 
 ### Usage
 
 ~~~js
-getNearId(id: string | number): Id;
+getNearId(id: string | number): string | number;
 ~~~
 
 ### Parameters
@@ -24,7 +24,7 @@ getNearId(id: string | number): Id;
 
 ### Returns
 
-The id of the nearest item.
+The id of the nearest item
 
 ### Example
 

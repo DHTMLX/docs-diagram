@@ -8,14 +8,14 @@ description: You can learn about the shapeToolbar property of editor in the docu
 
 ### Description
 
-@short: defines which controls should be shown in the personal toolbar of diagram items
+@short: optional, defines which controls should be shown in the personal toolbar of diagram items
 
 @descr:
 
 ### Usage
 
 ~~~js
-shapeToolbar: boolean | DefaultShapeToolbar;
+shapeToolbar?: boolean | array;
 ~~~
 
 @descr:

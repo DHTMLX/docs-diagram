@@ -12,10 +12,17 @@ description: You can learn about the update method of data collection in the doc
 
 @descr:
 
+:::note
+The method can't be used to change the *id* or *type* of the item
+:::
+
 ### Usage
 
 ~~~js
-updateUrl?: (id: string | number, newItem: object) => void;
+update(
+    id: string | number, 
+    newItem: object
+): void;
 ~~~
 
 ### Parameters
@@ -28,7 +35,5 @@ updateUrl?: (id: string | number, newItem: object) => void;
 ~~~js
 diagram.data.update(123, { text:"New text" });
 ~~~
-
-The command can't be used to change the *id* or *type* of the item.
 
 **Related articles**:  [Updating an item](../../../guides/manipulating_items/#updating-an-item)

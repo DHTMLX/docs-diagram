@@ -6,6 +6,10 @@ description: You can learn about the move method of Cell Manager in the document
 
 # move()
 
+:::info
+The **move()** method is automatically validated by the system. The cell won't be moved if it is not possible according to the structure of the swimlane.
+:::
+
 ### Description
 
 @short: moves cells of the swimlane as rows or columns
@@ -15,13 +19,16 @@ description: You can learn about the move method of Cell Manager in the document
 ### Usage
 
 ~~~js
-move(cellIndex: number, dir: ActionDirection): void;
+move(
+    cellIndex: number, 
+    dir: "up" | "down" | "left" | "right"
+): void;
 ~~~
 
 ### Parameters
 
-- `cellIndex: number` - the start index of a cell in a layout
-- `dir: "up" | "down" | "left" | "right"` - the direction of the action
+- `cellIndex` - (mandatory) the start index of a cell in a layout. The count of the index starts from 0
+- `dir` - (mandatory) the direction of the action
 
 ### Example
 
@@ -36,10 +43,6 @@ diagram.cellManager.setSwimlane("main"); // sets active swimlane
 
 diagram.cellManager.move(0, "down"); // moves cells as rows
 ~~~
-
-The count of the index starts from 0.
-
-The **move** method is automatically validated by the system. The cell won't be moved if it is not possible according to the structure of the swimlane.
 
 **Change log**: Added in v4.0
 

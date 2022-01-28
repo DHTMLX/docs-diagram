@@ -15,12 +15,12 @@ description: You can learn about the import method of editor in the documentatio
 ### Usage
 
 ~~~js
-import(diagram: Diagram): void;
+import(diagram: object): void;
 ~~~
 
 ### Parameters
 
-`diagram: object` - the diagram object
+- `diagram: object` - the diagram object
 
 ### Example
 
@@ -28,6 +28,7 @@ import(diagram: Diagram): void;
 editor.import(diagram);
 ~~~
 
+You can load data in any supported data format. See the details in the [](api/data_collection/parse_method.md) article.
+
 **Related samples**: [Diagram editor. Org chart mode. Live editor](https://snippet.dhtmlx.com/bng7ego7)
 
-You can load data in any supported data format. See the details in the [](api/data_collection/parse_method.md) article.

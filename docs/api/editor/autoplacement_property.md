@@ -6,24 +6,41 @@ description: You can learn about the autoplacement property of editor in the doc
 
 # autoplacement
 
+:::info
+ The **autoplacement** property works only in the default mode of the editor (*type:"default"*) and only for shapes
+:::
+
+
 ### Description
 
-@short: an object with configuration settings for auto-placement of shapes
+@short: optional, an object with configuration settings for auto-placement of shapes
 
 @descr:
 
 ### Usage
 
 ~~~js
-autoplacement?: IAutoPlacement;
+autoplacement?: {
+	mode?: string, // "direct" | "edges"
+	graphPadding?: number
+};
 ~~~
 
-#### Object properties:
+### Attributes
 
-- **mode** - (*string*) the mode of connecting shapes, "direct" (by default) or "edges"
-- **graphPadding** - (*number*) sets the distance between unconnected diagrams, *"200"* by default
+The **autoplacement** property has the following attributes:
 
-{{note The **autoplacement** property works only in the default mode of the editor (*type:"default"*) and only for shapes.}}
+- `mode` - (optional) the mode of connecting shapes, "direct" (by default) or "edges"
+- `graphPadding` - (optional) sets the distance between unconnected diagrams, *"200"* by default
+
+### Default config
+
+~~~js
+autoplacement: {
+	mode: "direct",
+	graphPadding: 200
+}
+~~~
 
 ### Example
 
@@ -36,10 +53,6 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 ~~~
 
-**Related samples**:
-- [Diagram editor. Default mode. Autoplacement direct mode](https://snippet.dhtmlx.com/p1ybrkz2)
-- [Diagram editor. Default mode. Autoplacement edges mode](https://snippet.dhtmlx.com/1i65txcw)
-
 ### Modes of connecting shapes
 
 | mode: "direct"                                                                  | mode: "edges"                                                                       |
@@ -48,3 +61,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 | ![](../../assets/direct_mode.png)                                               | ![](../../assets/edges_mode.png)                                                    |
 
 **Change log**:  added in v3.0
+
+**Related samples**:
+- [Diagram editor. Default mode. Autoplacement direct mode](https://snippet.dhtmlx.com/p1ybrkz2)
+- [Diagram editor. Default mode. Autoplacement edges mode](https://snippet.dhtmlx.com/1i65txcw)

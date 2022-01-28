@@ -20,11 +20,11 @@ getIndex(id: string | number): number;
 
 ### Parameters
 
-`id: string` - the id of the item
+- `id` - (mandatory) the id of the item
 
 ### Returns
 
-The index of the item.
+The index of the item
 
 ### Example
 

@@ -15,7 +15,11 @@ description: You can learn about the beforeShapeMove event in of editor the docu
 ### Usage
 
 ~~~js
-beforeShapeMove: (event: MouseEvent, id: string | number, coord: object) => boolean | void;
+beforeShapeMove: (
+    event: MouseEvent, 
+    id: string | number, 
+    coord: object
+) => boolean | void;
 ~~~
 
 ### Parameters
@@ -26,7 +30,7 @@ beforeShapeMove: (event: MouseEvent, id: string | number, coord: object) => bool
 
 ### Returns
 
-Return `false` to prevent the shape from being moved; otherwise, `true`.
+Return `false` to prevent the shape from being moved; otherwise, `true`
 
 ### Example
 
@@ -43,5 +47,5 @@ editor.events.on("beforeShapeMove", (event, id, coordinates) => {
 
 **Change log**: 
 
-- The **id** and **coordinates** parameters are added in v4.0.
-- Added in v3.1.
+- The **id** and **coordinates** parameters are added in v4.0
+- Added in v3.1

@@ -15,12 +15,12 @@ description: You can learn about the png method in the documentation of the DHTM
 ### Usage
 
 ~~~js
-png(config: any): void;
+png(config: object): void;
 ~~~
 
 ### Parameters
 
-`config: object` - optional, an object with export settings (see the list below)
+- `config` - (optional) an object with export settings (see the list below)
 
 ### Example
 

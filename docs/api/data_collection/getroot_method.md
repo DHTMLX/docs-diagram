@@ -15,23 +15,21 @@ description: You can learn about the getRoot method of data collection in the do
 ### Usage
 
 ~~~js
-getRoot(id: string | number): Id;
+getRoot(id: string | number): string | number;
 ~~~
 
 ### Parameters
 
-`id` - (mandatory) the id of the child item
+- `id` - (mandatory) the id of the child item
 
 ### Returns
 
-The id of the root item.
+The id of the root item. The root item is the first item of a tree structure
 
 ### Example
 
 ~~~js
-diagram.data.getRoot("id_1.1.1"); -> "id_1"
+diagram.data.getRoot("id_1.1.1"); // -> "id_1"
 ~~~
-
-The root item is the first item of a tree structure.
 
 **Change log**: Added in v4.0

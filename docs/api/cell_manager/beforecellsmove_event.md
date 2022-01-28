@@ -20,11 +20,11 @@ beforeCellsMove: (swimlaneId: string | number) => boolean | void;
 
 ### Parameters
 
-`swimlaneId` - (mandatory) the id of the item
+- `swimlaneId` - (mandatory) the id of the item
 
 ### Returns
 
-`False` to prevent moving of the cells, otherwise `true`.
+Return `false` to prevent moving of the cells, otherwise `true`
 
 ### Example
 

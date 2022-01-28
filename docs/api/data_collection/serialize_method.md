@@ -15,12 +15,12 @@ description: You can learn about the serialize method of data collection in the 
 ### Usage
 
 ~~~js
-serialize(): T[];
+serialize(): array;
 ~~~
 
 ### Returns
 
-An array of JSON objects for each item and link from Diagram.
+An array of JSON objects for each item and link from Diagram
 
 ### Example
 

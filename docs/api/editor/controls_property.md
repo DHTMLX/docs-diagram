@@ -8,18 +8,55 @@ description: You can learn about the controls property of editor in the document
 
 ### Description
 
-@short: an object with settings to define which controls should be shown/hidden in the toolbar of the editor
+@short: optional, an object with settings to define which controls should be shown/hidden in the toolbar of the editor
 
 @descr:
 
 ### Usage
 
 ~~~js
-controls?: IEditorControls;
+controls?: {
+    apply?: boolean,
+	reset?: boolean,
+	export?: boolean,
+	import?: boolean,
+	autoLayout?: boolean,
+	historyManager?: boolean,
+	editManager?: boolean,
+	scale?: boolean,
+	gridStep?: boolean
+};
 ~~~
 
-@descr:
-The object can contain a set of *control_name:value* pairs where *value* is *true* (by default) or *false*.
+### Attributes
+
+The property allows you to enable/disable the following options:
+
+- `apply` - (optional) enables the Apply All button
+- `reset` - (optional) enables the Reset Changes button
+- `export` - (optional) enables the Export Data button
+- `import` - (optional) enables the Import Data button
+- `autoLayout` - (optional) enables the Auto Layout button (in the default mode of the editor only)
+- `historyManager` - (optional) enables the Undo and Redo buttons
+- `editManager` - (optional) enables the Edit Mode button
+- `scale` - (optional) enables the Zoom group of buttons
+- `gridStep` - (optional) enables the Grid Step sidebar option in the right panel of the editor
+
+### Default config
+
+~~~js
+controls: {
+    apply: true,
+	reset: true,
+	export: true,
+	import: true,
+	autoLayout: true,
+	historyManager: true,
+	editManager: true,
+	scale: true,
+	gridStep: true
+};
+~~~
 
 ### Example
 
@@ -35,17 +72,5 @@ const editor = new dhx.DiagramEditor("editor_container", {
     }
 });
 ~~~
-
-Here is the list of available controls:
-
-- **apply** - (*boolean*) enables the Apply All button
-- **reset** - (*boolean*) enables the Reset Changes button
-- **export** - (*boolean*) enables the Export Data button
-- **import** - (*boolean*) enables the Import Data button
-- **autoLayout** - (*boolean*) enables the Auto Layout button (in the default mode of the editor only)
-- **historyManager** - (*boolean*) enables the Undo and Redo buttons
-- **editManager** - (*boolean*) enables the Edit Mode button
-- **scale** - (*boolean*) enables the Zoom group of buttons
-- **gridStep** - (*boolean*) enables the Grid Step sidebar option in the right panel of the editor
 
 **Related articles**:  [Toolbar](../../../guides/diagram_editor/toolbar/)

@@ -20,10 +20,10 @@ add(newState: IDataItem[]): void;
 
 ### Parameters
 
-`newState: array` - an array of JSON objects of the current state
+- `newState: array` - an array of JSON objects of the current state
 
 @descr:
 
 Adding the new state is done automatically. Therefore this method is not recommended for manual usage.
 
-**Change log**: Added in v4.1.
+**Change log**: Added in v4.1

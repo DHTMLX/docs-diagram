@@ -15,7 +15,11 @@ description: You can learn about the beforeGroupMove event of editor in the docu
 ### Usage
 
 ~~~js
-beforeGroupMove: (event: MouseEvent, id: string | number, coord: object) => boolean | void;
+beforeGroupMove: (
+    event: MouseEvent, 
+    id: string | number, 
+    coord: object
+) => boolean | void;
 ~~~
 
 ### Parameters
@@ -26,7 +30,7 @@ beforeGroupMove: (event: MouseEvent, id: string | number, coord: object) => bool
 
 ### Returns
 
-Return `false` to prevent the group or swimlane from being moved; otherwise, `true`.
+Return `false` to prevent the group or swimlane from being moved; otherwise, `true`
 
 ### Example
 
@@ -41,4 +45,4 @@ editor.events.on("beforeGroupMove", (event, id, coordinates) => {
 });
 ~~~
 
-**Change log**: Added in v4.0.
+**Change log**: Added in v4.0

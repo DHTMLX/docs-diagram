@@ -20,7 +20,7 @@ afterAdd: (newItem: object) => void;
 
 ### Parameters
 
-`newItem` - (mandatory) the object of an added item
+- `newItem` - (mandatory) the object of an added item
 
 ### Example
 
@@ -30,6 +30,6 @@ diagram.events.on("afterAdd", function(id){
 });
 ~~~
 
-Event can be used to provide default values or a default formatting for the item data.
+The event can be used to provide default values or a default formatting for the item's data
 
 **Related sample**: [Diagram. Org chart mode. Events](https://snippet.dhtmlx.com/l38pct7c)

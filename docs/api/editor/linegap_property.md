@@ -6,9 +6,13 @@ description: You can learn about the lineGap property of editor in the documenta
 
 # lineGap
 
+:::info
+The property is available only in the default mode of the editor (*type:"default"*). The property does not work if you use groups or swimlanes.
+:::
+
 ### Description
 
-@short: adds an offset for two connected shapes, and fills the gap with an additional line
+@short: optional, adds an offset for two connected shapes, and fills the gap with an additional line
 
 @descr:
 
@@ -20,11 +24,9 @@ lineGap?: number;
 
 ### Default config
 
- 10
-
-@descr:
-
-{{note The property is available only in the default mode of the editor (*type:"default"*). The property does not work if you use groups or swimlanes.}}
+~~~js
+lineGap: 10
+~~~
 
 ### Example
 

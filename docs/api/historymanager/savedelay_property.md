@@ -24,4 +24,4 @@ saveDelay: number;
 
 @descr:
 
-**Change log**: Added in v4.1.
+**Change log**: Added in v4.1

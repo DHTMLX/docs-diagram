@@ -8,9 +8,11 @@ description: You can learn about the shapeType property of editor in the documen
 
 ### Description
 
-@short: the type of the items
+@short: optional, the type of the items
 
 @descr:
+
+This value is applied, if the shape object doesn't contain the "type" property
 
 ### Usage
 
@@ -20,16 +22,30 @@ shapeType?: string;
 
 ### Default config
 
- "rectangle" (in the default mode), "card" (in the org chart mode), "topic" (in the mindmap mode)
+In the default mode of Editor (type: "default")
+
+~~~js
+shapeType: "rectangle"
+~~~
+
+In the org chart mode of Editor (type: "card")
+
+~~~js
+shapeType: "card"
+~~~
+
+In the mindmap mode of Editor (type: "topic")
+
+~~~js
+shapeType: "topic"
+~~~
 
 ### Example
 
 ~~~js
 const editor = new dhx.DiagramEditor("editor_container", {
-    shapeType: "rectangle",
+    shapeType: "circle",
 });
 ~~~
-
-This value is applied, if the shape object doesn't contain the "type" property.
 
 **Related articles**:  [Default Shapes](../../../shapes/default_shapes/)

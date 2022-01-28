@@ -15,7 +15,11 @@ description: You can learn about the groupMoveEnd event of editor in the documen
 ### Usage
 
 ~~~js
-groupMoveEnd: (event: MouseEvent, id: string | number, coord: object) => void;
+groupMoveEnd: (
+    event: MouseEvent, 
+    id: string | number, 
+    coord: object
+) => void;
 ~~~
 
 ### Parameters
@@ -36,4 +40,4 @@ editor.events.on("groupMoveEnd", (event, id, coordinates) => {
 });
 ~~~
 
-**Change log**: Added in v4.0.
+**Change log**: Added in v4.0

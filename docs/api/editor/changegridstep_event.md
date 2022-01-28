@@ -20,7 +20,7 @@ changeGridStep: (step: number) => void;
 
 ### Parameters
 
-`step: number` - the current value of the grid step
+- `step` - (required) the current value of the grid step
 
 ### Example
 

@@ -15,14 +15,22 @@ description: You can learn about the change event of data collection in the docu
 ### Usage
 
 ~~~js
-change: (id?: string, status?: Statuses, updatedItem?: any) => void;
+change: (
+	id?: string, 
+	status?: "add" | "update" | "delete", 
+	updatedItem?: object
+) => void;
 ~~~
 
 ### Parameters
 
 - `id` - (optional) the id of the changed item
-- `status: string` - the status of the change: "add", "update", "delete"
-- `updatedItem: object` - the object of the changed item
+- `status` - (optional) the status of the change: "add", "update", "delete"
+- `updatedItem` - (optional) the object of the changed item
+
+:::info
+There are cases when the handler function doesn't take any parameters, e.g. while a data set is parsed into the diagram where all shapes are removed
+:::
 
 ### Example
 
@@ -31,5 +39,3 @@ diagram.events.on("change", function (id, status, shape) {
 	console.log("The " + id + " has been " + status);
 });
 ~~~
-
-There are cases when the handler function doesn't take any parameters, e.g. while a data set is parsed into the diagram if all shapes are removed.

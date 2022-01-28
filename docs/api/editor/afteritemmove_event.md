@@ -12,10 +12,18 @@ description: You can learn about the afterItemMove event of editor in the docume
 
 @descr:
 
+:::note
+The event doesn't work with the line object
+:::
+
 ### Usage
 
 ~~~js
-afterItemMove: (event: MouseEvent, id: string | number, coord: object) => void;
+afterItemMove: (
+    event: MouseEvent, 
+    id: string | number, 
+    coord: object
+) => void;
 ~~~
 
 ### Parameters
@@ -36,6 +44,4 @@ editor.events.on("afterItemMove", (event, id, coordinates) => {
 });
 ~~~
 
-The event doesn't work with the line object.
-
-**Change log**: Added in v4.0.
+**Change log**: Added in v4.0

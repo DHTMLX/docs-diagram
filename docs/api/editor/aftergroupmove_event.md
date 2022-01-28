@@ -15,7 +15,11 @@ description: You can learn about the afterGroupMove event of editor in the docum
 ### Usage
 
 ~~~js
-afterGroupMove: (event: MouseEvent, id: string | number, coord: object) => void;
+afterGroupMove: (
+    event: MouseEvent, 
+    id: string | number, 
+    coord: object
+) => void;
 ~~~
 
 ### Parameters
@@ -36,4 +40,4 @@ editor.events.on("afterGroupMove", (event, id, coordinates) => {
 });
 ~~~
 
-**Change log**: Added in v4.0.
+**Change log**: Added in v4.0

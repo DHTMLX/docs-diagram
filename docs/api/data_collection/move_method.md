@@ -15,18 +15,22 @@ description: You can learn about the move method of data collection in the docum
 ### Usage
 
 ~~~js
-move(id: string | number | Id[], index: number, target?: DataCollection): Id | Id[];
+move(
+    id: string | number | array, 
+    index: number, 
+    target?: object
+): string | number | array;
 ~~~
 
 ### Parameters
 
-- `id: string | number | string[]` - the id(s) of an item(s) to move
-- `index: number` - the index to move an item(s) to
-- `target: object` - optional, the target data collection object
+- `id` - (mandatory) the id(s) of an item(s) to move
+- `index` - (mandatory) the index to move an item(s) to
+- `target` - (optional) the target data collection object
 
 ### Returns
 
-Either a string with the item's id or an array of string values with ids of items.
+Either a string with the item's id or an array of string values with ids of items
 
 ### Example
 

@@ -8,14 +8,22 @@ description: You can learn about the afterItemCatch event of editor in the docum
 
 ### Description
 
-@short: fires after an item is catched
+@short: fires after an item is caught
 
 @descr:
+
+:::note
+The event works in the org chart and mindmap modes of Diagram, the **itemsDraggable** property must be set to **true**
+:::
 
 ### Usage
 
 ~~~js
-afterItemCatch: (movedId: string | number, targetId: string | number, event: MouseEvent) => void;
+afterItemCatch: (
+    movedId: string | number, 
+    targetId: string | number, 
+    event: MouseEvent
+) => void;
 ~~~
 
 ### Parameters
@@ -32,7 +40,4 @@ editor.events.on("afterItemCatch", (movedId, targetId, event) => {
 });
 ~~~
 
-The event works in org chart and mindmap modes of Diagram, **itemsDraggable** property should be **true**.
-
-**Change log**: 
-Added in v4.1.
+**Change log**: Added in v4.1

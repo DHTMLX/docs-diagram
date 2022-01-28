@@ -6,9 +6,13 @@ description: You can learn about the gapPreview property of editor in the docume
 
 # gapPreview
 
+:::info
+The property is available only in the default mode of the editor (*type:"default"*)
+:::
+
 ### Description
 
-@short: specifies the space between the items rendered in the left panel
+@short: optional, specifies the space between the items rendered in the left panel
 
 @descr:
 
@@ -20,10 +24,10 @@ gapPreview?: string | number;
 
 ### Default config
 
- "6px 8px" (sets 6px gap for the top and bottom sides and 8px gap for the right and left sides)
-
-@descr:
-{{note The property is available only in the default mode of the editor (*type:"default"*).}}
+~~~js
+gapPreview: "6px 8px"
+// sets 6px gap for the top and bottom sides and 8px gap for the right and left sides
+~~~ 
 
 ### Example
 
@@ -33,7 +37,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 ~~~
 
-The value of the `gapPreview` property can be redefined for a separate shape via the **gap** attribute of the [preview](../../../shapes/configuration_properties/#properties-specific-for-the-default-mode) property of the shape object:
+The value of the **gapPreview** property can be redefined for a separate shape via the **gap** attribute of the [preview](../../../shapes/configuration_properties/#properties-specific-for-the-default-mode) property of the shape object:
 
 ~~~js
 const defaults = {card: {
