@@ -24,7 +24,7 @@ getSubHeaderCellId(subheaderId: string): string | number;
 
 ### Returns
 
-The id of the cell
+The method returns the id of the cell
 
 ### Example
 

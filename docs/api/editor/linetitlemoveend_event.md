@@ -25,6 +25,8 @@ lineTitleMoveEnd: (
 
 ### Parameters
 
+The callback of the event takes the following parameters:
+
 - `event` - (mandatory) a native HTML event object
 - `lineId` - (mandatory) the id of a line
 - `titleId` - (mandatory) the id of a text element of a line

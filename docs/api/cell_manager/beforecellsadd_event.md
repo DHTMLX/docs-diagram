@@ -20,6 +20,8 @@ beforeCellsAdd: (swimlaneId: string | number) => boolean | void;
 
 ### Parameters
 
+The callback of the event takes the following parameter:
+
 - `swimlaneId` - (mandatory) the id of the item
 
 ### Returns

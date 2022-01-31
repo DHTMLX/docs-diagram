@@ -20,7 +20,7 @@ getItem(): object;
 
 ### Returns
 
-The object of a selected item.
+The method returns the object of a selected item
 
 ### Example
 

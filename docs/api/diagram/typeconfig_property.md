@@ -32,11 +32,7 @@ typeConfig?: {
 }	
 ~~~
 
-:::tip
-You can use either the **direction** attribute or the **side** one. Don't use both of them at the same time!
-:::
-
-### Attributes:
+### Details
 
 The **typeConfig** property has the following attributes:
 
@@ -44,6 +40,10 @@ The **typeConfig** property has the following attributes:
   - *"left"* - puts child shapes of the graph to the left of the root shape
   - *"right"* - puts child shapes of the graph to the right of the root shape
 - `side` - (optional) an object which sets the mandatory direction for the specified child shapes. The object contains a set of *key:value* pairs where *key* is the direction of the shapes (left, right) and *value* is an array with the ids of the shapes
+
+:::tip
+You can use either the **direction** attribute or the **side** one. Don't use both of them at the same time!
+:::
 
 ### Example
 

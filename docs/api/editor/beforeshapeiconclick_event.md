@@ -17,14 +17,16 @@ description: You can learn about the beforeShapeIconClick event of editor in the
 ~~~js
 beforeShapeIconClick: (
     iconId: string, 
-    shape: IDataItem
+    shape: object
 ) => boolean | void;
 ~~~
 
 ### Parameters
 
+The callback of the event takes the following parameters:
+
 - `iconId` - (required) the type or id of the toolbar control
-- `shape: object` - an object with the item configuration
+- `shape` - (required) an object with the item configuration
 
 ### Returns
 

@@ -20,6 +20,8 @@ changeGridStep: (step: number) => void;
 
 ### Parameters
 
+The callback of the event takes the following parameter:
+
 - `step` - (required) the current value of the grid step
 
 ### Example

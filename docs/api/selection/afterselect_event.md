@@ -15,10 +15,15 @@ description: teYou can learn about the afterSelect event in the documentation of
 ### Usage
 
 ~~~js
-afterSelect: (id: string | number, subId?: string | number | undefined) => void;
+afterSelect: (
+    id: string | number, 
+    subId?: string | number | undefined
+) => void;
 ~~~
 
 ### Parameters
+
+The callback of the event takes the following parameters:
 
 - `id` - (mandatory) the item id
 - `subId` - (optional) the id of a subheader of a swimlane or a text element of a line
@@ -36,9 +41,10 @@ diagram.events.on("AfterSelect", function(id) {
 });
 ~~~
 
-**Related sample**: [Diagram. Org chart mode. Events](https://snippet.dhtmlx.com/l38pct7c)
-
 **Change log**: SubId parameter has been added in v4.1
 
-**Related articles**:  - [diagram.config.select](../../../api/diagram/select_property/)
+**Related articles**:  
+- [diagram.config.select](../../../api/diagram/select_property/)
 - [Selecting items](../../../guides/manipulating_items/#selecting-items)
+
+**Related sample**: [Diagram. Org chart mode. Events](https://snippet.dhtmlx.com/l38pct7c)

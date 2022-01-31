@@ -28,7 +28,7 @@ controls?: {
 };
 ~~~
 
-### Attributes
+### Details
 
 The property allows you to enable/disable the following options:
 

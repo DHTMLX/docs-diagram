@@ -20,7 +20,7 @@ defaults?: {
 };
 ~~~
 
-### Attributes
+### Details
 
 The **defaults** object can contain a number of *key:value* pairs where *key* is a type of a shape and *value* is an object with a set of [configuration settings of the shape](../../../shapes/configuration_properties/).
 

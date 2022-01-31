@@ -15,10 +15,16 @@ description: You can learn about the afterEditorOpen event in the documentation 
 ### Usage
 
 ~~~js
-afterEditorOpen: (id: string | number, key: string, subId?: string) => void;
+afterEditorOpen: (
+    id: string | number, 
+    key: string, 
+    subId?: string
+) => void;
 ~~~
 
 ### Parameters
+
+The callback of the event takes the following parameters:
 
 - `id` - (mandatory) the id of the item
 - `key` - (mandatory) the name of the edited property
@@ -32,10 +38,10 @@ diagram.events.on("afterEditorOpen", (id, key, subId) => {
 });
 ~~~
 
-**Related samples**:
-- [Diagram. Default mode. Events](https://snippet.dhtmlx.com/7h2hgb3g)
-- [Diagram. Org chart mode. Events](https://snippet.dhtmlx.com/l38pct7c)
-
 **Change log**: 
 - SubHeaderId parameter has been changed to subId in v4.1
 - Added in v4.0
+
+**Related samples**:
+- [Diagram. Default mode. Events](https://snippet.dhtmlx.com/7h2hgb3g)
+- [Diagram. Org chart mode. Events](https://snippet.dhtmlx.com/l38pct7c)

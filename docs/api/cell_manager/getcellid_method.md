@@ -17,18 +17,18 @@ description: You can learn about the getCellId method of Cell Manager in the doc
 ~~~js
 getCellId(
     cellIndex: number, 
-    type: "row" | "col"
+    type: string // "row" | "col"
 ): string | number | undefined;
 ~~~
 
 ### Parameters
 
 - `cellIndex` - (required) the start index of a cell in a layout. The count of the index starts from 0
-- `type` - (required) the type of direction to count the index
+- `type` - (required) the type of direction to count the index: "row" | "col"
 
 ### Returns
 
-The id of the cell
+The method returns the id of the cell
 
 ### Example
 

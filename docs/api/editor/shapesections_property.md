@@ -26,7 +26,7 @@ shapeSections?: {
 }
 ~~~
 
-### Attributes
+### Details
 
 The **shapeSections** object contains a set of **key:value** pairs where **key** is the name of a section and **value** is an array with the types of the items to be rendered in the section.
 

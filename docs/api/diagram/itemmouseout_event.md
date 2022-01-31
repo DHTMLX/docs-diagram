@@ -23,6 +23,8 @@ itemMouseOut: (
 
 ### Parameters
 
+The callback of the event takes the following parameters:
+
 - `id` - (mandatory) the id of an item
 - `event` - (mandatory) a native HTML event object
 

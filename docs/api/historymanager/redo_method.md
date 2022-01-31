@@ -18,6 +18,4 @@ description: You can learn about the redo method of HistoryManager in the docume
 redo(): void;
 ~~~
 
-@descr:
-
 **Change log**: Added in v4.1

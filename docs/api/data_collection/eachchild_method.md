@@ -15,7 +15,11 @@ description: You can learn about the eachChild method of data collection in the 
 ### Usage
 
 ~~~js
-eachChild(id: string | number, callback: function, isTree?: boolean): void;
+eachChild(
+    id: string | number, 
+    callback: function, 
+    isTree?: boolean
+): void;
 ~~~
 
 ### Parameters

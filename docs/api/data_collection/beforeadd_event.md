@@ -20,6 +20,8 @@ beforeAdd: (newItem: object) => boolean | void;
 
 ### Parameters
 
+The callback of the event takes the following parameter:
+
 - `newItem` - (mandatory) the object of an added item
 
 ### Returns

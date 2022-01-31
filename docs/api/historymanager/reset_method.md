@@ -18,6 +18,4 @@ description: You can learn about the reset method of HistoryManager in the docum
 reset(): void;
 ~~~
 
-@descr:
-
 **Change log**: Added in v4.1

@@ -23,6 +23,8 @@ beforeCellsValidation: (
 
 ### Parameters
 
+The callback of the event takes the following parameters:
+
 - `swimlaneId` - (mandatory) the id of the item
 - `action` - (mandatory) the type of the action
 

@@ -18,8 +18,6 @@ description: You can learn about the disable method of HistoryManager in the doc
 disable(): void;
 ~~~
 
-@descr:
-
-The Reset and HistoryManager buttons from the Toolbar work only in the custom event generation mode. Ctrl+z and Ctrl+Shift+z navigation is not available.
+The Reset and HistoryManager buttons from the Toolbar work only in the custom event generation mode. **Ctrl+z** and **Ctrl+Shift+z** navigation is not available.
 
 **Change log**: Added in v4.1

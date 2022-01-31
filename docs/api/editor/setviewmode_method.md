@@ -15,12 +15,12 @@ description: You can learn about the setViewMode method of editor in the documen
 ### Usage
 
 ~~~js
-setViewMode(mode: "preview" | "edit"): void;
+setViewMode(mode: string): void;
 ~~~
 
 ### Parameters
 
-- `mode` - the mode of Editor:
+- `mode` - (mandatory) the mode of Editor:
     - **"preview"** - the mode is used to show the diagram. Most of the editing functions of Editor are not available. The left and right panels are hidden
     - **"edit"** - the mode is used to edit the diagram. All the functions of Editor are available. The left and right panels are shown
 

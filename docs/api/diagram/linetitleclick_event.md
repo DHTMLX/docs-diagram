@@ -24,11 +24,11 @@ lineTitleClick: (
 
 ### Parameters
 
+The callback of the event takes the following parameters:
+
 - `lineId` - (required) the id of a line
 - `titleId` - (required) the id of a text element of a line
 - `event` - (required) a native HTML event object
-
-@descr:
 
 ### Usage
 

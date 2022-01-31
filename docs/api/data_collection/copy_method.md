@@ -15,7 +15,11 @@ description: You can learn about the copy method of data collection in the docum
 ### Usage
 
 ~~~js
-copy(id: string | number | array, index: number, target?: object): string | number | array;
+copy(
+    id: string | number | array,
+    index: number, 
+    target?: object
+): string | number | array;
 ~~~
 
 ### Parameters
@@ -26,7 +30,7 @@ copy(id: string | number | array, index: number, target?: object): string | numb
 
 ### Returns
 
-The item's id or an array with ids of items
+The method returns the item's id or an array with ids of items
 
 ### Example
 

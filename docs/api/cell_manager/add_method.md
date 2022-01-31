@@ -21,14 +21,14 @@ The **add()** method is automatically validated by the system. The cell won't be
 ~~~js
 add(
     cellIndex: number, 
-    dir: "up" | "down" | "left" | "right"
+    dir: string // "up" | "down" | "left" | "right"
 ): void;
 ~~~
 
 ### Parameters
 
 - `cellIndex` - (mandatory) the start index of a cell in a layout. The count of the index starts from 0
-- `dir` - (mandatory) the direction of the action
+- `dir` - (mandatory) the direction of the action: "up" | "down" | "left" | "right"
 
 ### Example
 

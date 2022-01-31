@@ -17,18 +17,18 @@ description: You can learn about the getCellIndex method of Cell Manager in the 
 ~~~js
 getCellIndex(
     cellId: string | number, 
-    type: "row" | "col"
+    type: string // "row" | "col"
 ): number | undefined;
 ~~~
 
 ### Parameters
 
 - `cellId` - (mandatory) the id of a cell
-- `type` - (mandatory) the type of direction to count the index
+- `type` - (mandatory) the type of direction to count the index: "row" | "col"
 
 ### Returns
 
-The index of the cell. The count of the index starts from 0
+The method returns the index of the cell. The count of the index starts from 0
 
 ### Example
 

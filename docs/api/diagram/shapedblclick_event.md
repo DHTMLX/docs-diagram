@@ -11,7 +11,6 @@ description: You can learn about the shapeDblClick event in the documentation of
 @short: fires on double-clicking a shape
 @descr:
 
-
 ### Usage
 
 ~~~js
@@ -22,6 +21,8 @@ shapeDblClick: (
 ~~~
 
 ### Parameters
+
+The callback of the event takes the following parameters:
 
 - `id` - (mandatory) the shape id
 - `event` - (mandatory) a native HTML event object

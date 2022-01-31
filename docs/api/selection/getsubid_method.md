@@ -20,7 +20,7 @@ getSubId(): string | number;
 
 ### Returns
 
-The subId (if any) of the selected item.
+The method returns the subId (if any) of the selected item
 
 ### Example
 

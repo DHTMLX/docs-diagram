@@ -24,6 +24,8 @@ beforeShapeMove: (
 
 ### Parameters
 
+The callback of the event takes the following parameters:
+
 - `event` - (mandatory) a native HTML event object
 - `id` - (mandatory) the id of a shape
 - `coord` - (mandatory) an object with the x and y coordinates of the shape position before movement

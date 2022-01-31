@@ -24,7 +24,7 @@ getSubHeaderCellIndex(subheaderId: string): number;
 
 ### Returns
 
-The index of the cell. The count of the index starts from 0
+The method returns the index of the cell. The count of the index starts from 0
 
 ### Example
 

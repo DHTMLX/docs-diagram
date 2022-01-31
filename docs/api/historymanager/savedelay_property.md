@@ -20,8 +20,8 @@ saveDelay: number;
 
 ### Default config
 
- 500
-
-@descr:
+~~~js
+saveDelay: 500
+~~~
 
 **Change log**: Added in v4.1

@@ -15,10 +15,18 @@ description: You can learn about the beforeEditorEditing event in the documentat
 ### Usage
 
 ~~~js
-beforeEditorEditing: (value: string, currentValue: string, id: string | number, key: string, subId?: string) => boolean | void;
+beforeEditorEditing: (
+    value: string, 
+    currentValue: string, 
+    id: string | number, 
+    key: string, 
+    subId?: string
+) => boolean | void;
 ~~~
 
 ### Parameters
+
+The callback of the event takes the following parameters:
 
 - `value` - (mandatory) the new value of the item
 - `currentValue` - (mandatory) the old value of the item
@@ -28,7 +36,7 @@ beforeEditorEditing: (value: string, currentValue: string, id: string | number, 
 
 ### Returns
 
-`False` to block saving changes after editing an item via the inline editor, otherwise `true`.
+Return `false` to block saving changes after editing an item via the inline editor, otherwise `true`
 
 ### Example
 
@@ -39,10 +47,10 @@ diagram.events.on("beforeEditorEditing", (value, id, key, subId) => {
 });
 ~~~
 
-**Related samples**:
-- [Diagram. Default mode. Events](https://snippet.dhtmlx.com/7h2hgb3g)
-- [Diagram. Org chart mode. Events](https://snippet.dhtmlx.com/l38pct7c)
-
 **Change log**: 
 - SubHeaderId parameter has been changed to subId in v4.1
 - Added in v4.0
+
+**Related samples**:
+- [Diagram. Default mode. Events](https://snippet.dhtmlx.com/7h2hgb3g)
+- [Diagram. Org chart mode. Events](https://snippet.dhtmlx.com/l38pct7c)

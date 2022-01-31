@@ -20,9 +20,6 @@ isUndo(): boolean;
 
 ### Returns
 
-
-`true`, if he current state is in the ending state; otherwise, `false`.
-
-@descr:
+The method returns `true`, if the current state is in the ending state; otherwise, `false`
 
 **Change log**: Added in v4.1

@@ -21,12 +21,12 @@ description: You can learn about the autoplacement property of editor in the doc
 
 ~~~js
 autoplacement?: {
-	mode?: string, // "direct" | "edges"
+	mode?: "direct" | "edges",
 	graphPadding?: number
 };
 ~~~
 
-### Attributes
+### Details
 
 The **autoplacement** property has the following attributes:
 

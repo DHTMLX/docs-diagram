@@ -20,7 +20,7 @@ getId(): string | number;
 
 ### Returns
 
-The id of the selected item.
+The method returns the id of the selected item
 
 ### Example
 

@@ -12,8 +12,6 @@ description: You can learn about the groupMouseDown event in the documentation o
 @descr:
 If a pointing device button is pressed while the pointer is over a swimlane, the event will be fired on the cell of the swimlane
 
-@descr:
-
 ### Usage
 
 ~~~js
@@ -24,6 +22,8 @@ groupMouseDown: (
 ~~~
 
 ### Parameters
+
+The callback of the event takes the following parameters:
 
 - `id` - (mandatory) the id of a group
 - `event` - (mandatory) a native HTML event object

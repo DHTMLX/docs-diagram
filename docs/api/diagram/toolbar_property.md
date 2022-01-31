@@ -26,7 +26,7 @@ toolbar?: [
 ];
 ~~~
 
-### Attributes
+### Details
 
 The **toolbar** array can include a set of icon objects. Each icon object can have the following attributes:
 

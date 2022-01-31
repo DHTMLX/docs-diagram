@@ -15,7 +15,11 @@ description: You can learn about the eachParent method of data collection in the
 ### Usage
 
 ~~~js
-eachParent(id: string | number, callback: function, self?: boolean): void
+eachParent(
+    id: string | number, 
+    callback: function, 
+    self?: boolean
+): void
 ~~~
 
 ### Parameters

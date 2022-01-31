@@ -20,7 +20,9 @@ importData: (data: any) => void;
 
 ### Parameters
 
-- `data` - the imported data
+The callback of the event takes the following parameter:
+
+- `data` - (mandatory) the imported data
 
 ### Example
 

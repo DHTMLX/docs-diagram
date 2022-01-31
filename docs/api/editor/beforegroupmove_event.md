@@ -24,6 +24,8 @@ beforeGroupMove: (
 
 ### Parameters
 
+The callback of the event takes the following parameters:
+
 - `event` - (mandatory) a native HTML event object
 - `id` - (mandatory) the id of an item
 - `coord` - (mandatory) am object with the x and y coordinates of the group or swimlane position before movement

@@ -35,8 +35,8 @@ addShape(
 ### Parameters
 
 - `type` - (mandatory) the unique name for the type of a custom shape. The name must differ from the names of default shapes
-- `parameters` - (mandatory) an object with the additional parameters of the **addShape()** function. Here you can specify the following attributes:
-    - `template` - (mandatory) the function that returns either an HTML or SVG template. The function takes the config of a shape as a parameter. Check [the available formats of the template](#formats-of-the-shape-template)
+- `parameters` - (mandatory) an object with the additional parameters of the **addShape()** method. Here you can specify the following attributes:
+    - `template` - (mandatory) the function that returns either an HTML or SVG template. The function takes the config object of the shape as a parameter. Check [the available formats of the template](#formats-of-the-shape-template)
     - [`defaults`](../../../shapes/custom_shape/) - (optional) the default configuration for a created shape. See [the full list of the configuration properties of a shape](../../../shapes/configuration_properties/)
     - [`properties`](../../../guides/diagram_editor/right_panel/#configuring-options-for-editing-custom-shapes) - (optional, <i>and is available only in the editor mode</i>) an array of objects that defines which sidebar options will be rendered in the right panel of the editor for editing a custom shape. Each object can contain a set of properties:
         - `type: string` - (mandatory) the type of a sidebar option. See the list of available types [below](#types-of-sidebar-options)

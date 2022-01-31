@@ -11,7 +11,6 @@ description: You can learn about the emptyAreaClick event in the documentation o
 @short: fires on clicking an empty space in the current diagram area
 @descr:
 
-
 ### Usage
 
 ~~~js
@@ -19,6 +18,8 @@ emptyAreaClick: (event: MouseEvent) => void;
 ~~~
 
 ### Parameters
+
+The callback of the event takes the following parameter:
 
 - `event` - (mandatory) a native HTML event object
 

@@ -15,13 +15,22 @@ description: You can learn about the beforeSelect event in the documentation of 
 ### Usage
 
 ~~~js
-beforeSelect: (id: string | number, subId?: string | number | undefined) => void | boolean;
+beforeSelect: (
+    id: string | number, 
+    subId?: string | number | undefined
+) => void | boolean;
 ~~~
 
 ### Parameters
 
+The callback of the event takes the following parameters:
+
 - `id` - (mandatory) the item id
 - `subId` - (optional) the id of a subheader of a swimlane or a text element of a line
+
+### Returns
+
+Return `false` to prevent an item from being selected; otherwise, `true`
 
 ### Example
 
@@ -37,11 +46,10 @@ diagram.events.on("BeforeSelect", function(id) {
 });
 ~~~
 
-**Related sample**: [Diagram. Org chart mode. Events](https://snippet.dhtmlx.com/l38pct7c)
-
-Returning *false* from the handler will block the selection.
-
 **Change log**: SubId parameter has been added in v4.1
 
-**Related articles**:  - [diagram.config.select](../../../api/diagram/select_property/)
+**Related articles**:  
+- [diagram.config.select](../../../api/diagram/select_property/)
 - [Selecting items](../../../guides/manipulating_items/#selecting-items)
+
+**Related sample**: [Diagram. Org chart mode. Events](https://snippet.dhtmlx.com/l38pct7c)

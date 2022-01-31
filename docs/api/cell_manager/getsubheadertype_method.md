@@ -24,7 +24,7 @@ getSubHeaderType(subheaderId: string): "row" | "col" | undefined;
 
 ### Returns
 
-The type of the subheader of the swimlane: "row" | "col" | undefined
+The method returns the type of the subheader of the swimlane: "row" | "col" | undefined
 
 ### Example
 

@@ -17,20 +17,20 @@ description: You can learn about the validation method of Cell Manager in the do
 ~~~js
 validation(
     cellIndex: number, 
-    dir: "up" | "down" | "left" | "right", 
-    action: "move" | "remove" | "add"
+    dir: string, // "up" | "down" | "left" | "right"
+    action: string // "move" | "remove" | "add"
 ): boolean;
 ~~~
 
 ### Parameters
 
 - `cellIndex` - (mandatory) the start index of a cell in a layout. The count of the index starts from 0
-- `dir` - (mandatory) the direction of the action
-- `action` - (mandatory) the type of the action
+- `dir` - (mandatory) the direction of the action: "up" | "down" | "left" | "right"
+- `action` - (mandatory) the type of the action: "move" | "remove" | "add"
 
 ### Returns
 
-`True` if the cell is validated, otherwise `false`.
+The method returns `true` if the cell is validated, otherwise `false`.
 
 ### Example
 

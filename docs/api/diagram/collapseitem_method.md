@@ -24,7 +24,10 @@ collapseItem(
 ### Parameters
 
 - `id` - (mandatory) the **ID** of the item
-- `dir` - (optional) defines the side, the children will be hidden in relation to the root shape: **"left"**, or **"right"**. The parameter can be used only when the diagram is initialized in the mindmap mode (**type:"mindmap"**)
+- `dir` - (optional) defines the side, the children will be hidden in relation to the root shape: **"left"**, or **"right"**. 
+  :::note
+  The **dir** parameter can be used only when the diagram is initialized in the mindmap mode (*type:"mindmap"*)
+  :::
 
 ### Example
 

@@ -12,8 +12,6 @@ description: You can learn about the groupDblClick event in the documentation of
 @descr:
 If a double-click is done over a swimlane, the event will be fired on the cell of the swimlane
 
-@descr:
-
 ### Usage
 
 ~~~js
@@ -24,6 +22,8 @@ groupDblClick: (
 ~~~
 
 ### Parameters
+
+The callback of the event takes the following parameters:
 
 - `id` - (mandatory) the id of a group
 - `event` - (mandatory) a native HTML event object

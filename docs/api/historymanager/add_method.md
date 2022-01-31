@@ -8,22 +8,22 @@ description: You can learn about the add method of HistoryManager in the documen
 
 ### Description
 
-@short: adds new state
+@short: adds a new state
 
 @descr:
+
+:::info
+Adding the new state is done automatically. Therefore this method is not recommended for manual usage
+:::
 
 ### Usage
 
 ~~~js
-add(newState: IDataItem[]): void;
+add(newState: array): void;
 ~~~
 
 ### Parameters
 
-- `newState: array` - an array of JSON objects of the current state
-
-@descr:
-
-Adding the new state is done automatically. Therefore this method is not recommended for manual usage.
+- `newState` - (mandatory) an array of JSON objects of the current state of the diagram
 
 **Change log**: Added in v4.1

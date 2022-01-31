@@ -11,7 +11,6 @@ description: You can learn about the afterSubmenuOpen event in the documentation
 @short: fires after the menu of the subheader is opened
 @descr:
 
-
 ### Usage
 
 ~~~js
@@ -23,6 +22,8 @@ afterSubmenuOpen: (
 ~~~
 
 ### Parameters
+
+The callback of the event takes the following parameters:
 
 - `id` - (mandatory) the id of a swimlane
 - `event` - (mandatory) a native HTML event object

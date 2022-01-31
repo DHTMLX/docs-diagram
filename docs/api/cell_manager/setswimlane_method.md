@@ -24,7 +24,7 @@ setSwimlane(id: string | number): boolean;
 
 ### Returns
 
-`True` if the swimlane is set, otherwise `false`.
+The method returns `true` if the swimlane is set, otherwise `false`.
 
 ### Example
 

@@ -19,7 +19,10 @@ The **remove()** method is automatically validated by the system. The cell won't
 ### Usage
 
 ~~~js
-remove(cellIndex: number, type: "row" | "col"): void;
+remove(
+    cellIndex: number, 
+    type: string // "row" | "col"
+): void;
 ~~~
 
 ### Parameters

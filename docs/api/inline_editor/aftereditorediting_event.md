@@ -15,10 +15,17 @@ description: You can learn about the afterEditorEditing event in the documentati
 ### Usage
 
 ~~~js
-afterEditorEditing: (value: string, id: string | number, key: string, subId?: string) => void;
+afterEditorEditing: (
+    value: string, 
+    id: string | number, 
+    key: string, 
+    subId?: string
+) => void;
 ~~~
 
 ### Parameters
+
+The callback of the event takes the following parameters:
 
 - `value` - (mandatory) the new value of the item
 - `id`- (mandatory) the id of the item
@@ -33,10 +40,10 @@ diagram.events.on("afterEditorEditing", (value, id, key, subId) => {
 });
 ~~~
 
+**Change log**: 
+- The subHeaderId parameter has been changed to subId in v4.1
+- Added in v4.0
+
 **Related samples**:
 - [Diagram. Default mode. Events](https://snippet.dhtmlx.com/7h2hgb3g)
 - [Diagram. Org chart mode. Events](https://snippet.dhtmlx.com/l38pct7c)
-
-**Change log**: 
-- SubHeaderId parameter has been changed to subId in v4.1
-- Added in v4.0

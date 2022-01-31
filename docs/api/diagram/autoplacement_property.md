@@ -20,12 +20,12 @@ The **autoplacement** property works only in the default mode of the diagram and
 
 ~~~js
 autoplacement?: {
-	mode?: string, // "direct" | "edges"
+	mode?: "direct" | "edges",
 	graphPadding?: number
 };
 ~~~
 
-### Attributes
+### Details
 
 The **autoplacement** property has the following attributes:
 

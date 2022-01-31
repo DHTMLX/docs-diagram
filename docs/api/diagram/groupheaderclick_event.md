@@ -12,8 +12,6 @@ description: You can learn about the groupHeaderClick event in the documentation
 @descr:
 If a click is done over a header of a swimlane, the event will be fired on the subheader of the swimlane
 
-@descr:
-
 ### Usage
 
 ~~~js
@@ -25,6 +23,8 @@ groupHeaderClick: (
 ~~~
 
 ### Parameters
+
+The callback of the event takes the following parameters:
 
 - `id` - (mandatory) the id of a group
 - `event` - (mandatory) a native HTML event object

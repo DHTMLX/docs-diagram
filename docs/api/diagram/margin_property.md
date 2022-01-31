@@ -11,7 +11,6 @@ description: You can learn about the margin property in the documentation of the
 @short: optional, an object with settings of margins for positioning items in the diagram
 @descr:
 
-
 ### Usage
 
 ~~~js
@@ -23,7 +22,7 @@ margin?: {
 };
 ~~~
 
-### Attributes
+### Details
 
 The **margin** property has the following attributes:
 

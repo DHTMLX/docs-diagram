@@ -24,7 +24,7 @@ exists(id: string | number): boolean;
 
 ### Returns
 
-`True` if the item exists, otherwise `false`
+The method returns `true` if the item exists, otherwise `false`
 
 ### Example
 

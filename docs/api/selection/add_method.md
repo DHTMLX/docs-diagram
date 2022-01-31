@@ -15,7 +15,10 @@ description: You can learn about the add method of selection in the documentatio
 ### Usage
 
 ~~~js
-add(id: string | number, subId?: string | number): void;
+add(
+    id: string | number, 
+    subId?: string | number
+): void;
 ~~~
 
 ### Parameters
@@ -35,10 +38,11 @@ diagram.data.parse(data);
 diagram.selection.add("2");
 ~~~
 
+**Related articles**:  
+- [diagram.config.select](../../../api/diagram/select_property/)
+- [Selecting items](../../../guides/manipulating_items/#selecting-items)
+
 **Related samples**:
 
 - [Diagram. Org chart mode. Item selection](https://snippet.dhtmlx.com/jyoxn5h7)
 - [Diagram. Default mode. Item selection](https://snippet.dhtmlx.com/tcny4obw)
-
-**Related articles**:  - [diagram.config.select](../../../api/diagram/select_property/)
-- [Selecting items](../../../guides/manipulating_items/#selecting-items)

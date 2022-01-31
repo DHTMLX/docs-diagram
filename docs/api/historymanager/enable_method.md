@@ -8,7 +8,7 @@ description: You can learn about the enable method of HistoryManager in the docu
 
 ### Description
 
-@short: restarts the work of HistoryManager, the current state is saved as the beginning
+@short: restarts the work of HistoryManager, saving the current state as initial state
 
 @descr:
 
@@ -17,7 +17,5 @@ description: You can learn about the enable method of HistoryManager in the docu
 ~~~js
 enable(): void;
 ~~~
-
-@descr:
 
 **Change log**: Added in v4.1

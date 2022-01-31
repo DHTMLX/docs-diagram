@@ -15,7 +15,10 @@ description: You can learn about the remove method of selection in the documenta
 ### Usage
 
 ~~~js
-remove(id?: string | number, subId?: string | number): boolean
+remove(
+    id?: string | number, 
+    subId?: string | number
+): boolean
 ~~~
 
 ### Parameters
@@ -25,7 +28,7 @@ remove(id?: string | number, subId?: string | number): boolean
 
 ### Returns
 
-`True` if the item is unselected, otherwise `false`.
+The method returns `true` if the item is unselected, otherwise `false`
 
 ### Example
 
@@ -34,13 +37,13 @@ diagram.selection.remove("1"); // -> true
 diagram.paint();
 ~~~
 
+{{note Please note that you need to call the **paint()** method to repaint the diagram after removing selection.}}
+
+**Related articles**:  
+- [diagram.config.select](../../../api/diagram/select_property/)
+- [Selecting items](../../../guides/manipulating_items/#selecting-items)
 
 **Related samples**:
 
 - [Diagram. Org chart mode. Item selection](https://snippet.dhtmlx.com/jyoxn5h7)
 - [Diagram. Default mode. Item selection](https://snippet.dhtmlx.com/tcny4obw)
-
-{{note Please note that you need to call the paint() method to repaint the diagram after removing selection.}}
-
-**Related articles**:  - [diagram.config.select](../../../api/diagram/select_property/)
-- [Selecting items](../../../guides/manipulating_items/#selecting-items)
