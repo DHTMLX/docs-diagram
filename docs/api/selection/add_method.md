@@ -28,7 +28,7 @@ add(
 
 ### Example
 
-~~~js
+~~~js {7}
 // diagram must be created with the "select:true" option
 const diagram = new dhx.Diagram("diagram_container", { 
     select: true 
@@ -44,5 +44,5 @@ diagram.selection.add("2");
 
 **Related samples**:
 
-- [Diagram. Org chart mode. Item selection](https://snippet.dhtmlx.com/jyoxn5h7)
+- [Diagram. Selection. Item selection](https://snippet.dhtmlx.com/jyoxn5h7)
 - [Diagram. Default mode. Item selection](https://snippet.dhtmlx.com/tcny4obw)

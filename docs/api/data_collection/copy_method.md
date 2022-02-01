@@ -34,6 +34,11 @@ The method returns the item's id or an array with ids of items
 
 ### Example
 
-~~~js
+~~~js {6}
+const diagram = new dhx.Diagram("diagram_container", {
+    type: "default"
+});
+diagram.data.parse(data);
+
 diagram.data.copy("4",5); // copies the shape with id=4 to the position with index 5
 ~~~

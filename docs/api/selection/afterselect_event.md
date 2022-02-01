@@ -30,12 +30,16 @@ The callback of the event takes the following parameters:
 
 ### Example
 
-~~~js
+~~~js {10-12}
+// initializing Diagram
 const diagram = new dhx.Diagram("diagram_container", { 
     type: "org", 
     select: true        
 });
+// loading data
+diagram.data.parse(data);
 
+// attaching a handler to the event
 diagram.events.on("AfterSelect", function(id) {
 	console.log(diagram.data.getItem(id).text + " was selected");
 });

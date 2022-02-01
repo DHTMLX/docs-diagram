@@ -20,7 +20,12 @@ removeAll(): void;
 
 ### Example
 
-~~~js
+~~~js {6}
+const diagram = new dhx.Diagram("diagram_container", {
+    type: "default"
+});
+diagram.data.parse(data);
+
 diagram.data.removeAll();
 ~~~
 

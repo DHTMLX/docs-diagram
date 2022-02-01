@@ -15,7 +15,10 @@ description: You can learn about the load method of data collection in the docum
 ### Usage
 
 ~~~js
-load(url: string | object, driver?: object | string): Promise<any>;
+load(
+	url: string | object, 
+	driver?: object | string
+): Promise<any>;
 ~~~
 
 ### Parameters
@@ -29,10 +32,14 @@ A promise of data loading
 
 ### Example
 
-~~~js
+~~~js {6}
+const diagram = new dhx.Diagram("diagram_container", {
+    type: "default"
+});
+diagram.data.parse(data);
+
 diagram.data.load("../common/data.json");
 ~~~
-
 
 ### Details
 

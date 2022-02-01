@@ -34,7 +34,15 @@ Return `false` to prevent validation of new cells, otherwise `true`
 
 ### Example
 
-~~~js
+~~~js {9-12}
+// initializing Diagram
+const diagram = new dhx.Diagram("diagram_container", {
+    type: "default"
+});
+// loading data
+diagram.data.parse(data);
+
+// attaching a handler to the event
 diagram.events.on("beforeCellsValidation", (swimlaneId, action) => {
     console.log(swimlaneId, action);
     return true;

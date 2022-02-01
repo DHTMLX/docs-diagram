@@ -53,7 +53,12 @@ filter(
 
 ### Example
 
-~~~js
+~~~js {7-9,12}
+const diagram = new dhx.Diagram("diagram_container", {
+    type: "default"
+});
+diagram.data.parse(data);
+
 // filtering by the rule specified in the function
 diagram.data.filter(function (shape) {
     return shape.id > 3;

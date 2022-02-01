@@ -30,7 +30,12 @@ eachParent(
 
 ### Example
 
-~~~js
+~~~js {6-8}
+const diagram = new dhx.Diagram("diagram_container", {
+    type: "default"
+});
+diagram.data.parse(data);
+
 diagram.data.eachParent("id_1.1.1", (item) => {
     console.log(item);
 }, false);

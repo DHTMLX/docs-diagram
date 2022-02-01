@@ -28,6 +28,11 @@ The id of the nearest item
 
 ### Example
 
-~~~js
+~~~js {6}
+const diagram = new dhx.Diagram("diagram_container", {
+    type: "default"
+});
+diagram.data.parse(data);
+
 const nearId = diagram.data.getNearId(id);
 ~~~

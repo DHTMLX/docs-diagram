@@ -30,7 +30,7 @@ The method returns the ID of the shape that the event/tag relates to
 
 ~~~jsx {4}
 const diagram = new dhx.Diagram("diagram_container");
-diagram.parse(data);
+diagram.data.parse(data);
 
 const id = diagram.locate(event);
 ~~~

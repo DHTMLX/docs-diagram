@@ -34,7 +34,13 @@ The callback of the event takes the following parameters:
 
 ### Example
 
-~~~js
+~~~js {7-13}
+// initializing Diagram Editor
+const editor = new dhx.DiagramEditor("editor_container");
+// loading data
+editor.parse(data);
+
+// attaching a handler to the event
 editor.events.on("lineTitleMoveEnd", (event, lineId, titleId, coordinates) => {
     console.log(`
         LineTitle ${id} is position:

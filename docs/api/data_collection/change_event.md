@@ -36,7 +36,15 @@ There are cases when the handler function doesn't take any parameters, e.g. whil
 
 ### Example
 
-~~~js
+~~~js {9-11}
+// initializing Diagram
+const diagram = new dhx.Diagram("diagram_container", {
+    type: "default"
+});
+// loading data
+diagram.data.parse(data);
+
+// attaching a handler to the event
 diagram.events.on("change", function (id, status, shape) {
 	console.log("The " + id + " has been " + status);
 });

@@ -24,7 +24,10 @@ An array of JSON objects for each item from the editor data
 
 ### Example
 
-~~~js
+~~~js {4}
+const editor = new dhx.DiagramEditor("editor_container");
+editor.parse(data);
+
 const data = editor.serialize();
 ~~~
 

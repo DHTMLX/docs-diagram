@@ -34,7 +34,15 @@ Return `false` to block collapsing an item; otherwise, `true`
 
 ### Example
 
-~~~js
+~~~js {9-12}
+// initializing Diagram
+const diagram = new dhx.Diagram("diagram_container", {
+    type: "mindmap"
+});
+// loading data
+diagram.data.parse(data);
+
+// attaching a handler to the event
 diagram.events.on("beforeCollapse", function(id, dir) {
     console.log("Collapsing " + diagram.data.getItem(id).text, dir);
     return true;

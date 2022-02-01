@@ -27,6 +27,9 @@ setViewMode(mode: string): void;
 ### Example
 
 ~~~js
+const editor = new dhx.DiagramEditor("editor_container");
+editor.parse(data);
+
 editor.setViewMode("preview"); // "preview" or "edit"
 ~~~
 

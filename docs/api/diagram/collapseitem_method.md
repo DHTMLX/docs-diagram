@@ -35,7 +35,7 @@ collapseItem(
 const diagram = new dhx.Diagram("diagram_container", {
     type: "default"
 });
-diagram.parse(data);
+diagram.data.parse(data);
 
 diagram.collapseItem(123);
 ~~~
@@ -46,7 +46,7 @@ or
 const diagram = new dhx.Diagram("diagram_container", {
 	type:"mindmap"
 });
-diagram.parse(data);
+diagram.data.parse(data);
 
 diagram.collapseItem("main", "left");
 ~~~

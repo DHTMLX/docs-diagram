@@ -24,7 +24,12 @@ An array with the ids of the root items
 
 ### Example
 
-~~~js
+~~~js {6}
+const diagram = new dhx.Diagram("diagram_container", {
+    type: "default"
+});
+diagram.data.parse(data);
+
 diagram.data.getRoots();
 ~~~
 

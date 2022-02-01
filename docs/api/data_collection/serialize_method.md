@@ -24,7 +24,12 @@ An array of JSON objects for each item and link from Diagram
 
 ### Example
 
-~~~js
+~~~js {6}
+const diagram = new dhx.Diagram("diagram_container", {
+    type: "default"
+});
+diagram.data.parse(data);
+
 const data = diagram.data.serialize();
 ~~~
 

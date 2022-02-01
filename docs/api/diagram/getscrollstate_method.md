@@ -30,7 +30,7 @@ The method returns an object which stores positions of scrolls. It includes two 
 
 ~~~jsx {4}
 const diagram = new dhx.Diagram("diagram_container");
-diagram.parse(data);
+diagram.data.parse(data);
 
 const state = diagram.getScrollState();
 // diagram.scrollTo( state.x, state.y );

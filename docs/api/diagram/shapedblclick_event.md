@@ -29,7 +29,15 @@ The callback of the event takes the following parameters:
 
 ### Example
 
-~~~js
+~~~js {9-11}
+// initializing Diagram
+const diagram = new dhx.Diagram("diagram_container", {
+    type: "default"
+});
+// loading data
+diagram.data.parse(data);
+
+// attaching a handler to the event
 diagram.events.on("shapeDblClick", function(id) {
 	console.log('An item "' + diagram.data.getItem(id).text + '"double-clicked');
 });

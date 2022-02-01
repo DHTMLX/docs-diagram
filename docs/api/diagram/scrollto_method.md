@@ -27,7 +27,7 @@ scrollTo(x: number, y: number): void;
 
 ~~~jsx {4}
 const diagram = new dhx.Diagram("diagram_container");
-diagram.parse(data);
+diagram.data.parse(data);
 
 diagram.scrollTo(100, 80);
 ~~~

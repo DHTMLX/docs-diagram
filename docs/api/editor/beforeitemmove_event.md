@@ -40,7 +40,13 @@ Return `false` to prevent the item from being moved; otherwise, `true`
 
 ### Example
 
-~~~js
+~~~js {7-14}
+// initializing Diagram Editor
+const editor = new dhx.DiagramEditor("editor_container");
+// loading data
+editor.parse(data);
+
+// attaching a handler to the event
 editor.events.on("beforeItemMove", (event, id, coordinates) => {
     console.log(`
         Item ${id} is position: 

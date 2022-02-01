@@ -34,12 +34,16 @@ Return `false` to prevent an item from being unselected; otherwise, `true`
 
 ### Example
 
-~~~js
+~~~js {10-13}
+// initializing Diagram
 const diagram = new dhx.Diagram("diagram_container", { 
     type: "org", 
     select: true        
 });
+// loading data
+diagram.data.parse(data);
 
+// attaching a handler to the event
 diagram.events.on("BeforeUnSelect", function(id) {
 	console.log("Unselecting " + diagram.data.getItem(id).text);
 	return true;

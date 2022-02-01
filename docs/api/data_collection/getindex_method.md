@@ -28,6 +28,11 @@ The index of the item
 
 ### Example
 
-~~~js
+~~~js {6}
+const diagram = new dhx.Diagram("diagram_container", {
+    type: "default"
+});
+diagram.data.parse(data);
+
 const index = diagram.data.getIndex("1"); // -> returns 0
 ~~~

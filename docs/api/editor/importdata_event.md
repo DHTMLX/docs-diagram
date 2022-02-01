@@ -26,7 +26,13 @@ The callback of the event takes the following parameter:
 
 ### Example
 
-~~~js
+~~~js {7-9}
+// initializing Diagram Editor
+const editor = new dhx.DiagramEditor("editor_container");
+// loading data
+editor.parse(data);
+
+// attaching a handler to the event
 editor.events.on("importData", function(data) {
     console.log("The data are imported from the JSON file");
 });

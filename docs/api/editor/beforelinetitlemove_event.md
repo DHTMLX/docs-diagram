@@ -38,7 +38,13 @@ Return `false` to prevent the text element of a line from being moved; otherwise
 
 ### Example
 
-~~~js
+~~~js {7-14}
+// initializing Diagram Editor
+const editor = new dhx.DiagramEditor("editor_container");
+// loading data
+editor.parse(data);
+
+// attaching a handler to the event
 editor.events.on("beforeLineTitleMove", (event, lineId, titleId, coordinates) => {
     console.log(`
         LineTitle ${id} is position:

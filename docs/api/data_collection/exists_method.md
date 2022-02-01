@@ -28,7 +28,12 @@ The method returns `true` if the item exists, otherwise `false`
 
 ### Example
 
-~~~js
+~~~js {6}
+const diagram = new dhx.Diagram("diagram_container", {
+    type: "default"
+});
+diagram.data.parse(data);
+
 const shape = diagram.data.exists("1"); 
 ~~~
 

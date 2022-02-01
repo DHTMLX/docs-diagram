@@ -40,7 +40,15 @@ Return `false` to block saving changes after editing an item via the inline edit
 
 ### Example
 
-~~~js
+~~~js {9-12}
+// initializing Diagram
+const diagram = new dhx.Diagram("diagram_container", {
+    type: "default"
+});
+// loading data
+diagram.data.parse(data);
+
+// attaching a handler to the event
 diagram.events.on("beforeEditorEditing", (value, id, key, subId) => {
     console.log(value, id, key, subId);
     return true;

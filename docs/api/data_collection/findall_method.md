@@ -27,19 +27,24 @@ findAll(rule: function): array;
 
 ### Parameters
 
-- `rule` - (mandatory) the search criteria
-
-### Returns
-
-An array of matching item objects which can be specified:
+- `rule` - (mandatory) the search criteria which can be specified:
   - as an object which contains the following parameters:
     - `by` - the search criterion (either the key of the item attribute or a search function)
     - `match` - the value of the item attribute
   - as a function: `DataCallback(item: T, index?: number, array?: T[])`
 
+### Returns
+
+An array of matching item objects 
+
 ### Example
 
-~~~js
+~~~js {7,10-14}
+const diagram = new dhx.Diagram("diagram_container", {
+    type: "default"
+});
+diagram.data.parse(data);
+
 //searching for shapes by the attribute key
 const shapes = diagram.data.findAll({ by: "text", match: "Manager" });
 

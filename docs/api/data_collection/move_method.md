@@ -34,6 +34,11 @@ Either a string with the item's id or an array of string values with ids of item
 
 ### Example
 
-~~~js
+~~~js {6}
+const diagram = new dhx.Diagram("diagram_container", {
+    type: "default"
+});
+diagram.data.parse(data);
+
 diagram.data.move("4",5); // moves the shape with id=4 to the position with index 5
 ~~~

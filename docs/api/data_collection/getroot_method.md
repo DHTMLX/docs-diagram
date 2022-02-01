@@ -28,7 +28,12 @@ The id of the root item. The root item is the first item of a tree structure
 
 ### Example
 
-~~~js
+~~~js {6}
+const diagram = new dhx.Diagram("diagram_container", {
+    type: "default"
+});
+diagram.data.parse(data);
+
 diagram.data.getRoot("id_1.1.1"); // -> "id_1"
 ~~~
 

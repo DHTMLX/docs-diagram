@@ -34,12 +34,16 @@ Return `false` to prevent an item from being selected; otherwise, `true`
 
 ### Example
 
-~~~js
+~~~js {10-12}
+// initializing Diagram
 const diagram = new dhx.Diagram("diagram_container", { 
     type: "org", 
     select: true        
 });
+// loading data
+diagram.data.parse(data);
 
+// attaching a handler to the event
 diagram.events.on("BeforeSelect", function(id) {
 	console.log("Selecting " + diagram.data.getItem(id).text);
 	return true;

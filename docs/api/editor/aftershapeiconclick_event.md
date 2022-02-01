@@ -30,7 +30,13 @@ The callback of the event takes the following parameters:
 
 ### Example
 
-~~~js
+~~~js {7-10}
+// initializing Diagram Editor
+const editor = new dhx.DiagramEditor("editor_container");
+// loading data
+editor.parse(data);
+
+// attaching a handler to the event
 editor.events.on("afterShapeIconClick", function(iconId, shape) {
     console.log("You've clicked the", iconId, "toolbar control", shape);
     return true;

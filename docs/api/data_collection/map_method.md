@@ -28,7 +28,12 @@ A new array of items where each item is the result of the callback function
 
 ### Example
 
-~~~js
+~~~js {7-9}
+const diagram = new dhx.Diagram("diagram_container", {
+    type: "default"
+});
+diagram.data.parse(data);
+
 //getting ids of all items of the diagram (shapes, links, groups, swimlanes)
 diagram.data.map(function(item){
     console.log(item.id);

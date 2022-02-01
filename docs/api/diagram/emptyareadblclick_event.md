@@ -26,7 +26,15 @@ The callback of the event takes the following parameter:
 
 ### Example
 
-~~~js
+~~~js {9-11}
+// initializing Diagram
+const diagram = new dhx.Diagram("diagram_container", {
+    type: "default"
+});
+// loading data
+diagram.data.parse(data);
+
+// attaching a handler to the event
 diagram.events.on("emptyAreaDblClick", () => {
 	console.log("emptyAreaDblClick");
 });

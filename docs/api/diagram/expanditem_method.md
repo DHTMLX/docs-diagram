@@ -29,13 +29,13 @@ expandItem(
   The **dir** parameter can be used only when the diagram is initialized in the mindmap mode (*type:"mindmap"*)
   :::
 
-### Examples
+### Example
 
 ~~~jsx {2,6}
 const diagram = new dhx.Diagram("diagram_container", {
     type: "default"
 });
-diagram.parse(data);
+diagram.data.parse(data);
 
 diagram.expandItem(123);
 ~~~
@@ -46,7 +46,7 @@ or
 const diagram = new dhx.Diagram("diagram_container", {
 	type:"mindmap"
 });
-diagram.parse(data);
+diagram.data.parse(data);
 
 diagram.expandItem("main", "left");
 ~~~

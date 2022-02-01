@@ -30,7 +30,8 @@ The callback of the event takes the following parameters:
 
 ### Example
 
-~~~js
+~~~js {18-21}
+// initializing Diagram
 const diagram = new dhx.Diagram("diagram_container", { 
 	toolbar: [
       	{
@@ -43,7 +44,10 @@ const diagram = new dhx.Diagram("diagram_container", {
 	  	}
     ]
 });
+// loading data
+diagram.data.parse(data);
 
+// attaching a handler to the event
 diagram.events.on("shapeIconClick", function(icon){
 	const id = diagram.selection.getId();
 	alert(icon + " was clicked for id = " + id);

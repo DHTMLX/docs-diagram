@@ -25,6 +25,17 @@ import(diagram: object): void;
 ### Example
 
 ~~~js
+// initializing Diagram
+const diagram = new dhx.Diagram("diagram", {
+    type: "org"
+});
+// loading data into Diagram
+diagram.data.parse(data);
+
+// initializing Editor
+const editor = new dhx.DiagramEditor("editor_container");
+
+// importing data from Diagram into Editor
 editor.import(diagram);
 ~~~
 

@@ -24,7 +24,10 @@ zoomIn(step?: number): void;
 
 ### Example
 
-~~~js
+~~~js {4}
+const editor = new dhx.DiagramEditor("editor_container");
+editor.parse(data);
+
 editor.zoomIn(0.1);
 ~~~
 

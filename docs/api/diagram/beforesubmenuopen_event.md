@@ -36,7 +36,15 @@ Return `false` to block opening the subheader; otherwise, `true`
 
 ### Example
 
-~~~js
+~~~js {9-12}
+// initializing Diagram
+const diagram = new dhx.Diagram("diagram_container", {
+    type: "default"
+});
+// loading data
+diagram.data.parse(data);
+
+// attaching a handler to the event
 diagram.events.on("beforeSubmenuOpen", (id, event, subheaderId) => {
     console.log(id, event, subheaderId);
     return true;

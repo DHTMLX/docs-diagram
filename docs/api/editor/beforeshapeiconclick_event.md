@@ -34,7 +34,13 @@ Return `false` to prevent the toolbar control from being clicked; otherwise, `tr
 
 ### Example
 
-~~~js
+~~~js {7-10}
+// initializing Diagram Editor
+const editor = new dhx.DiagramEditor("editor_container");
+// loading data
+editor.parse(data);
+
+// attaching a handler to the event
 editor.events.on("beforeShapeIconClick", function(iconId, shape) {
     console.log("You will click the", iconId, "toolbar control", shape);
     return true;

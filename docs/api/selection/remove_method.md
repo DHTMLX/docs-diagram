@@ -32,7 +32,13 @@ The method returns `true` if the item is unselected, otherwise `false`
 
 ### Example
 
-~~~js
+~~~js {7-8}
+// diagram must be created with the "select:true" option
+const diagram = new dhx.Diagram("diagram_container", { 
+    select: true 
+});
+diagram.data.parse(data);
+
 diagram.selection.remove("1"); // -> true
 diagram.paint();
 ~~~
@@ -45,5 +51,5 @@ diagram.paint();
 
 **Related samples**:
 
-- [Diagram. Org chart mode. Item selection](https://snippet.dhtmlx.com/jyoxn5h7)
+- [Diagram. Selection. Item selection](https://snippet.dhtmlx.com/jyoxn5h7)
 - [Diagram. Default mode. Item selection](https://snippet.dhtmlx.com/tcny4obw)

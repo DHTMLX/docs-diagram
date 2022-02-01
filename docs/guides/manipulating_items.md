@@ -231,7 +231,7 @@ diagram.collapseItem("3");
 const diagram = new dhx.Diagram("diagram_container", {
 	type:"mindmap"
 });
-diagram.parse(data);
+diagram.data.parse(data);
 
 diagram.collapseItem("main", "left");
 //or

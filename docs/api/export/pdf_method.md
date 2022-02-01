@@ -53,7 +53,12 @@ pdf(config?: object): void;
 
 ### Example
 
-~~~js
+~~~js {7,10-13}
+const diagram = new dhx.Diagram("diagram_container", {
+	// config options
+});
+diagram.data.parse(data);
+
 // default export
 diagram.export.pdf();
 

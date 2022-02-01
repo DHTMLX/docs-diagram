@@ -39,7 +39,12 @@ The first object of the item that matches the specified criteria
 
 ### Example
 
-~~~js
+~~~js {7,10-12}
+const diagram = new dhx.Diagram("diagram_container", {
+    type: "default"
+});
+diagram.data.parse(data);
+
 //searching for a shape by the attribute key
 const shape = diagram.data.find({ by: "text", match: "Manager" });
 

@@ -51,7 +51,7 @@ const diagram = new dhx.Diagram("diagram_container", {
 	}
 });
 
-diagram.parse(data);
+diagram.data.parse(data);
 
 diagram.autoPlace();
 ~~~

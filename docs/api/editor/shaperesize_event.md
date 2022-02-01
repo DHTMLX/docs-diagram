@@ -20,7 +20,13 @@ shapeResize: () => void;
 
 ### Example
 
-~~~js
+~~~js {7-9}
+// initializing Diagram Editor
+const editor = new dhx.DiagramEditor("editor_container");
+// loading data
+editor.parse(data);
+
+// attaching a handler to the event
 editor.events.on("shapeResize", function() {
     console.log("The shape is resized");
 });

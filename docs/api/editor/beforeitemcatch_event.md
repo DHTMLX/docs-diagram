@@ -40,7 +40,13 @@ Return `false` to prevent the item from being caught; otherwise, `true`
 
 ### Example
 
-~~~js
+~~~js {7-10}
+// initializing Diagram Editor
+const editor = new dhx.DiagramEditor("editor_container");
+// loading data
+editor.parse(data);
+
+// attaching a handler to the event
 editor.events.on("beforeItemCatch", (movedId, targetId, event) => {
     console.log("beforeItemCatch", movedId, targetId, event);
     if (targetId === "2.1") return false;
