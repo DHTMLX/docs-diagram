@@ -30,7 +30,7 @@ validation(
 
 ### Returns
 
-The method returns `true` if the cell is validated, otherwise `false`.
+The method returns `true` if the cell is validated, otherwise `false`
 
 ### Example
 

@@ -50,7 +50,7 @@ diagram.events.on("BeforeSelect", function(id) {
 });
 ~~~
 
-**Change log**: SubId parameter has been added in v4.1
+**Change log**: The **subId** parameter has been added in v4.1
 
 **Related articles**:  
 - [diagram.config.select](../../../api/diagram/select_property/)

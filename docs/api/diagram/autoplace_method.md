@@ -19,11 +19,7 @@ The **autoPlace()** method works only in the default mode of the diagram and onl
 ### Usage
 
 ~~~jsx
-autoPlace(
-	config?: {
-		mode?: "direct" | "edges",
-		graphPadding?: number
-}): void;
+autoPlace(config?: object): void;
 ~~~
 
 ### Parameters

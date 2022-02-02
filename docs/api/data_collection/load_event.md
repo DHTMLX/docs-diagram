@@ -33,5 +33,3 @@ diagram.events.on("load", function(){
 	// some logic here
 });
 ~~~
-
-**Related sample**: [Diagram. Org chart mode. Events](https://snippet.dhtmlx.com/l38pct7c)

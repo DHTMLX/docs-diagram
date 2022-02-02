@@ -6,15 +6,15 @@ description: You can learn about the beforeItemCatch event of editor in the docu
 
 # beforeItemCatch
 
+:::info
+The event works only in the org chart and mindmap modes of Diagram, the **itemsDraggable** property must be set to **true**
+:::
+
 ### Description
 
 @short: fires before an item is caught
 
 @descr:
-
-:::note
-The event works in the org chart and mindmap modes of Diagram, **itemsDraggable** property must be set to **true**
-:::
 
 ### Usage
 

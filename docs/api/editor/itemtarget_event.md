@@ -6,17 +6,17 @@ description: You can learn about the itemTarget event of editor in the documenta
 
 # itemTarget
 
+:::info
+The event works only in the org chart and mindmap modes of Diagram, the **itemsDraggable** property must be set to **true**.
+
+The event doesn't work with the parent item of the moved item and with the moved item with the property **giveItem: false**.
+:::
+
 ### Description
 
 @short: fires when the moved item is under the target item
 
 @descr:
-
-:::note
-The event works in the org chart and mindmap modes of Diagram, **itemsDraggable** property must be set to **true**.
-
-The event doesn't work with the parent item of the moved item and with the moved item with the property **giveItem: false**.
-:::
 
 ### Usage
 

@@ -15,10 +15,7 @@ description: You can learn about the findAll method of data collection in the do
 ### Usage
 
 ~~~js
-findAll(rule: {
-	by: string | function,
-	match: string
-}): array;
+findAll(rule: object): array;
 
 // or
 
@@ -29,8 +26,8 @@ findAll(rule: function): array;
 
 - `rule` - (mandatory) the search criteria which can be specified:
   - as an object which contains the following parameters:
-    - `by` - the search criterion (either the key of the item attribute or a search function)
-    - `match` - the value of the item attribute
+    - `by: string | function` - the search criterion (either the key of the item attribute or a search function)
+    - `match: string` - the value of the item attribute
   - as a function: `DataCallback(item: T, index?: number, array?: T[])`
 
 ### Returns

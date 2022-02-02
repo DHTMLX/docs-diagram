@@ -45,7 +45,7 @@ diagram.events.on("AfterUnSelect", function (id) {
 });
 ~~~
 
-**Change log**: SubId parameter has been added in v4.1
+**Change log**: The **subId** parameter has been added in v4.1
 
 **Related sample**: [Diagram. Org chart mode. Events](https://snippet.dhtmlx.com/l38pct7c)
 

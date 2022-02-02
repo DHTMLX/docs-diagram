@@ -15,10 +15,7 @@ description: You can learn about the find method of data collection in the docum
 ### Usage
 
 ~~~js
-find(rule: {
-	by: string | function,
-	match: string
-}): object;
+find(rule: object): object;
 
 // or
 
@@ -29,8 +26,8 @@ find(rule: function): object;
 
 - `rule` - (mandatory) the search criteria which can be specified:
   - as an object which contains the following parameters:
-    - `by` - the search criterion (either the key of the item attribute or a search function)
-    - `match` - the value of the item attribute
+    - `by: string | function` - the search criterion (either the key of the item attribute or a search function)
+    - `match: string` - the value of the item attribute
   - as a function: `DataCallback(item: T, index?: number, array?: T[])`
 
 ### Returns

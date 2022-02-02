@@ -17,39 +17,31 @@ description: You can learn about the filter method of data collection in the doc
 ~~~js
 filter(
 	rule?: function, 
-	config?: {
-		add?: boolean,
-		smartFilter?: boolean
-	}
+	config?: object
 ): void;
 
 // or
 
 filter(
-	rule?: {
-		by?: string | number,
-		match?: string | number | boolean,
-		compare?: (value: any, match: any, item: any) => boolean
-	}, 
-	config?: {
-		add?: boolean,
-		smartFilter?: boolean
-	}
+	rule?: object,
+	config?: object
 ): void;
 ~~~
 
 ### Parameters
 
-- `rule` - (optional) the filtering criteria. The parameter can be either a function **or** an object with the following attributes:
-  - `by` - (optional) the key of the item attribute
-  - `match` - (optional) a pattern to match
-  - `compare` - (optional) a function for extended filtering that takes three parameters:
-    - `value` - the value to compare
-    - `match` - a pattern to match
-    - `item` - a data item the values of which should be compared (e.g. a shape)
-- `config` - (optional) defines the parameters of filtering. The parameter may contain two properties:
-  - `add` - (optional) defines whether each next filtering will be applied to the already filtered data (<i>true</i>), or to the initial data (<i>false</i>, default)
-  - `smartFilter` - (optional) defines whether a filtering rule will be applied after adding and editing items of the collection
+- `rule` - (optional) the filtering criteria. The parameter can be:
+  - a function
+  - or an object which can have following attributes:
+    - `by: string | number` - (optional) the key of the item attribute
+    - `match: string | number | boolean` - (optional) a pattern to match
+    - `compare: function` - (optional) a function for extended filtering. The function returns either *true* or *false* and takes three parameters:
+      - `value: any` - the value to compare
+      - `match: any` - a pattern to match
+      - `item: any` - a data item the values of which should be compared (e.g. a shape)
+  - `config` - (optional) an object which defines the parameters of filtering. The object may contain two properties:
+    - `add: boolean` - (optional) defines whether each next filtering will be applied to the already filtered data (<i>true</i>), or to the initial data (<i>false</i>, default)
+    - `smartFilter: boolean` - (optional) defines whether a filtering rule will be applied after adding and editing items of the collection
 
 ### Example
 

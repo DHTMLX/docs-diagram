@@ -24,7 +24,7 @@ expandItem(
 ### Parameters
 
 - `id` - (mandatory) the ID of the item
-- `dir` - (optional) defines the side the children will be shown in relation to the root shape: **"left"**, **"right"**. 
+- `dir` - (optional) defines the side the children will be shown in relation to the root shape: **"left"**, **"right"** 
   :::note
   The **dir** parameter can be used only when the diagram is initialized in the mindmap mode (*type:"mindmap"*)
   :::

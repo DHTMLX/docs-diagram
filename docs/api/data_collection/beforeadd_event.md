@@ -39,11 +39,9 @@ const diagram = new dhx.Diagram("diagram_container", {
 diagram.data.parse(data);
 
 // attaching a handler to the event
-diagram.events.on("beforeAdd", function(id){
+diagram.events.on("beforeAdd", function(newItem){
 	if (some_check)
 		return false;
 	return true;
 });
 ~~~
-
-**Related sample**: [Diagram. Org chart mode. Events](https://snippet.dhtmlx.com/l38pct7c)

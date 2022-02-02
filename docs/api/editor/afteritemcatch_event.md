@@ -6,15 +6,15 @@ description: You can learn about the afterItemCatch event of editor in the docum
 
 # afterItemCatch
 
+:::info
+The event works only in the org chart and mindmap modes of Diagram, the **itemsDraggable** property must be set to **true**
+:::
+
 ### Description
 
 @short: fires after an item is caught
 
 @descr:
-
-:::note
-The event works in the org chart and mindmap modes of Diagram, the **itemsDraggable** property must be set to **true**
-:::
 
 ### Usage
 

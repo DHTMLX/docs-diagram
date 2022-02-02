@@ -35,11 +35,9 @@ const diagram = new dhx.Diagram("diagram_container", {
 diagram.data.parse(data);
 
 // attaching a handler to the event
-diagram.events.on("afterAdd", function(id){
+diagram.events.on("afterAdd", function(newItem){
 	console.log("A new item is added");
 });
 ~~~
 
 The event can be used to provide default values or a default formatting for the item's data
-
-**Related sample**: [Diagram. Org chart mode. Events](https://snippet.dhtmlx.com/l38pct7c)

@@ -35,7 +35,7 @@ const diagram = new dhx.Diagram("diagram_container", {
 diagram.data.parse(data);
 
 // attaching a handler to the event
-diagram.events.on("emptyAreaMouseDown", () => {
+diagram.events.on("emptyAreaMouseDown", (e) => {
 	console.log("emptyAreaMouseDown");
 });
 ~~~

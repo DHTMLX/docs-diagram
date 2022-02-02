@@ -35,5 +35,3 @@ diagram.showItem(123);
 **Related sample**:
 - [Diagram. Shape search](https://snippet.dhtmlx.com/d7kvzq4r)
 - [Diagram. Scroll content](https://snippet.dhtmlx.com/f970hbym)
-
-**Related sample:** [Diagram. Shape search](https://snippet.dhtmlx.com/d7kvzq4r)
