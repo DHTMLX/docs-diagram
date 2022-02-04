@@ -23,9 +23,9 @@ autoplacement?: {
 };
 ~~~
 
-### Details
+### Parameters
 
-The **autoplacement** property has the following attributes:
+The **autoplacement** object has the following parameters:
 
 - `mode` - (optional) the mode of connecting shapes, "direct" (by default) or "edges"
 - `graphPadding` - (optional) sets the distance between unconnected diagrams, *"200"* by default

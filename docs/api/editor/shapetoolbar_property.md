@@ -16,9 +16,9 @@ description: You can learn about the shapeToolbar property of editor in the docu
 shapeToolbar?: boolean | array;
 ~~~
 
-### Details
+### Parameters
 
-The array can include:
+As an array, the **shapeToolbar** property can include:
 
 - a boolean *true/false* value - to show/hide the default toolbar;
 - string values with the names of the toolbar controls. The sequence the values are put in the array defines the order the controls will be displayed in the toolbar. The available values are:

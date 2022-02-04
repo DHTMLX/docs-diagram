@@ -24,9 +24,9 @@ toolbar?: [
 ];
 ~~~
 
-### Details
+### Parameters
 
-The **toolbar** array can include a set of icon objects. Each icon object can have the following attributes:
+The **toolbar** array includes a set of icon objects. Each icon object can have the following parameters:
 
 - `id` - (required) the id of the icon
 - `content` - (required) the content of the icon. It can contain an HTML element with the name of the icon class

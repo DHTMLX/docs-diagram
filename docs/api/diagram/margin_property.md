@@ -9,6 +9,7 @@ description: You can learn about the margin property in the documentation of the
 ### Description
 
 @short: optional, an object with settings of margins for positioning items in the diagram
+
 ### Usage
 
 ~~~js
@@ -20,9 +21,9 @@ margin?: {
 };
 ~~~
 
-### Details
+### Parameters
 
-The **margin** property has the following attributes:
+The **margin** object can include the following parameters:
 
 - `itemX` - (optional) horizontal space between two shapes (only for [type: "org" | "mindmap"](../../../api/diagram/type_property/))
 - `itemY` - (optional) vertical space between two shapes (only for [type: "org" | "mindmap"](../../../api/diagram/type_property/))

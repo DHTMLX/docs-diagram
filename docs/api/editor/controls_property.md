@@ -26,19 +26,19 @@ controls?: {
 };
 ~~~
 
-### Details
+### Parameters
 
-The property allows you to enable/disable the following options:
+The **controls** object contains the following parameters:
 
-- `apply` - (optional) enables the Apply All button
-- `reset` - (optional) enables the Reset Changes button
-- `export` - (optional) enables the Export Data button
-- `import` - (optional) enables the Import Data button
-- `autoLayout` - (optional) enables the Auto Layout button (in the default mode of the editor only)
-- `historyManager` - (optional) enables the Undo and Redo buttons
-- `editManager` - (optional) enables the Edit Mode button
-- `scale` - (optional) enables the Zoom group of buttons
-- `gridStep` - (optional) enables the Grid Step sidebar option in the right panel of the editor
+- `apply` - (optional) enables/disables the Apply All button
+- `reset` - (optional) enables/disables the Reset Changes button
+- `export` - (optional) enables/disables the Export Data button
+- `import` - (optional) enables/disables the Import Data button
+- `autoLayout` - (optional) enables/disables the Auto Layout button (in the default mode of the editor only)
+- `historyManager` - (optional) enables/disables the Undo and Redo buttons
+- `editManager` - (optional) enables/disables the Edit Mode button
+- `scale` - (optional) enables/disables the Zoom group of buttons
+- `gridStep` - (optional) enables/disables the Grid Step sidebar option in the right panel of the editor
 
 ### Default config
 

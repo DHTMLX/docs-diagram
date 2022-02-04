@@ -18,9 +18,9 @@ defaults?: {
 };
 ~~~
 
-### Details
+### Parameters
 
-The **defaults** object can contain a number of *key:value* pairs where *key* is the type of a shape and *value* is a set of [configuration settings of the shape](../../../shapes/configuration_properties/).
+The **defaults** object can contain a set of *key:value* pairs where *key* is the type of a shape and *value* is a set of [configuration settings of the shape](../../../shapes/configuration_properties/).
 
 {{note The *type* and *id* attributes can not be defined in the default configuration of a shape.}}
 

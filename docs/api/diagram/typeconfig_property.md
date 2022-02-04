@@ -32,9 +32,9 @@ typeConfig?: {
 }	
 ~~~
 
-### Details
+### Parameters
 
-The **typeConfig** property has the following attributes:
+The **typeConfig** object can include one of two parameters:
 
 - `direction` - (optional) sets the direction of the graph:
   - *"left"* - puts child shapes of the graph to the left of the root shape
