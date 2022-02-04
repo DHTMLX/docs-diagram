@@ -10,8 +10,6 @@ description: You can learn about the beforeCellsAdd event of Cell Manager in the
 
 @short: fires before new cells are added to a swimlane
 
-@descr:
-
 ### Usage
 
 ~~~js

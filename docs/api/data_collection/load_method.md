@@ -10,8 +10,6 @@ description: You can learn about the load method of data collection in the docum
 
 @short: loads data from an external file
 
-@descr:
-
 ### Usage
 
 ~~~js

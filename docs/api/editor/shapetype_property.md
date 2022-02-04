@@ -10,8 +10,6 @@ description: You can learn about the shapeType property of editor in the documen
 
 @short: optional, the type of the items
 
-@descr:
-
 This value is applied, if the shape object doesn't contain the "type" property
 
 ### Usage

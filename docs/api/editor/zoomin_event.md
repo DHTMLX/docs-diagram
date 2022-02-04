@@ -10,8 +10,6 @@ description: You can learn about the zoomIn event of editor in the documentation
 
 @short: fires after the Zoom In button has been clicked
 
-@descr:
-
 ### Usage
 
 ~~~js

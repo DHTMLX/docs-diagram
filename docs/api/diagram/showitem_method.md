@@ -11,8 +11,6 @@ description: You can learn about the showItem method in the documentation of the
 @short: adjusts scroll to make the target item visible
 @descr: 
 
-@descr:
-
 ### Usage
 
 ~~~jsx

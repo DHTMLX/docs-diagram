@@ -10,8 +10,6 @@ description: You can learn about the beforeShapeMove event in of editor the docu
 
 @short: fires before a shape is moved
 
-@descr:
-
 ### Usage
 
 ~~~js

@@ -9,8 +9,6 @@ description: You can learn about the defaults property in the documentation of t
 ### Description
 
 @short: optional, an object which sets the default configuration of a shape
-@descr:
-
 
 ### Usage
 

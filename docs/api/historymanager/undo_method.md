@@ -10,8 +10,6 @@ description: You can learn about the undo method of HistoryManager in the docume
 
 @short: takes a step back in the history of changes
 
-@descr:
-
 ### Usage
 
 ~~~js

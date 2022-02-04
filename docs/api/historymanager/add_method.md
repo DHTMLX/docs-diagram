@@ -10,8 +10,6 @@ description: You can learn about the add method of HistoryManager in the documen
 
 @short: adds a new state
 
-@descr:
-
 :::info
 Adding the new state is done automatically. Therefore this method is not recommended for manual usage
 :::

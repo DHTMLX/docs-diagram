@@ -10,8 +10,6 @@ description: You can learn about the afterEditorClose event in the documentation
 
 @short: fires after the inline editor of the item is closed
 
-@descr:
-
 ### Usage
 
 ~~~js

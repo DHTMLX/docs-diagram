@@ -9,7 +9,7 @@ description: You can learn about the groupMouseDown event in the documentation o
 ### Description
 
 @short: fires when a pointing device button is pressed while the pointer is over a group
-@descr:
+
 If a pointing device button is pressed while the pointer is over a swimlane, the event will be fired on the cell of the swimlane
 
 ### Usage

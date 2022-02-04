@@ -14,8 +14,6 @@ The property works only in the org chart and mindmap modes. The moved item is dr
 
 @short: optional, enables/disables dragging the item from one parent item to another
 
-@descr:
-
 ### Usage
 
 ~~~js

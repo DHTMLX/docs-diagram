@@ -10,8 +10,6 @@ description: You can learn about the beforeCellsMove event of Cell Manager in th
 
 @short: fires before cells of the swimlane are moved
 
-@descr:
-
 ### Usage
 
 ~~~js

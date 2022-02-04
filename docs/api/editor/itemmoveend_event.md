@@ -10,8 +10,6 @@ description: You can learn about the itemMoveEnd event of editor in the document
 
 @short: fires after an item is moved
 
-@descr:
-
 :::note
 The event doesn't work with the line object
 :::

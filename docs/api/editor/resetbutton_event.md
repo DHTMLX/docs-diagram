@@ -10,8 +10,6 @@ description: You can learn about the resetButton event of editor in the document
 
 @short: fires after the Reset Changes button has been clicked
 
-@descr:
-
 ### Usage
 
 ~~~js

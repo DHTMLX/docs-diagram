@@ -10,8 +10,6 @@ description: You can learn about the afterCellsAdd event of Cell Manager in the 
 
 @short: fires after new cells are added to a swimlane
 
-@descr:
-
 ### Usage
 
 ~~~js

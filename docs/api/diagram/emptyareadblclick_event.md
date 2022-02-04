@@ -9,8 +9,6 @@ description: You can learn about the emptyAreaDblClick event in the documentatio
 ### Description
 
 @short: fires on double-clicking an empty space in the current diagram area
-@descr:
-
 
 ### Usage
 

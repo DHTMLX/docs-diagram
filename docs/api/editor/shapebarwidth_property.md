@@ -14,8 +14,6 @@ The property is available only in the default mode of the editor (*type:"default
 
 @short: optional, sets the width of the left panel of the editor
 
-@descr:
-
 ### Usage
 
 ~~~js

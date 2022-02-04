@@ -9,8 +9,6 @@ description: You can learn about the gridStep property in the documentation of t
 ### Description
 
 @short: optional, sets the size of a grid step that defines the step of moving a shape/group/swimlane
-@descr:
-
 
 ### Usage
 

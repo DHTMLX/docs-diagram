@@ -14,8 +14,6 @@ The **move()** method is automatically validated by the system. The cell won't b
 
 @short: moves cells of the swimlane as rows or columns
 
-@descr:
-
 ### Usage
 
 ~~~js

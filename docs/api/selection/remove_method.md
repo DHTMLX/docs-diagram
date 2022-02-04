@@ -10,8 +10,6 @@ description: You can learn about the remove method of selection in the documenta
 
 @short: unselects a previously selected item
 
-@descr:
-
 ### Usage
 
 ~~~js

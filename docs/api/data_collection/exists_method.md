@@ -10,8 +10,6 @@ description: You can learn about the exists method of data collection in the doc
 
 @short: checks whether the specified item exists in the diagram
 
-@descr:
-
 ### Usage
 
 ~~~js

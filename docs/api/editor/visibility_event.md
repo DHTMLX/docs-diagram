@@ -10,8 +10,6 @@ description: You can learn about the visibility event of editor in the documenta
 
 @short: fires after the Visibility button has been clicked
 
-@descr:
-
 ### Usage
 
 ~~~js

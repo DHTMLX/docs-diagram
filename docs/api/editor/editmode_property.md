@@ -10,8 +10,6 @@ description: You can learn about the editMode property of editor in the document
 
 @short: optional, hides/shows the left/right panels of the editor
 
-@descr:
-
 ### Usage
 
 ~~~js

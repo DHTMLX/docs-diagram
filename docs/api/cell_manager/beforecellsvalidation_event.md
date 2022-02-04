@@ -10,8 +10,6 @@ description: You can learn about the beforeCellsValidation event of Cell Manager
 
 @short: fires before cells of the swimlane are validated
 
-@descr:
-
 ### Usage
 
 ~~~js

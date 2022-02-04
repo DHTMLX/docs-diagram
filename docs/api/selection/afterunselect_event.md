@@ -10,8 +10,6 @@ description: You can learn about the afterUnSelect event in the documentation of
 
 @short: fires after unselecting an item
 
-@descr:
-
 ### Usage
 
 ~~~js

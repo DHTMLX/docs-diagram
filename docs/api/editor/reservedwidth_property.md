@@ -10,8 +10,6 @@ description: You can learn about the reservedWidth property of editor in the doc
 
 @short: optional, defines the left offset for the diagram
 
-@descr:
-
 ### Usage
 
 ~~~js

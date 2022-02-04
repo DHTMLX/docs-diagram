@@ -10,8 +10,6 @@ description: You can learn about the getCellIndex method of Cell Manager in the 
 
 @short: returns the index of the cell of the swimlane by the id
 
-@descr:
-
 ### Usage
 
 ~~~js

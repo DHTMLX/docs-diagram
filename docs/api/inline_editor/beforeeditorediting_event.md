@@ -10,8 +10,6 @@ description: You can learn about the beforeEditorEditing event in the documentat
 
 @short: fires before the text value of an item is edited via the inline editor
 
-@descr:
-
 ### Usage
 
 ~~~js

@@ -10,8 +10,6 @@ description: You can learn about the beforeAdd event of data collection in the d
 
 @short: fires before adding an item
 
-@descr:
-
 ### Usage
 
 ~~~js

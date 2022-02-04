@@ -10,8 +10,6 @@ description: You can learn about the afterItemMove event of editor in the docume
 
 @short: fires when an item is moved one grid step
 
-@descr:
-
 :::note
 The event doesn't work with the line object
 :::

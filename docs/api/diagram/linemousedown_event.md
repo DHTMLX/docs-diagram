@@ -9,8 +9,6 @@ description: You can learn about the lineMouseDown event in the documentation of
 ### Description
 
 @short: fires when a pointing device button is pressed while the pointer is over a connector line
-@descr:
-
 
 ### Usage
 

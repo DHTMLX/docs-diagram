@@ -10,8 +10,6 @@ description: You can learn about the eachChild method of data collection in the 
 
 @short: iterates through the children of the specified item
 
-@descr:
-
 ### Usage
 
 ~~~js

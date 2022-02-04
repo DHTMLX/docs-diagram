@@ -10,8 +10,6 @@ description: You can learn about the reset method of HistoryManager in the docum
 
 @short: resets previous changes and saves the current state
 
-@descr:
-
 ### Usage
 
 ~~~js

@@ -10,8 +10,6 @@ description: You can learn about the beforeEditorClose event in the documentatio
 
 @short: fires before the inline editor of an item is closed
 
-@descr:
-
 ### Usage
 
 ~~~js

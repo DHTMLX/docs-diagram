@@ -10,8 +10,6 @@ description: You can learn about the isRedo method of HistoryManager in the docu
 
 @short: checks whether the current HistoryManager state is in the ending state
 
-@descr:
-
 ### Usage
 
 ~~~js

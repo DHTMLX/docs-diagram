@@ -10,8 +10,6 @@ description: You can learn about the afterCellsRemove event of Cell Manager in t
 
 @short: fires after cells of the swimlane are removed
 
-@descr:
-
 ### Usage
 
 ~~~js

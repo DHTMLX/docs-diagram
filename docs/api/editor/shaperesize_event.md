@@ -10,8 +10,6 @@ description: You can learn about the shapeResize event of editor in the document
 
 @short: fires after a shape has been resized
 
-@descr:
-
 ### Usage
 
 ~~~js

@@ -10,8 +10,6 @@ description: You can learn about the afterShapeIconClick event of editor in the 
 
 @short: fires after clicking a control in the per-item toolbar
 
-@descr:
-
 ### Usage
 
 ~~~js

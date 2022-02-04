@@ -9,8 +9,6 @@ description: You can learn about the beforeSubmenuOpen event in the documentatio
 ### Description
 
 @short: fires before the menu of the subheader is opened
-@descr:
-
 
 ### Usage
 

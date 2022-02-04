@@ -10,8 +10,6 @@ description: You can learn about the beforeUnSelect event in the documentation o
 
 @short: fires on unselecting an item, but before the item is really unselected
 
-@descr:
-
 ### Usage
 
 ~~~js

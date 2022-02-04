@@ -10,8 +10,6 @@ description: You can learn about the shapeMoveEnd event of editor in the documen
 
 @short: fires after a shape is moved
 
-@descr:
-
 ### Usage
 
 ~~~js

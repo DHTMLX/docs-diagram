@@ -10,8 +10,6 @@ description: You can learn about the enable method of HistoryManager in the docu
 
 @short: restarts the work of HistoryManager, saving the current state as initial state
 
-@descr:
-
 ### Usage
 
 ~~~js

@@ -10,8 +10,6 @@ description: You can learn about the getSubHeaderType method of Cell Manager in 
 
 @short: returns the type of the subheader of the swimlane by its id
 
-@descr:
-
 ### Usage
 
 ~~~js

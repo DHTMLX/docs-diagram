@@ -10,8 +10,6 @@ description: You can learn about the afterGroupMove event of editor in the docum
 
 @short: fires when a group or swimlane is moved one grid step
 
-@descr:
-
 ### Usage
 
 ~~~js

@@ -10,8 +10,6 @@ description: You can learn about the getItem method of data collection in the do
 
 @short: returns the object of an item by its id
 
-@descr:
-
 ### Usage
 
 ~~~js

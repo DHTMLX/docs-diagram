@@ -9,8 +9,6 @@ description: You can learn about the scroll event in the documentation of the DH
 ### Description
 
 @short: fires when a diagram is being scrolled
-@descr:
-
 
 ### Usage
 

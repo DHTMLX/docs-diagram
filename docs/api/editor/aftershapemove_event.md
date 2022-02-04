@@ -10,8 +10,6 @@ description: You can learn about the afterShapeMove event of editor in the docum
 
 @short: fires when a shape is moved one grid step
 
-@descr:
-
 ### Usage
 
 ~~~js

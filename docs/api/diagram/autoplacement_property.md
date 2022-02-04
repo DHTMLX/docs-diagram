@@ -13,8 +13,6 @@ The **autoplacement** property works only in the default mode of the diagram and
 ### Description
 
 @short: optional, an object with configuration settings for auto-placement of shapes
-@descr:
-
 
 ### Usage
 

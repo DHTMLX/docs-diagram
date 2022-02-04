@@ -9,10 +9,8 @@ description: You can learn about the defaultLinkType property in the documentati
 ### Description
 
 @short: optional, the default type of a connector line
-@descr:
-The value is applied, if the line object doesn't contain the "type" property
 
-@descr:
+The value is applied, if the line object doesn't contain the "type" property
 
 ### Usage
 

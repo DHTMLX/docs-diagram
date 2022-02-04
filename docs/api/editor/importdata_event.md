@@ -10,8 +10,6 @@ description: You can learn about the importData event of editor in the documenta
 
 @short: fires after the Import Data button has been clicked
 
-@descr:
-
 ### Usage
 
 ~~~js

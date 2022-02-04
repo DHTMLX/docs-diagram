@@ -10,8 +10,6 @@ description: teYou can learn about the afterSelect event in the documentation of
 
 @short: fires after selecting an item
 
-@descr:
-
 ### Usage
 
 ~~~js

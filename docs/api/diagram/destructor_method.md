@@ -9,8 +9,6 @@ description: You can learn about the destructor method in the documentation of t
 ### Description
 
 @short: removes a diagram instance and releases occupied resources
-@descr:
-
 
 ### Usage
 

@@ -10,8 +10,6 @@ description: You can learn about the parse method of data collection in the docu
 
 @short: loads data from a local data source
 
-@descr:
-
 ### Usage
 
 ~~~js

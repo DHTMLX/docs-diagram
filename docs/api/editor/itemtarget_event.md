@@ -16,8 +16,6 @@ The event doesn't work with the parent item of the moved item and with the moved
 
 @short: fires when the moved item is under the target item
 
-@descr:
-
 ### Usage
 
 ~~~js

@@ -14,8 +14,6 @@ The property is available only in the default mode of the editor (*type:"default
 
 @short: optional, adds an offset for two connected shapes, and fills the gap with an additional line
 
-@descr:
-
 ### Usage
 
 ~~~js

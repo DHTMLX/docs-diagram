@@ -10,8 +10,6 @@ description: You can learn about the setSwimlane method of Cell Manager in the d
 
 @short: sets active swimlane for further actions with it
 
-@descr:
-
 ### Usage
 
 ~~~js

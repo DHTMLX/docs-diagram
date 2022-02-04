@@ -14,8 +14,6 @@ The event works only in the org chart and mindmap modes of Diagram, the **itemsD
 
 @short: fires after an item is caught
 
-@descr:
-
 ### Usage
 
 ~~~js

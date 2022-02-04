@@ -10,8 +10,6 @@ description: You can learn about the beforeEditorOpen event in the documentation
 
 @short: fires before the inline editor of an item is opened
 
-@descr:
-
 ### Usage
 
 ~~~js

@@ -10,8 +10,6 @@ description: You can learn about the findAll method of data collection in the do
 
 @short: finds all the items that correspond to the specified parameters
 
-@descr:
-
 ### Usage
 
 ~~~js

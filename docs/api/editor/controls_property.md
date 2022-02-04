@@ -10,8 +10,6 @@ description: You can learn about the controls property of editor in the document
 
 @short: optional, an object with settings to define which controls should be shown/hidden in the toolbar of the editor
 
-@descr:
-
 ### Usage
 
 ~~~js

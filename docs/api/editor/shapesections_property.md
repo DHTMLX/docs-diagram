@@ -16,8 +16,6 @@ Using the **shapeSections** property you can specify your own sections of the le
 
 @short: optional, an object which specifies sections of items that will be shown in the left panel of the editor
 
-@descr:
-
 ### Usage
 
 ~~~js

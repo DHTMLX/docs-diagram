@@ -9,7 +9,7 @@ description: You can learn about the groupHeaderClick event in the documentation
 ### Description
 
 @short: fires on clicking a header of a group
-@descr:
+
 If a click is done over a header of a swimlane, the event will be fired on the subheader of the swimlane
 
 ### Usage

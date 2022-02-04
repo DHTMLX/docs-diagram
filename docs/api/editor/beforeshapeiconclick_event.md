@@ -10,8 +10,6 @@ description: You can learn about the beforeShapeIconClick event of editor in the
 
 @short: fires before clicking a control in the per-item toolbar
 
-@descr:
-
 ### Usage
 
 ~~~js

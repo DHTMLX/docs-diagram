@@ -10,8 +10,6 @@ description: You can learn about the import method of editor in the documentatio
 
 @short: imports data from an existing diagram into the editor
 
-@descr:
-
 ### Usage
 
 ~~~js

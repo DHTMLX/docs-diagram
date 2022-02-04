@@ -10,8 +10,6 @@ description: You can learn about the getNearId method of data collection in the 
 
 @short: looks for a nearest item relative to the specified one
 
-@descr:
-
 ### Usage
 
 ~~~js

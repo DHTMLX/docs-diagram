@@ -9,8 +9,6 @@ description: You can learn about the shapeClick event in the documentation of th
 ### Description
 
 @short: fires on clicking a shape
-@descr:
-
 ### Usage
 
 ~~~js

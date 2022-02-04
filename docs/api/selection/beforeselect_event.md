@@ -10,8 +10,6 @@ description: You can learn about the beforeSelect event in the documentation of 
 
 @short: fires on selecting an item, but before the item is really selected
 
-@descr:
-
 ### Usage
 
 ~~~js

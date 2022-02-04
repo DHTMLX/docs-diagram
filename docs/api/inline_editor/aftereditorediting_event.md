@@ -10,8 +10,6 @@ description: You can learn about the afterEditorEditing event in the documentati
 
 @short: fires after the text value of an item is edited via the inline editor  
 
-@descr:
-
 ### Usage
 
 ~~~js

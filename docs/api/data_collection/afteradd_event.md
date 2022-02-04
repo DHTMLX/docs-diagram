@@ -10,8 +10,6 @@ description: You can learn about the afterAdd event of data collection in the do
 
 @short: fires after adding an item
 
-@descr:
-
 ### Usage
 
 ~~~js

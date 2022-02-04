@@ -10,8 +10,6 @@ description: You can learn about the groupMoveEnd event of editor in the documen
 
 @short: fires after a group or swimlane is moved
 
-@descr:
-
 ### Usage
 
 ~~~js

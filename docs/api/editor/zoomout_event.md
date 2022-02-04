@@ -10,8 +10,6 @@ description: You can learn about the zoomOut event of editor in the documentatio
 
 @short: fires after the Zoom Out button has been clicked
 
-@descr:
-
 ### Usage
 
 ~~~js

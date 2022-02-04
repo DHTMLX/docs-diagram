@@ -10,8 +10,6 @@ description: You can learn about the map method of data collection in the docume
 
 @short: iterates through all items of the diagram
 
-@descr:
-
 ### Usage
 
 ~~~js

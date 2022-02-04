@@ -10,8 +10,6 @@ description: You can learn about the scale property of editor in the documentati
 
 @short: optional, defines the diagram editor scale
 
-@descr:
-
 ### Usage
 
 ~~~js

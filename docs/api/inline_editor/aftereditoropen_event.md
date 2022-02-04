@@ -10,8 +10,6 @@ description: You can learn about the afterEditorOpen event in the documentation 
 
 @short: fires after the inline editor of an item is opened
 
-@descr:
-
 ### Usage
 
 ~~~js

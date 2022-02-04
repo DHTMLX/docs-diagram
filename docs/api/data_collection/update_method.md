@@ -10,8 +10,6 @@ description: You can learn about the update method of data collection in the doc
 
 @short: updates properties of the item
 
-@descr:
-
 :::note
 The method can't be used to change the *id* or *type* of the item
 :::

@@ -10,8 +10,6 @@ description: You can learn about the add method of selection in the documentatio
 
 @short: selects the specified item
 
-@descr:
-
 ### Usage
 
 ~~~js

@@ -9,8 +9,6 @@ description: You can learn about the lineDblClick event in the documentation of 
 ### Description
 
 @short: fires on double-clicking a line
-@descr:
-
 
 ### Usage
 

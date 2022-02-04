@@ -10,8 +10,6 @@ description: You can learn about the resetSwimlane method of Cell Manager in the
 
 @short: resets active swimlane
 
-@descr:
-
 ### Usage
 
 ~~~js

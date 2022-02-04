@@ -15,8 +15,6 @@ To avoid this problem, you can reduce the size of the exported data by applying 
 ### Description
 
 @short: optional, defines the styles that will be sent to the export service when exporting the diagram
-@descr:
-
 
 ### Usage
 

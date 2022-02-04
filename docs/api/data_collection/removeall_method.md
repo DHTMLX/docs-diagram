@@ -10,8 +10,6 @@ description: You can learn about the removeAll method of data collection in the 
 
 @short: deletes all items from the diagram
 
-@descr:
-
 ### Usage
 
 ~~~js

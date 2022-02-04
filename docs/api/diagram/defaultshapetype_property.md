@@ -9,10 +9,8 @@ description: You can learn about the defaultShapeType property in the documentat
 ### Description
 
 @short: optional, the default type of a shape
-@descr:
-The value is applied, if the shape object doesn't contain the "type" property
 
-@descr:
+The value is applied, if the shape object doesn't contain the "type" property
 
 ### Usage
 

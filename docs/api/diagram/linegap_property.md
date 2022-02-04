@@ -13,8 +13,6 @@ The property is available only in the default mode of the diagram (*type:"defaul
 ### Description
 
 @short: optional, adds an offset for two connected shapes, and fills the gap with an additional line
-@descr:
-
 ### Usage
 
 ~~~js

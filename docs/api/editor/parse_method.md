@@ -10,8 +10,6 @@ description: You can learn about the parse method of editor in the documentation
 
 @short: loads data into the editor from a local data source
 
-@descr:
-
 ### Usage
 
 ~~~js

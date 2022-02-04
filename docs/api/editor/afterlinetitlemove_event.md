@@ -10,8 +10,6 @@ description: You can learn about the afterLineTitleMove event of editor in the d
 
 @short: fires when a text element of a line is moved one grid step
 
-@descr:
-
 ### Usage
 
 ~~~js

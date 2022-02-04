@@ -9,7 +9,7 @@ description: You can learn about the groupClick event in the documentation of th
 ### Description
 
 @short: fires on clicking a group
-@descr:
+
 If a click is done over a swimlane, the event will be fired on the cell of the swimlane
 
 ### Usage

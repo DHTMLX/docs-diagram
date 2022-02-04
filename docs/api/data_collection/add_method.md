@@ -10,8 +10,6 @@ description: You can learn about the add method of data collection in the docume
 
 @short: adds a new item to the diagram
 
-@descr:
-
 ### Usage
 
 ~~~js

@@ -14,8 +14,6 @@ The **add()** method is automatically validated by the system. The cell won't be
 
 @short: adds cells as rows or columns to a swimlane
 
-@descr:
-
 ### Usage
 
 ~~~js

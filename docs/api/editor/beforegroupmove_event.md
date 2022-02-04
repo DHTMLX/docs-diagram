@@ -10,8 +10,6 @@ description: You can learn about the beforeGroupMove event of editor in the docu
 
 @short: fires before a group or swimlane is moved
 
-@descr:
-
 ### Usage
 
 ~~~js

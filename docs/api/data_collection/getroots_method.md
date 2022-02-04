@@ -10,8 +10,6 @@ description: You can learn about the getRoots method of data collection in the d
 
 @short: returns an array with ids of all root items of the diagram
 
-@descr:
-
 ### Usage
 
 ~~~js
