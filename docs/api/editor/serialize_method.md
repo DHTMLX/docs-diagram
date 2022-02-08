@@ -18,7 +18,7 @@ serialize(): array;
 
 ### Returns
 
-An array of JSON objects for each item from the editor data
+The method returns an array of JSON objects for each item from the editor data
 
 ### Example
 

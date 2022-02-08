@@ -8,7 +8,7 @@ description: You can learn about the controls property of editor in the document
 
 ### Description
 
-@short: Optional, an object with settings to define which controls should be shown/hidden in the toolbar of the editor
+@short: Optional. An object with settings to define which controls should be shown/hidden in the toolbar of the editor
 
 ### Usage
 

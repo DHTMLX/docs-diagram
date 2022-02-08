@@ -18,7 +18,7 @@ getRoots(): array
 
 ### Returns
 
-An array with the ids of the root items
+The method returns an array with the ids of the root items
 
 ### Example
 

@@ -13,7 +13,7 @@ The **autoplacement** property works only in the default mode of the editor (*ty
 
 ### Description
 
-@short: Optional, an object with configuration settings for auto-placement of shapes
+@short: Optional. An object with configuration settings for auto-placement of shapes
 
 ### Usage
 

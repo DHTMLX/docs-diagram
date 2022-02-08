@@ -8,7 +8,7 @@ description: You can learn about the reservedWidth property of editor in the doc
 
 ### Description
 
-@short: Optional, defines the left offset for the diagram
+@short: Optional. Defines the left offset for the diagram
 
 ### Usage
 

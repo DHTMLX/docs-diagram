@@ -12,7 +12,7 @@ The property is available only in the default mode of the editor (*type:"default
 
 ### Description
 
-@short: Optional, adds an offset for two connected shapes, and fills the gap with an additional line
+@short: Optional. Adds an offset for two connected shapes, and fills the gap with an additional line
 
 ### Usage
 

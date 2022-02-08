@@ -22,7 +22,7 @@ map(callback: function): array;
 
 ### Returns
 
-A new array of items where each item is the result of the callback function
+The method returns a new array of items where each item is the result of the callback function
 
 ### Example
 

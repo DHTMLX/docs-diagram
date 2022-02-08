@@ -14,7 +14,7 @@ Using the **shapeSections** property you can specify your own sections of the le
 
 ### Description
 
-@short: Optional, an object which specifies sections of items that will be shown in the left panel of the editor
+@short: Optional. An object which specifies sections of items that will be shown in the left panel of the editor
 
 ### Usage
 

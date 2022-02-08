@@ -18,7 +18,7 @@ serialize(): array;
 
 ### Returns
 
-An array of JSON objects for each item and link from Diagram
+The method returns an array of JSON objects for each item and link from Diagram
 
 ### Example
 

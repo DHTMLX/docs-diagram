@@ -30,7 +30,7 @@ find(rule: function): object;
 
 ### Returns
 
-The first object of the item that matches the specified criteria
+The method returns the first object of the item that matches the specified criteria
 
 ### Example
 

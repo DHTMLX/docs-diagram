@@ -22,7 +22,7 @@ getNearId(id: string | number): string | number;
 
 ### Returns
 
-The id of the nearest item
+The method returns the id of the nearest item
 
 ### Example
 

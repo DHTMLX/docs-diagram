@@ -12,7 +12,7 @@ The property is available only in the default mode of the editor (*type:"default
 
 ### Description
 
-@short: Optional, defines the scale of items rendered in the left panel of the editor
+@short: Optional. Defines the scale of items rendered in the left panel of the editor
 
 ### Usage
 

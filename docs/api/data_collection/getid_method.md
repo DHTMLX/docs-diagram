@@ -22,7 +22,7 @@ getId(index: number): string | number;
 
 ### Returns
 
-The id of the item
+The method returns the id of the item
 
 ### Example
 

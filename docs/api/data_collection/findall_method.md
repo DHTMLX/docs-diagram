@@ -30,7 +30,7 @@ findAll(rule: function): array;
 
 ### Returns
 
-An array of matching item objects 
+The method returns an array of matching item objects 
 
 ### Example
 

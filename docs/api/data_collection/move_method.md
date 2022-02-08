@@ -28,7 +28,7 @@ move(
 
 ### Returns
 
-Either a string with the item's id or an array of string values with ids of items
+The method returns either a string with the item's id or an array of string values with ids of items
 
 ### Example
 

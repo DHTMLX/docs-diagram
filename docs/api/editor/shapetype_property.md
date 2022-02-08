@@ -8,7 +8,7 @@ description: You can learn about the shapeType property of editor in the documen
 
 ### Description
 
-@short: Optional, the type of the items
+@short: Optional. The type of the items
 
 This value is applied, if the shape object doesn't contain the "type" property
 

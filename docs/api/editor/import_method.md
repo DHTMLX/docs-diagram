@@ -18,7 +18,7 @@ import(diagram: object): void;
 
 ### Parameters
 
-- `diagram: object` - the diagram object
+- `diagram` - (required) the diagram object
 
 ### Example
 

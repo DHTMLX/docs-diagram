@@ -12,7 +12,7 @@ The property is available only in the default mode of the editor (*type:"default
 
 ### Description
 
-@short: Optional, specifies the space between the items rendered in the left panel
+@short: Optional. Specifies the space between the items rendered in the left panel
 
 ### Usage
 

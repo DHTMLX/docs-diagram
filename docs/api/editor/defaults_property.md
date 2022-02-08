@@ -8,7 +8,7 @@ description: You can learn about the defaults property of editor in the document
 
 ### Description
 
-@short: Optional, an object which sets the default configuration of a shape
+@short: Optional. An object which sets the default configuration of a shape
 
 ### Usage
 

@@ -16,7 +16,7 @@ description: You can learn about the load method of data collection in the docum
 load(
 	url: string | object, 
 	driver?: object | string
-): Promise<any>;
+): promise;
 ~~~
 
 ### Parameters
@@ -26,7 +26,7 @@ load(
 
 ### Returns
 
-A promise of data loading
+The method returns a promise of data loading
 
 ### Example
 

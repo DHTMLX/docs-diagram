@@ -22,7 +22,7 @@ getRoot(id: string | number): string | number;
 
 ### Returns
 
-The id of the root item. The root item is the first item of a tree structure
+The method returns the id of the root item. The root item is the first item of a tree structure
 
 ### Example
 

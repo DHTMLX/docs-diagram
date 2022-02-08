@@ -22,7 +22,7 @@ getItem(id: string | number): object;
 
 ### Returns
 
-The object of an item
+The method returns the object of an item
 
 ### Example
 
