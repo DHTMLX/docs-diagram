@@ -6,17 +6,39 @@ description: You can learn about the afterLineTitleMove event of editor in the d
 
 # afterLineTitleMove
 
-@short: fires when a text element of a line is moved one grid step
+### Description
 
-@signature: {`afterLineTitleMove: (events: MouseEvent, lineId: Id, titleId: Id, coord: IBaseCoords) => void;`}
+@short: Fires when a text element of a line is moved one grid step
 
-@params:
-- `events: MouseEvent` - a native HTML event object
-- `lineId: string | number` - the id of a line
-- `titleId: string | number` - the id of a text element of a line
-- `coord: object` - an object with the x and y coordinates of the text element position after movement
+### Usage
 
-@example:
+~~~js
+afterLineTitleMove: (
+    event: MouseEvent, 
+    lineId: string | number, 
+    titleId: string | number, 
+    coord: object
+) => void;
+~~~
+
+### Parameters
+
+The callback of the event takes the following parameters:
+
+- `event` - (required) a native HTML event object
+- `lineId` - (required) the id of a line
+- `titleId` - (required) the id of a text element of a line
+- `coord` - (required) an object with the x and y coordinates of the text element position after movement
+
+### Example
+
+~~~js {7-13}
+// initializing Diagram Editor
+const editor = new dhx.DiagramEditor("editor_container");
+// loading data
+editor.parse(data);
+
+// attaching a handler to the event
 editor.events.on("afterLineTitleMove", (event, lineId, titleId, coordinates) => {
     console.log(`
         LineTitle ${id} is position:
@@ -24,9 +46,6 @@ editor.events.on("afterLineTitleMove", (event, lineId, titleId, coordinates) => 
             y: ${coordinates.y}
     `);
 });
+~~~
 
-@descr:
-
-@changelog:
-
-Added in v4.1.
+**Change log**: Added in v4.1

@@ -6,24 +6,43 @@ description: You can learn about the beforeShapeIconClick event of editor in the
 
 # beforeShapeIconClick
 
-@short: fires before clicking a control in the per-item toolbar
+### Description
 
-@signature: {`beforeShapeIconClick: (iconId: string, shape: IDataItem) => boolean | void;`}
+@short: Fires before clicking a control in the per-item toolbar
 
-@params:
-- `iconId: string` - the type or id of the toolbar control
-- `shape: object` - an object with the item configuration
+### Usage
 
-@returns:
-Return `false` to prevent the toolbar control from being clicked; otherwise, `true`.
+~~~js
+beforeShapeIconClick: (
+    iconId: string, 
+    shape: object
+) => boolean | void;
+~~~
 
-@example:
+### Parameters
+
+The callback of the event takes the following parameters:
+
+- `iconId` - (required) the type or id of the toolbar control
+- `shape` - (required) an object with the item configuration
+
+### Returns
+
+Return `false` to prevent the toolbar control from being clicked; otherwise, `true`
+
+### Example
+
+~~~js {7-10}
+// initializing Diagram Editor
+const editor = new dhx.DiagramEditor("editor_container");
+// loading data
+editor.parse(data);
+
+// attaching a handler to the event
 editor.events.on("beforeShapeIconClick", function(iconId, shape) {
     console.log("You will click the", iconId, "toolbar control", shape);
     return true;
 });
+~~~
 
-@descr:
-
-@changelog:
-Added in v3.1
+**Change log**: Added in v3.1

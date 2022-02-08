@@ -6,20 +6,36 @@ description: You can learn about the afterAdd event of data collection in the do
 
 # afterAdd
 
-@short: fires after adding an item
+### Description
 
-@signature: {`afterAdd: (newItem: any) => void;`}
+@short: Fires after adding an item
 
-@params:
-`newItem: object` - the object of an added item
+### Usage
 
-@example:
-diagram.events.on("afterAdd", function(id){
+~~~js
+afterAdd: (newItem: object) => void;
+~~~
+
+### Parameters
+
+The callback of the event takes the following parameter:
+
+- `newItem` - (required) the object of an added item
+
+### Example
+
+~~~js {9-11}
+// initializing Diagram
+const diagram = new dhx.Diagram("diagram_container", {
+    type: "default"
+});
+// loading data
+diagram.data.parse(data);
+
+// attaching a handler to the event
+diagram.events.on("afterAdd", function(newItem){
 	console.log("A new item is added");
 });
+~~~
 
-@descr:
-
-Event can be used to provide default values or a default formatting for the item data.
-
-**Related sample**: [Diagram. Org chart mode. Events](https://snippet.dhtmlx.com/l38pct7c)
+The event can be used to provide default values or a default formatting for the item's data

@@ -6,23 +6,45 @@ description: You can learn about the lineMouseDown event in the documentation of
 
 # lineMouseDown
 
-@short: fires when a pointing device button is pressed while the pointer is over a line
+### Description
 
-@signature: {`lineMouseDown: (id: Id, event: MouseEvent) => void;`}
+@short: Fires when a pointing device button is pressed while the pointer is over a connector line
 
-@params:
-- `id: string | number` - the id of a connector line
-- `event: MouseEvent` - a native HTML event object
+### Usage
 
-@example:
+~~~js
+lineMouseDown: (
+    id: string | number, 
+    event: MouseEvent
+) => void;
+~~~
+
+### Parameters
+
+The callback of the event takes the following parameters:
+
+- `id` - (required) the id of a connector line
+- `event` - (required) a native HTML event object
+
+### Example
+
+~~~js {9-11}
+// initializing Diagram
+const diagram = new dhx.Diagram("diagram_container", {
+    type: "default"
+});
+// loading data
+diagram.data.parse(data);
+
+// attaching a handler to the event
 diagram.events.on("lineMouseDown", (id, event) => {
     console.log(id, event);
 });
+~~~
 
-@descr:
+**Change log**: Added in v4.0
 
-**Related samples**:
-- [Diagram. Default mode. Events](https://snippet.dhtmlx.com/7h2hgb3g)
+**Related article**: [Event handling](../../../guides/event_handling/)
 
-@changelog:
-Added in v4.0
+**Related sample**: [Diagram. Default mode. Events](https://snippet.dhtmlx.com/7h2hgb3g)
+

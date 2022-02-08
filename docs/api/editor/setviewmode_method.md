@@ -6,21 +6,29 @@ description: You can learn about the setViewMode method of editor in the documen
 
 # setViewMode()
 
-@short: sets the mode of Diagram Editor
+### Description
 
-@signature: {`setViewMode(mode: ViewMode): void;`}
+@short: Sets the mode of Diagram Editor
 
-@params:
-`mode: string` - the mode of Editor: "preview" or "edit"
+### Usage
 
-@example:
+~~~js
+setViewMode(mode: string): void;
+~~~
+
+### Parameters
+
+- `mode` - (required) the mode of Editor:
+    - **"preview"** - the mode is used to show the diagram. Most of the editing functions of Editor are not available. The left and right panels are hidden
+    - **"edit"** - the mode is used to edit the diagram. All the functions of Editor are available. The left and right panels are shown
+
+### Example
+
+~~~js
+const editor = new dhx.DiagramEditor("editor_container");
+editor.parse(data);
+
 editor.setViewMode("preview"); // "preview" or "edit"
+~~~
 
-@descr:
-
-**Preview** mode is used to show the diagram. Most of the editing functions of Editor are not available. The left and right panels are hidden.
-
-**Edit** mode is used to edit the diagram. All the functions of Editor are available. The left and right panels are shown.
-
-@changelog:
-Added in v4.1.
+**Change log**: Added in v4.1

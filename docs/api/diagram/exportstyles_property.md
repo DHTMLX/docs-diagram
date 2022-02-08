@@ -6,28 +6,33 @@ description: You can learn about the exportStyles property in the documentation 
 
 # exportStyles
 
-@short: defines the styles that will be sent to the export service when exporting the diagram
-
-@signature: {`exportStyles?: boolean | string[];`}
-
-@default:true
-
-@example:
-const diagram = new dhx.Diagram("diagram_container", { 
-  	exportStyles:[
-        "https://mySite.com/exportStyle.css",
-        "https://mySite.com/secondExportStyle.css"
-    ]
-});
-
-@relatedsample:
-**Related sample**: [Diagram. Export. Export styles](https://snippet.dhtmlx.com/jm8if6nh)
-
-@descr:
-
+:::info
 By default, all css styles included to the page are sent to the export service when exporting a DHTMLX Diagram. As a result, the size of the request increases that can cause the request to fail.
 
-To avoid this problem, you can reduce the size of the exported data. For example, setting the **exportStyles** property to *false* will prevent all styles from being sent to the export service:
+To avoid this problem, you can reduce the size of the exported data by applying the **exportStyles** property.
+:::
+
+### Description
+
+@short: Optional. Defines the styles that will be sent to the export service when exporting the diagram
+
+### Usage
+
+~~~js
+exportStyles?: boolean;
+//or
+exportStyles?: string[];
+~~~
+
+### Default config
+
+~~~js
+exportStyles: true
+~~~
+
+### Example
+
+Set the **exportStyles** property to *false* to prevent all styles from being sent to the export service:
 
 ~~~js
 const diagram = new dhx.Diagram("diagram_container", { 
@@ -35,7 +40,7 @@ const diagram = new dhx.Diagram("diagram_container", {
 });
 ~~~
 
-Or you can define a set of styles you want to be exported. For that, you need to set string values with the absolute paths to the desired styles to the **exportStyles** array:
+Or define a set of styles you want to be exported. For that, you need to set string values with the absolute paths to the desired styles to the **exportStyles** array:
 
 ~~~js
 const diagram = new dhx.Diagram("diagram_container", { 
@@ -46,12 +51,12 @@ const diagram = new dhx.Diagram("diagram_container", {
 });
 ~~~
 
-**Note**, that you must use only absolute paths not relative ones.
+:::tip
+You must use only absolute paths not relative ones
+:::
 
-@changelog: added in v3.1
+**Change log**: Added in v3.1
 
-@descr:
-#### Related articles
+**Related articles**: [Exporting Diagram](../../../guides/data_export/)
 
-[Exporting Diagram](../../../guides/data_export/)
-
+**Related sample**: [Diagram. Export. Export styles](https://snippet.dhtmlx.com/jm8if6nh)

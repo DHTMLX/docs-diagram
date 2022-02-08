@@ -6,19 +6,42 @@ description: You can learn about the autoplacement property in the documentation
 
 # autoplacement
 
-@short: an object with configuration settings for auto-placement of shapes
+:::info
+The **autoplacement** property works only in the default mode of the diagram and only for shapes
+:::
 
-@signature: {`autoplacement?: IAutoPlacement;`}
+### Description
 
-@descr:
-#### Object properties:
+@short: Optional. An object with configuration settings for auto-placement of shapes
 
-- **mode** - (*string*) the mode of connecting shapes, "direct" (by default) or "edges"
-- **graphPadding** - (*number*) sets the distance between unconnected diagrams, *"200"* by default
+### Usage
 
-{{note The **autoplacement** property works only in the default mode of the diagram and only for shapes.}}
+~~~js
+autoplacement?: {
+	mode?: "direct" | "edges",
+	graphPadding?: number
+};
+~~~
 
-@example:
+### Parameters
+
+The **autoplacement** object has the following parameters:
+
+- `mode` - (optional) the mode of connecting shapes, "direct" (by default) or "edges"
+- `graphPadding` - (optional) sets the distance between unconnected diagrams, *"200"* by default
+
+### Default config
+
+~~~js
+autoplacement: {
+	mode: "direct",
+	graphPadding: 200
+}
+~~~
+
+### Example
+
+~~~js
 const diagram = new dhx.Diagram("diagram_container", {
     autoplacement: {
 		mode: "edges",
@@ -26,13 +49,10 @@ const diagram = new dhx.Diagram("diagram_container", {
 	}
 });
 
-diagram.parse(autoData);
+diagram.data.parse(data);
 
-
-@descr:
-**Related samples**:
-- [Diagram. Default mode. Autoplacement](https://snippet.dhtmlx.com/f3uekgjw)
-
+diagram.autoPlace();
+~~~
 
 ### Modes of connecting shapes
 
@@ -41,12 +61,11 @@ diagram.parse(autoData);
 | Connectors are aligned "from center to center"; they are straight and diagonal. | Connectors are aligned "from side to side"; they are straight and 90-degree curved. |
 | ![](../../assets/direct_mode.png)                                               | ![](../../assets/edges_mode.png)                                                    |
 
-@changelog: 
-added in v3.0
+**Change log**: Added in v3.0
 
-@descr:
-#### Related articles:
+**Related articles**:
 
 - [Configuring autoplacement for shapes](../../../guides/diagram/configuration/#configuring-autoplacement-for-shapes)
 - [Arranging shapes automatically](../../../guides/manipulating_items/#arranging-shapes-automatically)
 
+**Related sample**: [Diagram. Default mode. Autoplacement](https://snippet.dhtmlx.com/f3uekgjw)

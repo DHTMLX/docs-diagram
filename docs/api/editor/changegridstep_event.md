@@ -6,16 +6,32 @@ description: You can learn about the changeGridStep event of editor in the docum
 
 # changeGridStep
 
-@short: fires after the value of the grid step has been changed
+### Description
 
-@signature: {`changeGridStep: (step: number) => void;`}
+@short: Fires after the value of the grid step has been changed
 
-@params:
-`step: number` - the current value of the grid step
+### Usage
 
-@example:
+~~~js
+changeGridStep: (step: number) => void;
+~~~
+
+### Parameters
+
+The callback of the event takes the following parameter:
+
+- `step` - (required) the current value of the grid step
+
+### Example
+
+~~~js {7-9}
+// initializing Diagram Editor
+const editor = new dhx.DiagramEditor("editor_container");
+// loading data
+editor.parse(data);
+
+// attaching a handler to the event
 editor.events.on("changeGridStep", function(step) {
     console.log("The grid step is changed to:", step);
 });
-
-@descr:
+~~~

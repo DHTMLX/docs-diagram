@@ -6,20 +6,43 @@ description: You can learn about the beforeLineTitleMove event of editor in the 
 
 # beforeLineTitleMove
 
-@short: fires before a text element of a line is moved
+### Description
 
-@signature: {`beforeLineTitleMove: (events: MouseEvent, lineId: Id, titleId: Id, coord: IBaseCoords) => boolean | void;`}
+@short: Fires before a text element of a line is moved
 
-@params:
-- `events: MouseEvent` - a native HTML event object
-- `lineId: string | number` - the id of a line
-- `titleId: string | number` - the id of a text element of a line
-- `coord: object` - an object with the x and y coordinates of the text element position before movement
+### Usage
 
-@returns:
-Return `false` to prevent the text element of a line from being moved; otherwise, `true`.
+~~~js
+beforeLineTitleMove: (
+    event: MouseEvent, 
+    lineId: string | number, 
+    titleId: string | number, 
+    coord: object
+) => boolean | void;
+~~~
 
-@example:
+### Parameters
+
+The callback of the event takes the following parameters:
+
+- `event` - (required) a native HTML event object
+- `lineId` - (required) the id of a line
+- `titleId` - (required) the id of a text element of a line
+- `coord` - (required) an object with the x and y coordinates of the text element position before movement
+
+### Returns
+
+Return `false` to prevent the text element of a line from being moved; otherwise, `true`
+
+### Example
+
+~~~js {7-14}
+// initializing Diagram Editor
+const editor = new dhx.DiagramEditor("editor_container");
+// loading data
+editor.parse(data);
+
+// attaching a handler to the event
 editor.events.on("beforeLineTitleMove", (event, lineId, titleId, coordinates) => {
     console.log(`
         LineTitle ${id} is position:
@@ -28,9 +51,6 @@ editor.events.on("beforeLineTitleMove", (event, lineId, titleId, coordinates) =>
     `);
     return true;
 });
+~~~
 
-@descr:
-
-@changelog:
-
-Added in v4.1.
+**Change log**: Added in v4.1

@@ -6,15 +6,18 @@ description: You can learn about the isRedo method of HistoryManager in the docu
 
 # isRedo()
 
-@short: checks whether the current HistoryManager state is in the ending state
+### Description
 
-@signature: {`isUndo(): boolean;`}
+@short: Checks whether the current HistoryManager state is in the ending state
 
-@returns:
+### Usage
 
-`true`, if he current state is in the ending state; otherwise, `false`.
+~~~js
+isUndo(): boolean;
+~~~
 
-@descr:
+### Returns
 
-@changelog:
-Added in v4.1.
+The method returns `true`, if the current state is in the ending state; otherwise, `false`
+
+**Change log**: Added in v4.1

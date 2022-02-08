@@ -6,27 +6,49 @@ description: You can learn about the beforeItemCatch event of editor in the docu
 
 # beforeItemCatch
 
-@short: fires before an item is catched
+:::info
+The event works only in the org chart and mindmap modes of Diagram, the **itemsDraggable** property must be set to **true**
+:::
 
-@signature: {`beforeItemCatch: (movedId: Id, targetId: Id, event: MouseEvent) => boolean | void;`}
+### Description
 
-@params:
-- `movedId: string | number` - the id of the moved item
-- `targetId: string | number` - the id of the target item
-- `events: MouseEvent` - a native HTML event object
+@short: Fires before an item is caught
 
-@returns:
-Return `false` to prevent the item from being catched; otherwise, `true`.
+### Usage
 
-@example:
+~~~js
+beforeItemCatch: (
+    movedId: string | number, 
+    targetId: string | number, 
+    event: MouseEvent
+) => boolean | void;
+~~~
+
+### Parameters
+
+The callback of the event takes the following parameters:
+
+- `movedId` - (required) the id of the moved item
+- `targetId` - (required) the id of the target item
+- `event` - (required) a native HTML event object
+
+### Returns
+
+Return `false` to prevent the item from being caught; otherwise, `true`
+
+### Example
+
+~~~js {7-10}
+// initializing Diagram Editor
+const editor = new dhx.DiagramEditor("editor_container");
+// loading data
+editor.parse(data);
+
+// attaching a handler to the event
 editor.events.on("beforeItemCatch", (movedId, targetId, event) => {
     console.log("beforeItemCatch", movedId, targetId, event);
     if (targetId === "2.1") return false;
 });
+~~~
 
-@descr:
-The event works in org chart and mindmap modes of Diagram, **itemsDraggable** property should be **true**.
-
-@changelog:
-
-Added in v4.1.
+**Change log**: Added in v4.1

@@ -6,31 +6,52 @@ description: You can learn about the shapeIconClick event in the documentation o
 
 # shapeIconClick
 
-@short: fires on clicking a toolbar icon
+### Description
 
-@signature: {`shapeIconClick: (id: string, event: MouseEvent) => void;`}
+@short: Fires on clicking a toolbar icon
 
-@params:
-- `id: string | number` - the id of the icon
-- `event: MouseEvent` - a native HTML event object
+### Usage
 
-@example:
+~~~js
+shapeIconClick: (
+	id: string | number, 
+	event: MouseEvent
+) => void;
+~~~
+
+### Parameters
+
+The callback of the event takes the following parameters:
+
+- `id` - (required) the id of the icon
+- `event` - (required) a native HTML event object
+
+### Example
+
+~~~js {18-21}
+// initializing Diagram
 const diagram = new dhx.Diagram("diagram_container", { 
 	toolbar: [
-      {
-		id:"download",
-		content:"<i class='zmdi zmdi-download'></i>"
-	  },
-	  {
-		id:"info",
-		content:"<i class='zmdi zmdi-info-outline'></i>"
-	  }
+      	{
+			id: "download",
+            content: "<i class='dxi dxi-download'></i>"
+	  	},
+	  	{
+			id: "info",
+            content: "<i class='dxi dxi-information-outline'></i>"
+	  	}
     ]
 });
+// loading data
+diagram.data.parse(data);
 
+// attaching a handler to the event
 diagram.events.on("shapeIconClick", function(icon){
 	const id = diagram.selection.getId();
 	alert(icon + " was clicked for id = " + id);
 });
+~~~
 
-@descr:
+**Related article**: [Event handling](../../../guides/event_handling/)
+
+**Related sample**: [Diagram. Configuration. Per-shape toolbar](https://snippet.dhtmlx.com/4if395hd)

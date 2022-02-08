@@ -20,8 +20,8 @@ DHTMLX Diagram takes data in the JSON format. It is an array that contains a set
 ~~~js
 const data = [
 	{ "id": 1, "x": 200, "y": 0, "text": "Start", "type": "start" },
-    { "id": 2, "x": 200, "y": 120, "text": "Call Client and \n set-up Appointment", "type": "process" },
-    { "id": 3, "x": 200, "y": 240, "text": "Decision", "type": "decision" },
+	{ "id": 2, "x": 200, "y": 120, "text": "Call Client and \n set-up Appointment", "type": "process" },
+	{ "id": 3, "x": 200, "y": 240, "text": "Decision", "type": "decision" },
 ];
 ~~~
 
@@ -148,7 +148,7 @@ Data loading is asynchronous, so you need to wrap any after-loading code into a 
 
 ~~~js
 diagram.data.load("/some/data").then(function(){
-   diagram.selection.add("123");
+	diagram.selection.add("123");
 });
 ~~~
 
@@ -175,8 +175,7 @@ editor.parse(data);
 
 **Related sample:** [Diagram editor. Default mode. Basic initialization](https://snippet.dhtmlx.com/xshe9ut7)
 
-Saving and restoring state
-----------------------------
+## Saving and restoring state
 
 To save the current state of a diagram, use the [](../api/data_collection/serialize_method.md) method. It converts the data of the diagram into an array of JSON objects. 
 Each JSON object contains the configuration of a separate shape.
@@ -194,8 +193,7 @@ const diagram2 = new dhx.Diagram("diagram_container");
 diagram2.data.parse(state);
 ~~~
 
-Importing data into the editor
--------------------------------------
+## Importing data into the editor
 
 When you use a diagram together with an editor, you can import data from the diagram into the editor via the [](../api/editor/import_method.md) method of the editor object:
 
@@ -206,6 +204,6 @@ function runEditor() {
 }
 ~~~
 
-**Related samples**: [Diagram editor. Org chart mode. Live editor](https://snippet.dhtmlx.com/4d4k3o8p)
+**Related sample**: [Diagram editor. Org chart mode. Live editor](https://snippet.dhtmlx.com/4d4k3o8p)
 
 The diagram state will be imported into the editor on running the editor.

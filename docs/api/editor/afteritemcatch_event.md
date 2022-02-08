@@ -6,23 +6,44 @@ description: You can learn about the afterItemCatch event of editor in the docum
 
 # afterItemCatch
 
-@short: fires after an item is catched
+:::info
+The event works only in the org chart and mindmap modes of Diagram, the **itemsDraggable** property must be set to **true**
+:::
 
-@signature: {`afterItemCatch: (movedId: Id, targetId: Id, event: MouseEvent) => void;`}
+### Description
 
-@params:
-- `movedId: string | number` - the id of the moved item
-- `targetId: string | number` - the id of the target item
-- `events: MouseEvent` - a native HTML event object
+@short: Fires after an item is caught
 
-@example:
+### Usage
+
+~~~js
+afterItemCatch: (
+    movedId: string | number, 
+    targetId: string | number, 
+    event: MouseEvent
+) => void;
+~~~
+
+### Parameters
+
+The callback of the event takes the following parameters:
+
+- `movedId` - (required) the id of the moved item
+- `targetId` - (required) the id of the target item
+- `event` - (required) a native HTML event object
+
+### Example
+
+~~~js {7-9}
+// initializing Diagram Editor
+const editor = new dhx.DiagramEditor("editor_container");
+// loading data
+editor.parse(data);
+
+// attaching a handler to the event
 editor.events.on("afterItemCatch", (movedId, targetId, event) => {
     console.log("afterItemCatch", movedId, targetId, event);
 });
+~~~
 
-@descr:
-The event works in org chart and mindmap modes of Diagram, **itemsDraggable** property should be **true**.
-
-@changelog:
-
-Added in v4.1.
+**Change log**: Added in v4.1

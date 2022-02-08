@@ -6,11 +6,14 @@ description: You can learn about the disabled property of HistoryManager in the 
 
 # disabled
 
-@short: enables/disables the work of HistoryManager
+### Description
 
-@signature: {`disabled: boolean;`}
+@short: Enables/disables the work of HistoryManager
 
-@descr:
+### Usage
 
-@changelog:
-Added in v4.1.
+~~~js
+disabled: boolean;
+~~~
+
+**Change log**: Added in v4.1

@@ -6,30 +6,48 @@ description: You can learn about the beforeCellsValidation event of Cell Manager
 
 # beforeCellsValidation
 
-@short: fires before cells of the swimlane are validated
+### Description
 
-@signature: {`beforeCellsValidation: (swimlaneId: Id, action: ActionValidate) => boolean | void;`}
+@short: Fires before cells of the swimlane are validated
 
-@params:
-- `swimlaneId: string | number` - the id of the item
-- `action: "move" | "remove" | "add"` - the type of the action
+### Usage
 
-@returns:
-`False` to prevent validation of new cells, otherwise `true`.
+~~~js
+beforeCellsValidation: (
+    swimlaneId: string | number, 
+    action: "move" | "remove" | "add"
+) => boolean | void;
+~~~
 
-@example:
+### Parameters
+
+The callback of the event takes the following parameters:
+
+- `swimlaneId` - (required) the id of the item
+- `action` - (required) the type of the action
+
+### Returns
+
+Return `false` to prevent validation of new cells, otherwise `true`
+
+### Example
+
+~~~js {9-12}
+// initializing Diagram
+const diagram = new dhx.Diagram("diagram_container", {
+    type: "default"
+});
+// loading data
+diagram.data.parse(data);
+
+// attaching a handler to the event
 diagram.events.on("beforeCellsValidation", (swimlaneId, action) => {
     console.log(swimlaneId, action);
     return true;
 });
+~~~
 
-@descr:
+**Change log**: Added in v4.0
 
-@changelog:
-Added in v4.0
-
-@descr:
-#### Related articles
-
-[Configuring Swimlanes](../../../swimlanes/index/)
+**Related articles**: [Configuring Swimlanes](../../../swimlanes/index/)
 

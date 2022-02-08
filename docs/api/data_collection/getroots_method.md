@@ -6,16 +6,29 @@ description: You can learn about the getRoots method of data collection in the d
 
 # getRoots()
 
-@short: returns an array with ids of all root items of the diagram
+### Description
 
-@signature: {`getRoots(): Id[]`}
+@short: Returns an array with ids of all root items of the diagram
 
-@returns:
-An array with the ids of the root items.
+### Usage
 
-@example:
+~~~js
+getRoots(): array
+~~~
+
+### Returns
+
+The method returns an array with the ids of the root items
+
+### Example
+
+~~~js {6}
+const diagram = new dhx.Diagram("diagram_container", {
+    type: "default"
+});
+diagram.data.parse(data);
+
 diagram.data.getRoots();
+~~~
 
-@descr:
-
-@changelog: Added in v4.0
+**Change log**: Added in v4.0

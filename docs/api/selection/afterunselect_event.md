@@ -6,33 +6,48 @@ description: You can learn about the afterUnSelect event in the documentation of
 
 # afterUnSelect
 
-@short: fires after unselecting an item
+### Description
 
-@signature: {`afterUnSelect: (id: Id, subId?: Id | undefined) => void;`}
+@short: Fires after unselecting an item
 
-@params:
-- `id: string | number` - the item id
-- `subId: string | number | undefined` - optional, the id of a subheader of a swimlane or a text element of a line
+### Usage
 
-@example:
-const diagram = new dhx.Diagram("diagram_container", {
-    type: "org",
-    select: true
+~~~js
+afterUnSelect: (
+    id: string | number, 
+    subId?: string | number | undefined
+) => void;
+~~~
+
+### Parameters
+
+The callback of the event takes the following parameters:
+
+- `id` - (required) the item id
+- `subId` - (optional) the id of a subheader of a swimlane or a text element of a line
+
+### Example
+
+~~~js {10-12}
+// initializing Diagram
+const diagram = new dhx.Diagram("diagram_container", { 
+    type: "org", 
+    select: true        
 });
+// loading data
+diagram.data.parse(data);
 
+// attaching a handler to the event
 diagram.events.on("AfterUnSelect", function (id) {
 	console.log(diagram.data.getItem(id).text + " was unselected");
 });
+~~~
 
-@descr:
+**Change log**: The **subId** parameter has been added in v4.1
 
 **Related sample**: [Diagram. Org chart mode. Events](https://snippet.dhtmlx.com/l38pct7c)
 
-@changelog:
-SubId parameter has been added in v4.1.
-
-#### Related articles
-
+**Related articles**:  
 - [diagram.config.select](../../../api/diagram/select_property/)
 - [Selecting items](../../../guides/manipulating_items/#selecting-items)
 

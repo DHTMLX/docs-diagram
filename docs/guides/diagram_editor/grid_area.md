@@ -4,7 +4,7 @@ title: Editor Guides - Grid Area
 description: You can learn about the Grid Area of editor in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
 
-# Grid Area
+# Grid area
 
 Grid area is an area intended for editing a diagram. You can easily add new items, change their appearance and positioning, or remove them.
 

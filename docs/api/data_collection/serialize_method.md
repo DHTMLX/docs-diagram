@@ -6,18 +6,29 @@ description: You can learn about the serialize method of data collection in the 
 
 # serialize()
 
-@short: serializes the diagram data into an array of JSON objects
+### Description
 
-@signature: {`serialize(): T[];`}
+@short: Serializes the diagram data into an array of JSON objects
 
-@returns:
-An array of JSON objects for each item and link from Diagram.
+### Usage
 
-@example:
+~~~js
+serialize(): array;
+~~~
+
+### Returns
+
+The method returns an array of JSON objects for each item and link from Diagram
+
+### Example
+
+~~~js {6}
+const diagram = new dhx.Diagram("diagram_container", {
+    type: "default"
+});
+diagram.data.parse(data);
+
 const data = diagram.data.serialize();
+~~~
 
-@descr:
-
-#### Related articles
-
-[Saving and restoring state](../../../guides/loading_data/#saving-and-restoring-state)
+**Related articles**:  [Saving and restoring state](../../../guides/loading_data/#saving-and-restoring-state)

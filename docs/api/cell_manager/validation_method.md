@@ -6,19 +6,33 @@ description: You can learn about the validation method of Cell Manager in the do
 
 # validation()
 
-@short: validates cells of the swimlane by the direction and action type
+### Description
 
-@signature: {`validation(cellIndex: number, dir: ActionDirection, action: ActionValidate): boolean;`}
+@short: Validates cells of the swimlane by the direction and action type
 
-@params:
-- `cellIndex: number` - the start index of a cell in a layout
-- `dir: "up" | "down" | "left" | "right"` - the direction of the action
-- `action: "move" | "remove" | "add"` - the type of the action
+### Usage
 
-@returns:
-`True` if the cell is validated, otherwise `false`.
+~~~js
+validation(
+    cellIndex: number, 
+    dir: string, // "up" | "down" | "left" | "right"
+    action: string // "move" | "remove" | "add"
+): boolean;
+~~~
 
-@example:
+### Parameters
+
+- `cellIndex` - (required) the start index of a cell in a layout. The count of the index starts from 0
+- `dir` - (required) the direction of the action: "up" | "down" | "left" | "right"
+- `action` - (required) the type of the action: "move" | "remove" | "add"
+
+### Returns
+
+The method returns `true` if the cell is validated, otherwise `false`
+
+### Example
+
+~~~js
 // initialization of the diagram
 const diagram = new dhx.Diagram("diagram_container", {
     // config options
@@ -29,18 +43,9 @@ diagram.data.parse(data);
 diagram.cellManager.setSwimlane("main");
 
 // validates if the cell with index 0 can be moved down
-diagram.cellManager.validation(0, "down", "move") ;
+diagram.cellManager.validation(0, "down", "move"); // -> true
+~~~
 
-// -> true
+**Change log**: Added in v4.0
 
-@descr:
-
-The count of the index starts from 0.
-
-@changelog:
-Added in v4.0
-
-@descr:
-#### Related articles
-
-[Configuring Swimlanes](../../../swimlanes/index/)
+**Related articles**: [Configuring Swimlanes](../../../swimlanes/index/)

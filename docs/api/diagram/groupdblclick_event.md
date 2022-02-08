@@ -6,23 +6,46 @@ description: You can learn about the groupDblClick event in the documentation of
 
 # groupDblClick
 
-@short: fires on double-clicking a group
+### Description
 
-@signature: {`groupDblClick: (id: Id, event: MouseEvent) => void;`}
+@short: Fires on double-clicking a group
 
-@params:
-- `id: string | number` - the id of a group
-- `event: MouseEvent` - a native HTML event object
+If a double-click is done over a swimlane, the event will be fired on the cell of the swimlane
 
-@example:
+### Usage
+
+~~~js
+groupDblClick: (
+    id: string | number,
+    event: MouseEvent
+) => void;
+~~~
+
+### Parameters
+
+The callback of the event takes the following parameters:
+
+- `id` - (required) the id of a group
+- `event` - (required) a native HTML event object
+
+### Example
+
+~~~js {9-11}
+// initializing Diagram
+const diagram = new dhx.Diagram("diagram_container", {
+    type: "default"
+});
+// loading data
+diagram.data.parse(data);
+
+// attaching a handler to the event
 diagram.events.on("groupDblClick", (id, event) => {
     console.log(id, event);
 });
+~~~
 
-@descr:
-If a double-click is done over a swimlane, the event will be fired on the cell of the swimlane.
+**Change log**: Added in v4.0
+
+**Related article**: [Event handling](../../../guides/event_handling/)
 
 **Related samples**: [Diagram. Default mode. Events](https://snippet.dhtmlx.com/7h2hgb3g)
-
-@changelog:
-Added in v4.0

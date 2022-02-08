@@ -6,17 +6,27 @@ description: You can learn about the zoomOut method of editor in the documentati
 
 # zoomOut()
 
-@short: zooms out the diagram
+### Description
 
-@signature: {`zoomOut(step?: number): void;`}
+@short: Zooms out the diagram
 
-@params:
-`step: number` - the step of zooming out the diagram; *by default 0.05*
+### Usage
 
-@example:
+~~~js
+zoomOut(step?: number): void;
+~~~
+
+### Parameters
+
+- `step` - (optional) the step of zooming out the diagram; *by default: 0.05*
+
+### Example
+
+~~~js {4}
+const editor = new dhx.DiagramEditor("editor_container");
+editor.parse(data);
+
 editor.zoomOut(0.1);
+~~~
 
-@descr:
-
-@changelog:
-Added in v4.1.
+**Change log**: Added in v4.1

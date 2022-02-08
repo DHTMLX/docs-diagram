@@ -6,13 +6,26 @@ description: You can learn about the applyButton event of editor in the document
 
 # applyButton
 
-@short: fires after the Apply All button has been clicked
+### Description
 
-@signature: {`applyButton: () => void;`}
+@short: Fires after the Apply All button has been clicked
 
-@example:
+### Usage
+
+~~~js
+applyButton: () => void;
+~~~
+
+### Example
+
+~~~js {7-9}
+// initializing Diagram Editor
+const editor = new dhx.DiagramEditor("editor_container");
+// loading data
+editor.parse(data);
+
+// attaching a handler to the event
 editor.events.on("applyButton", function(){
     console.log("The changes are applied");
 });
-
-@descr:
+~~~

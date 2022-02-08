@@ -6,13 +6,26 @@ description: You can learn about the resetButton event of editor in the document
 
 # resetButton
 
-@short: fires after the Reset Changes button has been clicked
+### Description
 
-@signature: {`resetButton: () => void;`}
+@short: Fires after the Reset Changes button has been clicked
 
-@example:
+### Usage
+
+~~~js
+resetButton: () => void;
+~~~
+
+### Example
+
+~~~js {7-9}
+// initializing Diagram Editor
+const editor = new dhx.DiagramEditor("editor_container");
+// loading data
+editor.parse(data);
+
+// attaching a handler to the event
 editor.events.on("resetButton",function(){
     console.log("The changes are reset");
 });
-
-@descr:
+~~~

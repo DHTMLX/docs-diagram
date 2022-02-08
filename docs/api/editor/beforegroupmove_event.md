@@ -6,19 +6,41 @@ description: You can learn about the beforeGroupMove event of editor in the docu
 
 # beforeGroupMove
 
-@short: fires before a group or swimlane is moved
+### Description
 
-@signature: {`beforeGroupMove: (events: MouseEvent, id: Id, coord: IBaseCoords) => boolean | void;`}
+@short: Fires before a group or swimlane is moved
 
-@params:
-- `events: MouseEvent` - a native HTML event object
-- `id: string | number` - the id of an item
-- `coord: object` - am object with the x and y coordinates of the group or swimlane position before movement
+### Usage
 
-@returns:
-Return `false` to prevent the group or swimlane from being moved; otherwise, `true`.
+~~~js
+beforeGroupMove: (
+    event: MouseEvent, 
+    id: string | number, 
+    coord: object
+) => boolean | void;
+~~~
 
-@example:
+### Parameters
+
+The callback of the event takes the following parameters:
+
+- `event` - (required) a native HTML event object
+- `id` - (required) the id of an item
+- `coord` - (required) am object with the x and y coordinates of the group or swimlane position before movement
+
+### Returns
+
+Return `false` to prevent the group or swimlane from being moved; otherwise, `true`
+
+### Example
+
+~~~js {7-14}
+// initializing Diagram Editor
+const editor = new dhx.DiagramEditor("editor_container");
+// loading data
+editor.parse(data);
+
+// attaching a handler to the event
 editor.events.on("beforeGroupMove", (event, id, coordinates) => {
     console.log(`
         Group ${id} is position:
@@ -27,8 +49,6 @@ editor.events.on("beforeGroupMove", (event, id, coordinates) => {
     `);
     return true;
 });
+~~~
 
-@descr:
-
-@changelog:
-Added in v4.0.
+**Change log**: Added in v4.0

@@ -6,21 +6,37 @@ description: You can learn about the eachChild method of data collection in the 
 
 # eachChild()
 
-@short: iterates through the children of the specified item
+### Description
 
-@signature: {`eachChild(id: Id, callback: Callback, isTree?: boolean): void;`}
+@short: Iterates through the children of the specified item
 
-@params:
-- `id: string | number` - the id of the item
-- `callback: function` - the function that will be applied to each child of the item
-- `isTree: boolean` - optional, defines, whether the function should iterate through all children (of any level) of the specified item. If *false*, the function will iterate only through the first-level children of the item; *true* by default.
+### Usage
 
-@example:
+~~~js
+eachChild(
+    id: string | number, 
+    callback: function, 
+    isTree?: boolean
+): void;
+~~~
+
+### Parameters
+
+- `id` - (required) the id of the item
+- `callback` - (required) a callback function that will be applied to each child of the item
+- `isTree` - (optional) defines, whether the function should iterate through all children (of any level) of the specified item. If *false*, the function will iterate only through the first-level children of the item; *true* by default.
+
+### Example
+
+~~~js {6-8}
+const diagram = new dhx.Diagram("diagram_container", {
+    type: "default"
+});
+diagram.data.parse(data);
+
 diagram.data.eachChild("id_1", (item) => {
     console.log(item);
 }, true);
+~~~
 
-@descr:
-
-@changelog:
-Added in v4.0
+**Change log**: Added in v4.0

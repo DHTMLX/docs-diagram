@@ -6,18 +6,27 @@ description: You can learn about the removeAll method of data collection in the 
 
 # removeAll()
 
-@short: deletes all items from the diagram
+### Description
 
-@signature: {`removeAll(): void;`}
+@short: Deletes all items from the diagram
 
-@example:
+### Usage
+
+~~~js
+removeAll(): void;
+~~~
+
+### Example
+
+~~~js {6}
+const diagram = new dhx.Diagram("diagram_container", {
+    type: "default"
+});
+diagram.data.parse(data);
+
 diagram.data.removeAll();
+~~~
 
-@relatedsample:
+**Related articles**:  [Deleting items](../../../guides/manipulating_items/#deleting-items)
+
 **Related sample**: [Diagram. Data. Add/delete item](https://snippet.dhtmlx.com/8wi20uop)
-
-@descr:
-
-#### Related articles
-
-[Deleting items](../../../guides/manipulating_items/#deleting-items)

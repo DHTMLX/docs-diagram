@@ -6,20 +6,31 @@ description: You can learn about the select property in the documentation of the
 
 # select
 
-@short: enables selection in the diagram
+### Description
 
-@signature: {`select?: boolean;`}
+@short: Optional. Enables selection in the diagram
 
-@default:false
+### Usage
 
-@example:
+~~~js
+select?: boolean;
+~~~
+
+### Default config
+
+~~~js
+select: false
+~~~
+
+### Example
+
+~~~js
 const diagram = new dhx.Diagram("diagram_container", { 
     select: true
 });
+~~~
 
-@descr:
-
-#### Related articles
+**Related articles**:
 
 - [Selecting items](../../../guides/diagram/configuration/#selecting-items)
 - [Selecting items](../../../guides/manipulating_items/#selecting-items)

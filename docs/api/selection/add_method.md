@@ -6,15 +6,27 @@ description: You can learn about the add method of selection in the documentatio
 
 # add
 
-@short: selects the specified item
+### Description
 
-@signature: {`add(id: Id, subId?: Id): void;`}
+@short: Selects the specified item
 
-@params:
-- `id: string | number` - the item id
-- `subId: string | number` - optional, the id of a subheader of a swimlane or a text element of a line
+### Usage
 
-@example:
+~~~js
+add(
+    id: string | number, 
+    subId?: string | number
+): void;
+~~~
+
+### Parameters
+
+- `id` - (required) the item id
+- `subId` - (optional) the id of a subheader of a swimlane or a text element of a line
+
+### Example
+
+~~~js {7}
 // diagram must be created with the "select:true" option
 const diagram = new dhx.Diagram("diagram_container", { 
     select: true 
@@ -22,15 +34,13 @@ const diagram = new dhx.Diagram("diagram_container", {
 diagram.data.parse(data);
 
 diagram.selection.add("2");
+~~~
 
-@descr:
+**Related articles**:  
+- [diagram.config.select](../../../api/diagram/select_property/)
+- [Selecting items](../../../guides/manipulating_items/#selecting-items)
 
 **Related samples**:
 
-- [Diagram. Org chart mode. Item selection](https://snippet.dhtmlx.com/jyoxn5h7)
+- [Diagram. Selection. Item selection](https://snippet.dhtmlx.com/jyoxn5h7)
 - [Diagram. Default mode. Item selection](https://snippet.dhtmlx.com/tcny4obw)
-
-#### Related articles
-
-- [diagram.config.select](../../../api/diagram/select_property/)
-- [Selecting items](../../../guides/manipulating_items/#selecting-items)

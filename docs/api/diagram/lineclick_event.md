@@ -6,22 +6,45 @@ description: You can learn about the lineClick event in the documentation of the
 
 # lineClick
 
-@short: fires on clicking a line
+### Description
 
-@signature: {`lineClick: (id: Id, event: MouseEvent) => void;`}
+@short: Fires on clicking a connector line
 
-@params:
-- `id: string | number` - the id of a connector line
-- `event: MouseEvent` -  a native HTML event object
+### Usage
 
-@example:
+~~~js
+lineClick: (
+    id: string | number, 
+    event: MouseEvent
+) => void;
+~~~
+
+### Parameters
+
+The callback of the event takes the following parameters:
+
+- `id` - (required) the id of a connector line
+- `event` - (required) a native HTML event object
+
+### Example
+
+~~~js {9-11}
+// initializing Diagram
+const diagram = new dhx.Diagram("diagram_container", {
+    type: "default"
+});
+// loading data
+diagram.data.parse(data);
+
+// attaching a handler to the event
 diagram.events.on("lineClick", function(id, events) {
     console.log(id);
 });
+~~~
 
-@relatedsample:
-**Related samples**:
-- [Diagram. Default mode. Events](https://snippet.dhtmlx.com/7h2hgb3g)
+**Change log**: Added in v3.0
 
-@changelog:
-Added in v3.0
+**Related article**: [Event handling](../../../guides/event_handling/)
+
+**Related samples**: [Diagram. Default mode. Events](https://snippet.dhtmlx.com/7h2hgb3g)
+

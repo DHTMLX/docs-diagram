@@ -6,18 +6,38 @@ description: You can learn about the import method of editor in the documentatio
 
 # import()
 
-@short: imports data from an existing diagram into the editor
+### Description
 
-@signature: {`import(diagram: Diagram): void;`}
+@short: Imports data from an existing diagram into the editor
 
-@params:
-`diagram: object` - the diagram object
+### Usage
 
-@example:
+~~~js
+import(diagram: object): void;
+~~~
+
+### Parameters
+
+- `diagram` - (required) the diagram object
+
+### Example
+
+~~~js
+// initializing Diagram
+const diagram = new dhx.Diagram("diagram", {
+    type: "org"
+});
+// loading data into Diagram
+diagram.data.parse(data);
+
+// initializing Editor
+const editor = new dhx.DiagramEditor("editor_container");
+
+// importing data from Diagram into Editor
 editor.import(diagram);
+~~~
 
-@descr:
+You can load data in any supported data format. See the details in the [](api/data_collection/parse_method.md) article.
 
 **Related samples**: [Diagram editor. Org chart mode. Live editor](https://snippet.dhtmlx.com/bng7ego7)
 
-You can load data in any supported data format. See the details in the [](api/data_collection/parse_method.md) article.

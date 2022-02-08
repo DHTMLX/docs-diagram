@@ -6,16 +6,37 @@ description: You can learn about the afterShapeMove event of editor in the docum
 
 # afterShapeMove
 
-@short: fires when a shape is moved one grid step
+### Description
 
-@signature: {`afterShapeMove: (events: MouseEvent, id: Id, coord: IBaseCoords) => void;`}
+@short: Fires when a shape is moved one grid step
 
-@params:
-- `events: MouseEvent` - a native HTML event object
-- `id: string | number` - the id of a shape
-- `coord: object` - an object with the x and y coordinates of the shape position after movement
+### Usage
 
-@example:
+~~~js
+afterShapeMove: (
+    event: MouseEvent, 
+    id: string | number, 
+    coord: object
+) => void;
+~~~
+
+### Parameters
+
+The callback of the event takes the following parameters:
+
+- `event` - (required) a native HTML event object
+- `id` - (required) the id of a shape
+- `coord` - (required) an object with the x and y coordinates of the shape position after movement
+
+### Example
+
+~~~js {7-13}
+// initializing Diagram Editor
+const editor = new dhx.DiagramEditor("editor_container");
+// loading data
+editor.parse(data);
+
+// attaching a handler to the event
 editor.events.on("afterShapeMove", (event, id, coordinates) => {
     console.log(`
         Shape ${id} is position:
@@ -23,9 +44,9 @@ editor.events.on("afterShapeMove", (event, id, coordinates) => {
             y: ${coordinates.y}
     `);
 });
+~~~
 
-@descr:
+**Change log**: 
 
-@changelog:
-- The **id** and **coordinates** parameters are added in v4.0.
-- Added in v3.1.
+- The **id** and **coordinates** parameters are added in v4.0
+- Added in v3.1

@@ -6,19 +6,45 @@ description: You can learn about the beforeItemMove event of editor in the docum
 
 # beforeItemMove
 
-@short: fires before an item is moved
+### Description
 
-@signature: {`beforeItemMove: (events: MouseEvent, id: Id, coord: IBaseCoords) => boolean | void;`}
+@short: Fires before an item is moved
 
-@params:
-- `events: MouseEvent` - a native HTML event object
-- `id: string | number` - the id of an item
-- `coord: object` - an object with the x and y coordinates of the item position before movement
+:::note
+The event doesn't work with the line object
+:::
 
-@returns:
-Return `false` to prevent the item from being moved; otherwise, `true`.
+### Usage
 
-@example:
+~~~js
+beforeItemMove: (
+    event: MouseEvent, 
+    id: string | number, 
+    coord: object
+) => boolean | void;
+~~~
+
+### Parameters
+
+The callback of the event takes the following parameters:
+
+- `event` - (required) a native HTML event object
+- `id` - (required) the id of an item
+- `coord` - (required) an object with the x and y coordinates of the item position before movement
+
+### Returns
+
+Return `false` to prevent the item from being moved; otherwise, `true`
+
+### Example
+
+~~~js {7-14}
+// initializing Diagram Editor
+const editor = new dhx.DiagramEditor("editor_container");
+// loading data
+editor.parse(data);
+
+// attaching a handler to the event
 editor.events.on("beforeItemMove", (event, id, coordinates) => {
     console.log(`
         Item ${id} is position: 
@@ -27,9 +53,6 @@ editor.events.on("beforeItemMove", (event, id, coordinates) => {
     `);
     return true;
 });
+~~~
 
-@descr:
-The event doesn't work with the line object.
-
-@changelog:
-Added in v4.0.
+**Change log**: Added in v4.0

@@ -6,11 +6,21 @@ description: You can learn about the paint method of editor in the documentation
 
 # paint()
 
-@short: repaints the editor
+### Description
 
-@signature: {`paint(): void;`}
+@short: Repaints the editor
 
-@example:
+### Usage
+
+~~~js
+paint(): void;
+~~~
+
+### Example
+
+~~~js {4}
+const editor = new dhx.DiagramEditor("editor_container");
+editor.parse(data);
+
 editor.paint();
-
-@descr:
+~~~

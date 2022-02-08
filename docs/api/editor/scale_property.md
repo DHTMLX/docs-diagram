@@ -6,15 +6,26 @@ description: You can learn about the scale property of editor in the documentati
 
 # scale
 
-@short: defines the diagram editor scale
+### Description
 
-@signature: {`scale?: number;`}
+@short: Optional. Defines the diagram editor scale
 
-@default: 1
+### Usage
 
-@example:
+~~~js
+scale?: number;
+~~~
+
+### Default config
+
+~~~js
+scale: 1
+~~~
+
+### Example
+
+~~~js
 const editor = new dhx.DiagramEditor("editor_container", {
     scale: 0.9
 });
-
-@descr:
+~~~

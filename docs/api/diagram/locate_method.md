@@ -6,18 +6,29 @@ description: You can learn about the locate method in the documentation of the D
 
 # locate()
 
-@short: gets the id of an item from the specified HTML event or tag
+### Description
 
-@signature: {`locate(event: Event): IBaseShape;`}
+@short: Gets the ID of an item from the specified HTML event or tag
 
-@params:
-`event: Event` - a native event object
+### Usage
 
-@returns:
+~~~jsx
+locate(event: object): any;
+~~~
 
-The id of the shape that the event/tag relates to.
+### Parameters
 
-@example:
+- `event` - (required) a native event object
+
+### Returns
+
+The method returns the ID of the shape that the event/tag relates to
+
+### Example
+
+~~~jsx {4}
+const diagram = new dhx.Diagram("diagram_container");
+diagram.data.parse(data);
+
 const id = diagram.locate(event);
-
-@descr:
+~~~

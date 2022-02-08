@@ -6,37 +6,49 @@ description: You can learn about the find method of data collection in the docum
 
 # find()
 
-@short: finds the item that corresponds to the specified parameters
+### Description
 
-@signature: {`find(rule: IFilterMode | DataCallback<T>): T;`}
+@short: Finds the item that corresponds to the specified parameters
 
-@params:
-`rule: object | function` - the search criteria
+### Usage
 
-@returns:
-The first object of the item that matches the specified criteria.
+~~~js
+find(rule: object): object;
 
-@example:
+// or
+
+find(rule: function): object;
+~~~
+
+### Parameters
+
+- `rule` - (required) the search criteria which can be specified:
+  - as an object which contains the following parameters:
+    - `by: string | function` - the search criterion (either the key of the item attribute or a search function)
+    - `match: string` - the value of the item attribute
+  - as a function: `DataCallback(item: T, index?: number, array?: T[])`
+
+### Returns
+
+The method returns the first object of the item that matches the specified criteria
+
+### Example
+
+~~~js {7,10-12}
+const diagram = new dhx.Diagram("diagram_container", {
+    type: "default"
+});
+diagram.data.parse(data);
+
 //searching for a shape by the attribute key
-const shape = diagram.data.find({by:"text",match:"Manager"});
+const shape = diagram.data.find({ by: "text", match: "Manager" });
 
-//searching for a shape by the function
+//searching for a shape by the rule specified in the function
 const shape = diagram.data.find(function(shape){
 	if(shape.text==="Manager"||shape.text==="Marketer"){return true}
 });
+~~~
 
-@relatedsample:
+**Related articles**:  [Finding the necessary item](../../../guides/manipulating_items/#finding-the-necessary-item)
+
 **Related sample**: [Diagram. Data. Finding necessary shape](https://snippet.dhtmlx.com/sete9z73)
-
-@descr:
-The **rule** parameter:
-
-- if set as an `IFilterMode` object, the parameter contains the following attributes:
-	- **by** - (*string,function*) the search criterion (either the key of the item attribute or a search function)
-	- **match** - (*string*) the value of the item attribute
-- if set as `DataCallback(item: T, index?: number, array?: T[])`, the search will be applied by the rule specified in the function.
-
-
-#### Related articles
-
-[Finding the necessary item](../../../guides/manipulating_items/#finding-the-necessary-item)

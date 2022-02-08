@@ -6,38 +6,44 @@ description: You can learn about the getCellIndex method of Cell Manager in the 
 
 # getCellIndex()
 
-@short: returns the index of the cell of the swimlane by the id
+### Description
 
-@signature: {`getCellIndex(cellId: Id, type: ICellType): number | undefined;`}
+@short: Returns the index of the cell of the swimlane by the id
 
-@params:
-- `cellId: string | number` - the id of a cell
-- `type: "row" | "col"` - the type of direction to count the index
+### Usage
 
-@returns:
-The index of the cell.
+~~~js
+getCellIndex(
+    cellId: string | number, 
+    type: string // "row" | "col"
+): number | undefined;
+~~~
 
-@example:
+### Parameters
+
+- `cellId` - (required) the id of a cell
+- `type` - (required) the type of direction to count the index: "row" | "col"
+
+### Returns
+
+The method returns the index of the cell. The count of the index starts from 0
+
+### Example
+
+~~~js
 // initialization of the diagram
 const diagram = new dhx.Diagram("diagram_container", {
     // config options
 });
 diagram.data.parse(data);
 
-diagram.cellManager.setSwimlane("main"); // sets active swimlane
+// sets active swimlane
+diagram.cellManager.setSwimlane("main"); 
 
-diagram.cellManager.getCellIndex("r01", "row"); // gets the index of the cell
+// gets the index of the cell
+diagram.cellManager.getCellIndex("r01", "row"); // -> 0
+~~~
 
-// -> 0
+**Change log**: Added in v4.0
 
-@descr:
-
-The count of the index starts from 0.
-
-@changelog:
-Added in v4.0
-
-@descr:
-#### Related articles
-
-[Configuring Swimlanes](../../../swimlanes/index/)
+**Related articles**: [Configuring Swimlanes](../../../swimlanes/index/)

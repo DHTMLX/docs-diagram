@@ -6,18 +6,32 @@ description: You can learn about the exists method of data collection in the doc
 
 # exists()
 
-@short: checks whether the specified item exists in the diagram
+### Description
 
-@signature: {`exists(id: Id): boolean;`}
+@short: Checks whether the specified item exists in the diagram
 
-@params:
-`id: string | number` - the id of the item in question
+### Usage
 
-@returns:
-`True` if the item exists, otherwise `false`.
+~~~js
+exists(id: string | number): boolean;
+~~~
 
-@example:
+### Parameters
+
+- `id` - (required) the id of the item in question
+
+### Returns
+
+The method returns `true` if the item exists, otherwise `false`
+
+### Example
+
+~~~js {6}
+const diagram = new dhx.Diagram("diagram_container", {
+    type: "default"
+});
+diagram.data.parse(data);
+
 const shape = diagram.data.exists("1"); 
-
-@descr:
+~~~
 

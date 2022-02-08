@@ -6,30 +6,53 @@ description: You can learn about the beforeEditorOpen event in the documentation
 
 # beforeEditorOpen
 
-@short: fires before the inline editor of an item is opened
+### Description
 
-@signature: {`beforeEditorOpen: (id: Id, key: string, subId?: string) => boolean | void;`}
+@short: Fires before the inline editor of an item is opened
 
-@params:
-- `id: string | number` - the id of the item
-- `key: string` - the name of the property to be edited
-- `subId: string` - optional, the id of a subheader of a swimlane or a text element of a line
+### Usage
 
-@returns:
-`False` to block opening of the inline editor, otherwise `true`.
+~~~js
+beforeEditorOpen: (
+    id: string | number, 
+    key: string, 
+    subId?: string
+) => boolean | void;
+~~~
 
-@example:
+### Parameters
+
+The callback of the event takes the following parameters:
+
+- `id` - (required) the id of the item
+- `key` - (required) the name of the property to be edited
+- `subId` - (optional) the id of a subheader of a swimlane or a text element of a line
+
+### Returns
+
+Return `false` to block opening of the inline editor, otherwise `true`
+
+### Example
+
+~~~js {9-12}
+// initializing Diagram
+const diagram = new dhx.Diagram("diagram_container", {
+    type: "default"
+});
+// loading data
+diagram.data.parse(data);
+
+// attaching a handler to the event
 diagram.events.on("beforeEditorOpen", (id, key, subId) => {
     console.log(id, key, subId);
     return true;
 });
+~~~
 
-@descr:
+**Change log**: 
+- The **subHeaderId** parameter has been changed to **subId** in v4.1
+- Added in v4.0
 
 **Related samples**:
 - [Diagram. Default mode. Events](https://snippet.dhtmlx.com/7h2hgb3g)
 - [Diagram. Org chart mode. Events](https://snippet.dhtmlx.com/l38pct7c)
-
-@changelog:
-- SubHeaderId parameter has been changed to subId in v4.1.
-- Added in v4.0.

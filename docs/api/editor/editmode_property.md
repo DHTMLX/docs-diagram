@@ -6,13 +6,20 @@ description: You can learn about the editMode property of editor in the document
 
 # editMode
 
-@short: hides/shows the left/right panels of the editor
+### Description
 
-@signature: {`editMode?: boolean;`}
+@short: Optional. Hides/shows the left/right panels of the editor
 
-@example:
+### Usage
+
+~~~js
+editMode?: boolean;
+~~~
+
+### Example
+
+~~~js
 const editor = new dhx.DiagramEditor("editor_container", {
     editMode: false
 });
-
-@descr:
+~~~

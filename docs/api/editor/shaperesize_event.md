@@ -6,13 +6,26 @@ description: You can learn about the shapeResize event of editor in the document
 
 # shapeResize
 
-@short: fires after a shape has been resized
+### Description
 
-@signature: {`shapeResize: () => void;`}
+@short: Fires after a shape has been resized
 
-@example:
+### Usage
+
+~~~js
+shapeResize: () => void;
+~~~
+
+### Example
+
+~~~js {7-9}
+// initializing Diagram Editor
+const editor = new dhx.DiagramEditor("editor_container");
+// loading data
+editor.parse(data);
+
+// attaching a handler to the event
 editor.events.on("shapeResize", function() {
     console.log("The shape is resized");
 });
-
-@descr:
+~~~

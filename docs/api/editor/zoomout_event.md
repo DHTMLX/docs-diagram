@@ -6,13 +6,26 @@ description: You can learn about the zoomOut event of editor in the documentatio
 
 # zoomOut
 
-@short: fires after the Zoom Out button has been clicked
+### Description
 
-@signature: {`zoomOut: () => void;`}
+@short: Fires after the Zoom Out button has been clicked
 
-@example:
+### Usage
+
+~~~js
+zoomOut: () => void;
+~~~
+
+### Example
+
+~~~js {7-9}
+// initializing Diagram Editor
+const editor = new dhx.DiagramEditor("editor_container");
+// loading data
+editor.parse(data);
+
+// attaching a handler to the event
 editor.events.on("zoomOut", function() {
     console.log("The diagram in the editor is zoomed out");
 });
-
-@descr:
+~~~

@@ -6,20 +6,34 @@ description: You can learn about the getItem method of data collection in the do
 
 # getItem()
 
-@short: returns the object of an item by its id
+### Description
 
-@signature: {`getItem(id: Id): T;`}
+@short: Returns the object of an item by its id
 
-@params:
-`id: string | number` - the id of a selected item
+### Usage
 
-@returns:
-The object of an item.
+~~~js
+getItem(id: string | number): object;
+~~~
 
-@example:
+### Parameters
+
+- `id` - (required) the id of a selected item
+
+### Returns
+
+The method returns the object of an item
+
+### Example
+
+~~~js {6}
+const diagram = new dhx.Diagram("diagram_container", {
+    type: "default"
+});
+diagram.data.parse(data);
+
 const shape = diagram.data.getItem(123);
-
-@descr:
+~~~
 
 You can access the original properties of an item like this:
 
@@ -29,6 +43,4 @@ const shape = diagram.data.getItem(123);
 const text = shape.text;
 ~~~
 
-#### Related articles
-
-[Getting an item](../../../guides/manipulating_items/#getting-an-item)
+**Related articles**:  [Getting an item](../../../guides/manipulating_items/#getting-an-item)

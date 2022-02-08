@@ -6,11 +6,21 @@ description: You can learn about the paint method in the documentation of the DH
 
 # paint()
 
-@short: repaints the diagram
+### Description
 
-@signature: {`paint(): void;`}
+@short: Repaints the diagram
 
-@example:
+### Usage
+
+~~~jsx
+paint(): void;
+~~~
+
+### Example
+
+~~~jsx {4}
+const diagram = new dhx.Diagram("diagram_container");
+diagram.data.parse(data);
+
 diagram.paint();
-
-@descr:
+~~~

@@ -6,21 +6,37 @@ description: You can learn about the getId method of selection in the documentat
 
 # getId()
 
-@short: returns the id of the selected item
+### Description
 
-@signature: {`getId(): Id;`}
+@short: Returns the id of the selected item
 
-@returns:
+### Usage
 
-The id of the selected item.
+~~~js
+getId(): string | number;
+~~~
 
-@example:
+### Returns
+
+The method returns the id of the selected item
+
+### Example
+
+~~~js {7}
+// diagram must be created with the "select:true" option
+const diagram = new dhx.Diagram("diagram_container", { 
+    select: true 
+});
+diagram.data.parse(data);
 
 const id = diagram.selection.getId(); // -> "2"
+~~~
 
-@descr:
-
-#### Related articles
-
+**Related articles**:  
 - [diagram.config.select](../../../api/diagram/select_property/)
 - [Selecting items](../../../guides/manipulating_items/#selecting-items)
+
+**Related samples**:
+
+- [Diagram. Selection. Item selection](https://snippet.dhtmlx.com/jyoxn5h7)
+- [Diagram. Default mode. Item selection](https://snippet.dhtmlx.com/tcny4obw)

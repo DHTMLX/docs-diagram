@@ -6,16 +6,41 @@ description: You can learn about the afterItemMove event of editor in the docume
 
 # afterItemMove
 
-@short: fires when an item is moved one grid step
+### Description
 
-@signature: {`afterItemMove: (events: MouseEvent, id: Id, coord: IBaseCoords) => void;`}
+@short: Fires when an item is moved one grid step
 
-@params:
-- `events: MouseEvent` - a native HTML event object
-- `id: string | number` - the id of an item
-- `coord: object` - an object with the x and y coordinates of the item position after movement
+:::note
+The event doesn't work with the line object
+:::
 
-@example:
+### Usage
+
+~~~js
+afterItemMove: (
+    event: MouseEvent, 
+    id: string | number, 
+    coord: object
+) => void;
+~~~
+
+### Parameters
+
+The callback of the event takes the following parameters:
+
+- `event` - (required) a native HTML event object
+- `id` - (required) the id of an item
+- `coord` - (required) an object with the x and y coordinates of the item position after movement
+
+### Example
+
+~~~js {7-13}
+// initializing Diagram Editor
+const editor = new dhx.DiagramEditor("editor_container");
+// loading data
+editor.parse(data);
+
+// attaching a handler to the event
 editor.events.on("afterItemMove", (event, id, coordinates) => {
     console.log(`
         Item ${id} is position: 
@@ -23,9 +48,6 @@ editor.events.on("afterItemMove", (event, id, coordinates) => {
             y: ${coordinates.y}
     `);
 });
+~~~
 
-@descr:
-The event doesn't work with the line object.
-
-@changelog:
-Added in v4.0.
+**Change log**: Added in v4.0

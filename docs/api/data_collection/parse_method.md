@@ -6,16 +6,27 @@ description: You can learn about the parse method of data collection in the docu
 
 # parse()
 
-@short: loads data from a local data source
+### Description
 
-@signature: {`parse(data: T[] | string, driver?: IDataDriver | DataDriver): void;`}
+@short: Loads data from a local data source
 
-@params:
+### Usage
 
-- `data: array | string` - the data to load
-- `driver: object | string` - optional, DataDriver or type of data ("json", "csv", "xml"), "json" by default
+~~~js
+parse(
+	data: array | string, 
+	driver?: object | string
+): void;
+~~~
 
-@example:
+### Parameters
+
+- `data` - (required) the data to load. You can load data in any supported data format
+- `driver` - (optional) DataDriver or type of data ("json", "csv", "xml"), "json" by default
+
+### Example
+
+~~~js
 const data = [
 	{
 		id: "1",
@@ -41,14 +52,8 @@ const data = [
 
 const diagram = new dhx.Diagram("diagram_container", { type: "org" });
 diagram.data.parse(data);
+~~~
 
-@relatedsample:
+**Related articles**:  [Loading and storing data](../../../guides/loading_data/)
+
 **Related sample**: [Diagram. Org chart mode. Basic initialization](https://snippet.dhtmlx.com/5ign6fyy)
-
-@descr:
-
-You can load data in any supported data format.
-
-#### Related articles
-
-[Loading and storing data](../../../guides/loading_data/)
