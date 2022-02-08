@@ -1,6 +1,6 @@
 ---
 sidebar_label: Initialization
-title: How to Start with Diagram
+title: Initialization
 description: You can learn how to start with Diagram in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
 
@@ -103,7 +103,7 @@ const diagram = new dhx.Diagram(document.body, {
 
 ### Initialization in a layout cell
 
-You can also initialize a diagram inside [a Layout cell](https://docs.dhtmlx.com/suite/layout/index/). In this case use *null* instead of a container:
+You can also initialize a diagram inside [a Layout cell](https://docs.dhtmlx.com/suite/layout/). In this case use *null* instead of a container:
 
 ~~~js
 const diagram = new dhx.Diagram(null, {

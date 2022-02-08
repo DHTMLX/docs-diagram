@@ -4,7 +4,7 @@ title: Inline Editing
 description: You can learn about inline editing in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
 
-# Inline Editing
+# Inline editing
 
 Inline editing lets you edit the text content of a diagram item by double-clicking on it. You can edit the items both in the diagram and in the editor.
 
@@ -111,4 +111,4 @@ const data = [
 
 ## API events
 
-The library includes a set of helpful [API events](../../api/inline_editor/index/) which you can use to control the behavior of the editor on its opening/closing, as well as to control the process of editing the text of the items.
+The library includes a set of helpful [API events](../../api/inline_editor/) which you can use to control the behavior of the editor on its opening/closing, as well as to control the process of editing the text of the items.

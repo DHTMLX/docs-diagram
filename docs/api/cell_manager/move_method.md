@@ -44,4 +44,4 @@ diagram.cellManager.move(0, "down"); // moves cells as rows
 
 **Change log**: Added in v4.0
 
-**Related articles**: [Configuring Swimlanes](../../../swimlanes/index/)
+**Related articles**: [Configuring Swimlanes](../../../swimlanes/)

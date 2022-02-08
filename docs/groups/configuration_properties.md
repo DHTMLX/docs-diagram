@@ -134,4 +134,4 @@ const data = [
 ];
 ~~~
 
-**Related articles:** [Configuring groups](../../groups/index/)
+**Related articles:** [Configuring groups](../../groups/)

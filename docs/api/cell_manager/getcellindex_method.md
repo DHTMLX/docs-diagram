@@ -46,4 +46,4 @@ diagram.cellManager.getCellIndex("r01", "row"); // -> 0
 
 **Change log**: Added in v4.0
 
-**Related articles**: [Configuring Swimlanes](../../../swimlanes/index/)
+**Related articles**: [Configuring Swimlanes](../../../swimlanes/)

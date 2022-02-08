@@ -134,4 +134,4 @@ It is possible to activate selection of items in a diagram. You need to make use
 
 <iframe src="https://snippet.dhtmlx.com/tcny4obw?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="400"></iframe>
 
-{{note [The predefined set of events](../../../api/selection/index/#events) of the selection object can help you to define the way of processing the behavior of the diagram during selecting/unselecting items.}}
+{{note [The predefined set of events](../../../api/selection/#events) of the selection object can help you to define the way of processing the behavior of the diagram during selecting/unselecting items.}}

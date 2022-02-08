@@ -42,11 +42,6 @@ diagram.cellManager.setSwimlane("main"); // sets active swimlane
 diagram.cellManager.add(0, "down"); // adds cells as rows
 ~~~
 
-
-
-
-
-
 **Change log**: Added in v4.0
 
-**Related articles**: [Configuring Swimlanes](../../../swimlanes/index/)
+**Related articles**: [Configuring Swimlanes](../../../swimlanes/)

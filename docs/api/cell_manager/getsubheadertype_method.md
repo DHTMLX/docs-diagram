@@ -42,4 +42,4 @@ diagram.cellManager.getSubHeaderType("sub01"); // -> "row"
 
 **Change log**: Added in v4.0
 
-**Related articles**: [Configuring Swimlanes](../../../swimlanes/index/)
+**Related articles**: [Configuring Swimlanes](../../../swimlanes/)

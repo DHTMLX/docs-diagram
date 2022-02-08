@@ -38,4 +38,4 @@ diagram.cellManager.setSwimlane("main"); // sets active swimlane
 
 **Change log**: Added in v4.0
 
-**Related articles**: [Configuring Swimlanes](../../../swimlanes/index/)
+**Related articles**: [Configuring Swimlanes](../../../swimlanes/)

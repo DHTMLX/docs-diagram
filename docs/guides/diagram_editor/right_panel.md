@@ -150,7 +150,7 @@ Use to edit the text of the text item of a line.
 
 ![](../../assets/editor/line_title_text.png)
 
-### Text Style
+### Text style
 
 Use to adjust the text settings:
 

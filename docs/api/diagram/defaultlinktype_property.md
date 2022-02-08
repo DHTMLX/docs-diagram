@@ -32,4 +32,4 @@ const diagram = new dhx.Diagram("diagram_container", {
 });
 ~~~
 
-**Related articles**: [Setting connections between shapes](../../../lines/index/#setting-connections-between-shapes)
+**Related articles**: [Setting connections between shapes](../../../lines/#setting-connections-between-shapes)

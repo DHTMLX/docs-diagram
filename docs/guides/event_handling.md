@@ -71,16 +71,18 @@ This way can be also used if you need to apply the events which are listed below
 
 ### CellManager events
 
-Check the full list of the CellManager API events in the [API reference](../../api/cell_manager/index/#events). 
+Check the full list of the CellManager API events in the [API Reference](../../api/cell_manager/#events). 
 
 ### DataCollection events
 
-Check the full list of the DataCollection API events in the [API reference](../../api/data_collection/index/#events).
+Check the full list of the DataCollection API events in the [API Reference](../../api/data_collection/#events).
 
 ### InlineEditor events
 
-Check the full list of the InlineEditor API events in the [API reference](../../api/inline_editor/index/#events).
+Check the full list of the InlineEditor API events in the [API Reference](../../api/inline_editor/#events).
 
 ### Selection events
 
-Check the full list of the Selection API events in the [API reference](../../api/selection/index/#events).
+Check the full list of the Selection API events in the [API Reference](../../api/selection/#events).
+
+
