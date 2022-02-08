@@ -6,13 +6,16 @@ description: You can learn about the disable method of HistoryManager in the doc
 
 # disable()
 
-@short: blocks HistoryManager
+### Description
 
-@signature: {`disable(): void;`}
+@short: Blocks HistoryManager
 
-@descr:
+### Usage
 
-The Reset and HistoryManager buttons from the Toolbar work only in the custom event generation mode. Ctrl+z and Ctrl+Shift+z navigation is not available.
+~~~js
+disable(): void;
+~~~
 
-@changelog:
-Added in v4.1.
+The Reset and HistoryManager buttons from the Toolbar work only in the custom event generation mode. **Ctrl+z** and **Ctrl+Shift+z** navigation is not available.
+
+**Change log**: Added in v4.1

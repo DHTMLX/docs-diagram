@@ -6,23 +6,37 @@ description: You can learn about the getSubId method of selection in the documen
 
 # getSubId()
 
-@short: returns the subId (if any) of the selected item
+### Description
 
-@signature: {`getSubId(): Id;`}
+@short: Returns the subId (if any) of the selected item
 
-@returns:
+### Usage
 
-The subId (if any) of the selected item.
+~~~js
+getSubId(): string | number;
+~~~
 
-@example:
+### Returns
+
+The method returns the subId (if any) of the selected item
+
+### Example
+
+~~~js {7}
+// diagram must be created with the "select:true" option
+const diagram = new dhx.Diagram("diagram_container", { 
+    select: true 
+});
+diagram.data.parse(data);
 
 const subid = diagram.selection.getSubId(); // -> "2"
+~~~
 
-@descr:
+**Change log**: Added in v4.1
 
-@changelog:
-Added in v4.1.
+**Related articles**:  [Selecting items](../../../guides/manipulating_items/#selecting-items)
 
-#### Related articles
+**Related samples**:
 
-[Selecting items](../../../guides/manipulating_items/#selecting-items)
+- [Diagram. Selection. Item selection](https://snippet.dhtmlx.com/jyoxn5h7)
+- [Diagram. Default mode. Item selection](https://snippet.dhtmlx.com/tcny4obw)

@@ -60,7 +60,6 @@ const networkDiagram = [
 To change the default values of the *text* and *ip* properties, we've specified the same properties with the new values in the configuration object of a shape. 
 Thus, the *"Network Card"* text value will be replaced with the *"Remote expert desktop"* one and the *"138.68.41.78"* ip value will be replaced with *"192.168.32.2"*.
 
-
 ## Event handlers for custom shapes
 
 You may need to add handlers to the events occurred when the user interacts with custom shapes. It can be done by adding event handlers to HTML elements of the template of a shape via the **eventHandlers** attribute of the [](../api/diagram/addshape_method.md) method. 
@@ -77,4 +76,3 @@ The **eventHandlers** object includes a set of *key:value* pairs, where:
 	- **shape** - the shape object
 
 *We recommend that you use different CSS classes for different custom shapes.*
-

@@ -6,18 +6,29 @@ description: You can learn about the showItem method in the documentation of the
 
 # showItem()
 
-@short: adjusts scroll to make the target item visible
+### Description
 
-@signature: {`showItem(id: Id): void;`}
+@short: Adjusts scroll to make the target item visible 
 
-@params:
+### Usage
 
-`id: string | number` - the id of the target item
+~~~jsx
+showItem(id: string | number): void;
+~~~
 
-@example:
+### Parameters
+
+- `id` - (required) the **ID** of the target item
+
+### Example
+
+~~~jsx {4}
+const diagram = new dhx.Diagram("diagram_container");
+diagram.data.parse(data);
+
 diagram.showItem(123);
+~~~
 
-@descr:
 **Related sample**:
 - [Diagram. Shape search](https://snippet.dhtmlx.com/d7kvzq4r)
 - [Diagram. Scroll content](https://snippet.dhtmlx.com/f970hbym)

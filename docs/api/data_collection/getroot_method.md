@@ -6,22 +6,33 @@ description: You can learn about the getRoot method of data collection in the do
 
 # getRoot()
 
-@short: returns the id of the root item by the id of its child
+### Description
 
-@signature: {`getRoot(id: Id): Id;`}
+@short: Returns the id of the root item by the id of its child
 
-@params:
-`id: string | number` - the id of the child item
+### Usage
 
-@returns:
-The id of the root item.
+~~~js
+getRoot(id: string | number): string | number;
+~~~
 
-@example:
-diagram.data.getRoot("id_1.1.1"); -> "id_1"
+### Parameters
 
-@descr:
+- `id` - (required) the id of the child item
 
-The root item is the first item of a tree structure.
+### Returns
 
-@changelog:
-Added in v4.0
+The method returns the id of the root item. The root item is the first item of a tree structure
+
+### Example
+
+~~~js {6}
+const diagram = new dhx.Diagram("diagram_container", {
+    type: "default"
+});
+diagram.data.parse(data);
+
+diagram.data.getRoot("id_1.1.1"); // -> "id_1"
+~~~
+
+**Change log**: Added in v4.0

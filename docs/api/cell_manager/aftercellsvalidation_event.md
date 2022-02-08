@@ -6,26 +6,44 @@ description: You can learn about the afterCellsValidation event of Cell Manager 
 
 # afterCellsValidation
 
-@short: fires after cells of the swimlane are validated
+### Description
 
-@signature: {`afterCellsValidation: (swimlaneId: Id, validate: boolean, action: ActionValidate) => void;`}
+@short: Fires after cells of the swimlane are validated
 
-@params:
-- `swimlaneId: string | number` - the id of the item
-- `validate: boolean` - validated or not validated
-- `action: "move" | "remove" | "add"` - the type of the action
+### Usage
 
-@example:
+~~~js
+afterCellsValidation: (
+    swimlaneId: string | number, 
+    validate: boolean, 
+    action: "move" | "remove" | "add"
+) => void;
+~~~
+
+### Parameters
+
+The callback of the event takes the following parameters:
+
+- `swimlaneId` - (required) the id of the item
+- `validate` - (required) validated or not validated
+- `action` - (required) the type of the action
+
+### Example
+
+~~~js {9-11}
+// initializing Diagram
+const diagram = new dhx.Diagram("diagram_container", {
+    type: "default"
+});
+// loading data
+diagram.data.parse(data);
+
+// attaching a handler to the event
 diagram.events.on("afterCellsValidation", (swimlaneId, validate, action) => {
     console.log(swimlaneId, validate, action);
 });
+~~~
 
-@descr:
+**Change log**: Added in v4.0
 
-@changelog:
-Added in v4.0
-
-@descr:
-#### Related articles
-
-[Configuring Swimlanes](../../../swimlanes/)
+**Related articles**: [Configuring Swimlanes](../../../swimlanes/)

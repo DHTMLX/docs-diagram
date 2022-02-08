@@ -6,17 +6,27 @@ description: You can learn about the zoomIn method of editor in the documentatio
 
 # zoomIn()
 
-@short: zooms in the diagram
+### Description
 
-@signature: {`zoomIn(step?: number): void;`}
+@short: Zooms in the diagram
 
-@params:
-`step: number` - the step of zooming in the diagram; *by default: 0.05*
+### Usage
 
-@example:
+~~~js
+zoomIn(step?: number): void;
+~~~
+
+### Parameters
+
+- `step` - (optional) the step of zooming in the diagram; *by default: 0.05*
+
+### Example
+
+~~~js {4}
+const editor = new dhx.DiagramEditor("editor_container");
+editor.parse(data);
+
 editor.zoomIn(0.1);
+~~~
 
-@descr:
-
-@changelog:
-Added in v4.1.
+**Change log**: Added in v4.1

@@ -6,28 +6,43 @@ description: You can learn about the beforeCellsAdd event of Cell Manager in the
 
 # beforeCellsAdd
 
-@short: fires before new cells are added to a swimlane
+### Description
 
-@signature: {`beforeCellsAdd: (swimlaneId: Id) => boolean | void;`}
+@short: Fires before new cells are added to a swimlane
 
-@params:
-`swimlaneId: string | number` - the id of the item
+### Usage
 
-@returns:
-`False` to prevent adding of new cells, otherwise `true`.
+~~~js
+beforeCellsAdd: (swimlaneId: string | number) => boolean | void;
+~~~
 
-@example:
+### Parameters
+
+The callback of the event takes the following parameter:
+
+- `swimlaneId` - (required) the id of the item
+
+### Returns
+
+Return `false` to prevent adding of new cells, otherwise `true`
+
+### Example
+
+~~~js {9-12}
+// initializing Diagram
+const diagram = new dhx.Diagram("diagram_container", {
+    type: "default"
+});
+// loading data
+diagram.data.parse(data);
+
+// attaching a handler to the event
 diagram.events.on("beforeCellsAdd", (swimlaneId) => {
     console.log(swimlaneId);
     return true;
 });
+~~~
 
-@descr:
+**Change log**: Added in v4.0
 
-@changelog:
-Added in v4.0
-
-@descr:
-#### Related articles
-
-[Configuring Swimlanes](../../../swimlanes/)
+**Related articles**: [Configuring Swimlanes](../../../swimlanes/)

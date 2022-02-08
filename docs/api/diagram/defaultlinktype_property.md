@@ -6,21 +6,30 @@ description: You can learn about the defaultLinkType property in the documentati
 
 # defaultLinkType
 
-@short: the default type of a connector line
+### Description
 
-@signature: {`defaultLinkType?: "line" | "dash";`}
+@short: Optional. The default type of a connector line
 
-@default:"line"
+The value is applied, if the line object doesn't contain the "type" property
 
-@example:
+### Usage
+
+~~~js
+defaultLinkType?: "line" | "dash";
+~~~
+
+### Default config
+
+~~~js
+defaultLinkType: "line" 
+~~~
+
+### Example
+
+~~~js
 const diagram = new dhx.Diagram("diagram_container", { 
     defaultLinkType: "dash"
 });
+~~~
 
-@descr:
-
-This value is applied, if the line object doesn't contain the "type" property.
-
-#### Related articles
-
-[Setting connections between shapes](../../../lines/#setting-connections-between-shapes)
+**Related articles**: [Setting connections between shapes](../../../lines/#setting-connections-between-shapes)

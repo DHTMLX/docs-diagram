@@ -6,35 +6,49 @@ description: You can learn about the expandItem method in the documentation of t
 
 # expandItem()
 
-@short: shows all children of the target shape or expands the group/swimlane
+### Description
 
-@signature: {`expandItem(id: Id, dir?: TreeDirection): void;`}
+@short: Shows all children of the target shape or expands the group/swimlane
 
-@params:
-- `id: string | number` - the id of the item
-- `dir: string` - optional, defines the side the children will be shown in relation to the root shape: "left", "right"
+### Usage
 
-@example:
+~~~jsx
+expandItem(
+	id: string | number, 
+	dir?: string
+): void;
+~~~
+
+### Parameters
+
+- `id` - (required) the ID of the item
+- `dir` - (optional) defines the side the children will be shown in relation to the root shape: **"left"**, **"right"** 
+  :::note
+  The **dir** parameter can be used only when the diagram is initialized in the mindmap mode (*type:"mindmap"*)
+  :::
+
+### Example
+
+~~~jsx {2,6}
+const diagram = new dhx.Diagram("diagram_container", {
+    type: "default"
+});
+diagram.data.parse(data);
+
 diagram.expandItem(123);
+~~~
 
-@descr:
+or
 
-**Note**, that the **dir** parameter can be used only in the diagram that is initialized in the mindmap mode (type:"mindmap").
-
-~~~js
+~~~js {2,6}
 const diagram = new dhx.Diagram("diagram_container", {
 	type:"mindmap"
 });
-diagram.parse(data);
+diagram.data.parse(data);
 
 diagram.expandItem("main", "left");
 ~~~
 
-@changelog:
-The **dir** parameter was added in v3.1.
+**Change log:** The **dir** parameter was added in v3.1
 
-
-#### Related articles
-
-[Expanding/collapsing items](../../../guides/manipulating_items/#expandingcollapsing-items)
-
+**Related articles:** [Expanding/collapsing items](../../../guides/manipulating_items/#expandingcollapsing-items)

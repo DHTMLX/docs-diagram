@@ -6,24 +6,49 @@ description: You can learn about the groupHeaderDblClick event in the documentat
 
 # groupHeaderDblClick
 
-@short: fires on double-clicking a header of a group
+### Description
 
-@signature: {`groupHeaderDblClick: (id: Id, event: MouseEvent, subHeaderId?: string) => void;`}
+@short: Fires on double-clicking a header of a group
 
-@params:
-- `id: string | number` - the id of a group
-- `event: MouseEvent` - a native HTML event object
-- `subHeaderId: string` - optional, the id of a subheader of a swimlane
+If a double-click is done over a header of a swimlane, the event will be fired on the subheader of the swimlane
 
-@example:
+### Usage
+
+~~~js
+groupHeaderDblClick: (
+    id: string | number, 
+    event: MouseEvent, 
+    subHeaderId?: string
+) => void;
+~~~
+
+### Parameters
+
+The callback of the event takes the following parameters:
+
+- `id` - (required) the id of a group
+- `event` - (required) a native HTML event object
+- `subHeaderId` - (optional) the id of a subheader of a swimlane
+
+### Example
+
+~~~js {9-11}
+// initializing Diagram
+const diagram = new dhx.Diagram("diagram_container", {
+    type: "default"
+});
+// loading data
+diagram.data.parse(data);
+
+// attaching a handler to the event
 diagram.events.on("groupHeaderDblClick", (id, event, subheaderId) => {
     console.log(id, event, subheaderId);
 });
+~~~
 
-@descr:
-If a double-click is done over a header of a swimlane, the event will be fired on the subheader of the swimlane.
+**Change log**: Added in v4.0
+
+**Related article**: [Event handling](../../../guides/event_handling/)
 
 **Related samples**: [Diagram. Default mode. Events](https://snippet.dhtmlx.com/7h2hgb3g)
 
-@changelog:
-Added in v4.0

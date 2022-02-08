@@ -6,14 +6,18 @@ description: You can learn about the undo method of HistoryManager in the docume
 
 # undo()
 
-@short: takes a step back in the history of changes
+### Description
 
-@signature: {`undo(first?: boolean): void;`}
+@short: Takes a step back in the history of changes
 
-@params:
-`first: boolean` - optional, *true* to move the history of changes to the beginning
+### Usage
 
-@descr:
+~~~js
+undo(first?: boolean): void;
+~~~
 
-@changelog:
-Added in v4.1.
+### Parameters
+
+- `first` - (optional) *true* to move the history of changes to the beginning
+
+**Change log**: Added in v4.1

@@ -6,37 +6,40 @@ description: You can learn about the getSubHeaderCellIndex method of Cell Manage
 
 # getSubHeaderCellIndex()
 
-@short: returns the index of the cell of the swimlane by the subheader id
+### Description
 
-@signature: {`getSubHeaderCellIndex(subheaderId: string): number;`}
+@short: Returns the index of the cell of the swimlane by the subheader id
 
-@params:
-- `subheaderId: string` - the id of the subheader of a swimlane
+### Usage
 
-@returns:
-The index of the cell.
+~~~js
+getSubHeaderCellIndex(subheaderId: string): number;
+~~~
 
-@example:
+### Parameters
+
+- `subheaderId` - (required) the id of the subheader of a swimlane
+
+### Returns
+
+The method returns the index of the cell. The count of the index starts from 0
+
+### Example
+
+~~~js
 // initialization of the diagram
 const diagram = new dhx.Diagram("diagram_container", {
     // config options
 });
 diagram.data.parse(data);
 
-diagram.cellManager.setSwimlane("main"); // sets active swimlane
+// sets active swimlane
+diagram.cellManager.setSwimlane("main"); 
 
-diagram.cellManager.getSubHeaderCellIndex("sub01"); // gets the index of the cell
+// gets the index of the cell
+diagram.cellManager.getSubHeaderCellIndex("sub01"); // -> 0
+~~~
 
-// -> 0
+**Change log**: Added in v4.0
 
-@descr:
-
-The count of the index starts from 0.
-
-@changelog:
-Added in v4.0
-
-@descr:
-#### Related articles
-
-[Configuring Swimlanes](../../../swimlanes/)
+**Related articles**: [Configuring Swimlanes](../../../swimlanes/)

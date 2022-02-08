@@ -6,25 +6,40 @@ description: You can learn about the load method of data collection in the docum
 
 # load()
 
-@short: loads data from an external file
+### Description
 
-@signature: {`load?(url: IDataProxy | string, driver?: DataDriver): Promise<any>;`}
+@short: Loads data from an external file
 
-@params:
+### Usage
 
-- `url: IDataProxy | string` - the URL of an external file or DataProxy with the URL configured
-- `driver: string` - optional, DataDriver or type of data ("json", "csv", "xml"), "json" by default
+~~~js
+load(
+	url: string | object, 
+	driver?: object | string
+): promise;
+~~~
 
-@returns:
-A promise of data loading.
+### Parameters
 
-@example:
+- `url` - (required) the URL of an external file or DataProxy with the URL configured
+- `driver` - (optional) DataDriver or type of data ("json", "csv", "xml"), "json" by default
+
+### Returns
+
+The method returns a promise of data loading
+
+### Example
+
+~~~js {6}
+const diagram = new dhx.Diagram("diagram_container", {
+    type: "default"
+});
+diagram.data.parse(data);
+
 diagram.data.load("../common/data.json");
+~~~
 
-@relatedsample:
-**Related sample**: [Diagram. Data. Data loading](https://snippet.dhtmlx.com/09isp2d8)
-
-@descr:
+### Details
 
 The component will make an AJAX call and expect the remote URL to provide valid JSON data.
 
@@ -36,6 +51,6 @@ diagram.data.load("../some/data").then(function(){
 });
 ~~~
 
-#### Related articles
+**Related articles**:  [Loading and storing data](../../../guides/loading_data/)
 
-[Loading and storing data](../../../guides/loading_data/)
+**Related sample**: [Diagram. Data. Data loading](https://snippet.dhtmlx.com/09isp2d8)

@@ -24,9 +24,7 @@ You can easily manipulate Diagram items via the [Diagram Editor](../../guides/di
     - [add](#adding-a-columnrow)/[remove](#removing-a-columnrow)/[move](#moving-a-columnrow) a column/row;
     - get the [id](#getting-the-id-of-a-cell)/[index](#getting-the-index-of-a-cell) of a cell and [check which actions can be done over the cell](#validating-cells).
 
-
-Arranging shapes automatically
---------------------------------
+## Arranging shapes automatically
 
 The library provides you with the ability to implement auto-placement for shapes and connectors of the diagram initialized in the default mode. The auto-placement allows you:
 
@@ -49,7 +47,7 @@ diagram.autoPlace({
 });
 ~~~
 
-**Related sample:**	[Diagram. Default mode. Autoplacement](https://snippet.dhtmlx.com/f3uekgjw)
+**Related sample:** [Diagram. Default mode. Autoplacement](https://snippet.dhtmlx.com/f3uekgjw)
 
 In case you don't pass the parameter to the method, the default settings will be applied.
 
@@ -83,8 +81,7 @@ You can check all available properties of shape objects in the [API section](../
 
 **Related sample:** [Diagram. Data. Add/delete item](https://snippet.dhtmlx.com/8wi20uop)
 
-Getting an item
-----------------
+## Getting an item
 
 You can get the object of an item by passing its id to the [](../api/data_collection/getitem_method.md)  method of the **data** object. For example:
 
@@ -99,8 +96,7 @@ const shape = diagram.data.getItem(1);
 const text = shape.text;
 ~~~
 
-Getting the id of an item 
-----------------
+## Getting the id of an item 
 
 If the id of an item is unknown, you can use the [](../api/data_collection/getid_method.md) method to get it. The method takes the index of the item as a parameter:
 
@@ -108,8 +104,7 @@ If the id of an item is unknown, you can use the [](../api/data_collection/getid
 const id = diagram.data.getId(0); // -> returns "1"
 ~~~
 
-Getting the index of an item
-------------------
+## Getting the index of an item
 
 You can get the index of an item by passing its id to the [](../api/data_collection/getindex_method.md) method:
 
@@ -117,8 +112,7 @@ You can get the index of an item by passing its id to the [](../api/data_collect
 const id = diagram.data.getIndex("1"); // -> returns 0
 ~~~
 
-Deleting items
----------------
+## Deleting items
 
 ### Deleting a single item
 
@@ -140,8 +134,7 @@ diagram.data.removeAll();
 
 **Related sample:** [Diagram. Data. Add/delete item](https://snippet.dhtmlx.com/8wi20uop)
 
-Updating an item
------------------
+## Updating an item
 
 You can update the look and content of an item with the help of the [](../api/data_collection/update_method.md) method of the **data** object:
 
@@ -156,8 +149,7 @@ As parameters, you need to pass two parameters:
 
 **Related sample:** [Diagram. Data. Update item](https://snippet.dhtmlx.com/y8uk4sbj)
 
-Checking existence of the item
--------------------------
+## Checking existence of the item
 
 You can check whether an item exists in the diagram via the [](../api/data_collection/exists_method.md) method of the **data** collection. The method takes the id of the item as a parameter and returns *true*, if the item exists:
 
@@ -165,8 +157,7 @@ You can check whether an item exists in the diagram via the [](../api/data_colle
 const shapeExists = diagram.data.exists("1");
 ~~~
 
-Selecting items
----------------
+## Selecting items
 
 ### Selecting an item
 
@@ -215,8 +206,7 @@ const item = diagram.selection.getItem();
 
 **Related sample:** [Diagram. Org chart mode. Item selection](https://snippet.dhtmlx.com/jyoxn5h7)
 
-Expanding/collapsing items
----------------------
+## Expanding/collapsing items
 
 You can expand and collapse either a shape that have child shapes or a group/swimlane via the corresponding API methods: [expandItem()](../../api/diagram/expanditem_method/) and [collapseItem()](../../api/diagram/collapseitem_method/).
 
@@ -233,21 +223,22 @@ diagram.expandItem("3");
 diagram.collapseItem("3");
 ~~~
 
+:::note
 **Note**, that the **dir** attribute can be used only in the mindmap mode of Diagram (type:"mindmap").
+:::
 
 ~~~js
 const diagram = new dhx.Diagram("diagram_container", {
 	type:"mindmap"
 });
-diagram.parse(data);
+diagram.data.parse(data);
 
 diagram.collapseItem("main", "left");
 //or
 diagram.expandItem("main", "left");
 ~~~
 
-Showing the necessary item
---------------------
+## Showing the necessary item
 
 In case you have a large diagram with lots of items, DHTMLX Diagram provides you with the possibility to make the desired item visible.
 For this, you need to apply the [](../api/diagram/showitem_method.md) method, which takes the id of an item as a parameter:
@@ -260,8 +251,7 @@ diagram.showItem("2.1");
 
 You can [read more about scrolling in DHTMLX Diagram](../../guides/diagram/scrolling_diagram/).
 
-Finding the necessary item
---------------------
+## Finding the necessary item
 
 You can use the API of the Diagram component to find the necessary item in the diagram. The [](../api/data_collection/find_method.md) method of the **data** collection will help you to perform this task.
 The method takes the search criteria as a parameter and returns the first object of the shape that matches the specified criteria:
@@ -299,8 +289,7 @@ const shapes = diagram.data.findAll(function(shapes){
 // ->{id:"2.1",text:"Marketer",title:"Charles Little", img: "../avatar-4.png", …}
 ~~~
 
-Filtering items
-----------------
+## Filtering items
 
 It is possible to filter the diagram and render only the items that meet the filter criteria via the [](../api/data_collection/filter_method.md) method of the **data** collection. The method will show only the filtered items, hiding the rest of items.
 
@@ -489,9 +478,3 @@ You can also get the index of a cell the subheader belongs to via using the [](.
 // return the index of the cell the subheader belongs to
 diagram.cellManager.getSubHeaderCellIndex("s2"); // returns 1
 ~~~
-
-
-
-
-
-

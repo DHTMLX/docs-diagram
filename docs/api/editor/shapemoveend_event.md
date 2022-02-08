@@ -6,16 +6,37 @@ description: You can learn about the shapeMoveEnd event of editor in the documen
 
 # shapeMoveEnd
 
-@short: fires after a shape is moved
+### Description
 
-@signature: {`shapeMoveEnd: (events: MouseEvent, id: Id, coord: IBaseCoords) => void;`}
+@short: Fires after a shape is moved
 
-@params:
-- `events: MouseEvent` - a native HTML event object
-- `id: string | number` - the id of a shape
-- `coord: object` - an object with the x and y coordinates of the shape position after movement
+### Usage
 
-@example:
+~~~js
+shapeMoveEnd: (
+    event: MouseEvent, 
+    id: string | number, 
+    coord: object
+) => void;
+~~~
+
+### Parameters
+
+The callback of the event takes the following parameters:
+
+- `event` - (required) a native HTML event object
+- `id` - (required) the id of a shape
+- `coord` - (required) an object with the x and y coordinates of the shape position after movement
+
+### Example
+
+~~~js {7-13}
+// initializing Diagram Editor
+const editor = new dhx.DiagramEditor("editor_container");
+// loading data
+editor.parse(data);
+
+// attaching a handler to the event
 editor.events.on("shapeMoveEnd", (event, id, coordinates) => {
     console.log(`
         Shape ${id} is position:
@@ -23,8 +44,6 @@ editor.events.on("shapeMoveEnd", (event, id, coordinates) => {
             y: ${coordinates.y}
     `);
 });
+~~~
 
-@descr:
-
-@changelog:
-Added in v4.0.
+**Change log**: Added in v4.0

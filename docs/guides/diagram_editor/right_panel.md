@@ -230,6 +230,3 @@ Use to show/hide the left/right subheadings of a swimlane.
 Use to show/hide the top/bottom subheadings of a swimlane.
 
 ![](../../assets/editor/subheader_cols.png)
-
-
-

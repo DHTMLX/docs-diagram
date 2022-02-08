@@ -55,8 +55,7 @@ editor.events.on("AfterShapeMove", function(events) {
 });
 ~~~
 
-2.2 -> 3.0
-------------
+## 2.2 -> 3.0
 
 ### Creating custom shapes
 
@@ -66,7 +65,7 @@ Starting from v3.0, in order to create your own types of shapes, the new **addSh
 
 Despite the *diagram.flowShapes* object has been deprecated, it will still continue working.
 
-### Toolbar buttons in Editors
+### Toolbar buttons in Editor
 
 Before version 3.0 you were able to show/hide toolbar buttons in Diagram Editor via the related *showApply, showReset, showExport* configuration properties of the Editor.
 
@@ -90,8 +89,7 @@ To enable/disable a toolbar button you need to specify the value of the control 
 
 See the full list of the available controls in the [Toolbar](../guides/diagram_editor/toolbar/) article.
 
-1.1 -> 2.0
--------------
+## 1.1 -> 2.0
 
 ### Removed API
 
@@ -114,9 +112,3 @@ See the full list of the available controls in the [Toolbar](../guides/diagram_e
 - diagram.serialize -> [diagram.data.serialize](../api/data_collection/serialize_method/)
 - diagram.unselectItem -> [diagram.selection.remove](../api/selection/remove_method/)
 - diagram.updateItem -> [diagram.data.update](../api/data_collection/update_method/)
-
-
-
-
-
-

@@ -12,7 +12,7 @@ You can add any user-defined handler to any of the available events. To do this,
 
 - **name** - (*string*) the name of the event
 - **handler** - (*function*) the handler function
- 
+
 ~~~js
 diagram.events.on("ShapeClick", function(id) {
     alert("You've just clicked an item with id="+id);
@@ -46,17 +46,22 @@ Normally, events are called automatically and you don't need to use this method.
 
 ### Diagram events
 
-Check the full list of the Diagram API events in the [API Reference](../../api/diagram/api_overview/#diagram-events). 
+Check the full list of the Diagram API events in the [API reference](../../api/diagram/api_overview/#diagram-events). 
 
 ### Editor events
 
 The list of the Diagram editor API events is given in the [API section](../../api/editor/api_overview/#editor-events).
 
-#### Note
-
+:::note
 In addition to the events of the Diagram editor, you may also apply [events of the diagram object](../../api/diagram/api_overview/#diagram-events) while working in the editor view. For example:
+:::
 
-~~~js
+~~~js {6-8}
+const editor = new dhx.DiagramEditor("editor_container", {
+    controls: { autoLayout: false }
+});
+editor.parse(data);
+
 editor.diagram.events.on("ShapeClick", function(id) {
     alert("You've just clicked an item with id=" + id);
 });

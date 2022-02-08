@@ -6,16 +6,37 @@ description: You can learn about the afterGroupMove event of editor in the docum
 
 # afterGroupMove
 
-@short: fires when a group or swimlane is moved one grid step
+### Description
 
-@signature: {`afterGroupMove: (events: MouseEvent, id: Id, coord: IBaseCoords) => void;`}
+@short: Fires when a group or swimlane is moved one grid step
 
-@params:
-- `events: MouseEvent` - a native HTML event object
-- `id: string | number` - the id of an item
-- `coord: object` - an object with the x and y coordinates of the group or swimlane position after movement
+### Usage
 
-@example:
+~~~js
+afterGroupMove: (
+    event: MouseEvent, 
+    id: string | number, 
+    coord: object
+) => void;
+~~~
+
+### Parameters
+
+The callback of the event takes the following parameters:
+
+- `event` - (required) a native HTML event object
+- `id` - (required) the id of an item
+- `coord` - (required) an object with the x and y coordinates of the group or swimlane position after movement
+
+### Example
+
+~~~js {7-13}
+// initializing Diagram Editor
+const editor = new dhx.DiagramEditor("editor_container");
+// loading data
+editor.parse(data);
+
+// attaching a handler to the event
 editor.events.on("afterGroupMove", (event, id, coordinates) => {
     console.log(`
         Group ${id} position:
@@ -23,8 +44,6 @@ editor.events.on("afterGroupMove", (event, id, coordinates) => {
             y: ${coordinates.y}
     `);
 });
+~~~
 
-@descr:
-
-@changelog:
-Added in v4.0.
+**Change log**: Added in v4.0

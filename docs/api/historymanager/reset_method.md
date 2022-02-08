@@ -6,11 +6,14 @@ description: You can learn about the reset method of HistoryManager in the docum
 
 # reset()
 
-@short: resets previous changes and saves the current state
+### Description
 
-@signature: {`reset(): void;`}
+@short: Resets previous changes and saves the current state
 
-@descr:
+### Usage
 
-@changelog:
-Added in v4.1.
+~~~js
+reset(): void;
+~~~
+
+**Change log**: Added in v4.1

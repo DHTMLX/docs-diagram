@@ -6,25 +6,49 @@ description: You can learn about the beforeSubmenuOpen event in the documentatio
 
 # beforeSubmenuOpen
 
-@short: fires before the menu of the subheader is opened
+### Description
 
-@signature: {`beforeSubmenuOpen: (id: Id, event: MouseEvent, subHeaderId?: string) => boolean | void;`}
+@short: Fires before the menu of the subheader is opened
 
-@params:
-- `id: string | number` - the id of a swimlane
-- `event: MouseEvent` - a native HTML event object
-- `subHeaderId: string` - the id of a subheader of a swimlane
+### Usage
 
-@returns:
-Return `false` to block opening the subheader; otherwise, `true`.
+~~~js
+beforeSubmenuOpen: (
+    id: string | number, 
+    event: MouseEvent, 
+    subHeaderId?: string
+) => boolean | void;
+~~~
 
-@example:
+### Parameters
+
+The callback of the event takes the following parameters:
+
+- `id` - (required) the id of a swimlane
+- `event` - (required) a native HTML event object
+- `subHeaderId` - (optional) the id of a subheader of a swimlane
+
+### Returns
+
+Return `false` to block opening the subheader; otherwise, `true`
+
+### Example
+
+~~~js {9-12}
+// initializing Diagram
+const diagram = new dhx.Diagram("diagram_container", {
+    type: "default"
+});
+// loading data
+diagram.data.parse(data);
+
+// attaching a handler to the event
 diagram.events.on("beforeSubmenuOpen", (id, event, subheaderId) => {
     console.log(id, event, subheaderId);
     return true;
 });
+~~~
 
-@descr:
+**Change log**: Added in v4.0
 
-@changelog:
-Added in v4.0
+**Related article**: [Event handling](../../../guides/event_handling/)

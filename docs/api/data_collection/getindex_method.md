@@ -6,17 +6,31 @@ description: You can learn about the getIndex method of data collection in the d
 
 # getIndex()
 
-@short: returns the index of the item by its id
+### Description
 
-@signature: {`getIndex(id: Id): number;`}
+@short: Returns the index of the item by its id
 
-@params:
-`id: string` - the id of the item
+### Usage
 
-@returns:
-The index of the item.
+~~~js
+getIndex(id: string | number): number;
+~~~
 
-@example:
+### Parameters
+
+- `id` - (required) the id of the item
+
+### Returns
+
+The method returns the index of the item
+
+### Example
+
+~~~js {6}
+const diagram = new dhx.Diagram("diagram_container", {
+    type: "default"
+});
+diagram.data.parse(data);
+
 const index = diagram.data.getIndex("1"); // -> returns 0
-
-@descr:
+~~~

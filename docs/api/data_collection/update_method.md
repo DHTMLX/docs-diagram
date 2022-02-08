@@ -6,22 +6,37 @@ description: You can learn about the update method of data collection in the doc
 
 # update()
 
-@short: updates properties of the item
+### Description
 
-@signature: {`updateUrl?: (id: string | number, newItem: IUpdateObject) => void;`}
+@short: Updates properties of the item
 
-@params:
+:::note
+The method can't be used to change the *id* or *type* of the item
+:::
 
-- `id: string | number` - the id of the item which needs to be updated
-- `newItem: object` - a hash of properties which need to be updated
+### Usage
 
-@example:
+~~~js
+update(
+    id: string | number, 
+    newItem: object
+): void;
+~~~
+
+### Parameters
+
+- `id` - (required) the id of the item which needs to be updated
+- `newItem` - (required) a hash of properties which need to be updated
+
+### Example
+
+~~~js {6}
+const diagram = new dhx.Diagram("diagram_container", {
+    type: "default"
+});
+diagram.data.parse(data);
+
 diagram.data.update(123, { text:"New text" });
+~~~
 
-@descr:
-
-The command can't be used to change the *id* or *type* of the item.
-
-#### Related articles
-
-[Updating an item](../../../guides/manipulating_items/#updating-an-item)
+**Related articles**:  [Updating an item](../../../guides/manipulating_items/#updating-an-item)

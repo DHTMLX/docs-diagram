@@ -6,19 +6,41 @@ description: You can learn about the beforeShapeMove event in of editor the docu
 
 # beforeShapeMove
 
-@short: fires before a shape is moved
+### Description
 
-@signature: {`beforeShapeMove: (events: MouseEvent, id: Id, coord: IBaseCoords) => boolean | void;`}
+@short: Fires before a shape is moved
 
-@params:
-- `events: MouseEvent` - a native HTML event object
-- `id: string | number` - the id of a shape
-- `coord: object` - an object with the x and y coordinates of the shape position before movement
+### Usage
 
-@returns:
-Return `false` to prevent the shape from being moved; otherwise, `true`.
+~~~js
+beforeShapeMove: (
+    event: MouseEvent, 
+    id: string | number, 
+    coord: object
+) => boolean | void;
+~~~
 
-@example:
+### Parameters
+
+The callback of the event takes the following parameters:
+
+- `event` - (required) a native HTML event object
+- `id` - (required) the id of a shape
+- `coord` - (required) an object with the x and y coordinates of the shape position before movement
+
+### Returns
+
+Return `false` to prevent the shape from being moved; otherwise, `true`
+
+### Example
+
+~~~js {7-14}
+// initializing Diagram Editor
+const editor = new dhx.DiagramEditor("editor_container");
+// loading data
+editor.parse(data);
+
+// attaching a handler to the event
 editor.events.on("beforeShapeMove", (event, id, coordinates) => {
     console.log(`
         Shape ${id} is position:
@@ -27,9 +49,9 @@ editor.events.on("beforeShapeMove", (event, id, coordinates) => {
     `);
     return true;
 });
+~~~
 
-@descr:
+**Change log**: 
 
-@changelog:
-- The **id** and **coordinates** parameters are added in v4.0.
-- Added in v3.1.
+- The **id** and **coordinates** parameters are added in v4.0
+- Added in v3.1

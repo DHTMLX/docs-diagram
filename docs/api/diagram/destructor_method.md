@@ -6,13 +6,23 @@ description: You can learn about the destructor method in the documentation of t
 
 # destructor()
 
-@short: removes a diagram instance and releases occupied resources
+### Description
 
-@signature: {`destructor(): void;`}
+@short: Removes a diagram instance and releases occupied resources
 
-@example:
+### Usage
+
+~~~jsx
+destructor(): void;
+~~~
+
+### Example
+
+~~~jsx {4}
+const diagram = new dhx.Diagram("diagram_container");
+diagram.data.parse(data);
+
 diagram.destructor();
+~~~
 
-@descr:
-
-@changelog: added in v3.0
+**Change log:** Added in v3.0

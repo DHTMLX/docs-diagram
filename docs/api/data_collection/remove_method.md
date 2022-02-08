@@ -6,23 +6,35 @@ description: You can learn about the remove method of data collection in the doc
 
 # remove()
 
-@short: deletes the specified item from the diagram
+### Description
 
-@signature: {`remove(id: Id | Id[]): void;`}
+@short: Deletes the specified item from the diagram
 
-@params:
-- `id: string | number | array` - the ids of the items that should be deleted
+:::note
+If the diagram is initialized in the org (*type: "org"*) or mindmap (*type: "mindmap"*) mode, deleting a shape will remove the link to this shape and all child shapes as well
+:::
 
-@example:
+### Usage
+
+~~~js
+remove(id: string | number | array): void;
+~~~
+
+### Parameters
+
+- `id` - (required) the id(s) of the items that should be deleted
+
+### Example
+
+~~~js {6}
+const diagram = new dhx.Diagram("diagram_container", {
+    type: "default"
+});
+diagram.data.parse(data);
 
 diagram.data.remove("2");
+~~~
 
-@relatedsample:
+**Related articles**:  [Deleting items](../../../guides/manipulating_items/#deleting-items)
+
 **Related sample**: [Diagram. Data. Add/delete item](https://snippet.dhtmlx.com/8wi20uop)
-
-@descr:
-If the diagram is initialized in the org (*type: "org"*) or mindmap (*type: "mindmap"*) mode, deleting a shape will remove the link to this shape and all child shapes as well.
-
-#### Related articles
-
-[Deleting items](../../../guides/manipulating_items/#deleting-items)

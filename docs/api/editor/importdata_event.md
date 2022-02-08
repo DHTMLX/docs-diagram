@@ -6,16 +6,32 @@ description: You can learn about the importData event of editor in the documenta
 
 # importData
 
-@short: fires after the Import Data button has been clicked
+### Description
 
-@signature: {`importData: (data) => void;`}
+@short: Fires after the Import Data button has been clicked
 
-@params:
-`data: any` - the imported data
+### Usage
 
-@example:
+~~~js
+importData: (data: any) => void;
+~~~
+
+### Parameters
+
+The callback of the event takes the following parameter:
+
+- `data` - (required) the imported data
+
+### Example
+
+~~~js {7-9}
+// initializing Diagram Editor
+const editor = new dhx.DiagramEditor("editor_container");
+// loading data
+editor.parse(data);
+
+// attaching a handler to the event
 editor.events.on("importData", function(data) {
     console.log("The data are imported from the JSON file");
 });
-
-@descr:
+~~~

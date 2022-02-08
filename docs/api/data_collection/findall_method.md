@@ -6,17 +6,40 @@ description: You can learn about the findAll method of data collection in the do
 
 # findAll()
 
-@short: finds all the items that correspond to the specified parameters
+### Description
 
-@signature: {`findAll(rule: IFilterMode | DataCallback<T>): T[];`}
+@short: Finds all the items that correspond to the specified parameters
 
-@params:
-`rule: object | function` - the search criteria
+### Usage
 
-@returns:
-An array of matching item objects.
+~~~js
+findAll(rule: object): array;
 
-@example:
+// or
+
+findAll(rule: function): array;
+~~~
+
+### Parameters
+
+- `rule` - (required) the search criteria which can be specified:
+  - as an object which contains the following parameters:
+    - `by: string | function` - the search criterion (either the key of the item attribute or a search function)
+    - `match: string` - the value of the item attribute
+  - as a function: `DataCallback(item: T, index?: number, array?: T[])`
+
+### Returns
+
+The method returns an array of matching item objects 
+
+### Example
+
+~~~js {7,10-14}
+const diagram = new dhx.Diagram("diagram_container", {
+    type: "default"
+});
+diagram.data.parse(data);
+
 //searching for shapes by the attribute key
 const shapes = diagram.data.findAll({ by: "text", match: "Manager" });
 
@@ -26,16 +49,6 @@ const shapes = diagram.data.findAll(function (shapes) {
 		return true
 	}
 });
+~~~
 
-@descr:
-
-The **rule** parameter:
-
-- if set as an `IFilterMode` object, the parameter contains the following attributes:
-	- **by** - (*string,function*) the search criterion (either the key of the item attribute or a search function)
-	- **match** - (*string*) the value of the item attribute
-- if set as `DataCallback(item: T, index?: number, array?: T[])`, the search will be applied by the rule specified in the function.
-
-#### Related articles
-
-[Finding the necessary item](../../../guides/manipulating_items/#finding-the-necessary-item)
+**Related articles**:  [Finding the necessary item](../../../guides/manipulating_items/#finding-the-necessary-item)

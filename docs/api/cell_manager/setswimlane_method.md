@@ -6,17 +6,27 @@ description: You can learn about the setSwimlane method of Cell Manager in the d
 
 # setSwimlane()
 
-@short: sets active swimlane for further actions with it
+### Description
 
-@signature: {`setSwimlane(id: Id): boolean;`}
+@short: Sets active swimlane for further actions with it
 
-@params:
-- `id: string | number` - the id of the swimlane
+### Usage
 
-@returns:
-`True` if the swimlane is set, otherwise `false`.
+~~~js
+setSwimlane(id: string | number): boolean;
+~~~
 
-@example:
+### Parameters
+
+- `id` - (required) the id of the swimlane
+
+### Returns
+
+The method returns `true` if the swimlane is set, otherwise `false`.
+
+### Example
+
+~~~js
 // initialization of the diagram
 const diagram = new dhx.Diagram("diagram_container", {
     // config options
@@ -24,13 +34,8 @@ const diagram = new dhx.Diagram("diagram_container", {
 diagram.data.parse(data);
 
 diagram.cellManager.setSwimlane("main"); // sets active swimlane
+~~~
 
-@descr:
+**Change log**: Added in v4.0
 
-@changelog:
-Added in v4.0
-
-@descr:
-#### Related articles
-
-[Configuring Swimlanes](../../../swimlanes/)
+**Related articles**: [Configuring Swimlanes](../../../swimlanes/)

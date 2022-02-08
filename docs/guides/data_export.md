@@ -17,8 +17,7 @@ Check the list of available settings:
 - for the [pdf()](../../api/export/pdf_method/) method;
 - for the [png()](../../api/export/png_method/) method.
 
-Exporting styles
------------------
+## Exporting styles
 
 By default, all css styles included to the Diagram page are sent to the export service when exporting the diagram. As a result, the size of the request increases that can cause the request to fail.
 
@@ -37,4 +36,6 @@ const diagram = new dhx.Diagram("diagram_container", {
 
 <iframe src="https://snippet.dhtmlx.com/jm8if6nh?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="350"></iframe>
 
+:::note
 **Note**, that you must use only absolute paths not relative ones.
+:::

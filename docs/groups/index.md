@@ -106,8 +106,7 @@ const data = [
 
 You can change the color of the icon via the **iconColor** attribute of the [group object](../../groups/configuration_properties/).
 
-Configuring the behavior of group items
----------------------------------
+## Configuring the behavior of group items
 
 By default, you can drag any child item of the group out of the group and drag it into another group.
 To change the behavior of the group items you need to use the **groupBehavior** and **padding** attributes of the **exitArea** property of the [group object](../../groups/configuration_properties/).

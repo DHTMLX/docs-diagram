@@ -6,20 +6,28 @@ description: You can learn about the scrollTo method in the documentation of the
 
 # scrollTo()
 
-@short: sets the inner scroll of the diagram to the specified position
+### Description
 
-@signature: {`scrollTo(x: number, y: number): void;`}
+@short: Sets the inner scroll of the diagram to the specified position
 
-@params:
-- `x: number` - horizontal scroll position
-- `y: number` - vertical scroll position
+### Usage
 
-@example:
+~~~jsx
+scrollTo(x: number, y: number): void;
+~~~
+
+### Parameters
+
+- `x` - (required) horizontal scroll position
+- `y` - (required) vertical scroll position
+
+### Example
+
+~~~jsx {4}
+const diagram = new dhx.Diagram("diagram_container");
+diagram.data.parse(data);
 
 diagram.scrollTo(100, 80);
+~~~
 
-@descr:
-
-#### Related articles
-
-[Scrolling Diagram](../../../guides/diagram/scrolling_diagram/)
+**Related articles:** [Scrolling Diagram](../../../guides/diagram/scrolling_diagram/)

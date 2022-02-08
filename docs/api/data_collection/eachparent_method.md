@@ -6,21 +6,37 @@ description: You can learn about the eachParent method of data collection in the
 
 # eachParent()
 
-@short: iterates through all parents of the specified item
+### Description
 
-@signature: {`eachParent(id: Id, callback: Callback, self?: boolean): void`}
+@short: Iterates through all parents of the specified item
 
-@params:
-- `id: string | number` - the id of the item
-- `callback: function` - the function that will be applied to each parent of the item
-- `self: boolean` - optional, defines whether the callback function should iterate over the specified item itself; *false* by default
+### Usage
 
-@example:
+~~~js
+eachParent(
+    id: string | number, 
+    callback: function, 
+    self?: boolean
+): void
+~~~
+
+### Parameters
+
+- `id` - (required) the id of the item
+- `callback` - (required) a callback function that will be applied to each parent of the item
+- `self` - (optional) defines whether the callback function should iterate over the specified item itself; *false* by default
+
+### Example
+
+~~~js {6-8}
+const diagram = new dhx.Diagram("diagram_container", {
+    type: "default"
+});
+diagram.data.parse(data);
+
 diagram.data.eachParent("id_1.1.1", (item) => {
     console.log(item);
 }, false);
+~~~
 
-@descr:
-
-@changelog:
-Added in v4.0
+**Change log**: Added in v4.0

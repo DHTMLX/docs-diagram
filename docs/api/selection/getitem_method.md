@@ -6,20 +6,39 @@ description: You can learn about the getItem method of selection in the document
 
 # getItem()
 
-@short: returns the object of the selected item
+### Description
 
-@signature: {`getItem(): any;`}
+@short: Returns the object of the selected item
 
-@returns:
-The object of a selected item.
+### Usage
 
-@example:
+~~~js
+getItem(): object;
+~~~
+
+### Returns
+
+The method returns the object of a selected item
+
+### Example
+
+~~~js {7-8}
+// diagram must be created with the "select:true" option
+const diagram = new dhx.Diagram("diagram_container", { 
+    select: true 
+});
+diagram.data.parse(data);
+
 const shape = diagram.selection.getItem();
 // -> {id: "3", text: "Technical Director", title: "Jerry Wagner", …}
+~~~
 
-@descr:
-
-#### Related articles
+**Related articles**:  
 
 - [diagram.config.select](../../../api/diagram/select_property/)
 - [Selecting items](../../../guides/manipulating_items/#selecting-items)
+
+**Related samples**:
+
+- [Diagram. Selection. Item selection](https://snippet.dhtmlx.com/jyoxn5h7)
+- [Diagram. Default mode. Item selection](https://snippet.dhtmlx.com/tcny4obw)

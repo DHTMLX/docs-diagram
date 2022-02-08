@@ -6,28 +6,43 @@ description: You can learn about the beforeCellsMove event of Cell Manager in th
 
 # beforeCellsMove
 
-@short: fires before cells of the swimlane are moved
+### Description
 
-@signature: {`beforeCellsMove: (swimlaneId: Id) => boolean | void;`}
+@short: Fires before cells of the swimlane are moved
 
-@params:
-`swimlaneId: string | number` - the id of the item
+### Usage
 
-@returns:
-`False` to prevent moving of the cells, otherwise `true`.
+~~~js
+beforeCellsMove: (swimlaneId: string | number) => boolean | void;
+~~~
 
-@example:
+### Parameters
+
+The callback of the event takes the following parameter:
+
+- `swimlaneId` - (required) the id of the item
+
+### Returns
+
+Return `false` to prevent moving of the cells, otherwise `true`
+
+### Example
+
+~~~js {9-12}
+// initializing Diagram
+const diagram = new dhx.Diagram("diagram_container", {
+    type: "default"
+});
+// loading data
+diagram.data.parse(data);
+
+// attaching a handler to the event
 diagram.events.on("beforeCellsMove", (swimlaneId) => {
     console.log(swimlaneId);
     return true;
 });
+~~~
 
-@descr:
+**Change log**: Added in v4.0
 
-@changelog:
-Added in v4.0
-
-@descr:
-#### Related articles
-
-[Configuring Swimlanes](../../../swimlanes/)
+**Related articles**: [Configuring Swimlanes](../../../swimlanes/)

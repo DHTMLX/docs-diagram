@@ -6,19 +6,37 @@ description: You can learn about the move method of data collection in the docum
 
 # move()
 
-@short: moves an item to the defined position
+### Description
 
-@signature: {`move(id: Id | Id[], index: number, target?: DataCollection): Id | Id[];`}
+@short: Moves an item to the defined position
 
-@params:
-- `id: string | number | string[]` - the id(s) of an item(s) to move
-- `index: number` - the index to move an item(s) to
-- `target: object` - optional, the target data collection object
+### Usage
 
-@returns:
-Either a string with the item's id or an array of string values with ids of items.
+~~~js
+move(
+    id: string | number | array, 
+    index: number, 
+    target?: object
+): string | number | array;
+~~~
 
-@example:
+### Parameters
+
+- `id` - (required) the id(s) of an item(s) to move
+- `index` - (required) the index to move an item(s) to
+- `target` - (optional) the target data collection object
+
+### Returns
+
+The method returns either a string with the item's id or an array of string values with ids of items
+
+### Example
+
+~~~js {6}
+const diagram = new dhx.Diagram("diagram_container", {
+    type: "default"
+});
+diagram.data.parse(data);
+
 diagram.data.move("4",5); // moves the shape with id=4 to the position with index 5
-
-@descr:
+~~~

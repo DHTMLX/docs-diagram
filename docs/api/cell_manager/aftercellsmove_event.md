@@ -6,24 +6,38 @@ description: You can learn about the afterCellsMove event of Cell Manager in the
 
 # afterCellsMove
 
-@short: fires after cells of the swimlane are moved
+### Description
 
-@signature: {`afterCellsMove: (swimlaneId: Id) => void;`}
+@short: Fires after cells of the swimlane are moved
 
-@params:
-`swimlaneId: string | number` - the id of the item
+### Usage
 
-@example:
+~~~js
+afterCellsMove: (swimlaneId: string | number) => void;
+~~~
+
+### Parameters
+
+The callback of the event takes the following parameter:
+
+- `swimlaneId` - (required) the id of the item
+
+### Example
+
+~~~js {9-11}
+// initializing Diagram
+const diagram = new dhx.Diagram("diagram_container", {
+    type: "default"
+});
+// loading data
+diagram.data.parse(data);
+
+// attaching a handler to the event
 diagram.events.on("afterCellsMove", (swimlaneId) => {
     console.log(swimlaneId);
 });
+~~~
 
-@descr:
+**Change log**: Added in v4.0
 
-@changelog:
-Added in v4.0
-
-@descr:
-#### Related articles
-
-[Configuring Swimlanes](../../../swimlanes/)
+**Related articles**: [Configuring Swimlanes](../../../swimlanes/)

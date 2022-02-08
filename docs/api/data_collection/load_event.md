@@ -6,15 +6,28 @@ description: You can learn about the load event of data collection in the docume
 
 # load
 
-@short: fires when data is loaded into the diagram
+### Description
 
-@signature: {`load: () => void;`}
+@short: Fires when data is loaded into the diagram
 
-@example:
+### Usage
+
+~~~js
+load: () => void;
+~~~
+
+### Example
+
+~~~js {9-11}
+// initializing Diagram
+const diagram = new dhx.Diagram("diagram_container", {
+    type: "default"
+});
+// loading data
+diagram.data.parse(data);
+
+// attaching a handler to the event
 diagram.events.on("load", function(){
 	// some logic here
 });
-
-@descr:
-
-**Related sample**: [Diagram. Org chart mode. Events](https://snippet.dhtmlx.com/l38pct7c)
+~~~

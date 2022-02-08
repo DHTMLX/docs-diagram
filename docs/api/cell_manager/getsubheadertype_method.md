@@ -6,37 +6,40 @@ description: You can learn about the getSubHeaderType method of Cell Manager in 
 
 # getSubHeaderType()
 
-@short: returns the type of direction to count the index by the subheader id of the swimlane
+### Description
 
-@signature: {`getSubHeaderType(subheaderId: string): ICellType | undefined;`}
+@short: Returns the type of the subheader of the swimlane by its id
 
-@params:
-- `subheaderId: string` - the id of the subheader of a swimlane
+### Usage
 
-@returns:
-The type of direction to count the index: "row" | "col" | undefined.
+~~~js
+getSubHeaderType(subheaderId: string): "row" | "col" | undefined;
+~~~
 
-@example:
+### Parameters
+
+- `subheaderId` - (required) the id of the subheader of the swimlane
+
+### Returns
+
+The method returns the type of the subheader of the swimlane: "row" | "col" | undefined
+
+### Example
+
+~~~js
 // initialization of the diagram
 const diagram = new dhx.Diagram("diagram_container", {
     // config options
 });
 diagram.data.parse(data);
 
-diagram.cellManager.setSwimlane("main"); // sets active swimlane
+// sets active swimlane
+diagram.cellManager.setSwimlane("main"); 
 
-diagram.cellManager.getSubHeaderType("sub01"); // gets the type of direction
+// gets the type of direction
+diagram.cellManager.getSubHeaderType("sub01"); // -> "row"
+~~~
 
-// -> "row"
+**Change log**: Added in v4.0
 
-@descr:
-
-The count of the index starts from 0.
-
-@changelog:
-Added in v4.0
-
-@descr:
-#### Related articles
-
-[Configuring Swimlanes](../../../swimlanes/)
+**Related articles**: [Configuring Swimlanes](../../../swimlanes/)

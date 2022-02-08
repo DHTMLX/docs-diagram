@@ -6,18 +6,31 @@ description: You can learn about the getNearId method of data collection in the 
 
 # getNearId()
 
-@short: looks for a nearest item relative to the specified one
+### Description
 
-@signature: {`getNearId(id: Id): Id;`}
+@short: Looks for a nearest item relative to the specified one
 
-@params:
+### Usage
 
-- `id: string | number` - the id of an item
+~~~js
+getNearId(id: string | number): string | number;
+~~~
 
-@returns:
-The id of the nearest item.
+### Parameters
 
-@example:
+- `id` - (required) the id of an item
+
+### Returns
+
+The method returns the id of the nearest item
+
+### Example
+
+~~~js {6}
+const diagram = new dhx.Diagram("diagram_container", {
+    type: "default"
+});
+diagram.data.parse(data);
+
 const nearId = diagram.data.getNearId(id);
-
-@descr:
+~~~

@@ -6,35 +6,52 @@ description: You can learn about the beforeUnSelect event in the documentation o
 
 # beforeUnSelect
 
-@short: fires on unselecting an item, but before the item is really unselected
+### Description
 
-@signature: {`beforeUnSelect: (id: Id, subId?: Id | undefined) => void | boolean;`}
+@short: Fires on unselecting an item, but before the item is really unselected
 
-@params:
-- `id: string | number` - the item id
-- `subId: string | number | undefined` - optional, the id of a subheader of a swimlane or a text element of a line
+### Usage
 
-@example:
+~~~js
+beforeUnSelect: (
+    id: string | number, 
+    subId?: string | number | undefined
+) => void | boolean;
+~~~
+
+### Parameters
+
+The callback of the event takes the following parameters:
+
+- `id` - (required) the item id
+- `subId` - (optional) the id of a subheader of a swimlane or a text element of a line
+
+### Returns
+
+Return `false` to prevent an item from being unselected; otherwise, `true`
+
+### Example
+
+~~~js {10-13}
+// initializing Diagram
 const diagram = new dhx.Diagram("diagram_container", { 
     type: "org", 
     select: true        
 });
+// loading data
+diagram.data.parse(data);
 
+// attaching a handler to the event
 diagram.events.on("BeforeUnSelect", function(id) {
 	console.log("Unselecting " + diagram.data.getItem(id).text);
 	return true;
 });
+~~~
 
-@descr:
+**Change log**: The **subId** parameter has been added in v4.1
 
-**Related sample**: [Diagram. Org chart mode. Events](https://snippet.dhtmlx.com/l38pct7c)
-
-Returning *false* from the event handler will block unselection.
-
-@changelog:
-SubId parameter has been added in v4.1.
-
-#### Related articles
-
+**Related articles**:  
 - [diagram.config.select](../../../api/diagram/select_property/)
 - [Selecting items](../../../guides/manipulating_items/#selecting-items)
+
+**Related sample**: [Diagram. Org chart mode. Events](https://snippet.dhtmlx.com/l38pct7c)

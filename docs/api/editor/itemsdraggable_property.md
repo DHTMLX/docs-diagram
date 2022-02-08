@@ -6,22 +6,33 @@ description: You can learn about the itemsDraggable property of editor in the do
 
 # itemsDraggable
 
-@short: enables/disables dragging the item from one parent item to another
+:::info
+The property works only in the org chart and mindmap modes. The moved item is dragged with all its children.
+:::
 
-@signature: {`itemsDraggable?: boolean;`}
+### Description
 
-@default: true
+@short: Optional. Enables/disables dragging the item from one parent item to another
 
-@example:
+### Usage
+
+~~~js
+itemsDraggable?: boolean;
+~~~
+
+### Default config
+
+~~~js
+itemsDraggable: true
+~~~
+
+### Example
+
+~~~js
 const editor = new dhx.DiagramEditor(document.body, {
     type: "org", //  org" or "mindmap"
     itemsDraggable: false,
 });
+~~~
 
-@descr:
-
-The property works in org chart and mindmap modes. The moved item is dragged with all its children.
-
-@changelog:
-
-Added in v4.1.
+**Change log**: Added in v4.1

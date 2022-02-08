@@ -6,13 +6,26 @@ description: You can learn about the autoLayout event of editor in the documenta
 
 # autoLayout
 
-@short: fires after the Auto Layout button has been clicked
+### Description
 
-@signature: {`autoLayout: () => void;`}
+@short: Fires after the Auto Layout button has been clicked
 
-@example:
+### Usage
+
+~~~js
+autoLayout: () => void;
+~~~
+
+### Example
+
+~~~js {7-9}
+// initializing Diagram Editor
+const editor = new dhx.DiagramEditor("editor_container");
+// loading data
+editor.parse(data);
+
+// attaching a handler to the event
 editor.events.on("autoLayout", function() {
     console.log("The shapes are arranged automatically");
 });
-
-@descr:
+~~~
