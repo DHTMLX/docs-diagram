@@ -12,7 +12,7 @@ The **add()** method is automatically validated by the system. The cell won't be
 
 ### Description
 
-@short: adds cells as rows or columns to a swimlane
+@short: Adds cells as rows or columns to a swimlane
 
 ### Usage
 

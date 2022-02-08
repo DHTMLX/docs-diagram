@@ -8,7 +8,7 @@ description: You can learn about the afterLineTitleMove event of editor in the d
 
 ### Description
 
-@short: fires when a text element of a line is moved one grid step
+@short: Fires when a text element of a line is moved one grid step
 
 ### Usage
 

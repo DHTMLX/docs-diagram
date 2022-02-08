@@ -8,7 +8,7 @@ description: You can learn about the removeAll method of data collection in the 
 
 ### Description
 
-@short: deletes all items from the diagram
+@short: Deletes all items from the diagram
 
 ### Usage
 

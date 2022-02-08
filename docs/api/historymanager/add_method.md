@@ -8,7 +8,7 @@ description: You can learn about the add method of HistoryManager in the documen
 
 ### Description
 
-@short: adds a new state
+@short: Adds a new state
 
 :::info
 Adding the new state is done automatically. Therefore this method is not recommended for manual usage

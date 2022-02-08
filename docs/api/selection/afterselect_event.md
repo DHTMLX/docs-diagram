@@ -8,7 +8,7 @@ description: teYou can learn about the afterSelect event in the documentation of
 
 ### Description
 
-@short: fires after selecting an item
+@short: Fires after selecting an item
 
 ### Usage
 

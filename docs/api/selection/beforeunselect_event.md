@@ -8,7 +8,7 @@ description: You can learn about the beforeUnSelect event in the documentation o
 
 ### Description
 
-@short: fires on unselecting an item, but before the item is really unselected
+@short: Fires on unselecting an item, but before the item is really unselected
 
 ### Usage
 

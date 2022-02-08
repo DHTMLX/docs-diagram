@@ -8,7 +8,7 @@ description: You can learn about the getId method of data collection in the docu
 
 ### Description
 
-@short: returns the id of the item by its index
+@short: Returns the id of the item by its index
 
 ### Usage
 

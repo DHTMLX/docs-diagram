@@ -8,7 +8,7 @@ description: You can learn about the changeGridStep event of editor in the docum
 
 ### Description
 
-@short: fires after the value of the grid step has been changed
+@short: Fires after the value of the grid step has been changed
 
 ### Usage
 

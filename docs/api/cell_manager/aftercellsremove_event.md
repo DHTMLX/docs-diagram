@@ -8,7 +8,7 @@ description: You can learn about the afterCellsRemove event of Cell Manager in t
 
 ### Description
 
-@short: fires after cells of the swimlane are removed
+@short: Fires after cells of the swimlane are removed
 
 ### Usage
 

@@ -8,7 +8,7 @@ description: You can learn about the scale property of editor in the documentati
 
 ### Description
 
-@short: optional, defines the diagram editor scale
+@short: Optional, defines the diagram editor scale
 
 ### Usage
 

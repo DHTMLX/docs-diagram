@@ -8,7 +8,7 @@ description: You can learn about the paint method of editor in the documentation
 
 ### Description
 
-@short: repaints the editor
+@short: Repaints the editor
 
 ### Usage
 

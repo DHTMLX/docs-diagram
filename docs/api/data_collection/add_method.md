@@ -8,7 +8,7 @@ description: You can learn about the add method of data collection in the docume
 
 ### Description
 
-@short: adds a new item to the diagram
+@short: Adds a new item to the diagram
 
 ### Usage
 

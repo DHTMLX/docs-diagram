@@ -8,7 +8,7 @@ description: You can learn about the beforeEditorEditing event in the documentat
 
 ### Description
 
-@short: fires before the text value of an item is edited via the inline editor
+@short: Fires before the text value of an item is edited via the inline editor
 
 ### Usage
 

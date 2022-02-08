@@ -8,7 +8,7 @@ description: You can learn about the beforeAdd event of data collection in the d
 
 ### Description
 
-@short: fires before adding an item
+@short: Fires before adding an item
 
 ### Usage
 

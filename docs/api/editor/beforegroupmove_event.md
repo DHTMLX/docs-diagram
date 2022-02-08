@@ -8,7 +8,7 @@ description: You can learn about the beforeGroupMove event of editor in the docu
 
 ### Description
 
-@short: fires before a group or swimlane is moved
+@short: Fires before a group or swimlane is moved
 
 ### Usage
 

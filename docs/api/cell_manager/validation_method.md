@@ -8,7 +8,7 @@ description: You can learn about the validation method of Cell Manager in the do
 
 ### Description
 
-@short: validates cells of the swimlane by the direction and action type
+@short: Validates cells of the swimlane by the direction and action type
 
 ### Usage
 

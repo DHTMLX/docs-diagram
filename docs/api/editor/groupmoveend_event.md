@@ -8,7 +8,7 @@ description: You can learn about the groupMoveEnd event of editor in the documen
 
 ### Description
 
-@short: fires after a group or swimlane is moved
+@short: Fires after a group or swimlane is moved
 
 ### Usage
 

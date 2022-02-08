@@ -8,7 +8,7 @@ description: You can learn about the beforeLineTitleMove event of editor in the 
 
 ### Description
 
-@short: fires before a text element of a line is moved
+@short: Fires before a text element of a line is moved
 
 ### Usage
 

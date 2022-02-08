@@ -8,7 +8,7 @@ description: You can learn about the beforeShapeIconClick event of editor in the
 
 ### Description
 
-@short: fires before clicking a control in the per-item toolbar
+@short: Fires before clicking a control in the per-item toolbar
 
 ### Usage
 

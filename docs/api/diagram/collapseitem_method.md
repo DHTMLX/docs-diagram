@@ -8,7 +8,7 @@ description: You can learn about the collapseItem method in the documentation of
 
 ### Description
 
-@short: hides all children of the target shape or collapses the group/swimlane
+@short: Hides all children of the target shape or collapses the group/swimlane
 
 ### Usage
 

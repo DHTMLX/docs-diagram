@@ -8,7 +8,7 @@ description: You can learn about the editMode property of editor in the document
 
 ### Description
 
-@short: optional, hides/shows the left/right panels of the editor
+@short: Optional, hides/shows the left/right panels of the editor
 
 ### Usage
 

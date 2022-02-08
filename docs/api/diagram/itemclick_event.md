@@ -8,7 +8,7 @@ description: You can learn about the itemClick event in the documentation of the
 
 ### Description
 
-@short: fires on clicking an item
+@short: Fires on clicking an item
 
 If a click is done over a swimlane, the event will be fired on the cell of the swimlane
 

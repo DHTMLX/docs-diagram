@@ -14,7 +14,7 @@ The event doesn't work with the parent item of the moved item and with the moved
 
 ### Description
 
-@short: fires when the moved item is under the target item
+@short: Fires when the moved item is under the target item
 
 ### Usage
 

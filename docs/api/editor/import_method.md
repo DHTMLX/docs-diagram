@@ -8,7 +8,7 @@ description: You can learn about the import method of editor in the documentatio
 
 ### Description
 
-@short: imports data from an existing diagram into the editor
+@short: Imports data from an existing diagram into the editor
 
 ### Usage
 

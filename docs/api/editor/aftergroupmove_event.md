@@ -8,7 +8,7 @@ description: You can learn about the afterGroupMove event of editor in the docum
 
 ### Description
 
-@short: fires when a group or swimlane is moved one grid step
+@short: Fires when a group or swimlane is moved one grid step
 
 ### Usage
 

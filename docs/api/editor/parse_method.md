@@ -8,7 +8,7 @@ description: You can learn about the parse method of editor in the documentation
 
 ### Description
 
-@short: loads data into the editor from a local data source
+@short: Loads data into the editor from a local data source
 
 ### Usage
 

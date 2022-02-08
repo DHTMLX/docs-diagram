@@ -8,8 +8,7 @@ description: You can learn about the showItem method in the documentation of the
 
 ### Description
 
-@short: adjusts scroll to make the target item visible
-@descr: 
+@short: Adjusts scroll to make the target item visible 
 
 ### Usage
 

@@ -12,7 +12,7 @@ The event works only in the org chart and mindmap modes of Diagram, the **itemsD
 
 ### Description
 
-@short: fires before an item is caught
+@short: Fires before an item is caught
 
 ### Usage
 

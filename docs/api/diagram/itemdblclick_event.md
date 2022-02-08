@@ -8,7 +8,7 @@ description: You can learn about the itemDblClick event in the documentation of 
 
 ### Description
 
-@short: fires on double-clicking an item
+@short: Fires on double-clicking an item
 
 If a double-click is done over a swimlane, the event will be fired on the cell of the swimlane
 

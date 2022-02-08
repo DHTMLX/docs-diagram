@@ -8,7 +8,7 @@ description: You can learn about the groupHeaderDblClick event in the documentat
 
 ### Description
 
-@short: fires on double-clicking a header of a group
+@short: Fires on double-clicking a header of a group
 
 If a double-click is done over a header of a swimlane, the event will be fired on the subheader of the swimlane
 

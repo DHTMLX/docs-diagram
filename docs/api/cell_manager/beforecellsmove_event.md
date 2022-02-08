@@ -8,7 +8,7 @@ description: You can learn about the beforeCellsMove event of Cell Manager in th
 
 ### Description
 
-@short: fires before cells of the swimlane are moved
+@short: Fires before cells of the swimlane are moved
 
 ### Usage
 

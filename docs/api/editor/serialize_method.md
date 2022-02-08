@@ -8,7 +8,7 @@ description: You can learn about the serialize method of editor in the documenta
 
 ### Description
 
-@short: serializes the data of the editor into an array of JSON objects
+@short: Serializes the data of the editor into an array of JSON objects
 
 ### Usage
 

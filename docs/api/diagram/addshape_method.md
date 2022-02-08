@@ -12,7 +12,7 @@ The **addShape()** method can be used both in the diagram and in the editor. <br
 
 ### Description
 
-@short: creates a custom shape and sets sidebar options for its editing in the right panel of the editor
+@short: Creates a custom shape and sets sidebar options for its editing in the right panel of the editor
 
 ### Usage
 

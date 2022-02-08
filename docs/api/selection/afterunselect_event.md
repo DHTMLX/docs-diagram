@@ -8,7 +8,7 @@ description: You can learn about the afterUnSelect event in the documentation of
 
 ### Description
 
-@short: fires after unselecting an item
+@short: Fires after unselecting an item
 
 ### Usage
 

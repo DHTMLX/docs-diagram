@@ -8,7 +8,7 @@ description: You can learn about the type property in the documentation of the D
 
 ### Description
 
-@short: required, defines the mode of Diagram initialization 
+@short: Required. Defines the mode of Diagram initialization 
 
 ### Usage
 

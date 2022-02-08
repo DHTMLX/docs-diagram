@@ -8,7 +8,7 @@ description: You can learn about the afterEditorOpen event in the documentation 
 
 ### Description
 
-@short: fires after the inline editor of an item is opened
+@short: Fires after the inline editor of an item is opened
 
 ### Usage
 

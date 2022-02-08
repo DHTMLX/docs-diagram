@@ -8,7 +8,8 @@ description: You can learn about the itemMouseOver event in the documentation of
 
 ### Description
 
-@short: fires when a pointing device is onto an item
+@short: Fires when a pointing device is onto an item
+
 ### Usage
 
 ~~~js

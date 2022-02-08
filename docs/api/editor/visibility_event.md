@@ -8,7 +8,7 @@ description: You can learn about the visibility event of editor in the documenta
 
 ### Description
 
-@short: fires after the Visibility button has been clicked
+@short: Fires after the Visibility button has been clicked
 
 ### Usage
 

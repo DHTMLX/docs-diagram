@@ -8,7 +8,7 @@ description: You can learn about the png method in the documentation of the DHTM
 
 ### Description
 
-@short: exports a diagram to a PNG file
+@short: Exports a diagram to a PNG file
 
 {{note To avoid problems during export, all images for Diagram shapes must be set either in base64 format or via an absolute URL.}}
 

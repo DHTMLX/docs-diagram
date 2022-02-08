@@ -8,7 +8,7 @@ description: You can learn about the shapeIconClick event in the documentation o
 
 ### Description
 
-@short: fires on clicking a toolbar icon
+@short: Fires on clicking a toolbar icon
 
 ### Usage
 

@@ -8,7 +8,7 @@ description: You can learn about the beforeCellsRemove event of Cell Manager in 
 
 ### Description
 
-@short: fires before cells of the swimlane are removed
+@short: Fires before cells of the swimlane are removed
 
 ### Usage
 

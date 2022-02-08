@@ -8,7 +8,7 @@ description: You can learn about the move method of data collection in the docum
 
 ### Description
 
-@short: moves an item to the defined position
+@short: Moves an item to the defined position
 
 ### Usage
 

@@ -8,7 +8,7 @@ description: You can learn about the afterCellsAdd event of Cell Manager in the 
 
 ### Description
 
-@short: fires after new cells are added to a swimlane
+@short: Fires after new cells are added to a swimlane
 
 ### Usage
 

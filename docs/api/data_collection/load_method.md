@@ -8,7 +8,7 @@ description: You can learn about the load method of data collection in the docum
 
 ### Description
 
-@short: loads data from an external file
+@short: Loads data from an external file
 
 ### Usage
 

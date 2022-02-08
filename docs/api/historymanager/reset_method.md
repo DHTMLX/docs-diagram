@@ -8,7 +8,7 @@ description: You can learn about the reset method of HistoryManager in the docum
 
 ### Description
 
-@short: resets previous changes and saves the current state
+@short: Resets previous changes and saves the current state
 
 ### Usage
 

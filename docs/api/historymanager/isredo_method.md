@@ -8,7 +8,7 @@ description: You can learn about the isRedo method of HistoryManager in the docu
 
 ### Description
 
-@short: checks whether the current HistoryManager state is in the ending state
+@short: Checks whether the current HistoryManager state is in the ending state
 
 ### Usage
 

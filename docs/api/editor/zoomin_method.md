@@ -8,7 +8,7 @@ description: You can learn about the zoomIn method of editor in the documentatio
 
 ### Description
 
-@short: zooms in the diagram
+@short: Zooms in the diagram
 
 ### Usage
 

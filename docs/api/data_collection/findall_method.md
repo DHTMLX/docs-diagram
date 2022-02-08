@@ -8,7 +8,7 @@ description: You can learn about the findAll method of data collection in the do
 
 ### Description
 
-@short: finds all the items that correspond to the specified parameters
+@short: Finds all the items that correspond to the specified parameters
 
 ### Usage
 

@@ -8,7 +8,7 @@ description: You can learn about the lineTitleMoveEnd event of editor in the doc
 
 ### Description
 
-@short: fires after a text element of a line is moved
+@short: Fires after a text element of a line is moved
 
 ### Usage
 

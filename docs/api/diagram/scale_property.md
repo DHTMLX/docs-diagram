@@ -8,7 +8,7 @@ description: You can learn about the scale property in the documentation of the 
 
 ### Description
 
-@short: optional, defines the diagram scale
+@short: Optional. Defines the diagram scale
 
 ### Usage
 

@@ -8,7 +8,7 @@ description: You can learn about the beforeEditorClose event in the documentatio
 
 ### Description
 
-@short: fires before the inline editor of an item is closed
+@short: Fires before the inline editor of an item is closed
 
 ### Usage
 

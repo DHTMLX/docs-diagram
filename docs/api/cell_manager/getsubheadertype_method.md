@@ -8,7 +8,7 @@ description: You can learn about the getSubHeaderType method of Cell Manager in 
 
 ### Description
 
-@short: returns the type of the subheader of the swimlane by its id
+@short: Returns the type of the subheader of the swimlane by its id
 
 ### Usage
 

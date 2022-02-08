@@ -8,7 +8,7 @@ description: You can learn about the disabled property of HistoryManager in the 
 
 ### Description
 
-@short: enables/disables the work of HistoryManager
+@short: Enables/disables the work of HistoryManager
 
 ### Usage
 

@@ -8,7 +8,7 @@ description: You can learn about the getIndex method of data collection in the d
 
 ### Description
 
-@short: returns the index of the item by its id
+@short: Returns the index of the item by its id
 
 ### Usage
 

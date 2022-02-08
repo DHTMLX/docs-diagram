@@ -8,7 +8,7 @@ description: You can learn about the getId method of selection in the documentat
 
 ### Description
 
-@short: returns the id of the selected item
+@short: Returns the id of the selected item
 
 ### Usage
 

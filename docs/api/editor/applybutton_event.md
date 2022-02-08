@@ -8,7 +8,7 @@ description: You can learn about the applyButton event of editor in the document
 
 ### Description
 
-@short: fires after the Apply All button has been clicked
+@short: Fires after the Apply All button has been clicked
 
 ### Usage
 

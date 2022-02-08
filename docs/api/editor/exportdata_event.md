@@ -8,7 +8,7 @@ description: You can learn about the exportData event of editor in the documenta
 
 ### Description
 
-@short: fires after the Export Data button has been clicked
+@short: Fires after the Export Data button has been clicked
 
 ### Usage
 

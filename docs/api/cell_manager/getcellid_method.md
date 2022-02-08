@@ -8,7 +8,7 @@ description: You can learn about the getCellId method of Cell Manager in the doc
 
 ### Description
 
-@short: returns the id of the cell of the swimlane by the index
+@short: Returns the id of the cell of the swimlane by the index
 
 ### Usage
 

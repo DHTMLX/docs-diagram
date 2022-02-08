@@ -8,7 +8,7 @@ description: You can learn about the lineTitleDblClick event in the documentatio
 
 ### Description
 
-@short: fires on double-clicking a text element of a line
+@short: Fires on double-clicking a text element of a line
 
 ### Usage
 

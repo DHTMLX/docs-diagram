@@ -8,7 +8,7 @@ description: You can learn about the beforeShapeMove event in of editor the docu
 
 ### Description
 
-@short: fires before a shape is moved
+@short: Fires before a shape is moved
 
 ### Usage
 

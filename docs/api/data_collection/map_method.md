@@ -8,7 +8,7 @@ description: You can learn about the map method of data collection in the docume
 
 ### Description
 
-@short: iterates through all items of the diagram
+@short: Iterates through all items of the diagram
 
 ### Usage
 

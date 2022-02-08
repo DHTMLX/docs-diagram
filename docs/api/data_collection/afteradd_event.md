@@ -8,7 +8,7 @@ description: You can learn about the afterAdd event of data collection in the do
 
 ### Description
 
-@short: fires after adding an item
+@short: Fires after adding an item
 
 ### Usage
 

@@ -8,7 +8,7 @@ description: You can learn about the remove method of selection in the documenta
 
 ### Description
 
-@short: unselects a previously selected item
+@short: Unselects a previously selected item
 
 ### Usage
 

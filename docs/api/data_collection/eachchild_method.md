@@ -8,7 +8,7 @@ description: You can learn about the eachChild method of data collection in the 
 
 ### Description
 
-@short: iterates through the children of the specified item
+@short: Iterates through the children of the specified item
 
 ### Usage
 

@@ -8,7 +8,7 @@ description: You can learn about the getNearId method of data collection in the 
 
 ### Description
 
-@short: looks for a nearest item relative to the specified one
+@short: Looks for a nearest item relative to the specified one
 
 ### Usage
 

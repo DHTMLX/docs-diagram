@@ -8,7 +8,7 @@ description: You can learn about the afterShapeMove event of editor in the docum
 
 ### Description
 
-@short: fires when a shape is moved one grid step
+@short: Fires when a shape is moved one grid step
 
 ### Usage
 

@@ -8,7 +8,7 @@ description: You can learn about the afterShapeIconClick event of editor in the 
 
 ### Description
 
-@short: fires after clicking a control in the per-item toolbar
+@short: Fires after clicking a control in the per-item toolbar
 
 ### Usage
 

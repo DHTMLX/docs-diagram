@@ -8,7 +8,7 @@ description: You can learn about the resetSwimlane method of Cell Manager in the
 
 ### Description
 
-@short: resets active swimlane
+@short: Resets active swimlane
 
 ### Usage
 

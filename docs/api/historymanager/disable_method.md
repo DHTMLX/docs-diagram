@@ -8,7 +8,7 @@ description: You can learn about the disable method of HistoryManager in the doc
 
 ### Description
 
-@short: blocks HistoryManager
+@short: Blocks HistoryManager
 
 ### Usage
 

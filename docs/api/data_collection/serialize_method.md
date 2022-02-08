@@ -8,7 +8,7 @@ description: You can learn about the serialize method of data collection in the 
 
 ### Description
 
-@short: serializes the diagram data into an array of JSON objects
+@short: Serializes the diagram data into an array of JSON objects
 
 ### Usage
 

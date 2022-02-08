@@ -8,7 +8,7 @@ description: You can learn about the redo method of HistoryManager in the docume
 
 ### Description
 
-@short: takes a step forward in the history of changes
+@short: Takes a step forward in the history of changes
 
 ### Usage
 

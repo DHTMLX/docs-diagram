@@ -8,7 +8,7 @@ description: You can learn about the shapeResize event of editor in the document
 
 ### Description
 
-@short: fires after a shape has been resized
+@short: Fires after a shape has been resized
 
 ### Usage
 

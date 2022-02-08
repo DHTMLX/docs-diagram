@@ -12,7 +12,7 @@ The property works only in the org chart and mindmap modes. The moved item is dr
 
 ### Description
 
-@short: optional, enables/disables dragging the item from one parent item to another
+@short: Optional, enables/disables dragging the item from one parent item to another
 
 ### Usage
 

@@ -8,8 +8,7 @@ description: You can learn about the getScrollState method in the documentation 
 
 ### Description
 
-@short: returns the position of the diagram inner scroll
-@descr: 
+@short: Returns the position of the diagram inner scroll
 
 ### Usage
 

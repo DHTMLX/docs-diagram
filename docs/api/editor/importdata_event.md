@@ -8,7 +8,7 @@ description: You can learn about the importData event of editor in the documenta
 
 ### Description
 
-@short: fires after the Import Data button has been clicked
+@short: Fires after the Import Data button has been clicked
 
 ### Usage
 

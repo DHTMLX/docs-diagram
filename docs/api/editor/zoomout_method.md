@@ -8,7 +8,7 @@ description: You can learn about the zoomOut method of editor in the documentati
 
 ### Description
 
-@short: zooms out the diagram
+@short: Zooms out the diagram
 
 ### Usage
 

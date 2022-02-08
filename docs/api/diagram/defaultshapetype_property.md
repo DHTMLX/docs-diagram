@@ -8,7 +8,7 @@ description: You can learn about the defaultShapeType property in the documentat
 
 ### Description
 
-@short: optional, the default type of a shape
+@short: Optional. The default type of a shape
 
 The value is applied, if the shape object doesn't contain the "type" property
 

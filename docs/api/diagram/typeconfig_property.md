@@ -12,7 +12,7 @@ The property does not work in the Editor
 
 ### Description
 
-@short: optional, an object which defines the direction of the shapes in the mindmap mode of Diagram
+@short: Optional. An object which defines the direction of the shapes in the mindmap mode of Diagram
 
 If you don't apply the **typeConfig** property, the child shapes will be arranged automatically according to the main algorithm
 

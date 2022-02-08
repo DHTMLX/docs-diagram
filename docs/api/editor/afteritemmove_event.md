@@ -8,7 +8,7 @@ description: You can learn about the afterItemMove event of editor in the docume
 
 ### Description
 
-@short: fires when an item is moved one grid step
+@short: Fires when an item is moved one grid step
 
 :::note
 The event doesn't work with the line object

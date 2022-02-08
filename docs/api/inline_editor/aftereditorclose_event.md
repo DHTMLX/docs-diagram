@@ -8,7 +8,7 @@ description: You can learn about the afterEditorClose event in the documentation
 
 ### Description
 
-@short: fires after the inline editor of the item is closed
+@short: Fires after the inline editor of the item is closed
 
 ### Usage
 

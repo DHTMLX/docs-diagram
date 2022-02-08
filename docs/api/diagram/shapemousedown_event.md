@@ -8,7 +8,8 @@ description: You can learn about the shapeMouseDown event in the documentation o
 
 ### Description
 
-@short: fires when a pointing device button is pressed while the pointer is over a shape
+@short: Fires when a pointing device button is pressed while the pointer is over a shape
+
 ### Usage
 
 ~~~js

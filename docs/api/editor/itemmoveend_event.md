@@ -8,7 +8,7 @@ description: You can learn about the itemMoveEnd event of editor in the document
 
 ### Description
 
-@short: fires after an item is moved
+@short: Fires after an item is moved
 
 :::note
 The event doesn't work with the line object

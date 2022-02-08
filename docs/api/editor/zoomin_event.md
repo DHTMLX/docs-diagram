@@ -8,7 +8,7 @@ description: You can learn about the zoomIn event of editor in the documentation
 
 ### Description
 
-@short: fires after the Zoom In button has been clicked
+@short: Fires after the Zoom In button has been clicked
 
 ### Usage
 

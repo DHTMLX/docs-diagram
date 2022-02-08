@@ -8,7 +8,7 @@ description: You can learn about the afterCellsValidation event of Cell Manager 
 
 ### Description
 
-@short: fires after cells of the swimlane are validated
+@short: Fires after cells of the swimlane are validated
 
 ### Usage
 

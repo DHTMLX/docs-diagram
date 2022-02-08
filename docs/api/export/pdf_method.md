@@ -8,7 +8,7 @@ description: You can learn about the pdf method in the documentation of the DHTM
 
 ### Description
 
-@short: exports a diagram to a PDF file
+@short: Exports a diagram to a PDF file
 
 :::note
 To avoid problems during export, all images for Diagram shapes must be set either in base64 format or via an absolute URL

@@ -8,7 +8,7 @@ description: You can learn about the getSubHeaderCellIndex method of Cell Manage
 
 ### Description
 
-@short: returns the index of the cell of the swimlane by the subheader id
+@short: Returns the index of the cell of the swimlane by the subheader id
 
 ### Usage
 

@@ -8,7 +8,7 @@ description: You can learn about the afterEditorEditing event in the documentati
 
 ### Description
 
-@short: fires after the text value of an item is edited via the inline editor  
+@short: Fires after the text value of an item is edited via the inline editor  
 
 ### Usage
 

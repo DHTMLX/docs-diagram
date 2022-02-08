@@ -8,7 +8,7 @@ description: You can learn about the groupDblClick event in the documentation of
 
 ### Description
 
-@short: fires on double-clicking a group
+@short: Fires on double-clicking a group
 
 If a double-click is done over a swimlane, the event will be fired on the cell of the swimlane
 

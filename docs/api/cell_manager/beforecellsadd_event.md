@@ -8,7 +8,7 @@ description: You can learn about the beforeCellsAdd event of Cell Manager in the
 
 ### Description
 
-@short: fires before new cells are added to a swimlane
+@short: Fires before new cells are added to a swimlane
 
 ### Usage
 

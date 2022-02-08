@@ -8,7 +8,7 @@ description: You can learn about the expandItem method in the documentation of t
 
 ### Description
 
-@short: shows all children of the target shape or expands the group/swimlane
+@short: Shows all children of the target shape or expands the group/swimlane
 
 ### Usage
 

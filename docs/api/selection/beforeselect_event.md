@@ -8,7 +8,7 @@ description: You can learn about the beforeSelect event in the documentation of 
 
 ### Description
 
-@short: fires on selecting an item, but before the item is really selected
+@short: Fires on selecting an item, but before the item is really selected
 
 ### Usage
 

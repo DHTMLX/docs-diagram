@@ -8,7 +8,7 @@ description: You can learn about the resetButton event of editor in the document
 
 ### Description
 
-@short: fires after the Reset Changes button has been clicked
+@short: Fires after the Reset Changes button has been clicked
 
 ### Usage
 

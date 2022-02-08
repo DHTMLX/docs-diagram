@@ -8,7 +8,7 @@ description: You can learn about the undo method of HistoryManager in the docume
 
 ### Description
 
-@short: takes a step back in the history of changes
+@short: Takes a step back in the history of changes
 
 ### Usage
 

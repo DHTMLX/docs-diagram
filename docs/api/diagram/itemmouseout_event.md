@@ -8,7 +8,7 @@ description: You can learn about the itemMouseOut event in the documentation of 
 
 ### Description
 
-@short: fires when a pointing device is out of an item
+@short: Fires when a pointing device is out of an item
 
 ### Usage
 

@@ -8,7 +8,7 @@ description: You can learn about the change event of data collection in the docu
 
 ### Description
 
-@short: fires on changes in the dataset of the diagram
+@short: Fires on changes in the dataset of the diagram
 
 ### Usage
 

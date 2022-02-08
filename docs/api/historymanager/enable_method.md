@@ -8,7 +8,7 @@ description: You can learn about the enable method of HistoryManager in the docu
 
 ### Description
 
-@short: restarts the work of HistoryManager, saving the current state as initial state
+@short: Restarts the work of HistoryManager, saving the current state as initial state
 
 ### Usage
 

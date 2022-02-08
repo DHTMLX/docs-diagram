@@ -8,7 +8,7 @@ description: You can learn about the copy method of data collection in the docum
 
 ### Description
 
-@short: creates a copy of an item at the defined position
+@short: Creates a copy of an item at the defined position
 
 ### Usage
 

@@ -8,7 +8,7 @@ description: You can learn about the scrollTo method in the documentation of the
 
 ### Description
 
-@short: sets the inner scroll of the diagram to the specified position
+@short: Sets the inner scroll of the diagram to the specified position
 
 ### Usage
 

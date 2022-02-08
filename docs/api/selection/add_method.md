@@ -8,7 +8,7 @@ description: You can learn about the add method of selection in the documentatio
 
 ### Description
 
-@short: selects the specified item
+@short: Selects the specified item
 
 ### Usage
 

@@ -8,7 +8,7 @@ description: You can learn about the type property of editor in the documentatio
 
 ### Description
 
-@short: required, specifies the mode of the diagram editor
+@short: Required, specifies the mode of the diagram editor
 
 ### Usage
 

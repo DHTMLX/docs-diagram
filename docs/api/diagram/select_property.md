@@ -8,7 +8,7 @@ description: You can learn about the select property in the documentation of the
 
 ### Description
 
-@short: optional, enables selection in the diagram
+@short: Optional. Enables selection in the diagram
 
 ### Usage
 

@@ -8,7 +8,7 @@ description: You can learn about the beforeCellsValidation event of Cell Manager
 
 ### Description
 
-@short: fires before cells of the swimlane are validated
+@short: Fires before cells of the swimlane are validated
 
 ### Usage
 

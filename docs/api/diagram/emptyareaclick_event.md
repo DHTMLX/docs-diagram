@@ -8,7 +8,8 @@ description: You can learn about the emptyAreaClick event in the documentation o
 
 ### Description
 
-@short: fires on clicking an empty space in the current diagram area
+@short: Fires on clicking an empty space in the current diagram area
+
 ### Usage
 
 ~~~js

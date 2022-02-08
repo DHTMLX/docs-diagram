@@ -8,7 +8,8 @@ description: You can learn about the beforeExpand event in the documentation of 
 
 ### Description
 
-@short: fires before expanding an item
+@short: Fires before expanding an item
+
 ### Usage
 
 ~~~js

@@ -7,13 +7,13 @@ description: You can learn about the autoplacement property of editor in the doc
 # autoplacement
 
 :::info
- The **autoplacement** property works only in the default mode of the editor (*type:"default"*) and only for shapes
+The **autoplacement** property works only in the default mode of the editor (*type:"default"*) and only for shapes
 :::
 
 
 ### Description
 
-@short: optional, an object with configuration settings for auto-placement of shapes
+@short: Optional, an object with configuration settings for auto-placement of shapes
 
 ### Usage
 

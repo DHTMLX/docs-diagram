@@ -8,7 +8,7 @@ description: You can learn about the beforeEditorOpen event in the documentation
 
 ### Description
 
-@short: fires before the inline editor of an item is opened
+@short: Fires before the inline editor of an item is opened
 
 ### Usage
 

@@ -8,7 +8,7 @@ description: You can learn about the shapeToolbar property of editor in the docu
 
 ### Description
 
-@short: optional, defines which controls should be shown in the personal toolbar of diagram items
+@short: Optional, defines which controls should be shown in the personal toolbar of diagram items
 
 ### Usage
 

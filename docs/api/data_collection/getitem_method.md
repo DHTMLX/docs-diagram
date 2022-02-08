@@ -8,7 +8,7 @@ description: You can learn about the getItem method of data collection in the do
 
 ### Description
 
-@short: returns the object of an item by its id
+@short: Returns the object of an item by its id
 
 ### Usage
 

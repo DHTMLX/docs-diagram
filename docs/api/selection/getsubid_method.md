@@ -8,7 +8,7 @@ description: You can learn about the getSubId method of selection in the documen
 
 ### Description
 
-@short: returns the subId (if any) of the selected item
+@short: Returns the subId (if any) of the selected item
 
 ### Usage
 

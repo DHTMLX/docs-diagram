@@ -12,7 +12,7 @@ The **autoPlace()** method works only in the default mode of the diagram and onl
 
 ### Description
 
-@short: automatically arranges connected diagram shapes in the hierarchical structure
+@short: Automatically arranges connected diagram shapes in the hierarchical structure
 
 ### Usage
 

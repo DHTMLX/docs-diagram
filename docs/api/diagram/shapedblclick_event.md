@@ -8,7 +8,8 @@ description: You can learn about the shapeDblClick event in the documentation of
 
 ### Description
 
-@short: fires on double-clicking a shape
+@short: Fires on double-clicking a shape
+
 ### Usage
 
 ~~~js

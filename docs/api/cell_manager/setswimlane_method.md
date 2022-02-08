@@ -8,7 +8,7 @@ description: You can learn about the setSwimlane method of Cell Manager in the d
 
 ### Description
 
-@short: sets active swimlane for further actions with it
+@short: Sets active swimlane for further actions with it
 
 ### Usage
 

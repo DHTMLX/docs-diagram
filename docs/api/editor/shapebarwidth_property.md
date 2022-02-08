@@ -12,7 +12,7 @@ The property is available only in the default mode of the editor (*type:"default
 
 ### Description
 
-@short: optional, sets the width of the left panel of the editor
+@short: Optional, sets the width of the left panel of the editor
 
 ### Usage
 

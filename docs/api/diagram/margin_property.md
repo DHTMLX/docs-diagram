@@ -8,7 +8,7 @@ description: You can learn about the margin property in the documentation of the
 
 ### Description
 
-@short: optional, an object with settings of margins for positioning items in the diagram
+@short: Optional. An object with settings of margins for positioning items in the diagram
 
 ### Usage
 

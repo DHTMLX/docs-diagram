@@ -8,7 +8,7 @@ description: You can learn about the setViewMode method of editor in the documen
 
 ### Description
 
-@short: sets the mode of Diagram Editor
+@short: Sets the mode of Diagram Editor
 
 ### Usage
 

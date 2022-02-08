@@ -8,7 +8,7 @@ description: You can learn about the getRoot method of data collection in the do
 
 ### Description
 
-@short: returns the id of the root item by the id of its child
+@short: Returns the id of the root item by the id of its child
 
 ### Usage
 

@@ -8,7 +8,7 @@ description: You can learn about the load event of data collection in the docume
 
 ### Description
 
-@short: fires when data is loaded into the diagram
+@short: Fires when data is loaded into the diagram
 
 ### Usage
 

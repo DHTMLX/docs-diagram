@@ -8,7 +8,7 @@ description: You can learn about the parse method of data collection in the docu
 
 ### Description
 
-@short: loads data from a local data source
+@short: Loads data from a local data source
 
 ### Usage
 

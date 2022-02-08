@@ -8,7 +8,7 @@ description: You can learn about the emptyAreaMouseDown event in the documentati
 
 ### Description
 
-@short: fires when a pointing device button is pressed while the pointer is over an empty space in the current diagram area
+@short: Fires when a pointing device button is pressed while the pointer is over an empty space in the current diagram area
 
 ### Usage
 

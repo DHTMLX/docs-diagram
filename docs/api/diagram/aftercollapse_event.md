@@ -8,7 +8,7 @@ description: You can learn about the afterCollapse event in the documentation of
 
 ### Description
 
-@short: fires after an item has been collapsed
+@short: Fires after an item has been collapsed
 
 ### Usage
 

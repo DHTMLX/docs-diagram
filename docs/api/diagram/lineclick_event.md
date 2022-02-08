@@ -8,7 +8,7 @@ description: You can learn about the lineClick event in the documentation of the
 
 ### Description
 
-@short: fires on clicking a connector line
+@short: Fires on clicking a connector line
 
 ### Usage
 

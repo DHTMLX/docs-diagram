@@ -8,7 +8,7 @@ description: You can learn about the exists method of data collection in the doc
 
 ### Description
 
-@short: checks whether the specified item exists in the diagram
+@short: Checks whether the specified item exists in the diagram
 
 ### Usage
 

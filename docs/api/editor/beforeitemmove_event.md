@@ -8,7 +8,7 @@ description: You can learn about the beforeItemMove event of editor in the docum
 
 ### Description
 
-@short: fires before an item is moved
+@short: Fires before an item is moved
 
 :::note
 The event doesn't work with the line object

@@ -8,7 +8,7 @@ description: You can learn about the beforeCollapse event in the documentation o
 
 ### Description
 
-@short: fires before collapsing an item
+@short: Fires before collapsing an item
 
 ### Usage
 

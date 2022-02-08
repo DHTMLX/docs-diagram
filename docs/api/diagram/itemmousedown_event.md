@@ -8,8 +8,8 @@ description: You can learn about the itemMouseDown event in the documentation of
 
 ### Description
 
-@short: fires when a pointing device button is pressed while the pointer is over an item
-@descr:
+@short: Fires when a pointing device button is pressed while the pointer is over an item
+
 If a pointing device button is pressed while the pointer is over a swimlane, the event will be fired on the cell of the swimlane
 
 ### Usage

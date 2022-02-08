@@ -8,7 +8,7 @@ description: You can learn about the update method of data collection in the doc
 
 ### Description
 
-@short: updates properties of the item
+@short: Updates properties of the item
 
 :::note
 The method can't be used to change the *id* or *type* of the item

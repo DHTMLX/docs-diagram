@@ -8,7 +8,7 @@ description: You can learn about the filter method of data collection in the doc
 
 ### Description
 
-@short: filters items in the diagram
+@short: Filters items in the diagram
 
 ### Usage
 

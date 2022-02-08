@@ -8,7 +8,7 @@ description: You can learn about the gridStep property of editor in the document
 
 ### Description
 
-@short: optional, sets the size of a grid step that defines the step of moving an item
+@short: Optional, sets the size of a grid step that defines the step of moving an item
 
 ### Usage
 

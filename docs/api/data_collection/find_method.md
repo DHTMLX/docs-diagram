@@ -8,7 +8,7 @@ description: You can learn about the find method of data collection in the docum
 
 ### Description
 
-@short: finds the item that corresponds to the specified parameters
+@short: Finds the item that corresponds to the specified parameters
 
 ### Usage
 
