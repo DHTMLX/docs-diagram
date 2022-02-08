@@ -22,8 +22,8 @@ move(
 
 ### Parameters
 
-- `id` - (mandatory) the id(s) of an item(s) to move
-- `index` - (mandatory) the index to move an item(s) to
+- `id` - (required) the id(s) of an item(s) to move
+- `index` - (required) the index to move an item(s) to
 - `target` - (optional) the target data collection object
 
 ### Returns

@@ -22,8 +22,8 @@ copy(
 
 ### Parameters
 
-- `id` - (mandatory) the id(s) of an item(s) to copy
-- `index` - (mandatory) the index to create a copy at
+- `id` - (required) the id(s) of an item(s) to copy
+- `index` - (required) the index to create a copy at
 - `target` - (optional) the target data collection object
 
 ### Returns

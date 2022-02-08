@@ -30,9 +30,9 @@ itemTarget: (
 
 The callback of the event takes the following parameters:
 
-- `movedId` - (mandatory) the id of the moved item
-- `targetId` - (mandatory) the id of the target item
-- `event` - (mandatory) a native HTML event object
+- `movedId` - (required) the id of the moved item
+- `targetId` - (required) the id of the target item
+- `event` - (required) a native HTML event object
 
 ### Example
 

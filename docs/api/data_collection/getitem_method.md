@@ -18,7 +18,7 @@ getItem(id: string | number): object;
 
 ### Parameters
 
-- `id` - (mandatory) the id of a selected item
+- `id` - (required) the id of a selected item
 
 ### Returns
 

@@ -1,10 +1,10 @@
 ---
-sidebar_label: How to start with Editor
-title: How to Start with Diagram Editor
+sidebar_label: Initialization
+title: Editor initialization
 description: You can learn how to start with Diagram Editor in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
 
-# How to start with Diagram Editor
+# Editor initialization
 
 This article covers the process of displaying a Diagram editor on a page. In order to initialize the editor, you need to include source files specific for Editor and use the *DiagramEditor* instance. In all other aspects the initialization stage is the same as for the Diagram component:
 

@@ -25,10 +25,10 @@ afterLineTitleMove: (
 
 The callback of the event takes the following parameters:
 
-- `event` - (mandatory) a native HTML event object
-- `lineId` - (mandatory) the id of a line
-- `titleId` - (mandatory) the id of a text element of a line
-- `coord` - (mandatory) an object with the x and y coordinates of the text element position after movement
+- `event` - (required) a native HTML event object
+- `lineId` - (required) the id of a line
+- `titleId` - (required) the id of a text element of a line
+- `coord` - (required) an object with the x and y coordinates of the text element position after movement
 
 ### Example
 

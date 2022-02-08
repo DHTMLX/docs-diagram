@@ -18,7 +18,7 @@ getRoot(id: string | number): string | number;
 
 ### Parameters
 
-- `id` - (mandatory) the id of the child item
+- `id` - (required) the id of the child item
 
 ### Returns
 

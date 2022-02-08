@@ -18,8 +18,8 @@ scrollTo(x: number, y: number): void;
 
 ### Parameters
 
-- `x` - (mandatory) horizontal scroll position
-- `y` - (mandatory) vertical scroll position
+- `x` - (required) horizontal scroll position
+- `y` - (required) vertical scroll position
 
 ### Example
 

@@ -24,9 +24,9 @@ afterCellsValidation: (
 
 The callback of the event takes the following parameters:
 
-- `swimlaneId` - (mandatory) the id of the item
-- `validate` - (mandatory) validated or not validated
-- `action` - (mandatory) the type of the action
+- `swimlaneId` - (required) the id of the item
+- `validate` - (required) validated or not validated
+- `action` - (required) the type of the action
 
 ### Example
 

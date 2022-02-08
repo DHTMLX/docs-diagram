@@ -21,7 +21,7 @@ load(
 
 ### Parameters
 
-- `url` - (mandatory) the URL of an external file or DataProxy with the URL configured
+- `url` - (required) the URL of an external file or DataProxy with the URL configured
 - `driver` - (optional) DataDriver or type of data ("json", "csv", "xml"), "json" by default
 
 ### Returns

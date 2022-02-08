@@ -18,7 +18,7 @@ locate(event: object): any;
 
 ### Parameters
 
-- `event` - (mandatory) a native event object
+- `event` - (required) a native event object
 
 ### Returns
 

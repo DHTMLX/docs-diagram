@@ -25,9 +25,9 @@ afterEditorEditing: (
 
 The callback of the event takes the following parameters:
 
-- `value` - (mandatory) the new value of the item
-- `id`- (mandatory) the id of the item
-- `key` - (mandatory) the name of the edited property
+- `value` - (required) the new value of the item
+- `id`- (required) the id of the item
+- `key` - (required) the name of the edited property
 - `subId` - (optional) the id of a subheader of a swimlane or a text element of a line
 
 ### Example

@@ -18,7 +18,7 @@ map(callback: function): array;
 
 ### Parameters
 
-- `callback` - (mandatory) a callback function that will be called for each item of a diagram
+- `callback` - (required) a callback function that will be called for each item of a diagram
 
 ### Returns
 

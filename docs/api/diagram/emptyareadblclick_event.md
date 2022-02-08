@@ -20,7 +20,7 @@ emptyAreaDblClick: (event: MouseEvent) => void;
 
 The callback of the event takes the following parameter:
 
-- `event` - (mandatory) a native HTML event object
+- `event` - (required) a native HTML event object
 
 ### Example
 

@@ -23,8 +23,8 @@ shapeMouseDown: (
 
 The callback of the event takes the following parameters:
 
-- `id` - (mandatory) the id of a shape
-- `event` - (mandatory) a native HTML event object
+- `id` - (required) the id of a shape
+- `event` - (required) a native HTML event object
 
 ### Example
 

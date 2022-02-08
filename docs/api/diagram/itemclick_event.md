@@ -25,8 +25,8 @@ itemClick: (
 
 The callback of the event takes the following parameters:
 
-- `id` - (mandatory) the id of an item
-- `event` - (mandatory) a native HTML event object
+- `id` - (required) the id of an item
+- `event` - (required) a native HTML event object
 
 ### Example
 

@@ -20,7 +20,7 @@ scroll: (position: object) => void;
 
 The callback of the event takes the following parameter:
 
-- `position` - (mandatory) the position of a scroll. The object contains x and y coordinates of the current scroll position, e.g.: {x: 67, y: 130}
+- `position` - (required) the position of a scroll. The object contains x and y coordinates of the current scroll position, e.g.: {x: 67, y: 130}
 
 ### Example
 

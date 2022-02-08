@@ -25,8 +25,8 @@ update(
 
 ### Parameters
 
-- `id` - (mandatory) the id of the item which needs to be updated
-- `newItem` - (mandatory) a hash of properties which need to be updated
+- `id` - (required) the id of the item which needs to be updated
+- `newItem` - (required) a hash of properties which need to be updated
 
 ### Example
 

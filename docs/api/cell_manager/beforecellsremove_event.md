@@ -20,7 +20,7 @@ beforeCellsRemove: (swimlaneId: string | number) => boolean | void;
 
 The callback of the event takes the following parameter:
 
-- `swimlaneId` - (mandatory) the id of the item
+- `swimlaneId` - (required) the id of the item
 
 ### Returns
 

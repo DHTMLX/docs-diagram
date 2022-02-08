@@ -22,6 +22,6 @@ add(newState: array): void;
 
 ### Parameters
 
-- `newState` - (mandatory) an array of JSON objects of the current state of the diagram
+- `newState` - (required) an array of JSON objects of the current state of the diagram
 
 **Change log**: Added in v4.1

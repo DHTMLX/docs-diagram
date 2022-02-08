@@ -18,7 +18,7 @@ showItem(id: string | number): void;
 
 ### Parameters
 
-- `id` - (mandatory) the **ID** of the target item
+- `id` - (required) the **ID** of the target item
 
 ### Example
 

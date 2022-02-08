@@ -18,7 +18,7 @@ add(new_item: object | array): string | number | array;
 
 ### Parameters
 
-- `new_item` - (mandatory) the object of a new item or an array of item objects
+- `new_item` - (required) the object of a new item or an array of item objects
 
 ### Returns
  

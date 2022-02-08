@@ -25,8 +25,8 @@ groupDblClick: (
 
 The callback of the event takes the following parameters:
 
-- `id` - (mandatory) the id of a group
-- `event` - (mandatory) a native HTML event object
+- `id` - (required) the id of a group
+- `event` - (required) a native HTML event object
 
 ### Example
 

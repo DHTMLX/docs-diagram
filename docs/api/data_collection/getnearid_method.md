@@ -18,7 +18,7 @@ getNearId(id: string | number): string | number;
 
 ### Parameters
 
-- `id` - (mandatory) the id of an item
+- `id` - (required) the id of an item
 
 ### Returns
 

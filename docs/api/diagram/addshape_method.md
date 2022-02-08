@@ -25,12 +25,12 @@ addShape(
 
 ### Parameters
 
-- `type` - (mandatory) the unique name for the type of a custom shape. The name must differ from the names of default shapes
-- `parameters` - (mandatory) an object with the additional parameters of the **addShape()** method. Here you can specify the following attributes:
-    - `template: function` - (mandatory) the function that takes the configuration object of the shape as a parameter and returns either an HTML or SVG template. Check [the available formats of the template](#formats-of-the-shape-template)
+- `type` - (required) the unique name for the type of a custom shape. The name must differ from the names of default shapes
+- `parameters` - (required) an object with the additional parameters of the **addShape()** method. Here you can specify the following attributes:
+    - `template: function` - (required) the function that takes the configuration object of the shape as a parameter and returns either an HTML or SVG template. Check [the available formats of the template](#formats-of-the-shape-template)
     - [`defaults: object`](../../../shapes/custom_shape/) - (optional) the default configuration for a created shape. See [the full list of the configuration properties of a shape](../../../shapes/configuration_properties/)
     - [`properties: array`](../../../guides/diagram_editor/right_panel/#configuring-options-for-editing-custom-shapes) - (optional, <i>and is available only in the **editor** mode</i>) an array of objects that defines which sidebar options will be rendered in the right panel of the editor for editing a custom shape. Each object can contain a set of properties:
-        - `type: string` - (mandatory) the type of a sidebar option. See the list of available types [below](#types-of-sidebar-options)
+        - `type: string` - (required) the type of a sidebar option. See the list of available types [below](#types-of-sidebar-options)
         - `label?: string` - (optional) specifies the label for the sidebar option
         - `property?: string` - (optional) a custom property of the shape
     - [`eventHandlers: object`](../../../shapes/custom_shape/#event-handlers-for-custom-shapes) - (optional) adds custom event handlers to HTML elements of the template of a shape. The **eventHandlers** object includes a set of **key:value** pairs, where:
@@ -38,8 +38,8 @@ addShape(
         - `value: object` - an object that contains a **key:value** pair, where 
           - `key` is the CSS class name that the handler will be applied to
           - `value` is a function that takes two parameters:
-            - `event: object` - (mandatory) an event object
-            - `shape: object` - (mandatory) the shape object
+            - `event: object` - (required) an event object
+            - `shape: object` - (required) the shape object
          
         :::tip
         **Note**, we recommend that you use different CSS classes for different custom shapes when initializing custom event handlers.

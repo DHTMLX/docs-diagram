@@ -26,10 +26,10 @@ beforeEditorEditing: (
 
 The callback of the event takes the following parameters:
 
-- `value` - (mandatory) the new value of the item
-- `currentValue` - (mandatory) the old value of the item
-- `id` - (mandatory) the id of the item
-- `key` - (mandatory) the name of the property to be edited
+- `value` - (required) the new value of the item
+- `currentValue` - (required) the old value of the item
+- `id` - (required) the id of the item
+- `key` - (required) the name of the property to be edited
 - `subId` - (optional) the id of a subheader of a swimlane or a text element of a line
 
 ### Returns

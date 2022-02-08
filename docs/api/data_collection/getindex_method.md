@@ -18,7 +18,7 @@ getIndex(id: string | number): number;
 
 ### Parameters
 
-- `id` - (mandatory) the id of the item
+- `id` - (required) the id of the item
 
 ### Returns
 

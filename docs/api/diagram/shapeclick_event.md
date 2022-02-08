@@ -23,8 +23,8 @@ shapeClick: (
 
 The callback of the event takes the following parameters:
 
-- `id` - (mandatory) the shape id
-- `event` - (mandatory) a native HTML event object
+- `id` - (required) the shape id
+- `event` - (required) a native HTML event object
 
 ### Example
 

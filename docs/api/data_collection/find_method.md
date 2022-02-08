@@ -22,7 +22,7 @@ find(rule: function): object;
 
 ### Parameters
 
-- `rule` - (mandatory) the search criteria which can be specified:
+- `rule` - (required) the search criteria which can be specified:
   - as an object which contains the following parameters:
     - `by: string | function` - the search criterion (either the key of the item attribute or a search function)
     - `match: string` - the value of the item attribute

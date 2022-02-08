@@ -24,8 +24,8 @@ beforeSubmenuOpen: (
 
 The callback of the event takes the following parameters:
 
-- `id` - (mandatory) the id of a swimlane
-- `event` - (mandatory) a native HTML event object
+- `id` - (required) the id of a swimlane
+- `event` - (required) a native HTML event object
 - `subHeaderId` - (optional) the id of a subheader of a swimlane
 
 ### Returns

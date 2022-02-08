@@ -18,7 +18,7 @@ setSwimlane(id: string | number): boolean;
 
 ### Parameters
 
-- `id` - (mandatory) the id of the swimlane
+- `id` - (required) the id of the swimlane
 
 ### Returns
 

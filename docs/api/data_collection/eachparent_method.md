@@ -22,8 +22,8 @@ eachParent(
 
 ### Parameters
 
-- `id` - (mandatory) the id of the item
-- `callback` - (mandatory) a callback function that will be applied to each parent of the item
+- `id` - (required) the id of the item
+- `callback` - (required) a callback function that will be applied to each parent of the item
 - `self` - (optional) defines whether the callback function should iterate over the specified item itself; *false* by default
 
 ### Example

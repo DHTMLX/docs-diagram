@@ -24,8 +24,8 @@ afterEditorClose: (
 
 The callback of the event takes the following parameters:
 
-- `id` - (mandatory) the id of an item
-- `key` - (mandatory) the name of the edited property
+- `id` - (required) the id of an item
+- `key` - (required) the name of the edited property
 - `subId` - (optional) the id of a subheader of a swimlane or a text element of a line
 
 ### Example

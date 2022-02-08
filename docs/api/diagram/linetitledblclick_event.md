@@ -24,9 +24,9 @@ lineTitleDblClick: (
 
 The callback of the event takes the following parameters:
 
-- `lineId` - (mandatory) the id of a line
-- `titleId` - (mandatory) the id of a text element of a line
-- `event` - (mandatory) a native HTML event object
+- `lineId` - (required) the id of a line
+- `titleId` - (required) the id of a text element of a line
+- `event` - (required) a native HTML event object
 
 ### Example
 

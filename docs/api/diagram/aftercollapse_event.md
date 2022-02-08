@@ -23,7 +23,7 @@ afterCollapse: (
 
 The callback of the event takes the following parameters:
 
-- `id` - (mandatory) the id of an item which has been collapsed
+- `id` - (required) the id of an item which has been collapsed
 - `dir` - (optional) the side the children were hidden in relation to the parent shape ("left" or "right" for *type:"topic"*, otherwise - undefined)
 
 ### Example

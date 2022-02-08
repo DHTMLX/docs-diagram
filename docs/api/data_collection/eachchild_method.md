@@ -22,8 +22,8 @@ eachChild(
 
 ### Parameters
 
-- `id` - (mandatory) the id of the item
-- `callback` - (mandatory) a callback function that will be applied to each child of the item
+- `id` - (required) the id of the item
+- `callback` - (required) a callback function that will be applied to each child of the item
 - `isTree` - (optional) defines, whether the function should iterate through all children (of any level) of the specified item. If *false*, the function will iterate only through the first-level children of the item; *true* by default.
 
 ### Example

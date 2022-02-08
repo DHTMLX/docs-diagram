@@ -18,7 +18,7 @@ exists(id: string | number): boolean;
 
 ### Parameters
 
-- `id` - (mandatory) the id of the item in question
+- `id` - (required) the id of the item in question
 
 ### Returns
 

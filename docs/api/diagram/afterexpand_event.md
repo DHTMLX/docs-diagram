@@ -23,7 +23,7 @@ afterExpand: (
 
 The callback of the event takes the following parameters:
 
-- `id` - (mandatory) the id of an item which has been expanded
+- `id` - (required) the id of an item which has been expanded
 - `dir` - (optional) the side the children were shown in relation to the parent shape ("left" or "right" for *type:"topic"*, otherwise - undefined)
 
 ### Example

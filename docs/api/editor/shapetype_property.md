@@ -20,19 +20,19 @@ shapeType?: string;
 
 ### Default config
 
-In the default mode of Editor (type: "default")
+In the default mode of Editor (type: "default"):
 
 ~~~js
 shapeType: "rectangle"
 ~~~
 
-In the org chart mode of Editor (type: "card")
+In the org chart mode of Editor (type: "card"):
 
 ~~~js
 shapeType: "card"
 ~~~
 
-In the mindmap mode of Editor (type: "topic")
+In the mindmap mode of Editor (type: "topic"):
 
 ~~~js
 shapeType: "topic"

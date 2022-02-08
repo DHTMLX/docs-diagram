@@ -22,7 +22,7 @@ remove(id: string | number | array): void;
 
 ### Parameters
 
-- `id` - (mandatory) the id(s) of the items that should be deleted
+- `id` - (required) the id(s) of the items that should be deleted
 
 ### Example
 

@@ -23,7 +23,7 @@ afterSelect: (
 
 The callback of the event takes the following parameters:
 
-- `id` - (mandatory) the item id
+- `id` - (required) the item id
 - `subId` - (optional) the id of a subheader of a swimlane or a text element of a line
 
 ### Example

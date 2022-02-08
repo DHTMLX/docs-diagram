@@ -25,8 +25,8 @@ add(
 
 ### Parameters
 
-- `cellIndex` - (mandatory) the start index of a cell in a layout. The count of the index starts from 0
-- `dir` - (mandatory) the direction of the action: "up" | "down" | "left" | "right"
+- `cellIndex` - (required) the start index of a cell in a layout. The count of the index starts from 0
+- `dir` - (required) the direction of the action: "up" | "down" | "left" | "right"
 
 ### Example
 
