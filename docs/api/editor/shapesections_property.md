@@ -26,27 +26,29 @@ shapeSections?: {
 
 ### Parameters
 
-The **shapeSections** object can contain a set of **key:value** pairs where **key** is the name of a section and **value** is an array with the types of the items to be rendered in the section.
+The **shapeSections** object can contain a set of **key:value** pairs where:
+- **key** - the name of a section
+- **value** - an array which can include:
+  - a string value with a specific type of the item to be rendered in the section (for example, "text", "topic", etc.)
+  - an object with one *key:value* pair. The list of available pairs is given below:
+    - `flowShapes: true` - (optional) displays all available [flow-chart](../../../shapes/default_shapes/#shapes-overview) shapes
+    - `org: true` - (optional) displays "card" and "img-card" shapes
+    - `group: true` - (optional) displays a basic set of groups
+    - `swimlane: true` - (optional) displays a basic set of swimlanes
 
 ### Example
 
 ~~~js
 const editor = new dhx.DiagramEditor("editor_container", {
     shapeSections: {
-        "custom shapes": ["networkCard", "medCard"],
-        "sticky shapes": ["blue", "orange"],
-        "org chart shapes": ["card", "img-card"],
-        "flowchart shapes": [true],
-        "text": ["text"],
-        "mind map shape": ["topic"]
+        "Custom shapes": ["networkCard", "medCard"],
+        "Sticky shapes": ["blue", "orange"],
+        "Org chart shapes and text": [{ org: true }, "text"],
+        "Flowchart shapes": [{ flowShapes: true }],
+        "Mind map shape": ["topic"]
     },
 });
 ~~~
-
-
-{{note Setting boolean *true* as a value of the array will display all available [flow-chart](../../../shapes/default_shapes/#shapes-overview) shapes in the section.}}
-
-
 
 **Related articles**:  [Left Panel](../../../guides/diagram_editor/left_panel/)
 

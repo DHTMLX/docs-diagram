@@ -30,12 +30,14 @@ By default, the default types for all shapes are:
 
 ## Setting the default line type
 
-You can set a common type for all the connector lines of the diagram via the [](../../api/diagram/defaultlinktype_property.md) property of the diagram config object:
+You can set a common type for all the connector lines of the diagram via the **lineType** parameter of the [](../../api/diagram/lineconfig_property.md) property of the diagram config object:
 
 ~~~js
 const diagram = new dhx.Diagram("diagram_container", {
     type: "default",
-    defaultLinkType: "dash" // "dash" | "line"
+    lineConfig: {
+        lineType: "dash", // "dash" | "line"
+    }, 
 });
 diagram.data.parse(data);
 ~~~
@@ -44,17 +46,17 @@ This value is applied, if the line object doesn't contain the **type** property.
 
 ## Setting the default configuration of a shape
 
-There is a great possibility to escape operating with a big data set while preparing it for loading into the diagram. You can specify the default configuration for all shapes of the necessary type and, therefore, reduce the amount of records in your code.
+There is a great possibility to escape operating with a big data set while preparing it for loading into the diagram. You can specify the default configuration for all shapes and lines of the necessary types and, therefore, reduce the amount of records in your code.
 
 For this purpose, use the [](../../api/diagram/defaults_property.md) property of the diagram configuration object:
 
 <iframe src="https://snippet.dhtmlx.com/7bn52dl1?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
 
-The **defaults** object contains a number of *key:value* pairs where *key* is a type of a shape and *value* is the default config of the shape.
+The **defaults** object contains a number of *key:value* pairs where *key* is a type of a shape or line and *value* is the default config of the shape or line correspondingly.
 
-{{note The *type* and *id* attributes can not be defined in the default configuration of a shape.}}
+{{note The *type* and *id* attributes can not be defined in the default configuration of a shape/line.}}
 
-Check [the full list of configuration properties of a shape](../../../shapes/configuration_properties/).
+Check the full list of configuration properties of a [shape](../../../shapes/configuration_properties/) and [line](../../../lines/configuration_properties/).
 
 ## Arranging shapes in the mindmap mode of Diagram
 
