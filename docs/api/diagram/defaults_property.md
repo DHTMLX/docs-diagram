@@ -50,6 +50,7 @@ const defaults = {
 };
 
 const diagram = new dhx.Diagram("diagram_container", {
+    type: "default",
     defaults: defaults
 });
 ~~~

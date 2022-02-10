@@ -32,6 +32,10 @@ The **lineConfig** object contains the following parameters:
 - `lineDirection` - (optional) the direction of the new connector lines
 - `arrowsHidden` - (optional) defines whether the arrows of the new connector lines should be hidden
 
+:::note
+The **lineDirection** and **arrowsHidden** parameters work only in the default mode of the editor (*type: "default"*)
+:::
+
 ### Default config
 
 ~~~js
@@ -46,6 +50,7 @@ lineConfig: {
 
 ~~~js {2-6}
 const editor = new dhx.DiagramEditor("editor_container", {
+    type: "default",
     lineConfig: {
         lineType: "dash",
         lineDirection: "backArrow",

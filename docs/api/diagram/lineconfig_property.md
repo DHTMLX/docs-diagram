@@ -37,7 +37,8 @@ lineConfig: {
 ### Example
 
 ~~~js {2-4}
-const diagram = new dhx.Diagram("diagram_container", { 
+const diagram = new dhx.Diagram("diagram_container", {
+    type: "default",
     lineConfig: {
         lineType: "dash",
     },

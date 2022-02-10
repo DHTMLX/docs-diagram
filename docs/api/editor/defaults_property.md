@@ -50,6 +50,7 @@ const defaults = {
 };
 
 const editor = new dhx.DiagramEditor("editor_container", {
+    type: "default",
     defaults: defaults
 });
 ~~~
