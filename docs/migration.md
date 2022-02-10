@@ -33,7 +33,7 @@ const diagram = new dhx.Diagram("diagram_container", {
 
 ### Editor API
 
-The syntax of specifying basic sets of items for the sections of the left panel of the editor has been changed.
+The syntax of specifying basic sets of items for the sections in the left panel of the editor has been changed.
 
 Before v4.2, you could set boolean *true* value to the array of the section's items to display all available flow-chart shapes in the section:
 
