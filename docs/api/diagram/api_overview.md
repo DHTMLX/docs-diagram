@@ -61,11 +61,11 @@ description: You can have an overview of Diagram API in the documentation of the
 | Name                                         | Description                                         |
 | :------------------------------------------- | :-------------------------------------------------- |
 | [](api/diagram/autoplacement_property.md)    | @getshort(api/diagram/autoplacement_property.md)    |
-| [](api/diagram/defaultlinktype_property.md)  | @getshort(api/diagram/defaultlinktype_property.md)  |
 | [](api/diagram/defaults_property.md)         | @getshort(api/diagram/defaults_property.md)         |
 | [](api/diagram/defaultshapetype_property.md) | @getshort(api/diagram/defaultshapetype_property.md) |
 | [](api/diagram/exportstyles_property.md)     | @getshort(api/diagram/exportstyles_property.md)     |
 | [](api/diagram/gridstep_property.md)         | @getshort(api/diagram/gridstep_property.md)         |
+| [](api/diagram/lineconfig_property.md)       | @getshort(api/diagram/lineconfig_property.md)       |
 | [](api/diagram/linegap_property.md)          | @getshort(api/diagram/linegap_property.md)          |
 | [](api/diagram/margin_property.md)           | @getshort(api/diagram/margin_property.md)           |
 | [](api/diagram/scale_property.md)            | @getshort(api/diagram/scale_property.md)            |
