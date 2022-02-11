@@ -1,4 +1,4 @@
-<h1 align="center"><a href="https://docs.dhtmlx.com/diagram/">DHTMLX JavaScript Diagram Documentation</a></h1>
+<h1 align="center"><a href="https://docs.dhtmlx.com/diagram/">DHTMLX Diagram Documentation</a></h1>
 
 DHTMLX Diagram is a client-side chart component that allows you to display relations between some objects, concepts or living beings in a visual form: as a scheme, chart, organizational chart, mind map, etc. The diagram makes it easier to present tangled and bulky information in a simple and accessible way.
 
@@ -6,20 +6,20 @@ DHTMLX Diagram is a client-side chart component that allows you to display relat
 
 To run the Diagram documentation locally, take the following steps:
 
-### 1. Clone the documentation to the locale folder
+#### 1. Clone the documentation to the locale folder
 
 ```
 $ git clone git@github.com:DHTMLX/docs-diagram.git
 $ cd docs-diagram
 ```
 
-### 2. Install dependencies
+#### 2. Install dependencies
 
 ```
 $ yarn
 ```
 
-### 3. Run the documentation on the local server and explore it
+#### 3. Run the documentation on the local server and explore it
 
 ```
 $ yarn start
