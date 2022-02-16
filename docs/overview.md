@@ -115,4 +115,4 @@ An example of adding a custom template into the mindmap mode of the diagram to c
 
 ## What's next
 
-Now you can learn about using DHTMLX Diagram Editor in your application. Follow the directions of the [Editor overview](editor_overview.md) to get more about this tool.
+Now you can learn about using DHTMLX Diagram Editor in your application. Read the [Diagram Editor overview](editor_overview.md) to get more about this tool.

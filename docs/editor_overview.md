@@ -79,4 +79,4 @@ You can apply the zoom template to your diagram to be able to change its appeara
 
 ## What's next
 
-That's all. Now you can start working with charts or keep exploring the inner world of JavaScript Diagram and Diagram Editor.
+That's all. Now you can start working with diagrams or keep exploring the inner world of JavaScript Diagram and Diagram Editor.
