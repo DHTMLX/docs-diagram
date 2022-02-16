@@ -66,7 +66,7 @@ There is also an org chart mode of Diagram that presents a set of shapes connect
 
 ### Assistant and partner shapes
 
-A parent shape of any level can have assistant or partner items. The assistant and partner shapes can't be parent items. The assistant and partner items can be added in the [editor](#editor-in-the-org-chart-mode) or by preparing a [data set](guides/loading_data.md/#preparing-data-to-load).
+A parent shape of any level can have assistant or partner items. The assistant and partner shapes can't be parent items. The assistant and partner items can be added in the [editor](./editor_overview/#editor-in-the-org-chart-mode) or by preparing a [data set](guides/loading_data.md/#preparing-data-to-load).
 
 In the hierarchical order, the assistant items are displayed between parent and children shapes.
 
@@ -112,6 +112,19 @@ The shapes are connected by curved lines and arranged around a central shape of 
 An example of adding a custom template into the mindmap mode of the diagram to create a site map:
 
 <iframe src="https://snippet.dhtmlx.com/do1jwmw1?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
+
+## Shape search
+
+DHTMLX Diagram provides you with a set of API that you can apply in order to make working with a Diagram more convenient.
+For example, you can implement a feature of searching a shape on request that helps you to simplify work with large diagrams.
+
+<iframe src="https://snippet.dhtmlx.com/d7kvzq4r?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
+
+## Diagram scale
+
+You can apply the zoom template to your diagram to be able to change its appearance via zooming the diagram in or out. Besides, you can make it possible to user to get the detailed information on the selected shape.
+
+<iframe src="https://snippet.dhtmlx.com/09o8t3o2?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
 
 ## What's next
 

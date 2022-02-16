@@ -63,20 +63,6 @@ You can adjust the attributes of the shapes via the available sidebar options of
 | ![](assets/mindmap_editor_draggable.gif)                                               |
 
 If you've added a custom shape to the editor in the org chart mode, you can configure the right panel to be able to edit custom properties of the shape.
-
-## Shape search
-
-DHTMLX Diagram provides you with a set of API that you can apply in order to make working with a Diagram more convenient.
-For example, you can implement a feature of searching a shape on request that helps you to simplify work with large diagrams.
-
-<iframe src="https://snippet.dhtmlx.com/d7kvzq4r?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
-
-## Diagram scale
-
-You can apply the zoom template to your diagram to be able to change its appearance via zooming the diagram in or out. Besides, you can make it possible to user to get the detailed information on the selected shape.
-
-<iframe src="https://snippet.dhtmlx.com/09o8t3o2?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
-
 ## What's next
 
 That's all. Now you can start working with diagrams or keep exploring the inner world of JavaScript Diagram and Diagram Editor.

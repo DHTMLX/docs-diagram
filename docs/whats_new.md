@@ -12,12 +12,12 @@ Version 4.1
 ------------------
 Released on December 7, 2021
 
-### New functionality
+### New functionality!
 
 - The ability to add [partner shapes](/#assistant-and-partner-shapes) in the org chart  mode
 - The ability to add [assistant shapes](/#assistant-and-partner-shapes) in the org chart  mode
 - The ability to add [titles to lines](/#title-of-lines) in the default mode
-- The ability to [drag and drop shapes](/#editor-in-the-org-chart-mode) from one parent to another in Editor in org chart and mind map modes. The shapes are dragged with their children items
+- The ability to [drag and drop shapes](../editor_overview/#editor-in-the-org-chart-mode) from one parent to another in Editor in org chart and mind map modes. The shapes are dragged with their children items
 - The ability to [style target items](/guides/customization/#styling-target-shapes) in Editor in org chart and mindmap modes
 
 ### API
