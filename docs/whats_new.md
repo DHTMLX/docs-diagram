@@ -10,11 +10,11 @@ If you are updating Diagram from an older version, check [Migration to Newer Ver
 
 Version 4.2
 -----------------
-Released on February 15, 2022
+Released on March 1, 2022
 
 ### New functionality
 
-- Touch support
+- [Touch support](/guides/touch_support/)
 - The ability to specify the default setting for lines via the [`lineConfig`](/api/diagram/lineconfig_property/) property of Diagram
 - The ability to specify the default settings for new lines created in the editor via the [`lineConfig`](/api/editor/lineconfig_property/) property of Diagram Editor
 - The ability to add default sets of org shapes, groups, swimlanes in the necessary order when [configuring sections in the left panel of the editor](/guides/diagram_editor/left_panel/#custom-sections)
