@@ -1,31 +1,50 @@
-## DHTMLX Suite Documentation
+<h1 align="center"><a href="https://docs.dhtmlx.com/diagram/">DHTMLX Diagram Documentation</a></h1>
 
-### Installation
+DHTMLX Diagram is a client-side chart component that allows you to display relations between some objects, concepts or living beings in a visual form: as a scheme, chart, organizational chart, mind map, etc. The diagram makes it easier to present tangled and bulky information in a simple and accessible way.
+
+## Explore documentation locally
+
+To run the Diagram documentation locally, take the following steps:
+
+#### 1. Clone the documentation to the locale folder
+
+```
+$ git clone git@github.com:DHTMLX/docs-diagram.git
+$ cd docs-diagram
+```
+
+#### 2. Install dependencies
 
 ```
 $ yarn
 ```
 
-### Local Development
+#### 3. Run the documentation on the local server and explore it
 
 ```
 $ yarn start
 ```
 
-This command starts a local development server and open up a browser window. Most changes are reflected live without having to restart the server.
+## Related sources
 
-### Build
+[Download DHTMLX Diagram](https://dhtmlx.com/docs/products/dhtmlxDiagram/download.shtml)
 
-```
-$ yarn build
-```
+[Live demos](https://snippet.dhtmlx.com/xdvi4fek?mode=wide&text=#diagram)
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+[Blog](https://dhtmlx.com/blog/tag/diagram/)
 
-### Deployment
+[Forum](https://forum.dhtmlx.com/c/widgets/diagram/)
 
-```
-$ GIT_USER=<Your GitHub username> USE_SSH=true yarn deploy
-```
+## Follow us
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+Star our GitHub repo :star:
+
+Watch our tutorials on [YouTube](https://www.youtube.com/user/dhtmlx/videos) :eyes:
+
+Read us on [Medium](https://medium.com/@dhtmlx) :newspaper:
+
+Follow us on [Twitter](https://twitter.com/dhtmlx) :feet:
+
+Like our page on [Facebook](https://www.facebook.com/dhtmlx/) :thumbsup:
+
+See our news on [Linkedin](https://www.linkedin.com/groups/3345009/) :mega:
