@@ -180,7 +180,7 @@ module.exports = {
             darkTheme: require('prism-react-renderer/themes/dracula'),
         },
         navbar: {
-            title: 'Diagram Documentation',
+            title: 'JavaScript Diagram Documentation',
             logo: {
                 alt: 'DHTMLX Diagram Documentation',
                 src: 'img/dhtmlx_logo.svg',
