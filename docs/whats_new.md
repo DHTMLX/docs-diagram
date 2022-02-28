@@ -12,7 +12,7 @@ Version 4.1
 ------------------
 Released on December 7, 2021
 
-### New functionality!
+### New functionality
 
 - The ability to add [partner shapes](/#assistant-and-partner-shapes) in the org chart  mode
 - The ability to add [assistant shapes](/#assistant-and-partner-shapes) in the org chart  mode
