@@ -26,6 +26,7 @@ Released on February 15, 2022
 - Now it is possible to define the default configurations not only for shapes of the particular types but also for lines:
     - the [`defaults`](/api/diagram/defaults_property/) property of Diagram is updated
     - the [`defaults`](/api/editor/defaults_property/) property of Diagram Editor is updated
+- The documentation for [Modes of connecting shapes](/api/diagram/autoplace_method/#modes-of-connecting-shapes) has been updated
 
 Version 4.1
 ------------------
