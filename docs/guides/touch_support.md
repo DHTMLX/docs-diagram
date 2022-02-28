@@ -8,7 +8,7 @@ description: You can learn about touch support in the documentation of the DHTML
 
 Since version 4.2 and upper, the DHTMLX Diagram library provides the built-in Touch support that should work out of the box.
 
-{{note Check any <a href="https://snippet.dhtmlx.com/p1ybrkz2?mode=wide&text=#diagram"  target="_blank">example in our Snippet Tool</a> to try out the functionality on your touch devices.}}
+{{note Check the <a href="https://snippet.dhtmlx.com/2z0a18oz?text=diagram&mode=mobile"  target="_blank">example in our Snippet Tool</a> to try out the functionality on your touch devices.}}
 
 While interacting with applications by touching the screen, a tap becomes the same thing as a mouse click.
 Thus, the click events (fire on clicking, double clicking an item) will continue working on touch-screen devices. But note, that the mouseover events will not trigger.
