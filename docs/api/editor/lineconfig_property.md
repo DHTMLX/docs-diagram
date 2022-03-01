@@ -61,3 +61,5 @@ const editor = new dhx.DiagramEditor("editor_container", {
 ~~~
 
 **Change log**: Added in v4.2
+
+**Related sample:** [Diagram editor. Setting the default type for newly added connector lines](https://snippet.dhtmlx.com/22abzn5m)
