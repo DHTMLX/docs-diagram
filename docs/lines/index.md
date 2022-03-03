@@ -89,12 +89,14 @@ In this case, all the connectors will have the same type.
 
 ### Setting the default line type
 
-You can set a common type for all the connector lines of the diagram via the [](../api/diagram/defaultlinktype_property.md) property of the diagram config object:
+You can set a common type for all the connector lines of the diagram via the **lineType** parameter of the [](../api/diagram/lineconfig_property.md) property of the diagram config object:
 
 ~~~js
 const diagram = new dhx.Diagram("diagram_container", {
     type: "default",
-    defaultLinkType:"dash" // "dash" | "line"
+    lineConfig: {
+        lineType: "dash", // "dash" | "line"
+    }, 
 });
 diagram.data.parse(data);
 ~~~

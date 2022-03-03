@@ -23,9 +23,10 @@ To customize the structure of the left panel, you should use the [](../../api/ed
 
 <iframe src="https://snippet.dhtmlx.com/2z0a18oz?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
-The **shapeSections** property is an object with a set of *key:value* pairs where *key* is the name of a section and *value* is an array with the types of the items to be rendered in the section.
+The **shapeSections** property is an object with a set of *key:value* pairs where *key* is the name of a section and *value* is an array with the list of items which should be rendered in the section. 
 
-{{note Setting boolean *true* as a value of the array will display all available [flow-chart shapes](diagram_guides/shapes_arrows_list.md#shapesconfiguration) in the section.}}
+{{note To display a basic set of items in the section, include an object with the related *key:value* pair into the array. Check the list of available pairs in the [](../../api/editor/shapesections_property.md) article. }}
+
 
 ## Adding identical items with different settings into the left panel
 

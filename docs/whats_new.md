@@ -8,6 +8,26 @@ description: You can learn a new information about DHTMLX JavaScript Diagram lib
 
 If you are updating Diagram from an older version, check [Migration to Newer Version](migration.md) for details.
 
+Version 4.2
+-----------------
+Released on March 3, 2022
+
+### New functionality
+
+- [Touch support](/guides/touch_support/)
+- The ability to specify the default setting for lines via the [`lineConfig`](/api/diagram/lineconfig_property/) property of Diagram
+- The ability to specify the default settings for new lines created in the editor via the [`lineConfig`](/api/editor/lineconfig_property/) property of Diagram Editor
+- The ability to add default sets of org shapes, groups, swimlanes in the necessary order when [configuring sections in the left panel of the editor](/guides/diagram_editor/left_panel/#custom-sections)
+
+### Updates
+
+- The `defaultLinkType` property of Diagram is deprecated. Check the [Migration](/migration/#41---42) article
+- The [`shapeSections`](/api/editor/shapesections_property/) property of Diagram Editor is updated. Check the [Migration](/migration/#41---42) article
+- Now it is possible to define the default configurations not only for shapes of the particular types but also for lines:
+    - the [`defaults`](/api/diagram/defaults_property/) property of Diagram is updated
+    - the [`defaults`](/api/editor/defaults_property/) property of Diagram Editor is updated
+- The documentation for [Modes of connecting shapes](/api/diagram/autoplace_method/#modes-of-connecting-shapes) has been updated
+
 Version 4.1
 ------------------
 Released on December 7, 2021

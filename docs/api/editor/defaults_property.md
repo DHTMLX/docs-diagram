@@ -8,7 +8,7 @@ description: You can learn about the defaults property of editor in the document
 
 ### Description
 
-@short: Optional. An object which sets the default configuration of a shape
+@short: Optional. An object which sets the default configuration of a shape or line
 
 ### Usage
 
@@ -20,30 +20,49 @@ defaults?: {
 
 ### Parameters
 
-The **defaults** object can contain a set of *key:value* pairs where *key* is the type of a shape and *value* is a set of [configuration settings of the shape](../../../shapes/configuration_properties/).
+The **defaults** object can contain a set of *key:value* pairs where *key* is the type of a shape or line and *value* is a set of configuration settings of the [shape](../../../shapes/configuration_properties/) or [line](../../../lines/configuration_properties/) correspondingly.
 
-{{note The *type* and *id* attributes can not be defined in the default configuration of a shape.}}
+{{note The *type* and *id* attributes can not be defined in the default configuration of a shape/line.}}
 
 ### Example
 
-~~~js
-// the default configuration settings for all shapes of the "rectangle" type
-const editor = new dhx.DiagramEditor("editor_container", {
-    defaults: {
-        rectangle: {
-            fill: "#CEEFE1",
-            stroke: "#0AB169",
-            strokeWidth: 2,
-            width: 140,
-            height: 140,
-            text: "Default text"
-        }
+~~~js {24}
+const defaults = {
+    // the default settings for all shapes of the "rectangle" type
+    rectangle: {
+        fill: "#CEEFE1",
+        stroke: "#0AB169",
+        strokeWidth: 2,
+        width: 140,
+        height: 140,
+        text: "Default text"
+    },
+    // the default settings for all lines of the "line" type
+    line: {
+        strokeWidth: 3,
+        stroke: "#245CE0"
+    },
+    // the default settings for all lines of the "dash" type
+    dash: {
+        strokeWidth: 3,
+        stroke: "#245CE0"
     }
+};
+
+const editor = new dhx.DiagramEditor("editor_container", {
+    type: "default",
+    defaults: defaults
 });
 ~~~
 
-After defining the default settings for the shape of a separate type, you can either omit these properties or redefine their values while preparing a data set for the shapes of this type.
+:::info
+After defining the default settings for the shape/line of separate types, you can either omit these properties or redefine their values while [preparing a data set](../../../guides/loading_data/#preparing-data-to-load) for the shapes/lines of these types.
+:::
+
+**Change log:** The ability to set the default configuration for lines is added in v4.2
 
 **Related articles**:  
 - [Setting the default configuration of a shape](../../../guides/diagram/configuration/#setting-the-default-configuration-of-a-shape)
 - [Setting shape preview](../../../guides/diagram_editor/left_panel/#setting-shape-preview)
+
+**Related sample:** [Diagram editor. Setting the default line (connector) type](https://snippet.dhtmlx.com/22abzn5m)

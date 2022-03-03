@@ -6,6 +6,61 @@ description: You can learn about the Migration to Newer Versions in the document
 
 # Migration to newer versions
 
+
+4.1 -> 4.2
+--------------
+
+### API
+
+In v4.2, the **defaultLinkType** property is deprecated. 
+
+Starting from v4.2, you need to apply the new [lineConfig](../api/diagram/lineconfig_property/) property to specify the default type for connector lines.
+
+~~~js title="Before v4.2"
+const diagram = new dhx.Diagram("diagram_container", { 
+    defaultLinkType: "dash"
+});
+~~~
+
+~~~js {2-4} title="From v4.2"
+const diagram = new dhx.Diagram("diagram_container", { 
+    lineConfig: {
+        lineType: "dash",
+    },
+    // other config parameters
+});
+~~~
+
+### Editor API
+
+The syntax of specifying basic sets of items for sections in the left panel of the editor has been changed.
+
+Before v4.2, you could set boolean *true* value to the array of the section's items to display all available flow-chart shapes in the section:
+
+~~~js {3} title="Before v4.2"
+const editor = new dhx.DiagramEditor("editor_container", {
+    shapeSections: {
+        "flowchart shapes": [true],
+        "text": ["text"],
+        "mind map shape": ["topic"]
+    },
+});
+~~~
+
+Starting from v4.2, you need to use the different syntax for this purpose:
+
+~~~js {3} title="From v4.2"
+const editor = new dhx.DiagramEditor("editor_container", {
+    shapeSections: {
+        "flowchart shapes": [{ flowShapes: true }],
+        "text": ["text"],
+        "mind map shape": ["topic"]
+    },
+});
+~~~
+
+Besides, it became possible to specify other basic sets of items via the related *key:value* pairs. For more details, check the [shapeSections](../api/editor/shapesections_property/) article.
+
 3.1 -> 4.0
 ------------
 

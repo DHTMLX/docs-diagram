@@ -1,10 +1,10 @@
 ---
-sidebar_label: Using Diagram with TypeScript
-title: Using Diagram with TypeScript
+sidebar_label: TypeScript support
+title: TypeScript support
 description: You can learn about using Diagram with TypeScript in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
 
-# Using Diagram with TypeScript
+# TypeScript support
 
 Starting from v3.1, the library of DHTMLX Diagram provides the ability to use TypeScript definitions. The built-in support of TypeScript should work out of the box.
 
