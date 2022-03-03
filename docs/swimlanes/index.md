@@ -45,7 +45,7 @@ The code example above presents the simplest configuration of a swimlane with de
 
 ### Swimlane structure
 
-The structure of a swimlane can be rather different. It is defined via the [layout](../configuration_properties/) configuration property of the swimlane object. The property allows you to arrange the cells of a swimlane into rows and columns.
+The structure of a swimlane can be rather different. It is defined via the [layout](/swimlanes/configuration_properties/) configuration property of the swimlane object. The property allows you to arrange the cells of a swimlane into rows and columns.
 
 All you need to do is specify an array with a matrix as a value of the property. The matrix can be either an array:  
 
@@ -74,7 +74,7 @@ where:
 
 ### Properties of a swimlane object
 
-Check [the full list of configuration properties of a swimlane object](../configuration_properties/) to be able to create various swimlanes with different settings depending on your needs.
+Check [the full list of configuration properties of a swimlane object](/swimlanes/configuration_properties/) to be able to create various swimlanes with different settings depending on your needs.
 
 ## Configuring a swimlane cell
 
@@ -105,7 +105,7 @@ const data = [
 
 ### Properties of a cell object
 
-Check [the full list of configuration properties of a swimlane cell](../configuration_properties/#properties-of-a-swimlane-cell).
+Check [the full list of configuration properties of a swimlane cell](/swimlanes/configuration_properties/#properties-of-a-swimlane-cell).
 
 ## Grouping cells
 
