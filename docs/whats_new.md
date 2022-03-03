@@ -10,7 +10,7 @@ If you are updating Diagram from an older version, check [Migration to Newer Ver
 
 Version 4.2
 -----------------
-Released on March 1, 2022
+Released on March 3, 2022
 
 ### New functionality
 
@@ -22,7 +22,7 @@ Released on March 1, 2022
 ### Updates
 
 - The `defaultLinkType` property of Diagram is deprecated. Check the [Migration](/migration/#41---42) article
-- The [`shapeSections`](/api/editor/shapesections_property/) property of Diagram Editor is updated. Check the [Migration](/migration/#41---42)article
+- The [`shapeSections`](/api/editor/shapesections_property/) property of Diagram Editor is updated. Check the [Migration](/migration/#41---42) article
 - Now it is possible to define the default configurations not only for shapes of the particular types but also for lines:
     - the [`defaults`](/api/diagram/defaults_property/) property of Diagram is updated
     - the [`defaults`](/api/editor/defaults_property/) property of Diagram Editor is updated
