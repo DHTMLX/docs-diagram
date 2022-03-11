@@ -55,7 +55,7 @@ diagram.data.parse(data);
 
 ### Properties
 
-See [the full list of configuration properties of a group object](../configuration_properties/) which allow you to configure the positioning and appearance of the group.
+See [the full list of configuration properties of a group object](/groups/configuration_properties/) which allow you to configure the positioning and appearance of the group.
 
 Configuring the group header
 -------------------------------
@@ -81,11 +81,11 @@ For example, you can define the height of the header and its position, specify t
 
 <iframe src="https://snippet.dhtmlx.com/6hunrja8?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="470"></iframe>
 
-Check [the full list of API properties of the group object](../../groups/configuration_properties/).
+Check [the full list of API properties of the group object](/groups/configuration_properties/).
 
 ### A header icon
 
-To be able to collapse/expand a group, you need to enable the **closable** attribute of the [header](../../groups/configuration_properties/) property. As a result, an icon, which allows a user to expand/collapse a group, will be added to the header.
+To be able to collapse/expand a group, you need to enable the **closable** attribute of the [header](/groups/configuration_properties/) property. As a result, an icon, which allows a user to expand/collapse a group, will be added to the header.
 
 ~~~js
 const data = [
@@ -104,12 +104,12 @@ const data = [
 ];
 ~~~
 
-You can change the color of the icon via the **iconColor** attribute of the [group object](../../groups/configuration_properties/).
+You can change the color of the icon via the **iconColor** attribute of the [group object](/groups/configuration_properties/).
 
 ## Configuring the behavior of group items
 
 By default, you can drag any child item of the group out of the group and drag it into another group.
-To change the behavior of the group items you need to use the **groupBehavior** and **padding** attributes of the **exitArea** property of the [group object](../../groups/configuration_properties/).
+To change the behavior of the group items you need to use the **groupBehavior** and **padding** attributes of the **exitArea** property of the [group object](/groups/configuration_properties/).
 
 {{note The **exitArea** property defines the behavior of the first-level children of the configurable group only.}}
 

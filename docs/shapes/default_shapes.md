@@ -32,7 +32,7 @@ Tip: Use the name of the necessary shape as a value of the **type** attribute in
 
 ## Setting the type of a shape
 
-To set the type of a shape, use the [type](../configuration_properties/) property inside the shape object while preparing a related JSON structure to load into the diagram:
+To set the type of a shape, use the [type](/shapes/configuration_properties/) property inside the shape object while preparing a related JSON structure to load into the diagram:
 
 ~~~js
 const data = [
@@ -44,7 +44,7 @@ const data = [
 ];
 ~~~
 
-{{note See [the full list of configuration properties of a shape object](shapes/configuration_properties.md). Do not add custom properties while creating data objects for default shapes.
+{{note See [the full list of configuration properties of a shape object](/shapes/configuration_properties/). Do not add custom properties while creating data objects for default shapes.
 }}
 
 ### Setting the default shape type
