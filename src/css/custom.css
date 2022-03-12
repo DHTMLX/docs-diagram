@@ -105,8 +105,9 @@ table {
     display: inline-table;
 }
 
+
 table tr:nth-child(2n) {
-    background-color: var(--ifm-table-background);
+    /*background-color: var(--ifm-table-background);*/
 }
 
 tr {
