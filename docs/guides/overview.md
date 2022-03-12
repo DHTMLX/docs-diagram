@@ -23,9 +23,9 @@ The section includes descriptions for all default diagram items (shapes, lines, 
 
 - [Default shapes](../../shapes/default_shapes/)
 - [Custom shape](../../shapes/custom_shape/)
-- [Configuring lines](../../lines/)
-- [Configuring groups](../../groups/)
-- [Configuring swimlanes](../../swimlanes/)
+- [Lines](../../lines/)
+- [Groups](../../groups/)
+- [Swimlanes](../../swimlanes/)
 
 ## Diagram Editor
 
@@ -65,6 +65,10 @@ The articles give you examples of usage a Diagram with different client-side fra
 - [Integration with Angular](../../guides/angular_integration/)
 - [Integration with React](../../guides/react_integration/)
 - [Integration with Vue.js](../../guides/vue_integration/)
+
+## Touch support
+
+You can easily create responsive web applications using DHTMLX Diagram due to built-in touch support. Check out how UI widgets work on touch devices in the [Touch support](../../guides/touch_support/) guide.
 
 ## TypeScript support
 

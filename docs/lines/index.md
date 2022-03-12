@@ -1,14 +1,14 @@
 ---
-sidebar_label: Configuring lines
-title: Configuring Lines
-description: You can learn about Configuring Lines in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
+sidebar_label: Lines
+title: Lines
+description: You can learn about Lines in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
 
-# Configuring lines
+# Lines
 
 ## Overview
 
-The look and the way of connecting shapes is defined by the mode you initialize a diagram in: [default](#lines-in-the-default-mode), [org](#lines-in-the-org-chart-mode), or [mindmap](#lines-in-the-mindmap-mode) one.
+The look and the way of lines which connect shapes is defined by the mode you initialize a diagram in: [default](#lines-in-the-default-mode), [org](#lines-in-the-org-chart-mode), or [mindmap](#lines-in-the-mindmap-mode) one.
 
 ### Lines in the default mode
 

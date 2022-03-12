@@ -13,6 +13,14 @@ module.exports = {
     {
       type: "category",
       label: "What's new and migration",
+      link: {
+        type: 'generated-index',
+        title: "What's new and migration",
+        //description: '',
+        //slug: '/category/docusaurus-guides',
+        keywords: ['news'],
+        image: '/img/docusaurus.png',
+      },
       items: [
         "whats_new",
         "migration",
@@ -25,6 +33,14 @@ module.exports = {
       label: "API",
       collapsible: true,
       collapsed: false,
+      link: {
+        type: 'generated-index',
+        title: "API",
+        //description: '',
+        //slug: '/category/docusaurus-guides',
+        keywords: ['api'],
+        image: '/img/docusaurus.png',
+      },
       items: [
 
         // Diagram API
@@ -32,12 +48,19 @@ module.exports = {
           type: "category",
           label: "Diagram API",
           collapsed: true,
+          link: {
+            type: 'doc',
+            id: "api/diagram/api_overview",
+          },
           items: [
-            "api/diagram/api_overview",
             {
               type: "category",
               label: "Diagram methods",
               collapsed: true,
+              link: {
+                type: 'doc',
+                id: "api/overview/diagram_methods_overview",
+              },
               items: [
                 "api/diagram/addshape_method",
                 "api/diagram/autoplace_method",
@@ -55,6 +78,10 @@ module.exports = {
               type: "category",
               label: "Diagram events",
               collapsed: true,
+              link: {
+                type: 'doc',
+                id: "api/overview/diagram_events_overview",
+              },
               items: [
                 "api/diagram/aftercollapse_event",
                 "api/diagram/afterexpand_event",
@@ -92,6 +119,10 @@ module.exports = {
               type: "category",
               label: "Diagram properties",
               collapsed: true,
+              link: {
+                type: 'doc',
+                id: "api/overview/diagram_properties_overview",
+              },
               items: [
               	"api/diagram/autoplacement_property",
               	"api/diagram/defaults_property",
@@ -116,12 +147,19 @@ module.exports = {
           type: "category",
           label: "Diagram Editor API",
           collapsed: true,
+          link: {
+            type: 'doc',
+            id: "api/editor/api_overview",
+          },
           items: [
-            "api/editor/api_overview",
             {
               type: "category",
               label: "Editor methods",
               collapsed: true,
+              link: {
+                type: 'doc',
+                id: "api/overview/editor_methods_overview",
+              },
               items: [
                 "api/editor/import_method",
                 "api/editor/paint_method",
@@ -136,6 +174,10 @@ module.exports = {
               type: "category",
               label: "Editor events",
               collapsed: true,
+              link: {
+                type: 'doc',
+                id: "api/overview/editor_events_overview",
+              },
               items: [
                 "api/editor/aftergroupmove_event",
                 "api/editor/afteritemcatch_event",
@@ -170,6 +212,10 @@ module.exports = {
               type: "category",
               label: "Editor properties",
               collapsed: true,
+              link: {
+                type: 'doc',
+                id: "api/overview/editor_properties_overview",
+              },
               items: [
                 "api/editor/autoplacement_property",
                 "api/editor/controls_property",
@@ -194,6 +240,10 @@ module.exports = {
               type: "category",
               label: "HistoryManager methods",
               collapsed: true,
+              link: {
+                type: 'doc',
+                id: "api/overview/historymanager_methods_overview",
+              },
               items: [
                 "api/historymanager/add_method",
                 "api/historymanager/disable_method",
@@ -208,6 +258,10 @@ module.exports = {
               type: "category",
               label: "HistoryManager properties",
               collapsed: true,
+              link: {
+                type: 'doc',
+                id: "api/overview/historymanager_properties_overview",
+              },
               items: [
                 "api/historymanager/disabled_property",
                 "api/historymanager/savedelay_property",
@@ -220,6 +274,14 @@ module.exports = {
         {
           type: "category",
           label: "Items API",
+          link: {
+            type: 'generated-index',
+            title: "Items API",
+            //description: '',
+            //slug: '/category/docusaurus-guides',
+            keywords: ['items'],
+            image: '/img/docusaurus.png',
+          },
           items: [
             "shapes/configuration_properties",
             "lines/configuration_properties",
@@ -233,17 +295,32 @@ module.exports = {
           type: "category",
           label: "Common API",
           collapsed: true,
+          link: {
+            type: 'generated-index',
+            title: "Common API",
+            //description: '',
+            //slug: '/category/docusaurus-guides',
+            keywords: ['common_api'],
+            image: '/img/docusaurus.png',
+          },
           items: [
             // Cell manager API
             {
               type: "category",
               label: "CellManager API",
               collapsed: true,
+              link: {
+                type: 'doc',
+                id: "api/cell_manager/index",
+              },
               items: [
-                "api/cell_manager/index",
                 {
                   type: "category",
                   label: "CellManager methods",
+                  link: {
+                    type: 'doc',
+                    id: "api/overview/cellmanager_methods_overview",
+                  },
                   items: [
                     "api/cell_manager/add_method",
                     "api/cell_manager/getcellid_method",
@@ -261,6 +338,10 @@ module.exports = {
                 {
                   type: "category",
                   label: "CellManager events",
+                  link: {
+                    type: 'doc',
+                    id: "api/overview/cellmanager_events_overview",
+                  },
                   items: [
                     "api/cell_manager/aftercellsadd_event",
                     "api/cell_manager/aftercellsmove_event",
@@ -280,11 +361,18 @@ module.exports = {
               type: "category",
               label: "DataCollection API",
               collapsed: true,
+              link: {
+                type: 'doc',
+                id: "api/data_collection/index",
+              },
               items: [
-                "api/data_collection/index",
                 {
                   type: "category",
                   label: "DataCollection methods",
+                  link: {
+                    type: 'doc',
+                    id: "api/overview/datacollection_methods_overview",
+                  },
                   items: [
                     "api/data_collection/add_method",
                     "api/data_collection/copy_method",
@@ -313,6 +401,10 @@ module.exports = {
                 {
                   type: "category",
                   label: "DataCollection events",
+                  link: {
+                    type: 'doc',
+                    id: "api/overview/datacollection_events_overview",
+                  },
                   items: [
                     "api/data_collection/afteradd_event",
                     "api/data_collection/beforeadd_event",
@@ -327,41 +419,35 @@ module.exports = {
             // Export
             {
               type: "category",
-              label: "Export API",
+              label: "Export methods",
               collapsed: true,
+              link: {
+                type: 'doc',
+                id: "api/export/index",
+              },
               items: [
-                "api/export/index",
-                {
-                  type: "category",
-                  label: "Export methods",
-                  items: [
-                    "api/export/pdf_method",
-                    "api/export/png_method", 
-                  ],
-                },
-              ]
+                "api/export/pdf_method",
+                "api/export/png_method", 
+              ],
             },
 
             // Inline editor 
             {
               type: "category",
-              label: "InlineEditor API",
+              label: "InlineEditor events",
               collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'api/inline_editor/index',
+              },
               items: [
-                "api/inline_editor/index",
-                {
-                  type: "category",
-                  label: "InlineEditor events",
-                  items: [
-                    "api/inline_editor/aftereditorclose_event",
-                    "api/inline_editor/aftereditorediting_event",
-                    "api/inline_editor/aftereditoropen_event",
-                    "api/inline_editor/beforeeditorclose_event",
-                    "api/inline_editor/beforeeditorediting_event",
-                    "api/inline_editor/beforeeditoropen_event", 
-                  ],
-                },
-              ]
+                "api/inline_editor/aftereditorclose_event",
+                "api/inline_editor/aftereditorediting_event",
+                "api/inline_editor/aftereditoropen_event",
+                "api/inline_editor/beforeeditorclose_event",
+                "api/inline_editor/beforeeditorediting_event",
+                "api/inline_editor/beforeeditoropen_event", 
+              ],
             },
       
             // Selection
@@ -369,11 +455,18 @@ module.exports = {
               type: "category",
               label: "Selection API",
               collapsed: true,
+              link: {
+                type: 'doc',
+                id: 'api/selection/index',
+              },
               items: [
-                "api/selection/index",
                 {
                   type: "category",
                   label: "Selection methods",
+                  link: {
+                    type: 'doc',
+                    id: "api/overview/selection_methods_overview",
+                  },
                   items: [
                     "api/selection/add_method",
                     "api/selection/getid_method",
@@ -385,6 +478,10 @@ module.exports = {
                 {
                   type: "category",
                   label: "Selection events",
+                  link: {
+                    type: 'doc',
+                    id: "api/overview/selection_events_overview",
+                  },
                   items: [
                     "api/selection/afterselect_event",
                     "api/selection/afterunselect_event",
@@ -404,12 +501,23 @@ module.exports = {
       type: "category",
       label: "Guides",
       collapsed: true,
+      link: {
+        type: 'doc',
+        id: 'guides/overview',
+      },
       items: [
-        "guides/overview",
         // Diagram Items
         {
           type: "category",
           label: "Diagram",
+          link: {
+            type: 'generated-index',
+            title: "Diagram",
+            //description: '',
+            //slug: '/category/docusaurus-guides',
+            keywords: ['diagram'],
+            image: '/img/docusaurus.png',
+          },
           items: [
             "guides/diagram/initialization",
             "guides/diagram/configuration",
@@ -419,45 +527,51 @@ module.exports = {
         {
           type: "category",
           label: "Diagram items",
+          link: {
+            type: 'generated-index',
+            title: "Diagram items",
+            //description: '',
+            //slug: '/category/docusaurus-guides',
+            keywords: ['diagram', 'items'],
+            image: '/img/docusaurus.png',
+          },
           items: [
             // Shapes
             {
               type: "category",
               label: "Shapes",
+              link: {
+                type: 'generated-index',
+                title: 'Shapes',
+                //description: '',
+                //slug: '/category/docusaurus-guides',
+                keywords: ['shapes'],
+                image: '/img/docusaurus.png',
+            },
               items: [
                 "shapes/default_shapes",
                 "shapes/custom_shape",
               ],
             },
             // Lines
-            {
-              type: "category",
-              label: "Lines",
-              items: [
-                "lines/index",
-              ],
-            },
+            'lines/index',
             // Groups
-            {
-              type: "category",
-              label: "Groups",
-              items: [
-                "groups/index",
-              ],
-            },
+            "groups/index",
             // Swimlanes
-            {
-              type: "category",
-              label: "Swimlanes",
-              items: [
-                "swimlanes/index",
-              ],
-            },
+            "swimlanes/index",
           ]
         },
         {
           type: "category",
           label: "Diagram Editor",
+          link: {
+            type: 'generated-index',
+            title: "Diagram editor",
+            //description: '',
+            //slug: '/category/docusaurus-guides',
+            keywords: ['diagram', 'editor'],
+            image: '/img/docusaurus.png',
+          },
           items: [
             "guides/diagram_editor/initialization",
             "guides/diagram_editor/toolbar",
