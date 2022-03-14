@@ -315,7 +315,9 @@ module.exports = {
                   label: "DataCollection events",
                   items: [
                     "api/data_collection/afteradd_event",
+                    "api/data_collection/afterremove_event",
                     "api/data_collection/beforeadd_event",
+                    "api/data_collection/beforeremove_event",
                     "api/data_collection/change_event",
                     "api/data_collection/load_event",
                     
