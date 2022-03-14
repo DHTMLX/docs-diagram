@@ -111,7 +111,7 @@ table tr:nth-child(2n) {
 }
 
 tr {
-    line-height: 1.2;
+    /*line-height: 1.2;*/
 }
 table {
     text-align: left;
