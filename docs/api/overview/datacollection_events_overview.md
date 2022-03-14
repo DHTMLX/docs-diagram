@@ -6,9 +6,11 @@ description: You can explore the DataCollection events in the documentation of t
 
 # DataCollection events overview
 
-| Name                                      | Description                                      |
-| :---------------------------------------- | :----------------------------------------------- |
-| [](../data_collection/afteradd_event.md)  | @getshort(../data_collection/afteradd_event.md)  |
-| [](../data_collection/beforeadd_event.md) | @getshort(../data_collection/beforeadd_event.md) |
-| [](../data_collection/change_event.md)    | @getshort(../data_collection/change_event.md)    |
-| [](../data_collection/load_event.md)      | @getshort(../data_collection/load_event.md)      |
+| Name                                         | Description                                         |
+| :------------------------------------------- | :-------------------------------------------------- |
+| [](../data_collection/afteradd_event.md)     | @getshort(../data_collection/afteradd_event.md)     |
+| [](../data_collection/afterremove_event.md)  | @getshort(../data_collection/afterremove_event.md)  |
+| [](../data_collection/beforeadd_event.md)    | @getshort(../data_collection/beforeadd_event.md)    |
+| [](../data_collection/beforeremove_event.md) | @getshort(../data_collection/beforeremove_event.md) |
+| [](../data_collection/change_event.md)       | @getshort(../data_collection/change_event.md)       |
+| [](../data_collection/load_event.md)         | @getshort(../data_collection/load_event.md)         |
