@@ -105,12 +105,13 @@ table {
     display: inline-table;
 }
 
+
 table tr:nth-child(2n) {
-    background-color: var(--ifm-table-background);
+    /*background-color: var(--ifm-table-background);*/
 }
 
 tr {
-    line-height: 1.2;
+    /*line-height: 1.2;*/
 }
 table {
     text-align: left;

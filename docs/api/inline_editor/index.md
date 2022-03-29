@@ -1,10 +1,10 @@
 ---
-sidebar_label: Overview
-title: InlineEditor Overview
+sidebar_label: InlineEditor events
+title: InlineEditor events overview
 description: You can have an overview of inline editor in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
 
-# InlineEditor overview
+# InlineEditor events overview
 
 The API set for controlling the process of editing the text of items by double-click on the text. The API can be used both in the diagram and in the editor.
 

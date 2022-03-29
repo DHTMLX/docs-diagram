@@ -26,7 +26,7 @@ You can choose shapes of desired types, link them by suitable connectors and bui
 
 ### Custom shapes
 
-You can easily create your own templates of shapes and use them to design any diagram you need. For example, it is possible to create such famous types of custom diagrams as:
+You can easily create [your own templates of shapes](/shapes/custom_shape/) and use them to design any diagram you need. For example, it is possible to create such famous types of custom diagrams as:
 
 | [Life Cycle Diagram](https://snippet.dhtmlx.com/y4k51owl) | [Venn Diagram](https://snippet.dhtmlx.com/2tzyfois) | [UML Class Diagram](https://snippet.dhtmlx.com/madymxt5) |
 | --------------------------------------------------------- | --------------------------------------------------- | -------------------------------------------------------- |
@@ -38,7 +38,7 @@ You can easily create your own templates of shapes and use them to design any di
 
 ### Groups
 
-You can draw simple or more complicated schemes by grouping shapes in different ways with the help of such an element of Diagram as a group. It is possible to create as one-level groups as nested groups, to configure their appearance and behavior. Check the details in the [Groups configuration](/diagram/groups/) article.
+You can draw simple or more complicated schemes by grouping shapes in different ways with the help of such an element of Diagram as a group. It is possible to create as one-level groups as nested groups, to configure their appearance and behavior. Check the details in the [Configuring groups](/groups/) article.
 
 | [Diagram. Default mode. Virtual private cloud architecture](https://snippet.dhtmlx.com/0hf8ahrb) |
 | ------------------------------------------------------------------------------------------------ |
@@ -46,7 +46,7 @@ You can draw simple or more complicated schemes by grouping shapes in different 
 
 ### Swimlanes
 
-Usage of swimlanes of the DHTMLX Diagram library lets you represent any process (be it a business process, manufacturing or service one, and any other processes) or its separate parts from start to finish.
+Usage of swimlanes of the DHTMLX Diagram library lets you represent any process (be it a business process, manufacturing or service one, and any other processes) or its separate parts from start to finish. Check the details in the [Configuring swimlanes](/swimlanes/) article.
 
 | [Diagram. Default mode. Swimlane template](https://snippet.dhtmlx.com/z6x5m3gb) |
 | ------------------------------------------------------------------------------- |

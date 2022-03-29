@@ -8,18 +8,18 @@ description: You can have an overview of Diagram API in the documentation of the
 
 ## Diagram methods
 
-| Name                                     | Description                               |
-| :--------------------------------------- | :---------------------------------------- |
-| [](api/diagram/addshape_method.md)       | @getshort(api/diagram/addshape_method.md) |
-| [](api/diagram/autoplace_method.md)      | @getshort(api/diagram/autoplace_method.md) |
-| [](api/diagram/collapseitem_method.md)   | @getshort(api/diagram/collapseitem_method.md) |
-| [](api/diagram/destructor_method.md)     | @getshort(api/diagram/destructor_method.md) |
-| [](api/diagram/expanditem_method.md)     | @getshort(api/diagram/expanditem_method.md) |
+| Name                                     | Description                                     |
+| :--------------------------------------- | :---------------------------------------------- |
+| [](api/diagram/addshape_method.md)       | @getshort(api/diagram/addshape_method.md)       |
+| [](api/diagram/autoplace_method.md)      | @getshort(api/diagram/autoplace_method.md)      |
+| [](api/diagram/collapseitem_method.md)   | @getshort(api/diagram/collapseitem_method.md)   |
+| [](api/diagram/destructor_method.md)     | @getshort(api/diagram/destructor_method.md)     |
+| [](api/diagram/expanditem_method.md)     | @getshort(api/diagram/expanditem_method.md)     |
 | [](api/diagram/getscrollstate_method.md) | @getshort(api/diagram/getscrollstate_method.md) |
-| [](api/diagram/locate_method.md)         | @getshort(api/diagram/locate_method.md) |
-| [](api/diagram/paint_method.md)          | @getshort(api/diagram/paint_method.md) |
-| [](api/diagram/scrollto_method.md)       | @getshort(api/diagram/scrollto_method.md) |
-| [](api/diagram/showitem_method.md)       | @getshort(api/diagram/showitem_method.md) |
+| [](api/diagram/locate_method.md)         | @getshort(api/diagram/locate_method.md)         |
+| [](api/diagram/paint_method.md)          | @getshort(api/diagram/paint_method.md)          |
+| [](api/diagram/scrollto_method.md)       | @getshort(api/diagram/scrollto_method.md)       |
+| [](api/diagram/showitem_method.md)       | @getshort(api/diagram/showitem_method.md)       |
 
 ## Diagram events
 
