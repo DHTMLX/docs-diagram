@@ -12,7 +12,6 @@ description: You can explore the Diagram properties in the documentation of the 
 | [](../diagram/defaults_property.md)         | @getshort(../diagram/defaults_property.md)         |
 | [](../diagram/defaultshapetype_property.md) | @getshort(../diagram/defaultshapetype_property.md) |
 | [](../diagram/exportstyles_property.md)     | @getshort(../diagram/exportstyles_property.md)     |
-| [](../diagram/gridstep_property.md)         | @getshort(../diagram/gridstep_property.md)         |
 | [](../diagram/lineconfig_property.md)       | @getshort(../diagram/lineconfig_property.md)       |
 | [](../diagram/linegap_property.md)          | @getshort(../diagram/linegap_property.md)          |
 | [](../diagram/margin_property.md)           | @getshort(../diagram/margin_property.md)           |

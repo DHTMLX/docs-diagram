@@ -8,6 +8,19 @@ description: You can learn a new information about DHTMLX JavaScript Diagram lib
 
 If you are updating Diagram from an older version, check [Migration to Newer Version](migration.md) for details.
 
+Version 5.0
+--------------
+
+Released on July 27, 2022
+
+### New functionality
+
+### Updates
+
+#### Diagram Editor
+
+- Improved design of [Grid area](guides/diagram_editor/grid_area.md). Now the distance between points in the grid area depends on the value of the grid step
+
 Version 4.2
 -----------------
 Released on March 3, 2022

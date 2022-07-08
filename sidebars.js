@@ -128,7 +128,6 @@ module.exports = {
               	"api/diagram/defaults_property",
               	"api/diagram/defaultshapetype_property",
               	"api/diagram/exportstyles_property",
-              	"api/diagram/gridstep_property",
               	"api/diagram/lineconfig_property",
               	"api/diagram/linegap_property",
               	"api/diagram/margin_property",

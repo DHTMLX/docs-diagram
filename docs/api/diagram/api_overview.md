@@ -64,7 +64,6 @@ description: You can have an overview of Diagram API in the documentation of the
 | [](api/diagram/defaults_property.md)         | @getshort(api/diagram/defaults_property.md)         |
 | [](api/diagram/defaultshapetype_property.md) | @getshort(api/diagram/defaultshapetype_property.md) |
 | [](api/diagram/exportstyles_property.md)     | @getshort(api/diagram/exportstyles_property.md)     |
-| [](api/diagram/gridstep_property.md)         | @getshort(api/diagram/gridstep_property.md)         |
 | [](api/diagram/lineconfig_property.md)       | @getshort(api/diagram/lineconfig_property.md)       |
 | [](api/diagram/linegap_property.md)          | @getshort(api/diagram/linegap_property.md)          |
 | [](api/diagram/margin_property.md)           | @getshort(api/diagram/margin_property.md)           |

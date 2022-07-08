@@ -10,6 +10,10 @@ Grid area is an area intended for editing a diagram. You can easily add new item
 
 In this section you will find what interface elements you have available for each diagram item depending on the mode the editor is initialized in. The section also explains how to facilitate ease of designing a diagram via using keyboard shortcuts or operating several selected items at once.
 
+:::note
+Distance between points in the Grid area depends on the value of the [grid step](guides/diagram_editor/right_panel.md) (from v5.0)
+:::
+
 ## Managing shapes
 
 ### Interface elements in the default mode
