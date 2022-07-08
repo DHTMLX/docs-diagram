@@ -135,6 +135,12 @@ After selecting an item in the grid area, you can update its attributes [via the
 
 You can customize the personal toolbar of shapes, groups, swimlanes according to your needs via the [shapeToolbar](../../../api/editor/shapetoolbar_property/) property of the editor.
 
+## Enabling/disabling coincidence lines
+
+From v5.0, the coincidence lines which simplify the process of dragging shapes are enabled by default. 
+
+If you need to change the width and color of the lines, or hide them at all, use the [magnetic](api/editor/magnetic_property.md) property of Editor.
+
 ## Using hotkeys
 
 There is a set of hotkeys you can use while creating a diagram in the editor:

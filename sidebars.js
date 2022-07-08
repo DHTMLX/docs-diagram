@@ -225,6 +225,7 @@ module.exports = {
                 "api/editor/itemsdraggable_property",
 				        "api/editor/lineconfig_property",
                 "api/editor/linegap_property",
+                "api/editor/magnetic_property",
                 "api/editor/reservedwidth_property",
                 "api/editor/scale_property",
                 "api/editor/scalepreview_property",

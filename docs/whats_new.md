@@ -15,6 +15,8 @@ Released on July 27, 2022
 
 ### New functionality
 
+- New [magnetic](api/editor/magnetic_property.md) property of Editor
+
 ### Updates
 
 #### Diagram Editor

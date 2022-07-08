@@ -71,6 +71,7 @@ editor.diagram.events.on("itemClick", (id, event) => {
 | [](api/editor/itemsdraggable_property.md) | @getshort(api/editor/itemsdraggable_property.md) |
 | [](api/editor/lineconfig_property.md)     | @getshort(api/editor/lineconfig_property.md)     |
 | [](api/editor/linegap_property.md)        | @getshort(api/editor/linegap_property.md)        |
+| [](api/editor/magnetic_property.md)       | @getshort(api/editor/magnetic_property.md)       |
 | [](api/editor/reservedwidth_property.md)  | @getshort(api/editor/reservedwidth_property.md)  |
 | [](api/editor/scale_property.md)          | @getshort(api/editor/scale_property.md)          |
 | [](api/editor/scalepreview_property.md)   | @getshort(api/editor/scalepreview_property.md)   |
