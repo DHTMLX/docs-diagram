@@ -61,8 +61,6 @@ The connection between the parent shape and its partner is always horizontal. Al
 | ------------------------------------------------------------------------------------------- |
 | ![](assets/orgchart_editor_draggable_partner.gif)                                           |
 
-
-
 ### Editor in the mindmap mode
 
 The interface of the editor initialized in the mindmap mode consists of three parts:

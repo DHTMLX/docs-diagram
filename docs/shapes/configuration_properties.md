@@ -245,6 +245,10 @@ When preparing a data set for shapes to load into the diagram in the mindmap mod
 
 **Related samples**: [Diagram editor. Mindmap mode. Emotions mind map](https://snippet.dhtmlx.com/lo1vm0e8)
 
+:::info
+Read the details in the [How to Create a JavaScript Mindmap Diagram with DHTMLX Library](https://dhtmlx.com/blog/create-javascript-mindmap-diagram-dhtmlx-library/) article
+:::
+
 ### Example
 
 ~~~js

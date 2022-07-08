@@ -145,13 +145,13 @@ If you need to change the width and color of the lines, or hide them at all, use
 
 There is a set of hotkeys you can use while creating a diagram in the editor:
 
-- **Ctrl+C** - to copy an item(s) (*in the default mode only*);
-- **Ctrl+V** - to paste an item(s) (*in the default mode only*);
+- **Ctrl(Cmd)+C => Ctrl(Cmd)+V** - to copy and paste an item(s) (*in the default mode only*);
+- **ALT+CTRL(Cmd)+С => ALT+CTRL(Cmd)+V** - to copy and paste styles of an item (added in v5.0);
 - **Shift+Left Click** - to select several items;
 - **Ctrl+A** or **Cmd+A** (for MAC) - to select all items;
 - **Ctrl+Z** - to revert the latest action;
 - **Del** - to delete an item(s);
-- **Arrows** - to move an item(s) left/right/up/down.
+- **Arrows** - to move an item(s) left/right/up/down;
 
 ## Manipulating multiple items
 
@@ -159,8 +159,8 @@ It is possible to select several diagram items via hovering them over with the l
 
 You can operate all the selected items at once, namely:
 
-- to create a copy of the items (*in the default mode only*);
-- to paste the items (*in the default mode only*);
+- to copy and paste items (*in the default mode only*); 
+- to copy and paste item's styles (added in v5.0);
 - to drag the items;
 - to delete the items.
 

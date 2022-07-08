@@ -15,13 +15,12 @@ Released on July 27, 2022
 
 ### New functionality
 
-- New [magnetic](api/editor/magnetic_property.md) property of Editor
+- Diagram Editor. New [`magnetic`](api/editor/magnetic_property.md) property
+- Diagram Editor. The ability to copy and paste styles of an item(s) via `ALT+CTRL(Cmd)+С => ALT+CTRL(Cmd)+V` (see the **[example](https://snippet.dhtmlx.com/klgvu3jq)**) 
 
 ### Updates
 
-#### Diagram Editor
-
-- Improved design of [Grid area](guides/diagram_editor/grid_area.md). Now the distance between points in the grid area depends on the value of the grid step
+- Diagram Editor. Improved design of [Grid area](guides/diagram_editor/grid_area.md). Now the distance between points in the grid area depends on the value of the grid step
 
 Version 4.2
 -----------------
