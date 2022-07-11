@@ -98,16 +98,18 @@ Starting from v3.0, the DHTMLX Diagram library lets you configure settings for a
 const diagram = new dhx.Diagram("diagram_container", {
     autoplacement: {
         mode: "edges",
-        graphPadding: 100
+        graphPadding: 100,
+        placeMode: "radial"
     }
 });
 diagram.autoPlace();
 ~~~
 
-The property can contain two options:
+The property can contain three options:
 
 - **mode** - (*string*) optional, the mode of connecting shapes, "direct" (by default) or "edges"
 - **graphPadding** - (*number*) optional, sets the distance between unconnected diagrams, "200" by default
+- **placeMode** - (*string*) sets the mode of placement of shapes, "orthogonal" (by default) or "radial"
 
 {{note The autoplacement will be applied only after the [](../../api/diagram/autoplace_method.md) method is applied. The autoplacement does not work if you use groups or swimlanes.}}
 
