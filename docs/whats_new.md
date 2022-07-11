@@ -30,6 +30,8 @@ Version 4.2
 -----------------
 Released on March 3, 2022
 
+<a href="https://dhtmlx.com/blog/dhtmlx-diagram-4-2-touch-support-default-settings-connector-lines-default-section-sets-editors-left-panel/" target="_blank">Review of release on the blog</a>
+
 ### New functionality
 
 - [Touch support](/guides/touch_support/)
@@ -49,6 +51,8 @@ Released on March 3, 2022
 Version 4.1
 ------------------
 Released on December 7, 2021
+
+<a href="https://dhtmlx.com/blog/dhtmlx-diagram-4-1-partners-assistants-org-charts-moving-shapes-children-connector-titles-much/" target="_blank">Review of release on the blog</a>
 
 ### New functionality
 
@@ -96,6 +100,8 @@ Released on September 16, 2021
 Version 4.0
 ------------------
 Released on September 7, 2021
+
+<a href="https://dhtmlx.com/blog/dhtmlx-diagram-4-0-groups-swimlanes-angular-react-vue-demos/" target="_blank">Review of release on the blog</a>
 
 ### New functionality
 
