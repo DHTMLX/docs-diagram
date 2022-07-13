@@ -135,11 +135,11 @@ After selecting an item in the grid area, you can update its attributes [via the
 
 You can customize the personal toolbar of shapes, groups, swimlanes according to your needs via the [shapeToolbar](../../../api/editor/shapetoolbar_property/) property of the editor.
 
-## Enabling/disabling coincident lines
+## Enabling/disabling snap lines
 
-From v5.0, the coincident lines which simplify the process of dragging shapes are enabled by default. 
+From v5.0, the Grid area is equipped with snap lines which will simplify the process of placing shapes symmetrically to each other. 
 
-If you need to change the width and color of the lines, or hide them at all, use the [magnetic](api/editor/magnetic_property.md) property of Editor.
+If you need to change the width and color of the lines, or to hide them at all, use the [magnetic](api/editor/magnetic_property.md) property of Editor.
 
 ## Using hotkeys
 

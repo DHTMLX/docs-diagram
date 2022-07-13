@@ -12,11 +12,11 @@ The **magnetic** property works only in the default mode of the editor (type:"de
 
 ### Description
 
-@short: Optional. Defines whether coincident lines should be shown when moving a shape. If so, allows configuring their appearance
+@short: Optional. Defines whether snap lines should be shown when moving a shape. If so, allows configuring their appearance
 
 
 :::tip
-Coincident lines appear when central or extreme lateral coordinates of the shape which you move coincide with central or extreme lateral coordinates of the static nearby shapes
+Snap lines appear when central or extreme lateral coordinates of the shape which you move coincide with central or extreme lateral coordinates of the static nearby shapes
 :::
 
 ### Usage
@@ -47,8 +47,8 @@ magnetic: {
 
 As an object, the **magnetic** property can include the following parameters:
 
-- `lineWidth` - (optional) the width of the coincident lines, 2 by default 
-- `lineColor` - (optional) the color of the coincident lines, "#000" by default
+- `lineWidth` - (optional) the width of the snap lines, 2 by default 
+- `lineColor` - (optional) the color of the snap lines, "#000" by default
 
 ### Example
 
@@ -64,6 +64,6 @@ const editor = new dhx.DiagramEditor("editor_container", {
 
 The result is shown in the GIF image below:
 
-![coincident_lines](../../assets/editor/coincidence_lines.gif)
+![snap_lines](../../assets/editor/coincidence_lines.gif)
 
 **Change log**: added in v5.0
