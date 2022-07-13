@@ -16,8 +16,9 @@ Released on July 27, 2022
 ### New functionality
 
 - Radial algorithm of autoplacement of shapes is added
-- Diagram Editor. New [`magnetic`](api/editor/magnetic_property.md) property
+- Diagram Editor. The new [`magnetic`](api/editor/magnetic_property.md) property
 - Diagram Editor. The ability to copy and paste styles of an item(s) via `ALT+CTRL(Cmd)+С => ALT+CTRL(Cmd)+V` (see the **[example](https://snippet.dhtmlx.com/klgvu3jq)**) 
+- Diagram Editor. The ability to [align and distribute multiple items](guides/diagram_editor/grid_area.md#aligning-multiple-items)
 
 ### Updates
 
