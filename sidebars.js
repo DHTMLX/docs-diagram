@@ -530,12 +530,8 @@ module.exports = {
           type: "category",
           label: "Diagram items",
           link: {
-            type: 'generated-index',
-            title: "Diagram items",
-            //description: '',
-            //slug: '/category/docusaurus-guides',
-            keywords: ['diagram', 'items'],
-            image: '/img/docusaurus.png',
+            type: 'doc',
+            id: "guides/items_index",
           },
           items: [
             // Shapes
