@@ -20,7 +20,8 @@ Released on July 27, 2022
 - Diagram Editor. The ability to configure snap lines via the new [`magnetic`](api/editor/magnetic_property.md) property
 - Diagram Editor. The ability to copy and paste styles of an item(s) via `ALT+CTRL(Cmd)+С => ALT+CTRL(Cmd)+V` (see the **[example](https://snippet.dhtmlx.com/klgvu3jq)**) 
 - Diagram Editor. The ability to [align and distribute multiple items](guides/diagram_editor/grid_area.md#aligning-multiple-items)
-- Now tooltips will appear when you hover over controls in the personal toolbar of items
+- Diagram Editor. Now tooltips will appear when you hover over controls in the personal toolbar of items
+- Diagram & Diagram Editor. The ability to set tooltips for custom toolbar controls
 - Extended list of [locale options](guides/localization.md) for localization of tooltips in the per-item toolbar
 
 ### Updates

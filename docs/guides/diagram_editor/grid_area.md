@@ -171,15 +171,15 @@ You can select and delete lines when the editor is initialized in the default mo
 
 You can align or distribute a group of items by selecting them and clicking the necessary control in the toolbar. The available controls are:
 
-| Control                              | Description                                 |
-| ------------------------------------ | ------------------------------------------- |
-| **Align left**                       | Aligns items to the left along the x-axis   |
-| **Align horizontally to the center** | Aligns items to the center along the x-axis |
-| **Align right**                      | Aligns items to the right along the x-axis  |
-| **Distribute horizontally**          | Distributes items evenly along the x-axis   |
-| **Distribute vertically**            | Distributes items evenly along the y-axis   |
-| **Align top**                        | Aligns items to the top along the y-axis    |
-| **Align vertically to the center**   | Aligns items to the center along the y-axis |
-| **Align bottom**                     | Aligns items to the bottom along the y-axis |
+| Control                           | Description                                 |
+| --------------------------------- | ------------------------------------------- |
+| **Align left**                    | Aligns items to the left along the x-axis   |
+| **Align horizontal centers**      | Aligns items to the center along the x-axis |
+| **Align right**                   | Aligns items to the right along the x-axis  |
+| **Distribute horizontal spacing** | Distributes items evenly along the x-axis   |
+| **Distribute vertical spacing**   | Distributes items evenly along the y-axis   |
+| **Align top**                     | Aligns items to the top along the y-axis    |
+| **Align vertical centers**        | Aligns items to the center along the y-axis |
+| **Align bottom**                  | Aligns items to the bottom along the y-axis |
 
-![](../../assets/editor/group_alignment.gif)
+![](../../assets/editor/group_align_and_distribution.gif)
