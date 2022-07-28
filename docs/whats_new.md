@@ -15,7 +15,7 @@ Released on July 27, 2022
 
 ### New functionality
 
-- Radial algorithm of autoplacement of shapes is added
+- Radial algorithm of auto-placement of shapes is added
 - Diagram Editor. [Snap lines](guides/diagram_editor/grid_area.md#enablingdisabling-snap-lines) for arrangement of shapes in the grid area with greater precision
 - Diagram Editor. The ability to configure snap lines via the new [`magnetic`](api/editor/magnetic_property.md) property
 - Diagram Editor. The ability to copy and paste styles of an item(s) via `ALT+CTRL(Cmd)+С => ALT+CTRL(Cmd)+V` (see the **[example](https://snippet.dhtmlx.com/klgvu3jq)**) 

@@ -16,7 +16,9 @@ const locale = {
     exportData: "Export Data",
     importData: "Import Data",
     resetChanges: "Reset Changes",
-    autoLayout: "Auto Layout",
+    autoLayout: "Auto Layout",,
+	orthogonal: "Orthogonal", // added in v5.0
+	radial: "Radial", // added in v5.0
 
 	shapeSections: "Shapes",
 	groupSections: "Groups",

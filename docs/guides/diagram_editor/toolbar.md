@@ -19,7 +19,7 @@ By default, the toolbar contains the following controls:
 - **historyManager** - to undo and redo changes;
 - **export** - to export the data of the diagram to the JSON format. The control works in tandem with the [](../../api/editor/exportdata_event.md) event;
 - **import** - to import the data from a JSON file to the diagram. The control works in tandem with the [](../../api/editor/importdata_event.md) event;
-- **autoLayout** - to arrange diagram shapes and connectors in the hierarchical structure automatically. The control works in tandem with the [](../../api/editor/autolayout_event.md) event;<br>*It works only in the default mode of Diagram and does not work if you use groups or swimlanes;*
+- **autoLayout** - to arrange diagram shapes and connectors either in the **orthogonal** or **radial** hierarchy automatically. The control works in tandem with the [](../../api/editor/autolayout_event.md) event;<br>*It works only in the default mode of Diagram and does not work if you use groups or swimlanes;*
 - **editManager** - to hide and show the panels of the editor. The control works in tandem with the [](../../api/editor/visibility_event.md) event;
 - **scale** - to zoom a diagram in the editor in and out. The control works in tandem with the [zoomIn](../../../api/editor/zoomin_event/) and [zoomOut](../../../api/editor/zoomout_event/) events.
 
