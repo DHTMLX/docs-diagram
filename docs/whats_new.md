@@ -24,7 +24,7 @@ Released on , 2022
 
 - [Snap lines](guides/diagram_editor/grid_area.md#enablingdisabling-snap-lines) for arrangement of shapes in the grid area with greater precision
 - The ability to configure snap lines via the new [`magnetic`](api/editor/magnetic_property.md) property
-- The ability to copy and paste styles of an item(s) via `ALT(Option)+CTRL(Cmd)+С => ALT(Option)+CTRL(Cmd)+V` (see the **[example](https://snippet.dhtmlx.com/klgvu3jq)**) 
+- The ability to copy and paste styles of an item(s) via `Alt (Option) + Ctrl (Cmd) + С` => `Alt (Option) + Ctrl (Cmd) + V` (see the **[example](https://snippet.dhtmlx.com/klgvu3jq)**) 
 - The ability to [align and distribute multiple items](guides/diagram_editor/grid_area.md#aligning-multiple-items)
 - Now tooltips will appear when you hover over controls in the personal toolbar of items
 - Extended list of [locale options](guides/localization.md) for localization of tooltips in the per-item toolbar

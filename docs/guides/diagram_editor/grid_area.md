@@ -145,13 +145,17 @@ If you need to change the width and color of the lines, or to hide them at all, 
 
 There is a set of hotkeys you can use while creating a diagram in the editor:
 
-- **Ctrl(Cmd)+C => Ctrl(Cmd)+V** - to copy and paste an item(s) (*in the default mode only*);
-- **ALT(Option)+CTRL(Cmd)+С => ALT(Option)+CTRL(Cmd)+V** - to copy and paste styles of an item (added in v5.0);
-- **Shift+Left Click** - to select several items;
-- **Ctrl+A** or **Cmd+A** (for MAC) - to select all items;
-- **Ctrl+Z** - to revert the latest action;
-- **Del** - to delete an item(s);
-- **Arrows** - to move an item(s) left/right/up/down;
+|Hotkey|Description|
+|---|---|
+|**Ctrl (Cmd) + C**|Copy an item(s) (*in the default mode only*)|
+|**Ctrl (Cmd) + V**|Paste an item(s) (*in the default mode only*)|
+|**Alt (Option) + Ctrl (Cmd) + С**|Copy styles of an item (added in v5.0)|
+|**Alt (Option) + Ctrl (Cmd) + V**|Paste styles of an item (added in v5.0)|
+|**Shift + Left Click**|Select several items|
+|**Ctrl (Cmd) + A**|Select all items|
+|**Ctrl + Z**|Revert the latest action|
+|**Del**|Delete an item(s)|
+|**Arrows**|Move an item(s) left/right/up/down|
 
 ## Manipulating multiple items
 
@@ -173,13 +177,13 @@ You can align or distribute a group of items by selecting them and clicking the 
 
 | Control                           | Description                                 |
 | --------------------------------- | ------------------------------------------- |
-| **Align left**                    | Aligns items to the left along the x-axis   |
-| **Align horizontal centers**      | Aligns items to the center along the x-axis |
-| **Align right**                   | Aligns items to the right along the x-axis  |
-| **Distribute horizontal spacing** | Distributes items evenly along the x-axis   |
-| **Distribute vertical spacing**   | Distributes items evenly along the y-axis   |
-| **Align top**                     | Aligns items to the top along the y-axis    |
-| **Align vertical centers**        | Aligns items to the center along the y-axis |
-| **Align bottom**                  | Aligns items to the bottom along the y-axis |
+| **Align left**                    | Align items to the left along the x-axis   |
+| **Align horizontal centers**      | Align items to the center along the x-axis |
+| **Align right**                   | Align items to the right along the x-axis  |
+| **Distribute horizontal spacing** | Distribute items evenly along the x-axis   |
+| **Distribute vertical spacing**   | Distribute items evenly along the y-axis   |
+| **Align top**                     | Align items to the top along the y-axis    |
+| **Align vertical centers**        | Align items to the center along the y-axis |
+| **Align bottom**                  | Align items to the bottom along the y-axis |
 
 ![](../../assets/editor/group_align_and_distribution.gif)
