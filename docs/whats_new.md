@@ -15,23 +15,34 @@ Released on July 27, 2022
 
 ### New functionality
 
-- Radial algorithm of auto-placement of shapes is added
-- Diagram Editor. [Snap lines](guides/diagram_editor/grid_area.md#enablingdisabling-snap-lines) for arrangement of shapes in the grid area with greater precision
-- Diagram Editor. The ability to configure snap lines via the new [`magnetic`](api/editor/magnetic_property.md) property
-- Diagram Editor. The ability to copy and paste styles of an item(s) via `ALT+CTRL(Cmd)+С => ALT+CTRL(Cmd)+V` (see the **[example](https://snippet.dhtmlx.com/klgvu3jq)**) 
-- Diagram Editor. The ability to [align and distribute multiple items](guides/diagram_editor/grid_area.md#aligning-multiple-items)
-- Diagram Editor. Now tooltips will appear when you hover over controls in the personal toolbar of items
-- Diagram & Diagram Editor. The ability to set tooltips for custom toolbar controls
+#### Diagram & Diagram Editor
+
+- Radial algorithm of auto-placement of shapes is added (check **Updates**)
+- The ability to set tooltips for custom toolbar controls (check **Updates**)
+
+#### Diagram Editor
+
+- [Snap lines](guides/diagram_editor/grid_area.md#enablingdisabling-snap-lines) for arrangement of shapes in the grid area with greater precision
+- The ability to configure snap lines via the new [`magnetic`](api/editor/magnetic_property.md) property
+- The ability to copy and paste styles of an item(s) via `ALT(Option)+CTRL(Cmd)+С => ALT(Option)+CTRL(Cmd)+V` (see the **[example](https://snippet.dhtmlx.com/klgvu3jq)**) 
+- The ability to [align and distribute multiple items](guides/diagram_editor/grid_area.md#aligning-multiple-items)
+- Now tooltips will appear when you hover over controls in the personal toolbar of items
 - Extended list of [locale options](guides/localization.md) for localization of tooltips in the per-item toolbar
 
 ### Updates
 
-- Diagram. The [`autoplacement()`](api/diagram/autoplacement_property.md) property is updated: the new **placeMode** parameter is added
-- Diagram. The [`autoPlace()`](api/diagram/autoplace_method.md) method is updated: the new **placeMode** parameter is added
-- Diagram. The [`toolbar`](api/diagram/toolbar_property.md) property is updated: the new **tooltip** parameter of the icon object is added
-- Diagram Editor. The [`autoplacement`](api/editor/autoplacement_property.md) property is updated: the new **placeMode** parameter is added
-- Diagram Editor. Improved design of [Grid area](guides/diagram_editor/grid_area.md). Now the distance between points in the grid area depends on the value of the grid step
-- Diagram Editor. The [`shapeToolbar`](api/editor/shapetoolbar_property.md) property is updated: the new **tooltip** parameter of the icon object is added
+#### Diagram
+
+- The [`autoplacement()`](api/diagram/autoplacement_property.md) property is updated (the new **placeMode** parameter is added) 
+- The [`autoPlace()`](api/diagram/autoplace_method.md) method is updated (the new **placeMode** parameter is added)
+- The [`toolbar`](api/diagram/toolbar_property.md) property is updated (the new **tooltip** parameter of the icon object is added)
+
+#### Diagram Editor
+
+- The [`autoplacement`](api/editor/autoplacement_property.md) property is updated (the new **placeMode** parameter is added)
+- The **Auto Layout** button of [Toolbar](guides/diagram_editor/toolbar.md) now provides two options for shapes' auto-placement: *Orthogonal* and *Radial*
+- The [`shapeToolbar`](api/editor/shapetoolbar_property.md) property is updated (the new **tooltip** parameter of the icon object is added)
+- Improved design of [Grid area](guides/diagram_editor/grid_area.md). Now the distance between points in the grid area depends on the value of the grid step
 
 Version 4.2
 -----------------

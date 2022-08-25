@@ -146,7 +146,7 @@ If you need to change the width and color of the lines, or to hide them at all, 
 There is a set of hotkeys you can use while creating a diagram in the editor:
 
 - **Ctrl(Cmd)+C => Ctrl(Cmd)+V** - to copy and paste an item(s) (*in the default mode only*);
-- **ALT+CTRL(Cmd)+С => ALT+CTRL(Cmd)+V** - to copy and paste styles of an item (added in v5.0);
+- **ALT(Option)+CTRL(Cmd)+С => ALT(Option)+CTRL(Cmd)+V** - to copy and paste styles of an item (added in v5.0);
 - **Shift+Left Click** - to select several items;
 - **Ctrl+A** or **Cmd+A** (for MAC) - to select all items;
 - **Ctrl+Z** - to revert the latest action;
