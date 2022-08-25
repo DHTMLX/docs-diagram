@@ -11,7 +11,7 @@ If you are updating Diagram from an older version, check [Migration to Newer Ver
 Version 5.0
 --------------
 
-Released on July 27, 2022
+Released on , 2022
 
 ### New functionality
 
