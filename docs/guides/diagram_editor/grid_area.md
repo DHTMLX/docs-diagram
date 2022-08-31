@@ -164,16 +164,16 @@ It is possible to select several diagram items via hovering them over with the l
 You can operate all the selected items at once, namely:
 
 - to copy and paste items (*in the default mode only*); 
-- to copy and paste item's styles (added in v5.0);
 - to drag the items;
 - to delete the items;
-- [to align a group of items](#aligning-multiple-items) (added in v5.0).
+- to paste the copied item's styles
+- [to align a group of items](#aligning-multiple-items) (*in the default mode only*).
 
 You can select and delete lines when the editor is initialized in the default mode only.
 
 ### Aligning multiple items
 
-You can align or distribute a group of items by selecting them and clicking the necessary control in the toolbar. The available controls are:
+From v5.0, you can align or distribute a group of items by selecting them and clicking the necessary control in the toolbar. The available controls are:
 
 | Control                           | Description                                 |
 | --------------------------------- | ------------------------------------------- |
@@ -186,4 +186,7 @@ You can align or distribute a group of items by selecting them and clicking the 
 | **Align vertical centers**        | Align items to the center along the y-axis |
 | **Align bottom**                  | Align items to the bottom along the y-axis |
 
+The feature is available only in the default mode of Diagram Editor. 
+
 ![](../../assets/editor/group_align_and_distribution.gif)
+

@@ -16,7 +16,7 @@ description: You can explore the Editor properties in the documentation of the D
 | [](../editor/gridstep_property.md)       | @getshort(../editor/gridstep_property.md)       |
 | [](../editor/itemsdraggable_property.md) | @getshort(../editor/itemsdraggable_property.md) |
 | [](../editor/lineconfig_property.md)     | @getshort(../editor/lineconfig_property.md)     |
-| [](../editor/linegap_property.md)        | @getshort(../editor/linegap_property.md)        |
+| [~~lineGap~~](../editor/linegap_property.md)        | Deprecated! ~~@getshort(../editor/linegap_property.md)~~        |
 | [](../editor/magnetic_property.md)       | @getshort(../editor/magnetic_property.md)       |
 | [](../editor/reservedwidth_property.md)  | @getshort(../editor/reservedwidth_property.md)  |
 | [](../editor/scale_property.md)          | @getshort(../editor/scale_property.md)          |

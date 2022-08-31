@@ -6,11 +6,55 @@ description: You can learn about the Migration to Newer Versions in the document
 
 # Migration to newer versions
 
+4.2 -> 5.0
+--------------
+
+### Diagram API
+
+The **lineGap** property of Diagram is deprecated and no longer supported. Instead, use the **lineGap** parameter of the [lineConfig](diagram/api/diagram/lineconfig_property.md) property.
+
+~~~js {3} title="Before v5.0"
+const diagram = new dhx.Diagram("diagram_container", { 
+    type: "default",
+    lineGap: 30
+});
+~~~
+
+~~~js {3-5} title="From v5.0"
+const diagram = new dhx.Diagram("diagram_container", { 
+    type: "default",
+    lineConfig: {
+        lineGap: 30
+    },
+    // other config parameters
+});
+~~~
+
+### Editor API
+
+The **lineGap** property of Diagram Editor is deprecated and no longer supported. Instead, use the **lineGap** parameter inside the [lineConfig](diagram/api/editor/lineconfig_property.md) property.
+
+~~~js {3} title="Before v5.0"
+const editor = new dhx.DiagramEditor("editor_container", {
+    type: "default",
+    lineGap: 30
+});
+~~~
+
+~~~js {3-5} title="From v5.0"
+const editor = new dhx.DiagramEditor("editor_container", {
+    type: "default",
+    lineConfig: {
+        lineGap: 30
+    },
+    // other config parameters
+});
+~~~
 
 4.1 -> 4.2
 --------------
 
-### API
+### Diagram API
 
 In v4.2, the **defaultLinkType** property is deprecated. 
 

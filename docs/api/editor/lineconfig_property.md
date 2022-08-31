@@ -21,6 +21,7 @@ lineConfig?: {
     lineType?: "dash" | "line",
     lineDirection?: "backArrow" | "forwardArrow",
     arrowsHidden?: boolean,
+    lineGap?: number
 };
 ~~~
 
@@ -31,9 +32,10 @@ The **lineConfig** object contains the following parameters:
 - `lineType` - (optional) the default type of the new connector lines
 - `lineDirection` - (optional) the direction of the new connector lines
 - `arrowsHidden` - (optional) defines whether the arrows of the new connector lines should be hidden
+- `lineGap` - (optional) sets the distance to the right-angled bend of a connector line
 
 :::note
-The **lineDirection** and **arrowsHidden** parameters work only in the default mode of the editor (*type: "default"*)
+The **lineDirection**, **arrowsHidden**, and **lineGap** parameters work only in the default mode of the editor (*type: "default"*)
 :::
 
 ### Default config
@@ -42,24 +44,33 @@ The **lineDirection** and **arrowsHidden** parameters work only in the default m
 lineConfig: {
     lineType:"line",
     lineDirection: "forwardArrow",
-    arrowsHidden: false
+    arrowsHidden: false,
+    lineGap: 10
 }
 ~~~
 
 ### Example
 
-~~~js {2-6}
+~~~js {2-7}
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     lineConfig: {
         lineType: "dash",
         lineDirection: "backArrow",
         arrowsHidden: true,
+        lineGap: 50
     },
     // other config parameters
 });
 ~~~
 
-**Change log**: Added in v4.2
+The result of applying the **lineGap** property is shown in the image below:
+
+![](../../assets/linegap_config.png)
+
+**Change log**: 
+
+- The **lineGap** parameter is added in v5.0 (check the Migration article)
+- Added in v4.2
 
 **Related sample:** [Diagram editor. Setting the default type for newly added connector lines](https://snippet.dhtmlx.com/22abzn5m)
