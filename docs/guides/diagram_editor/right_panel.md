@@ -16,7 +16,9 @@ Right panel can contain different sidebar options for editing various attributes
 
 ### Grid step
 
-Use to modify the step of moving a shape. The option can be hidden via the **gridStep** attribute of the [controls](../../../api/editor/controls_property/) property of the editor.
+Use to modify the step of moving a shape. When you change the value of the grid step, the distance between points in the Grid area will be also changed
+
+The option can be hidden via the **gridStep** attribute of the [controls](../../../api/editor/controls_property/) property of the editor.
 
 ![](../../assets/editor/grid_step.png)
 

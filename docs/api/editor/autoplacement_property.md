@@ -49,7 +49,8 @@ autoplacement: {
 const editor = new dhx.DiagramEditor("editor_container", {
     autoplacement: {
         graphPadding: 100,
-        mode: "edges"
+        mode: "edges",
+        placeMode: "radial"
     }
 });
 ~~~
@@ -90,7 +91,7 @@ Shapes are arranged along vertical and horizontal lines
 ![](../../assets/direct_ortogonal.png)
 
 
-- **orthogonal** arrangement with lines in the **"edges"** mode
+- **"orthogonal"** arrangement with lines in the **"edges"** mode
 
 ![](../../assets/edges_ortogonal.png)
 

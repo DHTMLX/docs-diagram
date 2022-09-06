@@ -75,7 +75,7 @@ Shapes are arranged along vertical and horizontal lines
 ![](../../assets/direct_ortogonal.png)
 
 
-- **orthogonal** arrangement with lines in the **"edges"** mode
+- **"orthogonal"** arrangement with lines in the **"edges"** mode
 
 ![](../../assets/edges_ortogonal.png)
 

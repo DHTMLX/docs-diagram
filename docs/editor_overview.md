@@ -16,7 +16,9 @@ The interface of the editor initialized in the default mode consists of four fun
 - grid area
 - right panel
 
-To build a diagram, you need either to drag the necessary items from the left panel or create a copy of the items via the per-item toolbar. You can adjust the attributes of the items via [sidebar options of the right panel](../guides/diagram_editor/right_panel/).
+To build a diagram, you need either to drag the necessary items from the left panel or create a copy of the items via the per-item toolbar. 
+
+You can adjust the attributes of the items via [sidebar options of the right panel](../guides/diagram_editor/right_panel/). To accelerate the styling process, use `Alt (Option) + Ctrl (Cmd) + С` combination to copy styles of an item and `Alt (Option) + Ctrl (Cmd) + V` to apply these styles to the chosen items.
 
 | [Diagram. Default mode. Wide flowchart](https://snippet.dhtmlx.com/4d4k3o8p) |
 | ---------------------------------------------------------------------------- |
@@ -37,7 +39,7 @@ The interface of the editor initialized in the org chart mode consists of three 
 
 To build a diagram in the org chart mode of the editor, you need to select a shape and add a new child for it. The shapes are draggable from one parent item to another. The moved item is dragged with all its child items.
 
-You can adjust the attributes of the shapes via the available [sidebar options of the right panel](../guides/diagram_editor/right_panel/).
+You can adjust the attributes of the shapes via the available [sidebar options of the right panel](../guides/diagram_editor/right_panel/). To accelerate the styling process, use `Alt (Option) + Ctrl (Cmd) + С` combination to copy styles of an item and `Alt (Option) + Ctrl (Cmd) + V` to apply these styles to the chosen items.
 
 | [Diagram editor. Org chart mode. Basic initialization](https://snippet.dhtmlx.com/og4qm3ja) |
 | ------------------------------------------------------------------------------------------- |
@@ -72,7 +74,7 @@ The interface of the editor initialized in the mindmap mode consists of three pa
 
 To build a diagram in the mindmap mode of the editor, you need to select a shape and add a new child for it. The shapes are draggable from one parent item to another. The moved item is dragged with all its child items.
 
-You can adjust the attributes of the shapes via the available [sidebar options of the right panel](../guides/diagram_editor/right_panel/).
+You can adjust the attributes of the shapes via the available [sidebar options of the right panel](../guides/diagram_editor/right_panel/). To accelerate the styling process, use `Alt (Option) + Ctrl (Cmd) + С` combination to copy styles of an item and `Alt (Option) + Ctrl (Cmd) + V` to apply these styles to the chosen items.
 
 | [Diagram editor. Mindmap mode. Emotions mind map](https://snippet.dhtmlx.com/lo1vm0e8) |
 | -------------------------------------------------------------------------------------- |

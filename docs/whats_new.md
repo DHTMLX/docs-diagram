@@ -33,15 +33,15 @@ Released on , 2022
 
 #### Diagram
 
-- The [`autoplacement()`](api/diagram/autoplacement_property.md) property is updated (the new **placeMode** parameter is added) 
-- The [`autoPlace()`](api/diagram/autoplace_method.md) method is updated (the new **placeMode** parameter is added)
-- The [`toolbar`](api/diagram/toolbar_property.md) property is updated (the new **tooltip** parameter of the icon object is added)
+- The [`autoplacement()`](api/diagram/autoplacement_property.md) property is updated (the `placeMode` parameter is added) 
+- The [`autoPlace()`](api/diagram/autoplace_method.md) method is updated (the `placeMode` parameter is added)
+- The [`toolbar`](api/diagram/toolbar_property.md) property is updated (the `tooltip` parameter of the icon object is added)
 
 #### Diagram Editor
 
-- The [`autoplacement`](api/editor/autoplacement_property.md) property is updated (the new **placeMode** parameter is added)
+- The [`autoplacement`](api/editor/autoplacement_property.md) property is updated (the `placeMode` parameter is added)
 - The **Auto Layout** button of [Toolbar](guides/diagram_editor/toolbar.md) now provides two options for shapes' auto-placement: *Orthogonal* and *Radial*
-- The [`shapeToolbar`](api/editor/shapetoolbar_property.md) property is updated (the new **tooltip** parameter of the icon object is added)
+- The [`shapeToolbar`](api/editor/shapetoolbar_property.md) property is updated (the `tooltip` parameter of the icon object is added)
 - Improved design of [Grid area](guides/diagram_editor/grid_area.md). Now the distance between points in the grid area depends on the value of the grid step
 
 Version 4.2
