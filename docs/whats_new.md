@@ -11,7 +11,7 @@ If you are updating Diagram from an older version, check [Migration to Newer Ver
 Version 5.0
 --------------
 
-Released on , 2022
+Released on September 7, 2022
 
 ### Breaking changes
 
@@ -41,6 +41,10 @@ The new release introduces some changes to the `lineGap` property. Check the [Mi
 - The ability to set tooltips for [custom toolbar icons](guides/diagram_editor/grid_area.md#configuring-toolbar-per-item):
     - the `tooltip` parameter of the icon object is added to the [`shapeToolbar`](api/editor/shapetoolbar_property.md) property
 - Improved design of [Grid area](guides/diagram_editor/grid_area.md). Now the distance between points in the grid area depends on the value of the grid step
+
+### Fixes
+
+- Fix the issue which caused a loading icon not to disappear from the right panel of Editor after loading a file
 
 Version 4.2
 -----------------
