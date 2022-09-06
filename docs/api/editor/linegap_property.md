@@ -18,7 +18,7 @@ The property is available only in the default mode of the editor (*type:"default
 
 ### Description
 
-@short: Optional. Adds an offset for two connected shapes, and fills the gap with an additional line
+@short: Optional. Sets the distance to the right-angled bend of a connector line
 
 ### Usage
 
