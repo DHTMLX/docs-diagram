@@ -13,6 +13,10 @@ Version 5.0
 
 Released on , 2022
 
+### Breaking changes
+
+The new release introduces some changes to the `lineGap` property. Check the [Migration article](migration.md#42---50) to keep in step with the latest version.
+
 ### New functionality
 
 #### Diagram
