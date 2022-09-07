@@ -26,10 +26,11 @@ As an array, the **shapeToolbar** property can include:
     - in the org chart mode: *"add" | "horizontal" | "vertical" | "remove"*;
     - in the mindmap mode: *"add" | "addLeft" | "addRight" | "remove"*;
 - a set of icon objects. Each icon object can have the following properties:
-    - `id: string` -  the id of an icon. Note, that the usage of the default names of the toolbar controls as ids of new controls is prohibited;
-    - `content: string` - the content of the icon. It can contain an HTML element with the name of the icon class;
-    - `check: function` - checks whether the icon should be applied to the shape. The function takes a shape object and returns *true*, if the icon will be rendered for this shape;
-    - `css: function` - the function which returns the name(s) of CSS class(es) that should be applied to the shape.
+    - `id: string` -  (required) the id of an icon. Note, that the usage of the default names of the toolbar controls as ids of new controls is prohibited;
+    - `content: string` - (required) the content of the icon. It can contain an HTML element with the name of the icon class;
+    - `check: function` - (optional) checks whether the icon should be applied to the shape. The function takes a shape object and returns *true*, if the icon will be rendered for this shape;
+    - `css: function` - (optional) the function which returns the name(s) of CSS class(es) that should be applied to the shape
+    - `tooltip: string` - (optional) a tooltip which appears on hovering over the icon
 
 {{note
 The most recommended option is to enable the default set of controls by specifying *true* value in the **shapeToolbar** array and create your own control(s) by adding an icon object to the array.}}
@@ -53,10 +54,14 @@ const editor = new dhx.DiagramEditor("editor_container", {
     shapeToolbar: [
         "add", 
         "remove", 
-        {id: "info", content:"<i class='dxi dxi-download'></i>"}
+        {id: "info", content:"<i class='dxi dxi-download'></i>", tooltip: "Download"}
     ],
 });
 ~~~
+
+**Change log:**
+
+- The **tooltip** parameter of the icon object is added in v5.0
 
 **Related articles**:  [Grid Area](../../../guides/diagram_editor/grid_area/)
 

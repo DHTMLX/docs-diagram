@@ -36,6 +36,7 @@ To perform the auto-placement, you need to make use of the [](../api/diagram/aut
 - **config** - (*object*) optional, an object with configuration settings of the auto-placement. The object contains two optional properties:
     - **mode** - (*string*) the mode of connecting shapes, "direct" (by default) or "edges"
     - **graphPadding** - (*number*) sets the distance between unconnected diagrams, *"200"* by default
+    - **placeMode** - (*string*) sets the mode of placement of shapes, "orthogonal" (by default) or "radial"
 
 ~~~js
 const diagram = new dhx.Diagram("diagram_container");
@@ -44,6 +45,7 @@ diagram.data.parse(data);
 diagram.autoPlace({
 	mode: "edges",
     graphPadding: 100,
+    placeMode: "radial"
 });
 ~~~
 

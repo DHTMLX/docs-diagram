@@ -19,7 +19,8 @@ The **autoplacement** property works only in the default mode of the diagram and
 ~~~js
 autoplacement?: {
 	mode?: "direct" | "edges",
-	graphPadding?: number
+	graphPadding?: number,
+	placeMode?: "orthogonal" | "radial"
 };
 ~~~
 
@@ -28,14 +29,16 @@ autoplacement?: {
 The **autoplacement** object has the following parameters:
 
 - `mode` - (optional) the mode of connecting shapes, "direct" (by default) or "edges"
-- `graphPadding` - (optional) sets the distance between unconnected diagrams, *"200"* by default
+- `graphPadding` - (optional) sets the distance between two or more unconnected diagrams, *"200"* by default
+- `placeMode` - (optional) sets the mode of placement of shapes, "orthogonal" (by default) or "radial"
 
 ### Default config
 
 ~~~js
 autoplacement: {
 	mode: "direct",
-	graphPadding: 200
+	graphPadding: 200,
+	placeMode: "orthogonal"
 }
 ~~~
 
@@ -79,7 +82,39 @@ The connector lines in the "edges" mode can be:
 
 ![](../../assets/edges_mode.png)
 
-**Change log**: Added in v3.0
+
+## Modes of placement of shapes
+
+### "orthogonal" mode
+
+Shapes are arranged along vertical and horizontal lines
+
+- **"orthogonal"** arrangement with lines in the **"direct"** mode
+
+![](../../assets/direct_ortogonal.png)
+
+
+- **"orthogonal"** arrangement with lines in the **"edges"** mode
+
+![](../../assets/edges_ortogonal.png)
+
+
+### "radial" mode
+
+Shapes are arranged on imaginary circles relative to the central shape, i.e. a shape with the most connections
+
+- **"radial"** arrangement with lines in the **"direct"** mode
+
+![](../../assets/direct_radial.png)
+
+- **"radial"** arrangement with lines in the **"edges"** mode
+
+![](../../assets/edges_radial.png)
+
+**Change log**:
+
+- The **placeMode** parameter is added in v5.0
+- The **autoplacement** property is added in v3.0
 
 **Related articles**:
 

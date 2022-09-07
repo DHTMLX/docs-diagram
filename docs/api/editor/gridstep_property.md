@@ -10,6 +10,8 @@ description: You can learn about the gridStep property of editor in the document
 
 @short: Optional. Sets the size of a grid step that defines the step of moving an item
 
+When you change the value of the grid step, the distance between points in the Grid area will be also changed
+
 ### Usage
 
 ~~~js
@@ -37,3 +39,5 @@ const editor = new dhx.DiagramEditor("editor_container", {
 :::note
 We recommend that you use arrows while moving an item in the editor. This way sets exactly one grid step of moving the item, whereas using a mouse can cause shift the item to several grid steps.
 :::
+
+**Related article:** [Right panel](guides/diagram_editor/right_panel.md)

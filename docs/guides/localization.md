@@ -16,7 +16,9 @@ const locale = {
     exportData: "Export Data",
     importData: "Import Data",
     resetChanges: "Reset Changes",
-    autoLayout: "Auto Layout",
+    autoLayout: "Auto Layout",,
+	orthogonal: "Orthogonal", // added in v5.0
+	radial: "Radial", // added in v5.0
 
 	shapeSections: "Shapes",
 	groupSections: "Groups",
@@ -63,9 +65,40 @@ const locale = {
 	menuAddRowDown: "Add row down",
 	menuAddColumnRight: "Add column right",
 	menuAddColumnLeft: "Add column left",
+	menuDelete: "Delete",
+	menuAddPartner: "Add partner",
+	menuAddAssistant: "Add assistant",
+	menuAlignChildrenVertically: "Align children vertically",
+	menuAlignChildrenHorizontally: "Align children horizontally",
 
     imageUpload: "Click to upload",
-    emptyState: "Select a shape or a connector"		
+    emptyState: "Select a shape or a connector"
+	
+	 // the following locale options were added in v5.0
+	alignHorizontalLeft: "Align left",
+	alignHorizontalCenter: "Align horizontal centers",
+	alignHorizontalRight: "Align right",
+	alignHorizontalDistribution: "Distribute horizontal spacing",
+	alignVerticalDistribution: "Distribute vertical spacing",
+	alignVerticalTop: "Align top",
+	alignVerticalMiddle: "Align vertical centers",
+	alignVerticalBottom: "Align bottom",
+
+	addShape: "Add shape",
+	menu: "Menu",
+	remove: "Delete",
+	addLeftShape: "Add left shape",
+	addRightShape: "Add right shape",
+
+	lineTextAutoPositionEnable: "Enable text autoposition",
+	lineTextAutoPositionDisable: "Disable text autoposition",
+	addLineText: "Add text",
+	addColumnLast: "Add column",
+	addRowLast: "Add row",
+	copy: "Duplicate",
+	connect: "Connect",
+	removePoint: "Delete point",
+
 };
 
 dhx.i18n.setLocale("diagram", locale);

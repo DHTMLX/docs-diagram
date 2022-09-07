@@ -18,7 +18,8 @@ toolbar?: [
 	    id: string,
         content: string,
 	    check?: function,
-	    css?: function
+	    css?: function,
+        tooltip?: string
     },
     {...} // other icon objects
 ];
@@ -32,6 +33,7 @@ The **toolbar** array includes a set of icon objects. Each icon object can have 
 - `content` - (required) the content of the icon. It can contain an HTML element with the name of the icon class
 - `check` - (optional) checks whether the icon should be applied to the item. The function takes an item object and returns *true*, if the icon will be rendered for this item
 - `css` - (optional) the function which returns the name(s) of CSS class(es) that should be applied to the item
+- `tooltip` - (optional) a tooltip which appears on hovering over the icon
 
 ### Example
 
@@ -44,14 +46,20 @@ const diagram = new dhx.Diagram("diagram_container", {
     },
     toolbar: [{
         id: "download",
-        content: "<i class='dxi dxi-download'></i>"
+        content: "<i class='dxi dxi-download'></i>",
+        tooltip: "Download",
     },
     {
         id: "info",
-        content: "<i class='dxi dxi-information-outline'></i>"
+        content: "<i class='dxi dxi-information-outline'></i>",
+        tooltip: "Info",
     }]
 });
 ~~~
+
+**Change log:**
+
+- The **tooltip** parameter is added in v5.0
 
 **Related articles**:
 

@@ -128,7 +128,6 @@ module.exports = {
               	"api/diagram/defaults_property",
               	"api/diagram/defaultshapetype_property",
               	"api/diagram/exportstyles_property",
-              	"api/diagram/gridstep_property",
               	"api/diagram/lineconfig_property",
               	"api/diagram/linegap_property",
               	"api/diagram/margin_property",
@@ -226,6 +225,7 @@ module.exports = {
                 "api/editor/itemsdraggable_property",
 				        "api/editor/lineconfig_property",
                 "api/editor/linegap_property",
+                "api/editor/magnetic_property",
                 "api/editor/reservedwidth_property",
                 "api/editor/scale_property",
                 "api/editor/scalepreview_property",
@@ -530,12 +530,8 @@ module.exports = {
           type: "category",
           label: "Diagram items",
           link: {
-            type: 'generated-index',
-            title: "Diagram items",
-            //description: '',
-            //slug: '/category/docusaurus-guides',
-            keywords: ['diagram', 'items'],
-            image: '/img/docusaurus.png',
+            type: 'doc',
+            id: "guides/items_index",
           },
           items: [
             // Shapes
