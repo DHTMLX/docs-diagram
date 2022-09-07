@@ -13,6 +13,8 @@ Version 5.0
 
 Released on September 7, 2022
 
+<a href="https://dhtmlx.com/blog/dhtmlx-diagram-5-0/" target="_blank">Review of release on the blog</a>
+
 ### Breaking changes
 
 The new release introduces some changes to the `lineGap` property. Check the [Migration article](migration.md#42---50) to keep in step with the latest version.
