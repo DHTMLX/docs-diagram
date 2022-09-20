@@ -163,7 +163,7 @@ const shapeExists = diagram.data.exists("1");
 
 ### Selecting an item
 
-To select items, you need firstly [enable selection](../../guides/diagram/configuration/#selecting-items) for the diagram and then call the [](../api/selection/add_method.md) method of the **selection** object to select a desired item.
+To select items, you need firstly [enable selection](../../guides/diagram/configuration/#selecting-items) for the diagram and then call the [add()](api/selection/add_method.md) method of the **selection** object to select a desired item.
 
 ~~~js
 const diagram = new dhx.Diagram("diagram_container", { select: true });

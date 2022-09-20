@@ -261,7 +261,7 @@ The new update introduces some changes and improvements. Check the [Migration](.
 - Ability [to configure sidebar options for editing attributes of the custom shapes in the right panel of the editor](../guides/diagram_editor/right_panel/#configuring-options-for-editing-custom-shapes) via the `properties` attribute of the [addShape()](../api/diagram/addshape_method/) method
 - [Ability to customize sections in the left panel of the Editor](../guides/diagram_editor/left_panel/#custom-sections)
 - [Possibility to customize the appearance of shapes rendered in the left panel of the Editor](../guides/diagram_editor/left_panel/#setting-shape-preview) via the [preview](../shapes/configuration_properties/#properties-specific-for-the-default-mode) property of the shape object
-- Ability [to select, copy, paste, delete, move several shapes in the Editor]((../guides/diagram_editor/grid_area/#manipulating-multiple-items))
+- Ability [to select, copy, paste, delete, move several shapes in the Editor](../guides/diagram_editor/grid_area/#manipulating-multiple-items)
 - Ability [to select and delete several connector lines](../guides/diagram_editor/grid_area/#manipulating-multiple-items) in the editor which is initialized in the default mode
 - Ability to import data from a JSON file to the Editor via the ["Import Data"](../guides/diagram_editor/toolbar/) button of the toolbar 
 - The [destructor()](../api/diagram/destructor_method/) method is added
