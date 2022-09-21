@@ -189,7 +189,7 @@ module.exports = {
             },
             items: [{
                     label: 'Examples',
-                    href: 'https://snippet.dhtmlx.com/xdvi4fek?text=%23diagram',
+                    href: 'https://snippet.dhtmlx.com/xdvi4fek?tag=diagram',
                     position: 'right',
                 },
                 {
@@ -220,7 +220,7 @@ module.exports = {
                         },
                         {
                             label: 'Examples',
-                            href: 'https://snippet.dhtmlx.com/xdvi4fek?text=%23diagram',
+                            href: 'https://snippet.dhtmlx.com/xdvi4fek?tag=diagram',
                             position: 'right',
                         },
                         {
