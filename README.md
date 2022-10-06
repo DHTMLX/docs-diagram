@@ -33,7 +33,7 @@ $ yarn start
 
 [Blog](https://dhtmlx.com/blog/tag/diagram/)
 
-[Forum](https://forum.dhtmlx.com/c/widgets/diagram/)
+[Forum](https://forum.dhtmlx.com/c/diagram/)
 
 ## Follow us
 
