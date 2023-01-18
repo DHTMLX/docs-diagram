@@ -189,12 +189,12 @@ module.exports = {
             },
             items: [{
                     label: 'Examples',
-                    href: 'https://snippet.dhtmlx.com/xdvi4fek?text=%23diagram',
+                    href: 'https://snippet.dhtmlx.com/xdvi4fek?tag=diagram',
                     position: 'right',
                 },
                 {
                     label: 'Forum',
-                    href: 'https://forum.dhtmlx.com/c/widgets/diagram/',
+                    href: 'https://forum.dhtmlx.com/c/diagram/',
                     position: 'right'
                 },
                 {
@@ -220,7 +220,7 @@ module.exports = {
                         },
                         {
                             label: 'Examples',
-                            href: 'https://snippet.dhtmlx.com/xdvi4fek?text=%23diagram',
+                            href: 'https://snippet.dhtmlx.com/xdvi4fek?tag=diagram',
                             position: 'right',
                         },
                         {
@@ -229,7 +229,7 @@ module.exports = {
                         },
                         {
                             label: 'Forum',
-                            href: 'https://forum.dhtmlx.com/c/widgets/diagram/',
+                            href: 'https://forum.dhtmlx.com/c/diagram/',
                             position: 'right'
                         },
                     ],
@@ -286,7 +286,7 @@ module.exports = {
                 docs: {
                     sidebarPath: require.resolve('./sidebars.js'),
                     // Please change this to your repo.
-                    //editUrl: 'https://github.com/DHTMLX/docs-diagram/edit/master/',
+                    editUrl: 'https://github.com/DHTMLX/docs-diagram/edit/master/',
                     routeBasePath: '/',
                 },
                 // blog: {

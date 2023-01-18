@@ -29,11 +29,11 @@ $ yarn start
 
 [Download DHTMLX Diagram](https://dhtmlx.com/docs/products/dhtmlxDiagram/download.shtml)
 
-[Live demos](https://snippet.dhtmlx.com/xdvi4fek?mode=wide&text=#diagram)
+[Live demos](https://snippet.dhtmlx.com/xdvi4fek?mode=wide&tag=diagram)
 
 [Blog](https://dhtmlx.com/blog/tag/diagram/)
 
-[Forum](https://forum.dhtmlx.com/c/widgets/diagram/)
+[Forum](https://forum.dhtmlx.com/c/diagram/)
 
 ## Follow us
 
