@@ -55,6 +55,10 @@ const data = [
         toSide?: "top" | "bottom" | "left" | "right" | "center",
         cornersRadius?: number,
         customGap?: number,
+        points?: [
+            { x: number, y: number, custom?: boolean },
+            // more point's objects
+        ],
         title?: {
             fontSize?: number | string, // 14 by default
             lineHeight?: number | string, // 14 by default
@@ -107,6 +111,10 @@ When preparing a data set for lines to load into the diagram in the default mode
 - `toSide` - (optional) the side of the shape to which a different shape will be attached ("*top*", "*bottom*", "*left*", "*right*", "*center*")
 - `cornersRadius` - (optional) the radius of rounding corners of a connector
 - `customGap` - (optional) sets the value of the [](../api/diagram/linegap_property.md) property for the line
+- `points` - (optional) sets an array with point's objects for a line. Each object contains the following properties:
+    - `x` - (required) the x coordinate of the point
+    - `y` - (required) the y coordinate of the point
+    - `custom` - (optional) defines whether the point is fixed. If *true*, the position of the point can be changed only after interaction with it
 - `title` - (optional) sets text items of a line. The title property presents an object with the following properties:
   - `fontSize` - (optional) the size of the font in pixels, 14 by default
   - `lineHeight` - (optional) the height of a line, 14 by default

@@ -8,6 +8,20 @@ description: You can learn a new information about DHTMLX JavaScript Diagram lib
 
 If you are updating Diagram from an older version, check [Migration to Newer Version](migration.md) for details.
 
+Version 5.0.1
+--------------
+
+Released on January 19, 2023
+
+### Fixes
+  
+- Diagram Editor. Fix the issue which caused lines not always being drawn in their places if data was exported and then loaded again
+    - Now it is possible to define the coordinates for lines in the default mode (new [`points`](diagram/lines/configuration_properties.md#properties-specific-for-the-default-mode) property of the line object) 
+- Diagram Editor. Fix the issue with dragging of shapes in the grid after changing the zoom level
+- Fix the error thrown after clicking on the "Auto layout" button in the absence of shapes
+- Fix the issue with display of [default settings](diagram/api/diagram/defaults_property.md) after creation of lines via the editor
+- Fix the issue with scale of Diagram/Diagram Editor appeared when auto-placing shapes in the "radial" mode 
+
 Version 5.0
 --------------
 
