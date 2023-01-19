@@ -11,7 +11,7 @@ If you are updating Diagram from an older version, check [Migration to Newer Ver
 Version 5.0.1
 --------------
 
-Released on January ..., 2023
+Released on January 19, 2023
 
 ### Fixes
   
