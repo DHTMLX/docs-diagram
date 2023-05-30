@@ -8,6 +8,20 @@ description: You can learn a new information about DHTMLX JavaScript Diagram lib
 
 If you are updating Diagram from an older version, check [Migration to Newer Version](migration.md) for details.
 
+Version 5.0.2 
+--------------
+
+Released on May 30, 2023
+
+### Fixes
+
+- Diagram Editor. Fix the issue with custom points not moving during a multi select move
+- Diagram Editor. Fix the impossibility to link a shape to itself
+- Fix the problem with exporting a default diagram without [exportStyles](/diagram/api/diagram/exportstyles_property/)
+- Fix the issue with the promiz.js library that caused an error with the setImmediate() method definition on importing the sources 
+- Fix path formation of the URL in the Export object 
+- Types for export are added
+
 Version 5.0.1
 --------------
 
