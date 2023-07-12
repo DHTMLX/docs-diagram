@@ -8,6 +8,15 @@ description: You can learn a new information about DHTMLX JavaScript Diagram lib
 
 If you are updating Diagram from an older version, check [Migration to Newer Version](migration.md) for details.
 
+Version 5.0.3
+-------------
+
+Released on July 12, 2023
+
+### Fixes
+
+- Fix the issue when calling of the [autoPlace()](/diagram/api/diagram/autoplace_method/) method after data parsing caused an error 
+
 Version 5.0.2 
 --------------
 
