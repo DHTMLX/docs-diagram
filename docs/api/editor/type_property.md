@@ -22,15 +22,15 @@ Diagram Editor can be initialized in one of three modes:
 
 - **type:"default"** is used to initialize the editor in the default mode:
 
-<iframe src="https://snippet.dhtmlx.com/xshe9ut7?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="200"></iframe>
+<iframe src="https://snippet.dhtmlx.com/xshe9ut7?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
 - **type:"org"** is used to initialize the editor in the org chart mode:
 
-<iframe src="https://snippet.dhtmlx.com/og4qm3ja?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="200"></iframe>
+<iframe src="https://snippet.dhtmlx.com/og4qm3ja?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
 - **type:"mindmap"** is used to initialize the editor in the mindmap mode:
 
-<iframe src="https://snippet.dhtmlx.com/lo1vm0e8?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="200"></iframe>
+<iframe src="https://snippet.dhtmlx.com/lo1vm0e8?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
 
 **Related articles**: 
