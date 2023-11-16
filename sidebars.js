@@ -140,136 +140,349 @@ module.exports = {
             },
           ]
         },
-
-        // Editor API
+// !!!!!!!!!!!!!!!!!!!!!!!!!! Serhii Pylypchuk start
+        // Diagram Editor API
         {
           type: "category",
-          label: "Diagram Editor API",
+          label: "!!Diagram Editor API",
           collapsed: true,
           link: {
-            type: 'doc',
-            id: "api/editor/api_overview",
+            type: 'generated-index',
+            title: "!!Diagram Editor API",
           },
           items: [
+            
+            // Editor API / Common API (looks better)
             {
               type: "category",
-              label: "Editor methods",
+              label: "!!Editor API",
               collapsed: true,
               link: {
-                type: 'doc',
-                id: "api/overview/editor_methods_overview",
+                type: 'generated-index',
+                title: "!!Editor API"
               },
               items: [
-                "api/editor/import_method",
-                "api/editor/paint_method",
-                "api/editor/parse_method",
-                "api/editor/serialize_method",
-                "api/editor/setviewmode_method",
-                "api/editor/zoomin_method",
-                "api/editor/zoomout_method",
-              ],
-            },
-            {
-              type: "category",
-              label: "Editor events",
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: "api/overview/editor_events_overview",
-              },
-              items: [
-                "api/editor/aftergroupmove_event",
-                "api/editor/afteritemcatch_event",
-                "api/editor/afteritemmove_event",
-                "api/editor/afterlinetitlemove_event",
-                "api/editor/aftershapeiconclick_event",
-                "api/editor/aftershapemove_event",
-                "api/editor/applybutton_event",
-                "api/editor/autolayout_event",
-                "api/editor/beforegroupmove_event",
-                "api/editor/beforeitemcatch_event",
-                "api/editor/beforeitemmove_event",
-                "api/editor/beforelinetitlemove_event",
-                "api/editor/beforeshapeiconclick_event",
-                "api/editor/beforeshapemove_event",
-                "api/editor/changegridstep_event",
-                "api/editor/exportdata_event",
-                "api/editor/groupmoveend_event",
-                "api/editor/importdata_event",
-                "api/editor/itemmoveend_event",
-                "api/editor/itemtarget_event",
-                "api/editor/linetitlemoveend_event",
-                "api/editor/resetbutton_event",
-                "api/editor/shapemoveend_event",
-                "api/editor/shaperesize_event",
-                "api/editor/visibility_event",
-                "api/editor/zoomin_event",
-                "api/editor/zoomout_event",
+                // Editor Methods
+                {
+                  type: "category",
+                  label: "!!Editor methods",
+                  collapsed: true,
+                  link: {
+                    type: 'generated-index',
+                    title: "!!Editor methods"
+                  },
+                  items: [
+                    "api/diagram_editor/editor/methods/import_method",
+                    "api/diagram_editor/editor/methods/paint_method",
+                    "api/diagram_editor/editor/methods/parse_method",
+                    "api/diagram_editor/editor/methods/serialize_method",
+                    "api/diagram_editor/editor/methods/setviewmode_method",
+                    "api/diagram_editor/editor/methods/zoomin_method",
+                    "api/diagram_editor/editor/methods/zoomout_method",
+                  ],
+                },
+                // Editor Events
+                {
+                  type: "category",
+                  label: "!!Editor events",
+                  collapsed: true,
+                  link: {
+                    type: 'generated-index',
+                    title: "!!Editor events"
+                  },
+                  items: [
+                    "api/diagram_editor/editor/events/aftergroupmove_event",
+                    "api/diagram_editor/editor/events/afteritemcatch_event",
+                    "api/diagram_editor/editor/events/afteritemmove_event",
+                    "api/diagram_editor/editor/events/afterlinetitlemove_event",
+                    "api/diagram_editor/editor/events/aftershapeiconclick_event",
+                    "api/diagram_editor/editor/events/aftershapemove_event",
+                    "api/diagram_editor/editor/events/applybutton_event",
+                    "api/diagram_editor/editor/events/autolayout_event",
+                    "api/diagram_editor/editor/events/beforegroupmove_event",
+                    "api/diagram_editor/editor/events/beforeitemcatch_event",
+                    "api/diagram_editor/editor/events/beforeitemmove_event",
+                    "api/diagram_editor/editor/events/beforelinetitlemove_event",
+                    "api/diagram_editor/editor/events/beforeshapeiconclick_event",
+                    "api/diagram_editor/editor/events/beforeshapemove_event",
+                    "api/diagram_editor/editor/events/changegridstep_event",
+                    "api/diagram_editor/editor/events/exportdata_event",
+                    "api/diagram_editor/editor/events/groupmoveend_event",
+                    "api/diagram_editor/editor/events/importdata_event",
+                    "api/diagram_editor/editor/events/itemmoveend_event",
+                    "api/diagram_editor/editor/events/itemtarget_event",
+                    "api/diagram_editor/editor/events/linetitlemoveend_event",
+                    "api/diagram_editor/editor/events/resetbutton_event",
+                    "api/diagram_editor/editor/events/shapemoveend_event",
+                    "api/diagram_editor/editor/events/shaperesize_event",
+                    "api/diagram_editor/editor/events/visibility_event",
+                    "api/diagram_editor/editor/events/zoomin_event",
+                    "api/diagram_editor/editor/events/zoomout_event",
+                  ]
+                },
+                // Editor Properties
+                {
+                  type: "category",
+                  label: "!!Editor properties",
+                  collapsed: true,
+                  link: {
+                    type: 'generated-index',
+                    title: "!!Editor properties"
+                  },
+                  items: [
+                    "api/diagram_editor/editor/config/autoplacement_property",
+                    "api/diagram_editor/editor/config/controls_property",
+                    "api/diagram_editor/editor/config/defaults_property",
+                    "api/diagram_editor/editor/config/editmode_property",
+                    "api/diagram_editor/editor/config/gappreview_property",
+                    "api/diagram_editor/editor/config/gridstep_property",
+                    "api/diagram_editor/editor/config/itemsdraggable_property",
+                    "api/diagram_editor/editor/config/lineconfig_property",
+                    "api/diagram_editor/editor/config/linegap_property",
+                    "api/diagram_editor/editor/config/magnetic_property",
+                    "api/diagram_editor/editor/config/reservedwidth_property",
+                    "api/diagram_editor/editor/config/scale_property",
+                    "api/diagram_editor/editor/config/scalepreview_property",
+                    "api/diagram_editor/editor/config/shapebarwidth_property",
+                    "api/diagram_editor/editor/config/shapesections_property",
+                    "api/diagram_editor/editor/config/shapetoolbar_property",
+                    "api/diagram_editor/editor/config/shapetype_property",
+                    "api/diagram_editor/editor/config/type_property",
+                  ]
+                },
               ]
             },
+
+            // History Manager API
             {
               type: "category",
-              label: "Editor properties",
+              label: "!!History manager API",
               collapsed: true,
               link: {
-                type: 'doc',
-                id: "api/overview/editor_properties_overview",
+                type: 'generated-index',
+                title: "!!History manager API"
               },
               items: [
-                "api/editor/autoplacement_property",
-                "api/editor/controls_property",
-                "api/editor/defaults_property",
-                "api/editor/editmode_property",
-                "api/editor/gappreview_property",
-                "api/editor/gridstep_property",
-                "api/editor/itemsdraggable_property",
-				        "api/editor/lineconfig_property",
-                "api/editor/linegap_property",
-                "api/editor/magnetic_property",
-                "api/editor/reservedwidth_property",
-                "api/editor/scale_property",
-                "api/editor/scalepreview_property",
-                "api/editor/shapebarwidth_property",
-                "api/editor/shapesections_property",
-                "api/editor/shapetoolbar_property",
-                "api/editor/shapetype_property",
-                "api/editor/type_property",
+                // History Manager Methods
+                {
+                  type: "category",
+                  label: "!!History manager methods",
+                  collapsed: true,
+                  link: {
+                    type: 'generated-index',
+                    title: "!!History manager methods"
+                  },
+                  items: [
+                    "api/diagram_editor/historymanager/methods/add_method",
+                    "api/diagram_editor/historymanager/methods/disable_method",
+                    "api/diagram_editor/historymanager/methods/enable_method",
+                    "api/diagram_editor/historymanager/methods/isredo_method",
+                    "api/diagram_editor/historymanager/methods/redo_method",
+                    "api/diagram_editor/historymanager/methods/reset_method",
+                  ],
+                },
+                // History Manager Properties
+                {
+                  type: "category",
+                  label: "!!History manager properties",
+                  collapsed: true,
+                  link: {
+                    type: 'generated-index',
+                    title: "!!History manager properties"
+                  },
+                  items: [
+                    "api/diagram_editor/historymanager/config/disabled_property",
+                    "api/diagram_editor/historymanager/config/savedelay_property",
+                  ]
+                },
               ]
             },
+
+            // Copy Manager API
             {
               type: "category",
-              label: "HistoryManager methods",
+              label: "!!Copy manager API",
               collapsed: true,
               link: {
-                type: 'doc',
-                id: "api/overview/historymanager_methods_overview",
+                type: 'generated-index',
+                title: "!!Copy manager API"
               },
               items: [
-                "api/historymanager/add_method",
-                "api/historymanager/disable_method",
-                "api/historymanager/enable_method",
-                "api/historymanager/isredo_method",
-                "api/historymanager/redo_method",
-                "api/historymanager/reset_method",
-                "api/historymanager/undo_method",
+                // Copy Manager Methods
+                {
+                  type: "category",
+                  label: "!!Copy manager methods",
+                  collapsed: true,
+                  link: {
+                    type: 'generated-index',
+                    title: "!!Copy manager methods"
+                  },
+                  items: [
+                    "api/diagram_editor/copymanager/methods/some_method",
+                  ],
+                },
+                // Copy Manager Properties
+                {
+                  type: "category",
+                  label: "!!Copy manager properties",
+                  collapsed: true,
+                  link: {
+                    type: 'generated-index',
+                    title: "!!Copy manager properties"
+                  },
+                  items: [
+                    "api/diagram_editor/copymanager/config/some_property",
+                  ],
+                },
               ]
             },
+
+            // View API
             {
               type: "category",
-              label: "HistoryManager properties",
+              label: "!!View API",
               collapsed: true,
               link: {
-                type: 'doc',
-                id: "api/overview/historymanager_properties_overview",
+                type: 'generated-index',
+                title: "!!View API"
               },
               items: [
-                "api/historymanager/disabled_property",
-                "api/historymanager/savedelay_property",
+                // Copy Manager Methods
+                {
+                  type: "category",
+                  label: "!!View methods",
+                  collapsed: true,
+                  link: {
+                    type: 'generated-index',
+                    title: "!!View methods"
+                  },
+                  items: [
+                    "api/diagram_editor/view/methods/some_method",
+                  ],
+                },
+                // View Events
+                {
+                  type: "category",
+                  label: "!!View events",
+                  collapsed: true,
+                  link: {
+                    type: 'generated-index',
+                    title: "!!View events"
+                  },
+                  items: [
+                    "api/diagram_editor/view/events/some_event",
+                  ],
+                },
               ]
-            }
+            },
+
+            // Toolbar API
+            {
+              type: "category",
+              label: "!!Toolbar API",
+              collapsed: true,
+              link: {
+                type: 'generated-index',
+                title: "!!Toolbar API"
+              },
+              items: [
+                // Toolbar Methods
+                {
+                  type: "category",
+                  label: "!!Toolbar methods",
+                  collapsed: true,
+                  link: {
+                    type: 'generated-index',
+                    title: "!!Toolbar methods"
+                  },
+                  items: [
+                    "api/diagram_editor/toolbar/methods/some_method",
+                  ],
+                },
+                // Toolbar Properties
+                {
+                  type: "category",
+                  label: "!!Toolbar properties",
+                  collapsed: true,
+                  link: {
+                    type: 'generated-index',
+                    title: "!!Toolbar properties"
+                  },
+                  items: [
+                    "api/diagram_editor/toolbar/config/some_property",
+                  ],
+                },
+                // Toolbar Events
+                {
+                  type: "category",
+                  label: "!!Toolbar events",
+                  collapsed: true,
+                  link: {
+                    type: 'generated-index',
+                    title: "!!Toolbar events"
+                  },
+                  items: [
+                    "api/diagram_editor/toolbar/events/some_event",
+                  ],
+                },
+              ]
+            },
+
+            // Editbar API
+            {
+              type: "category",
+              label: "!!Editbar API",
+              collapsed: true,
+              link: {
+                type: 'generated-index',
+                title: "!!Editbar API"
+              },
+              items: [
+                // Editbar Methods
+                {
+                  type: "category",
+                  label: "!!Editbar methods",
+                  collapsed: true,
+                  link: {
+                    type: 'generated-index',
+                    title: "!!Editbar methods"
+                  },
+                  items: [
+                    "api/diagram_editor/editbar/methods/some_method",
+                  ],
+                },
+                // Editbar Properties
+                {
+                  type: "category",
+                  label: "!!Editbar properties",
+                  collapsed: true,
+                  link: {
+                    type: 'generated-index',
+                    title: "!!Editbar properties"
+                  },
+                  items: [
+                    "api/diagram_editor/editbar/config/some_property",
+                  ],
+                },
+                // Editbar Events
+                {
+                  type: "category",
+                  label: "!!Editbar events",
+                  collapsed: true,
+                  link: {
+                    type: 'generated-index',
+                    title: "!!Editbar events"
+                  },
+                  items: [
+                    "api/diagram_editor/editbar/events/some_event",
+                  ],
+                },
+              ]
+            },
           ]
         },
 
+// !!!!!!!!!!!!!!!!!!!!!!!!!! Serhii Pylypchuk end
         // Items API
         {
           type: "category",
