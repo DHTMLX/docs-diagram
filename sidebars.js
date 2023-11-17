@@ -568,11 +568,11 @@ module.exports = {
                 },
               ]
             },
-      
+      // !!!!!! Masha Rudenko start
             // Data collection API
             {
               type: "category",
-              label: "DataCollection API",
+              label: "!!DataCollection API",
               collapsed: true,
               link: {
                 type: 'doc',
@@ -581,7 +581,7 @@ module.exports = {
               items: [
                 {
                   type: "category",
-                  label: "DataCollection methods",
+                  label: "!!DataCollection methods",
                   link: {
                     type: 'doc',
                     id: "api/overview/datacollection_methods_overview",
@@ -630,6 +630,7 @@ module.exports = {
                 },
               ]
             },
+     // !!!!!! Masha Rudenko end
       
             // Export
             {
