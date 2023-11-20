@@ -364,23 +364,6 @@ module.exports = {
                   ],
                 },
 
-                // View Properties
-                {
-                  type: "category",
-                  label: "!!View properties",
-                  collapsed: true,
-                  link: {
-                    type: 'generated-index',
-                    title: "View properties"
-                  },
-                  items: [
-                    "api/diagram_editor/view/config/editbar_property",
-                    "api/diagram_editor/view/config/shapebar_property",
-                    "api/diagram_editor/view/config/toolbar_property",
-                    "api/diagram_editor/view/config/some_property", //Template
-                  ],
-                },
-
                 // View Events
                 {
                   type: "category",
