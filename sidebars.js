@@ -236,6 +236,7 @@ module.exports = {
                     "api/diagram_editor/editor/config/defaults_property",
                     //"api/diagram_editor/editor/config/editmode_property", !!!Deprecated
                     //"api/diagram_editor/editor/config/gappreview_property", !!!Deprecated
+                    "api/diagram_editor/editor/config/grid_property",
                     "api/diagram_editor/editor/config/gridstep_property",
                     "api/diagram_editor/editor/config/itemsdraggable_property",
                     "api/diagram_editor/editor/config/lineconfig_property",
