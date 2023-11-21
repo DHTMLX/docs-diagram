@@ -148,7 +148,7 @@ module.exports = {
           collapsed: true,
           link: {
             type: 'generated-index',
-            title: "!!Diagram Editor API",
+            title: "Diagram Editor API",
           },
           items: [
             
@@ -159,7 +159,7 @@ module.exports = {
               collapsed: true,
               link: {
                 type: 'generated-index',
-                title: "!!Editor API"
+                title: "Editor API"
               },
               items: [
                 // Editor Methods
@@ -169,16 +169,17 @@ module.exports = {
                   collapsed: true,
                   link: {
                     type: 'generated-index',
-                    title: "!!Editor methods"
+                    title: "Editor methods"
                   },
                   items: [
+                    //"api/diagram_editor/editor/methods/setviewmode_method", !!!Deprecated
                     "api/diagram_editor/editor/methods/import_method",
                     "api/diagram_editor/editor/methods/paint_method",
                     "api/diagram_editor/editor/methods/parse_method",
                     "api/diagram_editor/editor/methods/serialize_method",
-                    "api/diagram_editor/editor/methods/setviewmode_method",
                     "api/diagram_editor/editor/methods/zoomin_method",
                     "api/diagram_editor/editor/methods/zoomout_method",
+                    
                   ],
                 },
                 // Editor Events
@@ -188,7 +189,7 @@ module.exports = {
                   collapsed: true,
                   link: {
                     type: 'generated-index',
-                    title: "!!Editor events"
+                    title: "Editor events"
                   },
                   items: [
                     "api/diagram_editor/editor/events/aftergroupmove_event",
@@ -197,25 +198,25 @@ module.exports = {
                     "api/diagram_editor/editor/events/afterlinetitlemove_event",
                     "api/diagram_editor/editor/events/aftershapeiconclick_event",
                     "api/diagram_editor/editor/events/aftershapemove_event",
-                    "api/diagram_editor/editor/events/applybutton_event",
-                    "api/diagram_editor/editor/events/autolayout_event",
+                    //"api/diagram_editor/editor/events/applybutton_event", !!!Deprecated
+                    //"api/diagram_editor/editor/events/autolayout_event", !!!Deprecated
                     "api/diagram_editor/editor/events/beforegroupmove_event",
                     "api/diagram_editor/editor/events/beforeitemcatch_event",
                     "api/diagram_editor/editor/events/beforeitemmove_event",
                     "api/diagram_editor/editor/events/beforelinetitlemove_event",
                     "api/diagram_editor/editor/events/beforeshapeiconclick_event",
                     "api/diagram_editor/editor/events/beforeshapemove_event",
-                    "api/diagram_editor/editor/events/changegridstep_event",
-                    "api/diagram_editor/editor/events/exportdata_event",
+                    //"api/diagram_editor/editor/events/changegridstep_event", !!!Deprecated
+                    //"api/diagram_editor/editor/events/exportdata_event", !!!Deprecated
                     "api/diagram_editor/editor/events/groupmoveend_event",
-                    "api/diagram_editor/editor/events/importdata_event",
+                    //"api/diagram_editor/editor/events/importdata_event", !!!Deprecated
                     "api/diagram_editor/editor/events/itemmoveend_event",
                     "api/diagram_editor/editor/events/itemtarget_event",
                     "api/diagram_editor/editor/events/linetitlemoveend_event",
-                    "api/diagram_editor/editor/events/resetbutton_event",
+                    //"api/diagram_editor/editor/events/resetbutton_event", !!!Deprecated
                     "api/diagram_editor/editor/events/shapemoveend_event",
                     "api/diagram_editor/editor/events/shaperesize_event",
-                    "api/diagram_editor/editor/events/visibility_event",
+                    //"api/diagram_editor/editor/events/visibility_event", !!!Deprecated
                     "api/diagram_editor/editor/events/zoomin_event",
                     "api/diagram_editor/editor/events/zoomout_event",
                   ]
@@ -227,24 +228,24 @@ module.exports = {
                   collapsed: true,
                   link: {
                     type: 'generated-index',
-                    title: "!!Editor properties"
+                    title: "Editor properties"
                   },
                   items: [
                     "api/diagram_editor/editor/config/autoplacement_property",
-                    "api/diagram_editor/editor/config/controls_property",
+                    //"api/diagram_editor/editor/config/controls_property", !!!Deprecated
                     "api/diagram_editor/editor/config/defaults_property",
-                    "api/diagram_editor/editor/config/editmode_property",
-                    "api/diagram_editor/editor/config/gappreview_property",
+                    //"api/diagram_editor/editor/config/editmode_property", !!!Deprecated
+                    //"api/diagram_editor/editor/config/gappreview_property", !!!Deprecated
                     "api/diagram_editor/editor/config/gridstep_property",
                     "api/diagram_editor/editor/config/itemsdraggable_property",
                     "api/diagram_editor/editor/config/lineconfig_property",
                     "api/diagram_editor/editor/config/linegap_property",
                     "api/diagram_editor/editor/config/magnetic_property",
-                    "api/diagram_editor/editor/config/reservedwidth_property",
+                    //"api/diagram_editor/editor/config/reservedwidth_property", !!!Deprecated
                     "api/diagram_editor/editor/config/scale_property",
-                    "api/diagram_editor/editor/config/scalepreview_property",
-                    "api/diagram_editor/editor/config/shapebarwidth_property",
-                    "api/diagram_editor/editor/config/shapesections_property",
+                    //"api/diagram_editor/editor/config/scalepreview_property", !!!Deprecated
+                    //"api/diagram_editor/editor/config/shapebarwidth_property", !!!Deprecated
+                    //"api/diagram_editor/editor/config/shapesections_property", !!!Deprecated
                     "api/diagram_editor/editor/config/shapetoolbar_property",
                     "api/diagram_editor/editor/config/shapetype_property",
                     "api/diagram_editor/editor/config/type_property",
@@ -260,7 +261,7 @@ module.exports = {
               collapsed: true,
               link: {
                 type: 'generated-index',
-                title: "!!History manager API"
+                title: "History manager API"
               },
               items: [
                 // History Manager Methods
@@ -270,7 +271,7 @@ module.exports = {
                   collapsed: true,
                   link: {
                     type: 'generated-index',
-                    title: "!!History manager methods"
+                    title: "History manager methods"
                   },
                   items: [
                     "api/diagram_editor/historymanager/methods/add_method",
@@ -288,7 +289,7 @@ module.exports = {
                   collapsed: true,
                   link: {
                     type: 'generated-index',
-                    title: "!!History manager properties"
+                    title: "History manager properties"
                   },
                   items: [
                     "api/diagram_editor/historymanager/config/disabled_property",
@@ -305,7 +306,7 @@ module.exports = {
               collapsed: true,
               link: {
                 type: 'generated-index',
-                title: "!!Copy manager API"
+                title: "Copy manager API"
               },
               items: [
                 // Copy Manager Methods
@@ -315,7 +316,7 @@ module.exports = {
                   collapsed: true,
                   link: {
                     type: 'generated-index',
-                    title: "!!Copy manager methods"
+                    title: "Copy manager methods"
                   },
                   items: [
                     "api/diagram_editor/copymanager/methods/some_method",
@@ -328,7 +329,7 @@ module.exports = {
                   collapsed: true,
                   link: {
                     type: 'generated-index',
-                    title: "!!Copy manager properties"
+                    title: "Copy manager properties"
                   },
                   items: [
                     "api/diagram_editor/copymanager/config/some_property",
@@ -347,19 +348,22 @@ module.exports = {
                 title: "!!View API"
               },
               items: [
-                // Copy Manager Methods
+                // View Methods
                 {
                   type: "category",
                   label: "!!View methods",
                   collapsed: true,
                   link: {
                     type: 'generated-index',
-                    title: "!!View methods"
+                    title: "View methods"
                   },
                   items: [
-                    "api/diagram_editor/view/methods/some_method",
+                    "api/diagram_editor/view/methods/hide_method",
+                    "api/diagram_editor/view/methods/show_method",
+                    "api/diagram_editor/view/methods/some_method",  //Template
                   ],
                 },
+
                 // View Events
                 {
                   type: "category",
@@ -367,7 +371,7 @@ module.exports = {
                   collapsed: true,
                   link: {
                     type: 'generated-index',
-                    title: "!!View events"
+                    title: "View events"
                   },
                   items: [
                     "api/diagram_editor/view/events/some_event",
@@ -383,7 +387,7 @@ module.exports = {
               collapsed: true,
               link: {
                 type: 'generated-index',
-                title: "!!Toolbar API"
+                title: "Toolbar API"
               },
               items: [
                 // Toolbar Methods
@@ -393,7 +397,7 @@ module.exports = {
                   collapsed: true,
                   link: {
                     type: 'generated-index',
-                    title: "!!Toolbar methods"
+                    title: "Toolbar methods"
                   },
                   items: [
                     "api/diagram_editor/toolbar/methods/some_method",
@@ -406,7 +410,7 @@ module.exports = {
                   collapsed: true,
                   link: {
                     type: 'generated-index',
-                    title: "!!Toolbar properties"
+                    title: "Toolbar properties"
                   },
                   items: [
                     "api/diagram_editor/toolbar/config/some_property",
@@ -419,9 +423,10 @@ module.exports = {
                   collapsed: true,
                   link: {
                     type: 'generated-index',
-                    title: "!!Toolbar events"
+                    title: "Toolbar events"
                   },
                   items: [
+                    "api/diagram_editor/toolbar/events/on_event",
                     "api/diagram_editor/toolbar/events/some_event",
                   ],
                 },
@@ -435,7 +440,7 @@ module.exports = {
               collapsed: true,
               link: {
                 type: 'generated-index',
-                title: "!!Editbar API"
+                title: "Editbar API"
               },
               items: [
                 // Editbar Methods
@@ -445,7 +450,7 @@ module.exports = {
                   collapsed: true,
                   link: {
                     type: 'generated-index',
-                    title: "!!Editbar methods"
+                    title: "Editbar methods"
                   },
                   items: [
                     "api/diagram_editor/editbar/methods/some_method",
@@ -458,7 +463,7 @@ module.exports = {
                   collapsed: true,
                   link: {
                     type: 'generated-index',
-                    title: "!!Editbar properties"
+                    title: "Editbar properties"
                   },
                   items: [
                     "api/diagram_editor/editbar/config/some_property",
@@ -471,7 +476,7 @@ module.exports = {
                   collapsed: true,
                   link: {
                     type: 'generated-index',
-                    title: "!!Editbar events"
+                    title: "Editbar events"
                   },
                   items: [
                     "api/diagram_editor/editbar/events/some_event",
@@ -483,6 +488,7 @@ module.exports = {
         },
 
 // !!!!!!!!!!!!!!!!!!!!!!!!!! Serhii Pylypchuk end
+
         // Items API
         {
           type: "category",
@@ -517,6 +523,7 @@ module.exports = {
             image: '/img/docusaurus.png',
           },
           items: [
+
             // Cell manager API
             {
               type: "category",
@@ -684,9 +691,9 @@ module.exports = {
                   },
                   items: [
                     "api/selection/add_method",
-                    "api/selection/getid_method",
+                    //"api/selection/getid_method", !!!Deprecated
                     "api/selection/getitem_method",
-                    "api/selection/getsubid_method",
+                    //"api/selection/getsubid_method", !!!Deprecated
                     "api/selection/remove_method",
                   ],
                 },
