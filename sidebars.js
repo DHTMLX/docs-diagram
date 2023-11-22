@@ -241,6 +241,7 @@ module.exports = {
                     "api/diagram_editor/editor/config/lineconfig_property",
                     "api/diagram_editor/editor/config/linegap_property",
                     "api/diagram_editor/editor/config/magnetic_property",
+                    "api/diagram_editor/editor/config/resizepoints_property",
                     //"api/diagram_editor/editor/config/reservedwidth_property", !!!Deprecated
                     "api/diagram_editor/editor/config/scale_property",
                     //"api/diagram_editor/editor/config/scalepreview_property", !!!Deprecated
