@@ -54,7 +54,7 @@ As an object, the **magnetic** property can include the following parameters:
 
 ### Example
 
-~~~js{3-7}
+~~~js {3-7}
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     magnetic: {
