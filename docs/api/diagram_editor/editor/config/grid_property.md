@@ -24,7 +24,7 @@ grid: true
 
 ### Example
 
-~~~js{3}
+~~~js {3}
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "default", // "org" | "mindmap" | "default"
     grid: false, // true by default
