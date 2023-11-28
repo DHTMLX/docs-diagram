@@ -8,7 +8,7 @@ description: You can learn about the zoomIn event of editor in the documentation
 
 ### Description
 
-@short: Fires after the Zoom In button was clicked
+@short: Fires after the Zoom In button is clicked or the zoomIn() method is called
 
 ### Usage
 
@@ -18,12 +18,12 @@ description: You can learn about the zoomIn event of editor in the documentation
 
 ### Parameters
 
-The callback of the **zoomIn** event can take an object with the following parameter:
+The callback of the **zoomIn** event is called with the following parameter:
 
-- `step` - (required) a value that displays the change step of the [`scale`](api/diagram_editor/editor/config/scale_property.md) property.
+- `step` - (required) a value that displays the step of the [`scale`](api/diagram_editor/editor/config/scale_property.md) property.
 
 :::info
-For handling the inner events of Diagram Editor you can use the **Event Bus methods** TODO / DISCUSS WITH DEVELOPER!
+For handling the inner events of Diagram Editor you can use the **on()** method.
 :::
 
 ### Example
