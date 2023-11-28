@@ -11,7 +11,7 @@ description: You can learn about the connectionPoints property of editor in the 
 @short: Optional. Enables/disables an ability to connect shapes using connection controls
 
 :::info
-The `connectionPoints` property works only if the `type: "default"` configuration is specified.
+The `connectionPoints` property works only the **default** mode.
 :::
 
 ### Usage
