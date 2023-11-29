@@ -233,6 +233,7 @@ module.exports = {
                   items: [
                     "api/diagram_editor/editor/config/autoplacement_property",
                     //"api/diagram_editor/editor/config/controls_property", !!!Deprecated
+                    "api/diagram_editor/editor/config/connectionpoints_property",
                     "api/diagram_editor/editor/config/defaults_property",
                     //"api/diagram_editor/editor/config/editmode_property", !!!Deprecated
                     //"api/diagram_editor/editor/config/gappreview_property", !!!Deprecated
