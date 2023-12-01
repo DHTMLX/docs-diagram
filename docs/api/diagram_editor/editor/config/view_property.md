@@ -8,14 +8,45 @@ description: You can learn about the view property of editor in the documentatio
 
 ### Description
 
-@short: TODO
+@short: An object that configures Toolbar, Shapebar, and Editbar views of the Diagram Editor
 
 ### Usage
 
 ~~~js
-view: { // TODO
-    toolbar: boolean | object,
-    shapebar: boolean | object,
-    editbar: boolean | object,
+view: {
+    toolbar?: boolean | object,
+    shapebar?: boolean | object,
+    editbar?: boolean | object,
 };
 ~~~
+
+### Parameters
+
+- `toolbar` - (optional) allows to show/hide **Toolbar** (if *boolean*) or configure its appearance (if *object*). Refer to the [Toolbar API](../../../../../category/toolbar-api/) section for more information about configuring the toolbar
+- `shapebar` - (optional) allows to show/hide **Shapebar** (if *boolean*) or configure its appearance (if *object*). Refer to the [Shapebar API](../../../../../category/shapebar-api/) section for more information about configuring the shapebar
+- `editbar` - (optional) allows to show/hide **Editbar** (if *boolean*) or configure its appearance (if *object*). Refer to the [Editbar API](../../../../../category/editbar-api/) section for more information about configuring the Editbar
+
+### Default config
+
+~~~js
+view: {
+    toolbar: true,
+    shapebar: true,
+    editbar: true,
+}
+~~~
+
+### Example
+
+~~~js {2-6}
+const editor = new dhx.DiagramEditor("editor_container", {
+    view: {
+        toolbar: true,
+        shapebar: false, // hides shapebar
+        editbar: false, // hides editbar
+    },
+    // other configurations  
+});
+~~~
+
+**Change log**: Added in v6.0

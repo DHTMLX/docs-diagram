@@ -8,28 +8,36 @@ description: You can learn about the show method of view in the documentation of
 
 ### Description
 
-@short: TODO
+@short: shows Toolbar, Editbar, and Shapebar views of Diagram Editor.
+
+:::info
+If you need to show the **Toolbar**, **Editbar**, or **Shapebar** view separately, call the `show()` method with the corresponding parameter. To show all these elements, call the `show()` method without parameters.
+:::
 
 ### Usage
 
 ~~~js
-show(): void;
+show(view?: "toolbar" | "shapebar" | "editbar"): void;
 ~~~
 
 ### Parameters
 
-- `shapebar` - (required) ... TODO
-- `editbar` - (required) ... TODO
+- `toolbar` - (optional) shows Toolbar
+- `shapebar` - (optional) shows Shapebar
+- `editbar` - (optional) shows Editbar
 
 ### Example
 
-~~~js
-const editor = new dhx.DiagramEditor("editor_container", {
-    ...
+~~~js {5-6,8-9}
+const editor = new dhx.DiagramEditor("editor", {
+    type: "default",
 });
 
+// shows the Shapebar view 
 editor.view.show("shapebar"); 
-editor.view.show("editbar");
+
+// shows Shapebar, Editbar, and Toolbar 
+editor.view.show();
 ~~~
 
 **Change log**: Added in v6.0
