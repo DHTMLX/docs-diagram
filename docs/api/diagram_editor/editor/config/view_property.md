@@ -38,14 +38,20 @@ view: {
 
 ### Example
 
-~~~js {2-6}
-const editor = new dhx.DiagramEditor("editor_container", {
+~~~js {3-12}
+const editor = new dhx.DiagramEditor("editor", {
+    type: "default", // required 
     view: {
-        toolbar: true,
-        shapebar: false, // hides shapebar
-        editbar: false, // hides editbar
+        toolbar: {
+            css: "toolbar_custom",
+            data: ["file", "separator", "scale"],
+        },
+        shapebar: {
+            width: 400,
+        },
+        editbar: false,
     },
-    // other configurations  
+    // other configurations 
 });
 ~~~
 

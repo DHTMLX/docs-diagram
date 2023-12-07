@@ -13,14 +13,14 @@ description: You can learn about the beforeShow event of View in the Diagram Edi
 ### Usage
 
 ~~~js
-"beforeShow": (view: string) => boolean | void;
+"beforeShow": (view: "toolbar" | "shapebar" | "editbar") => void;
 ~~~
 
 ### Parameters
 
 The callback of the **beforeShow** event is called with the following parameter:
 
-- `view` - (required) a view that will be displayed. Refer to the [`view`](api/diagram_editor/editor/config/view_property.md) property for details.
+- `view` - (required) a view that will be displayed. Refer to the [`view`](api/diagram_editor/editor/config/view_property.md) property for details. The component configuration doesn't trigger events when initializing.
 
 :::info
 For handling the inner events of Diagram Editor you can use the **on()** method.

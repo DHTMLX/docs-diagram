@@ -34,8 +34,8 @@ const editor = new dhx.DiagramEditor("editor", {
 });
 
 // check the Toolbar and Shapebar visibility
-editor.view.isVisible("shapebar"); // --> false
-editor.view.isVisible("toolbar"); // --> true
+editor.view.isVisible("shapebar"); // return false
+editor.view.isVisible("toolbar"); // return true
 ~~~
 
 **Change log**: Added in v6.0
