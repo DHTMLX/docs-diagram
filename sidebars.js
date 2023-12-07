@@ -403,7 +403,7 @@ module.exports = {
                     title: "Toolbar methods"
                   },
                   items: [
-                    "api/diagram_editor/toolbar/methods/some_method",
+                    "api/diagram_editor/toolbar/methods/parse_method",
                   ],
                 },
                 // Toolbar Properties
@@ -416,7 +416,8 @@ module.exports = {
                     title: "Toolbar properties"
                   },
                   items: [
-                    "api/diagram_editor/toolbar/config/some_property",
+                    "api/diagram_editor/toolbar/config/css_property", // New
+                    "api/diagram_editor/toolbar/config/items_property", // New
                   ],
                 },
                 // Toolbar Events
