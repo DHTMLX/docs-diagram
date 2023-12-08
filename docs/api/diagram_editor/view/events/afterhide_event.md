@@ -20,7 +20,7 @@ description: You can learn about the afterHide event of View in the Diagram Edit
 
 The callback of the **afterHide** event is called with the following parameter:
 
-- `view` - (required) a view that was hidden. Refer to the [`view`](api/diagram_editor/editor/config/view_property.md) property for details. The component configuration doesn't trigger events when initializing.
+- `view` - (required) a view that was hidden. Refer to the [`view`](api/diagram_editor/editor/config/view_property.md) property for details.
 
 :::info
 For handling the inner events of Diagram Editor you can use the **on()** method.

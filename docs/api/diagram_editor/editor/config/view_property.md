@@ -40,7 +40,7 @@ view: {
 
 ~~~js {3-12}
 const editor = new dhx.DiagramEditor("editor", {
-    type: "default", // required 
+    type: "default",
     view: {
         toolbar: {
             css: "toolbar_custom",

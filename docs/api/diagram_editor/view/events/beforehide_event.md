@@ -13,14 +13,14 @@ description: You can learn about the beforeHide event of View in the Diagram Edi
 ### Usage
 
 ~~~js
-"beforeHide": (view: "toolbar" | "shapebar" | "editbar") => void;
+"beforeHide": (view: "toolbar" | "shapebar" | "editbar") => boolean | void;
 ~~~
 
 ### Parameters
 
 The callback of the **beforeHide** event is called with the following parameter:
 
-- `view` - (required) a view that will be hidden. Refer to the [`view`](api/diagram_editor/editor/config/view_property.md) property for details. The component configuration doesn't trigger events when initializing.
+- `view` - (required) a view that will be hidden. Refer to the [`view`](api/diagram_editor/editor/config/view_property.md) property for details.
 
 :::info
 For handling the inner events of Diagram Editor you can use the **on()** method.
