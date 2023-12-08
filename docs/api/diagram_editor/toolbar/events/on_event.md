@@ -1,10 +1,10 @@
 ---
-sidebar_label: some
-title: some
+sidebar_label: on!!
+title: on
 description: description
 ---
 
-# some
+# on
 
 ### Description
 
