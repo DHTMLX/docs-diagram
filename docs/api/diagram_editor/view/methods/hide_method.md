@@ -8,28 +8,36 @@ description: You can learn about the hide method of view in the documentation of
 
 ### Description
 
-@short: TODO
+@short: Hides Toolbar, Editbar, and Shapebar views of Diagram Editor.
+
+:::info
+If you need to hide the **Toolbar**, **Editbar**, and **Shapebar** view separately, call the `hide()` method with the corresponding parameter. To hide all these elements, call the `hide()` method without parameters.
+:::
 
 ### Usage
 
 ~~~js
-hide(): void;
+hide(view?: "toolbar" | "shapebar" | "editbar"): void;
 ~~~
 
 ### Parameters
 
-- `shapebar` - (required) ... TODO
-- `editbar` - (required) ... TODO
+- `toolbar` - (optional) hides Toolbar
+- `shapebar` - (optional) hides Shapebar
+- `editbar` - (optional) hides Editbar
 
 ### Example
 
-~~~js
-const editor = new dhx.DiagramEditor("editor_container", {
-    ...
+~~~js {5-6,8-9}
+const editor = new dhx.DiagramEditor("editor", {
+    type: "default",
 });
 
+// hides the Shapebar view
 editor.view.hide("shapebar"); 
-editor.view.hide("editbar");
+
+// hides Shapebar, Editbar, and Toolbar
+editor.view.hide();
 ~~~
 
 **Change log**: Added in v6.0

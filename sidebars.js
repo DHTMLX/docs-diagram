@@ -233,7 +233,7 @@ module.exports = {
                   items: [
                     "api/diagram_editor/editor/config/autoplacement_property",
                     //"api/diagram_editor/editor/config/controls_property", !!!Deprecated
-                    "api/diagram_editor/editor/config/connectionpoints_property",
+                    "api/diagram_editor/editor/config/connectionpoints_property", // New
                     "api/diagram_editor/editor/config/defaults_property",
                     //"api/diagram_editor/editor/config/editmode_property", !!!Deprecated
                     //"api/diagram_editor/editor/config/gappreview_property", !!!Deprecated
@@ -243,7 +243,7 @@ module.exports = {
                     "api/diagram_editor/editor/config/lineconfig_property",
                     "api/diagram_editor/editor/config/linegap_property",
                     "api/diagram_editor/editor/config/magnetic_property",
-                    "api/diagram_editor/editor/config/resizepoints_property",
+                    "api/diagram_editor/editor/config/resizepoints_property", // New
                     //"api/diagram_editor/editor/config/reservedwidth_property", !!!Deprecated
                     "api/diagram_editor/editor/config/scale_property",
                     //"api/diagram_editor/editor/config/scalepreview_property", !!!Deprecated
@@ -252,6 +252,7 @@ module.exports = {
                     "api/diagram_editor/editor/config/shapetoolbar_property",
                     "api/diagram_editor/editor/config/shapetype_property",
                     "api/diagram_editor/editor/config/type_property",
+                    "api/diagram_editor/editor/config/view_property", // New
                   ]
                 },
               ]
@@ -361,9 +362,9 @@ module.exports = {
                     title: "View methods"
                   },
                   items: [
-                    "api/diagram_editor/view/methods/hide_method",
-                    "api/diagram_editor/view/methods/show_method",
-                    "api/diagram_editor/view/methods/some_method",  //Template
+                    "api/diagram_editor/view/methods/hide_method", // New
+                    "api/diagram_editor/view/methods/isvisible_method", // New
+                    "api/diagram_editor/view/methods/show_method", // New
                   ],
                 },
 
@@ -377,7 +378,10 @@ module.exports = {
                     title: "View events"
                   },
                   items: [
-                    "api/diagram_editor/view/events/some_event",
+                    "api/diagram_editor/view/events/afterhide_event", // New
+                    "api/diagram_editor/view/events/aftershow_event", // New
+                    "api/diagram_editor/view/events/beforehide_event", // New
+                    "api/diagram_editor/view/events/beforeshow_event", // New
                   ],
                 },
               ]
@@ -483,6 +487,32 @@ module.exports = {
                   },
                   items: [
                     "api/diagram_editor/editbar/events/some_event",
+                  ],
+                },
+              ]
+            },
+
+            // Shapebar API
+            {
+              type: "category",
+              label: "!!Shapebar API",
+              collapsed: true,
+              link: {
+                type: 'generated-index',
+                title: "Shapebar API"
+              },
+              items: [
+                // Editbar Properties
+                {
+                  type: "category",
+                  label: "!!Shapebar properties",
+                  collapsed: true,
+                  link: {
+                    type: 'generated-index',
+                    title: "Shapebar properties"
+                  },
+                  items: [
+                    "api/diagram_editor/shapebar/config/some_property",
                   ],
                 },
               ]
