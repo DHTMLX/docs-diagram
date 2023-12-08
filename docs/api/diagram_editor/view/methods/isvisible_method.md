@@ -33,7 +33,7 @@ const editor = new dhx.DiagramEditor("editor", {
     },
 });
 
-// check the Toolbar and Shapebar visibility
+// checks the Toolbar and Shapebar visibility
 editor.view.isVisible("shapebar"); // return false
 editor.view.isVisible("toolbar"); // return true
 ~~~
