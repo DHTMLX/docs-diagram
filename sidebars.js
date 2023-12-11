@@ -842,11 +842,41 @@ module.exports = {
         "guides/data_export",
         "guides/event_handling",
         "guides/localization",
+  // !!!!!!!!! Masha Rudenko start
+        {
+          type: "category",
+          label: "Themes",
+          link: {
+            type: 'generated-index',
+            title: "Themes",
+            keywords: ['themes'],
+            image: '/img/docusaurus.png',
+          },
+          items: [
+            "guides/themes/themes",
+            "guides/themes/base_themes_configuration",
+            "guides/themes/custom_theme",
+            "guides/themes/setting_theme"
+          ],
+        },
+        {
+          type: "category",
+          label: "Integrations",
+          link: {
+            type: 'generated-index',
+            title: "Integrations",
+            keywords: ['angular', 'react', 'vue'],
+            image: '/img/docusaurus.png',
+          },
+          items: [
+            "guides/integrations/angular_integration",
+            "guides/integrations/react_integration",
+            "guides/integrations/vue_integration",
+          ],
+        },
         "guides/touch_support",
-        "guides/using_typescript",
-        "guides/angular_integration",
-        "guides/react_integration",
-        "guides/vue_integration",
+        "guides/using_typescript",    
+// !!!!!!!!! Masha Rudenko end  
       ]
     },
   ]
