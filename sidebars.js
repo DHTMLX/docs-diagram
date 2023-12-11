@@ -666,6 +666,7 @@ module.exports = {
                     "api/data_collection/beforeadd_event",
                     "api/data_collection/beforeremove_event",
                     "api/data_collection/change_event",
+                    "api/data_collection/filter_event",
                     "api/data_collection/load_event",
                     
                   ],
