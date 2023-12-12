@@ -302,7 +302,7 @@ module.exports = {
                 },
               ]
             },
-
+// !!!!!!!!! Masha Rudenko start
             // Copy Manager API
             {
               type: "category",
@@ -323,7 +323,10 @@ module.exports = {
                     title: "Copy manager methods"
                   },
                   items: [
-                    "api/diagram_editor/copymanager/methods/some_method",
+                    "api/diagram_editor/copymanager/methods/copy_method",
+                    "api/diagram_editor/copymanager/methods/copystyles_method",
+                    "api/diagram_editor/copymanager/methods/paste_method",
+                    "api/diagram_editor/copymanager/methods/pastestyles_method",
                   ],
                 },
                 // Copy Manager Properties
@@ -341,7 +344,7 @@ module.exports = {
                 },
               ]
             },
-
+// !!!!!!!!! Masha Rudenko end
             // View API
             {
               type: "category",
@@ -814,7 +817,7 @@ module.exports = {
         },
         {
           type: "category",
-          label: "Diagram Editor",
+          label: "!!Diagram Editor",
           link: {
             type: 'generated-index',
             title: "Diagram editor",
