@@ -22,7 +22,7 @@ getFilters({ permanent?: boolean }): { [key: string]: { rule: object | callback,
 
 ### Returns
 
-- `filters: object` - an object with the applied filters, where the key is the id of a filter and the value is an object with the [**rule** and **config** properties](api/data_collection/filter_method.md)
+- `filters: object` - an object with the applied filters, where the key is the id of a filter and the value is an object with the [**rule** and **config** properties](api/data_collection/filter_method.md#parameters)
 
 ### Example
 

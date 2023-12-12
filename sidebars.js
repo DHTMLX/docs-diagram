@@ -655,7 +655,7 @@ module.exports = {
                 },
                 {
                   type: "category",
-                  label: "DataCollection events",
+                  label: "!!DataCollection events",
                   link: {
                     type: 'doc',
                     id: "api/overview/datacollection_events_overview",

@@ -16,7 +16,7 @@ You can choose from the following variants:
 
 ~~~html title="index.html"
 <!-- component container -->
-<div data-dhx-theme="dark" style="height: 100%" id="chart"></div>
+<div data-dhx-theme="dark" style="height: 100%" id="diagram"></div>
 ~~~
 
 - change the **"data-dhx-theme"** attribute for the *root* element:
@@ -44,7 +44,7 @@ Below you'll find the examples of the **dhx.setTheme()** method usage:
 
 - applying a theme either to the body or to the container 
 
-~~~html 
+~~~html {8,10}
 <div id="container"></div>
 <div>Other content</div>
 
@@ -52,30 +52,31 @@ Below you'll find the examples of the **dhx.setTheme()** method usage:
 	const editor = new dhx.DiagramEditor("container", {
 	    type: "default",
 	});
-    dhx.setTheme("dark"); //apply the "dark" theme to the body 
-
+    dhx.setTheme("dark"); //applies the "dark" theme to the body 
     //or
-    dhx.setTheme("dark", "container"); //apply the "dark" theme to the container with the "container" id
+    dhx.setTheme("dark", "container"); //applies the "dark" theme to the container with the "container" id
 </script>
 ~~~
 
 - setting a theme to the container specified via an HTMLElement
 
-~~~html 
+~~~html {9-10}
 <div id="container-1"></div>
 <div>Other content</div>
 
 <script>
-    new dhx.Diagram("container");
+    const diagram = new dhx.Diagram("container", {
+        type: "default",
+    });
     
     const container = document.getElementById("container-1");
-    dhx.setTheme("dark", container); //apply the "dark" theme to the container specified via an HTMLElement
+    dhx.setTheme("dark", container); 
 </script>
 ~~~
 
-- setting a theme for the Toolbar control of DiagramEditor:
+- setting a theme for the Toolbar control of DiagramEditor
 
-~~~js
+~~~js {10-11}
 const editor = new dhx.DiagramEditor("editor", {
     type: "default",
     view: {
