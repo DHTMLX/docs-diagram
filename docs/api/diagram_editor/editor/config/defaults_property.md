@@ -1,5 +1,5 @@
 ---
-sidebar_label: defaults
+sidebar_label: defaults!!
 title: defaults Property of Editor
 description: You can learn about the defaults property of editor in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
@@ -62,6 +62,9 @@ After defining the default settings for the shape/line of separate types, you ca
 **Change log:** The ability to set the default configuration for lines is added in v4.2
 
 **Related articles**:  
+
+TODO (update links)
+
 - [Setting the default configuration of a shape](../../../guides/diagram/configuration/#setting-the-default-configuration-of-a-shape)
 - [Setting shape preview](../../../guides/diagram_editor/left_panel/#setting-shape-preview)
 
