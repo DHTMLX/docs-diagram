@@ -8,18 +8,22 @@ description: You can learn about the built-in themes in the documentation of the
 
 DHTMLX Diagram library provides 4 predefined themes:
 
-- [light theme](#light-theme-default) ("light") - used by default
-- [dark theme](#dark-theme) ("dark")
-- [light high contrast theme](#light-high-contrast-theme) ("contrast-light")
-- [dark high contrast theme](#dark-high-contrast-theme) ("contrast-dark")
+- [light theme](#light-theme-default) (**"light"**) - used by default
+- [dark theme](#dark-theme) (**"dark"**)
+- [light high contrast theme](#light-high-contrast-theme) (**"contrast-light"**)
+- [dark high contrast theme](#dark-high-contrast-theme) (**"contrast-dark"**)
 
 The Diagram themes are developed in accordance with international standards. The high contrast themes will be helpful for users who have vision impairment. For more detail, read the [Accessibility support](https://docs.dhtmlx.com/suite/common_features/accessibility_support/) article.
 
 You can try all themes in the example below:
 
+TODO
+
 [iframe]
 
 ## Light theme (default)
+
+TODO
 
 [default light theme image]
 
@@ -196,6 +200,8 @@ The default **"light"** theme is configured on the base of the CSS variables whi
 
 ## Light high contrast theme
 
+TODO
+
 [light high contrast theme image]
 
 The **"contrast-light"** theme is configured both on the base of the [root CSS variables](#light-theme-default) and the variables which are listed below:
@@ -240,6 +246,8 @@ The **"contrast-light"** theme is configured both on the base of the [root CSS v
 ~~~
 
 ## Dark theme
+
+TODO
 
 [dark theme image]
 
@@ -297,6 +305,8 @@ The **"dark"** theme is configured both on the base of the [root CSS variables](
 ~~~ 
 
 ## Dark high contrast theme
+
+TODO
 
 [dark high contrast theme image]
 
@@ -357,3 +367,91 @@ The **"contrast-dark"** theme is configured both on the base of the [root CSS va
 	/* end DHTMLX Slider service variables*/
 }
 ~~~
+
+## Setting themes
+
+To set the necessary theme, be it a [built-in Diagram theme](diagram/guides/themes.md) or a [custom one](diagram/guides/themes/custom_theme.md), use one of the ways described below:
+
+### Using the "data" attribute 
+
+You can choose from the following variants:
+
+- set the **"data-dhx-theme"** attribute for the *chosen container*:
+
+~~~html title="index.html"
+<!-- component container -->
+<div data-dhx-theme="dark" style="height: 100%" id="diagram"></div>
+~~~
+
+- set the **"data-dhx-theme"** attribute for an *HTML element*, e.g. for *documentElement*:
+
+~~~js title="index.js"
+document.documentElement.setAttribute("data-dhx-theme", "dark");
+~~~
+
+### Using the "dhx.setTheme()" method
+
+The ***dhx.setTheme()*** method takes the following parameters:
+
+- `theme: string` - (required) the name of the theme. It can be:
+    - the name of the Diagram theme: *"light" | "contrast-light" | "dark" | "contrast-dark"*
+    - the name of a [custom theme](guides/themes/custom_theme.md)
+    - *"light"* - by default
+- `container: string | HTMLElement` - (optional) the container to which the theme must be applied. It can be:
+    - an HTMLElement
+    - a string value with the ID of the container or the ID of a Layout cell
+    - *document.documentElement* - by default
+
+Below you'll find the examples of the ***dhx.setTheme()*** method usage:
+
+- applying a theme either to the body or to the container 
+
+~~~html {8,10}
+<div id="container"></div>
+<div>Other content</div>
+
+<script>
+	const editor = new dhx.DiagramEditor("container", {
+	    type: "default",
+	});
+    dhx.setTheme("dark"); //applies the "dark" theme to the body 
+    //or
+    dhx.setTheme("dark", "container"); //applies the "dark" theme to the container with the "container" id
+</script>
+~~~
+
+- setting a theme to the container specified via an HTMLElement
+
+~~~html {9-10}
+<div id="container-1"></div>
+<div>Other content</div>
+
+<script>
+    const diagram = new dhx.Diagram("container-1", {
+        type: "default",
+    });
+    
+    const container = document.getElementById("container-1");
+    dhx.setTheme("dark", container); 
+</script>
+~~~
+
+- setting a theme for a control of Diagram Editor, e.g. for the Toolbar control
+
+~~~js {10-11}
+const editor = new dhx.DiagramEditor("editor", {
+    type: "default",
+    view: {
+        toolbar: {
+            css: "toolbar",
+        },
+    }
+});
+
+const toolbarEl = document.querySelector(".toolbar");
+dhx.setTheme("dark", toolbarEl);
+~~~
+
+**Related samples:** 
+
+TODO

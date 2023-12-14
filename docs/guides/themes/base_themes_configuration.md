@@ -64,7 +64,7 @@ In addition, values of variables, which are calculated on the base of the primar
 
 If you want to override some color values for a separate [Diagram theme](diagram/guides/themes.md), you need to do this in the **'data-dhx-theme'** attribute:
 
-~~~html {1-27,39}
+~~~html 
 <style>
     [data-dhx-theme='light'] {
         /* border */
@@ -94,9 +94,9 @@ If you want to override some color values for a separate [Diagram theme](diagram
 </style>
 
 <script>
-    const diagram = new dhx.Diagram("diagram_container",{});
-
-    diagram.data.parse(dataset);
+    const diagram = new dhx.Diagram("diagram_container", {
+        type: "default",
+    });
     
     dhx.setTheme("light");
 </script>

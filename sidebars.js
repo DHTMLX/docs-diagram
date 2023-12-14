@@ -758,7 +758,7 @@ module.exports = {
     // Guides
     {
       type: "category",
-      label: "Guides",
+      label: "!!Guides",
       collapsed: true,
       link: {
         type: 'doc',
@@ -845,7 +845,7 @@ module.exports = {
   // !!!!!!!!! Masha Rudenko start
         {
           type: "category",
-          label: "Themes",
+          label: "!!Themes",
           link: {
             type: 'generated-index',
             title: "Themes",
@@ -856,7 +856,6 @@ module.exports = {
             "guides/themes/themes",
             "guides/themes/base_themes_configuration",
             "guides/themes/custom_theme",
-            "guides/themes/setting_theme"
           ],
         },
         {
