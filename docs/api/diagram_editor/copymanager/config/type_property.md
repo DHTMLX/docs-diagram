@@ -13,5 +13,16 @@ description: You can learn about the type property of copy manager in the docume
 ### Usage
 
 ~~~js
-type: string;
+type?: string;
 ~~~
+
+### Default config
+
+
+
+### Example
+
+
+
+
+**Change log**: Added in v6.0
