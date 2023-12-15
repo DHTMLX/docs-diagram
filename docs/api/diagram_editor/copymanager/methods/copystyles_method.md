@@ -8,11 +8,7 @@ description: You can learn about the copyStyles method of copy manager in the do
 
 ### Description
 
-@short: copies styles of the specified element or of the first element from the selection list
-
-:::note
-The *copyStyles()* method works only if the Diagram Editor is initialized in the ***default*** mode.
-:::
+@short: copies styles of the specified element or the first element from the selection list
 
 ### Usage
 
@@ -26,7 +22,7 @@ copyStyles(id?: string | number): void;
 
 ### Example
 
--  call the method without arguments, to copy styles of the first element from the selection list:
+-  call the method without arguments to copy styles of the *first element from the selection list*
 
 ~~~js {5}
 const editor = new dhx.DiagramEditor("editor_container", { 
@@ -36,7 +32,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 editor.model.copyStyles();  
 ~~~
 
-- or pass the id of an element to the method to copy its styles:
+- pass the id of some element to the method to copy its styles
 
 ~~~js {5}
 const editor = new dhx.DiagramEditor("editor_container", { 

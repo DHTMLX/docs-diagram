@@ -8,11 +8,7 @@ description: You can learn about the pasteStyles method of copy manager in the d
 
 ### Description
 
-@short: applies styles to the list of selected elements or elements specified by ids
-
-:::note
-The *pasteStyles()* method works only if the Diagram Editor is initialized in the ***default*** mode.
-:::
+@short: applies copied styles to the list of selected elements or elements specified by ids
 
 ### Usage
 
@@ -26,22 +22,22 @@ pasteStyles(ids?: (string | number)[]): void;
 
 ### Example
 
-- call the method without arguments, to apply styles to the first element from the selection list:
+- call the method without arguments to apply styles to the elements from the selection list
 
-~~~js {6}
+~~~js {5-6}
 const editor = new dhx.DiagramEditor("editor_container", { 
-    type: "default", // only default
+    type: "default", 
 });
 
 editor.model.copyStyles(); 
 editor.model.pasteStyles(); 
 ~~~
 
-- or pass the ids of elements to the method to apply the copied styles to:
+- pass the ids of certain elements to the method to apply the copied styles to them
 
-~~~js {6}
+~~~js {5-6}
 const editor = new dhx.DiagramEditor("editor_container", { 
-    type: "default", // only default
+    type: "default", 
 });
 
 editor.model.copyStyles("1");

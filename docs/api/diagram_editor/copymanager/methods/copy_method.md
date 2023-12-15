@@ -8,10 +8,10 @@ description: You can learn about the copy method of copy manager in the document
 
 ### Description
 
-@short: copies to the clipboard the selected elements or elements specified by ids
+@short: copies selected elements or elements specified by ids to the clipboard
 
 :::note
-The *copy()* method works only if the Diagram Editor is initialized in the ***default*** mode.
+The ***copy()*** method works only if the Diagram Editor is initialized in the **default** mode.
 :::
 
 ### Usage
@@ -26,7 +26,7 @@ copy(ids?: (string | number)[]): void;
 
 ### Example
 
-- when you use the method without arguments, the elements from the selection list are copied:
+- call the method without arguments to copy elements from the selection list 
 
 ~~~js {5}
 const editor = new dhx.DiagramEditor("editor_container", { 
@@ -36,7 +36,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 editor.model.copy(); // copies selected items to the clipboard
 ~~~
 
-- when you pass some ids to the method, the corresponding elements are copied: 
+- pass some ids to the method to copy the corresponding elements 
 
 ~~~js {5}
 const editor = new dhx.DiagramEditor("editor_container", { 

@@ -329,37 +329,6 @@ module.exports = {
                     "api/diagram_editor/copymanager/methods/pastestyles_method",
                   ],
                 },
-                // Copy Manager Properties
-                {
-                  type: "category",
-                  label: "!!Copy manager properties",
-                  collapsed: true,
-                  link: {
-                    type: 'generated-index',
-                    title: "Copy manager properties"
-                  },
-                  items: [
-                    "api/diagram_editor/copymanager/config/borderstyle_property",
-                    "api/diagram_editor/copymanager/config/extralinesstroke_property",
-                    "api/diagram_editor/copymanager/config/fill_property",
-                    "api/diagram_editor/copymanager/config/fontcolor_property",
-                    "api/diagram_editor/copymanager/config/fontsize_property",
-                    "api/diagram_editor/copymanager/config/fontstyle_property",
-                    "api/diagram_editor/copymanager/config/fontweight_property",
-                    "api/diagram_editor/copymanager/config/headercolor_property",
-                    "api/diagram_editor/copymanager/config/iconcolor_property",
-                    "api/diagram_editor/copymanager/config/lineheight_property",
-                    "api/diagram_editor/copymanager/config/overfill_property",
-                    "api/diagram_editor/copymanager/config/partiallyfill_property",
-                    "api/diagram_editor/copymanager/config/stroke_property",
-                    "api/diagram_editor/copymanager/config/strokedash_property",
-                    "api/diagram_editor/copymanager/config/stroketype_property",
-                    "api/diagram_editor/copymanager/config/strokewidth_property",
-                    "api/diagram_editor/copymanager/config/textalign_property",
-                    "api/diagram_editor/copymanager/config/textverticalalign_property",
-                    "api/diagram_editor/copymanager/config/type_property"
-                  ],
-                },
               ]
             },
 // !!!!!!!!! Masha Rudenko end

@@ -8,10 +8,10 @@ description: You can learn about the paste method of copy manager in the documen
 
 ### Description
 
-@short: creates new elements identical to the copied ones
+@short: creates new elements identical to the elements passed by the "copy()" method
 
 :::note
-The *paste()* method works only if the Diagram Editor is initialized in the ***default*** mode.
+The ***paste()*** method works only if the Diagram Editor is initialized in the **default** mode.
 :::
 
 ### Usage
@@ -22,7 +22,7 @@ paste(): void;
 
 ### Example
 
-~~~js {7}
+~~~js {5-6}
 const editor = new dhx.DiagramEditor("editor_container", { 
     type: "default", // only default
 });
