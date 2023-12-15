@@ -372,24 +372,24 @@ The **"contrast-dark"** theme is configured both on the base of the [root CSS va
 
 To set the necessary theme, be it a [built-in Diagram theme](diagram/guides/themes.md) or a [custom one](diagram/guides/themes/custom_theme.md), use one of the ways described below:
 
-### Using the "data" attribute 
+### Using the ***data-dhx-theme*** attribute 
 
 You can choose from the following variants:
 
-- set the **"data-dhx-theme"** attribute for the *chosen container*:
+- set the ***data-dhx-theme*** attribute for the *chosen container*:
 
 ~~~html title="index.html"
 <!-- component container -->
 <div data-dhx-theme="dark" style="height: 100%" id="diagram"></div>
 ~~~
 
-- set the **"data-dhx-theme"** attribute for an *HTML element*, e.g. for *documentElement*:
+- set the ***data-dhx-theme*** attribute for an *HTML element*, e.g. for *documentElement*:
 
 ~~~js title="index.js"
 document.documentElement.setAttribute("data-dhx-theme", "dark");
 ~~~
 
-### Using the "dhx.setTheme()" method
+### Using the ***dhx.setTheme()*** method
 
 The ***dhx.setTheme()*** method takes the following parameters:
 
@@ -420,23 +420,7 @@ Below you'll find the examples of the ***dhx.setTheme()*** method usage:
 </script>
 ~~~
 
-- setting a theme to the container specified via an HTMLElement
-
-~~~html {9-10}
-<div id="container-1"></div>
-<div>Other content</div>
-
-<script>
-    const diagram = new dhx.Diagram("container-1", {
-        type: "default",
-    });
-    
-    const container = document.getElementById("container-1");
-    dhx.setTheme("dark", container); 
-</script>
-~~~
-
-- setting a theme for a control of Diagram Editor, e.g. for the Toolbar control
+- setting a theme for any HTML element, e.g. for the Toolbar control
 
 ~~~js {10-11}
 const editor = new dhx.DiagramEditor("editor", {
