@@ -13,22 +13,22 @@ description: You can learn about the beforeLineTitleMove event of editor in the 
 ### Usage
 
 ~~~js
-beforeLineTitleMove: (
-    event: MouseEvent, 
+beforeLineTitleMove: ({
+    event: MouseEvent | PointerEvent, 
     lineId: string | number, 
     titleId: string | number, 
-    coord: object
-) => boolean | void;
+    coords: obj
+}) => boolean | void;
 ~~~
 
 ### Parameters
 
-The callback of the event takes the following parameters:
+The callback of the event is called with the following parameters:
 
-- `event` - (required) a native HTML event object
+- `event` - (required) an event object
 - `lineId` - (required) the id of a line
 - `titleId` - (required) the id of a text element of a line
-- `coord` - (required) an object with the x and y coordinates of the text element position before movement
+- `coords` - (required) an object with the x and y coordinates of the text element position before movement
 
 ### Returns
 
@@ -43,11 +43,11 @@ const editor = new dhx.DiagramEditor("editor_container");
 editor.parse(data);
 
 // attaching a handler to the event
-editor.events.on("beforeLineTitleMove", (event, lineId, titleId, coordinates) => {
+editor.events.on("beforeLineTitleMove", ({ titleId, coords }) => {
     console.log(`
-        LineTitle ${id} is position:
-            x: ${coordinates.x}
-            y: ${coordinates.y}
+        LineTitle ${titleId} is position:
+            x: ${coords.x}
+            y: ${coords.y}
     `);
     return true;
 });
