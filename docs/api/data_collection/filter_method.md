@@ -16,25 +16,25 @@ description: You can learn about the filter method of data collection in the doc
 filter(
 	rule?: function, 
 	config?: {
-      id?: string,
-      add?: boolean,
-      permanent?: boolean
-    }
+		id?: string,
+		add?: boolean,
+		permanent?: boolean
+	}
 ): void;
 
 // or
 
 filter(
 	rule?:{
-      by?: string | number,
-      match?: string | number | boolean,
-      compare?: function(value,match,item)
-    },
+		by?: string | number,
+		match?: string | number | boolean,
+		compare?: function(value,match,item)
+	},
 	config?:{
-      id?: string,
-      add?: boolean,
-      permanent?: boolean
-    }
+		id?: string,
+		add?: boolean,
+		permanent?: boolean
+	}
 ): void;
 ~~~
 
@@ -71,7 +71,7 @@ diagram.data.filter(function (shape) {
 diagram.data.filter({ by: "text", match: "Read N" });
 ~~~
 
-To revert the diagram to the initial state, call the ***filter()*** method without parameters.
+To revert the diagram to the initial state, call the `filter()` method without parameters.
 
 ~~~js
 diagram.data.filter();
@@ -81,3 +81,4 @@ diagram.data.filter();
 
 **Related sample**: [Diagram. Data. Filtering shapes](https://snippet.dhtmlx.com/tm43bsgn)
 
+**Change log**: Updated in v6.0

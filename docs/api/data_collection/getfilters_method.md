@@ -23,16 +23,19 @@ getFilters({ permanent?: boolean }): object;
 ### Returns
 
 The method returns an object with the applied filters, where:
-- key - the id of a filter 
-- value - an object with the [**rule** and **config** properties](/api/data_collection/filter_method.md#parameters)
+- `key` - the id of a filter 
+- `value` - an object with the [**rule** and **config** properties](/api/data_collection/filter_method.md#parameters)
 
 ### Example
 
-~~~js {6}
+~~~js {6-7}
 const diagram = new dhx.Diagram("diagram_container", {
     // configuration settings
 });
 diagram.data.parse(data);
     
 const filters = diagram.data.getFilters(); // gets all the applied filters
+console.log(filters);
 ~~~
+
+**Change log**: Added in v6.0
