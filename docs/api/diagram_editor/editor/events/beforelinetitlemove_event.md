@@ -23,16 +23,20 @@ beforeLineTitleMove: ({
 
 ### Parameters
 
-The callback of the event is called with the following parameters:
-
-- `event` - (required) an event object
-- `lineId` - (required) the id of a line
-- `titleId` - (required) the id of a text element of a line
-- `coords` - (required) an object with the x and y coordinates of the text element position before movement
+The callback of the event is called with the following parameter:
+- `config` - an object with the following properties:
+  - `event` - an event object
+  - `lineId` - the id of a line
+  - `titleId` - the id of a text element of a line
+  - `coords` - an object with the x and y coordinates of the text element position before movement
 
 ### Returns
 
-Return `false` to prevent the text element of a line from being moved; otherwise, `true`
+The callback returns `false` to prevent the text element of a line from being moved; otherwise, `true`
+
+:::info
+For handling the inner Diagram Editor events you can use the **on()** method.
+:::
 
 ### Example
 
@@ -53,4 +57,6 @@ editor.events.on("beforeLineTitleMove", ({ titleId, coords }) => {
 });
 ~~~
 
-**Change log**: Added in v4.1
+**Change log**: 
+- The parameter of the callback function is changed to object in v6.0
+- Added in v4.1
