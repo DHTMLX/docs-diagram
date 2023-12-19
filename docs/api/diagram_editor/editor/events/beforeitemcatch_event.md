@@ -6,49 +6,58 @@ description: You can learn about the beforeItemCatch event of editor in the docu
 
 # beforeItemCatch
 
-:::info
-The event works only in the org chart and mindmap modes of Diagram, the **itemsDraggable** property must be set to **true**
-:::
-
 ### Description
 
 @short: Fires before an item is caught
 
+:::info
+The event works only in the **org chart** and **mindmap** modes of Diagram, the ***itemsDraggable*** property must be set to `true`.
+:::
+
 ### Usage
 
 ~~~js
-beforeItemCatch: (
-    movedId: string | number, 
-    targetId: string | number, 
-    event: MouseEvent
-) => boolean | void;
+beforeItemCatch: ({
+    id: string | number, 
+    targetId: string | number,
+    batch: (string | number)[],
+    event: MouseEvent | PointerEvent
+}) => boolean | void;
 ~~~
 
 ### Parameters
 
-The callback of the event takes the following parameters:
+The callback of the event is called with the following parameter:
 
-- `movedId` - (required) the id of the moved item
-- `targetId` - (required) the id of the target item
-- `event` - (required) a native HTML event object
+- `config` - an object with the following properties:
+  - `id` - the id of the moved item
+  - `targetId` - the id of the target item
+  - `batch` - an array of moved elements 
+  - `event` - an event object
 
 ### Returns
 
-Return `false` to prevent the item from being caught; otherwise, `true`
+The callback returns `false` to prevent the item from being caught; otherwise, `true`
+
+:::info
+For handling the inner Diagram Editor events you can use the **on()** method.
+:::
 
 ### Example
 
-~~~js {7-10}
+~~~js {6-10}
 // initializing Diagram Editor
 const editor = new dhx.DiagramEditor("editor_container");
 // loading data
 editor.parse(data);
 
 // attaching a handler to the event
-editor.events.on("beforeItemCatch", (movedId, targetId, event) => {
-    console.log("beforeItemCatch", movedId, targetId, event);
+editor.events.on("beforeItemCatch", ({id, targetId, batch, event}) => {
+    console.log("beforeItemCatch", {id, targetId, batch, event});
     if (targetId === "2.1") return false;
 });
 ~~~
 
-**Change log**: Added in v4.1
+**Change log**:  
+- The callback function takes an object as a parameter since v6.0
+- Added in v4.1

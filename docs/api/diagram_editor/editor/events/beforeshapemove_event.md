@@ -13,45 +13,52 @@ description: You can learn about the beforeShapeMove event in of editor the docu
 ### Usage
 
 ~~~js
-beforeShapeMove: (
-    event: MouseEvent, 
+beforeShapeMove: ({
     id: string | number, 
-    coord: object
-) => boolean | void;
+    batch: (string | number)[],
+    coords: object,
+    event: MouseEvent | PointerEvent, 
+}) => boolean | void;
 ~~~
 
 ### Parameters
 
-The callback of the event takes the following parameters:
+The callback of the event is called with the following parameter:
 
-- `event` - (required) a native HTML event object
-- `id` - (required) the id of a shape
-- `coord` - (required) an object with the x and y coordinates of the shape position before movement
+- `config` - an object with the following properties:
+  - `id` - the id of a shape
+  - `batch` - an array of moved elements 
+  - `coords` -  an object with the `x` and `y` coordinates of the shape position before movement
+  - `event` - an event object
 
 ### Returns
 
-Return `false` to prevent the shape from being moved; otherwise, `true`
+The callback returns `false` to prevent the shape from being moved; otherwise, `true`
+
+:::info
+For handling the inner Diagram Editor events you can use the **on()** method.
+:::
 
 ### Example
 
-~~~js {7-14}
+~~~js {6-14}
 // initializing Diagram Editor
 const editor = new dhx.DiagramEditor("editor_container");
 // loading data
 editor.parse(data);
 
 // attaching a handler to the event
-editor.events.on("beforeShapeMove", (event, id, coordinates) => {
+editor.events.on("beforeShapeMove", ({id, batch, coords, event}) => {
     console.log(`
-        Shape ${id} is position:
-            x: ${coordinates.x}
-            y: ${coordinates.y}
+        Shape ${id} is at the position:
+            x: ${coords.x}
+            y: ${coords.y}
     `);
     return true;
 });
 ~~~
 
 **Change log**: 
-
-- The **id** and **coordinates** parameters are added in v4.0
+- The callback function takes an object as a parameter since v6.0
+- The **id** and **coords** parameters are added in v4.0
 - Added in v3.1

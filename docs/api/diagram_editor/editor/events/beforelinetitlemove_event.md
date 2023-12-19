@@ -24,11 +24,12 @@ beforeLineTitleMove: ({
 ### Parameters
 
 The callback of the event is called with the following parameter:
+
 - `config` - an object with the following properties:
   - `event` - an event object
   - `lineId` - the id of a line
   - `titleId` - the id of a text element of a line
-  - `coords` - an object with the x and y coordinates of the text element position before movement
+  - `coords` - an object with the `x` and `y` coordinates of the text element position before movement
 
 ### Returns
 
@@ -40,7 +41,7 @@ For handling the inner Diagram Editor events you can use the **on()** method.
 
 ### Example
 
-~~~js {7-14}
+~~~js {6-14}
 // initializing Diagram Editor
 const editor = new dhx.DiagramEditor("editor_container");
 // loading data
@@ -49,7 +50,7 @@ editor.parse(data);
 // attaching a handler to the event
 editor.events.on("beforeLineTitleMove", ({ titleId, coords }) => {
     console.log(`
-        LineTitle ${titleId} is position:
+        LineTitle ${titleId} is at the position:
             x: ${coords.x}
             y: ${coords.y}
     `);
@@ -58,5 +59,5 @@ editor.events.on("beforeLineTitleMove", ({ titleId, coords }) => {
 ~~~
 
 **Change log**: 
-- The parameter of the callback function is changed to object in v6.0
+- The callback function takes an object as a parameter since v6.0
 - Added in v4.1
