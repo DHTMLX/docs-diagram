@@ -31,7 +31,7 @@ The method returns *true*, if all the filters including the permanent ones have 
 
 ### Example
 
-~~~js{6-7,9-10,12-13}
+~~~js {6-7,9-10,12-13}
 const diagram = new dhx.Diagram("diagram_container", {
 	// configuration settings
 });
