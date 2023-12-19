@@ -4,14 +4,14 @@ title: paste Method of Copy Manager
 description: You can learn about the paste method of copy manager in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
 
-# !!paste()
+# paste()
 
 ### Description
 
 @short: creates new elements identical to the elements passed by the "copy()" method
 
 :::note
-The ***paste()*** method works only if the Diagram Editor is initialized in the **default** mode.
+The `paste()` method works only if the Diagram Editor is initialized in the **default** mode.
 :::
 
 ### Usage

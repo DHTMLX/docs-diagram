@@ -4,14 +4,14 @@ title: copy Method of Copy Manager
 description: You can learn about the copy method of copy manager in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
 
-# !!copy()
+# copy()
 
 ### Description
 
 @short: copies selected elements or elements specified by ids 
 
 :::note
-The ***copy()*** method works only if the Diagram Editor is initialized in the **default** mode.
+The `copy()` method works only if the Diagram Editor is initialized in the **default** mode.
 :::
 
 ### Usage
