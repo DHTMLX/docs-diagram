@@ -1,5 +1,5 @@
 ---
-sidebar_label: Initialization
+sidebar_label: Initialization !!
 title: Editor initialization
 description: You can learn how to start with Diagram Editor in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
@@ -125,7 +125,9 @@ const editor = new dhx.DiagramEditor("editor_container", {
 
 ### Properties
 
-Check [the full list of configuration properties of Editor](../../../api/editor/api_overview/#editor-properties).
+TODO
+
+Check [the full list of configuration properties of Editor]
 
 Loading data into Editor
 ----------------------------
