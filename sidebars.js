@@ -598,11 +598,11 @@ module.exports = {
                 },
               ]
             },
-      
+      // !!!!!! Masha Rudenko start
             // Data collection API
             {
               type: "category",
-              label: "DataCollection API",
+              label: "!!DataCollection API",
               collapsed: true,
               link: {
                 type: 'doc',
@@ -611,7 +611,7 @@ module.exports = {
               items: [
                 {
                   type: "category",
-                  label: "DataCollection methods",
+                  label: "!!DataCollection methods",
                   link: {
                     type: 'doc',
                     id: "api/overview/datacollection_methods_overview",
@@ -625,6 +625,7 @@ module.exports = {
                     "api/data_collection/filter_method",
                     "api/data_collection/find_method",
                     "api/data_collection/findall_method",
+                    "api/data_collection/getfilters_method",
                     "api/data_collection/getid_method",
                     "api/data_collection/getindex_method",
                     "api/data_collection/getitem_method",
@@ -637,13 +638,14 @@ module.exports = {
                     "api/data_collection/parse_method",
                     "api/data_collection/remove_method",
                     "api/data_collection/removeall_method",
+                    "api/data_collection/resetfilter_method",
                     "api/data_collection/serialize_method",
                     "api/data_collection/update_method",
                   ],
                 },
                 {
                   type: "category",
-                  label: "DataCollection events",
+                  label: "!!DataCollection events",
                   link: {
                     type: 'doc',
                     id: "api/overview/datacollection_events_overview",
@@ -654,12 +656,14 @@ module.exports = {
                     "api/data_collection/beforeadd_event",
                     "api/data_collection/beforeremove_event",
                     "api/data_collection/change_event",
+                    "api/data_collection/filter_event",
                     "api/data_collection/load_event",
                     
                   ],
                 },
               ]
             },
+     // !!!!!! Masha Rudenko end
       
             // Export
             {
@@ -744,7 +748,7 @@ module.exports = {
     // Guides
     {
       type: "category",
-      label: "Guides",
+      label: "!!Guides",
       collapsed: true,
       link: {
         type: 'doc',
@@ -828,11 +832,40 @@ module.exports = {
         "guides/data_export",
         "guides/event_handling",
         "guides/localization",
+  // !!!!!!!!! Masha Rudenko start
+        {
+          type: "category",
+          label: "!!Themes",
+          link: {
+            type: 'generated-index',
+            title: "Themes",
+            keywords: ['themes'],
+            image: '/img/docusaurus.png',
+          },
+          items: [
+            "guides/themes/themes",
+            "guides/themes/base_themes_configuration",
+            "guides/themes/custom_theme",
+          ],
+        },
+        {
+          type: "category",
+          label: "Integrations",
+          link: {
+            type: 'generated-index',
+            title: "Integrations",
+            keywords: ['angular', 'react', 'vue'],
+            image: '/img/docusaurus.png',
+          },
+          items: [
+            "guides/integrations/angular_integration",
+            "guides/integrations/react_integration",
+            "guides/integrations/vue_integration",
+          ],
+        },
         "guides/touch_support",
-        "guides/using_typescript",
-        "guides/angular_integration",
-        "guides/react_integration",
-        "guides/vue_integration",
+        "guides/using_typescript",    
+// !!!!!!!!! Masha Rudenko end  
       ]
     },
   ]
