@@ -1,5 +1,5 @@
 ---
-sidebar_label: beforeShapeMove
+sidebar_label: beforeShapeMove!!
 title: beforeShapeMove Event of Editor
 description: You can learn about the beforeShapeMove event in of editor the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
@@ -13,7 +13,7 @@ description: You can learn about the beforeShapeMove event in of editor the docu
 ### Usage
 
 ~~~js
-beforeShapeMove: ({
+"beforeShapeMove": ({
     id: string | number, 
     batch: (string | number)[],
     coords: object,
@@ -27,7 +27,7 @@ The callback of the event is called with the following parameter:
 
 - `config` - an object with the following properties:
   - `id` - the id of a shape
-  - `batch` - an array of moved elements 
+  - `batch` - an array of moved elements' ids
   - `coords` -  an object with the `x` and `y` coordinates of the shape position before movement
   - `event` - an event object
 

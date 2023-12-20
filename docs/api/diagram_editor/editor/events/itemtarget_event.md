@@ -1,5 +1,5 @@
 ---
-sidebar_label: itemTarget
+sidebar_label: itemTarget!!
 title: itemTarget Event of Editor
 description: You can learn about the itemTarget event of editor in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
@@ -19,7 +19,7 @@ The event doesn't work with the parent item of a moved item and with a moved ite
 ### Usage
 
 ~~~js
-itemTarget: ({
+"itemTarget": ({
     id: string | number, 
     targetId: string | number,
     batch: (string | number)[],
@@ -34,7 +34,7 @@ The callback of the event is called with the following parameter:
 - `config` - an object with the following properties:
   - `id` - the id of the moved item
   - `targetId` - the id of the target item
-  - `batch` - an array of moved elements 
+  - `batch` - an array of moved elements' ids 
   - `event` - an event object
 
 ### Returns

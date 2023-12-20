@@ -1,5 +1,5 @@
 ---
-sidebar_label: afterLineTitleMove
+sidebar_label: afterLineTitleMove!!
 title: afterLineTitleMove Event of Editor
 description: You can learn about the afterLineTitleMove event of editor in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
@@ -13,7 +13,7 @@ description: You can learn about the afterLineTitleMove event of editor in the d
 ### Usage
 
 ~~~js
-afterLineTitleMove: ({
+"afterLineTitleMove": ({
     event: MouseEvent | PointerEvent, 
     lineId: string | number, 
     titleId: string | number, 
