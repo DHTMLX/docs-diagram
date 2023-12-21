@@ -1,5 +1,5 @@
 ---
-sidebar_label: shapeResize
+sidebar_label: shapeResize!!
 title: shapeResize Event of Editor
 description: You can learn about the shapeResize event of editor in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
@@ -13,12 +13,16 @@ description: You can learn about the shapeResize event of editor in the document
 ### Usage
 
 ~~~js
-shapeResize: () => void;
+"shapeResize": () => void;
 ~~~
+
+:::info
+For handling the inner Diagram Editor events you can use the **on()** method.
+:::
 
 ### Example
 
-~~~js {7-9}
+~~~js {6-9}
 // initializing Diagram Editor
 const editor = new dhx.DiagramEditor("editor_container");
 // loading data
