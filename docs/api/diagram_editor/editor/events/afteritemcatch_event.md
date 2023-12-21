@@ -50,5 +50,6 @@ editor.events.on("afterItemCatch", ({id, targetId, batch, event}) => {
 ~~~
 
 **Change log**: 
+- The `batch` property is added in the v6.0
 - The callback function takes an object as a parameter since v6.0
 - Added in v4.1
