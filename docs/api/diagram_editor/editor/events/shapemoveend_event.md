@@ -25,7 +25,7 @@ description: You can learn about the shapeMoveEnd event of editor in the documen
 
 The callback of the event is called with the following parameter:
 
-- `config` - an object with the following properties:
+- `obj` - an object with the following properties:
   - `id` - the id of an item
   - `batch` - an array of moved elements' ids
   - `coords` - an object with the `x` and `y` coordinates of the shape position after movement
@@ -44,7 +44,7 @@ const editor = new dhx.DiagramEditor("editor_container");
 editor.parse(data);
 
 // attaching a handler to the event
-editor.events.on("shapeMoveEnd", ({id, batch, coords, event}) => {
+editor.events.on("shapeMoveEnd", ({ id, coords }) => {
     console.log(`
         Shape ${id} is at the position:
             x: ${coords.x} 

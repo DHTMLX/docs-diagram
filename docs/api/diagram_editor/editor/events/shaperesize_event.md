@@ -30,6 +30,6 @@ editor.parse(data);
 
 // attaching a handler to the event
 editor.events.on("shapeResize", function() {
-    console.log("The shape is resized");
+    console.log("The shape has been resized");
 });
 ~~~

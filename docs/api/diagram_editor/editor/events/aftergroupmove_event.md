@@ -25,7 +25,7 @@ description: You can learn about the afterGroupMove event of editor in the docum
 
 The callback of the event is called with the following parameter:
 
-- `config` - an object with the following properties:
+- `obj` - an object with the following properties:
   - `id` - the id of an item
   - `batch` - an array of moved elements' ids
   - `coords` - an object with the `x` and `y` coordinates of the group or swimlane position after movement
@@ -44,7 +44,7 @@ const editor = new dhx.DiagramEditor("editor_container");
 editor.parse(data);
 
 // attaching a handler to the event
-editor.events.on("afterGroupMove", ({id, batch, coords, event}) => {
+editor.events.on("afterGroupMove", ({ id, coords }) => {
     console.log(`
         Group ${id} is at the position:
             x: ${coords.x} 

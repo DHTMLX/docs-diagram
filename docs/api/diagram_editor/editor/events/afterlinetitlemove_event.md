@@ -25,7 +25,7 @@ description: You can learn about the afterLineTitleMove event of editor in the d
 
 The callback of the event is called with the following parameter:
 
-- `config` - an object with the following properties:
+- `obj` - an object with the following properties:
   - `event` - an event object
   - `lineId` - the id of a line
   - `titleId` - the id of a text element of a line

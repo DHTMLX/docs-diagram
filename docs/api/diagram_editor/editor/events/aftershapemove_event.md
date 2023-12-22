@@ -25,7 +25,7 @@ description: You can learn about the afterShapeMove event of editor in the docum
 
 The callback of the event is called with the following parameter:
 
-- `config` - an object with the following properties:
+- `obj` - an object with the following properties:
   - `id` - the id of a shape
   - `batch` - an array of moved elements' ids
   - `coords` - an object with the `x` and `y` coordinates of the shape position after movement
@@ -44,7 +44,7 @@ const editor = new dhx.DiagramEditor("editor_container");
 editor.parse(data);
 
 // attaching a handler to the event
-editor.events.on("afterShapeMove", ({id, batch, coords, event}) => {
+editor.events.on("afterShapeMove", ({ id, coords }) => {
     console.log(`
         Shape ${id} is at the position:
             x: ${coords.x} 
@@ -56,5 +56,5 @@ editor.events.on("afterShapeMove", ({id, batch, coords, event}) => {
 **Change log**: 
 - The `batch` property is added in the v6.0
 - The callback function takes an object as a parameter since v6.0
-- The **id** and **coords** parameters are added in v4.0
+- The `id` and `coords` parameters are added in v4.0
 - Added in v3.1

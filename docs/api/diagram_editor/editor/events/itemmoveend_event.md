@@ -11,7 +11,7 @@ description: You can learn about the itemMoveEnd event of editor in the document
 @short: Fires after an item is moved
 
 :::note
-The event doesn't work with the line object
+The event doesn't work with the **line** object
 :::
 
 ### Usage
@@ -29,7 +29,7 @@ The event doesn't work with the line object
 
 The callback of the event is called with the following parameter:
 
-- `config` - an object with the following properties:
+- `obj` - an object with the following properties:
   - `id` - the id of an item
   - `batch` - an array of moved elements' ids
   - `coords` - an object with the `x` and `y` coordinates of the item position after movement
@@ -44,7 +44,7 @@ const editor = new dhx.DiagramEditor("editor_container");
 editor.parse(data);
 
 // attaching a handler to the event
-editor.events.on("itemMoveEnd", ({id, batch, coords, event}) => {
+editor.events.on("itemMoveEnd", ({ id, coords }) => {
     console.log(`
         Item ${id} is at the position: 
             x: ${coords.x} 

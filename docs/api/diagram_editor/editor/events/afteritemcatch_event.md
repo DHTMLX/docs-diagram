@@ -29,7 +29,7 @@ The event works only in the **org chart** and **mindmap** modes of Diagram, the 
 
 The callback of the event is called with the following parameter:
 
-- `config` - an object with the following properties:
+- `obj` - an object with the following properties:
   - `id` - the id of the moved item
   - `targetId` - the id of the target item
   - `batch` - an array of moved elements' ids 
@@ -37,15 +37,17 @@ The callback of the event is called with the following parameter:
 
 ### Example
 
-~~~js {6-9}
+~~~js {6-11}
 // initializing Diagram Editor
 const editor = new dhx.DiagramEditor("editor_container");
 // loading data
 editor.parse(data);
 
 // attaching a handler to the event
-editor.events.on("afterItemCatch", ({id, targetId, batch, event}) => {
-    console.log("afterItemCatch", {id, targetId, batch, event});
+editor.events.on("afterItemCatch", ({ id, targetId }) => {
+    console.log(`
+		  Item ${id} is caught by the item ${targetId}
+	  `);
 });
 ~~~
 

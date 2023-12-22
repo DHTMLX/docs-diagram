@@ -26,10 +26,6 @@ The callback of the event is called with the following parameters:
 - `iconId` - the type or id of the toolbar control
 - `shape` - an object with the item configuration
 
-:::info
-For handling the inner Diagram Editor events you can use the **on()** method.
-:::
-
 ### Returns
 
 The callback returns `false` to prevent the toolbar control from being clicked; otherwise, `true`
@@ -40,7 +36,7 @@ For handling the inner Diagram Editor events you can use the **on()** method.
 
 ### Example
 
-~~~js {6-10}
+~~~js {6-12}
 // initializing Diagram Editor
 const editor = new dhx.DiagramEditor("editor_container");
 // loading data
@@ -48,7 +44,9 @@ editor.parse(data);
 
 // attaching a handler to the event
 editor.events.on("beforeShapeIconClick", function(iconId, shape) {
-    console.log("You will click the", iconId, "toolbar control", shape);
+    console.log(`
+	    You will click the ${iconId} toolbar control of the shape ${shape.id}
+    `);
     return true;
 });
 ~~~

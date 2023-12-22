@@ -32,7 +32,7 @@ For handling the inner Diagram Editor events you can use the **on()** method.
 
 ### Example
 
-~~~js {6-10}
+~~~js {6-11}
 // initializing Diagram Editor
 const editor = new dhx.DiagramEditor("editor_container");
 // loading data
@@ -40,7 +40,9 @@ editor.parse(data);
 
 // attaching a handler to the event
 editor.events.on("afterShapeIconClick", function(iconId, shape) {
-    console.log("You've clicked the", iconId, "toolbar control", shape);
+    console.log(`
+	    You've clicked the ${iconId} toolbar control of the shape ${shape.id}
+    `);
 });
 ~~~
 

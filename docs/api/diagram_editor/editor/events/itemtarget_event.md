@@ -8,12 +8,12 @@ description: You can learn about the itemTarget event of editor in the documenta
 
 ### Description
 
-@short: Fires when the moved item is under the target item
+@short: Fires when the moved item is hovering over the target item
 
 :::info
 The event works only in the **org chart** and **mindmap** modes of Diagram, the ***itemsDraggable*** property must be set to `true`.
 
-The event doesn't work with the parent item of a moved item and with a moved item that has the `giveItem: false` property.
+The event doesn't work with the *parent item of a moved item* and with a *moved item that has the `giveItem: false` property*.
 :::
 
 ### Usage
@@ -31,7 +31,7 @@ The event doesn't work with the parent item of a moved item and with a moved ite
 
 The callback of the event is called with the following parameter:
 
-- `config` - an object with the following properties:
+- `obj` - an object with the following properties:
   - `id` - the id of the moved item
   - `targetId` - the id of the target item
   - `batch` - an array of moved elements' ids 
@@ -39,7 +39,7 @@ The callback of the event is called with the following parameter:
 
 ### Returns
 
-The callback returns `false` to prevent an item from being moved under the target item; otherwise, `true`
+The callback returns `false` to prevent an item from being hovered over the target item; otherwise, `true`
 
 :::info
 For handling the inner Diagram Editor events you can use the **on()** method.
@@ -47,15 +47,17 @@ For handling the inner Diagram Editor events you can use the **on()** method.
 
 ### Example
 
-~~~js {6-9}
+~~~js {6-11}
 // initializing Diagram Editor
 const editor = new dhx.DiagramEditor("editor_container");
 // loading data
 editor.parse(data);
 
 // attaching a handler to the event
-editor.events.on("itemTarget", ({id, targetId, batch, event}) => {
-    console.log("itemTarget", {id, targetId, batch, event});
+editor.events.on("itemTarget", ({ id, targetId }) => {
+    console.log(`
+		  Item ${id} is hovering over the item ${targetId}
+	  `);
 });
 ~~~
 

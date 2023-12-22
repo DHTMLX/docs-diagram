@@ -25,7 +25,7 @@ description: You can learn about the lineTitleMoveEnd event of editor in the doc
 
 The callback of the event is called with the following parameter:
 
-- `config` - an object with the following properties:
+- `obj` - an object with the following properties:
   - `event` - an event object
   - `lineId` - the id of a line
   - `titleId` - the id of a text element of a line
@@ -46,7 +46,7 @@ editor.parse(data);
 // attaching a handler to the event
 editor.events.on("lineTitleMoveEnd", ({ titleId, coords }) => {
     console.log(`
-        LineTitle ${titleId} is position:
+        LineTitle ${titleId} is at the position:
             x: ${coords.x}
             y: ${coords.y}
     `);

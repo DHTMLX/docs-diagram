@@ -11,7 +11,7 @@ description: You can learn about the afterItemMove event of editor in the docume
 @short: Fires when an item is moved one grid step
 
 :::note
-The event doesn't work with the line object
+The event doesn't work with the **line** object
 :::
 
 ### Usage
@@ -29,12 +29,11 @@ The event doesn't work with the line object
 
 The callback of the event is called with the following parameter:
 
-- `config` - an object with the following properties:
+- `obj` - an object with the following properties:
   - `id` - the id of an item
   - `batch` - an array of moved elements' ids
   - `coords` - an object with the `x` and `y` coordinates of the item position after movement
   - `event` - an event object
-
 
 :::info
 For handling the inner Diagram Editor events you can use the **on()** method.
@@ -49,7 +48,7 @@ const editor = new dhx.DiagramEditor("editor_container");
 editor.parse(data);
 
 // attaching a handler to the event
-editor.events.on("afterItemMove", ({id, batch, coords, event}) => {
+editor.events.on("afterItemMove", ({ id, coords }) => {
     console.log(`
         Item ${id} is at the position: 
             x: ${coords.x} 
