@@ -10,6 +10,10 @@ description: You can learn about the afterShapeMove event of editor in the docum
 
 @short: Fires when a shape is moved one grid step
 
+:::note
+The event fires once for all the shapes being held and dragged. The ids of dragged elements are provided in the `batch` property of the callback function's parameter.
+:::
+
 ### Usage
 
 ~~~js
@@ -17,7 +21,7 @@ description: You can learn about the afterShapeMove event of editor in the docum
     id: string | number, 
     batch: (string | number)[],
     coords: object,
-    event: MouseEvent | PointerEvent,
+    event: PointerEvent,
 }) => void;
 ~~~
 
@@ -28,7 +32,9 @@ The callback of the event is called with the following parameter:
 - `obj` - an object with the following properties:
   - `id` - the id of a shape
   - `batch` - an array of moved elements' ids
-  - `coords` - an object with the `x` and `y` coordinates of the shape position after movement
+  - `coords` - an object with the `x` and `y` coordinates of the shape position after movement, where:
+    - `x` - the horizontal position of the shape, moving from left to right
+    - `y` - the vertical position of the shape, moving from top to bottom
   - `event` - an event object
 
 :::info

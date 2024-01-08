@@ -14,7 +14,7 @@ description: You can learn about the lineTitleMoveEnd event of editor in the doc
 
 ~~~js
 "lineTitleMoveEnd": ({
-    event: MouseEvent | PointerEvent, 
+    event: PointerEvent, 
     lineId: string | number, 
     titleId: string | number, 
     coords: obj
@@ -29,7 +29,9 @@ The callback of the event is called with the following parameter:
   - `event` - an event object
   - `lineId` - the id of a line
   - `titleId` - the id of a text element of a line
-  - `coords` - an object with the `x` and `y` coordinates of the text element position after movement
+  - `coords` - an object with the `x` and `y` coordinates of the text element position after movement, where:
+    - `x` - the horizontal position of the text element, moving from left to right
+    - `y` - the vertical position of the text element, moving from top to bottom
 
 :::info
 For handling the inner Diagram Editor events you can use the **on()** method.

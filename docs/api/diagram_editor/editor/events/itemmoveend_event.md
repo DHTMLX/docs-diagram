@@ -11,7 +11,9 @@ description: You can learn about the itemMoveEnd event of editor in the document
 @short: Fires after an item is moved
 
 :::note
-The event doesn't work with the **line** object
+The event doesn't work with the **line** object.
+
+The event fires once for all the elements being held and dragged. The ids of dragged elements are provided in the `batch` property of the callback function's parameter.
 :::
 
 ### Usage
@@ -21,7 +23,7 @@ The event doesn't work with the **line** object
     id: string | number, 
     batch: (string | number)[],
     coords: object,
-    event: MouseEvent | PointerEvent,
+    event: PointerEvent,
 }) => void;
 ~~~
 
@@ -32,7 +34,9 @@ The callback of the event is called with the following parameter:
 - `obj` - an object with the following properties:
   - `id` - the id of an item
   - `batch` - an array of moved elements' ids
-  - `coords` - an object with the `x` and `y` coordinates of the item position after movement
+  - `coords` - an object with the `x` and `y` coordinates of the item position after movement, where:
+    - `x` - the horizontal position of the item, moving from left to right
+    - `y` - the vertical position of the item, moving from top to bottom
   - `event` - an event object
 
 ### Example

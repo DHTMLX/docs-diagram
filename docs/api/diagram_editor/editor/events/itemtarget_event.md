@@ -23,7 +23,7 @@ The event doesn't work with the *parent item of a moved item* and with a *moved 
     id: string | number, 
     targetId: string | number,
     batch: (string | number)[],
-    event: MouseEvent | PointerEvent
+    event: PointerEvent
 }) => boolean | void;
 ~~~
 

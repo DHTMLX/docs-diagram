@@ -21,7 +21,7 @@ The event works only in the **org chart** and **mindmap** modes of Diagram, the 
     id: string | number, 
     targetId: string | number,
     batch: (string | number)[],
-    event: MouseEvent | PointerEvent
+    event: PointerEvent
 }) => void;
 ~~~
 
