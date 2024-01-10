@@ -13,7 +13,7 @@ description: You can learn about the beforeItemMove event of editor in the docum
 :::note
 The event doesn't work with the **line** object.
 
-The event fires once for all the elements being held and dragged. The ids of dragged elements are provided in the `batch` property of the callback function's parameter.
+The event fires just for the target element despite the number of selected elements. The ids of dragged elements are provided in the `batch` property of the callback function's parameter.
 :::
 
 ### Usage

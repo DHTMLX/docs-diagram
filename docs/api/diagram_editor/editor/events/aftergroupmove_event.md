@@ -11,7 +11,7 @@ description: You can learn about the afterGroupMove event of editor in the docum
 @short: Fires when a group or swimlane is moved one grid step
 
 :::note
-The event fires once for all groups/swimlanes being held and dragged. The ids of dragged elements are provided in the `batch` property of the callback function's parameter.
+The event fires just for the target element despite the number of selected elements. The ids of dragged elements are provided in the `batch` property of the callback function parameter.
 :::
 
 ### Usage

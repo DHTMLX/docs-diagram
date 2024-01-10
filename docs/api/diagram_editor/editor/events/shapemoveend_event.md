@@ -11,7 +11,7 @@ description: You can learn about the shapeMoveEnd event of editor in the documen
 @short: Fires after a shape is moved
 
 :::note
-The event fires once for all the shapes being held and dragged. The ids of dragged elements are provided in the `batch` property of the callback function's parameter.
+The event fires just for the target element despite the number of selected elements. The ids of dragged elements are provided in the `batch` property of the callback function's parameter.
 :::
 
 ### Usage
