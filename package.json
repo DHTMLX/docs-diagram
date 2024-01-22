@@ -19,7 +19,8 @@
     "clsx": "^1.1.1",
     "docusaurus-gtm-plugin": "^0.0.2",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "sass": "^1.70.0"
   },
   "browserslist": {
     "production": [
@@ -35,7 +36,7 @@
   },
   "devDependencies": {
     "dhx-md-data-parser": "file:local_modules/dhx-md-data-parser",
-    "docusaurus-plugin-sass": "^0.1.11",
+    "docusaurus-plugin-sass": "^0.2.5",
     "webpack-cli": "^4.4.0"
   }
 }

@@ -27,9 +27,8 @@ The event fires just for the target element despite the number of selected eleme
 
 ### Parameters
 
-The callback of the event is called with the following parameter:
+The callback of the event is called with an object with the following parameters:
 
-- `obj` - an object with the following properties:
   - `id` - the id of a shape
   - `batch` - an array of moved elements' ids
   - `coords` - an object with the `x` and `y` coordinates of the shape position after movement, where:
@@ -63,4 +62,3 @@ editor.events.on("afterShapeMove", ({ id, coords }) => {
 - The `batch` property is added in the v6.0
 - The callback function takes an object as a parameter since v6.0
 - The `id` and `coords` parameters are added in v4.0
-- Added in v3.1

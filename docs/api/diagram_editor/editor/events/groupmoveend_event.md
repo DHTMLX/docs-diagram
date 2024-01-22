@@ -27,9 +27,8 @@ The event fires just for the target element despite the number of selected eleme
 
 ### Parameters
 
-The callback of the event is called with the following parameter:
+The callback of the event is called with an object with the following parameters:
 
-- `obj` - an object with the following properties:
   - `id` - the id of an item
   - `batch` - an array of moved elements' ids
   - `coords` - an object with the `x` and `y` coordinates of the group or swimlane position after movement, where:
@@ -62,4 +61,4 @@ editor.events.on("groupMoveEnd", ({ id, coords }) => {
 **Change log**: 
 - The `batch` property is added in the v6.0
 - The callback function takes an object as a parameter since v6.0
-- Added in v4.0
+

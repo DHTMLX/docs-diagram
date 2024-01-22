@@ -23,9 +23,8 @@ description: You can learn about the beforeLineTitleMove event of editor in the 
 
 ### Parameters
 
-The callback of the event is called with the following parameter:
+The callback of the event is called with an object with the following parameters:
 
-- `obj` - an object with the following properties:
   - `event` - an event object
   - `lineId` - the id of a line
   - `titleId` - the id of a text element of a line
@@ -62,4 +61,4 @@ editor.events.on("beforeLineTitleMove", ({ titleId, coords }) => {
 
 **Change log**: 
 - The callback function takes an object as a parameter since v6.0
-- Added in v4.1
+

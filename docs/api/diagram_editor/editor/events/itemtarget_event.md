@@ -29,9 +29,8 @@ The event doesn't work with the *parent item of a moved item* and with a *moved 
 
 ### Parameters
 
-The callback of the event is called with the following parameter:
+The callback of the event is called with an object with the following parameters:
 
-- `obj` - an object with the following properties:
   - `id` - the id of the moved item
   - `targetId` - the id of the target item
   - `batch` - an array of moved elements' ids 
@@ -64,4 +63,4 @@ editor.events.on("itemTarget", ({ id, targetId }) => {
 **Change log**: 
 - The `batch` property is added in the v6.0
 - The callback function takes an object as a parameter since v6.0
-- Added in v4.1
+
