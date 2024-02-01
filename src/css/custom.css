@@ -102,27 +102,17 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 
 /* end Link icons */
 
-
 /* styles for tables */
 
 table {
+    width: 100%;
     display: inline-table;
 }
-
-
-table tr:nth-child(2n) {
-    /*background-color: var(--ifm-table-background);*/
+table th:first-child {
+    width: 25%;
 }
-
-tr {
-    /*line-height: 1.2;*/
-}
-table {
-    text-align: left;
-}
-
+  
 /* end styles for tables */
-
 
 /* imgs */
 
