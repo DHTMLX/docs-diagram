@@ -1,5 +1,5 @@
 ---
-sidebar_label: lineTitleMoveEnd
+sidebar_label: lineTitleMoveEnd!!
 title: lineTitleMoveEnd Event of Editor
 description: You can learn about the lineTitleMoveEnd event of editor in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
@@ -13,39 +13,47 @@ description: You can learn about the lineTitleMoveEnd event of editor in the doc
 ### Usage
 
 ~~~js
-lineTitleMoveEnd: (
-    event: MouseEvent, 
+"lineTitleMoveEnd": ({
+    event: PointerEvent, 
     lineId: string | number, 
     titleId: string | number, 
-    coord: object
-) => void;
+    coords: obj
+}) => void;
 ~~~
 
 ### Parameters
 
-The callback of the event takes the following parameters:
+The callback of the event is called with an object with the following parameters:
 
-- `event` - (required) a native HTML event object
-- `lineId` - (required) the id of a line
-- `titleId` - (required) the id of a text element of a line
-- `coord` - (required) an object with the x and y coordinates of the text element position after movement
+  - `event` - an event object
+  - `lineId` - the id of a line
+  - `titleId` - the id of a text element of a line
+  - `coords` - an object with the `x` and `y` coordinates of the text element position after movement, where:
+    - `x` - the horizontal position of the text element, moving from left to right
+    - `y` - the vertical position of the text element, moving from top to bottom
+
+:::info
+For handling the inner Diagram Editor events you can use the **on()** method.
+:::
 
 ### Example
 
-~~~js {7-13}
+~~~js {6-13}
 // initializing Diagram Editor
 const editor = new dhx.DiagramEditor("editor_container");
 // loading data
 editor.parse(data);
 
 // attaching a handler to the event
-editor.events.on("lineTitleMoveEnd", (event, lineId, titleId, coordinates) => {
+editor.events.on("lineTitleMoveEnd", ({ titleId, coords }) => {
     console.log(`
-        LineTitle ${id} is position:
-            x: ${coordinates.x}
-            y: ${coordinates.y}
+        LineTitle ${titleId} is at the position:
+            x: ${coords.x}
+            y: ${coords.y}
     `);
 });
 ~~~
 
-**Change log**: Added in v4.1
+**Change log**:
+- The callback function takes an object as a parameter since v6.0
+
