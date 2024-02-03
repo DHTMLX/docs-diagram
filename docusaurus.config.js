@@ -129,8 +129,9 @@ module.exports = {
     tagline: 'DHTMLX JavaScript Diagram Docs',
     url: 'https://docs.dhtmlx.com',
     baseUrl: '/diagram/',
-    onBrokenLinks: 'warn',
-    onBrokenMarkdownLinks: 'warn',
+    onBrokenLinks: 'ignore', // !!! TODO, make to warn before release 
+    onBrokenAnchors: 'ignore', // !!! TODO, make to warn before release 
+    onBrokenMarkdownLinks: 'ignore',
     favicon: 'img/favicon.ico',
     organizationName: 'DHTMLX', // Usually your GitHub org/user name
     projectName: 'docs-diagram', // Usually your repo name
@@ -176,8 +177,8 @@ module.exports = {
             //... other Algolia params
         },
         prism: {
-            theme: require('prism-react-renderer/themes/github'),
-            darkTheme: require('prism-react-renderer/themes/dracula'),
+            //theme: require('prism-react-renderer/themes/github'),
+            //darkTheme: require('prism-react-renderer/themes/dracula'),
         },
         navbar: {
             title: 'JavaScript Diagram Documentation',
