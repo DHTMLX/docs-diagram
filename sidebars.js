@@ -233,7 +233,7 @@ module.exports = {
                   items: [
                     "api/diagram_editor/editor/config/autoplacement_property",
                     //"api/diagram_editor/editor/config/controls_property", !!!Deprecated
-                    "api/diagram_editor/editor/config/connectionpoints_property",
+                    "api/diagram_editor/editor/config/connectionpoints_property", // New
                     "api/diagram_editor/editor/config/defaults_property",
                     //"api/diagram_editor/editor/config/editmode_property", !!!Deprecated
                     //"api/diagram_editor/editor/config/gappreview_property", !!!Deprecated
@@ -243,7 +243,7 @@ module.exports = {
                     "api/diagram_editor/editor/config/lineconfig_property",
                     "api/diagram_editor/editor/config/linegap_property",
                     "api/diagram_editor/editor/config/magnetic_property",
-                    "api/diagram_editor/editor/config/resizepoints_property",
+                    "api/diagram_editor/editor/config/resizepoints_property", // New
                     //"api/diagram_editor/editor/config/reservedwidth_property", !!!Deprecated
                     "api/diagram_editor/editor/config/scale_property",
                     //"api/diagram_editor/editor/config/scalepreview_property", !!!Deprecated
@@ -252,6 +252,7 @@ module.exports = {
                     "api/diagram_editor/editor/config/shapetoolbar_property",
                     "api/diagram_editor/editor/config/shapetype_property",
                     "api/diagram_editor/editor/config/type_property",
+                    "api/diagram_editor/editor/config/view_property", // New
                   ]
                 },
               ]
@@ -301,7 +302,7 @@ module.exports = {
                 },
               ]
             },
-
+// !!!!!!!!! Masha Rudenko start
             // Copy Manager API
             {
               type: "category",
@@ -322,25 +323,15 @@ module.exports = {
                     title: "Copy manager methods"
                   },
                   items: [
-                    "api/diagram_editor/copymanager/methods/some_method",
-                  ],
-                },
-                // Copy Manager Properties
-                {
-                  type: "category",
-                  label: "!!Copy manager properties",
-                  collapsed: true,
-                  link: {
-                    type: 'generated-index',
-                    title: "Copy manager properties"
-                  },
-                  items: [
-                    "api/diagram_editor/copymanager/config/some_property",
+                    "api/diagram_editor/copymanager/methods/copy_method",
+                    "api/diagram_editor/copymanager/methods/copystyles_method",
+                    "api/diagram_editor/copymanager/methods/paste_method",
+                    "api/diagram_editor/copymanager/methods/pastestyles_method",
                   ],
                 },
               ]
             },
-
+// !!!!!!!!! Masha Rudenko end
             // View API
             {
               type: "category",
@@ -361,9 +352,9 @@ module.exports = {
                     title: "View methods"
                   },
                   items: [
-                    "api/diagram_editor/view/methods/hide_method",
-                    "api/diagram_editor/view/methods/show_method",
-                    "api/diagram_editor/view/methods/some_method",  //Template
+                    "api/diagram_editor/view/methods/hide_method", // New
+                    "api/diagram_editor/view/methods/isvisible_method", // New
+                    "api/diagram_editor/view/methods/show_method", // New
                   ],
                 },
 
@@ -377,7 +368,10 @@ module.exports = {
                     title: "View events"
                   },
                   items: [
-                    "api/diagram_editor/view/events/some_event",
+                    "api/diagram_editor/view/events/afterhide_event", // New
+                    "api/diagram_editor/view/events/aftershow_event", // New
+                    "api/diagram_editor/view/events/beforehide_event", // New
+                    "api/diagram_editor/view/events/beforeshow_event", // New
                   ],
                 },
               ]
@@ -512,6 +506,32 @@ module.exports = {
                 },
               ]
             },
+
+            // Shapebar API
+            {
+              type: "category",
+              label: "!!Shapebar API",
+              collapsed: true,
+              link: {
+                type: 'generated-index',
+                title: "Shapebar API"
+              },
+              items: [
+                // Editbar Properties
+                {
+                  type: "category",
+                  label: "!!Shapebar properties",
+                  collapsed: true,
+                  link: {
+                    type: 'generated-index',
+                    title: "Shapebar properties"
+                  },
+                  items: [
+                    "api/diagram_editor/shapebar/config/some_property",
+                  ],
+                },
+              ]
+            },
           ]
         },
 
@@ -603,11 +623,11 @@ module.exports = {
                 },
               ]
             },
-      
+      // !!!!!! Masha Rudenko start
             // Data collection API
             {
               type: "category",
-              label: "DataCollection API",
+              label: "!!DataCollection API",
               collapsed: true,
               link: {
                 type: 'doc',
@@ -616,7 +636,7 @@ module.exports = {
               items: [
                 {
                   type: "category",
-                  label: "DataCollection methods",
+                  label: "!!DataCollection methods",
                   link: {
                     type: 'doc',
                     id: "api/overview/datacollection_methods_overview",
@@ -630,6 +650,7 @@ module.exports = {
                     "api/data_collection/filter_method",
                     "api/data_collection/find_method",
                     "api/data_collection/findall_method",
+                    "api/data_collection/getfilters_method",
                     "api/data_collection/getid_method",
                     "api/data_collection/getindex_method",
                     "api/data_collection/getitem_method",
@@ -642,13 +663,14 @@ module.exports = {
                     "api/data_collection/parse_method",
                     "api/data_collection/remove_method",
                     "api/data_collection/removeall_method",
+                    "api/data_collection/resetfilter_method",
                     "api/data_collection/serialize_method",
                     "api/data_collection/update_method",
                   ],
                 },
                 {
                   type: "category",
-                  label: "DataCollection events",
+                  label: "!!DataCollection events",
                   link: {
                     type: 'doc',
                     id: "api/overview/datacollection_events_overview",
@@ -659,12 +681,14 @@ module.exports = {
                     "api/data_collection/beforeadd_event",
                     "api/data_collection/beforeremove_event",
                     "api/data_collection/change_event",
+                    "api/data_collection/filter_event",
                     "api/data_collection/load_event",
                     
                   ],
                 },
               ]
             },
+     // !!!!!! Masha Rudenko end
       
             // Export
             {
@@ -749,7 +773,7 @@ module.exports = {
     // Guides
     {
       type: "category",
-      label: "Guides",
+      label: "!!Guides",
       collapsed: true,
       link: {
         type: 'doc',
@@ -809,7 +833,7 @@ module.exports = {
         },
         {
           type: "category",
-          label: "Diagram Editor",
+          label: "!!Diagram Editor",
           link: {
             type: 'generated-index',
             title: "Diagram editor",
@@ -833,11 +857,40 @@ module.exports = {
         "guides/data_export",
         "guides/event_handling",
         "guides/localization",
+  // !!!!!!!!! Masha Rudenko start
+        {
+          type: "category",
+          label: "!!Themes",
+          link: {
+            type: 'generated-index',
+            title: "Themes",
+            keywords: ['themes'],
+            image: '/img/docusaurus.png',
+          },
+          items: [
+            "guides/themes/themes",
+            "guides/themes/base_themes_configuration",
+            "guides/themes/custom_theme",
+          ],
+        },
+        {
+          type: "category",
+          label: "Integrations",
+          link: {
+            type: 'generated-index',
+            title: "Integrations",
+            keywords: ['angular', 'react', 'vue'],
+            image: '/img/docusaurus.png',
+          },
+          items: [
+            "guides/integrations/angular_integration",
+            "guides/integrations/react_integration",
+            "guides/integrations/vue_integration",
+          ],
+        },
         "guides/touch_support",
-        "guides/using_typescript",
-        "guides/angular_integration",
-        "guides/react_integration",
-        "guides/vue_integration",
+        "guides/using_typescript",    
+// !!!!!!!!! Masha Rudenko end  
       ]
     },
   ]

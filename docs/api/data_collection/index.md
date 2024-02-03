@@ -20,6 +20,7 @@ A set of APIs that allow you to work with data of a diagram. The API can be used
 | [](api/data_collection/filter_method.md)     | @getshort(api/data_collection/filter_method.md)     |
 | [](api/data_collection/find_method.md)       | @getshort(api/data_collection/find_method.md)       |
 | [](api/data_collection/findall_method.md)    | @getshort(api/data_collection/findall_method.md)    |
+| [](api/data_collection/getfilters_method.md) | @getshort(api/data_collection/getfilters_method.md) |
 | [](api/data_collection/getid_method.md)      | @getshort(api/data_collection/getid_method.md)      |
 | [](api/data_collection/getindex_method.md)   | @getshort(api/data_collection/getindex_method.md)   |
 | [](api/data_collection/getitem_method.md)    | @getshort(api/data_collection/getitem_method.md)    |
@@ -32,6 +33,7 @@ A set of APIs that allow you to work with data of a diagram. The API can be used
 | [](api/data_collection/parse_method.md)      | @getshort(api/data_collection/parse_method.md)      |
 | [](api/data_collection/remove_method.md)     | @getshort(api/data_collection/remove_method.md)     |
 | [](api/data_collection/removeall_method.md)  | @getshort(api/data_collection/removeall_method.md)  |
+| [](api/data_collection/resetfilter_method.md)| @getshort(api/data_collection/resetfilter_method.md)|
 | [](api/data_collection/serialize_method.md)  | @getshort(api/data_collection/serialize_method.md)  |
 | [](api/data_collection/update_method.md)     | @getshort(api/data_collection/update_method.md)     |
 
@@ -44,5 +46,6 @@ A set of APIs that allow you to work with data of a diagram. The API can be used
 | [](api/data_collection/beforeadd_event.md)    | @getshort(api/data_collection/beforeadd_event.md)    |
 | [](api/data_collection/beforeremove_event.md) | @getshort(api/data_collection/beforeremove_event.md) |
 | [](api/data_collection/change_event.md)       | @getshort(api/data_collection/change_event.md)       |
+| [](api/data_collection/filter_event.md)       | @getshort(api/data_collection/filter_event.md)       |
 | [](api/data_collection/load_event.md)         | @getshort(api/data_collection/load_event.md)         |
 

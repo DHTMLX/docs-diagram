@@ -20,7 +20,7 @@ scroll: (position: object) => void;
 
 The callback of the event takes the following parameter:
 
-- `position` - (required) the position of a scroll. The object contains x and y coordinates of the current scroll position, e.g.: {x: 67, y: 130}
+- `position` - (required) the position of a scroll. The object contains x and y coordinates of the current scroll position, e.g.: `{x: 67, y: 130}`
 
 ### Example
 
@@ -39,11 +39,10 @@ diagram.events.on("scroll", function(pos){
 });
 ~~~
 
-**Related articles**: 
+**Related articles**:
 - [Scrolling Diagram](../../../guides/diagram/scrolling_diagram/)
 - [Event handling](../../../guides/event_handling/)
 
 **Related samples**:
 - [Diagram. Default mode. Events](https://snippet.dhtmlx.com/7h2hgb3g)
 - [Diagram. Org chart mode. Events](https://snippet.dhtmlx.com/l38pct7c)
-
