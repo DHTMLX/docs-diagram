@@ -23,7 +23,7 @@ includes({
 ### Parameters
 
 - `id` - (required) the id of the checked item
-- `subId` - (optional) the id of the title (line title only)
+- `subId` - (optional) the id of a subheader (of a text element of a line only)
 - `strict` - (optional) controls the "strict" mode, `true` by default
 
 ### Returns
@@ -44,9 +44,9 @@ diagram.selection.includes({ id: "1" }) // returns true
 diagram.selection.includes({ id: "4" }) // returns false
 ~~~
 
-:::note
 The "strict" mode checks whether an id is in the list of selected elements, taking into consideration both `id` and `subId`. If the element is in the list of selected elements, including the title of the element in question, the method will return `false` if called without specifying the `subId`.
-In case the `subId` is unknown or just the very fact of the checked element being in the list is important, you can disable the "strict" mode.
+
+In case the `subId` is unknown or just the very fact of the checked element being in the list is important, you can disable the "strict" mode. Check the examples below:
 
 ~~~js {8-13}
 // a diagram must be created with the "select:true" option
@@ -63,7 +63,6 @@ diagram.selection.includes({ id: "1", subId: "1.1" }) // returns true
 // with the disabled strict mode (the subId isn't specified):
 diagram.selection.includes({ id: "1", strict: false }) // returns true
 ~~~
-:::
 
 **Change log**: Added in v6.0
 

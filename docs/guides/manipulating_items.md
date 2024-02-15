@@ -1,5 +1,5 @@
 ---
-sidebar_label: Manipulating items
+sidebar_label: Manipulating items!!
 title: Manipulating Items
 description: You can learn about manipulating items in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
@@ -159,20 +159,56 @@ You can check whether an item exists in the diagram via the [](../api/data_colle
 const shapeExists = diagram.data.exists("1");
 ~~~
 
-## Selecting items
+## !!Selecting items 
 
 ### Selecting an item
 
 To select items, you need firstly [enable selection](../../guides/diagram/configuration/#selecting-items) for the diagram and then call the [add()](api/selection/add_method.md) method of the **selection** object to select a desired item.
 
-~~~js
-const diagram = new dhx.Diagram("diagram_container", { select: true });
+~~~js {7,10-11,14}
+// a diagram must be created with the "select:true" option
+const diagram = new dhx.Diagram("diagram_container", { 
+    select: true 
+});
 diagram.data.parse(data);
- 
-diagram.selection.add("2");
+
+diagram.selection.add({ id: "1" }); // -> returns true if the item has been selected
+console.log(diagram.selection.getIds()); // -> ["1"]
+
+// adds the item with the id:"2" to the selection list
+diagram.selection.add({ id: "2", join: true }); 
+console.log(diagram.selection.getIds()); // -> ["1", "2"]
+
+diagram.selection.add({ id: "3" }); //->removes the previously selected items, i.e. the one with the id:"1"
+console.log(diagram.selection.getIds()); // -> ["3"]
 ~~~
 
-The method takes the item's id as a parameter.
+The method takes the following parameters:
+
+- `id` - (required) the id of the item to add into the selection list
+- `subId` - (optional) the id of a subheader of a text element of a line (line title only)
+- `join` - (optional) the mode of adding the selected element to the selection list. In case the parameter is set to *false* or isn't passed, the items previously added into the selection list will be reset
+
+The method returns:
+
+-  `true` if the element hadn't been in the list before and has been successfully added into it
+- `false` if the element hasn't been added into the list by some reason, namely:
+    - a user has prohibited deleting a particular element, while the mode of adding was limited to a single element (`join:false`)
+    - an element had already been added to the list
+
+The example below shows how the method works in case a `subId` is passed:
+
+~~~js {7,8}
+// a diagram must be created with the "select:true" option
+const diagram = new dhx.Diagram("diagram_container", { 
+    select: true 
+});
+diagram.data.parse(data);
+
+// selects the title of the line with the id: "1.1"
+diagram.selection.add({ id: "1", subId: "1.1" }); 
+console.log(diagram.selection.getIds()); // -> ["1"]
+~~~
 
 ### Unselecting an item
 
@@ -182,21 +218,15 @@ To unselect a selected item, make use of the [](../api/selection/remove_method.m
 diagram.selection.remove("2");
 ~~~
 
-### Getting the id of a selected item
+### Getting the ids of selected items
 
-You can get the id of the currently selected item with the [](../api/selection/getid_method.md) method of the **selection** object:
-
-~~~js
-const selected = diagram.selection.getId();
-~~~
-
-### Getting the subId of a selected item
-
-You can get the subId of the currently selected item with the [](../api/selection/getsubid_method.md) method of the **selection** object:
+You can get the list of ids of the currently selected items with the [](../api/selection/getids_method.md) method of the **selection** object:
 
 ~~~js
-const selected = diagram.selection.getSubId();
+const ids = diagram.selection.getIds(); // -> ["1", "1.1" ...] or []
 ~~~
+
+The method returns an array of ids of selected items and sub-items or an empty array, if there are no selected items at the moment.
 
 ### Getting the object of a selected item
 
@@ -206,7 +236,49 @@ It is also possible to get the object of a selected item using the [](../api/sel
 const item = diagram.selection.getItem();
 ~~~
 
-**Related sample:** [Diagram. Org chart mode. Item selection](https://snippet.dhtmlx.com/jyoxn5h7)
+### Clearing the selection object
+
+Whenever you need to clear diagram items from selection, use the [](../api/selection/clear_method.md) method of the **selection** object:
+
+~~~js
+diagram.selection.clear();
+~~~
+
+The **clear()** method allows clearing the object of selection without invoking events. 
+
+### Checking whether an item is selected
+
+There is a way to check the presence of an item in the list of selected Diagram items via API. Use the [](../api/selection/includes_method.md) method of the **selection** object for this purpose:
+
+~~~js
+diagram.selection.getIds(); // -> ["1", "2", "3"]
+diagram.selection.includes({ id: "1" }) // returns true
+diagram.selection.includes({ id: "4" }) // returns false
+~~~
+
+The method takes the following parameters:
+
+- `id` - (*string|number*) required, the id of the checked item
+- `subId` - (*string|number*) the id of a subheader (of a text element of a line only)
+- `strict` - (*boolean*) controls whether the "strict" mode is enabled/disabled, `true` by default
+
+The "strict" mode checks whether an id is in the list of selected elements, taking into consideration both `id` and `subId`. If the element is in the list of selected elements (including the title of the element in question) the method will return `false` if called without specifying the `subId`.
+
+In case the `subId` is unknown or it is necessary just to state the very fact of the checked element being in the list, you can disable the "strict" mode. Check the examples below:
+
+~~~js 
+diagram.selection.add({ id: "1", subId: "1.1" });
+// with the enabled strict mode (by default):
+diagram.selection.includes({ id: "1" }) // returns false
+// with the enabled strict mode and the subId specified:
+diagram.selection.includes({ id: "1", subId: "1.1" }) // returns true
+// with the disabled strict mode (the subId isn't specified):
+diagram.selection.includes({ id: "1", strict: false }) // returns true
+~~~
+
+TODO - update the link to snippet
+
+**Related sample:** [Diagram. Selection. Item selection](https://snippet.dhtmlx.com/jyoxn5h7)
 
 ## Expanding/collapsing items
 
@@ -214,7 +286,7 @@ You can expand and collapse either a shape that have child shapes or a group/swi
 
 Both methods takes two parameters:
 
-- **id** - (*string,number*) the id of the item
+- **id** - (*string|number*) the id of the item
 - **dir** - (*string*) optional, defines the side the children will be hidden/shown in relation to the parent shape: "left", "right"
 
 ~~~js
@@ -436,7 +508,7 @@ diagram.cellManager.getCellId(0, "row"); // returns 1
 diagram.cellManager.getCellId(2, "col"); // returns 3
 ~~~
 
-You can also get the id of a cell the subheader belongs to via using the [](../api/cell_manager/getsubheadercellid_method.md) method of the cellManager object. The method takes the id of the subheader of a swimlane as a parameter:
+You can also get the id of a cell the subheader belongs to by using the [](../api/cell_manager/getsubheadercellid_method.md) method of the cellManager object. The method takes the id of the subheader of a swimlane as a parameter:
 
 ~~~js
 // return the id of the cell the subheader belongs to
@@ -474,7 +546,7 @@ diagram.cellManager.getCellIndex(2, "row"); // returns 0
 diagram.cellManager.getCellIndex(8, "row"); // returns 2
 ~~~
 
-You can also get the index of a cell the subheader belongs to via using the [](../api/cell_manager/getsubheadercellindex_method.md) method of the cellManager object. The method takes the id of the subheader of a swimlane as a parameter:
+You can also get the index of a cell the subheader belongs to by using the [](../api/cell_manager/getsubheadercellindex_method.md) method of the cellManager object. The method takes the id of the subheader of a swimlane as a parameter:
 
 ~~~js
 // return the index of the cell the subheader belongs to

@@ -8,7 +8,7 @@ description: You can learn about the clear method of selection in the documentat
 
 ### Description
 
-@short: Clears the selected object without calling events
+@short: Clears the selection object without calling/invoking events
 
 ### Usage
 
