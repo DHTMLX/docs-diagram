@@ -183,7 +183,7 @@ diagram.selection.add({ id: "3" }); //->removes the previously selected items, i
 console.log(diagram.selection.getIds()); // -> ["3"]
 ~~~
 
-The method takes the following parameters:
+The method takes an object argument with the following parameters:
 
 - `id` - (required) the id of the item to add into the selection list
 - `subId` - (optional) the id of a subheader of a text element of a line (line title only)
@@ -212,10 +212,20 @@ console.log(diagram.selection.getIds()); // -> ["1"]
 
 ### Unselecting an item
 
-To unselect a selected item, make use of the [](../api/selection/remove_method.md) method of the **selection** object:
+To remove an item from the selection list, make use of the [](../api/selection/remove_method.md) method of the **selection** object:
 
-~~~js
-diagram.selection.remove("2");
+~~~js {2}
+console.log(diagram.selection.getIds()); // -> ["1", "2", "3"]
+diagram.selection.remove({ id: "3" }); // -> returns true if the item has been unselected
+console.log(diagram.selection.getIds()); // -> ["1", "2"]
+~~~
+
+The method may take an object with the id of the item to unselect as a parameter and returns *true*, if the item has been successfully removed from the selection list, or you may call the method with no arguments to remove all the items from the selection list as follows:
+
+~~~js {2}
+console.log(diagram.selection.getIds()); // -> ["1", "2", "3"]
+diagram.selection.remove(); // -> unselects all the items
+console.log(diagram.selection.getIds()); // -> []
 ~~~
 
 ### Getting the ids of selected items
@@ -230,11 +240,32 @@ The method returns an array of ids of selected items and sub-items or an empty a
 
 ### Getting the object of a selected item
 
-It is also possible to get the object of a selected item using the [](../api/selection/getitem_method.md) method of the **selection** object:
+You can get the object of a selected item using the [](../api/selection/getitem_method.md) method of the **selection** object. The method may take an object argument with the following parameter:
 
-~~~js
-const item = diagram.selection.getItem();
+- `id` - (optional) - the id of the item in question
+
+to return the object of the specified item, or you may call it without the parameter to get the object of the last selected item. Check the examples below to get the idea on the `getItem()` method's functionality:
+
+~~~js {8-10,12-13,15-17} 
+// a diagram must be created with the "select:true" option
+const diagram = new dhx.Diagram("diagram_container", { 
+    select: true 
+});
+diagram.data.parse(data);
+
+console.log(diagram.selection.getIds()); // -> ["1", "2", "3"]
+// getting the last selected item
+const last_selected = diagram.selection.getItem(); 
+// -> {id: "3", text: "Technical Director", title: "Jerry Wagner"}
+
+// getting the selected item by id
+const item = diagram.selection.getItem({ id: "1" }); // -> { id: "1", ... }
+
+// trying to get an item which is not in the selection list
+const item = diagram.selection.getItem({ id: "4" }); 
+// -> returns undefined, since there is no item with the specified id in the selection list
 ~~~
+
 
 ### Clearing the selection object
 
@@ -256,7 +287,7 @@ diagram.selection.includes({ id: "1" }) // returns true
 diagram.selection.includes({ id: "4" }) // returns false
 ~~~
 
-The method takes the following parameters:
+The method takes an object argument with the following parameters:
 
 - `id` - (*string|number*) required, the id of the checked item
 - `subId` - (*string|number*) the id of a subheader (of a text element of a line only)

@@ -26,7 +26,7 @@ const diagram = new dhx.Diagram("diagram_container", {
 diagram.data.parse(data);
 
 diagram.selection.clear();
-// Selection events are not fired
+// the Selection events are not fired
 ~~~
 
 **Change log**: Added in v6.0

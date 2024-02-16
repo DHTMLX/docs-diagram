@@ -18,7 +18,7 @@ getIds(): (string | number)[]
 
 ### Returns
 
-The method returns the list of ids of the selected items
+The method returns the list of ids of the selected items as an array
 
 ### Example
 

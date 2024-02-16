@@ -8,7 +8,7 @@ description: You can learn about the includes method of selection in the documen
 
 ### Description
 
-@short: Checks whether an element is in the selected list
+@short: Checks whether an element is in the selection list
 
 ### Usage
 
@@ -21,6 +21,8 @@ includes({
 ~~~
 
 ### Parameters
+
+The method takes an object argument with the following parameters:
 
 - `id` - (required) the id of the checked item
 - `subId` - (optional) the id of a subheader (of a text element of a line only)

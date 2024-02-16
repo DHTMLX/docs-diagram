@@ -16,15 +16,19 @@ description: You can learn about the add method of selection in the documentatio
 add({
     id: number | string,
     subId?: number | string,
-    join?: boolean
+    join?: boolean,
+    batch?: (string | number)[]
 }): boolean;
 ~~~
 
 ### Parameters
 
+The method takes an object argument with the following parameters:
+
 - `id` - (required) the id of the item to add into the selection list
 - `subId` - (optional) the id of a subheader of a text element of a line (line title only)
 - `join` - (optional) the mode of adding the selected element to the selection list. In case the parameter is set to *false* or isn't passed, the items previously added into the selection list will be reset
+- `batch` - (optional) the list of items to select (if known beforehand)
 
 ### Returns
 
@@ -73,8 +77,9 @@ console.log(diagram.selection.getIds()); // -> ["1"]
 
 The functionality is updated in v6.0:
 
+- The method takes an object as an argument
 - The `subId` and `join` parameters are added
-- The returned boolean value is added
+- The return boolean value is added
 
 **Related articles**:  
 
