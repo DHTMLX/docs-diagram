@@ -25,8 +25,8 @@ includes({
 The method takes an object argument with the following parameters:
 
 - `id` - (required) the id of the checked item
-- `subId` - (optional) the id of a subheader (of a text element of a line only)
-- `strict` - (optional) controls the "strict" mode, `true` by default
+- `subId` - (optional) the id of a subheader of a line title
+- `strict` - (optional) whether the "strict" mode is enabled/disabled, `true` by default
 
 ### Returns
 
@@ -34,11 +34,12 @@ The method returns `true` if the element is in the selected list, otherwise `fal
 
 ### Example
 
-~~~js {8-9}
+~~~js {9-10}
 // a diagram must be created with the "select:true" option
 const diagram = new dhx.Diagram("diagram_container", { 
     select: true 
 });
+// loading data
 diagram.data.parse(data);
 
 diagram.selection.getIds(); // -> ["1", "2", "3"]
@@ -50,19 +51,20 @@ The "strict" mode checks whether an id is in the list of selected elements, taki
 
 In case the `subId` is unknown or just the very fact of the checked element being in the list is important, you can disable the "strict" mode. Check the examples below:
 
-~~~js {8-13}
+~~~js {9-14}
 // a diagram must be created with the "select:true" option
 const diagram = new dhx.Diagram("diagram_container", { 
     select: true 
 });
+// loading data
 diagram.data.parse(data);
 
 diagram.selection.add({ id: "1", subId: "1.1" });
 // with the enabled strict mode (by default):
 diagram.selection.includes({ id: "1" }) // returns false
-// with the enabled strict mode and subId specified:
+// with the enabled strict mode and the "subId" specified:
 diagram.selection.includes({ id: "1", subId: "1.1" }) // returns true
-// with the disabled strict mode (the subId isn't specified):
+// with the disabled strict mode (and the "subId" not specified):
 diagram.selection.includes({ id: "1", strict: false }) // returns true
 ~~~
 
@@ -75,7 +77,7 @@ diagram.selection.includes({ id: "1", strict: false }) // returns true
 
 **Related samples**:
 
-TODO - check/update links to snippets
+TODO - update links to snippets
 
 - [Diagram. Selection. Item selection](https://snippet.dhtmlx.com/jyoxn5h7)
 - [Diagram. Default mode. Item selection](https://snippet.dhtmlx.com/tcny4obw)

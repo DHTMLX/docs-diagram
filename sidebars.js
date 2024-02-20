@@ -729,7 +729,7 @@ module.exports = {
                 },
                 {
                   type: "category",
-                  label: "Selection events",
+                  label: "!!Selection events",
                   link: {
                     type: 'doc',
                     id: "api/overview/selection_events_overview",

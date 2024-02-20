@@ -8,21 +8,25 @@ description: You can learn about the remove method of selection in the documenta
 
 ### Description
 
-@short: Removes an item from the selection list by id or removes all items from the selection list when called without arguments 
+@short: Removes an item from the selection list by id or all the items when called without arguments 
 
 ### Usage
 
 ~~~js
-remove(object?: { id: string | number }): boolean;
+remove({
+    id: string | number,
+}): boolean;
+
+//or
+
+remove(): boolean;
 ~~~
 
 ### Parameters
 
 The method may take an object argument with the following parameter:
 
-- `id` - (optional) the id of the item that should be removed from the selection list passed inside an object
-
-or be called with no arguments to remove all the items from the selection list 
+- `id` - (optional) the id of the item that should be removed from the selection list 
 
 ### Returns
 
@@ -30,11 +34,12 @@ The method returns `true` if the item has been unselected, otherwise `false`
 
 ### Example
 
-~~~js {8}
+~~~js {9}
 // a diagram must be created with the "select:true" option
 const diagram = new dhx.Diagram("diagram_container", { 
     select: true 
 });
+// loading data
 diagram.data.parse(data);
 
 console.log(diagram.selection.getIds()); // -> ["1", "2", "3"]
@@ -46,15 +51,17 @@ console.log(diagram.selection.getIds()); // -> ["1", "2"]
 
 Here's an example of calling the method without arguments:
 
-~~~js {8}
+~~~js {9-10}
 // a diagram must be created with the "select:true" option
 const diagram = new dhx.Diagram("diagram_container", { 
     select: true 
 });
+// loading data
 diagram.data.parse(data);
 
 console.log(diagram.selection.getIds()); // -> ["1", "2", "3"]
-diagram.selection.remove(); // -> unselects all the items
+// removes all the items from the selection list
+diagram.selection.remove(); 
 console.log(diagram.selection.getIds()); // -> []
 ~~~
 
@@ -70,7 +77,7 @@ The functionality is updated in v6.0:
 - [diagram.config.select](../../../api/diagram/select_property/)
 - [Selecting items](../../../guides/manipulating_items/#selecting-items)
 
-TODO - check/update links to snippets
+TODO - update links to snippets
 
 **Related samples**:
 

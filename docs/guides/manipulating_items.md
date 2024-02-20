@@ -165,11 +165,12 @@ const shapeExists = diagram.data.exists("1");
 
 To select items, you need firstly [enable selection](../../guides/diagram/configuration/#selecting-items) for the diagram and then call the [add()](api/selection/add_method.md) method of the **selection** object to select a desired item.
 
-~~~js {7,10-11,14}
+~~~js {8,11-12,15-16}
 // a diagram must be created with the "select:true" option
 const diagram = new dhx.Diagram("diagram_container", { 
     select: true 
 });
+// loading data
 diagram.data.parse(data);
 
 diagram.selection.add({ id: "1" }); // -> returns true if the item has been selected
@@ -179,33 +180,36 @@ console.log(diagram.selection.getIds()); // -> ["1"]
 diagram.selection.add({ id: "2", join: true }); 
 console.log(diagram.selection.getIds()); // -> ["1", "2"]
 
-diagram.selection.add({ id: "3" }); //->removes the previously selected items, i.e. the one with the id:"1"
+// removes the previously selected items and adds the item with the id:"3"
+diagram.selection.add({ id: "3" }); 
 console.log(diagram.selection.getIds()); // -> ["3"]
 ~~~
 
 The method takes an object argument with the following parameters:
 
 - `id` - (required) the id of the item to add into the selection list
-- `subId` - (optional) the id of a subheader of a text element of a line (line title only)
+- `subId` - (optional) the id of a subheader of a line title
 - `join` - (optional) the mode of adding the selected element to the selection list. In case the parameter is set to *false* or isn't passed, the items previously added into the selection list will be reset
+- `batch` - (optional) the list of items to select (if known beforehand)
 
 The method returns:
 
--  `true` if the element hadn't been in the list before and has been successfully added into it
-- `false` if the element hasn't been added into the list by some reason, namely:
-    - a user has prohibited deleting a particular element, while the mode of adding was limited to a single element (`join:false`)
+-  `true` if the element hadn't been in the list and was successfully added into it
+- `false` if the element wasn't added into the list by some reason, namely:
+    - a user has prohibited deleting a particular element, while the mode of adding was limited by a single element with the `join:false` setting
     - an element had already been added to the list
 
 The example below shows how the method works in case a `subId` is passed:
 
-~~~js {7,8}
+~~~js {8-9}
 // a diagram must be created with the "select:true" option
 const diagram = new dhx.Diagram("diagram_container", { 
     select: true 
 });
+// loading data
 diagram.data.parse(data);
 
-// selects the title of the line with the id: "1.1"
+// selects the line title with the id: "1.1"
 diagram.selection.add({ id: "1", subId: "1.1" }); 
 console.log(diagram.selection.getIds()); // -> ["1"]
 ~~~
@@ -220,11 +224,12 @@ diagram.selection.remove({ id: "3" }); // -> returns true if the item has been u
 console.log(diagram.selection.getIds()); // -> ["1", "2"]
 ~~~
 
-The method may take an object with the id of the item to unselect as a parameter and returns *true*, if the item has been successfully removed from the selection list, or you may call the method with no arguments to remove all the items from the selection list as follows:
+The method may take an object with the id of the item to unselect as a parameter. It returns *true*, if the item has been successfully removed from the selection list. You can also call the method with no arguments to remove all the items from the selection list as follows:
 
-~~~js {2}
+~~~js {2-3}
 console.log(diagram.selection.getIds()); // -> ["1", "2", "3"]
-diagram.selection.remove(); // -> unselects all the items
+// removes all the items from the selection list
+diagram.selection.remove(); 
 console.log(diagram.selection.getIds()); // -> []
 ~~~
 
@@ -244,32 +249,33 @@ You can get the object of a selected item using the [](../api/selection/getitem_
 
 - `id` - (optional) - the id of the item in question
 
-to return the object of the specified item, or you may call it without the parameter to get the object of the last selected item. Check the examples below to get the idea on the `getItem()` method's functionality:
+You can also call the method without the parameter to get the object of the last selected item. Check the examples below to explore the method's functionality:
 
-~~~js {8-10,12-13,15-17} 
+~~~js {9-11,13-15,17-19} 
 // a diagram must be created with the "select:true" option
 const diagram = new dhx.Diagram("diagram_container", { 
     select: true 
 });
+// loading data
 diagram.data.parse(data);
 
 console.log(diagram.selection.getIds()); // -> ["1", "2", "3"]
 // getting the last selected item
-const last_selected = diagram.selection.getItem(); 
+const item = diagram.selection.getItem(); 
 // -> {id: "3", text: "Technical Director", title: "Jerry Wagner"}
 
 // getting the selected item by id
-const item = diagram.selection.getItem({ id: "1" }); // -> { id: "1", ... }
+const item = diagram.selection.getItem({ id: "1" }); 
+// -> {id: "1", text: "Chairman & CEO", title: "Henry Bennett"}
 
 // trying to get an item which is not in the selection list
 const item = diagram.selection.getItem({ id: "4" }); 
 // -> returns undefined, since there is no item with the specified id in the selection list
 ~~~
 
-
 ### Clearing the selection object
 
-Whenever you need to clear diagram items from selection, use the [](../api/selection/clear_method.md) method of the **selection** object:
+Whenever you need to clear the selection object, use the [](../api/selection/clear_method.md) method:
 
 ~~~js
 diagram.selection.clear();
@@ -281,7 +287,7 @@ The **clear()** method allows clearing the object of selection without invoking 
 
 There is a way to check the presence of an item in the list of selected Diagram items via API. Use the [](../api/selection/includes_method.md) method of the **selection** object for this purpose:
 
-~~~js
+~~~js {2-3}
 diagram.selection.getIds(); // -> ["1", "2", "3"]
 diagram.selection.includes({ id: "1" }) // returns true
 diagram.selection.includes({ id: "4" }) // returns false
@@ -290,20 +296,20 @@ diagram.selection.includes({ id: "4" }) // returns false
 The method takes an object argument with the following parameters:
 
 - `id` - (*string|number*) required, the id of the checked item
-- `subId` - (*string|number*) the id of a subheader (of a text element of a line only)
+- `subId` - (*string|number*) the id of a subheader of a line title
 - `strict` - (*boolean*) controls whether the "strict" mode is enabled/disabled, `true` by default
 
-The "strict" mode checks whether an id is in the list of selected elements, taking into consideration both `id` and `subId`. If the element is in the list of selected elements (including the title of the element in question) the method will return `false` if called without specifying the `subId`.
+The "strict" mode checks whether an id is in the list of selected elements, taking into consideration both `id` and `subId`. If the element is in the list of selected elements, including the title of the element in question, the method will return `false` if called without specifying the `subId`.
 
-In case the `subId` is unknown or it is necessary just to state the very fact of the checked element being in the list, you can disable the "strict" mode. Check the examples below:
+In case the `subId` is unknown or just the very fact of the checked element being in the list is important, you can disable the "strict" mode. Check the examples below:
 
-~~~js 
+~~~js {2-7}
 diagram.selection.add({ id: "1", subId: "1.1" });
 // with the enabled strict mode (by default):
 diagram.selection.includes({ id: "1" }) // returns false
-// with the enabled strict mode and the subId specified:
+// with the enabled strict mode and the "subId" specified:
 diagram.selection.includes({ id: "1", subId: "1.1" }) // returns true
-// with the disabled strict mode (the subId isn't specified):
+// with the disabled strict mode (and the "subId" not specified):
 diagram.selection.includes({ id: "1", strict: false }) // returns true
 ~~~
 

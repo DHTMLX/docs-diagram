@@ -36,7 +36,7 @@ Return `false` to prevent an item from being selected; otherwise, `true`
 
 ### Example
 
-~~~js {10-12}
+~~~js {9-13}
 // initializing Diagram
 const diagram = new dhx.Diagram("diagram_container", { 
     type: "org", 
@@ -47,14 +47,14 @@ diagram.data.parse(data);
 
 // attaching a handler to the event
 diagram.events.on("beforeSelect", function({ id, subId, join, batch }) {
-    console.log(id + " was selected");
+    console.log(id + " will be selected");
     return true;
 });
 ~~~
 
 Here's an example of attaching an event handler to the event for the Diagram Editor:
 
-~~~js
+~~~js {8-12}
 // initializing Diagram editor
 const editor = new dhx.DiagramEditor("editor_container", {  
     // config options
@@ -62,21 +62,26 @@ const editor = new dhx.DiagramEditor("editor_container", {
 // loading data into the editor
 editor.parse(data);
 
+// attaching a handler to the event
 editor.diagram.events.on("beforeSelect", function({ id, subId, join, batch }) {
-    console.log(id + " was selected");
+    console.log(id + " will be selected");
     return true;
 });
 ~~~
 
 **Change log**: 
 
-- The **subId** parameter has been added in v4.1
-- The method takes an object as an argument since v6.0
-- The usage of the **subId** parameter has been limited to the line titles only in 6.0
-- The **join** and **batch** parameters have been added in v6.0
+The functionality is updated in v6.0:
+
+- The callback function is called with an object 
+- The usage of the **subId** parameter is limited to line titles only
+- The **join** and **batch** parameters are added 
 
 **Related articles**:  
+
 - [diagram.config.select](../../../api/diagram/select_property/)
 - [Selecting items](../../../guides/manipulating_items/#selecting-items)
+
+TODO - update link to the snippet
 
 **Related sample**: [Diagram. Org chart mode. Events](https://snippet.dhtmlx.com/l38pct7c)

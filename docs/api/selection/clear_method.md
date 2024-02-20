@@ -8,7 +8,7 @@ description: You can learn about the clear method of selection in the documentat
 
 ### Description
 
-@short: Clears the selection object without calling/invoking events
+@short: Clears the selection object without invoking events
 
 ### Usage
 
@@ -18,11 +18,12 @@ clear(): void;
 
 ### Example
 
-~~~js {7}
+~~~js {8}
 // a diagram must be created with the "select:true" option
 const diagram = new dhx.Diagram("diagram_container", { 
     select: true 
 });
+// loading data
 diagram.data.parse(data);
 
 diagram.selection.clear();
@@ -38,7 +39,7 @@ diagram.selection.clear();
 
 **Related samples**:
 
-TODO - check/update links to snippets
+TODO - update links to snippets
 
 - [Diagram. Selection. Item selection](https://snippet.dhtmlx.com/jyoxn5h7)
 - [Diagram. Default mode. Item selection](https://snippet.dhtmlx.com/tcny4obw)

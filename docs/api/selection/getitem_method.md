@@ -8,12 +8,14 @@ description: You can learn about the getItem method of selection in the document
 
 ### Description
 
-@short: Returns the object of the last selected item or the object of the specified item, if its id has been passed
+@short: Returns the object of a selected item by id or the object of the last selected item when called without arguments
 
 ### Usage
 
 ~~~js
-getItem(object?: { id: string | number }): object;
+getItem({ 
+    id: string | number 
+}): object;
 ~~~
 
 ### Parameters
@@ -24,26 +26,26 @@ The method takes an object argument with the following parameter:
 
 ### Returns
 
-The method returns the object of the specified item, if it has been selected, or the last (most recent) selected item
+The method returns the object of the specified item, if it is in the selection list, or the object of the last selected item
 
 ### Example
 
-TODO expand comments for returned items - complete objects with properties
-
-~~~js {8-10,12-13,15-17} 
+~~~js {9-11,13-15,17-19} 
 // a diagram must be created with the "select:true" option
 const diagram = new dhx.Diagram("diagram_container", { 
     select: true 
 });
+// loading data
 diagram.data.parse(data);
 
 console.log(diagram.selection.getIds()); // -> ["1", "2", "3"]
 // getting the last selected item
-const last_selected = diagram.selection.getItem(); 
+const item = diagram.selection.getItem(); 
 // -> {id: "3", text: "Technical Director", title: "Jerry Wagner"}
 
 // getting the selected item by id
-const item = diagram.selection.getItem({ id: "1" }); // -> { id: "1", ... }
+const item = diagram.selection.getItem({ id: "1" }); 
+// -> {id: "1", text: "Chairman & CEO", title: "Henry Bennett"}
 
 // trying to get an item which is not in the selection list
 const item = diagram.selection.getItem({ id: "4" }); 
@@ -61,6 +63,8 @@ The functionality is updated in v6.0:
 
 - [diagram.config.select](../../../api/diagram/select_property/)
 - [Selecting items](../../../guides/manipulating_items/#selecting-items)
+
+TODO - update links to snippets
 
 **Related samples**:
 

@@ -32,7 +32,7 @@ The callback of the event is called with an object with the following parameters
 
 ### Example
 
-~~~js {10-12}
+~~~js {9-12}
 // initializing Diagram
 const diagram = new dhx.Diagram("diagram_container", {  
     select: true,
@@ -49,7 +49,7 @@ diagram.events.on("afterSelect", function({ id, subId, join, batch }) {
 
 Here's an example of attaching an event handler to the event for the Diagram Editor:
 
-~~~js
+~~~js {8-11}
 // initializing Diagram editor
 const editor = new dhx.DiagramEditor("editor_container", {  
     // config options
@@ -65,12 +65,17 @@ editor.diagram.events.on("afterSelect", function({ id, subId, join, batch }) {
 
 **Change log**: 
 
-- The **subId** parameter has been added in v4.1
-- The usage of the **subId** parameter has been limited to the line titles only in 6.0
-- The **join** and **batch** parameters have been added in v6.0
+The functionality is updated in v6.0:
+
+- The callback function is called with an object  
+- The usage of the **subId** parameter is limited to the line titles only 
+- The **join** and **batch** parameters are added 
 
 **Related articles**:  
+
 - [diagram.config.select](../../../api/diagram/select_property/)
 - [Selecting items](../../../guides/manipulating_items/#selecting-items)
+
+TODO - update link to the snippet
 
 **Related sample**: [Diagram. Org chart mode. Events](https://snippet.dhtmlx.com/l38pct7c)

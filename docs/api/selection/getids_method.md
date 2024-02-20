@@ -8,7 +8,7 @@ description: You can learn about the getIds method of selection in the documenta
 
 ### Description
 
-@short: Returns the list of ids of the selected items
+@short: Returns the list of ids of selected items
 
 ### Usage
 
@@ -18,18 +18,19 @@ getIds(): (string | number)[]
 
 ### Returns
 
-The method returns the list of ids of the selected items as an array
+The method returns the list of ids of selected items as an array
 
 ### Example
 
-~~~js {7}
+~~~js {8}
 // a diagram must be created with the "select:true" option
 const diagram = new dhx.Diagram("diagram_container", { 
     select: true 
 });
+// loading data
 diagram.data.parse(data);
 
-const ids = diagram.selection.getIds(); // -> ["1", "1.1" ...] or []
+const ids = diagram.selection.getIds(); // -> ["1", "1.1", ...] or []
 ~~~
 
 **Change log**: Added in v6.0
