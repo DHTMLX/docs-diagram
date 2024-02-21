@@ -26,7 +26,7 @@ remove(): boolean;
 
 The method may take an object argument with the following parameter:
 
-- `id` - (optional) the id of the item that should be removed from the selection list 
+- `id` - (required) the id of the item that should be removed from the selection list 
 
 ### Returns
 
@@ -46,8 +46,6 @@ console.log(diagram.selection.getIds()); // -> ["1", "2", "3"]
 diagram.selection.remove({ id: "3" }); // -> returns true if the item has been unselected
 console.log(diagram.selection.getIds()); // -> ["1", "2"]
 ~~~
-
-{{note Please note that you need to call the **paint()** method to repaint the diagram after removing selection.??}} 
 
 Here's an example of calling the method without arguments:
 

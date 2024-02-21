@@ -161,6 +161,8 @@ const shapeExists = diagram.data.exists("1");
 
 ## !!Selecting items 
 
+TODO - check/update the guides when the API will be completely ready
+
 ### Selecting an item
 
 To select items, you need firstly [enable selection](../../guides/diagram/configuration/#selecting-items) for the diagram and then call the [add()](api/selection/add_method.md) method of the **selection** object to select a desired item.
@@ -224,7 +226,9 @@ diagram.selection.remove({ id: "3" }); // -> returns true if the item has been u
 console.log(diagram.selection.getIds()); // -> ["1", "2"]
 ~~~
 
-The method may take an object with the id of the item to unselect as a parameter. It returns *true*, if the item has been successfully removed from the selection list. You can also call the method with no arguments to remove all the items from the selection list as follows:
+The method may take an object with the id of the item to unselect as a parameter. It returns *true*, if the item has been successfully removed from the selection list. 
+
+You can also call the method with no arguments to remove all the items from the selection list as follows:
 
 ~~~js {2-3}
 console.log(diagram.selection.getIds()); // -> ["1", "2", "3"]
@@ -247,7 +251,7 @@ The method returns an array of ids of selected items and sub-items or an empty a
 
 You can get the object of a selected item using the [](../api/selection/getitem_method.md) method of the **selection** object. The method may take an object argument with the following parameter:
 
-- `id` - (optional) - the id of the item in question
+- `id` - (required) - the id of the item in question
 
 You can also call the method without the parameter to get the object of the last selected item. Check the examples below to explore the method's functionality:
 
@@ -273,15 +277,15 @@ const item = diagram.selection.getItem({ id: "4" });
 // -> returns undefined, since there is no item with the specified id in the selection list
 ~~~
 
-### Clearing the selection object
+### Clearing the selection list
 
-Whenever you need to clear the selection object, use the [](../api/selection/clear_method.md) method:
+Whenever you need to clear the selection list, use the [](../api/selection/clear_method.md) method:
 
 ~~~js
 diagram.selection.clear();
 ~~~
 
-The **clear()** method allows clearing the object of selection without invoking events. 
+The **clear()** method allows clearing the selection object without invoking events. 
 
 ### Checking whether an item is selected
 

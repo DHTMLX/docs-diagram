@@ -13,16 +13,20 @@ description: You can learn about the getItem method of selection in the document
 ### Usage
 
 ~~~js
-getItem({ 
-    id: string | number 
+getItem({
+    id: string | number
 }): object;
+
+//or
+
+getItem(): object;
 ~~~
 
 ### Parameters
 
 The method takes an object argument with the following parameter:
 
-- `id` - (optional) - the id of the item in question
+- `id` - (required) - the id of the item in question
 
 ### Returns
 
