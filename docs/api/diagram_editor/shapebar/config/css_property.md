@@ -1,5 +1,5 @@
 ---
-sidebar_label: css
+sidebar_label: css!!
 title: css Property of Shapebar
 description: You can learn about the css property of Shapebar in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
@@ -21,7 +21,8 @@ css?: string;
 ~~~html
 <script>
 const editor = new dhx.DiagramEditor("editor_container", {
-   view: {
+    type: "default",
+    view: {
        shapebar: {
            css:"my_style",
            // other configurations
@@ -32,8 +33,8 @@ const editor = new dhx.DiagramEditor("editor_container", {
 
 <style>
 .my_style{
-	background-color:#4287f5;
-	font-family: cursive;
+    background-color:#4287f5;
+    font-family: cursive;
 }
 </style>
 ~~~

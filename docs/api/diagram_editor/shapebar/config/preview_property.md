@@ -1,5 +1,5 @@
 ---
-sidebar_label: preview
+sidebar_label: preview!!
 title: preview Property of Shapebar
 description: You can learn about the preview property of Shapebar in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
@@ -8,7 +8,7 @@ description: You can learn about the preview property of Shapebar in the documen
 
 ### Description
 
-@short: Optional. An object that configures preview of the items
+@short: Optional. An object that configures the preview of items
 
 ### Usage
 
@@ -56,22 +56,25 @@ const editor = new dhx.DiagramEditor("editor_container", {
 The values of the **gap** and **scale** properties can be redefined for a separate shape via the **gap** and **scale** attributes of the [preview](../../../shapes/configuration_properties/#properties-specific-for-the-default-mode) property of the shape object:
 
 ~~~js
-const defaults = {card: {
-    preview: {
-        scale: 0.72, 
-        gap: 2
+const defaults = {
+    rectangle: {
+        preview:{
+            scale: 0.72, 
+            gap: 8
+        }
     }
 }
  
 const editor = new dhx.DiagramEditor("editor_container", {
+    type: "default",
     view: {
         shapebar: {
            preview: {
                scale: 0.65,
-               gap: 8,
+               gap: 2,
             },
             // other configurations
-        },
+        }
     },
     defaults: defaults         
 });
