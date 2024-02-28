@@ -51,7 +51,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 
 ### Details
 
-Depending on chosen elements, the configuration of shapes of a particular section can be the following:
+Depending on the chosen elements, the configuration of items of a particular section can be the following:
 
 1. Rendering of basic sections
 
@@ -128,7 +128,7 @@ You can reconfigure any type of shapes in such a way.
 
 4. Combining different types of items in a section
 
-If your project presupposes usage of various types of elements, you can create sections with mixed types of shapes in the Shapebar. Check the following example:
+If your project presupposes usage of various elements, you can create sections with mixed types of items in the Shapebar. Check the following example:
 
 ~~~js
 const editor = new dhx.DiagramEditor("editor", {
