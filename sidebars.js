@@ -427,6 +427,7 @@ module.exports = {
                   items: [
                     "api/diagram_editor/toolbar/config/css_property", // New
                     "api/diagram_editor/toolbar/config/items_property", // New
+                    "api/diagram_editor/toolbar/config/navigationtype_property", // New
                   ],
                 },
                 // Toolbar Events

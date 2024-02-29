@@ -32,7 +32,7 @@ editor.toolbar.events.on("click", (editor, event) => {
     // some logic
 });
 ~~~
-:::      |
+:::
 
 # TreeCollection events overview
 

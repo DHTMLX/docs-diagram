@@ -1,28 +1,35 @@
 ---
-sidebar_label: css!!
-title: css Property of Toolbar
+sidebar_label: navigationType!!
+title: navigationType Property of Toolbar
 description: You can learn about the css property of Toolbar in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
 
-# css
+# navigationType
 
 ### Description
 
-@short: Optional. Sets a custom CSS class
-
-:::info
-The custom CSS class applies to expanded elements as well. The `--popup-menu` prefix is attached to such elements.
-:::
+@short: Optional. Sets the action that opens menu options
 
 ### Usage
 
 ~~~js
-css?: string;
+navigationType?: "click" | "pointer";
+~~~
+
+:::info
+- `"click"` - displayes the menu when a user clicks on it
+- `"pointer"` - displayes the menu when a user hovers the mouse pointer over it
+:::
+
+### Default config
+
+~~~jsx
+navigationType: "click"
 ~~~
 
 ### Example
 
-~~~js {5}
+~~~js {7}
 const editor = new dhx.DiagramEditor("editor", {
     type: "default",
     view: {
@@ -30,7 +37,7 @@ const editor = new dhx.DiagramEditor("editor", {
             css: "custom_css",
             items: ["file", "spacer", "scale"],
             navigationType: "pointer"
-        },
+        }
     }
 });
 ~~~

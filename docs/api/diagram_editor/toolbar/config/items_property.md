@@ -18,14 +18,64 @@ items?: [
 ];
 ~~~
 
+### Parameters
+
+- `id` - (required) ...
+- `label` - (optional) ...
+- *other parameters with description*
+
+### Default config
+
+~~~jsx
+// Default config for Toolbar in the "default" mode
+const defaultConfig = [ "file", "edit", "view", "arrange", "spacer", "scale" ];
+
+// Default config for Toolbar in the "org" and "mindmap" modes
+const defaultConfig = [
+    "file",
+    {
+        type: "edit",
+        items: [
+            "undo",
+            "redo",
+            "separator",
+            "copyStyle",
+            "pasteStyle",
+            "separator",
+            "selectAll",
+            "selectNone",
+        ],
+    },
+    {
+        type: "view",
+        items: [
+            "theme",
+            "separator",
+            "editbar",
+            "separator",
+            "grid",
+            "separator",
+            "resizePoints",
+            "itemsDraggable",
+            "separator",
+            "zoomIn",
+            "zoomOut",
+        ],
+    },
+    "spacer",
+    "scale",
+]
+~~~
+
 ### Example
 
-~~~js {6-10}
+~~~js {7-11}
 const editor = new dhx.DiagramEditor("editor", {
     type: "default",
     view: {
         toolbar: {
             css: "custom_css",
+            navigationType: "pointer"
             items: [
                 "file", 
                 "spacer", 
