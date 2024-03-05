@@ -8,6 +8,28 @@ description: You can learn a new information about DHTMLX JavaScript Diagram lib
 
 If you are updating Diagram from an older version, check [Migration to Newer Version](migration.md) for details.
 
+Version 6.0
+---------------
+
+Released on March X, 2024
+
+### Fixes
+
+- Diagram Editor. Fix the impossibility to remove selected items via menu
+- Diagram Editor. Fix incorrect selection behavior that required double-clicking to select a shape
+- Diagram Editor. Fix the ability to move items of different parents to the target item (for the org and mindmap modes)
+- Diagram Editor. Fix moving a group and a swimlane together
+- Diagram Editor. Fix copying of lines while selecting elements manually
+- Diagram Editor. Fix the ability to set default values for the Shapebar elements
+- Diagram Editor. Fix the issue with data import working just once
+- Diagram Editor. Fix blocking of a new shape adding 
+- Diagram Editor. Optimize the logic of searching for the nearest connector
+- Diagram Editor. Improve performance during the connector movement
+- Diagram Editor. Limit the recording of actions during the connector movement in the historyManager
+- Diagram Editor. Fix the appearance of connectors on hovering moved items above any shape
+- Diagram Editor. Fix removing of unused lines/connectors
+- Diagram Editor. Fix dragging when the root shape is close to the child one in the mindmap/org modes
+
 Version 5.0.3
 -------------
 
