@@ -8,7 +8,7 @@ description: You can learn about the getItem method of selection in the document
 
 ### Description
 
-@short: Returns the object of a selected item by id or the object of the last selected item when called without arguments
+@short: Returns the object of the specified selected item or of the last selected item 
 
 ### Usage
 

@@ -178,7 +178,7 @@ diagram.data.parse(data);
 diagram.selection.add({ id: "1" }); // -> returns true if the item has been selected
 console.log(diagram.selection.getIds()); // -> ["1"]
 
-// adds the item with the id:"2" to the selection list
+// adds the item with the id:"2" to the already selected items
 diagram.selection.add({ id: "2", join: true }); 
 console.log(diagram.selection.getIds()); // -> ["1", "2"]
 
@@ -190,7 +190,6 @@ console.log(diagram.selection.getIds()); // -> ["3"]
 The method takes an object argument with the following parameters:
 
 - `id` - (required) the id of the item to add into the selection list
-- `subId` - (optional) the id of a subheader of a line title
 - `join` - (optional) the mode of adding the selected element to the selection list. In case the parameter is set to *false* or isn't passed, the items previously added into the selection list will be reset
 - `batch` - (optional) the list of items to select (if known beforehand)
 
@@ -200,21 +199,6 @@ The method returns:
 - `false` if the element wasn't added into the list by some reason, namely:
     - a user has prohibited deleting a particular element, while the mode of adding was limited by a single element with the `join:false` setting
     - an element had already been added to the list
-
-The example below shows how the method works in case a `subId` is passed:
-
-~~~js {8-9}
-// a diagram must be created with the "select:true" option
-const diagram = new dhx.Diagram("diagram_container", { 
-    select: true 
-});
-// loading data
-diagram.data.parse(data);
-
-// selects the line title with the id: "1.1"
-diagram.selection.add({ id: "1", subId: "1.1" }); 
-console.log(diagram.selection.getIds()); // -> ["1"]
-~~~
 
 ### Unselecting an item
 
@@ -226,9 +210,9 @@ diagram.selection.remove({ id: "3" }); // -> returns true if the item has been u
 console.log(diagram.selection.getIds()); // -> ["1", "2"]
 ~~~
 
-The method may take an object with the id of the item to unselect as a parameter. It returns *true*, if the item has been successfully removed from the selection list. 
+The method may take an object with *the id of the item to unselect* as a parameter. It returns *true*, if the item has been successfully removed from the selection list. 
 
-You can also call the method with no arguments to remove all the items from the selection list as follows:
+You can also call the method with no arguments to clear the selection list as follows:
 
 ~~~js {2-3}
 console.log(diagram.selection.getIds()); // -> ["1", "2", "3"]
@@ -279,13 +263,11 @@ const item = diagram.selection.getItem({ id: "4" });
 
 ### Clearing the selection list
 
-Whenever you need to clear the selection list, use the [](../api/selection/clear_method.md) method:
+Whenever you need to clear the selection list without invoking events, use the [](../api/selection/clear_method.md) method:
 
 ~~~js
 diagram.selection.clear();
 ~~~
-
-The **clear()** method allows clearing the selection object without invoking events. 
 
 ### Checking whether an item is selected
 
@@ -300,22 +282,6 @@ diagram.selection.includes({ id: "4" }) // returns false
 The method takes an object argument with the following parameters:
 
 - `id` - (*string|number*) required, the id of the checked item
-- `subId` - (*string|number*) the id of a subheader of a line title
-- `strict` - (*boolean*) controls whether the "strict" mode is enabled/disabled, `true` by default
-
-The "strict" mode checks whether an id is in the list of selected elements, taking into consideration both `id` and `subId`. If the element is in the list of selected elements, including the title of the element in question, the method will return `false` if called without specifying the `subId`.
-
-In case the `subId` is unknown or just the very fact of the checked element being in the list is important, you can disable the "strict" mode. Check the examples below:
-
-~~~js {2-7}
-diagram.selection.add({ id: "1", subId: "1.1" });
-// with the enabled strict mode (by default):
-diagram.selection.includes({ id: "1" }) // returns false
-// with the enabled strict mode and the "subId" specified:
-diagram.selection.includes({ id: "1", subId: "1.1" }) // returns true
-// with the disabled strict mode (and the "subId" not specified):
-diagram.selection.includes({ id: "1", strict: false }) // returns true
-~~~
 
 TODO - update the link to snippet
 

@@ -15,7 +15,6 @@ description: You can learn about the afterSelect event in the documentation of t
 ~~~js
 "afterSelect": ({
     id: string | number, 
-    subId: string | number | undefined,
     join: boolean,
     batch: (string | number)[]
 }) => void;
@@ -25,10 +24,9 @@ description: You can learn about the afterSelect event in the documentation of t
 
 The callback of the event is called with an object with the following parameters:
 
-- `id` - the item id
-- `subId` - the id of a subheader of a text element of a line
-- `join` - shows the applied mode of selection
-- `batch` - shows the list of items to select
+- `id` - the id of the selected item
+- `join` - the applied [mode of selection](../../../api/selection/add_method/#parameters)
+- `batch` - the list of selected items
 
 ### Example
 
@@ -42,7 +40,7 @@ const diagram = new dhx.Diagram("diagram_container", {
 diagram.data.parse(data);
 
 // attaching a handler to the event
-diagram.events.on("afterSelect", function({ id, subId, join, batch }) {
+diagram.events.on("afterSelect", function({ id, join }) {
     console.log(id + " was selected");
 });
 ~~~
@@ -58,7 +56,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 editor.parse(data);
 
 // attaching a handler to the event
-editor.diagram.events.on("afterSelect", function({ id, subId, join, batch }) {
+editor.diagram.events.on("afterSelect", function({ id, join }) {
     console.log(id + " was selected");
 });
 ~~~
@@ -68,7 +66,7 @@ editor.diagram.events.on("afterSelect", function({ id, subId, join, batch }) {
 The functionality is updated in v6.0:
 
 - The callback function is called with an object  
-- The usage of the **subId** parameter is limited to the line titles only 
+- The **subId** parameter is removed 
 - The **join** and **batch** parameters are added 
 
 **Related articles**:  

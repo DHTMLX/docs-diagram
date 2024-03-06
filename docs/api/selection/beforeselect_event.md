@@ -15,7 +15,6 @@ description: You can learn about the beforeSelect event in the documentation of 
 ~~~js
 "beforeSelect": ({
     id: string | number, 
-    subId: string | number | undefined,
     join: boolean,
     batch: (string | number)[],
 }) => boolean | void;
@@ -25,10 +24,9 @@ description: You can learn about the beforeSelect event in the documentation of 
 
 The callback of the event is called with an object with the following parameters:
 
-- `id` - the item id
-- `subId` - the id of a subheader of a text element of a line
-- `join` - shows the applied mode of selection
-- `batch` - shows the list of items to select
+- `id` - the id of the item to select
+- `join` - the applied [mode of selection](../../../api/selection/add_method/#parameters)
+- `batch` - the list of items to select
 
 ### Returns
 
@@ -46,7 +44,7 @@ const diagram = new dhx.Diagram("diagram_container", {
 diagram.data.parse(data);
 
 // attaching a handler to the event
-diagram.events.on("beforeSelect", function({ id, subId, join, batch }) {
+diagram.events.on("beforeSelect", function({ id, join }) {
     console.log(id + " will be selected");
     return true;
 });
@@ -63,7 +61,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 editor.parse(data);
 
 // attaching a handler to the event
-editor.diagram.events.on("beforeSelect", function({ id, subId, join, batch }) {
+editor.diagram.events.on("beforeSelect", function({ id, join }) {
     console.log(id + " will be selected");
     return true;
 });
@@ -74,7 +72,7 @@ editor.diagram.events.on("beforeSelect", function({ id, subId, join, batch }) {
 The functionality is updated in v6.0:
 
 - The callback function is called with an object 
-- The usage of the **subId** parameter is limited to line titles only
+- The **subId** parameter is removed
 - The **join** and **batch** parameters are added 
 
 **Related articles**:  

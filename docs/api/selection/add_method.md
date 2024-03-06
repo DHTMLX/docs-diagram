@@ -15,7 +15,6 @@ description: You can learn about the add method of selection in the documentatio
 ~~~js
 add({
     id: string | number,
-    subId?: string | number,
     join?: boolean,
     batch?: (string | number)[]
 }): boolean;
@@ -26,7 +25,6 @@ add({
 The method takes an object argument with the following parameters:
 
 - `id` - (required) the id of an item 
-- `subId` - (optional) the id of a subheader of a line title
 - `join` - (optional) the mode of adding the selected element to the selection list. In case the parameter is set to *false* or isn't passed, the items previously added into the selection list will be reset
 - `batch` - (optional) the list of items to select (if known beforehand)
 
@@ -52,7 +50,7 @@ diagram.data.parse(data);
 diagram.selection.add({ id: "1" }); // -> returns true if the item has been selected
 console.log(diagram.selection.getIds()); // -> ["1"]
 
-// adds the item with the id:"2" to the selection list
+// adds the item with the id:"2" to the already selected items
 diagram.selection.add({ id: "2", join: true }); 
 console.log(diagram.selection.getIds()); // -> ["1", "2"]
 
@@ -61,27 +59,12 @@ diagram.selection.add({ id: "3" });
 console.log(diagram.selection.getIds()); // -> ["3"]
 ~~~
 
-The example below shows how the method works in case a `subId` is passed:
-
-~~~js {8-9}
-// a diagram must be created with the "select:true" option
-const diagram = new dhx.Diagram("diagram_container", { 
-    select: true 
-});
-// loading data
-diagram.data.parse(data);
-
-// selects the line title with the id: "1.1"
-diagram.selection.add({ id: "1", subId: "1.1" }); 
-console.log(diagram.selection.getIds()); // -> ["1"]
-~~~
-
 **Change log**: 
 
 The functionality is updated in v6.0:
 
 - The method takes an object as an argument
-- The usage of the `subId` parameter is limited to line titles only 
+- The `subId` parameter is removed
 - The `join` and `batch` parameters are added
 - The return boolean value is added
 

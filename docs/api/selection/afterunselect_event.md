@@ -15,7 +15,7 @@ description: You can learn about the afterUnSelect event in the documentation of
 ~~~js
 "afterUnSelect": ({
     id: string | number, 
-    subId?: string | number | undefined,
+    batch: (string | number)[]
 }) => void;
 ~~~
 
@@ -23,8 +23,8 @@ description: You can learn about the afterUnSelect event in the documentation of
 
 The callback of the event is called with an object with the following parameters:
 
-- `id` - (required) the id of an item removed from the selection list
-- `subId` - (optional) the id of a subheader of a line title removed from the selection list
+- `id` - the id of the unselected item 
+- `batch` - the list of unselected items
 
 ### Example
 
@@ -38,7 +38,7 @@ const diagram = new dhx.Diagram("diagram_container", {
 diagram.data.parse(data);
 
 // attaching a handler to the event
-diagram.events.on("afterUnSelect", function ({ id, subId }) {
+diagram.events.on("afterUnSelect", function ({ id }) {
 	console.log(id + " was unselected");
 });
 ~~~
@@ -54,7 +54,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 editor.parse(data);
 
 // attaching a handler to the event
-editor.diagram.events.on("afterUnSelect", function({ id, subId }) {
+editor.diagram.events.on("afterUnSelect", function({ id }) {
     console.log(id + " was unselected");
 });
 ~~~
@@ -64,7 +64,8 @@ editor.diagram.events.on("afterUnSelect", function({ id, subId }) {
 The functionality is updated in v6.0:
 
 - The callback function is called with an object 
-- The usage of the **subId** parameter is limited to line titles only 
+- The **subId** parameter is removed
+- The **batch** parameter is added
 
 **Related articles**:  
 

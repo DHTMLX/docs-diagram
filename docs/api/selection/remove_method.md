@@ -8,7 +8,7 @@ description: You can learn about the remove method of selection in the documenta
 
 ### Description
 
-@short: Removes an item from the selection list by id or all the items when called without arguments 
+@short: Removes the specified item or all the items from the selection list
 
 ### Usage
 
@@ -30,7 +30,7 @@ The method may take an object argument with the following parameter:
 
 ### Returns
 
-The method returns `true` if the item has been unselected, otherwise `false`
+The method returns `true` if the item unselection or the list cleanup has been successful
 
 ### Example
 
@@ -47,7 +47,7 @@ diagram.selection.remove({ id: "3" }); // -> returns true if the item has been u
 console.log(diagram.selection.getIds()); // -> ["1", "2"]
 ~~~
 
-Here's an example of calling the method without arguments:
+When called without arguments, the method clears the selection list:
 
 ~~~js {9-10}
 // a diagram must be created with the "select:true" option
@@ -68,7 +68,7 @@ console.log(diagram.selection.getIds()); // -> []
 The functionality is updated in v6.0:
 
 - The method takes an object as an argument
-- The `subId` parameter is no longer used
+- The `subId` parameter is removed
 
 **Related articles**: 
 

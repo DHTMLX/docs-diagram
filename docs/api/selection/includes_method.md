@@ -14,9 +14,7 @@ description: You can learn about the includes method of selection in the documen
 
 ~~~js
 includes({
-    id: string | number,
-    subId?: string | number,
-    strict?: boolean,
+    id: string | number
 }): boolean;
 ~~~
 
@@ -25,8 +23,6 @@ includes({
 The method takes an object argument with the following parameters:
 
 - `id` - (required) the id of the checked item
-- `subId` - (optional) the id of a subheader of a line title
-- `strict` - (optional) whether the "strict" mode is enabled/disabled, `true` by default
 
 ### Returns
 
@@ -45,27 +41,6 @@ diagram.data.parse(data);
 diagram.selection.getIds(); // -> ["1", "2", "3"]
 diagram.selection.includes({ id: "1" }) // returns true
 diagram.selection.includes({ id: "4" }) // returns false
-~~~
-
-The "strict" mode checks whether an id is in the list of selected elements, taking into consideration both `id` and `subId`. If the element is in the list of selected elements, including the title of the element in question, the method will return `false` if called without specifying the `subId`.
-
-In case the `subId` is unknown or just the very fact of the checked element being in the list is important, you can disable the "strict" mode. Check the examples below:
-
-~~~js {9-14}
-// a diagram must be created with the "select:true" option
-const diagram = new dhx.Diagram("diagram_container", { 
-    select: true 
-});
-// loading data
-diagram.data.parse(data);
-
-diagram.selection.add({ id: "1", subId: "1.1" });
-// with the enabled strict mode (by default):
-diagram.selection.includes({ id: "1" }) // returns false
-// with the enabled strict mode and the "subId" specified:
-diagram.selection.includes({ id: "1", subId: "1.1" }) // returns true
-// with the disabled strict mode (and the "subId" not specified):
-diagram.selection.includes({ id: "1", strict: false }) // returns true
 ~~~
 
 **Change log**: Added in v6.0
