@@ -58,44 +58,7 @@ const data = [
         points?: [
             { x: number, y: number, custom?: boolean },
             // more point's objects
-        ],
-        title?: {
-            fontSize?: number | string, // 14 by default
-            lineHeight?: number | string, // 14 by default
-            textAlign?: "center" | "left" | "right", // "center" by default
-            textVerticalAlign?: string,
-            fontStyle?: "normal" | "italic" | "oblique", // "normal" by default
-            fontColor?: string, // "#4C4C4C" by default
-            fontWeight?: string, // "500" by default
-            fill?: string,
-            editable?: boolean, // true by default
-            hidden?: boolean,
-            draggable?: boolean,
-            autoPosition?: boolean,
-            text?: [
-                {
-                    id?: string | number,
-                    type?: "$linetext",
-                    width?: number,
-                    height?: number,
-                    distance?: number,
-                    autoPosition?: boolean,
-                    hidden?: boolean,
-                    editable?: boolean, // true by default
-                    draggable?: boolean,
-                    fill?: string,
-                    text?: string,
-                    fontSize?: number | string, // 14 by default
-                    lineHeight?: number | string, // 14 by default
-                    fontStyle?: "normal" | "italic" | "oblique", // "normal" by default
-                    fontColor?: string, // "#4C4C4C" by default
-                    fontWeight?: string, // "500" by default
-                    textAlign?: "center" | "left" | "right", // "center" by default
-                    textVerticalAlign?: "center" | "top" | "bottom" // "center" by default
-                },
-                // more objects for text items of a line
-            ]
-        }
+        ]
     },
     // more line objects
 ]
@@ -115,40 +78,6 @@ When preparing a data set for lines to load into the diagram in the default mode
     - `x` - (required) the x coordinate of the point
     - `y` - (required) the y coordinate of the point
     - `custom` - (optional) defines whether the point is fixed. If *true*, the position of the point can be changed only after interaction with it
-- `title` - (optional) sets text items of a line. The title property presents an object with the following properties:
-  - `fontSize` - (optional) the size of the font in pixels, 14 by default
-  - `lineHeight` - (optional) the height of a line, 14 by default
-  - `textAlign` - (optional) the alignment of text: "center"(default), "left", "right"
-  - `textVerticalAlign` - (optional) the vertical alignment of text: "center"(default), "top", "bottom"
-  - `fontStyle` - (optional) the style of the text font: "normal" (default), "italic", "oblique"
-  - `fontColor` - (optional) the color of the text font, "#4C4C4C" by default
-  - `fontWeight` - (optional) the text font weight, possible values are: "normal", "bold", "bolder", "lighter", values "100"-"900", where "400" is the same as normal, and "600"+ is the boldest font; "500" by default
-  - `fill` - (optional) the background color of the text item
-  - `editable` - (optional) enables/disables the ability to edit the text of all text items of the line by double-clicking on it; *true* by default
-  - `hidden` - (optional) defines, whether the text will be hidden
-  - `draggable` - (optional) enables/disables the ability to drag the text
-  - `autoPosition` - (optional) defines the direction of the text, *true* - the direction
- of the text is the same as the line, *false* - the direction of the text is always horizontal
-  - `text` - (optional) an array of text items of a line. The text property presents an array of text items of a line, each item contains the following configuration:
-    - `id` - (optional) the id of the text item of a line
-    - `type` - (optional) the type of an item, set it to "$linetext"
-    - `width` - (optional) the width of the text item, calculated automatically
-    - `height` - (optional) the height of text item, calculated automatically
-    - `distance` - (optional) defines the distance between the text and the parent shape, the value from 0 to 100
-    - `autoPosition` - (optional) defines the direction of the text, *true* - the direction
- of the text is the same as the line, *false* - the direction of the text is always horizontal
-    - `hidden` - (optional) defines, whether the text will be hidden
-    - `editable` - (optional) enables/disables the ability to edit the text of the item by double-clicking on it; *true* by default
-    - `draggable` - (optional) enables/disables the ability to fix text item with set distance value
-    - `fill` - (optional) the background color of the text item
-    - `text` - (optional) the text to be rendered in the text item of a line
-    - `fontSize` - (optional) the size of the font in pixels, 14 by default
-    - `lineHeight` - (optional) the height of a line, 14 by default
-    - `fontStyle` - (optional) the style of the text font: "normal" (default), "italic", "oblique"
-    - `fontColor` - (optional) the color of the text font, "#4C4C4C" by default
-    - `fontWeight` - (optional) the text font weight, possible values are: "normal", "bold", "bolder", "lighter", values "100"-"900", where "400" is the same as normal, and "600"+ is the boldest font; "500" by default
-    - `textAlign` - (optional) the alignment of text: "center"(default), "left", "right"
-    - `textVerticalAlign` - (optional) the vertical alignment of text: "center"(default), "top", "bottom"
 
 ## Example
 
@@ -166,18 +95,7 @@ const data = [
         "to": "2",
         "fromSide": "bottom",
         "toSide": "top",
-        "forwardArrow": "filled",
-        "title": {
-            "fontSize":14,
-            "lineHeight":14,
-            "text": [
-                {
-                    "type":"$linetext",
-                    "id":"t2-3",
-                    "text":"Read the instruction",
-                }
-            ]
-        },
+        "forwardArrow": "filled"
     },
 ];
 ~~~
