@@ -1,5 +1,5 @@
 ---
-sidebar_label: Inline editing
+sidebar_label: Inline editing !!
 title: Inline Editing
 description: You can learn about inline editing in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
@@ -14,40 +14,33 @@ Inline editing for Lines is enabled only in the default mode of Diagram.
 
 {{note Inline editing does not work for custom shapes.}}
 
-The functionality is enabled by default.
-
-To disable inline editing, you should use the **editable** property of the element, which you want to make uneditable, and set its value to *false*.
+The functionality is enabled by default. To disable inline editing, you should use the **editable** property of the element, which you want to make uneditable, and set its value to *false*.
 
 You can find examples of disabling inline editing for diagram items below:
 
-#### Lines
+#### Line titles
 
-~~~js title="Disabling the ability to edit the text content of a line"
+~~~js title="Disabling the ability to edit the text content of a line" {18}
 const data = [
-        // configuring shapes
-        {   "id": 1, "x": 200, "y": 0, "text": "Start", "type": "start" },
-        {   "id": 2, "x": 200, "y": 220, "text": "Step 1", "type": "process" },
-        // configuring line
-        {
-            "type": "line",
-            "from": "1",
-            "to": "2",
-            "id": "1-2",
-            "title": {
-                "fontSize": 14,
-                "lineHeight": 14,
-                "editable": false, // disables inline editing of text items of a line
-                "text": [
-                    {
-                        "type":"$linetext",
-                        "id":"t1",
-                        "text":"Follow the instruction",
-                        "editable": true, // enables inline editing of the current text item of a line
-                    }
-                ]
-            },
-        },
-    ];
+    // configuring shapes
+    {   "id": 1, "x": 200, "y": 0, "text": "Start", "type": "start" },
+    {   "id": 2, "x": 200, "y": 220, "text": "Step 1", "type": "process" },
+    // configuring a line
+    {
+        "type": "line",
+        "from": "1",
+        "to": "2",
+        "id": "1-2"
+    },
+    // configuring a line title
+    {   
+        "type": "lineTitle", 
+        "id": "title_1", 
+        "parent": "1-2", 
+        "text": "Some text",
+        "editable": false // disables inline editing of the text item of a line
+    }     
+];
 ~~~
 
 #### Shapes
@@ -99,7 +92,7 @@ const data = [
             "headers": [
                 { "text": "September", "fill": "rgba(243, 92, 79, 0.4)" },
                 // enables inline editing for the subheader
-                { "text": "October", "fill": "rgba(155, 96, 248, 0.4)", editable: true },
+                { "text": "October", "fill": "rgba(155, 96, 248, 0.4)", "editable": true },
                 { "text": "November", "fill": "rgba(255, 174, 18, 0.4)" },
             ],
             // disables inline editing for all subheaders

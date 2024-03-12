@@ -1,5 +1,5 @@
 ---
-sidebar_label: LineTitle properties
+sidebar_label: LineTitle properties !!
 title: LineTitle Properties
 description: You can learn about the LineTitle properties in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
@@ -11,27 +11,27 @@ description: You can learn about the LineTitle properties in the documentation o
 ~~~js
 const data = [
     // line title object
-	{
-	    type: "lineTitle",
-	    id?: string | number,
-	    text: string,
-	    parent: string | number, 
+    {
+        type: "lineTitle",
+        id?: string | number,
+        text: string,
+        parent: string | number, 
 
-	    distance?: number, // 50 by default
-	    autoPosition?: boolean, // true by default
-	    editable?: boolean, // true by default
-	    fixed?: boolean, // false by default
-	    hidden?: boolean, // false by default
+        distance?: number, // 50 by default
+        autoPosition?: boolean, // true by default
+        editable?: boolean, // true by default
+        fixed?: boolean, // false by default
+        hidden?: boolean, // false by default
 
-	    fill?: string,
-	    fontSize?: string | number, // 14 by default
-	    lineHeight?: string | number, // 14 by default
-	    fontStyle?: "normal" | "italic" | "oblique", // "normal" by default
-	    fontColor?: string, // "#4C4C4C" by default
-	    fontWeight?: string, // "500" by default
-	    textAlign?: "center" | "left" | "right" // "center" by default
-	},
-	// more line objects
+        fill?: string,
+        fontSize?: string | number, // 14 by default
+        lineHeight?: string | number, // 14 by default
+        fontStyle?: "normal" | "italic" | "oblique", // "normal" by default
+        fontColor?: string, // "#4C4C4C" by default
+        fontWeight?: string, // "500" by default
+        textAlign?: "center" | "left" | "right" // "center" by default
+    },
+    // more line objects
 ];
 ~~~
 
@@ -47,7 +47,7 @@ Each line title object can include the following properties:
 - `autoPosition` - (optional) defines the direction of the text, if set to *true* - the direction of the text is the same as that of the line, *false* - the direction of the text is always horizontal, *true* by default
 - `editable` - (optional) enables/disables the ability to edit the text of the item by double-clicking on it, *true* by default
 - `fixed` - (optional) enables/disables the ability to fix the text of the item with the specified `distance` value, *false* by default
-- `hidden` - (optional) defines, whether the text will be hidden, *false* by default 
+- `hidden` - (optional) defines whether the text will be hidden, *false* by default 
 - `fill` - (optional) the background color of the line title item
 - `fontSize` - (optional) the size of the font, 14 by default
 - `lineHeight` - (optional) the height of the text line, 14 by default
@@ -60,6 +60,9 @@ Each line title object can include the following properties:
 
 ~~~js
 const data = [
+    // configuring shapes
+    { "id": 1, "x": 200, "y": 0, "text": "Start", "type": "start" },
+    { "id": 2, "x": 200, "y": 320, "text": "Call Client and \n set-up Appointment", "type": "process" },
     // configuring lines
     {
         "type": "line",
@@ -74,7 +77,7 @@ const data = [
     },
     // configuring line titles
     {
-    	"type": "lineTitile",
+    	"type": "lineTitle",
     	"parent": "line_1",
     	"text": "Some text",
     	"fill": "#BCE4CE",
@@ -82,3 +85,5 @@ const data = [
     }
 ];
 ~~~
+
+**Related articles:** [Configuring line titles](../../line_titles/)

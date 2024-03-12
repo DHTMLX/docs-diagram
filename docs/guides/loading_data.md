@@ -1,5 +1,5 @@
 ---
-sidebar_label: Loading and storing data
+sidebar_label: Loading and storing data !!
 title: Loading and Storing data
 description: You can learn about loading and storing data of editor in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
@@ -13,15 +13,15 @@ You can populate DHTMLX Diagram with data in the following ways:
 
 ## Preparing data to load
 
-DHTMLX Diagram takes data in the JSON format. It is an array that contains a set of data objects. There are 4 types of objects:
+DHTMLX Diagram takes data in the JSON format. It is an array that contains a set of data objects. There are 5 types of objects:
 
 - **shape objects**
 
 ~~~js
 const data = [
-	{ "id": 1, "x": 200, "y": 0, "text": "Start", "type": "start" },
-	{ "id": 2, "x": 200, "y": 120, "text": "Call Client and \n set-up Appointment", "type": "process" },
-	{ "id": 3, "x": 200, "y": 240, "text": "Decision", "type": "decision" },
+   { "id": 1, "x": 200, "y": 0, "text": "Start", "type": "start" },
+   { "id": 2, "x": 200, "y": 120, "text": "Call Client and \n set-up Appointment", "type": "process" },
+   { "id": 3, "x": 200, "y": 240, "text": "Decision", "type": "decision" },
 ];
 ~~~
 
@@ -31,58 +31,61 @@ Besides, you may create [your own type of shapes](../../shapes/custom_shape/) an
 - **line objects**
 
 ~~~js
-
 const data = [
-    {
-		"id": "1-2", "from": "1", "to": "2", "type": "dash"
-	},
-    {
-        "id": "2-3", 
-        "from": "2", 
-        "to": "3", 
-        "type": "line", 
-        "title": {
-            "fontSize":14,
-            "lineHeight":14,
-            "text": [
-                {
-                    "type":"$linetext",
-                    "id":"t2-3",
-                    "text":"text",
-                }
-            ]
-        },
-    },
+   {
+      "id": "1-2", 
+      "from": "1", 
+      "to": "2", 
+      "type": "dash"
+   },
+   {
+      "id": "2-3", 
+      "from": "2", 
+      "to": "3", 
+      "type": "line"
+   }
 ];
 ~~~
 
 The presence or absence of line objects in the data set depends on the chosen [way of shapes connection](../../lines/#setting-connections-between-shapes). Check the full list of available properties of the line object in the [API reference](lines/configuration_properties.md).
+
+- **line title objects**
+
+~~~js
+const data = [
+    { "type": "line", "id": "line_1", "from": "shape_1", "to": "shape_2" },
+    // configuring a line title
+    { "type": "lineTitle", "id": "title_1", "parent": "line_1", "text": "Some text" },
+];
+~~~
+
+Check the full list of available properties of the line title object in the [API reference](line_titles/configuration_properties.md).
 
 - **group objects**
 
 ~~~js
 const data = [    
     {
-        type: "$group",
-        id: 1,
-        width: 400,
-        height: 200,
-        x: 0,
-        y: 0,
-        header: {
-            text: "Top and collapsed header with tеxt alignment",
-            editable: true,
-            closable: true,
-            textAlign: "left", // "left", "center", "right"
-            textVerticalAlign: "center", // "top", "center", "bottom"
+        "type": "$group",
+        "id": 1,
+        "width": 400,
+        "height": 200,
+        "x": 0,
+        "y": 0,
+        "header": {
+            "text": "Top and collapsed header with tеxt alignment",
+            "editable": true,
+            "closable": true,
+            "textAlign": "left", // "left", "center", "right"
+            "textVerticalAlign": "center", // "top", "center", "bottom"
         },
-      	// the child items of the group
-        groupChildren: [1.1, 1.2],
-        open: false,
+        // the child items of the group
+        "groupChildren": [1.1, 1.2],
+        "open": false,
     },
-  	// configuring shapes to put into the group
-    { type: "rectangle", id: 1.1, x: 50, y: 75, text: "Shape 1.1" },
-    { type: "rectangle", id: 1.2, x: 200, y: 75, text: "Shape 1.2" },
+    // configuring shapes to put into the group
+    { "type": "rectangle", "id": 1.1, "x": 50, "y": 75, "text": "Shape 1.1" },
+    { "type": "rectangle", "id": 1.2, "x": 200, "y": 75, "text": "Shape 1.2" },
 ];
 ~~~
 
@@ -92,42 +95,42 @@ Check the full list of the available properties of a group object in the [API re
 
 ~~~js
 const data = [
-    {
-		"id": "main",
-		"type": "$swimlane",
-		"height": 730,
-		"width": 1195,
-		"header": {
-			"closable": true,
-			"text": "Waterfall diagram template"
-		 },
-		"layout": [
-			[1, 2, 3, 4]
-		],
-		"subHeaderCols": {
-			"headers": [
-				{ "text": "September", "fill": "rgba(243, 92, 79, 0.4)" },
-				{ "text": "October", "fill": "rgba(155, 96, 248, 0.4)" },
-				{ "text": "November", "fill": "rgba(255, 174, 18, 0.4)" },
-				{ "text": "December", "fill": "rgba(60, 201, 122, 0.4)" }
-			]
-		}
-	},
-    // configuring a cell of the swimlane
-    {
-		"id": 1,
-		"type": "$sgroup",
-		"groupChildren": ["s1"],
-		"style": {
-			"fill": "rgba(243, 92, 79, 0.05)"
-		},
-		"x": 0,
-		"y": 80
-	},
-    // configuring a shape to put into the cell
-    {
-		"id": "s1", "type": "end", "text": "Step 1", "x": 20, "y": 110
-	},
+   {
+      "id": "main",
+      "type": "$swimlane",
+      "height": 730,
+      "width": 1195,
+      "header": {
+         "closable": true,
+         "text": "Waterfall diagram template"
+      },
+      "layout": [
+         [1, 2, 3, 4]
+      ],
+      "subHeaderCols": {
+         "headers": [
+            { "text": "September", "fill": "rgba(243, 92, 79, 0.4)" },
+            { "text": "October", "fill": "rgba(155, 96, 248, 0.4)" },
+            { "text": "November", "fill": "rgba(255, 174, 18, 0.4)" },
+            { "text": "December", "fill": "rgba(60, 201, 122, 0.4)" }
+         ]
+      }
+   },
+   // configuring a cell of the swimlane
+   {
+      "id": 1,
+      "type": "$sgroup",
+      "groupChildren": ["s1"],
+      "style": {
+         "fill": "rgba(243, 92, 79, 0.05)"
+      },
+      "x": 0,
+      "y": 80
+   },
+   // configuring a shape to put into the cell
+   {
+      "id": "s1", "type": "end", "text": "Step 1", "x": 20, "y": 110
+   },
 ];
 ~~~
 
@@ -148,7 +151,7 @@ Data loading is asynchronous, so you need to wrap any after-loading code into a 
 
 ~~~js
 diagram.data.load("/some/data").then(function(){
-	diagram.selection.add("123");
+   diagram.selection.add("123");
 });
 ~~~
 

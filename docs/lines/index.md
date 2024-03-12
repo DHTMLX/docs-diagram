@@ -1,5 +1,5 @@
 ---
-sidebar_label: Lines
+sidebar_label: Lines !!
 title: Lines
 description: You can learn about Lines in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
@@ -14,9 +14,7 @@ The look and the way of lines which connect shapes is defined by the mode you in
 
 In the default mode of Diagram, various shapes can be connected by ["straight" (by default) or "elbow"](/lines/configuration_properties/) lines in the necessary sequence to make up a scheme of a particular process.
 
-The [title](/lines/configuration_properties/#properties-specific-for-the-default-mode) property is enabled in the default mode of Diagram. You can add the text for a line both in the diagram and in the editor by double-clicking on a line or use a toolbar of a line in the editor (click a line to activate). Use double-clicking also for editing the text both in the diagram and in the editor.
-
-Another way to add the text to a line and manipulate it is to prepare a [data set](guides/loading_data.md/#preparing-data-to-load).
+To add a text for a line in the default mode of Diagram/Diagram Editor, use the `text` property of the [lineTitle](../line_titles) object. 
 
 <iframe src="https://snippet.dhtmlx.com/e6zm6wh1?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="650"></iframe>
 
@@ -49,8 +47,8 @@ You need to specify separate objects that will describe the logic of connecting 
 
 ~~~js
 const data = [
-	// shapes
-	{ id: "1", text: "Chairman & CEO" },
+    // shapes
+    { id: "1", text: "Chairman & CEO" },
     { id: "2", text: "Manager" },
     { id: "3", text: "Technical Director" },
     { id: "4", text: "Manager" },
