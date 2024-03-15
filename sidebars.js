@@ -446,7 +446,6 @@ module.exports = {
                     "api/diagram_editor/toolbar/events/input_event", // New
                     "api/diagram_editor/toolbar/events/inputblur_event", // New
                     "api/diagram_editor/toolbar/events/inputchange_event", // New
-                    "api/diagram_editor/toolbar/events/inputcreated_event", // New
                     "api/diagram_editor/toolbar/events/inputfocus_event", // New
                     "api/diagram_editor/toolbar/events/keydown_event", // New
                     "api/diagram_editor/toolbar/events/openmenu_event", // New

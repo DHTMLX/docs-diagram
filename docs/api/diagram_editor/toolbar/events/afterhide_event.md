@@ -13,7 +13,7 @@ description: You can learn about the afterHide event of Toolbar in the documenta
 ### Usage
 
 ~~~js
-"afterHide": ( events: Event ) => void;
+"afterHide": (events: Event) => void;
 ~~~
 
 ### Parameters

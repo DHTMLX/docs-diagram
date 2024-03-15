@@ -14,14 +14,14 @@ description: You can learn about the items property of Toolbar in the documentat
 
 ~~~js
 items?: [
-// ...
+// TODO
 ];
 ~~~
 
 ### Parameters
 
-- `id` - (required) ...
-- `label` - (optional) ...
+- `parameter` - (required) ...
+- `parameter` - (optional) ...
 - *other parameters with description*
 
 ### Default config

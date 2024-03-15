@@ -13,7 +13,7 @@ description: You can learn about the parse method of Toolbar in the documentatio
 ### Usage
 
 ~~~js
-parse(items: array): void;
+parse(items: (object | string)[]): void;
 ~~~
 
 ### Parameters
