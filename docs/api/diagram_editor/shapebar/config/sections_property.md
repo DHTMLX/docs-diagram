@@ -29,7 +29,7 @@ The **sections** object can contain a set of *key:value* pairs where:
 - **key** - the name of a section specified by a user
 - **value** - an array which can include:
   - an object with one *key:value* pair for rendering a <span id="basic">basic set of shapes</span>. The list of available pairs is given below:
-    - `{flowShapes: true}` - (optional) displays all available types of the [Flow-chart](../../../shapes/default_shapes/#shapes-overview) shapes - TODO (update link) 
+    - `{flowShapes: true}` - (optional) displays all available types of the [Flow-chart](../../../../../shapes/default_shapes/#shapes-overview) shapes 
     - `{org: true}` - (optional) displays Org shapes: the "card" and "img-card" shape types
     - `{group: true}` - (optional) displays a basic set of Groups
     - `{swimlane: true}` - (optional) displays a basic set of Swimlanes
@@ -58,7 +58,7 @@ Depending on the chosen elements, the configuration of items of a particular sec
 You can render [a basic set of shapes](#basic) using the `sections` configuration object. For example:
 
 ~~~js
-const editor = new dhx.DiagramEditor("editor", {
+const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {
         shapebar: {
@@ -78,7 +78,7 @@ const editor = new dhx.DiagramEditor("editor", {
 You can render Shapebar items by specifying the types of shapes with the help of string literals. Check the example below:
 
 ~~~js
-const editor = new dhx.DiagramEditor("editor", {
+const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {
         shapebar: {
@@ -96,7 +96,7 @@ const editor = new dhx.DiagramEditor("editor", {
 Another option is to redefine basic properties of any shape and render it with the necessary parameters. The example below shows rendering of a shape of the `circle` type with various text and color settings:
 
 ~~~js
-const editor = new dhx.DiagramEditor("editor", {
+const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {
         shapebar: {
@@ -131,7 +131,7 @@ You can reconfigure any type of shapes in such a way.
 If your project presupposes usage of various elements, you can create sections with mixed types of items in the Shapebar. Check the following example:
 
 ~~~js
-const editor = new dhx.DiagramEditor("editor", {
+const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {
         shapebar: {
@@ -169,4 +169,6 @@ TODO (update the links to the article and snippets)
 - [Diagram editor. Default mode. Setting the section order in the left panel](https://snippet.dhtmlx.com/7747cx7b)
 - [Diagram editor. Default mode. Left panel customization](https://snippet.dhtmlx.com/2z0a18oz)
 
-**Change log**: Added in v6.0
+**Change log**: 
+
+The property was added in v6.0

@@ -45,7 +45,6 @@ const editor = new dhx.DiagramEditor("editor_container", {
                scale: 0.65,
                gap: 8,
             },
-            // other configurations
         },
     }
 });
@@ -53,12 +52,12 @@ const editor = new dhx.DiagramEditor("editor_container", {
 
 ### Details
 
-The values of the **gap** and **scale** properties can be redefined for a separate shape via the **gap** and **scale** attributes of the [preview](../../../shapes/configuration_properties/#properties-specific-for-the-default-mode) property of the shape object:
+The values of the **gap** and **scale** properties can be redefined for a separate shape via the **gap** and **scale** attributes of the [preview](../../../../../shapes/configuration_properties/#properties-specific-for-the-default-mode) property of the shape object:
 
 ~~~js
 const defaults = {
     rectangle: {
-        preview:{
+        preview: {
             scale: 0.72, 
             gap: 8
         }
@@ -73,13 +72,14 @@ const editor = new dhx.DiagramEditor("editor_container", {
                scale: 0.65,
                gap: 2,
             },
-            // other configurations
         }
     },
-    defaults: defaults         
+    defaults,        
 });
 ~~~
 
 **Related article:** TODO
 
-**Change log**: Added in v6.0
+**Change log**: 
+
+The property was added in v6.0

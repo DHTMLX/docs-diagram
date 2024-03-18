@@ -29,8 +29,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {
         shapebar: {
-            width: 400, 
-            // other configurations
+            width: 400, // 300 by default
         },
     }
 });
@@ -38,4 +37,6 @@ const editor = new dhx.DiagramEditor("editor_container", {
 
 **Related article:** TODO
 
-**Change log**: Added in v6.0
+**Change log**: 
+
+The property was added in v6.0

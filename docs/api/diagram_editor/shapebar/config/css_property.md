@@ -18,27 +18,28 @@ css?: string;
 
 ### Example
 
-~~~html
+~~~html {6}
 <script>
-const editor = new dhx.DiagramEditor("editor_container", {
-    type: "default",
-    view: {
-       shapebar: {
-           css:"my_style",
-           // other configurations
+    const editor = new dhx.DiagramEditor("editor_container", {
+        type: "default",
+        view: {
+            shapebar: {
+                css: "custom_style",
+            }
         }
-    }
-});
+    });
 </script>
 
 <style>
-.my_style{
-    background-color:#4287f5;
-    font-family: cursive;
-}
+    .custom_style {
+        background-color: var(--dhx-background-primary);
+        font-size: var(--dhx-font-size-large);
+    }
 </style>
 ~~~
 
 **Related article:** TODO
 
-**Change log**: Added in v6.0
+**Change log**: 
+
+The property was added in v6.0
