@@ -398,20 +398,8 @@ module.exports = {
 						        id: "api/diagram_editor/toolbar/methods/overview" // New
                   },
                   items: [
-                    "api/diagram_editor/toolbar/methods/disable_method", // New
-                    "api/diagram_editor/toolbar/methods/enable_method", // New
-                    "api/diagram_editor/toolbar/methods/getselected_method", // New
-                    "api/diagram_editor/toolbar/methods/getstate_method", // New
-                    "api/diagram_editor/toolbar/methods/hide_method", // New
-                    "api/diagram_editor/toolbar/methods/isdisabled_method", // New
-                    "api/diagram_editor/toolbar/methods/isselected_method", // New
-                    "api/diagram_editor/toolbar/methods/paint_method", // New
                     "api/diagram_editor/toolbar/methods/parse_method", // New
-                    "api/diagram_editor/toolbar/methods/select_method", // New
-                    "api/diagram_editor/toolbar/methods/setfocus_method", // New
-                    "api/diagram_editor/toolbar/methods/setstate_method", // New
-                    "api/diagram_editor/toolbar/methods/show_method", // New
-                    "api/diagram_editor/toolbar/methods/unselect_method", // New
+                    "api/diagram_editor/toolbar/methods/toolbar_methods", // New
                     "api/diagram_editor/toolbar/methods/treecollection_methods", // New
                   ],
                 },
@@ -440,15 +428,7 @@ module.exports = {
 						        id: "api/diagram_editor/toolbar/events/overview" // New
                   },
                   items: [
-                    "api/diagram_editor/toolbar/events/afterhide_event", // New
-                    "api/diagram_editor/toolbar/events/beforehide_event", // New
-                    "api/diagram_editor/toolbar/events/click_event", // New
-                    "api/diagram_editor/toolbar/events/input_event", // New
-                    "api/diagram_editor/toolbar/events/inputblur_event", // New
-                    "api/diagram_editor/toolbar/events/inputchange_event", // New
-                    "api/diagram_editor/toolbar/events/inputfocus_event", // New
-                    "api/diagram_editor/toolbar/events/keydown_event", // New
-                    "api/diagram_editor/toolbar/events/openmenu_event", // New
+                    "api/diagram_editor/toolbar/events/toolbar_events", // New
                     "api/diagram_editor/toolbar/events/treecollection_events", // New
                   ],
                 },

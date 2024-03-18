@@ -28,8 +28,6 @@ You can use all the [**TreeCollection**](https://docs.dhtmlx.com/suite/category/
 | [getRoot()](https://docs.dhtmlx.com/suite/tree_collection/api/treecollection_getroot_method.md) | Returns the ID of the master component                         |
 | [haveItems()](https://docs.dhtmlx.com/suite/tree_collection/api/treecollection_haveitems_method.md) | Checks whether an item has children                        |
 | [isSaved()](https://docs.dhtmlx.com/suite/tree_collection/api/treecollection_issaved_method.md) | Checks whether the changes made in a tree collection are saved |
-| [load](https://docs.dhtmlx.com/suite/tree_collection/api/treecollection_load_method.md)         | Loads items from a file                                        |
-| [loadItems()](https://docs.dhtmlx.com/suite/tree_collection/api/treecollection_loaditems_method.md) | Loads child items of a control from a file                 |
 | [move()](https://docs.dhtmlx.com/suite/tree_collection/api/treecollection_move_method.md)       | Moves items to different positions                             |
 | [refreshItems()](https://docs.dhtmlx.com/suite/tree_collection/api/treecollection_refreshitems_method.md) | Refreshes child items of a control                   |
 | [remove()](https://docs.dhtmlx.com/suite/tree_collection/api/treecollection_remove_method.md)   | Removes an item                                                |
@@ -40,3 +38,14 @@ You can use all the [**TreeCollection**](https://docs.dhtmlx.com/suite/category/
 | [serialize()](https://docs.dhtmlx.com/suite/tree_collection/api/treecollection_serialize_method.md) | Serializes the component data into JSON, XML or CSV format |
 | [sort()](https://docs.dhtmlx.com/suite/tree_collection/api/treecollection_sort_method.md) | Sorts controls according to some criteria                            |
 | [update()](https://docs.dhtmlx.com/suite/tree_collection/api/treecollection_update_method.md) | Changes an item                                                  |
+
+~~~js
+const editor = new dhx.DiagramEditor("editor", {
+    type: "default",
+    view: {
+        toolbar: true,
+    }
+});
+// removes all the toolbar items
+editor.toolbar.data.removeAll();
+~~~

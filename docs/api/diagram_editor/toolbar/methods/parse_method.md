@@ -30,7 +30,7 @@ const editor = new dhx.DiagramEditor("editor", {
     }
 });
 // display the toolbar with specified items
-editor.toolbar.parse(["file", "spacer", "scale"]);
+editor.toolbar.parse([{ type: "file", disabled: false, }, "spacer", "scale"]);
 ~~~
 
 **Change log**: Added in v6.0

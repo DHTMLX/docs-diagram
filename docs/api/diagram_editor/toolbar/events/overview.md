@@ -6,19 +6,23 @@ description: You can learn about Toolbar events in the documentation of the DHTM
 
 # Toolbar events overview
 
-| Name                                                        | Description                                                         |
-| :---------------------------------------------------------- | :------------------------------------------------------------------ |
-| [](api/diagram-editor/toolbar/events/afterhide_event.md)    | @getshort(api/diagram-editor/toolbar/events/afterhide_event.md)     |
-| [](api/diagram-editor/toolbar/events/beforehide_event.md)   | @getshort(api/diagram-editor/toolbar/events/beforehide_event.md)    |
-| [](api/diagram-editor/toolbar/events/click_event.md)        | @getshort(api/diagram-editor/toolbar/events/click_event.md)         |
-| [](api/diagram-editor/toolbar/events/input_event.md)        | @getshort(api/diagram-editor/toolbar/events/input_event.md)         |
-| [](api/diagram-editor/toolbar/events/inputblur_event.md)    | @getshort(api/diagram-editor/toolbar/events/inputblur_event.md)     |
-| [](api/diagram-editor/toolbar/events/inputchange_event.md)  | @getshort(api/diagram-editor/toolbar/events/inputchange_event.md)   |
-| [](api/diagram-editor/toolbar/events/inputfocus_event.md)   | @getshort(api/diagram-editor/toolbar/events/inputfocus_event.md)    |
-| [](api/diagram-editor/toolbar/events/keydown_event.md)      | @getshort(api/diagram-editor/toolbar/events/keydown_event.md)       |
-| [](api/diagram-editor/toolbar/events/openmenu_event.md)     | @getshort(api/diagram-editor/toolbar/events/openmenu_event.md)      | 
-
 :::info
+You can use all the [**Toolbar**](https://docs.dhtmlx.com/suite/category/toolbar-events/) events of **Suite 8**!
+:::
+
+| Name                                                                                 | Description                                                        |
+| ------------------------------------------------------------------------------------ | ------------------------------------------------------------------ |
+| [afterHide](https://docs.dhtmlx.com/suite/toolbar/api/toolbar_afterhide_event/)      | Fires after hiding a sub-item of Toolbar                           |
+| [beforeHide](https://docs.dhtmlx.com/suite/toolbar/api/toolbar_beforehide_event/)    | Fires before hiding a sub-item of Toolbar                          |
+| [click](https://docs.dhtmlx.com/suite/toolbar/api/toolbar_click_event/)              | Fires after a click on a control                                   |
+| [input](https://docs.dhtmlx.com/suite/toolbar/api/toolbar_input_event/)              | Fires on entering a text into the input field                      |
+| [inputBlur](https://docs.dhtmlx.com/suite/toolbar/api/toolbar_inputblur_event/)      | Fires when a control is blurred                                    |
+| [inputChange](https://docs.dhtmlx.com/suite/toolbar/api/toolbar_inputchange_event/)  | Fires on changing the value in the Input control of Toolbar        |
+| [inputCreated](https://docs.dhtmlx.com/suite/toolbar/api/toolbar_inputcreated_event/)| Fires when a new input is added                                    |
+| [inputFocus](https://docs.dhtmlx.com/suite/toolbar/api/toolbar_inputfocus_event/)    | Fires when a control is focused                                    |
+| [keydown](https://docs.dhtmlx.com/suite/toolbar/api/toolbar_keydown_event/)          | Fires when any key is pressed and a control of Toolbar is in focus |
+| [openMenu](https://docs.dhtmlx.com/suite/toolbar/api/toolbar_openmenu_event/)        | Fires on expanding a menu control                                  |
+
 ~~~js
 const editor = new dhx.DiagramEditor("editor", {
     type: "default",
@@ -31,7 +35,6 @@ editor.toolbar.events.on("click", (editor, event) => {
     // some logic
 });
 ~~~
-:::
 
 # TreeCollection events overview
 
@@ -53,7 +56,6 @@ You can use all the [**TreeCollection**](https://docs.dhtmlx.com/suite/category/
 | [loadError](https://docs.dhtmlx.com/suite/tree_collection/api/treecollection_loaderror_event/)          | Fires when loading of data fails                       |
 | [removeAll](https://docs.dhtmlx.com/suite/tree_collection/api/treecollection_removeall_event/)          | Fires when all items are removed from a tree collection|
 
-:::info
 ~~~js
 const editor = new dhx.DiagramEditor("editor", {
     type: "default",
@@ -68,4 +70,3 @@ editor.toolbar.events.on("load", () => {
 
 editor.toolbar.parse(["file", "spacer", "scale"]);
 ~~~
-:::

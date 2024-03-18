@@ -21,3 +21,18 @@ You can use all the [**TreeCollection**](https://docs.dhtmlx.com/suite/category/
 | [load](https://docs.dhtmlx.com/suite/tree_collection/api/treecollection_load_event.md)               | Fires when items are loaded in a tree collection      |
 | [loadError](https://docs.dhtmlx.com/suite/tree_collection/api/treecollection_loaderror_event.md)     | Fires when loading of data fails                      |
 | [removeAll](https://docs.dhtmlx.com/suite/tree_collection/api/treecollection_removeall_event.md)     | Fires when all items are removed from a tree collection |
+
+~~~js
+const editor = new dhx.DiagramEditor("editor", {
+    type: "default",
+    view: {
+        toolbar: true,
+    }
+});
+
+editor.toolbar.events.on("load", () => {
+    console.log("load event")
+});
+
+editor.toolbar.parse(["file", "spacer", "scale"]);
+~~~
