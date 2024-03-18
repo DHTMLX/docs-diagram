@@ -24,9 +24,9 @@ getItem(): object;
 
 ### Parameters
 
-The method may take as an argument an object with the following parameter:
+The method takes as an argument an object with the following parameter:
 
-- `id` - (required) - the id of the item in question
+- `id` - (required) the id of the item in question
 
 ### Returns
 
