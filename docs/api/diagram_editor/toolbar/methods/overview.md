@@ -6,11 +6,11 @@ description: You can learn about Toolbar methods in the documentation of the DHT
 
 # Toolbar methods overview
 
-Use the [`parse()`](api/diagram_editor/toolbar/methods/parse_method.md) method to manipulate data in Toolbar. This method covers almost all common cases for working with Toolbar.
-
 :::info
-You can use all the [**Toolbar**](https://docs.dhtmlx.com/suite/category/toolbar-methods/) methods of [**Suite 8**](https://docs.dhtmlx.com/suite/)!
+Use the [`parse()`](api/diagram_editor/toolbar/methods/parse_method.md) method to manipulate data in Toolbar. This method covers almost all common cases for working with Toolbar.
 :::
+
+You can use the following [**Toolbar**](https://docs.dhtmlx.com/suite/category/toolbar-methods/) methods of [**Suite 8**](https://docs.dhtmlx.com/suite/):
 
 | Name                                                                                  | Description                                                |
 | :------------------------------------------------------------------------------------ | :--------------------------------------------------------- |
@@ -45,12 +45,10 @@ editor.toolbar.disable();
 
 # TreeCollection methods overview
 
-:::info
-You can use all the [**TreeCollection**](https://docs.dhtmlx.com/suite/category/treecollection-methods/) methods of [**Suite 8**](https://docs.dhtmlx.com/suite/)!
-:::
+You can use the following [**TreeCollection**](https://docs.dhtmlx.com/suite/category/treecollection-methods/) methods of [**Suite 8**](https://docs.dhtmlx.com/suite/):
 
-| Name                                                                                        | Description                                                        |
-| ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| Name                                                                                        | Description                                                      |
+| ------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
 | [add()](https://docs.dhtmlx.com/suite/tree_collection/api/treecollection_add_method/)     | Adds an item to a component                                        |
 | [canCopy()](https://docs.dhtmlx.com/suite/tree_collection/api/treecollection_cancopy_method/) | Checks whether it is possible to copy a control into some other control |
 | [copy()](https://docs.dhtmlx.com/suite/tree_collection/api/treecollection_copy_method/)   | Adds a copy of an item and places it in the specified position     |
@@ -68,7 +66,6 @@ You can use all the [**TreeCollection**](https://docs.dhtmlx.com/suite/category/
 | [getParent()](https://docs.dhtmlx.com/suite/tree_collection/api/treecollection_getparent_method/) | Gets the ID of the parent of the control                   |
 | [getRoot()](https://docs.dhtmlx.com/suite/tree_collection/api/treecollection_getroot_method/) | Returns the ID of the master component                         |
 | [haveItems()](https://docs.dhtmlx.com/suite/tree_collection/api/treecollection_haveitems_method/) | Checks whether an item has children                        |
-| [isSaved()](https://docs.dhtmlx.com/suite/tree_collection/api/treecollection_issaved_method/) | Checks whether the changes made in a tree collection are saved |
 | [move()](https://docs.dhtmlx.com/suite/tree_collection/api/treecollection_move_method/)       | Moves items to different positions                             |
 | [refreshItems()](https://docs.dhtmlx.com/suite/tree_collection/api/treecollection_refreshitems_method/) | Refreshes child items of a control                   |
 | [remove()](https://docs.dhtmlx.com/suite/tree_collection/api/treecollection_remove_method/)   | Removes an item                                                |

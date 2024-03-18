@@ -6,9 +6,7 @@ description: You can learn about Toolbar events in the documentation of the DHTM
 
 # Toolbar events overview
 
-:::info
-You can use all the [**Toolbar**](https://docs.dhtmlx.com/suite/category/toolbar-events/) events of **Suite 8**!
-:::
+You can use the following [**Toolbar**](https://docs.dhtmlx.com/suite/category/toolbar-events/) events of [**Suite 8**](https://docs.dhtmlx.com/suite/):
 
 | Name                                                                                 | Description                                                        |
 | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------ |
@@ -18,7 +16,6 @@ You can use all the [**Toolbar**](https://docs.dhtmlx.com/suite/category/toolbar
 | [input](https://docs.dhtmlx.com/suite/toolbar/api/toolbar_input_event/)              | Fires on entering a text into the input field                      |
 | [inputBlur](https://docs.dhtmlx.com/suite/toolbar/api/toolbar_inputblur_event/)      | Fires when a control is blurred                                    |
 | [inputChange](https://docs.dhtmlx.com/suite/toolbar/api/toolbar_inputchange_event/)  | Fires on changing the value in the Input control of Toolbar        |
-| [inputCreated](https://docs.dhtmlx.com/suite/toolbar/api/toolbar_inputcreated_event/)| Fires when a new input is added                                    |
 | [inputFocus](https://docs.dhtmlx.com/suite/toolbar/api/toolbar_inputfocus_event/)    | Fires when a control is focused                                    |
 | [keydown](https://docs.dhtmlx.com/suite/toolbar/api/toolbar_keydown_event/)          | Fires when any key is pressed and a control of Toolbar is in focus |
 | [openMenu](https://docs.dhtmlx.com/suite/toolbar/api/toolbar_openmenu_event/)        | Fires on expanding a menu control                                  |
@@ -31,24 +28,20 @@ const editor = new dhx.DiagramEditor("editor", {
     }
 });
 
-editor.toolbar.events.on("click", (editor, event) => {
+editor.toolbar.events.on("click", ($id, event) => {
     // some logic
 });
 ~~~
 
 # TreeCollection events overview
 
-:::info
-You can use all the [**TreeCollection**](https://docs.dhtmlx.com/suite/category/treecollection-events/) events of **Suite 8**!
-:::
+You can use the following [**TreeCollection**](https://docs.dhtmlx.com/suite/category/treecollection-events/) events of [**Suite 8**](https://docs.dhtmlx.com/suite/):
 
 | Name                                                                                                    | Description                                            |
 | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------ |
 | [afterAdd](https://docs.dhtmlx.com/suite/tree_collection/api/treecollection_afteradd_event/)            | Fires after adding a new item into a tree collection   |
-| [afterItemLoad](https://docs.dhtmlx.com/suite/tree_collection/api/treecollection_afteritemload_event/)  | Fires after loading an item                            |
 | [afterRemove](https://docs.dhtmlx.com/suite/tree_collection/api/treecollection_afterremove_event/)      | Fires after removing a new item from a tree collection |
 | [beforeAdd](https://docs.dhtmlx.com/suite/tree_collection/api/treecollection_beforeadd_event/)          | Fires before adding a new item into a tree collection  |
-| [beforeItemLoad](https://docs.dhtmlx.com/suite/tree_collection/api/treecollection_beforeitemload_event/)| Fires before loading an item                           |
 | [beforeRemove](https://docs.dhtmlx.com/suite/tree_collection/api/treecollection_beforeremove_event/)    | Fires before removing an item from a tree collection   |
 | [change](https://docs.dhtmlx.com/suite/tree_collection/api/treecollection_change_event/)                | Fires when a tree collection is modified               |
 | [filter](https://docs.dhtmlx.com/suite/tree_collection/api/treecollection_filter_event/)                | Fires after filtering a tree collection                |

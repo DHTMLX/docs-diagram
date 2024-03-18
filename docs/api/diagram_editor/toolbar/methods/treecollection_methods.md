@@ -4,9 +4,7 @@ title: TreeCollection Methods of Toolbar
 description: You can learn about TreeCollection methods of Toolbar in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
 
-:::info
-You can use all the [**TreeCollection**](https://docs.dhtmlx.com/suite/category/treecollection-methods/) methods of **Suite 8**!
-:::
+You can use the following [**TreeCollection**](https://docs.dhtmlx.com/suite/category/treecollection-methods/) methods of [**Suite 8**](https://docs.dhtmlx.com/suite/):
 
 | Name                                                                                        | Description                                                        |
 | ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
@@ -27,7 +25,6 @@ You can use all the [**TreeCollection**](https://docs.dhtmlx.com/suite/category/
 | [getParent()](https://docs.dhtmlx.com/suite/tree_collection/api/treecollection_getparent_method.md) | Gets the ID of the parent of the control                   |
 | [getRoot()](https://docs.dhtmlx.com/suite/tree_collection/api/treecollection_getroot_method.md) | Returns the ID of the master component                         |
 | [haveItems()](https://docs.dhtmlx.com/suite/tree_collection/api/treecollection_haveitems_method.md) | Checks whether an item has children                        |
-| [isSaved()](https://docs.dhtmlx.com/suite/tree_collection/api/treecollection_issaved_method.md) | Checks whether the changes made in a tree collection are saved |
 | [move()](https://docs.dhtmlx.com/suite/tree_collection/api/treecollection_move_method.md)       | Moves items to different positions                             |
 | [refreshItems()](https://docs.dhtmlx.com/suite/tree_collection/api/treecollection_refreshitems_method.md) | Refreshes child items of a control                   |
 | [remove()](https://docs.dhtmlx.com/suite/tree_collection/api/treecollection_remove_method.md)   | Removes an item                                                |

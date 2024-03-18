@@ -4,9 +4,7 @@ title: Methods of Toolbar
 description: You can learn about methods of Toolbar in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
 
-:::info
-You can use all the [**Toolbar**](https://docs.dhtmlx.com/suite/category/toolbar-methods/) methods of [**Suite 8**](https://docs.dhtmlx.com/suite/)!
-:::
+You can use the following [**Toolbar**](https://docs.dhtmlx.com/suite/category/toolbar-methods/) methods of [**Suite 8**](https://docs.dhtmlx.com/suite/):
 
 | Name                                                                                  | Description                                                |
 | :------------------------------------------------------------------------------------ | :--------------------------------------------------------- |
