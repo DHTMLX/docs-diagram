@@ -8,7 +8,7 @@ description: You can learn about the clear method of selection in the documentat
 
 ### Description
 
-@short: Clears the selection object without invoking events
+@short: Clears the selection list without invoking events
 
 ### Usage
 
@@ -30,7 +30,9 @@ diagram.selection.clear();
 // the Selection events are not fired
 ~~~
 
-**Change log**: Added in v6.0
+**Change log**: 
+
+The method was added in v6.0
 
 **Related articles**:  
 
@@ -39,7 +41,7 @@ diagram.selection.clear();
 
 **Related samples**:
 
-TODO - update links to snippets
+TODO - check links to snippets
 
 - [Diagram. Selection. Item selection](https://snippet.dhtmlx.com/jyoxn5h7)
 - [Diagram. Default mode. Item selection](https://snippet.dhtmlx.com/tcny4obw)

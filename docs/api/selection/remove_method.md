@@ -8,7 +8,7 @@ description: You can learn about the remove method of selection in the documenta
 
 ### Description
 
-@short: Removes the specified item or all the items from the selection list
+@short: Removes the specified item or all the items from the selection list when called without arguments
 
 ### Usage
 
@@ -24,13 +24,13 @@ remove(): boolean;
 
 ### Parameters
 
-The method may take an object argument with the following parameter:
+The method may take as an argument an object with the following parameter:
 
 - `id` - (required) the id of the item that should be removed from the selection list 
 
 ### Returns
 
-The method returns `true` if the item unselection or the list cleanup has been successful
+The method returns `true` if unselection of an item or the list cleanup has been successful
 
 ### Example
 
@@ -65,17 +65,14 @@ console.log(diagram.selection.getIds()); // -> []
 
 **Change log**: 
 
-The functionality is updated in v6.0:
-
-- The method takes an object as an argument
-- The `subId` parameter is removed
+The method was updated in v6.0
 
 **Related articles**: 
 
 - [diagram.config.select](../../../api/diagram/select_property/)
 - [Selecting items](../../../guides/manipulating_items/#selecting-items)
 
-TODO - update links to snippets
+TODO - check links to snippets
 
 **Related samples**:
 

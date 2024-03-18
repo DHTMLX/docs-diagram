@@ -22,7 +22,7 @@ add({
 
 ### Parameters
 
-The method takes an object argument with the following parameters:
+The method takes as an argument an object with the following parameters:
 
 - `id` - (required) the id of an item 
 - `join` - (optional) the mode of adding the selected element to the selection list. In case the parameter is set to *false* or isn't passed, the items previously added into the selection list will be reset
@@ -32,10 +32,8 @@ The method takes an object argument with the following parameters:
 
 The method returns:
 
--  `true` if the element hadn't been in the selection list and was successfully added into it
-- `false` if the element wasn't added into the selection list by some reason, namely:
-    - a user had prohibited deleting a particular element, while the mode of adding was limited by a single element with the `join:false` setting
-    - an element had already been added to the selection list
+- `true` if the element hadn't been in the selection list and was successfully added into it
+- `false` if the element wasn't added into the selection list by some reason, e.g. an element had already been added to the selection list
 
 ### Example
 
@@ -61,19 +59,14 @@ console.log(diagram.selection.getIds()); // -> ["3"]
 
 **Change log**: 
 
-The functionality is updated in v6.0:
-
-- The method takes an object as an argument
-- The `subId` parameter is removed
-- The `join` and `batch` parameters are added
-- The return boolean value is added
+The method was updated in v6.0
 
 **Related articles**:  
 
 - [diagram.config.select](../../../api/diagram/select_property/)
 - [Selecting items](../../../guides/manipulating_items/#selecting-items)
 
-TODO - update links to snippets
+TODO - check links to snippets
 
 **Related samples**:
 

@@ -43,8 +43,8 @@ diagram.data.parse(data);
 
 // attaching a handler to the event
 diagram.events.on("beforeUnSelect", function({ id }) {
-	console.log(id + " will be unselected");
-	return true;
+    console.log(id + " will be unselected");
+    return true;
 });
 ~~~
 
@@ -67,17 +67,13 @@ editor.diagram.events.on("beforeUnSelect", function({ id }) {
 
 **Change log**: 
 
-The functionality is updated in v6.0:
-
-- The callback function is called with an object 
-- The **subId** parameter is removed
-- The **batch** parameter is added 
+The event was updated in v6.0
 
 **Related articles**:  
 
 - [diagram.config.select](../../../api/diagram/select_property/)
 - [Selecting items](../../../guides/manipulating_items/#selecting-items)
 
-TODO - update link to the snippet
+TODO - check link to the snippet
 
 **Related sample**: [Diagram. Org chart mode. Events](https://snippet.dhtmlx.com/l38pct7c)

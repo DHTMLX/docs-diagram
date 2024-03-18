@@ -33,7 +33,9 @@ diagram.data.parse(data);
 const ids = diagram.selection.getIds(); // -> ["1", "1.1", ...] or []
 ~~~
 
-**Change log**: Added in v6.0
+**Change log**: 
+
+The method was added in v6.0
 
 **Related articles**:  
 
@@ -42,7 +44,7 @@ const ids = diagram.selection.getIds(); // -> ["1", "1.1", ...] or []
 
 **Related samples**:
 
-TODO - update links to snippets
+TODO - check links to snippets
 
 - [Diagram. Selection. Item selection](https://snippet.dhtmlx.com/jyoxn5h7)
 - [Diagram. Default mode. Item selection](https://snippet.dhtmlx.com/tcny4obw)

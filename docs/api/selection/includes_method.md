@@ -20,7 +20,7 @@ includes({
 
 ### Parameters
 
-The method takes an object argument with the following parameters:
+The method takes as an argument an object with the following parameters:
 
 - `id` - (required) the id of the checked item
 
@@ -43,7 +43,9 @@ diagram.selection.includes({ id: "1" }) // returns true
 diagram.selection.includes({ id: "4" }) // returns false
 ~~~
 
-**Change log**: Added in v6.0
+**Change log**: 
+
+The method was added in v6.0
 
 **Related articles**:  
 
@@ -52,7 +54,7 @@ diagram.selection.includes({ id: "4" }) // returns false
 
 **Related samples**:
 
-TODO - update links to snippets
+TODO - check links to snippets
 
 - [Diagram. Selection. Item selection](https://snippet.dhtmlx.com/jyoxn5h7)
 - [Diagram. Default mode. Item selection](https://snippet.dhtmlx.com/tcny4obw)

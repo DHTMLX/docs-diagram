@@ -8,7 +8,7 @@ description: You can learn about the getItem method of selection in the document
 
 ### Description
 
-@short: Returns the object of the specified selected item or of the last selected item 
+@short: Returns the object of the specified selected item or of the last selected item when called without arguments
 
 ### Usage
 
@@ -24,13 +24,13 @@ getItem(): object;
 
 ### Parameters
 
-The method takes an object argument with the following parameter:
+The method may take as an argument an object with the following parameter:
 
 - `id` - (required) - the id of the item in question
 
 ### Returns
 
-The method returns the object of the specified item, if it is in the selection list, or the object of the last selected item
+The method returns the object of the specified item, if it is in the selection list, or the object of the last selected item, if called without arguments
 
 ### Example
 
@@ -58,17 +58,14 @@ const item = diagram.selection.getItem({ id: "4" });
 
 **Change log**: 
 
-The functionality is updated in v6.0:
-
-- The method takes an object as an argument
-- The `id` parameter is added
+The method was updated in v6.0
 
 **Related articles**:  
 
 - [diagram.config.select](../../../api/diagram/select_property/)
 - [Selecting items](../../../guides/manipulating_items/#selecting-items)
 
-TODO - update links to snippets
+TODO - check links to snippets
 
 **Related samples**:
 

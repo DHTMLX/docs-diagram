@@ -187,7 +187,7 @@ diagram.selection.add({ id: "3" });
 console.log(diagram.selection.getIds()); // -> ["3"]
 ~~~
 
-The method takes an object argument with the following parameters:
+The method takes as an argument an object with the following parameters:
 
 - `id` - (required) the id of the item to add into the selection list
 - `join` - (optional) the mode of adding the selected element to the selection list. In case the parameter is set to *false* or isn't passed, the items previously added into the selection list will be reset
@@ -196,9 +196,7 @@ The method takes an object argument with the following parameters:
 The method returns:
 
 -  `true` if the element hadn't been in the list and was successfully added into it
-- `false` if the element wasn't added into the list by some reason, namely:
-    - a user has prohibited deleting a particular element, while the mode of adding was limited by a single element with the `join:false` setting
-    - an element had already been added to the list
+- `false` if the element wasn't added into the list by some reason, e.g. an element had already been added to the list
 
 ### Unselecting an item
 
@@ -233,7 +231,7 @@ The method returns an array of ids of selected items and sub-items or an empty a
 
 ### Getting the object of a selected item
 
-You can get the object of a selected item using the [](../api/selection/getitem_method.md) method of the **selection** object. The method may take an object argument with the following parameter:
+You can get the object of a selected item using the [](../api/selection/getitem_method.md) method of the **selection** object. The method may take as an argument an object with the following parameter:
 
 - `id` - (required) - the id of the item in question
 
@@ -279,7 +277,7 @@ diagram.selection.includes({ id: "1" }) // returns true
 diagram.selection.includes({ id: "4" }) // returns false
 ~~~
 
-The method takes an object argument with the following parameters:
+The method takes as an argument an object with the following parameters:
 
 - `id` - (*string|number*) required, the id of the checked item
 
