@@ -28,7 +28,7 @@ const editor = new dhx.DiagramEditor("editor", {
     }
 });
 
-editor.toolbar.events.on("click", ($id, event) => {
+editor.toolbar.events.on("click", (id, event) => {
     // some logic
 });
 ~~~

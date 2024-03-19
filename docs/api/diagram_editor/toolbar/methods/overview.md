@@ -7,7 +7,7 @@ description: You can learn about Toolbar methods in the documentation of the DHT
 # Toolbar methods overview
 
 :::info
-Use the [`parse()`](api/diagram_editor/toolbar/methods/parse_method.md) method to manipulate data in Toolbar. This method covers almost all common cases for working with Toolbar.
+Use the [`parse()`](api/diagram_editor/toolbar/methods/parse_method.md) method to manipulate data in Toolbar. 
 :::
 
 You can use the following [**Toolbar**](https://docs.dhtmlx.com/suite/category/toolbar-methods/) methods of [**Suite 8**](https://docs.dhtmlx.com/suite/):
