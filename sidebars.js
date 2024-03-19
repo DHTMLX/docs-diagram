@@ -173,6 +173,7 @@ module.exports = {
                   },
                   items: [
                     //"api/diagram_editor/editor/methods/setviewmode_method", !!!Deprecated
+                    "api/diagram_editor/editor/methods/destructor_method",
                     "api/diagram_editor/editor/methods/import_method",
                     "api/diagram_editor/editor/methods/paint_method",
                     "api/diagram_editor/editor/methods/parse_method",
