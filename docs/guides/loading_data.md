@@ -17,11 +17,17 @@ DHTMLX Diagram takes data in the JSON format. It is an array that contains a set
 
 - **shape objects**
 
-~~~js
+~~~js {2-5}
 const data = [
-   { "id": 1, "x": 200, "y": 0, "text": "Start", "type": "start" },
-   { "id": 2, "x": 200, "y": 120, "text": "Call Client and \n set-up Appointment", "type": "process" },
-   { "id": 3, "x": 200, "y": 240, "text": "Decision", "type": "decision" },
+   // configuring shapes
+   { "id": "shape_1", "type": "start", "x": 200, y: 0, "text": "Start" },
+   { "id": "shape_2", "type": "process", "x": 200, y: 120, "text": "Call Client and \n set-up Appointment" },
+   { "id": "shape_3", "type": "decision", "x": 200, "y": 240, "text": "Decision" },
+   // configuring lines
+   { "id": "line_1", "type": "line", "from": "shape_1", "to": "shape_2" },
+   { "id": "line_2", "type": "dash", "from": "shape_2", "to": "shape_3" },
+   // configuring a line title
+   { "id": "title_1", "type": "lineTitle", "parent": "line_1", "text": "Some text" },
 ];
 ~~~
 
@@ -30,20 +36,17 @@ Besides, you may create [your own type of shapes](../../shapes/custom_shape/) an
 
 - **line objects**
 
-~~~js
+~~~js {6-8}
 const data = [
-   {
-      "id": "1-2", 
-      "from": "1", 
-      "to": "2", 
-      "type": "dash"
-   },
-   {
-      "id": "2-3", 
-      "from": "2", 
-      "to": "3", 
-      "type": "line"
-   }
+   // configuring shapes
+   { "id": "shape_1", "type": "start", "x": 200, y: 0, "text": "Start" },
+   { "id": "shape_2", "type": "process", "x": 200, y: 120, "text": "Call Client and \n set-up Appointment" },
+   { "id": "shape_3", "type": "decision", "x": 200, "y": 240, "text": "Decision" },
+   // configuring lines
+   { "id": "line_1", "type": "line", "from": "shape_1", "to": "shape_2" },
+   { "id": "line_2", "type": "dash", "from": "shape_2", "to": "shape_3" },
+   // configuring a line title
+   { "id": "title_1", "type": "lineTitle", "parent": "line_1", "text": "Some text" },
 ];
 ~~~
 
@@ -51,11 +54,17 @@ The presence or absence of line objects in the data set depends on the chosen [w
 
 - **line title objects**
 
-~~~js
+~~~js {9-10}
 const data = [
-    { "type": "line", "id": "line_1", "from": "shape_1", "to": "shape_2" },
-    // configuring a line title
-    { "type": "lineTitle", "id": "title_1", "parent": "line_1", "text": "Some text" },
+   // configuring shapes
+   { "id": "shape_1", "type": "start", "x": 200, y: 0, "text": "Start" },
+   { "id": "shape_2", "type": "process", "x": 200, y: 120, "text": "Call Client and \n set-up Appointment" },
+   { "id": "shape_3", "type": "decision", "x": 200, "y": 240, "text": "Decision" },
+   // configuring lines
+   { "id": "line_1", "type": "line", "from": "shape_1", "to": "shape_2" },
+   { "id": "line_2", "type": "dash", "from": "shape_2", "to": "shape_3" },
+   // configuring a line title
+   { "id": "title_1", "type": "lineTitle", "parent": "line_1", "text": "Some text" },
 ];
 ~~~
 

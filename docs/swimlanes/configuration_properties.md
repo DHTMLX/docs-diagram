@@ -1,12 +1,12 @@
 ---
-sidebar_label: Swimlane properties
+sidebar_label: Swimlane properties !!
 title: Swimlane and Swimlane Cell Properties
 description: You can learn about the Swimlane and Swimlane cell properties in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
 
 # Swimlane and swimlane cell properties
 
-{{note While specifying color values of the item, you can use the following formats: HEX, RGBA, RGB, HSL, or HSLA.}}
+{{note While specifying color values of the item, use the HEX format.}}
 
 ## Properties of a swimlane
 
@@ -102,10 +102,10 @@ Each swimlane object can include the following configuration properties:
 - `y` - (optional) the y coordinate of the swimlane position
 - `layout` - (required) an array with matrix representation of the cells of the swimlane
 - `fixed` - (optional) enables/disables the ability to move and resize the swimlane; *false* by default
-- `open` - (optional) defines whether the swimlane is initialized in the expanded (*true*, default) or collapsed(*false*) state; <br>
+- `open` - (optional) defines whether the swimlane is initialized in the expanded (*true*, default) or collapsed (*false*) state
 :::tip
 The **open** property works when a **header** is initialized with the **closable** attribute
-:::<br> 
+:::
 - `style` - (optional) an object with the style settings of the swimlane. The object can contain the following attributes:
     - `strokeWidth` - (optional) the width of the swimlane border, 1 by default
     - `stroke` - (optional) the color of the border of the swimlane, "#DEDEDE" by default
@@ -163,26 +163,26 @@ The **open** property works when a **header** is initialized with the **closable
 ~~~js
 const data = [
     {
-		"id": "main",
-		"type": "$swimlane",
-		"height": 730,
-		"width": 1195,
-		"header": {
-			"closable": true,
-			"text": "Waterfall diagram template"
-		},
-		"layout": [
-			[1, 2, 3, 4]
-		],
-		"subHeaderCols": {
-			"headers": [
-				{ "text": "September", "fill": "rgba(243, 92, 79, 0.4)" },
-				{ "text": "October", "fill": "rgba(155, 96, 248, 0.4)" },
-				{ "text": "November", "fill": "rgba(255, 174, 18, 0.4)" },
-				{ "text": "December", "fill": "rgba(60, 201, 122, 0.4)" }
-			]
-		}
-	},
+        "id": "main",
+        "type": "$swimlane",
+        "height": 730,
+        "width": 1195,
+        "header": {
+            "closable": true,
+            "text": "Waterfall diagram template"
+        },
+        "layout": [
+    	   [1, 2, 3, 4]
+        ],
+        "subHeaderCols": {
+            "headers": [
+                { "text": "September", "fill": "rgba(243, 92, 79, 0.4)" },
+                { "text": "October", "fill": "rgba(155, 96, 248, 0.4)" },
+                { "text": "November", "fill": "rgba(255, 174, 18, 0.4)" },
+                { "text": "December", "fill": "rgba(60, 201, 122, 0.4)" }
+            ]
+        }
+    },
 ];
 ~~~
 

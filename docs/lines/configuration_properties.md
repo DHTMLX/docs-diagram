@@ -6,7 +6,7 @@ description: You can learn about the Line properties in the documentation of the
 
 # Line properties
 
-{{note While specifying color values of the item, you can use the following formats: HEX, RGBA, RGB, HSL, or HSLA.}}
+{{note While specifying color values of the item, use the HEX format.}}
 
 ## Common properties
 
@@ -16,7 +16,7 @@ description: You can learn about the Line properties in the documentation of the
 const data = [
     // line object
     {
-        type?: "line" | "dash", // "line" by default
+        type: "line" | "dash", 
         id?: string | number,
         from?: string | number,
         to?: string | number,
@@ -32,7 +32,7 @@ const data = [
 
 Each line object can include the following properties:
 
-- `type` - (optional) the type of the connector line: "*line*" (default) or "*dash*"
+- `type` - (required) the type of the connector line: "*line*" or "*dash*"
 - `id` - (optional) the id of a connector
 - `from` - (optional) the id of the parent shape
 - `to` - (optional) the id of the child shape
@@ -91,8 +91,8 @@ const data = [
         "type": "line",
         "stroke": "#0AB169",
         "connectType": "straight",
-        "from": "1",
-        "to": "2",
+        "from": 1,
+        "to": 2,
         "fromSide": "bottom",
         "toSide": "top",
         "forwardArrow": "filled"

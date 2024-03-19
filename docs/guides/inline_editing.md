@@ -23,23 +23,23 @@ You can find examples of disabling inline editing for diagram items below:
 ~~~js title="Disabling the ability to edit the text content of a line" {18}
 const data = [
     // configuring shapes
-    {   "id": 1, "x": 200, "y": 0, "text": "Start", "type": "start" },
-    {   "id": 2, "x": 200, "y": 220, "text": "Step 1", "type": "process" },
+    { "id": "shape_1", "type": "start", "x": 0, "text": "Start" },
+    { "id": "shape_2", "type": "process", "x": 400, "text": "Step 1" },
     // configuring a line
     {
+        "id": "line_1",
         "type": "line",
-        "from": "1",
-        "to": "2",
-        "id": "1-2"
+        "from": "shape_1",
+        "to": "shape_2",
     },
     // configuring a line title
     {   
-        "type": "lineTitle", 
         "id": "title_1", 
-        "parent": "1-2", 
+        "type": "lineTitle",
+        "parent": "line_1", 
         "text": "Some text",
         "editable": false // disables inline editing of the text item of a line
-    }     
+    }
 ];
 ~~~
 

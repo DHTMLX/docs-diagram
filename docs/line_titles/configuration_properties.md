@@ -6,6 +6,8 @@ description: You can learn about the LineTitle properties in the documentation o
 
 # LineTitle properties
 
+{{note While specifying color values of the item, use the HEX format.}}
+
 ### Usage
 
 ~~~js
@@ -61,28 +63,14 @@ Each line title object can include the following properties:
 ~~~js
 const data = [
     // configuring shapes
-    { "id": 1, "x": 200, "y": 0, "text": "Start", "type": "start" },
-    { "id": 2, "x": 200, "y": 320, "text": "Call Client and \n set-up Appointment", "type": "process" },
+    { type: "rectangle", id: "shape_1" },
+    { type: "rectangle", id: "shape_2", x: 400 },
+
     // configuring lines
-    {
-        "type": "line",
-        "id": "line_1",
-        "stroke": "#0AB169",
-        "connectType": "straight",
-        "from": "1",
-        "to": "2",
-        "fromSide": "bottom",
-        "toSide": "top",
-        "forwardArrow": "filled"
-    },
+    { type: "line", id: "line_1", from: "shape_1", to: "shape_2" },
+
     // configuring line titles
-    {
-    	"type": "lineTitle",
-    	"parent": "line_1",
-    	"text": "Some text",
-    	"fill": "#BCE4CE",
-    	"textAlign": "left"
-    }
+    { type: "lineTitle", id: "title_1", parent: "line_1", text: "Some text" },
 ];
 ~~~
 

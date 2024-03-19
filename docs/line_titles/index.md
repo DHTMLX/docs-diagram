@@ -92,8 +92,8 @@ editor.parse([
     { type: "rectangle", id: "shape_1" },
     { type: "rectangle", id: "shape_2", x: 400 },
     { type: "line", id: "line_1", from: "shape_1", to: "shape_2" },
-    { type: "lineTitle", id: "title_1", parent: "line_1", text: "Text 1", distance:50 },
-    { type: "lineTitle", id: "title_2", parent: "line_1", text: "Text 2", distance:70 }
+    { type: "lineTitle", id: "title_1", parent: "line_1", text: "Text 1", distance: 50 },
+    { type: "lineTitle", id: "title_2", parent: "line_1", text: "Text 2", distance: 70 }
 ]);
 editor.diagram.data.eachChild("line_1", (child) => {
     console.log(child.id); // => "title_1", "title_2"

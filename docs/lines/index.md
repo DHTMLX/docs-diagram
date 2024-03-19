@@ -56,7 +56,7 @@ const data = [
     // connectors
     { "id": "1-2", "from": "1", "to": "2", "type": "dash" },
     { "id": "1-3", "from": "1", "to": "3", "type": "dash" },
-	{ "id": "1-4", "from": "1", "to": "4", "type": "line" },
+    { "id": "1-4", "from": "1", "to": "4", "type": "line" },
     { "id": "1-5", "from": "1", "to": "5", "type": "line" },
 ];
 ~~~
@@ -74,8 +74,8 @@ You can specify the **parent** property in the configuration object of the shape
 
 ~~~js
 const data = [
-	// shapes
-	{ id: "1", text: "Chairman & CEO" },
+    // shapes
+    { id: "1", text: "Chairman & CEO" },
     { id: "2", text: "Manager", parent: "1" },
     { id: "3", text: "Technical Director", parent: "1" },
     { id: "4", text: "Manager", parent: "1" },
