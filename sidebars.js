@@ -702,7 +702,7 @@ module.exports = {
             // Selection
             {
               type: "category",
-              label: "Selection API",
+              label: "!!Selection API",
               collapsed: true,
               link: {
                 type: 'doc',
@@ -711,22 +711,25 @@ module.exports = {
               items: [
                 {
                   type: "category",
-                  label: "Selection methods",
+                  label: "!!Selection methods",
                   link: {
                     type: 'doc',
                     id: "api/overview/selection_methods_overview",
                   },
                   items: [
                     "api/selection/add_method",
+                    "api/selection/clear_method",
                     //"api/selection/getid_method", !!!Deprecated
+                    "api/selection/getids_method",
                     "api/selection/getitem_method",
                     //"api/selection/getsubid_method", !!!Deprecated
-                    "api/selection/remove_method",
+                    "api/selection/includes_method",
+                    "api/selection/remove_method"
                   ],
                 },
                 {
                   type: "category",
-                  label: "Selection events",
+                  label: "!!Selection events",
                   link: {
                     type: 'doc',
                     id: "api/overview/selection_events_overview",

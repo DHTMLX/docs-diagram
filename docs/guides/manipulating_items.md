@@ -1,5 +1,5 @@
 ---
-sidebar_label: Manipulating items
+sidebar_label: Manipulating items!!
 title: Manipulating Items
 description: You can learn about manipulating items in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
@@ -159,54 +159,131 @@ You can check whether an item exists in the diagram via the [](../api/data_colle
 const shapeExists = diagram.data.exists("1");
 ~~~
 
-## Selecting items
+## !!Selecting items 
+
+TODO - check/update the guides when the API will be completely ready
 
 ### Selecting an item
 
 To select items, you need firstly [enable selection](../../guides/diagram/configuration/#selecting-items) for the diagram and then call the [add()](api/selection/add_method.md) method of the **selection** object to select a desired item.
 
-~~~js
-const diagram = new dhx.Diagram("diagram_container", { select: true });
+~~~js {8,11-12,15-16}
+// a diagram must be created with the "select:true" option
+const diagram = new dhx.Diagram("diagram_container", { 
+    select: true 
+});
+// loading data
 diagram.data.parse(data);
- 
-diagram.selection.add("2");
+
+diagram.selection.add({ id: "1" }); // -> returns true if the item has been selected
+console.log(diagram.selection.getIds()); // -> ["1"]
+
+// adds the item with the id:"2" to the already selected items
+diagram.selection.add({ id: "2", join: true }); 
+console.log(diagram.selection.getIds()); // -> ["1", "2"]
+
+// removes the previously selected items and adds the item with the id:"3"
+diagram.selection.add({ id: "3" }); 
+console.log(diagram.selection.getIds()); // -> ["3"]
 ~~~
 
-The method takes the item's id as a parameter.
+The method takes as an argument an object with the following parameters:
+
+- `id` - (required) the id of the item to add into the selection list
+- `join` - (optional) the mode of adding the selected element to the selection list. In case the parameter is set to *false* or isn't passed, the items previously added into the selection list will be reset
+- `batch` - (optional) the list of items to select (if known beforehand)
+
+The method returns:
+
+-  `true` if the element hadn't been in the list and was successfully added into it
+- `false` if the element wasn't added into the list by some reason, e.g. an element had already been added to the list
 
 ### Unselecting an item
 
-To unselect a selected item, make use of the [](../api/selection/remove_method.md) method of the **selection** object:
+To remove an item from the selection list, make use of the [](../api/selection/remove_method.md) method of the **selection** object:
 
-~~~js
-diagram.selection.remove("2");
+~~~js {2}
+console.log(diagram.selection.getIds()); // -> ["1", "2", "3"]
+diagram.selection.remove({ id: "3" }); // -> returns true if the item has been unselected
+console.log(diagram.selection.getIds()); // -> ["1", "2"]
 ~~~
 
-### Getting the id of a selected item
+The method may take an object with *the id of the item to unselect* as a parameter. It returns *true*, if the item has been successfully removed from the selection list. 
 
-You can get the id of the currently selected item with the [](../api/selection/getid_method.md) method of the **selection** object:
+You can also call the method with no arguments to clear the selection list as follows:
 
-~~~js
-const selected = diagram.selection.getId();
+~~~js {2-3}
+console.log(diagram.selection.getIds()); // -> ["1", "2", "3"]
+// removes all the items from the selection list
+diagram.selection.remove(); 
+console.log(diagram.selection.getIds()); // -> []
 ~~~
 
-### Getting the subId of a selected item
+### Getting the ids of selected items
 
-You can get the subId of the currently selected item with the [](../api/selection/getsubid_method.md) method of the **selection** object:
+You can get the list of ids of the currently selected items with the [](../api/selection/getids_method.md) method of the **selection** object:
 
 ~~~js
-const selected = diagram.selection.getSubId();
+const ids = diagram.selection.getIds(); // -> ["1", "1.1" ...] or []
 ~~~
+
+The method returns an array of ids of selected items and sub-items or an empty array, if there are no selected items at the moment.
 
 ### Getting the object of a selected item
 
-It is also possible to get the object of a selected item using the [](../api/selection/getitem_method.md) method of the **selection** object:
+You can get the object of a selected item using the [](../api/selection/getitem_method.md) method of the **selection** object. The method may take as an argument an object with the following parameter:
 
-~~~js
-const item = diagram.selection.getItem();
+- `id` - (required) - the id of the item in question
+
+You can also call the method without the parameter to get the object of the last selected item. Check the examples below to explore the method's functionality:
+
+~~~js {9-11,13-15,17-19} 
+// a diagram must be created with the "select:true" option
+const diagram = new dhx.Diagram("diagram_container", { 
+    select: true 
+});
+// loading data
+diagram.data.parse(data);
+
+console.log(diagram.selection.getIds()); // -> ["1", "2", "3"]
+// getting the last selected item
+const item = diagram.selection.getItem(); 
+// -> {id: "3", text: "Technical Director", title: "Jerry Wagner"}
+
+// getting the selected item by id
+const item = diagram.selection.getItem({ id: "1" }); 
+// -> {id: "1", text: "Chairman & CEO", title: "Henry Bennett"}
+
+// trying to get an item which is not in the selection list
+const item = diagram.selection.getItem({ id: "4" }); 
+// -> returns undefined, since there is no item with the specified id in the selection list
 ~~~
 
-**Related sample:** [Diagram. Org chart mode. Item selection](https://snippet.dhtmlx.com/jyoxn5h7)
+### Clearing the selection list
+
+Whenever you need to clear the selection list without invoking events, use the [](../api/selection/clear_method.md) method:
+
+~~~js
+diagram.selection.clear();
+~~~
+
+### Checking whether an item is selected
+
+There is a way to check the presence of an item in the list of selected Diagram items via API. Use the [](../api/selection/includes_method.md) method of the **selection** object for this purpose:
+
+~~~js {2-3}
+diagram.selection.getIds(); // -> ["1", "2", "3"]
+diagram.selection.includes({ id: "1" }) // returns true
+diagram.selection.includes({ id: "4" }) // returns false
+~~~
+
+The method takes as an argument an object with the following parameters:
+
+- `id` - (*string|number*) required, the id of the checked item
+
+TODO - update the link to snippet
+
+**Related sample:** [Diagram. Selection. Item selection](https://snippet.dhtmlx.com/jyoxn5h7)
 
 ## Expanding/collapsing items
 
@@ -214,7 +291,7 @@ You can expand and collapse either a shape that have child shapes or a group/swi
 
 Both methods takes two parameters:
 
-- **id** - (*string,number*) the id of the item
+- **id** - (*string|number*) the id of the item
 - **dir** - (*string*) optional, defines the side the children will be hidden/shown in relation to the parent shape: "left", "right"
 
 ~~~js
@@ -436,7 +513,7 @@ diagram.cellManager.getCellId(0, "row"); // returns 1
 diagram.cellManager.getCellId(2, "col"); // returns 3
 ~~~
 
-You can also get the id of a cell the subheader belongs to via using the [](../api/cell_manager/getsubheadercellid_method.md) method of the cellManager object. The method takes the id of the subheader of a swimlane as a parameter:
+You can also get the id of a cell the subheader belongs to by using the [](../api/cell_manager/getsubheadercellid_method.md) method of the cellManager object. The method takes the id of the subheader of a swimlane as a parameter:
 
 ~~~js
 // return the id of the cell the subheader belongs to
@@ -474,7 +551,7 @@ diagram.cellManager.getCellIndex(2, "row"); // returns 0
 diagram.cellManager.getCellIndex(8, "row"); // returns 2
 ~~~
 
-You can also get the index of a cell the subheader belongs to via using the [](../api/cell_manager/getsubheadercellindex_method.md) method of the cellManager object. The method takes the id of the subheader of a swimlane as a parameter:
+You can also get the index of a cell the subheader belongs to by using the [](../api/cell_manager/getsubheadercellindex_method.md) method of the cellManager object. The method takes the id of the subheader of a swimlane as a parameter:
 
 ~~~js
 // return the index of the cell the subheader belongs to
