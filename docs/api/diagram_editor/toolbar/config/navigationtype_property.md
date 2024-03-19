@@ -17,8 +17,8 @@ navigationType?: "click" | "pointer";
 ~~~
 
 :::info
-- `"click"` - displayes the menu when a user clicks on it
-- `"pointer"` - displayes the menu when a user hovers the mouse pointer over it
+- `"click"` - displays the menu when a user clicks on it
+- `"pointer"` - displays the menu when a user hovers the mouse pointer over it
 :::
 
 ### Default config
