@@ -498,7 +498,7 @@ module.exports = {
                 title: "Shapebar API"
               },
               items: [
-                // Editbar Properties
+                // Shapebar Properties
                 {
                   type: "category",
                   label: "!!Shapebar properties",
@@ -508,7 +508,11 @@ module.exports = {
                     title: "Shapebar properties"
                   },
                   items: [
-                    "api/diagram_editor/shapebar/config/some_property",
+                    "api/diagram_editor/shapebar/config/css_property",
+                    "api/diagram_editor/shapebar/config/preview_property",
+                    "api/diagram_editor/shapebar/config/sections_property",
+                    "api/diagram_editor/shapebar/config/show_property",
+                    "api/diagram_editor/shapebar/config/width_property"
                   ],
                 },
               ]
