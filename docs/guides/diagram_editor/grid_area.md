@@ -143,22 +143,6 @@ From v5.0, the Grid area is equipped with snap lines which will simplify the pro
 
 If you need to change the width and color of the lines, or to hide them at all, use the [magnetic](api/editor/magnetic_property.md) property of Editor.
 
-## Using hotkeys
-
-There is a set of hotkeys you can use while creating a diagram in the editor:
-
-|Hotkey|Description|
-|---|---|
-|**Ctrl (Cmd) + C**|Copy an item(s) (*in the default mode only*)|
-|**Ctrl (Cmd) + V**|Paste an item(s) (*in the default mode only*)|
-|**Alt (Option) + Ctrl (Cmd) + С**|Copy styles of an item (added in v5.0)|
-|**Alt (Option) + Ctrl (Cmd) + V**|Paste styles of an item (added in v5.0)|
-|**Shift + Left Click**|Select several items|
-|**Ctrl (Cmd) + A**|Select all items|
-|**Ctrl + Z**|Revert the latest action|
-|**Del**|Delete an item(s)|
-|**Arrows**|Move an item(s) left/right/up/down|
-
 ## Manipulating multiple items
 
 It is possible to select several diagram items via hovering them over with the left mouse button pressed. You can also select necessary items using keyboard shortcuts - Shift+Left Click.
