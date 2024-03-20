@@ -392,13 +392,16 @@ module.exports = {
                 {
                   type: "category",
                   label: "!!Toolbar methods",
-                  collapsed: true,
-                  link: {
-                    type: 'generated-index',
-                    title: "Toolbar methods"
+                  collapsible: true,
+					        collapsed: true,
+                  link: {                  
+                    type: 'doc',
+						        id: "api/diagram_editor/toolbar/methods/overview" // New
                   },
                   items: [
-                    "api/diagram_editor/toolbar/methods/some_method",
+                    "api/diagram_editor/toolbar/methods/parse_method", // New
+                    "api/diagram_editor/toolbar/methods/toolbar_methods", // New
+                    "api/diagram_editor/toolbar/methods/treecollection_methods", // New
                   ],
                 },
                 // Toolbar Properties
@@ -411,7 +414,9 @@ module.exports = {
                     title: "Toolbar properties"
                   },
                   items: [
-                    "api/diagram_editor/toolbar/config/some_property",
+                    "api/diagram_editor/toolbar/config/css_property", // New
+                    "api/diagram_editor/toolbar/config/items_property", // New
+                    "api/diagram_editor/toolbar/config/navigationtype_property", // New
                   ],
                 },
                 // Toolbar Events
@@ -420,12 +425,12 @@ module.exports = {
                   label: "!!Toolbar events",
                   collapsed: true,
                   link: {
-                    type: 'generated-index',
-                    title: "Toolbar events"
+                    type: 'doc',
+						        id: "api/diagram_editor/toolbar/events/overview" // New
                   },
                   items: [
-                    "api/diagram_editor/toolbar/events/on_event",
-                    "api/diagram_editor/toolbar/events/some_event",
+                    "api/diagram_editor/toolbar/events/toolbar_events", // New
+                    "api/diagram_editor/toolbar/events/treecollection_events", // New
                   ],
                 },
               ]
