@@ -1,12 +1,14 @@
 ---
-sidebar_label: Shape properties
+sidebar_label: Shape properties !!
 title: Shape Properties
 description: You can learn about the Shape properties in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
 
 # Shape properties
 
-{{note While specifying color values of the item, you can use the following formats: HEX, RGBA, RGB, HSL, or HSLA.}}
+:::note 
+While specifying color values of the item, use the HEX format.
+:::
 
 ## Common properties
 
@@ -16,7 +18,7 @@ description: You can learn about the Shape properties in the documentation of th
 const data = [
     // shape object
     {
-        type?: string,
+        type: string, 
         id?: string | number,
         x?: number, // required in the default mode of Diagram
         y?: number, // required in the default mode of Diagram
@@ -35,7 +37,7 @@ const data = [
 
 Each shape object can include the following properties:
 
-- `type` - (optional) the type of the shape (by default: "rectangle" in the default mode, "card" in the org chart mode, "topic" in the mindmap mode)
+- `type` - (required) the type of the shape (by default: "rectangle" in the default mode, "card" in the org chart mode, "topic" in the mindmap mode)
 - `id` - (optional) the unique id of a shape
 - `x` - (optional) the x coordinate of the shape position. The property is **required** in the default mode of Diagram
 - `y` - (optional) the y coordinate of the shape position. The property is **required** in the default mode of Diagram
@@ -46,7 +48,9 @@ Each shape object can include the following properties:
 - `fixed` - (optional) enables/disables movement and resizing of a shape, *false* by default
 - `hidden` - (optional) defines, whether a shape will be hidden
 
-{{note The values of the **height** and **width** are calculated automatically for a "text"/"topic" shape, depending on the content of the shape.}}
+:::note 
+The values of the **height** and **width** are calculated automatically for a "text"/"topic" shape, depending on the content of the shape.
+:::
 
 ## Custom properties
 
@@ -183,19 +187,19 @@ const data = [
     {
         "id": "2",
         "text": "item 2",
-        "parent": 1,
+        "parent": "1",
         "dir": "vertical"
     },
     {
         "id": "1.1",
         "text": "assistant for 1",
-        "parent": 1,
+        "parent": "1",
         "assistant": true
     },
     {
         "id": "1.2",
         "text": "partner for 1",
-        "parent": 1,
+        "parent": "1",
         "partner": true
     },
 ];
@@ -426,7 +430,7 @@ const data = [
         "text": "QA Lead",
         "title": "Emma Lynch",
         "img": "../img/avatar-02.png",
-        "parent": 1,
+        "parent": "1",
         "headerColor": "#5874CD" 
     },
 ];

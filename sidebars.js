@@ -521,7 +521,7 @@ module.exports = {
         // Items API
         {
           type: "category",
-          label: "Items API",
+          label: "!!Items API",
           link: {
             type: 'generated-index',
             title: "Items API",
@@ -533,6 +533,7 @@ module.exports = {
           items: [
             "shapes/configuration_properties",
             "lines/configuration_properties",
+            "line_titles/configuration_properties",
             "groups/configuration_properties",
             "swimlanes/configuration_properties",
           ],
@@ -784,7 +785,7 @@ module.exports = {
         },
         {
           type: "category",
-          label: "Diagram items",
+          label: "!!Diagram items",
           link: {
             type: 'doc',
             id: "guides/items_index",
@@ -809,10 +810,12 @@ module.exports = {
             },
             // Lines
             'lines/index',
+            // LineTitles
+            'line_titles/index',
             // Groups
             "groups/index",
             // Swimlanes
-            "swimlanes/index",
+            "swimlanes/index"
           ]
         },
         {

@@ -1,5 +1,5 @@
 ---
-sidebar_label: Swimlanes
+sidebar_label: Swimlanes !!
 title: Swimlanes
 description: You can learn about Swimlanes in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
@@ -26,13 +26,13 @@ To create a swimlane, you need to specify **type: "$swimlane"**  and define the 
 const data = [
     // configuring a swimlane
     {
-	    type: "$swimlane",
-	    height: 500,
-  	    width: 850,
+        type: "$swimlane",
+        height: 500,
+        width: 850,
         // the layout of a swimlane should contain at least one cell
-	    layout: [ 
-	        [1] // the cell with id:"1" and type:"$sgroup"
-	    ],
+        layout: [ 
+            [1] // the cell with id:"1" and type:"$sgroup"
+        ],
     }
 ];
 
@@ -84,18 +84,18 @@ When you initialize a swimlane on the page, the id of a swimlane cell is generat
 const data = [
     // configuring a swimlane
     {
-	    type: "$swimlane",
+        type: "$swimlane",
         id: "main",
-	    height: 500,
-  	    width: 850,
-	    layout: [ 
-	        [1, 2, 3]
-	    ],
+        height: 500,
+        width: 850,
+        layout: [ 
+            [1, 2, 3]
+        ],
     },
     // configuring a swimlane cell
     {
-	    type: "$sgroup",
-	    id: 3,
+        type: "$sgroup",
+        id: 3,
         style: {
             fill: "grey"
         }
@@ -162,7 +162,7 @@ const data = [
         height: 500,
         width: 850,
         layout: [ 
-	          [1, 2, 3]
+            [1, 2, 3]
         ],
     }
 ];
@@ -175,14 +175,14 @@ The width of a cell depends on the width of the swimlane, the number of columns,
 ~~~js
 const data = [
     {
-	    type: "$swimlane",
+        type: "$swimlane",
         id: "main",
-	    height: 500,
-  	    width: 830,
-	    layout: [ 
+        height: 500,
+        width: 830,
+        layout: [ 
             // 3 columns
-	        [1, 2, 3] 
-	    ],
+            [1, 2, 3] 
+        ],
         header: {
             position: "left",
             height: 40
@@ -205,15 +205,15 @@ The height of a cell depends on the height of the swimlane, the number of rows, 
 ~~~js
 const data = [
     {
-	    type: "$swimlane",
+        type: "$swimlane",
         id: "main",
-	    height: 500,
-  	    width: 830,
-	    layout: [ 
+        height: 500,
+        width: 830,
+        layout: [ 
             // 2 rows
-	        [1, 2, 3],
+            [1, 2, 3],
             [4, 5, 6]
-	    ],
+        ],
         header: {
             position: "top",
             height: 40
