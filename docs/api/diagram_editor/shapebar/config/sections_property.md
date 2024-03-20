@@ -25,9 +25,9 @@ sections?: {
 
 ### Parameters
 
-The **sections** object can contain a set of *key:value* pairs where:
-- **key** - the name of a section specified by a user
-- **value** - an array which can include:
+The `sections` object can contain a set of *key:value* pairs where:
+- `key` - the name of a section specified by a user
+- `value` - an array which can include:
   - an object with one *key:value* pair for rendering a <span id="basic">basic set of shapes</span>. The list of available pairs is given below:
     - `{flowShapes: true}` - (optional) displays all available types of the [Flow-chart](../../../../../shapes/default_shapes/#shapes-overview) shapes 
     - `{org: true}` - (optional) displays Org shapes: the "card" and "img-card" shape types
@@ -45,7 +45,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
         "Groups": [{ group: true }],   
         "Flowchart shapes": [{ flowShapes: true }],
         "Org shapes, text, topic": [{ org: true }, "text", "topic"]
-    },
+    }
 });
 ~~~
 
@@ -105,19 +105,19 @@ const editor = new dhx.DiagramEditor("editor_container", {
                     {
                         type: "circle",
                         fill: "#fcba03",
-                        text: "Orange",
+                        text: "Orange"
                     },
                     {
                         type: "circle",
                         fill: "#03d7fc",
-                        text: "Blue",
+                        text: "Blue"
                     },
                     {
                         type: "circle",
                         fill: "#03fc88",
-                        text: "Green",
+                        text: "Green"
                     }
-                ],
+                ]
             }
         }
     }
@@ -142,19 +142,19 @@ const editor = new dhx.DiagramEditor("editor_container", {
                     {
                         type: "circle",
                         fill: "#fcba03",
-                        text: "Orange",
+                        text: "Orange"
                     },
                     {
                         type: "circle",
                         fill: "#03d7fc",
-                        text: "Blue",
+                        text: "Blue"
                     },
                     {
                         type: "circle",
                         fill: "#03fc88",
-                        text: "Green",
+                        text: "Green"
                     }
-                ],
+                ]
             }
         }
     }

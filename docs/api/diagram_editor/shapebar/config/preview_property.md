@@ -43,9 +43,9 @@ const editor = new dhx.DiagramEditor("editor_container", {
         shapebar: {
             preview: {
                scale: 0.65,
-               gap: 8,
-            },
-        },
+               gap: 8
+            }
+        }
     }
 });
 ~~~
@@ -70,11 +70,11 @@ const editor = new dhx.DiagramEditor("editor_container", {
         shapebar: {
            preview: {
                scale: 0.65,
-               gap: 2,
-            },
+               gap: 2
+            }
         }
     },
-    defaults,        
+    defaults        
 });
 ~~~
 

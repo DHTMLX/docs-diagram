@@ -24,7 +24,7 @@ css?: string;
         type: "default",
         view: {
             shapebar: {
-                css: "custom_style",
+                css: "custom_style"
             }
         }
     });
