@@ -6,7 +6,9 @@ description: You can learn about the LineTitle properties in the documentation o
 
 # LineTitle properties
 
-{{note While specifying color values of the item, use the HEX format.}}
+:::note 
+While specifying color values of the item, use the HEX format.
+:::
 
 ### Usage
 

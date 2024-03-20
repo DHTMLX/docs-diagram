@@ -6,7 +6,9 @@ description: You can learn about the Swimlane and Swimlane cell properties in th
 
 # Swimlane and swimlane cell properties
 
-{{note While specifying color values of the item, use the HEX format.}}
+:::note 
+While specifying color values of the item, use the HEX format.
+:::
 
 ## Properties of a swimlane
 

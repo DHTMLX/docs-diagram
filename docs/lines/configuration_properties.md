@@ -6,7 +6,9 @@ description: You can learn about the Line properties in the documentation of the
 
 # Line properties
 
-{{note While specifying color values of the item, use the HEX format.}}
+:::note 
+While specifying color values of the item, use the HEX format.
+:::
 
 ## Common properties
 

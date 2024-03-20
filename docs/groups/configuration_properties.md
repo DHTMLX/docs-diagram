@@ -6,7 +6,9 @@ description: You can learn about the Group properties in the documentation of th
 
 # Group properties
 
-{{note While specifying color values of the item, use the HEX format.}}
+:::note 
+While specifying color values of the item, use the HEX format.
+:::
 
 ### Usage
 

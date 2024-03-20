@@ -6,7 +6,9 @@ description: You can learn about the Shape properties in the documentation of th
 
 # Shape properties
 
-{{note While specifying color values of the item, use the HEX format.}}
+:::note 
+While specifying color values of the item, use the HEX format.
+:::
 
 ## Common properties
 
@@ -46,7 +48,9 @@ Each shape object can include the following properties:
 - `fixed` - (optional) enables/disables movement and resizing of a shape, *false* by default
 - `hidden` - (optional) defines, whether a shape will be hidden
 
-{{note The values of the **height** and **width** are calculated automatically for a "text"/"topic" shape, depending on the content of the shape.}}
+:::note 
+The values of the **height** and **width** are calculated automatically for a "text"/"topic" shape, depending on the content of the shape.
+:::
 
 ## Custom properties
 

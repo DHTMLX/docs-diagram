@@ -27,7 +27,7 @@ const data = [
    { "id": "line_1", "type": "line", "from": "shape_1", "to": "shape_2" },
    { "id": "line_2", "type": "dash", "from": "shape_2", "to": "shape_3" },
    // configuring a line title
-   { "id": "title_1", "type": "lineTitle", "parent": "line_1", "text": "Some text" },
+   { "id": "title_1", "type": "lineTitle", "parent": "line_1", "text": "Some text" }
 ];
 ~~~
 
@@ -46,7 +46,7 @@ const data = [
    { "id": "line_1", "type": "line", "from": "shape_1", "to": "shape_2" },
    { "id": "line_2", "type": "dash", "from": "shape_2", "to": "shape_3" },
    // configuring a line title
-   { "id": "title_1", "type": "lineTitle", "parent": "line_1", "text": "Some text" },
+   { "id": "title_1", "type": "lineTitle", "parent": "line_1", "text": "Some text" }
 ];
 ~~~
 
@@ -64,7 +64,7 @@ const data = [
    { "id": "line_1", "type": "line", "from": "shape_1", "to": "shape_2" },
    { "id": "line_2", "type": "dash", "from": "shape_2", "to": "shape_3" },
    // configuring a line title
-   { "id": "title_1", "type": "lineTitle", "parent": "line_1", "text": "Some text" },
+   { "id": "title_1", "type": "lineTitle", "parent": "line_1", "text": "Some text" }
 ];
 ~~~
 
@@ -94,7 +94,7 @@ const data = [
     },
     // configuring shapes to put into the group
     { "type": "rectangle", "id": 1.1, "x": 50, "y": 75, "text": "Shape 1.1" },
-    { "type": "rectangle", "id": 1.2, "x": 200, "y": 75, "text": "Shape 1.2" },
+    { "type": "rectangle", "id": 1.2, "x": 200, "y": 75, "text": "Shape 1.2" }
 ];
 ~~~
 
@@ -139,7 +139,7 @@ const data = [
    // configuring a shape to put into the cell
    {
       "id": "s1", "type": "end", "text": "Step 1", "x": 20, "y": 110
-   },
+   }
 ];
 ~~~
 

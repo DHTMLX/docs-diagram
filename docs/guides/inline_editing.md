@@ -12,9 +12,11 @@ Inline editing for Lines is enabled only in the default mode of Diagram.
 
 ![](../assets/inline_editing.gif)
 
-{{note Inline editing does not work for custom shapes.}}
+:::note 
+Inline editing does not work for custom shapes.
+:::
 
-The functionality is enabled by default. To disable inline editing, you should use the **editable** property of the element, which you want to make uneditable, and set its value to *false*.
+The functionality is enabled by default. To disable inline editing, you should use the `editable` property of the element, which you want to make uneditable, and set its value to *false*.
 
 You can find examples of disabling inline editing for diagram items below:
 
@@ -30,7 +32,7 @@ const data = [
         "id": "line_1",
         "type": "line",
         "from": "shape_1",
-        "to": "shape_2",
+        "to": "shape_2"
     },
     // configuring a line title
     {   
@@ -47,7 +49,7 @@ const data = [
 
 ~~~js title="Disabling the ability to edit the text content of a shape"
 const data = [
-    { id: 1, x: 280, y: 0, text: "Start", type: "start", editable: false},
+    { "id": 1, "x": 280, "y": 0, "text": "Start", "type": "start", "editable": false}
 ];
 ~~~
 
@@ -56,17 +58,17 @@ const data = [
 ~~~js title="Disabling the ability to edit the text content of the header of a group"
 const data = [    
     {
-        type: "$group",
-        id: 1,
-        width: 400,
-        height: 200,
-        x: 0,
-        y: 0,
-        header: {
-            text: "Group 1",
-            editable: false,
-        },
-    },
+        "type": "$group",
+        "id": 1,
+        "width": 400,
+        "height": 200,
+        "x": 0,
+        "y": 0,
+        "header": {
+            "text": "Group 1",
+            "editable": false
+        }
+    }
 ];
 ~~~
 
@@ -93,7 +95,7 @@ const data = [
                 { "text": "September", "fill": "rgba(243, 92, 79, 0.4)" },
                 // enables inline editing for the subheader
                 { "text": "October", "fill": "rgba(155, 96, 248, 0.4)", "editable": true },
-                { "text": "November", "fill": "rgba(255, 174, 18, 0.4)" },
+                { "text": "November", "fill": "rgba(255, 174, 18, 0.4)" }
             ],
             // disables inline editing for all subheaders
             "editable": false

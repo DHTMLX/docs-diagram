@@ -12,7 +12,9 @@ Line titles set texts for lines that connect shapes. You can add a text for a li
 
 Another way to add a text to a line and manipulate it is to prepare a [data set](guides/loading_data.md/#preparing-data-to-load).
 
-{{note LineTitles are available only in the default mode of Diagram/Diagram Editor (type: "default").}}
+:::note 
+LineTitles are available only in the default mode of Diagram/Diagram Editor (type: "default").
+:::
 
 TODO (check that the dataset in the snippet is updated)
 
@@ -28,7 +30,7 @@ const data = [
     { type: "rectangle", id: "shape_2", x: 400 },
     { type: "line", id: "line_1", from: "shape_1", to: "shape_2" },
     // configuring a line title
-    { type: "lineTitle", id: "title_1", parent: "line_1", text: "Some text" },
+    { type: "lineTitle", id: "title_1", parent: "line_1", text: "Some text" }
 ];
 
 // initializing a diagram
@@ -44,7 +46,9 @@ Check [the full list of configuration properties of a line title object](/line_t
 
 You can manipulate line titles via the [DataCollection API](../api/data_collection/).
 
-{{note The examples below are suitable both for Diagram and Diagram Editor.}}
+:::note 
+The examples below are suitable both for Diagram and Diagram Editor.
+:::
 
 ### Adding a line title 
 
@@ -65,8 +69,9 @@ editor.diagram.data.add({
 
 Provide an object with the configuration of a new line title as a parameter of the method.
 
-{{note See [the full list of configuration properties of a line title object](/line_titles/configuration_properties/).
-}}
+:::note 
+See [the full list of configuration properties of a line title object](/line_titles/configuration_properties/).
+:::
 
 ### Blocking line titles adding 
 
