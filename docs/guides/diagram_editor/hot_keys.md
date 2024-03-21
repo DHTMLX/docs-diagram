@@ -18,12 +18,12 @@ In this section you will find a set of hotkeys you can use while creating a diag
 |**Ctrl+D (CMD+D)**|Allows you to duplicate a selected element|
 |**Ctrl+C (CMD+C)**|Allows you to copy a selected element (*default mode only*)|
 |**Ctrl+V (CMD+V)**|Allows you to paste a selected element (*default mode only*)|
-|**Ctrl+Alt+C (CMD+Alt+C)**|Allows you to copy a style of the selected item (applicable, for elements of one essence)|
-|**Ctrl+Alt+V (CMD+Alt+V)**|Allows you to apply a copied style to the selected item (applicable, for elements of one essence)|
+|**Ctrl+Alt+C (CMD+Alt+C)**|Allows you to copy the style of the selected item (applicable for elements of one essence)|
+|**Ctrl+Alt+V (CMD+Alt+V)**|Allows you to apply a copied style to the selected item (applicable for elements of one essence)|
 |**Ctrl+A (CMD+A)**|Allows you to select all items|
 |**Ctrl+Shift+A (CMD+Shift+A)**|Allows you to unselect all selected items|
-|**Ctrl+Mousewheel (CMD+Mousewheel)**|Allows you to increase/decrease a scale value|
+|**Ctrl+Mousewheel (CMD+Mousewheel)**|Allows you to increase/decrease the scale value|
 |**Shift+Left Click**|Allows you to add an item to the list of selected items|
 |**Alt+Left Click**|Allows you to unselect the selected item|
-|**Delete (Del)**|Delete an item(s)|
+|**Delete (Del)**|Allows you to delete an item(s)|
 |**Arrow-Top / Arrow-Bottom / Arrow-Left / Arrow-Right**|Allows you to move the selected items|
