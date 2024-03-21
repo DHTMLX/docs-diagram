@@ -839,6 +839,7 @@ module.exports = {
             "guides/diagram_editor/left_panel",
             "guides/diagram_editor/grid_area",
             "guides/diagram_editor/right_panel",
+            "guides/diagram_editor/hot_keys", // New
           ],
         },
         "guides/loading_data",
