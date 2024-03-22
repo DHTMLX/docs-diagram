@@ -39,12 +39,17 @@ The `sections` object can contain a set of *key:value* pairs where:
 ### Example
 
 ~~~js
-const editor = new dhx.DiagramEditor("editor_container", {
-    shapeSections: {
-        "Swimlane": [{ swimlane: true }],
-        "Groups": [{ group: true }],   
-        "Flowchart shapes": [{ flowShapes: true }],
-        "Org shapes, text, topic": [{ org: true }, "text", "topic"]
+const editor = new dhx.DiagramEditor("editor", {
+    type: "default",
+    view: {
+        shapebar: {
+            sections: {
+                "Swimlane": [{ swimlane: true }],
+                "Groups": [{ group: true }],   
+                "Flowchart shapes": [{ flowShapes: true }],
+                "Org shapes, text, topic": [{ org: true }, "text", "topic"]
+            }
+        }
     }
 });
 ~~~
