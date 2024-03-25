@@ -25,7 +25,7 @@ To customize the structure of the shapebar, you should use the [`sections`](../.
 
 <iframe src="https://snippet.dhtmlx.com/2z0a18oz?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
-The **sections** property is an object with a set of *key:value* pairs where *key* is the name of a section and *value* is an array with the list of items which should be rendered in the section. 
+The `sections` property is an object with a set of *key:value* pairs where `key` is the name of a section and `value` is an array with the list of items which should be rendered in the section. 
 
 :::note 
 To display a basic set of items in the section, include an object with the related *key:value* pair into the array. Check the list of available pairs at the [`sections`](../../../api/diagram_editor/shapebar/config/sections_property/) page. 
@@ -70,11 +70,11 @@ To customize the appearance of a particular shape, you can apply the [preview](.
 The property can be applied in two cases:
 
 - when setting the default configuration of a default shape via the [`defaults`](../../../api/diagram_editor/editor/config/defaults_property/) property of the editor object
-- when setting the default configuration of a custom shape via the **defaults** attribute of the [`addShape()`](../../../api/diagram/addshape_method/) method
+- when setting the default configuration of a custom shape via the `defaults` attribute of the [`addShape()`](../../../api/diagram/addshape_method/) method
 
 Let's consider three examples of configuring a shape preview:
 
-1\. You can specify an image to be shown in the shapebar for a custom shape. For this purpose, you need to pass either an URL to load an image from or a base64 image as a string value to the **preview** property:
+1\. You can specify an image to be shown in the shapebar for a custom shape. For this purpose, you need to pass either an URL to load an image from or a base64 image as a string value to the `preview` property:
 
 ~~~js {6}
 const defaults = {
@@ -91,7 +91,7 @@ editor.diagram.addShape("template", {
 });	
 ~~~
 
-2\. If you need to specify an image and define its width and height, you should provide the **preview** property as an object with the **img**, **height**, and **width** attributes:
+2\. If you need to specify an image and define its width and height, you should provide the `preview` property as an object with the `img`, `height`, and `width` attributes:
 
 ~~~js {4-8}
 const defaults = {
@@ -114,7 +114,7 @@ editor.diagram.addShape("template", {
 You can set the precise width and height of the image, but there is no ability to set the scale of the image.
 :::
 
-3\. You can redefine the scale of a specific shape rendered in the shapebar via the **scale** property:
+3\. You can redefine the scale of a specific shape rendered in the shapebar via the `scale` property:
 
 ~~~js {3-5}
 const defaults = {
@@ -148,10 +148,10 @@ editor.diagram.addShape("personalCard", {
 **Related sample:** [Diagram editor. Default mode. Custom image shape](https://snippet.dhtmlx.com/d5hcx01h)
 
 :::note 
-**Note**, that the **preview** property will be omitted when exporting data to the JSON format. 
+**Note**, that the `preview` property will be omitted when exporting data to the JSON format. 
 :::
 
-## Setting the width of Shapebar
+## Setting the width of shapebar
 
 The default width of the shapebar is 300. You can change it and set any other width via the [`width`](../../../api/diagram_editor/shapebar/config/width_property/) property, e.g.:
 
@@ -166,7 +166,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 ~~~
 
-## Showing/hiding a user-defined shapebar  
+## Showing/hiding the shapebar  
 
 Whenever you need to control the visibility of a shapebar, you can use the [`show`](../../../api/diagram_editor/shapebar/config/show_property/) property. It allows you to hide the shapebar with particular settings on initialization of the Diagram Editor and show it later, when needed. By default the shapebar is shown.
 
