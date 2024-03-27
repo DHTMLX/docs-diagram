@@ -165,7 +165,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 ~~~
 
-TODO (update the links to the snippets)
+TODO (check the links to the snippets)
 
 **Related article**:  [Shapebar](../../../../../guides/diagram_editor/shapebar/#custom-sections)
 

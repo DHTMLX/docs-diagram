@@ -21,15 +21,122 @@ The *Groups* and *Swimlanes* sections contain basic sets of the items.
 
 ## Custom sections
 
-To customize the structure of the shapebar, you should use the [`sections`](../../../api/diagram_editor/shapebar/config/sections_property/) property of the editor object. The property allows you to specify your own sections in the necessary order and put the items into the corresponding sections.
+To customize the structure of the shapebar, you should use the [`sections`](../../../api/diagram_editor/shapebar/config/sections_property/) property. It allows you to specify your own sections in the necessary order and put the items into the corresponding sections.
 
 <iframe src="https://snippet.dhtmlx.com/2z0a18oz?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
 The `sections` property is an object with a set of *key:value* pairs where `key` is the name of a section and `value` is an array with the list of items which should be rendered in the section. 
 
-:::note 
-To display a basic set of items in the section, include an object with the related *key:value* pair into the array. Check the list of available pairs at the [`sections`](../../../api/diagram_editor/shapebar/config/sections_property/) page. 
-:::
+Depending on the chosen elements, the configuration of items of a particular section can be the following:
+
+1. Rendering of basic sections
+
+You can render [a basic set of shapes](../../../api/diagram_editor/shapebar/config/sections_property/#basic) using the `sections` configuration object. For example:
+
+~~~js
+const editor = new dhx.DiagramEditor("editor_container", {
+    type: "default",
+    view: {
+        shapebar: {
+            sections: {
+                "Base flow shapes": [{ flowShapes: true }],
+                "Base org cards": [{ org: true }],
+                "Base groups": [{ group: true }],
+                "Base swimlane": [{ swimlane: true }]
+            }
+        }
+    }
+});
+~~~
+
+2. Specifying items with the help of string literals
+
+You can render Shapebar items by specifying the types of shapes with the help of string literals. Check the example below:
+
+~~~js
+const editor = new dhx.DiagramEditor("editor_container", {
+    type: "default",
+    view: {
+        shapebar: {
+            sections: {
+                "Custom section": ["custom_shape"],
+                "Other shapes": ["text", "topic", "circle"]
+            }
+        }
+    }
+});
+~~~
+
+3. <p id="customization">Redefining basic configurations</p>
+
+Another option is to redefine basic properties of any shape and render it with the necessary parameters. The example below shows rendering of a shape of the `circle` type with various text and color settings:
+
+~~~js
+const editor = new dhx.DiagramEditor("editor_container", {
+    type: "default",
+    view: {
+        shapebar: {
+            sections: {
+                "Circles": [
+                    {
+                        type: "circle",
+                        fill: "#fcba03",
+                        text: "Orange"
+                    },
+                    {
+                        type: "circle",
+                        fill: "#03d7fc",
+                        text: "Blue"
+                    },
+                    {
+                        type: "circle",
+                        fill: "#03fc88",
+                        text: "Green"
+                    }
+                ]
+            }
+        }
+    }
+});
+~~~
+
+You can reconfigure any type of shapes in such a way. 
+
+4. Combining different types of items in a section
+
+If your project presupposes usage of various elements, you can create sections with mixed types of items in the Shapebar. Check the following example:
+
+~~~js
+const editor = new dhx.DiagramEditor("editor_container", {
+    type: "default",
+    view: {
+        shapebar: {
+            sections: {
+                "Base flow shapes": [{ flowShapes: true }, "text", "topic"],
+                "Circles": [
+                     "circle",
+                    {
+                        type: "circle",
+                        fill: "#fcba03",
+                        text: "Orange"
+                    },
+                    {
+                        type: "circle",
+                        fill: "#03d7fc",
+                        text: "Blue"
+                    },
+                    {
+                        type: "circle",
+                        fill: "#03fc88",
+                        text: "Green"
+                    }
+                ]
+            }
+        }
+    }
+});
+~~~
+
 
 ## Adding items of the same type with different settings 
 
@@ -118,30 +225,29 @@ You can set the precise width and height of the image, but there is no ability t
 
 ~~~js {3-5}
 const defaults = {
-    personalCard: {
-        preview: {
-            scale: 0.72
-        }
+    preview: {
+        scale: 0.72,
     }
 };
 
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view:{
-        shapebar:{
+        shapebar: {
             sections: {
                 "Custom shapes": ["personalCard"],
-                "OrgChart shapes": ["card", "img-card"]
+                "OrgChart shapes": ["card", "img-card"],
             },
-            preview:{
-                scale: 0.65
+            preview: {
+                scale: 0.65,
             }
         }
     }
 });
 
 editor.diagram.addShape("personalCard", {
-    defaults
+    defaults,
+    ...
 });
 ~~~
 
