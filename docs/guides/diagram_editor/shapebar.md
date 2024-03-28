@@ -223,7 +223,7 @@ You can set the precise width and height of the image, but there is no ability t
 
 3\. You can redefine the scale of a specific shape rendered in the shapebar via the `scale` property:
 
-~~~js {3-5}
+~~~js {2-4}
 const defaults = {
     preview: {
         scale: 0.72,
@@ -232,7 +232,7 @@ const defaults = {
 
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
-    view:{
+    view: {
         shapebar: {
             sections: {
                 "Custom shapes": ["personalCard"],

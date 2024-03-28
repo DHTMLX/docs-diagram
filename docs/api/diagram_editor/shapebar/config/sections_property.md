@@ -38,7 +38,7 @@ The `sections` object can contain a set of *key:value* pairs where:
 ### Example
 
 ~~~js
-const editor = new dhx.DiagramEditor("editor", {
+const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {
         shapebar: {
