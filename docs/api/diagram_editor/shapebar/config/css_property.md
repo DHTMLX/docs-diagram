@@ -38,7 +38,7 @@ css?: string;
 </style>
 ~~~
 
-**Related article:** TODO
+**Related article:** [Shapebar](../../../../../guides/diagram_editor/shapebar/#adjusting-the-shapebar-appearance)
 
 **Change log**: 
 

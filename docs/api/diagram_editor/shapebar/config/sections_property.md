@@ -6,8 +6,7 @@ description: You can learn about the sections property of Shapebar in the docume
 
 # sections
 
-TODO (update link)<br>
-The [default sections of the shapebar](../../../guides/diagram_editor/left_panel/#default-sections) are: *Shapes*, *Groups*, *Swimlanes*.
+The [default sections of the shapebar](../../../../../guides/diagram_editor/shapebar/#default-sections) are: *Shapes*, *Groups*, *Swimlanes*.
 
 Using the **sections** property you can change the structure of the shapebar and display the necessary items.
 
@@ -40,11 +39,16 @@ The `sections` object can contain a set of *key:value* pairs where:
 
 ~~~js
 const editor = new dhx.DiagramEditor("editor_container", {
-    shapeSections: {
-        "Swimlane": [{ swimlane: true }],
-        "Groups": [{ group: true }],   
-        "Flowchart shapes": [{ flowShapes: true }],
-        "Org shapes, text, topic": [{ org: true }, "text", "topic"]
+    type: "default",
+    view: {
+        shapebar: {
+            sections: {
+                "Swimlane": [{ swimlane: true }],
+                "Groups": [{ group: true }],   
+                "Flowchart shapes": [{ flowShapes: true }],
+                "Org shapes, text, topic": [{ org: true }, "text", "topic"]
+            }
+        }
     }
 });
 ~~~
@@ -161,9 +165,9 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 ~~~
 
-TODO (update the links to the article and snippets)
+TODO (check the links to the snippets)
 
-**Related article**:  [Left Panel](../../../guides/diagram_editor/left_panel/)
+**Related article**:  [Shapebar](../../../../../guides/diagram_editor/shapebar/#custom-sections)
 
 **Related samples**:
 - [Diagram editor. Default mode. Setting the section order in the left panel](https://snippet.dhtmlx.com/7747cx7b)
