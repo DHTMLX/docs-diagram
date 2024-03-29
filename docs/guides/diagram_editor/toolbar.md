@@ -18,7 +18,7 @@ To configure the Toolbar you can use the following properties:
     - `"click"` - displays the menu when a user clicks on it
     - `"pointer"` - displays the menu when a user hovers the mouse pointer over it
 
-- [`items`](api/diagram_editor/toolbar/config/items_property.md) - the array of [**service elements**](#service-elements) (controls) arranged on Toolbar. There are 2 ways how to configure items:
+- [`items`](api/diagram_editor/toolbar/config/items_property.md) - the array of [**items**](#service-elements) (controls) arranged on Toolbar. There are 2 ways how to configure items:
     - [**Configuring Items via Strings**](api/diagram_editor/toolbar/config/items_property.md/#configuring-items-via-strings)
     - [**Configuring Items via Objects**](api/diagram_editor/toolbar/config/items_property.md/#configuring-items-via-objects)
 
