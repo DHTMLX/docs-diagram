@@ -104,13 +104,17 @@ If you want to override some color values for a separate [Diagram theme](guides/
 
 ## Configuring the look of shapes in Shapebar
 
-You can manage the appearance of the Shapebar by redefining the CSS variables that specify the color scheme:
+### Redefining default color schemes
+
+You can manage the appearance of the Shapebar items by redefining the CSS variables that specify the color scheme:
 
 - `--dhx-shapebar-item-font-color`
 - `--dhx-shapebar-item-background`
 - `--dhx-shapebar-item-border-color`
 
 The default values of these variables [depend on the applied theme](guides/themes.md).
+
+### Setting custom CSS variables
 
 It is also possible to adjust the look and feel of the Shapebar items by using your own CSS variables. For this, you should define a custom CSS variable and specify it as a value of the necessary property in the `defaults` configuration option. 
 

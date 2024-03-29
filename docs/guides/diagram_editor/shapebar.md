@@ -272,7 +272,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 ~~~
 
-## Showing/hiding the shapebar  
+## Showing/hiding the Shapebar  
 
 Whenever you need to control the visibility of a shapebar, you can use the [`show`](../../../api/diagram_editor/shapebar/config/show_property/) property. It allows you to hide the shapebar with particular settings on initialization of the Diagram Editor and show it later, when needed. By default the shapebar is shown.
 
@@ -287,7 +287,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 ~~~
 
-## Adjusting the shapebar appearance
+## Shapebar and shapes appearance
 
 You can provide the desired look and feel for the shapebar with the [`css`](../../../api/diagram_editor/shapebar/config/css_property/) property. It allows specifying custom CSS classes to stylize items presentation in the shapebar in your own way. 
 
@@ -310,3 +310,5 @@ You can provide the desired look and feel for the shapebar with the [`css`](../.
     }
 </style>
 ~~~ 
+
+You can also [adjust the appearance of shapes](guides/themes/base_themes_configuration.md/#configuring-the-look-of-shapes-in-shapebar) by redefining the default color scheme for a particular theme or use your own CSS variables to manage the color scheme of Shapebar items.
