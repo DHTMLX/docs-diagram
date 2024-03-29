@@ -78,7 +78,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 ~~~
 
-**Related article:** TODO
+**Related article:** [Shapebar](../../../../../guides/diagram_editor/shapebar/#setting-the-preview-of-shapes)
 
 **Change log**: 
 
