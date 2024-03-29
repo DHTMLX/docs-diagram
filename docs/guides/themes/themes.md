@@ -195,6 +195,13 @@ The default **"light"** theme is configured on the base of the CSS variables whi
 	/* DHTMLX Slider service variables*/
 	--dhx-s-tick-font-size: calc(var(--dhx-font-size-small) / 1.2);
 	/* end DHTMLX Slider service variables*/
+
+	/* DHTMLX Diagram variables*/
+	...
+	--dhx-shapebar-item-font-color: #4C4C4C;
+	--dhx-shapebar-item-background: #EEF1F6;
+	--dhx-shapebar-item-border-color: #B8C6D6;
+	/* end DHTMLX Diagram variables*/
 }
 ~~~
 
@@ -301,6 +308,12 @@ The **"dark"** theme is configured both on the base of the [root CSS variables](
 	/* DHTMLX Slider service variables*/
 	--dhx-s-tick-font-size: calc(var(--dhx-font-size-small) / 1.2);
 	/* end DHTMLX Slider service variables*/
+
+	/* DHTMLX Diagram variables*/
+	--dhx-shapebar-item-font-color: var(--dhx-font-color-primary);
+	--dhx-shapebar-item-background: #212329;
+	--dhx-shapebar-item-border-color: #6c6e74;
+	/* end DHTMLX Diagram variables*/
 }
 ~~~ 
 
@@ -365,6 +378,12 @@ The **"contrast-dark"** theme is configured both on the base of the [root CSS va
 	/* DHTMLX Slider service variables*/
 	--dhx-s-tick-font-size: var(--dhx-font-size-small);
 	/* end DHTMLX Slider service variables*/
+
+	/* DHTMLX Diagram variables*/
+	--dhx-shapebar-item-font-color: var(--dhx-font-color-primary);
+	--dhx-shapebar-item-background: #212329;
+	--dhx-shapebar-item-border-color: #6c6e74;
+	/* end DHTMLX Diagram variables*/
 }
 ~~~
 

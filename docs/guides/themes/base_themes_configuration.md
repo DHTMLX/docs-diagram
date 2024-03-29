@@ -101,3 +101,48 @@ If you want to override some color values for a separate [Diagram theme](diagram
     dhx.setTheme("light");
 </script>
 ~~~
+
+## Configuring the look of shapes in Shapebar
+
+You can manage the color scheme of Shapebar items by using your own CSS variables. For this, you should define a custom CSS variable and specify it as a value of the necessary property in the `defaults` configuration option. 
+
+:::note
+The value of the variable will be assigned to a Shapebar item when it is selected and won't be redefined on the change of a theme.
+:::
+
+For example:
+
+~~~html {11-12,23-24}
+<style>
+    :root {
+        --rectangle-fill: #428df5;
+        --rectangle-font-color: #002229;
+    }
+    [data-dhx-theme='dark'] {
+        --dhx-shapebar-item-font-color: #fff;
+        --dhx-shapebar-item-background: #002229;
+        --dhx-shapebar-item-border-color: #007a99;
+
+        --rectangle-fill: #f54278;
+        --rectangle-font-color: #002229;
+    }
+</style>
+
+<div id="editor_container" style="height: 100%"></div>
+
+<script>
+    const editor = new dhx.DiagramEditor("editor_container", {
+        type: "default",
+        defaults: {
+            rectangle: {
+                fill: "var(--rectangle-fill)",
+                fontColor: "var(--rectangle-font-color)",
+            }
+        }
+    });
+    // set the dark theme
+    const node = document.getElementById("editor_container").childNodes[0];
+    dhx.setTheme("dark", node);
+</script>
+~~~
+
