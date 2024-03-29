@@ -13,7 +13,7 @@ description: You can learn about the items property of Toolbar in the documentat
 ### Usage
 
 ~~~js
-items?: (obj | string)[];
+items?: (object | string)[];
 ~~~
 
 ### Configuring Items via Strings
@@ -38,11 +38,12 @@ items: [
         value?: string,
         hotkey?: string,
         icon?: string,
-        checkIcon?: (editor: obj) => string,
-        handler?: (editor: obj, event: Event) => void,
+        checkIcon?: (editor: object) => string,
+        handler?: (editor: object, event: Event) => void,
         css?: string | string[],
         hidden?: boolean,
-        disabled?: boolean
+        disabled?: boolean,
+        items?: array
     }, {...} 
 ]
 ~~~
@@ -64,6 +65,7 @@ For each [**service elements**](guides/diagram_editor/toolbar.md/#service-elemen
 - `css` - (optional) - applies a custom css class to a service element
 - `hidden` - (optional) - hides a service element
 - `disabled` - (optional) - disables a service element
+- `items` - (optional) - defines the structure of the child elements
 
 ### Example 1
 
@@ -71,7 +73,7 @@ The example below shows how to configure Toolbar items via strings:
 
 ~~~js {8-12}
 // Configuring items via strings
-const editor = new dhx.DiagramEditor("editor", {
+const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {
         toolbar: {
@@ -91,8 +93,8 @@ const editor = new dhx.DiagramEditor("editor", {
 
 The example below shows how to configure Toolbar items via objects:
 
-~~~js {7-38} 
-const editor = new dhx.DiagramEditor("editor", {
+~~~js {7-38}
+const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {
         toolbar: {
@@ -120,7 +122,7 @@ const editor = new dhx.DiagramEditor("editor", {
                                     value: "PNG",
                                     handler: editor => {
                                         editor.diagram.export.png();
-                                        console.log("some logic")
+                                        // custom logic here
                                     }
                                 }
                             ]
@@ -136,3 +138,5 @@ const editor = new dhx.DiagramEditor("editor", {
 ~~~
 
 **Change log**: Added in v6.0
+
+**Related articles:**  [Toolbar configuration](guides/diagram_editor/toolbar.md)

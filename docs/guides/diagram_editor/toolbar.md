@@ -23,7 +23,7 @@ To configure the Toolbar you can use the following properties:
     - [**Configuring Items via Objects**](api/diagram_editor/toolbar/config/items_property.md/#configuring-items-via-objects)
 
 ~~~js {7-38}
-const editor = new dhx.DiagramEditor("editor", {
+const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {
         toolbar: {
@@ -51,7 +51,7 @@ const editor = new dhx.DiagramEditor("editor", {
                                     value: "PNG",
                                     handler: editor => {
                                         editor.diagram.export.png();
-                                        console.log("some logic")
+                                        // custom logic here
                                     }
                                 }
                             ]
@@ -405,14 +405,15 @@ Besides [**Service elements**](#service-elements), you can also specify and conf
 
 The example below shows how to add the [Button](https://docs.dhtmlx.com/suite/toolbar/button/) conrol to the Toolbar:
 
-~~~jsx
-const editor = new dhx.DiagramEditor(document.body, {
+~~~jsx{6-9}
+const editor = new dhx.DiagramEditor("editor_container", {
     type: "org", // "default" | "org" | "mindmap"
     view: {
         toolbar: {
             items: [
                 {
-                    type:"button", value:"Best button"
+                    type: "button", 
+                    value: "Best button"
                 }
             ]
         }
@@ -434,5 +435,5 @@ checkIcon?: (editor: IDiagramEditor) => string; // Use only for base elements th
     - `event` - a [native event](https://developer.mozilla.org/en-US/docs/Web/API/Event)
 
 ~~~jsx
-handler?: (editor: obj, event: Event) => void;
+handler?: (editor: object, event: Event) => void;
 ~~~
