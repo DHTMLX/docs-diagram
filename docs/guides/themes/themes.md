@@ -197,7 +197,9 @@ The default **"light"** theme is configured on the base of the CSS variables whi
 	/* end DHTMLX Slider service variables*/
 
 	/* DHTMLX Diagram variables*/
-	...
+	--dhx-selected-border: 1px solid var(--dhx-color-primary);
+	--dhx-selected-border-dashed: 1px dashed var(--dhx-color-primary);
+
 	--dhx-shapebar-item-font-color: #4C4C4C;
 	--dhx-shapebar-item-background: #EEF1F6;
 	--dhx-shapebar-item-border-color: #B8C6D6;
@@ -425,24 +427,25 @@ Below you'll find the examples of the ***dhx.setTheme()*** method usage:
 
 - applying a theme either to the body or to the container 
 
-~~~html {8,10}
-<div id="container"></div>
+~~~html {8-11}
+<div id="editor_container"></div>
 <div>Other content</div>
 
 <script>
-	const editor = new dhx.DiagramEditor("container", {
-	    type: "default",
-	});
+    const editor = new dhx.DiagramEditor("editor_container", {
+        type: "default",
+    });
     dhx.setTheme("dark"); //applies the "dark" theme to the body 
     //or
-    dhx.setTheme("dark", "container"); //applies the "dark" theme to the container with the "container" id
+    //applies the "dark" theme to the container with the "editor_container" id
+    dhx.setTheme("dark", "editor_container"); 
 </script>
 ~~~
 
 - setting a theme for any HTML element, e.g. for the Toolbar control
 
 ~~~js {10-11}
-const editor = new dhx.DiagramEditor("editor", {
+const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {
         toolbar: {

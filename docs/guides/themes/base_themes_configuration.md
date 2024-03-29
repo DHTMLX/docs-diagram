@@ -62,7 +62,7 @@ In addition, values of variables, which are calculated on the base of the primar
 
 ## Configuring a separate theme
 
-If you want to override some color values for a separate [Diagram theme](diagram/guides/themes.md), you need to do this in the **'data-dhx-theme'** attribute:
+If you want to override some color values for a separate [Diagram theme](guides/themes.md), you need to do this in the **'data-dhx-theme'** attribute:
 
 ~~~html 
 <style>
@@ -104,7 +104,15 @@ If you want to override some color values for a separate [Diagram theme](diagram
 
 ## Configuring the look of shapes in Shapebar
 
-You can manage the color scheme of Shapebar items by using your own CSS variables. For this, you should define a custom CSS variable and specify it as a value of the necessary property in the `defaults` configuration option. 
+You can manage the appearance of the Shapebar by redefining the CSS variables that specify the color scheme:
+
+- `--dhx-shapebar-item-font-color`
+- `--dhx-shapebar-item-background`
+- `--dhx-shapebar-item-border-color`
+
+The default values of these variables [depend on the applied theme](guides/themes.md).
+
+It is also possible to adjust the look and feel of the Shapebar items by using your own CSS variables. For this, you should define a custom CSS variable and specify it as a value of the necessary property in the `defaults` configuration option. 
 
 :::note
 The value of the variable will be assigned to a Shapebar item when it is selected and won't be redefined on the change of a theme.
