@@ -33,19 +33,19 @@ The `items` property allows you to specify [**Service elements**](guides/diagram
 ~~~js
 items: [ 
     {
-        id?: string,
         type: string,
+        id?: string,
         value?: string,
         hotkey?: string,
         icon?: string,
-        checkIcon?: (editor: object) => string,
-        handler?: (editor: object, event: Event) => void,
-        css?: string | string[],
         hidden?: boolean,
         disabled?: boolean,
-        items?: array
+        css?: string | string[],
+        items?: (string | object)[],
+        checkIcon?: (editor: object) => string,
+        handler?: (editor: object, event: Event) => void
     }, {...} 
-]
+];
 ~~~
 
 #### Parameters
