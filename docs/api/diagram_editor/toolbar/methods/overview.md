@@ -28,17 +28,17 @@ You can use the following [**Toolbar**](https://docs.dhtmlx.com/suite/category/t
 | [show()](https://docs.dhtmlx.com/suite/toolbar/api/toolbar_show_method/)              | Shows an item of Toolbar                                   |
 | [unselect()](https://docs.dhtmlx.com/suite/toolbar/api/toolbar_unselect_method/)      | Unselects a selected Toolbar item                          |
 
-~~~js {7-12}
-const editor = new dhx.DiagramEditor("editor", {
+~~~jsx {7-12}
+const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {
-        toolbar: true,
+        toolbar: true
     }
 });
 // disables the "file" item
 editor.toolbar.disable("$file");
 // disables "file" and "scale" items
-editor.toolbar.disable(["$file","$scale"]);
+editor.toolbar.disable(["$file", "$scale"]);
 // disables all items
 editor.toolbar.disable();
 ~~~
@@ -77,11 +77,11 @@ You can use the following [**TreeCollection**](https://docs.dhtmlx.com/suite/cat
 | [sort()](https://docs.dhtmlx.com/suite/tree_collection/api/treecollection_sort_method/) | Sorts controls according to some criteria                            |
 | [update()](https://docs.dhtmlx.com/suite/tree_collection/api/treecollection_update_method/) | Changes an item                                                  |
 
-~~~js
-const editor = new dhx.DiagramEditor("editor", {
+~~~jsx  {7-8}
+const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {
-        toolbar: true,
+        toolbar: true
     }
 });
 // removes all the toolbar items

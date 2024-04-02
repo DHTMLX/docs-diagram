@@ -18,15 +18,15 @@ You can use the following [**Toolbar**](https://docs.dhtmlx.com/suite/category/t
 | [keydown](https://docs.dhtmlx.com/suite/toolbar/api/toolbar_keydown_event/)          | Fires when any key is pressed and a control of Toolbar is in focus |
 | [openMenu](https://docs.dhtmlx.com/suite/toolbar/api/toolbar_openmenu_event/)        | Fires on expanding a menu control                                  |
 
-~~~js
-const editor = new dhx.DiagramEditor("editor", {
+~~~jsx {7-10}
+const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {
-        toolbar: true,
+        toolbar: true
     }
 });
-
+// handles the "click" event
 editor.toolbar.events.on("click", (id, event) => {
-    // some logic
+    // some logic here
 });
 ~~~

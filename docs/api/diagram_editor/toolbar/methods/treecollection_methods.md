@@ -36,11 +36,11 @@ You can use the following [**TreeCollection**](https://docs.dhtmlx.com/suite/cat
 | [sort()](https://docs.dhtmlx.com/suite/tree_collection/api/treecollection_sort_method/) | Sorts controls according to some criteria                            |
 | [update()](https://docs.dhtmlx.com/suite/tree_collection/api/treecollection_update_method/) | Changes an item                                                  |
 
-~~~js
-const editor = new dhx.DiagramEditor("editor", {
+~~~jsx {7-12}
+const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {
-        toolbar: true,
+        toolbar: true
     }
 });
 // removes all the toolbar items

@@ -8,7 +8,7 @@ description: You can learn about the items property of Toolbar in the documentat
 
 ### Description
 
-@short: Optional. An array with controls arranged on Toolbar of Diagram Editor
+@short: Optional. An array with controls displayed on Toolbar of Diagram Editor
 
 ### Usage
 
@@ -21,14 +21,14 @@ items?: (object | string)[];
 The `items` property allows you to specify [**Service elements**](guides/diagram_editor/toolbar.md/#service-elements) as an array of strings:
 
 ~~~js
-items: [ "file", "edit", "view", "arrange", "spacer", "scale" ]
+items: [ "file", "edit", "view", "arrange", "spacer", "scale" ];
 ~~~
 
 The full list of service element you can see [here](guides/diagram_editor/toolbar.md/#service-elements).
 
 ### Configuring Items via Objects
 
-The `items` property allows you to specify [**Service elements**](guides/diagram_editor/toolbar.md/#service-elements) and [**Base elements**](guides/diagram_editor/toolbar.md/#base-elements)  as an array of objects:
+The `items` property allows you to specify [**Service elements**](guides/diagram_editor/toolbar.md/#service-elements) and [**Base elements**](guides/diagram_editor/toolbar.md/#base-elements) as an array of objects:
 
 ~~~js
 items: [ 
@@ -50,22 +50,22 @@ items: [
 
 #### Parameters
 
-For each [**service elements**](guides/diagram_editor/toolbar.md/#service-elements), excluding `separator` / `spacer` / `scale`, you can specify an object with the following parameters:
+For all [**service elements**](guides/diagram_editor/toolbar.md/#service-elements), excluding `separator` / `spacer` / `scale`, you can specify an object with the following parameters:
 
-- `id` - (optional) - the ID of a service element. By default, the ID of a service element includes **$** and the **type** of the service element: **$file**
 - `type` - (required) - the type of a service element. The full list of service element types you can see [here](#service-elements)
+- `id` - (optional) - the ID of a service element. By default, the ID of a service element includes **$** and the **type** of the service element: **$file**
 - `value` - (optional) - the label of a service element
 - `hotkey` - (optional) - the hot key combination label of a service element
 - `icon` - (optional) - the css class of a service element icon
+- `hidden` - (optional) - hides a service element
+- `disabled` - (optional) - disables a service element
+- `css` - (optional) - applies a custom css class to a service element
+- `items` - (optional) - defines the structure of the child elements
 - `checkIcon` - (optional) - the handler that returns the icon css class. It is called with the following argument:
     - `editor` - the Diagram Editor object
 - `handler` - (optional) - the handler that runs when the ***click*** or ***inputChange*** events occurs. It is called with the following arguments:
     - `editor` - the Diagram Editor object
     - `event` - a [native event](https://developer.mozilla.org/en-US/docs/Web/API/Event)
-- `css` - (optional) - applies a custom css class to a service element
-- `hidden` - (optional) - hides a service element
-- `disabled` - (optional) - disables a service element
-- `items` - (optional) - defines the structure of the child elements
 
 ### Example 1
 
@@ -107,7 +107,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
                         "importJson",
                         {
                             type: "exportJson",
-                            value: "Export to JSON",
+                            value: "Export to JSON"
                         },
                         {
                             id: "custom_id_1",

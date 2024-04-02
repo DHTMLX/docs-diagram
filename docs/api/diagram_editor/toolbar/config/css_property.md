@@ -8,7 +8,7 @@ description: You can learn about the css property of Toolbar in the documentatio
 
 ### Description
 
-@short: Optional. Sets a custom CSS class
+@short: Optional. Applies a custom CSS class
 
 :::info
 The custom CSS class applies to expanded elements as well. The `--popup-menu` prefix is attached to such elements.

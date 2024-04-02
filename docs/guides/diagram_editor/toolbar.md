@@ -12,17 +12,17 @@ Toolbar is a top part of Diagram Editor that helps users to control the editing 
 
 To configure the Toolbar you can use the following properties:
 
-- [`css`](api/diagram_editor/toolbar/config/css_property.md) - the custom CSS class
+- [`css`](api/diagram_editor/toolbar/config/css_property.md) - applies the custom CSS class
 
-- [`navigationType`](api/diagram_editor/toolbar/config/navigationtype_property.md) - the action that opens menu options. You can specify one of the following actions:
-    - `"click"` - displays the menu when a user clicks on it
-    - `"pointer"` - displays the menu when a user hovers the mouse pointer over it
+- [`navigationType`](api/diagram_editor/toolbar/config/navigationtype_property.md) - defines the action that activates a Toolbar item. You can specify one of the following actions:
+    - `"click"` - activates a Toolbar item when a user clicks on it
+    - `"pointer"` - activates a Toolbar item when a user hovers the mouse pointer over it
 
-- [`items`](api/diagram_editor/toolbar/config/items_property.md) - the array of [**items**](#service-elements) (controls) arranged on Toolbar. There are 2 ways how to configure items:
+- [`items`](api/diagram_editor/toolbar/config/items_property.md) - the array of [**items**](#service-elements) (controls) arranged on Toolbar. There are 2 ways how to configure Toolbar items:
     - [**Configuring Items via Strings**](api/diagram_editor/toolbar/config/items_property.md/#configuring-items-via-strings)
     - [**Configuring Items via Objects**](api/diagram_editor/toolbar/config/items_property.md/#configuring-items-via-objects)
 
-~~~js {7-38}
+~~~jsx {7-38}
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {
@@ -36,7 +36,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
                         "importJson",
                         {
                             type: "exportJson",
-                            value: "Export to JSON",
+                            value: "Export to JSON"
                         },
                         {
                             id: "custom_id_1",
@@ -70,7 +70,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 
 Toolbar items are represented by **service elements**. You can use and configure the following service elements:
 
-- **file** - forms a group of service elements for importing and exporting files 
+- **file** - forms a group of service elements for importing and exporting files
 
     <details>
     The **file** item has the following structure:

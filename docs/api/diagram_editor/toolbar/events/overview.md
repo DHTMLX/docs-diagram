@@ -20,14 +20,14 @@ You can use the following [**Toolbar**](https://docs.dhtmlx.com/suite/category/t
 | [keydown](https://docs.dhtmlx.com/suite/toolbar/api/toolbar_keydown_event/)          | Fires when any key is pressed and a control of Toolbar is in focus |
 | [openMenu](https://docs.dhtmlx.com/suite/toolbar/api/toolbar_openmenu_event/)        | Fires on expanding a menu control                                  |
 
-~~~js
-const editor = new dhx.DiagramEditor("editor", {
+~~~jsx {7-10}
+const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {
-        toolbar: true,
+        toolbar: true
     }
 });
-
+// handles the "click" event
 editor.toolbar.events.on("click", (id, event) => {
     // some logic
 });
@@ -49,17 +49,17 @@ You can use the following [**TreeCollection**](https://docs.dhtmlx.com/suite/cat
 | [loadError](https://docs.dhtmlx.com/suite/tree_collection/api/treecollection_loaderror_event/)          | Fires when loading of data fails                       |
 | [removeAll](https://docs.dhtmlx.com/suite/tree_collection/api/treecollection_removeall_event/)          | Fires when all items are removed from a tree collection|
 
-~~~js
-const editor = new dhx.DiagramEditor("editor", {
+~~~jsx {7-10}
+const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {
-        toolbar: true,
+        toolbar: true
     }
 });
-
+// handles the "load" event
 editor.toolbar.events.on("load", () => {
-    console.log("load event")
+    // some logic here
 });
-
+// load new toolbar data
 editor.toolbar.parse(["file", "spacer", "scale"]);
 ~~~
