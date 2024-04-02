@@ -30,7 +30,7 @@ navigationType: "click"
 ### Example
 
 ~~~js {7}
-const editor = new dhx.DiagramEditor("editor", {
+const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {
         toolbar: {
@@ -43,3 +43,5 @@ const editor = new dhx.DiagramEditor("editor", {
 ~~~
 
 **Change log**: Added in v6.0
+
+**Related articles:**  [Toolbar configuration](guides/diagram_editor/toolbar.md)

@@ -22,17 +22,17 @@ You can use the following [**Toolbar**](https://docs.dhtmlx.com/suite/category/t
 | [show()](https://docs.dhtmlx.com/suite/toolbar/api/toolbar_show_method/)              | Shows an item of Toolbar                                   |
 | [unselect()](https://docs.dhtmlx.com/suite/toolbar/api/toolbar_unselect_method/)      | Unselects a selected Toolbar item                          |
 
-~~~js {7-12}
-const editor = new dhx.DiagramEditor("editor", {
+~~~jsx {7-12}
+const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {
-        toolbar: true,
+        toolbar: true
     }
 });
 // disables the "file" item
 editor.toolbar.disable("$file");
 // disables "file" and "scale" items
-editor.toolbar.disable(["$file","$scale"]);
+editor.toolbar.disable(["$file", "$scale"]);
 // disables all items
 editor.toolbar.disable();
 ~~~
