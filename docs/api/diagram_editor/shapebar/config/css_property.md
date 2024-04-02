@@ -40,9 +40,9 @@ css?: string;
 
 **Related articles:** 
 
-- [Shapebar and shapes appearance](../../../../../guides/diagram_editor/shapebar/#shapebar-and-shapes-appearance)
+- [Shapebar and shapes appearance](/guides/diagram_editor/shapebar/#shapebar-and-shapes-appearance)
 
-- [Configuring the look of shapes in Shapebar](../../../../../guides/themes/base_themes_configuration/#configuring-the-look-of-shapes-in-shapebar)
+- [Configuring the look of shapes in Shapebar](/guides/themes/base_themes_configuration/#configuring-the-look-of-shapes-in-shapebar)
 
 **Change log**: 
 
