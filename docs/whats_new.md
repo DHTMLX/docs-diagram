@@ -15,41 +15,40 @@ Released on April X, 2024
 
 ### Breaking changes
 
-The new update introduces significant changes into the structure and functionality of Diagram and Diagram Editor. Check the [Migration article] to keep in step with the latest version.
+The new update introduces significant changes in the structure and functionality of Diagram and Diagram Editor. Check the [Migration article](**TODO - add link**) to keep in step with the latest version.
 
 ### New functionality
 
-- Restructuring of Diagram Editor and providing the ability to interact with its parts and manage their visibility with the `view` object that includes the following objects:
-    - Toolbar
-    - Shapebar (former Left panel)
-    - Editbar (former Right panel)
-- The renewed Editbar panel (former Right panel) with a flexible configuration that includes a number of possibilities:
-    - creation of custom controls 
-    - creation of HTML content
-    - sets of predefined basic and complex controls
-    - adjustable configuration of basic and complex controls depending on the provided conditions
-    - dynamic management of the Editbar panel depending on the provided conditions
-- The ability to configure the Shapebar with its own API properties
-- The ability to customize the Toolbar depending on the project requirements
-- The upgrade of the Selection API with the ability of multiple selection
-- The titles of Lines are moved from the `line` objects to the common data structure on the same level with Lines. Now they are defined as `lineTitles` objects
-- Support for new themes: Dark, Light High Contrast and Dark High Contrast
-- Managing of the Shapebar color scheme by redefining the CSS variables and using the custom ones
-- The CopyManager API added
-- The ability to collapse/expand Shapebar and Editbar
-- Diagram Editor. The destructor() method is added
-- Diagram Editor. The ability to hide the connection points
-- Diagram Editor. The ability to hide the resize points
-- Diagram Editor. The ability to hide the grid
+- Restructuring of Diagram Editor: providing the ability to interact with its parts and manage their visibility with the [`view`](../api/diagram_editor/editor/config/view_property/) object that includes the following objects:
+    - [Toolbar](../guides/diagram_editor/toolbar/) which can be customized depending on the project requirements
+    - [Shapebar](../guides/diagram_editor/shapebar/) (former Left panel) which can be configured via its own [API properties](../category/shapebar-api/)
+    - [Editbar](**TODO - add link**) (former Right panel) which is provided with a flexible configuration that includes a number of possibilities: **TODO - add links**
+        - sets of predefined basic and complex controls
+        - adjustable configuration of basic and complex controls depending on the provided conditions
+        - dynamic management of the Editbar panel depending on the provided conditions
+        - creation of custom controls 
+        - creation of HTML content
+- Diagram Editor. The [Copy manager API](../category/copy-manager-methods/) added
+- Diagram Editor. The ability to show/hide [Shapebar](../api/diagram_editor/shapebar/config/show_property/) and [Editbar](**TODO - add link**)
+- Diagram Editor. The [destructor()](../api/diagram_editor/editor/methods/destructor_method/) method is added
+- Diagram Editor. The ability to [hide the connection points](../api/diagram_editor/editor/config/connectionpoints_property/)
+- Diagram Editor. The ability to [hide the resize points](../api/diagram_editor/editor/config/resizepoints_property/)
+- Diagram Editor. The ability to [hide the grid](../api/diagram_editor/editor/config/grid_property/)
+- The upgrade of the [Selection API](../api/selection/) with the ability of multiple selection
+- The titles of lines are declared as separate objects defined as [`lineTitles`](../line_titles/) with [own configuration properties](../line_titles/configuration_properties/) 
+- [Support for new themes](../category/themes/): Dark, Light High Contrast and Dark High Contrast
+- Diagram Editor. The ability to customize the [Shapebar items' color scheme](../guides/themes/base_themes_configuration/#configuring-the-look-of-shapes-in-shapebar) by redefining the CSS variables and using the custom ones 
 
 ### Updates
 
-- The possibility to work with line titles via the DataCollection API:
+- The ability to [work with line titles via the DataCollection API](../line_titles/#working-with-line-titles):
     - add a line title
     - block a line title adding 
     - iterate over line titles as children item of lines 
-- Diagram Editor. The move events are updated
-- Diagram Editor. Extend the functionality of the `magnetic` configuration option 
+- Diagram Editor. The move [events](../category/editor-events/) of the Editor object are updated
+- Diagram Editor. The functionality of the [`magnetic`](../api/diagram_editor/editor/config/magnetic_property/) configuration option is extended
+- Diagram Editor. [Locales](../guides/localization/) are updated
+- Diagram Editor. [Hotkeys](../guides/diagram_editor/hot_keys/) are updated
 
 ### Fixes
 
