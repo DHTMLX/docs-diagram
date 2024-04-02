@@ -375,7 +375,7 @@ Toolbar items are represented by **service elements**. You can use and configure
 
 <hr>
 
-- **scale** - the control that allows user to increase or decrease the scale value by 0.05 (5%)
+- **scale** - the control that allows users to increase or decrease the scale value by 0.05 (5%)
 
     <details>
     The **scale** item looks in the following way:
@@ -389,7 +389,7 @@ Toolbar items are represented by **service elements**. You can use and configure
 
 ## Base elements
 
-Besides [**Service elements**](#service-elements), you can also specify and configure the following **Base elements** using the [object](api/diagram_editor/toolbar/config/items_property.md/#configuring-items-as-objects) approach:
+Besides [**Service elements**](#service-elements), you can also specify and configure the following **Base elements** using the [object](api/diagram_editor/toolbar/config/items_property.md/#configuring-items-via-objects) approach:
 
 - [Button](https://docs.dhtmlx.com/suite/toolbar/button/)
 - [Custom HTML](https://docs.dhtmlx.com/suite/toolbar/customhtmlbutton/)
@@ -403,9 +403,9 @@ Besides [**Service elements**](#service-elements), you can also specify and conf
 - [Spacer](https://docs.dhtmlx.com/suite/toolbar/spacer/)
 - [Title](https://docs.dhtmlx.com/suite/toolbar/title/)
 
-The example below shows how to add the [Button](https://docs.dhtmlx.com/suite/toolbar/button/) conrol to the Toolbar:
+The example below shows how to add the [Button](https://docs.dhtmlx.com/suite/toolbar/button/) control to the Toolbar:
 
-~~~jsx{6-9}
+~~~jsx {6-9}
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "org", // "default" | "org" | "mindmap"
     view: {
@@ -430,7 +430,7 @@ In addition to the inner properties of **base elements** (excluding [Separator](
 checkIcon?: (editor: IDiagramEditor) => string; // Use only for base elements that contain icon
 ~~~
 
-- `handler` - (optional) - the handler that runs when the ***click*** or ***inputChange*** events occurs. It is called with the following arguments:
+- `handler` - (optional) - the handler that runs when the ***click*** or ***inputChange*** event occurs. It is called with the following arguments:
     - `editor` - the Diagram Editor object
     - `event` - a [native event](https://developer.mozilla.org/en-US/docs/Web/API/Event)
 

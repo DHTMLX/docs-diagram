@@ -16,7 +16,7 @@ description: You can learn about the items property of Toolbar in the documentat
 items?: (object | string)[];
 ~~~
 
-### Configuring Items via Strings
+### Configuring items via strings
 
 The `items` property allows you to specify [**Service elements**](guides/diagram_editor/toolbar.md/#service-elements) as an array of strings:
 
@@ -24,9 +24,9 @@ The `items` property allows you to specify [**Service elements**](guides/diagram
 items: [ "file", "edit", "view", "arrange", "spacer", "scale" ];
 ~~~
 
-The full list of service element you can see [here](guides/diagram_editor/toolbar.md/#service-elements).
+The full list of service elements you can see [here](guides/diagram_editor/toolbar.md/#service-elements).
 
-### Configuring Items via Objects
+### Configuring items via objects
 
 The `items` property allows you to specify [**Service elements**](guides/diagram_editor/toolbar.md/#service-elements) and [**Base elements**](guides/diagram_editor/toolbar.md/#base-elements) as an array of objects:
 
@@ -52,7 +52,7 @@ items: [
 
 For all [**service elements**](guides/diagram_editor/toolbar.md/#service-elements), excluding `separator` / `spacer` / `scale`, you can specify an object with the following parameters:
 
-- `type` - (required) - the type of a service element. The full list of service element types you can see [here](#service-elements)
+- `type` - (required) - the type of a service element. The full list of service element types you can see [here](guides/diagram_editor/toolbar.md)
 - `id` - (optional) - the ID of a service element. By default, the ID of a service element includes **$** and the **type** of the service element: **$file**
 - `value` - (optional) - the label of a service element
 - `hotkey` - (optional) - the hot key combination label of a service element
