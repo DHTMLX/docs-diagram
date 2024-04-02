@@ -62,7 +62,7 @@ In addition, values of variables, which are calculated on the base of the primar
 
 ## Configuring a separate theme
 
-If you want to override some color values for a separate [Diagram theme](diagram/guides/themes.md), you need to do this in the **'data-dhx-theme'** attribute:
+If you want to override some color values for a separate [Diagram theme](guides/themes.md), you need to do this in the **'data-dhx-theme'** attribute:
 
 ~~~html 
 <style>
@@ -101,3 +101,60 @@ If you want to override some color values for a separate [Diagram theme](diagram
     dhx.setTheme("light");
 </script>
 ~~~
+
+## Configuring the look of shapes in Shapebar
+
+### Redefining default color schemes
+
+You can manage the appearance of the Shapebar items by redefining the CSS variables that specify the color scheme:
+
+- `--dhx-shapebar-item-font-color`
+- `--dhx-shapebar-item-background`
+- `--dhx-shapebar-item-border-color`
+
+The default values of these variables [depend on the applied theme](guides/themes.md).
+
+### Setting custom CSS variables
+
+It is also possible to adjust the look and feel of the Shapebar items by using your own CSS variables. For this, you should define a custom CSS variable and specify it as a value of the necessary property in the `defaults` configuration option. 
+
+:::note
+The value of the variable will be assigned to a Shapebar item when it is selected and won't be redefined on the change of a theme.
+:::
+
+For example:
+
+~~~html {11-12,23-24}
+<style>
+    :root {
+        --rectangle-fill: #428df5;
+        --rectangle-font-color: #002229;
+    }
+    [data-dhx-theme='dark'] {
+        --dhx-shapebar-item-font-color: #fff;
+        --dhx-shapebar-item-background: #002229;
+        --dhx-shapebar-item-border-color: #007a99;
+
+        --rectangle-fill: #f54278;
+        --rectangle-font-color: #002229;
+    }
+</style>
+
+<div id="editor_container" style="height: 100%"></div>
+
+<script>
+    const editor = new dhx.DiagramEditor("editor_container", {
+        type: "default",
+        defaults: {
+            rectangle: {
+                fill: "var(--rectangle-fill)",
+                fontColor: "var(--rectangle-font-color)",
+            }
+        }
+    });
+    // set the dark theme
+    const node = document.getElementById("editor_container").childNodes[0];
+    dhx.setTheme("dark", node);
+</script>
+~~~
+
