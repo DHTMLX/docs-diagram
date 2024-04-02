@@ -12,7 +12,7 @@ description: You can learn about the parse method of Toolbar in the documentatio
 
 ### Usage
 
-~~~js
+~~~jsx
 parse(items: (object | string)[]): void;
 ~~~
 
@@ -22,15 +22,15 @@ parse(items: (object | string)[]): void;
 
 ### Example
 
-~~~js {7-8}
-const editor = new dhx.DiagramEditor("editor", {
-    type: "default",
+~~~jsx {7-8}
+const editor = new dhx.DiagramEditor("editor_container", {
+    type: "org",
     view: {
-        toolbar: true,
+        toolbar: true
     }
 });
 // display the toolbar with specified items
-editor.toolbar.parse([{ type: "file", disabled: false, }, "spacer", "scale"]);
+editor.toolbar.parse([{ type: "file", disabled: false }, "spacer", "scale"]);
 ~~~
 
 **Change log**: Added in v6.0
