@@ -8,6 +8,67 @@ description: You can learn a new information about DHTMLX JavaScript Diagram lib
 
 If you are updating Diagram from an older version, check [Migration to Newer Version](migration.md) for details.
 
+Version 6.0
+-------------
+
+Released on April X, 2024
+
+### Breaking changes
+
+The new update introduces significant changes into the structure and functionality of Diagram and Diagram Editor. Check the [Migration article] to keep in step with the latest version.
+
+### New functionality
+
+- Restructuring of Diagram Editor and providing the ability to interact with its parts and manage their visibility with the `view` object that includes the following objects:
+    - Toolbar
+    - Shapebar (former Left panel)
+    - Editbar (former Right panel)
+- The renewed Editbar panel (former Right panel) with a flexible configuration that includes a number of possibilities:
+    - creation of custom controls 
+    - creation of HTML content
+    - sets of predefined basic and complex controls
+    - adjustable configuration of basic and complex controls depending on the provided conditions
+    - dynamic management of the Editbar panel depending on the provided conditions
+- The ability to configure the Shapebar with its own API properties
+- The ability to customize the Toolbar depending on the project requirements
+- The upgrade of the Selection API with the ability of multiple selection
+- The titles of Lines are moved from the `line` objects to the common data structure on the same level with Lines. Now they are defined as `lineTitles` objects
+- Support for new themes: Dark, Light High Contrast and Dark High Contrast
+- Managing of the Shapebar color scheme by redefining the CSS variables and using the custom ones
+- The CopyManager API added
+- The ability to collapse/expand Shapebar and Editbar
+- Diagram Editor. The destructor() method is added
+- Diagram Editor. The ability to hide the connection points
+- Diagram Editor. The ability to hide the resize points
+- Diagram Editor. The ability to hide the grid
+
+### Updates
+
+- The possibility to work with line titles via the DataCollection API:
+    - add a line title
+    - block a line title adding 
+    - iterate over line titles as children item of lines 
+- Diagram Editor. The move events are updated
+- Diagram Editor. Extend the functionality of the `magnetic` configuration option 
+
+### Fixes
+
+- Diagram Editor. Fix the impossibility to remove selected items via menu
+- Diagram Editor. Fix incorrect selection behavior that required double-clicking to select a shape
+- Diagram Editor. Fix the ability to move items of different parents to the target item (for the org and mindmap modes)
+- Diagram Editor. Fix moving a group and a swimlane together
+- Diagram Editor. Fix copying of lines while selecting elements manually
+- Diagram Editor. Fix the ability to set default values for the Shapebar elements
+- Diagram Editor. Fix the issue with data import working just once
+- Diagram Editor. Fix blocking of a new shape adding 
+- Diagram Editor. Optimize the logic of searching for the nearest connector
+- Diagram Editor. Improve performance during the connector movement
+- Diagram Editor. Limit the recording of actions during the connector movement in the historyManager
+- Diagram Editor. Fix the appearance of connectors on hovering moved items above any shape
+- Diagram Editor. Fix removing of unused lines/connectors
+- Diagram Editor. Fix dragging when the root shape is close to the child one in the mindmap/org modes
+- Diagram Editor. Fix a console error caused by clicking the "Import data" button for a second time after data import and not selecting a file 
+
 Version 5.0.3
 -------------
 
