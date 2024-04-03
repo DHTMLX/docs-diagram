@@ -24,19 +24,19 @@ width: 300
 
 ### Example
 
-~~~js
+~~~jsx {7}
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {
+        // shapebar: true, // displays default Shapebar
+        // or configure Shapebar via object
         shapebar: {
-            width: 400, // 300 by default
+            width: 400 // 300 by default
         }
     }
 });
 ~~~
 
-**Related article:** [Shapebar](../../../../../guides/diagram_editor/shapebar/#setting-the-width-of-shapebar)
+**Related article:** [Shapebar](guides/diagram_editor/shapebar.md/#setting-the-width-of-shapebar)
 
-**Change log**: 
-
-The property was added in v6.0
+**Change log**: The property was added in v6.0

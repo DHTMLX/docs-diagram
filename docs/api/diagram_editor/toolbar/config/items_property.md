@@ -71,11 +71,13 @@ For all [**service elements**](guides/diagram_editor/toolbar.md/#service-element
 
 The example below shows how to configure Toolbar items via strings:
 
-~~~js {8-12}
+~~~js {10-14}
 // Configuring items via strings
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {
+        // toolbar: true, // displays default Toolbar
+        // or configure Toolbar via object
         toolbar: {
             css: "custom_css",
             navigationType: "pointer",
@@ -137,6 +139,6 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 ~~~
 
-**Change log**: Added in v6.0
+**Change log**: The property was added in v6.0
 
 **Related articles:**  [Toolbar configuration](guides/diagram_editor/toolbar.md)

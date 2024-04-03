@@ -18,11 +18,13 @@ css?: string;
 
 ### Example
 
-~~~html {6}
+~~~html {8}
 <script>
     const editor = new dhx.DiagramEditor("editor_container", {
         type: "default",
         view: {
+            // shapebar: true, // displays default Shapebar
+            // or configure Shapebar via object
             shapebar: {
                 css: "custom_style"
             }
@@ -38,12 +40,10 @@ css?: string;
 </style>
 ~~~
 
-**Related articles:** 
+**Related articles:**
 
-- [Shapebar and shapes appearance](/guides/diagram_editor/shapebar/#shapebar-and-shapes-appearance)
+- [Shapebar and shapes appearance](guides/diagram_editor/shapebar.md/#shapebar-and-shapes-appearance)
 
-- [Configuring the look of shapes in Shapebar](/guides/themes/base_themes_configuration/#configuring-the-look-of-shapes-in-shapebar)
+- [Configuring the look of shapes in Shapebar](guides/themes/base_themes_configuration.md/#configuring-the-look-of-shapes-in-shapebar)
 
-**Change log**: 
-
-The property was added in v6.0
+**Change log**: The property was added in v6.0

@@ -24,19 +24,19 @@ show: true
 
 ### Example
 
-~~~js
+~~~jsx {7}
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {
+        // shapebar: true, // displays default Shapebar
+        // or configure Shapebar via object
         shapebar: {
-            show: false, // true by default
+            show: false // true by default
         }
     }
 });
 ~~~
 
-**Related article:** [Shapebar](../../../../../guides/diagram_editor/shapebar/#showinghiding-the-shapebar)
+**Related article:** [Shapebar](guides/diagram_editor/shapebar.md/#showinghiding-the-shapebar)
 
-**Change log**: 
-
-The property was added in v6.0
+**Change log**: The property was added in v6.0

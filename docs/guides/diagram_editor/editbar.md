@@ -1,18 +1,18 @@
 ---
-sidebar_label: Right panel
-title: Editor Guides - Right Panel
-description: You can learn about the Right Panel of editor in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
+sidebar_label: Editbar TODO
+title: Editor Guides - Editbar
+description: You can learn about the Editbar of editor in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
 
-# Right panel
+# Editbar TODO
 
-Right panel is a part of the editor with a *property sheet* that provides options for modifying values of the attributes of the diagram items.
+Editbar is a part of the editor with a *property sheet* that provides options for modifying values of the attributes of the diagram items.
 
 You can select a necessary item and edit its attributes via the related sidebar options.
 
 ## Sidebar options for editing shapes
 
-Right panel can contain different sidebar options for editing various attributes of a shape. The presence or absence of the options in the right panel completely depends on the type and configuration of the shape, and the mode of Diagram initialization.
+Editbar can contain different sidebar options for editing various attributes of a shape. The presence or absence of the options in the Editbar completely depends on the type and configuration of the shape, and the mode of Diagram initialization.
 
 ### Grid step
 
@@ -106,13 +106,13 @@ Use to load an image for the card and update it. An image is loaded from the com
 
 ## Configuring options for editing custom shapes
 
-When you create a custom shape with a standard configuration (i.e. without adding custom properties), the options of the right panel will be rendered automatically depending on the data set of the shape.
+When you create a custom shape with a standard configuration (i.e. without adding custom properties), the options of the Editbar will be rendered automatically depending on the data set of the shape.
 
-In case you create more complex shape, you can change the structure of the right panel and specify additional options for editing custom properties of the shape. To do this, you need to make use of the **properties** attribute of the [](../../api/diagram/addshape_method.md) method.
+In case you create more complex shape, you can change the structure of the Editbar and specify additional options for editing custom properties of the shape. To do this, you need to make use of the **properties** attribute of the [](../../api/diagram/addshape_method.md) method.
 
 <iframe src="https://snippet.dhtmlx.com/8fubjmlz?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
-The **properties** attribute contains a set of objects that defines which sidebar options will be rendered in the right panel of the editor for the shape. [Check the full list of available types of the options you can apply while configuring the right panel](../../../api/diagram/addshape_method/#types-of-sidebar-options).
+The **properties** attribute contains a set of objects that defines which sidebar options will be rendered in the Editbar of the editor for the shape. [Check the full list of available types of the options you can apply while configuring the Editbar](../../../api/diagram/addshape_method/#types-of-sidebar-options).
 
 The order of the objects in the array defines the order the sidebar options will be displayed in the right panel.
 

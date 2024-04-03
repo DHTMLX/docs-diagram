@@ -166,7 +166,7 @@ Released on September 7, 2021
 
 - New diagram items are added: [Groups](../groups/), [Swimlanes](../swimlanes/)
 - New sections in the left panel of the Diagram Editor are added: [Groups, Swimlanes](../guides/diagram_editor/left_panel/#default-sections)
-- [New sidebar options are added to the right panel of the editor for Groups, Swimlanes](../guides/diagram_editor/right_panel/#sidebar-options-for-editing-groups-swimlanes)
+- [New sidebar options are added to the right panel of the editor for Groups, Swimlanes](../guides/diagram_editor/editbar/#sidebar-options-for-editing-groups-swimlanes)
 - The ability to edit [Groups](../guides/diagram_editor/grid_area/#managing-groups) and [Swimlanes](../guides/diagram_editor/grid_area/#managing-swimlanes) via UI
 - Extended list of [locale options](../guides/localization/)
 - The ability to operate the cells of a swimlane via [CellManager API](../api/cell_manager/)
@@ -293,9 +293,9 @@ The new update introduces some changes and improvements. Check the [Migration](.
 - [Ability to set the default configuration of a shape](../guides/diagram/configuration/#setting-the-default-configuration-of-a-shape) via the `defaults` property when initializing [Diagram](../api/diagram/defaults_property/) or [Diagram Editor](../api/editor/defaults_property/)
 - The [addShape()](../api/diagram/addshape_method/) method for [creating custom shapes](../shapes/custom_shape/) in Diagram and Diagram Editor is added
 - New properties of the Editor object: [controls](../api/editor/controls_property/), [defaults](../api/editor/defaults_property/), [shapeSections](../api/editor/shapesections_property/), [shapeBarWidth](../api/editor/shapebarwidth_property/), [scalePreview](../api/editor/scalepreview_property/), [scale](../api/editor/scale_property/), [gapPreview](../api/editor/gappreview_property/) 
-- The *Grid Step* sidebar option is added to the [right panel of the Editor](../guides/diagram_editor/right_panel/)
+- The *Grid Step* sidebar option is added to the [right panel of the Editor](../guides/diagram_editor/editbar/)
 - Ability to hide/show any toolbar buttons of the Editor as well as the *Grid Step* sidebar option via the [controls](../api/editor/controls_property/) property of the Editor object
-- Ability [to configure sidebar options for editing attributes of the custom shapes in the right panel of the editor](../guides/diagram_editor/right_panel/#configuring-options-for-editing-custom-shapes) via the `properties` attribute of the [addShape()](../api/diagram/addshape_method/) method
+- Ability [to configure sidebar options for editing attributes of the custom shapes in the right panel of the editor](../guides/diagram_editor/editbar/#configuring-options-for-editing-custom-shapes) via the `properties` attribute of the [addShape()](../api/diagram/addshape_method/) method
 - [Ability to customize sections in the left panel of the Editor](../guides/diagram_editor/left_panel/#custom-sections)
 - [Possibility to customize the appearance of shapes rendered in the left panel of the Editor](../guides/diagram_editor/left_panel/#setting-shape-preview) via the [preview](../shapes/configuration_properties/#properties-specific-for-the-default-mode) property of the shape object
 - Ability [to select, copy, paste, delete, move several shapes in the Editor](../guides/diagram_editor/grid_area/#manipulating-multiple-items)

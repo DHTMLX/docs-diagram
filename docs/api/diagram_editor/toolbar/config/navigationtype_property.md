@@ -29,10 +29,12 @@ navigationType: "click"
 
 ### Example
 
-~~~js {7}
+~~~js {9}
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {
+        // toolbar: true, // displays default Toolbar
+        // or configure Toolbar via object
         toolbar: {
             css: "custom_css",
             items: ["file", "spacer", "scale"],
@@ -42,6 +44,6 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 ~~~
 
-**Change log**: Added in v6.0
+**Change log**: The property was added in v6.0
 
 **Related articles:**  [Toolbar configuration](guides/diagram_editor/toolbar.md)
