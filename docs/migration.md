@@ -6,6 +6,65 @@ description: You can learn about the Migration to Newer Versions in the document
 
 # Migration to newer versions
 
+5.0 -> 6.0
+--------------
+
+### Editor API
+
+#### Deprecated methods 
+
+The **setViewMode()** method of Diagram Editor is deprecated and no longer supported. Instead, use the [**show()**](../api/diagram_editor/view/methods/show_method/)/[**hide()**](../api/diagram_editor/view/methods/hide_method/) methods of the `view` object.
+
+~~~js {4} title="Before v6.0"
+const editor = new dhx.DiagramEditor("editor_container");
+editor.parse(data);
+
+editor.setViewMode("preview"); // "preview" or "edit"
+~~~
+
+~~~js {4-5} title="From v6.0"
+const editor = new dhx.DiagramEditor("editor_container");
+editor.parse(data);
+
+editor.view.hide("shapebar"); 
+editor.view.show("shapebar");
+~~~
+
+#### Deprecated properties
+
+The **reservedWidth** property of Diagram Editor is deprecated and no longer supported. 
+
+~~~js {2} title="Before v6.0"
+const editor = new dhx.DiagramEditor("editor_container", {
+    reservedWidth: 150
+});
+~~~
+
+Instead, use the following syntax:
+
+~~~js title="From v6.0"
+editor.diagram.config.margin = 40; 
+~~~
+
+The **editMode** property of Diagram Editor is deprecated and no longer supported. Instead, use the 
+corresponding property of the `view` object.
+
+~~~js {2} title="Before v6.0"
+const editor = new dhx.DiagramEditor("editor_container", {
+    editMode: false
+});
+~~~
+
+~~~js {2-5} title="From v6.0"
+const editor = new dhx.DiagramEditor("editor_container", {
+   view: {
+        shapebar: false, // only for "default" mode
+        editbar: false
+    }
+});
+~~~
+
+
 4.2 -> 5.0
 --------------
 

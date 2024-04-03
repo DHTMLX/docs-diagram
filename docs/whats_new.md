@@ -15,7 +15,7 @@ Released on April X, 2024
 
 ### Breaking changes
 
-The new update introduces significant changes in the structure and functionality of Diagram and Diagram Editor. Check the [Migration article](**TODO - add link**) to keep in step with the latest version.
+The new update introduces significant changes in the structure and functionality of Diagram and Diagram Editor. Check the [Migration article](../migration/#50---60) to keep in step with the latest version.
 
 ### New functionality
 
@@ -35,25 +35,39 @@ The new update introduces significant changes in the structure and functionality
 - Diagram Editor. The ability to [hide the resize points](../api/diagram_editor/editor/config/resizepoints_property/)
 - Diagram Editor. The ability to [hide the grid](../api/diagram_editor/editor/config/grid_property/)
 - The upgrade of the [Selection API](../api/selection/) with the ability of multiple selection
-- The titles of lines are declared as separate objects defined as [`lineTitles`](../line_titles/) with [own configuration properties](../line_titles/configuration_properties/) 
+- The titles of lines are declared as separate objects defined as [`lineTitles`](../line_titles/) with their own [configuration properties](../line_titles/configuration_properties/) 
 - [Support for new themes](../category/themes/): Dark, Light High Contrast and Dark High Contrast
 - Diagram Editor. The ability to customize the [Shapebar items' color scheme](../guides/themes/base_themes_configuration/#configuring-the-look-of-shapes-in-shapebar) by redefining the CSS variables and using the custom ones 
 
 ### Updates
 
-- The ability to [work with line titles via the DataCollection API](../line_titles/#working-with-line-titles):
-    - add a line title
-    - block a line title adding 
-    - iterate over line titles as children item of lines 
-- Diagram Editor. The move [events](../category/editor-events/) of the Editor object are updated
+- The ability to [work with line titles via the DataCollection API](../line_titles/#working-with-line-titles)
+- Diagram Editor. The behavior of Shapebar items when they are pulled to the grid and their appearance are improved
+- Diagram Editor. The move [events](../category/editor-events/) of the Editor object are updated:
+[`afterGroupMove`](../api/diagram_editor/editor/events/aftergroupmove_event/), 
+[`afterItemCatch`](../api/diagram_editor/editor/events/afteritemcatch_event/),
+[`afterItemMove`](../api/diagram_editor/editor/events/afteritemmove_event),
+[`afterLineTitleMove`](../api/diagram_editor/editor/events/afterlinetitlemove_event/),
+[`afterShapeMove`](../api/diagram_editor/editor/events/aftershapemove_event/),
+[`beforeGroupMove`](../api/diagram_editor/editor/events/beforegroupmove_event/),
+[`beforeItemCatch`](../api/diagram_editor/editor/events/beforeitemcatch_event/),
+[`beforeItemMove`](../api/diagram_editor/editor/events/beforeitemmove_event/),
+[`beforeLineTitleMove`](../api/diagram_editor/editor/events/beforelinetitlemove_event/),
+[`beforeShapeMove`](../api/diagram_editor/editor/events/beforeshapemove_event/),
+[`groupMoveEnd`](../api/diagram_editor/editor/events/groupmoveend_event/),
+[`itemMoveEnd`](../api/diagram_editor/editor/events/itemmoveend_event/),
+[`itemTarget`](../api/diagram_editor/editor/events/itemtarget_event/),
+[`lineTitleMoveEnd`](../api/diagram_editor/editor/events/linetitlemoveend_event/),
+[`shapeMoveEnd`](../api/diagram_editor/editor/events/shapemoveend_event/)
+- Diagram Editor. The callback function of [`zoomIn`](../api/diagram_editor/editor/events/zoomin_event/) / [`zoomOut`](../api/diagram_editor/editor/events/zoomout_event/) events is called with the `step` parameter
 - Diagram Editor. The functionality of the [`magnetic`](../api/diagram_editor/editor/config/magnetic_property/) configuration option is extended
 - Diagram Editor. [Locales](../guides/localization/) are updated
-- Diagram Editor. [Hotkeys](../guides/diagram_editor/hot_keys/) are updated
+- Diagram Editor. The [Hotkeys](../guides/diagram_editor/hot_keys/) list is extended
 
 ### Fixes
 
-- Diagram Editor. Fix the impossibility to remove selected items via menu
-- Diagram Editor. Fix incorrect selection behavior that required double-clicking to select a shape
+- Diagram Editor. Fix the impossibility to remove selected items via menu in the mindmap and org modes
+- Diagram Editor. Fix incorrect selection behavior that required an additional click for selecting a shape with the Shift key
 - Diagram Editor. Fix the ability to move items of different parents to the target item (for the org and mindmap modes)
 - Diagram Editor. Fix moving a group and a swimlane together
 - Diagram Editor. Fix copying of lines while selecting elements manually
