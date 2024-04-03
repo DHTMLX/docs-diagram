@@ -446,8 +446,8 @@ module.exports = {
                 title: "Editbar API"
               },
               items: [
-                // Editbar Methods
-                {
+                // Editbar Methods DELETE
+                /*{
                   type: "category",
                   label: "!!Editbar methods",
                   collapsed: true,
@@ -458,7 +458,7 @@ module.exports = {
                   items: [
                     "api/diagram_editor/editbar/methods/some_method",
                   ],
-                },
+                },*/
                 // Editbar Properties
                 {
                   type: "category",
@@ -469,11 +469,15 @@ module.exports = {
                     title: "Editbar properties"
                   },
                   items: [
-                    "api/diagram_editor/editbar/config/some_property",
+                    "api/diagram_editor/editbar/config/show_property",
+                    "api/diagram_editor/editbar/config/css_property",
+                    "api/diagram_editor/editbar/config/width_property",
+                    "api/diagram_editor/editbar/config/controls_property",
+                    "api/diagram_editor/editbar/config/properties_property"
                   ],
                 },
-                // Editbar Events
-                {
+                // Editbar Events DELETE
+                /*{
                   type: "category",
                   label: "!!Editbar events",
                   collapsed: true,
@@ -484,7 +488,7 @@ module.exports = {
                   items: [
                     "api/diagram_editor/editbar/events/some_event",
                   ],
-                },
+                },*/
               ]
             },
 
@@ -838,7 +842,7 @@ module.exports = {
             "guides/diagram_editor/toolbar",
             "guides/diagram_editor/shapebar",
             "guides/diagram_editor/grid_area",
-            "guides/diagram_editor/right_panel",
+            "guides/diagram_editor/editbar",
             "guides/diagram_editor/hot_keys", // New
           ],
         },
