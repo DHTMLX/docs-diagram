@@ -384,8 +384,8 @@ module.exports = {
               label: "!!Toolbar API",
               collapsed: true,
               link: {
-                type: 'generated-index',
-                title: "Toolbar API"
+                type: 'doc',
+                id:"api/diagram_editor/toolbar/api_overview"
               },
               items: [
                 // Toolbar Methods
@@ -442,8 +442,8 @@ module.exports = {
               label: "!!Editbar API",
               collapsed: true,
               link: {
-                type: 'generated-index',
-                title: "Editbar API"
+                type: 'doc',
+                id:"api/diagram_editor/editbar/api_overview"
               },
               items: [
                 // Editbar Methods DELETE
@@ -497,9 +497,9 @@ module.exports = {
               type: "category",
               label: "!!Shapebar API",
               collapsed: true,
-              link: {
-                type: 'generated-index',
-                title: "Shapebar API"
+              link: {                  
+                type: 'doc',
+                id: "api/diagram_editor/shapebar/api_overview" 
               },
               items: [
                 // Shapebar Properties
