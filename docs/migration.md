@@ -9,11 +9,30 @@ description: You can learn about the Migration to Newer Versions in the document
 5.0 -> 6.0
 --------------
 
+### Editor structure
+
+The main parts of the Diagram Editor are renamed:
+
+- Left panel -> Shapebar
+- Right panel -> Editbar
+
+The `view` object is introduced for configuring the Diagram Editor panels:
+
+~~~js
+view?: {
+    toolbar?: boolean | obj;
+    shapebar?: boolean | obj;
+    editbar?: boolean | obj;
+}
+~~~ 
+
+TODO - links to the panels overviews
+
 ### Editor API
 
 #### Deprecated methods 
 
-The **setViewMode()** method of Diagram Editor is deprecated and no longer supported. Instead, use the [**show()**](../api/diagram_editor/view/methods/show_method/)/[**hide()**](../api/diagram_editor/view/methods/hide_method/) methods of the `view` object.
+- The **setViewMode()** method of Diagram Editor is deprecated and no longer supported. Instead, use the [**`show()`**](../api/diagram_editor/view/methods/show_method/)/[**`hide()`**](../api/diagram_editor/view/methods/hide_method/) methods of the `view` object.
 
 ~~~js {4} title="Before v6.0"
 const editor = new dhx.DiagramEditor("editor_container");
@@ -32,7 +51,7 @@ editor.view.show("shapebar");
 
 #### Deprecated properties
 
-The **reservedWidth** property of Diagram Editor is deprecated and no longer supported. 
+- The **reservedWidth** property of Diagram Editor is deprecated and no longer supported. 
 
 ~~~js {2} title="Before v6.0"
 const editor = new dhx.DiagramEditor("editor_container", {
@@ -46,8 +65,8 @@ Instead, use the following syntax:
 editor.diagram.config.margin = 40; 
 ~~~
 
-The **editMode** property of Diagram Editor is deprecated and no longer supported. Instead, use the 
-corresponding property of the `view` object.
+- The **editMode** property of Diagram Editor is deprecated and no longer supported. Instead, use the 
+corresponding property of the `view` object (toolbar/shapebar/editbar).
 
 ~~~js {2} title="Before v6.0"
 const editor = new dhx.DiagramEditor("editor_container", {
@@ -64,6 +83,44 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 ~~~
 
+- The **controls** property of Diagram Editor is deprecated and no longer supported. Instead, use the `view.toolbar` configuration.
+
+~~~js {2-4} title="Before v6.0"
+const editor = new dhx.DiagramEditor("editor_container", {
+    controls: { 
+        ...
+    }
+});
+~~~
+
+~~~js {2-6} title="From v6.0"
+const editor = new dhx.DiagramEditor("editor_container", {
+   view: {
+        toolbar: {
+            data: [...],
+        }
+    }
+});
+~~~
+
+- The **shapeBarWidth** property of Diagram Editor is deprecated and no longer supported. Instead, use the `width` property of the `view.shapebar` configuration.
+
+~~~js {2} title="Before v6.0"
+const editor = new dhx.DiagramEditor("editor_container", {
+    shapeBarWidth: 190
+});
+~~~
+
+~~~js {3-6} title="From v6.0"
+const editor = new dhx.DiagramEditor("editor_container", {
+    type: "default",
+    view: {
+        shapebar: {
+            width: 400 // 300 by default
+        }
+    }
+});
+~~~
 
 4.2 -> 5.0
 --------------
