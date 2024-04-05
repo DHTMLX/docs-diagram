@@ -158,8 +158,8 @@ module.exports = {
               label: "!!Editor API",
               collapsed: true,
               link: {
-                type: 'generated-index',
-                title: "Editor API"
+                type: 'doc',
+                id: "api/diagram_editor/editor/api_overview",
               },
               items: [
                 // Editor Methods
@@ -168,8 +168,8 @@ module.exports = {
                   label: "!!Editor methods",
                   collapsed: true,
                   link: {
-                    type: 'generated-index',
-                    title: "Editor methods"
+                     type: 'doc',
+                     id: "api/overview/editor_methods_overview",
                   },
                   items: [
                     //"api/diagram_editor/editor/methods/setviewmode_method", !!!Deprecated
@@ -189,8 +189,8 @@ module.exports = {
                   label: "!!Editor events",
                   collapsed: true,
                   link: {
-                    type: 'generated-index',
-                    title: "Editor events"
+                     type: 'doc',
+                     id: "api/overview/editor_events_overview",
                   },
                   items: [
                     "api/diagram_editor/editor/events/aftergroupmove_event",
@@ -228,8 +228,8 @@ module.exports = {
                   label: "!!Editor properties",
                   collapsed: true,
                   link: {
-                    type: 'generated-index',
-                    title: "Editor properties"
+                     type: 'doc',
+                     id: "api/overview/editor_properties_overview",
                   },
                   items: [
                     "api/diagram_editor/editor/config/autoplacement_property",
@@ -265,8 +265,8 @@ module.exports = {
               label: "!!History manager API",
               collapsed: true,
               link: {
-                type: 'generated-index',
-                title: "History manager API"
+                type: 'doc',
+                id: "api/diagram_editor/historymanager/api_overview",
               },
               items: [
                 // History Manager Methods
@@ -310,8 +310,8 @@ module.exports = {
               label: "!!Copy manager API",
               collapsed: true,
               link: {
-                type: 'generated-index',
-                title: "Copy manager API"
+                type: 'doc',
+                id: "api/diagram_editor/copymanager/api_overview",
               },
               items: [
                 // Copy Manager Methods
@@ -339,8 +339,8 @@ module.exports = {
               label: "!!View API",
               collapsed: true,
               link: {
-                type: 'generated-index',
-                title: "!!View API"
+                type: 'doc',
+                id: "api/diagram_editor/view/api_overview",
               },
               items: [
                 // View Methods

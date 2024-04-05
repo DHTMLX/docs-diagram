@@ -6,12 +6,12 @@ description: You can explore the Editor methods in the documentation of the DHTM
 
 # Editor methods overview
 
-| Name                                | Description                                |
-| :---------------------------------- | :----------------------------------------- |
-| [](../editor/import_method.md)      | @getshort(../editor/import_method.md)      |
-| [](../editor/paint_method.md)       | @getshort(../editor/paint_method.md)       |
-| [](../editor/parse_method.md)       | @getshort(../editor/parse_method.md)       |
-| [](../editor/serialize_method.md)   | @getshort(../editor/serialize_method.md)   |
-| [](../editor/setviewmode_method.md) | @getshort(../editor/setviewmode_method.md) |
-| [](../editor/zoomin_method.md)      | @getshort(../editor/zoomin_method.md)      |
-| [](../editor/zoomout_method.md)     | @getshort(../editor/zoomout_method.md)     |
+| Name                                     				| Description                                     				|
+| :---------------------------------------------------- | :------------------------------------------------------------ |
+| [](../diagram_editor/editor/methods/destructor_method.md)    | @getshort(../diagram_editor/editor/methods/destructor_method.md)     |
+| [](../diagram_editor/editor/methods/import_method.md)    	| @getshort(../diagram_editor/editor/methods/import_method.md)     	|
+| [](../diagram_editor/editor/methods/paint_method.md)    		| @getshort(../diagram_editor/editor/methods/paint_method.md)     		|
+| [](../diagram_editor/editor/methods/parse_method.md)    		| @getshort(../diagram_editor/editor/methods/parse_method.md)     		|
+| [](../diagram_editor/editor/methods/serialize_method.md)    	| @getshort(../diagram_editor/editor/methods/serialize_method.md)     	|
+| [](../diagram_editor/editor/methods/zoomin_method.md)    	| @getshort(../diagram_editor/editor/methods/zoomin_method.md)     	|
+| [](../diagram_editor/editor/methods/zoomout_method.md)    	| @getshort(../diagram_editor/editor/methods/zoomout_method.md)     	|

@@ -6,7 +6,7 @@ description: You can check a Toolbar overview in the documentation of the DHTMLX
 
 # Toolbar API overview
 
-The Toolbar part of the Diagram Editor is initialized as a property of the `view` object. There are two ways of initialization you can choose from:
+[Toolbar](/guides/diagram_editor/toolbar/) is a part of the Diagram Editor that helps users to control the editing process. Use the `toolbar` property of the [`view`](/api/diagram_editor/editor/config/view_property/) configuration object to show, hide and configure the Toolbar. There are two ways of initialization you can choose from:
 
 - creating the default Toolbar by using the `toolbar:true` setting:
 
@@ -26,8 +26,10 @@ const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {
     	// configuring Toolbar via an object
-        toolbar: {
-            show: false // true by default
+         toolbar: {
+            css: "custom_css",
+            items: ["file", "spacer", "scale"],
+            navigationType: "pointer"
         }
     }
 });

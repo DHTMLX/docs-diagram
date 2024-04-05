@@ -6,7 +6,7 @@ description: You can check a Shapebar overview in the documentation of the DHTML
 
 # Shapebar API overview
 
-The Shapebar part of the Diagram Editor is initialized as a property of the `view` object. There are two ways of initialization you can choose from:
+[Shapebar](/guides/diagram_editor/shapebar/) is a part of the Diagram Editor that renders previews of Diagram items (shapes, groups and swimlanes). Use the `shapebar` property of the [`view`](/api/diagram_editor/editor/config/view_property/) configuration object to show, hide and configure the Shapebar. There are two ways of initialization you can choose from:
 
 - creating the default Shapebar by using the `shapebar:true` setting:
 
@@ -27,14 +27,23 @@ const editor = new dhx.DiagramEditor("editor_container", {
     view: {
     	// configuring Shapebar via an object
         shapebar: {
-            show: false // true by default
+            css: "custom_css",
+            show: true,
+            width: 300,
+            preview: {
+               scale: 0.65,
+               gap: 8
+            },
+            sections: {
+                "Swimlane": [{ swimlane: true }],
+                "Groups": [{ group: true }],   
+                "Flowchart shapes": [{ flowShapes: true }],
+                "Org shapes, text, topic": [{ org: true }, "text", "topic"]
+            }
         }
     }
 });
 ~~~
 
-Check the related API section to explore the available properties of Shapebar.
+Check the [related API section](/category/shapebar-properties/) to explore the available properties of Shapebar.
 
-## Shapebar properties
-
-- [List of Shapebar properties](/category/shapebar-properties/)

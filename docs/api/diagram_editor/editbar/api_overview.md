@@ -6,7 +6,7 @@ description: You can check a Editbar overview in the documentation of the DHTMLX
 
 # Editbar API overview
 
-The Editbar part of the Diagram Editor is initialized as a property of the `view` object. There are two ways of initialization you can choose from:
+[Editbar](/guides/diagram_editor/editbar/) is a part of the Diagram Editor that contains controls for managing Diagram items (shapes, lines, groups, etc). Use the `editbar` property of the [`view`](/api/diagram_editor/editor/config/view_property/) configuration object to show, hide and configure the Editbar. There are two ways of initialization you can choose from:
 
 - creating the default Editbar by using the `editbar:true` setting:
 
@@ -27,15 +27,17 @@ const editor = new dhx.DiagramEditor("editor_container", {
     view: {
     	// configuring Editbar via an object
         editbar: {
-            show: false // true by default
+            css: "custom_css",
+            show: true,
+            width: 300,
+            controls: {...},
+            properties: {...}
         }
     }
 });
 ~~~
 
-Check the related API sections to explore the available properties of Editbar.
+Check the [related API section](/category/editbar-properties/) to explore the available properties of Editbar.
 
-## Editbar properties
 
-- [List of Editbar properties](/category/editbar-properties/)
 
