@@ -8,7 +8,7 @@ description: You can learn about the show method of view in the documentation of
 
 ### Description
 
-@short: shows Toolbar, Editbar, and Shapebar views of Diagram Editor.
+@short: Shows Toolbar, Editbar, and Shapebar views of Diagram Editor
 
 :::info
 If you need to show the **Toolbar**, **Editbar**, or **Shapebar** view separately, call the `show()` method with the corresponding parameter. To show all these elements, call the `show()` method without parameters.

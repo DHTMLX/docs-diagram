@@ -8,7 +8,7 @@ description: You can learn about the pasteStyles method of copy manager in the d
 
 ### Description
 
-@short: applies copied styles to the list of selected elements or elements specified by ids
+@short: Applies copied styles to the list of selected elements or elements specified by ids
 
 ### Usage
 

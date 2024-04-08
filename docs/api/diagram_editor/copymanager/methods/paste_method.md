@@ -8,7 +8,7 @@ description: You can learn about the paste method of copy manager in the documen
 
 ### Description
 
-@short: creates new elements identical to the elements passed by the "copy()" method
+@short: Creates new elements identical to the elements passed by the "copy()" method
 
 :::note
 The `paste()` method works only if the Diagram Editor is initialized in the **default** mode.

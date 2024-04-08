@@ -58,7 +58,7 @@ description: You can have an overview of Editor API in the documentation of the 
 | [](api/diagram_editor/editor/config/gridstep_property.md)    	 | @getshort(api/diagram_editor/editor/config/gridstep_property.md) 	  |
 | [](api/diagram_editor/editor/config/itemsdraggable_property.md)   | @getshort(api/diagram_editor/editor/config/itemsdraggable_property.md)|
 | [](api/diagram_editor/editor/config/lineconfig_property.md)    	 | @getshort(api/diagram_editor/editor/config/lineconfig_property.md)    |
-| [](api/diagram_editor/editor/config/linegap_property.md)    	     | @getshort(api/diagram_editor/editor/config/linegap_property.md)       |
+| [~~lineGap~~](api/editor/linegap_property.md)        | Deprecated! ~~@getshort(api/editor/linegap_property.md)~~        |
 | [](api/diagram_editor/editor/config/magnetic_property.md)    	 | @getshort(api/diagram_editor/editor/config/magnetic_property.md)      |
 | [](api/diagram_editor/editor/config/resizepoints_property.md)     | @getshort(api/diagram_editor/editor/config/resizepoints_property.md)  |
 | [](api/diagram_editor/editor/config/scale_property.md)    	     | @getshort(api/diagram_editor/editor/config/scale_property.md)         |

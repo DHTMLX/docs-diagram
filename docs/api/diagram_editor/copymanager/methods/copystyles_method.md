@@ -8,7 +8,7 @@ description: You can learn about the copyStyles method of copy manager in the do
 
 ### Description
 
-@short: copies styles of the specified element or the first element from the selection list
+@short: Copies styles of the specified element or the first element from the selection list
 
 ### Usage
 

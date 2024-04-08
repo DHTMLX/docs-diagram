@@ -16,4 +16,14 @@ description: You can learn about the disabled property of HistoryManager in the 
 disabled: boolean;
 ~~~
 
+### Example
+
+~~~js {5}
+const editor = new dhx.DiagramEditor("editor_container", { 
+    type: "default"
+});
+
+editor.history.disabled = true;
+~~~
+
 **Change log**: Added in v4.1

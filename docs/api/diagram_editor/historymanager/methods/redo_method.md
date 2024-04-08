@@ -16,4 +16,15 @@ description: You can learn about the redo method of HistoryManager in the docume
 redo(): void;
 ~~~
 
+### Example
+
+~~~js {5}
+const editor = new dhx.DiagramEditor("editor_container", { 
+    type: "default"
+});
+
+editor.history.redo();
+~~~
+
+
 **Change log**: Added in v4.1

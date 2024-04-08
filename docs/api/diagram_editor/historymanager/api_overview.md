@@ -5,3 +5,32 @@ description: You can check a History manager overview in the documentation of th
 ---
 
 # History manager API overview
+
+A set of APIs that you can use for managing the history of actions in the Diagram Editor. Use the `history` keyword to access the History manager via the `editor` object:
+
+~~~js {5}
+const editor = new dhx.DiagramEditor("editor_container", { 
+    type: "default", // only default
+});
+
+editor.history.redo(); // copies selected items
+~~~
+
+## History manager methods overview
+
+| Name                                 						  | Description                                 					   |
+| :---------------------------------------------------------- | :----------------------------------------------------------------- |
+| [](api/diagram_editor/historymanager/methods/add_method.md) | @getshort(api/diagram_editor/historymanager/methods/add_method.md) |
+| [](api/diagram_editor/historymanager/methods/disable_method.md) | @getshort(api/diagram_editor/historymanager/methods/disable_method.md) |
+| [](api/diagram_editor/historymanager/methods/enable_method.md) | @getshort(api/diagram_editor/historymanager/methods/enable_method.md) |
+| [](api/diagram_editor/historymanager/methods/isredo_method.md) | @getshort(api/diagram_editor/historymanager/methods/isredo_method.md) |
+| [](api/diagram_editor/historymanager/methods/redo_method.md) | @getshort(api/diagram_editor/historymanager/methods/redo_method.md) |
+| [](api/diagram_editor/historymanager/methods/reset_method.md) | @getshort(api/diagram_editor/historymanager/methods/reset_method.md) |
+
+
+## History manager properties overview
+
+| Name                                 						  | Description                                 					   |
+| :---------------------------------------------------------- | :----------------------------------------------------------------- |
+| [](api/diagram_editor/historymanager/config/disabled_property.md) | @getshort(api/diagram_editor/historymanager/config/disabled_property.md) |
+| [](api/diagram_editor/historymanager/config/savedelay_property.md) | @getshort(api/diagram_editor/historymanager/config/savedelay_property.md) |
