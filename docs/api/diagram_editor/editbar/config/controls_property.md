@@ -8,25 +8,38 @@ description: You can learn about the controls property of Editbar in the documen
 
 ### Description
 
-@short: Optional. TODO
+@short: Optional. A set of configurations that defines one or several custom controls
+
+:::info
+The `controls` property allows you to create custom Editbar controls based on [**Basic controls**](guides/diagram_editor/editbar/basic_controls.md) and/or [**Complex controls**](guides/diagram_editor/editbar/complex_controls.md). Use the [`properties`](api/diagram_editor/editbar/config/properties_property.md) property to apply the custom control(s) to the needed elements.
+
+Refer to the [**Editbar configuration**](guides/diagram_editor/editbar/complex_controls.md) guide for more information about configuring!
+:::
 
 ### Usage
 
 ~~~js
 controls?: {
-    ... // TODO
+    [type: string]: object, // custom control
+    ... // another control
 };
 ~~~
 
-### Default config
+### Parameters
 
-~~~jsx {}
-controls: TODO
+- `type` - the type name of a new control
+    - `object` - the configuration object of a new control
+
+~~~js
+controls: {
+      estimate: { ... }, // create new "estimate" control with custom configurations
+      ... // another control
+}
 ~~~
 
 ### Example
 
-~~~jsx {11}
+~~~jsx {16-26}
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "org",
     view: {
@@ -36,9 +49,22 @@ const editor = new dhx.DiagramEditor("editor_container", {
             css: "custom_css",
             show: true,
             width: 300,
-            properties: {...},
+            properties: {
+                $shape: [
+                    { type: "estimate" },
+                    { type: "name" }
+                ]
+            },
             controls: {
-                // TODO
+                estimate: {
+                    type: "fieldset",
+                    label: "Time estimate",
+                    rows: [
+                        { type: "datepicker", key: "date_start", label: "Date start" },
+                        { type: "datepicker", key: "date_end", label: "Date end" }
+                    ]
+                },
+                name: { type: "input", label: "Name", key: "name" }
             }
         }
     }

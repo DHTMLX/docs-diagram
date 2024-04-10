@@ -842,9 +842,21 @@ module.exports = {
             "guides/diagram_editor/toolbar",
             "guides/diagram_editor/shapebar",
             "guides/diagram_editor/grid_area",
-            "guides/diagram_editor/editbar",
-            "guides/diagram_editor/hot_keys", // New
-          ],
+            {
+              type: "category",
+              label: "Editbar!!",
+              link: {
+                type: 'doc',
+                id: "guides/diagram_editor/editbar/overview",
+              },
+              items: [
+                "guides/diagram_editor/editbar/basic_controls",
+                "guides/diagram_editor/editbar/complex_controls",
+                "guides/diagram_editor/editbar/configuration",
+              ],
+            },
+            "guides/diagram_editor/hot_keys" // New
+          ]
         },
         "guides/loading_data",
         "guides/manipulating_items",
