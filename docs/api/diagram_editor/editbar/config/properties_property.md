@@ -34,10 +34,10 @@ properties?: {
     - `object` - the configuration object of a control
 
     or
-    
+
     - `function` - a callback function that should return an array of objects with configuration of controls. The function is called with an object that includes the following parameters:
-        `item` - (optional) the object of the selected element
-        `editor` - (required) the object of the Diagram editor
+        - `item` - (optional) the object of the selected element
+        - `editor` - (required) the object of the Diagram editor
 
 ~~~jsx {3-4,8-15}
 properties: {
@@ -48,7 +48,7 @@ properties: {
     // or
 
     $shape: // type of controls
-        ({ item, editor }) => { // the callback function that return the configuration object
+        ({ item, editor }) => { // the callback function that returns the configuration object
             const controls = [
                 // some configurations
             ];
