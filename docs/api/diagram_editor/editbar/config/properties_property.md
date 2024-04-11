@@ -4,29 +4,64 @@ title: properties Property of Editbar
 description: You can learn about the properties property of Editbar in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
 
-# properties - conditions???
+# properties
 
 ### Description
 
-@short: Optional. TODO
+@short: Optional. A set of configurations that modify controls for Diagram elements (shapes, groups, swimlanes etc)
+
+:::info
+The `properties` property allows you to do the following:
+- modify editbar controls for all or individual Diaram elements base on [**Basic controls**](guides/diagram_editor/editbar/basic_controls.md) and/or [**Complex controls**](guides/diagram_editor/editbar/complex_controls.md)
+- apply custom editbar control(s) defined via the [`controls`](api/diagram_editor/editbar/config/controls_property.md) property to Diagram elements
+- specify conditions for applying an editbar control (custom or default) to Diagram elements
+
+Refer to the [**Editbar configuration**](guides/diagram_editor/editbar/complex_controls.md) guide for more information about configuring!
+:::
 
 ### Usage
 
 ~~~js
 properties?: {
-    ... // TODO
+    [type: string]: object[] | function, // custom configurations for controls applied to Diagram elements 
+    ...,
 };
 ~~~
 
-### Default config
+### Parameters
 
-~~~jsx {}
-properties: TODO
+- `type` - the type name of a Diagram element
+    - `object` - the configuration object of a Diagram element
+
+    or
+
+    - `function` - a callback function that should return an array of objects with configuration of Diagram element controls. The function is called with an object that includes the following parameters:
+        - `item` - (optional) the object of the selected element
+        - `editor` - (required) the object of the Diagram editor
+
+~~~jsx {3-4,8-15}
+properties: {
+    // modify the estimate element (shape)
+    estimate: // Diagram element
+        { ... } // configuration object
+
+    // or
+
+    $shape: // type of Diagram elements
+        ({ item, editor }) => { // the callback function that returns the configuration object
+            const controls = [
+                // some configurations
+            ];
+                // ... custom logic here
+            return controls;
+        },
+    ..., // another elemnt
+}
 ~~~
 
 ### Example
 
-~~~jsx {11}
+~~~jsx {10-44}
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "org",
     view: {
@@ -36,9 +71,40 @@ const editor = new dhx.DiagramEditor("editor_container", {
             css: "custom_css",
             show: true,
             width: 300,
-            controls: {...},
             properties: {
-                // TODO
+                $shape: ({ item, editor }) => {
+                    const controls = [
+                        { type: "position" },
+                        { type: "size" }
+                    ];
+                    if (item.hasOwnProperty("title")) {
+                        controls.push({ type: "input", key: "title", label: "Title", wrap: true });
+                    }
+                    if (item.hasOwnProperty("text")) {
+                        controls.push({ type: "textarea", key: "text", height: 200, label: "Text", wrap: true });
+                    }
+                    if (item.hasOwnProperty("img")) {
+                        controls.push({ type: "avatar", key: "img", label: "Image", wrap: true });
+                    }
+                    return controls;
+                },
+                $group: [
+                    {
+                        type: "arrange",
+                        $properties: {
+                            angle: { hidden: true }
+                        }
+                    },
+                    { type: "header" },
+                    {
+                        type: "border",
+                        $properties: {
+                            stroke: { key: ["style", "stroke"] },
+                            strokeType: { hidden: true },
+                            strokeWidth: { key: ["style", "strokeWidth"], width: "85%" }
+                        }
+                    }
+                ]
             }
         }
     }
