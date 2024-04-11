@@ -8,13 +8,13 @@ description: You can learn about the properties property of Editbar in the docum
 
 ### Description
 
-@short: Optional. A set of configurations that modify default controls and apply custom controls
+@short: Optional. A set of configurations that modify controls for Diagram elements (shapes, groups, swimlanes etc)
 
 :::info
 The `properties` property allows you to do the following:
-- modify a default control and its behavior based on [**Basic controls**](guides/diagram_editor/editbar/basic_controls.md) and/or [**Complex controls**](guides/diagram_editor/editbar/complex_controls.md)
-- apply the custom control(s) defined via the [`controls`](api/diagram_editor/editbar/config/controls_property.md) property
-- specify conditions for applying a control (custom or default)
+- modify editbar controls for all or individual Diaram elements base on [**Basic controls**](guides/diagram_editor/editbar/basic_controls.md) and/or [**Complex controls**](guides/diagram_editor/editbar/complex_controls.md)
+- apply custom editbar control(s) defined via the [`controls`](api/diagram_editor/editbar/config/controls_property.md) property to Diagram elements
+- specify conditions for applying an editbar control (custom or default) to Diagram elements
 
 Refer to the [**Editbar configuration**](guides/diagram_editor/editbar/complex_controls.md) guide for more information about configuring!
 :::
@@ -23,31 +23,31 @@ Refer to the [**Editbar configuration**](guides/diagram_editor/editbar/complex_c
 
 ~~~js
 properties?: {
-    [type: string]: object[] | function, // default or custom control configuration
-    ... // another control
+    [type: string]: object[] | function, // custom configurations for controls applied to Diagram elements 
+    ...,
 };
 ~~~
 
 ### Parameters
 
-- `type` - the type name of a new control
-    - `object` - the configuration object of a control
+- `type` - the type name of a Diagram element
+    - `object` - the configuration object of a Diagram element
 
     or
 
-    - `function` - a callback function that should return an array of objects with configuration of controls. The function is called with an object that includes the following parameters:
+    - `function` - a callback function that should return an array of objects with configuration of Diagram element controls. The function is called with an object that includes the following parameters:
         - `item` - (optional) the object of the selected element
         - `editor` - (required) the object of the Diagram editor
 
 ~~~jsx {3-4,8-15}
 properties: {
-    // create new "estimate" control with custom configurations
-    estimate: // type of control
+    // modify the estimate element (shape)
+    estimate: // Diagram element
         { ... } // configuration object
 
     // or
 
-    $shape: // type of controls
+    $shape: // type of Diagram elements
         ({ item, editor }) => { // the callback function that returns the configuration object
             const controls = [
                 // some configurations
@@ -55,7 +55,7 @@ properties: {
                 // ... custom logic here
             return controls;
         },
-    ..., // another control
+    ..., // another elemnt
 }
 ~~~
 
