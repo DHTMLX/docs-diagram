@@ -1,0 +1,92 @@
+---
+sidebar_label: Button!!
+title: Editbar Basic Controls - Button 
+description: You can explore the Button of Editbar in the documentation of the the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+---
+
+# Button
+
+@short: A simple button that can have an icon.
+
+## Usage
+
+~~~js
+{
+    type: "button",
+    text?: string,
+    
+    css?: string,
+    disabled?: boolean, // false by default
+    hidden?: boolean, // false by default
+    height?: string | number | "content", // "content" by default
+    width?: string | number | "content", // "content" by default
+    padding?: string | number,
+
+    // button view
+    circle?: boolean, // false by default
+    color?: "danger" | "secondary" | "primary" | "success", // "primary" by default
+    full?: boolean, // false by default
+    icon?: string,
+    size?: "small" | "medium", // "medium" by default
+    view?: "flat" | "link" // "flat" by default
+}
+~~~
+
+## Description
+
+### Basic properties
+
+- `type` - (required) the type of a control, set it to *"button"*
+- `text` - (optional) the text label of a button
+- `css`	- (optional) adds style classes to a control
+- `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*), *false* by default
+- `height` - (optional) the height of a control, "content" by default
+- `width` - (optional) the width of a control, "content" by default
+- `padding` - (optional) sets padding between a cell and a border of a button control, "8px" by default
+- `circle` - (optional) makes the corners of a button round, false by default
+- `color` - (optional) defines the color scheme of a button: "danger" | "secondary" | "primary" | "success", "primary" by default
+- `full` - (optional) extends a button to the full width of a form, false by default
+- `icon` - (optional) an icon of the button
+- `size` - (optional) defines the size of a button: "small" | "medium", "medium" by default
+- `view` - (optional) defines the look of a button: "flat" | "link", "flat" by default
+
+### Service properties
+
+The properties, the name of which starts with the `$` sign are service properties.
+
+:::warning
+Note that it's highly not recommended to redefine the service properties and methods for the default types of controls, since it may cause breaks in the code. If you need to modify the default controls, you should [create a new control type]. **TODO - add link**
+:::
+
+- `$on` - (optional)
+- `$layout` - (optional)
+
+## Example
+
+~~~js {8-20}
+const editor= new dhx.DiagramEditor("editor_container", {
+    type: "default",
+    view: {
+        editbar: {
+            properties: {
+                $shape: [
+                    { type: "input", label: "Text", placeholder: "Push the button", key: "text" },
+                    {
+                        type: "button",
+                        full: true,
+                        text: "Change shape text",
+                        color: "danger",
+                        $on: {
+                            click: ({ id, editor }) => {
+                                editor.diagram.data.update(id, {
+                                    text: "New text",
+                                });
+                            },
+                        }
+                    },
+                ]
+            }
+        }
+    }
+});
+~~~
