@@ -22,14 +22,15 @@ Refer to the [Editbar configuration](guides/diagram_editor/editbar/configuration
 | [](guides/diagram_editor/editbar/basic_controls/checkboxgroup.md)| @getshort(guides/diagram_editor/editbar/basic_controls/checkboxgroup.md)|
 | [](guides/diagram_editor/editbar/basic_controls/colorpicker.md)| @getshort(guides/diagram_editor/editbar/basic_controls/colorpicker.md)|
 | [](guides/diagram_editor/editbar/basic_controls/combo.md)| @getshort(guides/diagram_editor/editbar/basic_controls/combo.md)|
+| [](guides/diagram_editor/editbar/basic_controls/container.md)| @getshort(guides/diagram_editor/editbar/basic_controls/container.md)|
+| [](guides/diagram_editor/editbar/basic_controls/datepicker.md)| @getshort(guides/diagram_editor/editbar/basic_controls/datepicker.md)|
+| [](guides/diagram_editor/editbar/basic_controls/fieldset.md)| @getshort(guides/diagram_editor/editbar/basic_controls/fieldset.md)|
 
 ## Common properties
 
 - `type` - (required) the type of a control
 - `key` - (optional) the name of the specified/modified property or the path to it in the object of a Diagram item (shape, line, group, swimlane)
 - `wrap` - (optional) allows displaying the external wrapping (used for all controls, except for the fieldset)
-
-The properties, the name of which starts with the `$` sign are service properties.
 
 :::warning
 Note that it's highly not recommended to redefine the service properties and methods for the default types of controls, since it may cause breaks in the code. If you need to modify the default controls, you should [create a new control type]. **TODO - add link**

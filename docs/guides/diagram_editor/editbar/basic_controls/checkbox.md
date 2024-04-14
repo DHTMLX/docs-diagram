@@ -49,9 +49,7 @@ The control can take both the *boolean* value and the *string* one, if the `valu
 - `labelPosition` - (optional) defines the position of a label: "left" | "top", *"top"* by default
 - `labelWidth` - (optional) sets the width of the label of a control
 
-### Service properties
-
-The properties, the name of which starts with the `$` sign are service properties.
+### Service properties and methods
 
 :::warning
 Note that it's highly not recommended to redefine the service properties and methods for the default types of controls, since it may cause breaks in the code. If you need to modify the default controls, you should [create a new control type]. **TODO - add link**
@@ -65,7 +63,7 @@ Note that it's highly not recommended to redefine the service properties and met
 ## Example
 
 ~~~js {7-17}
-const editor= new dhx.DiagramEditor("editor_container", {
+const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {
         editbar: {

@@ -42,6 +42,8 @@ description: You can explore the Colorpicker of Editbar in the documentation of 
 ### Basic properties
 
 - `type` - (required) the type of a control, set it to *"colorpicker"*
+- `key` - (optional) the name of the specified/modified property or the path to it in the object of a Diagram item (shape, line, group, swimlane)
+- `wrap` - (optional)
 - `css` - (optional) adds style classes to a control
 - `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*), *false* by default
 - `hidden` - (optional) defines whether a control is hidden, *false* by default
@@ -60,9 +62,7 @@ description: You can explore the Colorpicker of Editbar in the documentation of 
 - `labelPosition` - (optional) defines the position of a label: "left" | "top", *"top"* by default
 - `labelWidth` - (optional) sets the width of the label of a control
 
-### Service properties
-
-The properties, the name of which starts with the `$` sign are service properties.
+### Service properties and methods
 
 :::warning
 Note that it's highly not recommended to redefine the service properties and methods for the default types of controls, since it may cause breaks in the code. If you need to modify the default controls, you should [create a new control type]. **TODO - add link**
@@ -76,7 +76,7 @@ Note that it's highly not recommended to redefine the service properties and met
 ## Example
 
 ~~~js {7-25}
-const editor= new dhx.DiagramEditor("editor", {
+const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {
         editbar: {

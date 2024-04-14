@@ -56,7 +56,7 @@ description: You can explore the Avatar of Editbar in the documentation of the t
 - `wrap` - (optional)
 - `target` - (optional) sets an URL to the server-side script that will process file upload, the property is required when an image is sent to the server via the control
 :::note
-While loading an image and sending it to the server via the `target` property, note that the *value* object will be sent to the server. The file itself will be recorded in the dataset in the *base64* format. You can redefine this logic using the [service methods] - **TODO - add link**. 
+While loading an image and sending it to the server via the `target` property, note that the *value* object will be sent to the server. The file itself will be recorded in the dataset in the *base64* format. You can redefine this logic using the [service methods](#service-methods-and-properties). 
 :::
 - `hidden` - (optional) defines whether a control is hidden, *false* by default
 - `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*), *false* by default
@@ -82,9 +82,7 @@ While loading an image and sending it to the server via the `target` property, n
 - `headerParams` - (optional) provides additional parameters for Request Headers
 - `updateFromResponse` - (optional) updates file attributes with the data from the server response, *true* by default
 
-### Service properties
-
-The properties, the name of which starts with the `$` sign are service properties.
+### Service properties and methods
 
 :::warning
 Note that it's highly not recommended to redefine the service properties and methods for the default types of controls, since it may cause breaks in the code. If you need to modify the default controls, you should [create a new control type]. **TODO - add link**
@@ -98,7 +96,7 @@ Note that it's highly not recommended to redefine the service properties and met
 ## Example
 
 ~~~js {7-19}
-const editor= new dhx.DiagramEditor("editor_container", {
+const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {
         editbar: {

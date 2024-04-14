@@ -50,9 +50,7 @@ description: You can explore the Button of Editbar in the documentation of the t
 - `size` - (optional) defines the size of a button: "small" | "medium", "medium" by default
 - `view` - (optional) defines the look of a button: "flat" | "link", "flat" by default
 
-### Service properties
-
-The properties, the name of which starts with the `$` sign are service properties.
+### Service properties and methods
 
 :::warning
 Note that it's highly not recommended to redefine the service properties and methods for the default types of controls, since it may cause breaks in the code. If you need to modify the default controls, you should [create a new control type]. **TODO - add link**
@@ -64,7 +62,7 @@ Note that it's highly not recommended to redefine the service properties and met
 ## Example
 
 ~~~js {8-20}
-const editor= new dhx.DiagramEditor("editor_container", {
+const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {
         editbar: {

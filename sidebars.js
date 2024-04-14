@@ -865,6 +865,8 @@ module.exports = {
                     "guides/diagram_editor/editbar/basic_controls/colorpicker",
                     "guides/diagram_editor/editbar/basic_controls/combo",
                     "guides/diagram_editor/editbar/basic_controls/container",
+                    "guides/diagram_editor/editbar/basic_controls/datepicker",
+                    "guides/diagram_editor/editbar/basic_controls/fieldset",
 
                   ]
                 },
