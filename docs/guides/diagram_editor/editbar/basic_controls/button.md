@@ -40,15 +40,16 @@ description: You can explore the Button of Editbar in the documentation of the t
 - `text` - (optional) the text label of a button
 - `css`	- (optional) adds style classes to a control
 - `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*), *false* by default
-- `height` - (optional) the height of a control, "content" by default
-- `width` - (optional) the width of a control, "content" by default
-- `padding` - (optional) sets padding between a cell and a border of a button control, "8px" by default
+- `hidden` - (optional) defines whether a control is hidden, *false* by default
+- `height` - (optional) the height of a control, *"content"* by default
+- `width` - (optional) the width of a control, *"content"* by default
+- `padding` - (optional) sets padding between a cell and a border of a button control, *"8px"* by default
 - `circle` - (optional) makes the corners of a button round, false by default
-- `color` - (optional) defines the color scheme of a button: "danger" | "secondary" | "primary" | "success", "primary" by default
-- `full` - (optional) extends a button to the full width of a form, false by default
+- `color` - (optional) defines the color scheme of a button: *"danger" | "secondary" | "primary" | "success"*; *"primary"* by default
+- `full` - (optional) extends a button to the full width of a form, *false* by default
 - `icon` - (optional) an icon of the button
-- `size` - (optional) defines the size of a button: "small" | "medium", "medium" by default
-- `view` - (optional) defines the look of a button: "flat" | "link", "flat" by default
+- `size` - (optional) defines the size of a button: *"small" | "medium"*; *"medium"* by default
+- `view` - (optional) defines the look of a button: *"flat" | "link"*; *"flat"* by default
 
 ### Service properties and methods
 

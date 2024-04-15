@@ -68,6 +68,23 @@ The objects with `checkbox` configuration inside the control can take both the *
 }
 ~~~
 
+Checkbox configuration object inside a CheckboxGroup:
+
+~~~js
+{
+    id: string,
+    text: string,
+    value?: string,
+
+    css?: string,
+    disabled?: boolean, // false by default
+    hidden?: boolean, // false by default
+    height?: string | number | "content", // "content" by default
+    width?: string | number | "content", // "content" by default
+    padding?: string | number
+}
+~~~
+
 ## Description
 
 ### CheckboxGroup properties
@@ -105,7 +122,7 @@ Note that it's highly not recommended to redefine the service properties and met
 - `$setValue` - (optional)
 - `$layout` - (optional)
 
-### Properties of a Checkbox of CheckboxGroup 
+### Checkbox properties 
 
 - `id` - (optional) the id of a control, auto-generated if not set
 - `text` - (optional) the text label of a checkbox

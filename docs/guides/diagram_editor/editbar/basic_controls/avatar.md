@@ -52,7 +52,7 @@ description: You can explore the Avatar of Editbar in the documentation of the t
 ### Basic properties
 
 - `type` - (required) the type of a control, set it to *"avatar"*
-- `key` - (optional) the name of the specified/modified property or the path to it in the object of a Diagram item (shape, line, group, swimlane)
+- `key` - (optional) 
 - `wrap` - (optional)
 - `target` - (optional) sets an URL to the server-side script that will process file upload, the property is required when an image is sent to the server via the control
 :::note

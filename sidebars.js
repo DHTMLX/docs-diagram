@@ -867,6 +867,15 @@ module.exports = {
                     "guides/diagram_editor/editbar/basic_controls/container",
                     "guides/diagram_editor/editbar/basic_controls/datepicker",
                     "guides/diagram_editor/editbar/basic_controls/fieldset",
+                    "guides/diagram_editor/editbar/basic_controls/input",
+                    "guides/diagram_editor/editbar/basic_controls/radiogroup",
+                    "guides/diagram_editor/editbar/basic_controls/select",
+                    "guides/diagram_editor/editbar/basic_controls/slider",
+                    "guides/diagram_editor/editbar/basic_controls/spacer",
+                    "guides/diagram_editor/editbar/basic_controls/textarea",
+                    "guides/diagram_editor/editbar/basic_controls/timepicker",
+                    "guides/diagram_editor/editbar/basic_controls/toggle",
+                    "guides/diagram_editor/editbar/basic_controls/togglegroup"
 
                   ]
                 },
