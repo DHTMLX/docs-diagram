@@ -8,11 +8,15 @@ description: You can explore the Input of Editbar in the documentation of the th
 
 @short: An input field for typing some text inside.
 
+![Input control](../../../../assets/editbar-basic-controls/input.png)
+
 ## Usage
 
 ~~~js
 {
     type: "input",
+    key?: string,
+    wrap?: boolean, // false by default
     
     css?: string,
     disabled?: boolean, // false by default
@@ -33,7 +37,28 @@ description: You can explore the Input of Editbar in the documentation of the th
     // for `wrap:true` check the label properties for the Fieldset
     label?: string,
     labelWidth?: string | number,
-    labelPosition?: "left" | "top" // "top" by default
+    labelPosition?: "left" | "top", // "top" by default
+
+    // service properties and methods 
+    $on?: { [eventName: string]: ({
+            control: object,
+            editor: object,
+            id?: string | number
+        }: any[]) => any
+    },
+    $handler?: ({
+        id?: string | number,
+        key: string | string[],
+        editor: object,
+        control: object,
+        value: any
+    }) => void,
+    $setValue?: ({
+        editor: object,
+        control: object,
+        value: any
+    }) => void,
+    $layout?: (object: any) => any
 }
 ~~~
 
@@ -42,8 +67,8 @@ description: You can explore the Input of Editbar in the documentation of the th
 ### Basic properties
 
 - `type` - (required) the type of a control, set it to *"input"*
-- `key` - (optional) 
-- `wrap` - (optional)
+- `key` - (optional) the name of the specified/modified property or the path to it in the object of a Diagram item (shape, line, group, swimlane)
+- `wrap` - (optional) allows displaying the external wrapping, *false* by default
 - `css`	- (optional) adds style classes to a control
 - `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*), *false* by default
 - `hidden` - (optional) defines whether a control is hidden, *false* by default
@@ -62,7 +87,7 @@ Use the "password" value to specify a field for entering a password. *"text"* by
 - `readOnly` - (optional) defines whether an input is readonly, *false* by default
 - `label` - (optional) specifies a label for the control
 - `labelWidth` - (optional) sets the label width of the control
-- `labelPosition` - (optional) defines the position of a label: "left" | "top", *"top"* by default
+- `labelPosition` - (optional) defines the position of a label: *"left" | "top"*, *"top"* by default
 
 ### Service properties and methods
 
@@ -70,10 +95,27 @@ Use the "password" value to specify a field for entering a password. *"text"* by
 Note that it's highly not recommended to redefine the service properties and methods for the default types of controls, since it may cause breaks in the code. If you need to modify the default controls, you should [create a new control type]. **TODO - add link**
 :::
 
-- `$on` - (optional)
-- `$handler` - (optional)
-- `$setValue` - (optional)
-- `$layout` - (optional)
+- `$on` - (optional) - allows setting an event listener. The object has the following properties:
+    - `eventName`  - the event listener function which is called with the following parameters:
+        - `object` - an object with the following properties:
+            - `control` - the form control
+            - `editor` - the object of the Diagram Editor
+            - `id` - the id of a Diagram item (shape, line, group, swimlane)
+        - `arguments` - (optional) - the original event arguments
+- `$handler` - (optional) - a function that allows handling actions on firing the `change` and `input` events of a form control and the `change` event of DataCollection. Called with the following parameter:
+    - `object` - an object with the following properties:
+        - `id` - the id of a Diagram item (shape, line, group, swimlane)
+        - `key` - the name of the specified/modified property or the path to it in the object of a Diagram item (shape, line, group, swimlane)
+        - `editor` - the object of the Diagram Editor
+        - `control` - the object of a Form control the component is built on
+        - `value` - the new value of a Form control
+- `$setValue` - (optional) - a function that allows setting the value of a Form control on initialization of a control and on changing the value in DataCollection. Called with the following parameter:
+    - `object` - an object with the following properties:
+        - `editor` - the object of the Diagram Editor
+        - `control` - the object of a Form control the component is built on
+        - `value` - the value of a Diagram item (shape, line, group, swimlane)
+- `$layout` - (optional) - a function that allows setting the structure of a control. Returns the configuration of a Form control. Called with the following parameter:
+    - `object` - the configuration of a control without service properties
 
 ## Example
 
@@ -88,14 +130,14 @@ const editor = new dhx.DiagramEditor("editor_container", {
                         type: "input",
                         inputType: "text",
                         key: "text",
-                        label: "Input with string value",
+                        label: "Input with a string value",
                         placeholder: "Enter a string value"
                     },
                     {
                         type: "input",
                         inputType: "number",
                         key: "x",
-                        label: "Input with number value",
+                        label: "Input with a number value",
                         placeholder: "Enter a number value",
                         min: 0,
                         max: 100,

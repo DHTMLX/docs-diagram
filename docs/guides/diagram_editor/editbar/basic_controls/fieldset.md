@@ -6,13 +6,16 @@ description: You can explore the Fieldset of Editbar in the documentation of the
 
 # Fieldset
 
-@short: A control that allows creating complex controls by arranging controls into groups.
+@short: A control that allows creating complex controls with the help of the [`controls`](/api/diagram_editor/editbar/config/controls_property/) or the [`properties`](/api/diagram_editor/editbar/config/properties_property/) Editbar configuration options.
+
+![Fieldset control](../../../../assets/editbar-basic-controls/fieldset.png)
 
 ## Usage
 
 ~~~js
 {
     type: "fieldset",
+    wrap?: boolean, // false by default
 
     compact?: boolean,
     hidden?: boolean, // false by default
@@ -28,7 +31,9 @@ description: You can explore the Fieldset of Editbar in the documentation of the
     labelAlignment?: "left" | "right" | "center", // "left" by default
 
     rows?: object[],
-    cols?: object[]
+    cols?: object[],
+
+    $layout?: (object: any) => any
 }
 ~~~
 
@@ -51,7 +56,7 @@ The `rows` and `cols` properties may include an array of objects of the specifie
 ### Basic properties
 
 - `type` - (required) the type of a control, set it to *"fieldset"*
-- `wrap` - (optional) 
+- `wrap` - (optional) allows displaying the external wrapping, *false* by default
 - `compact` - (optional) defines whether controls within a fieldset are surrounded by borders (*false*) or not (*true*), *false* by default
 - `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*), *false* by default
 - `hidden` - (optional) defines whether a control is hidden, *false* by default
@@ -71,11 +76,12 @@ The `rows` and `cols` properties may include an array of objects of the specifie
 Note that it's highly not recommended to redefine the service properties and methods for the default types of controls, since it may cause breaks in the code. If you need to modify the default controls, you should [create a new control type]. **TODO - add link**
 :::
 
-- `$layout` - (optional)
+- `$layout` - (optional) - a function that allows setting the structure of a control. Returns the configuration of a Form control. Called with the following parameter:
+    - `object` - the configuration a control without service properties
 
 ## Example
 
-~~~js {7-28} 
+~~~js {7-28} title="Creating a fieldset via the properties property"
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "org",
     view: {

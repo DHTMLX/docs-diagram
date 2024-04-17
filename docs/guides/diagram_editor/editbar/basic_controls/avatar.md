@@ -8,12 +8,15 @@ description: You can explore the Avatar of Editbar in the documentation of the t
 
 @short: A control for uploading of an avatar.
 
+![Avatar control](../../../../assets/editbar-basic-controls/avatar.png)
+
 ## Usage
 
 ~~~js
 {
     type: "avatar",
     key?: string,
+    wrap?: boolean, // false by default
     target?: string,
 
     hidden?: boolean, // false by default
@@ -43,8 +46,28 @@ description: You can explore the Avatar of Editbar in the documentation of the t
     autosend?: boolean, // false by default
     params?: { [key: string]: any },
     headerParams?: { [key: string]: any },
-    updateFromResponse?: boolean  // true by default 
-}
+    updateFromResponse?: boolean,  // true by default
+
+    // service properties and methods 
+    $on?: { [eventName: string]: ({
+            control: object,
+            editor: object,
+            id?: string | number
+        }: any[]) => any
+    },
+    $handler?: ({
+        id?: string | number,
+        key: string | string[],
+        editor: object,
+        control: object,
+        value: any
+    }) => void,
+    $setValue?: ({
+        editor: object,
+        control: object,
+        value: any
+    }) => void,
+    $layout?: (object: any) => any
 ~~~
 
 ## Description
@@ -52,11 +75,11 @@ description: You can explore the Avatar of Editbar in the documentation of the t
 ### Basic properties
 
 - `type` - (required) the type of a control, set it to *"avatar"*
-- `key` - (optional) 
-- `wrap` - (optional)
+- `key` - (optional) the name of the specified/modified property or the path to it in the object of a Diagram item (shape, line, group, swimlane)
+- `wrap` - (optional) allows displaying the external wrapping, *false* by default
 - `target` - (optional) sets an URL to the server-side script that will process file upload, the property is required when an image is sent to the server via the control
 :::note
-While loading an image and sending it to the server via the `target` property, note that the *value* object will be sent to the server. The file itself will be recorded in the dataset in the *base64* format. You can redefine this logic using the [service methods](#service-methods-and-properties). 
+While loading an image and sending it to the server via the `target` property, note that the [*value* object](https://docs.dhtmlx.com/suite/form/api/avatar/api_avatar_properties/#description) will be sent to the server. The file itself will be recorded in the dataset in the *base64* format. You can redefine this logic using the [service methods](#service-properties-and-methods). 
 :::
 - `hidden` - (optional) defines whether a control is hidden, *false* by default
 - `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*), *false* by default
@@ -67,14 +90,14 @@ While loading an image and sending it to the server via the `target` property, n
 - `placeholder` - (optional) allows setting a text to be visible when there is no image uploaded, doesn't work together with the `preview` property
 - `preview` - (optional) specifies the absolute path to the preview image. The preview image is visible, when the `value` is not defined
 - `alt` - (optional) sets the attribute of the &lt;img&gt; tag - an alternative text when there is no image uploaded
-- `size` - (optional) allows setting one of the three basic control's sizes, or applying a custom size, *"medium"* by default
+- `size` - (optional) allows setting one of the three basic control's sizes: *"small" | "medium" | "large"* , or applying a custom size, *"medium"* by default
 - `css` - (optional) adds style classes to a control
 - `width` - (optional) the width of a control, *"content"* by default
 - `height` - (optional) the height of a control, *"content"* by default
 - `padding` - (optional) sets padding between a cell and a border of the Avatar control, *"8px"* by default
 - `label` - (optional) specifies a label for the control
 - `labelWidth` - (optional) sets the label width of the control
-- `labelPosition` - (optional) defines the position of a label: "left" | "top", *"top"* by default
+- `labelPosition` - (optional) defines the position of a label: *"left" | "top"*, *"top"* by default
 - `accept` - (optional) allows specifying the type/extension of the selected file, *"image/*"* by default. [Check details](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/accept#unique_file_type_specifiers)
 - `fieldName` - (optional) sets the file field name in the form data sent to the server, *"file"* by default
 - `autosend` - (optional) enables/disables automatic sending of an added file, *false* by default
@@ -88,10 +111,27 @@ While loading an image and sending it to the server via the `target` property, n
 Note that it's highly not recommended to redefine the service properties and methods for the default types of controls, since it may cause breaks in the code. If you need to modify the default controls, you should [create a new control type]. **TODO - add link**
 :::
 
-- `$on` - (optional)
-- `$handler` - (optional)
-- `$setValue` - (optional)
-- `$layout` - (optional)
+- `$on` - (optional) - allows setting an event listener. The object has the following properties:
+    - `eventName`  - the event listener function which is called with the following parameters:
+        - `object` - an object with the following properties:
+            - `control` - the form control
+            - `editor` - the object of the Diagram Editor
+            - `id` - the id of a Diagram item (shape, line, group, swimlane)
+        - `arguments` - (optional) - the original event arguments
+- `$handler` - (optional) - a function that allows handling actions on firing the `change` and `input` events of a form control and the `change` event of DataCollection. Called with the following parameter:
+    - `object` - an object with the following properties:
+        - `id` - the id of a Diagram item (shape, line, group, swimlane)
+        - `key` - the name of the specified/modified property or the path to it in the object of a Diagram item (shape, line, group, swimlane)
+        - `editor` - the object of the Diagram Editor
+        - `control` - the object of a Form control the component is built on
+        - `value` - the new value of a Form control
+- `$setValue` - (optional) - a function that allows setting the value of a Form control on initialization of a control and on changing the value in DataCollection. Called with the following parameter:
+    - `object` - an object with the following properties:
+        - `editor` - the object of the Diagram Editor
+        - `control` - the object of a Form control the component is built on
+        - `value` - the value of a Diagram item (shape, line, group, swimlane)
+- `$layout` - (optional) - a function that allows setting the structure of a control. Returns the configuration of a Form control. Called with the following parameter:
+    - `object` - the configuration of a control without service properties
 
 ## Example
 

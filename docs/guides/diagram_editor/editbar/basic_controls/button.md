@@ -4,9 +4,11 @@ title: Editbar Basic Controls - Button
 description: You can explore the Button of Editbar in the documentation of the the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
-# Button
+# Button 
 
 @short: A simple button that can have an icon.
+
+![Button control](../../../../assets/editbar-basic-controls/button.png)
 
 ## Usage
 
@@ -28,7 +30,16 @@ description: You can explore the Button of Editbar in the documentation of the t
     full?: boolean, // false by default
     icon?: string,
     size?: "small" | "medium", // "medium" by default
-    view?: "flat" | "link" // "flat" by default
+    view?: "flat" | "link", // "flat" by default
+
+    // service properties and methods 
+    $on?: { [eventName: string]: ({
+            control: object,
+            editor: object,
+            id?: string | number
+        }: any[]) => any
+    },
+    $layout?: (object: any) => any
 }
 ~~~
 
@@ -44,9 +55,9 @@ description: You can explore the Button of Editbar in the documentation of the t
 - `height` - (optional) the height of a control, *"content"* by default
 - `width` - (optional) the width of a control, *"content"* by default
 - `padding` - (optional) sets padding between a cell and a border of a button control, *"8px"* by default
-- `circle` - (optional) makes the corners of a button round, false by default
+- `circle` - (optional) makes the corners of a button round, *false* by default
 - `color` - (optional) defines the color scheme of a button: *"danger" | "secondary" | "primary" | "success"*; *"primary"* by default
-- `full` - (optional) extends a button to the full width of a form, *false* by default
+- `full` - (optional) extends a button to the full width of the editbar, *false* by default
 - `icon` - (optional) an icon of the button
 - `size` - (optional) defines the size of a button: *"small" | "medium"*; *"medium"* by default
 - `view` - (optional) defines the look of a button: *"flat" | "link"*; *"flat"* by default
@@ -57,8 +68,15 @@ description: You can explore the Button of Editbar in the documentation of the t
 Note that it's highly not recommended to redefine the service properties and methods for the default types of controls, since it may cause breaks in the code. If you need to modify the default controls, you should [create a new control type]. **TODO - add link**
 :::
 
-- `$on` - (optional)
-- `$layout` - (optional)
+- `$on` - (optional) - allows setting an event listener. The object has the following properties:
+    - `eventName`  - the event listener function which is called with the following parameters:
+        - `object` - an object with the following properties:
+            - `control` - the form control
+            - `editor` - the object of the Diagram Editor
+            - `id` - the id of a Diagram item (shape, line, group, swimlane)
+        - `arguments` - (optional) - the original event arguments
+- `$layout` - (optional) - a function that allows setting the structure of a control. Returns the configuration of a Form control. Called with the following parameter:
+    - `object` - the configuration of a control without service properties
 
 ## Example
 

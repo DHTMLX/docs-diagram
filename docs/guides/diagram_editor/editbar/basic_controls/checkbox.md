@@ -8,13 +8,16 @@ description: You can explore the Checkbox of Editbar in the documentation of the
 
 @short: A control that allows a user to make a choice between one or several opposite options by toggling them.
 
-The control can take both the *boolean* value and the *string* one, if the `value` property is specified. [Check the example below](#example) to get the idea.
+![Checkbox control](../../../../assets/editbar-basic-controls/checkbox.png)
+
+The control can be used both with the *boolean* value and the *string* one, if the `value` property is specified. [Check the example below](#example) to get the idea.
 
 ## Usage
 
 ~~~js
 {
     type: "checkbox",
+    key?: string,
     text?: string,
     value?: string,
 
@@ -27,7 +30,28 @@ The control can take both the *boolean* value and the *string* one, if the `valu
 
     label?: string,
     labelWidth?: string | number,
-    labelPosition?: "left" | "top" // "top" by default
+    labelPosition?: "left" | "top", // "top" by default
+
+    // service properties and methods 
+    $on?: { [eventName: string]: ({
+            control: object,
+            editor: object,
+            id?: string | number
+        }: any[]) => any
+    },
+    $handler?: ({
+        id?: string | number,
+        key: string | string[],
+        editor: object,
+        control: object,
+        value: any
+    }) => void,
+    $setValue?: ({
+        editor: object,
+        control: object,
+        value: any
+    }) => void,
+    $layout?: (object: any) => any
 }
 ~~~
 
@@ -36,7 +60,7 @@ The control can take both the *boolean* value and the *string* one, if the `valu
 ### Basic properties
 
 - `type` - (required) the type of a control, set it to *"checkbox"*
-- `key` - (optional) 
+- `key` - (optional) the name of the specified/modified property or the path to it in the object of a Diagram item (shape, line, group, swimlane)
 - `text` - (optional) optional, the text value of a control. It's placed to the right of the control
 - `value` -	(optional) the value of a checkbox
 - `css` - (optional) adds style classes to a control
@@ -46,7 +70,7 @@ The control can take both the *boolean* value and the *string* one, if the `valu
 - `width` - (optional) the width of a control, *"content"* by default
 - `padding` - (optional) sets padding between a cell and a border of a Checkbox control, *"8px"* by default
 - `label` - (optional) specifies a label for a control
-- `labelPosition` - (optional) defines the position of a label: "left" | "top", *"top"* by default
+- `labelPosition` - (optional) defines the position of a label: *"left" | "top"*, *"top"* by default
 - `labelWidth` - (optional) sets the width of the label of a control
 
 ### Service properties and methods
@@ -55,10 +79,27 @@ The control can take both the *boolean* value and the *string* one, if the `valu
 Note that it's highly not recommended to redefine the service properties and methods for the default types of controls, since it may cause breaks in the code. If you need to modify the default controls, you should [create a new control type]. **TODO - add link**
 :::
 
-- `$on` - (optional)
-- `$handler` - (optional)
-- `$setValue` - (optional)
-- `$layout` - (optional)
+- `$on` - (optional) - allows setting an event listener. The object has the following properties:
+    - `eventName`  - the event listener function which is called with the following parameters:
+        - `object` - an object with the following properties:
+            - `control` - the form control
+            - `editor` - the object of the Diagram Editor
+            - `id` - the id of a Diagram item (shape, line, group, swimlane)
+        - `arguments` - (optional) - the original event arguments
+- `$handler` - (optional) - a function that allows handling actions on firing the `change` and `input` events of a form control and the `change` event of DataCollection. Called with the following parameter:
+    - `object` - an object with the following properties:
+        - `id` - the id of a Diagram item (shape, line, group, swimlane)
+        - `key` - the name of the specified/modified property or the path to it in the object of a Diagram item (shape, line, group, swimlane)
+        - `editor` - the object of the Diagram Editor
+        - `control` - the object of a Form control the component is built on
+        - `value` - the new value of a Form control
+- `$setValue` - (optional) - a function that allows setting the value of a Form control on initialization of a control and on changing the value in DataCollection. Called with the following parameter:
+    - `object` - an object with the following properties:
+        - `editor` - the object of the Diagram Editor
+        - `control` - the object of a Form control the component is built on
+        - `value` - the value of a Diagram item (shape, line, group, swimlane)
+- `$layout` - (optional) - a function that allows setting the structure of a control. Returns the configuration of a Form control. Called with the following parameter:
+    - `object` - the configuration of a control without service properties
 
 ## Example
 

@@ -8,12 +8,15 @@ description: You can explore the Container of Editbar in the documentation of th
 
 @short: A control to attach HTML code or the DHTMLX widgets.
 
+![Container control](../../../../assets/editbar-basic-controls/container.png)
+
 ## Usage
 
 ~~~js
 {
     type: "container",
     html: HTMLElement | string,
+    wrap?: boolean, // false by default
     
     css?: string,
     disabled?: boolean, // false by default
@@ -23,9 +26,12 @@ description: You can explore the Container of Editbar in the documentation of th
     padding?: string | number,
 
     // for `wrap:true` check the label properties for the Fieldset
-    label?: string;
-    labelWidth?: string | number;
-    labelPosition?: "left" | "top"; // "top" by default
+    label?: string,
+    labelWidth?: string | number,
+    labelPosition?: "left" | "top", // "top" by default
+
+    // service method
+    $layout?: (object: any) => any
 }
 ~~~
 
@@ -34,8 +40,8 @@ description: You can explore the Container of Editbar in the documentation of th
 ### Basic properties
 
 - `type` - (required) the type of a control, set it to *"container"*
-- `wrap` - (optional) 
-- `html` - (optional) the HTML content of a control
+- `html` - (required) the HTML content of a control
+- `wrap` - (optional) allows displaying the external wrapping, *false* by default
 - `css` - (optional) adds style classes to a control string
 - `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*), *false* by default
 - `hidden` - (optional) defines whether a control is hidden, *false* by default
@@ -44,7 +50,7 @@ description: You can explore the Container of Editbar in the documentation of th
 - `padding` - (optional) sets padding between a cell and a border of a control, *"8px"* by default
 - `label` - (optional) specifies a label for the control
 - `labelWidth` - (optional) sets the label width of the control
-- `labelPosition` - (optional) defines the position of a label: "left" | "top", *"top"* by default
+- `labelPosition` - (optional) defines the position of a label: *"left" | "top"*, *"top"* by default
 
 #### Service properties and methods
 
@@ -52,7 +58,8 @@ description: You can explore the Container of Editbar in the documentation of th
 Note that it's highly not recommended to redefine the service properties and methods for the default types of controls, since it may cause breaks in the code. If you need to modify the default controls, you should [create a new control type]. **TODO - add link**
 :::
 
-- `$layout` - (optional)
+- `$layout` - (optional) - a function that allows setting the structure of a control. Returns the configuration of a Form control. Called with the following parameter:
+    - `object` - the configuration of a control without service properties
 
 ## Example
 
