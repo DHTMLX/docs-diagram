@@ -33,13 +33,8 @@ description: You can explore the Button of Editbar in the documentation of the t
     view?: "flat" | "link", // "flat" by default
 
     // service properties and methods 
-    $on?: { [eventName: string]: ({
-            control: object,
-            editor: object,
-            id?: string | number
-        }: any[]) => any
-    },
-    $layout?: (object: any) => any
+    $on?: { [eventName: string]: function },
+    $layout?: function
 }
 ~~~
 
@@ -65,17 +60,17 @@ description: You can explore the Button of Editbar in the documentation of the t
 ### Service properties and methods
 
 :::warning
-Note that it's highly not recommended to redefine the service properties and methods for the default types of controls, since it may cause breaks in the code. If you need to modify the default controls, you should [create a new control type]. **TODO - add link**
+Note that it's highly not recommended to redefine the service properties and methods for the default types of controls, since it may cause breaks in their functionality. If you need to modify the default controls, you should [create a new control type via the `controls` property](/api/diagram_editor/editbar/config/controls_property/). 
 :::
 
 - `$on` - (optional) - allows setting an event listener. The object has the following properties:
-    - `eventName`  - the event listener function which is called with the following parameters:
+    - `eventName`  - a callback function which is called with the following parameters:
         - `object` - an object with the following properties:
             - `control` - the form control
             - `editor` - the object of the Diagram Editor
             - `id` - the id of a Diagram item (shape, line, group, swimlane)
         - `arguments` - (optional) - the original event arguments
-- `$layout` - (optional) - a function that allows setting the structure of a control. Returns the configuration of a Form control. Called with the following parameter:
+- `$layout` - (optional) - a callback function that allows setting the structure of a control. Returns the configuration of a Form control. Called with the following parameter:
     - `object` - the configuration of a control without service properties
 
 ## Example

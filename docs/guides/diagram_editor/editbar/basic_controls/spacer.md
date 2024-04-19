@@ -29,7 +29,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
         editbar: {
             show: true,
             properties: {
-                "$shape": [
+                $shape: [
                     { type: "input", key: "name", label: "Task name" },
                     { type: "input", key: "id", label: "ID", readOnly: true },
                     { type: "spacer" },
