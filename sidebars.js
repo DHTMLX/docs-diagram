@@ -851,7 +851,29 @@ module.exports = {
               },
               items: [
                 "guides/diagram_editor/editbar/basic_controls",
-                "guides/diagram_editor/editbar/complex_controls",
+                {
+                  type: "category",
+                  label: "Complex controls!!",
+                  link: {
+                    type: "doc",
+                    id: "guides/diagram_editor/editbar/complex_controls"
+                  },
+                  items:[
+                    "guides/diagram_editor/editbar/complex_controls/arrange", // New
+                    "guides/diagram_editor/editbar/complex_controls/border", // New
+                    "guides/diagram_editor/editbar/complex_controls/gridstep", // New
+                    "guides/diagram_editor/editbar/complex_controls/header", // New
+                    "guides/diagram_editor/editbar/complex_controls/headercommon", // New
+                    "guides/diagram_editor/editbar/complex_controls/headerposition", // New
+                    "guides/diagram_editor/editbar/complex_controls/lineshape", // New
+                    "guides/diagram_editor/editbar/complex_controls/pointerview", // New
+                    "guides/diagram_editor/editbar/complex_controls/position", // New
+                    "guides/diagram_editor/editbar/complex_controls/size", // New
+                    "guides/diagram_editor/editbar/complex_controls/textalign", // New
+                    "guides/diagram_editor/editbar/complex_controls/textstyle", // New
+                    // TODO
+                  ]
+                },
                 "guides/diagram_editor/editbar/configuration",
               ],
             },
