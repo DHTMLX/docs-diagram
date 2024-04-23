@@ -49,7 +49,7 @@ description: You can explore the Button of Editbar in the documentation of the t
 - `hidden` - (optional) defines whether a control is hidden, *false* by default
 - `height` - (optional) the height of a control, *"content"* by default
 - `width` - (optional) the width of a control, *"content"* by default
-- `padding` - (optional) sets padding between a cell and a border of a button control, *"8px"* by default
+- `padding` - (optional) sets padding between a cell and a border of a button control
 - `circle` - (optional) makes the corners of a button round, *false* by default
 - `color` - (optional) defines the color scheme of a button: *"danger" | "secondary" | "primary" | "success"*; *"primary"* by default
 - `full` - (optional) extends a button to the full width of the editbar, *false* by default
@@ -66,11 +66,11 @@ Note that it's highly not recommended to redefine the service properties and met
 - `$on` - (optional) - allows setting an event listener. The object has the following properties:
     - `eventName`  - a callback function which is called with the following parameters:
         - `object` - an object with the following properties:
-            - `control` - the form control
+            - `control` - the [Button](https://docs.dhtmlx.com/suite/form/button/) Form control
             - `editor` - the object of the Diagram Editor
-            - `id` - the id of a Diagram item (shape, line, group, swimlane)
-        - `arguments` - (optional) - the original event arguments
-- `$layout` - (optional) - a callback function that allows setting the structure of a control. Returns the configuration of a Form control. Called with the following parameter:
+            - `id` - the id of a Diagram item 
+        - `arguments` - (optional) - the [original event arguments](https://docs.dhtmlx.com/suite/category/form-button-events/)
+- `$layout` - (optional) - a callback function that allows setting the structure of a control. Returns the configuration of the [Button](https://docs.dhtmlx.com/suite/form/button/) Form control. Called with the following parameter:
     - `object` - the configuration of a control without service properties
 
 ## Example

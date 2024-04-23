@@ -10,8 +10,6 @@ description: You can explore the CheckboxGroup of Editbar in the documentation o
 
 ![CheckboxGroup control](../../../../assets/editbar-basic-controls/checkboxgroup.png)
 
-The objects with `checkbox` configuration inside the control can be used both with the *boolean* value and the *string* one, if the `value` property is specified. [Check the example below](#example) to get the idea.
-
 ## Usage
 
 ~~~js
@@ -65,6 +63,8 @@ Checkbox configuration object inside a CheckboxGroup:
 }
 ~~~
 
+The objects with the `checkbox` configuration inside the control can be used both with the *boolean* value and the *string* one, if the `value` property is specified. [Check the example below](#example) to get the idea.
+
 ## Description
 
 ### CheckboxGroup properties
@@ -72,7 +72,7 @@ Checkbox configuration object inside a CheckboxGroup:
 #### Basic properties
 
 - `type` - (required) the type of a control, set it to *"checkboxGroup"*
-- `key` - (optional) the name of the specified/modified property or the path to it in the object of a Diagram item (shape, line, group, swimlane)
+- `key` - (optional) the name of the specified/modified property or the path to it in the object of a Diagram item 
 - `wrap` - (optional) allows displaying the external wrapping, *false* by default
 - `options` - (required) an object with options of a CheckboxGroup. The object can contain the following attributes:
     - `rows` - (optional) arranges [checkboxes](#checkbox-properties) inside the CheckboxGroup control vertically
@@ -86,10 +86,10 @@ Checkbox configuration object inside a CheckboxGroup:
 - `hidden` - (boolean) defines whether a CheckboxGroup is hidden, *false* by default
 - `height` - (optional) the height of a control, *"content"* by default
 - `width` - (optional) the width of a control, *"content"* by default
-- `padding` - (optional) sets padding between a cell and a border of a CheckboxGroup control, *"8px"* by default
+- `padding` - (optional) sets padding between a cell and a border of a CheckboxGroup control
 - `label` - (optional) specifies a label for the control
 - `labelWidth` - (optional) sets the label width of the control
-- `labelPosition` - (optional) defines the position of a label: "left" | "top", *"top"* by default
+- `labelPosition` - (optional) defines the position of a label: *"left" | "top"*, *"top"* by default
 
 #### Service properties and methods
 
@@ -100,23 +100,23 @@ Note that it's highly not recommended to redefine the service properties and met
 - `$on` - (optional) - allows setting an event listener. The object has the following properties:
     - `eventName`  - a callback function which is called with the following parameters:
         - `object` - an object with the following properties:
-            - `control` - the form control
+            - `control` - the [CheckboxGroup](https://docs.dhtmlx.com/suite/form/checkboxgroup/) Form control
             - `editor` - the object of the Diagram Editor
-            - `id` - the id of a Diagram item (shape, line, group, swimlane)
-        - `arguments` - (optional) - the original event arguments
-- `$handler` - (optional) - a callback function that allows handling actions on firing the `change` and `input` events of a form control and the `change` event of DataCollection. Called with the following parameter:
+            - `id` - the id of a Diagram item 
+        - `arguments` - (optional) - the [original event arguments](https://docs.dhtmlx.com/suite/category/form-checkboxgroup-events/)
+- `$handler` - (optional) - a callback function that allows handling actions on firing the `change` event of the [CheckboxGroup](https://docs.dhtmlx.com/suite/form/checkboxgroup/) Form control and the `change` event of DataCollection. Called with the following parameter:
     - `object` - an object with the following properties:
-        - `id` - the id of a Diagram item (shape, line, group, swimlane)
-        - `key` - the name of the specified/modified property or the path to it in the object of a Diagram item (shape, line, group, swimlane)
+        - `id` - the id of a Diagram item 
+        - `key` - the name of the specified/modified property or the path to it in the object of a Diagram item 
         - `editor` - the object of the Diagram Editor
-        - `control` - the object of a Form control the component is built on
-        - `value` - the new value of a Form control
-- `$setValue` - (optional) - a callback function that allows setting the value of a Form control on initialization of a control and on changing the value in DataCollection. Called with the following parameter:
+        - `control` - the object of the [CheckboxGroup](https://docs.dhtmlx.com/suite/form/checkboxgroup/) Form control the component is built on
+        - `value` - the new value of the [CheckboxGroup](https://docs.dhtmlx.com/suite/form/checkboxgroup/) Form control
+- `$setValue` - (optional) - a callback function that allows setting the value of the [CheckboxGroup](https://docs.dhtmlx.com/suite/form/checkboxgroup/) Form control on initialization of a control and on changing the value in DataCollection. Called with the following parameter:
     - `object` - an object with the following properties:
         - `editor` - the object of the Diagram Editor
-        - `control` - the object of a Form control the component is built on
-        - `value` - the value of a Diagram item (shape, line, group, swimlane)
-- `$layout` - (optional) - a callback function that allows setting the structure of a control. Returns the configuration of a Form control. Called with the following parameter:
+        - `control` - the object of the [CheckboxGroup](https://docs.dhtmlx.com/suite/form/checkboxgroup/) Form control the component is built on
+        - `value` - the value of a Diagram item 
+- `$layout` - (optional) - a callback function that allows setting the structure of a control. Returns the configuration of the [CheckboxGroup](https://docs.dhtmlx.com/suite/form/checkboxgroup/) Form control. Called with the following parameter:
     - `object` - the configuration of a control without service properties
 
 ### Checkbox properties 
@@ -129,7 +129,7 @@ Note that it's highly not recommended to redefine the service properties and met
 - `hidden` - (optional) defines whether a checkbox is hidden, *false* by default
 - `height` - (optional) the height of a control, *"content"* by default
 - `width` - (optional) the width of a control, *"content"* by default
-- `padding` - (optional) sets padding between a cell and a border of a Checkbox control, *"8px"* by default
+- `padding` - (optional) sets padding between a cell and a border of a Checkbox control
 
 ## Example
 

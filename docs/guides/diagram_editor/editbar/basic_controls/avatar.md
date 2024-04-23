@@ -6,7 +6,7 @@ description: You can explore the Avatar of Editbar in the documentation of the t
 
 # Avatar
 
-@short: A control for uploading of an avatar.
+@short: A control for uploading of images.
 
 ![Avatar control](../../../../assets/editbar-basic-controls/avatar.png)
 
@@ -15,7 +15,7 @@ description: You can explore the Avatar of Editbar in the documentation of the t
 ~~~js
 {
     type: "avatar",
-    key?: string,
+    key?: string, // "img" by default
     wrap?: boolean, // false by default
     target?: string,
 
@@ -60,7 +60,7 @@ description: You can explore the Avatar of Editbar in the documentation of the t
 ### Basic properties
 
 - `type` - (required) the type of a control, set it to *"avatar"*
-- `key` - (optional) the name of the specified/modified property or the path to it in the object of a Diagram item (shape, line, group, swimlane)
+- `key` - (optional) the name of the specified/modified property in the object of a Diagram item, *"img"* by default
 - `wrap` - (optional) allows displaying the external wrapping, *false* by default
 - `target` - (optional) sets an URL to the server-side script that will process file upload, the property is required when an image is sent to the server via the control
 :::note
@@ -73,13 +73,13 @@ While loading an image and sending it to the server via the `target` property, n
 - `circle` - (optional) sets the mode of displaying the control with rounded corners, *false* by default
 - `icon` - (optional) allows setting an icon when there is no image uploaded, doesn't work together with the `preview` property
 - `placeholder` - (optional) allows setting a text to be visible when there is no image uploaded, doesn't work together with the `preview` property
-- `preview` - (optional) specifies the absolute path to the preview image. The preview image is visible, when the `value` is not defined
+- `preview` - (optional) specifies the absolute path to the preview image. The preview image is visible, when an image is not uploaded
 - `alt` - (optional) sets the attribute of the &lt;img&gt; tag - an alternative text when there is no image uploaded
-- `size` - (optional) allows setting one of the three basic control's sizes: *"small" | "medium" | "large"* , or applying a custom size, *"medium"* by default
+- `size` - (optional) allows setting one of the three basic control's sizes: *"small" | "medium" | "large"* , or applying a custom size in px; *"medium"* by default
 - `css` - (optional) adds style classes to a control
 - `width` - (optional) the width of a control, *"content"* by default
 - `height` - (optional) the height of a control, *"content"* by default
-- `padding` - (optional) sets padding between a cell and a border of the Avatar control, *"8px"* by default
+- `padding` - (optional) sets padding between a cell and a border of the Avatar control
 - `label` - (optional) specifies a label for the control
 - `labelWidth` - (optional) sets the label width of the control
 - `labelPosition` - (optional) defines the position of a label: *"left" | "top"*, *"top"* by default
@@ -99,24 +99,24 @@ Note that it's highly not recommended to redefine the service properties and met
 - `$on` - (optional) - allows setting an event listener. The object has the following properties:
     - `eventName`  - a callback function which is called with the following parameters:
         - `object` - an object with the following properties:
-            - `control` - the form control
+            - `control` - the [Avatar](https://docs.dhtmlx.com/suite/form/avatar/) Form control
             - `editor` - the object of the Diagram Editor
-            - `id` - the id of a Diagram item (shape, line, group, swimlane)
-        - `arguments` - (optional) - the original event arguments
-- `$handler` - (optional) - a callback function that allows handling actions on firing the `change` and `input` events of a form control and the `change` event of DataCollection. Called with the following parameter:
+            - `id` - the id of a Diagram item 
+        - `arguments` - (optional) - the [original event arguments](https://docs.dhtmlx.com/suite/category/form-avatar-events/)
+- `$handler` - (optional) - a callback function that allows handling actions on firing the `change` event of the [Avatar](https://docs.dhtmlx.com/suite/form/avatar/) Form control and the `change` event of DataCollection. Called with the following parameter:
     - `object` - an object with the following properties:
-        - `id` - the id of a Diagram item (shape, line, group, swimlane)
-        - `key` - the name of the specified/modified property or the path to it in the object of a Diagram item (shape, line, group, swimlane)
+        - `id` - the id of a Diagram item 
+        - `key` - the name of the specified/modified property in the object of a Diagram item 
         - `editor` - the object of the Diagram Editor
-        - `control` - the object of a Form control the component is built on
-        - `value` - the new value of a Form control
-- `$setValue` - (optional) - a callback function that allows setting the value of a Form control on initialization of a control and on changing the value in DataCollection. Called with the following parameter:
+        - `control` - the object of the [Avatar](https://docs.dhtmlx.com/suite/form/avatar/) Form control the component is built on
+        - `value` - the new value of the [Avatar](https://docs.dhtmlx.com/suite/form/avatar/) Form control
+- `$setValue` - (optional) - a callback function that allows setting the value of the [Avatar](https://docs.dhtmlx.com/suite/form/avatar/) Form control on initialization of a control and on changing the value in DataCollection. Called with the following parameter:
     - `object` - an object with the following properties:
         - `editor` - the object of the Diagram Editor
-        - `control` - the object of a Form control the component is built on
-        - `value` - the value of a Diagram item (shape, line, group, swimlane)
-- `$layout` - (optional) - a callback function that allows setting the structure of a control. Returns the configuration of a Form control. Called with the following parameter:
-    - `object` - the configuration of a control without service properties
+        - `control` - the object of the [Avatar](https://docs.dhtmlx.com/suite/form/avatar/) Form control the component is built on
+        - `value` - the value of a Diagram item 
+- `$layout` - (optional) - a callback function that allows setting the structure of a control. Returns the configuration of the [Avatar](https://docs.dhtmlx.com/suite/form/avatar/) Form control. Called with the following parameter:
+    - `object` - the configuration of the control without service properties
 
 ## Example
 

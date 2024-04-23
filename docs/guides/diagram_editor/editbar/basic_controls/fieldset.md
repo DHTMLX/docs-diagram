@@ -61,7 +61,7 @@ The `rows` and `cols` properties may include an array of objects of the specifie
 - `css` - (optional) the name of a CSS class(es) applied to the control group
 - `width` - (optional) sets the width of the control group, *"content"* by default
 - `height` - (optional) sets the height of the control group, *"content"* by default
-- `padding` - (optional) sets the padding for the content inside the control group, *"8px"* by default
+- `padding` - (optional) sets the padding for the content inside the control group
 - `align` - (optional) sets the alignment of controls inside the control group, *"start"* by default
 - `label` - (optional) specifies a label for a control
 - `labelAlignment` - (optional) defines the position of the label: *"left" | "right" | "center"*, *"left"* by default
@@ -74,8 +74,8 @@ The `rows` and `cols` properties may include an array of objects of the specifie
 Note that it's highly not recommended to redefine the service properties and methods for the default types of controls, since it may cause breaks in their functionality. If you need to modify the default controls, you should [create a new control type via the `controls` property](/api/diagram_editor/editbar/config/controls_property/). 
 :::
 
-- `$layout` - (optional) - a callback function that allows setting the structure of a control. Returns the configuration of a Form control. Called with the following parameter:
-    - `object` - the configuration a control without service properties
+- `$layout` - (optional) - a callback function that allows setting the structure of a control. Returns the configuration of the [Fieldset](https://docs.dhtmlx.com/suite/form/fieldset/) Form control. Called with the following parameter:
+    - `object` - the configuration of a control without service properties
 
 ## Example
 

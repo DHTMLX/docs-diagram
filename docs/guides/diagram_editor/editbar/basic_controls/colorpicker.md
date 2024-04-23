@@ -52,14 +52,14 @@ description: You can explore the Colorpicker of Editbar in the documentation of 
 ### Basic properties
 
 - `type` - (required) the type of a control, set it to *"colorpicker"*
-- `key` - (optional) the name of the specified/modified property or the path to it in the object of a Diagram item (shape, line, group, swimlane)
+- `key` - (optional) the name of the specified/modified property or the path to it in the object of a Diagram item 
 - `wrap` - (optional) allows displaying the external wrapping, *false* by default
 - `css` - (optional) adds style classes to a control
 - `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*), *false* by default
 - `hidden` - (optional) defines whether a control is hidden, *false* by default
 - `height` - (optional) the height of a control, *"content"* by default
 - `width` - (optional) the width of a control, *"content"* by default
-- `padding` - (optional) sets padding between a cell and a border of a Colorpicker control, *"8px"* by default
+- `padding` - (optional) sets padding between a cell and a border of a Colorpicker control
 - `customColors` - (optional) shows a section with custom colors in the bottom part of the Colorpicker
 - `grayShades` - (optional) defines whether the section with gray shades is displayed in the palette, *true* by default
 - `icon` - (optional) the name of an icon from the used icon font
@@ -81,23 +81,23 @@ Note that it's highly not recommended to redefine the service properties and met
 - `$on` - (optional) - allows setting an event listener. The object has the following properties:
     - `eventName`  - a callback function which is called with the following parameters:
         - `object` - an object with the following properties:
-            - `control` - the form control
+            - `control` - the [Colorpicker](https://docs.dhtmlx.com/suite/form/colorpicker/) Form control
             - `editor` - the object of the Diagram Editor
-            - `id` - the id of a Diagram item (shape, line, group, swimlane)
-        - `arguments` - (optional) - the original event arguments
-- `$handler` - (optional) - a callback function that allows handling actions on firing the `change` and `input` events of a form control and the `change` event of DataCollection. Called with the following parameter:
+            - `id` - the id of a Diagram item
+        - `arguments` - (optional) - the [original event arguments](https://docs.dhtmlx.com/suite/category/form-colorpicker-events/)
+- `$handler` - (optional) - a callback function that allows handling actions on firing the `change` and `input` events of the [Colorpicker](https://docs.dhtmlx.com/suite/form/colorpicker/) Form control and the `change` event of DataCollection. Called with the following parameter:
     - `object` - an object with the following properties:
-        - `id` - the id of a Diagram item (shape, line, group, swimlane)
-        - `key` - the name of the specified/modified property or the path to it in the object of a Diagram item (shape, line, group, swimlane)
+        - `id` - the id of a Diagram item 
+        - `key` - the name of the specified/modified property or the path to it in the object of a Diagram item 
         - `editor` - the object of the Diagram Editor
-        - `control` - the object of a Form control the component is built on
-        - `value` - the new value of a Form control
-- `$setValue` - (optional) - a callback function that allows setting the value of a Form control on initialization of a control and on changing the value in DataCollection. Called with the following parameter:
+        - `control` - the object of the [Colorpicker](https://docs.dhtmlx.com/suite/form/colorpicker/) Form control the component is built on
+        - `value` - the new value of the [Colorpicker](https://docs.dhtmlx.com/suite/form/colorpicker/) Form control
+- `$setValue` - (optional) - a callback function that allows setting the value of the [Colorpicker](https://docs.dhtmlx.com/suite/form/colorpicker/) Form control on initialization of a control and on changing the value in DataCollection. Called with the following parameter:
     - `object` - an object with the following properties:
         - `editor` - the object of the Diagram Editor
-        - `control` - the object of a Form control the component is built on
-        - `value` - the value of a Diagram item (shape, line, group, swimlane)
-- `$layout` - (optional) - a callback function that allows setting the structure of a control. Returns the configuration of a Form control. Called with the following parameter:
+        - `control` - the object of the [Colorpicker](https://docs.dhtmlx.com/suite/form/colorpicker/) Form control the component is built on
+        - `value` - the value of a Diagram item 
+- `$layout` - (optional) - a callback function that allows setting the structure of a control. Returns the configuration of the [Colorpicker](https://docs.dhtmlx.com/suite/form/colorpicker/) Form control. Called with the following parameter:
     - `object` - the configuration of a control without service properties
 
 ## Example

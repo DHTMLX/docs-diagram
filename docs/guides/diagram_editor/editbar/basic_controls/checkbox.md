@@ -10,8 +10,6 @@ description: You can explore the Checkbox of Editbar in the documentation of the
 
 ![Checkbox control](../../../../assets/editbar-basic-controls/checkbox.png)
 
-The control can be used both with the *boolean* value and the *string* one, if the `value` property is specified. [Check the example below](#example) to get the idea.
-
 ## Usage
 
 ~~~js
@@ -40,20 +38,22 @@ The control can be used both with the *boolean* value and the *string* one, if t
 }
 ~~~
 
+The control can be used both with the *boolean* value and the *string* one, if the `value` property is specified. [Check the example below](#example) to get the idea.
+
 ## Description
 
 ### Basic properties
 
 - `type` - (required) the type of a control, set it to *"checkbox"*
-- `key` - (optional) the name of the specified/modified property or the path to it in the object of a Diagram item (shape, line, group, swimlane)
-- `text` - (optional) optional, the text value of a control. It's placed to the right of the control
+- `key` - (optional) the name of the specified/modified property or the path to it in the object of a Diagram item 
+- `text` - (optional) the text value of a control. It's placed to the right of the control
 - `value` -	(optional) the value of a checkbox
 - `css` - (optional) adds style classes to a control
 - `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*), *false* by default
 - `hidden` - (optional) defines whether a checkbox is hidden, *false* by default
 - `height` - (optional) the height of a control, *"content"* by default
 - `width` - (optional) the width of a control, *"content"* by default
-- `padding` - (optional) sets padding between a cell and a border of a Checkbox control, *"8px"* by default
+- `padding` - (optional) sets padding between a cell and a border of a Checkbox control
 - `label` - (optional) specifies a label for a control
 - `labelPosition` - (optional) defines the position of a label: *"left" | "top"*, *"top"* by default
 - `labelWidth` - (optional) sets the width of the label of a control
@@ -67,23 +67,23 @@ Note that it's highly not recommended to redefine the service properties and met
 - `$on` - (optional) - allows setting an event listener. The object has the following properties:
     - `eventName`  - a callback function which is called with the following parameters:
         - `object` - an object with the following properties:
-            - `control` - the form control
+            - `control` - the [Checkbox](https://docs.dhtmlx.com/suite/form/checkbox/) Form control
             - `editor` - the object of the Diagram Editor
-            - `id` - the id of a Diagram item (shape, line, group, swimlane)
-        - `arguments` - (optional) - the original event arguments
-- `$handler` - (optional) - a callback function that allows handling actions on firing the `change` and `input` events of a form control and the `change` event of DataCollection. Called with the following parameter:
+            - `id` - the id of a Diagram item 
+        - `arguments` - (optional) - the [original event arguments](https://docs.dhtmlx.com/suite/category/form-checkbox-events/)
+- `$handler` - (optional) - a callback function that allows handling actions on firing the `change` event of the [Checkbox](https://docs.dhtmlx.com/suite/form/checkbox/) Form control and the `change` event of DataCollection. Called with the following parameter:
     - `object` - an object with the following properties:
-        - `id` - the id of a Diagram item (shape, line, group, swimlane)
-        - `key` - the name of the specified/modified property or the path to it in the object of a Diagram item (shape, line, group, swimlane)
+        - `id` - the id of a Diagram item 
+        - `key` - the name of the specified/modified property or the path to it in the object of a Diagram item 
         - `editor` - the object of the Diagram Editor
-        - `control` - the object of a Form control the component is built on
-        - `value` - the new value of a Form control
-- `$setValue` - (optional) - a callback function that allows setting the value of a Form control on initialization of a control and on changing the value in DataCollection. Called with the following parameter:
+        - `control` - the object of the [Checkbox](https://docs.dhtmlx.com/suite/form/checkbox/) Form control the component is built on
+        - `value` - the new value of the [Checkbox](https://docs.dhtmlx.com/suite/form/checkbox/) Form control
+- `$setValue` - (optional) - a callback function that allows setting the value of the [Checkbox](https://docs.dhtmlx.com/suite/form/checkbox/) Form control on initialization of a control and on changing the value in DataCollection. Called with the following parameter:
     - `object` - an object with the following properties:
         - `editor` - the object of the Diagram Editor
-        - `control` - the object of a Form control the component is built on
-        - `value` - the value of a Diagram item (shape, line, group, swimlane)
-- `$layout` - (optional) - a callback function that allows setting the structure of a control. Returns the configuration of a Form control. Called with the following parameter:
+        - `control` - the object of the [Checkbox](https://docs.dhtmlx.com/suite/form/checkbox/) Form control the component is built on
+        - `value` - the value of a Diagram item 
+- `$layout` - (optional) - a callback function that allows setting the structure of a control. Returns the configuration of the [Checkbox](https://docs.dhtmlx.com/suite/form/checkbox/) Form control. Called with the following parameter:
     - `object` - the configuration of a control without service properties
 
 ## Example

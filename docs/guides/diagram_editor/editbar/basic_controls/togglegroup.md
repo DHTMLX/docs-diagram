@@ -10,8 +10,6 @@ description: You can explore the ToggleGroup of Editbar in the documentation of 
 
 ![ToggleGroup control](../../../../assets/editbar-basic-controls/togglegroup.png)
 
-The options inside ToggleGroup can be used both with the *boolean* value and the *string* one, if the `value` property is specified. The `value` property is needed for assigning the set value as a value of the applied property. [Check the example below](#example) to get the idea.
-
 ## Usage
 
 ~~~js
@@ -54,6 +52,8 @@ Toggle configuration object inside ToggleGroup:
 }
 ~~~
 
+The objects with the `toggle` configuration inside the control can be used both with the *boolean* value and the *string* one, if the `value` property is specified. The `value` property is needed for assigning the set value as a value of the applied property. [Check the example below](#example) to get the idea.
+
 ## Description
 
 ### ToggleGroup properties
@@ -61,7 +61,7 @@ Toggle configuration object inside ToggleGroup:
 #### Basic properties
 
 - `type` - (required) the type of a control, set it to *"toggleGroup"*
-- `key` - (optional) the name of the specified/modified property or the path to it in the object of a Diagram item (shape, line, group, swimlane)
+- `key` - (optional) the name of the specified/modified property or the path to it in the object of a Diagram item 
 - `options` - (required) an array of ToggleGroup options, each option is set as an *object* with a set of `key:value` pairs - [attributes of options and their values](#toggle-properties)
 - `hidden` - (optional) defines whether a ToggleGroup is hidden, *false* by default
 - `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*), *false* by default
@@ -70,7 +70,7 @@ Toggle configuration object inside ToggleGroup:
 - `css` - (optional) adds style classes to a control
 - `width` - (optional) the width of a control, *"content"* by default
 - `height` - (optional) the height of a control, *"content"* by default
-- `padding` - (optional) sets padding between a cell and a border of the ToggleGroup control, *"8px"* by default
+- `padding` - (optional) sets padding between a cell and a border of the ToggleGroup control
 
 #### Service properties and methods
 
@@ -81,23 +81,23 @@ Note that it's highly not recommended to redefine the service properties and met
 - `$on` - (optional) - allows setting an event listener. The object has the following properties:
     - `eventName`  - a callback function which is called with the following parameters:
         - `object` - an object with the following properties:
-            - `control` - the form control
+            - `control` - the [ToggleGroup](https://docs.dhtmlx.com/suite/form/togglegroup/) Form control
             - `editor` - the object of the Diagram Editor
-            - `id` - the id of a Diagram item (shape, line, group, swimlane)
-        - `arguments` - (optional) - the original event arguments
-- `$handler` - (optional) - a callback function that allows handling actions on firing the `change` and `input` events of a form control and the `change` event of DataCollection. Called with the following parameter:
+            - `id` - the id of a Diagram item 
+        - `arguments` - (optional) - the [original event arguments](https://docs.dhtmlx.com/suite/category/form-togglegroup-events/)
+- `$handler` - (optional) - a callback function that allows handling actions on firing the `change` event of the [ToggleGroup](https://docs.dhtmlx.com/suite/form/togglegroup/) Form control and the `change` event of DataCollection. Called with the following parameter:
     - `object` - an object with the following properties:
-        - `id` - the id of a Diagram item (shape, line, group, swimlane)
-        - `key` - the name of the specified/modified property or the path to it in the object of a Diagram item (shape, line, group, swimlane)
+        - `id` - the id of a Diagram item 
+        - `key` - the name of the specified/modified property or the path to it in the object of a Diagram item 
         - `editor` - the object of the Diagram Editor
-        - `control` - the object of a Form control the component is built on
-        - `value` - the new value of a Form control
-- `$setValue` - (optional) - a callback function that allows setting the value of a Form control on initialization of a control and on changing the value in DataCollection. Called with the following parameter:
+        - `control` - the object of the [ToggleGroup](https://docs.dhtmlx.com/suite/form/togglegroup/) Form control the component is built on
+        - `value` - the new value of the [ToggleGroup](https://docs.dhtmlx.com/suite/form/togglegroup/) Form control
+- `$setValue` - (optional) - a callback function that allows setting the value of the [ToggleGroup](https://docs.dhtmlx.com/suite/form/togglegroup/) Form control on initialization of a control and on changing the value in DataCollection. Called with the following parameter:
     - `object` - an object with the following properties:
         - `editor` - the object of the Diagram Editor
-        - `control` - the object of a Form control the component is built on
-        - `value` - the value of a Diagram item (shape, line, group, swimlane)
-- `$layout` - (optional) - a callback function that allows setting the structure of a control. Returns the configuration of a Form control. Called with the following parameter:
+        - `control` - the object of the [ToggleGroup](https://docs.dhtmlx.com/suite/form/togglegroup/) Form control the component is built on
+        - `value` - the value of a Diagram item 
+- `$layout` - (optional) - a callback function that allows setting the structure of a control. Returns the configuration of the [ToggleGroup](https://docs.dhtmlx.com/suite/form/togglegroup/) Form control. Called with the following parameter:
     - `object` - the configuration of a control without service properties
 
 ### Toggle properties

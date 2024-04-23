@@ -6,7 +6,7 @@ description: You can explore the Container of Editbar in the documentation of th
 
 # Container
 
-@short: A control to attach HTML code or the DHTMLX widgets.
+@short: A control used to attach an HTML code.
 
 ![Container control](../../../../assets/editbar-basic-controls/container.png)
 
@@ -47,7 +47,7 @@ description: You can explore the Container of Editbar in the documentation of th
 - `hidden` - (optional) defines whether a control is hidden, *false* by default
 - `height` - (optional) the height of a control, *"content"* by default
 - `width` - (optional) the width of a control, *"content"* by default
-- `padding` - (optional) sets padding between a cell and a border of a control, *"8px"* by default
+- `padding` - (optional) sets padding between a cell and a border of a control
 - `label` - (optional) specifies a label for the control
 - `labelWidth` - (optional) sets the label width of the control
 - `labelPosition` - (optional) defines the position of a label: *"left" | "top"*, *"top"* by default
@@ -58,7 +58,7 @@ description: You can explore the Container of Editbar in the documentation of th
 Note that it's highly not recommended to redefine the service properties and methods for the default types of controls, since it may cause breaks in their functionality. If you need to modify the default controls, you should [create a new control type via the `controls` property](/api/diagram_editor/editbar/config/controls_property/). 
 :::
 
-- `$layout` - (optional) - a callback function that allows setting the structure of a control. Returns the configuration of a Form control. Called with the following parameter:
+- `$layout` - (optional) - a callback function that allows setting the structure of a control. Returns the configuration of the [Container](https://docs.dhtmlx.com/suite/form/container/) Form control. Called with the following parameter:
     - `object` - the configuration of a control without service properties
 
 ## Example
