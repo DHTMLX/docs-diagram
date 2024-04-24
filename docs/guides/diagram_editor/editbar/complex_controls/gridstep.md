@@ -27,8 +27,6 @@ TODO!!!
     label?: string,
     labelAlignment?: "left" | "right" | "center", // "left" by default
     readOnly?: boolean, // false by default
-
-    // Service properties
     wrap?: boolean // true by default
 }
 ~~~
@@ -38,33 +36,31 @@ TODO!!!
 ### Basic properties
 
 - `type` - (required) the type of a control. Set it to *"gridStep"*
+
+:::warning
+Note that it's highly not recommended to redefine the default types of controls via the [`controls`](/api/diagram_editor/editbar/config/controls_property/) property, since it may cause breaks in their functionality. If you create a new control, use a custom name (*type*)!
+:::
+
 - `hidden` - (optional) defines whether the control is hidden. *false* by default
 - `disabled` - (optional) defines whether the control is enabled (*false*) or disabled (*true*). *false* by default
 - `css` - (optional) adds style classes to the control
 - `width` - (optional) the width of the control. *"content"* by default
 - `height` - (optional) the height of the control. *"content"* by default
-- `padding` - (optional) sets the padding for the content inside the control group. *"8px"* by default
+- `padding` - (optional) sets the padding for the content inside the control group. *"0 16px"* by default
 - `label` - (optional) specifies a label for the control
 - `labelAlignment` - (optional) defines the position of the label. *"left"* by default
 - `readOnly` - (optional) sets the readonly mode for the control. *false* by default
-
-### Service properties
-
-:::warning
-Note that it's highly not recommended to redefine the service properties for the default types of controls, since it may cause breaks in their functionality. If you need to modify the default controls, you should create a new control type via the [`controls`](/api/diagram_editor/editbar/config/controls_property/) property.
-:::
-
 - `wrap` - (optional) allows displaying the external wrapping. *true* by default
 
 ## Example
 
 ~~~jsx {6-11}
-const editor= new dhx.DiagramEditor("editor", {
+const editor= new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {
         editbar: {
             properties: {
-                $shape: [
+                $default: [
                     {
                         type: "gridStep",
                         readOnly: true

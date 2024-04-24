@@ -6,7 +6,7 @@ description: You can explore the Header control of Editbar in the documentation 
 
 # Header
 
-@short: The complex control for displaying and modifying the "group" and "swimlane" elements of the Diagram editor
+@short: The complex control for displaying and modifying the header of "group" and "swimlane" elements of the Diagram editor
 
 TODO!!!
 
@@ -31,9 +31,7 @@ The **Header** control is available only for **group** and **swimlane** elements
     label?: string,
     labelAlignment?: "left" | "right" | "center", // "left" by default
     align?: "start" | "center" | "end" | "between" | "around" | "evenly", // "start" by default
-   
-    // Service properties
-    compact?: boolean // ??? by default
+    compact?: boolean // false by default
 }
 ~~~
 
@@ -41,29 +39,27 @@ The **Header** control is available only for **group** and **swimlane** elements
 
 ### Basic properties
 
-- `type` - (required) the type of a control, set it to *"header"*
+- `type` - (required) the type of a control. Set it to *"header"*
+
+:::warning
+Note that it's highly not recommended to redefine the default types of controls via the [`controls`](/api/diagram_editor/editbar/config/controls_property/) property, since it may cause breaks in their functionality. If you create a new control, use a custom name (*type*)!
+:::
+
 - `hidden` - (optional) defines whether the control is hidden. *false* by default
 - `disabled` - (optional) defines whether the control is enabled (*false*) or disabled (*true*). *false* by default
 - `css` - (optional) adds style classes to the control
 - `width` - (optional) the width of the control. *"content"* by default
 - `height` - (optional) the height of the control. *"content"* by default
-- `padding` - (optional) sets the padding for the content inside the control group. *"8px"* by default
+- `padding` - (optional) sets the padding for the content inside the control group. *"0 16px"* by default
 - `label` - (optional) specifies a label for the control
 - `labelAlignment` - (optional) defines the position of the label. *"left"* by default
 - `align` - (optional) sets the alignment of controls inside the control group. *"start"* by default
-
-### Service properties
-
-:::warning
-Note that it's highly not recommended to redefine the service properties for the default types of controls, since it may cause breaks in their functionality. If you need to modify the default controls, you should create a new control type via the [`controls`](/api/diagram_editor/editbar/config/controls_property/) property.
-:::
-
-- `compact` - (optional) specifies the compact mode, removes indents and frames
+- `compact` - (optional) specifies the compact mode, removes indents and frames. *false* by default
 
 ## Example
 
 ~~~jsx {6-11}
-const editor= new dhx.DiagramEditor("editor", {
+const editor= new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {
         editbar: {
