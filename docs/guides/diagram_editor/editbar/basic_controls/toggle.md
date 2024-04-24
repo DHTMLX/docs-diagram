@@ -53,8 +53,8 @@ The control can be used both with the *boolean* value and the *string* one, if t
 - `full` - (optional) defines whether the toggle will be extended to the width specified by the `width` property, *false* by default
 - `text` - (optional) sets a text inside the toggle. When initialized together with the `offText` property, the specified text will be rendered in the selected (pressed) state
 - `offText` - (optional) sets the text that will be rendered in the unselected (unpressed) state of the toggle
-- `icon` - (optional) sets the class of an icon displayed inside the toggle. When initialized together with the `offIcon` property, the specified classes of icons will be rendered in the selected (pressed) state of the toggle
-- `offIcon` - (optional) sets the class of an icon that will be rendered in the unselected (unpressed) state of the toggle
+- `icon` - (optional) sets the CSS class of an icon displayed inside the toggle. When initialized together with the `offIcon` property, the specified CSS classes of icons will be rendered in the selected (pressed) state of the toggle
+- `offIcon` - (optional) sets the CSS class of an icon that will be rendered in the unselected (unpressed) state of the toggle
 - `value` - (optional) specifies the value in the selected (pressed) state. If not defined, the control is used with the *boolean* value 
 - `css` - (optional) adds style classes to a control
 - `width` - (optional) the width of a control, *"content"* by default

@@ -60,7 +60,7 @@ description: You can explore the Input of Editbar in the documentation of the th
 - `height` - (optional) the height of a control, *"content"* by default
 - `width` - (optional) the width of a control, *"content"* by default
 - `padding` - (optional) sets padding between a cell and a border of an input control
-- `icon` - (optional) the name of an [icon](https://docs.dhtmlx.com/suite/helpers/icon/) from the used icon font
+- `icon` - (optional) the CSS class of an [icon](https://docs.dhtmlx.com/suite/helpers/icon/) from the used icon font
 - `inputType` - (optional) sets the type of an input: *"text" | "password" | "number"*; *"text"* by default
 Use the "password" value to specify a field for entering a password
 - `max`	(optional) - the [maximal value allowed in the input](https://docs.dhtmlx.com/suite/form/work_with_form/#minimal-and-maximal-values). The attribute works only with the input type: *"number"*

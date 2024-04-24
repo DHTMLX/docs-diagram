@@ -62,7 +62,7 @@ description: You can explore the Colorpicker of Editbar in the documentation of 
 - `padding` - (optional) sets padding between a cell and a border of a Colorpicker control
 - `customColors` - (optional) shows a section with custom colors in the bottom part of the Colorpicker
 - `grayShades` - (optional) defines whether the section with gray shades is displayed in the palette, *true* by default
-- `icon` - (optional) the name of an icon from the used icon font
+- `icon` - (optional) the CSS class of an icon from the used icon font
 - `mode` - (optional) the mode of a control: *"palette"* (default) or *"picker"*
 - `palette` - (optional) contains arrays of colors you want to be shown in a colorpicker
 - `paletteOnly` - (optional) defines whether Colorpicker is shown only in the palette mode, *false* by default

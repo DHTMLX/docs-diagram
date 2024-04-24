@@ -6,7 +6,7 @@ description: You can explore the Checkbox of Editbar in the documentation of the
 
 # Checkbox
 
-@short: A control that allows a user to make a choice between one or several opposite options by toggling them.
+@short: A control that allows displaying the specified value or change it to the opposite one.
 
 ![Checkbox control](../../../../assets/editbar-basic-controls/checkbox.png)
 

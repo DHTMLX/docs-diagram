@@ -107,9 +107,9 @@ Note that it's highly not recommended to redefine the service properties and met
 - `disabled` - (optional) defines whether an option is enabled (*false*) or disabled (*true*), *false* by default
 - `full` - (optional) defines whether the option will be extended to the width specified by the `width` property, *false* by default
 - `text` - (optional) sets a text inside the option. When initialized together with the `offText` property, the specified text will be rendered in the selected (pressed) state
-- `icon` - (optional) sets the class of an icon displayed inside the option. When initialized together with the `offIcon` property, the specified classes of icons will be rendered in the selected (pressed) state of the option
+- `icon` - (optional) sets the CSS class of an icon displayed inside the option. When initialized together with the `offIcon` property, the specified CSS classes of icons will be rendered in the selected (pressed) state of the option
 - `offText` - (optional) sets the text that will be rendered in the unselected (unpressed) state of the option
-- `offIcon` - (optional) sets the class of an icon that will be rendered in the unselected (unpressed) state of the option
+- `offIcon` - (optional) sets the CSS class of an icon that will be rendered in the unselected (unpressed) state of the option
 - `value` - (optional) specifies the value in the selected (pressed) state. If not defined, the option is used with the *boolean* value
 
 ## Example

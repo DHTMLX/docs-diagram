@@ -68,7 +68,7 @@ description: You can explore the Datepicker of Editbar in the documentation of t
 - `date` - (optional) defines the date that will be opened when the calendar is created
 - `dateFormat` - (optional) defines the format of dates in the calendar, *"%d/%m/%y"* by default. The date format must include delimiters (space or symbol), otherwise an error will be thrown
 - `disabledDates` - (optional) allows disabling some date intervals, day labels are dimmed
-- `icon` - (optional) the name of an icon from the used icon font
+- `icon` - (optional) the CSS class of an icon from the used icon font
 - `mark` - (optional) allows adding a CSS class to specific days
 - `mode` - (optional) specifies the mode of displaying a calendar: *"calendar"* (default) | *"month"* | *"year"*
 - `placeholder` - (optional) a tip for the input

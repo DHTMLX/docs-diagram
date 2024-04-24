@@ -53,7 +53,7 @@ description: You can explore the Button of Editbar in the documentation of the t
 - `circle` - (optional) makes the corners of a button round, *false* by default
 - `color` - (optional) defines the color scheme of a button: *"danger" | "secondary" | "primary" | "success"*; *"primary"* by default
 - `full` - (optional) extends a button to the full width of the editbar, *false* by default
-- `icon` - (optional) an icon of the button
+- `icon` - (optional) sets the CSS class of an icon displayed inside the button
 - `size` - (optional) defines the size of a button: *"small" | "medium"*; *"medium"* by default
 - `view` - (optional) defines the look of a button: *"flat" | "link"*; *"flat"* by default
 

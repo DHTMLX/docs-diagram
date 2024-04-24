@@ -58,7 +58,7 @@ description: You can explore the Timepicker of Editbar in the documentation of t
 - `height` - (optional) the height of a control, *"content"* by default
 - `padding` - (optional) sets padding between a cell and a border of the Timepicker control
 - `controls` - (optional) defines whether a timepicker is equipped with the Close and Save buttons, *false* by default
-- `icon` - (optional) the name of an icon from the used icon font
+- `icon` - (optional) the CSS class of an icon from the used icon font
 - `placeholder` - (optional) a tip for the input
 - `timeFormat` - (optional) defines what clock format is activated: the 12-hour or 24-hour one. Set the property to *12* or *24* (default) value, correspondingly, *24* by default
 - `valueFormat` - (optional) defines the format of the value to be applied when working with the events of the timepicker control: *"string"* (default), *"timeObject"*

@@ -71,7 +71,7 @@ While loading an image and sending it to the server via the `target` property, n
 - `readOnly` - (optional) sets the readonly mode for the control, *false* by default
 - `removeIcon` - (optional) enables the possibility to clear the control by means of the UI, *true* by default
 - `circle` - (optional) sets the mode of displaying the control with rounded corners, *false* by default
-- `icon` - (optional) allows setting an icon when there is no image uploaded, doesn't work together with the `preview` property
+- `icon` - (optional) allows setting the CSS class of an icon when there is no image uploaded, doesn't work together with the `preview` property
 - `placeholder` - (optional) allows setting a text to be visible when there is no image uploaded, doesn't work together with the `preview` property
 - `preview` - (optional) specifies the absolute path to the preview image. The preview image is visible, when an image is not uploaded
 - `alt` - (optional) sets the attribute of the &lt;img&gt; tag - an alternative text when there is no image uploaded
