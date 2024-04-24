@@ -40,6 +40,9 @@ description: You can explore the Container of Editbar in the documentation of th
 ### Basic properties
 
 - `type` - (required) the type of a control, set it to *"container"*
+:::warning
+Note that when creating a new control via the [`controls` property](/api/diagram_editor/editbar/config/controls_property/) it's not allowed to redefine the default types of basic controls. If you need to modify a default control, you should create a new control type.
+:::
 - `html` - (required) the HTML content of a control
 - `wrap` - (optional) allows displaying the external wrapping, *false* by default
 - `css` - (optional) adds style classes to a control string
@@ -55,7 +58,7 @@ description: You can explore the Container of Editbar in the documentation of th
 #### Service properties and methods
 
 :::warning
-Note that it's highly not recommended to redefine the service properties and methods for the default types of controls, since it may cause breaks in their functionality. If you need to modify the default controls, you should [create a new control type via the `controls` property](/api/diagram_editor/editbar/config/controls_property/). 
+Note that it's highly not recommended to redefine the service properties and methods for the default types of controls, since it may cause breaks in their functionality. 
 :::
 
 - `$layout` - (optional) - a callback function that allows setting the structure of a control. Returns the configuration of the [Container](https://docs.dhtmlx.com/suite/form/container/) Form control. Called with the following parameter:

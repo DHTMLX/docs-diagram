@@ -61,6 +61,9 @@ The objects with the `toggle` configuration inside the control can be used both 
 #### Basic properties
 
 - `type` - (required) the type of a control, set it to *"toggleGroup"*
+:::warning
+Note that when creating a new control via the [`controls` property](/api/diagram_editor/editbar/config/controls_property/) it's not allowed to redefine the default types of basic controls. If you need to modify a default control, you should create a new control type.
+:::
 - `key` - (optional) the name of the specified/modified property or the path to it in the object of a Diagram item 
 - `options` - (required) an array of ToggleGroup options, each option is set as an *object* with a set of `key:value` pairs - [attributes of options and their values](#toggle-properties)
 - `hidden` - (optional) defines whether a ToggleGroup is hidden, *false* by default
@@ -75,7 +78,7 @@ The objects with the `toggle` configuration inside the control can be used both 
 #### Service properties and methods
 
 :::warning
-Note that it's highly not recommended to redefine the service properties and methods for the default types of controls, since it may cause breaks in their functionality. If you need to modify the default controls, you should [create a new control type via the `controls` property](/api/diagram_editor/editbar/config/controls_property/). 
+Note that it's highly not recommended to redefine the service properties and methods for the default types of controls, since it may cause breaks in their functionality. 
 :::
 
 - `$on` - (optional) - allows setting an event listener. The object has the following properties:

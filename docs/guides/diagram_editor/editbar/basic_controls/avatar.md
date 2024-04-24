@@ -60,6 +60,9 @@ description: You can explore the Avatar of Editbar in the documentation of the t
 ### Basic properties
 
 - `type` - (required) the type of a control, set it to *"avatar"*
+:::warning
+Note that when creating a new control via the [`controls` property](/api/diagram_editor/editbar/config/controls_property/) it's not allowed to redefine the default types of basic controls. If you need to modify a default control, you should create a new control type.
+:::
 - `key` - (optional) the name of the specified/modified property in the object of a Diagram item, *"img"* by default
 - `wrap` - (optional) allows displaying the external wrapping, *false* by default
 - `target` - (optional) sets an URL to the server-side script that will process file upload, the property is required when an image is sent to the server via the control
@@ -93,7 +96,7 @@ While loading an image and sending it to the server via the `target` property, n
 ### Service properties and methods
 
 :::warning
-Note that it's highly not recommended to redefine the service properties and methods for the default types of controls, since it may cause breaks in their functionality. If you need to modify the default controls, you should [create a new control type via the `controls` property](/api/diagram_editor/editbar/config/controls_property/). 
+Note that it's highly not recommended to redefine the service properties and methods for the default types of controls, since it may cause breaks in their functionality. 
 :::
 
 - `$on` - (optional) - allows setting an event listener. The object has the following properties:

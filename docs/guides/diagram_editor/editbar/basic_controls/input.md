@@ -52,6 +52,9 @@ description: You can explore the Input of Editbar in the documentation of the th
 ### Basic properties
 
 - `type` - (required) the type of a control, set it to *"input"*
+:::warning
+Note that when creating a new control via the [`controls` property](/api/diagram_editor/editbar/config/controls_property/) it's not allowed to redefine the default types of basic controls. If you need to modify a default control, you should create a new control type.
+:::
 - `key` - (optional) the name of the specified/modified property or the path to it in the object of a Diagram item 
 - `wrap` - (optional) allows displaying the external wrapping, *false* by default
 - `css`	- (optional) adds style classes to a control
@@ -76,7 +79,7 @@ Use the "password" value to specify a field for entering a password
 ### Service properties and methods
 
 :::warning
-Note that it's highly not recommended to redefine the service properties and methods for the default types of controls, since it may cause breaks in their functionality. If you need to modify the default controls, you should [create a new control type via the `controls` property](/api/diagram_editor/editbar/config/controls_property/). 
+Note that it's highly not recommended to redefine the service properties and methods for the default types of controls, since it may cause breaks in their functionality. 
 :::
 
 - `$on` - (optional) - allows setting an event listener. The object has the following properties:

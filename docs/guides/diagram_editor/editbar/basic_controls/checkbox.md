@@ -45,6 +45,9 @@ The control can be used both with the *boolean* value and the *string* one, if t
 ### Basic properties
 
 - `type` - (required) the type of a control, set it to *"checkbox"*
+:::warning
+Note that when creating a new control via the [`controls` property](/api/diagram_editor/editbar/config/controls_property/) it's not allowed to redefine the default types of basic controls. If you need to modify a default control, you should create a new control type.
+:::
 - `key` - (optional) the name of the specified/modified property or the path to it in the object of a Diagram item 
 - `text` - (optional) the text value of a control. It's placed to the right of the control
 - `value` -	(optional) the value of a checkbox
@@ -61,7 +64,7 @@ The control can be used both with the *boolean* value and the *string* one, if t
 ### Service properties and methods
 
 :::warning
-Note that it's highly not recommended to redefine the service properties and methods for the default types of controls, since it may cause breaks in their functionality. If you need to modify the default controls, you should [create a new control type via the `controls` property](/api/diagram_editor/editbar/config/controls_property/). 
+Note that it's highly not recommended to redefine the service properties and methods for the default types of controls, since it may cause breaks in their functionality. 
 :::
 
 - `$on` - (optional) - allows setting an event listener. The object has the following properties:

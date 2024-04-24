@@ -19,6 +19,9 @@ description: You can explore the Spacer of Editbar in the documentation of the t
 ## Description
 
 - `type` - (required) the type of a control, set it to *"spacer"*
+:::warning
+Note that when creating a new control via the [`controls` property](/api/diagram_editor/editbar/config/controls_property/) it's not allowed to redefine the default types of basic controls. If you need to modify a default control, you should create a new control type.
+:::
 
 ## Example
 

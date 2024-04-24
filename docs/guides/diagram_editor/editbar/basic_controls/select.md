@@ -57,6 +57,9 @@ Option configuration object inside Select:
 #### Basic properties
 
 - `type` - (required) the type of a control, set it to *"select"*
+:::warning
+Note that when creating a new control via the [`controls` property](/api/diagram_editor/editbar/config/controls_property/) it's not allowed to redefine the default types of basic controls. If you need to modify a default control, you should create a new control type.
+:::
 - `options` - (required) an array of Select options, each option can be set as a *string* or as an *object* with a set of `key:value` pairs - [attributes of options and their values](#option-properties)
 - `key` - (optional) the name of the specified/modified property or the path to it in the object of a Diagram item 
 - `wrap` - (optional) allows displaying the external wrapping, *false* by default
@@ -74,7 +77,7 @@ Option configuration object inside Select:
 #### Service properties and methods
 
 :::warning
-Note that it's highly not recommended to redefine the service properties and methods for the default types of controls, since it may cause breaks in their functionality. If you need to modify the default controls, you should [create a new control type via the `controls` property](/api/diagram_editor/editbar/config/controls_property/). 
+Note that it's highly not recommended to redefine the service properties and methods for the default types of controls, since it may cause breaks in their functionality. 
 :::
 
 - `$on` - (optional) - allows setting an event listener. The object has the following properties:

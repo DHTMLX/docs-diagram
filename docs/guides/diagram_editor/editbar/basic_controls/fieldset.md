@@ -55,6 +55,9 @@ The `rows` and `cols` properties may include an array of objects of the specifie
 ### Basic properties
 
 - `type` - (required) the type of a control, set it to *"fieldset"*
+:::warning
+Note that when creating a new control via the [`controls` property](/api/diagram_editor/editbar/config/controls_property/) it's not allowed to redefine the default types of basic controls. If you need to modify a default control, you should create a new control type.
+:::
 - `compact` - (optional) defines whether controls within a fieldset are surrounded by borders (*false*) or not (*true*), *false* by default
 - `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*), *false* by default
 - `hidden` - (optional) defines whether a control is hidden, *false* by default
@@ -71,7 +74,7 @@ The `rows` and `cols` properties may include an array of objects of the specifie
 #### Service properties and methods
 
 :::warning
-Note that it's highly not recommended to redefine the service properties and methods for the default types of controls, since it may cause breaks in their functionality. If you need to modify the default controls, you should [create a new control type via the `controls` property](/api/diagram_editor/editbar/config/controls_property/). 
+Note that it's highly not recommended to redefine the service properties and methods for the default types of controls, since it may cause breaks in their functionality. 
 :::
 
 - `$layout` - (optional) - a callback function that allows setting the structure of a control. Returns the configuration of the [Fieldset](https://docs.dhtmlx.com/suite/form/fieldset/) Form control. Called with the following parameter:
