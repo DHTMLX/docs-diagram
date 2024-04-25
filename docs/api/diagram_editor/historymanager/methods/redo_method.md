@@ -8,7 +8,7 @@ description: You can learn about the redo method of HistoryManager in the docume
 
 ### Description
 
-@short: Takes a step forward in the history of changes
+@short: Restores an action that has been reverted by the Undo action
 
 ### Usage
 
@@ -22,7 +22,7 @@ redo(): void;
 const editor = new dhx.DiagramEditor("editor_container", { 
     type: "default"
 });
-
+...
 editor.history.redo();
 ~~~
 

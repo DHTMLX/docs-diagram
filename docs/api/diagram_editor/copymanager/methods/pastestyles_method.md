@@ -28,7 +28,7 @@ pasteStyles(ids?: (string | number)[]): void;
 const editor = new dhx.DiagramEditor("editor_container", { 
     type: "default", 
 });
-
+...
 editor.model.copyStyles(); // copies styles of the first element from the selection list
 editor.model.pasteStyles(); // applies copied styles to the elements from the selection list
 ~~~
@@ -39,7 +39,7 @@ editor.model.pasteStyles(); // applies copied styles to the elements from the se
 const editor = new dhx.DiagramEditor("editor_container", { 
     type: "default", 
 });
-
+...
 editor.model.copyStyles("2"); // copies styles of the specified element
 editor.model.pasteStyles(["1", "2", "3"]); // applies copied styles to the specified elements
 ~~~

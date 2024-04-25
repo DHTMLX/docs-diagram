@@ -26,7 +26,7 @@ paste(): void;
 const editor = new dhx.DiagramEditor("editor_container", { 
     type: "default", // only default
 });
-
+...
 editor.model.copy(); // copies the selected items
 editor.model.paste() // pastes new items
 ~~~

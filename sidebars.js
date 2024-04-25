@@ -283,8 +283,10 @@ module.exports = {
                     "api/diagram_editor/historymanager/methods/disable_method",
                     "api/diagram_editor/historymanager/methods/enable_method",
                     "api/diagram_editor/historymanager/methods/isredo_method",
+                    "api/diagram_editor/historymanager/methods/isundo_method",
                     "api/diagram_editor/historymanager/methods/redo_method",
                     "api/diagram_editor/historymanager/methods/reset_method",
+                    "api/diagram_editor/historymanager/methods/undo_method",
                   ],
                 },
                 // History Manager Properties
@@ -297,7 +299,6 @@ module.exports = {
                     id: "api/diagram_editor/historymanager/config/overview",
                   },
                   items: [
-                    "api/diagram_editor/historymanager/config/disabled_property",
                     "api/diagram_editor/historymanager/config/savedelay_property",
                   ]
                 },

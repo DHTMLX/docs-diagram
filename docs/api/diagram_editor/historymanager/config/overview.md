@@ -8,5 +8,4 @@ description: You can explore the History manager properties in the documentation
 
 | Name                                 						  | Description                                 					   |
 | :---------------------------------------------------------- | :----------------------------------------------------------------- |
-| [](api/diagram_editor/historymanager/config/disabled_property.md) | @getshort(api/diagram_editor/historymanager/config/disabled_property.md) |
 | [](api/diagram_editor/historymanager/config/savedelay_property.md) | @getshort(api/diagram_editor/historymanager/config/savedelay_property.md) |

@@ -8,7 +8,7 @@ description: You can learn about the isRedo method of HistoryManager in the docu
 
 ### Description
 
-@short: Checks whether the current HistoryManager state is in the ending state
+@short: Checks whether an action reverted by the Undo action has been restored
 
 ### Usage
 
@@ -22,12 +22,12 @@ isRedo(): boolean;
 const editor = new dhx.DiagramEditor("editor_container", { 
     type: "default"
 });
-
+...
 editor.history.isRedo();
 ~~~
 
 ### Returns
 
-The method returns `true`, if the current state is in the ending state; otherwise, `false`
+The method returns `true`, if an action reverted by the Undo action has been restored; otherwise, `false`
 
 **Change log**: Added in v4.1

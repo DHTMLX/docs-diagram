@@ -29,7 +29,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
     type: "default"
 });
 
-editor.history.saveDelay = 600;
+editor.history.saveDelay = 1000;
 ~~~
 
 **Change log**: Added in v4.1

@@ -30,7 +30,7 @@ add(newState: array): void;
 const editor = new dhx.DiagramEditor("editor_container", { 
     type: "default"
 });
-
+...
 editor.history.add([
 	{ "id": "shape_1", "type": "start", "x": 200, y: 0, "text": "Start" },
 	{ "id": "shape_2", "type": "process", "x": 200, y: 120, "text": "Call the client" },

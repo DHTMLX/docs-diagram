@@ -12,8 +12,8 @@ A set of APIs that you can use for managing the history of actions in the Diagra
 const editor = new dhx.DiagramEditor("editor_container", { 
     type: "default", // only default
 });
-
-editor.history.redo(); // copies selected items
+...
+editor.history.redo(); // restores an action that has been reverted by the Undo action
 ~~~
 
 ## History manager methods overview
@@ -24,13 +24,13 @@ editor.history.redo(); // copies selected items
 | [](api/diagram_editor/historymanager/methods/disable_method.md) | @getshort(api/diagram_editor/historymanager/methods/disable_method.md) |
 | [](api/diagram_editor/historymanager/methods/enable_method.md) | @getshort(api/diagram_editor/historymanager/methods/enable_method.md) |
 | [](api/diagram_editor/historymanager/methods/isredo_method.md) | @getshort(api/diagram_editor/historymanager/methods/isredo_method.md) |
+| [](api/diagram_editor/historymanager/methods/isundo_method.md) | @getshort(api/diagram_editor/historymanager/methods/isundo_method.md) |
 | [](api/diagram_editor/historymanager/methods/redo_method.md) | @getshort(api/diagram_editor/historymanager/methods/redo_method.md) |
 | [](api/diagram_editor/historymanager/methods/reset_method.md) | @getshort(api/diagram_editor/historymanager/methods/reset_method.md) |
-
+| [](api/diagram_editor/historymanager/methods/undo_method.md) | @getshort(api/diagram_editor/historymanager/methods/undo_method.md) |
 
 ## History manager properties overview
 
 | Name                                 						  | Description                                 					   |
 | :---------------------------------------------------------- | :----------------------------------------------------------------- |
-| [](api/diagram_editor/historymanager/config/disabled_property.md) | @getshort(api/diagram_editor/historymanager/config/disabled_property.md) |
 | [](api/diagram_editor/historymanager/config/savedelay_property.md) | @getshort(api/diagram_editor/historymanager/config/savedelay_property.md) |
