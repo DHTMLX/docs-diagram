@@ -1,18 +1,18 @@
 ---
 sidebar_label: Timepicker!!
 title: Editbar Basic Controls - Timepicker 
-description: You can explore the Timepicker of Editbar in the documentation of the the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: You can explore the Timepicker control of Editbar in the documentation of the the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # Timepicker
 
-@short: A control that allows a user to select time value either by moving handles along track bars or by entering hour and minutes values directly into related inputs.
+@short: The basic control for selecting a time value either by moving handles along track bars or by entering hour and minutes values directly into related inputs.
 
 ![Timepicker control](../../../../assets/editbar-basic-controls/timepicker.png)
 
 ## Usage
 
-~~~js
+~~~jsx
 {
     type: "timepicker",
     key?: string | string[],
@@ -48,26 +48,23 @@ description: You can explore the Timepicker of Editbar in the documentation of t
 
 ### Basic properties
 
-- `type` - (required) the type of a control, set it to *"timepicker"*
-:::warning
-Note that when creating a new control via the [`controls` property](/api/diagram_editor/editbar/config/controls_property/) it's not allowed to redefine the default types of basic controls. If you need to modify a default control, you should create a new control type.
-:::
+- `type` - (required) the type of a control. Set it to *"timepicker"*
 - `key` - (optional) the name of the specified/modified property or the path to it in the object of a Diagram item 
-- `wrap` - (optional) allows displaying the external wrapping, *false* by default
+- `wrap` - (optional) allows displaying the external wrapping. *false* by default
 - `css` - (optional) adds style classes to a control
-- `hidden` - (optional) defines whether a control is hidden, *false* by default
-- `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*), *false* by default
-- `width` - (optional) the width of a control, *"content"* by default
-- `height` - (optional) the height of a control, *"content"* by default
+- `hidden` - (optional) defines whether a control is hidden. *false* by default
+- `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*). *false* by default
+- `width` - (optional) the width of a control. *"content"* by default
+- `height` - (optional) the height of a control. *"content"* by default
 - `padding` - (optional) sets padding between a cell and a border of the Timepicker control
-- `controls` - (optional) defines whether a timepicker is equipped with the Close and Save buttons, *false* by default
+- `controls` - (optional) defines whether a timepicker is equipped with the Close and Save buttons. *false* by default
 - `icon` - (optional) the CSS class of an icon from the used icon font
 - `placeholder` - (optional) a tip for the input
-- `timeFormat` - (optional) defines what clock format is activated: the 12-hour or 24-hour one. Set the property to *12* or *24* (default) value, correspondingly, *24* by default
-- `valueFormat` - (optional) defines the format of the value to be applied when working with the events of the timepicker control: *"string"* (default), *"timeObject"*
+- `timeFormat` - (optional) defines what clock format is activated: the 12-hour or 24-hour one. Set the property to *12* or *24*, correspondingly. *24* by default
+- `valueFormat` - (optional) defines the format of the value to be applied when working with the events of the timepicker control: *"string"* | *"timeObject"*. *"string"* by default
 - `label` - (optional) specifies a label for the control
 - `labelWidth` - (optional) sets the label width of the control
-- `labelPosition` - (optional) defines the position of a label: *"left" | "top"*, *"top"* by default
+- `labelPosition` - (optional) defines the position of a label: *"left" | "top"*. *"top"* by default
 
 ### Service properties and methods
 
@@ -99,7 +96,7 @@ Note that it's highly not recommended to redefine the service properties and met
 
 ## Example
 
-~~~js {8-13}
+~~~jsx {8-13}
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "org",
     view: {

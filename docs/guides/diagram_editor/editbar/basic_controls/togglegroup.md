@@ -1,18 +1,18 @@
 ---
 sidebar_label: ToggleGroup!!
 title: Editbar Basic Controls - ToggleGroup 
-description: You can explore the ToggleGroup of Editbar in the documentation of the the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: You can explore the ToggleGroup control of Editbar in the documentation of the the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # ToggleGroup
 
-@short: A control intended for creating groups of toggle buttons.
+@short: The basic control for creating groups of toggle buttons.
 
 ![ToggleGroup control](../../../../assets/editbar-basic-controls/togglegroup.png)
 
 ## Usage
 
-~~~js
+~~~jsx
 {
     type: "toggleGroup",
     options: object[],
@@ -38,7 +38,7 @@ description: You can explore the ToggleGroup of Editbar in the documentation of 
 
 Toggle configuration object inside ToggleGroup:
 
-~~~js
+~~~jsx
 {
     id?: string,
     hidden?: boolean,
@@ -60,19 +60,16 @@ The objects with the `toggle` configuration inside the control can be used both 
 
 #### Basic properties
 
-- `type` - (required) the type of a control, set it to *"toggleGroup"*
-:::warning
-Note that when creating a new control via the [`controls` property](/api/diagram_editor/editbar/config/controls_property/) it's not allowed to redefine the default types of basic controls. If you need to modify a default control, you should create a new control type.
-:::
+- `type` - (required) the type of a control. Set it to *"toggleGroup"*
 - `key` - (optional) the name of the specified/modified property or the path to it in the object of a Diagram item 
 - `options` - (required) an array of ToggleGroup options, each option is set as an *object* with a set of `key:value` pairs - [attributes of options and their values](#toggle-properties)
-- `hidden` - (optional) defines whether a ToggleGroup is hidden, *false* by default
-- `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*), *false* by default
-- `full` - (optional) defines whether the ToggleGroup will be extended to the width specified by the `width` property, *false* by default
-- `gap` - (optional) sets an offset between the elements (buttons) of an option, *0* by default
+- `hidden` - (optional) defines whether a ToggleGroup is hidden. *false* by default
+- `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*). *false* by default
+- `full` - (optional) defines whether the ToggleGroup will be extended to the width specified by the `width` property. *false* by default
+- `gap` - (optional) sets an offset between the elements (buttons) of an option. *0* by default
 - `css` - (optional) adds style classes to a control
-- `width` - (optional) the width of a control, *"content"* by default
-- `height` - (optional) the height of a control, *"content"* by default
+- `width` - (optional) the width of a control. *"content"* by default
+- `height` - (optional) the height of a control. *"content"* by default
 - `padding` - (optional) sets padding between a cell and a border of the ToggleGroup control
 
 #### Service properties and methods
@@ -106,9 +103,9 @@ Note that it's highly not recommended to redefine the service properties and met
 ### Toggle properties
 
 - `id` - (optional) the id of a control, auto-generated if not set
-- `hidden` - (optional) defines whether an option is hidden, *false* by default
-- `disabled` - (optional) defines whether an option is enabled (*false*) or disabled (*true*), *false* by default
-- `full` - (optional) defines whether the option will be extended to the width specified by the `width` property, *false* by default
+- `hidden` - (optional) defines whether an option is hidden. *false* by default
+- `disabled` - (optional) defines whether an option is enabled (*false*) or disabled (*true*). *false* by default
+- `full` - (optional) defines whether the option will be extended to the width specified by the `width` property. *false* by default
 - `text` - (optional) sets a text inside the option. When initialized together with the `offText` property, the specified text will be rendered in the selected (pressed) state
 - `icon` - (optional) sets the CSS class of an icon displayed inside the option. When initialized together with the `offIcon` property, the specified CSS classes of icons will be rendered in the selected (pressed) state of the option
 - `offText` - (optional) sets the text that will be rendered in the unselected (unpressed) state of the option
@@ -117,7 +114,7 @@ Note that it's highly not recommended to redefine the service properties and met
 
 ## Example
 
-~~~js {7-28}
+~~~jsx {7-28}
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
      view: {

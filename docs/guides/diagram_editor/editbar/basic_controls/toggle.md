@@ -1,18 +1,18 @@
 ---
 sidebar_label: Toggle!!
 title: Editbar Basic Controls - Toggle 
-description: You can explore the Toggle of Editbar in the documentation of the the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: You can explore the Toggle control of Editbar in the documentation of the the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # Toggle
 
-@short: A special button control that changes its state from the pressed to the unpressed one when clicked.
+@short: The basic control that represents a special button which can change its state from the pressed to the unpressed one when clicked.
 
 ![Toggle control](../../../../assets/editbar-basic-controls/toggle.png)
 
 ## Usage
 
-~~~js
+~~~jsx
 {
     type: "toggle",
     key?: string | string[],
@@ -46,22 +46,19 @@ The control can be used both with the *boolean* value and the *string* one, if t
 
 ### Basic properties
 
-- `type` - (required) the type of a control, set it to *"toggle"*
-:::warning
-Note that when creating a new control via the [`controls` property](/api/diagram_editor/editbar/config/controls_property/) it's not allowed to redefine the default types of basic controls. If you need to modify a default control, you should create a new control type.
-:::
+- `type` - (required) the type of a control. Set it to *"toggle"*
 - `key` - (optional) the name of the specified/modified property or the path to it in the object of a Diagram item  
-- `hidden` - (optional) defines whether a control is hidden, *false* by default
-- `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*), *false* by default
-- `full` - (optional) defines whether the toggle will be extended to the width specified by the `width` property, *false* by default
+- `hidden` - (optional) defines whether a control is hidden. *false* by default
+- `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*). *false* by default
+- `full` - (optional) defines whether the toggle will be extended to the width specified by the `width` property. *false* by default
 - `text` - (optional) sets a text inside the toggle. When initialized together with the `offText` property, the specified text will be rendered in the selected (pressed) state
 - `offText` - (optional) sets the text that will be rendered in the unselected (unpressed) state of the toggle
 - `icon` - (optional) sets the CSS class of an icon displayed inside the toggle. When initialized together with the `offIcon` property, the specified CSS classes of icons will be rendered in the selected (pressed) state of the toggle
 - `offIcon` - (optional) sets the CSS class of an icon that will be rendered in the unselected (unpressed) state of the toggle
 - `value` - (optional) specifies the value in the selected (pressed) state. If not defined, the control is used with the *boolean* value 
 - `css` - (optional) adds style classes to a control
-- `width` - (optional) the width of a control, *"content"* by default
-- `height` - (optional) the height of a control, *"content"* by default
+- `width` - (optional) the width of a control. *"content"* by default
+- `height` - (optional) the height of a control. *"content"* by default
 - `padding` - (optional) sets padding between a cell and a border of the Toggle control
 
 ### Service properties and methods
@@ -94,7 +91,7 @@ Note that it's highly not recommended to redefine the service properties and met
 
 ## Example
 
-~~~js {7-14} title="Applying the boolean value for a toggle"
+~~~jsx {7-14} title="Applying the boolean value for a toggle"
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
      view: {
@@ -116,7 +113,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 ~~~
 
-~~~js {7-12} title="Assigning the set value as a value of the applied property"
+~~~jsx {7-12} title="Assigning the set value as a value of the applied property"
 const editor= new dhx.DiagramEditor("editor", {
     type: "default",
      view: {

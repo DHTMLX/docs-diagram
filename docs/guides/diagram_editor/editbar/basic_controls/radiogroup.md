@@ -1,18 +1,18 @@
 ---
 sidebar_label: RadioGroup!!
 title: Editbar Basic Controls - RadioGroup 
-description: You can explore the RadioGroup of Editbar in the documentation of the the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: You can explore the RadioGroup control of Editbar in the documentation of the the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # RadioGroup
 
-@short: A control intended for creating groups of Radio buttons.
+@short: The basic control for creating groups of Radio buttons.
 
 ![RadioGroup control](../../../../assets/editbar-basic-controls/radiogroup.png)
 
 ## Usage
 
-~~~js
+~~~jsx
 {
     type: "radiogroup",
     options: {
@@ -49,7 +49,7 @@ description: You can explore the RadioGroup of Editbar in the documentation of t
 
 Radio button configuration object inside RadioGroup:
 
-~~~js
+~~~jsx
 {
     value: string,
     text?: string,
@@ -69,12 +69,9 @@ Radio button configuration object inside RadioGroup:
 
 #### Basic properties
 
-- `type` - (required) the type of a control, set it to "radioGroup"
-:::warning
-Note that when creating a new control via the [`controls` property](/api/diagram_editor/editbar/config/controls_property/) it's not allowed to redefine the default types of basic controls. If you need to modify a default control, you should create a new control type.
-:::
+- `type` - (required) the type of a control. Set it to "radioGroup"
 - `key` - (optional) the name of the specified/modified property or the path to it in the object of a Diagram item 
-- `wrap` - (optional) allows displaying the external wrapping, *false* by default
+- `wrap` - (optional) allows displaying the external wrapping. *false* by default
 - `options` - (required) an object with options of a RadioGroup. The object can contain the following attributes:
 	- `rows` - (optional) arranges [radio buttons](#radio-button-properties) inside the RadioGroup control vertically
 	- `cols` - (optional) arranges [radio buttons](#radio-button-properties) inside the RadioGroup control horizontally
@@ -82,15 +79,15 @@ Note that when creating a new control via the [`controls` property](/api/diagram
 	- `height` - (optional) the height of a RadioGroup
 	- `padding` - (optional) sets padding between a cell and a border of a RadioGroup
 	- `width` - (optional) the width of a RadioGroup
-- `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*)
-- `hidden` - (boolean) defines whether a RadioGroup is hidden, *false* by default
+- `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*). *false* by default
+- `hidden` - (boolean) defines whether a RadioGroup is hidden. *false* by default
 - `css` - (optional) adds style classes to a control
-- `height` - (optional) the height of a control, *"content"* by default
-- `width` - (optional) the width of a control, *"content"* by default
+- `height` - (optional) the height of a control. *"content"* by default
+- `width` - (optional) the width of a control. *"content"* by default
 - `padding` - (optional) sets padding between a cell and a border of a RadioGroup control
 - `label` - (optional) specifies a label for the control
 - `labelWidth` - (optional) sets the label width of the control
-- `labelPosition` - (optional) defines the position of a label: *"left" | "top"*, *"top"* by default
+- `labelPosition` - (optional) defines the position of a label: *"left" | "top"*. *"top"* by default
 
 #### Service properties and methods
 
@@ -124,16 +121,16 @@ Note that it's highly not recommended to redefine the service properties and met
 
 - `value` - (required) the value of a radio button
 - `text` - (optional) the text label of a radio button
-- `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*), *false* by default
-- `hidden` - (optional) defines whether a radio button is hidden, *false* by default
+- `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*). *false* by default
+- `hidden` - (optional) defines whether a radio button is hidden. *false* by default
 - `css` - (optional) adds style classes to a control
-- `height` - (optional) the height of a control, *"content"* by default
-- `width` - (optional) the width of a control, *"content"* by default
+- `height` - (optional) the height of a control. *"content"* by default
+- `width` - (optional) the width of a control. *"content"* by default
 - `padding` - (optional) sets padding between a cell and a border of a radio button control
 
 ## Example
 
-~~~js {7-28}
+~~~jsx {7-28}
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
      view: {

@@ -1,18 +1,18 @@
 ---
 sidebar_label: CheckboxGroup!!
 title: Editbar Basic Controls - CheckboxGroup 
-description: You can explore the CheckboxGroup of Editbar in the documentation of the the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: You can explore the CheckboxGroup control of Editbar in the documentation of the the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # CheckboxGroup
 
-@short: A control intended for creating groups of checkboxes.
+@short: The basic control for creating groups of checkboxes.
 
 ![CheckboxGroup control](../../../../assets/editbar-basic-controls/checkboxgroup.png)
 
 ## Usage
 
-~~~js
+~~~jsx
 {
     type: "checkboxGroup",
     options: {
@@ -48,7 +48,7 @@ description: You can explore the CheckboxGroup of Editbar in the documentation o
 
 Checkbox configuration object inside a CheckboxGroup:
 
-~~~js
+~~~jsx
 {
     id: string,
     text: string,
@@ -71,12 +71,9 @@ The objects with the `checkbox` configuration inside the control can be used bot
 
 #### Basic properties
 
-- `type` - (required) the type of a control, set it to *"checkboxGroup"*
-:::warning
-Note that when creating a new control via the [`controls` property](/api/diagram_editor/editbar/config/controls_property/) it's not allowed to redefine the default types of basic controls. If you need to modify a default control, you should create a new control type.
-:::
+- `type` - (required) the type of a control. Set it to *"checkboxGroup"*
 - `key` - (optional) the name of the specified/modified property or the path to it in the object of a Diagram item 
-- `wrap` - (optional) allows displaying the external wrapping, *false* by default
+- `wrap` - (optional) allows displaying the external wrapping. *false* by default
 - `options` - (required) an object with options of a CheckboxGroup. The object can contain the following attributes:
     - `rows` - (optional) arranges [checkboxes](#checkbox-properties) inside the CheckboxGroup control vertically
     - `cols` - (optional) arranges [checkboxes](#checkbox-properties) inside the CheckboxGroup control horizontally
@@ -85,14 +82,14 @@ Note that when creating a new control via the [`controls` property](/api/diagram
     - `padding` - (optional) sets padding between a cell and a border of a CheckboxGroup
     - `width` - (optional) the width of a CheckboxGroup
 - `css` - (optional) adds style classes to a control
-- `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*)
-- `hidden` - (boolean) defines whether a CheckboxGroup is hidden, *false* by default
-- `height` - (optional) the height of a control, *"content"* by default
-- `width` - (optional) the width of a control, *"content"* by default
+- `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*). *false* by default
+- `hidden` - (boolean) defines whether a CheckboxGroup is hidden. *false* by default
+- `height` - (optional) the height of a control. *"content"* by default
+- `width` - (optional) the width of a control. *"content"* by default
 - `padding` - (optional) sets padding between a cell and a border of a CheckboxGroup control
 - `label` - (optional) specifies a label for the control
 - `labelWidth` - (optional) sets the label width of the control
-- `labelPosition` - (optional) defines the position of a label: *"left" | "top"*, *"top"* by default
+- `labelPosition` - (optional) defines the position of a label: *"left" | "top"*. *"top"* by default
 
 #### Service properties and methods
 
@@ -128,15 +125,15 @@ Note that it's highly not recommended to redefine the service properties and met
 - `text` - (optional) the text label of a checkbox
 - `value` - (optional) the value of a checkbox
 - `css` - (optional) adds style classes to a control
-- `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*), *false* by default
-- `hidden` - (optional) defines whether a checkbox is hidden, *false* by default
-- `height` - (optional) the height of a control, *"content"* by default
-- `width` - (optional) the width of a control, *"content"* by default
+- `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*). *false* by default
+- `hidden` - (optional) defines whether a checkbox is hidden. *false* by default
+- `height` - (optional) the height of a control. *"content"* by default
+- `width` - (optional) the width of a control. *"content"* by default
 - `padding` - (optional) sets padding between a cell and a border of a Checkbox control
 
 ## Example
 
-~~~js {7-19}
+~~~jsx {7-19}
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {

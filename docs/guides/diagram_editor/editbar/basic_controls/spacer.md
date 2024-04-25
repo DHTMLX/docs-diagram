@@ -1,16 +1,16 @@
 ---
 sidebar_label: Spacer!!
 title: Editbar Basic Controls - Spacer 
-description: You can explore the Spacer of Editbar in the documentation of the the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: You can explore the Spacer control of Editbar in the documentation of the the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # Spacer
 
-@short: A control used for arranging and aligning controls on the Editbar by taking some space.
+@short: The basic control for arranging and aligning controls on the Editbar by taking some space.
 
 ## Usage
 
-~~~js
+~~~jsx
 {
     type: "spacer"
 }
@@ -18,14 +18,11 @@ description: You can explore the Spacer of Editbar in the documentation of the t
 
 ## Description
 
-- `type` - (required) the type of a control, set it to *"spacer"*
-:::warning
-Note that when creating a new control via the [`controls` property](/api/diagram_editor/editbar/config/controls_property/) it's not allowed to redefine the default types of basic controls. If you need to modify a default control, you should create a new control type.
-:::
+- `type` - (required) the type of a control. Set it to *"spacer"*
 
 ## Example
 
-~~~js {10,12}
+~~~jsx {10,12}
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "org",
     view: {

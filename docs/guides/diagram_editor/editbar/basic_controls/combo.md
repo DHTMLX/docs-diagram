@@ -1,18 +1,18 @@
 ---
 sidebar_label: Combo!!
 title: Editbar Basic Controls - Combo 
-description: You can explore the Combo of Editbar in the documentation of the the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: You can explore the Combo control of Editbar in the documentation of the the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # Combo
 
-@short: An input that represents an advanced select box with a set of options.
+@short: The basic input control that represents an advanced editable select box with a set of options.
 
 ![Combo control](../../../../assets/editbar-basic-controls/combo.png)
 
 ## Usage
 
-~~~js
+~~~jsx
 {
     type: "combo",
     options: (object | string)[],
@@ -52,7 +52,7 @@ description: You can explore the Combo of Editbar in the documentation of the th
 
 Option configuration object inside Combo:
 
-~~~js
+~~~jsx
 {
     id: string | number,
     value: string | number
@@ -65,31 +65,28 @@ Option configuration object inside Combo:
 
 #### Basic properties
 
-- `type` - (required) the type of a control, set it to *"combo"*
-:::warning
-Note that when creating a new control via the [`controls` property](/api/diagram_editor/editbar/config/controls_property/) it's not allowed to redefine the default types of basic controls. If you need to modify a default control, you should create a new control type.
-:::
+- `type` - (required) the type of a control. Set it to *"combo"*
 - `options` - (required) an array of Combo options, each option can be set as a *string* or as an *object* with a set of `key:value` pairs - [attributes of options and their values](#option-properties) 
 - `key` - (optional) the name of the specified/modified property or the path to it in the object of a Diagram item 
-- `wrap` - (optional) allows displaying the external wrapping, *false* by default
+- `wrap` - (optional) allows displaying the external wrapping. *false* by default
 - `css` - (optional) adds style classes to a control
-- `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*), *false* by default
-- `hidden` - (optional) defines whether a combo is hidden, *false* by default
-- `height` - (optional) the height of a control, *"content"* by default
-- `width` - (optional) the width of a control, *"content"* by default
+- `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*). *false* by default
+- `hidden` - (optional) defines whether a combo is hidden. *false* by default
+- `height` - (optional) the height of a control. *"content"* by default
+- `width` - (optional) the width of a control. *"content"* by default
 - `padding` - (optional) sets padding between a cell and a border of a Combo control
 - `filter` - (optional) sets a custom function for filtering Combo options. [Check the details](https://docs.dhtmlx.com/suite/combobox/customization/#custom-filter-for-options).
-- `itemHeight` - (optional) sets the height of a cell in the list of options, *32* by default
+- `itemHeight` - (optional) sets the height of a cell in the list of options. *32* by default
 - `itemsCount` - (optional) shows the total number of selected options
-- `listHeight` - (optional) sets the height of the list of options, *224* by default
-- `multiselection` - (optional) enables selection of multiple options in Combo, *false* by default
+- `listHeight` - (optional) sets the height of the list of options. *224* by default
+- `multiselection` - (optional) enables selection of multiple options in Combo. *false* by default
 - `placeholder` - (optional) sets a placeholder in the input of Combo
-- `readOnly` - (optional) makes Combo readonly (it is only possible to select options from the list, without entering words in the input), *false* by default
-- `selectAllButton` - (optional) defines whether the "Select All" button should be shown, *false* by default
+- `readOnly` - (optional) makes Combo readonly (it is only possible to select options from the list, without entering words in the input). *false* by default
+- `selectAllButton` - (optional) defines whether the "Select All" button should be shown. *false* by default
 - `template` - (optional) sets a template of displaying options in the popup list
-- `virtual` - (optional) enables dynamic loading of data on scrolling the list of options, *false* by default
+- `virtual` - (optional) enables dynamic loading of data on scrolling the list of options. *false* by default
 - `label` - (optional) specifies a label for a control
-- `labelPosition` - (optional) defines the position of a label: *"left" | "top"*, *"top"* by default
+- `labelPosition` - (optional) defines the position of a label: *"left" | "top"*. *"top"* by default
 - `labelWidth` - (optional) sets the width of the label of a control
 
 #### Service properties and methods
@@ -122,12 +119,12 @@ Note that it's highly not recommended to redefine the service properties and met
 
 ### Option properties
 
-- `id` - the "id" attribute is returned and goes to form data. This attribute should always be fulfilled to avoid unexpected behavior
-- `value` - the "value" attribute is displayed in the input field
+- `id` - the `id` attribute is returned and goes to form data. This attribute should always be fulfilled to avoid unexpected behavior
+- `value` - the `value` attribute is displayed in the input field
 
 ## Example
 
-~~~js {7-13}
+~~~jsx {7-13}
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "org",
     view: {
@@ -153,7 +150,7 @@ editor.parse([
 ]);
 ~~~
 
-~~~js {7-14} title="With multiselection enabled"
+~~~jsx {7-14} title="With multiselection enabled"
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "org",
     view: {
@@ -180,7 +177,7 @@ editor.parse([
 ]);
 ~~~
 
-~~~js {7-14} title="Setting options as objects"
+~~~jsx {7-14} title="Setting options as objects"
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "org",
     view: {

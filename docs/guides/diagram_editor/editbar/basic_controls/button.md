@@ -1,18 +1,18 @@
 ---
 sidebar_label: Button!!
 title: Editbar Basic Controls - Button 
-description: You can explore the Button of Editbar in the documentation of the the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: You can explore the Button control of Editbar in the documentation of the the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # Button 
 
-@short: A simple button that can have an icon.
+@short: The basic button control that can have an icon.
 
 ![Button control](../../../../assets/editbar-basic-controls/button.png)
 
 ## Usage
 
-~~~js
+~~~jsx
 {
     type: "button",
     text?: string,
@@ -42,23 +42,20 @@ description: You can explore the Button of Editbar in the documentation of the t
 
 ### Basic properties
 
-- `type` - (required) the type of a control, set it to *"button"*
-:::warning
-Note that when creating a new control via the [`controls` property](/api/diagram_editor/editbar/config/controls_property/) it's not allowed to redefine the default types of basic controls. If you need to modify a default control, you should create a new control type.
-:::
+- `type` - (required) the type of a control. Set it to *"button"*
 - `text` - (optional) the text label of a button
 - `css`	- (optional) adds style classes to a control
-- `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*), *false* by default
-- `hidden` - (optional) defines whether a control is hidden, *false* by default
-- `height` - (optional) the height of a control, *"content"* by default
-- `width` - (optional) the width of a control, *"content"* by default
+- `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*). *false* by default
+- `hidden` - (optional) defines whether a control is hidden. *false* by default
+- `height` - (optional) the height of a control. *"content"* by default
+- `width` - (optional) the width of a control. *"content"* by default
 - `padding` - (optional) sets padding between a cell and a border of a button control
-- `circle` - (optional) makes the corners of a button round, *false* by default
-- `color` - (optional) defines the color scheme of a button: *"danger" | "secondary" | "primary" | "success"*; *"primary"* by default
-- `full` - (optional) extends a button to the full width of the editbar, *false* by default
+- `circle` - (optional) makes the corners of a button round. *false* by default
+- `color` - (optional) defines the color scheme of a button: *"danger" | "secondary" | "primary" | "success"*. *"primary"* by default
+- `full` - (optional) extends a button to the full width of the editbar. *false* by default
 - `icon` - (optional) sets the CSS class of an icon displayed inside the button
-- `size` - (optional) defines the size of a button: *"small" | "medium"*; *"medium"* by default
-- `view` - (optional) defines the look of a button: *"flat" | "link"*; *"flat"* by default
+- `size` - (optional) defines the size of a button: *"small" | "medium"*. *"medium"* by default
+- `view` - (optional) defines the look of a button: *"flat" | "link"*. *"flat"* by default
 
 ### Service properties and methods
 
@@ -78,7 +75,7 @@ Note that it's highly not recommended to redefine the service properties and met
 
 ## Example
 
-~~~js {8-20}
+~~~jsx {8-20}
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {

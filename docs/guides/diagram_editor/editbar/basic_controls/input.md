@@ -1,18 +1,18 @@
 ---
 sidebar_label: Input!!
 title: Editbar Basic Controls - Input 
-description: You can explore the Input of Editbar in the documentation of the the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: You can explore the Input control of Editbar in the documentation of the the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # Input
 
-@short: An input field for typing some text inside.
+@short: The basic input field control for typing some text inside.
 
 ![Input control](../../../../assets/editbar-basic-controls/input.png)
 
 ## Usage
 
-~~~js
+~~~jsx
 {
     type: "input",
     key?: string | string[],
@@ -51,30 +51,27 @@ description: You can explore the Input of Editbar in the documentation of the th
 
 ### Basic properties
 
-- `type` - (required) the type of a control, set it to *"input"*
-:::warning
-Note that when creating a new control via the [`controls` property](/api/diagram_editor/editbar/config/controls_property/) it's not allowed to redefine the default types of basic controls. If you need to modify a default control, you should create a new control type.
-:::
+- `type` - (required) the type of a control. Set it to *"input"*
 - `key` - (optional) the name of the specified/modified property or the path to it in the object of a Diagram item 
-- `wrap` - (optional) allows displaying the external wrapping, *false* by default
+- `wrap` - (optional) allows displaying the external wrapping. *false* by default
 - `css`	- (optional) adds style classes to a control
-- `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*), *false* by default
-- `hidden` - (optional) defines whether a control is hidden, *false* by default
-- `height` - (optional) the height of a control, *"content"* by default
-- `width` - (optional) the width of a control, *"content"* by default
+- `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*). *false* by default
+- `hidden` - (optional) defines whether a control is hidden. *false* by default
+- `height` - (optional) the height of a control. *"content"* by default
+- `width` - (optional) the width of a control. *"content"* by default
 - `padding` - (optional) sets padding between a cell and a border of an input control
 - `icon` - (optional) the CSS class of an [icon](https://docs.dhtmlx.com/suite/helpers/icon/) from the used icon font
-- `inputType` - (optional) sets the type of an input: *"text" | "password" | "number"*; *"text"* by default
+- `inputType` - (optional) sets the type of an input: *"text" | "password" | "number"*. *"text"* by default
 Use the "password" value to specify a field for entering a password
-- `max`	(optional) - the [maximal value allowed in the input](https://docs.dhtmlx.com/suite/form/work_with_form/#minimal-and-maximal-values). The attribute works only with the input type: *"number"*
+- `max` - (optional) - the [maximal value allowed in the input](https://docs.dhtmlx.com/suite/form/work_with_form/#minimal-and-maximal-values). The attribute works only with the input type: *"number"*
 - `maxlength` - (optional) the maximum [number of characters allowed in the input](https://docs.dhtmlx.com/suite/form/work_with_form/#number-of-allowed-characters). The attribute works with the following input types: *"text", "password"*
 - `min` - (optional) [the minimal value allowed in the input](https://docs.dhtmlx.com/suite/form/work_with_form/#minimal-and-maximal-values). The attribute works only with the input type: *"number"*
 - `minlength` - (optional) the minimum [number of characters allowed in the input](https://docs.dhtmlx.com/suite/form/work_with_form/#number-of-allowed-characters). The attribute works with the following input types: *"text", "password"*
 - `placeholder` - (optional) a tip for the input
-- `readOnly` - (optional) defines whether an input is readonly, *false* by default
+- `readOnly` - (optional) defines whether an input is readonly. *false* by default
 - `label` - (optional) specifies a label for the control
 - `labelWidth` - (optional) sets the label width of the control
-- `labelPosition` - (optional) defines the position of a label: *"left" | "top"*, *"top"* by default
+- `labelPosition` - (optional) defines the position of a label: *"left" | "top"*. *"top"* by default
 
 ### Service properties and methods
 
@@ -106,7 +103,7 @@ Note that it's highly not recommended to redefine the service properties and met
 
 ## Example
 
-~~~js {7-22}
+~~~jsx {7-22}
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
      view: {

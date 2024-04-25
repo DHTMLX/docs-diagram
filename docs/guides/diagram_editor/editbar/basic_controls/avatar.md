@@ -1,18 +1,18 @@
 ---
 sidebar_label: Avatar!!
 title: Editbar Basic Controls - Avatar 
-description: You can explore the Avatar of Editbar in the documentation of the the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: You can explore the Avatar control of Editbar in the documentation of the the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # Avatar
 
-@short: A control for uploading of images.
+@short: The basic control for uploading of images.
 
 ![Avatar control](../../../../assets/editbar-basic-controls/avatar.png)
 
 ## Usage
 
-~~~js
+~~~jsx
 {
     type: "avatar",
     key?: string, // "img" by default
@@ -59,39 +59,36 @@ description: You can explore the Avatar of Editbar in the documentation of the t
 
 ### Basic properties
 
-- `type` - (required) the type of a control, set it to *"avatar"*
-:::warning
-Note that when creating a new control via the [`controls` property](/api/diagram_editor/editbar/config/controls_property/) it's not allowed to redefine the default types of basic controls. If you need to modify a default control, you should create a new control type.
-:::
-- `key` - (optional) the name of the specified/modified property in the object of a Diagram item, *"img"* by default
-- `wrap` - (optional) allows displaying the external wrapping, *false* by default
+- `type` - (required) the type of a control. Set it to *"avatar"*
+- `key` - (optional) the name of the specified/modified property in the object of a Diagram item. *"img"* by default
+- `wrap` - (optional) allows displaying the external wrapping. *false* by default
 - `target` - (optional) sets an URL to the server-side script that will process file upload, the property is required when an image is sent to the server via the control
 :::note
 While loading an image and sending it to the server via the `target` property, note that the [*value* object](https://docs.dhtmlx.com/suite/form/api/avatar/api_avatar_properties/#description) will be sent to the server. The file itself will be recorded in the dataset in the *base64* format. You can redefine this logic using the [service methods](#service-properties-and-methods). 
 :::
-- `hidden` - (optional) defines whether a control is hidden, *false* by default
-- `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*), *false* by default
-- `readOnly` - (optional) sets the readonly mode for the control, *false* by default
-- `removeIcon` - (optional) enables the possibility to clear the control by means of the UI, *true* by default
-- `circle` - (optional) sets the mode of displaying the control with rounded corners, *false* by default
+- `hidden` - (optional) defines whether a control is hidden. *false* by default
+- `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*). *false* by default
+- `readOnly` - (optional) sets the readonly mode for the control. *false* by default
+- `removeIcon` - (optional) enables the possibility to clear the control by means of the UI. *true* by default
+- `circle` - (optional) sets the mode of displaying the control with rounded corners. *false* by default
 - `icon` - (optional) allows setting the CSS class of an icon when there is no image uploaded, doesn't work together with the `preview` property
 - `placeholder` - (optional) allows setting a text to be visible when there is no image uploaded, doesn't work together with the `preview` property
 - `preview` - (optional) specifies the absolute path to the preview image. The preview image is visible, when an image is not uploaded
 - `alt` - (optional) sets the attribute of the &lt;img&gt; tag - an alternative text when there is no image uploaded
-- `size` - (optional) allows setting one of the three basic control's sizes: *"small" | "medium" | "large"* , or applying a custom size in px; *"medium"* by default
+- `size` - (optional) allows setting one of the three basic control's sizes: *"small" | "medium" | "large"* , or applying a custom size in px. *"medium"* by default
 - `css` - (optional) adds style classes to a control
-- `width` - (optional) the width of a control, *"content"* by default
-- `height` - (optional) the height of a control, *"content"* by default
+- `width` - (optional) the width of a control. *"content"* by default
+- `height` - (optional) the height of a control. *"content"* by default
 - `padding` - (optional) sets padding between a cell and a border of the Avatar control
 - `label` - (optional) specifies a label for the control
 - `labelWidth` - (optional) sets the label width of the control
-- `labelPosition` - (optional) defines the position of a label: *"left" | "top"*, *"top"* by default
-- `accept` - (optional) allows specifying the type/extension of the selected file, *"image/*"* by default. [Check details](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/accept#unique_file_type_specifiers)
-- `fieldName` - (optional) sets the file field name in the form data sent to the server, *"file"* by default
-- `autosend` - (optional) enables/disables automatic sending of an added file, *false* by default
+- `labelPosition` - (optional) defines the position of a label: *"left" | "top"*. *"top"* by default
+- `accept` - (optional) allows specifying the type/extension of the selected file. *"image/*"* by default. [Check details](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/accept#unique_file_type_specifiers)
+- `fieldName` - (optional) sets the file field name in the form data sent to the server. *"file"* by default
+- `autosend` - (optional) enables/disables automatic sending of an added file. *false* by default
 - `params` - (optional) adds extra parameters for sending an XMLHttpRequest
 - `headerParams` - (optional) provides additional parameters for Request Headers
-- `updateFromResponse` - (optional) updates file attributes with the data from the server response, *true* by default
+- `updateFromResponse` - (optional) updates file attributes with the data from the server response. *true* by default
 
 ### Service properties and methods
 
@@ -123,7 +120,7 @@ Note that it's highly not recommended to redefine the service properties and met
 
 ## Example
 
-~~~js {7-19}
+~~~jsx {7-19}
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {

@@ -1,18 +1,18 @@
 ---
 sidebar_label: Fieldset!!
 title: Editbar Basic Controls - Fieldset 
-description: You can explore the Fieldset of Editbar in the documentation of the the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: You can explore the Fieldset control of Editbar in the documentation of the the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # Fieldset
 
-@short: A control that allows creating complex controls with the help of the [`controls`](/api/diagram_editor/editbar/config/controls_property/) or the [`properties`](/api/diagram_editor/editbar/config/properties_property/) Editbar configuration options.
+@short: The basic control for creating complex controls with the help of the [`controls`](/api/diagram_editor/editbar/config/controls_property/) or the [`properties`](/api/diagram_editor/editbar/config/properties_property/) Editbar configuration options.
 
 ![Fieldset control](../../../../assets/editbar-basic-controls/fieldset.png)
 
 ## Usage
 
-~~~js
+~~~jsx
 {
     type: "fieldset",
 
@@ -38,7 +38,7 @@ description: You can explore the Fieldset of Editbar in the documentation of the
 
 The `rows` and `cols` properties may include an array of objects of the specified controls or the nested structure given below:
 
-~~~js
+~~~jsx
 {
     css?: string,
     width?: string | number | "content", // "content" by default
@@ -54,20 +54,17 @@ The `rows` and `cols` properties may include an array of objects of the specifie
 
 ### Basic properties
 
-- `type` - (required) the type of a control, set it to *"fieldset"*
-:::warning
-Note that when creating a new control via the [`controls` property](/api/diagram_editor/editbar/config/controls_property/) it's not allowed to redefine the default types of basic controls. If you need to modify a default control, you should create a new control type.
-:::
-- `compact` - (optional) defines whether controls within a fieldset are surrounded by borders (*false*) or not (*true*), *false* by default
-- `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*), *false* by default
-- `hidden` - (optional) defines whether a control is hidden, *false* by default
+- `type` - (required) the type of a control. Set it to *"fieldset"*
+- `compact` - (optional) defines whether controls within a fieldset are surrounded by borders (*false*) or not (*true*). *false* by default
+- `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*). *false* by default
+- `hidden` - (optional) defines whether a control is hidden. *false* by default
 - `css` - (optional) the name of a CSS class(es) applied to the control group
-- `width` - (optional) sets the width of the control group, *"content"* by default
-- `height` - (optional) sets the height of the control group, *"content"* by default
+- `width` - (optional) sets the width of the control group. *"content"* by default
+- `height` - (optional) sets the height of the control group. *"content"* by default
 - `padding` - (optional) sets the padding for the content inside the control group
-- `align` - (optional) sets the alignment of controls inside the control group, *"start"* by default
+- `align` - (optional) sets the alignment of controls inside the control group. *"start"* by default
 - `label` - (optional) specifies a label for a control
-- `labelAlignment` - (optional) defines the position of the label: *"left" | "right" | "center"*, *"left"* by default
+- `labelAlignment` - (optional) defines the position of the label: *"left" | "right" | "center"*. *"left"* by default
 - `rows` - (optional) arranges controls inside the control group vertically
 - `cols` - (optional) arranges controls inside the control group horizontally
 
@@ -82,7 +79,7 @@ Note that it's highly not recommended to redefine the service properties and met
 
 ## Example
 
-~~~js {7-28} title="Creating a fieldset via the properties property"
+~~~jsx {7-28} title="Creating a fieldset via the properties property"
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "org",
     view: {
@@ -118,7 +115,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 ~~~
 
-~~~js {10-33} title="Creating a complex control via the controls property"
+~~~jsx {10-33} title="Creating a complex control via the controls property"
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {

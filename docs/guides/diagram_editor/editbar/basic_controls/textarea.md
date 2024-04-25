@@ -1,18 +1,18 @@
 ---
 sidebar_label: Textarea!!
 title: Editbar Basic Controls - Textarea 
-description: You can explore the Textarea of Editbar in the documentation of the the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: You can explore the Textarea control of Editbar in the documentation of the the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # Textarea
 
-@short: A control that allows a user to enter a simple multi-line text.
+@short: The basic control for entering a simple multi-line text.
 
 ![Textarea control](../../../../assets/editbar-basic-controls/textarea.png)
 
 ## Usage
 
-~~~js
+~~~jsx
 {
     type: "textarea",
     key?: string | string[],
@@ -47,25 +47,22 @@ description: You can explore the Textarea of Editbar in the documentation of the
 
 ### Basic properties
 
-- `type` - (required) the type of a control, set it to *"textarea"*
-:::warning
-Note that when creating a new control via the [`controls` property](/api/diagram_editor/editbar/config/controls_property/) it's not allowed to redefine the default types of basic controls. If you need to modify a default control, you should create a new control type.
-:::
+- `type` - (required) the type of a control. Set it to *"textarea"*
 - `key` - (optional) the name of the specified/modified property or the path to it in the object of a Diagram item 
-- `wrap` - (optional) allows displaying the external wrapping, *false* by default
+- `wrap` - (optional) allows displaying the external wrapping. *false* by default
 - `css` - (optional) adds style classes to a control
-- `hidden` - (optional) defines whether a control is hidden, *false* by default
-- `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*), *false* by default
-- `width` - (optional) the width of a control, *"content"* by default
-- `height` - (optional) the height of a control, *"content"* by default
+- `hidden` - (optional) defines whether a control is hidden. *false* by default
+- `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*). *false* by default
+- `width` - (optional) the width of a control. *"content"* by default
+- `height` - (optional) the height of a control. *"content"* by default
 - `padding` - (optional) sets padding between a cell and a border of the Textarea control
 - `maxlength` - (optional) the maximum [number of characters allowed in the textarea](https://docs.dhtmlx.com/suite/form/work_with_form/#number-of-allowed-characters)
 - `minlength` - (optional) the minimum [number of characters allowed in the textarea](https://docs.dhtmlx.com/suite/form/work_with_form/#number-of-allowed-characters)
 - `placeholder` - (optional) a tip for the textarea
-- `readOnly` - (optional) defines whether a textarea is readonly, *false* by default
+- `readOnly` - (optional) defines whether a textarea is readonly. *false* by default
 - `label` - (optional) specifies a label for the control
 - `labelWidth` - (optional) sets the label width of the control
-- `labelPosition` - (optional) defines the position of a label: *"left" | "top"*, *"top"* by default
+- `labelPosition` - (optional) defines the position of a label: *"left" | "top"*. *"top"* by default
 
 ### Service properties and methods
 
@@ -97,7 +94,7 @@ Note that it's highly not recommended to redefine the service properties and met
 
 ## Example
 
-~~~js {7-13}
+~~~jsx {7-13}
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
      view: {

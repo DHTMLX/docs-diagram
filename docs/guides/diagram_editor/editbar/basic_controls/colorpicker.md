@@ -1,18 +1,18 @@
 ---
 sidebar_label: Colorpicker!!
 title: Editbar Basic Controls - Colorpicker 
-description: You can explore the Colorpicker of Editbar in the documentation of the the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: You can explore the Colorpicker control of Editbar in the documentation of the the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # Colorpicker
 
-@short: An input with a color picker attached to it for selecting a color.
+@short: The basic input control with a color picker attached to it for selecting a color.
 
 ![Colorpicker control](../../../../assets/editbar-basic-controls/colorpicker.png)
 
 ## Usage
 
-~~~js
+~~~jsx
 {
     type: "colorpicker",
     key?: string | string[],
@@ -51,28 +51,25 @@ description: You can explore the Colorpicker of Editbar in the documentation of 
 
 ### Basic properties
 
-- `type` - (required) the type of a control, set it to *"colorpicker"*
-:::warning
-Note that when creating a new control via the [`controls` property](/api/diagram_editor/editbar/config/controls_property/) it's not allowed to redefine the default types of basic controls. If you need to modify a default control, you should create a new control type.
-:::
+- `type` - (required) the type of a control. Set it to *"colorpicker"*
 - `key` - (optional) the name of the specified/modified property or the path to it in the object of a Diagram item 
-- `wrap` - (optional) allows displaying the external wrapping, *false* by default
+- `wrap` - (optional) allows displaying the external wrapping. *false* by default
 - `css` - (optional) adds style classes to a control
-- `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*), *false* by default
-- `hidden` - (optional) defines whether a control is hidden, *false* by default
-- `height` - (optional) the height of a control, *"content"* by default
-- `width` - (optional) the width of a control, *"content"* by default
+- `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*). *false* by default
+- `hidden` - (optional) defines whether a control is hidden. *false* by default
+- `height` - (optional) the height of a control. *"content"* by default
+- `width` - (optional) the width of a control. *"content"* by default
 - `padding` - (optional) sets padding between a cell and a border of a Colorpicker control
 - `customColors` - (optional) shows a section with custom colors in the bottom part of the Colorpicker
-- `grayShades` - (optional) defines whether the section with gray shades is displayed in the palette, *true* by default
+- `grayShades` - (optional) defines whether the section with gray shades is displayed in the palette. *true* by default
 - `icon` - (optional) the CSS class of an icon from the used icon font
-- `mode` - (optional) the mode of a control: *"palette"* (default) or *"picker"*
+- `mode` - (optional) the mode of a control: *"palette"* | *"picker"*. *"palette"* by default
 - `palette` - (optional) contains arrays of colors you want to be shown in a colorpicker
-- `paletteOnly` - (optional) defines whether Colorpicker is shown only in the palette mode, *false* by default
-- `pickerOnly` - (optional) defines whether Colorpicker is shown only in the picker mode, *false* by default
+- `paletteOnly` - (optional) defines whether Colorpicker is shown only in the palette mode. *false* by default
+- `pickerOnly` - (optional) defines whether Colorpicker is shown only in the picker mode. *false* by default
 - `placeholder` - (optional) a tip for the input
 - `label` - (optional) specifies a label for a control
-- `labelPosition` - (optional) defines the position of a label: *"left" | "top"*, *"top"* by default
+- `labelPosition` - (optional) defines the position of a label: *"left" | "top"*. *"top"* by default
 - `labelWidth` - (optional) sets the width of the label of a control
 
 ### Service properties and methods
@@ -105,7 +102,7 @@ Note that it's highly not recommended to redefine the service properties and met
 
 ## Example
 
-~~~js {7-25}
+~~~jsx {7-25}
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {

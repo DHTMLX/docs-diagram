@@ -1,18 +1,18 @@
 ---
 sidebar_label: Select!!
 title: Editbar Basic Controls - Select 
-description: You can explore the Select of Editbar in the documentation of the the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: You can explore the Select control of Editbar in the documentation of the the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # Select
 
-@short: An advanced select box that provides a set of options to choose from.
+@short: The basic control that represents an advanced select box with a set of options to choose from.
 
 ![Select control](../../../../assets/editbar-basic-controls/select.png)
 
 ## Usage
 
-~~~js
+~~~jsx
 {
     type: "select",
     options: (object | string)[],
@@ -42,7 +42,7 @@ description: You can explore the Select of Editbar in the documentation of the t
 
 Option configuration object inside Select:
 
-~~~js
+~~~jsx
 {
     value: string | number,
     content: string,
@@ -56,23 +56,20 @@ Option configuration object inside Select:
 
 #### Basic properties
 
-- `type` - (required) the type of a control, set it to *"select"*
-:::warning
-Note that when creating a new control via the [`controls` property](/api/diagram_editor/editbar/config/controls_property/) it's not allowed to redefine the default types of basic controls. If you need to modify a default control, you should create a new control type.
-:::
+- `type` - (required) the type of a control. Set it to *"select"*
 - `options` - (required) an array of Select options, each option can be set as a *string* or as an *object* with a set of `key:value` pairs - [attributes of options and their values](#option-properties)
 - `key` - (optional) the name of the specified/modified property or the path to it in the object of a Diagram item 
-- `wrap` - (optional) allows displaying the external wrapping, *false* by default
+- `wrap` - (optional) allows displaying the external wrapping. *false* by default
 - `css` - (optional) adds style classes to a control
-- `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*)
-- `hidden` - (boolean) defines whether a Select is hidden, *false* by default
-- `height` - (optional) the height of a control, *"content"* by default
-- `width` - (optional) the width of a control, *"content"* by default
+- `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*). *false* by default
+- `hidden` - (boolean) defines whether a Select is hidden. *false* by default
+- `height` - (optional) the height of a control. *"content"* by default
+- `width` - (optional) the width of a control. *"content"* by default
 - `padding` - (optional) sets padding between a cell and a border of a Select control
 - `icon` - (optional) the CSS class of an [icon](https://docs.dhtmlx.com/suite/helpers/icon/) from the used icon font
 - `label` - (optional) specifies a label for the control
 - `labelWidth` - (optional) sets the label width of the control
-- `labelPosition` - (optional) defines the position of a label: *"left" | "top"*, *"top"* by default
+- `labelPosition` - (optional) defines the position of a label: *"left" | "top"*. *"top"* by default
 
 #### Service properties and methods
 
@@ -106,11 +103,11 @@ Note that it's highly not recommended to redefine the service properties and met
 
 - `value` - (required) sets the value for the select option
 - `content` - (required) the content displayed in the select option
-- `disabled` - (optional) defines whether the option is enabled (*false*) or disabled (*true*)
+- `disabled` - (optional) defines whether the option is enabled (*false*) or disabled (*true*). *false* by default
 
 ## Example
 
-~~~js {7-20}
+~~~jsx {7-20}
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
      view: {

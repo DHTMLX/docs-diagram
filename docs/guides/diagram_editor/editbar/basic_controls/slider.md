@@ -1,18 +1,18 @@
 ---
 sidebar_label: Slider!!
 title: Editbar Basic Controls - Slider 
-description: You can explore the Slider of Editbar in the documentation of the the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: You can explore the Slider control of Editbar in the documentation of the the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # Slider
 
-@short: A control that allows selecting a numeric value by moving a thumb along a line with a fixed set of options.
+@short: The basic control for selecting a numeric value by moving a thumb along a line with a fixed set of options.
 
 ![Slider control](../../../../assets/editbar-basic-controls/slider.png)
 
 ## Usage
 
-~~~js
+~~~jsx
 {
     type: "slider",
     key?: string | string[],
@@ -53,28 +53,25 @@ description: You can explore the Slider of Editbar in the documentation of the t
 
 ### Basic properties
 
-- `type` - (required) the type of a control, set it to *"slider"*
-:::warning
-Note that when creating a new control via the [`controls` property](/api/diagram_editor/editbar/config/controls_property/) it's not allowed to redefine the default types of basic controls. If you need to modify a default control, you should create a new control type.
-:::
+- `type` - (required) the type of a control. Set it to *"slider"*
 - `key` - (optional) the name of the specified/modified property or the path to it in the object of a Diagram item 
-- `wrap` - (optional) allows displaying the external wrapping, *false* by default
-- `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*), *false* by default
-- `hidden` - (optional) defines whether a control is hidden, *false* by default
+- `wrap` - (optional) allows displaying the external wrapping. *false* by default
+- `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*). *false* by default
+- `hidden` - (optional) defines whether a control is hidden. *false* by default
 - `css`	- (optional) adds style classes to a control
-- `height` - (optional) the height of a control, *"content"* by default
-- `width` - (optional) the width of a control, *"content"* by default
+- `height` - (optional) the height of a control. *"content"* by default
+- `width` - (optional) the width of a control. *"content"* by default
 - `padding` - (optional) sets padding between a cell and a border of a slider control
-- `inverse` - (optional) enables/disables the inverse slider mode, *false* by default
+- `inverse` - (optional) enables/disables the inverse slider mode. *false* by default
 - `majorTick` - (optional) sets interval of rendering numeric values on the slider scale
-- `max` - (optional) the maximal value of slider, *100* by default
-- `min` - (optional) the minimal value of slider, *0* by default
-- `mode` - (optional) the direction of the slider scale, *"horizontal"* by default
-- `range` - (optional) enables/disables the possibility to select a range of values on the slider, *false* by default
-- `step` - (optional) the step the slider thumb will be moved with, *1* by default
+- `max` - (optional) the maximal value of slider. *100* by default
+- `min` - (optional) the minimal value of slider. *0* by default
+- `mode` - (optional) the direction of the slider scale. *"horizontal"* by default
+- `range` - (optional) enables/disables the possibility to select a range of values on the slider. *false* by default
+- `step` - (optional) the step the slider thumb will be moved with. *1* by default
 - `tick` - (optional) sets the interval of steps for rendering the slider scale
 - `tickTemplate` - (optional) sets a template for rendering values on the scale
-- `tooltip` - (optional) enables prompt messages with ticks values on hovering over the slider thumb, *true* by default
+- `tooltip` - (optional) enables prompt messages with ticks values on hovering over the slider thumb. *true* by default
 
 ### Service properties and methods
 
@@ -106,7 +103,7 @@ Note that it's highly not recommended to redefine the service properties and met
 
 ## Example
 
-~~~js {7-18}
+~~~jsx {7-18}
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
      view: {
