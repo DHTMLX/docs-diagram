@@ -43,11 +43,6 @@ The **Arrange** control is available only in the *default* mode of the Diagram e
 ### Basic properties
 
 - `type` - (required) the type of a control. Set it to *"arrange"*
-
-:::warning
-Note that it's highly not recommended to redefine the default types of controls via the [`controls`](/api/diagram_editor/editbar/config/controls_property/) property, since it may cause breaks in their functionality. If you create a new control, use a custom name (*type*)!
-:::
-
 - `hidden` - (optional) defines whether the control is hidden. *false* by default
 - `disabled` - (optional) defines whether the control is enabled (*false*) or disabled (*true*)
 - `css` - (optional) adds style classes to the control
