@@ -850,7 +850,36 @@ module.exports = {
                 id: "guides/diagram_editor/editbar/overview",
               },
               items: [
-                "guides/diagram_editor/editbar/basic_controls",
+                //"guides/diagram_editor/editbar/basic_controls",
+                {
+                  type: "category",
+                  label: "Basic controls!!",
+                  link: {
+                    type: "doc",
+                    id: "guides/diagram_editor/editbar/basic_controls"
+                  },
+                  items:[
+                    "guides/diagram_editor/editbar/basic_controls/avatar",
+                    "guides/diagram_editor/editbar/basic_controls/button",
+                    "guides/diagram_editor/editbar/basic_controls/checkbox",
+                    "guides/diagram_editor/editbar/basic_controls/checkboxgroup",
+                    "guides/diagram_editor/editbar/basic_controls/colorpicker",
+                    "guides/diagram_editor/editbar/basic_controls/combo",
+                    "guides/diagram_editor/editbar/basic_controls/container",
+                    "guides/diagram_editor/editbar/basic_controls/datepicker",
+                    "guides/diagram_editor/editbar/basic_controls/fieldset",
+                    "guides/diagram_editor/editbar/basic_controls/input",
+                    "guides/diagram_editor/editbar/basic_controls/radiogroup",
+                    "guides/diagram_editor/editbar/basic_controls/select",
+                    "guides/diagram_editor/editbar/basic_controls/slider",
+                    "guides/diagram_editor/editbar/basic_controls/spacer",
+                    "guides/diagram_editor/editbar/basic_controls/textarea",
+                    "guides/diagram_editor/editbar/basic_controls/timepicker",
+                    "guides/diagram_editor/editbar/basic_controls/toggle",
+                    "guides/diagram_editor/editbar/basic_controls/togglegroup"
+
+                  ]
+                },
                 {
                   type: "category",
                   label: "Complex controls!!",
@@ -875,7 +904,7 @@ module.exports = {
                   ]
                 },
                 "guides/diagram_editor/editbar/configuration",
-              ],
+              ],  
             },
             "guides/diagram_editor/hot_keys" // New
           ]
