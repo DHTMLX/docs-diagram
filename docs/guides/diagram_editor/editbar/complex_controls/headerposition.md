@@ -56,8 +56,8 @@ The **Header position** control is available only for **group** and **swimlane**
 
 ### Service properties
 
-- `$properties` - (optional) allows you to override values of [basic controls](TODO) within a complex control. You can configure the following element of the **Header position** control based on the basic controls:
-    - `position` - ([toggleGroup](TODO)) - sets a position of the group header
+- `$properties` - (optional) allows you to override values of [basic controls](/guides/diagram_editor/editbar/basic_controls) within a complex control. You can configure the following element of the **Header position** control based on the basic controls:
+    - `position` - ([toggleGroup](/guides/diagram_editor/editbar/basic_controls/togglegroup)) - sets a position of the group header
 
 ## Example
 
@@ -92,5 +92,3 @@ const editor= new dhx.DiagramEditor("editor_container", {
     }
 });
 ~~~
-
-**Change log**: The control was added in v6.0

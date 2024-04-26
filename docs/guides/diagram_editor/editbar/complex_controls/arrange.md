@@ -11,7 +11,7 @@ description: You can explore the Arrange control of Editbar in the documentation
 ![Arrange control](../../../../assets/arrange_type.png)
 
 :::info
-The **Arrange** control is available only in the *default* mode of the Diagram editor. The control is not available for **line** and **lineTitle** elements.
+The **Arrange** control is available for all elements (excluding the **line** and **lineTitle** elements) in the *default* mode of the Diagram editor.
 :::
 
 ## Usage
@@ -56,12 +56,12 @@ The **Arrange** control is available only in the *default* mode of the Diagram e
 
 ### Service properties
 
-- `$properties` - (optional) allows you to override values of [basic controls](TODO) within a complex control. You can configure the following elements of the **Arrange** control based on the basic controls:
-    - `x` - ([input](TODO)) sets the Diagram element position on the x-axis
-    - `y` - ([input](TODO)) sets the Diagram element position on the y-axis
-    - `width` - ([input](TODO)) sets the Diagram element width (px)
-    - `height` - ([input](TODO)) sets the Diagram element height (px)
-    - `angle` - ([input](TODO)) sets the Diagram element rotation angle
+- `$properties` - (optional) allows you to override values of [basic controls](/guides/diagram_editor/editbar/basic_controls) within a complex control. You can configure the following elements of the **Arrange** control based on the basic controls:
+    - `x` - ([input](/guides/diagram_editor/editbar/basic_controls/input)) sets the Diagram element position on the x-axis
+    - `y` - ([input](/guides/diagram_editor/editbar/basic_controls/input)) sets the Diagram element position on the y-axis
+    - `width` - ([input](/guides/diagram_editor/editbar/basic_controls/input)) sets the Diagram element width (px)
+    - `height` - ([input](/guides/diagram_editor/editbar/basic_controls/input)) sets the Diagram element height (px)
+    - `angle` - ([input](/guides/diagram_editor/editbar/basic_controls/input)) sets the Diagram element rotation angle
 
 ## Example
 
@@ -85,5 +85,3 @@ const editor= new dhx.DiagramEditor("editor_container", {
     }
 });
 ~~~
-
-**Change log**: The control was added in v6.0

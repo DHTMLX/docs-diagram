@@ -56,9 +56,9 @@ The **Pointer view** control is available only for the **line** element in the *
 
 ### Service properties
 
-- `$properties` - (optional) allows you to override values of [basic controls](TODO) within a complex control. You can configure the following element of the **Pointer view** control based on the basic controls:
-    - `backArrow` - ([toggleGroup](TODO)) sets the arrow type at the end of connector
-    - `forwardArrow` - ([toggleGroup](TODO)) sets the arrow type at the start of connector
+- `$properties` - (optional) allows you to override values of [basic controls](/guides/diagram_editor/editbar/basic_controls) within a complex control. You can configure the following elements of the **Pointer view** control based on the basic controls:
+    - `backArrow` - ([toggleGroup](/guides/diagram_editor/editbar/basic_controls/togglegroup)) sets the arrow type at the end of connector
+    - `forwardArrow` - ([toggleGroup](/guides/diagram_editor/editbar/basic_controls/togglegroup)) sets the arrow type at the start of connector
 
 ## Example
 
@@ -79,5 +79,3 @@ const editor= new dhx.DiagramEditor("editor_container", {
     }
 });
 ~~~
-
-**Change log**: The control was added in v6.0

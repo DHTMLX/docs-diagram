@@ -56,10 +56,10 @@ The **Border** control is not available for the **lineTitle** element.
 
 ### Service properties
 
-- `$properties` - (optional) allows you to override values of [basic controls](TODO) within a complex control. You can configure the following elements of the **Border** control based on the basic controls:
-    - `stroke` - ([colorpicker](TODO)) sets the border color
-    - `strokeType` - ([combo](TODO)) sets the border type
-    - `strokeWidth` - ([input](TODO)) sets the border width
+- `$properties` - (optional) allows you to override values of [basic controls](/guides/diagram_editor/editbar/basic_controls) within a complex control. You can configure the following elements of the **Border** control based on the basic controls:
+    - `stroke` - ([colorpicker](/guides/diagram_editor/editbar/basic_controls/colorpicker)) sets the border color
+    - `strokeType` - ([combo](/guides/diagram_editor/editbar/basic_controls/combo)) sets the border type
+    - `strokeWidth` - ([input](/guides/diagram_editor/editbar/basic_controls/input)) sets the border width
 
 ## Example
 
@@ -83,5 +83,3 @@ const editor= new dhx.DiagramEditor("editor_container", {
     }
 });
 ~~~
-
-**Change log**: The control was added in v6.0

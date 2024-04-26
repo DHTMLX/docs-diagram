@@ -52,9 +52,9 @@ TODO!!!
 
 ### Service properties
 
-- `$properties` - (optional) allows you to override values of [basic controls](TODO) within a complex control. You can configure the following element of the **Text align** control based on the basic controls:
-    - `textAlign` - ([toggleGroup](TODO)) sets the horizontal alignment of text
-    - `textVerticalAlign` - ([toggleGroup](TODO)) sets the vertical alignment of text
+- `$properties` - (optional) allows you to override values of [basic controls](/guides/diagram_editor/editbar/basic_controls) within a complex control. You can configure the following elements of the **Text align** control based on the basic controls:
+    - `textAlign` - ([toggleGroup](/guides/diagram_editor/editbar/basic_controls/togglegroup)) sets the horizontal alignment of text
+    - `textVerticalAlign` - ([toggleGroup](/guides/diagram_editor/editbar/basic_controls/togglegroup)) sets the vertical alignment of text
 
 ## Example
 
@@ -75,5 +75,3 @@ const editor= new dhx.DiagramEditor("editor_container", {
     }
 });
 ~~~
-
-**Change log**: The control was added in v6.0

@@ -56,8 +56,8 @@ The **Line shape** control is available only for the **line** element in the *de
 
 ### Service properties
 
-- `$properties` - (optional) allows you to override values of [basic controls](TODO) within a complex control. You can configure the following element of the **Line shape** control based on the basic controls:
-    - `connectType` - ([toggleGroup](TODO)) sets the connector type
+- `$properties` - (optional) allows you to override values of [basic controls](/guides/diagram_editor/editbar/basic_controls) within a complex control. You can configure the following element of the **Line shape** control based on the basic controls:
+    - `connectType` - ([toggleGroup](/guides/diagram_editor/editbar/basic_controls/togglegroup)) sets the connector type
 
 ## Example
 
@@ -78,5 +78,3 @@ const editor= new dhx.DiagramEditor("editor_container", {
     }
 });
 ~~~
-
-**Change log**: The control was added in v6.0

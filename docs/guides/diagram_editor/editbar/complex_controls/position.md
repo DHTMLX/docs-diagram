@@ -56,9 +56,9 @@ The **Position** control is available only for the **shape** element in the *org
 
 ### Service properties
 
-- `$properties` - (optional) allows you to override values of [basic controls](TODO) within a complex control. You can configure the following element of the **Position** control based on the basic controls:
-    - `dx` - ([input](TODO)) sets the shape offset from the predefined algorithm on the x-axis
-    - `dy` - ([input](TODO)) sets the shape offset from the predefined algorithm on the y-axis
+- `$properties` - (optional) allows you to override values of [basic controls](/guides/diagram_editor/editbar/basic_controls) within a complex control. You can configure the following elements of the **Position** control based on the basic controls:
+    - `dx` - ([input](/guides/diagram_editor/editbar/basic_controls/input)) sets the shape offset from the predefined algorithm on the x-axis
+    - `dy` - ([input](/guides/diagram_editor/editbar/basic_controls/input)) sets the shape offset from the predefined algorithm on the y-axis
 
 ## Example
 
@@ -81,5 +81,3 @@ const editor= new dhx.DiagramEditor("editor_container", {
     }
 });
 ~~~
-
-**Change log**: The control was added in v6.0

@@ -56,10 +56,10 @@ The **Header common** control is available only for **group** and **swimlane** e
 
 ### Service properties
 
-- `$properties` - (optional) allows you to override values of [basic controls](TODO) within a complex control. You can configure the following elements of the **Header common** control based on the basic controls:
-    - `enable` - ([toggle](TODO)) toggles the group header visibility
-    - `fill` - ([colorpicker](TODO)) sets the group header background color
-    - `height` - ([input](TODO)) sets the group header height (px)
+- `$properties` - (optional) allows you to override values of [basic controls](/guides/diagram_editor/editbar/basic_controls) within a complex control. You can configure the following elements of the **Header common** control based on the basic controls:
+    - `enable` - ([toggle](/guides/diagram_editor/editbar/basic_controls/toggle)) toggles the group header visibility
+    - `fill` - ([colorpicker](/guides/diagram_editor/editbar/basic_controls/colorpicker)) sets the group header background color
+    - `height` - ([input](/guides/diagram_editor/editbar/basic_controls/input)) sets the group header height (px)
 
 ## Example
 
@@ -83,5 +83,3 @@ const editor= new dhx.DiagramEditor("editor_container", {
     }
 });
 ~~~
-
-**Change log**: The control was added in v6.0

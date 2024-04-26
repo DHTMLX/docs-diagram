@@ -56,9 +56,9 @@ The **Size** control is available only for the **shape**, **group** and **swimla
 
 ### Service properties
 
-- `$properties` - (optional) allows you to override values of [basic controls](TODO) within a complex control. You can configure the following element of the **Size** control based on the basic controls:
-    - `width` - ([input](TODO)) sets the Diagram element width (px)
-    - `height` - ([input](TODO)) sets the Diagram element height (px)
+- `$properties` - (optional) allows you to override values of [basic controls](/guides/diagram_editor/editbar/basic_controls) within a complex control. You can configure the following elements of the **Size** control based on the basic controls:
+    - `width` - ([input](/guides/diagram_editor/editbar/basic_controls/input)) sets the Diagram element width (px)
+    - `height` - ([input](/guides/diagram_editor/editbar/basic_controls/input)) sets the Diagram element height (px)
 
 ## Example
 
@@ -79,5 +79,3 @@ const editor= new dhx.DiagramEditor("editor_container", {
     }
 });
 ~~~
-
-**Change log**: The control was added in v6.0

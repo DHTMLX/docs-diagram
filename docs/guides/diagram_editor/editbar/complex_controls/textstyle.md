@@ -52,12 +52,12 @@ TODO!!!
 
 ### Service properties
 
-- `$properties` - (optional) allows you to override values of [basic controls](TODO) within a complex control. You can configure the following element of the **Text style** control based on the basic controls:
-    - `fontSize` - ([combo](TODO)) sets the font size
-    - `lineHeight` - ([input](TODO)) sets the line height
-    - `fontColor` - ([colorpicker](TODO)) sets the font color
-    - `fontWeight` - ([toggle](TODO)) sets the font weight
-    - `fontStyle` - ([toggle](TODO)) sets the font style
+- `$properties` - (optional) allows you to override values of [basic controls](/guides/diagram_editor/editbar/basic_controls) within a complex control. You can configure the following elements of the **Text style** control based on the basic controls:
+    - `fontSize` - ([combo](/guides/diagram_editor/editbar/basic_controls/combo)) sets the font size
+    - `lineHeight` - ([input](/guides/diagram_editor/editbar/basic_controls/input)) sets the line height
+    - `fontColor` - ([colorpicker](/guides/diagram_editor/editbar/basic_controls/colorpicker)) sets the font color
+    - `fontWeight` - ([toggle](/guides/diagram_editor/editbar/basic_controls/toggle)) sets the font weight
+    - `fontStyle` - ([toggle](/guides/diagram_editor/editbar/basic_controls/toggle)) sets the font style
 
 ## Example
 
@@ -89,5 +89,3 @@ const editor= new dhx.DiagramEditor("editor_container", {
     }
 });
 ~~~
-
-**Change log**: The control was added in v6.0
