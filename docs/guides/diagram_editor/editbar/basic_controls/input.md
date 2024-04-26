@@ -61,7 +61,7 @@ description: You can explore the Input control of Editbar in the documentation o
 - `width` - (optional) the width of a control. *"content"* by default
 - `padding` - (optional) sets padding between a cell and a border of an input control
 - `icon` - (optional) the CSS class of an [icon](https://docs.dhtmlx.com/suite/helpers/icon/) from the used icon font
-- `inputType` - (optional) sets the type of an input: *"text" | "password" | "number"*. *"text"* by default
+- `inputType` - (optional) sets the type of an input: *"text"* | *"password"* | *"number"*. *"text"* by default
 Use the "password" value to specify a field for entering a password
 - `max` - (optional) - the [maximal value allowed in the input](https://docs.dhtmlx.com/suite/form/work_with_form/#minimal-and-maximal-values). The attribute works only with the input type: *"number"*
 - `maxlength` - (optional) the maximum [number of characters allowed in the input](https://docs.dhtmlx.com/suite/form/work_with_form/#number-of-allowed-characters). The attribute works with the following input types: *"text", "password"*
@@ -71,7 +71,7 @@ Use the "password" value to specify a field for entering a password
 - `readOnly` - (optional) defines whether an input is readonly. *false* by default
 - `label` - (optional) specifies a label for the control
 - `labelWidth` - (optional) sets the label width of the control
-- `labelPosition` - (optional) defines the position of a label: *"left" | "top"*. *"top"* by default
+- `labelPosition` - (optional) defines the position of a label: *"left"* | *"top"*. *"top"* by default
 
 ### Service properties and methods
 

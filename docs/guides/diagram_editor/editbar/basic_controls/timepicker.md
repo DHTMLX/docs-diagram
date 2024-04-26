@@ -64,7 +64,7 @@ description: You can explore the Timepicker control of Editbar in the documentat
 - `valueFormat` - (optional) defines the format of the value to be applied when working with the events of the timepicker control: *"string"* | *"timeObject"*. *"string"* by default
 - `label` - (optional) specifies a label for the control
 - `labelWidth` - (optional) sets the label width of the control
-- `labelPosition` - (optional) defines the position of a label: *"left" | "top"*. *"top"* by default
+- `labelPosition` - (optional) defines the position of a label: *"left"* | *"top"*. *"top"* by default
 
 ### Service properties and methods
 

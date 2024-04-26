@@ -69,7 +69,7 @@ Option configuration object inside Select:
 - `icon` - (optional) the CSS class of an [icon](https://docs.dhtmlx.com/suite/helpers/icon/) from the used icon font
 - `label` - (optional) specifies a label for the control
 - `labelWidth` - (optional) sets the label width of the control
-- `labelPosition` - (optional) defines the position of a label: *"left" | "top"*. *"top"* by default
+- `labelPosition` - (optional) defines the position of a label: *"left"* | *"top"*. *"top"* by default
 
 #### Service properties and methods
 

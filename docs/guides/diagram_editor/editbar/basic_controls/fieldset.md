@@ -55,7 +55,7 @@ The `rows` and `cols` properties may include an array of objects of the specifie
 ### Basic properties
 
 - `type` - (required) the type of a control. Set it to *"fieldset"*
-- `compact` - (optional) defines whether controls within a fieldset are surrounded by borders (*false*) or not (*true*). *false* by default
+- `compact` - (optional) specifies the compact mode, removes indents and frame. *false* by default
 - `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*). *false* by default
 - `hidden` - (optional) defines whether a control is hidden. *false* by default
 - `css` - (optional) the name of a CSS class(es) applied to the control group
@@ -64,7 +64,7 @@ The `rows` and `cols` properties may include an array of objects of the specifie
 - `padding` - (optional) sets the padding for the content inside the control group
 - `align` - (optional) sets the alignment of controls inside the control group. *"start"* by default
 - `label` - (optional) specifies a label for a control
-- `labelAlignment` - (optional) defines the position of the label: *"left" | "right" | "center"*. *"left"* by default
+- `labelAlignment` - (optional) defines the position of the label: *"left"* | *"right"* | *"center"*. *"left"* by default
 - `rows` - (optional) arranges controls inside the control group vertically
 - `cols` - (optional) arranges controls inside the control group horizontally
 

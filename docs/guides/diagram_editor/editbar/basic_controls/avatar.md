@@ -75,14 +75,14 @@ While loading an image and sending it to the server via the `target` property, n
 - `placeholder` - (optional) allows setting a text to be visible when there is no image uploaded, doesn't work together with the `preview` property
 - `preview` - (optional) specifies the absolute path to the preview image. The preview image is visible, when an image is not uploaded
 - `alt` - (optional) sets the attribute of the &lt;img&gt; tag - an alternative text when there is no image uploaded
-- `size` - (optional) allows setting one of the three basic control's sizes: *"small" | "medium" | "large"* , or applying a custom size in px. *"medium"* by default
+- `size` - (optional) allows setting one of the three basic control's sizes: *"small"* | *"medium"* | *"large"* , or applying a custom size in px. *"medium"* by default
 - `css` - (optional) adds style classes to a control
 - `width` - (optional) the width of a control. *"content"* by default
 - `height` - (optional) the height of a control. *"content"* by default
 - `padding` - (optional) sets padding between a cell and a border of the Avatar control
 - `label` - (optional) specifies a label for the control
 - `labelWidth` - (optional) sets the label width of the control
-- `labelPosition` - (optional) defines the position of a label: *"left" | "top"*. *"top"* by default
+- `labelPosition` - (optional) defines the position of a label: *"left"* | *"top"*. *"top"* by default
 - `accept` - (optional) allows specifying the type/extension of the selected file. *"image/*"* by default. [Check details](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/accept#unique_file_type_specifiers)
 - `fieldName` - (optional) sets the file field name in the form data sent to the server. *"file"* by default
 - `autosend` - (optional) enables/disables automatic sending of an added file. *false* by default

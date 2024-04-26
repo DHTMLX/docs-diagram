@@ -86,7 +86,7 @@ Option configuration object inside Combo:
 - `template` - (optional) sets a template of displaying options in the popup list
 - `virtual` - (optional) enables dynamic loading of data on scrolling the list of options. *false* by default
 - `label` - (optional) specifies a label for a control
-- `labelPosition` - (optional) defines the position of a label: *"left" | "top"*. *"top"* by default
+- `labelPosition` - (optional) defines the position of a label: *"left"* | *"top"*. *"top"* by default
 - `labelWidth` - (optional) sets the width of the label of a control
 
 #### Service properties and methods

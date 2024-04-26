@@ -62,7 +62,7 @@ description: You can explore the Textarea control of Editbar in the documentatio
 - `readOnly` - (optional) defines whether a textarea is readonly. *false* by default
 - `label` - (optional) specifies a label for the control
 - `labelWidth` - (optional) sets the label width of the control
-- `labelPosition` - (optional) defines the position of a label: *"left" | "top"*. *"top"* by default
+- `labelPosition` - (optional) defines the position of a label: *"left"* | *"top"*. *"top"* by default
 
 ### Service properties and methods
 

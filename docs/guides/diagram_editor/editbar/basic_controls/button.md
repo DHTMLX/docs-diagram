@@ -51,11 +51,11 @@ description: You can explore the Button control of Editbar in the documentation 
 - `width` - (optional) the width of a control. *"content"* by default
 - `padding` - (optional) sets padding between a cell and a border of a button control
 - `circle` - (optional) makes the corners of a button round. *false* by default
-- `color` - (optional) defines the color scheme of a button: *"danger" | "secondary" | "primary" | "success"*. *"primary"* by default
-- `full` - (optional) extends a button to the full width of the editbar. *false* by default
+- `color` - (optional) defines the color scheme of a button: *"danger"* | *"secondary"* | *"primary"* | *"success"*. *"primary"* by default
+- `full` - (optional) extends a button to the full width of the Editbar. *false* by default
 - `icon` - (optional) sets the CSS class of an icon displayed inside the button
-- `size` - (optional) defines the size of a button: *"small" | "medium"*. *"medium"* by default
-- `view` - (optional) defines the look of a button: *"flat" | "link"*. *"flat"* by default
+- `size` - (optional) defines the size of a button: *"small"* | *"medium"*. *"medium"* by default
+- `view` - (optional) defines the look of a button: *"flat"* | *"link"*. *"flat"* by default
 
 ### Service properties and methods
 

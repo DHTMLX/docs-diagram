@@ -87,7 +87,7 @@ Radio button configuration object inside RadioGroup:
 - `padding` - (optional) sets padding between a cell and a border of a RadioGroup control
 - `label` - (optional) specifies a label for the control
 - `labelWidth` - (optional) sets the label width of the control
-- `labelPosition` - (optional) defines the position of a label: *"left" | "top"*. *"top"* by default
+- `labelPosition` - (optional) defines the position of a label: *"left"* | *"top"*. *"top"* by default
 
 #### Service properties and methods
 

@@ -55,7 +55,7 @@ The control can be used both with the *boolean* value and the *string* one, if t
 - `width` - (optional) the width of a control. *"content"* by default
 - `padding` - (optional) sets padding between a cell and a border of a Checkbox control
 - `label` - (optional) specifies a label for a control
-- `labelPosition` - (optional) defines the position of a label: *"left" | "top"*. *"top"* by default
+- `labelPosition` - (optional) defines the position of a label: *"left"* | *"top"*. *"top"* by default
 - `labelWidth` - (optional) sets the width of the label of a control
 
 ### Service properties and methods
