@@ -16,6 +16,18 @@ description: You can learn about the disable method of HistoryManager in the doc
 disable(): void;
 ~~~
 
-The Reset and HistoryManager buttons from the Toolbar work only in the custom event generation mode. **Ctrl+z** and **Ctrl+Shift+z** navigation is not available.
+### Example
+
+~~~js {5}
+const editor = new dhx.DiagramEditor("editor_container", { 
+    type: "default"
+});
+...
+editor.history.disable();
+~~~
+
+:::note
+Note that by disabling History manager you won't be able to work with history via hot keys.
+:::
 
 **Change log**: Added in v4.1

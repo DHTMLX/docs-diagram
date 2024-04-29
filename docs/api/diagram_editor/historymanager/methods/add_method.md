@@ -24,4 +24,18 @@ add(newState: array): void;
 
 - `newState` - (required) an array of JSON objects of the current state of the diagram
 
+### Example
+
+~~~js {5-9}
+const editor = new dhx.DiagramEditor("editor_container", { 
+    type: "default"
+});
+...
+editor.history.add([
+	{ "id": "shape_1", "type": "start", "x": 200, y: 0, "text": "Start" },
+	{ "id": "shape_2", "type": "process", "x": 200, y: 120, "text": "Call the client" },
+	{ "id": "line_1", "type": "line", "from": "shape_1", "to": "shape_2" }
+]);
+~~~
+
 **Change log**: Added in v4.1

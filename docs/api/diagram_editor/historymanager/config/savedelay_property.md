@@ -22,4 +22,14 @@ saveDelay: number;
 saveDelay: 500
 ~~~
 
+### Example
+
+~~~js {5}
+const editor = new dhx.DiagramEditor("editor_container", { 
+    type: "default"
+});
+
+editor.history.saveDelay = 1000;
+~~~
+
 **Change log**: Added in v4.1

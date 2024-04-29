@@ -8,7 +8,7 @@ description: You can explore the Grid step control of Editbar in the documentati
 
 @short: The complex control for displaying and modifying a grid step of the Diagram editor
 
-TODO!!!
+![Gridstep control](../../../../assets/editbar-complex-controls/gridstep.png)
 
 ## Usage
 

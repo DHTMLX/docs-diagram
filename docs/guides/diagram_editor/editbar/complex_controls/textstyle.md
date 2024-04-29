@@ -8,7 +8,7 @@ description: You can explore the Text style control of Editbar in the documentat
 
 @short: The complex control for managing the text style within the Diagram elements
 
-TODO!!!
+![Text style control](../../../../assets/editbar-complex-controls/textstyle.png)
 
 ## Usage
 

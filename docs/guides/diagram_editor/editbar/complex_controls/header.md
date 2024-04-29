@@ -8,7 +8,7 @@ description: You can explore the Header control of Editbar in the documentation 
 
 @short: The complex control for displaying and modifying the header of "group" and "swimlane" elements of the Diagram editor
 
-TODO!!!
+![Header control](../../../../assets/editbar-complex-controls/header.png)
 
 :::info
 The **Header** control is available only for **group** and **swimlane** elements in the *default* mode of the Diagram editor.

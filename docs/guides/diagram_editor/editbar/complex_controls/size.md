@@ -8,7 +8,7 @@ description: You can explore the Size control of Editbar in the documentation of
 
 @short: The complex control for managing width and height of the Diagram elements
 
-TODO!!!
+![Size control](../../../../assets/editbar-complex-controls/size.png)
 
 :::info
 The **Size** control is available only for the **shape**, **group** and **swimlane** elements of the Diagram editor.

@@ -8,7 +8,7 @@ description: You can explore the Arrange control of Editbar in the documentation
 
 @short: The complex control for editing width, height, rotation angle, x and y properties of a Diagram element
 
-![Arrange control](../../../../assets/arrange_type.png)
+![Arrange control](../../../../assets/editbar-complex-controls/arrange.png)
 
 :::info
 The **Arrange** control is available for all elements (excluding the **line** and **lineTitle** elements) in the *default* mode of the Diagram editor.

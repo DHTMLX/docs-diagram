@@ -8,7 +8,7 @@ description: You can explore the Border control of Editbar in the documentation 
 
 @short: The complex control for displaying and modifying borders of a Diagram element
 
-TODO!!!
+![Border control](../../../../assets/editbar-complex-controls/border.png)
 
 :::info
 The **Border** control is not available for the **lineTitle** element.

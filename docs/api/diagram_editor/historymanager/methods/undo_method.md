@@ -8,7 +8,7 @@ description: You can learn about the undo method of HistoryManager in the docume
 
 ### Description
 
-@short: Takes a step back in the history of changes
+@short: Reverts the last action in the Diagram Editor
 
 ### Usage
 
@@ -18,6 +18,16 @@ undo(first?: boolean): void;
 
 ### Parameters
 
-- `first` - (optional) *true* to move the history of changes to the beginning
+- `first` - (optional) *true* to revert all the history of changes 
+
+### Example
+
+~~~js {5}
+const editor = new dhx.DiagramEditor("editor_container", { 
+    type: "default"
+});
+...
+editor.history.undo();
+~~~
 
 **Change log**: Added in v4.1

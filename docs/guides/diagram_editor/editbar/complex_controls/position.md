@@ -8,7 +8,7 @@ description: You can explore the Position control of Editbar in the documentatio
 
 @short: The complex control for configuring the shape offset from the predefined algorithm on the X and Y axe
 
-TODO!!!
+![Position control](../../../../assets/editbar-complex-controls/position.png)
 
 :::info
 The **Position** control is available only for the **shape** element in the *org* or *mindmap* modes of the Diagram editor.

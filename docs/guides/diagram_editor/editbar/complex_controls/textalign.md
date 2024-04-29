@@ -8,7 +8,7 @@ description: You can explore the Text align control of Editbar in the documentat
 
 @short: The complex control for managing the text alignment within the Diagram elements
 
-TODO!!!
+![Text align control](../../../../assets/editbar-complex-controls/textalign.png)
 
 ## Usage
 

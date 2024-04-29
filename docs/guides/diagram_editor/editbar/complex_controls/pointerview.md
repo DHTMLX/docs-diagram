@@ -8,7 +8,7 @@ description: You can explore the Pointer view control of Editbar in the document
 
 @short: The complex control for displaying and managing the connector arrows
 
-TODO!!!
+![Pointer view control](../../../../assets/editbar-complex-controls/pointerview.png)
 
 :::info
 The **Pointer view** control is available only for the **line** element in the *default* mode of the Diagram editor.

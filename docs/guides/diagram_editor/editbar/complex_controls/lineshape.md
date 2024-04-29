@@ -8,7 +8,7 @@ description: You can explore the Line shape control of Editbar in the documentat
 
 @short: The complex control for displaying and managing connectors
 
-TODO!!!
+![Line shape control](../../../../assets/editbar-complex-controls/lineshape.png)
 
 :::info
 The **Line shape** control is available only for the **line** element in the *default* mode of the Diagram editor.

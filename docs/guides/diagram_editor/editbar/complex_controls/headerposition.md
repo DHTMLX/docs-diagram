@@ -8,7 +8,7 @@ description: You can explore the Header position control of Editbar in the docum
 
 @short: The complex control for changing position of the group header
 
-TODO!!!
+![Header position control](../../../../assets/editbar-complex-controls/headerposition.png)
 
 :::info
 The **Header position** control is available only for **group** and **swimlane** elements in the *default* mode of the Diagram editor.

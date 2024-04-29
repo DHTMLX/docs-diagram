@@ -8,7 +8,7 @@ description: You can explore the Header common control of Editbar in the documen
 
 @short: The complex control for for changing visibility, color, and height of the group header
 
-TODO!!!
+![Header common control](../../../../assets/editbar-complex-controls/headercommon.png)
 
 :::info
 The **Header common** control is available only for **group** and **swimlane** elements in the *default* mode of the Diagram editor.
