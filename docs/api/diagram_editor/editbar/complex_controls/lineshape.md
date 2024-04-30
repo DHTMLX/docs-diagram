@@ -1,24 +1,27 @@
 ---
-sidebar_label: Header common!!
-title: Editbar Complex Controls - Header common 
-description: You can explore the Header common control of Editbar in the documentation of the the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+sidebar_label: Line shape!!
+title: Editbar Complex Controls - Line shape 
+description: You can explore the Line shape control of Editbar in the documentation of the the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
-# Header common
+# Line shape
 
-@short: The complex control for for changing visibility, color, and height of the group header
+@short: The complex control for displaying and managing connectors
 
-![Header common control](../../../../assets/editbar-complex-controls/headercommon.png)
+<img
+  src={require('../../../../assets/editbar-complex-controls/lineshape.png').default}
+  alt="Line shape control" width='300'
+/>
 
 :::info
-The **Header common** control is available only for **group** and **swimlane** elements in the *default* mode of the Diagram editor.
+The **Line shape** control is available only for the **line** element in the *default* mode of the Diagram editor.
 :::
 
 ## Usage
 
 ~~~jsx
 {
-    type: "headerCommon",
+    type: "lineShape",
 
     hidden?: boolean, // false by default
     disabled?: boolean, // false by default
@@ -32,7 +35,7 @@ The **Header common** control is available only for **group** and **swimlane** e
     labelAlignment?: "left" | "right" | "center", // "left" by default
     align?: "start" | "center" | "end" | "between" | "around" | "evenly", // "between" by default
     compact?: boolean, // false by default
-   
+
     // Service properties
     $properties?: object
 }
@@ -42,7 +45,7 @@ The **Header common** control is available only for **group** and **swimlane** e
 
 ### Basic properties
 
-- `type` - (required) the type of a control. Set it to *"headerCommon"*
+- `type` - (required) the type of a control. Set it to *"lineShape"*
 - `hidden` - (optional) defines whether the control is hidden. *false* by default
 - `disabled` - (optional) defines whether the control is enabled (*false*) or disabled (*true*). *false* by default
 - `css` - (optional) adds style classes to the control
@@ -56,26 +59,21 @@ The **Header common** control is available only for **group** and **swimlane** e
 
 ### Service properties
 
-- `$properties` - (optional) allows you to override values of [basic controls](/guides/diagram_editor/editbar/basic_controls) within a complex control. You can configure the following elements of the **Header common** control based on the basic controls:
-    - `enable` - ([toggle](/guides/diagram_editor/editbar/basic_controls/toggle)) toggles the group header visibility
-    - `fill` - ([colorpicker](/guides/diagram_editor/editbar/basic_controls/colorpicker)) sets the group header background color
-    - `height` - ([input](/guides/diagram_editor/editbar/basic_controls/input)) sets the group header height (px)
+- `$properties` - (optional) allows you to override values of [basic controls](/guides/diagram_editor/editbar/basic_controls) within a complex control. You can configure the following element of the **Line shape** control based on the basic controls:
+    - `connectType` - ([toggleGroup](/guides/diagram_editor/editbar/basic_controls/togglegroup)) sets the connector type
 
 ## Example
 
-~~~jsx {6-14}
+~~~jsx {6-11}
 const editor= new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {
         editbar: {
             properties: {
-                $group: [
+                $line: [
                     {
-                        type: "headerCommon",
-                        label: "Header common",
-                        $properties: {
-                            fill: { key: ["header", "fill"] }
-                        }
+                        type: "lineShape",
+                        label: "Line connection type"
                     }
                 ]
             }

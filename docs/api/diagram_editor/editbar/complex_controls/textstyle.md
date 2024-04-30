@@ -8,7 +8,10 @@ description: You can explore the Text style control of Editbar in the documentat
 
 @short: The complex control for managing the text style within the Diagram elements
 
-![Text style control](../../../../assets/editbar-complex-controls/textstyle.png)
+<img
+  src={require('../../../../assets/editbar-complex-controls/textstyle.png').default}
+  alt="Text style control" width='300'
+/>
 
 ## Usage
 

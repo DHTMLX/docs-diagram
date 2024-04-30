@@ -1,24 +1,27 @@
 ---
-sidebar_label: Line shape!!
-title: Editbar Complex Controls - Line shape 
-description: You can explore the Line shape control of Editbar in the documentation of the the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+sidebar_label: Pointer view!!
+title: Editbar Complex Controls - Pointer view 
+description: You can explore the Pointer view control of Editbar in the documentation of the the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
-# Line shape
+# Pointer view
 
-@short: The complex control for displaying and managing connectors
+@short: The complex control for displaying and managing the connector arrows
 
-![Line shape control](../../../../assets/editbar-complex-controls/lineshape.png)
+<img
+  src={require('../../../../assets/editbar-complex-controls/pointerview.png').default}
+  alt="Pointer view control" width='300'
+/>
 
 :::info
-The **Line shape** control is available only for the **line** element in the *default* mode of the Diagram editor.
+The **Pointer view** control is available only for the **line** element in the *default* mode of the Diagram editor.
 :::
 
 ## Usage
 
 ~~~jsx
 {
-    type: "lineShape",
+    type: "pointerView",
 
     hidden?: boolean, // false by default
     disabled?: boolean, // false by default
@@ -42,7 +45,7 @@ The **Line shape** control is available only for the **line** element in the *de
 
 ### Basic properties
 
-- `type` - (required) the type of a control. Set it to *"lineShape"*
+- `type` - (required) the type of a control. Set it to *"pointerView"*
 - `hidden` - (optional) defines whether the control is hidden. *false* by default
 - `disabled` - (optional) defines whether the control is enabled (*false*) or disabled (*true*). *false* by default
 - `css` - (optional) adds style classes to the control
@@ -56,8 +59,9 @@ The **Line shape** control is available only for the **line** element in the *de
 
 ### Service properties
 
-- `$properties` - (optional) allows you to override values of [basic controls](/guides/diagram_editor/editbar/basic_controls) within a complex control. You can configure the following element of the **Line shape** control based on the basic controls:
-    - `connectType` - ([toggleGroup](/guides/diagram_editor/editbar/basic_controls/togglegroup)) sets the connector type
+- `$properties` - (optional) allows you to override values of [basic controls](/guides/diagram_editor/editbar/basic_controls) within a complex control. You can configure the following elements of the **Pointer view** control based on the basic controls:
+    - `backArrow` - ([toggleGroup](/guides/diagram_editor/editbar/basic_controls/togglegroup)) sets the arrow type at the end of connector
+    - `forwardArrow` - ([toggleGroup](/guides/diagram_editor/editbar/basic_controls/togglegroup)) sets the arrow type at the start of connector
 
 ## Example
 
@@ -69,8 +73,8 @@ const editor= new dhx.DiagramEditor("editor_container", {
             properties: {
                 $line: [
                     {
-                        type: "lineShape",
-                        label: "Line connection type"
+                        type: "pointerView",
+                        disabled: true
                     }
                 ]
             }

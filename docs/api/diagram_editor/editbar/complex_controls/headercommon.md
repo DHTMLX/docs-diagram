@@ -1,24 +1,27 @@
 ---
-sidebar_label: Border!!
-title: Editbar Complex Controls - Border 
-description: You can explore the Border control of Editbar in the documentation of the the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+sidebar_label: Header common!!
+title: Editbar Complex Controls - Header common 
+description: You can explore the Header common control of Editbar in the documentation of the the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
-# Border
+# Header common
 
-@short: The complex control for displaying and modifying borders of a Diagram element
+@short: The complex control for for changing visibility, color, and height of the group header
 
-![Border control](../../../../assets/editbar-complex-controls/border.png)
+<img
+  src={require('../../../../assets/editbar-complex-controls/headercommon.png').default}
+  alt="Header common control" width='300'
+/>
 
 :::info
-The **Border** control is not available for the **lineTitle** element.
+The **Header common** control is available only for **group** and **swimlane** elements in the *default* mode of the Diagram editor.
 :::
 
 ## Usage
 
 ~~~jsx
 {
-    type: "border",
+    type: "headerCommon",
 
     hidden?: boolean, // false by default
     disabled?: boolean, // false by default
@@ -32,7 +35,7 @@ The **Border** control is not available for the **lineTitle** element.
     labelAlignment?: "left" | "right" | "center", // "left" by default
     align?: "start" | "center" | "end" | "between" | "around" | "evenly", // "between" by default
     compact?: boolean, // false by default
-
+   
     // Service properties
     $properties?: object
 }
@@ -42,7 +45,7 @@ The **Border** control is not available for the **lineTitle** element.
 
 ### Basic properties
 
-- `type` - (required) the type of a control. Set it to *"border"*
+- `type` - (required) the type of a control. Set it to *"headerCommon"*
 - `hidden` - (optional) defines whether the control is hidden. *false* by default
 - `disabled` - (optional) defines whether the control is enabled (*false*) or disabled (*true*). *false* by default
 - `css` - (optional) adds style classes to the control
@@ -56,25 +59,25 @@ The **Border** control is not available for the **lineTitle** element.
 
 ### Service properties
 
-- `$properties` - (optional) allows you to override values of [basic controls](/guides/diagram_editor/editbar/basic_controls) within a complex control. You can configure the following elements of the **Border** control based on the basic controls:
-    - `stroke` - ([colorpicker](/guides/diagram_editor/editbar/basic_controls/colorpicker)) sets the border color
-    - `strokeType` - ([combo](/guides/diagram_editor/editbar/basic_controls/combo)) sets the border type
-    - `strokeWidth` - ([input](/guides/diagram_editor/editbar/basic_controls/input)) sets the border width
+- `$properties` - (optional) allows you to override values of [basic controls](/guides/diagram_editor/editbar/basic_controls) within a complex control. You can configure the following elements of the **Header common** control based on the basic controls:
+    - `enable` - ([toggle](/guides/diagram_editor/editbar/basic_controls/toggle)) toggles the group header visibility
+    - `fill` - ([colorpicker](/guides/diagram_editor/editbar/basic_controls/colorpicker)) sets the group header background color
+    - `height` - ([input](/guides/diagram_editor/editbar/basic_controls/input)) sets the group header height (px)
 
 ## Example
 
-~~~jsx {7-13}
+~~~jsx {6-14}
 const editor= new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {
         editbar: {
             properties: {
-                rectangle: [
+                $group: [
                     {
-                        type: "border",
-                        label: "Border style",
+                        type: "headerCommon",
+                        label: "Header common",
                         $properties: {
-                            strokeType: { hidden: true }
+                            fill: { key: ["header", "fill"] }
                         }
                     }
                 ]

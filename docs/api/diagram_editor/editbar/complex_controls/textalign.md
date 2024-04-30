@@ -8,7 +8,10 @@ description: You can explore the Text align control of Editbar in the documentat
 
 @short: The complex control for managing the text alignment within the Diagram elements
 
-![Text align control](../../../../assets/editbar-complex-controls/textalign.png)
+<img
+  src={require('../../../../assets/editbar-complex-controls/textalign.png').default}
+  alt="Text align control" width='300'
+/>
 
 ## Usage
 

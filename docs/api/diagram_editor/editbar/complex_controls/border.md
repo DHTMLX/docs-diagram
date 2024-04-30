@@ -1,24 +1,27 @@
 ---
-sidebar_label: Pointer view!!
-title: Editbar Complex Controls - Pointer view 
-description: You can explore the Pointer view control of Editbar in the documentation of the the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+sidebar_label: Border!!
+title: Editbar Complex Controls - Border 
+description: You can explore the Border control of Editbar in the documentation of the the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
-# Pointer view
+# Border
 
-@short: The complex control for displaying and managing the connector arrows
+@short: The complex control for displaying and modifying borders of a Diagram element
 
-![Pointer view control](../../../../assets/editbar-complex-controls/pointerview.png)
+<img
+  src={require('../../../../assets/editbar-complex-controls/border.png').default}
+  alt="Border control" width='300'
+/>
 
 :::info
-The **Pointer view** control is available only for the **line** element in the *default* mode of the Diagram editor.
+The **Border** control is not available for the **lineTitle** element.
 :::
 
 ## Usage
 
 ~~~jsx
 {
-    type: "pointerView",
+    type: "border",
 
     hidden?: boolean, // false by default
     disabled?: boolean, // false by default
@@ -42,7 +45,7 @@ The **Pointer view** control is available only for the **line** element in the *
 
 ### Basic properties
 
-- `type` - (required) the type of a control. Set it to *"pointerView"*
+- `type` - (required) the type of a control. Set it to *"border"*
 - `hidden` - (optional) defines whether the control is hidden. *false* by default
 - `disabled` - (optional) defines whether the control is enabled (*false*) or disabled (*true*). *false* by default
 - `css` - (optional) adds style classes to the control
@@ -56,22 +59,26 @@ The **Pointer view** control is available only for the **line** element in the *
 
 ### Service properties
 
-- `$properties` - (optional) allows you to override values of [basic controls](/guides/diagram_editor/editbar/basic_controls) within a complex control. You can configure the following elements of the **Pointer view** control based on the basic controls:
-    - `backArrow` - ([toggleGroup](/guides/diagram_editor/editbar/basic_controls/togglegroup)) sets the arrow type at the end of connector
-    - `forwardArrow` - ([toggleGroup](/guides/diagram_editor/editbar/basic_controls/togglegroup)) sets the arrow type at the start of connector
+- `$properties` - (optional) allows you to override values of [basic controls](/guides/diagram_editor/editbar/basic_controls) within a complex control. You can configure the following elements of the **Border** control based on the basic controls:
+    - `stroke` - ([colorpicker](/guides/diagram_editor/editbar/basic_controls/colorpicker)) sets the border color
+    - `strokeType` - ([combo](/guides/diagram_editor/editbar/basic_controls/combo)) sets the border type
+    - `strokeWidth` - ([input](/guides/diagram_editor/editbar/basic_controls/input)) sets the border width
 
 ## Example
 
-~~~jsx {6-11}
+~~~jsx {7-13}
 const editor= new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {
         editbar: {
             properties: {
-                $line: [
+                rectangle: [
                     {
-                        type: "pointerView",
-                        disabled: true
+                        type: "border",
+                        label: "Border style",
+                        $properties: {
+                            strokeType: { hidden: true }
+                        }
                     }
                 ]
             }

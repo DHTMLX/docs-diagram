@@ -1,24 +1,27 @@
 ---
-sidebar_label: Size!!
-title: Editbar Complex Controls - Size 
-description: You can explore the Size control of Editbar in the documentation of the the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+sidebar_label: Header!!
+title: Editbar Complex Controls - Header 
+description: You can explore the Header control of Editbar in the documentation of the the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
-# Size
+# Header
 
-@short: The complex control for managing width and height of the Diagram elements
+@short: The complex control for displaying and modifying the header of "group" and "swimlane" elements of the Diagram editor
 
-![Size control](../../../../assets/editbar-complex-controls/size.png)
+<img
+  src={require('../../../../assets/editbar-complex-controls/header.png').default}
+  alt="Header control" width='300'
+/>
 
 :::info
-The **Size** control is available only for the **shape**, **group** and **swimlane** elements of the Diagram editor.
+The **Header** control is available only for **group** and **swimlane** elements in the *default* mode of the Diagram editor.
 :::
 
 ## Usage
 
 ~~~jsx
 {
-    type: "size",
+    type: "header",
 
     hidden?: boolean, // false by default
     disabled?: boolean, // false by default
@@ -31,10 +34,7 @@ The **Size** control is available only for the **shape**, **group** and **swimla
     label?: string,
     labelAlignment?: "left" | "right" | "center", // "left" by default
     align?: "start" | "center" | "end" | "between" | "around" | "evenly", // "start" by default
-    compact?: boolean, // false by default
-
-    // Service properties
-    $properties?: object
+    compact?: boolean // false by default
 }
 ~~~
 
@@ -42,7 +42,7 @@ The **Size** control is available only for the **shape**, **group** and **swimla
 
 ### Basic properties
 
-- `type` - (required) the type of a control. Set it to *"size"*
+- `type` - (required) the type of a control. Set it to *"header"*
 - `hidden` - (optional) defines whether the control is hidden. *false* by default
 - `disabled` - (optional) defines whether the control is enabled (*false*) or disabled (*true*). *false* by default
 - `css` - (optional) adds style classes to the control
@@ -52,26 +52,20 @@ The **Size** control is available only for the **shape**, **group** and **swimla
 - `label` - (optional) specifies a label for the control
 - `labelAlignment` - (optional) defines the position of the label. *"left"* by default
 - `align` - (optional) sets the alignment of controls inside the control group. *"start"* by default
-- `compact` - (optional) specifies the compact mode, removes indents and frame. *false* by default
-
-### Service properties
-
-- `$properties` - (optional) allows you to override values of [basic controls](/guides/diagram_editor/editbar/basic_controls) within a complex control. You can configure the following elements of the **Size** control based on the basic controls:
-    - `width` - ([input](/guides/diagram_editor/editbar/basic_controls/input)) sets the Diagram element width (px)
-    - `height` - ([input](/guides/diagram_editor/editbar/basic_controls/input)) sets the Diagram element height (px)
+- `compact` - (optional) specifies the compact mode, removes indents and frames. *false* by default
 
 ## Example
 
 ~~~jsx {6-11}
 const editor= new dhx.DiagramEditor("editor_container", {
-    type: "mindmap",
+    type: "default",
     view: {
         editbar: {
             properties: {
-                $shape: [
-                    {
-                        type: "size",
-                        label: "Shape size"
+                $group: [
+                    { 
+                        type: "header", 
+                        label: "Group header style" 
                     }
                 ]
             }

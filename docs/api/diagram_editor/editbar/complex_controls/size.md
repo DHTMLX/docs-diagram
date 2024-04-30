@@ -1,24 +1,27 @@
 ---
-sidebar_label: Position!!
-title: Editbar Complex Controls - Position 
-description: You can explore the Position control of Editbar in the documentation of the the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+sidebar_label: Size!!
+title: Editbar Complex Controls - Size 
+description: You can explore the Size control of Editbar in the documentation of the the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
-# Position
+# Size
 
-@short: The complex control for configuring the shape offset from the predefined algorithm on the X and Y axe
+@short: The complex control for managing width and height of the Diagram elements
 
-![Position control](../../../../assets/editbar-complex-controls/position.png)
+<img
+  src={require('../../../../assets/editbar-complex-controls/size.png').default}
+  alt="Size control" width='300'
+/>
 
 :::info
-The **Position** control is available only for the **shape** element in the *org* or *mindmap* modes of the Diagram editor.
+The **Size** control is available only for the **shape**, **group** and **swimlane** elements of the Diagram editor.
 :::
 
 ## Usage
 
 ~~~jsx
 {
-    type: "position",
+    type: "size",
 
     hidden?: boolean, // false by default
     disabled?: boolean, // false by default
@@ -31,7 +34,7 @@ The **Position** control is available only for the **shape** element in the *org
     label?: string,
     labelAlignment?: "left" | "right" | "center", // "left" by default
     align?: "start" | "center" | "end" | "between" | "around" | "evenly", // "start" by default
-    compact?: boolean, // false by default 
+    compact?: boolean, // false by default
 
     // Service properties
     $properties?: object
@@ -42,7 +45,7 @@ The **Position** control is available only for the **shape** element in the *org
 
 ### Basic properties
 
-- `type` - (required) the type of a control. Set it to *"position"*
+- `type` - (required) the type of a control. Set it to *"size"*
 - `hidden` - (optional) defines whether the control is hidden. *false* by default
 - `disabled` - (optional) defines whether the control is enabled (*false*) or disabled (*true*). *false* by default
 - `css` - (optional) adds style classes to the control
@@ -56,13 +59,13 @@ The **Position** control is available only for the **shape** element in the *org
 
 ### Service properties
 
-- `$properties` - (optional) allows you to override values of [basic controls](/guides/diagram_editor/editbar/basic_controls) within a complex control. You can configure the following elements of the **Position** control based on the basic controls:
-    - `dx` - ([input](/guides/diagram_editor/editbar/basic_controls/input)) sets the shape offset from the predefined algorithm on the x-axis
-    - `dy` - ([input](/guides/diagram_editor/editbar/basic_controls/input)) sets the shape offset from the predefined algorithm on the y-axis
+- `$properties` - (optional) allows you to override values of [basic controls](/guides/diagram_editor/editbar/basic_controls) within a complex control. You can configure the following elements of the **Size** control based on the basic controls:
+    - `width` - ([input](/guides/diagram_editor/editbar/basic_controls/input)) sets the Diagram element width (px)
+    - `height` - ([input](/guides/diagram_editor/editbar/basic_controls/input)) sets the Diagram element height (px)
 
 ## Example
 
-~~~jsx {6-13}
+~~~jsx {6-11}
 const editor= new dhx.DiagramEditor("editor_container", {
     type: "mindmap",
     view: {
@@ -70,10 +73,8 @@ const editor= new dhx.DiagramEditor("editor_container", {
             properties: {
                 $shape: [
                     {
-                        type: "position",
-                        $properties: {
-                            dx: { disabled: true }
-                        }
+                        type: "size",
+                        label: "Shape size"
                     }
                 ]
             }
