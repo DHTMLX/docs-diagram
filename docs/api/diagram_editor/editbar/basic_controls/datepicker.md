@@ -1,12 +1,12 @@
 ---
 sidebar_label: Datepicker!!
 title: Editbar Basic Controls - Datepicker 
-description: You can explore the Datepicker control of Editbar in the documentation of the the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: You can explore the Datepicker control of Editbar in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # Datepicker
 
-@short: The basic input control with a calendar attached to it for selecting a date.
+@short: The basic control for selecting a date.
 
 ![Datepicker control](../../../../assets/editbar-basic-controls/datepicker.png)
 

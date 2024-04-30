@@ -1,7 +1,7 @@
 ---
 sidebar_label: Fieldset!!
 title: Editbar Basic Controls - Fieldset 
-description: You can explore the Fieldset control of Editbar in the documentation of the the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: You can explore the Fieldset control of Editbar in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # Fieldset

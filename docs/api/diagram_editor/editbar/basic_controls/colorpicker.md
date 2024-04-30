@@ -1,12 +1,12 @@
 ---
 sidebar_label: Colorpicker!!
 title: Editbar Basic Controls - Colorpicker 
-description: You can explore the Colorpicker control of Editbar in the documentation of the the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: You can explore the Colorpicker control of Editbar in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # Colorpicker
 
-@short: The basic input control with a color picker attached to it for selecting a color.
+@short: The basic control for selecting a color.
 
 ![Colorpicker control](../../../../assets/editbar-basic-controls/colorpicker.png)
 
