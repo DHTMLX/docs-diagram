@@ -8,11 +8,11 @@ description: You can learn about the properties property of Editbar in the docum
 
 ### Description
 
-@short: Optional. A set of configurations that modify controls for Diagram elements (shapes, groups, swimlanes etc)
+@short: Optional. A set of configurations that modify controls for Diagram elements (shapes, groups, swimlanes, etc.)
 
 :::info
 The `properties` property allows you to do the following:
-- modify editbar controls for all or individual Diaram elements base on [**Basic controls**](guides/diagram_editor/editbar/basic_controls.md) and/or [**Complex controls**](guides/diagram_editor/editbar/complex_controls.md)
+- modify editbar controls for all or individual Diagram elements based on [**Basic controls**](guides/diagram_editor/editbar/basic_controls.md) and/or [**Complex controls**](guides/diagram_editor/editbar/complex_controls.md)
 - apply custom editbar control(s) defined via the [`controls`](api/diagram_editor/editbar/config/controls_property.md) property to Diagram elements
 - specify conditions for applying an editbar control (custom or default) to Diagram elements
 
@@ -55,7 +55,7 @@ properties: {
                 // ... custom logic here
             return controls;
         },
-    ..., // another elemnt
+    ..., // another element
 }
 ~~~
 

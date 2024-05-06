@@ -15,10 +15,10 @@ description: You can learn about the toolbar property in the documentation of th
 ~~~js
 toolbar?: [
     {
-	    id: string,
+        id: string,
         content: string,
-	    check?: function,
-	    css?: function,
+        check?: function,
+        css?: function,
         tooltip?: string
     },
     {...} // other icon objects
@@ -39,21 +39,29 @@ The **toolbar** array includes a set of icon objects. Each icon object can have 
 
 ~~~js
 const diagram = new dhx.Diagram("diagram_container", { 
-	type: "org", 
-	select: true,
-	margin: {
-    	y: 65
-    },
-    toolbar: [{
-        id: "download",
-        content: "<i class='dxi dxi-download'></i>",
-        tooltip: "Download",
-    },
-    {
-        id: "info",
-        content: "<i class='dxi dxi-information-outline'></i>",
-        tooltip: "Info",
-    }]
+    type: "org",
+    select: true,
+    // setting a toolbar with buttons for items
+    toolbar: [
+        {
+            id: "add",
+            content: "<i class='dxi dxi-plus-box'>",
+            check: item => !item.assistant && !item.partner,
+            tooltip: "Add new shape",
+        },
+        {
+            id: "download",
+            content: "<i class='dxi dxi-download'></i>",
+            tooltip: "Download to PDF"
+        },
+        {
+            id: "remove",
+            content: "<i class='dxi dxi-delete-outline'>",
+            check: item => item.parent,
+            css: () => "dhx_diagram_toolbar__icon--remove",
+            tooltip: "Remove",
+        },
+    ]
 });
 ~~~
 
@@ -66,4 +74,4 @@ const diagram = new dhx.Diagram("diagram_container", {
 - [Setting toolbar for items](../../../guides/diagram/configuration/#setting-toolbar-for-items)
 - [Default icons](https://docs.dhtmlx.com/suite/helpers/icon/)
 
-**Related sample**: [Diagram. Configuration. Per-shape toolbar](https://snippet.dhtmlx.com/4if395hd)
+**Related sample**: [Diagram. Configuration. Shape toolbar](https://snippet.dhtmlx.com/4if395hd)

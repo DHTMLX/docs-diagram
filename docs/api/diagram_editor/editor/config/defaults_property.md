@@ -8,7 +8,7 @@ description: You can learn about the defaults property of editor in the document
 
 ### Description
 
-@short: Optional. An object which sets the default configuration of a shape or line
+@short: Optional. An object which sets the default configuration of a shape or a line
 
 ### Usage
 
@@ -20,9 +20,9 @@ defaults?: {
 
 ### Parameters
 
-The **defaults** object can contain a set of *key:value* pairs where *key* is the type of a shape or line and *value* is a set of configuration settings of the [shape](../../../shapes/configuration_properties/) or [line](../../../lines/configuration_properties/) correspondingly.
+The `defaults` object can contain a set of `key:value` pairs where *key* is the type of a shape or line and *value* is a set of configuration settings of the [shape](/shapes/configuration_properties/) or [line](/lines/configuration_properties/) correspondingly.
 
-{{note The *type* and *id* attributes can not be defined in the default configuration of a shape/line.}}
+{{note The `type` and `id` attributes can not be defined in the default configuration of a shape/line.}}
 
 ### Example
 
@@ -51,21 +51,19 @@ const defaults = {
 
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
-    defaults: defaults
+    defaults,
 });
 ~~~
 
 :::info
-After defining the default settings for the shape/line of separate types, you can either omit these properties or redefine their values while [preparing a data set](../../../guides/loading_data/#preparing-data-to-load) for the shapes/lines of these types.
+After defining the default settings for the shape/line of separate types, you can either omit these properties or redefine their values while [preparing a data set](/diagram/guides/loading_data/#preparing-data-to-load) for the shapes/lines of these types.
 :::
 
 **Change log:** The ability to set the default configuration for lines is added in v4.2
 
 **Related articles**:  
 
-TODO (update links)
+- [Setting the default configuration of a shape](/guides/diagram/configuration/#setting-the-default-configuration-of-a-shape)
+- [Setting the preview of shapes](/guides/diagram_editor/shapebar/#setting-the-preview-of-shapes)
 
-- [Setting the default configuration of a shape](../../../guides/diagram/configuration/#setting-the-default-configuration-of-a-shape)
-- [Setting shape preview](../../../guides/diagram_editor/left_panel/#setting-shape-preview)
-
-**Related sample:** [Diagram editor. Setting the default line (connector) type](https://snippet.dhtmlx.com/22abzn5m)
+**Related sample:** [Diagram Editor. Setting the default line (connector) type](https://snippet.dhtmlx.com/22abzn5m)

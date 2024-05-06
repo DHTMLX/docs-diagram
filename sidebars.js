@@ -129,7 +129,6 @@ module.exports = {
               	"api/diagram/defaultshapetype_property",
               	"api/diagram/exportstyles_property",
               	"api/diagram/lineconfig_property",
-              	"api/diagram/linegap_property",
               	"api/diagram/margin_property",
               	"api/diagram/scale_property",
               	"api/diagram/select_property",
@@ -242,7 +241,6 @@ module.exports = {
                     "api/diagram_editor/editor/config/gridstep_property",
                     "api/diagram_editor/editor/config/itemsdraggable_property",
                     "api/diagram_editor/editor/config/lineconfig_property",
-                    "api/diagram_editor/editor/config/linegap_property",
                     "api/diagram_editor/editor/config/magnetic_property",
                     "api/diagram_editor/editor/config/resizepoints_property", // New
                     //"api/diagram_editor/editor/config/reservedwidth_property", !!!Deprecated

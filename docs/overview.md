@@ -1,5 +1,5 @@
 ---
-sidebar_label: Diagram overview
+sidebar_label: Diagram overview !!
 title: Diagram Overview 
 slug: /
 description: You can have an overview of DHTMLX JavaScript Diagram library in the documentation. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
@@ -12,7 +12,7 @@ as a scheme, chart, organizational chart, mind map, etc. The diagram makes it ea
 
 ## Diagram in the default mode
 
-DHTMLX Diagram provides the possibility to make various diagrams using a predefined set of shapes and connectors, and experiment with their look and feel.
+DHTMLX Diagram provides the possibility to make various diagrams using a [predefined set of shapes](/shapes/default_shapes/) and [connectors](/lines), and experiment with their look and feel.
 
 You can choose shapes of desired types, link them by suitable connectors and build any type of a diagram that will show the sequence of some operations making up a particular process, like this:
 
@@ -38,23 +38,23 @@ You can easily create [your own templates of shapes](/shapes/custom_shape/) and 
 
 ### Groups
 
-You can draw simple or more complicated schemes by grouping shapes in different ways with the help of such an element of Diagram as a group. It is possible to create as one-level groups as nested groups, to configure their appearance and behavior. Check the details in the [Configuring groups](/groups/) article.
+You can draw simple or more complicated schemes by grouping shapes in different ways with the help of such an element of Diagram as a group. It is possible to create as one-level groups as nested groups, to configure their appearance and behavior. Check the details in the [Groups](/groups/) article.
 
-| [Diagram. Default mode. Virtual private cloud architecture](https://snippet.dhtmlx.com/0hf8ahrb) |
+| [Diagram Editor. Default mode. Virtual private cloud architecture](https://snippet.dhtmlx.com/0hf8ahrb) |
 | ------------------------------------------------------------------------------------------------ |
 | ![](assets/virtual_cloud.png)                                                                    |
 
 ### Swimlanes
 
-Usage of swimlanes of the DHTMLX Diagram library lets you represent any process (be it a business process, manufacturing or service one, and any other processes) or its separate parts from start to finish. Check the details in the [Configuring swimlanes](/swimlanes/) article.
+Usage of swimlanes of the DHTMLX Diagram library lets you represent any process (be it a business process, manufacturing or service one, and any other processes) or its separate parts from start to finish. Check the details in the [Swimlanes](/swimlanes/) article.
 
 | [Diagram. Default mode. Swimlane template](https://snippet.dhtmlx.com/z6x5m3gb) |
 | ------------------------------------------------------------------------------- |
 | ![](assets/swimlane.png)                                                        |
 
-### Title of lines
+### Line titles
 
-The title of Line is enabled in the default mode of Diagram. You can add the text by double-clicking on a line. Use double-clicking also for editing the text.
+The titles of Lines are enabled in the default mode of Diagram. You can add the text by double-clicking on a line. Use double-clicking also for editing the text. Check the details in the [LineTitles](/line_titles/) article.
 
 <iframe src="https://snippet.dhtmlx.com/e6zm6wh1?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
 
@@ -62,7 +62,7 @@ The title of Line is enabled in the default mode of Diagram. You can add the tex
 
 There is also an org chart mode of Diagram that presents a set of shapes connected by lines in a hierarchical order.
 
-<iframe src="https://snippet.dhtmlx.com/qnx3ekin?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
+<iframe src="https://snippet.dhtmlx.com/5ign6fyy?text=diagram&mode=result" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
 
 ### Assistant and partner shapes
 
@@ -94,7 +94,7 @@ Here are examples of how the connections of parent shapes look like with one, tw
 
 An example of adding custom shapes for creating a diagram to present the hierarchical organizational structure of a medical institution:
 
-| [Diagram. Org chart mode. Medical hierarchy diagram template](https://snippet.dhtmlx.com/8fubjmlz) |
+| [Diagram Editor. Org chart mode. Medical hierarchy](https://snippet.dhtmlx.com/8fubjmlz) |
 | -------------------------------------------------------------------------------------------------- |
 | ![](assets/medical_hierarchy_overview.png)                                                         |
 

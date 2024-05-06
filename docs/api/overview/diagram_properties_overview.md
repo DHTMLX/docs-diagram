@@ -13,7 +13,6 @@ description: You can explore the Diagram properties in the documentation of the 
 | [](../diagram/defaultshapetype_property.md) | @getshort(../diagram/defaultshapetype_property.md) |
 | [](../diagram/exportstyles_property.md)     | @getshort(../diagram/exportstyles_property.md)     |
 | [](../diagram/lineconfig_property.md)       | @getshort(../diagram/lineconfig_property.md)       |
-| [~~lineGap~~](api/diagram/linegap_property.md)          |Deprecated! ~~@getshort(../diagram/linegap_property.md)~~          |
 | [](../diagram/margin_property.md)           | @getshort(../diagram/margin_property.md)           |
 | [](../diagram/scale_property.md)            | @getshort(../diagram/scale_property.md)            |
 | [](../diagram/select_property.md)           | @getshort(../diagram/select_property.md)           |

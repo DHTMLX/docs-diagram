@@ -16,8 +16,6 @@ Another way to add a text to a line and manipulate it is to prepare a [data set]
 LineTitles are available only in the default mode of Diagram/Diagram Editor (type: "default").
 :::
 
-TODO (check that the dataset in the snippet is updated)
-
 <iframe src="https://snippet.dhtmlx.com/e6zm6wh1?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="650"></iframe>
 
 ## Creating line titles
