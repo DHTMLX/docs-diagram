@@ -27,6 +27,9 @@ You can adjust the attributes of the items via [sidebar options of the editbar](
 | ----------------------------------------------------------------------------------- |
 | ![](assets/default_editor.gif)                                               		  |
 
+
+![](assets/example.gif)                                               		  
+
 You may customize the [shapebar](../guides/diagram_editor/shapebar/) and, if you have added a custom shape, **TODO - update the link** [configure the editbar](../guides/diagram_editor/editbar/#configuring-options-for-editing-custom-shapes) according to the attributes of your shape.
 
 **TODO - update the snippet link** (the snippet is removed)
