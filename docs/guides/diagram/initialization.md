@@ -1,5 +1,5 @@
 ---
-sidebar_label: Initialization
+sidebar_label: Initialization !!
 title: Initialization
 description: You can learn how to start with Diagram in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
@@ -9,46 +9,46 @@ description: You can learn how to start with Diagram in the documentation of the
 In this article we will discuss the stages of adding DHTMLX Diagram on a page. This process presupposes several simple steps:
 
 - [Download the DHTMLX Diagram package](https://dhtmlx.com/docs/products/dhtmlxDiagram/download.shtml) and unpack it into a folder of your project
-- [Include the DHTMLX Diagram source files on a page](#including-required-code-files).
-- [Initialize the Diagram with the object constructor](#initializing-diagram).
-- [Load data into the Diagram](#loading-data-into-diagram).
+- [Include the DHTMLX Diagram source files on a page](#including-required-code-files)
+- [Initialize the Diagram with the object constructor](#initializing-diagram)
+- [Load data into the Diagram](#loading-data-into-diagram)
 
 ~~~html
 <!DOCTYPE html>
 <html>
 <head>
-  <script type="text/javascript" src="codebase/diagram.js"></script>	
-  <link rel="stylesheet" href="codebase/diagram.css">
+    <script type="text/javascript" src="codebase/diagram.js"></script>	
+    <link rel="stylesheet" href="codebase/diagram.css">
 </head>
 
 <body>
-	<div id="diagram_container"></div>
-	<script>
-		// preparing diagram data
-		const data = [ 
-    		{ id: 1, x: 100, y: 40, text: "Start", type: "start", height: 50 },
-			{ id: 2, x: 100, y: 170, text: "Operation 1", type: "output" },
-			{ id: 3, x: 100, y: 300, text: "Operation 2", type: "input" },
-			{ from: 1, to: 2 },
-			{ from: 2, to: 3 },
-    		// more objects
-		];
+    <div id="diagram_container"></div>
+    <script>
+        // preparing diagram data
+        const data = [ 
+            { id: 1, x: 100, y: 40, text: "Start", type: "start", height: 50 },
+            { id: 2, x: 100, y: 170, text: "Operation 1", type: "output" },
+            { id: 3, x: 100, y: 300, text: "Operation 2", type: "input" },
+            { from: 1, to: 2 },
+            { from: 2, to: 3 }
+            // more objects
+        ];
 
-		// creating DHTMLX Diagram
-		const diagram = new dhx.Diagram("diagram_container", {
-			// config options
-		});
+        // creating DHTMLX Diagram
+        const diagram = new dhx.Diagram("diagram_container", {
+            // config options
+        });
 
-		// loading data into the diagram
-		diagram.data.parse(data);
-	</script>
+        // loading data into the diagram
+        diagram.data.parse(data);
+    </script>
 </body>
 </html>
 ~~~
 
 ## Including required code files
 
-To create Editor, you need to include 2 source files on your page:
+To create Diagram, you need to include 2 source files on your page:
 
 - **diagram.js**
 - **diagram.css**
@@ -62,12 +62,15 @@ Make sure that you set correct relative paths to these files:
 
 The structure of DHTMLX Diagram package is the following: 
 
-- **sources** - the source code files of the library. The files are not minified and easy-to-read. The package is mostly intended to be used for component's debugging;
+- **sources** - the source code files of the library. The files are not minified and easy-to-read. The package is mostly intended to be used for component's debugging
 
 {{note Note that the **Trial** version of the Diagram library doesn't contain the sources folder.}}
 
-- **samples** - the code samples;
-- **codebase** - the packed code files of the library. These files are much smaller and intended for use in production. **In your apps you need to use files from this folder**.
+- **samples** - the code samples
+- **codebase** - the packed code files of the library. These files are much smaller and intended for use in production
+:::info
+In your apps you need to use files from the **codebase** folder
+:::
 
 ## Initializing Diagram
 
@@ -77,17 +80,17 @@ You can initialize a Diagram in a container, in the document body, or in a layou
 
 To initialize a diagram in a container, use the `dhx.Diagram` constructor and pass the following two parameters to the constructor function:
 
-- a container to place a Diagram into, let's give it the id "diagram_container":
+- a container to place a Diagram into, let's give it the *"diagram_container"* id:
 
 ~~~html title="index.html"
 <div id="diagram_container"></div>
 ~~~
 
-- an object with [configuration properties](#configuration-properties). If this argument is not passed to the constructor, the settings will be default.
+- an object with the [configuration properties](#configuration-properties). If this argument is not passed to the constructor, the default settings will be applied
 
-~~~js title="index.js"
+~~~jsx title="index.js"
 const diagram = new dhx.Diagram("diagram_container", {
-	type: "default" // "default" | "org" | "mindmap"
+    type: "default" // "default" | "org" | "mindmap"
 });
 ~~~
 
@@ -95,9 +98,9 @@ const diagram = new dhx.Diagram("diagram_container", {
 
 It is possible to skip setting a container for Diagram and to add it right into the document's body:
 
-~~~js
+~~~jsx
 const diagram = new dhx.Diagram(document.body, {
-	type: "default" // "default" | "org" | "mindmap"
+    type: "default" // "default" | "org" | "mindmap"
 });
 ~~~
 
@@ -107,7 +110,7 @@ You can also initialize a diagram inside [a Layout cell](https://docs.dhtmlx.com
 
 ~~~js
 const diagram = new dhx.Diagram(null, {
-	type: "default" // "default" | "org" | "mindmap"
+    type: "default" // "default" | "org" | "mindmap"
 });
 const layout = new dhx.Layout("layout", {
     cols: [
@@ -122,17 +125,20 @@ layout.getCell("diagram").attach(diagram);
 
 ### Configuration properties
 
-To change the configuration of a diagram, you can specify the desired property in the config object passed as a second parameter of the constructor function. 
+To change the [configuration of a diagram](/guides/diagram/configuration/), you can specify the desired property in the config object passed as a second parameter of the constructor function. 
 
 ~~~js
 const diagram = new dhx.Diagram("diagram_container", {
-	scale: 0.7
+    scale: 0.7,
+    // other config options
 });
 ~~~
 
-**Related sample:**	[Diagram. Default mode. Wide flowchart](https://snippet.dhtmlx.com/4d4k3o8p)	
+See [the full list of configuration properties of Diagram](../../../api/diagram/api_overview/#diagram-properties).
 
-Alternatively, you can get access to some option and set/modify its value via the diagram **config**. Don't forget to call the [](../../api/diagram/paint_method.md) method to re-render the diagram with a new configuration:
+**Related sample:**	[Diagram Editor. Default mode. Wide flowchart](https://snippet.dhtmlx.com/4d4k3o8p)	
+
+Alternatively, you can get access to some option and set/modify its value via the diagram **config** object. Don't forget to call the [](../../api/diagram/paint_method.md) method to re-render the diagram with a new configuration:
 
 ~~~js
 const diagram = new dhx.Diagram("diagram_container");
@@ -141,8 +147,6 @@ diagram.data.parse(data);
 diagram.config.scale = 0.7;
 diagram.paint();
 ~~~
-
-See [the full list of configuration properties of Diagram](../../../api/diagram/api_overview/#diagram-properties).
 
 ## Loading data into Diagram
 

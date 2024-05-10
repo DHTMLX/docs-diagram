@@ -32,5 +32,5 @@ const diagram = new dhx.Diagram("diagram_container", {
 
 **Related articles**:
 
-- [Selecting items](../../../guides/diagram/configuration/#selecting-items)
+- [Enabling items selection](../../../guides/diagram/configuration/#enabling-items-selection) 
 - [Selecting items](../../../guides/manipulating_items/#selecting-items)

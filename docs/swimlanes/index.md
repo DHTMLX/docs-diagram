@@ -97,7 +97,7 @@ const data = [
         type: "$sgroup",
         id: 3,
         style: {
-            fill: "grey"
+            fill: "#D4DAE4"
         }
     }
 ];

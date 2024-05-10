@@ -178,13 +178,25 @@ const data = [
         ],
         "subHeaderCols": {
             "headers": [
-                { "text": "September", "fill": "rgba(243, 92, 79, 0.4)" },
-                { "text": "October", "fill": "rgba(155, 96, 248, 0.4)" },
-                { "text": "November", "fill": "rgba(255, 174, 18, 0.4)" },
-                { "text": "December", "fill": "rgba(60, 201, 122, 0.4)" }
+                {
+                    "text": "September",
+                    "fill": "#f35c4f66"
+                },
+                {
+                    "text": "October",
+                    "fill": "#9b60f866"
+                },
+                {
+                    "text": "November",
+                    "fill": "#ffae1266"
+                },
+                {
+                    "text": "December",
+                    "fill": "#3cc97a66"
+                }
             ]
         }
-    },
+    }
 ];
 ~~~
 
@@ -253,7 +265,7 @@ const data = [
         "type": "$sgroup",
         "groupChildren": ["s1"],
         "style": {
-            "fill": "rgba(243, 92, 79, 0.05)"
+            "fill": "#D4DAE4"
         },
         "x": 0,
         "y": 80

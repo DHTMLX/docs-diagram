@@ -117,13 +117,25 @@ const data = [
          [1, 2, 3, 4]
       ],
       "subHeaderCols": {
-         "headers": [
-            { "text": "September", "fill": "rgba(243, 92, 79, 0.4)" },
-            { "text": "October", "fill": "rgba(155, 96, 248, 0.4)" },
-            { "text": "November", "fill": "rgba(255, 174, 18, 0.4)" },
-            { "text": "December", "fill": "rgba(60, 201, 122, 0.4)" }
-         ]
-      }
+            "headers": [
+                {
+                    "text": "September",
+                    "fill": "#f35c4f66"
+                },
+                {
+                    "text": "October",
+                    "fill": "#9b60f866"
+                },
+                {
+                    "text": "November",
+                    "fill": "#ffae1266"
+                },
+                {
+                    "text": "December",
+                    "fill": "#3cc97a66"
+                }
+            ]
+        }
    },
    // configuring a cell of the swimlane
    {
@@ -131,7 +143,7 @@ const data = [
       "type": "$sgroup",
       "groupChildren": ["s1"],
       "style": {
-         "fill": "rgba(243, 92, 79, 0.05)"
+         "fill": "#D4DAE4"
       },
       "x": 0,
       "y": 80
@@ -150,7 +162,7 @@ External data loading
 
 To load data from an external file, make use of the [](../api/data_collection/load_method.md) method. It takes the URL of the file with data as a parameter:
 
-~~~js
+~~~jsx
 diagram.data.load("../common/data.json");
 ~~~
 
@@ -158,7 +170,7 @@ The component will make an AJAX call and expect the remote URL to provide valid 
 
 Data loading is asynchronous, so you need to wrap any after-loading code into a promise:
 
-~~~js
+~~~jsx
 diagram.data.load("/some/data").then(function(){
    diagram.selection.add("123");
 });
@@ -171,7 +183,7 @@ Loading from a local source
 
 To load data from a local data source, use the [](../api/data_collection/parse_method.md) method. As a parameter you need to pass an array of [predefined data objects](#preparing-data-to-load):
 
-~~~js
+~~~jsx
 diagram.data.parse(data);
 ~~~
 
@@ -179,9 +191,9 @@ diagram.data.parse(data);
 
 ### Loading data into the editor
 
-To load a data set into the editor, use the [](../api/editor/parse_method.md) method of the editor.
+To load a data set into the editor, use the [parse()](/api/diagram_editor/editor/methods/parse_method/) method of the editor.
 
-~~~js
+~~~jsx
 editor.parse(data);
 ~~~
 
@@ -207,7 +219,7 @@ diagram2.data.parse(state);
 
 ## Importing data into the editor
 
-When you use a diagram together with an editor, you can import data from the diagram into the editor via the [](../api/editor/import_method.md) method of the editor object:
+When you use a diagram together with an editor, you can import data from the diagram into the editor via the [import()](/api/diagram_editor/editor/methods/import_method/) method of the editor object:
 
 ~~~js
 function runEditor() {

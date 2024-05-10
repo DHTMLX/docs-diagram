@@ -1,5 +1,5 @@
 ---
-sidebar_label: Manipulating items!!
+sidebar_label: Manipulating items !!
 title: Manipulating Items
 description: You can learn about manipulating items in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
@@ -159,15 +159,13 @@ You can check whether an item exists in the diagram via the [](../api/data_colle
 const shapeExists = diagram.data.exists("1");
 ~~~
 
-## !!Selecting items 
-
-TODO - check/update the guides when the API will be completely ready
+## Selecting items !!
 
 ### Selecting an item
 
-To select items, you need firstly [enable selection](../../guides/diagram/configuration/#selecting-items) for the diagram and then call the [add()](api/selection/add_method.md) method of the **selection** object to select a desired item.
+To select items, you need firstly [enable selection](../../guides/diagram/configuration/#enabling-items-selection) for the diagram and then call the [add()](api/selection/add_method.md) method of the `selection` object to select a desired item.
 
-~~~js {8,11-12,15-16}
+~~~jsx {8,11-12,15-16}
 // a diagram must be created with the "select:true" option
 const diagram = new dhx.Diagram("diagram_container", { 
     select: true 
@@ -195,14 +193,14 @@ The method takes as an argument an object with the following parameters:
 
 The method returns:
 
--  `true` if the element hadn't been in the list and was successfully added into it
+- `true` if the element hadn't been in the list and was successfully added into it
 - `false` if the element wasn't added into the list by some reason, e.g. an element had already been added to the list
 
 ### Unselecting an item
 
-To remove an item from the selection list, make use of the [](../api/selection/remove_method.md) method of the **selection** object:
+To remove an item from the selection list, make use of the [](../api/selection/remove_method.md) method of the `selection` object:
 
-~~~js {2}
+~~~jsx {2}
 console.log(diagram.selection.getIds()); // -> ["1", "2", "3"]
 diagram.selection.remove({ id: "3" }); // -> returns true if the item has been unselected
 console.log(diagram.selection.getIds()); // -> ["1", "2"]
@@ -212,7 +210,7 @@ The method may take an object with *the id of the item to unselect* as a paramet
 
 You can also call the method with no arguments to clear the selection list as follows:
 
-~~~js {2-3}
+~~~jsx {2-3}
 console.log(diagram.selection.getIds()); // -> ["1", "2", "3"]
 // removes all the items from the selection list
 diagram.selection.remove(); 
@@ -221,9 +219,9 @@ console.log(diagram.selection.getIds()); // -> []
 
 ### Getting the ids of selected items
 
-You can get the list of ids of the currently selected items with the [](../api/selection/getids_method.md) method of the **selection** object:
+You can get the list of ids of the currently selected items with the [](../api/selection/getids_method.md) method of the `selection` object:
 
-~~~js
+~~~jsx
 const ids = diagram.selection.getIds(); // -> ["1", "1.1" ...] or []
 ~~~
 
@@ -231,13 +229,13 @@ The method returns an array of ids of selected items and sub-items or an empty a
 
 ### Getting the object of a selected item
 
-You can get the object of a selected item using the [](../api/selection/getitem_method.md) method of the **selection** object. The method may take as an argument an object with the following parameter:
+You can get the object of a selected item using the [](../api/selection/getitem_method.md) method of the `selection` object. The method may take as an argument an object with the following parameter:
 
 - `id` - (required) - the id of the item in question
 
 You can also call the method without the parameter to get the object of the last selected item. Check the examples below to explore the method's functionality:
 
-~~~js {9-11,13-15,17-19} 
+~~~jsx {9-11,13-15,17-19} 
 // a diagram must be created with the "select:true" option
 const diagram = new dhx.Diagram("diagram_container", { 
     select: true 
@@ -263,15 +261,15 @@ const item = diagram.selection.getItem({ id: "4" });
 
 Whenever you need to clear the selection list without invoking events, use the [](../api/selection/clear_method.md) method:
 
-~~~js
+~~~jsx
 diagram.selection.clear();
 ~~~
 
 ### Checking whether an item is selected
 
-There is a way to check the presence of an item in the list of selected Diagram items via API. Use the [](../api/selection/includes_method.md) method of the **selection** object for this purpose:
+There is a way to check the presence of an item in the list of selected Diagram items via API. Use the [](../api/selection/includes_method.md) method of the `selection` object for this purpose:
 
-~~~js {2-3}
+~~~jsx {2-3}
 diagram.selection.getIds(); // -> ["1", "2", "3"]
 diagram.selection.includes({ id: "1" }) // returns true
 diagram.selection.includes({ id: "4" }) // returns false
@@ -281,9 +279,7 @@ The method takes as an argument an object with the following parameters:
 
 - `id` - (*string|number*) required, the id of the checked item
 
-TODO - update the link to snippet
-
-**Related sample:** [Diagram. Selection. Item selection](https://snippet.dhtmlx.com/jyoxn5h7)
+**Related sample:** [Diagram. Diagram. Styling selection with CSS](https://snippet.dhtmlx.com/jyoxn5h7)
 
 ## Expanding/collapsing items
 
@@ -294,7 +290,7 @@ Both methods takes two parameters:
 - **id** - (*string|number*) the id of the item
 - **dir** - (*string*) optional, defines the side the children will be hidden/shown in relation to the parent shape: "left", "right"
 
-~~~js
+~~~jsx
 // expanding the item with the id "3"
 diagram.expandItem("3");
 
@@ -306,7 +302,7 @@ diagram.collapseItem("3");
 **Note**, that the **dir** attribute can be used only in the mindmap mode of Diagram (type:"mindmap").
 :::
 
-~~~js
+~~~jsx
 const diagram = new dhx.Diagram("diagram_container", {
 	type:"mindmap"
 });
