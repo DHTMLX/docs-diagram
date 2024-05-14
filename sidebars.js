@@ -475,19 +475,56 @@ module.exports = {
                     "api/diagram_editor/editbar/config/properties_property"
                   ],
                 },
-                // Editbar Events DELETE
-                /*{
+                {
                   type: "category",
-                  label: "!!Editbar events",
-                  collapsed: true,
+                  label: "!!Basic controls",
                   link: {
-                    type: 'generated-index',
-                    title: "Editbar events"
+                    type: "doc",
+                    id: "api/diagram_editor/editbar/basic_controls_overview"
                   },
-                  items: [
-                    "api/diagram_editor/editbar/events/some_event",
-                  ],
-                },*/
+                  items:[
+                    "api/diagram_editor/editbar/basic_controls/avatar", // New
+                    "api/diagram_editor/editbar/basic_controls/button", // New
+                    "api/diagram_editor/editbar/basic_controls/checkbox", // New
+                    "api/diagram_editor/editbar/basic_controls/checkboxgroup", // New
+                    "api/diagram_editor/editbar/basic_controls/colorpicker", // New
+                    "api/diagram_editor/editbar/basic_controls/combo", // New
+                    "api/diagram_editor/editbar/basic_controls/container", // New
+                    "api/diagram_editor/editbar/basic_controls/datepicker", // New
+                    "api/diagram_editor/editbar/basic_controls/fieldset", // New
+                    "api/diagram_editor/editbar/basic_controls/input", // New
+                    "api/diagram_editor/editbar/basic_controls/radiogroup", // New
+                    "api/diagram_editor/editbar/basic_controls/select", // New
+                    "api/diagram_editor/editbar/basic_controls/slider", // New
+                    "api/diagram_editor/editbar/basic_controls/spacer", // New
+                    "api/diagram_editor/editbar/basic_controls/textarea", // New
+                    "api/diagram_editor/editbar/basic_controls/timepicker", // New
+                    "api/diagram_editor/editbar/basic_controls/toggle", // New
+                    "api/diagram_editor/editbar/basic_controls/togglegroup" // New
+                  ]
+                },
+                {
+                  type: "category",
+                  label: "!!Complex controls",
+                  link: {
+                    type: "doc",
+                    id: "api/diagram_editor/editbar/complex_controls_overview"
+                  },
+                  items:[
+                    "api/diagram_editor/editbar/complex_controls/arrange", // New
+                    "api/diagram_editor/editbar/complex_controls/border", // New
+                    "api/diagram_editor/editbar/complex_controls/gridstep", // New
+                    "api/diagram_editor/editbar/complex_controls/header", // New
+                    "api/diagram_editor/editbar/complex_controls/headercommon", // New
+                    "api/diagram_editor/editbar/complex_controls/headerposition", // New
+                    "api/diagram_editor/editbar/complex_controls/lineshape", // New
+                    "api/diagram_editor/editbar/complex_controls/pointerview", // New
+                    "api/diagram_editor/editbar/complex_controls/position", // New
+                    "api/diagram_editor/editbar/complex_controls/size", // New
+                    "api/diagram_editor/editbar/complex_controls/textalign", // New
+                    "api/diagram_editor/editbar/complex_controls/textstyle" // New
+                  ]
+                }
               ]
             },
 
@@ -516,10 +553,10 @@ module.exports = {
                     "api/diagram_editor/shapebar/config/sections_property",
                     "api/diagram_editor/shapebar/config/show_property",
                     "api/diagram_editor/shapebar/config/width_property"
-                  ],
-                },
+                  ]
+                }
               ]
-            },
+            }
           ]
         },
 
@@ -841,47 +878,7 @@ module.exports = {
             "guides/diagram_editor/toolbar",
             "guides/diagram_editor/shapebar",
             "guides/diagram_editor/grid_area",
-            {
-              type: "category",
-              label: "Editbar!!",
-              link: {
-                type: 'doc',
-                id: "guides/diagram_editor/editbar/overview",
-              },
-              items: [
-                {
-                  type: "category",
-                  label: "Basic controls!!",
-                  link: {
-                    type: "doc",
-                    id: "guides/diagram_editor/editbar/basic_controls"
-                  },
-                  items:[
-                    "guides/diagram_editor/editbar/basic_controls/avatar",
-                    "guides/diagram_editor/editbar/basic_controls/button",
-                    "guides/diagram_editor/editbar/basic_controls/checkbox",
-                    "guides/diagram_editor/editbar/basic_controls/checkboxgroup",
-                    "guides/diagram_editor/editbar/basic_controls/colorpicker",
-                    "guides/diagram_editor/editbar/basic_controls/combo",
-                    "guides/diagram_editor/editbar/basic_controls/container",
-                    "guides/diagram_editor/editbar/basic_controls/datepicker",
-                    "guides/diagram_editor/editbar/basic_controls/fieldset",
-                    "guides/diagram_editor/editbar/basic_controls/input",
-                    "guides/diagram_editor/editbar/basic_controls/radiogroup",
-                    "guides/diagram_editor/editbar/basic_controls/select",
-                    "guides/diagram_editor/editbar/basic_controls/slider",
-                    "guides/diagram_editor/editbar/basic_controls/spacer",
-                    "guides/diagram_editor/editbar/basic_controls/textarea",
-                    "guides/diagram_editor/editbar/basic_controls/timepicker",
-                    "guides/diagram_editor/editbar/basic_controls/toggle",
-                    "guides/diagram_editor/editbar/basic_controls/togglegroup"
-
-                  ]
-                },
-                "guides/diagram_editor/editbar/complex_controls",
-                "guides/diagram_editor/editbar/configuration",
-              ],  
-            },
+            "guides/diagram_editor/editbar",
             "guides/diagram_editor/hot_keys" // New
           ]
         },

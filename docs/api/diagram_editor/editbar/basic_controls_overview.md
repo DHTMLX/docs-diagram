@@ -6,7 +6,7 @@ description: You can learn about the Basic controls of Editbar in the documentat
 
 # Basic controls
 
-You can use basic controls of Editbar standalone or create complex controls on their base. Below you'll find the list of basic controls. Check the corresponding section to view the detailed description of configuration properties for each control. 
+You can use basic controls of Editbar standalone or create complex controls on their base. Below you'll find the list of basic controls. Check the corresponding section to view the detailed description of configuration properties for each control.
 
 :::info
 Refer to the [Editbar configuration](guides/diagram_editor/editbar/configuration.md) guide for more information about configuring!
