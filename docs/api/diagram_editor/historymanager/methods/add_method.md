@@ -16,7 +16,7 @@ Adding the new state is done automatically. Therefore this method is not recomme
 
 ### Usage
 
-~~~js
+~~~jsx
 add(newState: array): void;
 ~~~
 

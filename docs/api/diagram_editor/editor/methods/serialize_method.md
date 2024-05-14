@@ -12,7 +12,7 @@ description: You can learn about the serialize method of editor in the documenta
 
 ### Usage
 
-~~~js
+~~~jsx
 serialize(): array;
 ~~~
 

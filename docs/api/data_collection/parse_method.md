@@ -12,7 +12,7 @@ description: You can learn about the parse method of data collection in the docu
 
 ### Usage
 
-~~~js
+~~~jsx
 parse(
     data: array | string, 
     driver?: object | string
@@ -26,7 +26,7 @@ parse(
 
 ### Example
 
-~~~js
+~~~jsx
 const data = [
     {
         id: "1",

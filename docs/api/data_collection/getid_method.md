@@ -12,7 +12,7 @@ description: You can learn about the getId method of data collection in the docu
 
 ### Usage
 
-~~~js
+~~~jsx
 getId(index: number): string | number;
 ~~~
 

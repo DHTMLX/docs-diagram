@@ -12,7 +12,7 @@ description: You can learn about the afterCellsValidation event of Cell Manager 
 
 ### Usage
 
-~~~js
+~~~jsx
 afterCellsValidation: (
     swimlaneId: string | number, 
     validate: boolean, 

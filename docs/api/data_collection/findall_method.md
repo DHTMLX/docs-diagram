@@ -12,7 +12,7 @@ description: You can learn about the findAll method of data collection in the do
 
 ### Usage
 
-~~~js
+~~~jsx
 findAll(rule: object): array;
 
 // or

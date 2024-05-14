@@ -12,7 +12,7 @@ description: You can learn about the getItem method of data collection in the do
 
 ### Usage
 
-~~~js
+~~~jsx
 getItem(id: string | number): object;
 ~~~
 
@@ -37,7 +37,7 @@ const shape = diagram.data.getItem(123);
 
 You can access the original properties of an item like this:
 
-~~~js
+~~~jsx
 // accessing the properties of the shape
 const shape = diagram.data.getItem(123);
 const text = shape.text;

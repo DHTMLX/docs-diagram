@@ -12,13 +12,13 @@ description: You can learn about the show property of Shapebar in the documentat
 
 ### Usage
 
-~~~js
+~~~jsx
 show?: boolean;
 ~~~
 
 ### Default config
 
-~~~js
+~~~jsx
 show: true 
 ~~~
 

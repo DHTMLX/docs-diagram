@@ -14,7 +14,7 @@ While specifying color values of the item, use the HEX format.
 
 ### Usage
 
-~~~js
+~~~jsx
 const data = [
     // line object
     {
@@ -46,7 +46,7 @@ Each line object can include the following properties:
 
 ### Usage
 
-~~~js
+~~~jsx
 const data = [
     // line object
     {
@@ -83,7 +83,7 @@ When preparing a data set for lines to load into the diagram in the default mode
 
 ## Example
 
-~~~js
+~~~jsx
 const data = [
     // configuring shapes
     { "id": 1, "x": 200, "y": 0, "text": "Start", "type": "start" },

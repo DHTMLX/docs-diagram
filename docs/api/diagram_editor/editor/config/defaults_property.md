@@ -12,7 +12,7 @@ description: You can learn about the defaults property of editor in the document
 
 ### Usage
 
-~~~js
+~~~jsx
 defaults?: {
     [type: string]: object
 };

@@ -12,7 +12,7 @@ description: You can learn about the afterHide event of View in the Diagram Edit
 
 ### Usage
 
-~~~js
+~~~jsx
 "afterHide": (view: "toolbar" | "shapebar" | "editbar") => void;
 ~~~
 

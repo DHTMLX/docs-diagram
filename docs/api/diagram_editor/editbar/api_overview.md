@@ -10,7 +10,7 @@ description: You can check a Editbar overview in the documentation of the DHTMLX
 
 - creating the default Editbar by using the `editbar:true` setting:
 
-~~~js
+~~~jsx
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {
@@ -21,7 +21,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 
 - configuring Editbar by specifying it as an object with [a set of properties](/category/editbar-properties/):
 
-~~~js
+~~~jsx
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {

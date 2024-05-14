@@ -12,7 +12,7 @@ description: You can learn about the afterCollapse event in the documentation of
 
 ### Usage
 
-~~~js
+~~~jsx
 afterCollapse: (
     id: string | number, 
     dir?: string

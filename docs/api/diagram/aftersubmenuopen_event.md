@@ -12,7 +12,7 @@ description: You can learn about the afterSubmenuOpen event in the documentation
 
 ### Usage
 
-~~~js
+~~~jsx
 afterSubmenuOpen: (
     id: string | number, 
     event: MouseEvent, 

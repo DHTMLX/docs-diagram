@@ -12,7 +12,7 @@ description: You can learn about the lineTitleDblClick event in the documentatio
 
 ### Usage
 
-~~~js
+~~~jsx
 lineTitleDblClick: (
     lineId: string | number, 
     titleId: string | number, 

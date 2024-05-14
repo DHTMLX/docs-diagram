@@ -12,7 +12,7 @@ description: You can learn about the reset method of HistoryManager in the docum
 
 ### Usage
 
-~~~js
+~~~jsx
 reset(): void;
 ~~~
 

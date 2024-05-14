@@ -45,7 +45,7 @@ To connect shapes in Diagram, you can apply one of the following two ways:
 
 You need to specify separate objects that will describe the logic of connecting shapes. For example: 
 
-~~~js
+~~~jsx
 const data = [
     // shapes
     { id: "1", text: "Chairman & CEO" },
@@ -72,7 +72,7 @@ The **type** property specified in the line object allows you to specify individ
 
 You can specify the **parent** property in the configuration object of the shape and set the id of its parent shape as the value:
 
-~~~js
+~~~jsx
 const data = [
     // shapes
     { id: "1", text: "Chairman & CEO" },
@@ -89,7 +89,7 @@ In this case, all the connectors will have the same type.
 
 You can set a common type for all the connector lines of the diagram via the **lineType** parameter of the [](../api/diagram/lineconfig_property.md) property of the diagram config object:
 
-~~~js
+~~~jsx
 const diagram = new dhx.Diagram("diagram_container", {
     type: "default",
     lineConfig: {

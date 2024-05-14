@@ -12,7 +12,7 @@ description: You can learn about the lineDblClick event in the documentation of 
 
 ### Usage
 
-~~~js
+~~~jsx
 lineDblClick: (
     id: string | number, 
     event: MouseEvent

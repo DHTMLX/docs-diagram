@@ -12,19 +12,19 @@ description: You can learn about the select property in the documentation of the
 
 ### Usage
 
-~~~js
+~~~jsx
 select?: boolean;
 ~~~
 
 ### Default config
 
-~~~js
+~~~jsx
 select: false
 ~~~
 
 ### Example
 
-~~~js
+~~~jsx
 const diagram = new dhx.Diagram("diagram_container", { 
     select: true
 });

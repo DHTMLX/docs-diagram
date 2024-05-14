@@ -12,7 +12,7 @@ description: You can learn about the includes method of selection in the documen
 
 ### Usage
 
-~~~js
+~~~jsx
 includes({
     id: string | number
 }): boolean;

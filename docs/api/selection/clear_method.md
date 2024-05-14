@@ -12,7 +12,7 @@ description: You can learn about the clear method of selection in the documentat
 
 ### Usage
 
-~~~js
+~~~jsx
 clear(): void;
 ~~~
 

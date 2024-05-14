@@ -12,7 +12,7 @@ description: You can learn about the add method of selection in the documentatio
 
 ### Usage
 
-~~~js
+~~~jsx
 add({
     id: string | number,
     join?: boolean,

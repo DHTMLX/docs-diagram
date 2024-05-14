@@ -12,13 +12,13 @@ description: You can learn about the show property of Editbar in the documentati
 
 ### Usage
 
-~~~js
+~~~jsx
 show?: boolean;
 ~~~
 
 ### Default config
 
-~~~js
+~~~jsx
 show: true
 ~~~
 

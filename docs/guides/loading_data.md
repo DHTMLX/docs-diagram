@@ -72,7 +72,7 @@ Check the full list of available properties of the line title object in the [API
 
 - **group objects**
 
-~~~js
+~~~jsx
 const data = [    
     {
         "type": "$group",
@@ -102,7 +102,7 @@ Check the full list of the available properties of a group object in the [API re
 
 - **objects of a swimlane and its cell**
 
-~~~js
+~~~jsx
 const data = [
    {
       "id": "main",
@@ -204,13 +204,13 @@ editor.parse(data);
 To save the current state of a diagram, use the [](../api/data_collection/serialize_method.md) method. It converts the data of the diagram into an array of JSON objects. 
 Each JSON object contains the configuration of a separate shape.
 
-~~~js
+~~~jsx
 const state = diagram1.data.serialize();
 ~~~
 
 Then you can parse the data stored in the saved state array to a different diagram. For example:
 
-~~~js
+~~~jsx
 // creating a new diagram
 const diagram2 = new dhx.Diagram("diagram_container");
 // parsing the state of the diagram1 into diagram2
@@ -221,7 +221,7 @@ diagram2.data.parse(state);
 
 When you use a diagram together with an editor, you can import data from the diagram into the editor via the [import()](/api/diagram_editor/editor/methods/import_method/) method of the editor object:
 
-~~~js
+~~~jsx
 function runEditor() {
     expand();
     editor.import(diagram);

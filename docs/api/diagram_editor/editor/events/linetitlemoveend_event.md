@@ -12,7 +12,7 @@ description: You can learn about the lineTitleMoveEnd event of editor in the doc
 
 ### Usage
 
-~~~js
+~~~jsx
 "lineTitleMoveEnd": ({
     event: PointerEvent, 
     lineId: string | number, 

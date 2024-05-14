@@ -12,7 +12,7 @@ description: You can learn about the margin property in the documentation of the
 
 ### Usage
 
-~~~js
+~~~jsx
 margin?: {
     itemX?: number,
     itemY?: number,
@@ -32,7 +32,7 @@ The **margin** object can include the following parameters:
 
 ### Default config
 
-~~~js
+~~~jsx
 margin: {
     x: 40, y: 40,
     itemX: 40, itemY: 40
@@ -41,7 +41,7 @@ margin: {
 
 ### Example
 
-~~~js
+~~~jsx
 const diagram = new dhx.Diagram("diagram_container", {
     type: "org", 
     margin: {

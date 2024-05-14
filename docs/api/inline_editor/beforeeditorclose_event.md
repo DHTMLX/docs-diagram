@@ -12,7 +12,7 @@ description: You can learn about the beforeEditorClose event in the documentatio
 
 ### Usage
 
-~~~js
+~~~jsx
 beforeEditorClose: (
     id: string | number, 
     key: string, 

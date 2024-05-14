@@ -12,7 +12,7 @@ description: You can learn about the beforeEditorEditing event in the documentat
 
 ### Usage
 
-~~~js
+~~~jsx
 beforeEditorEditing: (
     value: string, 
     currentValue: string, 

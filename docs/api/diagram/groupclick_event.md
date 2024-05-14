@@ -14,7 +14,7 @@ If a click is done over a swimlane, the event will be fired on the cell of the s
 
 ### Usage
 
-~~~js
+~~~jsx
 groupClick: (
     id: string | number,
     event: MouseEvent

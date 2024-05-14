@@ -12,7 +12,7 @@ description: You can learn about the afterEditorOpen event in the documentation 
 
 ### Usage
 
-~~~js
+~~~jsx
 afterEditorOpen: (
     id: string | number, 
     key: string, 

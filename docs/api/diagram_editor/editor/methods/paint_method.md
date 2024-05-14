@@ -12,7 +12,7 @@ description: You can learn about the paint method of editor in the documentation
 
 ### Usage
 
-~~~js
+~~~jsx
 paint(): void;
 ~~~
 

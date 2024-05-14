@@ -12,7 +12,7 @@ description: You can learn about the shapeResize event of editor in the document
 
 ### Usage
 
-~~~js
+~~~jsx
 "shapeResize": () => void;
 ~~~
 

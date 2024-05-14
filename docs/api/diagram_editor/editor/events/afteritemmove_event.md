@@ -18,7 +18,7 @@ The event fires just for the target element despite the number of selected eleme
 
 ### Usage
 
-~~~js
+~~~jsx
 "afterItemMove": ({
     id: string | number, 
     batch: (string | number)[],

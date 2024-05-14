@@ -12,7 +12,7 @@ description: You can learn about the scroll event in the documentation of the DH
 
 ### Usage
 
-~~~js
+~~~jsx
 scroll: (position: object) => void;
 ~~~
 

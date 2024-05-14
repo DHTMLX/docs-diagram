@@ -22,7 +22,7 @@ Swimlanes will help you to visualize any process (be it a business process, manu
 
 To create a swimlane, you need to specify **type: "$swimlane"**  and define the structure of the swimlane layout inside the swimlane object while preparing a data set to load into the diagram:
 
-~~~js
+~~~jsx
 const data = [
     // configuring a swimlane
     {
@@ -49,7 +49,7 @@ The structure of a swimlane can be rather different. It is defined via the [layo
 
 All you need to do is specify an array with a matrix as a value of the property. The matrix can be either an array:  
 
-~~~js
+~~~jsx
 // a swimlane with 3 columns
 layout: [
     [1, 2, 3]
@@ -58,7 +58,7 @@ layout: [
 
 or a set of arrays separated by commas:
 
-~~~js
+~~~jsx
 // a swimlane with 2 rows and 3 columns
 layout: [
     [1, 2, 3],
@@ -80,7 +80,7 @@ Check [the full list of configuration properties of a swimlane object](/swimlane
 
 When you initialize a swimlane on the page, the id of a swimlane cell is generated automatically as well as its configuration. To change the default configuration of the cell, create an object of the cell which must include the **type: "$sgroup"** and **id** attributes, and specify the necessary configuration settings there:
 
-~~~js
+~~~jsx
 const data = [
     // configuring a swimlane
     {
@@ -111,7 +111,7 @@ Check [the full list of configuration properties of a swimlane cell](/swimlanes/
 
 When you specify a unique number for each cell, all the cells will be rendered with the borders:
 
-~~~js
+~~~jsx
 layout: [
     [1, 2, 3],
     [4, 5, 6] 
@@ -123,7 +123,7 @@ layout: [
 If needed you can group a range of cells and remove a border(s) between them. To do this, choose any cell from the range and replace unique numbers of the cell(s) from the range with the number of this cell.<br>
 Here is an example of grouping first two cells placed in the first row:
 
-~~~js
+~~~jsx
 layout: [
     [1, 1, 3],
     [4, 5, 6] 
@@ -136,7 +136,7 @@ The result will look like this:
 
 Here is an example of grouping the cells placed in the second column:
 
-~~~js
+~~~jsx
 layout: [
     [1, 2, 3],
     [4, 2, 6]
@@ -153,7 +153,7 @@ The result:
 
 The size of the swimlane is defined by the **width** and **height** configuration attributes of the swimlane.
 
-~~~js
+~~~jsx
 const data = [
     // configuring a swimlane
     {
@@ -172,7 +172,7 @@ const data = [
 
 The width of a cell depends on the width of the swimlane, the number of columns, and the height of the left/right swimlane header and subheader. For example:
 
-~~~js
+~~~jsx
 const data = [
     {
         type: "$swimlane",
@@ -202,7 +202,7 @@ The width of each cell can be calculated as *(830-40-40)/3 = 250*.
 
 The height of a cell depends on the height of the swimlane, the number of rows, and the height of the top/bottom swimlane header and subheader. For example:
 
-~~~js
+~~~jsx
 const data = [
     {
         type: "$swimlane",

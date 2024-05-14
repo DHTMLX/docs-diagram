@@ -12,7 +12,7 @@ description: You can learn about the isUndo method of HistoryManager in the docu
 
 ### Usage
 
-~~~js
+~~~jsx
 isUndo(): boolean;
 ~~~
 

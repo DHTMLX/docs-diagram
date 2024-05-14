@@ -12,7 +12,7 @@ description: You can learn about the lineConfig property in the documentation of
 
 ### Usage
 
-~~~js
+~~~jsx
 lineConfig?: {
     lineType?: "dash" | "line",
     lineGap?: number
@@ -32,7 +32,7 @@ The value of the **lineType** setting will be applied, if the line object doesn'
 
 ### Default config
 
-~~~js
+~~~jsx
 lineConfig: {
   lineType: "line",
   lineGap: 10

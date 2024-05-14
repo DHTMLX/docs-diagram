@@ -12,7 +12,7 @@ description: You can learn about the beforeRemove event of data collection in th
 
 ### Usage
 
-~~~js
+~~~jsx
 beforeRemove: (removedItem: any) => boolean | void;
 ~~~
 

@@ -14,7 +14,7 @@ If a pointing device button is pressed while the pointer is over a swimlane, the
 
 ### Usage
 
-~~~js
+~~~jsx
 groupMouseDown: (
     id: string | number, 
     event: MouseEvent

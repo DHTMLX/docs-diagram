@@ -12,7 +12,7 @@ description: You can learn about the css property of Editbar in the documentatio
 
 ### Usage
 
-~~~js
+~~~jsx
 css?: string;
 ~~~
 

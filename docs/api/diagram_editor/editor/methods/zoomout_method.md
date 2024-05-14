@@ -12,7 +12,7 @@ description: You can learn about the zoomOut method of editor in the documentati
 
 ### Usage
 
-~~~js
+~~~jsx
 zoomOut(step?: number): void;
 ~~~
 

@@ -12,7 +12,7 @@ description: You can learn about the getIds method of selection in the documenta
 
 ### Usage
 
-~~~js
+~~~jsx
 getIds(): (string | number)[]
 ~~~
 

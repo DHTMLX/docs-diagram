@@ -12,7 +12,7 @@ description: You can learn about the move method of data collection in the docum
 
 ### Usage
 
-~~~js
+~~~jsx
 move(
     id: string | number | array, 
     index: number, 

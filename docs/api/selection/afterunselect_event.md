@@ -12,7 +12,7 @@ description: You can learn about the afterUnSelect event in the documentation of
 
 ### Usage
 
-~~~js
+~~~jsx
 "afterUnSelect": ({
     id: string | number, 
     batch: (string | number)[]

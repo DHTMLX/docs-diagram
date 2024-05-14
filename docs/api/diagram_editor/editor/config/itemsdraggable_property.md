@@ -16,19 +16,19 @@ The property works only in the org chart and mindmap modes. The moved item is dr
 
 ### Usage
 
-~~~js
+~~~jsx
 itemsDraggable?: boolean;
 ~~~
 
 ### Default config
 
-~~~js
+~~~jsx
 itemsDraggable: true
 ~~~
 
 ### Example
 
-~~~js
+~~~jsx
 const editor = new dhx.DiagramEditor(document.body, {
     type: "org", //  org" or "mindmap"
     itemsDraggable: false,

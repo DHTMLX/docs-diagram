@@ -12,7 +12,7 @@ description: You can learn about the getRoot method of data collection in the do
 
 ### Usage
 
-~~~js
+~~~jsx
 getRoot(id: string | number): string | number;
 ~~~
 

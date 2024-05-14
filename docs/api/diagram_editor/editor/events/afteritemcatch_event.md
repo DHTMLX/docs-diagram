@@ -16,7 +16,7 @@ The event works only in the **org chart** and **mindmap** modes of Diagram, the 
 
 ### Usage
 
-~~~js
+~~~jsx
 "afterItemCatch": ({
     id: string | number, 
     targetId: string | number,

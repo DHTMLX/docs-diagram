@@ -12,7 +12,7 @@ description: You can explore the resetFilter method of data collection in the do
 
 ### Usage
 
-~~~js
+~~~jsx
 resetFilter({
     id?: string,
     permanent?: boolean

@@ -12,7 +12,7 @@ description: You can learn about the pasteStyles method of copy manager in the d
 
 ### Usage
 
-~~~js
+~~~jsx
 pasteStyles(ids?: (string | number)[]): void;
 ~~~
 

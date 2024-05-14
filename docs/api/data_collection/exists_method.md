@@ -12,7 +12,7 @@ description: You can learn about the exists method of data collection in the doc
 
 ### Usage
 
-~~~js
+~~~jsx
 exists(id: string | number): boolean;
 ~~~
 

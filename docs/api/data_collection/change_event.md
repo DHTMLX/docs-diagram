@@ -12,7 +12,7 @@ description: You can learn about the change event of data collection in the docu
 
 ### Usage
 
-~~~js
+~~~jsx
 change: (
     id?: string, 
     status?: "add" | "update" | "delete", 

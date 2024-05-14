@@ -12,7 +12,7 @@ description: You can learn about the toolbar property in the documentation of th
 
 ### Usage
 
-~~~js
+~~~jsx
 toolbar?: [
     {
         id: string,
@@ -37,7 +37,7 @@ The **toolbar** array includes a set of icon objects. Each icon object can have 
 
 ### Example
 
-~~~js
+~~~jsx
 const diagram = new dhx.Diagram("diagram_container", { 
     type: "org",
     select: true,

@@ -12,7 +12,7 @@ description: You can learn about the shapeToolbar property of editor in the docu
 
 ### Usage
 
-~~~js
+~~~jsx
 shapeToolbar?: boolean | array;
 ~~~
 

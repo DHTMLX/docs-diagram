@@ -12,7 +12,7 @@ description: You can learn about the isRedo method of HistoryManager in the docu
 
 ### Usage
 
-~~~js
+~~~jsx
 isRedo(): boolean;
 ~~~
 

@@ -21,7 +21,7 @@ Refer to the [**Editbar configuration**](guides/diagram_editor/editbar/complex_c
 
 ### Usage
 
-~~~js
+~~~jsx
 properties?: {
     [type: string]: object[] | function, // custom configurations for controls applied to Diagram elements 
     ...,

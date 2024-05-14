@@ -12,7 +12,7 @@ description: You can learn about the load event of data collection in the docume
 
 ### Usage
 
-~~~js
+~~~jsx
 load: () => void;
 ~~~
 

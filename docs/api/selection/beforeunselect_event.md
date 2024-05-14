@@ -12,7 +12,7 @@ description: You can learn about the beforeUnSelect event in the documentation o
 
 ### Usage
 
-~~~js
+~~~jsx
 "beforeUnSelect": ({
     id: string | number, 
     batch: (string | number)[]

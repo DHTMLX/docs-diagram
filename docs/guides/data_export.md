@@ -26,7 +26,7 @@ The library allows you:
 - to prevent all styles from being sent to the export service via setting
 the [](../api/diagram/exportstyles_property.md) configuration property of the Diagram object to *false*:
 
-~~~js
+~~~jsx
 const diagram = new dhx.Diagram("diagram_container", { 
   	exportStyles: false
 });

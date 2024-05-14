@@ -12,7 +12,7 @@ description: You can learn about the filter event of data collection in the docu
 
 ### Usage
 
-~~~js
+~~~jsx
 filter: (filter?: object) => void;
 ~~~
 

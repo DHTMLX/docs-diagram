@@ -14,7 +14,7 @@ If a double-click is done over a swimlane, the event will be fired on the cell o
 
 ### Usage
 
-~~~js
+~~~jsx
 groupDblClick: (
     id: string | number,
     event: MouseEvent

@@ -12,7 +12,7 @@ description: You can learn about the beforeEditorOpen event in the documentation
 
 ### Usage
 
-~~~js
+~~~jsx
 beforeEditorOpen: (
     id: string | number, 
     key: string, 

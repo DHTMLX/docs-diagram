@@ -12,7 +12,7 @@ description: You can learn about the import method of editor in the documentatio
 
 ### Usage
 
-~~~js
+~~~jsx
 import(diagram: object): void;
 ~~~
 
@@ -22,7 +22,7 @@ import(diagram: object): void;
 
 ### Example
 
-~~~js
+~~~jsx
 // initializing Diagram
 const diagram = new dhx.Diagram("diagram", {
     type: "org"

@@ -16,13 +16,13 @@ The `connectionPoints` property works only the **default** mode.
 
 ### Usage
 
-~~~js
+~~~jsx
 connectionPoints?: boolean;
 ~~~
 
 ### Default config
 
-~~~js
+~~~jsx
 connectionPoints: true
 ~~~
 

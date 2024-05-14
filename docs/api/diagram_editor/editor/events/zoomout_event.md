@@ -12,7 +12,7 @@ description: You can learn about the zoomOut event of editor in the documentatio
 
 ### Usage
 
-~~~js
+~~~jsx
 "zoomOut": (step) => void;
 ~~~
 

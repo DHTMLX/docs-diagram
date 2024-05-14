@@ -16,7 +16,7 @@ The custom CSS class applies to expanded elements as well. The `--popup-menu` pr
 
 ### Usage
 
-~~~js
+~~~jsx
 css?: string;
 ~~~
 

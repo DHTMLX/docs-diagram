@@ -18,7 +18,7 @@ If you don't apply the **typeConfig** property, the child shapes will be arrange
 
 ### Usage
 
-~~~js
+~~~jsx
 typeConfig?: {
     direction?: "left" | "right";
 }

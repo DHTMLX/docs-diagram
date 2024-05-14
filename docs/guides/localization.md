@@ -9,7 +9,7 @@ description: You can learn about the Localization in the documentation of the DH
 It is possible to localize the interface of the Diagram editor into a desired language. For this, you need to provide the corresponding locale settings via the **dhx.i18n.setLocale()** method.
 The method takes two parameters: the diagram container and an object that contains rules of localization for a particular country.
 
-~~~js
+~~~jsx
 //an example of English locale
 const en = {
     addColumnLast: "Add column",
@@ -165,7 +165,7 @@ dhx.i18n.setLocale("diagram", locale);
 
 After that, you need to initialize the editor and check how the labels' names have changed.
 
-~~~js
+~~~jsx
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "default" // "default" | "org" | "mindmap"
     // other config options

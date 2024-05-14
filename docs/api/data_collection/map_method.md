@@ -12,7 +12,7 @@ description: You can learn about the map method of data collection in the docume
 
 ### Usage
 
-~~~js
+~~~jsx
 map(callback: function): array;
 ~~~
 

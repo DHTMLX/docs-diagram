@@ -12,7 +12,7 @@ description: You can learn about the beforeHide event of View in the Diagram Edi
 
 ### Usage
 
-~~~js
+~~~jsx
 "beforeHide": (view: "toolbar" | "shapebar" | "editbar") => boolean | void;
 ~~~
 

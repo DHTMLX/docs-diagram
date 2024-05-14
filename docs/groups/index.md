@@ -18,7 +18,7 @@ A group is a separate kind of the Diagram items. You can draw simple or more com
 
 To create a group, specify *"$group"* as a value of the **type** attribute inside the group object while preparing a related JSON structure to load into the diagram:
 
-~~~js
+~~~jsx
 const data = [
     {
         type: "$group",
@@ -62,7 +62,7 @@ Configuring the group header
 
 The header of the group is disabled by default. To create a group with the header, you should specify the **header** property in the configuration object of the group.
 
-~~~js
+~~~jsx
 const data = [
     {
         type: "$group", 
@@ -87,7 +87,7 @@ Check [the full list of API properties of the group object](/groups/configuratio
 
 To be able to collapse/expand a group, you need to enable the **closable** attribute of the [header](/groups/configuration_properties/) property. As a result, an icon, which allows a user to expand/collapse a group, will be added to the header.
 
-~~~js
+~~~jsx
 const data = [
     {
         type: "$group", 
@@ -121,7 +121,7 @@ The *"unbound"* and *"boundBorderExtension"* values of the **groupBehavior** att
 
 If *groupBehavior: "boundNoBorderExtension" | "boundBorderExtension"* is set, you can specify the padding between the group and the edge of the item when moving the item inside the group. For this purpose, use the **padding** attribute:
 
-~~~js
+~~~jsx
 const data = [
     {
         type: "$group",

@@ -12,7 +12,7 @@ description: You can learn about the preview property of Shapebar in the documen
 
 ### Usage
 
-~~~js
+~~~jsx
 preview?: {
     scale?: number,
     gap?: string | number
@@ -26,7 +26,7 @@ preview?: {
 
 ### Default config
 
-~~~js
+~~~jsx
 preview: {
     scale: 0.5,
     gap: "6px 8px"

@@ -12,7 +12,7 @@ While specifying color values of the item, use the HEX format.
 
 ### Usage
 
-~~~js
+~~~jsx
 const data = [
     // line title object
     {
@@ -62,7 +62,7 @@ Each line title object can include the following properties:
 
 ### Example
 
-~~~js
+~~~jsx
 const data = [
     // configuring shapes
     { type: "rectangle", id: "shape_1" },

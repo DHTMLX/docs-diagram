@@ -12,19 +12,19 @@ description: You can learn about the scale property in the documentation of the 
 
 ### Usage
 
-~~~js
+~~~jsx
 scale?: number;
 ~~~
 
 ### Default config
 
-~~~js
+~~~jsx
 scale: 1
 ~~~
 
 ### Example
 
-~~~js
+~~~jsx
 const diagram = new dhx.Diagram("diagram_container", { 
     scale: 0.7
 });

@@ -14,7 +14,7 @@ If a double-click is done over a header of a swimlane, the event will be fired o
 
 ### Usage
 
-~~~js
+~~~jsx
 groupHeaderDblClick: (
     id: string | number, 
     event: MouseEvent, 

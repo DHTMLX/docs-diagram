@@ -10,7 +10,7 @@ description: You can check a Shapebar overview in the documentation of the DHTML
 
 - creating the default Shapebar by using the `shapebar:true` setting:
 
-~~~js
+~~~jsx
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {
@@ -21,7 +21,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 
 - configuring Shapebar by specifying it as an object with [a set of properties](/category/shapebar-properties/):
 
-~~~js
+~~~jsx
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {

@@ -12,7 +12,7 @@ description: You can learn about the serialize method of data collection in the 
 
 ### Usage
 
-~~~js
+~~~jsx
 serialize(): array;
 ~~~
 

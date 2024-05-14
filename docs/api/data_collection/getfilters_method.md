@@ -12,7 +12,7 @@ description: You can learn about the getFilters method of data collection in the
 
 ### Usage
 
-~~~js
+~~~jsx
 getFilters({ permanent?: boolean }): object;
 ~~~
 

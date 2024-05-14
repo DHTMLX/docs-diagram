@@ -108,7 +108,7 @@ const diagram = new dhx.Diagram(document.body, {
 
 You can also initialize a diagram inside [a Layout cell](https://docs.dhtmlx.com/suite/layout/). In this case use *null* instead of a container:
 
-~~~js
+~~~jsx
 const diagram = new dhx.Diagram(null, {
     type: "default" // "default" | "org" | "mindmap"
 });
@@ -127,7 +127,7 @@ layout.getCell("diagram").attach(diagram);
 
 To change the [configuration of a diagram](/guides/diagram/configuration/), you can specify the desired property in the config object passed as a second parameter of the constructor function. 
 
-~~~js
+~~~jsx
 const diagram = new dhx.Diagram("diagram_container", {
     scale: 0.7,
     // other config options
@@ -140,7 +140,7 @@ See [the full list of configuration properties of Diagram](../../../api/diagram/
 
 Alternatively, you can get access to some option and set/modify its value via the diagram **config** object. Don't forget to call the [](../../api/diagram/paint_method.md) method to re-render the diagram with a new configuration:
 
-~~~js
+~~~jsx
 const diagram = new dhx.Diagram("diagram_container");
 diagram.data.parse(data);
 

@@ -12,7 +12,7 @@ description: You can learn about the emptyAreaMouseDown event in the documentati
 
 ### Usage
 
-~~~js
+~~~jsx
 emptyAreaMouseDown: (event: MouseEvent) => void;
 ~~~
 

@@ -12,7 +12,7 @@ description: You can learn about the css property of Shapebar in the documentati
 
 ### Usage
 
-~~~js
+~~~jsx
 css?: string;
 ~~~
 

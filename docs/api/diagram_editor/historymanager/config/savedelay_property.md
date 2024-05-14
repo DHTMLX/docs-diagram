@@ -12,13 +12,13 @@ description: You can learn about the disabled property of HistoryManager in the 
 
 ### Usage
 
-~~~js
+~~~jsx
 saveDelay: number;
 ~~~
 
 ### Default config
 
-~~~js
+~~~jsx
 saveDelay: 500
 ~~~
 

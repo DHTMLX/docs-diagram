@@ -12,7 +12,7 @@ description: You can learn about the beforeLineTitleMove event of editor in the 
 
 ### Usage
 
-~~~js
+~~~jsx
 "beforeLineTitleMove": ({
     event: PointerEvent, 
     lineId: string | number, 

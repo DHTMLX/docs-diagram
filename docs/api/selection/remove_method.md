@@ -12,7 +12,7 @@ description: You can learn about the remove method of selection in the documenta
 
 ### Usage
 
-~~~js
+~~~jsx
 remove({
     id: string | number,
 }): boolean;

@@ -16,7 +16,7 @@ The `autoplacement` property works only in the default mode of the diagram and o
 
 ### Usage
 
-~~~js
+~~~jsx
 autoplacement?: {
     mode?: "direct" | "edges",
     graphPadding?: number,

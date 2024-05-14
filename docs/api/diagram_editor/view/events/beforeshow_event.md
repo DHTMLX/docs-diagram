@@ -12,7 +12,7 @@ description: You can learn about the beforeShow event of View in the Diagram Edi
 
 ### Usage
 
-~~~js
+~~~jsx
 "beforeShow": (view: "toolbar" | "shapebar" | "editbar") => boolean | void;
 ~~~
 

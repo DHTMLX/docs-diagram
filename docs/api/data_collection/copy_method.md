@@ -12,7 +12,7 @@ description: You can learn about the copy method of data collection in the docum
 
 ### Usage
 
-~~~js
+~~~jsx
 copy(
     id: string | number | array,
     index: number, 

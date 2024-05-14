@@ -16,7 +16,7 @@ If the diagram is initialized in the org (*type: "org"*) or mindmap (*type: "min
 
 ### Usage
 
-~~~js
+~~~jsx
 remove(id: string | number | array): void;
 ~~~
 

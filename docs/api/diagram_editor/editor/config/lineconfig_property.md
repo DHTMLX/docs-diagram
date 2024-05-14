@@ -16,7 +16,7 @@ The settings will be applied to the new connector lines which are added via the 
 
 ### Usage
 
-~~~js
+~~~jsx
 lineConfig?: {
     lineType?: "dash" | "line",
     lineDirection?: "backArrow" | "forwardArrow",
@@ -40,7 +40,7 @@ The **lineDirection**, **arrowsHidden**, and **lineGap** parameters work only in
 
 ### Default config
 
-~~~js
+~~~jsx
 lineConfig: {
     lineType:"line",
     lineDirection: "forwardArrow",

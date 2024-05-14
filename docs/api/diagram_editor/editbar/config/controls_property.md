@@ -18,7 +18,7 @@ Refer to the [**Editbar configuration**](guides/diagram_editor/editbar/complex_c
 
 ### Usage
 
-~~~js
+~~~jsx
 controls?: {
     [type: string]: object, // custom control
     ... // another control
@@ -30,7 +30,7 @@ controls?: {
 - `type` - the type name of a new control
     - `object` - the configuration object of a new control
 
-~~~js
+~~~jsx
 controls: {
       estimate: { ... }, // create new "estimate" control with custom configurations
       ... // another control

@@ -12,7 +12,7 @@ description: You can learn about the getRoots method of data collection in the d
 
 ### Usage
 
-~~~js
+~~~jsx
 getRoots(): array
 ~~~
 

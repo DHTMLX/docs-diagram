@@ -12,7 +12,7 @@ description: You can learn about the afterShow event of View in the Diagram Edit
 
 ### Usage
 
-~~~js
+~~~jsx
 "afterShow": (view: "toolbar" | "shapebar" | "editbar") => void;
 ~~~
 

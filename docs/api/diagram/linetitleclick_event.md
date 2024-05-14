@@ -12,7 +12,7 @@ description: You can learn about the lineTitleClick event in the documentation o
 
 ### Usage
 
-~~~js
+~~~jsx
 lineTitleClick: (
     lineId: string | number, 
     titleId: string | number, 

@@ -12,7 +12,7 @@ description: You can learn about the eachParent method of data collection in the
 
 ### Usage
 
-~~~js
+~~~jsx
 eachParent(
     id: string | number, 
     callback: function, 

@@ -18,7 +18,7 @@ To avoid this problem, you can reduce the size of the exported data by applying 
 
 ### Usage
 
-~~~js
+~~~jsx
 exportStyles?: boolean;
 //or
 exportStyles?: string[];
@@ -26,7 +26,7 @@ exportStyles?: string[];
 
 ### Default config
 
-~~~js
+~~~jsx
 exportStyles: true
 ~~~
 
@@ -34,7 +34,7 @@ exportStyles: true
 
 Set the **exportStyles** property to *false* to prevent all styles from being sent to the export service:
 
-~~~js
+~~~jsx
 const diagram = new dhx.Diagram("diagram_container", { 
     exportStyles: false
 });
@@ -42,7 +42,7 @@ const diagram = new dhx.Diagram("diagram_container", {
 
 Or define a set of styles you want to be exported. For that, you need to set string values with the absolute paths to the desired styles to the **exportStyles** array:
 
-~~~js
+~~~jsx
 const diagram = new dhx.Diagram("diagram_container", { 
     exportStyles:[
         "https://mySite.com/exportStyle.css",

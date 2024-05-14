@@ -12,7 +12,7 @@ description: You can learn about the isVisible method of view in the documentati
 
 ### Usage
 
-~~~js
+~~~jsx
 isVisible(view: "toolbar" | "shapebar" | "editbar"): boolean;
 ~~~
 

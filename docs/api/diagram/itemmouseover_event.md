@@ -12,7 +12,7 @@ description: You can learn about the itemMouseOver event in the documentation of
 
 ### Usage
 
-~~~js
+~~~jsx
 itemMouseOver: (
     id: string | number, 
     event: MouseEvent

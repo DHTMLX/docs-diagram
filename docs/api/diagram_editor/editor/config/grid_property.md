@@ -12,13 +12,13 @@ description: You can learn about the grid property of editor in the documentatio
 
 ### Usage
 
-~~~js
+~~~jsx
 grid?: boolean;
 ~~~
 
 ### Default config
 
-~~~js
+~~~jsx
 grid: true
 ~~~
 

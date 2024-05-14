@@ -12,7 +12,7 @@ description: You can learn about the type property of editor in the documentatio
 
 ### Usage
 
-~~~js
+~~~jsx
 type?: "default" | "org" | "mindmap";
 ~~~
 

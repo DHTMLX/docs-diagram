@@ -16,7 +16,7 @@ Using the **sections** property you can change the structure of the shapebar and
 
 ### Usage
 
-~~~js
+~~~jsx
 sections?: {
     [name: string]: (obj | string)[]
 };

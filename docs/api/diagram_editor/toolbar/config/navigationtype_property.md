@@ -12,7 +12,7 @@ description: You can learn about the css property of Toolbar in the documentatio
 
 ### Usage
 
-~~~js
+~~~jsx
 navigationType?: "click" | "pointer";
 ~~~
 

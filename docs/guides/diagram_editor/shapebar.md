@@ -33,7 +33,7 @@ Depending on the chosen elements, the configuration of items of a particular sec
 
 You can render [a basic set of shapes](../../../api/diagram_editor/shapebar/config/sections_property/#basic) using the `sections` configuration object. For example:
 
-~~~js
+~~~jsx
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {
@@ -53,7 +53,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 
 You can render Shapebar items by specifying the types of shapes with the help of string literals. Check the example below:
 
-~~~js
+~~~jsx
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {
@@ -71,7 +71,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 
 Another option is to redefine basic properties of any shape and render it with the necessary parameters. The example below shows rendering of a shape of the `circle` type with various text and color settings:
 
-~~~js
+~~~jsx
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {
@@ -106,7 +106,7 @@ You can reconfigure any type of shapes in such a way.
 
 If your project presupposes usage of various elements, you can create sections with mixed types of items in the Shapebar. Check the following example:
 
-~~~js
+~~~jsx
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {
@@ -156,7 +156,7 @@ To configure the preview of items rendered in the shapebar of the editor, make u
 - `gap` - (optional) specifies the space between the items rendered in the shapebar, "6px 8px" by default
 (sets 6px gap for the top and bottom sides and 8px gap for the right and left sides)
 
-~~~js
+~~~jsx
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {
@@ -261,7 +261,7 @@ editor.diagram.addShape("personalCard", {
 
 The default width of the shapebar is 300. You can change it and set any other width via the [`width`](/api/diagram_editor/shapebar/config/width_property/) property, e.g.:
 
-~~~js
+~~~jsx
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {
@@ -276,7 +276,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 
 Whenever you need to control the visibility of a shapebar, you can use the [`show`](/api/diagram_editor/shapebar/config/show_property/) property. It allows you to hide the shapebar with particular settings on initialization of the Diagram Editor and show it later, when needed. By default the shapebar is shown.
 
-~~~js
+~~~jsx
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {

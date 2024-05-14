@@ -14,7 +14,7 @@ While specifying color values of the item, use the HEX format.
 
 ### Usage
 
-~~~js
+~~~jsx
 const data = [
     // swimlane object
     {
@@ -162,7 +162,7 @@ The **open** property works when a **header** is initialized with the **closable
 
 ### Example
 
-~~~js
+~~~jsx
 const data = [
     {
         "id": "main",
@@ -204,7 +204,7 @@ const data = [
 
 ### Usage
 
-~~~js
+~~~jsx
 const data = [
     // swimlane cell object
     {
@@ -247,7 +247,7 @@ The configuration properties of a swimlane cell are given below:
 
 ### Example
 
-~~~js
+~~~jsx
 const data = [
   // configuring a swimlane
     {

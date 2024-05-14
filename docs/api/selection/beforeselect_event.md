@@ -12,7 +12,7 @@ description: You can learn about the beforeSelect event in the documentation of 
 
 ### Usage
 
-~~~js
+~~~jsx
 "beforeSelect": ({
     id: string | number, 
     join: boolean,

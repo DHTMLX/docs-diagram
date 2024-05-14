@@ -12,7 +12,7 @@ description: You can learn about the items property of Toolbar in the documentat
 
 ### Usage
 
-~~~js
+~~~jsx
 items?: (object | string)[];
 ~~~
 
@@ -20,7 +20,7 @@ items?: (object | string)[];
 
 The `items` property allows you to specify [**Service elements**](guides/diagram_editor/toolbar.md/#service-elements) as an array of strings:
 
-~~~js
+~~~jsx
 items: [ "file", "edit", "view", "arrange", "spacer", "scale" ];
 ~~~
 
@@ -30,7 +30,7 @@ The full list of service elements you can see [here](guides/diagram_editor/toolb
 
 The `items` property allows you to specify [**Service elements**](guides/diagram_editor/toolbar.md/#service-elements) and [**Base elements**](guides/diagram_editor/toolbar.md/#base-elements) as an array of objects:
 
-~~~js
+~~~jsx
 items: [ 
     {
         type: string,

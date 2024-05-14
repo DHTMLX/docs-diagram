@@ -16,7 +16,7 @@ To do that, you need to take the following steps:
 
 1\. Apply the [](../api/diagram/addshape_method.md) method to add a unique name for your shape (*"networkCard"* in our case) and provide a template for it:
 
-~~~js
+~~~jsx
 diagram.addShape("networkCard", {
     template: ({ img, text, ip }) => (`
         <section class="dhx-diagram-demo_network-card">
@@ -42,7 +42,7 @@ The **defaults** attribute is used to define the default configuration of a "net
 
 {{note The data object of a custom shape can contain any [configuration properties](/shapes/configuration_properties/) including custom ones.}} 
 
-~~~js
+~~~jsx
 const networkDiagram = [
     {
         "id": 1,

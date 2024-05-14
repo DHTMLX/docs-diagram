@@ -12,7 +12,7 @@ description: You can learn about the find method of data collection in the docum
 
 ### Usage
 
-~~~js
+~~~jsx
 find(rule: object): object;
 
 // or

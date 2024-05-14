@@ -12,7 +12,7 @@ description: You can learn about the add method of data collection in the docume
 
 ### Usage
 
-~~~js
+~~~jsx
 add(new_item: object | array): string | number | array;
 ~~~
 

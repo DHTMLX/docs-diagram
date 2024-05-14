@@ -13,7 +13,7 @@ You can add any user-defined handler to any of the available events. To do this,
 - **name** - (*string*) the name of the event
 - **handler** - (*function*) the handler function
 
-~~~js
+~~~jsx
 diagram.events.on("ShapeClick", function(id) {
     alert("You've just clicked an item with id="+id);
 });
@@ -25,7 +25,7 @@ You can attach several handlers to the same event and all of them will be execut
 
 To detach events, use **diagram.events.detach()** method:
 
-~~~js
+~~~jsx
 diagram.events.on("CustomEvent", args);
  
 diagram.events.detach("CustomEvent");
@@ -35,7 +35,7 @@ diagram.events.detach("CustomEvent");
 
 To call events, use the **diagram.events.fire()**.
 
-~~~js
+~~~jsx
 diagram.events.fire("CustomEvent", args);
 // where args is an array of arguments
 ~~~

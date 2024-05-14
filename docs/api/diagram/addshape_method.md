@@ -144,7 +144,7 @@ The **template** function can return either an HTML or SVG template.
 
 An example of creating an HTML template:
 
-~~~js
+~~~jsx
 const template = config => (
     `<section class='template'>
         <h3>${config.title}</h3>

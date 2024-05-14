@@ -12,7 +12,7 @@ description: You can learn about the type property in the documentation of the D
 
 ### Usage
 
-~~~js
+~~~jsx
 type: "default" | "org" | "mindmap";
 ~~~
 

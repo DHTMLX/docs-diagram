@@ -12,7 +12,7 @@ description: You can learn about the getItem method of selection in the document
 
 ### Usage
 
-~~~js
+~~~jsx
 getItem({
     id: string | number
 }): object;

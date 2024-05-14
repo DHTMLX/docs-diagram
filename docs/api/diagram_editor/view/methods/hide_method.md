@@ -16,7 +16,7 @@ If you need to hide the **Toolbar**, **Editbar**, and **Shapebar** view separate
 
 ### Usage
 
-~~~js
+~~~jsx
 hide(view?: "toolbar" | "shapebar" | "editbar"): void;
 ~~~
 

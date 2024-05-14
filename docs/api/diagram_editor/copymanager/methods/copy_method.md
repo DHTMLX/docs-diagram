@@ -16,7 +16,7 @@ The `copy()` method works only if the Diagram Editor is initialized in the **def
 
 ### Usage
 
-~~~js
+~~~jsx
 copy(ids?: (string | number)[]): void;
 ~~~
 

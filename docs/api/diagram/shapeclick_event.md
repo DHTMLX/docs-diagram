@@ -12,7 +12,7 @@ description: You can learn about the shapeClick event in the documentation of th
 
 ### Usage
 
-~~~js
+~~~jsx
 shapeClick: (
     id: string | number, 
     event: MouseEvent

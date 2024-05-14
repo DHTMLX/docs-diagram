@@ -12,7 +12,7 @@ description: You can learn about the redo method of HistoryManager in the docume
 
 ### Usage
 
-~~~js
+~~~jsx
 redo(): void;
 ~~~
 

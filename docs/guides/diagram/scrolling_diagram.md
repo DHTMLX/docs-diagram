@@ -23,7 +23,7 @@ Getting scroll state
 
 The Diagram API allows you to get the current position of the scroll via the related [](../../api/diagram/getscrollstate_method.md) method:
 
-~~~js
+~~~jsx
 // returning the initial scroll position
 const coords = diagram.getScrollState();	// -> {x:0,y:0}
 ~~~
@@ -36,7 +36,7 @@ You can catch the start of Diagram scrolling using the [](../../api/diagram/scro
 
 - **pos** - (*object*) the position of a scroll as an object with x and y attributes
 
-~~~js
+~~~jsx
 diagram.events.on("Scroll", function(position) {
     alert("The diagram has been scrolled:" position);
 });

@@ -12,7 +12,7 @@ description: You can learn about the beforeAdd event of data collection in the d
 
 ### Usage
 
-~~~js
+~~~jsx
 beforeAdd: (newItem: object) => boolean | void;
 ~~~
 

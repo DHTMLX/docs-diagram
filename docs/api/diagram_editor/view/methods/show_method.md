@@ -16,7 +16,7 @@ If you need to show the **Toolbar**, **Editbar**, or **Shapebar** view separatel
 
 ### Usage
 
-~~~js
+~~~jsx
 show(view?: "toolbar" | "shapebar" | "editbar"): void;
 ~~~
 

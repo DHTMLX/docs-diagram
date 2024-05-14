@@ -12,7 +12,7 @@ description: You can learn about the afterAdd event of data collection in the do
 
 ### Usage
 
-~~~js
+~~~jsx
 afterAdd: (newItem: object) => void;
 ~~~
 

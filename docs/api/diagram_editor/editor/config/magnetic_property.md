@@ -20,7 +20,7 @@ Snap lines appear when central or extreme lateral coordinates of the shape which
 
 ### Usage
 
-~~~js
+~~~jsx
 magnetic?: {
     show?: boolean,
     lineWidth?: number,
@@ -30,13 +30,13 @@ magnetic?: {
 
 ### Default config
 
-~~~js
+~~~jsx
 magnetic: true 
 ~~~
 
 The magnetic mode is enabled with the following configuration:
 
-~~~js
+~~~jsx
 magnetic: {
     show: true,
     lineWidth: 2,

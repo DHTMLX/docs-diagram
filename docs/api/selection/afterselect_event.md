@@ -12,7 +12,7 @@ description: You can learn about the afterSelect event in the documentation of t
 
 ### Usage
 
-~~~js
+~~~jsx
 "afterSelect": ({
     id: string | number, 
     join: boolean,

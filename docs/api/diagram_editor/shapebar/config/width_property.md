@@ -12,13 +12,13 @@ description: You can learn about the width property of Shapebar in the documenta
 
 ### Usage
 
-~~~js
+~~~jsx
 width?: number;
 ~~~
 
 ### Default config
 
-~~~js
+~~~jsx
 width: 300
 ~~~
 

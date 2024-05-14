@@ -174,7 +174,7 @@ In the version 3.0 these properties are deprecated and removed. Instead, the **c
 - showReset -> controls.reset
 - showExport -> controls.export
 
-~~~js
+~~~jsx
 const editor = new dhx.DiagramEditor("editor_container", {
     controls: { 
         apply: false,

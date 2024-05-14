@@ -12,7 +12,7 @@ description: You can learn about the undo method of HistoryManager in the docume
 
 ### Usage
 
-~~~js
+~~~jsx
 undo(first?: boolean): void;
 ~~~
 

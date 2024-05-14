@@ -16,7 +16,7 @@ The `paste()` method works only if the Diagram Editor is initialized in the **de
 
 ### Usage
 
-~~~js
+~~~jsx
 paste(): void;
 ~~~
 

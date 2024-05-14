@@ -12,7 +12,7 @@ description: You can learn about the lineMouseDown event in the documentation of
 
 ### Usage
 
-~~~js
+~~~jsx
 lineMouseDown: (
     id: string | number, 
     event: MouseEvent

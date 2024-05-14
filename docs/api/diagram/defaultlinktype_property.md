@@ -14,19 +14,19 @@ The value is applied, if the line object doesn't contain the "type" property
 
 ### Usage
 
-~~~js
+~~~jsx
 defaultLinkType?: "line" | "dash";
 ~~~
 
 ### Default config
 
-~~~js
+~~~jsx
 defaultLinkType: "line" 
 ~~~
 
 ### Example
 
-~~~js
+~~~jsx
 const diagram = new dhx.Diagram("diagram_container", { 
     defaultLinkType: "dash"
 });

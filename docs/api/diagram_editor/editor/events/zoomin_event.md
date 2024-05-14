@@ -12,7 +12,7 @@ description: You can learn about the zoomIn event of editor in the documentation
 
 ### Usage
 
-~~~js
+~~~jsx
 "zoomIn": (step: number) => void;
 ~~~
 

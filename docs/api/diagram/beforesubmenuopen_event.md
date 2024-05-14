@@ -12,7 +12,7 @@ description: You can learn about the beforeSubmenuOpen event in the documentatio
 
 ### Usage
 
-~~~js
+~~~jsx
 beforeSubmenuOpen: (
     id: string | number, 
     event: MouseEvent, 

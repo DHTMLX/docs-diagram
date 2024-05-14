@@ -12,7 +12,7 @@ description: You can learn about the beforeCellsAdd event of Cell Manager in the
 
 ### Usage
 
-~~~js
+~~~jsx
 beforeCellsAdd: (swimlaneId: string | number) => boolean | void;
 ~~~
 

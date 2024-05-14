@@ -12,7 +12,7 @@ description: You can learn about the lineClick event in the documentation of the
 
 ### Usage
 
-~~~js
+~~~jsx
 lineClick: (
     id: string | number, 
     event: MouseEvent

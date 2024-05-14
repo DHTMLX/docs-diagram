@@ -12,7 +12,7 @@ description: You can learn about the afterEditorEditing event in the documentati
 
 ### Usage
 
-~~~js
+~~~jsx
 afterEditorEditing: (
     value: string, 
     id: string | number, 

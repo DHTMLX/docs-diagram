@@ -12,13 +12,13 @@ description: You can learn about the resizePoints property of editor in the docu
 
 ### Usage
 
-~~~js
+~~~jsx
 resizePoints?: boolean;
 ~~~
 
 ### Default config
 
-~~~js
+~~~jsx
 resizePoints: true
 ~~~
 

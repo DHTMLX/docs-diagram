@@ -12,7 +12,7 @@ description: You can learn about the lineTitleMouseDown event in the documentati
 
 ### Usage
 
-~~~js
+~~~jsx
 lineTitleMouseDown: ( 
     lineId: string | number, 
     titleId: string | number, 

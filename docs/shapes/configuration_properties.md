@@ -14,7 +14,7 @@ While specifying color values of the item, use the HEX format.
 
 ### Usage
 
-~~~js
+~~~jsx
 const data = [
     // shape object
     {
@@ -56,7 +56,7 @@ The values of the **height** and **width** are calculated automatically for a "t
 
 ### Usage
 
-~~~js
+~~~jsx
 const data = [
     // shape object
     {
@@ -76,7 +76,7 @@ When preparing a data set for a custom shape, you can add any custom properties 
 
 ### Example
 
-~~~js
+~~~jsx
 const data = [
     {
         "id": "main",
@@ -93,7 +93,7 @@ const data = [
 
 ### Usage
 
-~~~js
+~~~jsx
 const data = [
     // shape object
     {
@@ -132,7 +132,7 @@ When preparing a data set for shapes to load into the diagram in the default mod
 
 ### Example
 
-~~~js
+~~~jsx
 const data = [
     { id: 1, x: 280, y: 0, text: "Start", type: "start", angle: 10 },
 ];
@@ -142,7 +142,7 @@ const data = [
 
 ### Usage
 
-~~~js
+~~~jsx
 const data = [
     // shape object
     {
@@ -178,7 +178,7 @@ When preparing a data set for shapes to load into the diagram in the org chart m
 
 ### Example
 
-~~~js
+~~~jsx
 const data = [
     {
         "id": "1",
@@ -213,7 +213,7 @@ const data = [
 
 ### Usage
 
-~~~js
+~~~jsx
 const data = [
     // shape object
     {
@@ -255,7 +255,7 @@ Read the details in the [How to Create a JavaScript Mindmap Diagram with DHTMLX 
 
 ### Example
 
-~~~js
+~~~jsx
 const data = [
     {
         id: "1",
@@ -289,7 +289,7 @@ const data = [
 
 ### Usage
 
-~~~js
+~~~jsx
 const data = [
     // shape object
     {
@@ -330,7 +330,7 @@ When preparing a data set for "text", "topic" and flow chart shapes, you can add
 
 ### Example
 
-~~~js
+~~~jsx
 const data = [
     {
         "id": "u1585139915192",
@@ -351,7 +351,7 @@ const data = [
 
 ### Usage
 
-~~~js
+~~~jsx
 const data = [
     // shape object
     {
@@ -370,7 +370,7 @@ When preparing a data set for "card" shapes, you can add the following propertie
 
 ### Example
 
-~~~js
+~~~jsx
 const data = [
     {
         "id": 1,
@@ -391,7 +391,7 @@ const data = [
 
 ### Usage
 
-~~~js
+~~~jsx
 const data = [
     // shape object
     {

@@ -12,7 +12,7 @@ description: You can learn about the beforeExpand event in the documentation of 
 
 ### Usage
 
-~~~js
+~~~jsx
 beforeExpand: (
     id: string | number, 
     dir?: string

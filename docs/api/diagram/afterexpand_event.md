@@ -12,7 +12,7 @@ description: You can learn about the afterExpand event in the documentation of t
 
 ### Usage
 
-~~~js
+~~~jsx
 afterExpand: (
     id: string | number, 
     dir?: string

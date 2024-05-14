@@ -12,7 +12,7 @@ description: You can learn about the afterRemove event of data collection in the
 
 ### Usage
 
-~~~js
+~~~jsx
 afterRemove: (removedItem: object) => void;
 ~~~
 

@@ -12,7 +12,7 @@ description: You can learn about the beforeCellsValidation event of Cell Manager
 
 ### Usage
 
-~~~js
+~~~jsx
 beforeCellsValidation: (
     swimlaneId: string | number, 
     action: "move" | "remove" | "add"

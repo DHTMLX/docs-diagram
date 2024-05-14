@@ -16,7 +16,7 @@ To avoid problems during export, all images for Diagram shapes must be set eithe
 
 ### Usage
 
-~~~js
+~~~jsx
 pdf(config?: object): void;
 ~~~
 

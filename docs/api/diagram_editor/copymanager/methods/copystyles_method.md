@@ -12,7 +12,7 @@ description: You can learn about the copyStyles method of copy manager in the do
 
 ### Usage
 
-~~~js
+~~~jsx
 copyStyles(id?: string | number): void;
 ~~~
 

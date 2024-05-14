@@ -12,7 +12,7 @@ description: You can learn about the width property of Editbar in the documentat
 
 ### Usage
 
-~~~js
+~~~jsx
 width?: number;
 ~~~
 

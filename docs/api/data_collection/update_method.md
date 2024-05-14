@@ -16,7 +16,7 @@ The method can't be used to change the *id* or *type* of the item
 
 ### Usage
 
-~~~js
+~~~jsx
 update(
     id: string | number, 
     newItem: object

@@ -12,7 +12,7 @@ description: You can learn about the beforeCollapse event in the documentation o
 
 ### Usage
 
-~~~js
+~~~jsx
 beforeCollapse: (
     id: string | number, 
     dir?: string

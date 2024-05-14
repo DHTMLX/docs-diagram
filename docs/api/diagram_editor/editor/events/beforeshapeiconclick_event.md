@@ -12,7 +12,7 @@ description: You can learn about the beforeShapeIconClick event of editor in the
 
 ### Usage
 
-~~~js
+~~~jsx
 "beforeShapeIconClick": (
     iconId: string, 
     shape: object

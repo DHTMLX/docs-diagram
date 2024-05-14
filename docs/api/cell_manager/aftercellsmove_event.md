@@ -12,7 +12,7 @@ description: You can learn about the afterCellsMove event of Cell Manager in the
 
 ### Usage
 
-~~~js
+~~~jsx
 afterCellsMove: (swimlaneId: string | number) => void;
 ~~~
 

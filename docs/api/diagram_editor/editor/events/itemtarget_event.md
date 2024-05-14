@@ -18,7 +18,7 @@ The event doesn't work with the *parent item of a moved item* and with a *moved 
 
 ### Usage
 
-~~~js
+~~~jsx
 "itemTarget": ({
     id: string | number, 
     targetId: string | number,

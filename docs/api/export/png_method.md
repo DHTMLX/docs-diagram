@@ -14,7 +14,7 @@ description: You can learn about the png method in the documentation of the DHTM
 
 ### Usage
 
-~~~js
+~~~jsx
 png(config?: object): void;
 ~~~
 

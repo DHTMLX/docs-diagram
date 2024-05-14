@@ -34,7 +34,7 @@ Tip: Use the name of the necessary shape as a value of the **type** attribute in
 
 To set the type of a shape, use the [type](/shapes/configuration_properties/) property inside the shape object while preparing a related JSON structure to load into the diagram:
 
-~~~js
+~~~jsx
 const data = [
     { id: 1, x: 280, y: 0, text: "Start", type: "start" },
     { id: 2, x: 280, y: 120, text: "Read N", type: "output" },
@@ -51,7 +51,7 @@ const data = [
 
 It is also possible to set the default type for all the shapes via the [](../api/diagram/defaultshapetype_property.md) attribute of the diagram config object:
 
-~~~js
+~~~jsx
 const diagram = new dhx.Diagram("diagram_container", {
     type: "default", // or type: "org", or type: "mindmap" 
     defaultShapeType: "rectangle"

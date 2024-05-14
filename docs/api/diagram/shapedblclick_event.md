@@ -12,7 +12,7 @@ description: You can learn about the shapeDblClick event in the documentation of
 
 ### Usage
 
-~~~js
+~~~jsx
 shapeDblClick: (
     id: string | number, 
     event: MouseEvent

@@ -14,7 +14,7 @@ When you change the value of the grid step, the distance between points in the G
 
 ### Usage
 
-~~~js
+~~~jsx
 gridStep?: number;
 ~~~
 
@@ -24,13 +24,13 @@ The specified number must be greater than or equal to 1
 
 ### Default config
 
-~~~js
+~~~jsx
 gridStep: 10
 ~~~
 
 ### Example
 
-~~~js
+~~~jsx
 const editor = new dhx.DiagramEditor("editor_container", {
     gridStep:20
 });

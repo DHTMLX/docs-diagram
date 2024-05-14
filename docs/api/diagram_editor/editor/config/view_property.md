@@ -12,7 +12,7 @@ description: You can learn about the view property of editor in the documentatio
 
 ### Usage
 
-~~~js
+~~~jsx
 view: {
     toolbar?: boolean | object,
     shapebar?: boolean | object,
@@ -28,7 +28,7 @@ view: {
 
 ### Default config
 
-~~~js
+~~~jsx
 view: {
     toolbar: true,
     shapebar: true,

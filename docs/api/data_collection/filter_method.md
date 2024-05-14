@@ -12,7 +12,7 @@ description: You can learn about the filter method of data collection in the doc
 
 ### Usage
 
-~~~js
+~~~jsx
 filter(
     rule?: function, 
     config?: {
@@ -73,7 +73,7 @@ diagram.data.filter({ by: "text", match: "Read N" });
 
 To revert the diagram to the initial state, call the `filter()` method without parameters.
 
-~~~js
+~~~jsx
 diagram.data.filter();
 ~~~
 

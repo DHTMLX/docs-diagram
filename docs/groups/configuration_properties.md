@@ -12,7 +12,7 @@ While specifying color values of the item, use the HEX format.
 
 ### Usage
 
-~~~js
+~~~jsx
 const data = [
     // group object
     {
@@ -111,7 +111,7 @@ The **open** property works when a **header** is initialized with the **closable
 
 ### Example
 
-~~~js
+~~~jsx
 const data = [    
     {
         type: "$group",
