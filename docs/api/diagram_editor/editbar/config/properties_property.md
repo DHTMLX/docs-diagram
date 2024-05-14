@@ -12,16 +12,16 @@ description: You can learn about the properties property of Editbar in the docum
 
 :::info
 The `properties` property allows you to do the following:
-- modify editbar controls for all or individual Diaram elements base on [**Basic controls**](guides/diagram_editor/editbar/basic_controls.md) and/or [**Complex controls**](guides/diagram_editor/editbar/complex_controls.md)
-- apply custom editbar control(s) defined via the [`controls`](api/diagram_editor/editbar/config/controls_property.md) property to Diagram elements
-- specify conditions for applying an editbar control (custom or default) to Diagram elements
+- modify Editbar controls for all or individual Diaram elements base on [**Basic controls**](api/diagram_editor/editbar/basic_controls_overview.md) and/or [**Complex controls**](api/diagram_editor/editbar/complex_controls_overview.md)
+- apply custom Editbar control(s) defined via the [`controls`](api/diagram_editor/editbar/config/controls_property.md) property to Diagram elements
+- specify conditions for applying an Editbar control (custom or default) to Diagram elements
 
-Refer to the [**Editbar configuration**](guides/diagram_editor/editbar/complex_controls.md) guide for more information about configuring!
+Refer to the [**Editbar configuration**](guides/diagram_editor/editbar.md) guide for more information about configuring!
 :::
 
 ### Usage
 
-~~~js
+~~~jsx
 properties?: {
     [type: string]: object[] | function, // custom configurations for controls applied to Diagram elements 
     ...,
@@ -30,7 +30,7 @@ properties?: {
 
 ### Parameters
 
-- `type` - the type name of a Diagram element
+- `type` - the name of a Diagram element or group of elements
     - `object` - the configuration object of a Diagram element
 
     or
@@ -39,25 +39,117 @@ properties?: {
         - `item` - (optional) the object of the selected element
         - `editor` - (required) the object of the Diagram editor
 
-~~~jsx {3-4,8-15}
+:::important
+You can configure Editbar controls for a separate Diagram element, for instance **rectangle**, **circle**, **card** etc.:
+
+~~~jsx
 properties: {
-    // modify the estimate element (shape)
-    estimate: // Diagram element
-        { ... } // configuration object
-
-    // or
-
-    $shape: // type of Diagram elements
-        ({ item, editor }) => { // the callback function that returns the configuration object
-            const controls = [
-                // some configurations
-            ];
-                // ... custom logic here
-            return controls;
-        },
-    ..., // another elemnt
+    // modify Editbar controls for individual elements (shapes)
+    rectangle: { /*...*/ }, // configure controls for the rectangle shape
+    circle: { /*...*/ }, // configure controls for the circle shape
+    card: { /*...*/ }, // configure controls for the card shape
+    estimate: { /*...*/ }, // configure controls for the estimate shape
+    // ...
 }
 ~~~
+
+You can configure Editbar controls for a separate group of Diagram elements. There are the following service properties to configure groups:
+
+- `$default` - allows configuring Editbar controls if no elements are selected, or more than one element is selected
+
+~~~jsx
+properties: {
+    $default: [
+        {
+            type: "gridStep",
+            readOnly: true
+        }
+    ]
+}
+~~~
+
+- `$shape` - allows configuring Editbar controls for all shapes including custom shapes
+
+~~~jsx
+properties: {
+    $shape: [
+        {
+            type: "position",
+            $properties: {
+                dx: { disabled: true }
+            }
+        }
+    ]
+}
+~~~
+
+- `$group` - allows configuring Editbar controls for all elements with the "group" type
+
+~~~jsx
+properties: {
+    $group: [
+        { 
+            type: "header", 
+            label: "Group header style" 
+        },
+        // ...
+    ]
+}
+~~~
+
+- `$swimlane` - allows configuring Editbar controls for all elements with the "swimlane" type
+- `$line` - allows configuring Editbar controls for all elements with the "line" type
+- `$lineTitle` - allows configuring Editbar controls for all elements with the "lineTitle" type
+
+~~~jsx
+properties: {
+    $default: [
+        {
+            type: "gridStep",
+            readOnly: true
+        }
+    ],
+    $shape: [
+        {
+            type: "position",
+            $properties: {
+                dx: { disabled: true }
+            }
+        }
+    ],
+    $group: [
+        { 
+            type: "header", 
+            label: "Group header style" 
+        },
+        // ...
+    ],
+    $swimlane: [
+        { 
+            type: "header", 
+            label: "Swimlane header style" 
+        },
+        // ...
+    ],
+    $line: [
+        {
+            type: "lineShape",
+            label: "Line connection type"
+        },
+        // ...
+    ],
+    $lineTitle: [
+        {
+            type: "position",
+            $properties: {
+                dx: { disabled: false }
+            }
+        }
+    ]
+}
+~~~
+
+:::
 
 ### Example
 
