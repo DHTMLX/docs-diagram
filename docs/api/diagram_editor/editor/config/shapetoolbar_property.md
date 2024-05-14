@@ -88,4 +88,4 @@ const editor = new dhx.DiagramEditor("editor_container", {
 
 **Related articles**:  [Grid Area](/guides/diagram_editor/grid_area/#configuring-the-toolbar-of-an-item)
 
-**Relate sample**: [Diagram Editor. Org chart mode. Shape toolbar configuration](https://snippet.dhtmlx.com/b2agwets)
+**Relate sample**: [Diagram Editor. Org chart mode. Toolbar customisation](https://snippet.dhtmlx.com/b2agwets)

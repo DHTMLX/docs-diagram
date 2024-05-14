@@ -112,3 +112,5 @@ const editor = new dhx.DiagramEditor("editor_container", {
 ~~~
 
 **Change log**: Added in v6.0
+
+**Related sample:** [Diagram Editor. Default mode. Network PERT chart](https://snippet.dhtmlx.com/wdijghbn)

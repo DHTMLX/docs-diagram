@@ -8,7 +8,7 @@ description: You can learn about exporting Diagram in the documentation of the D
 
 You can easily export a diagram into the PDF or PNG format via the related [pdf()](../../api/export/pdf_method/)/[png()](../../api/export/png_method/) methods of the Export object:
 
-<iframe src="https://snippet.dhtmlx.com/ybpmz0zk?mode=html" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
+<iframe src="https://snippet.dhtmlx.com/ybpmz0zk?mode=html" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
 To adjust the export settings, pass an object with configuration options to the necessary method.
 
@@ -34,7 +34,7 @@ const diagram = new dhx.Diagram("diagram_container", {
 
 - to define a set of styles that you want to be exported via setting absolute paths to the desired styles to the [](../api/diagram/exportstyles_property.md) array:
 
-<iframe src="https://snippet.dhtmlx.com/jm8if6nh?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="350"></iframe>
+<iframe src="https://snippet.dhtmlx.com/jm8if6nh?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="650"></iframe>
 
 :::note
 **Note**, that you must use only absolute paths not relative ones.

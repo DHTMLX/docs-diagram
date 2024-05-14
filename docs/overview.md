@@ -28,11 +28,11 @@ You can choose shapes of desired types, link them by suitable connectors and bui
 
 You can easily create [your own templates of shapes](/shapes/custom_shape/) and use them to design any diagram you need. For example, it is possible to create such famous types of custom diagrams as:
 
-| [Life Cycle Diagram](https://snippet.dhtmlx.com/y4k51owl) | [Venn Diagram](https://snippet.dhtmlx.com/2tzyfois) | [UML Class Diagram](https://snippet.dhtmlx.com/madymxt5) |
+| [Life Cycle Diagram](https://snippet.dhtmlx.com/y4k51owl) | [Venn Diagram template](https://snippet.dhtmlx.com/2tzyfois) | [UML Class Diagram template](https://snippet.dhtmlx.com/madymxt5) |
 | --------------------------------------------------------- | --------------------------------------------------- | -------------------------------------------------------- |
 | ![](assets/sticky.png)                                    | ![](assets/venn.png)                                | ![](assets/html.png)                                     |
 
-| [Network Diagram](https://snippet.dhtmlx.com/u1xqyo9w) | [Game levels and locations](https://snippet.dhtmlx.com/1h4j9gb3) |
+| [Network Diagram template](https://snippet.dhtmlx.com/u1xqyo9w) | [Game levels and locations](https://snippet.dhtmlx.com/1h4j9gb3) |
 | ------------------------------------------------------ | ---------------------------------------------------------------- |
 | ![](assets/network.png)                                | ![](assets/game_levels.png)                                      |
 
@@ -56,13 +56,13 @@ Usage of swimlanes of the DHTMLX Diagram library lets you represent any process 
 
 The titles of Lines are enabled in the default mode of Diagram. You can add the text by double-clicking on a line. Use double-clicking also for editing the text. Check the details in the [LineTitles](/line_titles/) article.
 
-<iframe src="https://snippet.dhtmlx.com/e6zm6wh1?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
+<iframe src="https://snippet.dhtmlx.com/e6zm6wh1?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
 ## Diagram in the org chart mode
 
 There is also an org chart mode of Diagram that presents a set of shapes connected by lines in a hierarchical order.
 
-<iframe src="https://snippet.dhtmlx.com/5ign6fyy?text=diagram&mode=result" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
+<iframe src="https://snippet.dhtmlx.com/5ign6fyy?text=diagram&mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
 ### Assistant and partner shapes
 
@@ -78,7 +78,7 @@ The connection between parent shape and its partner items is always horizontal. 
 
 The partner shapes are very useful for building a family tree.
 
-**Related sample:**	[Diagram editor. Org chart mode. Family tree](https://snippet.dhtmlx.com/5pfybpmz)
+**Related sample:** [Diagram editor. Org chart mode. Family tree](https://snippet.dhtmlx.com/5pfybpmz)
 
 Here are examples of how the connections of parent shapes look like with one, two, three, and four partners.
 
@@ -94,13 +94,13 @@ Here are examples of how the connections of parent shapes look like with one, tw
 
 An example of adding custom shapes for creating a diagram to present the hierarchical organizational structure of a medical institution:
 
-| [Diagram Editor. Org chart mode. Medical hierarchy](https://snippet.dhtmlx.com/8fubjmlz) |
+| [Diagram Editor. Org chart mode. Medical hierarchy diagram template](https://snippet.dhtmlx.com/8fubjmlz) |
 | -------------------------------------------------------------------------------------------------- |
 | ![](assets/medical_hierarchy_overview.png)                                                         |
 
 ## Diagram in the mindmap mode
 
-The mindmap mode is used to represent a core topic or idea surrounded by the branches of the subtopics.
+The Mindmap mode is used to represent a core topic or idea surrounded by the branches of the subtopics.
 
 | [Diagram. Mindmap mode. Emotions mind map](https://snippet.dhtmlx.com/twd25ww1) |
 | ------------------------------------------------------------------------------- |
@@ -118,13 +118,13 @@ An example of adding a custom template into the mindmap mode of the diagram to c
 DHTMLX Diagram provides you with a set of API that you can apply in order to make working with a Diagram more convenient.
 For example, you can implement a feature of searching a shape on request that helps you to simplify work with large diagrams.
 
-<iframe src="https://snippet.dhtmlx.com/d7kvzq4r?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
+<iframe src="https://snippet.dhtmlx.com/d7kvzq4r?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
 ## Diagram scale
 
 You can apply the zoom template to your diagram to be able to change its appearance via zooming the diagram in or out. Besides, you can make it possible to user to get the detailed information on the selected shape.
 
-<iframe src="https://snippet.dhtmlx.com/09o8t3o2?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
+<iframe src="https://snippet.dhtmlx.com/09o8t3o2?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
 ## What's next
 

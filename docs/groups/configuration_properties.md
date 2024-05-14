@@ -106,7 +106,7 @@ The **open** property works when a **header** is initialized with the **closable
     - `position` - (optional) the positioning of the group header: "top" (default) | "bottom" | "left" | "right"
     - `editable` - (optional) enables/disables the ability to edit the text of the header by double-clicking on it; *true* by default
     - `closable` - (optional) shows/hides an icon intended to expand/collapse a group; *false* by default
-    - `enable` - (optional) shows/hides the header of the group; *true* by default <br>**Related sample:** [Diagram. Default mode. Group. Header position and text settings](https://snippet.dhtmlx.com/6hunrja8)
+    - `enable` - (optional) shows/hides the header of the group; *true* by default 
 - `key` - (optional) your own property with your own logic to be implemented under the hood
 
 ### Example

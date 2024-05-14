@@ -12,11 +12,11 @@ By default the component's size is set automatically to fit the content. If nece
 
 You can scroll a diagram to the area where the necessary item is situated via the [](../../api/diagram/showitem_method.md) method of the diagram object.
 
-<iframe src="https://snippet.dhtmlx.com/d7kvzq4r?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
+<iframe src="https://snippet.dhtmlx.com/d7kvzq4r?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
 As an alternative way, you can scroll to the necessary position on the diagram by using the [](../../api/diagram/scrollto_method.md) method.
 
-<iframe src="https://snippet.dhtmlx.com/f970hbym?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
+<iframe src="https://snippet.dhtmlx.com/f970hbym?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
 Getting scroll state 
 ------------------

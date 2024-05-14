@@ -282,7 +282,7 @@ The method takes as an argument an object with the following parameters:
 
 - `id` - (*string|number*) required, the id of the checked item
 
-**Related sample:** [Diagram. Diagram. Styling selection with CSS](https://snippet.dhtmlx.com/jyoxn5h7)
+**Related sample:** [Diagram. Selection. Item selection](https://snippet.dhtmlx.com/jyoxn5h7)
 
 ## Expanding/collapsing items
 
@@ -325,7 +325,7 @@ For this, you need to apply the [](../api/diagram/showitem_method.md) method, wh
 diagram.showItem("2.1");  
 ~~~
 
-**Related sample:**	[Diagram. Scroll content](https://snippet.dhtmlx.com/f970hbym)
+**Related sample:** [Diagram. Scroll content](https://snippet.dhtmlx.com/f970hbym)
 
 You can [read more about scrolling in DHTMLX Diagram](../../guides/diagram/scrolling_diagram/).
 
@@ -370,11 +370,11 @@ const shapes = diagram.data.findAll(function(shapes){
 
 It is possible to filter the diagram and render only the items that meet the filter criteria via the [](../api/data_collection/filter_method.md) method of the **data** collection. The method will show only the filtered items, hiding the rest of items.
 
-<iframe src="https://snippet.dhtmlx.com/tm43bsgn?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
+<iframe src="https://snippet.dhtmlx.com/tm43bsgn?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
 ## Drag-n-drop of group items
 
-The default settings of a group allow you to reorder child items in the group and drag items between groups. 
+The default settings of a group allow you to reorder child items in the group and drag items between groups.
 
 If needed you can disable dragging child items to different groups and make it possible to drag the items only within their parent group. In addition, you can adjust the behavior of the borders of the parent group and define whether they should expand when a user is dragging a child item outside the group.
 

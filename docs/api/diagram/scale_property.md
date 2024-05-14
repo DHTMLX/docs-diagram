@@ -31,5 +31,6 @@ const diagram = new dhx.Diagram("diagram_container", {
 ~~~
 
 **Related samples**:
+
 - [Diagram. Configuration. Scaled diagram](https://snippet.dhtmlx.com/9h89c3gl)
 - [Diagram. Template. Zoom template](https://snippet.dhtmlx.com/09o8t3o2)

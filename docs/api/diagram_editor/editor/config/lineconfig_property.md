@@ -73,4 +73,4 @@ IMAGE HERE
 - The **lineGap** parameter is added in v5.0 (check the Migration article)
 - Added in v4.2
 
-**Related sample:** [Diagram editor. Setting the default type for newly added connector lines](https://snippet.dhtmlx.com/22abzn5m)
+**Related sample:** [Diagram editor. Setting the default line (connector) type. Try connecting shape A to shape B](https://snippet.dhtmlx.com/22abzn5m)

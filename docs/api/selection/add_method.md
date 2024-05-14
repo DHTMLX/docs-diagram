@@ -64,6 +64,4 @@ console.log(diagram.selection.getIds()); // -> ["3"]
 - [diagram.config.select](../../../api/diagram/select_property/)
 - [Selecting items](../../../guides/manipulating_items/#selecting-items)
 
-TODO - check links to snippets
-
 **Related samples**: [Diagram. Selection. Item selection](https://snippet.dhtmlx.com/jyoxn5h7)
