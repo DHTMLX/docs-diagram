@@ -64,7 +64,9 @@ The structure of DHTMLX Diagram package is the following:
 
 - **sources** - the source code files of the library. The files are not minified and easy-to-read. The package is mostly intended to be used for component's debugging
 
-{{note Note that the **Trial** version of the Diagram library doesn't contain the sources folder.}}
+:::note
+Note that the **Trial** version of the Diagram library doesn't contain the sources folder.
+:::
 
 - **samples** - the code samples
 - **codebase** - the packed code files of the library. These files are much smaller and intended for use in production

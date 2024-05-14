@@ -22,7 +22,9 @@ defaults?: {
 
 The `defaults` object can contain a set of `key:value` pairs where *key* is the type of a shape or line and *value* is a set of configuration settings of the [shape](/shapes/configuration_properties/) or [line](/lines/configuration_properties/) correspondingly.
 
-{{note The `type` and `id` attributes can not be defined in the default configuration of a shape/line.}}
+:::note
+The `type` and `id` attributes can not be defined in the default configuration of a shape/line.
+:::
 
 ### Example
 

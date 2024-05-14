@@ -28,7 +28,9 @@ Tip: Use the name of the necessary shape as a value of the **type** attribute in
 
 <iframe src="https://snippet.dhtmlx.com/3igf1gd5?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="350"></iframe>
 
-{{note Any of the above shapes can be added into the diagram of any mode ("default", "org", or "mindmap" one). }}
+:::note
+Any of the above shapes can be added into the diagram of any mode ("default", "org", or "mindmap" one).
+:::
 
 ## Setting the type of a shape
 
