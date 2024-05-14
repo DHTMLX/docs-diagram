@@ -209,7 +209,6 @@ Released on April 15, 2021
 
 - [TypeScript Support](../guides/using_typescript/)
 - New mindmap mode ([type:"mindmap"](../api/diagram/type_property/)) of DHTMLX Diagram is added
-- [New CSS template for DHTMLX Diagram](https://snippet.dhtmlx.com/diagram_template_b)
 - The ability [to configure the direction of the child shapes relative to the root shape in the mindmap mode of Diagram](../guides/diagram/configuration/#arranging-shapes-in-the-mindmap-mode-of-diagram) via the [typeConfig](../api/diagram/typeconfig_property/) configuration property of the diagram object
 - The ability [to add custom event handlers for custom shapes](../shapes/custom_shape/#event-handlers-for-custom-shapes) via the "eventHandlers" attribute of the [addShape()](../api/diagram/addshape_method/) method
 - The ability to customize the personal toolbars for editing items in the [grid area](../guides/diagram_editor/grid_area/) via the [shapeToolbar](../api/editor/shapetoolbar_property/) property of the Editor object

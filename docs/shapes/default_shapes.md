@@ -10,9 +10,7 @@ description: You can learn about the Default Shapes in the documentation of the 
 
 The DHTMLX Diagram library provides you with a set of default types of shapes that you can use to build your diagram. The default shapes include:
 
-- a set of the flow chart shapes:
-
-<iframe src="https://snippet.dhtmlx.com/loz7yh2y?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="650"></iframe>
+- a set of the flow chart shapes
 
 Tip: Use the name of the necessary shape as a value of the **type** attribute inside the shape object, while [preparing a data set for loading into the diagram](/guides/loading_data/#preparing-data-to-load).
 
@@ -21,8 +19,6 @@ Tip: Use the name of the necessary shape as a value of the **type** attribute in
 <iframe src="https://snippet.dhtmlx.com/5ign6fyy?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="550"></iframe>
 
 - the `"img-card"` type that can be used for adding shapes with images. Don't forget to provide images for cards via the **img** attribute of the shape object.
-
-<iframe src="https://snippet.dhtmlx.com/qnx3ekin?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="550"></iframe>
 
 - the `"topic"` type that is the default type of shapes in the "mindmap" mode of Diagram. Each shape has a text and a colored border. The color of the outline depends on the level the shape belongs to.
 

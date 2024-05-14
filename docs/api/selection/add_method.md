@@ -66,7 +66,4 @@ console.log(diagram.selection.getIds()); // -> ["3"]
 
 TODO - check links to snippets
 
-**Related samples**:
-
-- [Diagram. Selection. Item selection](https://snippet.dhtmlx.com/jyoxn5h7)
-- [Diagram. Default mode. Item selection](https://snippet.dhtmlx.com/tcny4obw)
+**Related samples**: [Diagram. Selection. Item selection](https://snippet.dhtmlx.com/jyoxn5h7)

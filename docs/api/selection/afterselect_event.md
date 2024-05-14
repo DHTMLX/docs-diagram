@@ -67,7 +67,3 @@ editor.diagram.events.on("afterSelect", function({ id }) {
 
 - [diagram.config.select](../../../api/diagram/select_property/)
 - [Selecting items](../../../guides/manipulating_items/#selecting-items)
-
-TODO - check the link to the snippet
-
-**Related sample**: [Diagram. Org chart mode. Events](https://snippet.dhtmlx.com/l38pct7c)

@@ -27,8 +27,6 @@ You can adjust the attributes of the items via [sidebar options of the editbar](
 
 You may customize the [shapebar](../guides/diagram_editor/shapebar/) and, if you have added a custom shape, [configure the editbar](/api/diagram_editor/editbar/config/properties_property/) according to the attributes of your shape.
 
-<iframe src="https://snippet.dhtmlx.com/2z0a18oz?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
-
 ### Editor in the org chart mode
 
 The interface of the editor initialized in the org chart mode consists of three functional parts: 

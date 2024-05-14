@@ -46,5 +46,3 @@ const diagram = new dhx.Diagram("diagram_container", {
 ~~~
 
 **Related articles**: [Setting the type of a shape](../../../shapes/default_shapes/#setting-the-type-of-a-shape)
-
-**Related sample**: [Diagram. Org chart mode. Shapes with images](https://snippet.dhtmlx.com/qnx3ekin)

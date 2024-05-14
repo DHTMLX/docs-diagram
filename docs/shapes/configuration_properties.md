@@ -203,10 +203,7 @@ const data = [
 ];
 ~~~
 
-**Related samples**:
-
-- [Diagram. Org chart mode. Nested vertical lists](https://snippet.dhtmlx.com/98tzmzpg)
-- [Diagram editor. Org chart mode. Image card editor](https://snippet.dhtmlx.com/vghuunmd)
+**Related sample**: [Diagram. Org chart mode. Nested vertical lists](https://snippet.dhtmlx.com/98tzmzpg)
 
 ## Properties specific for the mindmap mode
 
