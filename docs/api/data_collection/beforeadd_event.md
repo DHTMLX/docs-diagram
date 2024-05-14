@@ -38,8 +38,8 @@ diagram.data.parse(data);
 
 // attaching a handler to the event
 diagram.events.on("beforeAdd", function(newItem){
-	if (some_check)
-		return false;
-	return true;
+    if (some_check)
+        return false;
+    return true;
 });
 ~~~

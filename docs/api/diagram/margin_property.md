@@ -14,10 +14,10 @@ description: You can learn about the margin property in the documentation of the
 
 ~~~js
 margin?: {
-	itemX?: number,
-	itemY?: number,
+    itemX?: number,
+    itemY?: number,
     x?: number,
-	y?: number,
+    y?: number,
 };
 ~~~
 

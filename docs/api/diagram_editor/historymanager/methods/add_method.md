@@ -32,9 +32,9 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 ...
 editor.history.add([
-	{ "id": "shape_1", "type": "start", "x": 200, y: 0, "text": "Start" },
-	{ "id": "shape_2", "type": "process", "x": 200, y: 120, "text": "Call the client" },
-	{ "id": "line_1", "type": "line", "from": "shape_1", "to": "shape_2" }
+    { "id": "shape_1", "type": "start", "x": 200, y: 0, "text": "Start" },
+    { "id": "shape_2", "type": "process", "x": 200, y: 120, "text": "Call the client" },
+    { "id": "line_1", "type": "line", "from": "shape_1", "to": "shape_2" }
 ]);
 ~~~
 

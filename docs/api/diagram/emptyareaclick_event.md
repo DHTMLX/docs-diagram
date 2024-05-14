@@ -34,7 +34,7 @@ diagram.data.parse(data);
 
 // attaching a handler to the event
 diagram.events.on("emptyAreaClick",function(e){
-	console.log("An empty space has been clicked");
+    console.log("An empty space has been clicked");
 });
 ~~~
 

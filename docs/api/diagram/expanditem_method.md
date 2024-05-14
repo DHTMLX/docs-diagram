@@ -14,8 +14,8 @@ description: You can learn about the expandItem method in the documentation of t
 
 ~~~jsx
 expandItem(
-	id: string | number, 
-	dir?: string
+    id: string | number, 
+    dir?: string
 ): void;
 ~~~
 
@@ -42,7 +42,7 @@ or
 
 ~~~jsx {2,6}
 const diagram = new dhx.Diagram("diagram_container", {
-	type:"mindmap"
+    type:"mindmap"
 });
 diagram.data.parse(data);
 

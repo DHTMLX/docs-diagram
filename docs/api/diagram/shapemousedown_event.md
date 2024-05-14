@@ -14,8 +14,8 @@ description: You can learn about the shapeMouseDown event in the documentation o
 
 ~~~js
 shapeMouseDown: (
-	id: string | number, 
-	event: MouseEvent
+    id: string | number, 
+    event: MouseEvent
 ) => void;
 ~~~
 
@@ -38,7 +38,7 @@ diagram.data.parse(data);
 
 // attaching a handler to the event
 diagram.events.on("shapeMouseDown", function(id, event) {
-	console.log('An item "' + diagram.data.getItem(id).text + '"will be clicked');
+    console.log('An item "' + diagram.data.getItem(id).text + '"will be clicked');
 });
 ~~~
 

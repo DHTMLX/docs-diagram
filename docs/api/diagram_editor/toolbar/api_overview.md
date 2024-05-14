@@ -25,7 +25,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {
-    	// configuring Toolbar via an object
+        // configuring Toolbar via an object
          toolbar: {
             css: "custom_css",
             items: ["file", "spacer", "scale"],

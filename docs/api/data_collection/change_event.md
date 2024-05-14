@@ -14,9 +14,9 @@ description: You can learn about the change event of data collection in the docu
 
 ~~~js
 change: (
-	id?: string, 
-	status?: "add" | "update" | "delete", 
-	updatedItem?: object
+    id?: string, 
+    status?: "add" | "update" | "delete", 
+    updatedItem?: object
 ) => void;
 ~~~
 
@@ -44,6 +44,6 @@ diagram.data.parse(data);
 
 // attaching a handler to the event
 diagram.events.on("change", function (id, status, shape) {
-	console.log("The " + id + " has been " + status);
+    console.log("The " + id + " has been " + status);
 });
 ~~~

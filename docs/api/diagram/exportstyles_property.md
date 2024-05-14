@@ -36,7 +36,7 @@ Set the **exportStyles** property to *false* to prevent all styles from being se
 
 ~~~js
 const diagram = new dhx.Diagram("diagram_container", { 
-  	exportStyles: false
+    exportStyles: false
 });
 ~~~
 
@@ -44,7 +44,7 @@ Or define a set of styles you want to be exported. For that, you need to set str
 
 ~~~js
 const diagram = new dhx.Diagram("diagram_container", { 
-  	exportStyles:[
+    exportStyles:[
         "https://mySite.com/exportStyle.css",
         "https://mySite.com/secondExportStyle.css"
     ]

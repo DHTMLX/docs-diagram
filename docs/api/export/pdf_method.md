@@ -26,34 +26,34 @@ pdf(config?: object): void;
     - `url?: string` - (optional) the url of the service that executes export and returns an exported file. This setting is optional, you should use it only if you need to specify the path to your local export service. The default value is `https://export.dhtmlx.com/diagram/pdf/5.0.0`
     - `name?: string` - (optional) the name of the exported file
     - `pdf?: object` - (optional) the object of pdf options. Here you can specify the following properties:
-		- `scale?: number` - (optional) the scale of the grid rendering (between *0.1* and *2*)
-		- `landscape?: boolean` - (optional) defines a landscape orientation, ***false*** by default. It works only if the `format` option is specified
-		- `width?: string | number` - (optional) the width of the output page. As a value of the property, you can specify a number or a string with a unit
-		- `height?: string | number` - (optional) the height of the output page. As a value of the property, you can specify a number or a string with a unit
-		- `margin?: object` - (optional) the object with paper margins, ***none*** by default
-			- `left?: string | number` - (optional) defines a left margin, accepts values labeled with units (px,in,cm,mm)
-			- `right?: string | number` - (optional) defines a right margin, accepts values labeled with units (px,in,cm,mm)
-			- `top?: string | number` - (optional) defines a top margin, accepts values labeled with units (px,in,cm,mm)
-			- `bottom?: string | number` - (optional) defines a bottom margin, accepts values labeled with units (px,in,cm,mm)
-		- `format?: string` - (optional) defines the paper format. If set, it takes priority over the **width** or **height** options. Not specified by default. Check the list of all available [formats and their sizes](#list-of-formats).
-		- `pageRanges?: string` - (optional) paper ranges to print, e.g. 1-5, 8, 11-13. It works only if the `format` option is specified
-		- `displayHeaderFooter?: boolean` - (optional) defines whether to display the header and footer, *false* by default
-		- `footerTemplate?: string` - (optional) an HTML template for the print footer. It should be a valid HTML markup with the following classes used to inject printing values into them:
-			- `date` - (optional) the formatted print date
-			- `title` - (optional) the document name
-			- `pageNumber` - (optional) the current page number. It is used by default
-			- `totalPages` - (optional) the total number of pages in the document. It is used by default
-		- `headerTemplate?: string` - (optional) an HTML template for the print header. It should be a valid HTML markup with the following classes used to inject printing values into them:
-			- `date` - (optional) the formatted print date
-			- `title` - (optional) the document name
-			- `pageNumber` - (optional) the current page number
-			- `totalPages` - (optional) the total number of pages in the document
+        - `scale?: number` - (optional) the scale of the grid rendering (between *0.1* and *2*)
+        - `landscape?: boolean` - (optional) defines a landscape orientation, ***false*** by default. It works only if the `format` option is specified
+        - `width?: string | number` - (optional) the width of the output page. As a value of the property, you can specify a number or a string with a unit
+        - `height?: string | number` - (optional) the height of the output page. As a value of the property, you can specify a number or a string with a unit
+        - `margin?: object` - (optional) the object with paper margins, ***none*** by default
+            - `left?: string | number` - (optional) defines a left margin, accepts values labeled with units (px,in,cm,mm)
+            - `right?: string | number` - (optional) defines a right margin, accepts values labeled with units (px,in,cm,mm)
+            - `top?: string | number` - (optional) defines a top margin, accepts values labeled with units (px,in,cm,mm)
+            - `bottom?: string | number` - (optional) defines a bottom margin, accepts values labeled with units (px,in,cm,mm)
+        - `format?: string` - (optional) defines the paper format. If set, it takes priority over the **width** or **height** options. Not specified by default. Check the list of all available [formats and their sizes](#list-of-formats).
+        - `pageRanges?: string` - (optional) paper ranges to print, e.g. 1-5, 8, 11-13. It works only if the `format` option is specified
+        - `displayHeaderFooter?: boolean` - (optional) defines whether to display the header and footer, *false* by default
+        - `footerTemplate?: string` - (optional) an HTML template for the print footer. It should be a valid HTML markup with the following classes used to inject printing values into them:
+            - `date` - (optional) the formatted print date
+            - `title` - (optional) the document name
+            - `pageNumber` - (optional) the current page number. It is used by default
+            - `totalPages` - (optional) the total number of pages in the document. It is used by default
+        - `headerTemplate?: string` - (optional) an HTML template for the print header. It should be a valid HTML markup with the following classes used to inject printing values into them:
+            - `date` - (optional) the formatted print date
+            - `title` - (optional) the document name
+            - `pageNumber` - (optional) the current page number
+            - `totalPages` - (optional) the total number of pages in the document
 
 ### Example
 
 ~~~jsx {7,10-13}
 const diagram = new dhx.Diagram("diagram_container", {
-	// config options
+    // config options
 });
 diagram.data.parse(data);
 
@@ -62,8 +62,8 @@ diagram.export.pdf();
 
 // export with config settings
 diagram.export.pdf({
-	url: "https://export.dhtmlx.com/diagram/pdf/5.0.0",
-	name:"result_pdf"
+    url: "https://export.dhtmlx.com/diagram/pdf/5.0.0",
+    name:"result_pdf"
 });
 ~~~
 

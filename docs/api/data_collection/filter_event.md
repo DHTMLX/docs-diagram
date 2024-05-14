@@ -21,8 +21,8 @@ filter: (filter?: object) => void;
 The callback of the **filter** event is called with the following parameter:
 
 - `object: {key: object }` - an object with all the active filters, where
-	- `key` - the id of an active filter
-	- `object` - an object with the [**rule** and **config** properties](api/data_collection/filter_method.md#parameters)
+    - `key` - the id of an active filter
+    - `object` - an object with the [**rule** and **config** properties](api/data_collection/filter_method.md#parameters)
 
 :::info
 For handling the inner events of Diagram Data Collection you can use the **on()** method.

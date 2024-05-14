@@ -14,9 +14,9 @@ description: You can learn about the lineTitleDblClick event in the documentatio
 
 ~~~js
 lineTitleDblClick: (
-	lineId: string | number, 
-	titleId: string | number, 
-	event: MouseEvent
+    lineId: string | number, 
+    titleId: string | number, 
+    event: MouseEvent
 ) => void;
 ~~~
 
@@ -40,7 +40,7 @@ diagram.data.parse(data);
 
 // attaching a handler to the event
 diagram.events.on("lineTitleDblClick", (lineId, titleId, event) => {
-	console.log("lineTitleDblClick");
+    console.log("lineTitleDblClick");
 });
 ~~~
 

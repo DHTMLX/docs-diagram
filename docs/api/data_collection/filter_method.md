@@ -14,27 +14,27 @@ description: You can learn about the filter method of data collection in the doc
 
 ~~~js
 filter(
-	rule?: function, 
-	config?: {
-		id?: string,
-		add?: boolean,
-		permanent?: boolean
-	}
+    rule?: function, 
+    config?: {
+        id?: string,
+        add?: boolean,
+        permanent?: boolean
+    }
 ): void;
 
 // or
 
 filter(
-	rule?:{
-		by?: string | number,
-		match?: string | number | boolean,
-		compare?: function(value,match,item)
-	},
-	config?:{
-		id?: string,
-		add?: boolean,
-		permanent?: boolean
-	}
+    rule?:{
+        by?: string | number,
+        match?: string | number | boolean,
+        compare?: function(value,match,item)
+    },
+    config?:{
+        id?: string,
+        add?: boolean,
+        permanent?: boolean
+    }
 ): void;
 ~~~
 

@@ -14,8 +14,8 @@ description: You can learn about the shapeDblClick event in the documentation of
 
 ~~~js
 shapeDblClick: (
-	id: string | number, 
-	event: MouseEvent
+    id: string | number, 
+    event: MouseEvent
 ) => void;
 ~~~
 
@@ -38,7 +38,7 @@ diagram.data.parse(data);
 
 // attaching a handler to the event
 diagram.events.on("shapeDblClick", function(id) {
-	console.log('An item "' + diagram.data.getItem(id).text + '"double-clicked');
+    console.log('An item "' + diagram.data.getItem(id).text + '"double-clicked');
 });
 ~~~
 

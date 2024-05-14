@@ -38,7 +38,7 @@ diagram.data.parse(data);
 
 // attaching a handler to the event
 diagram.events.on("beforeRemove", function(newItem){
-	console.log("beforeRemove "+ item);
+    console.log("beforeRemove "+ item);
     return true;
 });
 ~~~

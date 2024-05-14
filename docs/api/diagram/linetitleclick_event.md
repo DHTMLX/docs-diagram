@@ -14,9 +14,9 @@ description: You can learn about the lineTitleClick event in the documentation o
 
 ~~~js
 lineTitleClick: (
-	lineId: string | number, 
-	titleId: string | number, 
-	event: MouseEvent
+    lineId: string | number, 
+    titleId: string | number, 
+    event: MouseEvent
 ) => void;
 ~~~
 
@@ -40,7 +40,7 @@ diagram.data.parse(data);
 
 // attaching a handler to the event
 diagram.events.on("lineTitleClick", (lineId, titleId, event) => {
-	console.log("lineTitleClick");
+    console.log("lineTitleClick");
 });
 ~~~
 
@@ -49,5 +49,3 @@ diagram.events.on("lineTitleClick", (lineId, titleId, event) => {
 **Related article**: [Event handling](../../../guides/event_handling/)
 
 **Related samples**: [Diagram. Default mode. Events](https://snippet.dhtmlx.com/7h2hgb3g)
-
-

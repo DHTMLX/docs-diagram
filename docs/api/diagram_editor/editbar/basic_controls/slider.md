@@ -58,7 +58,7 @@ description: You can explore the Slider control of Editbar in the documentation 
 - `wrap` - (optional) allows displaying the external wrapping. *false* by default
 - `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*). *false* by default
 - `hidden` - (optional) defines whether a control is hidden. *false* by default
-- `css`	- (optional) adds style classes to a control
+- `css` - (optional) adds style classes to a control
 - `height` - (optional) the height of a control. *"content"* by default
 - `width` - (optional) the width of a control. *"content"* by default
 - `padding` - (optional) sets padding between a cell and a border of a slider control

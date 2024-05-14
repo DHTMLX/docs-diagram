@@ -15,14 +15,14 @@ description: You can learn about the controls property of editor in the document
 ~~~js
 controls?: {
     apply?: boolean,
-	reset?: boolean,
-	export?: boolean,
-	import?: boolean,
-	autoLayout?: boolean,
-	historyManager?: boolean,
-	editManager?: boolean,
-	scale?: boolean,
-	gridStep?: boolean
+    reset?: boolean,
+    export?: boolean,
+    import?: boolean,
+    autoLayout?: boolean,
+    historyManager?: boolean,
+    editManager?: boolean,
+    scale?: boolean,
+    gridStep?: boolean
 };
 ~~~
 
@@ -45,14 +45,14 @@ The **controls** object contains the following parameters:
 ~~~js
 controls: {
     apply: true,
-	reset: true,
-	export: true,
-	import: true,
-	autoLayout: true,
-	historyManager: true,
-	editManager: true,
-	scale: true,
-	gridStep: true
+    reset: true,
+    export: true,
+    import: true,
+    autoLayout: true,
+    historyManager: true,
+    editManager: true,
+    scale: true,
+    gridStep: true
 };
 ~~~
 

@@ -34,7 +34,7 @@ diagram.data.parse(data);
 
 // attaching a handler to the event
 diagram.events.on("emptyAreaDblClick", (e) => {
-	console.log("emptyAreaDblClick");
+    console.log("emptyAreaDblClick");
 });
 ~~~
 

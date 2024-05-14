@@ -34,7 +34,7 @@ diagram.data.parse(data);
 
 // attaching a handler to the event
 diagram.events.on("afterAdd", function(newItem){
-	console.log("A new item is added");
+    console.log("A new item is added");
 });
 ~~~
 

@@ -54,7 +54,7 @@ description: You can explore the Input control of Editbar in the documentation o
 - `type` - (required) the type of a control. Set it to *"input"*
 - `key` - (optional) the name of the specified/modified property or the path to it in the object of a Diagram item 
 - `wrap` - (optional) allows displaying the external wrapping. *false* by default
-- `css`	- (optional) adds style classes to a control
+- `css` - (optional) adds style classes to a control
 - `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*). *false* by default
 - `hidden` - (optional) defines whether a control is hidden. *false* by default
 - `height` - (optional) the height of a control. *"content"* by default

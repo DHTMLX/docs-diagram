@@ -28,6 +28,6 @@ diagram.data.parse(data);
 
 // attaching a handler to the event
 diagram.events.on("load", function(){
-	// some logic here
+    // some logic here
 });
 ~~~

@@ -14,7 +14,7 @@ Refer to the [Editbar configuration](guides/diagram_editor/editbar/configuration
 
 ## Overview of Editbar basic controls
 
-| Name                                 							  | Description                                 					  |
+| Name                                                               | Description                                                       |
 | :-------------------------------------------------------------- | :---------------------------------------------------------------- |
 | [](guides/diagram_editor/editbar/basic_controls/avatar.md)      | @getshort(guides/diagram_editor/editbar/basic_controls/avatar.md) |
 | [](guides/diagram_editor/editbar/basic_controls/button.md)      | @getshort(guides/diagram_editor/editbar/basic_controls/button.md) |

@@ -23,9 +23,9 @@ autoPlace(config?: object): void;
 ### Parameters
 
 - `config` - (optional) an object with configuration settings of the autoplacement. If not specified, the default settings will be applied. Here you can specify the following parameters:
-	- `mode` - (optional) the mode of connecting shapes, "direct" (by default) or "edges"
-	- `graphPadding` - (optional) sets the distance between unconnected diagrams, 200 by default
-	- `placeMode` - (optional) sets the mode of placement of shapes, "orthogonal" (by default) or "radial"
+    - `mode` - (optional) the mode of connecting shapes, "direct" (by default) or "edges"
+    - `graphPadding` - (optional) sets the distance between unconnected diagrams, 200 by default
+    - `placeMode` - (optional) sets the mode of placement of shapes, "orthogonal" (by default) or "radial"
 
 ### Example
 
@@ -34,8 +34,8 @@ const diagram = new dhx.Diagram("diagram_container");
 diagram.data.parse(data);
 
 diagram.autoPlace({
-	mode: "edges",
-	placeMode: "radial"
+    mode: "edges",
+    placeMode: "radial"
 });
 ~~~
 

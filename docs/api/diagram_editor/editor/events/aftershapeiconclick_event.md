@@ -41,7 +41,7 @@ editor.parse(data);
 // attaching a handler to the event
 editor.events.on("afterShapeIconClick", function(iconId, shape) {
     console.log(`
-	    You've clicked the ${iconId} toolbar control of the shape ${shape.id}
+        You've clicked the ${iconId} toolbar control of the shape ${shape.id}
     `);
 });
 ~~~

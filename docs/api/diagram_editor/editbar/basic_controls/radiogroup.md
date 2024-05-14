@@ -34,7 +34,7 @@ description: You can explore the RadioGroup control of Editbar in the documentat
     width?: string | number | "content", // "content" by default
     padding?: string | number,
 
-   	// for `wrap:true` check the label properties for the Fieldset
+    // for `wrap:true` check the label properties for the Fieldset
     label?: string,
     labelWidth?: string | number,
     labelPosition?: "left" | "top", // "top" by default
@@ -73,12 +73,12 @@ Radio button configuration object inside RadioGroup:
 - `key` - (optional) the name of the specified/modified property or the path to it in the object of a Diagram item 
 - `wrap` - (optional) allows displaying the external wrapping. *false* by default
 - `options` - (required) an object with options of a RadioGroup. The object can contain the following attributes:
-	- `rows` - (optional) arranges [radio buttons](#radio-button-properties) inside the RadioGroup control vertically
-	- `cols` - (optional) arranges [radio buttons](#radio-button-properties) inside the RadioGroup control horizontally
-	- `css` - (optional) adds style classes to a RadioGroup
-	- `height` - (optional) the height of a RadioGroup
-	- `padding` - (optional) sets padding between a cell and a border of a RadioGroup
-	- `width` - (optional) the width of a RadioGroup
+    - `rows` - (optional) arranges [radio buttons](#radio-button-properties) inside the RadioGroup control vertically
+    - `cols` - (optional) arranges [radio buttons](#radio-button-properties) inside the RadioGroup control horizontally
+    - `css` - (optional) adds style classes to a RadioGroup
+    - `height` - (optional) the height of a RadioGroup
+    - `padding` - (optional) sets padding between a cell and a border of a RadioGroup
+    - `width` - (optional) the width of a RadioGroup
 - `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*). *false* by default
 - `hidden` - (boolean) defines whether a RadioGroup is hidden. *false* by default
 - `css` - (optional) adds style classes to a control

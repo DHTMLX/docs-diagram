@@ -14,8 +14,8 @@ description: You can learn about the load method of data collection in the docum
 
 ~~~js
 load(
-	url: string | object, 
-	driver?: object | string
+    url: string | object, 
+    driver?: object | string
 ): promise;
 ~~~
 
@@ -47,7 +47,7 @@ Data loading is asynchronous, so you need to wrap any after-loading code into a 
 
 ~~~js
 diagram.data.load("../some/data").then(function(){
-	diagram.selection.add(123);
+    diagram.selection.add(123);
 });
 ~~~
 

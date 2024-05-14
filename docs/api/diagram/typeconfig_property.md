@@ -26,10 +26,10 @@ typeConfig?: {
 //or
 typeConfig?: {
     side?: {
-		left?: string[],
-		right?: string[],
-	}
-}	
+        left?: string[],
+        right?: string[],
+    }
+}    
 ~~~
 
 ### Parameters

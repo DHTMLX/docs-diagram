@@ -28,7 +28,7 @@ png(config?: object): void;
 
 ~~~jsx {7,10-13}
 const diagram = new dhx.Diagram("diagram_container", {
-	// config options
+    // config options
 });
 diagram.data.parse(data);
 

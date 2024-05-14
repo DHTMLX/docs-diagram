@@ -18,7 +18,7 @@ editor.history.redo(); // restores an action that has been reverted by the Undo 
 
 ## History manager methods overview
 
-| Name                                 						  | Description                                 					   |
+| Name                                                           | Description                                                        |
 | :---------------------------------------------------------- | :----------------------------------------------------------------- |
 | [](api/diagram_editor/historymanager/methods/add_method.md) | @getshort(api/diagram_editor/historymanager/methods/add_method.md) |
 | [](api/diagram_editor/historymanager/methods/disable_method.md) | @getshort(api/diagram_editor/historymanager/methods/disable_method.md) |
@@ -31,6 +31,6 @@ editor.history.redo(); // restores an action that has been reverted by the Undo 
 
 ## History manager properties overview
 
-| Name                                 						  | Description                                 					   |
+| Name                                                           | Description                                                        |
 | :---------------------------------------------------------- | :----------------------------------------------------------------- |
 | [](api/diagram_editor/historymanager/config/savedelay_property.md) | @getshort(api/diagram_editor/historymanager/config/savedelay_property.md) |

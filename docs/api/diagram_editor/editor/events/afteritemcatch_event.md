@@ -45,12 +45,11 @@ editor.parse(data);
 // attaching a handler to the event
 editor.events.on("afterItemCatch", ({ id, targetId }) => {
     console.log(`
-		  Item ${id} is caught by the item ${targetId}
-	  `);
+        item ${id} is caught by the item ${targetId}
+    `);
 });
 ~~~
 
-**Change log**: 
+**Change log**:
 - The `batch` property is added in the v6.0
 - The callback function takes an object as a parameter since v6.0
-

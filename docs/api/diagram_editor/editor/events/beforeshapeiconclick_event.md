@@ -45,7 +45,7 @@ editor.parse(data);
 // attaching a handler to the event
 editor.events.on("beforeShapeIconClick", function(iconId, shape) {
     console.log(`
-	    You will click the ${iconId} toolbar control of the shape ${shape.id}
+        You will click the ${iconId} toolbar control of the shape ${shape.id}
     `);
     return true;
 });

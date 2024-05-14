@@ -25,7 +25,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {
-    	// configuring Editbar via an object
+        // configuring Editbar via an object
         editbar: {
             css: "custom_css",
             show: true,

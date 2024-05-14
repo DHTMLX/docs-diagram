@@ -14,9 +14,9 @@ description: You can learn about the lineTitleMouseDown event in the documentati
 
 ~~~js
 lineTitleMouseDown: ( 
-	lineId: string | number, 
-	titleId: string | number, 
-	event: MouseEvent
+    lineId: string | number, 
+    titleId: string | number, 
+    event: MouseEvent
 ) => void;
 ~~~
 
@@ -40,7 +40,7 @@ diagram.data.parse(data);
 
 // attaching a handler to the event
 diagram.events.on("lineTitleMouseDown", (lineId, titleId, event) => {
-	console.log("lineTitleMouseDown");
+    console.log("lineTitleMouseDown");
 });
 ~~~
 

@@ -47,7 +47,7 @@ The control can be used both with the *boolean* value and the *string* one, if t
 - `type` - (required) the type of a control. Set it to *"checkbox"*
 - `key` - (optional) the name of the specified/modified property or the path to it in the object of a Diagram item 
 - `text` - (optional) the text value of a control. It's placed to the right of the control
-- `value` -	(optional) the value of a checkbox
+- `value` -    (optional) the value of a checkbox
 - `css` - (optional) adds style classes to a control
 - `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*). *false* by default
 - `hidden` - (optional) defines whether a checkbox is hidden. *false* by default

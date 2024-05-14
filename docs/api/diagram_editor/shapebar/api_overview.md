@@ -25,7 +25,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {
-    	// configuring Shapebar via an object
+        // configuring Shapebar via an object
         shapebar: {
             css: "custom_css",
             show: true,
