@@ -6,8 +6,7 @@ description: You can learn about the Migration to Newer Versions in the document
 
 # Migration to newer versions
 
-4.2 -> 5.0
---------------
+## 4.2 -> 5.0
 
 ### Diagram API
 
@@ -51,8 +50,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 ~~~
 
-4.1 -> 4.2
---------------
+## 4.1 -> 4.2
 
 ### Diagram API
 
@@ -105,8 +103,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 
 Besides, it became possible to specify other basic sets of items via the related *key:value* pairs. For more details, check the [shapeSections](../api/editor/shapesections_property/) article.
 
-3.1 -> 4.0
-------------
+## 3.1 -> 4.0
 
 ### API
 
@@ -128,8 +125,7 @@ editor.diagram.events.on("itemMouseOver", (id, event) => {
 });
 ~~~
 
-3.0 -> 3.1
-------------
+## 3.0 -> 3.1
 
 ### Editor API
 
@@ -210,4 +206,4 @@ See the full list of the available controls in the [Toolbar](../guides/diagram_e
 - diagram.selectItem -> [diagram.selection.add](../api/selection/add_method/)
 - diagram.serialize -> [diagram.data.serialize](../api/data_collection/serialize_method/)
 - diagram.unselectItem -> [diagram.selection.remove](../api/selection/remove_method/)
-- diagram.updateItem -> [diagram.data.update](../api/data_collection/update_method/)
+- diagram.updateItem -> [diagram.data.update](../api/data_collection/update_method/) 
