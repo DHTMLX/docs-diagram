@@ -127,8 +127,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 
 Check [the full list of configuration properties of Editor](/api/diagram_editor/editor/config/overview/).
 
-Loading data into Editor
-----------------------------
+## Loading data into Editor
 
 It is possible to load an [appropriate data set](../../../guides/loading_data/#preparing-data-to-load) into the editor via the [parse()](../../../api/diagram_editor/editor/methods/parse_method/) method of the editor.
 

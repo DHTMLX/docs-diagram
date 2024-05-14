@@ -8,17 +8,15 @@ description: You can learn a new information about DHTMLX JavaScript Diagram lib
 
 If you are updating Diagram from an older version, check [Migration to Newer Version](migration.md) for details.
 
-Version 5.0.3
--------------
+## Version 5.0.3
 
 Released on July 12, 2023
 
 ### Fixes
 
-- Fix the issue when calling of the [autoPlace()](/diagram/api/diagram/autoplace_method/) method after data parsing caused an error 
+- Fix the issue when calling of the [autoPlace()](/diagram/api/diagram/autoplace_method/) method after data parsing caused an error
 
-Version 5.0.2 
---------------
+## Version 5.0.2
 
 Released on May 30, 2023
 
@@ -31,22 +29,20 @@ Released on May 30, 2023
 - Fix path formation of the URL in the Export object 
 - Types for export are added
 
-Version 5.0.1
---------------
+## Version 5.0.1
 
 Released on January 19, 2023
 
 ### Fixes
   
 - Diagram Editor. Fix the issue which caused lines not always being drawn in their places if data was exported and then loaded again
-    - Now it is possible to define the coordinates for lines in the default mode (new [`points`](diagram/lines/configuration_properties.md#properties-specific-for-the-default-mode) property of the line object) 
+    - Now it is possible to define the coordinates for lines in the default mode (new [`points`](diagram/lines/configuration_properties.md#properties-specific-for-the-default-mode) property of the line object)
 - Diagram Editor. Fix the issue with dragging of shapes in the grid after changing the zoom level
 - Fix the error thrown after clicking on the "Auto layout" button in the absence of shapes
 - Fix the issue with display of [default settings](diagram/api/diagram/defaults_property.md) after creation of lines via the editor
-- Fix the issue with scale of Diagram/Diagram Editor appeared when auto-placing shapes in the "radial" mode 
+- Fix the issue with scale of Diagram/Diagram Editor appeared when auto-placing shapes in the "radial" mode
 
-Version 5.0
---------------
+## Version 5.0
 
 Released on September 7, 2022
 
@@ -85,8 +81,8 @@ The new release introduces some changes to the `lineGap` property. Check the [Mi
 
 - Fix the issue which caused a loading icon not to disappear from the right panel of Editor after loading a file
 
-Version 4.2
------------------
+## Version 4.2
+
 Released on March 3, 2022
 
 <a href="https://dhtmlx.com/blog/dhtmlx-diagram-4-2-touch-support-default-settings-connector-lines-default-section-sets-editors-left-panel/" target="_blank">Review of release on the blog</a>
@@ -107,8 +103,8 @@ Released on March 3, 2022
     - the [`defaults`](/api/editor/defaults_property/) property of Diagram Editor is updated
 - The documentation for [Modes of connecting shapes](/api/diagram/autoplace_method/#modes-of-connecting-shapes) has been updated
 
-Version 4.1
-------------------
+## Version 4.1
+
 Released on December 7, 2021
 
 <a href="https://dhtmlx.com/blog/dhtmlx-diagram-4-1-partners-assistants-org-charts-moving-shapes-children-connector-titles-much/" target="_blank">Review of release on the blog</a>
@@ -145,8 +141,8 @@ Released on December 7, 2021
 - The performance has been improved for all types of diagrams
 - Fix of the incorrect work of *undo/redo* buttons in Toolbar of Editor
 
-Version 4.0.1
--------------------
+## Version 4.0.1
+
 Released on September 16, 2021
 
 ### Fixes
@@ -156,8 +152,8 @@ Released on September 16, 2021
 - Fix the work of the algorithm when adding new items into the diagram editor in the org chart/mindmap modes
 - Fix the work of the right panel of the editor when working with styles of the text
 
-Version 4.0
-------------------
+## Version 4.0
+
 Released on September 7, 2021
 
 <a href="https://dhtmlx.com/blog/dhtmlx-diagram-4-0-groups-swimlanes-angular-react-vue-demos/" target="_blank">Review of release on the blog</a>
@@ -200,8 +196,7 @@ Released on September 7, 2021
 - Now it is possible to resize an element only when the angle of its rotation is equal either to 0 or 360 degrees.
 - Significant optimization of Diagram styles
 
-Version 3.1
-------------------
+## Version 3.1
 
 Released on April 15, 2021
 

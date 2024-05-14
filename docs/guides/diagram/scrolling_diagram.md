@@ -18,8 +18,7 @@ As an alternative way, you can scroll to the necessary position on the diagram b
 
 <iframe src="https://snippet.dhtmlx.com/f970hbym?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
 
-Getting scroll state 
-------------------
+## Getting scroll state 
 
 The Diagram API allows you to get the current position of the scroll via the related [](../../api/diagram/getscrollstate_method.md) method:
 

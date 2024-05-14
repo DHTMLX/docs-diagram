@@ -157,8 +157,7 @@ const data = [
 
 Check the full list of the available configuration properties of the objects of a swimlane and its cells in the [API reference](swimlanes/configuration_properties.md).
 
-External data loading
--------------------
+## External data loading
 
 To load data from an external file, make use of the [](../api/data_collection/load_method.md) method. It takes the URL of the file with data as a parameter:
 
@@ -178,8 +177,7 @@ diagram.data.load("/some/data").then(function(){
 
 **Related sample:** [Diagram. Data. Data loading](https://snippet.dhtmlx.com/09isp2d8)
 
-Loading from a local source
---------------------
+## Loading from a local source
 
 To load data from a local data source, use the [](../api/data_collection/parse_method.md) method. As a parameter you need to pass an array of [predefined data objects](#preparing-data-to-load):
 

@@ -65,8 +65,7 @@ There is also the ability to configure settings for the auto-placement by using 
 The **autoPlace()** method works only in the default mode of the diagram and only for shapes.
 :::
 
-Adding an item
--------------
+## Adding an item
 
 To add a new item into a diagram, apply the [](../api/data_collection/add_method.md) method of the **data** object.
 
