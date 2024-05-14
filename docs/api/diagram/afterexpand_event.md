@@ -42,6 +42,6 @@ diagram.events.on("afterExpand", function(id, dir) {
 });
 ~~~
 
-**Change log**: The **dir** parameter has been added in v3.1
+**Change log**: The **dir** parameter was added in v3.1
 
 **Related sample**: [Diagram. Org chart mode. Events](https://snippet.dhtmlx.com/l38pct7c)

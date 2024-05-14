@@ -63,9 +63,7 @@ diagram.selection.remove();
 console.log(diagram.selection.getIds()); // -> []
 ~~~
 
-**Change log**:
-
-The method was updated in v6.0
+**Change log**: Updated in v6.0
 
 **Related articles**:
 

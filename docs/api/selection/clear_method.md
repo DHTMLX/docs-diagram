@@ -30,9 +30,7 @@ diagram.selection.clear();
 // the Selection events are not fired
 ~~~
 
-**Change log**:
-
-The method was added in v6.0
+**Change log**: Added in v6.0
 
 **Related articles**:  
 

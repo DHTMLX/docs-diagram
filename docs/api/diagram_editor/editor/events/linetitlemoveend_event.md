@@ -54,6 +54,4 @@ editor.events.on("lineTitleMoveEnd", ({ titleId, coords }) => {
 });
 ~~~
 
-**Change log**:
-
-- The callback function takes an object as a parameter since v6.0
+**Change log**: The callback function takes an object as a parameter since v6.0

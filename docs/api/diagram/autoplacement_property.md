@@ -109,9 +109,7 @@ Shapes are arranged on imaginary circles relative to the central shape, i.e. the
 
 ![](../../assets/edges_radial.png)
 
-**Change log**:
-
-- The `placeMode` parameter is added in v5.0
+**Change log**: The `placeMode` parameter is added in v5.0
 
 **Related articles**:
 

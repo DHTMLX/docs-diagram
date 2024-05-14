@@ -61,9 +61,7 @@ const diagram = new dhx.Diagram("diagram_container", {
 After defining the default settings for the shapes/lines of separate types, you can either omit these properties or redefine their values while [preparing a data set](../../../guides/loading_data/#preparing-data-to-load) for the shapes/lines of these types.
 :::
 
-**Change log**:
-
-- The ability to set the default configuration for lines is added in v4.2
+**Change log**: The ability to set the default configuration for lines is added in v4.2
 
 **Related articles**:
 

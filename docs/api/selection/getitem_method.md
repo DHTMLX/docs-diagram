@@ -56,9 +56,7 @@ const item = diagram.selection.getItem({ id: "4" });
 // -> returns undefined, since there is no item with the specified id in the selection list
 ~~~
 
-**Change log**:
-
-The method was updated in v6.0
+**Change log**: Updated in v6.0
 
 **Related articles**:  
 

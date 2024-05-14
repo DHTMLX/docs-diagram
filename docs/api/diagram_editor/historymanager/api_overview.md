@@ -10,7 +10,7 @@ A set of APIs that you can use for managing the history of actions in the Diagra
 
 ~~~jsx {5}
 const editor = new dhx.DiagramEditor("editor_container", { 
-    type: "default", // only default
+    type: "default" // only default
 });
 // ...
 editor.history.redo(); // restores an action that has been reverted by the Undo action

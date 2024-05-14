@@ -111,4 +111,4 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 ~~~
 
-**Change log**: The property was added in v6.0
+**Change log**: Added in v6.0

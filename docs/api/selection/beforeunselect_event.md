@@ -65,9 +65,7 @@ editor.diagram.events.on("beforeUnSelect", function({ id }) {
 });
 ~~~
 
-**Change log**:
-
-The event was updated in v6.0
+**Change log**: Updated in v6.0
 
 **Related articles**:  
 

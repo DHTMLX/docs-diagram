@@ -57,9 +57,7 @@ diagram.selection.add({ id: "3" });
 console.log(diagram.selection.getIds()); // -> ["3"]
 ~~~
 
-**Change log**:
-
-The method was updated in v6.0
+**Change log**: Updated in v6.0
 
 **Related articles**:  
 

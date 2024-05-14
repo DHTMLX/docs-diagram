@@ -177,4 +177,4 @@ TODO (check the links to the snippets)
 - [Diagram editor. Default mode. Setting the section order in the left panel](https://snippet.dhtmlx.com/7747cx7b)
 - [Diagram editor. Default mode. Left panel customization](https://snippet.dhtmlx.com/2z0a18oz)
 
-**Change log**: The property was added in v6.0
+**Change log**: Added in v6.0

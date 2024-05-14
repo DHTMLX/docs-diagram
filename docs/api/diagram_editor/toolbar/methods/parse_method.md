@@ -33,4 +33,4 @@ const editor = new dhx.DiagramEditor("editor_container", {
 editor.toolbar.parse([{ type: "file", disabled: false }, "spacer", "scale"]);
 ~~~
 
-**Change log**: The method was added in v6.0
+**Change log**: Added in v6.0

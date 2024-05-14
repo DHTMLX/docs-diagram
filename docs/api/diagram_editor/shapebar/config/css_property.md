@@ -45,4 +45,4 @@ css?: string;
 - [Shapebar and shapes appearance](guides/diagram_editor/shapebar.md/#shapebar-and-shapes-appearance)
 - [Configuring the look of shapes in Shapebar](guides/themes/base_themes_configuration.md/#configuring-the-look-of-shapes-in-shapebar)
 
-**Change log**: The property was added in v6.0
+**Change log**: Added in v6.0

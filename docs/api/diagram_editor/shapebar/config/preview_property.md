@@ -82,4 +82,4 @@ const editor = new dhx.DiagramEditor("editor_container", {
 
 **Related article:** [Shapebar](guides/diagram_editor/shapebar.md/#setting-the-preview-of-shapes)
 
-**Change log**: The property was added in v6.0
+**Change log**: Added in v6.0

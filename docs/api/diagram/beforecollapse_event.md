@@ -47,7 +47,7 @@ diagram.events.on("beforeCollapse", function(id, dir) {
 });
 ~~~
 
-**Change log**: The **dir** parameter has been added in v3.1
+**Change log**: The **dir** parameter was added in v3.1
 
 **Related article**: [Event handling](../../../guides/event_handling/)
 
