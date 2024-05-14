@@ -46,7 +46,7 @@ const shapes = diagram.data.findAll({ by: "text", match: "Manager" });
 //searching for shapes by the function
 const shapes = diagram.data.findAll(function (shapes) {
     if( shapes.text === "Manager" || shapes.text === "Marketer" ){
-        return true
+        return true;
     }
 });
 ~~~

@@ -11,7 +11,6 @@ description: You can learn about the defaultShapeType property in the documentat
 @short: Optional. The default type of a shape
 
 The value is applied, if the shape object doesn't contain the "type" property
-
 ### Usage
 
 ~~~jsx
@@ -22,7 +21,7 @@ defaultShapeType?: string;
 
 - In the **default** mode of Diagram (type: "default")
 
-~~~jsx 
+~~~jsx
 defaultShapeType: "rectangle"
 ~~~
 

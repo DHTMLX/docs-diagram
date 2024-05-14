@@ -49,4 +49,3 @@ diagram.events.on("groupMouseDown", (id, event) => {
 **Related article**: [Event handling](../../../guides/event_handling/)
 
 **Related samples**: [Diagram. Default mode. Events](https://snippet.dhtmlx.com/7h2hgb3g)
-

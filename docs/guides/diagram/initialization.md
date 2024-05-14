@@ -116,7 +116,7 @@ const layout = new dhx.Layout("layout", {
     cols: [
         {
             id: "diagram"
-        },
+        }
     ]
 });
 

@@ -35,8 +35,8 @@ const editor = new dhx.DiagramEditor("editor_container", {
                     { type: "spacer" },
                     { type: "button", text: "Send", full: true },
                     { type: "spacer" }
-                ],
-            },
+                ]
+            }
         }
     }
 });

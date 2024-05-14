@@ -14,7 +14,7 @@ The look and the way of lines which connect shapes is defined by the mode you in
 
 In the default mode of Diagram, various shapes can be connected by ["straight" (by default) or "elbow"](/lines/configuration_properties/) lines in the necessary sequence to make up a scheme of a particular process.
 
-To add a text for a line in the default mode of Diagram/Diagram Editor, use the `text` property of the [lineTitle](../line_titles) object. 
+To add a text for a line in the default mode of Diagram/Diagram Editor, use the `text` property of the [lineTitle](../line_titles) object.
 
 <iframe src="https://snippet.dhtmlx.com/e6zm6wh1?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="650"></iframe>
 
@@ -32,9 +32,9 @@ The mindmap mode of Diagram is used to render one more kind of a hierarchical di
 
 <iframe src="https://snippet.dhtmlx.com/lo1vm0e8?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="650"></iframe>
 
-The mode is useful when you need to represent a core topic or idea surrounded by the branches of the subtopics. 
+The mode is useful when you need to represent a core topic or idea surrounded by the branches of the subtopics.
 
-The arrangement of child shapes relative to the root shape is defined automatically by the main algorithm. 
+The arrangement of child shapes relative to the root shape is defined automatically by the main algorithm.
 To change the default direction of the child shapes, use the [](../api/diagram/typeconfig_property.md) configuration property on initialization of the diagram.
 
 ## Setting connections between shapes
@@ -43,7 +43,7 @@ To connect shapes in Diagram, you can apply one of the following two ways:
 
 - **using line objects**
 
-You need to specify separate objects that will describe the logic of connecting shapes. For example: 
+You need to specify separate objects that will describe the logic of connecting shapes. For example:
 
 ~~~jsx
 const data = [
@@ -57,18 +57,21 @@ const data = [
     { "id": "1-2", "from": "1", "to": "2", "type": "dash" },
     { "id": "1-3", "from": "1", "to": "3", "type": "dash" },
     { "id": "1-4", "from": "1", "to": "4", "type": "line" },
-    { "id": "1-5", "from": "1", "to": "5", "type": "line" },
+    { "id": "1-5", "from": "1", "to": "5", "type": "line" }
 ];
 ~~~
 
 The **type** property specified in the line object allows you to specify individual type for a separate line.
 
-{{note See [the full list of configuration properties of a line object](/lines/configuration_properties/).
-}}
+:::note
+See [the full list of configuration properties of a line object](/lines/configuration_properties/).
+:::
 
 - **using the "parent attribute"**
 
-{{note This way does not work in the default mode of Diagram/Diagram Editor.}}
+:::note
+This way does not work in the default mode of Diagram/Diagram Editor.
+:::
 
 You can specify the **parent** property in the configuration object of the shape and set the id of its parent shape as the value:
 
@@ -83,7 +86,7 @@ const data = [
 ];
 ~~~
 
-In this case, all the connectors will have the same type. 
+In this case, all the connectors will have the same type.
 
 ### Setting the default line type
 
@@ -93,8 +96,8 @@ You can set a common type for all the connector lines of the diagram via the **l
 const diagram = new dhx.Diagram("diagram_container", {
     type: "default",
     lineConfig: {
-        lineType: "dash", // "dash" | "line"
-    }, 
+        lineType: "dash" // "dash" | "line"
+    }
 });
 diagram.data.parse(data);
 ~~~

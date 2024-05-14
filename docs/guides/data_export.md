@@ -14,8 +14,8 @@ To adjust the export settings, pass an object with configuration options to the 
 
 Check the list of available settings:
 
-- for the [pdf()](../../api/export/pdf_method/) method;
-- for the [png()](../../api/export/png_method/) method.
+- for the [pdf()](../../api/export/pdf_method/) method
+- for the [png()](../../api/export/png_method/) method
 
 ## Exporting styles
 
@@ -28,7 +28,7 @@ the [](../api/diagram/exportstyles_property.md) configuration property of the Di
 
 ~~~jsx
 const diagram = new dhx.Diagram("diagram_container", { 
-  	exportStyles: false
+    exportStyles: false
 });
 ~~~
 

@@ -131,18 +131,18 @@ const editor = new dhx.DiagramEditor("editor_container", {
                         options: [
                             {
                                 icon: "dxi dxi-format-align-left",
-                                value: "left",
+                                value: "left"
                             },
                             {
                                 icon: "dxi dxi-format-align-center",
-                                value: "center",
+                                value: "center"
                             },
                             {
                                 icon: "dxi dxi-format-align-right",
-                                value: "right",
-                            },
-                        ],
-                    },
+                                value: "right"
+                            }
+                        ]
+                    }
                 ]
             }
         }

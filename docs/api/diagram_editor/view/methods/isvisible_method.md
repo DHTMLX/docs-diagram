@@ -25,12 +25,12 @@ isVisible(view: "toolbar" | "shapebar" | "editbar"): boolean;
 ### Example
 
 ~~~jsx {9-11}
-const editor = new dhx.DiagramEditor("editor", {
+const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {
         shapebar: false,
-        toolbar: true,
-    },
+        toolbar: true
+    }
 });
 
 // checks the Toolbar and Shapebar visibility

@@ -61,7 +61,7 @@ editor.diagram.events.on("afterSelect", function({ id }) {
 });
 ~~~
 
-**Change log**: 
+**Change log**:
 
 The event was updated in v6.0
 

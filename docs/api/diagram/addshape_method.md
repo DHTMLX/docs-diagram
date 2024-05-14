@@ -92,22 +92,22 @@ const editor = new dhx.DiagramEditor("editor_container", {
             sections: {
                 "Network shapes": [
                     { type: "network", text: "Core", img: src + "core.svg" },
-                    { type: "network", text: "Server", img: src + "server.svg" },
+                    { type: "network", text: "Server", img: src + "server.svg" }
                 ],
-                "Flow shapes": [{ flowShapes: true }],
+                "Flow shapes": [{ flowShapes: true }]
             }
         },
         editbar: {
             properties: {
                 network: [
-                { type: "arrange" },
+                    { type: "arrange" },
                     {
                         type: "fieldset",
                         label: "Network information",
                         rows: [
                             { type: "avatar", key: "img", circle: true, readOnly: true },
                             { type: "textarea", key: "text", label: "Description" },
-                            { type: "input", key: "ip", label: "IP" },
+                            { type: "input", key: "ip", label: "IP" }
                         ]
                     }
                 ]
@@ -131,7 +131,7 @@ editor.diagram.addShape("network", {
     defaults: {
         width: 160, height: 160,
         preview: { scale: 0.7 },
-        ip: "127.0.0.1",
+        ip: "127.0.0.1"
     }
 });
 ~~~
@@ -164,5 +164,5 @@ For example, an `<img src="" alt="">` tag should look like `<img src="" alt=""><
 
 **Related articles**: [Custom Shape](../../../shapes/custom_shape/)
 
-**Related samples**: 
+**Related samples**:
 - [Diagram Editor. Mindmap mode. Site map and user flow](https://snippet.dhtmlx.com/do1jwmw1)

@@ -52,7 +52,7 @@ const data = [
             position?: "top" | "bottom" | "left" | "right", // "top" by default
             editable?: boolean, // true by default
             closable?: boolean, // false by default
-            enable?: boolean, // true by default
+            enable?: boolean // true by default
         },
         [key: string]?: any
     },
@@ -129,11 +129,11 @@ const data = [
         },
       	// the child items of the group
         groupChildren: [1.1, 1.2],
-        open: false,
+        open: false
     },
   	// configuring shapes to put into the group
     { type: "rectangle", id: 1.1, x: 50, y: 75, text: "Shape 1.1" },
-    { type: "rectangle", id: 1.2, x: 200, y: 75, text: "Shape 1.2" },
+    { type: "rectangle", id: 1.2, x: 200, y: 75, text: "Shape 1.2" }
 ];
 ~~~
 

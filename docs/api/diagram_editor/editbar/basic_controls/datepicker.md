@@ -132,8 +132,8 @@ const editor = new dhx.DiagramEditor("editor_container", {
                         wrap: true,
                         valueFormat: "Date",
                         timePicker: true,
-                        weekStart: "monday",
-                    },
+                        weekStart: "monday"
+                    }
                 ]
             }
         }

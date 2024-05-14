@@ -317,7 +317,7 @@ The **"dark"** theme is configured both on the base of the [root CSS variables](
 	--dhx-shapebar-item-border-color: #6c6e74;
 	/* end DHTMLX Diagram variables*/
 }
-~~~ 
+~~~
 
 ## Dark high contrast theme
 
@@ -393,7 +393,7 @@ The **"contrast-dark"** theme is configured both on the base of the [root CSS va
 
 To set the necessary theme, be it a [built-in Diagram theme](diagram/guides/themes.md) or a [custom one](diagram/guides/themes/custom_theme.md), use one of the ways described below:
 
-### Using the ***data-dhx-theme*** attribute 
+### Using the ***data-dhx-theme*** attribute
 
 You can choose from the following variants:
 
@@ -433,7 +433,7 @@ Below you'll find the examples of the ***dhx.setTheme()*** method usage:
 
 <script>
     const editor = new dhx.DiagramEditor("editor_container", {
-        type: "default",
+        type: "default"
     });
     dhx.setTheme("dark"); //applies the "dark" theme to the body 
     //or
@@ -449,8 +449,8 @@ const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {
         toolbar: {
-            css: "toolbar",
-        },
+            css: "toolbar"
+        }
     }
 });
 
@@ -458,6 +458,6 @@ const toolbarEl = document.querySelector(".toolbar");
 dhx.setTheme("dark", toolbarEl);
 ~~~
 
-**Related samples:** 
+**Related samples:**
 
 TODO

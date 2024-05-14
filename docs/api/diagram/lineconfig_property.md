@@ -58,7 +58,7 @@ The result of applying the **lineGap** property is shown in the image below:
 
 **Related sample**: [Diagram. Default mode. Activity diagram](https://snippet.dhtmlx.com/a9t2z2dt)
 
-**Change log**: 
+**Change log**:
 
 - The **lineGap** parameter is added in v5.0 (check the Migration article)
 - Added in v4.2

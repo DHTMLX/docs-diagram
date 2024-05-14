@@ -97,7 +97,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
                                 cols: [
                                     { type: "datepicker", key: "date_start", label: "Date start", width: "48%" },
                                     { type: "datepicker", key: "date_end", label: "Date end", width: "48%" },
-                                ],
+                                ]
                             },
                             {
                                 type: "combo",
@@ -105,9 +105,9 @@ const editor = new dhx.DiagramEditor("editor_container", {
                                 label: "Responsible",
                                 placeholder: "Select responsible",
                                 options: ["Henry Bennet", "Mike Frebel", "Greg Mash"]
-                            },
-                        ],
-                    },
+                            }
+                        ]
+                    }
                 ]
             }
         }
@@ -122,8 +122,8 @@ const editor = new dhx.DiagramEditor("editor_container", {
         editbar: {
             properties: {
                 $shape: [
-                    { type: "details" },
-                ],
+                    { type: "details" }
+                ]
             },
             controls: {
                 details: {
@@ -136,8 +136,8 @@ const editor = new dhx.DiagramEditor("editor_container", {
                             align: "between",
                             cols: [
                                 { type: "datepicker", key: "date_start", label: "Date start", width: "48%" },
-                                { type: "datepicker", key: "date_end", label: "Date end", width: "48%" },
-                            ],
+                                { type: "datepicker", key: "date_end", label: "Date end", width: "48%" }
+                            ]
                         },
                         {
                             type: "combo",
@@ -145,9 +145,9 @@ const editor = new dhx.DiagramEditor("editor_container", {
                             label: "Responsible",
                             placeholder: "Select responsible",
                             options: ["Henry Bennet", "Mike Frebel", "Greg Mash"]
-                        },
-                    ],
-                },
+                        }
+                    ]
+                }
             }
         }
     }

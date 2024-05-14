@@ -40,12 +40,13 @@ const data = [
     { id: 2, x: 280, y: 120, text: "Read N", type: "output" },
     { id: 3, x: 280, y: 240, text: "M=1\nF=2", type: "process" },
     { id: 4, x: 280, y: 360, text: "F=F*M", type: "process" },
-    { id: 5, x: 280, y: 480, text: "Is M=N?", type: "decision" },
+    { id: 5, x: 280, y: 480, text: "Is M=N?", type: "decision" }
 ];
 ~~~
 
-{{note See [the full list of configuration properties of a shape object](/shapes/configuration_properties/). Do not add custom properties while creating data objects for default shapes.
-}}
+:::note
+See [the full list of configuration properties of a shape object](/shapes/configuration_properties/). Do not add custom properties while creating data objects for default shapes.
+:::
 
 ### Setting the default shape type
 

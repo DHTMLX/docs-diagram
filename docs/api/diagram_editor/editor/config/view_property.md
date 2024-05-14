@@ -16,7 +16,7 @@ description: You can learn about the view property of editor in the documentatio
 view: {
     toolbar?: boolean | object,
     shapebar?: boolean | object,
-    editbar?: boolean | object,
+    editbar?: boolean | object
 };
 ~~~
 
@@ -32,25 +32,25 @@ view: {
 view: {
     toolbar: true,
     shapebar: true,
-    editbar: true,
+    editbar: true
 }
 ~~~
 
 ### Example
 
 ~~~jsx {3-12}
-const editor = new dhx.DiagramEditor("editor", {
+const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {
         toolbar: {
             css: "toolbar_custom",
-            data: ["file", "separator", "scale"],
+            data: ["file", "separator", "scale"]
         },
         shapebar: {
-            width: 400,
+            width: 400
         },
-        editbar: false,
-    },
+        editbar: false
+    }
     // other configurations 
 });
 ~~~

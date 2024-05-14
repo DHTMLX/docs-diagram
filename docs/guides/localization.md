@@ -78,7 +78,7 @@ const en = {
         text: "Text",
         textAlignment: "Text alignment",
         textStyle: "Text style",
-        title: "Title",
+        title: "Title"
     },
     toolbar: {
         align: "Align",
@@ -129,7 +129,7 @@ const en = {
         undo: "Undo",
         view: "View",
         zoomIn: "Zoom in",
-        zoomOut: "Zoom out",
+        zoomOut: "Zoom out"
     },
     hotkey: {
         "Alt+1": "Alt+1",

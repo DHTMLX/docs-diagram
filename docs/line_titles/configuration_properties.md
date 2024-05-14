@@ -72,7 +72,7 @@ const data = [
     { type: "line", id: "line_1", from: "shape_1", to: "shape_2" },
 
     // configuring line titles
-    { type: "lineTitle", id: "title_1", parent: "line_1", text: "Some text" },
+    { type: "lineTitle", id: "title_1", parent: "line_1", text: "Some text" }
 ];
 ~~~
 

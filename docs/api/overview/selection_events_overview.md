@@ -6,8 +6,8 @@ description: You can explore the Selection events in the documentation of the DH
 
 # Selection events overview
 
-| Name                                      | Description                                      |
-| :---------------------------------------- | :----------------------------------------------- |
+| Name                                     | Description                                     |
+| :--------------------------------------- | :---------------------------------------------- |
 | [](../selection/afterselect_event.md)    | @getshort(../selection/afterselect_event.md)    |
 | [](../selection/afterunselect_event.md)  | @getshort(../selection/afterunselect_event.md)  |
 | [](../selection/beforeselect_event.md)   | @getshort(../selection/beforeselect_event.md)   |

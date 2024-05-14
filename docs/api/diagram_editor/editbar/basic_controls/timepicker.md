@@ -108,10 +108,10 @@ const editor = new dhx.DiagramEditor("editor_container", {
                         type: "timepicker",
                         key: "time",
                         label: "Select time",
-                        controls: true,
-                    },
-                ],
-            },
+                        controls: true
+                    }
+                ]
+            }
         }
     }
 });

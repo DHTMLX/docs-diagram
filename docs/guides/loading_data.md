@@ -104,19 +104,19 @@ Check the full list of the available properties of a group object in the [API re
 
 ~~~jsx
 const data = [
-   {
-      "id": "main",
-      "type": "$swimlane",
-      "height": 730,
-      "width": 1195,
-      "header": {
-         "closable": true,
-         "text": "Waterfall diagram template"
-      },
-      "layout": [
-         [1, 2, 3, 4]
-      ],
-      "subHeaderCols": {
+    {
+        "id": "main",
+        "type": "$swimlane",
+        "height": 730,
+        "width": 1195,
+        "header": {
+            "closable": true,
+            "text": "Waterfall diagram template"
+        },
+        "layout": [
+            [1, 2, 3, 4]
+        ],
+        "subHeaderCols": {
             "headers": [
                 {
                     "text": "September",
@@ -136,22 +136,22 @@ const data = [
                 }
             ]
         }
-   },
+    },
    // configuring a cell of the swimlane
-   {
-      "id": 1,
-      "type": "$sgroup",
-      "groupChildren": ["s1"],
-      "style": {
-         "fill": "#D4DAE4"
-      },
-      "x": 0,
-      "y": 80
-   },
+    {
+        "id": 1,
+        "type": "$sgroup",
+        "groupChildren": ["s1"],
+        "style": {
+            "fill": "#D4DAE4"
+        },
+        "x": 0,
+        "y": 80
+    },
    // configuring a shape to put into the cell
-   {
-      "id": "s1", "type": "end", "text": "Step 1", "x": 20, "y": 110
-   }
+    {
+        "id": "s1", "type": "end", "text": "Step 1", "x": 20, "y": 110
+    }
 ];
 ~~~
 
@@ -201,7 +201,7 @@ editor.parse(data);
 
 ## Saving and restoring state
 
-To save the current state of a diagram, use the [](../api/data_collection/serialize_method.md) method. It converts the data of the diagram into an array of JSON objects. 
+To save the current state of a diagram, use the [](../api/data_collection/serialize_method.md) method. It converts the data of the diagram into an array of JSON objects.
 Each JSON object contains the configuration of a separate shape.
 
 ~~~jsx

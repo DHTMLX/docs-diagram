@@ -67,9 +67,9 @@ Connector lines with no arrows are aligned "from center to center". They are str
 
 ### "edges" mode
 
-Connector lines are aligned "from side to side". 
+Connector lines are aligned "from side to side".
 
-:::info 
+:::info
 To add arrows to the lines, specify `forwardArrow: "filled"` or `backArrow: "filled"` in the configuration of a [line object](../../../lines/configuration_properties/).
 :::
 

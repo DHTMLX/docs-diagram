@@ -107,7 +107,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
                         label: "Textarea label",
                         height: 250,
                         wrap: true
-                    },
+                    }
                 ]
             }
         }

@@ -24,7 +24,7 @@ Snap lines appear when central or extreme lateral coordinates of the shape which
 magnetic?: {
     show?: boolean,
     lineWidth?: number,
-    lineColor?: string,
+    lineColor?: string
 } | boolean;
 ~~~
 
@@ -40,7 +40,7 @@ The magnetic mode is enabled with the following configuration:
 magnetic: {
     show: true,
     lineWidth: 2,
-    lineColor: "#000",
+    lineColor: "#000"
 }
 ~~~
 
@@ -60,13 +60,9 @@ const editor = new dhx.DiagramEditor("editor_container", {
     magnetic: {
         show: true,
         lineWidth: 2,
-        lineColor: "#B0B8CD",
+        lineColor: "#B0B8CD"
     }
 });
 ~~~
-
-The result is shown in the GIF image below:
-
-TODO
 
 **Change log**: The ***show*** parameter was added in v6.0

@@ -48,4 +48,3 @@ A set of APIs that allow you to work with data of a diagram. The API can be used
 | [](api/data_collection/change_event.md)       | @getshort(api/data_collection/change_event.md)       |
 | [](api/data_collection/filter_event.md)       | @getshort(api/data_collection/filter_event.md)       |
 | [](api/data_collection/load_event.md)         | @getshort(api/data_collection/load_event.md)         |
-

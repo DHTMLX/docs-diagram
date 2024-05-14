@@ -48,12 +48,10 @@ Each shape object can include the following properties:
 - `fixed` - (optional) enables/disables movement and resizing of a shape, *false* by default
 - `hidden` - (optional) defines, whether a shape will be hidden
 
-:::note 
+:::note
 The values of the **height** and **width** are calculated automatically for a "text"/"topic" shape, depending on the content of the shape.
 :::
-
 ## Custom properties
-
 ### Usage
 
 ~~~jsx
@@ -85,7 +83,7 @@ const data = [
         "phone": "(405) 555-0128",
         "mail": "kmccoy@gmail.com",
         "photo": "../img/avatar-01.jpg"
-    },
+    }
 ]
 ~~~
 
@@ -134,7 +132,7 @@ When preparing a data set for shapes to load into the diagram in the default mod
 
 ~~~jsx
 const data = [
-    { id: 1, x: 280, y: 0, text: "Start", type: "start", angle: 10 },
+    { id: 1, x: 280, y: 0, text: "Start", type: "start", angle: 10 }
 ];
 ~~~
 
@@ -201,11 +199,12 @@ const data = [
         "text": "partner for 1",
         "parent": "1",
         "partner": true
-    },
+    }
 ];
 ~~~
 
-**Related samples**: 
+**Related samples**:
+
 - [Diagram. Org chart mode. Nested vertical lists](https://snippet.dhtmlx.com/98tzmzpg)
 - [Diagram editor. Org chart mode. Image card editor](https://snippet.dhtmlx.com/vghuunmd)
 
@@ -269,19 +268,19 @@ const data = [
         id: "2",
         text: "2",
         parent: "1",
-        giveItem: false,
+        giveItem: false
     },
     {
         id: "3",
         text: "3",
         parent: "1",
-        catchItem: false, 
+        catchItem: false 
     },
     {
         id: "4",
         text: "4",
-        parent: "1",
-    },
+        parent: "1"
+    }
 ];
 ~~~
 
@@ -342,8 +341,8 @@ const data = [
         "height": 16,
         "lineHeight": 14,
         "fontSize": "16",
-        "fontColor": "rgba(0,0,0,0.70)",
-    },
+        "fontColor": "rgba(0,0,0,0.70)"
+    }
 ];
 ~~~
 
@@ -432,7 +431,7 @@ const data = [
         "img": "../img/avatar-02.png",
         "parent": "1",
         "headerColor": "#5874CD" 
-    },
+    }
 ];
 ~~~
 

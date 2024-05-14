@@ -146,19 +146,19 @@ const editor = new dhx.DiagramEditor("editor_container", {
                             rows: [
                                 {
                                     text: "Left",
-                                    value: "left",
+                                    value: "left"
                                 },
                                 {
                                     text: "Center",
-                                    value: "center",
+                                    value: "center"
                                 },
                                 {
                                     text: "Right",
-                                    value: "right",
-                                },
+                                    value: "right"
+                                }
                             ]
-                        },
-                    },
+                        }
+                    }
                 ]
             }
         }

@@ -14,7 +14,7 @@ There are the following Diagram modes you can choose from: **"default"**, **"org
 
 ~~~jsx
 const diagram = new dhx.Diagram("diagram_container", {
-    type: "default", // or `type: "org"`, or `type: "mindmap"` 
+    type: "default" // or `type: "org"`, or `type: "mindmap"` 
 });
 diagram.data.parse(data);
 ~~~
@@ -47,8 +47,8 @@ You can set a common type for all the connector lines of the diagram via the `li
 const diagram = new dhx.Diagram("diagram_container", {
     type: "default",
     lineConfig: {
-        lineType: "dash", // "dash" | "line"
-    }, 
+        lineType: "dash" // "dash" | "line"
+    }
 });
 diagram.data.parse(data);
 ~~~
@@ -65,7 +65,7 @@ For this purpose, use the [](../../api/diagram/defaults_property.md) property of
 
 The `defaults` object contains a number of `key:value` pairs where the *key* is the type of a shape or line and the *value* is the default config of the shape or line correspondingly.
 
-:::note 
+:::note
 The `type` and `id` attributes can not be defined in the default configuration of a shape/line
 :::
 
@@ -73,10 +73,10 @@ Check the full list of configuration properties of a [shape](../../../shapes/con
 
 ## Arranging shapes in the mindmap mode of Diagram
 
-In the mindmap mode of Diagram, the arrangement of child shapes relative to the root shape is defined automatically by the main algorithm. 
+In the mindmap mode of Diagram, the arrangement of child shapes relative to the root shape is defined automatically by the main algorithm.
 To change the default direction of the child shapes, use the [](../../api/diagram/typeconfig_property.md) configuration property on initialization of the diagram.
 
-:::note 
+:::note
 The `typeConfig` configuration property is not available in the Diagram Editor
 :::
 
@@ -126,8 +126,8 @@ The property can contain three options:
 - **graphPadding** - (*number*) optional, sets the distance between unconnected diagrams, "200" by default
 - **placeMode** - (*string*) sets the mode of placement of shapes, "orthogonal" (by default) or "radial"
 
-:::note 
-The autoplacement will be applied only after the [](../../api/diagram/autoplace_method.md) method is applied. The autoplacement does not work if you use groups or swimlanes
+:::note
+The autoplacement will be applied only after the [](../../api/diagram/autoplace_method.md) method is applied. The autoplacement does not work if you use groups or swimlanes.
 :::
 
 ## Adjusting the Diagram scale
@@ -147,10 +147,8 @@ DHTMLX Diagram allows you to specify a toolbar with icons for Diagram shapes to 
 
 It is possible to activate selection of items in a diagram. You need to make use of the [](../../api/diagram/select_property.md) attribute of the diagram configuration object. Once you've enabled selection in a diagram, you can make use of the Selection object API to [work with the items selection](/guides/manipulating_items/#selecting-items).
 
-:::note 
+:::note
 [The predefined set of events](../../../api/selection/#events) of the selection object can help you to define the way of processing the behavior of the diagram during selecting/unselecting items
 :::
 
 <iframe src="https://snippet.dhtmlx.com/jyoxn5h7?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
-
-

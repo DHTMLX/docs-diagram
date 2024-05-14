@@ -65,7 +65,7 @@ editor.events.on("beforeItemMove", ({ id, coords }) => {
 });
 ~~~
 
-**Change log**: 
+**Change log**:
+
 - The `batch` property is added in the v6.0
 - The callback function takes an object as a parameter since v6.0
-

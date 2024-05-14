@@ -52,7 +52,7 @@ description: You can explore the Input control of Editbar in the documentation o
 ### Basic properties
 
 - `type` - (required) the type of a control. Set it to *"input"*
-- `key` - (optional) the name of the specified/modified property or the path to it in the object of a Diagram item 
+- `key` - (optional) the name of the specified/modified property or the path to it in the object of a Diagram item
 - `wrap` - (optional) allows displaying the external wrapping. *false* by default
 - `css` - (optional) adds style classes to a control
 - `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*). *false* by default
@@ -125,7 +125,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
                         placeholder: "Enter a number value",
                         min: 0,
                         max: 100,
-                    },
+                    }
                 ]
             }
         }

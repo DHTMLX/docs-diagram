@@ -149,11 +149,11 @@ const editor = new dhx.DiagramEditor("editor_container", {
                                 { id: "diagram", text: "DHTMLX Diagram", value: "diagram" },
                                 { id: "suite", text: "DHTMLX Suite", value: "suite" },
                                 { id: "gantt", text: "DHTMLX Gantt" },
-                                { id: "spreadsheet", text: "DHTMLX Spreadsheet", disabled: true },
-                            ],
+                                { id: "spreadsheet", text: "DHTMLX Spreadsheet", disabled: true }
+                            ]
                         }
-                    },
-                ],
+                    }
+                ]
             }
         }
     }

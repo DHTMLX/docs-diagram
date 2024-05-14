@@ -40,4 +40,3 @@ editor.import(diagram);
 You can load data in any supported data format. See the details in the [](api/data_collection/parse_method.md) article.
 
 **Related samples**: [Diagram editor. Org chart mode. Live editor](https://snippet.dhtmlx.com/bng7ego7)
-

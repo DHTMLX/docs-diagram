@@ -12,7 +12,7 @@ Line titles set texts for lines that connect shapes. You can add a text for a li
 
 Another way to add a text to a line and manipulate it is to prepare a [data set](guides/loading_data.md/#preparing-data-to-load).
 
-:::note 
+:::note
 LineTitles are available only in the default mode of Diagram/Diagram Editor (type: "default").
 :::
 
@@ -40,21 +40,21 @@ diagram.data.parse(data);
 
 Check [the full list of configuration properties of a line title object](/line_titles/configuration_properties/) to adjust the look and feel as well as configure the positioning of line titles.
 
-## Working with line titles 
+## Working with line titles
 
 You can manipulate line titles via the [DataCollection API](../api/data_collection/).
 
-:::note 
+:::note
 The examples below are suitable both for Diagram and Diagram Editor.
 :::
 
-### Adding a line title 
+### Adding a line title
 
 You can add a line title via the [`add`](../api/data_collection/add_method/) method of DataCollection:
 
 ~~~jsx {5-10}
-const editor= new dhx.DiagramEditor("editor", {
-    type: "default",
+const editor= new dhx.DiagramEditor("editor_container", {
+    type: "default"
 });
 editor.parse(data);
 editor.diagram.data.add({
@@ -67,17 +67,17 @@ editor.diagram.data.add({
 
 Provide an object with the configuration of a new line title as a parameter of the method.
 
-:::note 
+:::note
 See [the full list of configuration properties of a line title object](/line_titles/configuration_properties/).
 :::
 
-### Blocking line titles adding 
+### Blocking line titles adding
 
 If you need to prevent adding of line titles, you can make use of the [`beforeAdd`](../api/data_collection/beforeadd_event/) event of DataCollection:
 
 ~~~jsx {5}
-const editor= new dhx.DiagramEditor("editor", {
-    type: "default",
+const editor= new dhx.DiagramEditor("editor_container", {
+    type: "default"
 });
 editor.parse(data);
 editor.diagram.data.events.on("beforeAdd", (item) => item.type !== "lineTitle");
@@ -88,8 +88,8 @@ editor.diagram.data.events.on("beforeAdd", (item) => item.type !== "lineTitle");
 It is possible to iterate over line titles as child items of lines with the help of the [`eachChild()`](../api/data_collection/eachchild_method/) method of DataCollection:
 
 ~~~jsx {7-9,11-13}
-const editor= new dhx.DiagramEditor("editor", {
-    type: "default",
+const editor= new dhx.DiagramEditor("editor_container", {
+    type: "default"
 });
 editor.parse([
     { type: "rectangle", id: "shape_1" },
@@ -104,5 +104,3 @@ editor.diagram.data.eachChild("line_1", (child) => {
 ~~~
 
 You need to pass the id of the line the titles of which should be iterated over as a first parameter. In the above example the callback function will be applied to each child of the specified line and return their ids.
-
-

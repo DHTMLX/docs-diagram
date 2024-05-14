@@ -8,7 +8,7 @@ description: You can learn about the zoomOut event of editor in the documentatio
 
 ### Description
 
-@short: Fires after the Zoom Out button is clicked or the zoomOut() method is called
+@short: Fires after the Zoom Out button is clicked or the `zoomOut()` method is called
 
 ### Usage
 

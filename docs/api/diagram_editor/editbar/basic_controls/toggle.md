@@ -104,8 +104,8 @@ const editor = new dhx.DiagramEditor("editor_container", {
                         icon: "dxi dxi-eye",
                         offIcon: "dxi dxi-eye-off",
                         text: "Visible",
-                        offText: "Invisible",
-                    },
+                        offText: "Invisible"
+                    }
                 ]
             }
         }
@@ -114,7 +114,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 ~~~
 
 ~~~jsx {7-12} title="Assigning the set value as a value of the applied property"
-const editor= new dhx.DiagramEditor("editor", {
+const editor= new dhx.DiagramEditor("editor_container", {
     type: "default",
      view: {
         editbar: {
@@ -125,7 +125,7 @@ const editor= new dhx.DiagramEditor("editor", {
                         key: "fontStyle",
                         value: "italic",
                         icon: "dxi dxi-format-italic"        
-                    },
+                    }
                 ]
             }
         }

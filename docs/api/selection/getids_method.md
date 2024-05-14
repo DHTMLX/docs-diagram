@@ -33,7 +33,7 @@ diagram.data.parse(data);
 const ids = diagram.selection.getIds(); // -> ["1", "1.1", ...] or []
 ~~~
 
-**Change log**: 
+**Change log**:
 
 The method was added in v6.0
 

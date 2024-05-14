@@ -126,8 +126,8 @@ const editor = new dhx.DiagramEditor("editor_container", {
                             ["#594f4f", "#547980", "#45ada8", "#9de0ad", "#e5fcc2", "#fecea8", "#ff847c"],
                             ["#00a0b0", "#6a4a3c", "#cc333f", "#eb6841", "#edc951", "#80bca3", "#f6f7bd"],
                             ["#e94e77", "#d68189", "#c6a49a", "#c6e5d9", "#f4ead5", "#40c0cb", "#f9f2e7"]
-                        ],
-                    },
+                        ]
+                    }
                 ]
             }
         }

@@ -68,7 +68,7 @@ The result of applying the **lineGap** property is shown in the image below:
 
 IMAGE HERE
 
-**Change log**: 
+**Change log**:
 
 - The **lineGap** parameter is added in v5.0 (check the Migration article)
 - Added in v4.2

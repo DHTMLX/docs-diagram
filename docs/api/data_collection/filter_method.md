@@ -28,7 +28,7 @@ filter(
     rule?:{
         by?: string | number,
         match?: string | number | boolean,
-        compare?: function(value,match,item)
+        compare?: function(value, match, item)
     },
     config?:{
         id?: string,

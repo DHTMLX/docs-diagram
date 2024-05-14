@@ -80,8 +80,8 @@ const editor = new dhx.DiagramEditor("editor_container", {
                                 style='display: block; width: 200px; height: 200px; margin-top: 20px; margin-left: auto; margin-right: auto'
                                 src='https://snippet.dhtmlx.com/codebase/data/common/img/01/developer-01.svg'
                             >
-                        `,
-                    },
+                        `
+                    }
                 ]
             }
         }

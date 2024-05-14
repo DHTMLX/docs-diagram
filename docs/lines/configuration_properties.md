@@ -98,7 +98,7 @@ const data = [
         "fromSide": "bottom",
         "toSide": "top",
         "forwardArrow": "filled"
-    },
+    }
 ];
 ~~~
 

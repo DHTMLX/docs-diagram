@@ -34,8 +34,3 @@ Refer to the [Editbar configuration](guides/diagram_editor/editbar/configuration
 | [](guides/diagram_editor/editbar/basic_controls/timepicker.md)| @getshort(guides/diagram_editor/editbar/basic_controls/timepicker.md)|
 | [](guides/diagram_editor/editbar/basic_controls/toggle.md)| @getshort(guides/diagram_editor/editbar/basic_controls/toggle.md)|
 | [](guides/diagram_editor/editbar/basic_controls/togglegroup.md)| @getshort(guides/diagram_editor/editbar/basic_controls/togglegroup.md)|
-
-
-
-
-

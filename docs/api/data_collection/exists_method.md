@@ -34,4 +34,3 @@ diagram.data.parse(data);
 
 const shape = diagram.data.exists("1"); 
 ~~~
-

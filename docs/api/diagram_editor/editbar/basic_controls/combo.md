@@ -137,7 +137,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
                         label: "Responsible",
                         placeholder: "Select responsible",
                         options: ["Henry Bennet", "Mike Frebel", "Greg Mash"]
-                    },
+                    }
                 ]
             }
         }
@@ -164,7 +164,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
                         label: "Responsible",
                         placeholder: "Select responsible",
                         options: ["Henry Bennet", "Mike Frebel", "Greg Mash"]
-                    },
+                    }
                 ]
             }
         }
@@ -191,7 +191,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
                         label: "Responsible",
                         placeholder: "Select responsible",
                         options: ["Henry Bennet", "Mike Frebel", { id: 1, value: "Greg Mash" }]
-                    },
+                    }
                 ]
             }
         }

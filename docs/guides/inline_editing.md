@@ -100,7 +100,7 @@ const data = [
             // disables inline editing for all subheaders
             "editable": false
         }
-    },
+    }
 ];
 ~~~
 

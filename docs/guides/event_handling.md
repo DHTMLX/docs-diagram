@@ -84,5 +84,3 @@ Check the full list of the InlineEditor API events in the [API Reference](../../
 ### Selection events
 
 Check the full list of the Selection API events in the [API Reference](../../api/selection/#events).
-
-

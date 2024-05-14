@@ -32,7 +32,7 @@ const defaults = {
     fontColor: "#FFF",
     lineHeight: 16
   },
-  ...
+  // ...
 };
 ~~~
 
@@ -125,14 +125,14 @@ const data = [
         "header": {
             "text": "Game levels and locations",
             "closable": true
-    	},
+        },
         "layout": [
             ["1"],
             ["2"],
             ["3"],
             ["4"],
             ["5"]
-    	],
+        ],
         "style": {
             "strokeWidth": 5,
             "stroke": "#083796",
@@ -160,8 +160,8 @@ const data = [
             "text": "Waterfall diagram template"
          },
         "layout": [
-        	[1, 2, 3, 4]
-         ],
+            [1, 2, 3, 4]
+        ],
         "subHeaderCols": {
             "headers": [
                 {
@@ -192,7 +192,7 @@ Check the full example:
 
 ### Styling swimlane cells
 
-If you need to customize a separate cell of the swimlane, use the `style` property of the [swimlane cell object](../../swimlanes/configuration_properties/#properties-of-a-swimlane-cell) (`type:"$sgroup"`). 
+If you need to customize a separate cell of the swimlane, use the `style` property of the [swimlane cell object](../../swimlanes/configuration_properties/#properties-of-a-swimlane-cell) (`type:"$sgroup"`).
 
 ~~~jsx
 const data = [
@@ -204,7 +204,7 @@ const data = [
         "layout": [
             [1, 2, 3, 4]
         ],
-        ...
+        // ...
     },
     {
         "id": 1,

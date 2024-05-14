@@ -26,12 +26,12 @@ diagram.addShape("networkCard", {
         </section>
     `),
     // the default configuration for the shapes with type:"networkCard"
-	defaults: {
-		width: 160,
-		height: 160,
-		img: path.network + "desktop.svg",
-		text: "Network Card",
-		ip: "138.68.41.78"
+    defaults: {
+        width: 160,
+        height: 160,
+        img: path.network + "desktop.svg",
+        text: "Network Card",
+        ip: "138.68.41.78"
     }
 });
 ~~~
@@ -40,7 +40,9 @@ The **defaults** attribute is used to define the default configuration of a "net
 
 2\. Use the unique name of the shape as a value of the **type** attribute inside the shape object while preparing a data set for loading into the diagram.
 
-{{note The data object of a custom shape can contain any [configuration properties](/shapes/configuration_properties/) including custom ones.}} 
+:::note
+The data object of a custom shape can contain any [configuration properties](/shapes/configuration_properties/) including custom ones.
+:::
 
 ~~~jsx
 const networkDiagram = [

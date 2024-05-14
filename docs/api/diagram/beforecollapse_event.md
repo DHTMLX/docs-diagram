@@ -23,7 +23,7 @@ beforeCollapse: (
 
 The callback of the event takes the following parameters:
 
-- `id` - (required) the id of an item 
+- `id` - (required) the id of an item
 - `dir` - (optional) the side the children will be hidden in relation to the parent shape ("left" or "right" for *type:"topic"*, otherwise - undefined)
 
 ### Returns

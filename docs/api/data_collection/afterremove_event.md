@@ -34,6 +34,6 @@ diagram.data.parse(data);
 
 // attaching a handler to the event
 diagram.events.on("afterRemove", function(newItem){
-    console.log("afterRemove "+ item)
+    console.log("afterRemove "+ item);
 });
 ~~~

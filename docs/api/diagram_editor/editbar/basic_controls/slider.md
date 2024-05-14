@@ -120,7 +120,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
                         step: 1,
                         tick: 5,
                         majorTick: 10,
-                        tickTemplate: value => value,
+                        tickTemplate: value => value
                     },
                 ]
             }

@@ -6,9 +6,9 @@ description: You can explore the View events in the documentation of the DHTMLX 
 
 # View events overview
 
-| Name                                 | Description                                 |
-| :----------------------------------- | :------------------------------------------ |
-| [](api/diagram_editor/view/events/afterhide_event.md)      | @getshort(api/diagram_editor/view/events/afterhide_event)            |
-| [](api/diagram_editor/view/events/aftershow_event.md)      | @getshort(api/diagram_editor/view/events/aftershow_event)            |
+| Name                                                       | Description                                                       |
+| :--------------------------------------------------------- | :---------------------------------------------------------------- |
+| [](api/diagram_editor/view/events/afterhide_event.md)      | @getshort(api/diagram_editor/view/events/afterhide_event)         |
+| [](api/diagram_editor/view/events/aftershow_event.md)      | @getshort(api/diagram_editor/view/events/aftershow_event)         |
 | [](api/diagram_editor/view/events/beforehide_event.md)     | @getshort(api/diagram_editor/view/events/beforehide_event)        |
 | [](api/diagram_editor/view/events/beforeshow_event.md)     | @getshort(api/diagram_editor/view/events/beforeshow_event)        |

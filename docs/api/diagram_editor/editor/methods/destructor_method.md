@@ -20,7 +20,7 @@ destructor(): void;
 
 ~~~jsx {6}
 const editor = new dhx.DiagramEditor("editor_container", {
-    type: "default",
+    type: "default"
 });
 editor.parse(data);
 

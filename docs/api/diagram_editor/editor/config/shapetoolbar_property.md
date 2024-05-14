@@ -57,9 +57,9 @@ const editor = new dhx.DiagramEditor("editor_container", {
             content: "<i class='dxi dxi-delete-outline'>",
             check: item => item.parent,
             css: () => "dhx_diagram_toolbar__icon--remove",
-            tooltip: "Remove",
-        },
-    ],
+            tooltip: "Remove"
+        }
+    ]
 });
 ~~~
 
@@ -77,7 +77,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
             content: "<i class='dxi dxi-download'></i>",
             tooltip: "Download to PDF",
             check: item => item.type === "start"
-        },
+        }
     ]
 });
 ~~~

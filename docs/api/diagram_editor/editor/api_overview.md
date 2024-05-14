@@ -8,16 +8,15 @@ description: You can have an overview of Editor API in the documentation of the 
 
 ## Editor methods
 
-| Name                                                     | Description                                                     |
-| :---------------------------------------------------- | :------------------------------------------------------------ |
+| Name                                                          | Description                                                           |
+| :------------------------------------------------------------ | :-------------------------------------------------------------------- |
 | [](api/diagram_editor/editor/methods/destructor_method.md)    | @getshort(api/diagram_editor/editor/methods/destructor_method.md)     |
 | [](api/diagram_editor/editor/methods/import_method.md)        | @getshort(api/diagram_editor/editor/methods/import_method.md)         |
-| [](api/diagram_editor/editor/methods/paint_method.md)            | @getshort(api/diagram_editor/editor/methods/paint_method.md)             |
-| [](api/diagram_editor/editor/methods/parse_method.md)            | @getshort(api/diagram_editor/editor/methods/parse_method.md)             |
-| [](api/diagram_editor/editor/methods/serialize_method.md)        | @getshort(api/diagram_editor/editor/methods/serialize_method.md)         |
+| [](api/diagram_editor/editor/methods/paint_method.md)         | @getshort(api/diagram_editor/editor/methods/paint_method.md)          |
+| [](api/diagram_editor/editor/methods/parse_method.md)         | @getshort(api/diagram_editor/editor/methods/parse_method.md)          |
+| [](api/diagram_editor/editor/methods/serialize_method.md)     | @getshort(api/diagram_editor/editor/methods/serialize_method.md)      |
 | [](api/diagram_editor/editor/methods/zoomin_method.md)        | @getshort(api/diagram_editor/editor/methods/zoomin_method.md)         |
-| [](api/diagram_editor/editor/methods/zoomout_method.md)        | @getshort(api/diagram_editor/editor/methods/zoomout_method.md)         |
-
+| [](api/diagram_editor/editor/methods/zoomout_method.md)       | @getshort(api/diagram_editor/editor/methods/zoomout_method.md)        |
 
 ## Editor events
 
@@ -44,9 +43,7 @@ description: You can have an overview of Editor API in the documentation of the 
 | [](api/diagram_editor/editor/events/zoomin_event.md)              | @getshort(api/diagram_editor/editor/events/zoomin_event.md)               |
 | [](api/diagram_editor/editor/events/zoomout_event.md)              | @getshort(api/diagram_editor/editor/events/zoomout_event.md)               |
 
-
 ## Editor properties
-
 
 | Name                                                          | Description                                                       |
 | :--------------------------------------------------------- | :------------------------------------------------------------- |

@@ -56,7 +56,7 @@ const item = diagram.selection.getItem({ id: "4" });
 // -> returns undefined, since there is no item with the specified id in the selection list
 ~~~
 
-**Change log**: 
+**Change log**:
 
 The method was updated in v6.0
 
@@ -64,8 +64,6 @@ The method was updated in v6.0
 
 - [diagram.config.select](../../../api/diagram/select_property/)
 - [Selecting items](../../../guides/manipulating_items/#selecting-items)
-
-TODO - check links to snippets
 
 **Related samples**:
 

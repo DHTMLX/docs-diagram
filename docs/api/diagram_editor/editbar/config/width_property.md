@@ -16,12 +16,6 @@ description: You can learn about the width property of Editbar in the documentat
 width?: number;
 ~~~
 
-### Default config
-
-~~~jsx {}
-width: TODO
-~~~
-
 ### Example
 
 ~~~jsx {9}

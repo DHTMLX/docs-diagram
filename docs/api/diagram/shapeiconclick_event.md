@@ -36,15 +36,15 @@ const diagram = new dhx.Diagram("diagram_container", {
     toolbar: [
         {
             id: "add",
-            content: "<i class='dxi dxi-plus-box'>",
+            content: "<i class='dxi dxi-plus-box'>"
         },
         {
             id: "download",
-            content: "<i class='dxi dxi-download'></i>",
+            content: "<i class='dxi dxi-download'></i>"
         },
         {
             id: "remove",
-            content: "<i class='dxi dxi-delete-outline'>",
+            content: "<i class='dxi dxi-delete-outline'>"
         }
     ]
 });

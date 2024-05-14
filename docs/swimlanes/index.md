@@ -8,9 +8,11 @@ description: You can learn about Swimlanes in the documentation of the DHTMLX Ja
 
 ## Swimlane overview
 
-A swimlane represents a rectangular element of Diagram that consists of cells (or lanes) arranged vertically or horizontally. Each cell (*type: "$sgroup"*) can include child items such as shapes, or groups. 
+A swimlane represents a rectangular element of Diagram that consists of cells (or lanes) arranged vertically or horizontally. Each cell (*type: "$sgroup"*) can include child items such as shapes, or groups.
 
-{{note Swimlanes are available only in the default mode of Diagram/Diagram Editor (type: "default").}}
+:::note
+Swimlanes are available only in the default mode of Diagram/Diagram Editor (type: "default").
+:::
 
 <iframe src="https://snippet.dhtmlx.com/z6x5m3gb?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="700"></iframe>
 
@@ -32,7 +34,7 @@ const data = [
         // the layout of a swimlane should contain at least one cell
         layout: [ 
             [1] // the cell with id:"1" and type:"$sgroup"
-        ],
+        ]
     }
 ];
 
@@ -53,7 +55,7 @@ All you need to do is specify an array with a matrix as a value of the property.
 // a swimlane with 3 columns
 layout: [
     [1, 2, 3]
-],
+]
 ~~~
 
 or a set of arrays separated by commas:
@@ -63,7 +65,7 @@ or a set of arrays separated by commas:
 layout: [
     [1, 2, 3],
     [4, 5, 6] 
-],
+]
 ~~~
 
 where:
@@ -90,7 +92,7 @@ const data = [
         width: 850,
         layout: [ 
             [1, 2, 3]
-        ],
+        ]
     },
     // configuring a swimlane cell
     {
@@ -115,7 +117,7 @@ When you specify a unique number for each cell, all the cells will be rendered w
 layout: [
     [1, 2, 3],
     [4, 5, 6] 
-],
+]
 ~~~
 
 ![](../assets/swimlane_cells.png)
@@ -127,7 +129,7 @@ Here is an example of grouping first two cells placed in the first row:
 layout: [
     [1, 1, 3],
     [4, 5, 6] 
-],
+]
 ~~~
 
 The result will look like this:
@@ -140,7 +142,7 @@ Here is an example of grouping the cells placed in the second column:
 layout: [
     [1, 2, 3],
     [4, 2, 6]
-],
+]
 ~~~
 
 The result:
@@ -163,7 +165,7 @@ const data = [
         width: 850,
         layout: [ 
             [1, 2, 3]
-        ],
+        ]
     }
 ];
 ~~~
@@ -191,7 +193,7 @@ const data = [
             enable: true,
             position: "left",
             height: 40
-        },
+        }
     }
 ];
 ~~~
@@ -222,7 +224,7 @@ const data = [
             enable: true,
             position: "top",
             height: 40
-        },
+        }
     }
 ];
 ~~~

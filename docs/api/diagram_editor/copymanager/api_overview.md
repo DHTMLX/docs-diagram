@@ -10,9 +10,9 @@ A set of APIs that you can use when copying and pasting items of the Diagram Edi
 
 ~~~jsx {5}
 const editor = new dhx.DiagramEditor("editor_container", { 
-    type: "default", // only default
+    type: "default" // only default
 });
-...
+// ...
 editor.model.copy(); // copies selected items
 ~~~
 

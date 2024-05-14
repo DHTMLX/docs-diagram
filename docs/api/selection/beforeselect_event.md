@@ -67,7 +67,7 @@ editor.diagram.events.on("beforeSelect", function({ id }) {
 });
 ~~~
 
-**Change log**: 
+**Change log**:
 
 The event was updated in v6.0
 

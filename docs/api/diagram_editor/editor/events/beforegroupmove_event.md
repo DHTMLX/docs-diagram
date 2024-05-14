@@ -21,7 +21,7 @@ The event fires just for the target element despite the number of selected eleme
     id: string | number, 
     batch: (string | number)[],
     coords: object,
-    event: PointerEvent, 
+    event: PointerEvent 
 }) => boolean | void;
 ~~~
 
@@ -63,7 +63,7 @@ editor.events.on("beforeGroupMove", ({ id, coords }) => {
 });
 ~~~
 
-**Change log**: 
+**Change log**:
+
 - The `batch` property is added in the v6.0
 - The callback function takes an object as a parameter since v6.0
-

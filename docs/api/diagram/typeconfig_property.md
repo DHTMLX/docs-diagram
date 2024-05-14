@@ -27,7 +27,7 @@ typeConfig?: {
 typeConfig?: {
     side?: {
         left?: string[],
-        right?: string[],
+        right?: string[]
     }
 }    
 ~~~
@@ -51,8 +51,8 @@ You can use either the **direction** attribute or the **side** one. Don't use bo
 const diagram = new dhx.Diagram("diagram_container", { 
     type: "mindmap",
     typeConfig: {
-        direction: "right",
-    },
+        direction: "right"
+    }
 });
 ~~~
 
@@ -64,7 +64,7 @@ const diagram = new dhx.Diagram("diagram_container", {
     typeConfig: {
         side: {
             left: ["2", "3"],
-            right: ["4", "5"],
+            right: ["4", "5"]
         }
     }
 });
@@ -72,12 +72,11 @@ const diagram = new dhx.Diagram("diagram_container", {
 
 The other child shapes that are not set in the **side** option will be arranged automatically according to the main algorithm.
 
-
 **Change log**: Added in v3.1.
 
 **Related articles**: [Arrangement of shapes in the mindmap mode of Diagram](../../../guides/diagram/configuration/#arranging-shapes-in-the-mindmap-mode-of-diagram)
 
-**Related samples**: 
+**Related samples**:
 
 - [Diagram. Mindmap mode. Direction ("left" | "right")](https://snippet.dhtmlx.com/pzllujx3)
 - [Diagram. Mindmap mode. Custom sides](https://snippet.dhtmlx.com/atto9ckg)

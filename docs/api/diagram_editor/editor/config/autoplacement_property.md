@@ -60,13 +60,13 @@ const editor = new dhx.DiagramEditor("editor_container", {
 
 Connector lines with no arrows are aligned "from center to center". They are straight and diagonal.
 
-![](../../../../assets/direct_mode.png) 
+![](../../../../assets/direct_mode.png)
 
 ### "edges" mode
 
-Connector lines are aligned "from side to side". 
+Connector lines are aligned "from side to side".
 
-:::info 
+:::info
 To add arrows to the lines, specify `forwardArrow: "filled"` or `backArrow: "filled"` in the configuration of a [line object](/lines/configuration_properties/).
 :::
 
@@ -105,7 +105,6 @@ Shapes are arranged on imaginary circles relative to the central shape, i.e. the
 - **"radial"** arrangement with lines in the **"edges"** mode
 
 ![](../../../../assets/edges_radial.png)
-
 
 **Change log**:  
 

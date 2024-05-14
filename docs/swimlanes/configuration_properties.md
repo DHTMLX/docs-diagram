@@ -6,7 +6,7 @@ description: You can learn about the Swimlane and Swimlane cell properties in th
 
 # Swimlane and swimlane cell properties
 
-:::note 
+:::note
 While specifying color values of the item, use the HEX format.
 :::
 
@@ -174,7 +174,7 @@ const data = [
             "text": "Waterfall diagram template"
         },
         "layout": [
-    	   [1, 2, 3, 4]
+           [1, 2, 3, 4]
         ],
         "subHeaderCols": {
             "headers": [
@@ -257,7 +257,7 @@ const data = [
         "width": 1195,
         "layout": [
             [1, 2, 3, 4]
-        ],
+        ]
     },
     // configuring a cell of the swimlane
     {
@@ -273,13 +273,13 @@ const data = [
     // configuring a shape to put into the cell
     {
         "id": "s1", "type": "end", "text": "Step 1", "x": 20, "y": 110
-    },
+    }
 ];
 ~~~
 
 **Related articles:** [Configuring swimlanes](../../swimlanes/)
 
-**Related samples**: 
+**Related samples**:
 
 - [Diagram. Default mode. Game levels and locations](https://snippet.dhtmlx.com/1h4j9gb3?tag=diagram&mode=wide)
 - [Diagram. Default mode. Swimlane template](https://snippet.dhtmlx.com/z6x5m3gb?tag=diagram&mode=wide)

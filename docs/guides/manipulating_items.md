@@ -3,7 +3,6 @@ sidebar_label: Manipulating items
 title: Manipulating Items
 description: You can learn about manipulating items in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
-
 # Manipulating items
 
 You can easily manipulate Diagram items via the [Diagram Editor](../../guides/diagram_editor/initialization/). But in this article we'll explore the examples on how to manipulate the items of DHTMLX Diagram via the component's API. The article contains different sections that cover such questions as:
@@ -43,7 +42,7 @@ const diagram = new dhx.Diagram("diagram_container");
 diagram.data.parse(data);
 
 diagram.autoPlace({
-	mode: "edges",
+    mode: "edges",
     graphPadding: 100,
     placeMode: "radial"
 });
@@ -62,7 +61,9 @@ diagram.autoPlace();
 
 There is also the ability to configure settings for the auto-placement by using the [](../api/diagram/autoplacement_property.md) configuration option of Diagram and applying the **autoPlace()** method.
 
-{{note The **autoPlace()** method works only in the default mode of the diagram and only for shapes.}}
+:::note
+The **autoPlace()** method works only in the default mode of the diagram and only for shapes.
+:::
 
 Adding an item
 -------------
@@ -124,7 +125,9 @@ To delete an unnecessary item, make use of the [](../api/data_collection/remove_
 diagram.data.remove("3.2");  
 ~~~
 
-{{note If the diagram is initialized either in the org or mindmap mode, deleting a shape will remove its connectors and all child shapes as well.}}
+:::note
+If the diagram is initialized either in the org or mindmap mode, deleting a shape will remove its connectors and all child shapes as well.
+:::
 
 ### Deleting all the items
 
@@ -159,7 +162,7 @@ You can check whether an item exists in the diagram via the [](../api/data_colle
 const shapeExists = diagram.data.exists("1");
 ~~~
 
-## Selecting items 
+## Selecting items
 
 ### Selecting an item
 
@@ -339,7 +342,7 @@ const shape = diagram.data.find({by:"text",match:"Manager"});
 // searching for a shape by the function
 const shape = diagram.data.find(function(shape){
     if(shape.text==="Manager"||shape.text==="Marketer"){
-        return true
+        return true;
     }
 });
 ~~~
@@ -357,13 +360,12 @@ const shapes = diagram.data.findAll({by:"text",match:"Manager"});
 // searching for shapes by the function
 const shapes = diagram.data.findAll(function(shapes){
     if(shapes.text==="Manager"||shapes.text==="Marketer"){
-        return true
+        return true;
     }
 });
 // ->{id:"2",text:"Manager",title:"Mildred Kim",img:"../avatar-2.png",type:"card", …}
 // ->{id:"2.1",text:"Marketer",title:"Charles Little", img: "../avatar-4.png", …}
 ~~~
-
 ## Filtering items
 
 It is possible to filter the diagram and render only the items that meet the filter criteria via the [](../api/data_collection/filter_method.md) method of the **data** collection. The method will show only the filtered items, hiding the rest of items.
@@ -394,7 +396,7 @@ const data = [
         layout: [
             [1, 2, 3],
             [4, 5, 6],
-            [7, 8, 9],
+            [7, 8, 9]
         ],
         header: {
             text: "Swimlane",
@@ -405,9 +407,9 @@ const data = [
                 { text: "Subheader 1", id: "s1" }, 
                 { text: "Subheader 2", id: "s2" },
                 { text: "Subheader 3", id: "s3" }
-            ],
+            ]
         }
-    },
+    }
 ];
 ~~~
 
@@ -523,9 +525,11 @@ When you need to get the index of a cell of a swimlane, use the [](../api/cell_m
 - the id of a cell;
 - the type of the item: *"col" | "row"*.
 
-{{note All cells which belong to the same row (or column) will have the same index.}}
+:::note
+All cells which belong to the same row (or column) will have the same index.
+:::
 
-~~~html
+~~~js
 layout: [
     [1, 2, 3],
     [4, 5, 6],

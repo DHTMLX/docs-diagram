@@ -47,4 +47,3 @@ diagram.events.on("lineMouseDown", (id, event) => {
 **Related article**: [Event handling](../../../guides/event_handling/)
 
 **Related sample**: [Diagram. Default mode. Events](https://snippet.dhtmlx.com/7h2hgb3g)
-

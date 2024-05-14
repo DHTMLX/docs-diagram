@@ -24,7 +24,7 @@ add({
 
 The method takes as an argument an object with the following parameters:
 
-- `id` - (required) the id of an item 
+- `id` - (required) the id of an item
 - `join` - (optional) the mode of adding the selected element to the selection list. In case the parameter is set to *false* or isn't passed, the items previously added into the selection list will be reset
 - `batch` - (optional) the list of items to select (if known beforehand)
 
@@ -57,7 +57,7 @@ diagram.selection.add({ id: "3" });
 console.log(diagram.selection.getIds()); // -> ["3"]
 ~~~
 
-**Change log**: 
+**Change log**:
 
 The method was updated in v6.0
 

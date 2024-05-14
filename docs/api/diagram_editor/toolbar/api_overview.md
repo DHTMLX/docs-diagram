@@ -17,7 +17,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
         toolbar: true // displaying the default Toolbar
     }
 });
-~~~ 
+~~~
 
 - configuring Toolbar by specifying it as an object with [a set of properties](/category/toolbar-properties/):
 

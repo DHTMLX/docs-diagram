@@ -29,13 +29,11 @@ connectionPoints: true
 ### Example
 
 ~~~jsx {3}
-const editor = new dhx.DiagramEditor("editor", {
+const editor = new dhx.DiagramEditor("editor_container", {
     type: "default", // only "default"
     connectionPoints: false, // true by default
     // other configurations
 });
 ~~~
-
-**Related article:** TODO
 
 **Change log**: The property was added in v6.0

@@ -126,8 +126,8 @@ const editor = new dhx.DiagramEditor("editor_container", {
                             "QA Lead",
                             { value: 4, content: "Team Lead", disabled: true },
                             { value: 5, content: "Programmer" }
-                        ],
-                    },
+                        ]
+                    }
                 ]
             }
         }

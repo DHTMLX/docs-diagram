@@ -17,7 +17,7 @@ margin?: {
     itemX?: number,
     itemY?: number,
     x?: number,
-    y?: number,
+    y?: number
 };
 ~~~
 

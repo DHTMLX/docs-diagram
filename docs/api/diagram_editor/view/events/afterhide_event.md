@@ -30,11 +30,11 @@ For handling the inner events of Diagram Editor you can use the **on()** method.
 
 ~~~jsx {9-12}
 // initializing Diagram Editor
-const editor = new dhx.DiagramEditor("editor", {
+const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {
-        shapebar: true,
-    },
+        shapebar: true
+    }
 });
 
 // attaching a handler to the event

@@ -47,7 +47,7 @@ const diagram = new dhx.Diagram("diagram_container", {
             id: "add",
             content: "<i class='dxi dxi-plus-box'>",
             check: item => !item.assistant && !item.partner,
-            tooltip: "Add new shape",
+            tooltip: "Add new shape"
         },
         {
             id: "download",
@@ -59,8 +59,8 @@ const diagram = new dhx.Diagram("diagram_container", {
             content: "<i class='dxi dxi-delete-outline'>",
             check: item => item.parent,
             css: () => "dhx_diagram_toolbar__icon--remove",
-            tooltip: "Remove",
-        },
+            tooltip: "Remove"
+        }
     ]
 });
 ~~~

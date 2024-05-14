@@ -26,5 +26,4 @@ const editor = new dhx.DiagramEditor("editor_container", {
 editor.history.redo();
 ~~~
 
-
 **Change log**: Added in v4.1

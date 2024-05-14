@@ -133,13 +133,13 @@ const editor = new dhx.DiagramEditor("editor_container", {
                         fieldName: "file",
                         target: "https://docs.dhtmlx.com/suite/backend/upload",
                         params: {
-                            "firstCustomParam": "customValue",
+                            "firstCustomParam": "customValue"
                         },
                         headerParams: {
-                            "firstCustomParam": "customValue",
+                            "firstCustomParam": "customValue"
                         },
-                        autosend: true,
-                    },
+                        autosend: true
+                    }
                 ]
             }
         }

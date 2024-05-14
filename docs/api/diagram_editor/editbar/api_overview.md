@@ -17,7 +17,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
         editbar: true // displaying the default Editbar
     }
 });
-~~~ 
+~~~
 
 - configuring Editbar by specifying it as an object with [a set of properties](/category/editbar-properties/):
 
@@ -38,6 +38,3 @@ const editor = new dhx.DiagramEditor("editor_container", {
 ~~~
 
 Check the [related API section](/category/editbar-properties/) to explore the available properties of Editbar.
-
-
-

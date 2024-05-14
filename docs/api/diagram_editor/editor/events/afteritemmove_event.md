@@ -23,7 +23,7 @@ The event fires just for the target element despite the number of selected eleme
     id: string | number, 
     batch: (string | number)[],
     coords: object,
-    event: PointerEvent, 
+    event: PointerEvent
 }) => void;
 ~~~
 
@@ -31,12 +31,12 @@ The event fires just for the target element despite the number of selected eleme
 
 The callback of the event is called with an object with the following parameters:
 
-  - `id` - the id of an item
-  - `batch` - an array of moved elements' ids
-  - `coords` - an object with the `x` and `y` coordinates of the item position after movement, where:
+- `id` - the id of an item
+- `batch` - an array of moved elements' ids
+- `coords` - an object with the `x` and `y` coordinates of the item position after movement, where:
     - `x` - the horizontal position of the item, moving from left to right
     - `y` - the vertical position of the item, moving from top to bottom
-  - `event` - an event object
+- `event` - an event object
 
 :::info
 For handling the inner Diagram Editor events you can use the **on()** method.
@@ -60,6 +60,7 @@ editor.events.on("afterItemMove", ({ id, coords }) => {
 });
 ~~~
 
-**Change log**: 
+**Change log**:
+
 - The `batch` property is added in the v6.0
 - The callback function takes an object as a parameter since v6.0

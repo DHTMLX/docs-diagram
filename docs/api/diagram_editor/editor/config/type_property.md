@@ -28,11 +28,10 @@ Diagram Editor can be initialized in one of three modes:
 
 <iframe src="https://snippet.dhtmlx.com/og4qm3ja?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
-- **type:"mindmap"** is used to arrange information on some topic by representing the main concept surrounded by associated ideas 
+- **type:"mindmap"** is used to arrange information on some topic by representing the main concept surrounded by associated ideas
 
 <iframe src="https://snippet.dhtmlx.com/lo1vm0e8?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
-
-**Related articles**: 
+**Related articles**:
 - [Overview](../../../)
 - [How to start with Diagram Editor](../../../guides/diagram_editor/initialization/)

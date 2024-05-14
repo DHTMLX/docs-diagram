@@ -31,7 +31,7 @@ itemsDraggable: true
 ~~~jsx
 const editor = new dhx.DiagramEditor(document.body, {
     type: "org", //  org" or "mindmap"
-    itemsDraggable: false,
+    itemsDraggable: false
 });
 ~~~
 

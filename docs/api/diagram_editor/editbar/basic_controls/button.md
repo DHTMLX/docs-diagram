@@ -91,11 +91,11 @@ const editor = new dhx.DiagramEditor("editor_container", {
                         $on: {
                             click: ({ id, editor }) => {
                                 editor.diagram.data.update(id, {
-                                    text: "New text",
+                                    text: "New text"
                                 });
-                            },
+                            }
                         }
-                    },
+                    }
                 ]
             }
         }

@@ -55,5 +55,5 @@ editor.events.on("afterLineTitleMove", ({ titleId, coords }) => {
 ~~~
 
 **Change log**: 
-- The callback function takes an object as a parameter since v6.0
 
+- The callback function takes an object as a parameter since v6.0

@@ -53,10 +53,12 @@ diagram.events.on("beforeEditorEditing", (value, id, key, subId) => {
 });
 ~~~
 
-**Change log**: 
+**Change log**:
+
 - The **subHeaderId** parameter has been changed to **subId** in v4.1
 - Added in v4.0
 
 **Related samples**:
+
 - [Diagram. Default mode. Events](https://snippet.dhtmlx.com/7h2hgb3g)
 - [Diagram. Org chart mode. Events](https://snippet.dhtmlx.com/l38pct7c)

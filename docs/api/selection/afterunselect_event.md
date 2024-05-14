@@ -59,7 +59,7 @@ editor.diagram.events.on("afterUnSelect", function({ id }) {
 });
 ~~~
 
-**Change log**: 
+**Change log**:
 
 The event was updated in v6.0
 
@@ -71,4 +71,3 @@ The event was updated in v6.0
 TODO - check link to the snippet
 
 **Related sample**: [Diagram. Org chart mode. Events](https://snippet.dhtmlx.com/l38pct7c)
-

@@ -8,7 +8,9 @@ description: You can learn about the Integration with React in the documentation
 
 DHTMLX Diagram can be easily integrated into an application built with the React framework. 
 
-{{note Check the ready [DHTMLX Diagram + React](https://github.com/DHTMLX/react-diagram-demo/) demo on GitHub. }}
+:::note
+Check the ready [DHTMLX Diagram + React](https://github.com/DHTMLX/react-diagram-demo/) demo on GitHub.
+:::
 
 You can clone or download it, and use it for your projects. To run the demo, follow the instructions given in the README file.
 

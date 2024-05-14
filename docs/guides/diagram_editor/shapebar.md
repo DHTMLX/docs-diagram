@@ -100,7 +100,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 ~~~
 
-You can reconfigure any type of shapes in such a way. 
+You can reconfigure any type of shapes in such a way.
 
 4. Combining different types of items in a section
 
@@ -137,8 +137,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 ~~~
 
-
-## Adding items of the same type with different settings 
+## Adding items of the same type with different settings
 
 The library allows you to add several identical items (i.e. items of the same type) with different settings to the shapebar of the editor.
 To do that, you need to:
@@ -170,7 +169,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 ~~~
 
-### Customizing a shape preview 
+### Customizing a shape preview
 
 To customize the appearance of a particular shape, you can apply the [preview](/shapes/configuration_properties/#properties-specific-for-the-default-mode) configuration property of a shape object.
 
@@ -195,7 +194,7 @@ const defaults = {
 editor.diagram.addShape("template", {
     template,
     defaults
-});	
+});
 ~~~
 
 2\. If you need to specify an image and define its width and height, you should provide the `preview` property as an object with the `img`, `height`, and `width` attributes:
@@ -214,7 +213,7 @@ const defaults = {
 editor.diagram.addShape("template", {
     template,
     defaults
-});	
+});
 ~~~
 
 :::note 
@@ -226,7 +225,7 @@ You can set the precise width and height of the image, but there is no ability t
 ~~~jsx {2-4}
 const defaults = {
     preview: {
-        scale: 0.72,
+        scale: 0.72
     }
 };
 
@@ -236,10 +235,10 @@ const editor = new dhx.DiagramEditor("editor_container", {
         shapebar: {
             sections: {
                 "Custom shapes": ["personalCard"],
-                "OrgChart shapes": ["card", "img-card"],
+                "OrgChart shapes": ["card", "img-card"]
             },
             preview: {
-                scale: 0.65,
+                scale: 0.65
             }
         }
     }
@@ -247,14 +246,14 @@ const editor = new dhx.DiagramEditor("editor_container", {
 
 editor.diagram.addShape("personalCard", {
     defaults,
-    ...
+    // ...
 });
 ~~~
 
 **Related sample:** [Diagram editor. Default mode. Custom image shape](https://snippet.dhtmlx.com/d5hcx01h)
 
-:::note 
-**Note**, that the `preview` property will be omitted when exporting data to the JSON format. 
+:::note
+**Note**, that the `preview` property will be omitted when exporting data to the JSON format.
 :::
 
 ## Setting the width of shapebar
@@ -266,7 +265,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {
         shapebar: {
-            width: 400, // 300 by default
+            width: 400 // 300 by default
         }
     }
 });
@@ -281,7 +280,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {
         shapebar: {
-            show: false, // true by default
+            show: false // true by default
         }
     }
 });
@@ -289,7 +288,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 
 ## Shapebar and shapes appearance
 
-You can provide the desired look and feel for the shapebar with the [`css`](/api/diagram_editor/shapebar/config/css_property/) property. It allows specifying custom CSS classes to stylize items presentation in the shapebar in your own way. 
+You can provide the desired look and feel for the shapebar with the [`css`](/api/diagram_editor/shapebar/config/css_property/) property. It allows specifying custom CSS classes to stylize items presentation in the shapebar in your own way.
 
 ~~~html {6}
 <script>
@@ -309,6 +308,6 @@ You can provide the desired look and feel for the shapebar with the [`css`](/api
         font-size: var(--dhx-font-size-large);
     }
 </style>
-~~~ 
+~~~
 
 You can also [adjust the appearance of shapes](guides/themes/base_themes_configuration.md/#configuring-the-look-of-shapes-in-shapebar) by redefining the default color scheme for a particular theme or use your own CSS variables to manage the color scheme of Shapebar items.

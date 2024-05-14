@@ -42,7 +42,7 @@ shapeType: "topic"
 
 ~~~jsx
 const editor = new dhx.DiagramEditor("editor_container", {
-    shapeType: "circle",
+    shapeType: "circle"
 });
 ~~~
 

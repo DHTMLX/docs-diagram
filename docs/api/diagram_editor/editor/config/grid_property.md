@@ -32,6 +32,4 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 ~~~
 
-**Related article:** TODO
-
 **Change log**: The property was added in v6.0

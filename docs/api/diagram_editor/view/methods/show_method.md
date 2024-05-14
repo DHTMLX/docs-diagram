@@ -29,8 +29,8 @@ show(view?: "toolbar" | "shapebar" | "editbar"): void;
 ### Example
 
 ~~~jsx {5-6,8-9}
-const editor = new dhx.DiagramEditor("editor", {
-    type: "default",
+const editor = new dhx.DiagramEditor("editor_container", {
+    type: "default"
 });
 
 // shows the Shapebar view 

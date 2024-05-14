@@ -21,7 +21,7 @@ add(new_item: object | array): string | number | array;
 - `new_item` - (required) the object of a new item or an array of item objects
 
 ### Returns
- 
+
 The method returns the item's id or an array with ids of items
 
 ### Example

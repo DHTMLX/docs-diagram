@@ -14,7 +14,7 @@ description: You can learn about the remove method of selection in the documenta
 
 ~~~jsx
 remove({
-    id: string | number,
+    id: string | number
 }): boolean;
 
 //or
@@ -26,7 +26,7 @@ remove(): boolean;
 
 The method may take as an argument an object with the following parameter:
 
-- `id` - (required) the id of the item that should be removed from the selection list 
+- `id` - (required) the id of the item that should be removed from the selection list
 
 ### Returns
 
@@ -63,11 +63,11 @@ diagram.selection.remove();
 console.log(diagram.selection.getIds()); // -> []
 ~~~
 
-**Change log**: 
+**Change log**:
 
 The method was updated in v6.0
 
-**Related articles**: 
+**Related articles**:
 
 - [diagram.config.select](../../../api/diagram/select_property/)
 - [Selecting items](../../../guides/manipulating_items/#selecting-items)

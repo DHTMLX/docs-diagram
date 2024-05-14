@@ -6,9 +6,11 @@ description: You can learn about the Integration with Vue.js in the documentatio
 
 # Integration with Vue.js
 
-DHTMLX Diagram can be easily integrated into an application built with the Vue.js framework. 
+DHTMLX Diagram can be easily integrated into an application built with the Vue.js framework.
 
-{{note Have a look at the [DHTMLX Diagram + Vue.js](https://github.com/DHTMLX/vue-diagram-demo) demo on GitHub.}}
+:::note
+Have a look at the [DHTMLX Diagram + Vue.js](https://github.com/DHTMLX/vue-diagram-demo) demo on GitHub.
+:::
 
 You can clone or download it, and use it for your projects. To run the demo, follow the instructions given in the README file.
 

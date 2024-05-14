@@ -47,4 +47,3 @@ diagram.events.on("lineClick", function(id, events) {
 **Related article**: [Event handling](../../../guides/event_handling/)
 
 **Related samples**: [Diagram. Default mode. Events](https://snippet.dhtmlx.com/7h2hgb3g)
-

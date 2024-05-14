@@ -33,7 +33,7 @@ The `sections` object can contain a set of *key:value* pairs where:
     - `{group: true}` - (optional) displays a basic set of Groups
     - `{swimlane: true}` - (optional) displays a basic set of Swimlanes
   - a string value with a specific type of the item to be rendered in the section (for example, "text", "topic", etc.)
-  - an object with several *key:value* pairs for [redefining the default properties of any shape](#customization) 
+  - an object with several *key:value* pairs for [redefining the default properties of any shape](#customization)
 
 ### Example
 

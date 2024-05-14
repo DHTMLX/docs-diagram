@@ -17,7 +17,7 @@ The interface of the editor initialized in the default mode consists of four fun
 - [grid area](../guides/diagram_editor/grid_area/)
 - [editbar](../guides/diagram_editor/editbar/overview/)
 
-To build a diagram, you need either to drag the necessary items from the shapebar or create a copy of the items via the shape toolbar. 
+To build a diagram, you need either to drag the necessary items from the shapebar or create a copy of the items via the shape toolbar.
 
 You can adjust the attributes of the items via [sidebar options of the editbar](../guides/diagram_editor/editbar/overview/). To accelerate the styling process, use `Alt (Option) + Ctrl (Cmd) + С` combination to copy styles of an item and `Alt (Option) + Ctrl (Cmd) + V` to apply these styles to the chosen items.
 
@@ -58,7 +58,6 @@ You can add the **assistant** or **partner** items for a parent shape of any lev
 | ![](assets/orgchart_editor_draggable_assistant.gif)                                         |
 
 The connection between the parent shape and its partner is always horizontal. Also, the connections between the parent shape and all its children become horizontal after adding a partner item for the parent, even if the connections have been vertical before.
-
 
 | [Diagram editor. Org chart mode. Basic initialization](https://snippet.dhtmlx.com/og4qm3ja) |
 | ------------------------------------------------------------------------------------------- |

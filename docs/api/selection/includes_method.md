@@ -43,7 +43,7 @@ diagram.selection.includes({ id: "1" }) // returns true
 diagram.selection.includes({ id: "4" }) // returns false
 ~~~
 
-**Change log**: 
+**Change log**:
 
 The method was added in v6.0
 

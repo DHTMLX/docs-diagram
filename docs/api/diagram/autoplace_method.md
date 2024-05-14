@@ -45,11 +45,11 @@ diagram.autoPlace({
 
 Connector lines with no arrows are aligned "from center to center"; they are straight and diagonal.
 
-![](../../assets/direct_mode.png) 
+![](../../assets/direct_mode.png)
 
 ### "edges" mode
 
-Connector lines are aligned "from side to side". 
+Connector lines are aligned "from side to side".
 
 :::info 
 To add arrows to the lines, specify **forwardArrow: "filled"** or **backArrow: "filled"** in the configuration of a [line object](../../../lines/configuration_properties/).
@@ -78,7 +78,6 @@ Shapes are arranged along vertical and horizontal lines
 - **"orthogonal"** arrangement with lines in the **"edges"** mode
 
 ![](../../assets/edges_ortogonal.png)
-
 
 ### "radial" mode
 

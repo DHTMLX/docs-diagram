@@ -104,7 +104,7 @@ const layout = new dhx.Layout("layout", {
     cols: [
         {
             id: "diagram_editor"
-        },
+        }
     ]
 });
 
@@ -113,11 +113,11 @@ layout.getCell("diagram_editor").attach(editor);
 
 ### Configuration properties
 
-To change the configuration of the editor, you can specify the desired property in the config object passed as a second parameter of the constructor function. 
+To change the configuration of the editor, you can specify the desired property in the config object passed as a second parameter of the constructor function.
 
 ~~~jsx
 const editor = new dhx.DiagramEditor("editor_container", {
-    type: "default" // "default" | "org" | "mindmap",
+    type: "default", // "default" | "org" | "mindmap"
     shapeBarWidth: 320,
     lineGap: 20
 });
@@ -125,13 +125,11 @@ const editor = new dhx.DiagramEditor("editor_container", {
 
 ### Properties
 
-TODO
-
-Check [the full list of configuration properties of Editor]
+Check [the full list of configuration properties of Editor](/api/diagram_editor/editor/config/overview/).
 
 Loading data into Editor
 ----------------------------
 
 It is possible to load an [appropriate data set](../../../guides/loading_data/#preparing-data-to-load) into the editor via the [parse()](../../../api/diagram_editor/editor/methods/parse_method/) method of the editor.
 
-<iframe src="https://snippet.dhtmlx.com/xshe9ut7?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="400"></iframe>
+<iframe src="https://snippet.dhtmlx.com/xshe9ut7?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>

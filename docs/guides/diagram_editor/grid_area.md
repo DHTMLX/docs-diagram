@@ -141,7 +141,7 @@ You can customize the personal toolbar of shapes, groups, swimlanes according to
 The feature is available only in the default mode of Editor
 :::
 
-From v5.0, the Grid area is equipped with snap lines which will simplify the process of placing shapes symmetrically to each other. 
+From v5.0, the Grid area is equipped with snap lines which will simplify the process of placing shapes symmetrically to each other.
 
 If you need to change the width and color of the lines, or to hide them at all, use the [magnetic](../../../api/diagram_editor/editor/config/magnetic_property/) property of Editor.
 
@@ -163,7 +163,7 @@ You can select and delete lines when the editor is initialized in the default mo
 
 :::note
 The feature is available only in the default mode of Editor.
-::: 
+:::
 
 From v5.0, you can align or distribute a group of items by selecting them and clicking the necessary control in the toolbar. The available controls are:
 
@@ -176,7 +176,6 @@ From v5.0, you can align or distribute a group of items by selecting them and cl
 | **Distribute vertical spacing**   | Distribute items evenly along the y-axis   |
 | **Align top**                     | Align items to the top along the y-axis    |
 | **Align vertical centers**        | Align items to the center along the y-axis |
-| **Align bottom**                  | Align items to the bottom along the y-axis | 
+| **Align bottom**                  | Align items to the bottom along the y-axis |
 
 ![](../../assets/editor/group_align_and_distribution.gif)
-

@@ -25,13 +25,11 @@ resizePoints: true
 ### Example
 
 ~~~jsx {3}
-const editor = new dhx.DiagramEditor("editor", {
+const editor = new dhx.DiagramEditor("editor_container", {
     type: "default", // "org" | "mindmap" | "default"
     resizePoints: false, // true by default
     // other configurations
 });
 ~~~
-
-**Related article:** TODO
 
 **Change log**: The property was added in v6.0
