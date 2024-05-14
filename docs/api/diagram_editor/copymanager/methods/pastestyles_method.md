@@ -24,7 +24,7 @@ pasteStyles(ids?: (string | number)[]): void;
 
 - call the method without arguments to apply styles to the elements from the selection list
 
-~~~js {5-6}
+~~~jsx {5-6}
 const editor = new dhx.DiagramEditor("editor_container", { 
     type: "default", 
 });
@@ -35,7 +35,7 @@ editor.model.pasteStyles(); // applies copied styles to the elements from the se
 
 - pass the ids of certain elements to the method to apply the copied styles to them
 
-~~~js {5-6}
+~~~jsx {5-6}
 const editor = new dhx.DiagramEditor("editor_container", { 
     type: "default", 
 });

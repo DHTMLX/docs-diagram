@@ -26,7 +26,7 @@ The method returns a new array of items where each item is the result of the cal
 
 ### Example
 
-~~~js {7-9}
+~~~jsx {7-9}
 const diagram = new dhx.Diagram("diagram_container", {
     type: "default"
 });

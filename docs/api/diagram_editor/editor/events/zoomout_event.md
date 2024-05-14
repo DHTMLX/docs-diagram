@@ -28,7 +28,7 @@ For handling the inner events of Diagram Editor you can use the **on()** method.
 
 ### Example
 
-~~~js {7-9}
+~~~jsx {7-9}
 // initializing Diagram Editor
 const editor = new dhx.DiagramEditor("editor_container");
 // loading data

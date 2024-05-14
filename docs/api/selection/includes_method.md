@@ -30,7 +30,7 @@ The method returns `true` if the element is in the selected list, otherwise `fal
 
 ### Example
 
-~~~js {9-10}
+~~~jsx {9-10}
 // a diagram must be created with the "select:true" option
 const diagram = new dhx.Diagram("diagram_container", { 
     select: true 

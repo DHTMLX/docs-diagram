@@ -34,7 +34,7 @@ The method returns the object of the specified item, if it is in the selection l
 
 ### Example
 
-~~~js {9-11,13-15,17-19} 
+~~~jsx {9-11,13-15,17-19} 
 // a diagram must be created with the "select:true" option
 const diagram = new dhx.Diagram("diagram_container", { 
     select: true 

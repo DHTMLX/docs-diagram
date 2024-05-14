@@ -41,7 +41,7 @@ lineConfig: {
 
 ### Example
 
-~~~js {2-5}
+~~~jsx {2-5}
 const diagram = new dhx.Diagram("diagram_container", {
     type: "default",
     lineConfig: {

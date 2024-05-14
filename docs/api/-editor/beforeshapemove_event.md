@@ -34,7 +34,7 @@ Return `false` to prevent the shape from being moved; otherwise, `true`
 
 ### Example
 
-~~~js {7-14}
+~~~jsx {7-14}
 // initializing Diagram Editor
 const editor = new dhx.DiagramEditor("editor_container");
 // loading data

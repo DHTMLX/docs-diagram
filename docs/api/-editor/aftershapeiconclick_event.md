@@ -28,7 +28,7 @@ The callback of the event takes the following parameters:
 
 ### Example
 
-~~~js {7-10}
+~~~jsx {7-10}
 // initializing Diagram Editor
 const editor = new dhx.DiagramEditor("editor_container");
 // loading data

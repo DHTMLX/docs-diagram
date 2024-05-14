@@ -56,7 +56,7 @@ filter(
 
 ### Example
 
-~~~js {6-9,11-12}
+~~~jsx {6-9,11-12}
 const diagram = new dhx.Diagram("diagram_container", {
     type: "default"
 });

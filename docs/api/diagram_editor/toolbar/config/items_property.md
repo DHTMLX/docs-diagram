@@ -71,7 +71,7 @@ For all [**service elements**](guides/diagram_editor/toolbar.md/#service-element
 
 The example below shows how to configure Toolbar items via strings:
 
-~~~js {10-14}
+~~~jsx {10-14}
 // Configuring items via strings
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
@@ -95,7 +95,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 
 The example below shows how to configure Toolbar items via objects:
 
-~~~js {7-38}
+~~~jsx {7-38}
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {

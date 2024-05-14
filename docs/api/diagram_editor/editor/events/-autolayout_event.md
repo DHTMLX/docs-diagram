@@ -18,7 +18,7 @@ autoLayout: () => void;
 
 ### Example
 
-~~~js {7-9}
+~~~jsx {7-9}
 // initializing Diagram Editor
 const editor = new dhx.DiagramEditor("editor_container");
 // loading data

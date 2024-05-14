@@ -414,7 +414,7 @@ When preparing a data set for "img-card" shapes, you can add the following prope
 
 ### Example
 
-~~~js {title="Example"}
+~~~jsx {title="Example"}
 const data = [
     {
         "id": "1",

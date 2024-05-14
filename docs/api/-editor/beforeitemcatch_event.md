@@ -38,7 +38,7 @@ Return `false` to prevent the item from being caught; otherwise, `true`
 
 ### Example
 
-~~~js {7-10}
+~~~jsx {7-10}
 // initializing Diagram Editor
 const editor = new dhx.DiagramEditor("editor_container");
 // loading data

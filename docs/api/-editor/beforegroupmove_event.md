@@ -34,7 +34,7 @@ Return `false` to prevent the group or swimlane from being moved; otherwise, `tr
 
 ### Example
 
-~~~js {7-14}
+~~~jsx {7-14}
 // initializing Diagram Editor
 const editor = new dhx.DiagramEditor("editor_container");
 // loading data

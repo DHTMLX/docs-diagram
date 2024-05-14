@@ -38,7 +38,7 @@ view: {
 
 ### Example
 
-~~~js {3-12}
+~~~jsx {3-12}
 const editor = new dhx.DiagramEditor("editor", {
     type: "default",
     view: {

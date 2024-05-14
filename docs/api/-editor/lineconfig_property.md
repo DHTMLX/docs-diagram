@@ -51,7 +51,7 @@ lineConfig: {
 
 ### Example
 
-~~~js {2-7}
+~~~jsx {2-7}
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     lineConfig: {

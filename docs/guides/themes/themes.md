@@ -406,7 +406,7 @@ You can choose from the following variants:
 
 - set the ***data-dhx-theme*** attribute for an *HTML element*, e.g. for *documentElement*:
 
-~~~js title="index.js"
+~~~jsx title="index.js"
 document.documentElement.setAttribute("data-dhx-theme", "dark");
 ~~~
 
@@ -444,7 +444,7 @@ Below you'll find the examples of the ***dhx.setTheme()*** method usage:
 
 - setting a theme for any HTML element, e.g. for the Toolbar control
 
-~~~js {10-11}
+~~~jsx {10-11}
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {

@@ -26,7 +26,7 @@ The method returns the id of the root item. The root item is the first item of a
 
 ### Example
 
-~~~js {6}
+~~~jsx {6}
 const diagram = new dhx.Diagram("diagram_container", {
     type: "default"
 });

@@ -22,7 +22,7 @@ zoomOut(step?: number): void;
 
 ### Example
 
-~~~js {4}
+~~~jsx {4}
 const editor = new dhx.DiagramEditor("editor_container");
 editor.parse(data);
 

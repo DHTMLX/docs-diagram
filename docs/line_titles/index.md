@@ -22,7 +22,7 @@ LineTitles are available only in the default mode of Diagram/Diagram Editor (typ
 
 To create a line title, you need to specify `type: "lineTitle"` inside the line title object while preparing a data set to load into the diagram:
 
-~~~js {5-6}
+~~~jsx {5-6}
 const data = [
     { type: "rectangle", id: "shape_1" },
     { type: "rectangle", id: "shape_2", x: 400 },
@@ -52,7 +52,7 @@ The examples below are suitable both for Diagram and Diagram Editor.
 
 You can add a line title via the [`add`](../api/data_collection/add_method/) method of DataCollection:
 
-~~~js {5-10}
+~~~jsx {5-10}
 const editor= new dhx.DiagramEditor("editor", {
     type: "default",
 });
@@ -75,7 +75,7 @@ See [the full list of configuration properties of a line title object](/line_tit
 
 If you need to prevent adding of line titles, you can make use of the [`beforeAdd`](../api/data_collection/beforeadd_event/) event of DataCollection:
 
-~~~js {5}
+~~~jsx {5}
 const editor= new dhx.DiagramEditor("editor", {
     type: "default",
 });
@@ -87,7 +87,7 @@ editor.diagram.data.events.on("beforeAdd", (item) => item.type !== "lineTitle");
 
 It is possible to iterate over line titles as child items of lines with the help of the [`eachChild()`](../api/data_collection/eachchild_method/) method of DataCollection:
 
-~~~js {7-9,11-13}
+~~~jsx {7-9,11-13}
 const editor= new dhx.DiagramEditor("editor", {
     type: "default",
 });

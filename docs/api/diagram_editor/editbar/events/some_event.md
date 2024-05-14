@@ -24,6 +24,6 @@ The callback of the event takes the following parameters:
 
 ### Example
 
-~~~js {}
+~~~jsx {}
 TODO
 ~~~

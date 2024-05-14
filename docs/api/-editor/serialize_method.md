@@ -22,7 +22,7 @@ The method returns an array of JSON objects for each item from the editor data
 
 ### Example
 
-~~~js {4}
+~~~jsx {4}
 const editor = new dhx.DiagramEditor("editor_container");
 editor.parse(data);
 

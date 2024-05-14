@@ -26,7 +26,7 @@ The `defaults` property is an object which includes a set of `key:value` pairs w
 
 ### Example
 
-~~~js {24}
+~~~jsx {24}
 const defaults = {
     // the default settings for all shapes of the "rectangle" type
     rectangle: {

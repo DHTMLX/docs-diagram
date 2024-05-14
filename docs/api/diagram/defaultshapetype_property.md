@@ -22,7 +22,7 @@ defaultShapeType?: string;
 
 - In the **default** mode of Diagram (type: "default")
 
-~~~js 
+~~~jsx 
 defaultShapeType: "rectangle"
 ~~~
 

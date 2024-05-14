@@ -32,7 +32,7 @@ Return `false` to prevent the toolbar control from being clicked; otherwise, `tr
 
 ### Example
 
-~~~js {7-10}
+~~~jsx {7-10}
 // initializing Diagram Editor
 const editor = new dhx.DiagramEditor("editor_container");
 // loading data

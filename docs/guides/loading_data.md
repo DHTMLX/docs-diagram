@@ -17,7 +17,7 @@ DHTMLX Diagram takes data in the JSON format. It is an array that contains a set
 
 - **shape objects**
 
-~~~js {2-5}
+~~~jsx {2-5}
 const data = [
    // configuring shapes
    { "id": "shape_1", "type": "start", "x": 200, y: 0, "text": "Start" },
@@ -36,7 +36,7 @@ Besides, you may create [your own type of shapes](../../shapes/custom_shape/) an
 
 - **line objects**
 
-~~~js {6-8}
+~~~jsx {6-8}
 const data = [
    // configuring shapes
    { "id": "shape_1", "type": "start", "x": 200, y: 0, "text": "Start" },
@@ -54,7 +54,7 @@ The presence or absence of line objects in the data set depends on the chosen [w
 
 - **line title objects**
 
-~~~js {9-10}
+~~~jsx {9-10}
 const data = [
    // configuring shapes
    { "id": "shape_1", "type": "start", "x": 200, y: 0, "text": "Start" },

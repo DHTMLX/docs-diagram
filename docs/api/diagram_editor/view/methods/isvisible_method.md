@@ -24,7 +24,7 @@ isVisible(view: "toolbar" | "shapebar" | "editbar"): boolean;
 
 ### Example
 
-~~~js {9-11}
+~~~jsx {9-11}
 const editor = new dhx.DiagramEditor("editor", {
     type: "default",
     view: {

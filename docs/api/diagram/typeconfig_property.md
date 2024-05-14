@@ -47,7 +47,7 @@ You can use either the **direction** attribute or the **side** one. Don't use bo
 
 ### Example
 
-~~~js {3-5}
+~~~jsx {3-5}
 const diagram = new dhx.Diagram("diagram_container", { 
     type: "mindmap",
     typeConfig: {
@@ -58,7 +58,7 @@ const diagram = new dhx.Diagram("diagram_container", {
 
 or
 
-~~~js {3-8}
+~~~jsx {3-8}
 const diagram = new dhx.Diagram("diagram_container", { 
     type: "mindmap",
     typeConfig: {

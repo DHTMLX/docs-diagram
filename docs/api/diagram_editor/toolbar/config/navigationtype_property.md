@@ -29,7 +29,7 @@ navigationType: "click"
 
 ### Example
 
-~~~js {9}
+~~~jsx {9}
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {

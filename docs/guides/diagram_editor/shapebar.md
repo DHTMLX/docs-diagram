@@ -183,7 +183,7 @@ Let's consider three examples of configuring a shape preview:
 
 1\. You can specify an image to be shown in the shapebar for a custom shape. For this purpose, you need to pass either an URL to load an image from or a base64 image as a string value to the `preview` property:
 
-~~~js {6}
+~~~jsx {6}
 const defaults = {
     title: "Name and First name", 
     img: "../avatar-1.jpg", 
@@ -200,7 +200,7 @@ editor.diagram.addShape("template", {
 
 2\. If you need to specify an image and define its width and height, you should provide the `preview` property as an object with the `img`, `height`, and `width` attributes:
 
-~~~js {4-8}
+~~~jsx {4-8}
 const defaults = {
     title: "Name and First name", email: "some@mail.com",
     img: "../avatar-1.jpg", height: 115, width: 330,
@@ -223,7 +223,7 @@ You can set the precise width and height of the image, but there is no ability t
 
 3\. You can redefine the scale of a specific shape rendered in the shapebar via the `scale` property:
 
-~~~js {2-4}
+~~~jsx {2-4}
 const defaults = {
     preview: {
         scale: 0.72,

@@ -26,7 +26,7 @@ add(newState: array): void;
 
 ### Example
 
-~~~js {5-9}
+~~~jsx {5-9}
 const editor = new dhx.DiagramEditor("editor_container", { 
     type: "default"
 });

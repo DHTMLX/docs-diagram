@@ -22,7 +22,7 @@ The method returns an array of JSON objects for each item and link from Diagram
 
 ### Example
 
-~~~js {6}
+~~~jsx {6}
 const diagram = new dhx.Diagram("diagram_container", {
     type: "default"
 });

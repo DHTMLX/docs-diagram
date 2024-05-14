@@ -32,7 +32,7 @@ Return `false` to block collapsing an item; otherwise, `true`
 
 ### Example
 
-~~~js {9-12}
+~~~jsx {9-12}
 // initializing Diagram
 const diagram = new dhx.Diagram("diagram_container", {
     type: "mindmap"

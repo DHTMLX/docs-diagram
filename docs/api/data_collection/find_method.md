@@ -34,7 +34,7 @@ The method returns the first object of the item that matches the specified crite
 
 ### Example
 
-~~~js {7,10-12}
+~~~jsx {7,10-12}
 const diagram = new dhx.Diagram("diagram_container", {
     type: "default"
 });

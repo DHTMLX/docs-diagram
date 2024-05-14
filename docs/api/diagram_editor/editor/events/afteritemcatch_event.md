@@ -36,7 +36,7 @@ The callback of the event is called with an object with the following parameters
 
 ### Example
 
-~~~js {6-11}
+~~~jsx {6-11}
 // initializing Diagram Editor
 const editor = new dhx.DiagramEditor("editor_container");
 // loading data

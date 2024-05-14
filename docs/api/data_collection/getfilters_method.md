@@ -28,7 +28,7 @@ The method returns an object with the applied filters, where:
 
 ### Example
 
-~~~js {6-7}
+~~~jsx {6-7}
 const diagram = new dhx.Diagram("diagram_container", {
     // configuration settings
 });

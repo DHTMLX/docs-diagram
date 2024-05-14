@@ -22,7 +22,7 @@ paste(): void;
 
 ### Example
 
-~~~js {5-6}
+~~~jsx {5-6}
 const editor = new dhx.DiagramEditor("editor_container", { 
     type: "default", // only default
 });

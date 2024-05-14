@@ -26,7 +26,7 @@ png(config?: object): void;
 
 ### Example
 
-~~~js {7,10-13}
+~~~jsx {7,10-13}
 const diagram = new dhx.Diagram("diagram_container", {
 	// config options
 });

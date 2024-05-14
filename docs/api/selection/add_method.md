@@ -37,7 +37,7 @@ The method returns:
 
 ### Example
 
-~~~js {8,11-12,15-16}
+~~~jsx {8,11-12,15-16}
 // a diagram must be created with the "select:true" option
 const diagram = new dhx.Diagram("diagram_container", { 
     select: true 

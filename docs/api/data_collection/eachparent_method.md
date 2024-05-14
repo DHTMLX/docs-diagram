@@ -28,7 +28,7 @@ eachParent(
 
 ### Example
 
-~~~js {6-8}
+~~~jsx {6-8}
 const diagram = new dhx.Diagram("diagram_container", {
     type: "default"
 });

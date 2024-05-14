@@ -8,7 +8,7 @@ description: You can check a Copy manager overview in the documentation of the D
 
 A set of APIs that you can use when copying and pasting items of the Diagram Editor. Use the `model` keyword to access the Copy manager via the `editor` object:
 
-~~~js {5}
+~~~jsx {5}
 const editor = new dhx.DiagramEditor("editor_container", { 
     type: "default", // only default
 });

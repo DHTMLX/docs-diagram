@@ -18,7 +18,7 @@ clear(): void;
 
 ### Example
 
-~~~js {8}
+~~~jsx {8}
 // a diagram must be created with the "select:true" option
 const diagram = new dhx.Diagram("diagram_container", { 
     select: true 

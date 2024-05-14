@@ -34,7 +34,7 @@ Return `false` to block closing of the inline editor, otherwise `true`.
 
 ### Example
 
-~~~js {9-11}
+~~~jsx {9-11}
 // initializing Diagram
 const diagram = new dhx.Diagram("diagram_container", {
     type: "default"

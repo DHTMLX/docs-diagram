@@ -30,7 +30,7 @@ For handling the inner events of Diagram Data Collection you can use the **on()*
 
 ### Example
 
-~~~js {7-9}
+~~~jsx {7-9}
 // initializing Diagram
 const diagram = new dhx.Diagram("diagram_container", {
     type: "default"

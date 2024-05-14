@@ -40,7 +40,7 @@ diagram.collapseItem(123);
 
 or
 
-~~~js {2,6}
+~~~jsx {2,6}
 const diagram = new dhx.Diagram("diagram_container", {
 	type:"mindmap"
 });

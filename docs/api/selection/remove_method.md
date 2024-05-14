@@ -34,7 +34,7 @@ The method returns `true` if unselection of an item or the list cleanup has been
 
 ### Example
 
-~~~js {9}
+~~~jsx {9}
 // a diagram must be created with the "select:true" option
 const diagram = new dhx.Diagram("diagram_container", { 
     select: true 
@@ -49,7 +49,7 @@ console.log(diagram.selection.getIds()); // -> ["1", "2"]
 
 When called without arguments, the method clears the selection list:
 
-~~~js {9-10}
+~~~jsx {9-10}
 // a diagram must be created with the "select:true" option
 const diagram = new dhx.Diagram("diagram_container", { 
     select: true 

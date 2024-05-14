@@ -28,7 +28,7 @@ The callback of the event is called with an object with the following parameters
 
 ### Example
 
-~~~js {9-12}
+~~~jsx {9-12}
 // initializing Diagram
 const diagram = new dhx.Diagram("diagram_container", { 
     type: "org", 
@@ -45,7 +45,7 @@ diagram.events.on("afterUnSelect", function ({ id }) {
 
 Here's an example of attaching an event handler to the event for the Diagram Editor:
 
-~~~js {8-11}
+~~~jsx {8-11}
 // initializing Diagram editor
 const editor = new dhx.DiagramEditor("editor_container", {  
     // config options

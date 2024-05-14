@@ -34,7 +34,7 @@ The method returns an array of matching item objects
 
 ### Example
 
-~~~js {7,10-14}
+~~~jsx {7,10-14}
 const diagram = new dhx.Diagram("diagram_container", {
     type: "default"
 });

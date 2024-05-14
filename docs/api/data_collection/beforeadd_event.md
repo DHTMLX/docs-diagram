@@ -28,7 +28,7 @@ Return `false` to prevent adding an item into a data collection; otherwise, `tru
 
 ### Example
 
-~~~js {9-13}
+~~~jsx {9-13}
 // initializing Diagram
 const diagram = new dhx.Diagram("diagram_container", {
     type: "default"

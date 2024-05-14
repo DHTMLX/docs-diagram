@@ -32,7 +32,7 @@ Return `false` to prevent an item from being unselected; otherwise, `true`
 
 ### Example
 
-~~~js {9-13}
+~~~jsx {9-13}
 // initializing Diagram
 const diagram = new dhx.Diagram("diagram_container", { 
     type: "org", 
@@ -50,7 +50,7 @@ diagram.events.on("beforeUnSelect", function({ id }) {
 
 Here's an example of attaching an event handler to the event for the Diagram Editor:
 
-~~~js {8-12}
+~~~jsx {8-12}
 // initializing Diagram editor
 const editor = new dhx.DiagramEditor("editor_container", {  
     // config options

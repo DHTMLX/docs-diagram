@@ -18,7 +18,7 @@ destructor(): void;
 
 ### Example
 
-~~~js {6}
+~~~jsx {6}
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
 });

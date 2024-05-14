@@ -38,7 +38,7 @@ Return `false` to block saving changes after editing an item via the inline edit
 
 ### Example
 
-~~~js {9-12}
+~~~jsx {9-12}
 // initializing Diagram
 const diagram = new dhx.Diagram("diagram_container", {
     type: "default"

@@ -22,7 +22,7 @@ The method returns the list of ids of selected items as an array
 
 ### Example
 
-~~~js {8}
+~~~jsx {8}
 // a diagram must be created with the "select:true" option
 const diagram = new dhx.Diagram("diagram_container", { 
     select: true 

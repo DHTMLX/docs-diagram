@@ -22,7 +22,7 @@ undo(first?: boolean): void;
 
 ### Example
 
-~~~js {5}
+~~~jsx {5}
 const editor = new dhx.DiagramEditor("editor_container", { 
     type: "default"
 });

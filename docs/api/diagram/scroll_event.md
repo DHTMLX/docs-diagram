@@ -24,7 +24,7 @@ The callback of the event takes the following parameter:
 
 ### Example
 
-~~~js {10-12}
+~~~jsx {10-12}
 // initializing Diagram
 const diagram = new dhx.Diagram("diagram_container", { 
 	type: "org", 

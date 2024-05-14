@@ -22,7 +22,7 @@ You can find examples of disabling inline editing for diagram items below:
 
 #### Line titles
 
-~~~js title="Disabling the ability to edit the text content of a line" {18}
+~~~jsx title="Disabling the ability to edit the text content of a line" {18}
 const data = [
     // configuring shapes
     { "id": "shape_1", "type": "start", "x": 0, "text": "Start" },
@@ -47,7 +47,7 @@ const data = [
 
 #### Shapes
 
-~~~js title="Disabling the ability to edit the text content of a shape"
+~~~jsx title="Disabling the ability to edit the text content of a shape"
 const data = [
     { "id": 1, "x": 280, "y": 0, "text": "Start", "type": "start", "editable": false}
 ];
@@ -55,7 +55,7 @@ const data = [
 
 #### Groups
 
-~~~js title="Disabling the ability to edit the text content of the header of a group"
+~~~jsx title="Disabling the ability to edit the text content of the header of a group"
 const data = [    
     {
         "type": "$group",
@@ -74,7 +74,7 @@ const data = [
 
 #### Swimlanes
 
-~~~js title="Configuring the ability to edit the text content of the header and subheaders of a swimlane"
+~~~jsx title="Configuring the ability to edit the text content of the header and subheaders of a swimlane"
 const data = [
     {
         "id": "main",

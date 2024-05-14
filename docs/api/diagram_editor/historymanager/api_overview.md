@@ -8,7 +8,7 @@ description: You can check a History manager overview in the documentation of th
 
 A set of APIs that you can use for managing the history of actions in the Diagram Editor. Use the `history` keyword to access the History manager via the `editor` object:
 
-~~~js {5}
+~~~jsx {5}
 const editor = new dhx.DiagramEditor("editor_container", { 
     type: "default", // only default
 });

@@ -24,7 +24,7 @@ copyStyles(id?: string | number): void;
 
 -  call the method without arguments to copy styles of the *first element from the selection list*
 
-~~~js {5}
+~~~jsx {5}
 const editor = new dhx.DiagramEditor("editor_container", { 
     type: "default",
 });
@@ -34,7 +34,7 @@ editor.model.copyStyles(); // copies styles of the first element from the select
 
 - pass the id of some element to the method to copy its styles
 
-~~~js {5}
+~~~jsx {5}
 const editor = new dhx.DiagramEditor("editor_container", { 
     type: "default",
 });

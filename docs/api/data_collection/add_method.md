@@ -28,7 +28,7 @@ The method returns the item's id or an array with ids of items
 
 There are two ways to link shapes. You can add a shape with a parent ID defined:
 
-~~~js {2,6}
+~~~jsx {2,6}
 const diagram = new dhx.Diagram("diagram_container", {
     type: "org"
 });
@@ -39,7 +39,7 @@ diagram.data.add({ id: "3.2", text: "New Item", type: "card", parent: "3" });
 
 or you can add a shape and a connector line objects:
 
-~~~js {2,6-7}
+~~~jsx {2,6-7}
 const diagram = new dhx.Diagram("diagram_container", {
     type: "default"
 });

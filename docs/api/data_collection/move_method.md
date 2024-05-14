@@ -32,7 +32,7 @@ The method returns either a string with the item's id or an array of string valu
 
 ### Example
 
-~~~js {6}
+~~~jsx {6}
 const diagram = new dhx.Diagram("diagram_container", {
     type: "default"
 });

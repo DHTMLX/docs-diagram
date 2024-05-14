@@ -26,7 +26,7 @@ remove(id: string | number | array): void;
 
 ### Example
 
-~~~js {6}
+~~~jsx {6}
 const diagram = new dhx.Diagram("diagram_container", {
     type: "default"
 });

@@ -36,7 +36,7 @@ Return `false` to prevent the text element of a line from being moved; otherwise
 
 ### Example
 
-~~~js {7-14}
+~~~jsx {7-14}
 // initializing Diagram Editor
 const editor = new dhx.DiagramEditor("editor_container");
 // loading data

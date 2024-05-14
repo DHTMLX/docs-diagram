@@ -28,7 +28,7 @@ connectionPoints: true
 
 ### Example
 
-~~~js {3}
+~~~jsx {3}
 const editor = new dhx.DiagramEditor("editor", {
     type: "default", // only "default"
     connectionPoints: false, // true by default

@@ -28,7 +28,7 @@ hide(view?: "toolbar" | "shapebar" | "editbar"): void;
 
 ### Example
 
-~~~js {5-6,8-9}
+~~~jsx {5-6,8-9}
 const editor = new dhx.DiagramEditor("editor", {
     type: "default",
 });

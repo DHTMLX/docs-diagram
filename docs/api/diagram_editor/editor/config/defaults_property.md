@@ -26,7 +26,7 @@ The `defaults` object can contain a set of `key:value` pairs where *key* is the 
 
 ### Example
 
-~~~js {24}
+~~~jsx {24}
 const defaults = {
     // the default settings for all shapes of the "rectangle" type
     rectangle: {
