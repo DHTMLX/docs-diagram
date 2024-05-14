@@ -1,5 +1,5 @@
 ---
-sidebar_label: Complex controls!!
+sidebar_label: Complex controls
 title: Editbar Guides - Complex controls
 description: You can learn about the Complex controls of Editbar in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---

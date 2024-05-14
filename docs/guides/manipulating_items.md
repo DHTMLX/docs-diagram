@@ -1,5 +1,5 @@
 ---
-sidebar_label: Manipulating items !!
+sidebar_label: Manipulating items 
 title: Manipulating Items
 description: You can learn about manipulating items in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
@@ -159,7 +159,7 @@ You can check whether an item exists in the diagram via the [](../api/data_colle
 const shapeExists = diagram.data.exists("1");
 ~~~
 
-## Selecting items !!
+## Selecting items 
 
 ### Selecting an item
 

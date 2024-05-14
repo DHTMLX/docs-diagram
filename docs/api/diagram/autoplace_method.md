@@ -29,7 +29,7 @@ autoPlace(config?: object): void;
 
 ### Example
 
-~~~jsx {4-6}
+~~~jsx {4-7}
 const diagram = new dhx.Diagram("diagram_container");
 diagram.data.parse(data);
 

@@ -1,5 +1,5 @@
 ---
-sidebar_label: Textarea!!
+sidebar_label: Textarea
 title: Editbar Basic Controls - Textarea 
 description: You can explore the Textarea control of Editbar in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---

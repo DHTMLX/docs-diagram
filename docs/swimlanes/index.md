@@ -1,5 +1,5 @@
 ---
-sidebar_label: Swimlanes !!
+sidebar_label: Swimlanes 
 title: Swimlanes
 description: You can learn about Swimlanes in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---

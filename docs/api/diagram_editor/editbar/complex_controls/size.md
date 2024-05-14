@@ -1,5 +1,5 @@
 ---
-sidebar_label: Size!!
+sidebar_label: Size
 title: Editbar Complex Controls - Size 
 description: You can explore the Size control of Editbar in the documentation of the the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---

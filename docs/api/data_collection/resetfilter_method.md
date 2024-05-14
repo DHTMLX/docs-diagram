@@ -1,5 +1,5 @@
 ---
-sidebar_label: resetFilter()!!
+sidebar_label: resetFilter()
 title: resetFilter Method of Data Collection
 description: You can explore the resetFilter method of data collection in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---

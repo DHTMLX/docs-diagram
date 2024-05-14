@@ -1,5 +1,5 @@
 ---
-sidebar_label: Border!!
+sidebar_label: Border
 title: Editbar Complex Controls - Border 
 description: You can explore the Border control of Editbar in the documentation of the the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---

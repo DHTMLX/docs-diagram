@@ -1,5 +1,5 @@
 ---
-sidebar_label: properties!!
+sidebar_label: properties
 title: properties Property of Editbar
 description: You can learn about the properties property of Editbar in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---

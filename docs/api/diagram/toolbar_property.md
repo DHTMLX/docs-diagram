@@ -1,5 +1,5 @@
 ---
-sidebar_label: toolbar !!
+sidebar_label: toolbar 
 title: toolbar Property
 description: You can learn about the toolbar property in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---

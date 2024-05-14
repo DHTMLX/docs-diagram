@@ -1,5 +1,5 @@
 ---
-sidebar_label: afterShow!!
+sidebar_label: afterShow
 title: afterShow Event of View
 description: You can learn about the afterShow event of View in the Diagram Editor documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---

@@ -1,5 +1,5 @@
 ---
-sidebar_label: Datepicker!!
+sidebar_label: Datepicker
 title: Editbar Basic Controls - Datepicker 
 description: You can explore the Datepicker control of Editbar in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
