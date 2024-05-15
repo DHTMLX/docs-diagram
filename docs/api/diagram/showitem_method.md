@@ -29,6 +29,7 @@ diagram.data.parse(data);
 diagram.showItem(123);
 ~~~
 
-**Related sample**:
+**Related samples**:
+
 - [Diagram. Shape search](https://snippet.dhtmlx.com/d7kvzq4r)
 - [Diagram. Scroll content](https://snippet.dhtmlx.com/f970hbym)

@@ -14,7 +14,7 @@ A group is a separate kind of the Diagram items. You can draw simple or more com
 Groups are available only in the default mode of Diagram/Diagram Editor (type: "default").
 :::
 
-<iframe src="https://snippet.dhtmlx.com/0hf8ahrb?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="550"></iframe>
+<iframe src="https://snippet.dhtmlx.com/0hf8ahrb?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="650"></iframe>
 
 ## Creating groups
 

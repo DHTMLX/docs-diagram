@@ -169,12 +169,6 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 ~~~
 
-TODO (check the links to the snippets)
-
 **Related article**:  [Shapebar](guides/diagram_editor/shapebar.md/#custom-sections)
-
-**Related samples**:
-- [Diagram editor. Default mode. Setting the section order in the left panel](https://snippet.dhtmlx.com/7747cx7b)
-- [Diagram editor. Default mode. Left panel customization](https://snippet.dhtmlx.com/2z0a18oz)
 
 **Change log**: Added in v6.0

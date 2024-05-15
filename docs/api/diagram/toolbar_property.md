@@ -74,4 +74,4 @@ const diagram = new dhx.Diagram("diagram_container", {
 - [Setting toolbar for items](../../../guides/diagram/configuration/#setting-toolbar-for-items)
 - [Default icons](https://docs.dhtmlx.com/suite/helpers/icon/)
 
-**Related sample**: [Diagram. Configuration. Shape toolbar](https://snippet.dhtmlx.com/4if395hd)
+**Related sample**: [Diagram. Configuration. Per-shape toolbar](https://snippet.dhtmlx.com/4if395hd)

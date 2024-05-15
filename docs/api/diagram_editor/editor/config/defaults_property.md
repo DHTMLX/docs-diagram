@@ -68,4 +68,4 @@ After defining the default settings for the shape/line of separate types, you ca
 - [Setting the default configuration of a shape](/guides/diagram/configuration/#setting-the-default-configuration-of-a-shape)
 - [Setting the preview of shapes](/guides/diagram_editor/shapebar/#setting-the-preview-of-shapes)
 
-**Related sample:** [Diagram Editor. Setting the default line (connector) type](https://snippet.dhtmlx.com/22abzn5m)
+**Related sample:** [Diagram editor. Setting the default line (connector) type. Try connecting shape A to shape B](https://snippet.dhtmlx.com/22abzn5m)

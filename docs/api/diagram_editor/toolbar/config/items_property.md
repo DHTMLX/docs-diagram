@@ -142,3 +142,5 @@ const editor = new dhx.DiagramEditor("editor_container", {
 **Change log**: Added in v6.0
 
 **Related articles:**  [Toolbar configuration](guides/diagram_editor/toolbar.md)
+
+**Related sample:** [Diagram Editor. Default mode. Customization of toolbar. Added search by shapes ](https://snippet.dhtmlx.com/846cz71r)

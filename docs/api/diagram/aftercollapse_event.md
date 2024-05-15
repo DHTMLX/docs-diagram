@@ -45,5 +45,3 @@ diagram.events.on("afterCollapse", function(id, dir) {
 **Change log**: The **dir** parameter was added in v3.1
 
 **Related article**: [Event handling](../../../guides/event_handling/)
-
-**Related sample**: [Diagram. Org chart mode. Events](https://snippet.dhtmlx.com/l38pct7c)

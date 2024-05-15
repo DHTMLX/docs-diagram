@@ -165,4 +165,6 @@ For example, an `<img src="" alt="">` tag should look like `<img src="" alt=""><
 **Related articles**: [Custom Shape](../../../shapes/custom_shape/)
 
 **Related samples**:
-- [Diagram Editor. Mindmap mode. Site map and user flow](https://snippet.dhtmlx.com/do1jwmw1)
+
+- [Diagram. Mindmap mode. Site map and user flow example (custom template)](https://snippet.dhtmlx.com/do1jwmw1)
+- [Diagram with Editor. Org chart mode. Customization of cards, editbar and toolbar](https://snippet.dhtmlx.com/vcnt647v)

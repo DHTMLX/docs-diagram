@@ -203,10 +203,7 @@ const data = [
 ];
 ~~~
 
-**Related samples**:
-
-- [Diagram. Org chart mode. Nested vertical lists](https://snippet.dhtmlx.com/98tzmzpg)
-- [Diagram editor. Org chart mode. Image card editor](https://snippet.dhtmlx.com/vghuunmd)
+**Related sample**: [Diagram. Org chart mode. Nested vertical lists](https://snippet.dhtmlx.com/98tzmzpg)
 
 ## Properties specific for the mindmap mode
 
@@ -246,7 +243,7 @@ When preparing a data set for shapes to load into the diagram in the mindmap mod
 - `catchItem` - (optional) defines, whether the item can catch the moving item
 - `giveItem` - (optional) defines, whether the item can be moved
 
-**Related samples**: [Diagram editor. Mindmap mode. Emotions mind map](https://snippet.dhtmlx.com/lo1vm0e8)
+**Related sample**: [Diagram editor. Mindmap mode. Emotions mind map](https://snippet.dhtmlx.com/lo1vm0e8)
 
 :::info
 Read the details in the [How to Create a JavaScript Mindmap Diagram with DHTMLX Library](https://dhtmlx.com/blog/create-javascript-mindmap-diagram-dhtmlx-library/) article

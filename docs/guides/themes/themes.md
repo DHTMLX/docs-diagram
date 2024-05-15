@@ -17,9 +17,7 @@ The Diagram themes are developed in accordance with international standards. The
 
 You can try all themes in the example below:
 
-TODO
-
-[iframe]
+<iframe src="https://snippet.dhtmlx.com/9twmlfus?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
 ## Light theme (default)
 

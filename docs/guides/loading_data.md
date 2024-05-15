@@ -226,6 +226,6 @@ function runEditor() {
 }
 ~~~
 
-**Related sample**: [Diagram editor. Org chart mode. Live editor](https://snippet.dhtmlx.com/4d4k3o8p)
+**Related sample**: [Diagram. Default mode. Wide flowchart](https://snippet.dhtmlx.com/4d4k3o8p)
 
 The diagram state will be imported into the editor on running the editor.

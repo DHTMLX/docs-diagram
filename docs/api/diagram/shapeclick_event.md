@@ -43,7 +43,3 @@ diagram.events.on("shapeClick", function(id) {
 ~~~
 
 **Related article**: [Event handling](../../../guides/event_handling/)
-
-**Related samples**:
-- [Diagram. Default mode. Events](https://snippet.dhtmlx.com/7h2hgb3g)
-- [Diagram. Org chart mode. Events](https://snippet.dhtmlx.com/l38pct7c)

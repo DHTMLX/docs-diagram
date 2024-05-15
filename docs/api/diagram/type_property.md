@@ -22,15 +22,15 @@ DHTMLX Diagram can be initialized in one of three modes:
 
 - **type:"default"** is used to visualize relations between some entities based on the provided algorithm
 
-<iframe src="https://snippet.dhtmlx.com/f3uekgjw?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
+<iframe src="https://snippet.dhtmlx.com/f3uekgjw?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
 - **type:"org"** is used to show the structure of a group of people by presenting their relations in a hierarchical order
 
 <iframe src="https://snippet.dhtmlx.com/5ign6fyy?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
-- **type:"mindmap"** is used to arrange information on some topic by representing the main concept surrounded by associated ideas 
+- **type:"mindmap"** is used to arrange information on some topic by representing the main concept surrounded by associated ideas
 
-<iframe src="https://snippet.dhtmlx.com/twd25ww1?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
+<iframe src="https://snippet.dhtmlx.com/twd25ww1?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
 **Related articles**:
 

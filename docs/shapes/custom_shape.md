@@ -10,7 +10,7 @@ If the default shapes don't meet your needs, you can create your custom shape.
 
 Let's imagine, you want to create a new `networkCard` shape which should render an image, text, and IP address.
 
-<iframe src="https://snippet.dhtmlx.com/u1xqyo9w?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="550"></iframe>
+<iframe src="https://snippet.dhtmlx.com/u1xqyo9w?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="650"></iframe>
 
 To do that, you need to take the following steps:
 

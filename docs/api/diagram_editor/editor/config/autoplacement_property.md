@@ -111,5 +111,4 @@ Shapes are arranged on imaginary circles relative to the central shape, i.e. the
 - The **placeMode** parameter is added in v5.0
 - The **autoplacement** property is added in v3.0
 
-**Related samples**:
-[Diagram. Default mode. Autoplacement](https://snippet.dhtmlx.com/f3uekgjw?text=diagram)
+**Related sample**: [Diagram. Default mode. Autoplacement](https://snippet.dhtmlx.com/f3uekgjw)

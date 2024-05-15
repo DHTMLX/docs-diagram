@@ -61,7 +61,7 @@ There is a great possibility to escape operating with a big data set while prepa
 
 For this purpose, use the [](../../api/diagram/defaults_property.md) property of the diagram configuration object:
 
-<iframe src="https://snippet.dhtmlx.com/7bn52dl1?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
+<iframe src="https://snippet.dhtmlx.com/7bn52dl1?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
 The `defaults` object contains a number of `key:value` pairs where the *key* is the type of a shape or line and the *value* is the default config of the shape or line correspondingly.
 
@@ -89,7 +89,7 @@ The property allows you to:
 
 To set the child shapes to the right/left of the root shape, use the `direction` attribute of the [](../../api/diagram/typeconfig_property.md) property:
 
-<iframe src="https://snippet.dhtmlx.com/pzllujx3?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
+<iframe src="https://snippet.dhtmlx.com/pzllujx3?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
 ### Setting direction for individual child shape
 
@@ -139,9 +139,9 @@ By default, its value is set to 1. So, to zoom in on a diagram, set the option t
 
 ## Setting toolbar for shapes
 
-DHTMLX Diagram allows you to specify a toolbar with icons for Diagram shapes to simplify interaction with them. You can enable the shape toolbar via the [](../../api/diagram/toolbar_property.md) option of the diagram configuration object: 
+DHTMLX Diagram allows you to specify a toolbar with icons for Diagram shapes to simplify interaction with them. You can enable the shape toolbar via the [](../../api/diagram/toolbar_property.md) option of the diagram configuration object:
 
-<iframe src="https://snippet.dhtmlx.com/4if395hd?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
+<iframe src="https://snippet.dhtmlx.com/4if395hd?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
 ## Enabling items selection
 
@@ -151,4 +151,4 @@ It is possible to activate selection of items in a diagram. You need to make use
 [The predefined set of events](../../../api/selection/#events) of the selection object can help you to define the way of processing the behavior of the diagram during selecting/unselecting items
 :::
 
-<iframe src="https://snippet.dhtmlx.com/jyoxn5h7?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
+<iframe src="https://snippet.dhtmlx.com/jyoxn5h7?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
