@@ -37,6 +37,6 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 ~~~
 
-**Related article:** [Shapebar](guides/diagram_editor/shapebar.md/#showinghiding-the-shapebar)
+**Related article**: [Shapebar](guides/diagram_editor/shapebar.md/#showinghiding-the-shapebar)
 
 **Change log**: Added in v6.0

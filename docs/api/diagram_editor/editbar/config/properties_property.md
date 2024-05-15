@@ -24,7 +24,7 @@ Refer to the [**Editbar configuration**](guides/diagram_editor/editbar/complex_c
 ~~~jsx
 properties?: {
     [type: string]: object[] | function, // custom configurations for controls applied to Diagram elements 
-    ...,
+    // ...
 };
 ~~~
 
@@ -55,7 +55,7 @@ properties: {
                 // ... custom logic here
             return controls;
         },
-    ..., // another element
+    //... another element
 }
 ~~~
 
@@ -112,3 +112,5 @@ const editor = new dhx.DiagramEditor("editor_container", {
 ~~~
 
 **Change log**: Added in v6.0
+
+**Related sample**: [Diagram Editor. Default mode. Network PERT chart](https://snippet.dhtmlx.com/wdijghbn)

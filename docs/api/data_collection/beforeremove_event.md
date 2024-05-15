@@ -37,7 +37,7 @@ const diagram = new dhx.Diagram("diagram_container", {
 diagram.data.parse(data);
 
 // attaching a handler to the event
-diagram.events.on("beforeRemove", function(newItem){
+diagram.events.on("beforeRemove", (newItem) => {
     console.log("beforeRemove "+ item);
     return true;
 });

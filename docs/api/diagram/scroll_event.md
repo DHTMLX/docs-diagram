@@ -34,15 +34,12 @@ const diagram = new dhx.Diagram("diagram_container", {
 diagram.data.parse(data);
 
 // attaching a handler to the event
-diagram.events.on("scroll", function(pos){
+diagram.events.on("scroll", () => {
     console.log("The diagram has been scrolled")
 });
 ~~~
 
 **Related articles**:
+
 - [Scrolling Diagram](../../../guides/diagram/scrolling_diagram/)
 - [Event handling](../../../guides/event_handling/)
-
-**Related samples**:
-- [Diagram. Default mode. Events](https://snippet.dhtmlx.com/7h2hgb3g)
-- [Diagram. Org chart mode. Events](https://snippet.dhtmlx.com/l38pct7c)

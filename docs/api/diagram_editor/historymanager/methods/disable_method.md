@@ -22,7 +22,7 @@ disable(): void;
 const editor = new dhx.DiagramEditor("editor_container", { 
     type: "default"
 });
-...
+// ...
 editor.history.disable();
 ~~~
 

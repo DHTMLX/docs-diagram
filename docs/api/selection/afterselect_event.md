@@ -40,7 +40,7 @@ const diagram = new dhx.Diagram("diagram_container", {
 diagram.data.parse(data);
 
 // attaching a handler to the event
-diagram.events.on("afterSelect", function({ id }) {
+diagram.events.on("afterSelect", ({ id }) => {
     console.log(id + " was selected");
 });
 ~~~
@@ -56,7 +56,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 editor.parse(data);
 
 // attaching a handler to the event
-editor.diagram.events.on("afterSelect", function({ id }) {
+editor.diagram.events.on("afterSelect", ({ id }) => {
     console.log(id + " was selected");
 });
 ~~~
@@ -67,7 +67,3 @@ editor.diagram.events.on("afterSelect", function({ id }) {
 
 - [diagram.config.select](../../../api/diagram/select_property/)
 - [Selecting items](../../../guides/manipulating_items/#selecting-items)
-
-TODO - check the link to the snippet
-
-**Related sample**: [Diagram. Org chart mode. Events](https://snippet.dhtmlx.com/l38pct7c)

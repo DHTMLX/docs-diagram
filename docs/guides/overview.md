@@ -38,7 +38,7 @@ The guides give you a broad overview of all parts of the interface of the editor
 - [Toolbar](../../guides/diagram_editor/toolbar/)
 - [Left panel](../../guides/diagram_editor/left_panel/)
 - [Grid area](../../guides/diagram_editor/grid_area/)
-- [Right panel](../../guides/diagram_editor/editbar/)
+- [Editbar](../../guides/diagram_editor/editbar/)
 
 ## Common guides
 

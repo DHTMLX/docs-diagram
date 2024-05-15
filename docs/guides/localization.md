@@ -172,6 +172,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 ~~~
 
-**Related sample:** [Diagram editor. Default mode. Localization](https://snippet.dhtmlx.com/sivvpbyg)
+**Related samples**:
 
-**Related sample:** [Diagram editor. Org chart mode. Localization](https://snippet.dhtmlx.com/7qt2mfu2)
+- [Diagram editor. Default mode. Localization](https://snippet.dhtmlx.com/sivvpbyg)
+- [Diagram editor. Org chart mode. Localization](https://snippet.dhtmlx.com/7qt2mfu2)

@@ -41,7 +41,7 @@ const diagram = new dhx.Diagram("diagram_container", {
 diagram.data.parse(data);
 
 // attaching a handler to the event
-diagram.events.on("beforeExpand", function(id, dir) {
+diagram.events.on("beforeExpand", (id, dir) => {
     console.log("Expanding " + diagram.data.getItem(id).text, dir);
     return true;
 });
@@ -50,5 +50,3 @@ diagram.events.on("beforeExpand", function(id, dir) {
 **Change log**: The **dir** parameter was added in v3.1
 
 **Related article**: [Event handling](../../../guides/event_handling/)
-
-**Related sample**: [Diagram. Org chart mode. Events](https://snippet.dhtmlx.com/l38pct7c)

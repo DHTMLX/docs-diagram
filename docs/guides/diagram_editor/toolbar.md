@@ -441,3 +441,5 @@ checkIcon?: (editor: IDiagramEditor) => string; // Use only for base elements th
 ~~~jsx
 handler?: (editor: object, event: Event) => void;
 ~~~
+
+**Related sample**: [Diagram with Editor. Default mode. Customization of cards, editbar, toolbar and shapebar](https://snippet.dhtmlx.com/1p0wemnn)

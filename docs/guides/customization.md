@@ -79,7 +79,7 @@ You can create a customized diagram by adding new types of shapes into the diagr
 
 ## Styling target shapes
 
-While using the org and mindmap charts in the Diagram Editor, you can add a custom style for target items. 
+While using the org and mindmap charts in the Diagram Editor, you can add a custom style for target items.
 
 :::note
 The stylization doesn't work with the parent item of the moved item and with the moved item with the property `giveItem: false`
@@ -108,7 +108,7 @@ To specify a custom style for a group, you can use the `style` property of the [
 
 You can change the default style of the group header via the attributes of the `header` property of the [group object](../../groups/configuration_properties/).
 
-<iframe src="https://snippet.dhtmlx.com/0hf8ahrb?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
+<iframe src="https://snippet.dhtmlx.com/0hf8ahrb?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="650"></iframe>
 
 ## Styling swimlanes via the configuration properties
 

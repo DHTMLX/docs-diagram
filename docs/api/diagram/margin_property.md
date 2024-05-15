@@ -51,4 +51,7 @@ const diagram = new dhx.Diagram("diagram_container", {
 });
 ~~~
 
-**Related sample:** [Diagram. Org chart mode. Margin between shapes](https://snippet.dhtmlx.com/bwe9vm6i)
+**Related samples**:
+
+- [Diagram. Org chart mode. Margin between shapes](https://snippet.dhtmlx.com/bwe9vm6i)
+- [Diagram. Default mode. Flowchart custom styles](https://snippet.dhtmlx.com/3wyut2mn)

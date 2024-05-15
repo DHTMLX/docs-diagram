@@ -19,7 +19,6 @@ You can try all themes in the example below:
 
 <iframe src="https://snippet.dhtmlx.com/9twmlfus?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
-
 ## Light theme (default)
 
 ![](../../assets/light_theme.png)
@@ -450,3 +449,4 @@ dhx.setTheme("dark", toolbarEl);
 ~~~
 
 **Related sample:** [Diagram Editor. Default mode. Basic and custom themes](https://snippet.dhtmlx.com/9twmlfus)
+

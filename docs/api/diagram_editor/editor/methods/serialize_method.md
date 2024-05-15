@@ -29,4 +29,4 @@ editor.parse(data);
 const data = editor.serialize();
 ~~~
 
-**Related samples**: [Diagram editor. Org chart mode. Live editor](https://snippet.dhtmlx.com/bng7ego7)
+**Related sample**: [Diagram editor. Org chart mode. Live editor](https://snippet.dhtmlx.com/bng7ego7)

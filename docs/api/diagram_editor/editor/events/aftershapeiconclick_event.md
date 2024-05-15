@@ -39,7 +39,7 @@ const editor = new dhx.DiagramEditor("editor_container");
 editor.parse(data);
 
 // attaching a handler to the event
-editor.events.on("afterShapeIconClick", function(iconId, shape) {
+editor.events.on("afterShapeIconClick", (iconId, shape) => {
     console.log(`
         You've clicked the ${iconId} toolbar control of the shape ${shape.id}
     `);

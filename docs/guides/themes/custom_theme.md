@@ -78,3 +78,4 @@ To make a custom theme of your own, you need to override the values of the inter
 
 **Related sample:** [Diagram Editor. Default mode. Basic and custom themes](https://snippet.dhtmlx.com/9twmlfus)
 
+

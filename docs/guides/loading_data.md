@@ -170,12 +170,12 @@ The component will make an AJAX call and expect the remote URL to provide valid 
 Data loading is asynchronous, so you need to wrap any after-loading code into a promise:
 
 ~~~jsx
-diagram.data.load("/some/data").then(function(){
+diagram.data.load("/some/data").then(() => {
    diagram.selection.add("123");
 });
 ~~~
 
-**Related sample:** [Diagram. Data. Data loading](https://snippet.dhtmlx.com/09isp2d8)
+**Related sample**: [Diagram. Data. Data loading](https://snippet.dhtmlx.com/09isp2d8)
 
 ## Loading from a local source
 
@@ -185,7 +185,7 @@ To load data from a local data source, use the [](../api/data_collection/parse_m
 diagram.data.parse(data);
 ~~~
 
-**Related sample:** [Diagram. Default mode. Wide flowchart](https://snippet.dhtmlx.com/4d4k3o8p)
+**Related sample**: [Diagram. Default mode. Wide flowchart](https://snippet.dhtmlx.com/4d4k3o8p)
 
 ### Loading data into the editor
 
@@ -195,7 +195,7 @@ To load a data set into the editor, use the [parse()](/api/diagram_editor/editor
 editor.parse(data);
 ~~~
 
-**Related sample:** [Diagram editor. Default mode. Basic initialization](https://snippet.dhtmlx.com/xshe9ut7)
+**Related sample**: [Diagram editor. Default mode. Basic initialization](https://snippet.dhtmlx.com/xshe9ut7)
 
 ## Saving and restoring state
 
@@ -226,6 +226,6 @@ function runEditor() {
 }
 ~~~
 
-**Related sample**: [Diagram editor. Org chart mode. Live editor](https://snippet.dhtmlx.com/4d4k3o8p)
+**Related sample**: [Diagram. Default mode. Wide flowchart](https://snippet.dhtmlx.com/4d4k3o8p)
 
 The diagram state will be imported into the editor on running the editor.
