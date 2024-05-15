@@ -8,10 +8,10 @@ description: You can learn about the properties property of Editbar in the docum
 
 ### Description
 
-@short: Optional. A set of configurations that modify controls for Diagram elements (shapes, groups, swimlanes etc)
+@short: Optional. A set of configurations that modify controls for Diagram elements (shapes, groups, swimlanes etc.)
 
 :::info
-The `properties` property allows you to do the following:
+The `properties` config allows you to do the following:
 - modify Editbar controls for all or individual Diaram elements base on [**Basic controls**](api/diagram_editor/editbar/basic_controls_overview.md) and/or [**Complex controls**](api/diagram_editor/editbar/complex_controls_overview.md)
 - apply custom Editbar control(s) defined via the [`controls`](api/diagram_editor/editbar/config/controls_property.md) property to Diagram elements
 - specify conditions for applying an Editbar control (custom or default) to Diagram elements
@@ -53,102 +53,26 @@ properties: {
 }
 ~~~
 
-You can configure Editbar controls for a separate group of Diagram elements. There are the following service properties to configure groups:
+You can also configure Editbar controls for a separate group of Diagram elements. There are the following service properties to configure groups:
 
-- `$default` - allows configuring Editbar controls if no elements are selected, or more than one element is selected
-
-~~~jsx
-properties: {
-    $default: [
-        {
-            type: "gridStep",
-            readOnly: true
-        }
-    ]
-}
-~~~
-
-- `$shape` - allows configuring Editbar controls for all shapes including custom shapes
+- [`$default`](guides/diagram_editor/editbar.md#configure-editbar-for-the-grid-area) - allows configuring Editbar controls if no elements are selected, or more than one element is selected
+- [`$shape`](guides/diagram_editor/editbar.md#configure-editbar-for-shapes) - allows configuring Editbar controls for all shapes including custom shapes
+- [`$group`](guides/diagram_editor/editbar.md#configure-editbar-for-group-elements) - allows configuring Editbar controls for all elements with the "group" type
+- [`$swimlane`](guides/diagram_editor/editbar.md#configure-editbar-for-swimlanes) - allows configuring Editbar controls for all elements with the "swimlane" type
+- [`$line`](guides/diagram_editor/editbar.md#configure-editbar-for-connectors) - allows configuring Editbar controls for all elements with the "line" type
+- [`$lineTitle`](guides/diagram_editor/editbar.md#configure-editbar-for-line-titles) - allows configuring Editbar controls for all elements with the "lineTitle" type
 
 ~~~jsx
 properties: {
-    $shape: [
-        {
-            type: "position",
-            $properties: {
-                dx: { disabled: true }
-            }
-        }
-    ]
+    $default: { /*...*/ }, 
+    $shape: { /*...*/ }, 
+    $group: { /*...*/ }, 
+    $swimlane: { /*...*/ },
+    $line: { /*...*/ },
+    $lineTitle: { /*...*/ },
+    // ...
 }
 ~~~
-
-- `$group` - allows configuring Editbar controls for all elements with the "group" type
-
-~~~jsx
-properties: {
-    $group: [
-        { 
-            type: "header", 
-            label: "Group header style" 
-        },
-        // ...
-    ]
-}
-~~~
-
-- `$swimlane` - allows configuring Editbar controls for all elements with the "swimlane" type
-- `$line` - allows configuring Editbar controls for all elements with the "line" type
-- `$lineTitle` - allows configuring Editbar controls for all elements with the "lineTitle" type
-
-~~~jsx
-properties: {
-    $default: [
-        {
-            type: "gridStep",
-            readOnly: true
-        }
-    ],
-    $shape: [
-        {
-            type: "position",
-            $properties: {
-                dx: { disabled: true }
-            }
-        }
-    ],
-    $group: [
-        { 
-            type: "header", 
-            label: "Group header style" 
-        },
-        // ...
-    ],
-    $swimlane: [
-        { 
-            type: "header", 
-            label: "Swimlane header style" 
-        },
-        // ...
-    ],
-    $line: [
-        {
-            type: "lineShape",
-            label: "Line connection type"
-        },
-        // ...
-    ],
-    $lineTitle: [
-        {
-            type: "position",
-            $properties: {
-                dx: { disabled: false }
-            }
-        }
-    ]
-}
-~~~
-
 :::
 
 ### Example
@@ -204,3 +128,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 ~~~
 
 **Change log**: The property was added in v6.0
+
+**Related article:** [**Editbar configuration**](guides/diagram_editor/editbar.md)
+
+**Related sample:** [Diagram Editor. Default mode. Customization of editbar. Added shape counter](https://snippet.dhtmlx.com/ealq0m4l?mode=wide) 

@@ -78,3 +78,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 ~~~
 
 **Change log**: The property was added in v6.0
+
+**Related article:** [**Editbar configuration**](guides/diagram_editor/editbar.md)
+
+**Related sample:** [Diagram Editor. Default mode. PERT сhart with the legend](https://snippet.dhtmlx.com/w8mrh3ay?mode=wide) 
