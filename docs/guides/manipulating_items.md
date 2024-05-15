@@ -9,8 +9,8 @@ You can easily manipulate Diagram items via the [Diagram Editor](../../guides/di
 
 - [how to automatically arrange shapes in the hierarchical order](#arranging-shapes-automatically);
 - how to perform a range of operations over items, in particular:
-    - [add](#adding-an-item)/[update](#updating-an-item)/[delete](#deleting-an-item) items;
-    - [check if an item exists](#checking-existence-of-an-item) in the diagram and [get it](#getting-an-item);
+    - [add](#adding-an-item)/[update](#updating-an-item)/[delete](#deleting-items) items;
+    - [check if an item exists](#checking-existence-of-the-item) in the diagram and [get it](#getting-an-item);
     - [select a certain item](#selecting-items);
     - [scroll to a necessary item](#showing-the-necessary-item) to make it visible on the screen, if there are many items in the diagram;
     - [expand/collapse items](#expandingcollapsing-items);

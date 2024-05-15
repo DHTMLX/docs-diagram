@@ -16,5 +16,5 @@ You can clone or download it, and use it for your projects. To run the demo, fol
 
 If you use some other frameworks, check the available examples below:
 
-- [Integration with Angular](../../guides/angular_integration/)
-- [Integration with React](../../guides/react_integration/)
+- [Integration with Angular](/guides/integrations/angular_integration/)
+- [Integration with React](/guides/integrations/react_integration/)

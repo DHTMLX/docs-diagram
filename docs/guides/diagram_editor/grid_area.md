@@ -129,7 +129,7 @@ Note, that some options of moving the first/last columns and rows are deactivate
 
 ## Editing attributes of an item
 
-After selecting an item in the grid area, you can update its attributes [via the sidebar options in the editbar of the editor](../../../guides/diagram_editor/editbar/overview/).
+After selecting an item in the grid area, you can update its attributes [via the sidebar options in the editbar of the editor](../../../guides/diagram_editor/editbar/).
 
 ## Configuring the toolbar of an item
 

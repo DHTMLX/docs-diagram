@@ -36,7 +36,7 @@ Learn how to initialize Diagram Editor - a great tool which significantly accele
 The guides give you a broad overview of all parts of the interface of the editor and their settings, present examples of customization of the interface elements you may have at your disposal.
 
 - [Toolbar](../../guides/diagram_editor/toolbar/)
-- [Left panel](../../guides/diagram_editor/left_panel/)
+- [Shapebar](../../guides/diagram_editor/shapebar/)
 - [Grid area](../../guides/diagram_editor/grid_area/)
 - [Editbar](../../guides/diagram_editor/editbar/)
 
@@ -62,9 +62,9 @@ Learn how to adapt the diagram to various languages and easily edit the text ele
 
 The articles give you examples of usage a Diagram with different client-side frameworks.
 
-- [Integration with Angular](../../guides/angular_integration/)
-- [Integration with React](../../guides/react_integration/)
-- [Integration with Vue.js](../../guides/vue_integration/)
+- [Integration with Angular](/guides/integrations/angular_integration/)
+- [Integration with React](/guides/integrations/react_integration/)
+- [Integration with Vue.js](/guides/integrations/vue_integration/)
 
 ## Touch support
 
