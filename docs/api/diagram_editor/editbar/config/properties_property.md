@@ -1,5 +1,5 @@
 ---
-sidebar_label: properties!!
+sidebar_label: properties
 title: properties Property of Editbar
 description: You can learn about the properties property of Editbar in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
@@ -8,23 +8,23 @@ description: You can learn about the properties property of Editbar in the docum
 
 ### Description
 
-@short: Optional. A set of configurations that modify controls for Diagram elements (shapes, groups, swimlanes etc)
+@short: Optional. A set of configurations that modify controls for Diagram elements (shapes, groups, swimlanes, etc.)
 
 :::info
 The `properties` property allows you to do the following:
-- modify editbar controls for all or individual Diaram elements base on [**Basic controls**](guides/diagram_editor/editbar/basic_controls.md) and/or [**Complex controls**](guides/diagram_editor/editbar/complex_controls.md)
+- modify editbar controls for all or individual Diagram elements based on [**Basic controls**](/api/diagram_editor/editbar/basic_controls_overview/) and/or [**Complex controls**](/api/diagram_editor/editbar/complex_controls_overview)
 - apply custom editbar control(s) defined via the [`controls`](api/diagram_editor/editbar/config/controls_property.md) property to Diagram elements
 - specify conditions for applying an editbar control (custom or default) to Diagram elements
 
-Refer to the [**Editbar configuration**](guides/diagram_editor/editbar/complex_controls.md) guide for more information about configuring!
+Refer to the [**Editbar configuration**](guides/diagram_editor/editbar.md) guide for more information about configuring!
 :::
 
 ### Usage
 
-~~~js
+~~~jsx
 properties?: {
     [type: string]: object[] | function, // custom configurations for controls applied to Diagram elements 
-    ...,
+    // ...
 };
 ~~~
 
@@ -55,7 +55,7 @@ properties: {
                 // ... custom logic here
             return controls;
         },
-    ..., // another elemnt
+    //... another element
 }
 ~~~
 
@@ -111,4 +111,6 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 ~~~
 
-**Change log**: The property was added in v6.0
+**Change log**: Added in v6.0
+
+**Related sample**: [Diagram Editor. Default mode. Network PERT chart](https://snippet.dhtmlx.com/wdijghbn)

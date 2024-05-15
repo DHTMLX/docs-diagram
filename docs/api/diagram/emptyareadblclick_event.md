@@ -12,7 +12,7 @@ description: You can learn about the emptyAreaDblClick event in the documentatio
 
 ### Usage
 
-~~~js
+~~~jsx
 emptyAreaDblClick: (event: MouseEvent) => void;
 ~~~
 
@@ -24,7 +24,7 @@ The callback of the event takes the following parameter:
 
 ### Example
 
-~~~js {9-11}
+~~~jsx {9-11}
 // initializing Diagram
 const diagram = new dhx.Diagram("diagram_container", {
     type: "default"
@@ -34,15 +34,10 @@ diagram.data.parse(data);
 
 // attaching a handler to the event
 diagram.events.on("emptyAreaDblClick", (e) => {
-	console.log("emptyAreaDblClick");
+    console.log("emptyAreaDblClick");
 });
 ~~~
 
 **Change log**: Added in v4.1
 
 **Related article**: [Event handling](../../../guides/event_handling/)
-
-**Related samples**:
-- [Diagram. Default mode. Events](https://snippet.dhtmlx.com/7h2hgb3g)
-- [Diagram. Org chart mode. Events](https://snippet.dhtmlx.com/l38pct7c)
-

@@ -1,5 +1,5 @@
 ---
-sidebar_label: controls!!
+sidebar_label: controls
 title: controls Property of Editbar
 description: You can learn about the controls property of Editbar in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
@@ -11,17 +11,17 @@ description: You can learn about the controls property of Editbar in the documen
 @short: Optional. A set of configurations that defines one or several custom controls
 
 :::info
-The `controls` property allows you to create custom Editbar controls based on [**Basic controls**](guides/diagram_editor/editbar/basic_controls.md) and/or [**Complex controls**](guides/diagram_editor/editbar/complex_controls.md). Use the [`properties`](api/diagram_editor/editbar/config/properties_property.md) property to apply the custom control(s) to the needed elements.
+The `controls` property allows you to create custom Editbar controls based on [**Basic controls**](/api/diagram_editor/editbar/basic_controls_overview/) and/or [**Complex controls**](/api/diagram_editor/editbar/complex_controls_overview). Use the [`properties`](api/diagram_editor/editbar/config/properties_property.md) property to apply the custom control(s) to the needed elements.
 
-Refer to the [**Editbar configuration**](guides/diagram_editor/editbar/complex_controls.md) guide for more information about configuring!
+Refer to the [**Editbar configuration**](guides/diagram_editor/editbar.md) guide for more information about configuring!
 :::
 
 ### Usage
 
-~~~js
+~~~jsx
 controls?: {
     [type: string]: object, // custom control
-    ... // another control
+    // another control
 };
 ~~~
 
@@ -30,10 +30,10 @@ controls?: {
 - `type` - the type name of a new control
     - `object` - the configuration object of a new control
 
-~~~js
+~~~jsx
 controls: {
-      estimate: { ... }, // create new "estimate" control with custom configurations
-      ... // another control
+    estimate: { ... }, // create new "estimate" control with custom configurations
+    // another control
 }
 ~~~
 
@@ -71,4 +71,6 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 ~~~
 
-**Change log**: The property was added in v6.0
+**Change log**: Added in v6.0
+
+**Related sample**: [Diagram Editor. Default mode. PERT сhart with the legend](https://snippet.dhtmlx.com/w8mrh3ay)

@@ -8,17 +8,17 @@ description: You can check a History manager overview in the documentation of th
 
 A set of APIs that you can use for managing the history of actions in the Diagram Editor. Use the `history` keyword to access the History manager via the `editor` object:
 
-~~~js {5}
+~~~jsx {5}
 const editor = new dhx.DiagramEditor("editor_container", { 
-    type: "default", // only default
+    type: "default" // only default
 });
-...
+// ...
 editor.history.redo(); // restores an action that has been reverted by the Undo action
 ~~~
 
 ## History manager methods overview
 
-| Name                                 						  | Description                                 					   |
+| Name                                                           | Description                                                        |
 | :---------------------------------------------------------- | :----------------------------------------------------------------- |
 | [](api/diagram_editor/historymanager/methods/add_method.md) | @getshort(api/diagram_editor/historymanager/methods/add_method.md) |
 | [](api/diagram_editor/historymanager/methods/disable_method.md) | @getshort(api/diagram_editor/historymanager/methods/disable_method.md) |
@@ -31,6 +31,6 @@ editor.history.redo(); // restores an action that has been reverted by the Undo 
 
 ## History manager properties overview
 
-| Name                                 						  | Description                                 					   |
+| Name                                                           | Description                                                        |
 | :---------------------------------------------------------- | :----------------------------------------------------------------- |
 | [](api/diagram_editor/historymanager/config/savedelay_property.md) | @getshort(api/diagram_editor/historymanager/config/savedelay_property.md) |

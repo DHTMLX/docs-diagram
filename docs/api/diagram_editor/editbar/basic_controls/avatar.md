@@ -1,5 +1,5 @@
 ---
-sidebar_label: Avatar!!
+sidebar_label: Avatar
 title: Editbar Basic Controls - Avatar 
 description: You can explore the Avatar control of Editbar in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
@@ -133,13 +133,13 @@ const editor = new dhx.DiagramEditor("editor_container", {
                         fieldName: "file",
                         target: "https://docs.dhtmlx.com/suite/backend/upload",
                         params: {
-                            "firstCustomParam": "customValue",
+                            "firstCustomParam": "customValue"
                         },
                         headerParams: {
-                            "firstCustomParam": "customValue",
+                            "firstCustomParam": "customValue"
                         },
-                        autosend: true,
-                    },
+                        autosend: true
+                    }
                 ]
             }
         }

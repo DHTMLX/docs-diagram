@@ -1,5 +1,5 @@
 ---
-sidebar_label: ToggleGroup!!
+sidebar_label: ToggleGroup
 title: Editbar Basic Controls - ToggleGroup 
 description: You can explore the ToggleGroup control of Editbar in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
@@ -131,18 +131,18 @@ const editor = new dhx.DiagramEditor("editor_container", {
                         options: [
                             {
                                 icon: "dxi dxi-format-align-left",
-                                value: "left",
+                                value: "left"
                             },
                             {
                                 icon: "dxi dxi-format-align-center",
-                                value: "center",
+                                value: "center"
                             },
                             {
                                 icon: "dxi dxi-format-align-right",
-                                value: "right",
-                            },
-                        ],
-                    },
+                                value: "right"
+                            }
+                        ]
+                    }
                 ]
             }
         }

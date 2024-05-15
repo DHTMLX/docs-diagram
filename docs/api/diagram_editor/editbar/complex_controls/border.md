@@ -1,5 +1,5 @@
 ---
-sidebar_label: Border!!
+sidebar_label: Border
 title: Editbar Complex Controls - Border 
 description: You can explore the Border control of Editbar in the documentation of the the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
@@ -59,10 +59,10 @@ The **Border** control is not available for the **lineTitle** element.
 
 ### Service properties
 
-- `$properties` - (optional) allows you to override values of [basic controls](/guides/diagram_editor/editbar/basic_controls) within a complex control. You can configure the following elements of the **Border** control based on the basic controls:
-    - `stroke` - ([colorpicker](/guides/diagram_editor/editbar/basic_controls/colorpicker)) sets the border color
-    - `strokeType` - ([combo](/guides/diagram_editor/editbar/basic_controls/combo)) sets the border type
-    - `strokeWidth` - ([input](/guides/diagram_editor/editbar/basic_controls/input)) sets the border width
+- `$properties` - (optional) allows you to override values of [basic controls](/api/diagram_editor/editbar/basic_controls_overview) within a complex control. You can configure the following elements of the **Border** control based on the basic controls:
+    - `stroke` - ([colorpicker](/api/diagram_editor/editbar/basic_controls/colorpicker)) sets the border color
+    - `strokeType` - ([combo](/api/diagram_editor/editbar/basic_controls/combo)) sets the border type
+    - `strokeWidth` - ([input](/api/diagram_editor/editbar/basic_controls/input)) sets the border width
 
 ## Example
 

@@ -12,7 +12,7 @@ description: You can learn about the beforeSubmenuOpen event in the documentatio
 
 ### Usage
 
-~~~js
+~~~jsx
 beforeSubmenuOpen: (
     id: string | number, 
     event: MouseEvent, 
@@ -34,7 +34,7 @@ Return `false` to block opening the subheader; otherwise, `true`
 
 ### Example
 
-~~~js {9-12}
+~~~jsx {9-12}
 // initializing Diagram
 const diagram = new dhx.Diagram("diagram_container", {
     type: "default"

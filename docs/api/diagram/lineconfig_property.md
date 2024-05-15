@@ -12,7 +12,7 @@ description: You can learn about the lineConfig property in the documentation of
 
 ### Usage
 
-~~~js
+~~~jsx
 lineConfig?: {
     lineType?: "dash" | "line",
     lineGap?: number
@@ -32,7 +32,7 @@ The value of the **lineType** setting will be applied, if the line object doesn'
 
 ### Default config
 
-~~~js
+~~~jsx
 lineConfig: {
   lineType: "line",
   lineGap: 10
@@ -41,7 +41,7 @@ lineConfig: {
 
 ### Example
 
-~~~js {2-5}
+~~~jsx {2-5}
 const diagram = new dhx.Diagram("diagram_container", {
     type: "default",
     lineConfig: {
@@ -58,7 +58,7 @@ The result of applying the **lineGap** property is shown in the image below:
 
 **Related sample**: [Diagram. Default mode. Activity diagram](https://snippet.dhtmlx.com/a9t2z2dt)
 
-**Change log**: 
+**Change log**:
 
 - The **lineGap** parameter is added in v5.0 (check the Migration article)
 - Added in v4.2

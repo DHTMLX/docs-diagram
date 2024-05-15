@@ -10,23 +10,23 @@ description: You can check a Toolbar overview in the documentation of the DHTMLX
 
 - creating the default Toolbar by using the `toolbar:true` setting:
 
-~~~js
+~~~jsx
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {
         toolbar: true // displaying the default Toolbar
     }
 });
-~~~ 
+~~~
 
 - configuring Toolbar by specifying it as an object with [a set of properties](/category/toolbar-properties/):
 
-~~~js
+~~~jsx
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {
-    	// configuring Toolbar via an object
-         toolbar: {
+        // configuring Toolbar via an object
+        toolbar: {
             css: "custom_css",
             items: ["file", "spacer", "scale"],
             navigationType: "pointer"

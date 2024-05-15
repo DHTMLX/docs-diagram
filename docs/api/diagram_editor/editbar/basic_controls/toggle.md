@@ -1,5 +1,5 @@
 ---
-sidebar_label: Toggle!!
+sidebar_label: Toggle
 title: Editbar Basic Controls - Toggle 
 description: You can explore the Toggle control of Editbar in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
@@ -104,8 +104,8 @@ const editor = new dhx.DiagramEditor("editor_container", {
                         icon: "dxi dxi-eye",
                         offIcon: "dxi dxi-eye-off",
                         text: "Visible",
-                        offText: "Invisible",
-                    },
+                        offText: "Invisible"
+                    }
                 ]
             }
         }
@@ -114,7 +114,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 ~~~
 
 ~~~jsx {7-12} title="Assigning the set value as a value of the applied property"
-const editor= new dhx.DiagramEditor("editor", {
+const editor= new dhx.DiagramEditor("editor_container", {
     type: "default",
      view: {
         editbar: {
@@ -125,7 +125,7 @@ const editor= new dhx.DiagramEditor("editor", {
                         key: "fontStyle",
                         value: "italic",
                         icon: "dxi dxi-format-italic"        
-                    },
+                    }
                 ]
             }
         }

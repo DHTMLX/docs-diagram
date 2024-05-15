@@ -1,5 +1,5 @@
 ---
-sidebar_label: getFilters()!!
+sidebar_label: getFilters()
 title: getFilters Method of Data Collection
 description: You can learn about the getFilters method of data collection in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
@@ -12,7 +12,7 @@ description: You can learn about the getFilters method of data collection in the
 
 ### Usage
 
-~~~js
+~~~jsx
 getFilters({ permanent?: boolean }): object;
 ~~~
 
@@ -28,7 +28,7 @@ The method returns an object with the applied filters, where:
 
 ### Example
 
-~~~js {6-7}
+~~~jsx {6-7}
 const diagram = new dhx.Diagram("diagram_container", {
     // configuration settings
 });

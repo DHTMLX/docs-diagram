@@ -12,10 +12,10 @@ description: You can learn about the load method of data collection in the docum
 
 ### Usage
 
-~~~js
+~~~jsx
 load(
-	url: string | object, 
-	driver?: object | string
+    url: string | object, 
+    driver?: object | string
 ): promise;
 ~~~
 
@@ -30,7 +30,7 @@ The method returns a promise of data loading
 
 ### Example
 
-~~~js {6}
+~~~jsx {6}
 const diagram = new dhx.Diagram("diagram_container", {
     type: "default"
 });
@@ -45,9 +45,9 @@ The component will make an AJAX call and expect the remote URL to provide valid 
 
 Data loading is asynchronous, so you need to wrap any after-loading code into a promise:
 
-~~~js
-diagram.data.load("../some/data").then(function(){
-	diagram.selection.add(123);
+~~~jsx
+diagram.data.load("../some/data").then(() => {
+    diagram.selection.add(123);
 });
 ~~~
 

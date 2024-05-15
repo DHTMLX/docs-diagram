@@ -12,13 +12,13 @@ description: You can learn about the load event of data collection in the docume
 
 ### Usage
 
-~~~js
+~~~jsx
 load: () => void;
 ~~~
 
 ### Example
 
-~~~js {9-11}
+~~~jsx {9-11}
 // initializing Diagram
 const diagram = new dhx.Diagram("diagram_container", {
     type: "default"
@@ -27,7 +27,7 @@ const diagram = new dhx.Diagram("diagram_container", {
 diagram.data.parse(data);
 
 // attaching a handler to the event
-diagram.events.on("load", function(){
-	// some logic here
+diagram.events.on("load", () => {
+    // some logic here
 });
 ~~~

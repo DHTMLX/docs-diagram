@@ -12,7 +12,7 @@ description: You can learn about the undo method of HistoryManager in the docume
 
 ### Usage
 
-~~~js
+~~~jsx
 undo(first?: boolean): void;
 ~~~
 
@@ -22,11 +22,11 @@ undo(first?: boolean): void;
 
 ### Example
 
-~~~js {5}
+~~~jsx {5}
 const editor = new dhx.DiagramEditor("editor_container", { 
     type: "default"
 });
-...
+// ...
 editor.history.undo();
 ~~~
 

@@ -1,5 +1,5 @@
 ---
-sidebar_label: Text align!!
+sidebar_label: Text align
 title: Editbar Complex Controls - Text align 
 description: You can explore the Text align control of Editbar in the documentation of the the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
@@ -55,9 +55,9 @@ description: You can explore the Text align control of Editbar in the documentat
 
 ### Service properties
 
-- `$properties` - (optional) allows you to override values of [basic controls](/guides/diagram_editor/editbar/basic_controls) within a complex control. You can configure the following elements of the **Text align** control based on the basic controls:
-    - `textAlign` - ([toggleGroup](/guides/diagram_editor/editbar/basic_controls/togglegroup)) sets the horizontal alignment of text
-    - `textVerticalAlign` - ([toggleGroup](/guides/diagram_editor/editbar/basic_controls/togglegroup)) sets the vertical alignment of text
+- `$properties` - (optional) allows you to override values of [basic controls](/api/diagram_editor/editbar/basic_controls_overview) within a complex control. You can configure the following elements of the **Text align** control based on the basic controls:
+    - `textAlign` - ([toggleGroup](/api/diagram_editor/editbar/basic_controls/togglegroup)) sets the horizontal alignment of text
+    - `textVerticalAlign` - ([toggleGroup](/api/diagram_editor/editbar/basic_controls/togglegroup)) sets the vertical alignment of text
 
 ## Example
 

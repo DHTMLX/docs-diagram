@@ -1,5 +1,5 @@
 ---
-sidebar_label: toolbar
+sidebar_label: toolbar 
 title: toolbar Property
 description: You can learn about the toolbar property in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
@@ -12,13 +12,13 @@ description: You can learn about the toolbar property in the documentation of th
 
 ### Usage
 
-~~~js
+~~~jsx
 toolbar?: [
     {
-	    id: string,
+        id: string,
         content: string,
-	    check?: function,
-	    css?: function,
+        check?: function,
+        css?: function,
         tooltip?: string
     },
     {...} // other icon objects
@@ -37,33 +37,41 @@ The **toolbar** array includes a set of icon objects. Each icon object can have 
 
 ### Example
 
-~~~js
+~~~jsx
 const diagram = new dhx.Diagram("diagram_container", { 
-	type: "org", 
-	select: true,
-	margin: {
-    	y: 65
-    },
-    toolbar: [{
-        id: "download",
-        content: "<i class='dxi dxi-download'></i>",
-        tooltip: "Download",
-    },
-    {
-        id: "info",
-        content: "<i class='dxi dxi-information-outline'></i>",
-        tooltip: "Info",
-    }]
+    type: "org",
+    select: true,
+    // setting a toolbar with buttons for items
+    toolbar: [
+        {
+            id: "add",
+            content: "<i class='dxi dxi-plus-box'>",
+            check: item => !item.assistant && !item.partner,
+            tooltip: "Add new shape"
+        },
+        {
+            id: "download",
+            content: "<i class='dxi dxi-download'></i>",
+            tooltip: "Download to PDF"
+        },
+        {
+            id: "remove",
+            content: "<i class='dxi dxi-delete-outline'>",
+            check: item => item.parent,
+            css: () => "dhx_diagram_toolbar__icon--remove",
+            tooltip: "Remove"
+        }
+    ]
 });
 ~~~
 
-**Change log:**
+**Change log**:
 
 - The **tooltip** parameter is added in v5.0
 
 **Related articles**:
 
-- [Setting toolbar for items](../../../guides/diagram/configuration/#setting-toolbar-for-items)
+- [Setting toolbar for shapes](/guides/diagram/configuration/#setting-toolbar-for-shapes)
 - [Default icons](https://docs.dhtmlx.com/suite/helpers/icon/)
 
-**Related sample**: [Diagram. Configuration. Per-shape toolbar](https://snippet.dhtmlx.com/4if395hd)
+**Related sample**: [Diagram. Configuration. Shape toolbar](https://snippet.dhtmlx.com/4if395hd)

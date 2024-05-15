@@ -14,7 +14,7 @@ If a click is done over a swimlane, the event will be fired on the cell of the s
 
 ### Usage
 
-~~~js
+~~~jsx
 groupClick: (
     id: string | number,
     event: MouseEvent
@@ -30,7 +30,7 @@ The callback of the event takes the following parameters:
 
 ### Example
 
-~~~js {9-11}
+~~~jsx {9-11}
 // initializing Diagram
 const diagram = new dhx.Diagram("diagram_container", {
     type: "default"

@@ -1,5 +1,5 @@
 ---
-sidebar_label: Localization!!
+sidebar_label: Localization
 title: Localization
 description: You can learn about the Localization in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
@@ -9,7 +9,7 @@ description: You can learn about the Localization in the documentation of the DH
 It is possible to localize the interface of the Diagram editor into a desired language. For this, you need to provide the corresponding locale settings via the **dhx.i18n.setLocale()** method.
 The method takes two parameters: the diagram container and an object that contains rules of localization for a particular country.
 
-~~~js
+~~~jsx
 //an example of English locale
 const en = {
     addColumnLast: "Add column",
@@ -78,7 +78,7 @@ const en = {
         text: "Text",
         textAlignment: "Text alignment",
         textStyle: "Text style",
-        title: "Title",
+        title: "Title"
     },
     toolbar: {
         align: "Align",
@@ -129,7 +129,7 @@ const en = {
         undo: "Undo",
         view: "View",
         zoomIn: "Zoom in",
-        zoomOut: "Zoom out",
+        zoomOut: "Zoom out"
     },
     hotkey: {
         "Alt+1": "Alt+1",
@@ -165,13 +165,14 @@ dhx.i18n.setLocale("diagram", locale);
 
 After that, you need to initialize the editor and check how the labels' names have changed.
 
-~~~js
+~~~jsx
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "default" // "default" | "org" | "mindmap"
     // other config options
 });
 ~~~
 
-**Related sample:** [Diagram editor. Default mode. Localization](https://snippet.dhtmlx.com/sivvpbyg)
+**Related samples**:
 
-**Related sample:** [Diagram editor. Org chart mode. Localization](https://snippet.dhtmlx.com/7qt2mfu2)
+- [Diagram editor. Default mode. Localization](https://snippet.dhtmlx.com/sivvpbyg)
+- [Diagram editor. Org chart mode. Localization](https://snippet.dhtmlx.com/7qt2mfu2)

@@ -12,7 +12,7 @@ description: You can learn about the afterRemove event of data collection in the
 
 ### Usage
 
-~~~js
+~~~jsx
 afterRemove: (removedItem: object) => void;
 ~~~
 
@@ -24,7 +24,7 @@ The callback of the event takes the following parameter:
 
 ### Example
 
-~~~js {9-11}
+~~~jsx {9-11}
 // initializing Diagram
 const diagram = new dhx.Diagram("diagram_container", {
     type: "default"
@@ -33,7 +33,7 @@ const diagram = new dhx.Diagram("diagram_container", {
 diagram.data.parse(data);
 
 // attaching a handler to the event
-diagram.events.on("afterRemove", function(newItem){
-	console.log("afterRemove "+ item)
+diagram.events.on("afterRemove", (newItem) => {
+    console.log("afterRemove "+ item);
 });
 ~~~

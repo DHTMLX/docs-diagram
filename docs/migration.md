@@ -6,21 +6,20 @@ description: You can learn about the Migration to Newer Versions in the document
 
 # Migration to newer versions
 
-4.2 -> 5.0
---------------
+## 4.2 -> 5.0
 
 ### Diagram API
 
 The **lineGap** property of Diagram is deprecated and no longer supported. Instead, use the **lineGap** parameter of the [lineConfig](diagram/api/diagram/lineconfig_property.md) property.
 
-~~~js {3} title="Before v5.0"
+~~~jsx {3} title="Before v5.0"
 const diagram = new dhx.Diagram("diagram_container", { 
     type: "default",
     lineGap: 30
 });
 ~~~
 
-~~~js {3-5} title="From v5.0"
+~~~jsx {3-5} title="From v5.0"
 const diagram = new dhx.Diagram("diagram_container", { 
     type: "default",
     lineConfig: {
@@ -32,16 +31,16 @@ const diagram = new dhx.Diagram("diagram_container", {
 
 ### Editor API
 
-The **lineGap** property of Diagram Editor is deprecated and no longer supported. Instead, use the **lineGap** parameter inside the [lineConfig](diagram/api/editor/lineconfig_property.md) property.
+The **lineGap** property of Diagram Editor is deprecated and no longer supported. Instead, use the **lineGap** parameter inside the `lineConfig` property.
 
-~~~js {3} title="Before v5.0"
+~~~jsx {3} title="Before v5.0"
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     lineGap: 30
 });
 ~~~
 
-~~~js {3-5} title="From v5.0"
+~~~jsx {3-5} title="From v5.0"
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     lineConfig: {
@@ -51,8 +50,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 ~~~
 
-4.1 -> 4.2
---------------
+## 4.1 -> 4.2
 
 ### Diagram API
 
@@ -60,13 +58,13 @@ In v4.2, the **defaultLinkType** property is deprecated.
 
 Starting from v4.2, you need to apply the new [lineConfig](../api/diagram/lineconfig_property/) property to specify the default type for connector lines.
 
-~~~js title="Before v4.2"
+~~~jsx title="Before v4.2"
 const diagram = new dhx.Diagram("diagram_container", { 
     defaultLinkType: "dash"
 });
 ~~~
 
-~~~js {2-4} title="From v4.2"
+~~~jsx {2-4} title="From v4.2"
 const diagram = new dhx.Diagram("diagram_container", { 
     lineConfig: {
         lineType: "dash",
@@ -81,7 +79,7 @@ The syntax of specifying basic sets of items for sections in the left panel of t
 
 Before v4.2, you could set boolean *true* value to the array of the section's items to display all available flow-chart shapes in the section:
 
-~~~js {3} title="Before v4.2"
+~~~jsx {3} title="Before v4.2"
 const editor = new dhx.DiagramEditor("editor_container", {
     shapeSections: {
         "flowchart shapes": [true],
@@ -93,7 +91,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 
 Starting from v4.2, you need to use the different syntax for this purpose:
 
-~~~js {3} title="From v4.2"
+~~~jsx {3} title="From v4.2"
 const editor = new dhx.DiagramEditor("editor_container", {
     shapeSections: {
         "flowchart shapes": [{ flowShapes: true }],
@@ -103,22 +101,21 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 ~~~
 
-Besides, it became possible to specify other basic sets of items via the related *key:value* pairs. For more details, check the [shapeSections](../api/editor/shapesections_property/) article.
+Besides, it became possible to specify other basic sets of items via the related *key:value* pairs. For more details, check the `shapeSections` article.
 
-3.1 -> 4.0
-------------
+## 3.1 -> 4.0
 
 ### API
 
 The **shapeHover** event has been deprecated in v4.0. Starting with v4.0, use the new [itemMouseOver](../api/diagram/itemmouseover_event/) event instead.
 
-~~~js title="Before v4.0"
-diagram.events.on("shapeHover",function(id,e){
+~~~jsx title="Before v4.0"
+diagram.events.on("shapeHover", (id,e) => {
     console.log("An item"+ diagram.data.getItem(id).text +"has been hovered over");
 });
 ~~~
 
-~~~js title="From v4.0"
+~~~jsx title="From v4.0"
 diagram.events.on("itemMouseOver", (id, event) => {
     console.log(id, event);
 });
@@ -128,29 +125,28 @@ editor.diagram.events.on("itemMouseOver", (id, event) => {
 });
 ~~~
 
-3.0 -> 3.1
-------------
+## 3.0 -> 3.1
 
 ### Editor API
 
 The **shapeMove** event of the editor object has been deprecated in v3.1. Starting with v3.1, use the new **BeforeShapeMove** and **AfterShapeMove** events instead.
 
-~~~js title="Before v3.1"
-editor.events.on("shapeMove",function() {
+~~~jsx title="Before v3.1"
+editor.events.on("shapeMove", () => {
     console.log("The shape is moved");
 });
 ~~~
 
-~~~js title="From v3.1"
+~~~jsx title="From v3.1"
 // BeforeShapeMove event
-editor.events.on("BeforeShapeMove", function(events) {
-    console.log("Before the shape is moved:", events);
+editor.events.on("BeforeShapeMove", (e) => {
+    console.log("Before the shape is moved:", e);
     return true;
 });
 
 // AfterShapeMove event
-editor.events.on("AfterShapeMove", function(events) {
-    console.log("After the shape is moved:", events);
+editor.events.on("AfterShapeMove", (e) => {
+    console.log("After the shape is moved:", e);
 });
 ~~~
 
@@ -174,7 +170,7 @@ In the version 3.0 these properties are deprecated and removed. Instead, the **c
 - showReset -> controls.reset
 - showExport -> controls.export
 
-~~~js
+~~~jsx
 const editor = new dhx.DiagramEditor("editor_container", {
     controls: { 
         apply: false,
@@ -204,10 +200,10 @@ See the full list of the available controls in the [Toolbar](../guides/diagram_e
 - diagram.detachEvent -> [diagram.events.detach](../guides/event_handling/#detaching-event-listeners)
 - diagram.eachItem -> [diagram.data.map](../api/data_collection/map_method/)
 - diagram.getItem -> [diagram.data.getItem](../api/data_collection/getitem_method/)
-- diagram.getSelectedId -> [diagram.selection.getId](../api/selection/getid_method/)
+- diagram.getSelectedId -> `diagram.selection.getId`
 - diagram.load -> [diagram.data.load](../api/data_collection/load_method/) 
 - diagram.parse -> [diagram.data.parse](../api/data_collection/parse_method/)
 - diagram.selectItem -> [diagram.selection.add](../api/selection/add_method/)
 - diagram.serialize -> [diagram.data.serialize](../api/data_collection/serialize_method/)
 - diagram.unselectItem -> [diagram.selection.remove](../api/selection/remove_method/)
-- diagram.updateItem -> [diagram.data.update](../api/data_collection/update_method/)
+- diagram.updateItem -> [diagram.data.update](../api/data_collection/update_method/) 

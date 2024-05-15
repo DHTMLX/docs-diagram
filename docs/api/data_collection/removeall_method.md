@@ -12,13 +12,13 @@ description: You can learn about the removeAll method of data collection in the 
 
 ### Usage
 
-~~~js
+~~~jsx
 removeAll(): void;
 ~~~
 
 ### Example
 
-~~~js {6}
+~~~jsx {6}
 const diagram = new dhx.Diagram("diagram_container", {
     type: "default"
 });

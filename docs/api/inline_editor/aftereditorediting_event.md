@@ -12,7 +12,7 @@ description: You can learn about the afterEditorEditing event in the documentati
 
 ### Usage
 
-~~~js
+~~~jsx
 afterEditorEditing: (
     value: string, 
     id: string | number, 
@@ -32,7 +32,7 @@ The callback of the event takes the following parameters:
 
 ### Example
 
-~~~js {9-11}
+~~~jsx {9-11}
 // initializing Diagram
 const diagram = new dhx.Diagram("diagram_container", {
     type: "default"
@@ -46,10 +46,7 @@ diagram.events.on("afterEditorEditing", (value, id, key, subId) => {
 });
 ~~~
 
-**Change log**: 
+**Change log**:
+
 - The **subHeaderId** parameter has been changed to **subId** in v4.1
 - Added in v4.0
-
-**Related samples**:
-- [Diagram. Default mode. Events](https://snippet.dhtmlx.com/7h2hgb3g)
-- [Diagram. Org chart mode. Events](https://snippet.dhtmlx.com/l38pct7c)

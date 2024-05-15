@@ -1,5 +1,5 @@
 ---
-sidebar_label: beforeShapeMove!!
+sidebar_label: beforeShapeMove
 title: beforeShapeMove Event of Editor
 description: You can learn about the beforeShapeMove event in of editor the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
@@ -16,12 +16,12 @@ The event fires just for the target element despite the number of selected eleme
 
 ### Usage
 
-~~~js
+~~~jsx
 "beforeShapeMove": ({
     id: string | number, 
     batch: (string | number)[],
     coords: object,
-    event: PointerEvent, 
+    event: PointerEvent
 }) => boolean | void;
 ~~~
 
@@ -46,7 +46,7 @@ For handling the inner Diagram Editor events you can use the **on()** method.
 
 ### Example
 
-~~~js {6-14}
+~~~jsx {6-14}
 // initializing Diagram Editor
 const editor = new dhx.DiagramEditor("editor_container");
 // loading data
@@ -63,8 +63,8 @@ editor.events.on("beforeShapeMove", ({ id, coords }) => {
 });
 ~~~
 
-**Change log**: 
+**Change log**:
+
 - The `batch` property is added in the v6.0
 - The callback function takes an object as a parameter since v6.0
 - The `id` and `coords` parameters are added in v4.0
-

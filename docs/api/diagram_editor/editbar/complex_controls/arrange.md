@@ -1,5 +1,5 @@
 ---
-sidebar_label: Arrange!!
+sidebar_label: Arrange
 title: Editbar Complex Controls - Arrange 
 description: You can explore the Arrange control of Editbar in the documentation of the the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
@@ -59,12 +59,12 @@ The **Arrange** control is available for all elements (excluding the **line** an
 
 ### Service properties
 
-- `$properties` - (optional) allows you to override values of [basic controls](/guides/diagram_editor/editbar/basic_controls) within a complex control. You can configure the following elements of the **Arrange** control based on the basic controls:
-    - `x` - ([input](/guides/diagram_editor/editbar/basic_controls/input)) sets the Diagram element position on the x-axis
-    - `y` - ([input](/guides/diagram_editor/editbar/basic_controls/input)) sets the Diagram element position on the y-axis
-    - `width` - ([input](/guides/diagram_editor/editbar/basic_controls/input)) sets the Diagram element width (px)
-    - `height` - ([input](/guides/diagram_editor/editbar/basic_controls/input)) sets the Diagram element height (px)
-    - `angle` - ([input](/guides/diagram_editor/editbar/basic_controls/input)) sets the Diagram element rotation angle
+- `$properties` - (optional) allows you to override values of [basic controls](/api/diagram_editor/editbar/basic_controls_overview/) within a complex control. You can configure the following elements of the **Arrange** control based on the basic controls:
+    - `x` - ([input](/api/diagram_editor/editbar/basic_controls/input)) sets the Diagram element position on the x-axis
+    - `y` - ([input](/api/diagram_editor/editbar/basic_controls/input)) sets the Diagram element position on the y-axis
+    - `width` - ([input](/api/diagram_editor/editbar/basic_controls/input)) sets the Diagram element width (px)
+    - `height` - ([input](/api/diagram_editor/editbar/basic_controls/input)) sets the Diagram element height (px)
+    - `angle` - ([input](/api/diagram_editor/editbar/basic_controls/input)) sets the Diagram element rotation angle
 
 ## Example
 

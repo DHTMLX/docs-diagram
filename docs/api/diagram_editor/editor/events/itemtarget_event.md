@@ -1,5 +1,5 @@
 ---
-sidebar_label: itemTarget!!
+sidebar_label: itemTarget
 title: itemTarget Event of Editor
 description: You can learn about the itemTarget event of editor in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
@@ -18,7 +18,7 @@ The event doesn't work with the *parent item of a moved item* and with a *moved 
 
 ### Usage
 
-~~~js
+~~~jsx
 "itemTarget": ({
     id: string | number, 
     targetId: string | number,
@@ -33,7 +33,7 @@ The callback of the event is called with an object with the following parameters
 
   - `id` - the id of the moved item
   - `targetId` - the id of the target item
-  - `batch` - an array of moved elements' ids 
+  - `batch` - an array of moved elements' ids
   - `event` - an event object
 
 ### Returns
@@ -46,7 +46,7 @@ For handling the inner Diagram Editor events you can use the **on()** method.
 
 ### Example
 
-~~~js {6-11}
+~~~jsx {6-11}
 // initializing Diagram Editor
 const editor = new dhx.DiagramEditor("editor_container");
 // loading data
@@ -55,12 +55,12 @@ editor.parse(data);
 // attaching a handler to the event
 editor.events.on("itemTarget", ({ id, targetId }) => {
     console.log(`
-		  Item ${id} is hovering over the item ${targetId}
-	  `);
+          Item ${id} is hovering over the item ${targetId}
+      `);
 });
 ~~~
 
-**Change log**: 
+**Change log**:
+
 - The `batch` property is added in the v6.0
 - The callback function takes an object as a parameter since v6.0
-

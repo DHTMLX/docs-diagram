@@ -14,7 +14,7 @@ When you change the value of the grid step, the distance between points in the G
 
 ### Usage
 
-~~~js
+~~~jsx
 gridStep?: number;
 ~~~
 
@@ -24,13 +24,13 @@ The specified number must be greater than or equal to 1
 
 ### Default config
 
-~~~js
+~~~jsx
 gridStep: 10
 ~~~
 
 ### Example
 
-~~~js
+~~~jsx
 const editor = new dhx.DiagramEditor("editor_container", {
     gridStep:20
 });
@@ -40,4 +40,4 @@ const editor = new dhx.DiagramEditor("editor_container", {
 We recommend that you use arrows while moving an item in the editor. This way sets exactly one grid step of moving the item, whereas using a mouse can cause shift the item to several grid steps.
 :::
 
-**Related article:** [Right panel](guides/diagram_editor/editbar.md)
+**Related article**: [Grid area](guides/diagram_editor/grid_area.md)

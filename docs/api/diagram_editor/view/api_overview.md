@@ -10,7 +10,7 @@ A set of APIs that you can use for managing visibility of the Diagram Editor vie
 
 ## View methods overview
 
-| Name                                 						  | Description                                 				  |
+| Name                                                           | Description                                                   |
 | :---------------------------------------------------------- | :------------------------------------------------------------ |
 | [](api/diagram_editor/view/methods/hide_method.md)          | @getshort(api/diagram_editor/view/methods/hide_method.md)     |
 | [](api/diagram_editor/view/methods/isvisible_method.md)     | @getshort(api/diagram_editor/view/methods/isvisible_method.md)|
@@ -18,7 +18,7 @@ A set of APIs that you can use for managing visibility of the Diagram Editor vie
 
 ## View events overview
 
-| Name                                 					     | Description                                 				   |
+| Name                                                          | Description                                                    |
 | :--------------------------------------------------------- | :---------------------------------------------------------- |
 | [](api/diagram_editor/view/events/afterhide_event.md)      | @getshort(api/diagram_editor/view/events/afterhide_event)   |
 | [](api/diagram_editor/view/events/aftershow_event.md)      | @getshort(api/diagram_editor/view/events/aftershow_event)   |

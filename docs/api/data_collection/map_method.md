@@ -12,7 +12,7 @@ description: You can learn about the map method of data collection in the docume
 
 ### Usage
 
-~~~js
+~~~jsx
 map(callback: function): array;
 ~~~
 
@@ -26,14 +26,14 @@ The method returns a new array of items where each item is the result of the cal
 
 ### Example
 
-~~~js {7-9}
+~~~jsx {7-9}
 const diagram = new dhx.Diagram("diagram_container", {
     type: "default"
 });
 diagram.data.parse(data);
 
 //getting ids of all items of the diagram (shapes, links, groups, swimlanes)
-diagram.data.map(function(item){
+diagram.data.map((item) => {
     console.log(item.id);
 });
 ~~~

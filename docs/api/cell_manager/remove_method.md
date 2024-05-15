@@ -16,7 +16,7 @@ The **remove()** method is automatically validated by the system. The cell won't
 
 ### Usage
 
-~~~js
+~~~jsx
 remove(
     cellIndex: number, 
     type: string // "row" | "col"
@@ -30,7 +30,7 @@ remove(
 
 ### Example
 
-~~~js
+~~~jsx
 // initialization of the diagram
 const diagram = new dhx.Diagram("diagram_container", {
     // config options

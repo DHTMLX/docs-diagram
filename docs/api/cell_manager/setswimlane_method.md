@@ -12,7 +12,7 @@ description: You can learn about the setSwimlane method of Cell Manager in the d
 
 ### Usage
 
-~~~js
+~~~jsx
 setSwimlane(id: string | number): boolean;
 ~~~
 
@@ -26,7 +26,7 @@ The method returns `true` if the swimlane is set, otherwise `false`.
 
 ### Example
 
-~~~js
+~~~jsx
 // initialization of the diagram
 const diagram = new dhx.Diagram("diagram_container", {
     // config options

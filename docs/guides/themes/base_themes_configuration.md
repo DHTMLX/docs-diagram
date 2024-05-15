@@ -56,7 +56,7 @@ For instance, you can override the primary colors for all Diagram themes at once
 
 In addition, values of variables, which are calculated on the base of the primary color, will be recalculated accordingly. For example, the value of the focused color is calculated as follows:
 
-~~~js
+~~~jsx
 --dhx-color-focused: hsl(calc(var(--dhx-h-primary) + 10), var(--dhx-s-primary), var(--dhx-l-primary));
 ~~~
 
@@ -116,7 +116,7 @@ The default values of these variables [depend on the applied theme](guides/theme
 
 ### Setting custom CSS variables
 
-It is also possible to adjust the look and feel of the Shapebar items by using your own CSS variables. For this, you should define a custom CSS variable and specify it as a value of the necessary property in the `defaults` configuration option. 
+It is also possible to adjust the look and feel of the Shapebar items by using your own CSS variables. For this, you should define a custom CSS variable and specify it as a value of the necessary property in the `defaults` configuration option.
 
 :::note
 The value of the variable will be assigned to a Shapebar item when it is selected and won't be redefined on the change of a theme.
@@ -148,7 +148,7 @@ For example:
         defaults: {
             rectangle: {
                 fill: "var(--rectangle-fill)",
-                fontColor: "var(--rectangle-font-color)",
+                fontColor: "var(--rectangle-font-color)"
             }
         }
     });
@@ -157,4 +157,3 @@ For example:
     dhx.setTheme("dark", node);
 </script>
 ~~~
-

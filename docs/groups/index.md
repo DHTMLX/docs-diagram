@@ -10,15 +10,17 @@ description: You can learn about Groups in the documentation of the DHTMLX JavaS
 
 A group is a separate kind of the Diagram items. You can draw simple or more complicated schemes by grouping shapes or other groups in different ways. It is possible to create as one-level groups as nested groups, to configure their appearance and behavior.
 
-{{note Groups are available only in the default mode of Diagram/Diagram Editor (type: "default").}}
+:::note
+Groups are available only in the default mode of Diagram/Diagram Editor (type: "default").
+:::
 
-<iframe src="https://snippet.dhtmlx.com/0hf8ahrb?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="550"></iframe>
+<iframe src="https://snippet.dhtmlx.com/0hf8ahrb?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="650"></iframe>
 
 ## Creating groups
 
 To create a group, specify *"$group"* as a value of the **type** attribute inside the group object while preparing a related JSON structure to load into the diagram:
 
-~~~js
+~~~jsx
 const data = [
     {
         type: "$group",
@@ -28,9 +30,9 @@ const data = [
         x: 0,
         y: 0,
         header: {
-            text: "User Access",
+            text: "User Access"
         },
-        groupChildren: ["1.1", "1.2"],
+        groupChildren: ["1.1", "1.2"]
     },
     {
         type: "it",
@@ -57,12 +59,11 @@ diagram.data.parse(data);
 
 See [the full list of configuration properties of a group object](/groups/configuration_properties/) which allow you to configure the positioning and appearance of the group.
 
-Configuring the group header
--------------------------------
+## Configuring the group header
 
 The header of the group is disabled by default. To create a group with the header, you should specify the **header** property in the configuration object of the group.
 
-~~~js
+~~~jsx
 const data = [
     {
         type: "$group", 
@@ -71,8 +72,8 @@ const data = [
         height: 200,
         x: 0,
         y: 0,
-        header: {},
-    },
+        header: {}
+    }
 ];
 ~~~
 
@@ -87,7 +88,7 @@ Check [the full list of API properties of the group object](/groups/configuratio
 
 To be able to collapse/expand a group, you need to enable the **closable** attribute of the [header](/groups/configuration_properties/) property. As a result, an icon, which allows a user to expand/collapse a group, will be added to the header.
 
-~~~js
+~~~jsx
 const data = [
     {
         type: "$group", 
@@ -98,9 +99,9 @@ const data = [
         y: 0,
         header: {
             text: "Top and collapsed header with tеxt alignment",
-            closable: true,
-        },
-    },
+            closable: true
+        }
+    }
 ];
 ~~~
 
@@ -111,7 +112,9 @@ You can change the color of the icon via the **iconColor** attribute of the [gro
 By default, you can drag any child item of the group out of the group and drag it into another group.
 To change the behavior of the group items you need to use the **groupBehavior** and **padding** attributes of the **exitArea** property of the [group object](/groups/configuration_properties/).
 
-{{note The **exitArea** property defines the behavior of the first-level children of the configurable group only.}}
+:::note
+The **exitArea** property defines the behavior of the first-level children of the configurable group only.
+:::
 
 <iframe src="https://snippet.dhtmlx.com/4gxy38ek?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="550"></iframe>
 
@@ -121,7 +124,7 @@ The *"unbound"* and *"boundBorderExtension"* values of the **groupBehavior** att
 
 If *groupBehavior: "boundNoBorderExtension" | "boundBorderExtension"* is set, you can specify the padding between the group and the edge of the item when moving the item inside the group. For this purpose, use the **padding** attribute:
 
-~~~js
+~~~jsx
 const data = [
     {
         type: "$group",
@@ -135,8 +138,8 @@ const data = [
             padding: 10
         },
         //fixed: true,
-        groupChildren: ["1.1", "1.2", "1.3"],
+        groupChildren: ["1.1", "1.2", "1.3"]
     },
-    ...
+    // ...
 ];
 ~~~

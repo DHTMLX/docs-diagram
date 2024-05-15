@@ -17,15 +17,11 @@ The Diagram themes are developed in accordance with international standards. The
 
 You can try all themes in the example below:
 
-TODO
-
-[iframe]
+<iframe src="https://snippet.dhtmlx.com/9twmlfus?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
 ## Light theme (default)
 
-TODO
-
-[default light theme image]
+![](../../assets/light_theme.png)
 
 The default **"light"** theme is configured on the base of the CSS variables which are listed below:
 
@@ -209,9 +205,7 @@ The default **"light"** theme is configured on the base of the CSS variables whi
 
 ## Light high contrast theme
 
-TODO
-
-[light high contrast theme image]
+![](../../assets/light_high_contrast_theme.png)
 
 The **"contrast-light"** theme is configured both on the base of the [root CSS variables](#light-theme-default) and the variables which are listed below:
 
@@ -256,9 +250,7 @@ The **"contrast-light"** theme is configured both on the base of the [root CSS v
 
 ## Dark theme
 
-TODO
-
-[dark theme image]
+![](../../assets/dark_theme.png)
 
 The **"dark"** theme is configured both on the base of the [root CSS variables](#light-theme-default) and the variables which are listed below:
 
@@ -317,13 +309,11 @@ The **"dark"** theme is configured both on the base of the [root CSS variables](
 	--dhx-shapebar-item-border-color: #6c6e74;
 	/* end DHTMLX Diagram variables*/
 }
-~~~ 
+~~~
 
 ## Dark high contrast theme
 
-TODO
-
-[dark high contrast theme image]
+![](../../assets/dark_high_contrast_theme.png)
 
 The **"contrast-dark"** theme is configured both on the base of the [root CSS variables](#light-theme-default) and the variables which are listed below:
 
@@ -393,7 +383,7 @@ The **"contrast-dark"** theme is configured both on the base of the [root CSS va
 
 To set the necessary theme, be it a [built-in Diagram theme](diagram/guides/themes.md) or a [custom one](diagram/guides/themes/custom_theme.md), use one of the ways described below:
 
-### Using the ***data-dhx-theme*** attribute 
+### Using the ***data-dhx-theme*** attribute
 
 You can choose from the following variants:
 
@@ -406,7 +396,7 @@ You can choose from the following variants:
 
 - set the ***data-dhx-theme*** attribute for an *HTML element*, e.g. for *documentElement*:
 
-~~~js title="index.js"
+~~~jsx title="index.js"
 document.documentElement.setAttribute("data-dhx-theme", "dark");
 ~~~
 
@@ -433,7 +423,7 @@ Below you'll find the examples of the ***dhx.setTheme()*** method usage:
 
 <script>
     const editor = new dhx.DiagramEditor("editor_container", {
-        type: "default",
+        type: "default"
     });
     dhx.setTheme("dark"); //applies the "dark" theme to the body 
     //or
@@ -444,13 +434,13 @@ Below you'll find the examples of the ***dhx.setTheme()*** method usage:
 
 - setting a theme for any HTML element, e.g. for the Toolbar control
 
-~~~js {10-11}
+~~~jsx {10-11}
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {
         toolbar: {
-            css: "toolbar",
-        },
+            css: "toolbar"
+        }
     }
 });
 
@@ -458,6 +448,5 @@ const toolbarEl = document.querySelector(".toolbar");
 dhx.setTheme("dark", toolbarEl);
 ~~~
 
-**Related samples:** 
+**Related sample:** [Diagram Editor. Default mode. Basic and custom themes](https://snippet.dhtmlx.com/9twmlfus)
 
-TODO

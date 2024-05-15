@@ -12,7 +12,7 @@ description: You can learn about the copy method of data collection in the docum
 
 ### Usage
 
-~~~js
+~~~jsx
 copy(
     id: string | number | array,
     index: number, 
@@ -32,7 +32,7 @@ The method returns the item's id or an array with ids of items
 
 ### Example
 
-~~~js {6}
+~~~jsx {6}
 const diagram = new dhx.Diagram("diagram_container", {
     type: "default"
 });

@@ -12,13 +12,13 @@ description: You can learn about the editMode property of editor in the document
 
 ### Usage
 
-~~~js
+~~~jsx
 editMode?: boolean;
 ~~~
 
 ### Example
 
-~~~js
+~~~jsx
 const editor = new dhx.DiagramEditor("editor_container", {
     editMode: false
 });

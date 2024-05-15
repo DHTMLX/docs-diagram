@@ -14,8 +14,8 @@ description: You can learn about the collapseItem method in the documentation of
 
 ~~~jsx
 collapseItem(
-	id: string | number, 
-	dir?: string
+    id: string | number, 
+    dir?: string
 ): void;
 ~~~
 
@@ -40,16 +40,15 @@ diagram.collapseItem(123);
 
 or
 
-~~~js {2,6}
+~~~jsx {2,6}
 const diagram = new dhx.Diagram("diagram_container", {
-	type:"mindmap"
+    type:"mindmap"
 });
 diagram.data.parse(data);
 
 diagram.collapseItem("main", "left");
 ~~~
 
-
-**Change log**: The **dir** parameter has been added in v3.1
+**Change log**: The **dir** parameter was added in v3.1
 
 **Related articles**: [Expanding/collapsing items](../../../guides/manipulating_items/#expandingcollapsing-items)

@@ -1,5 +1,5 @@
 ---
-sidebar_label: pasteStyles()!!
+sidebar_label: pasteStyles()
 title: pasteStyles Method of Copy Manager
 description: You can learn about the pasteStyles method of copy manager in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
@@ -12,7 +12,7 @@ description: You can learn about the pasteStyles method of copy manager in the d
 
 ### Usage
 
-~~~js
+~~~jsx
 pasteStyles(ids?: (string | number)[]): void;
 ~~~
 
@@ -24,22 +24,22 @@ pasteStyles(ids?: (string | number)[]): void;
 
 - call the method without arguments to apply styles to the elements from the selection list
 
-~~~js {5-6}
+~~~jsx {5-6}
 const editor = new dhx.DiagramEditor("editor_container", { 
-    type: "default", 
+    type: "default"
 });
-...
+// ...
 editor.model.copyStyles(); // copies styles of the first element from the selection list
 editor.model.pasteStyles(); // applies copied styles to the elements from the selection list
 ~~~
 
 - pass the ids of certain elements to the method to apply the copied styles to them
 
-~~~js {5-6}
+~~~jsx {5-6}
 const editor = new dhx.DiagramEditor("editor_container", { 
-    type: "default", 
+    type: "default" 
 });
-...
+// ...
 editor.model.copyStyles("2"); // copies styles of the specified element
 editor.model.pasteStyles(["1", "2", "3"]); // applies copied styles to the specified elements
 ~~~

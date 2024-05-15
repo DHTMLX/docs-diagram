@@ -12,7 +12,7 @@ description: You can learn about the getCellId method of Cell Manager in the doc
 
 ### Usage
 
-~~~js
+~~~jsx
 getCellId(
     cellIndex: number, 
     type: string // "row" | "col"
@@ -30,7 +30,7 @@ The method returns the id of the cell
 
 ### Example
 
-~~~js
+~~~jsx
 // initialization of the diagram
 const diagram = new dhx.Diagram("diagram_container", {
     // config options

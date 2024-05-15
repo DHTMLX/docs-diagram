@@ -1,5 +1,5 @@
 ---
-sidebar_label: afterHide!!
+sidebar_label: afterHide
 title: afterHide Event of View
 description: You can learn about the afterHide event of View in the Diagram Editor documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
@@ -12,7 +12,7 @@ description: You can learn about the afterHide event of View in the Diagram Edit
 
 ### Usage
 
-~~~js
+~~~jsx
 "afterHide": (view: "toolbar" | "shapebar" | "editbar") => void;
 ~~~
 
@@ -28,17 +28,17 @@ For handling the inner events of Diagram Editor you can use the **on()** method.
 
 ### Example
 
-~~~js {9-12}
+~~~jsx {9-12}
 // initializing Diagram Editor
-const editor = new dhx.DiagramEditor("editor", {
+const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {
-        shapebar: true,
-    },
+        shapebar: true
+    }
 });
 
 // attaching a handler to the event
-editor.events.on("afterHide", function(view) {
+editor.events.on("afterHide", (view) => {
     console.log("The " + view + " view of Diagram Editor was hidden");
 });
 ~~~

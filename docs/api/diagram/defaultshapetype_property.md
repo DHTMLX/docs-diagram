@@ -11,10 +11,9 @@ description: You can learn about the defaultShapeType property in the documentat
 @short: Optional. The default type of a shape
 
 The value is applied, if the shape object doesn't contain the "type" property
-
 ### Usage
 
-~~~js
+~~~jsx
 defaultShapeType?: string;
 ~~~
 
@@ -22,30 +21,28 @@ defaultShapeType?: string;
 
 - In the **default** mode of Diagram (type: "default")
 
-~~~js 
+~~~jsx
 defaultShapeType: "rectangle"
 ~~~
 
 - In the **org chart** mode of Diagram (type: "org")
 
-~~~js
+~~~jsx
 defaultShapeType: "card"
 ~~~
 
 - In the **mindmap** mode of Diagram (type: "mindmap")
 
-~~~js
+~~~jsx
 defaultShapeType: "topic"
 ~~~
 
 ### Example
 
-~~~js
+~~~jsx
 const diagram = new dhx.Diagram("diagram_container", { 
     defaultShapeType: "img-card"
 });
 ~~~
 
 **Related articles**: [Setting the type of a shape](../../../shapes/default_shapes/#setting-the-type-of-a-shape)
-
-**Related sample**: [Diagram. Org chart mode. Shapes with images](https://snippet.dhtmlx.com/qnx3ekin)

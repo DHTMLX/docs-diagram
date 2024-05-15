@@ -12,7 +12,7 @@ description: You can learn about the getId method of data collection in the docu
 
 ### Usage
 
-~~~js
+~~~jsx
 getId(index: number): string | number;
 ~~~
 
@@ -26,7 +26,7 @@ The method returns the id of the item
 
 ### Example
 
-~~~js {6}
+~~~jsx {6}
 const diagram = new dhx.Diagram("diagram_container", {
     type: "default"
 });

@@ -12,11 +12,11 @@ description: You can learn about the lineTitleDblClick event in the documentatio
 
 ### Usage
 
-~~~js
+~~~jsx
 lineTitleDblClick: (
-	lineId: string | number, 
-	titleId: string | number, 
-	event: MouseEvent
+    lineId: string | number, 
+    titleId: string | number, 
+    event: MouseEvent
 ) => void;
 ~~~
 
@@ -30,7 +30,7 @@ The callback of the event takes the following parameters:
 
 ### Example
 
-~~~js {9-11}
+~~~jsx {9-11}
 // initializing Diagram
 const diagram = new dhx.Diagram("diagram_container", {
     type: "default"
@@ -40,13 +40,10 @@ diagram.data.parse(data);
 
 // attaching a handler to the event
 diagram.events.on("lineTitleDblClick", (lineId, titleId, event) => {
-	console.log("lineTitleDblClick");
+    console.log("lineTitleDblClick");
 });
 ~~~
 
 **Change log**: Added in v4.1
 
 **Related article**: [Event handling](../../../guides/event_handling/)
-
-**Related samples**: [Diagram. Default mode. Events](https://snippet.dhtmlx.com/7h2hgb3g)
-

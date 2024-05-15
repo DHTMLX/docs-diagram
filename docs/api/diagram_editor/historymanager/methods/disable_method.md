@@ -12,17 +12,17 @@ description: You can learn about the disable method of HistoryManager in the doc
 
 ### Usage
 
-~~~js
+~~~jsx
 disable(): void;
 ~~~
 
 ### Example
 
-~~~js {5}
+~~~jsx {5}
 const editor = new dhx.DiagramEditor("editor_container", { 
     type: "default"
 });
-...
+// ...
 editor.history.disable();
 ~~~
 

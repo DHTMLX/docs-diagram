@@ -1,5 +1,5 @@
 ---
-sidebar_label: beforeLineTitleMove!!
+sidebar_label: beforeLineTitleMove
 title: beforeLineTitleMove Event of Editor
 description: You can learn about the beforeLineTitleMove event of editor in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
@@ -12,7 +12,7 @@ description: You can learn about the beforeLineTitleMove event of editor in the 
 
 ### Usage
 
-~~~js
+~~~jsx
 "beforeLineTitleMove": ({
     event: PointerEvent, 
     lineId: string | number, 
@@ -42,7 +42,7 @@ For handling the inner Diagram Editor events you can use the **on()** method.
 
 ### Example
 
-~~~js {6-14}
+~~~jsx {6-14}
 // initializing Diagram Editor
 const editor = new dhx.DiagramEditor("editor_container");
 // loading data
@@ -59,6 +59,6 @@ editor.events.on("beforeLineTitleMove", ({ titleId, coords }) => {
 });
 ~~~
 
-**Change log**: 
-- The callback function takes an object as a parameter since v6.0
+**Change log**:
 
+- The callback function takes an object as a parameter since v6.0

@@ -1,5 +1,5 @@
 ---
-sidebar_label: Pointer view!!
+sidebar_label: Pointer view
 title: Editbar Complex Controls - Pointer view 
 description: You can explore the Pointer view control of Editbar in the documentation of the the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
@@ -59,9 +59,9 @@ The **Pointer view** control is available only for the **line** element in the *
 
 ### Service properties
 
-- `$properties` - (optional) allows you to override values of [basic controls](/guides/diagram_editor/editbar/basic_controls) within a complex control. You can configure the following elements of the **Pointer view** control based on the basic controls:
-    - `backArrow` - ([toggleGroup](/guides/diagram_editor/editbar/basic_controls/togglegroup)) sets the arrow type at the end of connector
-    - `forwardArrow` - ([toggleGroup](/guides/diagram_editor/editbar/basic_controls/togglegroup)) sets the arrow type at the start of connector
+- `$properties` - (optional) allows you to override values of [basic controls](/api/diagram_editor/editbar/basic_controls_overview) within a complex control. You can configure the following elements of the **Pointer view** control based on the basic controls:
+    - `backArrow` - ([toggleGroup](/api/diagram_editor/editbar/basic_controls/togglegroup)) sets the arrow type at the end of connector
+    - `forwardArrow` - ([toggleGroup](/api/diagram_editor/editbar/basic_controls/togglegroup)) sets the arrow type at the start of connector
 
 ## Example
 
