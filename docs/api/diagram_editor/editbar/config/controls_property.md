@@ -21,7 +21,7 @@ Refer to the [**Editbar configuration**](guides/diagram_editor/editbar/complex_c
 ~~~jsx
 controls?: {
     [type: string]: object, // custom control
-    ... // another control
+    // another control
 };
 ~~~
 
@@ -32,8 +32,8 @@ controls?: {
 
 ~~~jsx
 controls: {
-      estimate: { ... }, // create new "estimate" control with custom configurations
-      ... // another control
+    estimate: { ... }, // create new "estimate" control with custom configurations
+    // another control
 }
 ~~~
 
@@ -73,4 +73,4 @@ const editor = new dhx.DiagramEditor("editor_container", {
 
 **Change log**: Added in v6.0
 
-**Related sample:** [Diagram Editor. Default mode. PERT сhart with the legend](https://snippet.dhtmlx.com/w8mrh3ay)
+**Related sample**: [Diagram Editor. Default mode. PERT сhart with the legend](https://snippet.dhtmlx.com/w8mrh3ay)

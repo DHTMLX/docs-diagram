@@ -27,4 +27,4 @@ editor.parse(data);
 editor.destructor();
 ~~~
 
-**Change log:** Added in v6.0
+**Change log**: Added in v6.0

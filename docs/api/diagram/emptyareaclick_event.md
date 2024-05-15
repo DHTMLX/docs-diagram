@@ -33,7 +33,7 @@ const diagram = new dhx.Diagram("diagram_container", {
 diagram.data.parse(data);
 
 // attaching a handler to the event
-diagram.events.on("emptyAreaClick", function(e){
+diagram.events.on("emptyAreaClick", () => {
     console.log("An empty space has been clicked");
 });
 ~~~

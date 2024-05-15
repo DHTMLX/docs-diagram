@@ -59,8 +59,7 @@ diagram.data.parse(data);
 
 See [the full list of configuration properties of a group object](/groups/configuration_properties/) which allow you to configure the positioning and appearance of the group.
 
-Configuring the group header
--------------------------------
+## Configuring the group header
 
 The header of the group is disabled by default. To create a group with the header, you should specify the **header** property in the configuration object of the group.
 

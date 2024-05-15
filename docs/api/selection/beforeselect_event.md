@@ -44,7 +44,7 @@ const diagram = new dhx.Diagram("diagram_container", {
 diagram.data.parse(data);
 
 // attaching a handler to the event
-diagram.events.on("beforeSelect", function({ id }) {
+diagram.events.on("beforeSelect", ({ id }) => {
     console.log(id + " will be selected");
     return true;
 });
@@ -61,7 +61,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 editor.parse(data);
 
 // attaching a handler to the event
-editor.diagram.events.on("beforeSelect", function({ id }) {
+editor.diagram.events.on("beforeSelect", ({ id }) => {
     console.log(id + " will be selected");
     return true;
 });

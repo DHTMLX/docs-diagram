@@ -41,7 +41,7 @@ const diagram = new dhx.Diagram("diagram_container", {
 diagram.data.parse(data);
 
 // attaching a handler to the event
-diagram.events.on("beforeExpand", function(id, dir) {
+diagram.events.on("beforeExpand", (id, dir) => {
     console.log("Expanding " + diagram.data.getItem(id).text, dir);
     return true;
 });

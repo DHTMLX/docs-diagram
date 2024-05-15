@@ -86,7 +86,7 @@ The **open** property works when a **header** is initialized with the **closable
     - `groupBehavior` - (optional) the behavior of the child item of the group when the user is moving it out of the group: 
         - *"unbound"* (by default) - the user can move an item into or outside the group
         - *"boundNoBorderExtension"* - the user can move an item into the group but cannot drag the item outside the group if the item has been dropped inside the group. The item won't expand the borders of the group when trying to drag the item outside the group
-        - *"boundBorderExtension"* - the user can move an item into the group but cannot drag the item outside the group if the item has been dropped inside the group. The item will expand the borders of the group when trying to drag the item outside the group <br>**Related sample:** [Diagram editor. Default mode. Groups and shapes interaction](https://snippet.dhtmlx.com/4gxy38ek)
+        - *"boundBorderExtension"* - the user can move an item into the group but cannot drag the item outside the group if the item has been dropped inside the group. The item will expand the borders of the group when trying to drag the item outside the group <br>**Related sample**: [Diagram editor. Default mode. Groups and shapes interaction](https://snippet.dhtmlx.com/4gxy38ek)
     - `padding` - (optional) defines the padding between the group and the edge of the item when moving the item inside the group 
     :::tip
     The **padding** attribute is available if *groupBehavior: "boundNoBorderExtension" | "boundBorderExtension"*
@@ -137,4 +137,4 @@ const data = [
 ];
 ~~~
 
-**Related articles:** [Configuring groups](../../groups/)
+**Related articles**: [Configuring groups](../../groups/)

@@ -157,8 +157,7 @@ const data = [
 
 Check the full list of the available configuration properties of the objects of a swimlane and its cells in the [API reference](swimlanes/configuration_properties.md).
 
-External data loading
--------------------
+## External data loading
 
 To load data from an external file, make use of the [](../api/data_collection/load_method.md) method. It takes the URL of the file with data as a parameter:
 
@@ -171,15 +170,14 @@ The component will make an AJAX call and expect the remote URL to provide valid 
 Data loading is asynchronous, so you need to wrap any after-loading code into a promise:
 
 ~~~jsx
-diagram.data.load("/some/data").then(function(){
+diagram.data.load("/some/data").then(() => {
    diagram.selection.add("123");
 });
 ~~~
 
-**Related sample:** [Diagram. Data. Data loading](https://snippet.dhtmlx.com/09isp2d8)
+**Related sample**: [Diagram. Data. Data loading](https://snippet.dhtmlx.com/09isp2d8)
 
-Loading from a local source
---------------------
+## Loading from a local source
 
 To load data from a local data source, use the [](../api/data_collection/parse_method.md) method. As a parameter you need to pass an array of [predefined data objects](#preparing-data-to-load):
 
@@ -187,7 +185,7 @@ To load data from a local data source, use the [](../api/data_collection/parse_m
 diagram.data.parse(data);
 ~~~
 
-**Related sample:** [Diagram. Default mode. Wide flowchart](https://snippet.dhtmlx.com/4d4k3o8p)
+**Related sample**: [Diagram. Default mode. Wide flowchart](https://snippet.dhtmlx.com/4d4k3o8p)
 
 ### Loading data into the editor
 
@@ -197,7 +195,7 @@ To load a data set into the editor, use the [parse()](/api/diagram_editor/editor
 editor.parse(data);
 ~~~
 
-**Related sample:** [Diagram editor. Default mode. Basic initialization](https://snippet.dhtmlx.com/xshe9ut7)
+**Related sample**: [Diagram editor. Default mode. Basic initialization](https://snippet.dhtmlx.com/xshe9ut7)
 
 ## Saving and restoring state
 

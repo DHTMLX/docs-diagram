@@ -78,6 +78,6 @@ To make a custom theme of your own, you need to override the values of the inter
 </script>
 ~~~
 
-**Related sample:**
+**Related sample**:
 
 TODO

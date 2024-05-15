@@ -456,6 +456,6 @@ const toolbarEl = document.querySelector(".toolbar");
 dhx.setTheme("dark", toolbarEl);
 ~~~
 
-**Related samples:**
+**Related samples**:
 
 TODO

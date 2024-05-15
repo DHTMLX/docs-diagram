@@ -29,7 +29,7 @@ const editor = new dhx.DiagramEditor("editor_container");
 editor.parse(data);
 
 // attaching a handler to the event
-editor.events.on("shapeResize", function() {
+editor.events.on("shapeResize", () => {
     console.log("The shape has been resized");
 });
 ~~~

@@ -33,7 +33,7 @@ const diagram = new dhx.Diagram("diagram_container", {
 diagram.data.parse(data);
 
 //getting ids of all items of the diagram (shapes, links, groups, swimlanes)
-diagram.data.map(function(item){
+diagram.data.map((item) => {
     console.log(item.id);
 });
 ~~~

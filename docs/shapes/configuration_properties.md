@@ -58,9 +58,9 @@ The values of the **height** and **width** are calculated automatically for a "t
 const data = [
     // shape object
     {
-        ..., // common properties
+        // ... common properties
         [key: string]?: any, // custom property
-        ... // more custom properties
+        // ... more custom properties
     },
     // more shape objects
 ]
@@ -95,7 +95,7 @@ const data = [
 const data = [
     // shape object
     {
-        ..., // common properties
+        // ... common properties
         angle?: number,
 
         //either
@@ -144,7 +144,7 @@ const data = [
 const data = [
     // shape object
     {
-        ..., // common properties
+        // ... common properties
         parent?: string | number,
         dx?: number,
         dy?: number,
@@ -213,7 +213,7 @@ const data = [
 const data = [
     // shape object
     {
-        ..., // common properties
+        // ... common properties
         parent?: string | number,
         dx?: number,
         dy?: number,
@@ -289,7 +289,7 @@ const data = [
 const data = [
     // shape object
     {
-        ..., // common properties
+        // ... common properties
         fill?: string,
         stroke?: string,
         strokeWidth?: number, // 1 by default
@@ -351,7 +351,7 @@ const data = [
 const data = [
     // shape object
     {
-        ..., // common properties
+        // ... common properties
         headerColor?: string
     },
     // more shape objects
@@ -391,7 +391,7 @@ const data = [
 const data = [
     // shape object
     {
-        ..., // common properties
+        // ... common properties
         img?: string,
         title?: string,
         headerColor?: string
@@ -432,7 +432,7 @@ const data = [
 ];
 ~~~
 
-**Related articles:**
+**Related articles**:
 
 - [Default Shapes](../../shapes/default_shapes/)
 - [Custom Shape](../../shapes/custom_shape/)
