@@ -37,7 +37,7 @@ const diagram = new dhx.Diagram("diagram_container", {
 diagram.data.parse(data);
 
 // attaching a handler to the event
-diagram.events.on("afterCollapse", function(id, dir) {
+diagram.events.on("afterCollapse", (id, dir) => {
     console.log(diagram.data.getItem(id).text + " was collapsed", dir);
 });
 ~~~

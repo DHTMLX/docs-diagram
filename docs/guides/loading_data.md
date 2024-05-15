@@ -170,7 +170,7 @@ The component will make an AJAX call and expect the remote URL to provide valid 
 Data loading is asynchronous, so you need to wrap any after-loading code into a promise:
 
 ~~~jsx
-diagram.data.load("/some/data").then(function(){
+diagram.data.load("/some/data").then(() => {
    diagram.selection.add("123");
 });
 ~~~

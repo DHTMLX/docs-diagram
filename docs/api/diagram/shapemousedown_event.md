@@ -37,7 +37,7 @@ const diagram = new dhx.Diagram("diagram_container", {
 diagram.data.parse(data);
 
 // attaching a handler to the event
-diagram.events.on("shapeMouseDown", function(id, event) {
+diagram.events.on("shapeMouseDown", (id) => {
     console.log('An item "' + diagram.data.getItem(id).text + '"will be clicked');
 });
 ~~~

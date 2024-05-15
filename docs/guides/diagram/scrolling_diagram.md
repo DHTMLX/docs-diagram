@@ -36,7 +36,7 @@ You can catch the start of Diagram scrolling using the [](../../api/diagram/scro
 - **pos** - (*object*) the position of a scroll as an object with x and y attributes
 
 ~~~jsx
-diagram.events.on("Scroll", function(position) {
+diagram.events.on("Scroll", (position) => {
     alert("The diagram has been scrolled:" position);
 });
 ~~~

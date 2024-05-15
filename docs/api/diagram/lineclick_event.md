@@ -37,7 +37,7 @@ const diagram = new dhx.Diagram("diagram_container", {
 diagram.data.parse(data);
 
 // attaching a handler to the event
-diagram.events.on("lineClick", function(id, events) {
+diagram.events.on("lineClick", (id) => {
     console.log(id);
 });
 ~~~

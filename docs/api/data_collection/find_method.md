@@ -44,7 +44,7 @@ diagram.data.parse(data);
 const shape = diagram.data.find({ by: "text", match: "Manager" });
 
 //searching for a shape by the rule specified in the function
-const shape = diagram.data.find(function(shape){
+const shape = diagram.data.find((shape) => {
     if(shape.text==="Manager"||shape.text==="Marketer"){return true}
 });
 ~~~

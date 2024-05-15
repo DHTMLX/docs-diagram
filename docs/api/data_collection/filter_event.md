@@ -37,7 +37,7 @@ const diagram = new dhx.Diagram("diagram_container", {
 });
 diagram.data.parse(data);
 
-diagram.events.on("filter", function(filter) {
+diagram.events.on("filter", (filter) => {
     console.log("Items were filtered");
 });
 ~~~

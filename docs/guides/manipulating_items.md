@@ -339,7 +339,7 @@ const shape = diagram.data.find({by:"text",match:"Manager"});
 // ->{id:"2",text:"Manager",title:"Mildred Kim",img:"../avatar-2.png",type:"card", …}
  
 // searching for a shape by the function
-const shape = diagram.data.find(function(shape){
+const shape = diagram.data.find((shape) => {
     if(shape.text==="Manager"||shape.text==="Marketer"){
         return true;
     }
@@ -357,7 +357,7 @@ You can also find all the items that meet the set criteria via the [](../api/dat
 const shapes = diagram.data.findAll({by:"text",match:"Manager"});
  
 // searching for shapes by the function
-const shapes = diagram.data.findAll(function(shapes){
+const shapes = diagram.data.findAll((shapes) => {
     if(shapes.text==="Manager"||shapes.text==="Marketer"){
         return true;
     }
@@ -365,6 +365,7 @@ const shapes = diagram.data.findAll(function(shapes){
 // ->{id:"2",text:"Manager",title:"Mildred Kim",img:"../avatar-2.png",type:"card", …}
 // ->{id:"2.1",text:"Marketer",title:"Charles Little", img: "../avatar-4.png", …}
 ~~~
+
 ## Filtering items
 
 It is possible to filter the diagram and render only the items that meet the filter criteria via the [](../api/data_collection/filter_method.md) method of the **data** collection. The method will show only the filtered items, hiding the rest of items.

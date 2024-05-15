@@ -34,7 +34,7 @@ const diagram = new dhx.Diagram("diagram_container", {
 diagram.data.parse(data);
 
 // attaching a handler to the event
-diagram.events.on("scroll", function(pos){
+diagram.events.on("scroll", () => {
     console.log("The diagram has been scrolled")
 });
 ~~~

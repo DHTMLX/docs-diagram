@@ -110,7 +110,7 @@ Besides, it became possible to specify other basic sets of items via the related
 The **shapeHover** event has been deprecated in v4.0. Starting with v4.0, use the new [itemMouseOver](../api/diagram/itemmouseover_event/) event instead.
 
 ~~~jsx title="Before v4.0"
-diagram.events.on("shapeHover",function(id,e){
+diagram.events.on("shapeHover", (id,e) => {
     console.log("An item"+ diagram.data.getItem(id).text +"has been hovered over");
 });
 ~~~
@@ -132,21 +132,21 @@ editor.diagram.events.on("itemMouseOver", (id, event) => {
 The **shapeMove** event of the editor object has been deprecated in v3.1. Starting with v3.1, use the new **BeforeShapeMove** and **AfterShapeMove** events instead.
 
 ~~~jsx title="Before v3.1"
-editor.events.on("shapeMove",function() {
+editor.events.on("shapeMove", () => {
     console.log("The shape is moved");
 });
 ~~~
 
 ~~~jsx title="From v3.1"
 // BeforeShapeMove event
-editor.events.on("BeforeShapeMove", function(events) {
-    console.log("Before the shape is moved:", events);
+editor.events.on("BeforeShapeMove", (e) => {
+    console.log("Before the shape is moved:", e);
     return true;
 });
 
 // AfterShapeMove event
-editor.events.on("AfterShapeMove", function(events) {
-    console.log("After the shape is moved:", events);
+editor.events.on("AfterShapeMove", (e) => {
+    console.log("After the shape is moved:", e);
 });
 ~~~
 

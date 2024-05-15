@@ -74,7 +74,7 @@ diagram.addShape("personal", {
     },
     eventHandlers: {
         onclick: {
-            "toggle--open-menu": openMenu,
+            "toggle--open-menu": () => console.log("open menu")
         }
     }
 });
@@ -159,8 +159,7 @@ Note, that all HTML and SVG tags must be closed in the template.
 For example, an `<img src="" alt="">` tag should look like `<img src="" alt=""></img>`.
 :::
 
-**Change log**:
-- The `properties` attribute is removed in v6.0. 
+**Change log**: The `properties` attribute is removed in v6.0.
 
 **Related articles**: [Custom Shape](../../../shapes/custom_shape/)
 
