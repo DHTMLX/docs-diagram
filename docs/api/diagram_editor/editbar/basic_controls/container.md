@@ -1,5 +1,5 @@
 ---
-sidebar_label: Container!!
+sidebar_label: Container
 title: Editbar Basic Controls - Container 
 description: You can explore the Container control of Editbar in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
@@ -80,8 +80,8 @@ const editor = new dhx.DiagramEditor("editor_container", {
                                 style='display: block; width: 200px; height: 200px; margin-top: 20px; margin-left: auto; margin-right: auto'
                                 src='https://snippet.dhtmlx.com/codebase/data/common/img/01/developer-01.svg'
                             >
-                        `,
-                    },
+                        `
+                    }
                 ]
             }
         }

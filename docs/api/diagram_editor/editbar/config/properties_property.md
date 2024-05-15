@@ -1,5 +1,5 @@
 ---
-sidebar_label: properties!!
+sidebar_label: properties
 title: properties Property of Editbar
 description: You can learn about the properties property of Editbar in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
@@ -47,7 +47,7 @@ properties: {
     circle: {}, // configure controls for the "circle" type
     card: {}, // configure controls for the "card" type
     estimate: {}, // configure controls for the custom "estimate" type
-    // ... other elements
+    // other elements
 }
 ~~~
 
@@ -68,7 +68,7 @@ properties: {
     $swimlane: {},
     $line: {},
     $lineTitle: {},
-    // ... other elements
+    // ... other parameters
 }
 ~~~
 
@@ -128,4 +128,4 @@ const editor = new dhx.DiagramEditor("editor_container", {
 
 **Related article:** [**Editbar configuration**](guides/diagram_editor/editbar.md)
 
-**Related sample:** [Diagram Editor. Default mode. Customization of editbar. Added shape counter](https://snippet.dhtmlx.com/ealq0m4l?mode=wide) 
+**Related sample:** [Diagram Editor. Default mode. Customization of editbar. Added shape counter](https://snippet.dhtmlx.com/ealq0m4l?mode=wide)

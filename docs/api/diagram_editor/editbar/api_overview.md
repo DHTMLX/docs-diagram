@@ -10,22 +10,22 @@ description: You can check a Editbar overview in the documentation of the DHTMLX
 
 - creating the default Editbar by using the `editbar:true` setting:
 
-~~~js
+~~~jsx
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {
         editbar: true // displaying the default Editbar
     }
 });
-~~~ 
+~~~
 
 - configuring Editbar by specifying it as an object with [a set of properties](/category/editbar-properties/):
 
-~~~js
+~~~jsx
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {
-    	// configuring Editbar via an object
+        // configuring Editbar via an object
         editbar: {
             css: "custom_css",
             show: true,
@@ -38,6 +38,3 @@ const editor = new dhx.DiagramEditor("editor_container", {
 ~~~
 
 Check the [related API section](/category/editbar-properties/) to explore the available properties of Editbar.
-
-
-

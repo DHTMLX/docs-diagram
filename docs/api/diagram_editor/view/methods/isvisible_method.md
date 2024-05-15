@@ -1,5 +1,5 @@
 ---
-sidebar_label: isVisible()!!
+sidebar_label: isVisible()
 title: isVisible Method of View
 description: You can learn about the isVisible method of view in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
@@ -12,7 +12,7 @@ description: You can learn about the isVisible method of view in the documentati
 
 ### Usage
 
-~~~js
+~~~jsx
 isVisible(view: "toolbar" | "shapebar" | "editbar"): boolean;
 ~~~
 
@@ -24,13 +24,13 @@ isVisible(view: "toolbar" | "shapebar" | "editbar"): boolean;
 
 ### Example
 
-~~~js {9-11}
-const editor = new dhx.DiagramEditor("editor", {
+~~~jsx {9-11}
+const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {
         shapebar: false,
-        toolbar: true,
-    },
+        toolbar: true
+    }
 });
 
 // checks the Toolbar and Shapebar visibility

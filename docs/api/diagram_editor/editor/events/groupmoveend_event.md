@@ -1,5 +1,5 @@
 ---
-sidebar_label: groupMoveEnd!!
+sidebar_label: groupMoveEnd
 title: groupMoveEnd Event of Editor
 description: You can learn about the groupMoveEnd event of editor in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
@@ -16,7 +16,7 @@ The event fires just for the target element despite the number of selected eleme
 
 ### Usage
 
-~~~js
+~~~jsx
 "groupMoveEnd": ({
     id: string | number, 
     batch: (string | number)[],
@@ -42,7 +42,7 @@ For handling the inner Diagram Editor events you can use the **on()** method.
 
 ### Example
 
-~~~js {6-13}
+~~~jsx {6-13}
 // initializing Diagram Editor
 const editor = new dhx.DiagramEditor("editor_container");
 // loading data
@@ -58,7 +58,7 @@ editor.events.on("groupMoveEnd", ({ id, coords }) => {
 });
 ~~~
 
-**Change log**: 
+**Change log**:
+
 - The `batch` property is added in the v6.0
 - The callback function takes an object as a parameter since v6.0
-

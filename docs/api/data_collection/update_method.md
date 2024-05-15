@@ -16,7 +16,7 @@ The method can't be used to change the *id* or *type* of the item
 
 ### Usage
 
-~~~js
+~~~jsx
 update(
     id: string | number, 
     newItem: object
@@ -30,7 +30,7 @@ update(
 
 ### Example
 
-~~~js {6}
+~~~jsx {6}
 const diagram = new dhx.Diagram("diagram_container", {
     type: "default"
 });

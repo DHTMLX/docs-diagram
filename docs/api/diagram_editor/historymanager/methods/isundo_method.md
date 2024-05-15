@@ -12,17 +12,17 @@ description: You can learn about the isUndo method of HistoryManager in the docu
 
 ### Usage
 
-~~~js
+~~~jsx
 isUndo(): boolean;
 ~~~
 
 ### Example
 
-~~~js {5}
+~~~jsx {5}
 const editor = new dhx.DiagramEditor("editor_container", { 
     type: "default"
 });
-...
+// ...
 editor.history.isUndo();
 ~~~
 
@@ -31,4 +31,3 @@ editor.history.isUndo();
 The method returns `true`, if an action has been reverted; otherwise, `false`
 
 **Change log**: Added in v4.1
-

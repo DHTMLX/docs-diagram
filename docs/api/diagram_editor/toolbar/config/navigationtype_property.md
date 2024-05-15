@@ -1,5 +1,5 @@
 ---
-sidebar_label: navigationType!!
+sidebar_label: navigationType
 title: navigationType Property of Toolbar
 description: You can learn about the css property of Toolbar in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
@@ -12,7 +12,7 @@ description: You can learn about the css property of Toolbar in the documentatio
 
 ### Usage
 
-~~~js
+~~~jsx
 navigationType?: "click" | "pointer";
 ~~~
 
@@ -29,7 +29,7 @@ navigationType: "click"
 
 ### Example
 
-~~~js {9}
+~~~jsx {9}
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {
@@ -44,6 +44,6 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 ~~~
 
-**Change log**: The property was added in v6.0
+**Change log**: Added in v6.0
 
-**Related articles:**  [Toolbar configuration](guides/diagram_editor/toolbar.md)
+**Related articles**:  [Toolbar configuration](guides/diagram_editor/toolbar.md)

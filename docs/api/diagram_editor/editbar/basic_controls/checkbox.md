@@ -1,5 +1,5 @@
 ---
-sidebar_label: Checkbox!!
+sidebar_label: Checkbox
 title: Editbar Basic Controls - Checkbox 
 description: You can explore the Checkbox control of Editbar in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
@@ -45,9 +45,9 @@ The control can be used both with the *boolean* value and the *string* one, if t
 ### Basic properties
 
 - `type` - (required) the type of a control. Set it to *"checkbox"*
-- `key` - (optional) the name of the specified/modified property or the path to it in the object of a Diagram item 
+- `key` - (optional) the name of the specified/modified property or the path to it in the object of a Diagram item
 - `text` - (optional) the text value of a control. It's placed to the right of the control
-- `value` -	(optional) the value of a checkbox
+- `value` - (optional) the value of a checkbox
 - `css` - (optional) adds style classes to a control
 - `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*). *false* by default
 - `hidden` - (optional) defines whether a checkbox is hidden. *false* by default
@@ -99,20 +99,20 @@ const editor = new dhx.DiagramEditor("editor_container", {
                         type: "checkbox",
                         label: "String value",
                         key: "other",
-                        value: "enable",
+                        value: "enable"
                     },
                     {
                         type: "checkbox",
                         label: "Boolean value",
-                        key: "fixed",
+                        key: "fixed"
                     }
-                ],
+                ]
             }
         }
     }
 });
 editor.parse([
     { "type": "rectangle", "other": "", "fixed": false },
-    { "type": "rectangle", "other": "enable", "fixed": true, "x": 400 },
+    { "type": "rectangle", "other": "enable", "fixed": true, "x": 400 }
 ]);
 ~~~

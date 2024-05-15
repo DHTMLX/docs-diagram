@@ -12,17 +12,17 @@ description: You can learn about the reset method of HistoryManager in the docum
 
 ### Usage
 
-~~~js
+~~~jsx
 reset(): void;
 ~~~
 
 ### Example
 
-~~~js {5}
+~~~jsx {5}
 const editor = new dhx.DiagramEditor("editor_container", { 
     type: "default"
 });
-...
+// ...
 editor.history.reset();
 ~~~
 

@@ -1,5 +1,5 @@
 ---
-sidebar_label: items!!
+sidebar_label: items
 title: items Property of Toolbar
 description: You can learn about the items property of Toolbar in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
@@ -12,7 +12,7 @@ description: You can learn about the items property of Toolbar in the documentat
 
 ### Usage
 
-~~~js
+~~~jsx
 items?: (object | string)[];
 ~~~
 
@@ -20,7 +20,7 @@ items?: (object | string)[];
 
 The `items` property allows you to specify [**Service elements**](guides/diagram_editor/toolbar.md/#service-elements) as an array of strings:
 
-~~~js
+~~~jsx
 items: [ "file", "edit", "view", "arrange", "spacer", "scale" ];
 ~~~
 
@@ -30,7 +30,7 @@ The full list of service elements you can see [here](guides/diagram_editor/toolb
 
 The `items` property allows you to specify [**Service elements**](guides/diagram_editor/toolbar.md/#service-elements) and [**Base elements**](guides/diagram_editor/toolbar.md/#base-elements) as an array of objects:
 
-~~~js
+~~~jsx
 items: [ 
     {
         type: string,
@@ -71,7 +71,7 @@ For all [**service elements**](guides/diagram_editor/toolbar.md/#service-element
 
 The example below shows how to configure Toolbar items via strings:
 
-~~~js {10-14}
+~~~jsx {10-14}
 // Configuring items via strings
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
@@ -95,7 +95,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 
 The example below shows how to configure Toolbar items via objects:
 
-~~~js {7-38}
+~~~jsx {7-38}
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {
@@ -139,6 +139,8 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 ~~~
 
-**Change log**: The property was added in v6.0
+**Change log**: Added in v6.0
 
-**Related articles:**  [Toolbar configuration](guides/diagram_editor/toolbar.md)
+**Related articles**:  [Toolbar configuration](guides/diagram_editor/toolbar.md)
+
+**Related sample**: [Diagram Editor. Default mode. Customization of toolbar. Added search by shapes ](https://snippet.dhtmlx.com/846cz71r)

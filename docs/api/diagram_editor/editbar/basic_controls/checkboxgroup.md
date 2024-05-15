@@ -1,5 +1,5 @@
 ---
-sidebar_label: CheckboxGroup!!
+sidebar_label: CheckboxGroup
 title: Editbar Basic Controls - CheckboxGroup 
 description: You can explore the CheckboxGroup control of Editbar in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
@@ -149,11 +149,11 @@ const editor = new dhx.DiagramEditor("editor_container", {
                                 { id: "diagram", text: "DHTMLX Diagram", value: "diagram" },
                                 { id: "suite", text: "DHTMLX Suite", value: "suite" },
                                 { id: "gantt", text: "DHTMLX Gantt" },
-                                { id: "spreadsheet", text: "DHTMLX Spreadsheet", disabled: true },
-                            ],
+                                { id: "spreadsheet", text: "DHTMLX Spreadsheet", disabled: true }
+                            ]
                         }
-                    },
-                ],
+                    }
+                ]
             }
         }
     }

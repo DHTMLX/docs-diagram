@@ -1,5 +1,5 @@
 ---
-sidebar_label: sections!!
+sidebar_label: sections
 title: sections Property of Shapebar
 description: You can learn about the sections property of Shapebar in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
@@ -16,7 +16,7 @@ Using the **sections** property you can change the structure of the shapebar and
 
 ### Usage
 
-~~~js
+~~~jsx
 sections?: {
     [name: string]: (obj | string)[]
 };
@@ -33,7 +33,7 @@ The `sections` object can contain a set of *key:value* pairs where:
     - `{group: true}` - (optional) displays a basic set of Groups
     - `{swimlane: true}` - (optional) displays a basic set of Swimlanes
   - a string value with a specific type of the item to be rendered in the section (for example, "text", "topic", etc.)
-  - an object with several *key:value* pairs for [redefining the default properties of any shape](#customization) 
+  - an object with several *key:value* pairs for redefining the default properties of any shape
 
 ### Example
 
@@ -61,7 +61,7 @@ Depending on the chosen elements, the configuration of items of a particular sec
 
 1. Rendering of basic sections
 
-You can render [a basic set of shapes](#basic) using the `sections` configuration object. For example:
+You can render a basic set of shapes using the `sections` configuration object. For example:
 
 ~~~jsx {5-10}
 const editor = new dhx.DiagramEditor("editor_container", {
@@ -97,7 +97,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 ~~~
 
-3. <p id="customization">Redefining basic configurations</p>
+3. Redefining basic configurations
 
 Another option is to redefine basic properties of any shape and render it with the necessary parameters. The example below shows rendering of a shape of the `circle` type with various text and color settings:
 
@@ -169,12 +169,6 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 ~~~
 
-TODO (check the links to the snippets)
-
 **Related article**:  [Shapebar](guides/diagram_editor/shapebar.md/#custom-sections)
 
-**Related samples**:
-- [Diagram editor. Default mode. Setting the section order in the left panel](https://snippet.dhtmlx.com/7747cx7b)
-- [Diagram editor. Default mode. Left panel customization](https://snippet.dhtmlx.com/2z0a18oz)
-
-**Change log**: The property was added in v6.0
+**Change log**: Added in v6.0

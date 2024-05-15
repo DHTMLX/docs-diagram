@@ -1,5 +1,5 @@
 ---
-sidebar_label: zoomIn!!
+sidebar_label: zoomIn
 title: zoomIn Event of Editor
 description: You can learn about the zoomIn event of editor in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
@@ -12,7 +12,7 @@ description: You can learn about the zoomIn event of editor in the documentation
 
 ### Usage
 
-~~~js
+~~~jsx
 "zoomIn": (step: number) => void;
 ~~~
 
@@ -28,14 +28,14 @@ For handling the inner events of Diagram Editor you can use the **on()** method.
 
 ### Example
 
-~~~js {7-9}
+~~~jsx {7-9}
 // initializing Diagram Editor
 const editor = new dhx.DiagramEditor("editor_container");
 // loading data
 editor.parse(data);
 
 // attaching a handler to the event
-editor.events.on("zoomIn", function(step) {
+editor.events.on("zoomIn", (step) => {
     console.log("The diagram in the editor is zoomed in. The step is" + step);
 });
 ~~~

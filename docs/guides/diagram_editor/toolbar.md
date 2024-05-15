@@ -1,5 +1,5 @@
 ---
-sidebar_label: Toolbar!!
+sidebar_label: Toolbar
 title: Editor Guides - Toolbar
 description: You can learn about the Toolbar of editor in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
@@ -441,3 +441,5 @@ checkIcon?: (editor: IDiagramEditor) => string; // Use only for base elements th
 ~~~jsx
 handler?: (editor: object, event: Event) => void;
 ~~~
+
+**Related sample**: [Diagram with Editor. Default mode. Customization of cards, editbar, toolbar and shapebar](https://snippet.dhtmlx.com/1p0wemnn)

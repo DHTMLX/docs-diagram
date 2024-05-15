@@ -1,5 +1,5 @@
 ---
-sidebar_label: width!!
+sidebar_label: width
 title: width Property of Editbar
 description: You can learn about the width property of Editbar in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
@@ -12,14 +12,8 @@ description: You can learn about the width property of Editbar in the documentat
 
 ### Usage
 
-~~~js
+~~~jsx
 width?: number;
-~~~
-
-### Default config
-
-~~~jsx {}
-width: TODO
 ~~~
 
 ### Example
@@ -41,4 +35,4 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 ~~~
 
-**Change log**: The property was added in v6.0
+**Change log**: Added in v6.0

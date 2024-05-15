@@ -12,7 +12,7 @@ description: You can learn about the serialize method of editor in the documenta
 
 ### Usage
 
-~~~js
+~~~jsx
 serialize(): array;
 ~~~
 
@@ -22,11 +22,11 @@ The method returns an array of JSON objects for each item from the editor data
 
 ### Example
 
-~~~js {4}
+~~~jsx {4}
 const editor = new dhx.DiagramEditor("editor_container");
 editor.parse(data);
 
 const data = editor.serialize();
 ~~~
 
-**Related samples**: [Diagram editor. Org chart mode. Live editor](https://snippet.dhtmlx.com/bng7ego7)
+**Related sample**: [Diagram editor. Org chart mode. Live editor](https://snippet.dhtmlx.com/bng7ego7)

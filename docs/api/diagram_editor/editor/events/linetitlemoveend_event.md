@@ -1,5 +1,5 @@
 ---
-sidebar_label: lineTitleMoveEnd!!
+sidebar_label: lineTitleMoveEnd
 title: lineTitleMoveEnd Event of Editor
 description: You can learn about the lineTitleMoveEnd event of editor in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
@@ -12,7 +12,7 @@ description: You can learn about the lineTitleMoveEnd event of editor in the doc
 
 ### Usage
 
-~~~js
+~~~jsx
 "lineTitleMoveEnd": ({
     event: PointerEvent, 
     lineId: string | number, 
@@ -38,7 +38,7 @@ For handling the inner Diagram Editor events you can use the **on()** method.
 
 ### Example
 
-~~~js {6-13}
+~~~jsx {6-13}
 // initializing Diagram Editor
 const editor = new dhx.DiagramEditor("editor_container");
 // loading data
@@ -54,6 +54,4 @@ editor.events.on("lineTitleMoveEnd", ({ titleId, coords }) => {
 });
 ~~~
 
-**Change log**:
-- The callback function takes an object as a parameter since v6.0
-
+**Change log**: The callback function takes an object as a parameter since v6.0

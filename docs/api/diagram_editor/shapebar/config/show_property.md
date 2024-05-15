@@ -1,5 +1,5 @@
 ---
-sidebar_label: show!!
+sidebar_label: show
 title: show Property of Shapebar
 description: You can learn about the show property of Shapebar in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
@@ -12,13 +12,13 @@ description: You can learn about the show property of Shapebar in the documentat
 
 ### Usage
 
-~~~js
+~~~jsx
 show?: boolean;
 ~~~
 
 ### Default config
 
-~~~js
+~~~jsx
 show: true 
 ~~~
 
@@ -37,6 +37,6 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 ~~~
 
-**Related article:** [Shapebar](guides/diagram_editor/shapebar.md/#showinghiding-the-shapebar)
+**Related article**: [Shapebar](guides/diagram_editor/shapebar.md/#showinghiding-the-shapebar)
 
-**Change log**: The property was added in v6.0
+**Change log**: Added in v6.0

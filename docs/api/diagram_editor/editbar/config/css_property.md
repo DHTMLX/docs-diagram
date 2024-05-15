@@ -1,5 +1,5 @@
 ---
-sidebar_label: css!!
+sidebar_label: css
 title: css Property of Editbar
 description: You can learn about the css property of Editbar in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
@@ -12,7 +12,7 @@ description: You can learn about the css property of Editbar in the documentatio
 
 ### Usage
 
-~~~js
+~~~jsx
 css?: string;
 ~~~
 
@@ -35,4 +35,4 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 ~~~
 
-**Change log**: The property was added in v6.0
+**Change log**: Added in v6.0

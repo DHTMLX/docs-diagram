@@ -13,8 +13,8 @@ You can add any user-defined handler to any of the available events. To do this,
 - **name** - (*string*) the name of the event
 - **handler** - (*function*) the handler function
 
-~~~js
-diagram.events.on("ShapeClick", function(id) {
+~~~jsx
+diagram.events.on("ShapeClick", (id) => {
     alert("You've just clicked an item with id="+id);
 });
 ~~~
@@ -25,7 +25,7 @@ You can attach several handlers to the same event and all of them will be execut
 
 To detach events, use **diagram.events.detach()** method:
 
-~~~js
+~~~jsx
 diagram.events.on("CustomEvent", args);
  
 diagram.events.detach("CustomEvent");
@@ -35,7 +35,7 @@ diagram.events.detach("CustomEvent");
 
 To call events, use the **diagram.events.fire()**.
 
-~~~js
+~~~jsx
 diagram.events.fire("CustomEvent", args);
 // where args is an array of arguments
 ~~~
@@ -50,19 +50,19 @@ Check the full list of the Diagram API events in the [API reference](../../api/d
 
 ### Editor events
 
-The list of the Diagram editor API events is given in the [API section](../../api/editor/api_overview/#editor-events).
+The list of the Diagram editor API events is given in the [API section](/api/diagram_editor/editor/events/overview/).
 
 :::note
 In addition to the events of the Diagram editor, you may also apply [events of the diagram object](../../api/diagram/api_overview/#diagram-events) while working in the editor view. For example:
 :::
 
-~~~js {6-8}
+~~~jsx {6-8}
 const editor = new dhx.DiagramEditor("editor_container", {
     controls: { autoLayout: false }
 });
 editor.parse(data);
 
-editor.diagram.events.on("ShapeClick", function(id) {
+editor.diagram.events.on("ShapeClick", (id) => {
     alert("You've just clicked an item with id=" + id);
 });
 ~~~
@@ -84,5 +84,3 @@ Check the full list of the InlineEditor API events in the [API Reference](../../
 ### Selection events
 
 Check the full list of the Selection API events in the [API Reference](../../api/selection/#events).
-
-

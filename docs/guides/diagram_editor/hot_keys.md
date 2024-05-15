@@ -1,5 +1,5 @@
 ---
-sidebar_label: Hotkeys!!
+sidebar_label: Hotkeys
 title: Editor Guides - Hotkey List 
 description: You can learn about the Hotkeys of editor in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---

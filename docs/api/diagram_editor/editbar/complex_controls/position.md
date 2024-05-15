@@ -1,5 +1,5 @@
 ---
-sidebar_label: Position!!
+sidebar_label: Position
 title: Editbar Complex Controls - Position 
 description: You can explore the Position control of Editbar in the documentation of the the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
@@ -59,9 +59,9 @@ The **Position** control is available only for the **shape** element in the *org
 
 ### Service properties
 
-- `$properties` - (optional) allows you to override values of [basic controls](/guides/diagram_editor/editbar/basic_controls) within a complex control. You can configure the following elements of the **Position** control based on the basic controls:
-    - `dx` - ([input](/guides/diagram_editor/editbar/basic_controls/input)) sets the shape offset from the predefined algorithm on the x-axis
-    - `dy` - ([input](/guides/diagram_editor/editbar/basic_controls/input)) sets the shape offset from the predefined algorithm on the y-axis
+- `$properties` - (optional) allows you to override values of [basic controls](/api/diagram_editor/editbar/basic_controls_overview)) within a complex control. You can configure the following elements of the **Position** control based on the basic controls:
+    - `dx` - ([input](/api/diagram_editor/editbar/basic_controls/input)) sets the shape offset from the predefined algorithm on the x-axis
+    - `dy` - ([input](/api/diagram_editor/editbar/basic_controls/input)) sets the shape offset from the predefined algorithm on the y-axis
 
 ## Example
 

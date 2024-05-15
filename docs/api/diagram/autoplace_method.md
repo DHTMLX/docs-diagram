@@ -23,19 +23,19 @@ autoPlace(config?: object): void;
 ### Parameters
 
 - `config` - (optional) an object with configuration settings of the autoplacement. If not specified, the default settings will be applied. Here you can specify the following parameters:
-	- `mode` - (optional) the mode of connecting shapes, "direct" (by default) or "edges"
-	- `graphPadding` - (optional) sets the distance between unconnected diagrams, 200 by default
-	- `placeMode` - (optional) sets the mode of placement of shapes, "orthogonal" (by default) or "radial"
+    - `mode` - (optional) the mode of connecting shapes, "direct" (by default) or "edges"
+    - `graphPadding` - (optional) sets the distance between unconnected diagrams, 200 by default
+    - `placeMode` - (optional) sets the mode of placement of shapes, "orthogonal" (by default) or "radial"
 
 ### Example
 
-~~~jsx {4-6}
+~~~jsx {4-7}
 const diagram = new dhx.Diagram("diagram_container");
 diagram.data.parse(data);
 
 diagram.autoPlace({
-	mode: "edges",
-	placeMode: "radial"
+    mode: "edges",
+    placeMode: "radial"
 });
 ~~~
 
@@ -45,11 +45,11 @@ diagram.autoPlace({
 
 Connector lines with no arrows are aligned "from center to center"; they are straight and diagonal.
 
-![](../../assets/direct_mode.png) 
+![](../../assets/direct_mode.png)
 
 ### "edges" mode
 
-Connector lines are aligned "from side to side". 
+Connector lines are aligned "from side to side".
 
 :::info 
 To add arrows to the lines, specify **forwardArrow: "filled"** or **backArrow: "filled"** in the configuration of a [line object](../../../lines/configuration_properties/).
@@ -78,7 +78,6 @@ Shapes are arranged along vertical and horizontal lines
 - **"orthogonal"** arrangement with lines in the **"edges"** mode
 
 ![](../../assets/edges_ortogonal.png)
-
 
 ### "radial" mode
 

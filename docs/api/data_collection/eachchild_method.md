@@ -12,7 +12,7 @@ description: You can learn about the eachChild method of data collection in the 
 
 ### Usage
 
-~~~js
+~~~jsx
 eachChild(
     id: string | number, 
     callback: function, 
@@ -28,7 +28,7 @@ eachChild(
 
 ### Example
 
-~~~js {6-8}
+~~~jsx {6-8}
 const diagram = new dhx.Diagram("diagram_container", {
     type: "default"
 });

@@ -1,18 +1,16 @@
 ---
-sidebar_label: addShape() TODO
+sidebar_label: addShape() 
 title: addShape Method
 description: You can learn about the addShape method in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
 
-# addShape() TODO
-
-:::info
-The **addShape()** method can be used both in the diagram and in the editor. <br>Check the **related sample**: [Diagram. Mindmap mode. Site map and user flow example](https://snippet.dhtmlx.com/do1jwmw1).
-:::
+# addShape() 
 
 ### Description
 
-@short: Creates a custom shape and sets sidebar options for its editing in the right panel of the editor
+@short: Creates a custom shape
+
+The `addShape()` method can be used both in the diagram and in the editor. [Check the examples below](#example)
 
 ### Usage
 
@@ -26,14 +24,10 @@ addShape(
 ### Parameters
 
 - `type` - (required) the unique name for the type of a custom shape. The name must differ from the names of default shapes
-- `parameters` - TODO (required) an object with the additional parameters of the **addShape()** method. Here you can specify the following attributes:
-    - `template: function` - (required) the function that takes the configuration object of the shape as a parameter and returns either an HTML or SVG template. Check [the available formats of the template](#formats-of-the-shape-template)
+- `parameters` - (required) an object with the additional parameters of the **addShape()** method. Here you can specify the following attributes:
+    - `template: function` - (required) the function that takes the configuration object of the shape as a parameter and returns either an HTML or SVG template
     - [`defaults: object`](../../../shapes/custom_shape/) - (optional) the default configuration for a created shape. See [the full list of the configuration properties of a shape](../../../shapes/configuration_properties/)
-    - [`properties: array`](../../../guides/diagram_editor/editbar/#configuring-options-for-editing-custom-shapes) - (optional, <i>and is available only in the **editor** mode</i>) an array of objects that defines which sidebar options will be rendered in the right panel of the editor for editing a custom shape. Each object can contain a set of properties:
-        - `type: string` - (required) the type of a sidebar option. See the list of available types [below](#types-of-sidebar-options)
-        - `label?: string` - (optional) specifies the label for the sidebar option
-        - `property?: string` - (optional) a custom property of the shape
-    - [`eventHandlers: object`](../../../shapes/custom_shape/#event-handlers-for-custom-shapes) - (optional) adds custom event handlers to HTML elements of the template of a shape. The **eventHandlers** object includes a set of **key:value** pairs, where:
+    - [`eventHandlers: object`](../../../shapes/custom_shape/#event-handlers-for-custom-shapes) - (optional) adds custom event handlers to HTML elements of the template of a shape. The `eventHandlers` object includes a set of `key:value` pairs, where:
         - `key: string` - the name of the event. Note, that at the beginning of the event name the 'on' prefix is used (onclick, onmouseover)
         - `value: object` - an object that contains a **key:value** pair, where 
           - `key` is the CSS class name that the handler will be applied to
@@ -47,84 +41,107 @@ addShape(
 
 ### Example
 
-~~~jsx {6-12}
+~~~jsx {8-37} title="Adding a shape into the Diagram"
 const diagram = new dhx.Diagram("diagram_container", {
-	type: "default" //  or type: "org", or type: "mindmap"
+    type: "org", //  or type: "default", or type: "mindmap"
+    defaultShapeType: "personal",
 });
+
 diagram.data.parse(data);
 
-diagram.addShape("template", {
-	template: config => (
-    	`<section class='template'>
-         	<h3>${config.title}</h3>
-         	<ul><li>${config.text.join("</li><li>")}</li></ul>
-     	</section>`
-	)	
+diagram.addShape("personal", {
+    template: ({ name, photo, post }) => (`
+        <div class="dhx_diagram_template_a_box dhx_diagram_template_a">
+            <div class="dhx_diagram_template_a__inside">
+                <div class="dhx_diagram_template_a__picture" style="background-image: url(${photo});"></div>
+                <div class="dhx_diagram_template_a__body">
+                    <div class="dhx_diagram_template_a__title">${name}</div>
+                    <div class="dhx_diagram_template_a__row">
+                        <span class="dhx_diagram_template_a__text">${post}</span>
+                    </div>
+                </div>
+                <div class="toggle--open-menu">
+                    <span class="dhx_diagram_template_a__icon mdi mdi-dots-vertical"></span>
+                </div>
+            </div>
+        </div>
+    `), 
+    defaults: {
+        height: 115, width: 330,
+        name: "Name and First name",
+        post: "Resident",
+        photo: "",
+    },
+    eventHandlers: {
+        onclick: {
+            "toggle--open-menu": () => console.log("open menu")
+        }
+    }
 });
 ~~~
 
+**Related sample**: [Diagram with Editor. Org chart mode. Customization of cards, editbar and toolbar](https://snippet.dhtmlx.com/vcnt647v)
 
+The example below shows how you can add a custom shape into the Diagram Editor as well as configure the [Shapebar](/guides/diagram_editor/shapebar/) and [Editbar](/guides/diagram_editor/editbar/) panels of the editor. The configuration of a custom shape in the editbar of the Editor is implemented via the [`properties`](../../../api/diagram_editor/editbar/config/properties_property/) property of the Editbar panel.
 
-### Types of sidebar options
+~~~jsx {34-49} title="Adding a shape into the Diagram Editor"
+const editor = new dhx.DiagramEditor("editor_container", {
+    type: "default",
+    view: {
+        shapebar: {
+            sections: {
+                "Network shapes": [
+                    { type: "network", text: "Core", img: src + "core.svg" },
+                    { type: "network", text: "Server", img: src + "server.svg" }
+                ],
+                "Flow shapes": [{ flowShapes: true }]
+            }
+        },
+        editbar: {
+            properties: {
+                network: [
+                    { type: "arrange" },
+                    {
+                        type: "fieldset",
+                        label: "Network information",
+                        rows: [
+                            { type: "avatar", key: "img", circle: true, readOnly: true },
+                            { type: "textarea", key: "text", label: "Description" },
+                            { type: "input", key: "ip", label: "IP" }
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+});
 
-While specifying sidebar options for editing custom shapes, you can apply the following values of the **type** property:
+editor.parse(data);
 
-- ["arrange"](../../../guides/diagram_editor/editbar/#arrange) - provides interface for editing the **width**, **height**, **angle**, **x**, **y** properties of a shape. The properties can't be overridden. The type is available only in the default mode of the editor
-- ["position"](../../../guides/diagram_editor/editbar/#position) - provides interface for editing either the **x**/**y**, or **dx**/**dy** properties of a shape. The properties can't be overridden
-- ["size"](../../../guides/diagram_editor/editbar/#size) - provides interface for editing the **width** and **height** properties of a shape. The properties can't be overridden
-- ["title"](../../../guides/diagram_editor/editbar/#title) - provides interface for editing text values of a shape. By default, this type allows editing the **title** property of a shape
-- ["text"](../../../guides/diagram_editor/editbar/#text) - provides interface for editing text values of a shape. By default, this type allows editing the **text** property of a shape
-- ["img"](../../../guides/diagram_editor/editbar/#image) - provides interface for editing an image of a shape. By default, this type allows editing the **img** property of a shape
-- ["fill"](../../../guides/diagram_editor/editbar/#fill) - provides interface for editing color values of a shape. By default, this type allows editing the **fill** property of a shape
-- ["textProps"](../../../guides/diagram_editor/editbar/#text-settings) - provides interface for editing the **textAlign**, **lineHeight**, **fontStyle**, **textVerticalAlign**, **fontSize** properties of a shape. The properties can't be overridden. You need to specify all of these properties in the data set for correct work of the **Text** sidebar option
-- ["strokeProps"](../../../guides/diagram_editor/editbar/#stroke) - provides interface for editing the **stroke**, **strokeType**, **strokeWidth** properties of a shape. The properties can't be overridden. You need to specify all of these properties in the data set for correct work of the **Stroke** sidebar option
-- ["grid"](../../../guides/diagram_editor/editbar/#grid-step) - provides interface for editing the step of moving a shape. The visibility of the option is adjusted via the **controls** property of the editor
-
-## Formats of the shape template
-
-The **template** function can return either an HTML or SVG template.
-
-Creating an HTML template can be implemented either in ES5 or in ES6+ formats.
-
-An example of creating an HTML template using ES6+:
-
-~~~js
-const template = config => (
-    `<section class='template'>
-        <h3>${config.title}</h3>
-        <ul><li>${config.text.join("</li><li>")}</li></ul>
-    </section>`
-);
+editor.diagram.addShape("network", {
+    template: ({ img, text, ip }) => {
+        return `
+            <section class="dhx_diagram_template_d">
+                <img class="dhx_diagram_template_d__image" src="${img}" alt="${text}"></img>
+                <span class="dhx_diagram_template_d__title">${text}</span>
+                <span class="dhx_diagram_template_d__text">${ip}</span>
+            </section>
+        `;
+    },
+    defaults: {
+        width: 160, height: 160,
+        preview: { scale: 0.7 },
+        ip: "127.0.0.1"
+    }
+});
 ~~~
 
-**Related sample:**	[Diagram. Default mode. HTML template in ES6+ format](https://snippet.dhtmlx.com/z8ikyyek)
-
-**Related sample:**	[Diagram editor. Default mode. Custom shape template in ES6+ format](https://snippet.dhtmlx.com/9gb3l7el)
-
-An example of creating an HTML template using ES5:
-
-~~~js
-function template(config) {
-    var template = "<section class='template'>"
-        template += "<h3>" + config.title +"</h3>";
-        template += "<ul><li>" + config.text.join("</li><li>") +"</li></ul>";
-        template += "</section>";
-    return template;
-};
-~~~
-
-**Related sample:** [Diagram. Default mode. HTML template in ES5 format](https://snippet.dhtmlx.com/p2m7nqbj)
-
-**Related sample:** [Diagram editor. Default mode. Custom shape template in ES5 format](https://snippet.dhtmlx.com/9y51k3fl)
-
-:::note
-Note, that all HTML and SVG tags must be closed in the template.
-
-For example, an `<img src="" alt="">` tag should look like `<img src="" alt=""></img>`.
-:::
-
-**Change log**:
-- The **eventHandlers** attribute is added in v3.1
-- The method is added in v3.0
+**Change log**: The `properties` attribute is removed in v6.0.
 
 **Related articles**: [Custom Shape](../../../shapes/custom_shape/)
+
+**Related samples**:
+
+- [Diagram. Mindmap mode. Site map and user flow example (custom template)](https://snippet.dhtmlx.com/do1jwmw1)
+- [Diagram with Editor. Org chart mode. Customization of cards, editbar and toolbar](https://snippet.dhtmlx.com/vcnt647v)
+- **Related sample**: [Diagram Editor. Default mode. Basic and custom themes](https://snippet.dhtmlx.com/9twmlfus)

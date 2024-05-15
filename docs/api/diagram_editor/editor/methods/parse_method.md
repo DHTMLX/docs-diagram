@@ -12,7 +12,7 @@ description: You can learn about the parse method of editor in the documentation
 
 ### Usage
 
-~~~js
+~~~jsx
 parse(data: array): void;
 ~~~
 
@@ -24,7 +24,7 @@ You can load data in any supported data format. See the details in the [](api/da
 
 ### Example
 
-~~~js
+~~~jsx
 const data = [
     // shapes
     {
@@ -58,6 +58,7 @@ editor.parse(data);
 ~~~
 
 **Related samples**:
+
 - [Diagram editor. Default mode. Basic initialization](https://snippet.dhtmlx.com/xshe9ut7)
 - [Diagram editor. Org chart mode. Basic initialization](https://snippet.dhtmlx.com/og4qm3ja)
 - [Diagram editor. Mindmap mode. Emotions mind map](https://snippet.dhtmlx.com/lo1vm0e8)

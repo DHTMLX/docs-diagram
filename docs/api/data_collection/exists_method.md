@@ -12,7 +12,7 @@ description: You can learn about the exists method of data collection in the doc
 
 ### Usage
 
-~~~js
+~~~jsx
 exists(id: string | number): boolean;
 ~~~
 
@@ -26,7 +26,7 @@ The method returns `true` if the item exists, otherwise `false`
 
 ### Example
 
-~~~js {6}
+~~~jsx {6}
 const diagram = new dhx.Diagram("diagram_container", {
     type: "default"
 });
@@ -34,4 +34,3 @@ diagram.data.parse(data);
 
 const shape = diagram.data.exists("1"); 
 ~~~
-

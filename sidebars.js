@@ -8,7 +8,6 @@ module.exports = {
       type: "doc",
       id: "editor_overview"
     },
-
     // News
     {
       type: "category",
@@ -26,7 +25,6 @@ module.exports = {
         "migration",
       ],
     },
-
     // API
     {
       type: "category",
@@ -42,7 +40,6 @@ module.exports = {
         image: '/img/docusaurus.png',
       },
       items: [
-
         // Diagram API
         {
           type: "category",
@@ -129,7 +126,6 @@ module.exports = {
               	"api/diagram/defaultshapetype_property",
               	"api/diagram/exportstyles_property",
               	"api/diagram/lineconfig_property",
-              	"api/diagram/linegap_property",
               	"api/diagram/margin_property",
               	"api/diagram/scale_property",
               	"api/diagram/select_property",
@@ -140,22 +136,20 @@ module.exports = {
             },
           ]
         },
-// !!!!!!!!!!!!!!!!!!!!!!!!!! Serhii Pylypchuk start
         // Diagram Editor API
         {
           type: "category",
-          label: "!!Diagram Editor API",
+          label: "Diagram Editor API",
           collapsed: true,
           link: {
             type: 'generated-index',
             title: "Diagram Editor API",
           },
           items: [
-            
             // Editor API / Common API (looks better)
             {
               type: "category",
-              label: "!!Editor API",
+              label: "Editor API",
               collapsed: true,
               link: {
                 type: 'doc',
@@ -165,14 +159,13 @@ module.exports = {
                 // Editor Methods
                 {
                   type: "category",
-                  label: "!!Editor methods",
+                  label: "Editor methods",
                   collapsed: true,
                   link: {
                      type: 'doc',
                      id: "api/diagram_editor/editor/methods/overview",
                   },
                   items: [
-                    //"api/diagram_editor/editor/methods/setviewmode_method", !!!Deprecated
                     "api/diagram_editor/editor/methods/destructor_method",
                     "api/diagram_editor/editor/methods/import_method",
                     "api/diagram_editor/editor/methods/paint_method",
@@ -180,13 +173,12 @@ module.exports = {
                     "api/diagram_editor/editor/methods/serialize_method",
                     "api/diagram_editor/editor/methods/zoomin_method",
                     "api/diagram_editor/editor/methods/zoomout_method",
-                    
                   ],
                 },
                 // Editor Events
                 {
                   type: "category",
-                  label: "!!Editor events",
+                  label: "Editor events",
                   collapsed: true,
                   link: {
                      type: 'doc',
@@ -199,25 +191,18 @@ module.exports = {
                     "api/diagram_editor/editor/events/afterlinetitlemove_event",
                     "api/diagram_editor/editor/events/aftershapeiconclick_event",
                     "api/diagram_editor/editor/events/aftershapemove_event",
-                    //"api/diagram_editor/editor/events/applybutton_event", !!!Deprecated
-                    //"api/diagram_editor/editor/events/autolayout_event", !!!Deprecated
                     "api/diagram_editor/editor/events/beforegroupmove_event",
                     "api/diagram_editor/editor/events/beforeitemcatch_event",
                     "api/diagram_editor/editor/events/beforeitemmove_event",
                     "api/diagram_editor/editor/events/beforelinetitlemove_event",
                     "api/diagram_editor/editor/events/beforeshapeiconclick_event",
                     "api/diagram_editor/editor/events/beforeshapemove_event",
-                    //"api/diagram_editor/editor/events/changegridstep_event", !!!Deprecated
-                    //"api/diagram_editor/editor/events/exportdata_event", !!!Deprecated
                     "api/diagram_editor/editor/events/groupmoveend_event",
-                    //"api/diagram_editor/editor/events/importdata_event", !!!Deprecated
                     "api/diagram_editor/editor/events/itemmoveend_event",
                     "api/diagram_editor/editor/events/itemtarget_event",
                     "api/diagram_editor/editor/events/linetitlemoveend_event",
-                    //"api/diagram_editor/editor/events/resetbutton_event", !!!Deprecated
                     "api/diagram_editor/editor/events/shapemoveend_event",
                     "api/diagram_editor/editor/events/shaperesize_event",
-                    //"api/diagram_editor/editor/events/visibility_event", !!!Deprecated
                     "api/diagram_editor/editor/events/zoomin_event",
                     "api/diagram_editor/editor/events/zoomout_event",
                   ]
@@ -225,7 +210,7 @@ module.exports = {
                 // Editor Properties
                 {
                   type: "category",
-                  label: "!!Editor properties",
+                  label: "Editor properties",
                   collapsed: true,
                   link: {
                      type: 'doc',
@@ -233,23 +218,15 @@ module.exports = {
                   },
                   items: [
                     "api/diagram_editor/editor/config/autoplacement_property",
-                    //"api/diagram_editor/editor/config/controls_property", !!!Deprecated
                     "api/diagram_editor/editor/config/connectionpoints_property", // New
                     "api/diagram_editor/editor/config/defaults_property",
-                    //"api/diagram_editor/editor/config/editmode_property", !!!Deprecated
-                    //"api/diagram_editor/editor/config/gappreview_property", !!!Deprecated
                     "api/diagram_editor/editor/config/grid_property",
                     "api/diagram_editor/editor/config/gridstep_property",
                     "api/diagram_editor/editor/config/itemsdraggable_property",
                     "api/diagram_editor/editor/config/lineconfig_property",
-                    "api/diagram_editor/editor/config/linegap_property",
                     "api/diagram_editor/editor/config/magnetic_property",
                     "api/diagram_editor/editor/config/resizepoints_property", // New
-                    //"api/diagram_editor/editor/config/reservedwidth_property", !!!Deprecated
                     "api/diagram_editor/editor/config/scale_property",
-                    //"api/diagram_editor/editor/config/scalepreview_property", !!!Deprecated
-                    //"api/diagram_editor/editor/config/shapebarwidth_property", !!!Deprecated
-                    //"api/diagram_editor/editor/config/shapesections_property", !!!Deprecated
                     "api/diagram_editor/editor/config/shapetoolbar_property",
                     "api/diagram_editor/editor/config/shapetype_property",
                     "api/diagram_editor/editor/config/type_property",
@@ -258,11 +235,10 @@ module.exports = {
                 },
               ]
             },
-
             // History Manager API
             {
               type: "category",
-              label: "!!History manager API",
+              label: "History manager API",
               collapsed: true,
               link: {
                 type: 'doc',
@@ -272,7 +248,7 @@ module.exports = {
                 // History Manager Methods
                 {
                   type: "category",
-                  label: "!!History manager methods",
+                  label: "History manager methods",
                   collapsed: true,
                   link: {
                     type: 'doc',
@@ -292,7 +268,7 @@ module.exports = {
                 // History Manager Properties
                 {
                   type: "category",
-                  label: "!!History manager properties",
+                  label: "History manager properties",
                   collapsed: true,
                   link: {
                     type: 'doc',
@@ -304,11 +280,10 @@ module.exports = {
                 },
               ]
             },
-// !!!!!!!!! Masha Rudenko start
             // Copy Manager API
             {
               type: "category",
-              label: "!!Copy manager API",
+              label: "Copy manager API",
               collapsed: true,
               link: {
                 type: 'doc',
@@ -318,7 +293,7 @@ module.exports = {
                 // Copy Manager Methods
                 {
                   type: "category",
-                  label: "!!Copy manager methods",
+                  label: "Copy manager methods",
                   collapsed: true,
                   link: {
                     type: 'doc',
@@ -333,11 +308,10 @@ module.exports = {
                 },
               ]
             },
-// !!!!!!!!! Masha Rudenko end
             // View API
             {
               type: "category",
-              label: "!!View API",
+              label: "View API",
               collapsed: true,
               link: {
                 type: 'doc',
@@ -347,7 +321,7 @@ module.exports = {
                 // View Methods
                 {
                   type: "category",
-                  label: "!!View methods",
+                  label: "View methods",
                   collapsed: true,
                   link: {
                     type: 'doc',
@@ -359,11 +333,10 @@ module.exports = {
                     "api/diagram_editor/view/methods/show_method", // New
                   ],
                 },
-
                 // View Events
                 {
                   type: "category",
-                  label: "!!View events",
+                  label: "View events",
                   collapsed: true,
                   link: {
                     type: 'doc',
@@ -378,11 +351,10 @@ module.exports = {
                 },
               ]
             },
-
             // Toolbar API
             {
               type: "category",
-              label: "!!Toolbar API",
+              label: "Toolbar API",
               collapsed: true,
               link: {
                 type: 'doc',
@@ -392,7 +364,7 @@ module.exports = {
                 // Toolbar Methods
                 {
                   type: "category",
-                  label: "!!Toolbar methods",
+                  label: "Toolbar methods",
                   collapsible: true,
 					        collapsed: true,
                   link: {                  
@@ -408,7 +380,7 @@ module.exports = {
                 // Toolbar Properties
                 {
                   type: "category",
-                  label: "!!Toolbar properties",
+                  label: "Toolbar properties",
                   collapsed: true,
                   link: {
                     type: 'generated-index',
@@ -423,7 +395,7 @@ module.exports = {
                 // Toolbar Events
                 {
                   type: "category",
-                  label: "!!Toolbar events",
+                  label: "Toolbar events",
                   collapsed: true,
                   link: {
                     type: 'doc',
@@ -436,34 +408,20 @@ module.exports = {
                 },
               ]
             },
-
             // Editbar API
             {
               type: "category",
-              label: "!!Editbar API",
+              label: "Editbar API",
               collapsed: true,
               link: {
                 type: 'doc',
                 id:"api/diagram_editor/editbar/api_overview"
               },
               items: [
-                // Editbar Methods DELETE
-                /*{
-                  type: "category",
-                  label: "!!Editbar methods",
-                  collapsed: true,
-                  link: {
-                    type: 'generated-index',
-                    title: "Editbar methods"
-                  },
-                  items: [
-                    "api/diagram_editor/editbar/methods/some_method",
-                  ],
-                },*/
                 // Editbar Properties
                 {
                   type: "category",
-                  label: "!!Editbar properties",
+                  label: "Editbar properties",
                   collapsed: true,
                   link: {
                     type: 'generated-index',
@@ -479,7 +437,7 @@ module.exports = {
                 },
                 {
                   type: "category",
-                  label: "!!Basic controls",
+                  label: "Basic controls",
                   link: {
                     type: "doc",
                     id: "api/diagram_editor/editbar/basic_controls_overview"
@@ -507,7 +465,7 @@ module.exports = {
                 },
                 {
                   type: "category",
-                  label: "!!Complex controls",
+                  label: "Complex controls",
                   link: {
                     type: "doc",
                     id: "api/diagram_editor/editbar/complex_controls_overview"
@@ -529,11 +487,10 @@ module.exports = {
                 }
               ]
             },
-
             // Shapebar API
             {
               type: "category",
-              label: "!!Shapebar API",
+              label: "Shapebar API",
               collapsed: true,
               link: {                  
                 type: 'doc',
@@ -543,7 +500,7 @@ module.exports = {
                 // Shapebar Properties
                 {
                   type: "category",
-                  label: "!!Shapebar properties",
+                  label: "Shapebar properties",
                   collapsed: true,
                   link: {
                     type: 'generated-index',
@@ -561,13 +518,10 @@ module.exports = {
             }
           ]
         },
-
-// !!!!!!!!!!!!!!!!!!!!!!!!!! Serhii Pylypchuk end
-
         // Items API
         {
           type: "category",
-          label: "!!Items API",
+          label: "Items API",
           link: {
             type: 'generated-index',
             title: "Items API",
@@ -584,7 +538,6 @@ module.exports = {
             "swimlanes/configuration_properties",
           ],
         },
-      
         // Common API
         {
           type: "category",
@@ -599,7 +552,6 @@ module.exports = {
             image: '/img/docusaurus.png',
           },
           items: [
-
             // Cell manager API
             {
               type: "category",
@@ -651,11 +603,10 @@ module.exports = {
                 },
               ]
             },
-      // !!!!!! Masha Rudenko start
             // Data collection API
             {
               type: "category",
-              label: "!!DataCollection API",
+              label: "DataCollection API",
               collapsed: true,
               link: {
                 type: 'doc',
@@ -664,7 +615,7 @@ module.exports = {
               items: [
                 {
                   type: "category",
-                  label: "!!DataCollection methods",
+                  label: "DataCollection methods",
                   link: {
                     type: 'doc',
                     id: "api/overview/datacollection_methods_overview",
@@ -698,7 +649,7 @@ module.exports = {
                 },
                 {
                   type: "category",
-                  label: "!!DataCollection events",
+                  label: "DataCollection events",
                   link: {
                     type: 'doc',
                     id: "api/overview/datacollection_events_overview",
@@ -716,8 +667,6 @@ module.exports = {
                 },
               ]
             },
-     // !!!!!! Masha Rudenko end
-      
             // Export
             {
               type: "category",
@@ -732,7 +681,6 @@ module.exports = {
                 "api/export/png_method", 
               ],
             },
-
             // Inline editor 
             {
               type: "category",
@@ -751,11 +699,10 @@ module.exports = {
                 "api/inline_editor/beforeeditoropen_event", 
               ],
             },
-      
             // Selection
             {
               type: "category",
-              label: "!!Selection API",
+              label: "Selection API",
               collapsed: true,
               link: {
                 type: 'doc',
@@ -764,7 +711,7 @@ module.exports = {
               items: [
                 {
                   type: "category",
-                  label: "!!Selection methods",
+                  label: "Selection methods",
                   link: {
                     type: 'doc',
                     id: "api/overview/selection_methods_overview",
@@ -772,17 +719,15 @@ module.exports = {
                   items: [
                     "api/selection/add_method",
                     "api/selection/clear_method",
-                    //"api/selection/getid_method", !!!Deprecated
                     "api/selection/getids_method",
                     "api/selection/getitem_method",
-                    //"api/selection/getsubid_method", !!!Deprecated
                     "api/selection/includes_method",
                     "api/selection/remove_method"
                   ],
                 },
                 {
                   type: "category",
-                  label: "!!Selection events",
+                  label: "Selection events",
                   link: {
                     type: 'doc',
                     id: "api/overview/selection_events_overview",
@@ -800,11 +745,10 @@ module.exports = {
         },
       ]
     },
-
     // Guides
     {
       type: "category",
-      label: "!!Guides",
+      label: "Guides",
       collapsed: true,
       link: {
         type: 'doc',
@@ -831,7 +775,7 @@ module.exports = {
         },
         {
           type: "category",
-          label: "!!Diagram items",
+          label: "Diagram items",
           link: {
             type: 'doc',
             id: "guides/items_index",
@@ -866,7 +810,7 @@ module.exports = {
         },
         {
           type: "category",
-          label: "!!Diagram Editor",
+          label: "Diagram Editor",
           link: {
             type: 'generated-index',
             title: "Diagram editor",
@@ -891,10 +835,9 @@ module.exports = {
         "guides/data_export",
         "guides/event_handling",
         "guides/localization",
-  // !!!!!!!!! Masha Rudenko start
         {
           type: "category",
-          label: "!!Themes",
+          label: "Themes",
           link: {
             type: 'generated-index',
             title: "Themes",
@@ -924,7 +867,6 @@ module.exports = {
         },
         "guides/touch_support",
         "guides/using_typescript",    
-// !!!!!!!!! Masha Rudenko end  
       ]
     },
   ]

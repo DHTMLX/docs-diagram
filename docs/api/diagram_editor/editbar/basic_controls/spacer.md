@@ -1,5 +1,5 @@
 ---
-sidebar_label: Spacer!!
+sidebar_label: Spacer
 title: Editbar Basic Controls - Spacer 
 description: You can explore the Spacer control of Editbar in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
@@ -35,8 +35,8 @@ const editor = new dhx.DiagramEditor("editor_container", {
                     { type: "spacer" },
                     { type: "button", text: "Send", full: true },
                     { type: "spacer" }
-                ],
-            },
+                ]
+            }
         }
     }
 });

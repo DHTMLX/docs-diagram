@@ -12,7 +12,7 @@ description: You can learn about the getRoot method of data collection in the do
 
 ### Usage
 
-~~~js
+~~~jsx
 getRoot(id: string | number): string | number;
 ~~~
 
@@ -26,7 +26,7 @@ The method returns the id of the root item. The root item is the first item of a
 
 ### Example
 
-~~~js {6}
+~~~jsx {6}
 const diagram = new dhx.Diagram("diagram_container", {
     type: "default"
 });

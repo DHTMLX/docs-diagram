@@ -1,5 +1,5 @@
 ---
-sidebar_label: magnetic!!
+sidebar_label: magnetic
 title: magnetic Property of Editor
 description: You can learn about the magnetic property of editor in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
@@ -20,27 +20,27 @@ Snap lines appear when central or extreme lateral coordinates of the shape which
 
 ### Usage
 
-~~~js
+~~~jsx
 magnetic?: {
     show?: boolean,
     lineWidth?: number,
-    lineColor?: string,
+    lineColor?: string
 } | boolean;
 ~~~
 
 ### Default config
 
-~~~js
+~~~jsx
 magnetic: true 
 ~~~
 
 The magnetic mode is enabled with the following configuration:
 
-~~~js
+~~~jsx
 magnetic: {
     show: true,
     lineWidth: 2,
-    lineColor: "#000",
+    lineColor: "#000"
 }
 ~~~
 
@@ -54,19 +54,15 @@ As an object, the **magnetic** property can include the following parameters:
 
 ### Example
 
-~~~js {3-7}
+~~~jsx {3-7}
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     magnetic: {
         show: true,
         lineWidth: 2,
-        lineColor: "#B0B8CD",
+        lineColor: "#B0B8CD"
     }
 });
 ~~~
-
-The result is shown in the GIF image below:
-
-TODO
 
 **Change log**: The ***show*** parameter was added in v6.0

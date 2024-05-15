@@ -1,5 +1,5 @@
 ---
-sidebar_label: Input!!
+sidebar_label: Input
 title: Editbar Basic Controls - Input 
 description: You can explore the Input control of Editbar in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
@@ -52,9 +52,9 @@ description: You can explore the Input control of Editbar in the documentation o
 ### Basic properties
 
 - `type` - (required) the type of a control. Set it to *"input"*
-- `key` - (optional) the name of the specified/modified property or the path to it in the object of a Diagram item 
+- `key` - (optional) the name of the specified/modified property or the path to it in the object of a Diagram item
 - `wrap` - (optional) allows displaying the external wrapping. *false* by default
-- `css`	- (optional) adds style classes to a control
+- `css` - (optional) adds style classes to a control
 - `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*). *false* by default
 - `hidden` - (optional) defines whether a control is hidden. *false* by default
 - `height` - (optional) the height of a control. *"content"* by default
@@ -125,7 +125,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
                         placeholder: "Enter a number value",
                         min: 0,
                         max: 100,
-                    },
+                    }
                 ]
             }
         }

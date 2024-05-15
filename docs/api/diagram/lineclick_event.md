@@ -12,7 +12,7 @@ description: You can learn about the lineClick event in the documentation of the
 
 ### Usage
 
-~~~js
+~~~jsx
 lineClick: (
     id: string | number, 
     event: MouseEvent
@@ -28,7 +28,7 @@ The callback of the event takes the following parameters:
 
 ### Example
 
-~~~js {9-11}
+~~~jsx {9-11}
 // initializing Diagram
 const diagram = new dhx.Diagram("diagram_container", {
     type: "default"
@@ -37,7 +37,7 @@ const diagram = new dhx.Diagram("diagram_container", {
 diagram.data.parse(data);
 
 // attaching a handler to the event
-diagram.events.on("lineClick", function(id, events) {
+diagram.events.on("lineClick", (id) => {
     console.log(id);
 });
 ~~~
@@ -45,6 +45,3 @@ diagram.events.on("lineClick", function(id, events) {
 **Change log**: Added in v3.0
 
 **Related article**: [Event handling](../../../guides/event_handling/)
-
-**Related samples**: [Diagram. Default mode. Events](https://snippet.dhtmlx.com/7h2hgb3g)
-

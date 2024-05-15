@@ -1,5 +1,5 @@
 ---
-sidebar_label: Button!!
+sidebar_label: Button
 title: Editbar Basic Controls - Button 
 description: You can explore the Button control of Editbar in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
@@ -44,7 +44,7 @@ description: You can explore the Button control of Editbar in the documentation 
 
 - `type` - (required) the type of a control. Set it to *"button"*
 - `text` - (optional) the text label of a button
-- `css`	- (optional) adds style classes to a control
+- `css` - (optional) adds style classes to a control
 - `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*). *false* by default
 - `hidden` - (optional) defines whether a control is hidden. *false* by default
 - `height` - (optional) the height of a control. *"content"* by default
@@ -91,11 +91,11 @@ const editor = new dhx.DiagramEditor("editor_container", {
                         $on: {
                             click: ({ id, editor }) => {
                                 editor.diagram.data.update(id, {
-                                    text: "New text",
+                                    text: "New text"
                                 });
-                            },
+                            }
                         }
-                    },
+                    }
                 ]
             }
         }

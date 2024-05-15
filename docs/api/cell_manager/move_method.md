@@ -16,7 +16,7 @@ The **move()** method is automatically validated by the system. The cell won't b
 
 ### Usage
 
-~~~js
+~~~jsx
 move(
     cellIndex: number, 
     dir: string // "up" | "down" | "left" | "right"
@@ -30,7 +30,7 @@ move(
 
 ### Example
 
-~~~js
+~~~jsx
 // initialization of the diagram
 const diagram = new dhx.Diagram("diagram_container", {
     // config options

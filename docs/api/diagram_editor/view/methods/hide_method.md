@@ -1,5 +1,5 @@
 ---
-sidebar_label: hide()!!
+sidebar_label: hide()
 title: hide Method of View
 description: You can learn about the hide method of view in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
@@ -16,7 +16,7 @@ If you need to hide the **Toolbar**, **Editbar**, and **Shapebar** view separate
 
 ### Usage
 
-~~~js
+~~~jsx
 hide(view?: "toolbar" | "shapebar" | "editbar"): void;
 ~~~
 
@@ -28,9 +28,9 @@ hide(view?: "toolbar" | "shapebar" | "editbar"): void;
 
 ### Example
 
-~~~js {5-6,8-9}
-const editor = new dhx.DiagramEditor("editor", {
-    type: "default",
+~~~jsx {5-6,8-9}
+const editor = new dhx.DiagramEditor("editor_container", {
+    type: "default"
 });
 
 // hides the Shapebar view
