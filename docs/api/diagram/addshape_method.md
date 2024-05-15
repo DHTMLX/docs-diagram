@@ -74,7 +74,7 @@ diagram.addShape("personal", {
     },
     eventHandlers: {
         onclick: {
-            "toggle--open-menu": openMenu,
+            "toggle--open-menu": () => console.log("open menu")
         }
     }
 });
@@ -136,33 +136,12 @@ editor.diagram.addShape("network", {
 });
 ~~~
 
-**Related sample**: [Diagram Editor. Default mode. Basic and custom themes](https://snippet.dhtmlx.com/9twmlfus)
-
-## Formats of the shape template
-
-The **template** function can return either an HTML or SVG template.
-
-An example of creating an HTML template:
-
-~~~jsx
-const template = config => (
-    `<section class='template'>
-        <h3>${config.title}</h3>
-        <ul><li>${config.text}</li></ul>
-    </section>`
-);
-~~~
-
-:::note
-Note, that all HTML and SVG tags must be closed in the template.
-
-For example, an `<img src="" alt="">` tag should look like `<img src="" alt=""></img>`.
-:::
-
-**Change log**:
-- The `properties` attribute is removed in v6.0. 
+**Change log**: The `properties` attribute is removed in v6.0.
 
 **Related articles**: [Custom Shape](../../../shapes/custom_shape/)
 
 **Related samples**:
-- [Diagram Editor. Mindmap mode. Site map and user flow](https://snippet.dhtmlx.com/do1jwmw1)
+
+- [Diagram. Mindmap mode. Site map and user flow example (custom template)](https://snippet.dhtmlx.com/do1jwmw1)
+- [Diagram with Editor. Org chart mode. Customization of cards, editbar and toolbar](https://snippet.dhtmlx.com/vcnt647v)
+- **Related sample**: [Diagram Editor. Default mode. Basic and custom themes](https://snippet.dhtmlx.com/9twmlfus)

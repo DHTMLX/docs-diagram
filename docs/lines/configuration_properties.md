@@ -50,7 +50,7 @@ Each line object can include the following properties:
 const data = [
     // line object
     {
-        ..., // common properties
+        // ... common properties
         forwardArrow?: string, // "filled" by default
         backArrow?: string, // "filled" by default
         fromSide?: "top" | "bottom" | "left" | "right" | "center",
@@ -102,4 +102,4 @@ const data = [
 ];
 ~~~
 
-**Related articles:** [Configuring lines](../../lines/)
+**Related articles**: [Configuring lines](../../lines/)

@@ -28,7 +28,7 @@ copyStyles(id?: string | number): void;
 const editor = new dhx.DiagramEditor("editor_container", { 
     type: "default",
 });
-...
+// ...
 editor.model.copyStyles(); // copies styles of the first element from the selection list
 ~~~
 
@@ -38,7 +38,7 @@ editor.model.copyStyles(); // copies styles of the first element from the select
 const editor = new dhx.DiagramEditor("editor_container", { 
     type: "default",
 });
-...
+// ...
 editor.model.copyStyles("1"); // copies styles of the specified element
 ~~~
 

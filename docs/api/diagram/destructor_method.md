@@ -24,4 +24,4 @@ diagram.data.parse(data);
 diagram.destructor();
 ~~~
 
-**Change log:** Added in v3.0
+**Change log**: Added in v3.0

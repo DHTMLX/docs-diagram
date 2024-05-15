@@ -14,7 +14,7 @@ You can add any user-defined handler to any of the available events. To do this,
 - **handler** - (*function*) the handler function
 
 ~~~jsx
-diagram.events.on("ShapeClick", function(id) {
+diagram.events.on("ShapeClick", (id) => {
     alert("You've just clicked an item with id="+id);
 });
 ~~~
@@ -62,7 +62,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 editor.parse(data);
 
-editor.diagram.events.on("ShapeClick", function(id) {
+editor.diagram.events.on("ShapeClick", (id) => {
     alert("You've just clicked an item with id=" + id);
 });
 ~~~

@@ -35,7 +35,7 @@ const editor = new dhx.DiagramEditor("editor_container");
 editor.parse(data);
 
 // attaching a handler to the event
-editor.events.on("zoomOut", function(step) {
+editor.events.on("zoomOut", (step) => {
     console.log("The diagram in the editor is zoomed out");
 });
 ~~~

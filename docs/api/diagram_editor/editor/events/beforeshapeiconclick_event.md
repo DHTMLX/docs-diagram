@@ -43,7 +43,7 @@ const editor = new dhx.DiagramEditor("editor_container");
 editor.parse(data);
 
 // attaching a handler to the event
-editor.events.on("beforeShapeIconClick", function(iconId, shape) {
+editor.events.on("beforeShapeIconClick", (iconId, shape) => {
     console.log(`
         You will click the ${iconId} toolbar control of the shape ${shape.id}
     `);
