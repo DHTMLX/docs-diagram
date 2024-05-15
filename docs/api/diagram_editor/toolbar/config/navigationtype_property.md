@@ -46,4 +46,4 @@ const editor = new dhx.DiagramEditor("editor_container", {
 
 **Change log**: Added in v6.0
 
-**Related articles:**  [Toolbar configuration](guides/diagram_editor/toolbar.md)
+**Related articles**:  [Toolbar configuration](guides/diagram_editor/toolbar.md)

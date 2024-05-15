@@ -40,4 +40,4 @@ const editor = new dhx.DiagramEditor("editor_container", {
 We recommend that you use arrows while moving an item in the editor. This way sets exactly one grid step of moving the item, whereas using a mouse can cause shift the item to several grid steps.
 :::
 
-**Related article:** [Grid area](../../guides/diagram_editor/grid_area/)
+**Related article**: [Grid area](../../guides/diagram_editor/grid_area/)

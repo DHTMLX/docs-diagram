@@ -32,7 +32,7 @@ copy(ids?: (string | number)[]): void;
 const editor = new dhx.DiagramEditor("editor_container", { 
     type: "default", // only default
 });
-...
+// ...
 editor.model.copy(); // copies selected items
 ~~~
 
@@ -42,7 +42,7 @@ editor.model.copy(); // copies selected items
 const editor = new dhx.DiagramEditor("editor_container", { 
     type: "default", // only default
 });
-...
+// ...
 editor.model.copy(["1", "2"]); // copies the specified items 
 ~~~
 

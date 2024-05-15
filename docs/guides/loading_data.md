@@ -175,7 +175,7 @@ diagram.data.load("/some/data").then(() => {
 });
 ~~~
 
-**Related sample:** [Diagram. Data. Data loading](https://snippet.dhtmlx.com/09isp2d8)
+**Related sample**: [Diagram. Data. Data loading](https://snippet.dhtmlx.com/09isp2d8)
 
 ## Loading from a local source
 
@@ -185,7 +185,7 @@ To load data from a local data source, use the [](../api/data_collection/parse_m
 diagram.data.parse(data);
 ~~~
 
-**Related sample:** [Diagram. Default mode. Wide flowchart](https://snippet.dhtmlx.com/4d4k3o8p)
+**Related sample**: [Diagram. Default mode. Wide flowchart](https://snippet.dhtmlx.com/4d4k3o8p)
 
 ### Loading data into the editor
 
@@ -195,7 +195,7 @@ To load a data set into the editor, use the [parse()](/api/diagram_editor/editor
 editor.parse(data);
 ~~~
 
-**Related sample:** [Diagram editor. Default mode. Basic initialization](https://snippet.dhtmlx.com/xshe9ut7)
+**Related sample**: [Diagram editor. Default mode. Basic initialization](https://snippet.dhtmlx.com/xshe9ut7)
 
 ## Saving and restoring state
 

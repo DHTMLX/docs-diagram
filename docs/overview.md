@@ -78,7 +78,7 @@ The connection between parent shape and its partner items is always horizontal. 
 
 The partner shapes are very useful for building a family tree.
 
-**Related sample:** [Diagram editor. Org chart mode. Family tree](https://snippet.dhtmlx.com/5pfybpmz)
+**Related sample**: [Diagram editor. Org chart mode. Family tree](https://snippet.dhtmlx.com/5pfybpmz)
 
 Here are examples of how the connections of parent shapes look like with one, two, three, and four partners.
 

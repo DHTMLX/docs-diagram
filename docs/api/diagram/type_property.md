@@ -8,7 +8,7 @@ description: You can learn about the type property in the documentation of the D
 
 ### Description
 
-@short: Required. Defines the mode of Diagram initialization 
+@short: Required. Defines the mode of Diagram initialization
 
 ### Usage
 
@@ -20,7 +20,7 @@ type: "default" | "org" | "mindmap";
 
 DHTMLX Diagram can be initialized in one of three modes:
 
-- **type:"default"** is used to visualize relations between some entities based on the provided algorithm
+- **type:"default"** is used to visualize relations between some entities
 
 <iframe src="https://snippet.dhtmlx.com/f3uekgjw?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
