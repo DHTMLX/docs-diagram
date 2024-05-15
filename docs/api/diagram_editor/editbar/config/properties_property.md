@@ -24,7 +24,7 @@ Refer to the [**Editbar configuration**](guides/diagram_editor/editbar/complex_c
 ~~~jsx
 properties?: {
     [type: string]: object[] | function, // custom configurations for controls applied to Diagram elements 
-    ...,
+    // ...
 };
 ~~~
 
@@ -55,7 +55,7 @@ properties: {
                 // ... custom logic here
             return controls;
         },
-    ..., // another element
+    //... another element
 }
 ~~~
 
