@@ -25,7 +25,6 @@ We do not recommend you to redefine default controls when creating a custom cont
 ~~~jsx
 controls?: {
     [type: string]: object, // custom control
-    ... // another control
 };
 ~~~
 
@@ -36,8 +35,8 @@ controls?: {
 
 ~~~jsx
 controls: {
-      estimate: { ... }, // create new "estimate" control with custom configurations
-      ... // another control
+      estimate: { /*...*/ }, // create new "estimate" control with custom configurations
+      // another control
 }
 ~~~
 
@@ -81,4 +80,4 @@ const editor = new dhx.DiagramEditor("editor_container", {
 
 **Related article:** [**Editbar configuration**](guides/diagram_editor/editbar.md)
 
-**Related sample:** [Diagram Editor. Default mode. PERT сhart with the legend](https://snippet.dhtmlx.com/w8mrh3ay?mode=wide) 
+**Related sample:** [Diagram Editor. Default mode. PERT сhart with the legend](https://snippet.dhtmlx.com/w8mrh3ay?mode=wide)

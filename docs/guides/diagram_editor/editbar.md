@@ -8,7 +8,7 @@ description: You can learn about the Editbar of editor in the documentation of t
 
 You can configure Editbar controls for each Diagram element separately and for a [group of elements](/guides/items_index) taking into account various conditions. For this purpose, use the Editbar [`properties`](api/diagram_editor/editbar/config/properties_property.md) config.
 
-If you want to configure Editbar controls for an individual [shape](/category/shapes), you need to specify the corresponding **shape name** within the [`properties`](api/diagram_editor/editbar/config/properties_property.md) config as shown in the example below:
+If you want to configure Editbar controls for an individual [shape](/category/shapes), you need to specify the corresponding **shape type** within the [`properties`](api/diagram_editor/editbar/config/properties_property.md) config as shown in the example below:
 
 ~~~jsx {6-9}
 const editor = new dhx.DiagramEditor("editor_container", {
@@ -16,7 +16,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
     view: {
         editbar: {
             properties: {
-                pert: [ // configure editbar controls for the "pert" shape
+                rectangle: [ // configure editbar controls for the "pert" shape
                     { type: "arrange", $properties: { angle: { hidden: true } }},
                     // ... other Editbar controls configuration
                 ],
@@ -31,12 +31,12 @@ const editor = new dhx.DiagramEditor("editor_container", {
 
 To configure a [group of elements](/guides/items_index), you need to use the following service properties within the [`properties`](api/diagram_editor/editbar/config/properties_property.md) config:
 
-- [`$default`](#configure-editbar-for-the-grid-area)
-- [`$shape`](#configure-editbar-for-shapes)
-- [`$group`](#configure-editbar-for-group-elements)
-- [`$swimlane`](#configure-editbar-for-swimlanes)
-- [`$line`](#configure-editbar-for-connectors)
-- [`$lineTitle`](#configure-editbar-for-line-titles)
+- [`$default`](#configure-editbar-for-the-grid-area) - allows configuring Editbar controls if no elements are selected, or more than one element is selected
+- [`$shape`](#configure-editbar-for-shapes) - allows configuring Editbar controls for [all shapes including custom shapes](/category/shapes)
+- [`$group`](#configure-editbar-for-group-elements) - allows configuring Editbar controls for all elements with the [**group**](/groups/) type
+- [`$swimlane`](#configure-editbar-for-swimlanes) - allows configuring Editbar controls for all elements with the [**swimlane**](/swimlanes/) type
+- [`$line`](#configure-editbar-for-lines) allows configuring Editbar controls for all elements with the [**line**](/lines/) type
+- [`$lineTitle`](#configure-editbar-for-line-titles) - allows configuring Editbar controls for all elements with the [**lineTitle**](/line_titles/) type
 
 <iframe src="https://snippet.dhtmlx.com/ealq0m4l?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
@@ -119,7 +119,7 @@ properties: {
 
 **Related complex controls:** [Border](/api/diagram_editor/editbar/complex_controls/border/), [Arrange](/api/diagram_editor/editbar/complex_controls/arrange/), [Header](/api/diagram_editor/editbar/complex_controls/header/), [Header common](/api/diagram_editor/editbar/complex_controls/headercommon/), [Header position](/api/diagram_editor/editbar/complex_controls/headerposition/), [Size](/api/diagram_editor/editbar/complex_controls/size/), [Text align](/api/diagram_editor/editbar/complex_controls/textalign/), [Text style](/api/diagram_editor/editbar/complex_controls/textstyle/)
 
-## Configure Editbar for connectors
+## Configure Editbar for lines
 
 The `$line` service property allows configuring Editbar controls for all elements with the [**line**](/lines/) type.
 
@@ -159,10 +159,10 @@ properties: {
 
 ## Create and configure custom Editbar controls
 
-You can use the [`controls`](api/diagram_editor/editbar/config/controls_property.md) property of the Editbar view to create a custom control based on [Basic controls](guides/diagram_editor/editbar/basic_controls.md) и [Complex controls](guides/diagram_editor/editbar/basic_controls.md).
+You can use the [`controls`](api/diagram_editor/editbar/config/controls_property.md) property of the Editbar view to create a custom control based on [Basic controls](guides/diagram_editor/editbar/basic_controls.md) and [Complex controls](guides/diagram_editor/editbar/basic_controls.md).
 
-:::important
-We do not recommend you to redefine default controls when creating a custom control. Use individual name for each custom control!
+:::warning
+We do not recommend you to use a default control type (refer to the [*Basic controls*](guides/diagram_editor/editbar/basic_controls.md) and [*Complex controls*](guides/diagram_editor/editbar/basic_controls.md)) as the name for a custom control. Use the unique name for each custom control to avoid errors!
 :::
 
 After creating a custom control, you need to apply it to the needed Diagram element via the [`properties`](api/diagram_editor/editbar/config/properties_property.md) property.

@@ -24,7 +24,6 @@ Refer to the [**Editbar configuration**](guides/diagram_editor/editbar.md) guide
 ~~~jsx
 properties?: {
     [type: string]: object[] | function, // custom configurations for controls applied to Diagram elements 
-    ...,
 };
 ~~~
 
@@ -39,17 +38,16 @@ properties?: {
         - `item` - (optional) the object of the selected element
         - `editor` - (required) the object of the Diagram editor
 
-:::important
 You can configure Editbar controls for a separate Diagram element, for instance **rectangle**, **circle**, **card** etc.:
 
 ~~~jsx
 properties: {
     // modify Editbar controls for individual elements (shapes)
-    rectangle: { /*...*/ }, // configure controls for the rectangle shape
-    circle: { /*...*/ }, // configure controls for the circle shape
-    card: { /*...*/ }, // configure controls for the card shape
-    estimate: { /*...*/ }, // configure controls for the estimate shape
-    // ...
+    rectangle: {}, // configure controls for the "rectangle" type
+    circle: {}, // configure controls for the "circle" type
+    card: {}, // configure controls for the "card" type
+    estimate: {}, // configure controls for the custom "estimate" type
+    // ... other elements
 }
 ~~~
 
@@ -59,21 +57,20 @@ You can also configure Editbar controls for a separate group of Diagram elements
 - [`$shape`](guides/diagram_editor/editbar.md#configure-editbar-for-shapes) - allows configuring Editbar controls for all shapes including custom shapes
 - [`$group`](guides/diagram_editor/editbar.md#configure-editbar-for-group-elements) - allows configuring Editbar controls for all elements with the "group" type
 - [`$swimlane`](guides/diagram_editor/editbar.md#configure-editbar-for-swimlanes) - allows configuring Editbar controls for all elements with the "swimlane" type
-- [`$line`](guides/diagram_editor/editbar.md#configure-editbar-for-connectors) - allows configuring Editbar controls for all elements with the "line" type
+- [`$line`](guides/diagram_editor/editbar.md#configure-editbar-for-lines) - allows configuring Editbar controls for all elements with the "line" type
 - [`$lineTitle`](guides/diagram_editor/editbar.md#configure-editbar-for-line-titles) - allows configuring Editbar controls for all elements with the "lineTitle" type
 
 ~~~jsx
 properties: {
-    $default: { /*...*/ }, 
-    $shape: { /*...*/ }, 
-    $group: { /*...*/ }, 
-    $swimlane: { /*...*/ },
-    $line: { /*...*/ },
-    $lineTitle: { /*...*/ },
-    // ...
+    $default: {}, 
+    $shape: {}, 
+    $group: {}, 
+    $swimlane: {},
+    $line: {},
+    $lineTitle: {},
+    // ... other elements
 }
 ~~~
-:::
 
 ### Example
 
