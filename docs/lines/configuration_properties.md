@@ -75,7 +75,7 @@ When preparing a data set for lines to load into the diagram in the default mode
 - `fromSide` - (optional) the side of the shape from which connection will start ("*top*", "*bottom*", "*left*","*right*", "*center*")
 - `toSide` - (optional) the side of the shape to which a different shape will be attached ("*top*", "*bottom*", "*left*", "*right*", "*center*")
 - `cornersRadius` - (optional) the radius of rounding corners of a connector
-- `customGap` - (optional) sets the value of the [](../api/diagram/linegap_property.md) property for the line
+- `customGap` - (optional) sets the distance from the shape to the right-angled bend of a connector line
 - `points` - (optional) sets an array with point's objects for a line. Each object contains the following properties:
     - `x` - (required) the x coordinate of the point
     - `y` - (required) the y coordinate of the point

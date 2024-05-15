@@ -82,7 +82,7 @@ diagram.addShape("personal", {
 
 **Related sample**: [Diagram with Editor. Org chart mode. Customization of cards, editbar and toolbar](https://snippet.dhtmlx.com/vcnt647v)
 
-The example below shows how you can add a custom shape into the Diagram Editor as well as configure the [Shapebar](/guides/diagram_editor/shapebar/) and [Editbar](/guides/diagram_editor/editbar/overview/) panels of the editor. The configuration of a custom shape in the editbar of the Editor is implemented via the [`properties`](../../../api/diagram_editor/editbar/config/properties_property/) property of the Editbar panel.
+The example below shows how you can add a custom shape into the Diagram Editor as well as configure the [Shapebar](/guides/diagram_editor/shapebar/) and [Editbar](/guides/diagram_editor/editbar/) panels of the editor. The configuration of a custom shape in the editbar of the Editor is implemented via the [`properties`](../../../api/diagram_editor/editbar/config/properties_property/) property of the Editbar panel.
 
 ~~~jsx {34-49} title="Adding a shape into the Diagram Editor"
 const editor = new dhx.DiagramEditor("editor_container", {

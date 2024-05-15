@@ -46,4 +46,4 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 ~~~
 
-**Related articles**:  [Default Shapes](../../../shapes/default_shapes/)
+**Related articles**:  [Default Shapes](/shapes/default_shapes/)

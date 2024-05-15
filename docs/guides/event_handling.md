@@ -50,7 +50,7 @@ Check the full list of the Diagram API events in the [API reference](../../api/d
 
 ### Editor events
 
-The list of the Diagram editor API events is given in the [API section](../../api/editor/api_overview/#editor-events).
+The list of the Diagram editor API events is given in the [API section](/api/diagram_editor/editor/events/overview/).
 
 :::note
 In addition to the events of the Diagram editor, you may also apply [events of the diagram object](../../api/diagram/api_overview/#diagram-events) while working in the editor view. For example:

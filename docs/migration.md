@@ -31,7 +31,7 @@ const diagram = new dhx.Diagram("diagram_container", {
 
 ### Editor API
 
-The **lineGap** property of Diagram Editor is deprecated and no longer supported. Instead, use the **lineGap** parameter inside the [lineConfig](diagram/api/editor/lineconfig_property.md) property.
+The **lineGap** property of Diagram Editor is deprecated and no longer supported. Instead, use the **lineGap** parameter inside the `lineConfig` property.
 
 ~~~jsx {3} title="Before v5.0"
 const editor = new dhx.DiagramEditor("editor_container", {
@@ -101,7 +101,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 ~~~
 
-Besides, it became possible to specify other basic sets of items via the related *key:value* pairs. For more details, check the [shapeSections](../api/editor/shapesections_property/) article.
+Besides, it became possible to specify other basic sets of items via the related *key:value* pairs. For more details, check the `shapeSections` article.
 
 ## 3.1 -> 4.0
 
@@ -200,7 +200,7 @@ See the full list of the available controls in the [Toolbar](../guides/diagram_e
 - diagram.detachEvent -> [diagram.events.detach](../guides/event_handling/#detaching-event-listeners)
 - diagram.eachItem -> [diagram.data.map](../api/data_collection/map_method/)
 - diagram.getItem -> [diagram.data.getItem](../api/data_collection/getitem_method/)
-- diagram.getSelectedId -> [diagram.selection.getId](../api/selection/getid_method/)
+- diagram.getSelectedId -> `diagram.selection.getId`
 - diagram.load -> [diagram.data.load](../api/data_collection/load_method/) 
 - diagram.parse -> [diagram.data.parse](../api/data_collection/parse_method/)
 - diagram.selectItem -> [diagram.selection.add](../api/selection/add_method/)

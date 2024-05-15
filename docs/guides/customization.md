@@ -6,7 +6,7 @@ description: You can learn about customizing items in the documentation of the D
 
 # Customizing items
 
-You can easily modify the appearance of diagram items by using various [configuration properties](category/items-api/) inside their objects. Besides, you can change the look and feel of the diagram according to your needs by creating custom shapes of the desired appearance.
+You can easily modify the appearance of diagram items by using various [configuration properties](/category/items-api/) inside their objects. Besides, you can change the look and feel of the diagram according to your needs by creating custom shapes of the desired appearance.
 
 ## Styling shapes and lines via the configuration properties
 

@@ -33,5 +33,5 @@ Diagram Editor can be initialized in one of three modes:
 <iframe src="https://snippet.dhtmlx.com/lo1vm0e8?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
 **Related articles**:
-- [Overview](../../../)
-- [How to start with Diagram Editor](../../../guides/diagram_editor/initialization/)
+- [Overview](/editor_overview)
+- [How to start with Diagram Editor](/guides/diagram_editor/initialization/)
