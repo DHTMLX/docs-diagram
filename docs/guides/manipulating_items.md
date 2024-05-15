@@ -48,7 +48,7 @@ diagram.autoPlace({
 });
 ~~~
 
-**Related sample:** [Diagram. Default mode. Autoplacement](https://snippet.dhtmlx.com/f3uekgjw)
+**Related sample**: [Diagram. Default mode. Autoplacement](https://snippet.dhtmlx.com/f3uekgjw)
 
 In case you don't pass the parameter to the method, the default settings will be applied.
 
@@ -81,7 +81,7 @@ For example, we've added a new shape object that has the following attributes:
 
 You can check all available properties of shape objects in the [API section](../../shapes/configuration_properties/).
 
-**Related sample:** [Diagram. Data. Add/delete item](https://snippet.dhtmlx.com/8wi20uop)
+**Related sample**: [Diagram. Data. Add/delete item](https://snippet.dhtmlx.com/8wi20uop)
 
 ## Getting an item
 
@@ -136,7 +136,7 @@ If necessary, you can clear the diagram, by deleting all the items at once. For 
 diagram.data.removeAll();
 ~~~
 
-**Related sample:** [Diagram. Data. Add/delete item](https://snippet.dhtmlx.com/8wi20uop)
+**Related sample**: [Diagram. Data. Add/delete item](https://snippet.dhtmlx.com/8wi20uop)
 
 ## Updating an item
 
@@ -151,7 +151,7 @@ As parameters, you need to pass two parameters:
 - **id** - (*string|number*) the id of the item 
 - **config** - (*object*) an object with updated configuration properties
 
-**Related sample:** [Diagram. Data. Update item](https://snippet.dhtmlx.com/y8uk4sbj)
+**Related sample**: [Diagram. Data. Update item](https://snippet.dhtmlx.com/y8uk4sbj)
 
 ## Checking existence of the item
 
@@ -281,7 +281,7 @@ The method takes as an argument an object with the following parameters:
 
 - `id` - (*string|number*) required, the id of the checked item
 
-**Related sample:** [Diagram. Selection. Item selection](https://snippet.dhtmlx.com/jyoxn5h7)
+**Related sample**: [Diagram. Selection. Item selection](https://snippet.dhtmlx.com/jyoxn5h7)
 
 ## Expanding/collapsing items
 
@@ -324,7 +324,7 @@ For this, you need to apply the [](../api/diagram/showitem_method.md) method, wh
 diagram.showItem("2.1");  
 ~~~
 
-**Related sample:** [Diagram. Scroll content](https://snippet.dhtmlx.com/f970hbym)
+**Related sample**: [Diagram. Scroll content](https://snippet.dhtmlx.com/f970hbym)
 
 You can [read more about scrolling in DHTMLX Diagram](../../guides/diagram/scrolling_diagram/).
 
@@ -346,7 +346,7 @@ const shape = diagram.data.find((shape) => {
 });
 ~~~
 
-**Related sample:** [Diagram. Data. Finding necessary shape](https://snippet.dhtmlx.com/sete9z73)
+**Related sample**: [Diagram. Data. Finding necessary shape](https://snippet.dhtmlx.com/sete9z73)
 
 ### Finding all the items that meet the search criteria
 

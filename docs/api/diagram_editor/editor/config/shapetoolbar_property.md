@@ -82,7 +82,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 ~~~
 
-**Change log:**
+**Change log**:
 
 - The `tooltip` parameter of the icon object is added in v5.0
 

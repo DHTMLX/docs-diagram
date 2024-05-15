@@ -65,7 +65,7 @@ const diagram = new dhx.Diagram("diagram_container", {
 });
 ~~~
 
-**Change log:**
+**Change log**:
 
 - The **tooltip** parameter is added in v5.0
 

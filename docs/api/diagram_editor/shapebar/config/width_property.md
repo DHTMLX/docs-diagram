@@ -37,6 +37,6 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 ~~~
 
-**Related article:** [Shapebar](guides/diagram_editor/shapebar.md/#setting-the-width-of-shapebar)
+**Related article**: [Shapebar](guides/diagram_editor/shapebar.md/#setting-the-width-of-shapebar)
 
 **Change log**: Added in v6.0

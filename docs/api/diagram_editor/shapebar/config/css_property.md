@@ -40,7 +40,7 @@ css?: string;
 </style>
 ~~~
 
-**Related articles:**
+**Related articles**:
 
 - [Shapebar and shapes appearance](guides/diagram_editor/shapebar.md/#shapebar-and-shapes-appearance)
 - [Configuring the look of shapes in Shapebar](guides/themes/base_themes_configuration.md/#configuring-the-look-of-shapes-in-shapebar)

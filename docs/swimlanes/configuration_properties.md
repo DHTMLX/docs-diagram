@@ -84,7 +84,7 @@ const data = [
         },
         subHeaderCols?: {
             position?: "top" | "bottom",
-            ... // the other attributes are the same as the attributes of subHeaderRows
+            // ... the other attributes are the same as the attributes of subHeaderRows
         },
         [key: string]?: any
     }
@@ -277,7 +277,7 @@ const data = [
 ];
 ~~~
 
-**Related articles:** [Configuring swimlanes](../../swimlanes/)
+**Related articles**: [Configuring swimlanes](../../swimlanes/)
 
 **Related samples**:
 

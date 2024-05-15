@@ -20,7 +20,7 @@ type?: "default" | "org" | "mindmap";
 
 Diagram Editor can be initialized in one of three modes:
 
-- **type:"default"** is used to visualize relations between some entities based on the provided algorithm
+- **type:"default"** is used to visualize relations between some entities
 
 <iframe src="https://snippet.dhtmlx.com/xshe9ut7?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 

@@ -149,7 +149,7 @@ The result:
 
 ![](../assets/swimlane_merge_cell_col.png)
 
-**Related sample:**	[Diagram editor. Default mode. Configuring columns and rows in swimlanes](https://snippet.dhtmlx.com/uzx5ulal)
+**Related sample**:	[Diagram editor. Default mode. Configuring columns and rows in swimlanes](https://snippet.dhtmlx.com/uzx5ulal)
 
 ## Sizes of a swimlane and its cells
 
