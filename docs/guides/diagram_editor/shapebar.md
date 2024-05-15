@@ -29,7 +29,7 @@ Depending on the chosen elements, the configuration of items of a particular sec
 
 1. Rendering of basic sections
 
-You can render [a basic set of shapes](api/diagram_editor/shapebar/config/sections_property.md#basic) using the `sections` configuration object. For example:
+You can render a basic set of shapes using the `sections` configuration object. For example:
 
 ~~~jsx
 const editor = new dhx.DiagramEditor("editor_container", {
