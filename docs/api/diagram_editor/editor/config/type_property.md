@@ -34,5 +34,6 @@ Diagram Editor can be initialized in one of three modes:
 
 **Related articles**:
 
-- [Overview](../../../)
-- [How to start with Diagram Editor](../../../guides/diagram_editor/initialization/)
+- [Overview](/editor_overview)
+- [How to start with Diagram Editor](/guides/diagram_editor/initialization/)
+

@@ -22,9 +22,9 @@ view: {
 
 ### Parameters
 
-- `toolbar` - (optional) allows you to show/hide **Toolbar** (if *boolean*) or configure its appearance (if *object*). Refer to the [Toolbar API](../../../../../category/toolbar-api/) section for more information about configuring the toolbar
-- `shapebar` - (optional) allows you to show/hide **Shapebar** (if *boolean*) or configure its appearance (if *object*). Refer to the [Shapebar API](../../../../../category/shapebar-api/) section for more information about configuring the shapebar
-- `editbar` - (optional) allows you to show/hide **Editbar** (if *boolean*) or configure its appearance (if *object*). Refer to the [Editbar API](../../../../../category/editbar-api/) section for more information about configuring the Editbar
+- `toolbar` - (optional) allows you to show/hide **Toolbar** (if *boolean*) or configure its appearance (if *object*). Refer to the [Toolbar API](/api/diagram_editor/toolbar/api_overview/) section for more information about configuring the toolbar
+- `shapebar` - (optional) allows you to show/hide **Shapebar** (if *boolean*) or configure its appearance (if *object*). Refer to the [Shapebar API](/api/diagram_editor/shapebar/api_overview/) section for more information about configuring the shapebar
+- `editbar` - (optional) allows you to show/hide **Editbar** (if *boolean*) or configure its appearance (if *object*). Refer to the [Editbar API](/api/diagram_editor/editbar/api_overview/) section for more information about configuring the Editbar
 
 ### Default config
 

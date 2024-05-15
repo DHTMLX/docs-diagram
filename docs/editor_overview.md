@@ -15,11 +15,11 @@ The interface of the editor initialized in the default mode consists of four fun
 - [toolbar](../guides/diagram_editor/toolbar/)
 - [shapebar](../guides/diagram_editor/shapebar/) 
 - [grid area](../guides/diagram_editor/grid_area/)
-- [editbar](../guides/diagram_editor/editbar/overview/)
+- [editbar](../guides/diagram_editor/editbar/)
 
 To build a diagram, you need either to drag the necessary items from the shapebar or create a copy of the items via the shape toolbar.
 
-You can adjust the attributes of the items via [sidebar options of the editbar](../guides/diagram_editor/editbar/overview/). To accelerate the styling process, use `Alt (Option) + Ctrl (Cmd) + С` combination to copy styles of an item and `Alt (Option) + Ctrl (Cmd) + V` to apply these styles to the chosen items.
+You can adjust the attributes of the items via [sidebar options of the editbar](../guides/diagram_editor/editbar/). To accelerate the styling process, use `Alt (Option) + Ctrl (Cmd) + С` combination to copy styles of an item and `Alt (Option) + Ctrl (Cmd) + V` to apply these styles to the chosen items.
 
 | [Diagram Editor. Default mode. Wide flowchart](https://snippet.dhtmlx.com/4d4k3o8p) |
 | ----------------------------------------------------------------------------------- |
@@ -33,7 +33,7 @@ The interface of the editor initialized in the org chart mode consists of three 
 
 - [toolbar](../guides/diagram_editor/toolbar/)
 - [grid area](../guides/diagram_editor/grid_area/)
-- [editbar](../guides/diagram_editor/editbar/overview/)
+- [editbar](../guides/diagram_editor/editbar/)
 
 :::note
 Note, the editor in this mode does not have the shapebar
@@ -41,7 +41,7 @@ Note, the editor in this mode does not have the shapebar
 
 To build a diagram in the org chart mode of the editor, you need to select a shape and add a new child for it. You can drag the shapes from one parent item to another. The moved item is being dragged with all its child items.
 
-You can adjust the attributes of the shapes via the available [sidebar options of the editbar](../guides/diagram_editor/editbar/overview/). To accelerate the styling process, use `Alt (Option) + Ctrl (Cmd) + С` combination to copy styles of an item and `Alt (Option) + Ctrl (Cmd) + V` to apply these styles to the chosen items.
+You can adjust the attributes of the shapes via the available [sidebar options of the editbar](../guides/diagram_editor/editbar/). To accelerate the styling process, use `Alt (Option) + Ctrl (Cmd) + С` combination to copy styles of an item and `Alt (Option) + Ctrl (Cmd) + V` to apply these styles to the chosen items.
 
 | [Diagram editor. Org chart mode. Basic initialization](https://snippet.dhtmlx.com/og4qm3ja) |
 | ------------------------------------------------------------------------------------------- |
@@ -67,7 +67,7 @@ The interface of the editor initialized in the mindmap mode consists of three pa
 
 - [toolbar](../guides/diagram_editor/toolbar/)
 - [grid area](../guides/diagram_editor/grid_area/)
-- [editbar](../guides/diagram_editor/editbar/overview/)
+- [editbar](../guides/diagram_editor/editbar/)
 
 :::note
 Note, the editor in this mode does not have the shapebar
@@ -75,7 +75,7 @@ Note, the editor in this mode does not have the shapebar
 
 To build a diagram in the mindmap mode of the editor, you need to select a shape and add a new child for it. You can drag the shapes from one parent item to another. The moved item is being dragged with all its child items.
 
-You can adjust the attributes of the shapes via the available [sidebar options of the editbar](../guides/diagram_editor/editbar/overview/). To accelerate the styling process, use `Alt (Option) + Ctrl (Cmd) + С` combination to copy styles of an item and `Alt (Option) + Ctrl (Cmd) + V` to apply these styles to the chosen items.
+You can adjust the attributes of the shapes via the available [sidebar options of the editbar](../guides/diagram_editor/editbar/). To accelerate the styling process, use `Alt (Option) + Ctrl (Cmd) + С` combination to copy styles of an item and `Alt (Option) + Ctrl (Cmd) + V` to apply these styles to the chosen items.
 
 | [Diagram editor. Mindmap mode. Emotions mind map](https://snippet.dhtmlx.com/lo1vm0e8) |
 | -------------------------------------------------------------------------------------- |

@@ -82,10 +82,8 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 ~~~
 
-**Change log**:
+**Change log:** The `tooltip` parameter of the icon object is added in v5.0
 
-- The `tooltip` parameter of the icon object is added in v5.0
+**Related articles**: [Grid Area](/guides/diagram_editor/grid_area/#configuring-the-toolbar-of-an-item)
 
-**Related articles**:  [Grid Area](/guides/diagram_editor/grid_area/#configuring-the-toolbar-of-an-item)
-
-**Relate sample**: [Diagram Editor. Org chart mode. Toolbar customisation](https://snippet.dhtmlx.com/b2agwets)
+**Relate sample**: [Diagram Editor. Org chart mode. Shape toolbar configuration](https://snippet.dhtmlx.com/b2agwets)

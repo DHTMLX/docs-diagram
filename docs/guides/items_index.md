@@ -20,7 +20,7 @@ After you have learnt the guides, you can check the following API sections to ac
 - [CellManager API](api/cell_manager.md) (allows adding, removing, moving swimlane cells, etc.)
 - [Selection API](api/selection.md)
 - [Diagram API](api/diagram/api_overview.md)
-- [Diagram Editor API](api/editor/api_overview.md)
+- [Diagram Editor API](api/diagram_editor/editor/api_overview.md)
 
 To get more knowledge on how to load, customize, edit items and perform different operations over them, read the guides:
 

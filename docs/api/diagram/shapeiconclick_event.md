@@ -72,4 +72,4 @@ diagram.events.on("shapeIconClick", function (action) {
 
 **Related article**: [Event handling](../../../guides/event_handling/)
 
-**Related sample**: [Diagram. Configuration. Per-shape toolbar](https://snippet.dhtmlx.com/4if395hd)
+**Related sample**: [Diagram. Configuration. Shape toolbar](https://snippet.dhtmlx.com/4if395hd)

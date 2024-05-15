@@ -21,9 +21,7 @@ You can try all themes in the example below:
 
 ## Light theme (default)
 
-TODO
-
-[default light theme image]
+![](../../assets/light_theme.png)
 
 The default **"light"** theme is configured on the base of the CSS variables which are listed below:
 
@@ -207,9 +205,7 @@ The default **"light"** theme is configured on the base of the CSS variables whi
 
 ## Light high contrast theme
 
-TODO
-
-[light high contrast theme image]
+![](../../assets/light_high_contrast_theme.png)
 
 The **"contrast-light"** theme is configured both on the base of the [root CSS variables](#light-theme-default) and the variables which are listed below:
 
@@ -254,9 +250,7 @@ The **"contrast-light"** theme is configured both on the base of the [root CSS v
 
 ## Dark theme
 
-TODO
-
-[dark theme image]
+![](../../assets/dark_theme.png)
 
 The **"dark"** theme is configured both on the base of the [root CSS variables](#light-theme-default) and the variables which are listed below:
 
@@ -319,9 +313,7 @@ The **"dark"** theme is configured both on the base of the [root CSS variables](
 
 ## Dark high contrast theme
 
-TODO
-
-[dark high contrast theme image]
+![](../../assets/dark_high_contrast_theme.png)
 
 The **"contrast-dark"** theme is configured both on the base of the [root CSS variables](#light-theme-default) and the variables which are listed below:
 
@@ -456,6 +448,5 @@ const toolbarEl = document.querySelector(".toolbar");
 dhx.setTheme("dark", toolbarEl);
 ~~~
 
-**Related samples**:
+**Related sample:** [Diagram Editor. Default mode. Basic and custom themes](https://snippet.dhtmlx.com/9twmlfus)
 
-TODO
