@@ -33,7 +33,7 @@ The `sections` object can contain a set of *key:value* pairs where:
     - `{group: true}` - (optional) displays a basic set of Groups
     - `{swimlane: true}` - (optional) displays a basic set of Swimlanes
   - a string value with a specific type of the item to be rendered in the section (for example, "text", "topic", etc.)
-  - an object with several *key:value* pairs for [redefining the default properties of any shape](#customization)
+  - an object with several *key:value* pairs for redefining the default properties of any shape
 
 ### Example
 
@@ -61,7 +61,7 @@ Depending on the chosen elements, the configuration of items of a particular sec
 
 1. Rendering of basic sections
 
-You can render [a basic set of shapes](#basic) using the `sections` configuration object. For example:
+You can render a basic set of shapes using the `sections` configuration object. For example:
 
 ~~~jsx {5-10}
 const editor = new dhx.DiagramEditor("editor_container", {
@@ -97,7 +97,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 ~~~
 
-3. <p id="customization">Redefining basic configurations</p>
+3. Redefining basic configurations
 
 Another option is to redefine basic properties of any shape and render it with the necessary parameters. The example below shows rendering of a shape of the `circle` type with various text and color settings:
 

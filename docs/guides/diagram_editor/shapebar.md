@@ -23,13 +23,13 @@ The *Groups* and *Swimlanes* sections contain basic sets of the items.
 
 To customize the structure of the shapebar, you should use the [`sections`](../../../api/diagram_editor/shapebar/config/sections_property/) property. It allows you to specify your own sections in the necessary order and put the items into the corresponding sections.
 
-The `sections` property is an object with a set of *key:value* pairs where `key` is the name of a section and `value` is an array with the list of items which should be rendered in the section. 
+The `sections` property is an object with a set of *key:value* pairs where `key` is the name of a section and `value` is an array with the list of items which should be rendered in the section.
 
 Depending on the chosen elements, the configuration of items of a particular section can be the following:
 
 1. Rendering of basic sections
 
-You can render [a basic set of shapes](../../../api/diagram_editor/shapebar/config/sections_property/#basic) using the `sections` configuration object. For example:
+You can render [a basic set of shapes](api/diagram_editor/shapebar/config/sections_property.md#basic) using the `sections` configuration object. For example:
 
 ~~~jsx
 const editor = new dhx.DiagramEditor("editor_container", {
