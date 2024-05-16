@@ -62,5 +62,5 @@ editor.events.on("itemTarget", ({ id, targetId }) => {
 
 **Change log**:
 
-- The `batch` property is added in the v6.0
+- The `batch` parameter was added in the v6.0
 - The callback function takes an object as a parameter since v6.0

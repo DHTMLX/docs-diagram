@@ -13,7 +13,7 @@ description: You can learn about the afterItemMove event of editor in the docume
 :::note
 The event doesn't work with the **line** object.
 
-The event fires just for the target element despite the number of selected elements. The ids of dragged elements are provided in the `batch` property of the callback function's parameter.
+The event fires just for the target element despite the number of selected elements. The ids of dragged elements are provided in the `batch` parameter of the callback function.
 :::
 
 ### Usage
@@ -62,5 +62,5 @@ editor.events.on("afterItemMove", ({ id, coords }) => {
 
 **Change log**:
 
-- The `batch` property is added in the v6.0
+- The `batch` parameter was added in the v6.0
 - The callback function takes an object as a parameter since v6.0
