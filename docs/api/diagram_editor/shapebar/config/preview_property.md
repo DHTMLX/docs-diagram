@@ -1,5 +1,5 @@
 ---
-sidebar_label: preview!!
+sidebar_label: preview
 title: preview Property of Shapebar
 description: You can learn about the preview property of Shapebar in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
@@ -12,8 +12,8 @@ description: You can learn about the preview property of Shapebar in the documen
 
 ### Usage
 
-~~~js
-preview?:{
+~~~jsx
+preview?: {
     scale?: number,
     gap?: string | number
 }
@@ -26,20 +26,22 @@ preview?:{
 
 ### Default config
 
-~~~js
+~~~jsx
 preview: {
     scale: 0.5,
     gap: "6px 8px"
     // sets 6px gap for the top and bottom sides and 8px gap for the right and left sides
-}
+};
 ~~~
 
 ### Example
 
-~~~js
+~~~jsx {7-10}
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {
+        // shapebar: true, // displays default Shapebar
+        // or configure Shapebar via object
         shapebar: {
             preview: {
                scale: 0.65,
@@ -52,9 +54,9 @@ const editor = new dhx.DiagramEditor("editor_container", {
 
 ### Details
 
-The values of the **gap** and **scale** properties can be redefined for a separate shape via the **gap** and **scale** attributes of the [preview](../../../../../shapes/configuration_properties/#properties-specific-for-the-default-mode) property of the shape object:
+The values of the **gap** and **scale** properties can be redefined for a separate shape via the **gap** and **scale** attributes of the [preview](shapes/configuration_properties.md/#properties-specific-for-the-default-mode) property of the shape object:
 
-~~~js
+~~~jsx {14-17}
 const defaults = {
     rectangle: {
         preview: {
@@ -78,8 +80,6 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 ~~~
 
-**Related article:** [Shapebar](../../../../../guides/diagram_editor/shapebar/#setting-the-preview-of-shapes)
+**Related article**: [Shapebar](guides/diagram_editor/shapebar.md/#setting-the-preview-of-shapes)
 
-**Change log**: 
-
-The property was added in v6.0
+**Change log**: Added in v6.0

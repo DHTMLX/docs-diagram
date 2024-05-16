@@ -16,7 +16,7 @@ If the diagram is initialized in the org (*type: "org"*) or mindmap (*type: "min
 
 ### Usage
 
-~~~js
+~~~jsx
 remove(id: string | number | array): void;
 ~~~
 
@@ -26,7 +26,7 @@ remove(id: string | number | array): void;
 
 ### Example
 
-~~~js {6}
+~~~jsx {6}
 const diagram = new dhx.Diagram("diagram_container", {
     type: "default"
 });

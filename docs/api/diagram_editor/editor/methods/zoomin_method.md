@@ -12,7 +12,7 @@ description: You can learn about the zoomIn method of editor in the documentatio
 
 ### Usage
 
-~~~js
+~~~jsx
 zoomIn(step?: number): void;
 ~~~
 
@@ -22,7 +22,7 @@ zoomIn(step?: number): void;
 
 ### Example
 
-~~~js {4}
+~~~jsx {4}
 const editor = new dhx.DiagramEditor("editor_container");
 editor.parse(data);
 

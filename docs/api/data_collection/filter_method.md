@@ -1,5 +1,5 @@
 ---
-sidebar_label: filter()!!
+sidebar_label: filter()
 title: filter Method of Data Collection
 description: You can learn about the filter method of data collection in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
@@ -12,29 +12,29 @@ description: You can learn about the filter method of data collection in the doc
 
 ### Usage
 
-~~~js
+~~~jsx
 filter(
-	rule?: function, 
-	config?: {
-		id?: string,
-		add?: boolean,
-		permanent?: boolean
-	}
+    rule?: function, 
+    config?: {
+        id?: string,
+        add?: boolean,
+        permanent?: boolean
+    }
 ): void;
 
 // or
 
 filter(
-	rule?:{
-		by?: string | number,
-		match?: string | number | boolean,
-		compare?: function(value,match,item)
-	},
-	config?:{
-		id?: string,
-		add?: boolean,
-		permanent?: boolean
-	}
+    rule?:{
+        by?: string | number,
+        match?: string | number | boolean,
+        compare?: (value, match, item) => {}
+    },
+    config?:{
+        id?: string,
+        add?: boolean,
+        permanent?: boolean
+    }
 ): void;
 ~~~
 
@@ -56,7 +56,7 @@ filter(
 
 ### Example
 
-~~~js {6-9,11-12}
+~~~jsx {6-9,11-12}
 const diagram = new dhx.Diagram("diagram_container", {
     type: "default"
 });
@@ -73,7 +73,7 @@ diagram.data.filter({ by: "text", match: "Read N" });
 
 To revert the diagram to the initial state, call the `filter()` method without parameters.
 
-~~~js
+~~~jsx
 diagram.data.filter();
 ~~~
 

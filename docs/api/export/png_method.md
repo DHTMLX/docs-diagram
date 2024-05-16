@@ -10,11 +10,13 @@ description: You can learn about the png method in the documentation of the DHTM
 
 @short: Exports a diagram to a PNG file
 
-{{note To avoid problems during export, all images for Diagram shapes must be set either in base64 format or via an absolute URL.}}
+:::note
+To avoid problems during export, all images for Diagram shapes must be set either in base64 format or via an absolute URL.
+:::
 
 ### Usage
 
-~~~js
+~~~jsx
 png(config?: object): void;
 ~~~
 
@@ -26,9 +28,9 @@ png(config?: object): void;
 
 ### Example
 
-~~~js {7,10-13}
+~~~jsx {7,10-13}
 const diagram = new dhx.Diagram("diagram_container", {
-	// config options
+    // config options
 });
 diagram.data.parse(data);
 

@@ -1,5 +1,5 @@
 ---
-sidebar_label: Toolbar!!
+sidebar_label: Toolbar
 title: Editor Guides - Toolbar
 description: You can learn about the Toolbar of editor in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
@@ -22,10 +22,12 @@ To configure the Toolbar you can use the following properties:
     - [**Configuring Items via Strings**](api/diagram_editor/toolbar/config/items_property.md/#configuring-items-via-strings)
     - [**Configuring Items via Objects**](api/diagram_editor/toolbar/config/items_property.md/#configuring-items-via-objects)
 
-~~~jsx {7-38}
+~~~jsx {9-40}
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {
+        // toolbar: true, // displays default Toolbar
+        // or configure Toolbar via object
         toolbar: {
             css: "custom_css",
             navigationType: "pointer",
@@ -405,10 +407,12 @@ Besides [**Service elements**](#service-elements), you can also specify and conf
 
 The example below shows how to add the [Button](https://docs.dhtmlx.com/suite/toolbar/button/) control to the Toolbar:
 
-~~~jsx {6-9}
+~~~jsx {8-11}
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "org", // "default" | "org" | "mindmap"
     view: {
+        // toolbar: true, // displays default Toolbar
+        // or configure Toolbar via object
         toolbar: {
             items: [
                 {
@@ -437,3 +441,5 @@ checkIcon?: (editor: IDiagramEditor) => string; // Use only for base elements th
 ~~~jsx
 handler?: (editor: object, event: Event) => void;
 ~~~
+
+**Related sample**: [Diagram with Editor. Default mode. Customization of cards, editbar, toolbar and shapebar](https://snippet.dhtmlx.com/1p0wemnn)

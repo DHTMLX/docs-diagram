@@ -12,7 +12,7 @@ description: You can learn about the beforeCellsValidation event of Cell Manager
 
 ### Usage
 
-~~~js
+~~~jsx
 beforeCellsValidation: (
     swimlaneId: string | number, 
     action: "move" | "remove" | "add"
@@ -32,7 +32,7 @@ Return `false` to prevent validation of new cells, otherwise `true`
 
 ### Example
 
-~~~js {9-12}
+~~~jsx {9-12}
 // initializing Diagram
 const diagram = new dhx.Diagram("diagram_container", {
     type: "default"
@@ -50,4 +50,3 @@ diagram.events.on("beforeCellsValidation", (swimlaneId, action) => {
 **Change log**: Added in v4.0
 
 **Related articles**: [Configuring Swimlanes](../../../swimlanes/)
-

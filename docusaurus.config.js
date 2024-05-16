@@ -129,8 +129,11 @@ module.exports = {
     tagline: 'DHTMLX JavaScript Diagram Docs',
     url: 'https://docs.dhtmlx.com',
     baseUrl: '/diagram/',
-    onBrokenLinks: 'ignore', // !!! TODO, make to warn before release 
-    onBrokenAnchors: 'ignore', // !!! TODO, make to warn before release 
+    onBrokenLinks: 'warn',
+	onBrokenMarkdownLinks: 'warn',
+    onBrokenAnchors: 'warn',
+    //onBrokenLinks: 'ignore', // !!! TODO, make to warn before release 
+    //onBrokenAnchors: 'ignore', // !!! TODO, make to warn before release 
     onBrokenMarkdownLinks: 'ignore',
     favicon: 'img/favicon.ico',
     organizationName: 'DHTMLX', // Usually your GitHub org/user name

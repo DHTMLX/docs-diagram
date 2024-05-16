@@ -1,5 +1,5 @@
 ---
-sidebar_label: show()!!
+sidebar_label: show()
 title: show Method of View
 description: You can learn about the show method of view in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
@@ -8,7 +8,7 @@ description: You can learn about the show method of view in the documentation of
 
 ### Description
 
-@short: shows Toolbar, Editbar, and Shapebar views of Diagram Editor.
+@short: Shows Toolbar, Editbar, and Shapebar views of Diagram Editor
 
 :::info
 If you need to show the **Toolbar**, **Editbar**, or **Shapebar** view separately, call the `show()` method with the corresponding parameter. To show all these elements, call the `show()` method without parameters.
@@ -16,7 +16,7 @@ If you need to show the **Toolbar**, **Editbar**, or **Shapebar** view separatel
 
 ### Usage
 
-~~~js
+~~~jsx
 show(view?: "toolbar" | "shapebar" | "editbar"): void;
 ~~~
 
@@ -28,9 +28,9 @@ show(view?: "toolbar" | "shapebar" | "editbar"): void;
 
 ### Example
 
-~~~js {5-6,8-9}
-const editor = new dhx.DiagramEditor("editor", {
-    type: "default",
+~~~jsx {5-6,8-9}
+const editor = new dhx.DiagramEditor("editor_container", {
+    type: "default"
 });
 
 // shows the Shapebar view 

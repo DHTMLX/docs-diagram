@@ -12,12 +12,12 @@ description: You can learn about the margin property in the documentation of the
 
 ### Usage
 
-~~~js
+~~~jsx
 margin?: {
-	itemX?: number,
-	itemY?: number,
+    itemX?: number,
+    itemY?: number,
     x?: number,
-	y?: number,
+    y?: number
 };
 ~~~
 
@@ -32,7 +32,7 @@ The **margin** object can include the following parameters:
 
 ### Default config
 
-~~~js
+~~~jsx
 margin: {
     x: 40, y: 40,
     itemX: 40, itemY: 40
@@ -41,7 +41,7 @@ margin: {
 
 ### Example
 
-~~~js
+~~~jsx
 const diagram = new dhx.Diagram("diagram_container", {
     type: "org", 
     margin: {
@@ -51,4 +51,7 @@ const diagram = new dhx.Diagram("diagram_container", {
 });
 ~~~
 
-**Related sample:** [Diagram. Org chart mode. Margin between shapes](https://snippet.dhtmlx.com/bwe9vm6i)
+**Related samples**:
+
+- [Diagram. Org chart mode. Margin between shapes](https://snippet.dhtmlx.com/bwe9vm6i)
+- [Diagram. Default mode. Flowchart custom styles](https://snippet.dhtmlx.com/3wyut2mn)

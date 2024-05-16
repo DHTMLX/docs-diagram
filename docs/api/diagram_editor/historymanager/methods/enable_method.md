@@ -12,8 +12,18 @@ description: You can learn about the enable method of HistoryManager in the docu
 
 ### Usage
 
-~~~js
+~~~jsx
 enable(): void;
+~~~
+
+### Example
+
+~~~jsx {5}
+const editor = new dhx.DiagramEditor("editor_container", { 
+    type: "default"
+});
+// ...
+editor.history.enable();
 ~~~
 
 **Change log**: Added in v4.1

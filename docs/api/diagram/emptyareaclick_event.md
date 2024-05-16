@@ -12,7 +12,7 @@ description: You can learn about the emptyAreaClick event in the documentation o
 
 ### Usage
 
-~~~js
+~~~jsx
 emptyAreaClick: (event: MouseEvent) => void;
 ~~~
 
@@ -24,7 +24,7 @@ The callback of the event takes the following parameter:
 
 ### Example
 
-~~~js {9-11}
+~~~jsx {9-11}
 // initializing Diagram
 const diagram = new dhx.Diagram("diagram_container", {
     type: "default"
@@ -33,13 +33,9 @@ const diagram = new dhx.Diagram("diagram_container", {
 diagram.data.parse(data);
 
 // attaching a handler to the event
-diagram.events.on("emptyAreaClick",function(e){
-	console.log("An empty space has been clicked");
+diagram.events.on("emptyAreaClick", () => {
+    console.log("An empty space has been clicked");
 });
 ~~~
 
 **Related article**: [Event handling](../../../guides/event_handling/)
-
-**Related samples**:
-- [Diagram. Default mode. Events](https://snippet.dhtmlx.com/7h2hgb3g)
-- [Diagram. Org chart mode. Events](https://snippet.dhtmlx.com/l38pct7c)

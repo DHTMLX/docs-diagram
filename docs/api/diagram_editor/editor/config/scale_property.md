@@ -12,19 +12,19 @@ description: You can learn about the scale property of editor in the documentati
 
 ### Usage
 
-~~~js
+~~~jsx
 scale?: number;
 ~~~
 
 ### Default config
 
-~~~js
+~~~jsx
 scale: 1
 ~~~
 
 ### Example
 
-~~~js
+~~~jsx
 const editor = new dhx.DiagramEditor("editor_container", {
     scale: 0.9
 });

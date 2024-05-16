@@ -8,50 +8,68 @@ description: You can learn about the shapeIconClick event in the documentation o
 
 ### Description
 
-@short: Fires on clicking a toolbar icon
+@short: Fires on clicking an icon of the shape toolbar
 
 ### Usage
 
-~~~js
-shapeIconClick: (
-	id: string | number, 
-	event: MouseEvent
+~~~jsx
+"shapeIconClick": (
+    id: string | number, 
+    event: MouseEvent
 ) => void;
 ~~~
 
 ### Parameters
 
-The callback of the event takes the following parameters:
+The callback of the event is called with the following parameters:
 
-- `id` - (required) the id of the icon
-- `event` - (required) a native HTML event object
+- `id` - the id of the icon
+- `event` - a native HTML event object
 
 ### Example
 
-~~~js {18-21}
+~~~jsx {23-39}
 // initializing Diagram
-const diagram = new dhx.Diagram("diagram_container", { 
-	toolbar: [
-      	{
-			id: "download",
+const diagram = new dhx.Diagram("diagram_container", {
+    select: true,
+    // setting a toolbar with buttons for items
+    toolbar: [
+        {
+            id: "add",
+            content: "<i class='dxi dxi-plus-box'>"
+        },
+        {
+            id: "download",
             content: "<i class='dxi dxi-download'></i>"
-	  	},
-	  	{
-			id: "info",
-            content: "<i class='dxi dxi-information-outline'></i>"
-	  	}
+        },
+        {
+            id: "remove",
+            content: "<i class='dxi dxi-delete-outline'>"
+        }
     ]
 });
 // loading data
 diagram.data.parse(data);
 
-// attaching a handler to the event
-diagram.events.on("shapeIconClick", function(icon){
-	const id = diagram.selection.getId();
-	alert(icon + " was clicked for id = " + id);
+diagram.events.on("shapeIconClick", function (action) {
+    const selectedId = diagram.selection.getItem().id;
+    switch(action) {
+        case "download":
+            diagram.export.pdf();
+            break;
+        case "remove":
+            diagram.data.remove(selectedId);
+            break;
+        case "add":
+            diagram.data.add({
+                text: "New shape",
+                parent: selectedId,
+            });
+            break;
+    }
 });
 ~~~
 
 **Related article**: [Event handling](../../../guides/event_handling/)
 
-**Related sample**: [Diagram. Configuration. Per-shape toolbar](https://snippet.dhtmlx.com/4if395hd)
+**Related sample**: [Diagram. Configuration. Shape toolbar](https://snippet.dhtmlx.com/4if395hd)

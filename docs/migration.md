@@ -6,8 +6,7 @@ description: You can learn about the Migration to Newer Versions in the document
 
 # Migration to newer versions
 
-5.0 -> 6.0
---------------
+## 5.0 -> 6.0
 
 ### Diagram Editor structure
 
@@ -43,14 +42,14 @@ Check the related API overview guides to explore the new possibilities of managi
 
 - The `setViewMode()` method of Diagram Editor is deprecated and no longer supported. Instead, use the [`show()`](../api/diagram_editor/view/methods/show_method/)/[`hide()`](../api/diagram_editor/view/methods/hide_method/) methods of the `view` object.
 
-~~~js {4} title="Before v6.0"
+~~~jsx {4} title="Before v6.0"
 const editor = new dhx.DiagramEditor("editor_container");
 editor.parse(data);
 
 editor.setViewMode("preview"); // "preview" or "edit"
 ~~~
 
-~~~js {4-5} title="From v6.0"
+~~~jsx {4-5} title="From v6.0"
 const editor = new dhx.DiagramEditor("editor_container");
 editor.parse(data);
 
@@ -62,7 +61,7 @@ editor.view.show("shapebar");
 
 - The `reservedWidth` property of Diagram Editor is deprecated and no longer supported. 
 
-~~~js {2} title="Before v6.0"
+~~~jsx {2} title="Before v6.0"
 const editor = new dhx.DiagramEditor("editor_container", {
     reservedWidth: 150
 });
@@ -70,20 +69,20 @@ const editor = new dhx.DiagramEditor("editor_container", {
 
 Instead, use the following syntax:
 
-~~~js title="From v6.0"
+~~~jsx title="From v6.0"
 editor.diagram.config.margin = 40; 
 ~~~
 
 - The `editMode` property of Diagram Editor is deprecated and no longer supported. Instead, use the 
 corresponding property of the `view` object (toolbar/shapebar/editbar).
 
-~~~js {2} title="Before v6.0"
+~~~jsx {2} title="Before v6.0"
 const editor = new dhx.DiagramEditor("editor_container", {
     editMode: false
 });
 ~~~
 
-~~~js {2-5} title="From v6.0"
+~~~jsx {2-5} title="From v6.0"
 const editor = new dhx.DiagramEditor("editor_container", {
    view: {
         shapebar: false, // only for "default" mode
@@ -94,7 +93,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 
 - The `controls` property of Diagram Editor is deprecated and no longer supported. Instead, use the [`items`](/api/diagram_editor/toolbar/config/items_property/) property of the `view.toolbar` configuration.
 
-~~~js {2-4} title="Before v6.0"
+~~~jsx {2-4} title="Before v6.0"
 const editor = new dhx.DiagramEditor("editor_container", {
     controls: { 
         ...
@@ -102,11 +101,11 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 ~~~
 
-~~~js {2-6} title="From v6.0"
+~~~jsx {2-6} title="From v6.0"
 const editor = new dhx.DiagramEditor("editor_container", {
    view: {
         toolbar: {
-            items: [...],
+            items: []
         }
     }
 });
@@ -114,13 +113,13 @@ const editor = new dhx.DiagramEditor("editor_container", {
 
 - The `shapeBarWidth` property of Diagram Editor is deprecated and no longer supported. Instead, use the [`width`](/api/diagram_editor/shapebar/config/width_property/) property of the `view.shapebar` configuration.
 
-~~~js {2} title="Before v6.0"
+~~~jsx {2} title="Before v6.0"
 const editor = new dhx.DiagramEditor("editor_container", {
     shapeBarWidth: 190
 });
 ~~~
 
-~~~js {3-7} title="From v6.0"
+~~~jsx {3-7} title="From v6.0"
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {
@@ -133,7 +132,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 
 - The `shapeSections` property of Diagram Editor is deprecated and no longer supported. Instead, use the [`sections`](/api/diagram_editor/shapebar/config/sections_property/) property of the `view.shapebar` configuration.
 
-~~~js {2-7} title="Before v6.0"
+~~~jsx {2-7} title="Before v6.0"
 const editor = new dhx.DiagramEditor("editor_container", {
     shapeSections: {
         "Swimlane": [{ swimlane: true }],
@@ -144,7 +143,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 ~~~
 
-~~~js {3-12} title="From v6.0"
+~~~jsx {3-12} title="From v6.0"
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {
@@ -162,13 +161,13 @@ const editor = new dhx.DiagramEditor("editor_container", {
 
 - The `gapPreview` property of Diagram Editor is deprecated and no longer supported. Instead, use the `gap` property of the [`preview`](/api/diagram_editor/shapebar/config/preview_property/) object of the `view.shapebar` configuration.
 
-~~~js {2} title="Before v6.0"
+~~~jsx {2} title="Before v6.0"
 const editor = new dhx.DiagramEditor("editor_container", {
     gapPreview: 10
 });
 ~~~
 
-~~~js {3-10} title="From v6.0"
+~~~jsx {3-10} title="From v6.0"
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {
@@ -184,13 +183,13 @@ const editor = new dhx.DiagramEditor("editor_container", {
 
 - The `scalePreview` property of Diagram Editor is deprecated and no longer supported. Instead, use the `scale` property of the [`preview`](/api/diagram_editor/shapebar/config/preview_property/) object of the `view.shapebar` configuration.
 
-~~~js {2} title="Before v6.0"
+~~~jsx {2} title="Before v6.0"
 const editor = new dhx.DiagramEditor("editor_container", {
     gapPreview: 10
 });
 ~~~
 
-~~~js {3-10} title="From v6.0"
+~~~jsx {3-10} title="From v6.0"
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {
@@ -222,7 +221,7 @@ The names of the [service elements](/guides/diagram_editor/toolbar/#service-elem
 
 - The `getSubId()` method of the Selection object of Diagram is deprecated and no longer supported. Instead you can use the [`getItem()`](/api/selection/getitem_method/) of the Selection object. It will return the object of the selected item where you can find the id of the selected title.
 
-~~~js {7} title="Before v6.0"
+~~~jsx {7} title="Before v6.0"
 // diagram must be created with the "select:true" option
 const diagram = new dhx.Diagram("diagram_container", { 
     select: true 
@@ -232,7 +231,7 @@ diagram.data.parse(data);
 const subid = diagram.selection.getSubId(); // -> "2"
 ~~~
 
-~~~js {3-10} title="From v6.0"
+~~~jsx {3-10} title="From v6.0"
 // a diagram must be created with the "select:true" option
 const diagram = new dhx.Diagram("diagram_container", { 
     select: true 
@@ -244,7 +243,7 @@ const item = diagram.selection.getItem(); // -> obj.$subSelected
 
 - The `getId()` method of the Selection object of Diagram is deprecated and no longer supported. Instead you can use the [`getIds()`](/api/selection/getids_method/) and [`getItem()`](/api/selection/getitem_method/) methods of the Selection object. Check the examples below:
 
-~~~js {7} title="Before v6.0"
+~~~jsx {7} title="Before v6.0"
 // diagram must be created with the "select:true" option
 const diagram = new dhx.Diagram("diagram_container", { 
     select: true 
@@ -254,7 +253,7 @@ diagram.data.parse(data);
 const id = diagram.selection.getId(); // -> "2"
 ~~~
 
-~~~js {7-11} title="From v6.0"
+~~~jsx {7-11} title="From v6.0"
 // a diagram must be created with the "select:true" option
 const diagram = new dhx.Diagram("diagram_container", { 
     select: true 
@@ -359,22 +358,20 @@ Check the details in the LineTitles [API](/line_titles/configuration_properties/
 
 Due to the modifications in the Diagram editor interface, the locale settings have been updated. Check the [Localization guides](/guides/localization/) for details.
 
-
-4.2 -> 5.0
---------------
+## 4.2 -> 5.0
 
 ### Diagram API
 
 The **lineGap** property of Diagram is deprecated and no longer supported. Instead, use the **lineGap** parameter of the [lineConfig](diagram/api/diagram/lineconfig_property.md) property.
 
-~~~js {3} title="Before v5.0"
+~~~jsx {3} title="Before v5.0"
 const diagram = new dhx.Diagram("diagram_container", { 
     type: "default",
     lineGap: 30
 });
 ~~~
 
-~~~js {3-5} title="From v5.0"
+~~~jsx {3-5} title="From v5.0"
 const diagram = new dhx.Diagram("diagram_container", { 
     type: "default",
     lineConfig: {
@@ -386,16 +383,16 @@ const diagram = new dhx.Diagram("diagram_container", {
 
 ### Editor API
 
-The **lineGap** property of Diagram Editor is deprecated and no longer supported. Instead, use the **lineGap** parameter inside the [lineConfig](diagram/api/editor/lineconfig_property.md) property.
+The **lineGap** property of Diagram Editor is deprecated and no longer supported. Instead, use the **lineGap** parameter inside the `lineConfig` property.
 
-~~~js {3} title="Before v5.0"
+~~~jsx {3} title="Before v5.0"
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     lineGap: 30
 });
 ~~~
 
-~~~js {3-5} title="From v5.0"
+~~~jsx {3-5} title="From v5.0"
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     lineConfig: {
@@ -405,8 +402,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 ~~~
 
-4.1 -> 4.2
---------------
+## 4.1 -> 4.2
 
 ### Diagram API
 
@@ -414,13 +410,13 @@ In v4.2, the **defaultLinkType** property is deprecated.
 
 Starting from v4.2, you need to apply the new [lineConfig](../api/diagram/lineconfig_property/) property to specify the default type for connector lines.
 
-~~~js title="Before v4.2"
+~~~jsx title="Before v4.2"
 const diagram = new dhx.Diagram("diagram_container", { 
     defaultLinkType: "dash"
 });
 ~~~
 
-~~~js {2-4} title="From v4.2"
+~~~jsx {2-4} title="From v4.2"
 const diagram = new dhx.Diagram("diagram_container", { 
     lineConfig: {
         lineType: "dash",
@@ -435,7 +431,7 @@ The syntax of specifying basic sets of items for sections in the left panel of t
 
 Before v4.2, you could set boolean *true* value to the array of the section's items to display all available flow-chart shapes in the section:
 
-~~~js {3} title="Before v4.2"
+~~~jsx {3} title="Before v4.2"
 const editor = new dhx.DiagramEditor("editor_container", {
     shapeSections: {
         "flowchart shapes": [true],
@@ -447,7 +443,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 
 Starting from v4.2, you need to use the different syntax for this purpose:
 
-~~~js {3} title="From v4.2"
+~~~jsx {3} title="From v4.2"
 const editor = new dhx.DiagramEditor("editor_container", {
     shapeSections: {
         "flowchart shapes": [{ flowShapes: true }],
@@ -457,22 +453,21 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 ~~~
 
-Besides, it became possible to specify other basic sets of items via the related *key:value* pairs. For more details, check the [shapeSections](../api/editor/shapesections_property/) article.
+Besides, it became possible to specify other basic sets of items via the related *key:value* pairs. For more details, check the `shapeSections` article.
 
-3.1 -> 4.0
-------------
+## 3.1 -> 4.0
 
 ### API
 
 The **shapeHover** event has been deprecated in v4.0. Starting with v4.0, use the new [itemMouseOver](../api/diagram/itemmouseover_event/) event instead.
 
-~~~js title="Before v4.0"
-diagram.events.on("shapeHover",function(id,e){
+~~~jsx title="Before v4.0"
+diagram.events.on("shapeHover", (id,e) => {
     console.log("An item"+ diagram.data.getItem(id).text +"has been hovered over");
 });
 ~~~
 
-~~~js title="From v4.0"
+~~~jsx title="From v4.0"
 diagram.events.on("itemMouseOver", (id, event) => {
     console.log(id, event);
 });
@@ -482,29 +477,28 @@ editor.diagram.events.on("itemMouseOver", (id, event) => {
 });
 ~~~
 
-3.0 -> 3.1
-------------
+## 3.0 -> 3.1
 
 ### Editor API
 
 The **shapeMove** event of the editor object has been deprecated in v3.1. Starting with v3.1, use the new **BeforeShapeMove** and **AfterShapeMove** events instead.
 
-~~~js title="Before v3.1"
-editor.events.on("shapeMove",function() {
+~~~jsx title="Before v3.1"
+editor.events.on("shapeMove", () => {
     console.log("The shape is moved");
 });
 ~~~
 
-~~~js title="From v3.1"
+~~~jsx title="From v3.1"
 // BeforeShapeMove event
-editor.events.on("BeforeShapeMove", function(events) {
-    console.log("Before the shape is moved:", events);
+editor.events.on("BeforeShapeMove", (e) => {
+    console.log("Before the shape is moved:", e);
     return true;
 });
 
 // AfterShapeMove event
-editor.events.on("AfterShapeMove", function(events) {
-    console.log("After the shape is moved:", events);
+editor.events.on("AfterShapeMove", (e) => {
+    console.log("After the shape is moved:", e);
 });
 ~~~
 
@@ -528,7 +522,7 @@ In the version 3.0 these properties are deprecated and removed. Instead, the **c
 - showReset -> controls.reset
 - showExport -> controls.export
 
-~~~js
+~~~jsx
 const editor = new dhx.DiagramEditor("editor_container", {
     controls: { 
         apply: false,
@@ -558,10 +552,10 @@ See the full list of the available controls in the [Toolbar](../guides/diagram_e
 - diagram.detachEvent -> [diagram.events.detach](../guides/event_handling/#detaching-event-listeners)
 - diagram.eachItem -> [diagram.data.map](../api/data_collection/map_method/)
 - diagram.getItem -> [diagram.data.getItem](../api/data_collection/getitem_method/)
-- diagram.getSelectedId -> [diagram.selection.getId](../api/selection/getid_method/)
+- diagram.getSelectedId -> `diagram.selection.getId`
 - diagram.load -> [diagram.data.load](../api/data_collection/load_method/) 
 - diagram.parse -> [diagram.data.parse](../api/data_collection/parse_method/)
 - diagram.selectItem -> [diagram.selection.add](../api/selection/add_method/)
 - diagram.serialize -> [diagram.data.serialize](../api/data_collection/serialize_method/)
 - diagram.unselectItem -> [diagram.selection.remove](../api/selection/remove_method/)
-- diagram.updateItem -> [diagram.data.update](../api/data_collection/update_method/)
+- diagram.updateItem -> [diagram.data.update](../api/data_collection/update_method/) 

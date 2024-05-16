@@ -1,5 +1,5 @@
 ---
-sidebar_label: LineTitle properties !!
+sidebar_label: LineTitle properties 
 title: LineTitle Properties
 description: You can learn about the LineTitle properties in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
@@ -12,7 +12,7 @@ While specifying color values of the item, use the HEX format.
 
 ### Usage
 
-~~~js
+~~~jsx
 const data = [
     // line title object
     {
@@ -62,7 +62,7 @@ Each line title object can include the following properties:
 
 ### Example
 
-~~~js
+~~~jsx
 const data = [
     // configuring shapes
     { type: "rectangle", id: "shape_1" },
@@ -72,8 +72,8 @@ const data = [
     { type: "line", id: "line_1", from: "shape_1", to: "shape_2" },
 
     // configuring line titles
-    { type: "lineTitle", id: "title_1", parent: "line_1", text: "Some text" },
+    { type: "lineTitle", id: "title_1", parent: "line_1", text: "Some text" }
 ];
 ~~~
 
-**Related articles:** [Configuring line titles](../../line_titles/)
+**Related articles**: [Configuring line titles](../../line_titles/)

@@ -1,5 +1,5 @@
 ---
-sidebar_label: css!!
+sidebar_label: css
 title: css Property of Shapebar
 description: You can learn about the css property of Shapebar in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
@@ -12,17 +12,19 @@ description: You can learn about the css property of Shapebar in the documentati
 
 ### Usage
 
-~~~js
+~~~jsx
 css?: string;
 ~~~
 
 ### Example
 
-~~~html {6}
+~~~html {8}
 <script>
     const editor = new dhx.DiagramEditor("editor_container", {
         type: "default",
         view: {
+            // shapebar: true, // displays default Shapebar
+            // or configure Shapebar via object
             shapebar: {
                 css: "custom_style"
             }
@@ -38,12 +40,9 @@ css?: string;
 </style>
 ~~~
 
-**Related articles:** 
+**Related articles**:
 
-- [Shapebar and shapes appearance](/guides/diagram_editor/shapebar/#shapebar-and-shapes-appearance)
+- [Shapebar and shapes appearance](guides/diagram_editor/shapebar.md/#shapebar-and-shapes-appearance)
+- [Configuring the look of shapes in Shapebar](guides/themes/base_themes_configuration.md/#configuring-the-look-of-shapes-in-shapebar)
 
-- [Configuring the look of shapes in Shapebar](/guides/themes/base_themes_configuration/#configuring-the-look-of-shapes-in-shapebar)
-
-**Change log**: 
-
-The property was added in v6.0
+**Change log**: Added in v6.0

@@ -12,14 +12,24 @@ description: You can learn about the disabled property of HistoryManager in the 
 
 ### Usage
 
-~~~js
+~~~jsx
 saveDelay: number;
 ~~~
 
 ### Default config
 
-~~~js
+~~~jsx
 saveDelay: 500
+~~~
+
+### Example
+
+~~~jsx {5}
+const editor = new dhx.DiagramEditor("editor_container", { 
+    type: "default"
+});
+
+editor.history.saveDelay = 1000;
 ~~~
 
 **Change log**: Added in v4.1

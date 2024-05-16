@@ -6,8 +6,8 @@ description: You can explore the CellManager methods in the documentation of the
 
 # CellManager methods overview
 
-| Name                                                 | Description                                                 |
-| :--------------------------------------------------- | :---------------------------------------------------------- |
+| Name                                                | Description                                                |
+| :-------------------------------------------------- | :--------------------------------------------------------- |
 | [](../cell_manager/add_method.md)                   | @getshort(../cell_manager/add_method.md)                   |
 | [](../cell_manager/getcellid_method.md)             | @getshort(../cell_manager/getcellid_method.md)             |
 | [](../cell_manager/getcellindex_method.md)          | @getshort(../cell_manager/getcellindex_method.md)          |

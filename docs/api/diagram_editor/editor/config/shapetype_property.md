@@ -14,7 +14,7 @@ This value is applied, if the shape object doesn't contain the "type" property
 
 ### Usage
 
-~~~js
+~~~jsx
 shapeType?: string;
 ~~~
 
@@ -22,28 +22,28 @@ shapeType?: string;
 
 In the default mode of Editor (type: "default"):
 
-~~~js
+~~~jsx
 shapeType: "rectangle"
 ~~~
 
 In the org chart mode of Editor (type: "card"):
 
-~~~js
+~~~jsx
 shapeType: "card"
 ~~~
 
 In the mindmap mode of Editor (type: "topic"):
 
-~~~js
+~~~jsx
 shapeType: "topic"
 ~~~
 
 ### Example
 
-~~~js
+~~~jsx
 const editor = new dhx.DiagramEditor("editor_container", {
-    shapeType: "circle",
+    shapeType: "circle"
 });
 ~~~
 
-**Related articles**:  [Default Shapes](../../../shapes/default_shapes/)
+**Related articles**:  [Default Shapes](/shapes/default_shapes/)

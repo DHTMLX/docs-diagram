@@ -12,7 +12,7 @@ description: You can learn about the getIndex method of data collection in the d
 
 ### Usage
 
-~~~js
+~~~jsx
 getIndex(id: string | number): number;
 ~~~
 
@@ -26,7 +26,7 @@ The method returns the index of the item
 
 ### Example
 
-~~~js {6}
+~~~jsx {6}
 const diagram = new dhx.Diagram("diagram_container", {
     type: "default"
 });

@@ -1,5 +1,5 @@
 ---
-sidebar_label: Line properties !!
+sidebar_label: Line properties 
 title: Line Properties
 description: You can learn about the Line properties in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
@@ -14,7 +14,7 @@ While specifying color values of the item, use the HEX format.
 
 ### Usage
 
-~~~js
+~~~jsx
 const data = [
     // line object
     {
@@ -46,11 +46,11 @@ Each line object can include the following properties:
 
 ### Usage
 
-~~~js
+~~~jsx
 const data = [
     // line object
     {
-        ..., // common properties
+        // ... common properties
         forwardArrow?: string, // "filled" by default
         backArrow?: string, // "filled" by default
         fromSide?: "top" | "bottom" | "left" | "right" | "center",
@@ -75,7 +75,7 @@ When preparing a data set for lines to load into the diagram in the default mode
 - `fromSide` - (optional) the side of the shape from which connection will start ("*top*", "*bottom*", "*left*","*right*", "*center*")
 - `toSide` - (optional) the side of the shape to which a different shape will be attached ("*top*", "*bottom*", "*left*", "*right*", "*center*")
 - `cornersRadius` - (optional) the radius of rounding corners of a connector
-- `customGap` - (optional) sets the value of the [](../api/diagram/linegap_property.md) property for the line
+- `customGap` - (optional) sets the distance from the shape to the right-angled bend of a connector line
 - `points` - (optional) sets an array with point's objects for a line. Each object contains the following properties:
     - `x` - (required) the x coordinate of the point
     - `y` - (required) the y coordinate of the point
@@ -83,7 +83,7 @@ When preparing a data set for lines to load into the diagram in the default mode
 
 ## Example
 
-~~~js
+~~~jsx
 const data = [
     // configuring shapes
     { "id": 1, "x": 200, "y": 0, "text": "Start", "type": "start" },
@@ -98,8 +98,8 @@ const data = [
         "fromSide": "bottom",
         "toSide": "top",
         "forwardArrow": "filled"
-    },
+    }
 ];
 ~~~
 
-**Related articles:** [Configuring lines](../../lines/)
+**Related articles**: [Configuring lines](../../lines/)

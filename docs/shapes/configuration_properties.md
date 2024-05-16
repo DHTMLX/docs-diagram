@@ -1,5 +1,5 @@
 ---
-sidebar_label: Shape properties !!
+sidebar_label: Shape properties 
 title: Shape Properties
 description: You can learn about the Shape properties in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
@@ -14,7 +14,7 @@ While specifying color values of the item, use the HEX format.
 
 ### Usage
 
-~~~js
+~~~jsx
 const data = [
     // shape object
     {
@@ -48,21 +48,19 @@ Each shape object can include the following properties:
 - `fixed` - (optional) enables/disables movement and resizing of a shape, *false* by default
 - `hidden` - (optional) defines, whether a shape will be hidden
 
-:::note 
+:::note
 The values of the **height** and **width** are calculated automatically for a "text"/"topic" shape, depending on the content of the shape.
 :::
-
 ## Custom properties
-
 ### Usage
 
-~~~js
+~~~jsx
 const data = [
     // shape object
     {
-        ..., // common properties
+        // ... common properties
         [key: string]?: any, // custom property
-        ... // more custom properties
+        // ... more custom properties
     },
     // more shape objects
 ]
@@ -76,7 +74,7 @@ When preparing a data set for a custom shape, you can add any custom properties 
 
 ### Example
 
-~~~js
+~~~jsx
 const data = [
     {
         "id": "main",
@@ -85,7 +83,7 @@ const data = [
         "phone": "(405) 555-0128",
         "mail": "kmccoy@gmail.com",
         "photo": "../img/avatar-01.jpg"
-    },
+    }
 ]
 ~~~
 
@@ -93,11 +91,11 @@ const data = [
 
 ### Usage
 
-~~~js
+~~~jsx
 const data = [
     // shape object
     {
-        ..., // common properties
+        // ... common properties
         angle?: number,
 
         //either
@@ -120,7 +118,7 @@ const data = [
 When preparing a data set for shapes to load into the diagram in the default mode, you can add the following properties to the configuration object of a shape:
 
 - `angle` - (optional) the angle of shape rotation
-- `preview` - (optional) either a path to the image/a base64 image or an object with settings [to configure the shape preview displayed in the shapebar of the editor](../../guides/diagram_editor/left_panel/#setting-shape-preview). As an object, the property can contain a set of optional properties:
+- `preview` - (optional) either a path to the image/a base64 image or an object with settings [to configure the shape preview displayed in the shapebar of the editor](/guides/diagram_editor/shapebar/#setting-the-preview-of-shapes). As an object, the property can contain a set of optional properties:
   - `img` - (optional) a path to the image or a base64 image
   - `width` - (optional) the width of the image
   - `height` - (optional) the height of the image
@@ -132,9 +130,9 @@ When preparing a data set for shapes to load into the diagram in the default mod
 
 ### Example
 
-~~~js
+~~~jsx
 const data = [
-    { id: 1, x: 280, y: 0, text: "Start", type: "start", angle: 10 },
+    { id: 1, x: 280, y: 0, text: "Start", type: "start", angle: 10 }
 ];
 ~~~
 
@@ -142,11 +140,11 @@ const data = [
 
 ### Usage
 
-~~~js
+~~~jsx
 const data = [
     // shape object
     {
-        ..., // common properties
+        // ... common properties
         parent?: string | number,
         dx?: number,
         dy?: number,
@@ -178,7 +176,7 @@ When preparing a data set for shapes to load into the diagram in the org chart m
 
 ### Example
 
-~~~js
+~~~jsx
 const data = [
     {
         "id": "1",
@@ -201,23 +199,21 @@ const data = [
         "text": "partner for 1",
         "parent": "1",
         "partner": true
-    },
+    }
 ];
 ~~~
 
-**Related samples**: 
-- [Diagram. Org chart mode. Nested vertical lists](https://snippet.dhtmlx.com/98tzmzpg)
-- [Diagram editor. Org chart mode. Image card editor](https://snippet.dhtmlx.com/vghuunmd)
+**Related sample**: [Diagram. Org chart mode. Nested vertical lists](https://snippet.dhtmlx.com/98tzmzpg)
 
 ## Properties specific for the mindmap mode
 
 ### Usage
 
-~~~js
+~~~jsx
 const data = [
     // shape object
     {
-        ..., // common properties
+        // ... common properties
         parent?: string | number,
         dx?: number,
         dy?: number,
@@ -247,7 +243,7 @@ When preparing a data set for shapes to load into the diagram in the mindmap mod
 - `catchItem` - (optional) defines, whether the item can catch the moving item
 - `giveItem` - (optional) defines, whether the item can be moved
 
-**Related samples**: [Diagram editor. Mindmap mode. Emotions mind map](https://snippet.dhtmlx.com/lo1vm0e8)
+**Related sample**: [Diagram editor. Mindmap mode. Emotions mind map](https://snippet.dhtmlx.com/lo1vm0e8)
 
 :::info
 Read the details in the [How to Create a JavaScript Mindmap Diagram with DHTMLX Library](https://dhtmlx.com/blog/create-javascript-mindmap-diagram-dhtmlx-library/) article
@@ -255,7 +251,7 @@ Read the details in the [How to Create a JavaScript Mindmap Diagram with DHTMLX 
 
 ### Example
 
-~~~js
+~~~jsx
 const data = [
     {
         id: "1",
@@ -269,19 +265,19 @@ const data = [
         id: "2",
         text: "2",
         parent: "1",
-        giveItem: false,
+        giveItem: false
     },
     {
         id: "3",
         text: "3",
         parent: "1",
-        catchItem: false, 
+        catchItem: false 
     },
     {
         id: "4",
         text: "4",
-        parent: "1",
-    },
+        parent: "1"
+    }
 ];
 ~~~
 
@@ -289,11 +285,11 @@ const data = [
 
 ### Usage
 
-~~~js
+~~~jsx
 const data = [
     // shape object
     {
-        ..., // common properties
+        // ... common properties
         fill?: string,
         stroke?: string,
         strokeWidth?: number, // 1 by default
@@ -330,7 +326,7 @@ When preparing a data set for "text", "topic" and flow chart shapes, you can add
 
 ### Example
 
-~~~js
+~~~jsx
 const data = [
     {
         "id": "u1585139915192",
@@ -342,8 +338,8 @@ const data = [
         "height": 16,
         "lineHeight": 14,
         "fontSize": "16",
-        "fontColor": "rgba(0,0,0,0.70)",
-    },
+        "fontColor": "rgba(0,0,0,0.70)"
+    }
 ];
 ~~~
 
@@ -351,11 +347,11 @@ const data = [
 
 ### Usage
 
-~~~js
+~~~jsx
 const data = [
     // shape object
     {
-        ..., // common properties
+        // ... common properties
         headerColor?: string
     },
     // more shape objects
@@ -370,7 +366,7 @@ When preparing a data set for "card" shapes, you can add the following propertie
 
 ### Example
 
-~~~js
+~~~jsx
 const data = [
     {
         "id": 1,
@@ -391,11 +387,11 @@ const data = [
 
 ### Usage
 
-~~~js
+~~~jsx
 const data = [
     // shape object
     {
-        ..., // common properties
+        // ... common properties
         img?: string,
         title?: string,
         headerColor?: string
@@ -414,7 +410,7 @@ When preparing a data set for "img-card" shapes, you can add the following prope
 
 ### Example
 
-~~~js {title="Example"}
+~~~jsx {title="Example"}
 const data = [
     {
         "id": "1",
@@ -432,11 +428,11 @@ const data = [
         "img": "../img/avatar-02.png",
         "parent": "1",
         "headerColor": "#5874CD" 
-    },
+    }
 ];
 ~~~
 
-**Related articles:**
+**Related articles**:
 
 - [Default Shapes](../../shapes/default_shapes/)
 - [Custom Shape](../../shapes/custom_shape/)

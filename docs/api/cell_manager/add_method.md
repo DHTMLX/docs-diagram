@@ -16,7 +16,7 @@ The **add()** method is automatically validated by the system. The cell won't be
 
 ### Usage
 
-~~~js
+~~~jsx
 add(
     cellIndex: number, 
     dir: string // "up" | "down" | "left" | "right"
@@ -30,7 +30,7 @@ add(
 
 ### Example
 
-~~~js
+~~~jsx
 // initialization of the diagram
 const diagram = new dhx.Diagram("diagram_container", {
     // config options

@@ -12,7 +12,7 @@ description: You can learn about the import method of editor in the documentatio
 
 ### Usage
 
-~~~js
+~~~jsx
 import(diagram: object): void;
 ~~~
 
@@ -22,7 +22,7 @@ import(diagram: object): void;
 
 ### Example
 
-~~~js
+~~~jsx
 // initializing Diagram
 const diagram = new dhx.Diagram("diagram", {
     type: "org"
@@ -39,5 +39,4 @@ editor.import(diagram);
 
 You can load data in any supported data format. See the details in the [](api/data_collection/parse_method.md) article.
 
-**Related samples**: [Diagram editor. Org chart mode. Live editor](https://snippet.dhtmlx.com/bng7ego7)
-
+**Related sample**: [Diagram editor. Org chart mode. Live editor](https://snippet.dhtmlx.com/bng7ego7)

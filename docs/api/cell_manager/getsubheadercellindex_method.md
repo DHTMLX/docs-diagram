@@ -12,7 +12,7 @@ description: You can learn about the getSubHeaderCellIndex method of Cell Manage
 
 ### Usage
 
-~~~js
+~~~jsx
 getSubHeaderCellIndex(subheaderId: string): number;
 ~~~
 
@@ -26,7 +26,7 @@ The method returns the index of the cell. The count of the index starts from 0
 
 ### Example
 
-~~~js
+~~~jsx
 // initialization of the diagram
 const diagram = new dhx.Diagram("diagram_container", {
     // config options

@@ -1,5 +1,5 @@
 ---
-sidebar_label: width!!
+sidebar_label: width
 title: width Property of Shapebar
 description: You can learn about the width property of Shapebar in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
@@ -12,31 +12,31 @@ description: You can learn about the width property of Shapebar in the documenta
 
 ### Usage
 
-~~~js
+~~~jsx
 width?: number;
 ~~~
 
 ### Default config
 
-~~~js
+~~~jsx
 width: 300
 ~~~
 
 ### Example
 
-~~~js
+~~~jsx {7}
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {
+        // shapebar: true, // displays default Shapebar
+        // or configure Shapebar via object
         shapebar: {
-            width: 400, // 300 by default
+            width: 400 // 300 by default
         }
     }
 });
 ~~~
 
-**Related article:** [Shapebar](../../../../../guides/diagram_editor/shapebar/#setting-the-width-of-shapebar)
+**Related article**: [Shapebar](guides/diagram_editor/shapebar.md/#setting-the-width-of-shapebar)
 
-**Change log**: 
-
-The property was added in v6.0
+**Change log**: Added in v6.0

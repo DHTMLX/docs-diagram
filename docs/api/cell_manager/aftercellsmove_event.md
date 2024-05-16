@@ -12,7 +12,7 @@ description: You can learn about the afterCellsMove event of Cell Manager in the
 
 ### Usage
 
-~~~js
+~~~jsx
 afterCellsMove: (swimlaneId: string | number) => void;
 ~~~
 
@@ -24,7 +24,7 @@ The callback of the event takes the following parameter:
 
 ### Example
 
-~~~js {9-11}
+~~~jsx {9-11}
 // initializing Diagram
 const diagram = new dhx.Diagram("diagram_container", {
     type: "default"

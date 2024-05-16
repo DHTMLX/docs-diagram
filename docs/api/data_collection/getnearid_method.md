@@ -12,7 +12,7 @@ description: You can learn about the getNearId method of data collection in the 
 
 ### Usage
 
-~~~js
+~~~jsx
 getNearId(id: string | number): string | number;
 ~~~
 
@@ -26,7 +26,7 @@ The method returns the id of the nearest item
 
 ### Example
 
-~~~js {6}
+~~~jsx {6}
 const diagram = new dhx.Diagram("diagram_container", {
     type: "default"
 });
