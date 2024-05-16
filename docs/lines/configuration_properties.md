@@ -6,7 +6,7 @@ description: You can learn about the Line properties in the documentation of the
 
 # Line properties
 
-:::note 
+:::note
 While specifying color values of the item, use the HEX format.
 :::
 
@@ -101,5 +101,7 @@ const data = [
     }
 ];
 ~~~
+
+**Change log**: The `title` property was deprecated in v6.0
 
 **Related articles**: [Configuring lines](../../lines/)

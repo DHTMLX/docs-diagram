@@ -28,7 +28,7 @@ The new update introduces significant changes in the structure and functionality
         - creation of custom controls ([Example](https://snippet.dhtmlx.com/1p0wemnn?mode=wide))
         - creation of HTML content ([Example](https://snippet.dhtmlx.com/vcnt647v?mode=wide))
 - Diagram Editor. The [Copy manager API](/api/diagram_editor/copymanager/api_overview/) added
-- Diagram Editor. The ability to show/hide [Shapebar](../api/diagram_editor/shapebar/config/show_property/) and [Editbar](../guides/diagram_editor/editbar/)
+- Diagram Editor. The ability to show/hide [Shapebar](../api/diagram_editor/shapebar/config/show_property/), [Editbar](../guides/diagram_editor/editbar/) and [Toolbar](../guides/diagram_editor/toolbar/)
 - Diagram Editor. The [destructor()](../api/diagram_editor/editor/methods/destructor_method/) method is added
 - Diagram Editor. The ability to [hide the connection points](../api/diagram_editor/editor/config/connectionpoints_property/)
 - Diagram Editor. The ability to [hide the resize points](../api/diagram_editor/editor/config/resizepoints_property/)
@@ -74,6 +74,7 @@ The new update introduces significant changes in the structure and functionality
     - The `shapeSections` property of Diagram Editor is deprecated and no longer supported
     - The `gapPreview` property of Diagram Editor is deprecated and no longer supported
     - The `scalePreview` property of Diagram Editor is deprecated and no longer supported
+    - The `title` property of [Line](/diagram/lines/configuration_properties/) data is deprecated and no longer supported
 
 - #### Methods
 
