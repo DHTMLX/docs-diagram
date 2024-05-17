@@ -10,13 +10,13 @@ If the default shapes don't meet your needs, you can create your custom shape.
 
 Let's imagine, you want to create a new `networkCard` shape which should render an image, text, and IP address.
 
-<iframe src="https://snippet.dhtmlx.com/u1xqyo9w?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="550"></iframe>
+<iframe src="https://snippet.dhtmlx.com/u1xqyo9w?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="650"></iframe>
 
 To do that, you need to take the following steps:
 
 1\. Apply the [](../api/diagram/addshape_method.md) method to add a unique name for your shape (*"networkCard"* in our case) and provide a template for it:
 
-~~~js
+~~~jsx
 diagram.addShape("networkCard", {
     template: ({ img, text, ip }) => (`
         <section class="dhx-diagram-demo_network-card">
@@ -26,12 +26,12 @@ diagram.addShape("networkCard", {
         </section>
     `),
     // the default configuration for the shapes with type:"networkCard"
-	defaults: {
-		width: 160,
-		height: 160,
-		img: path.network + "desktop.svg",
-		text: "Network Card",
-		ip: "138.68.41.78"
+    defaults: {
+        width: 160,
+        height: 160,
+        img: path.network + "desktop.svg",
+        text: "Network Card",
+        ip: "138.68.41.78"
     }
 });
 ~~~
@@ -40,9 +40,11 @@ The **defaults** attribute is used to define the default configuration of a "net
 
 2\. Use the unique name of the shape as a value of the **type** attribute inside the shape object while preparing a data set for loading into the diagram.
 
-{{note The data object of a custom shape can contain any [configuration properties](/shapes/configuration_properties/) including custom ones.}} 
+:::note
+The data object of a custom shape can contain any [configuration properties](/shapes/configuration_properties/) including custom ones.
+:::
 
-~~~js
+~~~jsx
 const networkDiagram = [
     {
         "id": 1,

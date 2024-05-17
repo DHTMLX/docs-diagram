@@ -12,7 +12,7 @@ description: You can learn about the afterCollapse event in the documentation of
 
 ### Usage
 
-~~~js
+~~~jsx
 afterCollapse: (
     id: string | number, 
     dir?: string
@@ -28,7 +28,7 @@ The callback of the event takes the following parameters:
 
 ### Example
 
-~~~js {9-11}
+~~~jsx {9-11}
 // initializing Diagram
 const diagram = new dhx.Diagram("diagram_container", {
     type: "default"
@@ -37,13 +37,11 @@ const diagram = new dhx.Diagram("diagram_container", {
 diagram.data.parse(data);
 
 // attaching a handler to the event
-diagram.events.on("afterCollapse", function(id, dir) {
+diagram.events.on("afterCollapse", (id, dir) => {
     console.log(diagram.data.getItem(id).text + " was collapsed", dir);
 });
 ~~~
 
-**Change log**: The **dir** parameter has been added in v3.1
+**Change log**: The **dir** parameter was added in v3.1
 
 **Related article**: [Event handling](../../../guides/event_handling/)
-
-**Related sample**: [Diagram. Org chart mode. Events](https://snippet.dhtmlx.com/l38pct7c)

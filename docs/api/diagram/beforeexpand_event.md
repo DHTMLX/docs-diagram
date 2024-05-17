@@ -12,7 +12,7 @@ description: You can learn about the beforeExpand event in the documentation of 
 
 ### Usage
 
-~~~js
+~~~jsx
 beforeExpand: (
     id: string | number, 
     dir?: string
@@ -32,7 +32,7 @@ Return `false` to block expanding an item; otherwise, `true`
 
 ### Example
 
-~~~js {9-12}
+~~~jsx {9-12}
 // initializing Diagram
 const diagram = new dhx.Diagram("diagram_container", {
     type: "mindmap"
@@ -41,14 +41,12 @@ const diagram = new dhx.Diagram("diagram_container", {
 diagram.data.parse(data);
 
 // attaching a handler to the event
-diagram.events.on("beforeExpand", function(id, dir) {
+diagram.events.on("beforeExpand", (id, dir) => {
     console.log("Expanding " + diagram.data.getItem(id).text, dir);
     return true;
 });
 ~~~
 
-**Change log**: The **dir** parameter has been added in v3.1
+**Change log**: The **dir** parameter was added in v3.1
 
 **Related article**: [Event handling](../../../guides/event_handling/)
-
-**Related sample**: [Diagram. Org chart mode. Events](https://snippet.dhtmlx.com/l38pct7c)

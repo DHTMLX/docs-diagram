@@ -12,7 +12,7 @@ description: You can learn about the beforeRemove event of data collection in th
 
 ### Usage
 
-~~~js
+~~~jsx
 beforeRemove: (removedItem: any) => boolean | void;
 ~~~
 
@@ -28,7 +28,7 @@ Return `false` to block removing an item from a data collection; otherwise, `tru
 
 ### Example
 
-~~~js {9-12}
+~~~jsx {9-12}
 // initializing Diagram
 const diagram = new dhx.Diagram("diagram_container", {
     type: "default"
@@ -37,8 +37,8 @@ const diagram = new dhx.Diagram("diagram_container", {
 diagram.data.parse(data);
 
 // attaching a handler to the event
-diagram.events.on("beforeRemove", function(newItem){
-	console.log("beforeRemove "+ item);
+diagram.events.on("beforeRemove", (newItem) => {
+    console.log("beforeRemove "+ item);
     return true;
 });
 ~~~

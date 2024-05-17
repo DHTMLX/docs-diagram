@@ -12,7 +12,7 @@ description: You can learn about the getScrollState method in the documentation 
 
 ### Usage
 
-~~~jsx 
+~~~jsx
 getScrollState(): object;
 ~~~
 

@@ -8,8 +8,9 @@ description: You can explore the Selection methods in the documentation of the D
 
 | Name                                 | Description                                 |
 | :----------------------------------- | :------------------------------------------ |
-| [](../selection/add_method.md)      | @getshort(../selection/add_method.md)      |
-| [](../selection/getid_method.md)    | @getshort(../selection/getid_method.md)    |
-| [](../selection/getitem_method.md)  | @getshort(../selection/getitem_method.md)  |
-| [](../selection/getsubid_method.md) | @getshort(../selection/getsubid_method.md) |
-| [](../selection/remove_method.md)   | @getshort(../selection/remove_method.md)   |
+| [](../selection/add_method.md)       | @getshort(../selection/add_method.md)       |
+| [](../selection/clear_method.md)     | @getshort(../selection/clear_method.md)     |
+| [](../selection/getids_method.md)    | @getshort(../selection/getids_method.md)    |
+| [](../selection/getitem_method.md)   | @getshort(../selection/getitem_method.md)   |
+| [](../selection/includes_method.md)  | @getshort(../selection/includes_method.md)  |
+| [](../selection/remove_method.md)    | @getshort(../selection/remove_method.md)    |

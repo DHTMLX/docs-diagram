@@ -1,16 +1,18 @@
 ---
-sidebar_label: Group properties
+sidebar_label: Group properties 
 title: Group Properties
 description: You can learn about the Group properties in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
 
 # Group properties
 
-{{note While specifying color values of the item, you can use the following formats: HEX, RGBA, RGB, HSL, or HSLA.}}
+:::note 
+While specifying color values of the item, use the HEX format.
+:::
 
 ### Usage
 
-~~~js
+~~~jsx
 const data = [
     // group object
     {
@@ -31,7 +33,8 @@ const data = [
             partiallyFill?: string
         },
         exitArea?: {
-            groupBehavior?: "unbound" | "boundNoBorderExtension" | "boundBorderExtension", // "unbound" by default
+            // "unbound" by default
+            groupBehavior?: "unbound" | "boundNoBorderExtension" | "boundBorderExtension", 
             padding?: number
         },
         header?: {
@@ -49,7 +52,7 @@ const data = [
             position?: "top" | "bottom" | "left" | "right", // "top" by default
             editable?: boolean, // true by default
             closable?: boolean, // false by default
-            enable?: boolean, // true by default
+            enable?: boolean // true by default
         },
         [key: string]?: any
     },
@@ -68,10 +71,10 @@ A group object contains a list of configuration properties which allow you to co
 - `width` - (required) the width of the group, including its header (*position: left/right*)
 - `height` - (required) the height of the group, including its header (*position: top/bottom*)
 - `groupChildren` - (optional) an array with ids of the first-level child items of the group
-- `open` - (optional) - defines whether the group is initialized in the expanded (*true*, default) or collapsed(*false*) state<br>
+- `open` - (optional) - defines whether the group is initialized in the expanded (*true*, default) or collapsed (*false*) state
 :::tip
 The **open** property works when a **header** is initialized with the **closable** attribute
-:::<br> 
+::: 
 - `fixed` - (optional) enables/disables the ability to move and resize the group; *false* by default
 - `style` - (optional) an object with the style settings of the group. The object can contain the following attributes:
     - `strokeWidth` - (optional) the width of the group border, 1 by default
@@ -83,11 +86,11 @@ The **open** property works when a **header** is initialized with the **closable
     - `groupBehavior` - (optional) the behavior of the child item of the group when the user is moving it out of the group: 
         - *"unbound"* (by default) - the user can move an item into or outside the group
         - *"boundNoBorderExtension"* - the user can move an item into the group but cannot drag the item outside the group if the item has been dropped inside the group. The item won't expand the borders of the group when trying to drag the item outside the group
-        - *"boundBorderExtension"* - the user can move an item into the group but cannot drag the item outside the group if the item has been dropped inside the group. The item will expand the borders of the group when trying to drag the item outside the group <br>**Related sample:** [Diagram editor. Default mode. Groups and shapes interaction](https://snippet.dhtmlx.com/4gxy38ek)
-    - `padding` - (optional) defines the padding between the group and the edge of the item when moving the item inside the group <br> 
+        - *"boundBorderExtension"* - the user can move an item into the group but cannot drag the item outside the group if the item has been dropped inside the group. The item will expand the borders of the group when trying to drag the item outside the group <br>**Related sample**: [Diagram editor. Default mode. Groups and shapes interaction](https://snippet.dhtmlx.com/4gxy38ek)
+    - `padding` - (optional) defines the padding between the group and the edge of the item when moving the item inside the group 
     :::tip
     The **padding** attribute is available if *groupBehavior: "boundNoBorderExtension" | "boundBorderExtension"*
-    :::<br>
+    :::
 - `header` - (optional) an object with configuration attributes of the header of the group. The attributes are:
     - `height` - (optional) the height of the header, 40 by default
     - `fill` - (optional) the background color of the header
@@ -103,12 +106,12 @@ The **open** property works when a **header** is initialized with the **closable
     - `position` - (optional) the positioning of the group header: "top" (default) | "bottom" | "left" | "right"
     - `editable` - (optional) enables/disables the ability to edit the text of the header by double-clicking on it; *true* by default
     - `closable` - (optional) shows/hides an icon intended to expand/collapse a group; *false* by default
-    - `enable` - (optional) shows/hides the header of the group; *true* by default <br>**Related sample:** [Diagram. Default mode. Group. Header position and text settings](https://snippet.dhtmlx.com/6hunrja8)
+    - `enable` - (optional) shows/hides the header of the group; *true* by default 
 - `key` - (optional) your own property with your own logic to be implemented under the hood
 
 ### Example
 
-~~~js
+~~~jsx
 const data = [    
     {
         type: "$group",
@@ -126,12 +129,12 @@ const data = [
         },
       	// the child items of the group
         groupChildren: [1.1, 1.2],
-        open: false,
+        open: false
     },
   	// configuring shapes to put into the group
     { type: "rectangle", id: 1.1, x: 50, y: 75, text: "Shape 1.1" },
-    { type: "rectangle", id: 1.2, x: 200, y: 75, text: "Shape 1.2" },
+    { type: "rectangle", id: 1.2, x: 200, y: 75, text: "Shape 1.2" }
 ];
 ~~~
 
-**Related articles:** [Configuring groups](../../groups/)
+**Related articles**: [Configuring groups](../../groups/)

@@ -12,23 +12,23 @@ description: You can learn about the afterUnSelect event in the documentation of
 
 ### Usage
 
-~~~js
-afterUnSelect: (
+~~~jsx
+"afterUnSelect": ({
     id: string | number, 
-    subId?: string | number | undefined
-) => void;
+    batch: (string | number)[]
+}) => void;
 ~~~
 
 ### Parameters
 
-The callback of the event takes the following parameters:
+The callback of the event is called with an object with the following parameters:
 
-- `id` - (required) the item id
-- `subId` - (optional) the id of a subheader of a swimlane or a text element of a line
+- `id` - the id of the unselected item 
+- `batch` - the list of unselected items
 
 ### Example
 
-~~~js {10-12}
+~~~jsx {9-12}
 // initializing Diagram
 const diagram = new dhx.Diagram("diagram_container", { 
     type: "org", 
@@ -38,16 +38,30 @@ const diagram = new dhx.Diagram("diagram_container", {
 diagram.data.parse(data);
 
 // attaching a handler to the event
-diagram.events.on("AfterUnSelect", function (id) {
-	console.log(diagram.data.getItem(id).text + " was unselected");
+diagram.events.on("afterUnSelect", ({ id }) => {
+    console.log(id + " was unselected");
 });
 ~~~
 
-**Change log**: The **subId** parameter has been added in v4.1
+Here's an example of attaching an event handler to the event for the Diagram Editor:
 
-**Related sample**: [Diagram. Org chart mode. Events](https://snippet.dhtmlx.com/l38pct7c)
+~~~jsx {8-11}
+// initializing Diagram editor
+const editor = new dhx.DiagramEditor("editor_container", {  
+    // config options
+});
+// loading data into the editor
+editor.parse(data);
+
+// attaching a handler to the event
+editor.diagram.events.on("afterUnSelect", ({ id }) => {
+    console.log(id + " was unselected");
+});
+~~~
+
+**Change log**: Updated in v6.0
 
 **Related articles**:  
+
 - [diagram.config.select](../../../api/diagram/select_property/)
 - [Selecting items](../../../guides/manipulating_items/#selecting-items)
-

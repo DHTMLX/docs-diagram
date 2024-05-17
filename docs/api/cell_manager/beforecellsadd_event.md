@@ -12,7 +12,7 @@ description: You can learn about the beforeCellsAdd event of Cell Manager in the
 
 ### Usage
 
-~~~js
+~~~jsx
 beforeCellsAdd: (swimlaneId: string | number) => boolean | void;
 ~~~
 
@@ -28,7 +28,7 @@ Return `false` to prevent adding of new cells, otherwise `true`
 
 ### Example
 
-~~~js {9-12}
+~~~jsx {9-12}
 // initializing Diagram
 const diagram = new dhx.Diagram("diagram_container", {
     type: "default"

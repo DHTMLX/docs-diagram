@@ -12,7 +12,7 @@ description: You can learn about the findAll method of data collection in the do
 
 ### Usage
 
-~~~js
+~~~jsx
 findAll(rule: object): array;
 
 // or
@@ -34,7 +34,7 @@ The method returns an array of matching item objects
 
 ### Example
 
-~~~js {7,10-14}
+~~~jsx {7,10-14}
 const diagram = new dhx.Diagram("diagram_container", {
     type: "default"
 });
@@ -45,9 +45,9 @@ const shapes = diagram.data.findAll({ by: "text", match: "Manager" });
 
 //searching for shapes by the function
 const shapes = diagram.data.findAll(function (shapes) {
-	if( shapes.text === "Manager" || shapes.text === "Marketer" ){
-		return true
-	}
+    if( shapes.text === "Manager" || shapes.text === "Marketer" ){
+        return true;
+    }
 });
 ~~~
 

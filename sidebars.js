@@ -8,7 +8,6 @@ module.exports = {
       type: "doc",
       id: "editor_overview"
     },
-
     // News
     {
       type: "category",
@@ -26,7 +25,6 @@ module.exports = {
         "migration",
       ],
     },
-
     // API
     {
       type: "category",
@@ -42,7 +40,6 @@ module.exports = {
         image: '/img/docusaurus.png',
       },
       items: [
-
         // Diagram API
         {
           type: "category",
@@ -129,7 +126,6 @@ module.exports = {
               	"api/diagram/defaultshapetype_property",
               	"api/diagram/exportstyles_property",
               	"api/diagram/lineconfig_property",
-              	"api/diagram/linegap_property",
               	"api/diagram/margin_property",
               	"api/diagram/scale_property",
               	"api/diagram/select_property",
@@ -140,136 +136,388 @@ module.exports = {
             },
           ]
         },
-
-        // Editor API
+        // Diagram Editor API
         {
           type: "category",
           label: "Diagram Editor API",
           collapsed: true,
           link: {
-            type: 'doc',
-            id: "api/editor/api_overview",
+            type: 'generated-index',
+            title: "Diagram Editor API",
           },
           items: [
+            // Editor API / Common API (looks better)
             {
               type: "category",
-              label: "Editor methods",
+              label: "Editor API",
               collapsed: true,
               link: {
                 type: 'doc',
-                id: "api/overview/editor_methods_overview",
+                id: "api/diagram_editor/editor/api_overview",
               },
               items: [
-                "api/editor/import_method",
-                "api/editor/paint_method",
-                "api/editor/parse_method",
-                "api/editor/serialize_method",
-                "api/editor/setviewmode_method",
-                "api/editor/zoomin_method",
-                "api/editor/zoomout_method",
-              ],
-            },
-            {
-              type: "category",
-              label: "Editor events",
-              collapsed: true,
-              link: {
-                type: 'doc',
-                id: "api/overview/editor_events_overview",
-              },
-              items: [
-                "api/editor/aftergroupmove_event",
-                "api/editor/afteritemcatch_event",
-                "api/editor/afteritemmove_event",
-                "api/editor/afterlinetitlemove_event",
-                "api/editor/aftershapeiconclick_event",
-                "api/editor/aftershapemove_event",
-                "api/editor/applybutton_event",
-                "api/editor/autolayout_event",
-                "api/editor/beforegroupmove_event",
-                "api/editor/beforeitemcatch_event",
-                "api/editor/beforeitemmove_event",
-                "api/editor/beforelinetitlemove_event",
-                "api/editor/beforeshapeiconclick_event",
-                "api/editor/beforeshapemove_event",
-                "api/editor/changegridstep_event",
-                "api/editor/exportdata_event",
-                "api/editor/groupmoveend_event",
-                "api/editor/importdata_event",
-                "api/editor/itemmoveend_event",
-                "api/editor/itemtarget_event",
-                "api/editor/linetitlemoveend_event",
-                "api/editor/resetbutton_event",
-                "api/editor/shapemoveend_event",
-                "api/editor/shaperesize_event",
-                "api/editor/visibility_event",
-                "api/editor/zoomin_event",
-                "api/editor/zoomout_event",
+                // Editor Methods
+                {
+                  type: "category",
+                  label: "Editor methods",
+                  collapsed: true,
+                  link: {
+                     type: 'doc',
+                     id: "api/diagram_editor/editor/methods/overview",
+                  },
+                  items: [
+                    "api/diagram_editor/editor/methods/destructor_method",
+                    "api/diagram_editor/editor/methods/import_method",
+                    "api/diagram_editor/editor/methods/paint_method",
+                    "api/diagram_editor/editor/methods/parse_method",
+                    "api/diagram_editor/editor/methods/serialize_method",
+                    "api/diagram_editor/editor/methods/zoomin_method",
+                    "api/diagram_editor/editor/methods/zoomout_method",
+                  ],
+                },
+                // Editor Events
+                {
+                  type: "category",
+                  label: "Editor events",
+                  collapsed: true,
+                  link: {
+                     type: 'doc',
+                     id: "api/diagram_editor/editor/events/overview",
+                  },
+                  items: [
+                    "api/diagram_editor/editor/events/aftergroupmove_event",
+                    "api/diagram_editor/editor/events/afteritemcatch_event",
+                    "api/diagram_editor/editor/events/afteritemmove_event",
+                    "api/diagram_editor/editor/events/afterlinetitlemove_event",
+                    "api/diagram_editor/editor/events/aftershapeiconclick_event",
+                    "api/diagram_editor/editor/events/aftershapemove_event",
+                    "api/diagram_editor/editor/events/beforegroupmove_event",
+                    "api/diagram_editor/editor/events/beforeitemcatch_event",
+                    "api/diagram_editor/editor/events/beforeitemmove_event",
+                    "api/diagram_editor/editor/events/beforelinetitlemove_event",
+                    "api/diagram_editor/editor/events/beforeshapeiconclick_event",
+                    "api/diagram_editor/editor/events/beforeshapemove_event",
+                    "api/diagram_editor/editor/events/groupmoveend_event",
+                    "api/diagram_editor/editor/events/itemmoveend_event",
+                    "api/diagram_editor/editor/events/itemtarget_event",
+                    "api/diagram_editor/editor/events/linetitlemoveend_event",
+                    "api/diagram_editor/editor/events/shapemoveend_event",
+                    "api/diagram_editor/editor/events/shaperesize_event",
+                    "api/diagram_editor/editor/events/zoomin_event",
+                    "api/diagram_editor/editor/events/zoomout_event",
+                  ]
+                },
+                // Editor Properties
+                {
+                  type: "category",
+                  label: "Editor properties",
+                  collapsed: true,
+                  link: {
+                     type: 'doc',
+                     id: "api/diagram_editor/editor/config/overview",
+                  },
+                  items: [
+                    "api/diagram_editor/editor/config/autoplacement_property",
+                    "api/diagram_editor/editor/config/connectionpoints_property", // New
+                    "api/diagram_editor/editor/config/defaults_property",
+                    "api/diagram_editor/editor/config/grid_property",
+                    "api/diagram_editor/editor/config/gridstep_property",
+                    "api/diagram_editor/editor/config/itemsdraggable_property",
+                    "api/diagram_editor/editor/config/lineconfig_property",
+                    "api/diagram_editor/editor/config/magnetic_property",
+                    "api/diagram_editor/editor/config/resizepoints_property", // New
+                    "api/diagram_editor/editor/config/scale_property",
+                    "api/diagram_editor/editor/config/shapetoolbar_property",
+                    "api/diagram_editor/editor/config/shapetype_property",
+                    "api/diagram_editor/editor/config/type_property",
+                    "api/diagram_editor/editor/config/view_property", // New
+                  ]
+                },
               ]
             },
+            // History Manager API
             {
               type: "category",
-              label: "Editor properties",
+              label: "History manager API",
               collapsed: true,
               link: {
                 type: 'doc',
-                id: "api/overview/editor_properties_overview",
+                id: "api/diagram_editor/historymanager/api_overview",
               },
               items: [
-                "api/editor/autoplacement_property",
-                "api/editor/controls_property",
-                "api/editor/defaults_property",
-                "api/editor/editmode_property",
-                "api/editor/gappreview_property",
-                "api/editor/gridstep_property",
-                "api/editor/itemsdraggable_property",
-				        "api/editor/lineconfig_property",
-                "api/editor/linegap_property",
-                "api/editor/magnetic_property",
-                "api/editor/reservedwidth_property",
-                "api/editor/scale_property",
-                "api/editor/scalepreview_property",
-                "api/editor/shapebarwidth_property",
-                "api/editor/shapesections_property",
-                "api/editor/shapetoolbar_property",
-                "api/editor/shapetype_property",
-                "api/editor/type_property",
+                // History Manager Methods
+                {
+                  type: "category",
+                  label: "History manager methods",
+                  collapsed: true,
+                  link: {
+                    type: 'doc',
+                    id: "api/diagram_editor/historymanager/methods/overview",
+                  },
+                  items: [
+                    "api/diagram_editor/historymanager/methods/add_method",
+                    "api/diagram_editor/historymanager/methods/disable_method",
+                    "api/diagram_editor/historymanager/methods/enable_method",
+                    "api/diagram_editor/historymanager/methods/isredo_method",
+                    "api/diagram_editor/historymanager/methods/isundo_method",
+                    "api/diagram_editor/historymanager/methods/redo_method",
+                    "api/diagram_editor/historymanager/methods/reset_method",
+                    "api/diagram_editor/historymanager/methods/undo_method",
+                  ],
+                },
+                // History Manager Properties
+                {
+                  type: "category",
+                  label: "History manager properties",
+                  collapsed: true,
+                  link: {
+                    type: 'doc',
+                    id: "api/diagram_editor/historymanager/config/overview",
+                  },
+                  items: [
+                    "api/diagram_editor/historymanager/config/savedelay_property",
+                  ]
+                },
               ]
             },
+            // Copy Manager API
             {
               type: "category",
-              label: "HistoryManager methods",
+              label: "Copy manager API",
               collapsed: true,
               link: {
                 type: 'doc',
-                id: "api/overview/historymanager_methods_overview",
+                id: "api/diagram_editor/copymanager/api_overview",
               },
               items: [
-                "api/historymanager/add_method",
-                "api/historymanager/disable_method",
-                "api/historymanager/enable_method",
-                "api/historymanager/isredo_method",
-                "api/historymanager/redo_method",
-                "api/historymanager/reset_method",
-                "api/historymanager/undo_method",
+                // Copy Manager Methods
+                {
+                  type: "category",
+                  label: "Copy manager methods",
+                  collapsed: true,
+                  link: {
+                    type: 'doc',
+                    id: "api/diagram_editor/copymanager/methods/overview",
+                  },
+                  items: [
+                    "api/diagram_editor/copymanager/methods/copy_method",
+                    "api/diagram_editor/copymanager/methods/copystyles_method",
+                    "api/diagram_editor/copymanager/methods/paste_method",
+                    "api/diagram_editor/copymanager/methods/pastestyles_method",
+                  ],
+                },
               ]
             },
+            // View API
             {
               type: "category",
-              label: "HistoryManager properties",
+              label: "View API",
               collapsed: true,
               link: {
                 type: 'doc',
-                id: "api/overview/historymanager_properties_overview",
+                id: "api/diagram_editor/view/api_overview",
               },
               items: [
-                "api/historymanager/disabled_property",
-                "api/historymanager/savedelay_property",
+                // View Methods
+                {
+                  type: "category",
+                  label: "View methods",
+                  collapsed: true,
+                  link: {
+                    type: 'doc',
+                    id: "api/diagram_editor/view/methods/overview",
+                  },
+                  items: [
+                    "api/diagram_editor/view/methods/hide_method", // New
+                    "api/diagram_editor/view/methods/isvisible_method", // New
+                    "api/diagram_editor/view/methods/show_method", // New
+                  ],
+                },
+                // View Events
+                {
+                  type: "category",
+                  label: "View events",
+                  collapsed: true,
+                  link: {
+                    type: 'doc',
+                    id: "api/diagram_editor/view/events/overview",
+                  },
+                  items: [
+                    "api/diagram_editor/view/events/afterhide_event", // New
+                    "api/diagram_editor/view/events/aftershow_event", // New
+                    "api/diagram_editor/view/events/beforehide_event", // New
+                    "api/diagram_editor/view/events/beforeshow_event", // New
+                  ],
+                },
+              ]
+            },
+            // Toolbar API
+            {
+              type: "category",
+              label: "Toolbar API",
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id:"api/diagram_editor/toolbar/api_overview"
+              },
+              items: [
+                // Toolbar Methods
+                {
+                  type: "category",
+                  label: "Toolbar methods",
+                  collapsible: true,
+					        collapsed: true,
+                  link: {                  
+                    type: 'doc',
+						        id: "api/diagram_editor/toolbar/methods/overview" // New
+                  },
+                  items: [
+                    "api/diagram_editor/toolbar/methods/parse_method", // New
+                    "api/diagram_editor/toolbar/methods/toolbar_methods", // New
+                    "api/diagram_editor/toolbar/methods/treecollection_methods", // New
+                  ],
+                },
+                // Toolbar Properties
+                {
+                  type: "category",
+                  label: "Toolbar properties",
+                  collapsed: true,
+                  link: {
+                    type: 'generated-index',
+                    title: "Toolbar properties"
+                  },
+                  items: [
+                    "api/diagram_editor/toolbar/config/css_property", // New
+                    "api/diagram_editor/toolbar/config/items_property", // New
+                    "api/diagram_editor/toolbar/config/navigationtype_property", // New
+                  ],
+                },
+                // Toolbar Events
+                {
+                  type: "category",
+                  label: "Toolbar events",
+                  collapsed: true,
+                  link: {
+                    type: 'doc',
+						        id: "api/diagram_editor/toolbar/events/overview" // New
+                  },
+                  items: [
+                    "api/diagram_editor/toolbar/events/toolbar_events", // New
+                    "api/diagram_editor/toolbar/events/treecollection_events", // New
+                  ],
+                },
+              ]
+            },
+            // Editbar API
+            {
+              type: "category",
+              label: "Editbar API",
+              collapsed: true,
+              link: {
+                type: 'doc',
+                id:"api/diagram_editor/editbar/api_overview"
+              },
+              items: [
+                // Editbar Properties
+                {
+                  type: "category",
+                  label: "Editbar properties",
+                  collapsed: true,
+                  link: {
+                    type: 'generated-index',
+                    title: "Editbar properties"
+                  },
+                  items: [
+                    "api/diagram_editor/editbar/config/show_property",
+                    "api/diagram_editor/editbar/config/css_property",
+                    "api/diagram_editor/editbar/config/width_property",
+                    "api/diagram_editor/editbar/config/controls_property",
+                    "api/diagram_editor/editbar/config/properties_property"
+                  ],
+                },
+                {
+                  type: "category",
+                  label: "Basic controls",
+                  link: {
+                    type: "doc",
+                    id: "api/diagram_editor/editbar/basic_controls_overview"
+                  },
+                  items:[
+                    "api/diagram_editor/editbar/basic_controls/avatar", // New
+                    "api/diagram_editor/editbar/basic_controls/button", // New
+                    "api/diagram_editor/editbar/basic_controls/checkbox", // New
+                    "api/diagram_editor/editbar/basic_controls/checkboxgroup", // New
+                    "api/diagram_editor/editbar/basic_controls/colorpicker", // New
+                    "api/diagram_editor/editbar/basic_controls/combo", // New
+                    "api/diagram_editor/editbar/basic_controls/container", // New
+                    "api/diagram_editor/editbar/basic_controls/datepicker", // New
+                    "api/diagram_editor/editbar/basic_controls/fieldset", // New
+                    "api/diagram_editor/editbar/basic_controls/input", // New
+                    "api/diagram_editor/editbar/basic_controls/radiogroup", // New
+                    "api/diagram_editor/editbar/basic_controls/select", // New
+                    "api/diagram_editor/editbar/basic_controls/slider", // New
+                    "api/diagram_editor/editbar/basic_controls/spacer", // New
+                    "api/diagram_editor/editbar/basic_controls/textarea", // New
+                    "api/diagram_editor/editbar/basic_controls/timepicker", // New
+                    "api/diagram_editor/editbar/basic_controls/toggle", // New
+                    "api/diagram_editor/editbar/basic_controls/togglegroup" // New
+                  ]
+                },
+                {
+                  type: "category",
+                  label: "Complex controls",
+                  link: {
+                    type: "doc",
+                    id: "api/diagram_editor/editbar/complex_controls_overview"
+                  },
+                  items:[
+                    "api/diagram_editor/editbar/complex_controls/arrange", // New
+                    "api/diagram_editor/editbar/complex_controls/border", // New
+                    "api/diagram_editor/editbar/complex_controls/gridstep", // New
+                    "api/diagram_editor/editbar/complex_controls/header", // New
+                    "api/diagram_editor/editbar/complex_controls/headercommon", // New
+                    "api/diagram_editor/editbar/complex_controls/headerposition", // New
+                    "api/diagram_editor/editbar/complex_controls/lineshape", // New
+                    "api/diagram_editor/editbar/complex_controls/pointerview", // New
+                    "api/diagram_editor/editbar/complex_controls/position", // New
+                    "api/diagram_editor/editbar/complex_controls/size", // New
+                    "api/diagram_editor/editbar/complex_controls/textalign", // New
+                    "api/diagram_editor/editbar/complex_controls/textstyle" // New
+                  ]
+                }
+              ]
+            },
+            // Shapebar API
+            {
+              type: "category",
+              label: "Shapebar API",
+              collapsed: true,
+              link: {                  
+                type: 'doc',
+                id: "api/diagram_editor/shapebar/api_overview" 
+              },
+              items: [
+                // Shapebar Properties
+                {
+                  type: "category",
+                  label: "Shapebar properties",
+                  collapsed: true,
+                  link: {
+                    type: 'generated-index',
+                    title: "Shapebar properties"
+                  },
+                  items: [
+                    "api/diagram_editor/shapebar/config/css_property",
+                    "api/diagram_editor/shapebar/config/preview_property",
+                    "api/diagram_editor/shapebar/config/sections_property",
+                    "api/diagram_editor/shapebar/config/show_property",
+                    "api/diagram_editor/shapebar/config/width_property"
+                  ]
+                }
               ]
             }
           ]
         },
-
         // Items API
         {
           type: "category",
@@ -285,11 +533,11 @@ module.exports = {
           items: [
             "shapes/configuration_properties",
             "lines/configuration_properties",
+            "line_titles/configuration_properties",
             "groups/configuration_properties",
             "swimlanes/configuration_properties",
           ],
         },
-      
         // Common API
         {
           type: "category",
@@ -355,7 +603,6 @@ module.exports = {
                 },
               ]
             },
-      
             // Data collection API
             {
               type: "category",
@@ -382,6 +629,7 @@ module.exports = {
                     "api/data_collection/filter_method",
                     "api/data_collection/find_method",
                     "api/data_collection/findall_method",
+                    "api/data_collection/getfilters_method",
                     "api/data_collection/getid_method",
                     "api/data_collection/getindex_method",
                     "api/data_collection/getitem_method",
@@ -394,6 +642,7 @@ module.exports = {
                     "api/data_collection/parse_method",
                     "api/data_collection/remove_method",
                     "api/data_collection/removeall_method",
+                    "api/data_collection/resetfilter_method",
                     "api/data_collection/serialize_method",
                     "api/data_collection/update_method",
                   ],
@@ -411,13 +660,13 @@ module.exports = {
                     "api/data_collection/beforeadd_event",
                     "api/data_collection/beforeremove_event",
                     "api/data_collection/change_event",
+                    "api/data_collection/filter_event",
                     "api/data_collection/load_event",
                     
                   ],
                 },
               ]
             },
-      
             // Export
             {
               type: "category",
@@ -432,7 +681,6 @@ module.exports = {
                 "api/export/png_method", 
               ],
             },
-
             // Inline editor 
             {
               type: "category",
@@ -451,7 +699,6 @@ module.exports = {
                 "api/inline_editor/beforeeditoropen_event", 
               ],
             },
-      
             // Selection
             {
               type: "category",
@@ -471,10 +718,11 @@ module.exports = {
                   },
                   items: [
                     "api/selection/add_method",
-                    "api/selection/getid_method",
+                    "api/selection/clear_method",
+                    "api/selection/getids_method",
                     "api/selection/getitem_method",
-                    "api/selection/getsubid_method",
-                    "api/selection/remove_method",
+                    "api/selection/includes_method",
+                    "api/selection/remove_method"
                   ],
                 },
                 {
@@ -497,7 +745,6 @@ module.exports = {
         },
       ]
     },
-
     // Guides
     {
       type: "category",
@@ -553,10 +800,12 @@ module.exports = {
             },
             // Lines
             'lines/index',
+            // LineTitles
+            'line_titles/index',
             // Groups
             "groups/index",
             // Swimlanes
-            "swimlanes/index",
+            "swimlanes/index"
           ]
         },
         {
@@ -573,10 +822,11 @@ module.exports = {
           items: [
             "guides/diagram_editor/initialization",
             "guides/diagram_editor/toolbar",
-            "guides/diagram_editor/left_panel",
+            "guides/diagram_editor/shapebar",
             "guides/diagram_editor/grid_area",
-            "guides/diagram_editor/right_panel",
-          ],
+            "guides/diagram_editor/editbar",
+            "guides/diagram_editor/hot_keys" // New
+          ]
         },
         "guides/loading_data",
         "guides/manipulating_items",
@@ -585,11 +835,38 @@ module.exports = {
         "guides/data_export",
         "guides/event_handling",
         "guides/localization",
+        {
+          type: "category",
+          label: "Themes",
+          link: {
+            type: 'generated-index',
+            title: "Themes",
+            keywords: ['themes'],
+            image: '/img/docusaurus.png',
+          },
+          items: [
+            "guides/themes/themes",
+            "guides/themes/base_themes_configuration",
+            "guides/themes/custom_theme",
+          ],
+        },
+        {
+          type: "category",
+          label: "Integrations",
+          link: {
+            type: 'generated-index',
+            title: "Integrations",
+            keywords: ['angular', 'react', 'vue'],
+            image: '/img/docusaurus.png',
+          },
+          items: [
+            "guides/integrations/angular_integration",
+            "guides/integrations/react_integration",
+            "guides/integrations/vue_integration",
+          ],
+        },
         "guides/touch_support",
-        "guides/using_typescript",
-        "guides/angular_integration",
-        "guides/react_integration",
-        "guides/vue_integration",
+        "guides/using_typescript",    
       ]
     },
   ]

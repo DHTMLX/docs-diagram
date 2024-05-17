@@ -12,7 +12,7 @@ description: You can learn about the getCellIndex method of Cell Manager in the 
 
 ### Usage
 
-~~~js
+~~~jsx
 getCellIndex(
     cellId: string | number, 
     type: string // "row" | "col"
@@ -30,7 +30,7 @@ The method returns the index of the cell. The count of the index starts from 0
 
 ### Example
 
-~~~js
+~~~jsx
 // initialization of the diagram
 const diagram = new dhx.Diagram("diagram_container", {
     // config options

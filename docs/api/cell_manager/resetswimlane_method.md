@@ -12,13 +12,13 @@ description: You can learn about the resetSwimlane method of Cell Manager in the
 
 ### Usage
 
-~~~js
+~~~jsx
 resetSwimlane(): void;
 ~~~
 
 ### Example
 
-~~~js
+~~~jsx
 // initialization of the diagram
 const diagram = new dhx.Diagram("diagram_container", {
     // config options

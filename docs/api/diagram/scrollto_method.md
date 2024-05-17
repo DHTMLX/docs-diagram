@@ -30,4 +30,4 @@ diagram.data.parse(data);
 diagram.scrollTo(100, 80);
 ~~~
 
-**Related articles:** [Scrolling Diagram](../../../guides/diagram/scrolling_diagram/)
+**Related articles**: [Scrolling Diagram](../../../guides/diagram/scrolling_diagram/)

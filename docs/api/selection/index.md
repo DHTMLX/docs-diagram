@@ -6,16 +6,17 @@ description: You can learn about the selection overview in the documentation of 
 
 # Selection overview
 
-A set of API that you can use when working with selection of the Diagram items. The API is available both in the diagram and in the editor.
+A set of APIs that you can use when working with selection of the Diagram items. The API is available both in the diagram and in the editor.
 
 ## Methods
 
 | Name                                 | Description                                 |
 | :----------------------------------- | :------------------------------------------ |
 | [](api/selection/add_method.md)      | @getshort(api/selection/add_method.md)      |
-| [](api/selection/getid_method.md)    | @getshort(api/selection/getid_method.md)    |
+| [](api/selection/clear_method.md)    | @getshort(api/selection/clear_method.md)    |
+| [](api/selection/getids_method.md)   | @getshort(api/selection/getids_method.md)   |
 | [](api/selection/getitem_method.md)  | @getshort(api/selection/getitem_method.md)  |
-| [](api/selection/getsubid_method.md) | @getshort(api/selection/getsubid_method.md) |
+| [](api/selection/includes_method.md) | @getshort(api/selection/includes_method.md) |
 | [](api/selection/remove_method.md)   | @getshort(api/selection/remove_method.md)   |
 
 ## Events

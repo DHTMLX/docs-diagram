@@ -12,7 +12,7 @@ description: You can learn about the validation method of Cell Manager in the do
 
 ### Usage
 
-~~~js
+~~~jsx
 validation(
     cellIndex: number, 
     dir: string, // "up" | "down" | "left" | "right"
@@ -32,7 +32,7 @@ The method returns `true` if the cell is validated, otherwise `false`
 
 ### Example
 
-~~~js
+~~~jsx
 // initialization of the diagram
 const diagram = new dhx.Diagram("diagram_container", {
     // config options

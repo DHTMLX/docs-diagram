@@ -12,7 +12,7 @@ description: You can learn about the getSubHeaderType method of Cell Manager in 
 
 ### Usage
 
-~~~js
+~~~jsx
 getSubHeaderType(subheaderId: string): "row" | "col" | undefined;
 ~~~
 
@@ -26,7 +26,7 @@ The method returns the type of the subheader of the swimlane: "row" | "col" | un
 
 ### Example
 
-~~~js
+~~~jsx
 // initialization of the diagram
 const diagram = new dhx.Diagram("diagram_container", {
     // config options

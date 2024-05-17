@@ -12,7 +12,7 @@ description: You can learn about the afterAdd event of data collection in the do
 
 ### Usage
 
-~~~js
+~~~jsx
 afterAdd: (newItem: object) => void;
 ~~~
 
@@ -24,7 +24,7 @@ The callback of the event takes the following parameter:
 
 ### Example
 
-~~~js {9-11}
+~~~jsx {9-11}
 // initializing Diagram
 const diagram = new dhx.Diagram("diagram_container", {
     type: "default"
@@ -33,8 +33,8 @@ const diagram = new dhx.Diagram("diagram_container", {
 diagram.data.parse(data);
 
 // attaching a handler to the event
-diagram.events.on("afterAdd", function(newItem){
-	console.log("A new item is added");
+diagram.events.on("afterAdd", (newItem) => {
+    console.log("A new item is added");
 });
 ~~~
 

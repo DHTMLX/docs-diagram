@@ -12,7 +12,7 @@ description: You can learn about the getSubHeaderCellId method of Cell Manager i
 
 ### Usage
 
-~~~js
+~~~jsx
 getSubHeaderCellId(subheaderId: string): string | number;
 ~~~
 
@@ -26,7 +26,7 @@ The method returns the id of the cell
 
 ### Example
 
-~~~js
+~~~jsx
 // initialization of the diagram
 const diagram = new dhx.Diagram("diagram_container", {
     // config options

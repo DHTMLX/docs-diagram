@@ -6,8 +6,8 @@ description: You can explore the CellManager events in the documentation of the 
 
 # CellManager events overview
 
-| Name                                                | Description                                                |
-| :-------------------------------------------------- | :--------------------------------------------------------- |
+| Name                                               | Description                                               |
+| :------------------------------------------------- | :-------------------------------------------------------- |
 | [](../cell_manager/aftercellsadd_event.md)         | @getshort(../cell_manager/aftercellsadd_event.md)         |
 | [](../cell_manager/aftercellsmove_event.md)        | @getshort(../cell_manager/aftercellsmove_event.md)        |
 | [](../cell_manager/aftercellsremove_event.md)      | @getshort(../cell_manager/aftercellsremove_event.md)      |
