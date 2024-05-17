@@ -22,7 +22,7 @@ const data = [
         id?: string | number,
         x?: number, // required in the default mode of Diagram
         y?: number, // required in the default mode of Diagram
-        text?: string | string[],
+        text?: string,
         editable?: boolean, // true by default
         height?: number,
         width?: number,
@@ -41,7 +41,7 @@ Each shape object can include the following properties:
 - `id` - (optional) the unique id of a shape
 - `x` - (optional) the x coordinate of the shape position. The property is **required** in the default mode of Diagram
 - `y` - (optional) the y coordinate of the shape position. The property is **required** in the default mode of Diagram
-- `text` - (optional) the text to be rendered in a shape. The property can be set as an array of string values while [configuring a **custom shape** only](../../shapes/custom_shape/)
+- `text` - (optional) the text to be rendered in a shape
 - `editable` - (optional) enables/disables the ability to edit the text of the shape by double-clicking on it; *true* by default. <br>*The property is not available for a custom shape.*
 - `height` - (optional) the height of a shape
 - `width` - (optional) the width of a shape

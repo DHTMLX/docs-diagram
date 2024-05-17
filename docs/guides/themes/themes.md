@@ -449,4 +449,3 @@ dhx.setTheme("dark", toolbarEl);
 ~~~
 
 **Related sample:** [Diagram Editor. Default mode. Basic and custom themes](https://snippet.dhtmlx.com/9twmlfus)
-

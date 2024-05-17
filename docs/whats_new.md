@@ -8,6 +8,104 @@ description: You can learn a new information about DHTMLX JavaScript Diagram lib
 
 If you are updating Diagram from an older version, check [Migration to Newer Version](migration.md) for details.
 
+## Version 6.0
+
+Released on May 16, 2024
+
+### Breaking changes
+
+The new update introduces significant changes in the structure and functionality of Diagram and Diagram Editor. Check the [Migration article](../migration/#50---60) to keep in step with the latest version.
+
+### New functionality
+
+- Restructuring of Diagram Editor: providing the ability to interact with its parts and manage their visibility with the [`view`](../api/diagram_editor/editor/config/view_property/) property that includes the following configurations:
+    - [Toolbar](../guides/diagram_editor/toolbar/) - a top part of Diagram Editor that helps users to control the editing process (see [API overview](/api/diagram_editor/toolbar/api_overview/))
+    - [Shapebar](../guides/diagram_editor/shapebar/) - (former Left panel) a part of Diagram Editor that renders previews of Diagram items (see [API overview](/api/diagram_editor/shapebar/api_overview/))
+    - [Editbar](../guides/diagram_editor/editbar/) - (former Right panel) a part of Diagram Editor that allows users to edit Diagram items (see [API overview](/api/diagram_editor/editbar/api_overview/)). You can perform the following actions:
+        - sets of predefined [Basic controls](/api/diagram_editor/editbar/basic_controls_overview/) and [Complex controls](/api/diagram_editor/editbar/complex_controls_overview/)
+        - adjustable configuration of [Basic controls](/api/diagram_editor/editbar/basic_controls_overview/) and [Complex controls](/api/diagram_editor/editbar/complex_controls_overview/) depending on the provided conditions
+        - dynamic management of the Editbar panel depending on the provided conditions ([Example](https://snippet.dhtmlx.com/ealq0m4l?mode=wide))
+        - creation of custom controls ([Example](https://snippet.dhtmlx.com/1p0wemnn?mode=wide))
+        - creation of HTML content ([Example](https://snippet.dhtmlx.com/vcnt647v?mode=wide))
+- Diagram Editor. The [Copy manager API](/api/diagram_editor/copymanager/api_overview/) added
+- Diagram Editor. The ability to show/hide [Shapebar](../api/diagram_editor/shapebar/config/show_property/), [Editbar](../guides/diagram_editor/editbar/) and [Toolbar](../guides/diagram_editor/toolbar/)
+- Diagram Editor. The [destructor()](../api/diagram_editor/editor/methods/destructor_method/) method is added
+- Diagram Editor. The ability to [hide the connection points](../api/diagram_editor/editor/config/connectionpoints_property/)
+- Diagram Editor. The ability to [hide the resize points](../api/diagram_editor/editor/config/resizepoints_property/)
+- Diagram Editor. The ability to [hide the grid](../api/diagram_editor/editor/config/grid_property/)
+- The upgrade of the [Selection API](../api/selection/) with the ability of multiple selection
+- The titles of lines are declared as separate objects defined as [`lineTitles`](../line_titles/) with their own [configuration properties](../line_titles/configuration_properties/)
+- [Supporting new themes](../category/themes/): Dark, Light High Contrast and Dark High Contrast ([Example](https://snippet.dhtmlx.com/9twmlfus))
+- Diagram Editor. The ability to customize the [Shapebar items' color scheme](../guides/themes/base_themes_configuration/#configuring-the-look-of-shapes-in-shapebar) by redefining the CSS variables and using the custom ones
+
+### Updates
+
+- Diagram Editor. [Locales](../guides/localization/) are updated
+- Diagram Editor. The [Hotkeys](../guides/diagram_editor/hot_keys/) list is extended
+- Diagram Editor. The behavior of Shapebar items when they are pulled to the grid and their appearance are improved
+- Diagram Editor. The callback function of [`zoomIn`](../api/diagram_editor/editor/events/zoomin_event/) / [`zoomOut`](../api/diagram_editor/editor/events/zoomout_event/) events is called with the `step` parameter
+- Diagram Editor. The functionality of the [`magnetic`](../api/diagram_editor/editor/config/magnetic_property/) configuration option is extended
+- Diagram Editor. The move [events](/api/diagram_editor/editor/events/overview/) of the Editor object are updated:
+- The ability to [work with line titles via the DataCollection API](../line_titles/#working-with-line-titles)
+[`afterGroupMove`](../api/diagram_editor/editor/events/aftergroupmove_event/),
+[`afterItemCatch`](../api/diagram_editor/editor/events/afteritemcatch_event/),
+[`afterItemMove`](../api/diagram_editor/editor/events/afteritemmove_event),
+[`afterLineTitleMove`](../api/diagram_editor/editor/events/afterlinetitlemove_event/),
+[`afterShapeMove`](../api/diagram_editor/editor/events/aftershapemove_event/),
+[`beforeGroupMove`](../api/diagram_editor/editor/events/beforegroupmove_event/),
+[`beforeItemCatch`](../api/diagram_editor/editor/events/beforeitemcatch_event/),
+[`beforeItemMove`](../api/diagram_editor/editor/events/beforeitemmove_event/),
+[`beforeLineTitleMove`](../api/diagram_editor/editor/events/beforelinetitlemove_event/),
+[`beforeShapeMove`](../api/diagram_editor/editor/events/beforeshapemove_event/),
+[`groupMoveEnd`](../api/diagram_editor/editor/events/groupmoveend_event/),
+[`itemMoveEnd`](../api/diagram_editor/editor/events/itemmoveend_event/),
+[`itemTarget`](../api/diagram_editor/editor/events/itemtarget_event/),
+[`lineTitleMoveEnd`](../api/diagram_editor/editor/events/linetitlemoveend_event/),
+[`shapeMoveEnd`](../api/diagram_editor/editor/events/shapemoveend_event/)
+
+### Deprecated API
+
+- #### Properties
+
+    - The `controls` property of Diagram Editor is deprecated and no longer supported
+    - The `editMode` property of Diagram Editor is deprecated and no longer supported
+    - The `gapPreview` property of Diagram Editor is deprecated and no longer supported
+    - The `reservedWidth` property of Diagram Editor is deprecated and no longer supported
+    - The `scalePreview` property of Diagram Editor is deprecated and no longer supported
+    - The `shapeBarWidth` property of Diagram Editor is deprecated and no longer supported
+    - The `shapeSections` property of Diagram Editor is deprecated and no longer supported
+    - The `title` property of [Line](/diagram/lines/configuration_properties/) data is deprecated and no longer supported
+
+- #### Methods
+
+    - The `getId()` method of the Selection object of Diagram is deprecated and no longer supported
+    - The `getSubId()` method of the Selection object of Diagram is deprecated and no longer supported
+    - The `setViewMode()` method of Diagram Editor is deprecated and no longer supported
+
+- #### Events
+
+    - The following events of Diagram Editor are deprecated and no longer supported, since there are no corresponding buttons in the toolbar: `resetButton`, `applyButton`, `visibility`, `exportData`, `importData`, `autoLayout`
+    - The `changeGridStep` event of Diagram Editor is deprecated and no longer supported
+
+### Fixes
+
+- Diagram Editor. Fix a console error caused by clicking the "Import data" button for a second time after data import and not selecting a file
+- Diagram Editor. Fix blocking of a new shape adding
+- Diagram Editor. Fix copying of lines while selecting elements manually
+- Diagram Editor. Fix dragging when the root shape is close to the child one in the **mindmap/org** modes
+- Diagram Editor. Fix incorrect selection behavior that required an additional click for selecting a shape with the Shift key
+- Diagram Editor. Fix moving a group and a swimlane together
+- Diagram Editor. Fix removing of unused lines/connectors
+- Diagram Editor. Fix the ability to move items of different parents to the target item (for the **org** and **mindmap** modes)
+- Diagram Editor. Fix the ability to set default values for the Shapebar elements
+- Diagram Editor. Fix the appearance of connectors on hovering moved items above any shape
+- Diagram Editor. Fix the impossibility to remove selected items via menu in the **mindmap** and **org** modes
+- Diagram Editor. Fix the issue with data import working just once
+- Diagram Editor. Improve performance during the connector movement
+- Diagram Editor. Limit the recording of actions during the connector movement in the **historyManager**
+- Diagram Editor. Optimize the logic of searching for the nearest connector
+- Fix the localization with complex widgets
+
 ## Version 5.0.3
 
 Released on July 12, 2023
