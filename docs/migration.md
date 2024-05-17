@@ -52,7 +52,7 @@ const editor = new dhx.DiagramEditor("editor_container");
 editor.parse(data);
 
 editor.view.hide("shapebar"); 
-editor.view.show("shapebar");
+editor.view.hide("editbar");
 ~~~
 
 #### Deprecated properties
@@ -217,28 +217,6 @@ The names of the [service elements](/guides/diagram_editor/toolbar/#service-elem
 
 ### Diagram Selection API
 
-- The `getSubId()` method of the Selection object of Diagram is deprecated and no longer supported. Instead you can use the [`getItem()`](/api/selection/getitem_method/) of the Selection object. It will return the object of the selected item where you can find the id of the selected title.
-
-~~~jsx {7} title="Before v6.0"
-// diagram must be created with the "select:true" option
-const diagram = new dhx.Diagram("diagram_container", { 
-    select: true 
-});
-diagram.data.parse(data);
-
-const subid = diagram.selection.getSubId(); // -> "2"
-~~~
-
-~~~jsx {3-10} title="From v6.0"
-// a diagram must be created with the "select:true" option
-const diagram = new dhx.Diagram("diagram_container", { 
-    select: true 
-});
-diagram.data.parse(data);
-
-const item = diagram.selection.getItem(); // -> obj.$subSelected
-~~~
-
 - The `getId()` method of the Selection object of Diagram is deprecated and no longer supported. Instead you can use the [`getIds()`](/api/selection/getids_method/) and [`getItem()`](/api/selection/getitem_method/) methods of the Selection object. Check the examples below:
 
 ~~~jsx {7} title="Before v6.0"
@@ -345,7 +323,7 @@ const data = [
         fontWeight?: string, // "500" by default
         textAlign?: "center" | "left" | "right" // "center" by default
     },
-    // more line title objects
+    // more objects
 ];
 ~~~
 

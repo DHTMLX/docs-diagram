@@ -40,9 +40,13 @@ The new update introduces significant changes in the structure and functionality
 
 ### Updates
 
-- The ability to [work with line titles via the DataCollection API](../line_titles/#working-with-line-titles)
+- Diagram Editor. [Locales](../guides/localization/) are updated
+- Diagram Editor. The [Hotkeys](../guides/diagram_editor/hot_keys/) list is extended
 - Diagram Editor. The behavior of Shapebar items when they are pulled to the grid and their appearance are improved
+- Diagram Editor. The callback function of [`zoomIn`](../api/diagram_editor/editor/events/zoomin_event/) / [`zoomOut`](../api/diagram_editor/editor/events/zoomout_event/) events is called with the `step` parameter
+- Diagram Editor. The functionality of the [`magnetic`](../api/diagram_editor/editor/config/magnetic_property/) configuration option is extended
 - Diagram Editor. The move [events](/api/diagram_editor/editor/events/overview/) of the Editor object are updated:
+- The ability to [work with line titles via the DataCollection API](../line_titles/#working-with-line-titles)
 [`afterGroupMove`](../api/diagram_editor/editor/events/aftergroupmove_event/),
 [`afterItemCatch`](../api/diagram_editor/editor/events/afteritemcatch_event/),
 [`afterItemMove`](../api/diagram_editor/editor/events/afteritemmove_event),
@@ -58,29 +62,25 @@ The new update introduces significant changes in the structure and functionality
 [`itemTarget`](../api/diagram_editor/editor/events/itemtarget_event/),
 [`lineTitleMoveEnd`](../api/diagram_editor/editor/events/linetitlemoveend_event/),
 [`shapeMoveEnd`](../api/diagram_editor/editor/events/shapemoveend_event/)
-- Diagram Editor. The callback function of [`zoomIn`](../api/diagram_editor/editor/events/zoomin_event/) / [`zoomOut`](../api/diagram_editor/editor/events/zoomout_event/) events is called with the `step` parameter
-- Diagram Editor. The functionality of the [`magnetic`](../api/diagram_editor/editor/config/magnetic_property/) configuration option is extended
-- Diagram Editor. [Locales](../guides/localization/) are updated
-- Diagram Editor. The [Hotkeys](../guides/diagram_editor/hot_keys/) list is extended
 
 ### Deprecated API
 
 - #### Properties
 
-    - The `reservedWidth` property of Diagram Editor is deprecated and no longer supported
-    - The `editMode` property of Diagram Editor is deprecated and no longer supported
     - The `controls` property of Diagram Editor is deprecated and no longer supported
+    - The `editMode` property of Diagram Editor is deprecated and no longer supported
+    - The `gapPreview` property of Diagram Editor is deprecated and no longer supported
+    - The `reservedWidth` property of Diagram Editor is deprecated and no longer supported
+    - The `scalePreview` property of Diagram Editor is deprecated and no longer supported
     - The `shapeBarWidth` property of Diagram Editor is deprecated and no longer supported
     - The `shapeSections` property of Diagram Editor is deprecated and no longer supported
-    - The `gapPreview` property of Diagram Editor is deprecated and no longer supported
-    - The `scalePreview` property of Diagram Editor is deprecated and no longer supported
     - The `title` property of [Line](/diagram/lines/configuration_properties/) data is deprecated and no longer supported
 
 - #### Methods
 
-    - The `setViewMode()` method of Diagram Editor is deprecated and no longer supported
-    - The `getSubId()` method of the Selection object of Diagram is deprecated and no longer supported
     - The `getId()` method of the Selection object of Diagram is deprecated and no longer supported
+    - The `getSubId()` method of the Selection object of Diagram is deprecated and no longer supported
+    - The `setViewMode()` method of Diagram Editor is deprecated and no longer supported
 
 - #### Events
 
@@ -89,21 +89,22 @@ The new update introduces significant changes in the structure and functionality
 
 ### Fixes
 
-- Diagram Editor. Fix the impossibility to remove selected items via menu in the **mindmap** and **org** modes
-- Diagram Editor. Fix incorrect selection behavior that required an additional click for selecting a shape with the Shift key
-- Diagram Editor. Fix the ability to move items of different parents to the target item (for the **org** and **mindmap** modes)
-- Diagram Editor. Fix moving a group and a swimlane together
-- Diagram Editor. Fix copying of lines while selecting elements manually
-- Diagram Editor. Fix the ability to set default values for the Shapebar elements
-- Diagram Editor. Fix the issue with data import working just once
+- Diagram Editor. Fix a console error caused by clicking the "Import data" button for a second time after data import and not selecting a file
 - Diagram Editor. Fix blocking of a new shape adding
-- Diagram Editor. Optimize the logic of searching for the nearest connector
+- Diagram Editor. Fix copying of lines while selecting elements manually
+- Diagram Editor. Fix dragging when the root shape is close to the child one in the **mindmap/org** modes
+- Diagram Editor. Fix incorrect selection behavior that required an additional click for selecting a shape with the Shift key
+- Diagram Editor. Fix moving a group and a swimlane together
+- Diagram Editor. Fix removing of unused lines/connectors
+- Diagram Editor. Fix the ability to move items of different parents to the target item (for the **org** and **mindmap** modes)
+- Diagram Editor. Fix the ability to set default values for the Shapebar elements
+- Diagram Editor. Fix the appearance of connectors on hovering moved items above any shape
+- Diagram Editor. Fix the impossibility to remove selected items via menu in the **mindmap** and **org** modes
+- Diagram Editor. Fix the issue with data import working just once
 - Diagram Editor. Improve performance during the connector movement
 - Diagram Editor. Limit the recording of actions during the connector movement in the **historyManager**
-- Diagram Editor. Fix the appearance of connectors on hovering moved items above any shape
-- Diagram Editor. Fix removing of unused lines/connectors
-- Diagram Editor. Fix dragging when the root shape is close to the child one in the **mindmap/org** modes
-- Diagram Editor. Fix a console error caused by clicking the "Import data" button for a second time after data import and not selecting a file
+- Diagram Editor. Optimize the logic of searching for the nearest connector
+- Fix the localization with complex widgets
 
 ## Version 5.0.3
 
