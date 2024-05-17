@@ -21,10 +21,8 @@ const editor = new dhx.DiagramEditor("editor_container", {
                     // ... other Editbar controls configuration
                 ],
                 // ... other shapes configuration
-            },
-            // ...
-        },
-        // ...
+            }
+        }
     }
 });
 ~~~
@@ -51,8 +49,7 @@ properties: {
             type: "gridStep",
             readOnly: true,
             // ...
-        },
-        // ...
+        }
     ]
 }
 ~~~
@@ -73,8 +70,7 @@ properties: {
                 // ...
             },
             // ...
-        },
-        // ...
+        }
     ]
 }
 ~~~
@@ -92,8 +88,7 @@ properties: {
             type: "header", 
             label: "Group header style",
             // ... 
-        },
-        // ...
+        }
     ]
 }
 ~~~
@@ -111,8 +106,7 @@ properties: {
             type: "header", 
             label: "Swimlane header style",
             // ... 
-        },
-        // ...
+        }
     ]
 }
 ~~~
@@ -130,8 +124,7 @@ properties: {
             type: "lineShape",
             label: "Line connection type",
             // ...
-        },
-        // ...
+        }
     ]
 }
 ~~~

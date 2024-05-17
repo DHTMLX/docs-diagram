@@ -38,7 +38,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 
 // attaching a handler to the event
-editor.events.on("afterHide", (view) => {
+editor.view.events.on("afterHide", (view) => {
     console.log("The " + view + " view of Diagram Editor was hidden");
 });
 ~~~

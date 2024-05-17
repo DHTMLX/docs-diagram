@@ -43,10 +43,10 @@ You can configure Editbar controls for a separate Diagram element, for instance 
 ~~~jsx
 properties: {
     // modify Editbar controls for individual elements (shapes)
-    rectangle: {}, // configure controls for the "rectangle" type
-    circle: {}, // configure controls for the "circle" type
-    card: {}, // configure controls for the "card" type
-    estimate: {}, // configure controls for the custom "estimate" type
+    rectangle: [], // configure controls for the "rectangle" type
+    circle: [], // configure controls for the "circle" type
+    card: [], // configure controls for the "card" type
+    estimate: [], // configure controls for the custom "estimate" type
     // other elements
 }
 ~~~
@@ -62,12 +62,12 @@ You can also configure Editbar controls for a separate group of Diagram elements
 
 ~~~jsx
 properties: {
-    $default: {}, 
-    $shape: {}, 
-    $group: {}, 
-    $swimlane: {},
-    $line: {},
-    $lineTitle: {},
+    $default: [], 
+    $shape: [], 
+    $group: [], 
+    $swimlane: [],
+    $line: [],
+    $lineTitle: [],
     // ... other parameters
 }
 ~~~
