@@ -215,6 +215,82 @@ The names of the [service elements](/guides/diagram_editor/toolbar/#service-elem
 
 - The `changeGridStep` event of Diagram Editor is deprecated and no longer supported.
 
+### Diagram API
+
+- The `properties` property of the [`addShape`](/api/diagram/addshape_method/) method is deprecated and no longer used. The configuration of a custom shape in the editbar of the Editor is implemented via the [`properties`](/api/diagram_editor/editbar/config/properties_property/) property of the Editbar panel:
+
+~~~jsx {13-16} title="Before v6.0"
+const editor = new dhx.DiagramEditor("editor_container", { 
+    type: "default"  
+});
+editor.parse(data);
+
+editor.diagram.addShape("template", {
+    template: config => (
+        `<section className='template'>
+            <h3>${config.title}</h3>
+            <ul><li>${config.text.join("</li><li>")}</li></ul>
+        </section>`
+    ),
+    properties:[
+        {type:"arrange"},
+        {type:"size"}
+    ]
+});   
+~~~
+
+~~~jsx {14-27} title="From v6.0"
+const editor = new dhx.DiagramEditor("editor_container", {
+    type: "default",
+    view: {
+        shapebar: {
+            sections: {
+                "Network shapes": [
+                    { type: "network", text: "Core", img: src + "core.svg" },
+                    { type: "network", text: "Server", img: src + "server.svg" }
+                ],
+                "Flow shapes": [{ flowShapes: true }]
+            }
+        },
+        editbar: {
+            properties: {
+                network: [
+                    { type: "arrange" },
+                    {
+                        type: "fieldset",
+                        label: "Network information",
+                        rows: [
+                            { type: "avatar", key: "img", circle: true, readOnly: true },
+                            { type: "textarea", key: "text", label: "Description" },
+                            { type: "input", key: "ip", label: "IP" }
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+});
+
+editor.parse(data);
+
+editor.diagram.addShape("network", {
+    template: ({ img, text, ip }) => {
+        return `
+            <section className="dhx_diagram_template_d">
+                <img className="dhx_diagram_template_d__image" src="${img}" alt="${text}"/></img>
+                <span className="dhx_diagram_template_d__title">${text}</span>
+                <span className="dhx_diagram_template_d__text">${ip}</span>
+            </section>
+        `;
+    },
+    defaults: {
+        width: 160, height: 160,
+        preview: { scale: 0.7 },
+        ip: "127.0.0.1"
+    }
+});
+~~~
+
 ### Diagram Selection API
 
 - The `getId()` method of the Selection object of Diagram is deprecated and no longer supported. Instead you can use the [`getIds()`](/api/selection/getids_method/) and [`getItem()`](/api/selection/getitem_method/) methods of the Selection object. Check the examples below:
