@@ -96,10 +96,10 @@ The new update introduces significant changes in the structure and functionality
 - Diagram Editor. Fix incorrect selection behavior that required an additional click for selecting a shape with the Shift key
 - Diagram Editor. Fix moving a group and a swimlane together
 - Diagram Editor. Fix removing of unused lines/connectors
-- Diagram Editor. Fix the ability to move items of different parents to the target item (for the **org** and **mindmap** modes)
+- Diagram Editor. Fix the ability to move items of different parents to the target item (for the **org/mindmap** modes)
 - Diagram Editor. Fix the ability to set default values for the Shapebar elements
 - Diagram Editor. Fix the appearance of connectors on hovering moved items above any shape
-- Diagram Editor. Fix the impossibility to remove selected items via menu in the **mindmap** and **org** modes
+- Diagram Editor. Fix the impossibility to remove selected items via menu in the **mindmap/org** modes
 - Diagram Editor. Fix the issue with data import working just once
 - Diagram Editor. Improve performance during the connector movement
 - Diagram Editor. Limit the recording of actions during the connector movement in the **historyManager**
