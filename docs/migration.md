@@ -225,7 +225,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 editor.parse(data);
 
-editor.diagram.addShape("template", {
+editor.diagram.addShape("network", {
     template: config => (
         `<section className='template'>
             <h3>${config.title}</h3>
@@ -233,8 +233,8 @@ editor.diagram.addShape("template", {
         </section>`
     ),
     properties:[
-        {type:"arrange"},
-        {type:"size"}
+        { type:"arrange" },
+        { type:"size" }
     ]
 });   
 ~~~
