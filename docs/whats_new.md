@@ -46,7 +46,6 @@ The new update introduces significant changes in the structure and functionality
 - Diagram Editor. The callback function of [`zoomIn`](../api/diagram_editor/editor/events/zoomin_event/) / [`zoomOut`](../api/diagram_editor/editor/events/zoomout_event/) events is called with the `step` parameter
 - Diagram Editor. The functionality of the [`magnetic`](../api/diagram_editor/editor/config/magnetic_property/) configuration option is extended
 - Diagram Editor. The move [events](/api/diagram_editor/editor/events/overview/) of the Editor object are updated:
-- The ability to [work with line titles via the DataCollection API](../line_titles/#working-with-line-titles)
 [`afterGroupMove`](../api/diagram_editor/editor/events/aftergroupmove_event/),
 [`afterItemCatch`](../api/diagram_editor/editor/events/afteritemcatch_event/),
 [`afterItemMove`](../api/diagram_editor/editor/events/afteritemmove_event),
@@ -62,6 +61,7 @@ The new update introduces significant changes in the structure and functionality
 [`itemTarget`](../api/diagram_editor/editor/events/itemtarget_event/),
 [`lineTitleMoveEnd`](../api/diagram_editor/editor/events/linetitlemoveend_event/),
 [`shapeMoveEnd`](../api/diagram_editor/editor/events/shapemoveend_event/)
+- The ability to [work with line titles via the DataCollection API](../line_titles/#working-with-line-titles)
 
 ### Deprecated API
 
