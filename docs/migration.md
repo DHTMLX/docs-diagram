@@ -68,7 +68,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 Instead, use the following syntax:
 
 ~~~jsx title="From v6.0"
-editor.diagram.config.margin = 40; 
+editor.diagram.config.margin.x = 40; 
 ~~~
 
 - The `editMode` property of Diagram Editor is deprecated and no longer supported. Instead, use the corresponding property of the `view` object ([toolbar](/api/diagram_editor/toolbar/api_overview/), [shapebar](/api/diagram_editor/shapebar/api_overview/), [editbar](/api/diagram_editor/editbar/api_overview/)).

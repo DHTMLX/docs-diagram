@@ -8,6 +8,16 @@ description: You can learn a new information about DHTMLX JavaScript Diagram lib
 
 If you are updating Diagram from an older version, check [Migration to Newer Version](migration.md) for details.
 
+## Version 6.0.1
+
+Released on June 21, 2024
+
+### Fixes
+
+- Diagram Editor. Memory leak
+- Diagram Editor. Script error when clicking on vertical and horizontal distribute via Toolbar
+- Diagram. Types issue when calling the [`getSubHeaderCellId()`](api/cell_manager/getsubheadercellid_method.md) method
+
 ## Version 6.0
 
 Released on May 16, 2024
