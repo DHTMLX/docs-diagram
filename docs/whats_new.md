@@ -10,7 +10,7 @@ If you are updating Diagram from an older version, check [Migration to Newer Ver
 
 ## Version 6.0.1
 
-Released on June 21, 2024
+Released on June 24, 2024
 
 ### Fixes
 
