@@ -8,6 +8,14 @@ description: You can learn a new information about DHTMLX JavaScript Diagram lib
 
 If you are updating Diagram from an older version, check [Migration to Newer Version](migration.md) for details.
 
+## Version 6.0.2
+
+Released on July 15, 2024
+
+### Fixes
+
+- Diagram. Autoplacement. A shape hides under another shape
+
 ## Version 6.0.1
 
 Released on June 24, 2024
