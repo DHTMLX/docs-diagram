@@ -6,22 +6,22 @@ description: You can learn about the Shapebar of editor in the documentation of 
 
 # Shapebar 
 
-Shapebar is a part of the editor that renders previews of Diagram items. You can choose the necessary items and drag them from the shapebar into the grid area.
+Shapebar is a part of the editor that renders previews of Diagram items. You can choose the necessary items and drag them from the Shapebar into the grid area.
 
 :::note 
-The shapebar is available only in the editor initialized in the default mode (type: "default").
+The Shapebar is available only in the editor initialized in the default mode (type: "default").
 :::
 
 ## Default sections
 
-By default, the shapebar is divided into three sections: *Shapes*, *Groups*, and *Swimlanes*. The *Shapes* section includes all default shapes as well as custom ones.
+By default, the Shapebar is divided into three sections: *Shapes*, *Groups*, and *Swimlanes*. The *Shapes* section includes all default shapes as well as custom ones.
 The *Groups* and *Swimlanes* sections contain basic sets of the items.
 
 <iframe src="https://snippet.dhtmlx.com/xshe9ut7?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
 ## Custom sections
 
-To customize the structure of the shapebar, you should use the [`sections`](../../../api/diagram_editor/shapebar/config/sections_property/) property. It allows you to specify your own sections in the necessary order and put the items into the corresponding sections.
+To customize the structure of the Shapebar, you should use the [`sections`](../../../api/diagram_editor/shapebar/config/sections_property/) property. It allows you to specify your own sections in the necessary order and put the items into the corresponding sections.
 
 The `sections` property is an object with a set of *key:value* pairs where `key` is the name of a section and `value` is an array with the list of items which should be rendered in the section.
 
@@ -137,18 +137,18 @@ const editor = new dhx.DiagramEditor("editor_container", {
 
 ## Adding items of the same type with different settings
 
-The library allows you to add several identical items (i.e. items of the same type) with different settings to the shapebar of the editor.
+The library allows you to add several identical items (i.e. items of the same type) with different settings to the Shapebar of the editor.
 To do that, you need to:
 
 - create separate objects with different configurations for the items of the necessary type. You can create as many objects as you need
-- use the *names* of the created objects as the *types* of the items and add them into the sections of the shapebar using the [`sections`](../../../api/diagram_editor/shapebar/config/sections_property/) property
+- use the *names* of the created objects as the *types* of the items and add them into the sections of the Shapebar using the [`sections`](../../../api/diagram_editor/shapebar/config/sections_property/) property
 
 ## Setting the preview of shapes
 
-To configure the preview of items rendered in the shapebar of the editor, make use of the [`preview`](../../../api/diagram_editor/shapebar/config/preview_property/) property. It is an object that contains two attributes:
+To configure the preview of items rendered in the Shapebar of the editor, make use of the [`preview`](../../../api/diagram_editor/shapebar/config/preview_property/) property. It is an object that contains two attributes:
 
-- `scale` - (optional) defines the scale of items rendered in the shapebar of the editor, 0.5 by default
-- `gap` - (optional) specifies the space between the items rendered in the shapebar, "6px 8px" by default
+- `scale` - (optional) defines the scale of items rendered in the Shapebar of the editor, 0.5 by default
+- `gap` - (optional) specifies the space between the items rendered in the Shapebar, "6px 8px" by default
 (sets 6px gap for the top and bottom sides and 8px gap for the right and left sides)
 
 ~~~jsx
@@ -176,7 +176,7 @@ The property can be applied in two cases:
 
 Let's consider three examples of configuring a shape preview:
 
-1\. You can specify an image to be shown in the shapebar for a custom shape. For this purpose, you need to pass either an URL to load an image from or a base64 image as a string value to the `preview` property:
+1\. You can specify an image to be shown in the Shapebar for a custom shape. For this purpose, you need to pass either an URL to load an image from or a base64 image as a string value to the `preview` property:
 
 ~~~jsx {6}
 const defaults = {
@@ -216,7 +216,7 @@ editor.diagram.addShape("template", {
 You can set the precise width and height of the image, but there is no ability to set the scale of the image.
 :::
 
-3\. You can redefine the scale of a specific shape rendered in the shapebar via the `scale` property:
+3\. You can redefine the scale of a specific shape rendered in the Shapebar via the `scale` property:
 
 ~~~jsx {2-4}
 const defaults = {
@@ -250,9 +250,9 @@ editor.diagram.addShape("personalCard", {
 **Note**, that the `preview` property will be omitted when exporting data to the JSON format.
 :::
 
-## Setting the width of shapebar
+## Setting the width of Shapebar
 
-The default width of the shapebar is 300. You can change it and set any other width via the [`width`](/api/diagram_editor/shapebar/config/width_property/) property, e.g.:
+The default width of the Shapebar is 300. You can change it and set any other width via the [`width`](/api/diagram_editor/shapebar/config/width_property/) property, e.g.:
 
 ~~~jsx
 const editor = new dhx.DiagramEditor("editor_container", {
@@ -267,7 +267,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 
 ## Showing/hiding the Shapebar  
 
-Whenever you need to control the visibility of a shapebar, you can use the [`show`](/api/diagram_editor/shapebar/config/show_property/) property. It allows you to hide the shapebar with particular settings on initialization of the Diagram Editor and show it later, when needed. By default the shapebar is shown.
+Whenever you need to control the visibility of the Shapebar, you can use the [`show`](/api/diagram_editor/shapebar/config/show_property/) property. It allows you to hide the Shapebar with particular settings on initialization of the Diagram Editor and show it later, when needed. By default the Shapebar is shown.
 
 ~~~jsx
 const editor = new dhx.DiagramEditor("editor_container", {
@@ -282,7 +282,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 
 ## Shapebar and shapes appearance
 
-You can provide the desired look and feel for the shapebar with the [`css`](/api/diagram_editor/shapebar/config/css_property/) property. It allows specifying custom CSS classes to stylize items presentation in the shapebar in your own way.
+You can provide the desired look and feel for the Shapebar with the [`css`](/api/diagram_editor/shapebar/config/css_property/) property. It allows specifying custom CSS classes to stylize items presentation in the Shapebar in your own way.
 
 ~~~html {6}
 <script>
