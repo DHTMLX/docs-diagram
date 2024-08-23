@@ -51,59 +51,6 @@ The `editbar` object contains the following properties:
 - `controls` - (object) optional, a set of configurations that [define one or several custom controls](#creating-custom-editbar-controls)
 - `properties` - (object) optional, a set of configurations that [modify controls for Diagram items](#configuring-basic-and-complex-controls)
 
-Here's an example of using the `controls` and `properties` configuration options:
-
-~~~jsx
-const editor= new dhx.DiagramEditor("editor", {
-    type: "default",
-    view: {
-        editbar: {
-            properties: {
-                $default: [
-                    { type: "gridStep" }
-                ],
-                rectangle: [
-                    { type: "input", label: "Shape name" },
-                    { type: "arrange" },
-                    { type: "estimate" },
-                    { type: "input", label: "Task name", key: "task_name", wrap: true },
-                ]
-            },
-            controls: {
-                estimate: {
-                    type: "fieldset",
-                    label: "Time estimate",
-                    rows: [
-                        { type: "datepicker", key: "date_start", label: "Date start" },
-                        { type: "datepicker", key: "date_end", label: "Date end" },
-                    ],
-                },
-            }
-        }
-    }
-});
-editor.parse([
-    {
-        "type": "rectangle",
-        "date_start": "12/02/24",
-        "date_end": "20/03/25",
-        "text": "Rectangle",
-        "task_name": "Header example",
-    }
-]);
-~~~ 
-
-In the above example:
-
-- a control with the `gridStep` type is set for the mode when no elements are selected or there are more than one selected element (the *$default* group type)
-- for a shape with the `rectangle` type the following controls are used:
-    - a basic `input` control for rendering the text of a shape 
-    - a complex `arrange` control for rendering the shape's positioning 
-    - a custom `estimate` control that has been configured specifically for the shapes with the `rectangle` type
-    - a basic `input` control for rendering an optional property (*"task_name"*) in the data structure of the shape
-
-Below we will consider the types of Editbar controls and the ways of configuring and customizing them.
-
 ## Editbar controls
 
 There are two types of Editbar controls: 
@@ -184,28 +131,19 @@ const editor = new dhx.DiagramEditor("editor", {
 In the above example:
 
 - The `colorpicker`, `spacer` and `button` controls are used for all the Diagram items with the `shape` type
-- The configs of the `colorpicker` and `button` controls are redefined especially for this type of Diagram items
+    - The configs of the `colorpicker` and `button` controls are redefined especially for this type of Diagram items
 
 ### Redefining properties of complex controls
 
-Complex controls based of the *basic* controls can be redefined with the service property `$properties`. Check the example:
+Complex controls based on the *basic* controls can be redefined with the service property `$properties`. Check the example:
 
-~~~jsx {10-13,19-21,25-29}
+~~~jsx {10-12}
 const editor = new dhx.DiagramEditor("editor", {
     type: "default",
     view: {
         editbar: {
             show: true,
             properties: {
-                $shape: [
-                    {
-                        type: "arrange",
-                        $properties: {
-                            width: { min: 200 },
-                            height: { min: 90 },
-                        }
-                    },
-                ],
                 $group: [
                     {
                         type: "arrange",
@@ -213,28 +151,17 @@ const editor = new dhx.DiagramEditor("editor", {
                             angle: { hidden: true },
                         },
                     },
-                    {
-                        type: "border",
-                        $properties: {
-                            stroke: { key: ["style", "stroke"] },
-                            strokeType: { hidden: true },
-                            strokeWidth: { key: ["style", "strokeWidth"], width: "85%" },
-                        },
-                    },
-                ],
-            },
-        }
+                ]
+            }
+        },
     }
 });
 ~~~
 
-In the above example: 
-
-- for Shapes: the Arrange control gets new values of width and height
-- for Groups: the `angle` property of the Arrange control is hidden and the values of the Border control properties are redefined
+In the above example the `angle` property of the Arrange complex control is hidden.
 
 :::tip Note
-Complex controls can also include other *complex* controls. Such controls can't be redefined.
+Complex controls can also [include other *complex* controls](#custom-controls-that-include-complex-controls). Such controls can't be redefined.
 :::
 
 **Related sample:** [Diagram Editor. Default mode. PERT сhart with the legend](https://snippet.dhtmlx.com/w8mrh3ay?mode=js)
@@ -360,11 +287,12 @@ You can use the [`controls`](api/diagram_editor/editbar/config/controls_property
 We do not recommend you to use a default control type (refer to the [***Basic controls***](api/diagram_editor/editbar/basic_controls_overview.md) and/or [***Complex controls***](api/diagram_editor/editbar/complex_controls_overview.md)) as the name for a custom control. Use a unique name for each custom control to avoid errors!
 :::
 
+It can be useful to combine basic controls while making logical blocks of separate controls, which allows redefining them.
 As a rule, custom controls are created with the help of the [`fieldset`](api/diagram_editor/editbar/basic_controls/fieldset.md) basic control. 
 
 ### Custom controls based on basic controls
 
-It can be useful to combine basic controls while making logical blocks of separate controls, which allows redefining them. The example below shows the creation of custom controls based on basic controls:
+The example below shows the creation of custom controls based on basic controls:
 
 ~~~jsx {11-20}
 const editor= new dhx.DiagramEditor("editor", {
@@ -435,43 +363,100 @@ const editor = new dhx.DiagramEditor("editor", {
 });
 ~~~
 
-In the above example a custom shape with the **pert** type contains:
+In the above example a [custom shape](/shapes/custom_shape/) with the **pert** type contains:
     
 - a complex Arrange control with the `angle` property redefined via the [`$properties`](#redefining-properties-of-complex-controls) config 
 - a custom Details control created with the `fieldset` control. It includes a complex Size control and several basic controls. The configuration of the complex Details control can't be redefined via the `$properties` config, since it [contains a complex control in its configuration object](#redefining-properties-of-complex-controls).
 
+## Using custom HTML in Editbar
+
+You can specify a custom HTML content to be displayed on the Editbar panel. Use the [Container](api/diagram_editor/editbar/basic_controls/container.md) basic control and provide the necessary HTML content via the `html` property:
+
+~~~jsx {5-11}
+editbar: {
+    properties: {
+        $default: [
+            {
+                type: "container",
+                html: `
+                    <h3 class="editbar_logo__header">DHTMLX Diagram</h3>
+                    <p class="editbar_logo__description">This is an example of simple customization of the editing panel using the container control.</p>
+                    <p class="editbar_logo__description">You can also use this control to create your own controls.</p>
+                    <img class="editbar_logo__image" src='https://snippet.dhtmlx.com/codebase/data/common/img/01/developer-01.svg'>
+                `,
+            },
+        ],
+    }
+}
+~~~
+
+In the above example a text with an image appears in the Editbar when there is no Diagram items selected (the `$default` group type).
+
+
 ## Creating a dynamic Editbar
 
-There is a possibility to create an Editbar the controls of which will dynamically change depending on the properties of the selected item. You can make such an Editbar by providing a function as a value of the property that defines the [type of a shape](/shapes/default_shapes/) or a [group of items](/guides/items_index/) within the [`properties`](api/diagram_editor/editbar/config/properties_property.md) configuration object. 
+There is a possibility to create an Editbar that will dynamically change depending on certain conditions, e.g.:
+the selected shape type, absence of selected items, the properties of the selected item. Check the example:
 
-~~~jsx {}
-const editor = new dhx.DiagramEditor("editor", {
-    type: "org",
-    shapeType: "img-card",
-    view: {
-        editbar: {
-            show: true,
-            properties: {
-                $shape: ({ item }) => {
-                    const controls = [
-                        { type: "position" },
-                        { type: "size" },
-                    ];
-                    if (item.hasOwnProperty("title")) {
-                        controls.push({ type: "input", key: "title", label: "Title", wrap: true });
-                    }
-                    if (item.hasOwnProperty("text")) {
-                        controls.push({ type: "textarea", key: "text", height: 200, label: "Text", wrap: true });
-                    }
-                    if (item.hasOwnProperty("img")) {
-                        controls.push({ type: "avatar", key: "img", label: "Image", wrap: true });
-                    }
-                    return controls;
-                },
-            },
-        }
+~~~jsx
+editbar: {
+    properties: {
+        $default: [
+            { type: "gridStep" }
+        ],
+        rectangle: [
+            { type: "input", label: "Shape name" },
+            { type: "arrange" }
+            { type: "estimate" },
+            { type: "input", label: "Task name", key: "task_name", wrap: true },
+        ]
+    },
+    controls: {
+        estimate: {
+            type: "fieldset",
+            label: "Time estimate",
+            rows: [
+                { type: "datepicker", key: "date_start", label: "Date start" },
+                { type: "datepicker", key: "date_end", label: "Date end" },
+            ],
+        },
     }
-});
+}
+~~~ 
+
+In this example:
+
+- for the mode when no elements are selected or there are more than one selected element (the *$default* group type) a control with the `gridStep` type is used
+- for the shapes with the `rectangle` type the following controls are used:
+    - a basic `input` control for rendering the text of a shape 
+    - a complex `arrange` control for rendering the shape's positioning 
+    - a custom `estimate` control that has been configured specifically for the shapes with the `rectangle` type
+    - a basic `input` control for rendering an optional property (*"task_name"*) in the data structure of the shape
+
+To make a dynamic Editbar that will change *depending on the properties of a selected shape*, you need to specify a function as a value of the property that defines the [type of a shape](/shapes/default_shapes/) or a [group of items](/guides/items_index/) within the [`properties`](api/diagram_editor/editbar/config/properties_property.md) configuration object:
+
+~~~jsx 
+editbar: {
+    show: true,
+    properties: {
+        $shape: ({ item }) => {
+            const controls = [
+                { type: "position" },
+                { type: "size" },
+            ];
+            if (item.hasOwnProperty("title")) {
+                controls.push({ type: "input", key: "title", label: "Title", wrap: true });
+            }
+            if (item.hasOwnProperty("text")) {
+                controls.push({ type: "textarea", key: "text", height: 200, label: "Text", wrap: true });
+            }
+            if (item.hasOwnProperty("img")) {
+                controls.push({ type: "avatar", key: "img", label: "Image", wrap: true });
+            }
+            return controls;
+        },
+    },
+}
 ~~~
 
 In the above example the `$shape` property is specified as a function that provides a set of default controls for all Diagram shapes and allows using additional controls, depending on whether a Diagram item has a particular property in its configuration.
