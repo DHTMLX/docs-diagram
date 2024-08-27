@@ -15,7 +15,7 @@ description: You can learn about the change event of data collection in the docu
 ~~~jsx
 change: (
     id?: string, 
-    status?: "add" | "update" | "delete", 
+    status?: "add" | "update" | "delete" | "load"
     updatedItem?: object
 ) => void;
 ~~~
@@ -25,7 +25,7 @@ change: (
 The callback of the event takes the following parameters:
 
 - `id` - (optional) the id of the changed item
-- `status` - (optional) the status of the change: "add", "update", "delete"
+- `status` - (optional) the status of the change: "add", "update", "delete", "load"
 - `updatedItem` - (optional) the object of the changed item
 
 :::info
