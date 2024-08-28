@@ -8,6 +8,18 @@ description: You can learn a new information about DHTMLX JavaScript Diagram lib
 
 If you are updating Diagram from an older version, check [Migration to Newer Version](migration.md) for details.
 
+## Version 6.0.3 
+
+Released on August 28, 2024
+
+### Fixes
+
+- Diagram Editor. Applying different locales for `calendar`, `combobox`, `colorpicker`, `form`, `timepicker` of Editbar
+- Diagram Editor. Adding Diagram Editor in a Layout cell
+- Diagram Editor. The `shapeToolbar` property is not optional for the **default** mode
+- Diagram Editor. Incorrect hover behavior when a custom shape has a preview image
+
+
 ## Version 6.0.2
 
 Released on July 16, 2024
