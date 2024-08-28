@@ -65,7 +65,7 @@ The list of [**Complex controls**](api/diagram_editor/editbar/complex_controls_o
 
 You can [configure the default Editbar controls](#configuring-basic-and-complex-controls) or [create custom controls](#creating-custom-editbar-controls) based on [**Basic controls**](api/diagram_editor/editbar/basic_controls_overview.md) and/or [**Complex controls**](api/diagram_editor/editbar/complex_controls_overview.md).
 
-## Configuring basic and complex controls
+## Configuring controls for Diagram elements
 
 You can configure Editbar controls for each Diagram element separately and for a [group of elements](/guides/items_index) taking into account various conditions, such as the type of the item, absence of selected items, selection of more than one element, etc. For this purpose, use the Editbar [`properties`](api/diagram_editor/editbar/config/properties_property.md) config. 
 
@@ -135,7 +135,13 @@ In the above example:
 
 ### Redefining properties of complex controls
 
-Complex controls based on the *basic* controls can be redefined with the service property `$properties`. Check the example:
+Complex controls based on the *basic* controls can be redefined with the service property `$properties`. 
+
+:::warning
+Note that it's highly not recommended to redefine the service properties and methods for the default types of controls, since it may cause breaks in their functionality. 
+:::
+
+Check the example:
 
 ~~~jsx {10-12}
 const editor = new dhx.DiagramEditor("editor", {
@@ -170,17 +176,25 @@ Complex controls can also [include other *complex* controls](#custom-controls-th
 
 The `$default` service property allows configuring Editbar controls if no elements are selected, or more than one element is selected.
 
-~~~jsx
-properties: {
-    $default: [
-        {
-            type: "gridStep",
-            readOnly: true,
-            // ...
+~~~jsx {6-11}
+const editor= new dhx.DiagramEditor("editor_container", {
+    type: "default",
+    view: {
+        editbar: {
+            properties: {
+                $default: [
+                    {
+                        type: "gridStep",
+                        readOnly: true
+                    }
+                ]
+            }
         }
-    ]
-}
+    }
+});
 ~~~
+
+In the above example the `Grid step` control in the readonly mode is used when there aren't or more than one selected elements. 
 
 **Related complex controls:** [Grid step](/api/diagram_editor/editbar/complex_controls/gridstep/), [Border](/api/diagram_editor/editbar/complex_controls/border/), [Arrange](/api/diagram_editor/editbar/complex_controls/arrange/)
 
@@ -189,20 +203,27 @@ properties: {
 
 The `$shape` service property allows configuring Editbar controls for [all shapes including custom shapes](/category/shapes).
 
-~~~jsx
-properties: {
-    $shape: [
-        {
-            type: "position",
-            $properties: {
-                dx: { disabled: true },
-                // ...
-            },
-            // ...
+~~~jsx {6-13}
+const editor= new dhx.DiagramEditor("editor_container", {
+    type: "mindmap",
+    view: {
+        editbar: {
+            properties: {
+                $shape: [
+                    {
+                        type: "position",
+                        $properties: {
+                            dx: { disabled: true }
+                        }
+                    }
+                ]
+            }
         }
-    ]
-}
+    }
+});
 ~~~
+
+In this example the `Position` control with the disabled shape offset on the x-axis is used for all shapes. 
 
 **Related complex controls:** [Border](/api/diagram_editor/editbar/complex_controls/border/), [Arrange](/api/diagram_editor/editbar/complex_controls/arrange/), [Position](/api/diagram_editor/editbar/complex_controls/position/), [Size](/api/diagram_editor/editbar/complex_controls/size/), [Text align](/api/diagram_editor/editbar/complex_controls/textalign/), [Text style](/api/diagram_editor/editbar/complex_controls/textstyle/)
 
@@ -210,17 +231,25 @@ properties: {
 
 The `$group` service property allows configuring Editbar controls for all elements with the [**group**](/groups/) type.
 
-~~~jsx
-properties: {
-    $group: [
-        { 
-            type: "header", 
-            label: "Group header style",
-            // ... 
+~~~jsx {6-11}
+const editor= new dhx.DiagramEditor("editor_container", {
+    type: "default",
+    view: {
+        editbar: {
+            properties: {
+                $group: [
+                    { 
+                        type: "header", 
+                        label: "Group header style" 
+                    }
+                ]
+            }
         }
-    ]
-}
+    }
+});
 ~~~
+
+In the above example the `Header` control with a specified label is used for the `$group` type of Diagram elements.
 
 **Related complex controls:** [Border](/api/diagram_editor/editbar/complex_controls/border/), [Arrange](/api/diagram_editor/editbar/complex_controls/arrange/), [Header](/api/diagram_editor/editbar/complex_controls/header/), [Header common](/api/diagram_editor/editbar/complex_controls/headercommon/), [Header position](/api/diagram_editor/editbar/complex_controls/headerposition/), [Size](/api/diagram_editor/editbar/complex_controls/size/), [Text align](/api/diagram_editor/editbar/complex_controls/textalign/), [Text style](/api/diagram_editor/editbar/complex_controls/textstyle/)
 
@@ -228,17 +257,25 @@ properties: {
 
 The `$swimlane` service property allows configuring Editbar controls for all elements with the [**swimlane**](/swimlanes/) type.
 
-~~~jsx
-properties: {
-    $swimlane: [
-        { 
-            type: "header", 
-            label: "Swimlane header style",
-            // ... 
+~~~jsx {6-11}
+const editor= new dhx.DiagramEditor("editor_container", {
+    type: "default",
+    view: {
+        editbar: {
+            properties: {
+                $swimlane: [
+                    { 
+                        type: "header", 
+                        label: "Swimlane header style",
+                    }
+                ]
+            }
         }
-    ]
-}
+    }
+});
 ~~~
+
+In the above example the `Header` control with a specified label is used for the `$swimlane` type of Diagram elements.
 
 **Related complex controls:** [Border](/api/diagram_editor/editbar/complex_controls/border/), [Arrange](/api/diagram_editor/editbar/complex_controls/arrange/), [Header](/api/diagram_editor/editbar/complex_controls/header/), [Header common](/api/diagram_editor/editbar/complex_controls/headercommon/), [Header position](/api/diagram_editor/editbar/complex_controls/headerposition/), [Size](/api/diagram_editor/editbar/complex_controls/size/), [Text align](/api/diagram_editor/editbar/complex_controls/textalign/), [Text style](/api/diagram_editor/editbar/complex_controls/textstyle/)
 
@@ -246,17 +283,25 @@ properties: {
 
 The `$line` service property allows configuring Editbar controls for all elements with the [**line**](/lines/) type.
 
-~~~jsx
-properties: {
-    $line: [
-        {
-            type: "lineShape",
-            label: "Line connection type",
-            // ...
+~~~jsx {6-11}
+const editor= new dhx.DiagramEditor("editor_container", {
+    type: "default",
+    view: {
+        editbar: {
+            properties: {
+                $line: [
+                    {
+                        type: "lineShape",
+                        label: "Line connection type"
+                    }
+                ]
+            }
         }
-    ]
-}
+    }
+});
 ~~~
+
+In the above example the `Line shape` control with a specified label is used for the `$line` group of Diagram elements.
 
 **Related complex controls:** [Border](/api/diagram_editor/editbar/complex_controls/border/), [Line shape](/api/diagram_editor/editbar/complex_controls/lineshape/), [Pointer view](/api/diagram_editor/editbar/complex_controls/pointerview/)
 
@@ -264,18 +309,25 @@ properties: {
 
 The `$lineTitle` service property allows configuring Editbar controls for all elements with the [**lineTitle**](/line_titles/) type.
 
-~~~jsx
-properties: {
-    $lineTitle: [
-        {
-            type: "textAlign",
-            label: "Text align",
-            // ...
-        },
-        // ...
-    ]
-}
+~~~jsx {6-11}
+const editor= new dhx.DiagramEditor("editor_container", {
+    type: "mindmap",
+    view: {
+        editbar: {
+            properties: {
+                $lineTitle: [
+                    {
+                        type: "textAlign",
+                        label: "Text align"
+                    }
+                ]
+            }
+        }
+    }
+});
 ~~~
+
+In the above example the `Text align` control with a specified label is used for the `$lineTitle` group of Diagram elements. 
 
 **Related complex controls:**  [Text align](/api/diagram_editor/editbar/complex_controls/textalign/), [Text style](/api/diagram_editor/editbar/complex_controls/textstyle/)
 
@@ -396,70 +448,43 @@ In the above example a text with an image appears in the Editbar when there is n
 ## Creating a dynamic Editbar
 
 There is a possibility to create an Editbar that will dynamically change depending on certain conditions, e.g.:
-the selected shape type, absence of selected items, the properties of the selected item. Check the example:
-
-~~~jsx
-editbar: {
-    properties: {
-        $default: [
-            { type: "gridStep" }
-        ],
-        rectangle: [
-            { type: "input", label: "Shape name" },
-            { type: "arrange" }
-            { type: "estimate" },
-            { type: "input", label: "Task name", key: "task_name", wrap: true },
-        ]
-    },
-    controls: {
-        estimate: {
-            type: "fieldset",
-            label: "Time estimate",
-            rows: [
-                { type: "datepicker", key: "date_start", label: "Date start" },
-                { type: "datepicker", key: "date_end", label: "Date end" },
-            ],
-        },
-    }
-}
-~~~ 
-
-In this example:
-
-- for the mode when no elements are selected or there are more than one selected element (the *$default* group type) a control with the `gridStep` type is used
-- for the shapes with the `rectangle` type the following controls are used:
-    - a basic `input` control for rendering the text of a shape 
-    - a complex `arrange` control for rendering the shape's positioning 
-    - a custom `estimate` control that has been configured specifically for the shapes with the `rectangle` type
-    - a basic `input` control for rendering an optional property (*"task_name"*) in the data structure of the shape
+the selected shape type, absence of selected items, the properties of the selected item. 
 
 To make a dynamic Editbar that will change *depending on the properties of a selected shape*, you need to specify a function as a value of the property that defines the [type of a shape](/shapes/default_shapes/) or a [group of items](/guides/items_index/) within the [`properties`](api/diagram_editor/editbar/config/properties_property.md) configuration object:
 
 ~~~jsx 
-editbar: {
-    show: true,
-    properties: {
-        $shape: ({ item }) => {
-            const controls = [
-                { type: "position" },
-                { type: "size" },
-            ];
-            if (item.hasOwnProperty("title")) {
-                controls.push({ type: "input", key: "title", label: "Title", wrap: true });
-            }
-            if (item.hasOwnProperty("text")) {
-                controls.push({ type: "textarea", key: "text", height: 200, label: "Text", wrap: true });
-            }
-            if (item.hasOwnProperty("img")) {
-                controls.push({ type: "avatar", key: "img", label: "Image", wrap: true });
-            }
-            return controls;
-        },
-    },
-}
+const editor = new dhx.DiagramEditor("editor", {
+    type: "org",
+    shapeType: "img-card",
+    view: {
+        editbar: {
+            show: true,
+            properties: {
+                $shape: ({ item }) => {
+                    const controls = [
+                        { type: "position" },
+                        { type: "size" },
+                    ];
+                    if (item.hasOwnProperty("title")) {
+                        controls.push({ type: "input", key: "title", label: "Title", wrap: true });
+                    }
+                    if (item.hasOwnProperty("text")) {
+                        controls.push({ type: "textarea", key: "text", height: 200, label: "Text", wrap: true });
+                    }
+                    if (item.hasOwnProperty("img")) {
+                        controls.push({ type: "avatar", key: "img", label: "Image", wrap: true });
+                    }
+                    return controls;
+                },
+            },
+        }
+    }
+});
 ~~~
 
-In the above example the `$shape` property is specified as a function that provides a set of default controls for all Diagram shapes and allows using additional controls, depending on whether a Diagram item has a particular property in its configuration.
+In the above example the `$shape` property is specified as a function that provides a set of default controls for all Diagram shapes and also allows using additional controls, depending on the properties of a selected shape.
+
+The `hasOwnProperty()` method checks whether an item has a certain property specified as an argument of this method. If it does, a particular control is rendered. For example, if there is the `title` property in the item object, a control which can be used for rendering/modifying this property will be applied (the `Input` control in our example).
 
 ## Setting the width of Editbar
 
