@@ -6,7 +6,7 @@ description: You can learn about the Default Shapes in the documentation of the 
 
 # Basic sets of shapes
 
-The DHTMLX Diagram library provides you with sets of types of shapes that you can use to build your diagram. Each mode of Diagram [default](#shapes-in-the-default-mode), [org chart](#shapes-in-the-org-chart-mode) and [mindmap](#shapes-in-the-mindmap-mode) has a *basic set* of shapes types. 
+The DHTMLX Diagram library provides you with sets of shapes types that you can use to build your diagram. Each mode of Diagram [default](#shapes-in-the-default-mode), [org chart](#shapes-in-the-org-chart-mode) and [mindmap](#shapes-in-the-mindmap-mode) has a *basic set* of shapes types. 
 
 :::note
 The basic type of shapes is predefined for a particular Diagram mode. However, a shape of any type can be added into the diagram of any mode.
@@ -14,7 +14,7 @@ The basic type of shapes is predefined for a particular Diagram mode. However, a
 
 ## Shapes in the default mode
 
-In the default mode of Diagram, the basic set includes `flow chart` shapes. Use the name of the necessary shape as a value of the `type` attribute inside the shape object, while [preparing a data set for loading into the diagram](/guides/loading_data/#preparing-data-to-load). The names of shapes are given below:
+In the default mode of Diagram, the basic set includes `flow chart` shapes. Use the name of the necessary shape as a value of the `type` attribute inside the shape object, while [preparing a data set for loading into the diagram](/guides/loading_data/#preparing-data-to-load).
 
 
 <img
@@ -27,15 +27,15 @@ In the default mode of Diagram, the basic set includes `flow chart` shapes. Use 
 
 In the **org chart** mode of Diagram, the basic set includes two types of shapes: `"card"` and `"img-card"`. 
 
-- each shape with the `"card"` type has a text and a colored header line. Shapes located on the same level have headers of identical color.
+- each shape with the `"card"` type has a text and a colored header line. Shapes located on the same level have headers of identical color
 
 <iframe src="https://snippet.dhtmlx.com/5ign6fyy?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="650"></iframe>
 
-- the `"img-card"` type can be used for adding shapes with images. Don't forget to provide images for cards via the `img` attribute of the shape object.
+- the `"img-card"` type can be used for adding shapes with images. Don't forget to provide images for cards via the `img` attribute of the shape object
 
 ## Shapes in the mindmap mode
 
-In the **mindmap** mode of Diagram, the `"topic"` type of shapes is basic. Each shape has a text and a colored border. The color of the outline depends on the level the shape belongs to.
+In the **mindmap** mode of Diagram, the `"topic"` type of shapes is the basic one. Each shape has a text and a colored border. The color of the outline depends on the level the shape belongs to.
 
 <iframe src="https://snippet.dhtmlx.com/3igf1gd5?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="650"></iframe>
 
@@ -54,7 +54,7 @@ const data = [
 ~~~
 
 :::note
-See [the full list of configuration properties of a shape object](/shapes/configuration_properties/). Do not add custom properties while creating data objects for shapes from basic sets.
+See [the full list of configuration properties of a shape object](/shapes/configuration_properties/). Do not add custom properties while creating data objects for shapes from basic sets. To add a custom property, you need to [create a custom shape](/shapes/custom_shape/).
 :::
 
 ### Setting the default shape type
@@ -69,5 +69,5 @@ const diagram = new dhx.Diagram("diagram_container", {
 diagram.data.parse(data);
 ~~~
 
-This value will be applied, if the configuration object of the shape doesn't contain the `type` property.
+This value will be applied if the configuration object of a shape doesn't contain the `type` property.
 
