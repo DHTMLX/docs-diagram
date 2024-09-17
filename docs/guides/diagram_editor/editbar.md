@@ -130,8 +130,8 @@ const editor = new dhx.DiagramEditor("editor_container", {
 
 In the above example:
 
-- The `Colorpicker`, `Spacer` and `Button` controls are used for all the Diagram items with the `$shape` type
-    - The configs of the `Colorpicker` and `Button` controls are redefined especially for the `$shape` group of Diagram items, i.e. for all *shapes*
+- The **Colorpicker**, **Spacer** and **Button** controls are used for all the Diagram items with the `$shape` type
+    - The configs of the **Colorpicker** and **Button** controls are redefined especially for the `$shape` group of Diagram items, i.e. for all *shapes*
 
 ### Redefining properties of complex controls
 
@@ -164,7 +164,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 ~~~
 
-In the above example the `angle` property of the `Arrange` complex control is hidden.
+In the above example the `angle` property of the complex **Arrange** control is hidden.
 
 :::tip Note
 Complex controls can also [include other *complex* controls](#custom-controls-that-include-complex-controls). Such controls can't be redefined.
@@ -194,7 +194,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 ~~~
 
-In the above example the `Grid step` control in the readonly mode is used when there aren't or more than one selected elements. 
+In the above example the **Grid step** control in the readonly mode is used when there aren't or more than one selected elements. 
 
 **Related complex controls:** [Grid step](/api/diagram_editor/editbar/complex_controls/gridstep/), [Border](/api/diagram_editor/editbar/complex_controls/border/), [Arrange](/api/diagram_editor/editbar/complex_controls/arrange/)
 
@@ -223,7 +223,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 ~~~
 
-In this example the `Position` control with the disabled shape offset on the x-axis is used for all shapes. 
+In this example the **Position** control with the disabled shape offset on the x-axis is used for all shapes. 
 
 **Related complex controls:** [Border](/api/diagram_editor/editbar/complex_controls/border/), [Arrange](/api/diagram_editor/editbar/complex_controls/arrange/), [Position](/api/diagram_editor/editbar/complex_controls/position/), [Size](/api/diagram_editor/editbar/complex_controls/size/), [Text align](/api/diagram_editor/editbar/complex_controls/textalign/), [Text style](/api/diagram_editor/editbar/complex_controls/textstyle/)
 
@@ -249,7 +249,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 ~~~
 
-In the above example the `Header` control with a specified label is used for the `$group` type of Diagram elements.
+In the above example the **Header** control with a specified label is used for the `$group` type of Diagram elements.
 
 **Related complex controls:** [Border](/api/diagram_editor/editbar/complex_controls/border/), [Arrange](/api/diagram_editor/editbar/complex_controls/arrange/), [Header](/api/diagram_editor/editbar/complex_controls/header/), [Header common](/api/diagram_editor/editbar/complex_controls/headercommon/), [Header position](/api/diagram_editor/editbar/complex_controls/headerposition/), [Size](/api/diagram_editor/editbar/complex_controls/size/), [Text align](/api/diagram_editor/editbar/complex_controls/textalign/), [Text style](/api/diagram_editor/editbar/complex_controls/textstyle/)
 
@@ -275,7 +275,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 ~~~
 
-In the above example the `Header` control with a specified label is used for the `$swimlane` type of Diagram elements.
+In the above example the **Header** control with a specified label is used for the `$swimlane` type of Diagram elements.
 
 **Related complex controls:** [Border](/api/diagram_editor/editbar/complex_controls/border/), [Arrange](/api/diagram_editor/editbar/complex_controls/arrange/), [Header](/api/diagram_editor/editbar/complex_controls/header/), [Header common](/api/diagram_editor/editbar/complex_controls/headercommon/), [Header position](/api/diagram_editor/editbar/complex_controls/headerposition/), [Size](/api/diagram_editor/editbar/complex_controls/size/), [Text align](/api/diagram_editor/editbar/complex_controls/textalign/), [Text style](/api/diagram_editor/editbar/complex_controls/textstyle/)
 
@@ -301,7 +301,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 ~~~
 
-In the above example the `Line shape` control with a specified label is used for the `$line` group of Diagram elements.
+In the above example the **Line shape** control with a specified label is used for the `$line` group of Diagram elements.
 
 **Related complex controls:** [Border](/api/diagram_editor/editbar/complex_controls/border/), [Line shape](/api/diagram_editor/editbar/complex_controls/lineshape/), [Pointer view](/api/diagram_editor/editbar/complex_controls/pointerview/)
 
@@ -327,7 +327,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 ~~~
 
-In the above example the `Text align` control with a specified label is used for the `$lineTitle` group of Diagram elements. 
+In the above example the **Text align** control with a specified label is used for the `$lineTitle` group of Diagram elements. 
 
 **Related complex controls:**  [Text align](/api/diagram_editor/editbar/complex_controls/textalign/), [Text style](/api/diagram_editor/editbar/complex_controls/textstyle/)
 
@@ -340,7 +340,7 @@ We do not recommend you to use a default control type (refer to the [***Basic co
 :::
 
 It can be useful to combine basic controls while making logical blocks of separate controls, which allows redefining them.
-As a rule, custom controls are created with the help of the [`Fieldset`](api/diagram_editor/editbar/basic_controls/fieldset.md) basic control. 
+As a rule, custom controls are created with the help of the basic [**Fieldset**](api/diagram_editor/editbar/basic_controls/fieldset.md) control. 
 
 ### Custom controls based on basic controls
 
@@ -375,8 +375,8 @@ const editor = new dhx.DiagramEditor("editor_container", {
 
 In the above example:
 
-- the `Estimate` control is a complex custom control created with the help of the `Fieldset` and two `Datepicker` controls
-- the `Name` control is a custom control based on the basic `Input` control
+- the **Estimate** control is a complex custom control created with the help of the **Fieldset** and two **Datepicker** controls
+- the **Name** control is a custom control based on the basic **Input** control
 - both controls are applied to all shapes (the *$shape* group type) 
 
 **Related sample:** [Diagram Editor. Default mode. PERT сhart with the legend](https://snippet.dhtmlx.com/w8mrh3ay?mode=js)
@@ -438,7 +438,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 ~~~
 
-The `$on` service property of the custom `Name` control based on the [**Input**](https://docs.dhtmlx.com/suite/form/input/) Form control sets a listener for the [`focus`](https://docs.dhtmlx.com/suite/form/api/input/input_focus_event/) event.
+The `$on` service property of the custom **Name** control based on the [**Input**](https://docs.dhtmlx.com/suite/form/input/) Form control sets a listener for the [`focus`](https://docs.dhtmlx.com/suite/form/api/input/input_focus_event/) event.
 
 In the following example the use of the `$handler` service property is shown:
 
@@ -469,7 +469,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 ~~~
 
-The `$handler` service property of the custom `Name` control defines that on firing the `change` and `input` events of the [**Input**](https://docs.dhtmlx.com/suite/form/input/) Form control and the `change` event of DataCollection the corresponding field is updated in the diagram data collection and the new value is set for the control. 
+The `$handler` service property of the custom **Name** control defines that on firing the `change` and `input` events of the [**Input**](https://docs.dhtmlx.com/suite/form/input/) Form control and the `change` event of DataCollection the corresponding field is updated in the diagram data collection and the new value is set for the control. 
 
 ### Custom controls that include complex controls
 
@@ -507,14 +507,14 @@ const editor = new dhx.DiagramEditor("editor_container", {
 
 In the above example a [custom shape](/shapes/custom_shape/) with the **pert** type contains:
     
-- a complex `Arrange` control with the `angle` property redefined via the [`$properties`](#redefining-properties-of-complex-controls) config 
-- a custom `Details` control created with the `Fieldset` control. It includes a complex `Size` control and several basic controls. The configuration of the complex `Details` control can't be redefined via the `$properties` config, since it [contains a complex control in its configuration object](#redefining-properties-of-complex-controls).
+- a complex **Arrange** control with the `angle` property redefined via the [`$properties`](#redefining-properties-of-complex-controls) config 
+- a custom **Details** control created with the **Fieldset** control. It includes a complex **Size** control and several basic controls. The configuration of the complex **Details** control can't be redefined via the `$properties` config, since it [contains a complex control in its configuration object](#redefining-properties-of-complex-controls).
 
 ## Using custom HTML in Editbar
 
-You can specify a custom HTML content to be displayed on the Editbar panel. Use the [Container](api/diagram_editor/editbar/basic_controls/container.md) basic control and provide the necessary HTML content via the `html` property:
+You can specify a custom HTML content to be displayed on the Editbar panel. Use the basic [Container](api/diagram_editor/editbar/basic_controls/container.md) control and provide the necessary HTML content via the `html` property:
 
-~~~jsx {5-11}
+~~~jsx {9-14}
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {
