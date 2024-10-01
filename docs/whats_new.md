@@ -8,6 +8,14 @@ description: You can learn a new information about DHTMLX JavaScript Diagram lib
 
 If you are updating Diagram from an older version, check [Migration to Newer Version](migration.md) for details.
 
+## Version 6.0.4
+
+Released on October 1, 2024
+
+### Fixes
+
+- Diagram Editor. Calling the `destructor()` method throws an error
+
 ## Version 6.0.3 
 
 Released on August 28, 2024
