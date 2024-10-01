@@ -6,7 +6,7 @@ description: You can learn how to start with Diagram Editor in the documentation
 
 # Editor initialization
 
-This article covers the process of displaying a Diagram editor on a page. In order to initialize the editor, you need to include source files specific for Editor and use the `DiagramEditor` instance. In all other aspects the initialization stage is the same as for the Diagram component:
+This article covers the process of displaying a Diagram Editor on a page. In order to initialize the editor, you need to include source files specific for Editor and use the `DiagramEditor` instance. In all other aspects the initialization stage is the same as for the Diagram component:
 
 - [Download the DHTMLX Diagram package](https://dhtmlx.com/docs/products/dhtmlxDiagram/download.shtml) and unpack it into a folder of your project
 - [Include the source files on a page](#including-required-code-files)
@@ -48,7 +48,7 @@ This article covers the process of displaying a Diagram editor on a page. In ord
 
 ## Including required code files
 
-To create Editor, you need to include 2 source files on your page:
+To create Diagram Editor, you need to include 2 source files on your page:
 
 - **diagramWithEditor.js**
 - **diagramWithEditor.css**
@@ -59,6 +59,22 @@ Make sure that you set correct relative paths to these files:
 <script type="text/javascript" src="../codebase/diagramWithEditor.js"></script>
 <link rel="stylesheet" href="../codebase/diagramWithEditor.css">
 ~~~
+
+### Installing Diagram Editor via npm and yarn
+
+You can import JavaScript Diagram Editor into your project using the `yarn` or `npm` package manager.
+
+#### Installing trial Diagram Editor via npm and yarn
+
+:::info
+If you want to use the trial version of Diagram Editor, download the [**trial Diagram package**](https://dhtmlx.com/docs/products/dhtmlxDiagram/download.shtml) and follow the steps mentioned in the *README* file. Note that the trial Diagram is available 30 days only.
+:::
+
+#### Installing PRO Diagram Editor via npm and yarn
+
+:::info
+If you already have Diagram under the proprietary license, send your **license number** to the *contact@dhtmlx.com* email to receive a login and a password for a private **npm** as well as a detailed guide on how to install Diagram. Note that a private **npm** is available before the expiration of the proprietary Diagram license.
+:::
 
 ## Initializing Editor
 
