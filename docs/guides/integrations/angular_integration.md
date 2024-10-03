@@ -10,7 +10,7 @@ description: You can learn about the Integration with Angular in the documentati
 You should be familiar with the basic concepts and patterns of **Angular** to use this documentation. To refresh your knowledge, please refer to the [**Angular documentation**](https://angular.io/docs).
 :::
 
-DHTMLX Diagram is compatible with **Angular**. We have prepared code examples on how to use DHTMLX Diagram with **Angular**. For more information, refer to the corresponding [**Example on GitHub**](https://github.com/DHTMLX/angular-diagram-demo).
+DHTMLX Diagram Editor is compatible with **Angular**. We have prepared code examples on how to use DHTMLX Diagram Editor with **Angular**. For more information, refer to the corresponding [**Example on GitHub**](https://github.com/DHTMLX/angular-diagram-demo).
 
 ## Creating a project
 
@@ -47,13 +47,13 @@ yarn start
 
 The app should run on a localhost (for instance `http://localhost:3000`).
 
-## Creating Diagram
+## Creating Diagram Editor
 
-Now you should get the DHTMLX Diagram source code. First of all, stop the app and proceed with installing the Diagram package.
+Now you should get the DHTMLX Diagram Editor source code. First of all, stop the app and proceed with installing the Diagram Editor package.
 
 ### Step 1. Package installation
 
-Download the [**trial Diagram package**](/guides/diagram_editor/initialization/#installing-diagram-editor-via-npm-and-yarn) and follow steps mentioned in the README file. Note that trial Diagram is available 30 days only.
+Download the [**trial Diagram package**](/guides/diagram_editor/initialization/#installing-diagram-editor-via-npm-and-yarn) and follow steps mentioned in the README file. Note that trial Diagram Editor is available 30 days only.
   
 ### Step 2. Component creation
 
@@ -61,9 +61,9 @@ Now you need to create an Angular component, to add Diagram Editor into the appl
 
 #### Import source files
 
-Open the file and import Diagram source files. Note that:
+Open the file and import Diagram Editor source files. Note that:
 
-- if you use PRO version and install the Diagram package from a local folder, the imported path looks like this:
+- if you use PRO version and install the Diagram Editor package from a local folder, the imported path looks like this:
 
 ~~~jsx
 import { DiagramEditor } from 'dhx-diagram-package';
@@ -115,7 +115,7 @@ export class DiagramEditorComponent implements OnInit, OnDestroy {
 To display Diagram Editor correctly, you need to provide the corresponding styles. For this purpose, you can create the **diagram-editor.component.css** file in the **src/app/diagram-editor/** directory and specify important styles for Diagram Editor and its container:
 
 ~~~css title="diagram-editor.component.css"
-/* import Diagram styles */
+/* import Diagram Editor styles */
 @import "@dhx/trial-diagram/codebase/diagram.min.css";
 
 /* specify styles for initial page */

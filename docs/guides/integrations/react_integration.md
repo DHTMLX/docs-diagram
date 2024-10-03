@@ -10,7 +10,7 @@ description: You can learn about the Integration with React in the documentation
 You should be familiar with the basic concepts and patterns of [**React**](https://react.dev) to use this documentation. To refresh your knowledge, please refer to the [**React documentation**](https://reactjs.org/docs/getting-started.html).
 :::
 
-DHTMLX Diagram is compatible with **React**. We have prepared code examples of how to use DHTMLX Diagram with **React**. For more information, refer to the corresponding [**Example on GitHub**](https://github.com/DHTMLX/react-diagram-demo).
+DHTMLX Diagram Editor is compatible with **React**. We have prepared code examples of how to use DHTMLX Diagram Editor with **React**. For more information, refer to the corresponding [**Example on GitHub**](https://github.com/DHTMLX/react-diagram-demo).
 
 ## Creating a project
 
@@ -50,23 +50,23 @@ npm run dev
 
 The app should run on a localhost (for instance `http://localhost:3000`).
 
-## Creating Diagram
+## Creating Diagram Editor
 
-Now you should get the DHTMLX Diagram source code. First of all, stop the app and proceed with installing the Diagram package.
+Now you should get the DHTMLX Diagram Editor source code. First of all, stop the app and proceed with installing the Diagram Editor package.
 
 ### Step 1. Package installation
 
-Download the [**trial Diagram package**](/guides/diagram_editor/initialization/#installing-diagram-editor-via-npm-and-yarn) and follow steps mentioned in the README file. Note that trial Diagram is available 30 days only.
+Download the [**trial Diagram Editor package**](/guides/diagram_editor/initialization/#installing-diagram-editor-via-npm-and-yarn) and follow steps mentioned in the README file. Note that trial Diagram Editor is available 30 days only.
 
 ### Step 2. Component creation
 
-Now you need to create a React component, to add Diagram into the application. Create a new file in the ***src/*** directory and name it ***DiagramEditor.jsx***.
+Now you need to create a React component, to add Diagram Editor into the application. Create a new file in the ***src/*** directory and name it ***DiagramEditor.jsx***.
 
 #### Import source files
 
-Open the ***DiagramEditor.jsx*** file and import Diagram source files. Note that:
+Open the ***DiagramEditor.jsx*** file and import Diagram Editor source files. Note that:
 
-- if you use PRO version and install the Diagram package from a local folder, the import paths look like this:
+- if you use PRO version and install the Diagram Editor package from a local folder, the import paths look like this:
 
 ~~~jsx title="DiagramEditor.jsx"
 import { DiagramEditor } from 'dhx-diagram-package';
@@ -84,7 +84,7 @@ import '@dhx/trial-diagram/codebase/diagram.min.css';
 
 In this tutorial you can see how to configure the **trial** version of Diagram.
 
-#### Setting the container and adding Diagram Editor
+#### Set the container and initialize Diagram Editor
 
 To display Diagram Editor on the page, you need to create the container for Diagram Editor, and initialize this component using the corresponding constructor:
 
@@ -174,7 +174,7 @@ function App() {
 export default App;
 ~~~
 
-Go to the ***DiagramEditor.jsx*** file and apply the passed **props** to the Diagram  Editor via the [`parse()`](api/diagram_editor/editor/methods/parse_method.md) method:
+Go to the ***DiagramEditor.jsx*** file and apply the passed **props** to the Diagram Editor via the [`parse()`](api/diagram_editor/editor/methods/parse_method.md) method:
 
 ~~~jsx {5,11} title="DiagramEditor.jsx"
 import { useEffect, useRef } from "react";

@@ -10,7 +10,7 @@ description: You can learn about the Integration with Vue.js in the documentatio
 You should be familiar with the basic concepts and patterns of [**Vue**](https://vuejs.org/) before reading this documentation. To refresh your knowledge, please refer to the [**Vue 3 documentation**](https://v3.vuejs.org/guide/introduction.html#getting-started).
 :::
 
-DHTMLX Diagram is compatible with **Vue**. We have prepared code examples on how to use DHTMLX Diagram with **Vue 3**. For more information, refer to the corresponding [**Example on GitHub**](https://github.com/DHTMLX/vue-diagram-demo).
+DHTMLX Diagram Editor is compatible with **Vue**. We have prepared code examples on how to use DHTMLX Diagram Editor with **Vue 3**. For more information, refer to the corresponding [**Example on GitHub**](https://github.com/DHTMLX/vue-diagram-demo).
 
 ## Creating a project
 
@@ -56,11 +56,11 @@ The app should run on a localhost (for instance `http://localhost:3000`).
 
 ## Creating Diagram Editor
 
-Now you should get the DHTMLX Diagram Editor source code. First of all, stop the app and proceed with installing the Diagram package.
+Now you should get the DHTMLX Diagram Editor source code. First of all, stop the app and proceed with installing the Diagram Editor package.
 
 ### Step 1. Package installation
 
-Download the [**trial Diagram package**](/guides/diagram_editor/initialization/#installing-diagram-editor-via-npm-and-yarn) and follow steps mentioned in the README file. Note that trial Diagram is available 30 days only.
+Download the [**trial Diagram Editor package**](/guides/diagram_editor/initialization/#installing-diagram-editor-via-npm-and-yarn) and follow steps mentioned in the README file. Note that trial Diagram Editor is available 30 days only.
 
 ### Step 2. Component creation
 
@@ -68,9 +68,9 @@ Now you need to create a Vue component, to add Diagram Editor into the applicati
 
 #### Import source files
 
-Open the ***DiagramEditor.vue*** file and import Diagram source files. Note that:
+Open the ***DiagramEditor.vue*** file and import Diagram Editor source files. Note that:
 
-- if you use PRO version and install the Diagram package from a local folder, the import paths look like this:
+- if you use PRO version and install the Diagram Editor package from a local folder, the import paths look like this:
 
 ~~~html title="DiagramEditor.vue"
 <script>
@@ -81,7 +81,7 @@ import 'dhx-diagram-package/codebase/diagram.css';
 
 Note that depending on the used package, the source files can be minified. In this case make sure that you are importing the CSS file as **diagram.min.css**.
 
-- if you use the trial version of Diagram, specify the following paths:
+- if you use the trial version of Diagram Editor, specify the following paths:
 
 ~~~html title="DiagramEditor.vue"
 <script>
@@ -90,7 +90,7 @@ import '@dhx/trial-diagram/codebase/diagram.min.css';
 </script>
 ~~~
 
-In this tutorial you can see how to configure the **trial** version of Diagram.
+In this tutorial you can see how to configure the **trial** version of Diagram Editor.
 
 #### Set the container and initialize Diagram Editor
 
@@ -104,7 +104,7 @@ import "@dhx/trial-diagram/codebase/diagram.min.css";
 export default {
     mounted() {
         // initialize the Diagram Editor component
-        this.diagram_editor = new DiagramEditor(this.$refs.container, {});
+        this.diagram_editor = new DiagramEditor(this.$refs.container, { type: "default" });
     },
 
     unmounted() {
@@ -230,7 +230,7 @@ Open ***DiagramEditor.vue*** and complete the `mounted()` method:
 export default {
     // ...
     mounted: function() {
-        this.diagram_editor = new DiagramEditor(this.$refs.container, {});
+        this.diagram_editor = new DiagramEditor(this.$refs.container, { type: "default" });
 
         this.diagram_editor.events.on("zoomIn", (step) => {
             console.log("The diagram in the editor is zoomed in. The step is" + step);
