@@ -12,7 +12,7 @@ description: You can learn about the properties property of Editbar in the docum
 
 :::info
 The `properties` config allows you to do the following:
-- modify Editbar controls for all or individual Diaram elements base on [**Basic controls**](api/diagram_editor/editbar/basic_controls_overview.md) and/or [**Complex controls**](api/diagram_editor/editbar/complex_controls_overview.md)
+- modify Editbar controls for all or individual Diagram elements based on [**Basic controls**](api/diagram_editor/editbar/basic_controls_overview.md) and/or [**Complex controls**](api/diagram_editor/editbar/complex_controls_overview.md)
 - apply custom Editbar control(s) defined via the [`controls`](api/diagram_editor/editbar/config/controls_property.md) property to Diagram elements
 - specify conditions for applying an Editbar control (custom or default) to Diagram elements
 
