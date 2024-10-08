@@ -863,6 +863,7 @@ module.exports = {
             "guides/integrations/angular_integration",
             "guides/integrations/react_integration",
             "guides/integrations/vue_integration",
+            "guides/integrations/svelte_integration"
           ],
         },
         "guides/touch_support",
