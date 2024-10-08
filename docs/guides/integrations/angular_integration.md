@@ -135,7 +135,7 @@ body {
 
 #### Loading data
 
-To add data into Diagram Editor, you need to provide a data set. You can create the **data.ts** file in the **src/app/diagram-editor/** directory and add some data into it:
+To add data into Diagram Editor, you need to provide a [**data set**](https://github.com/DHTMLX/angular-diagram-demo/blob/master/src/app/diagram/data.ts). You can create the **data.ts** file in the **src/app/diagram-editor/** directory and add some data into it:
 
 ~~~jsx title="data.ts"
 export function getData() {

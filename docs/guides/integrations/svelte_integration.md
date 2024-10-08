@@ -24,7 +24,7 @@ To create a **Svelte** JS project, run the following command:
 npm create vite@latest
 ~~~
 
-Let's name the project as **my-svelte-diagram-app**.
+Select Svelte and JavaScript options while creating the project. Let's name the project as **my-svelte-diagram-app**.
 
 ### Installation of dependencies
 
@@ -40,7 +40,7 @@ Then you need to install dependencies and run the app. For this, you need to mak
 
 ~~~jsx
 yarn
-yarn dev // or yarn dev
+yarn start // or yarn dev
 ~~~
 
 - if you use [**npm**](https://www.npmjs.com/), you need to call the following commands:
@@ -118,7 +118,7 @@ To display Diagram Editor on the page, you need to create the container for Diag
 
 #### Adding styles
 
-To display Diagram Editor correctly, you need to specify important styles for Diagram Editor and its container in the main css file of the project:
+To display Diagram Editor correctly, you need to specify important styles for Diagram Editor and its container in the CSS file of the project:
 
 ~~~css title="app.css"
 /* specify styles for initial page */
@@ -139,7 +139,7 @@ body,
 
 #### Loading data
 
-To add data into the Diagram Editor, we need to provide a data set. Let's create the ***data.js*** file in the ***src/*** directory and add some data into it:
+To add data into the Diagram Editor, we need to provide a [**data set**](https://github.com/DHTMLX/svelte-diagram-demo/blob/main/src/data.js). Let's create the ***data.js*** file in the ***src/*** directory and add some data into it:
 
 ~~~jsx title="data.js"
 export function getData() {
@@ -167,7 +167,7 @@ export function getData() {
 }
 ~~~
 
-Then open the ***App.svelte*** file, import data, and pass it into the new created `<DiagramEditor/>` components as **props**:
+Then open the ***App.svelte*** file, import data, and pass it into the newly created `<DiagramEditor/>` components as **props**:
 
 ~~~html {3,5,8} title="App.svelte"
 <script>

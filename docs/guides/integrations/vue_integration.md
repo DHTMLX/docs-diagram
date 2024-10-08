@@ -120,7 +120,7 @@ export default {
 
 #### Adding styles
 
-To display Diagram Editor correctly, you need to specify important styles for Diagram Editor and its container in the main css file of the project:
+To display Diagram Editor correctly, you need to specify important styles for Diagram Editor and its container in the CSS file of the project:
 
 ~~~css title="style.css"
 /* specify styles for initial page */
@@ -141,7 +141,7 @@ body,
 
 #### Loading data
 
-To add data into the Diagram Editor, you need to provide a data set. You can create the ***data.js*** file in the ***src/*** directory and add some data into it:
+To add data into the Diagram Editor, you need to provide a [**data set**](https://github.com/DHTMLX/vue-diagram-demo/blob/master/src/data.js). You can create the ***data.js*** file in the ***src/*** directory and add some data into it:
 
 ~~~jsx title="data.js"
 export function getData() {

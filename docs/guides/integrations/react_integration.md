@@ -111,7 +111,7 @@ export default function DiagramEditorComponent(props) {
 
 #### Adding styles
 
-To display Diagram Editor correctly, you need to specify important styles for Diagram Editor and its container in the main css file of the project:
+To display Diagram Editor correctly, you need to specify important styles for Diagram Editor and its container in the CSS file of the project:
 
 ~~~css title="index.css"
 /* specify styles for initial page */
@@ -132,7 +132,7 @@ body,
 
 #### Loading data
 
-To add data into the Diagram Editor, you need to provide a data set. Let's create the ***data.js*** file in the ***src/*** directory and add some data into it:
+To add data into the Diagram Editor, you need to provide a [**data set**](https://github.com/DHTMLX/react-diagram-demo/blob/master/src/data.js). Let's create the ***data.js*** file in the ***src/*** directory and add some data into it:
 
 ~~~jsx title="data.js"
 export function getData() {

@@ -1,17 +1,17 @@
 ---
 sidebar_label: Initialization 
-title: Editor initialization
+title: Diagram Editor initialization
 description: You can learn how to start with Diagram Editor in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
 
-# Editor initialization
+# Diagram Editor initialization
 
 This article covers the process of displaying a Diagram Editor on a page. In order to initialize the editor, you need to include source files specific for Editor and use the `DiagramEditor` instance. In all other aspects the initialization stage is the same as for the Diagram component:
 
 - [Download the DHTMLX Diagram package](https://dhtmlx.com/docs/products/dhtmlxDiagram/download.shtml) and unpack it into a folder of your project
 - [Include the source files on a page](#including-required-code-files)
-- [Initialize the Editor with the object constructor](#initializing-editor)
-- [Load data into the Editor](#loading-data-into-editor)
+- [Initialize Diagram Editor with the object constructor](#initializing-diagram-editor)
+- [Load data into the Diagram Editor](#loading-data-into-diagram-editor)
 
 ~~~html
 <!DOCTYPE html>
@@ -34,7 +34,7 @@ This article covers the process of displaying a Diagram Editor on a page. In ord
             // more objects
         ];
 
-        // creating Editor
+        // creating Diagram Editor
         const editor = new dhx.DiagramEditor("editor_container", {
             // config options
         });
@@ -67,24 +67,24 @@ You can import JavaScript Diagram Editor into your project using the `yarn` or `
 #### Installing trial Diagram Editor via npm and yarn
 
 :::info
-If you want to use the trial version of Diagram Editor, download the [**trial Diagram package**](https://dhtmlx.com/docs/products/dhtmlxDiagram/download.shtml) and follow the steps mentioned in the *README* file. Note that the trial Diagram is available 30 days only.
+If you want to use the trial version of Diagram Editor, download the [**trial Diagram package**](https://dhtmlx.com/docs/products/dhtmlxDiagram/download.shtml) and follow the steps mentioned in the *README* file. Note that the trial Diagram Editor is available 30 days only.
 :::
 
 #### Installing PRO Diagram Editor via npm and yarn
 
 :::info
-If you already have Diagram under the proprietary license, send your **license number** to the *contact@dhtmlx.com* email to receive a login and a password for a private **npm** as well as a detailed guide on how to install Diagram. Note that a private **npm** is available before the expiration of the proprietary Diagram license.
+If you already have Diagram Editor under the proprietary license, send your **license number** to the *contact@dhtmlx.com* email to receive a login and a password for a private **npm** as well as a detailed guide on how to install Diagram Editor. Note that a private **npm** is available before the expiration of the proprietary Diagram Editor license.
 :::
 
-## Initializing Editor
+## Initializing Diagram Editor
 
 You can initialize a Diagram Editor in a container, in the document body, or in a layout cell.
 
 ### Initialization in a container
 
-To initialize an editor in a container, use the `dhx.DiagramEditor` constructor and pass the following two parameters to the constructor function:
+To initialize Diagram Editor in a container, use the `dhx.DiagramEditor` constructor and pass the following two parameters to the constructor function:
 
-- a container to place an Editor into, let's give it the *"editor_container"* id:
+- a container to place Diagram Editor into, let's give it the *"editor_container"* id:
 
 ~~~html title="index.html"
 <div id="editor_container"></div>
@@ -100,7 +100,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 
 ### Initialization in the document body
 
-It is also possible to skip setting a container for Editor and to add it right into the document's body:
+It is also possible to skip setting a container for Diagram Editor and to add it right into the document's body:
 
 ~~~jsx
 const editor = new dhx.DiagramEditor(document.body, {
@@ -143,7 +143,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 
 Check [the full list of configuration properties of Editor](/api/diagram_editor/editor/config/overview/).
 
-## Loading data into Editor
+## Loading data into Diagram Editor
 
 It is possible to load an [appropriate data set](../../../guides/loading_data/#preparing-data-to-load) into the editor via the [parse()](../../../api/diagram_editor/editor/methods/parse_method/) method of the editor.
 
