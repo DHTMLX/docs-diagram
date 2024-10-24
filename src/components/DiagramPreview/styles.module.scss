@@ -1,0 +1,890 @@
+/* HTML block with picture*/
+
+.blockC{
+    display: block;
+}
+
+.diagramFeaturesContainer a:hover{
+    text-decoration: none;
+}
+
+.diagramFeaturesContainer {
+    box-shadow: 0 3px 9px rgba(0,0,0,.2);
+}
+
+.diagramFeatures {
+    position: relative;
+}
+
+.diagramFeaturesPict{
+    position: relative;
+    z-index: 0
+}
+
+.diagramFeaturesPict:before {
+    content: "";
+    display: block;
+    padding-top: 52.4590163934%;
+}
+
+.diagramFeaturesImg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+}
+
+.diagramScreenNote {
+    position: absolute;
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 10px 15px;
+    box-shadow: 0 3px 9px rgba(0,0,0,.2);
+    background-color: #4a5863;
+    z-index: 10;
+    transition: all .25s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    box-sizing: content-box;
+}
+
+@media (max-width: 1023px) {
+    .diagramScreenNote {
+        font-size:11px;
+    }
+}
+
+.diagramScreenNote.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.diagramScreenNote.note1 {
+    top: 11%;
+    left: 1.3%;
+    max-width: 282px;
+}
+
+@media (max-width: 1023px) {
+    .diagramScreenNote.note1 {
+        max-width:170px;
+    }
+}
+
+.diagramScreenNote.noteG1 {
+    max-width: 298px;
+    left: 6%;
+    top: 8.7%;
+}
+
+@media (max-width: 1023px) {
+    .diagramScreenNote.noteG1 {
+        max-width:170px;
+    }
+}
+
+.diagramScreenNote.note2 {
+    top: 48%;
+    left: 23%;
+    max-width: 298px;
+}
+
+@media (max-width: 1023px) {
+    .diagramScreenNote.note2 {
+        max-width:170px;
+    }
+}
+
+.diagramScreenNote.noteG2 {
+    top: 7.7%;
+    left: 47%;
+}
+
+.diagramScreenNote.note3 {
+    top: 40%;
+    right: 22.8%;
+    max-width: 245px;
+}
+
+@media (max-width: 1023px) {
+    .diagramScreenNote.note3 {
+        max-width:185px;
+    }
+}
+
+.diagramScreenNote.noteG3 {
+    top: 13.94%;
+    left: 11.8%;
+    max-width: 298px;
+}
+
+.diagramScreenNote.note4 {
+    top: 40.5%;
+    left: 24.1%;
+    max-width: 250px;
+}
+
+.diagramScreenNote.noteG4 {
+    top: 15.2%;
+    left: auto;
+    right: .65%;
+    max-width: 298px;
+}
+
+@media (max-width: 1024px) {
+    .diagramScreenNote.noteG4 {
+        max-width:230px;
+    }
+}
+
+.diagramScreenNote.note5 {
+    bottom: 3.5%;
+    left: 52.2%;
+    max-width: 250px;
+}
+
+.diagramScreenNote.noteG5 {
+    top: 33.65%;
+    bottom: auto;
+    left: auto;
+    right: 21.88%;
+    max-width: 298px;
+}
+
+.diagramScreenNote.note6 {
+    bottom: 6.5%;
+    left: 26.15%;
+    max-width: 274px;
+}
+
+.diagramScreenNote.noteG6 {
+    bottom: 28.6%;
+    left: auto;
+    right: 2.13%;
+    max-width: 298px;
+}
+
+.diagramScreenNote.note7 {
+    top: 8.3%;
+    right: 23.2%;
+    max-width: 282px;
+}
+
+.diagramScreenNote.noteG7 {
+    bottom: 15.9%;
+    top: auto;
+    left: 32.1%;
+    max-width: 298px;
+}
+
+.screenNoteHead {
+    display: inline-flex;
+    align-items: center;
+    color: #03a9f4;
+    font: 500 18px/1.333333333 "Roboto",Arial,sans-serif;
+    margin-bottom: 8px;
+}
+
+.screenNoteHead:active {
+    transform: translateY(1px);
+}
+
+.screenNoteHeadIcon {
+    margin-right: 8px;
+}
+
+.componentIcon {
+    width: 24px;
+    height: 25px;
+}
+
+.componentIcon.line {
+    fill: #03a9f4
+}
+
+@media screen and (min-width: 1025px) {
+    .screenNoteHead {
+        transition:color .15s ease-in-out;
+    }
+
+    .componentIcon.line {
+        transition: all .15s ease-in-out;
+    }
+
+    .screenNoteHead:hover {
+        color: #2095f3;
+    }
+
+    .screenNoteHead:hover .componentIcon.line {
+        fill: #2095f3;
+    }
+}
+
+.diagramScreenNote a {
+    color: #03a9f4;
+}
+
+.diagramScreenNote ul li {
+    position: relative;
+    padding-left: 25px;
+}
+
+.diagramScreenNote ul li:before,
+.screenNote ul li:before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.emojiIcon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    width: 18px;
+    margin-right: 4px;
+}
+
+.diagramShape:before,
+.emojiIcon:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
+.emojiIconImg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+}
+
+.diagramScreenNoteArrow.arrow1,
+.diagramScreenNoteArrow.arrow31,
+.diagramScreenNoteArrow.arrow4 {
+    position: absolute;
+    left: 50%;
+    top: -15px;
+    height: 17px;
+    border-left: 2px solid #4a5863;
+}
+
+.diagramScreenNoteArrow.arrow41 {
+    position: absolute;
+    top: -15px;
+    height: 17px;
+    border-left: 2px solid #4a5863;
+}
+
+.diagramScreenNoteArrow.arrow5,
+.diagramScreenNoteArrow.arrow6 {
+    position: absolute;
+    left: 50%;
+    top: -15px;
+    height: 17px;
+    border-left: 2px solid #4a5863;
+}
+
+.diagramScreenNoteArrow.arrow61 {
+    position: absolute;
+    top: -15px;
+    height: 17px;
+    border-left: 2px solid #4a5863
+}
+
+.diagramScreenNoteArrow.arrow11,
+.diagramScreenNoteArrow.arrowG3 {
+    position: absolute;
+    left: 50%;
+    top: -15px;
+    height: 17px;
+    border-left: 2px solid #4a5863
+}
+
+.diagramScreenNoteArrow.arrowG3 {
+    top: auto;
+    bottom: -15px
+}
+
+.diagramScreenNoteArrow.arrow41 {
+    left: 11.3%
+}
+
+.diagramScreenNoteArrow.arrow11,
+.diagramScreenNoteArrow.arrow31 {
+    margin-left: -1px
+}
+
+.diagramScreenNoteArrow.arrow1 {
+    margin-left: -18px
+}
+
+.diagramScreenNote.noteG3 .diagramScreenNoteArrow.arrowG3 {
+    margin-left: -24px
+}
+
+@media screen and (min-width: 768px) {
+    .diagramScreenNote.noteG1 .diagramScreenNoteArrow.arrow1 {
+        margin-left:-1px
+    }
+
+    .diagramScreenNote.noteG2 .diagramScreenNoteArrow.arrow1 {
+        margin-left: 90px
+    }
+
+    .diagramScreenNote.noteG6 .diagramScreenNoteArrow.arrow1 {
+        margin-left: -13px;
+        left: 100%
+    }
+}
+
+.diagramScreenNoteArrow.arrow4,
+.diagramScreenNoteArrow.arrow5 {
+    margin-left: -1px
+}
+
+.diagramScreenNoteArrow.arrow6 {
+    margin-left: -13px
+}
+
+@media screen and (min-width: 768px) and (max-width:1023px) {
+    .diagramScreenNote.noteG4 .diagramScreenNoteArrow.arrow4 {
+        left:64%
+    }
+}
+
+.diagramScreenNoteArrow.arrow11:before,
+.diagramScreenNoteArrow.arrow1:before,
+.diagramScreenNoteArrow.arrow22:before,
+.diagramScreenNoteArrow.arrow2:before,
+.diagramScreenNoteArrow.arrow31:before,
+.diagramScreenNoteArrow.arrow3:before,
+.diagramScreenNoteArrow.arrow41:before,
+.diagramScreenNoteArrow.arrow4:before,
+.diagramScreenNoteArrow.arrow5:before,
+.diagramScreenNoteArrow.arrow61:before,
+.diagramScreenNoteArrow.arrow6:before,
+.diagramScreenNoteArrow.arrow61:before,
+.diagramScreenNoteArrow.arrowG3:before {
+    content: "";
+    position: absolute;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: #4a5863
+}
+
+.diagramScreenNoteArrow.arrow11:before,
+.diagramScreenNoteArrow.arrow1:before,
+.diagramScreenNoteArrow.arrow31:before,
+.diagramScreenNoteArrow.arrow41:before,
+.diagramScreenNoteArrow.arrow4:before,
+.diagramScreenNoteArrow.arrow5:before,
+.diagramScreenNoteArrow.arrow61:before,
+.diagramScreenNoteArrow.arrow6:before {
+    left: 50%;
+    margin-left: -5px;
+    top: -4px
+}
+
+.diagramScreenNoteArrow.arrowG3:before {
+    left: 50%;
+    margin-left: -5px;
+    top: auto;
+    bottom: -4px
+}
+
+.diagramScreenNoteArrow.arrow61 {
+    left: 75%
+}
+
+.diagramScreenNoteArrow.arrow2 {
+    margin-top: -1px
+}
+
+.diagramScreenNoteArrow.arrow2,
+.diagramScreenNoteArrow.arrow22,
+.diagramScreenNoteArrow.arrow3,
+.diagramScreenNoteArrow.arrow61 {
+    position: absolute;
+    top: 50%;
+    width: 17px;
+    border-top: 2px solid #4a5863
+}
+
+.diagramScreenNoteArrow.arrow3 {
+    margin-top: -1px
+}
+
+.diagramScreenNoteArrow.arrow22 {
+    margin-top: -19px
+}
+
+.diagramScreenNoteArrow.arrow61 {
+    margin-top: -1px
+}
+
+.diagramScreenNoteArrow.arrow2,
+.diagramScreenNoteArrow.arrow22,
+.diagramScreenNoteArrow.arrow61 {
+    left: -15px
+}
+
+.diagramScreenNoteArrow.arrow3 {
+    right: -15px
+}
+
+.diagramScreenNoteArrow.arrow22:before,
+.diagramScreenNoteArrow.arrow2:before,
+.diagramScreenNoteArrow.arrow3:before,
+.diagramScreenNoteArrow.arrow61:before {
+    margin-top: -5px;
+    top: 50%
+}
+
+.diagramScreenNoteArrow.arrow22:before,
+.diagramScreenNoteArrow.arrow2:before,
+.diagramScreenNoteArrow.arrow61:before {
+    left: -4px
+}
+
+.diagramScreenNoteArrow.arrow3:before {
+    right: -4px
+}
+
+.diagramScreenDots {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10
+}
+
+.diagramScreenDot {
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .25s ease-in-out
+}
+
+.diagramScreenDot.hidden {
+    opacity: 0;
+    visibility: hidden
+}
+
+.diagramScreenDot.dot1 {
+    left: 14%;
+    top: 4.5%
+}
+
+.diagramScreenDot.dot2 {
+    left: 19.5%;
+    top: 54.5%
+}
+
+.diagramScreenDot.dot3 {
+    right: 19.4%;
+    top: 48.9%
+}
+
+.diagramScreenDot.dot4 {
+    left: 37%;
+    top: 34%
+}
+
+.diagramScreenDot.dot5 {
+    right: 31.5%;
+    bottom: 23.5%
+}
+
+.diagramScreenDot.dot6 {
+    left: 39%;
+    bottom: 26.2%
+}
+
+.diagramScreenDot.dot7 {
+    right: 40%;
+    top: 2%
+}
+
+.diagramScreenDot.dotG1 {
+    left: 18%;
+    top: 3.5%
+}
+
+.diagramScreenDot.dotG2 {
+    left: 66.5%;
+    top: 2.5%
+}
+
+.diagramScreenDot.dotG3 {
+    left: 21.9%;
+    top: 36.2%
+}
+
+.diagramScreenDot.dotG4 {
+    left: 84.51%;
+    top: 10.1%
+}
+
+.diagramScreenDot.dotG5 {
+    right: 19.2%;
+    bottom: 50.5%
+}
+
+.diagramScreenDot.dotG6 {
+    left: auto;
+    right: 1.7%;
+    bottom: 44%
+}
+
+.diagramScreenDot.dotG7 {
+    right: 53.1%;
+    bottom: 11%;
+    top: auto
+}
+
+.diagramScreenDotC,
+.diagramScreenDotCi {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%
+}
+
+.diagramScreenDotC.f {
+    animation: ca1 1529.4117647059ms linear infinite normal forwards;
+    transform: scale(.8,.8)
+}
+
+.diagramScreenDotC.s {
+    animation: ca2 1529.4117647059ms linear infinite normal forwards;
+    transform: scale(.8,.8)
+}
+
+.diagramScreenDotC.th {
+    transform: scale(1.5,1.5);
+    animation: ca3 1529.4117647059ms linear infinite normal forwards
+}
+
+.diagramScreenDotC.fh {
+    animation: ca4 1529.4117647059ms linear infinite normal forwards
+}
+
+.diagramScreenDotCi {
+    background-color: #03a9f4;
+    opacity: .9
+}
+
+.diagramScreenDotCi.f {
+    opacity: .1;
+    animation: cai1 1529.4117647059ms linear infinite normal forwards
+}
+
+.diagramScreenDotCi.s {
+    animation: cai2 1529.4117647059ms linear infinite normal forwards;
+    opacity: .1
+}
+
+.diagramScreenDotCi.th {
+    opacity: .2;
+    animation: cai3 1529.4117647059ms linear infinite normal forwards
+}
+
+.diagramScreenDot.dot2 .diagramScreenDotC,
+.diagramScreenDot.dot2 .diagramScreenDotCi {
+    animation-delay: .3s
+}
+
+.diagramScreenDot.dot3 .diagramScreenDotC,
+.diagramScreenDot.dot3 .diagramScreenDotCi {
+    animation-delay: .45s
+}
+
+.diagramScreenDot.dot4 .diagramScreenDotC,
+.diagramScreenDot.dot4 .diagramScreenDotCi {
+    animation-delay: .55s
+}
+
+.diagramScreenDot.dot5 .diagramScreenDotC,
+.diagramScreenDot.dot5 .diagramScreenDotCi {
+    animation-delay: .2s
+}
+
+.diagramScreenDot.dot6 .diagramScreenDotC,
+.diagramScreenDot.dot6 .diagramScreenDotCi {
+    animation-delay: .8s
+}
+
+@media screen and (max-width: 1024px) {
+    .screenNoteHead {
+        font-size:14px
+    }
+
+    .componentIcon {
+        width: 20px
+    }
+
+    .diagramScreenDot.dot6:not(.dotG6) {
+        left: 38.6%;
+        bottom: 25.5%
+    }
+
+    .diagramScreenNote.note1:not(.noteG1) {
+        top: 11%
+    }
+
+    .diagramScreenNoteArrow.arrow1 {
+        margin-left: -42px
+    }
+
+    .diagramScreenNote.note2:not(.noteG2) {
+        top: 49%;
+        left: 23.1%
+    }
+
+    .diagramScreenNote.note3:not(.noteG3) {
+        top: 43.5%;
+        right: 23%
+    }
+
+    .diagramScreenNote.note4:not(.noteG4) {
+        top: 40.5%;
+        left: 25%
+    }
+
+    .diagramScreenNote.note5:not(.noteG5) {
+        bottom: 5.5%;
+        left: 50.5%
+    }
+
+    .diagramScreenNote.note6:not(.noteG6) {
+        bottom: 12.8%;
+        left: 28.3%
+    }
+
+    .diagramScreenNoteArrow.arrow6 {
+        margin-left: -36px
+    }
+
+    .diagramScreenNote.note7:not(.noteG7) {
+        top: 8.3%;
+        right: 21.7%
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .diagramScreenDot {
+        width:20px;
+        height: 20px
+    }
+
+    .diagramScreenNote {
+        font-size: 14px;
+        transition: none
+    }
+
+    .diagramScreenNote.note1,
+    .diagramScreenNote.note2,
+    .diagramScreenNote.note3,
+    .diagramScreenNote.note4,
+    .diagramScreenNote.note5,
+    .diagramScreenNote.note6,
+    .diagramScreenNote.note7 {
+        left: auto;
+        right: auto;
+        top: auto;
+        bottom: auto;
+        max-width: none
+    }
+
+    .diagramScreenNote.active {
+        position: relative
+    }
+
+    .diagramScreenDot.hidden .diagramScreenDotC.th,
+    .diagramScreenNoteArrow {
+        display: none
+    }
+
+    .diagramScreenDot.hidden {
+        opacity: 1;
+        visibility: visible;
+        width: 8px;
+        height: 8px
+    }
+
+    .diagramScreenDot.dot1.hidden,
+    .diagramScreenDot.dot2.hidden,
+    .diagramScreenDot.dot4.hidden {
+        margin: 6px 0 0 6px
+    }
+
+    .diagramScreenDot.dot3.hidden {
+        margin: 6px 6px 0 0
+    }
+
+    .diagramScreenDot.dot5.hidden {
+        margin: 0 6px 6px 0
+    }
+
+    .diagramScreenDot.dot6.hidden {
+        margin: 0 6px
+    }
+
+    .diagramScreenDot.hidden .diagramScreenDotC,
+    .diagramScreenDot.hidden .diagramScreenDotCi {
+        animation: none
+    }
+}
+
+@keyframes ac-m {
+    0%,to {
+        opacity: 0
+    }
+
+    50% {
+        opacity: 1
+    }
+}
+
+@keyframes ca1 {
+    0% {
+        transform: scale(.8,.8)
+    }
+
+    34.615385% {
+        transform: scale(.8,.8);
+        animation-timing-function: cubic-bezier(.428529,0,.699388,.552091)
+    }
+
+    to {
+        transform: scale(1.5,1.5)
+    }
+}
+
+@keyframes cai1 {
+    0% {
+        opacity: .1
+    }
+
+    68.461538% {
+        opacity: .1;
+        animation-timing-function: cubic-bezier(.42,0,.71,.5)
+    }
+
+    to {
+        opacity: .2
+    }
+}
+
+@keyframes ca2 {
+    0% {
+        transform: scale(.8,.8);
+        animation-timing-function: cubic-bezier(.42,0,.58,1)
+    }
+
+    95.384615%,to {
+        transform: scale(2,2)
+    }
+}
+
+@keyframes cai2 {
+    0% {
+        opacity: .1
+    }
+
+    31.538462% {
+        opacity: .1;
+        animation-timing-function: cubic-bezier(.42,0,.71,.5)
+    }
+
+    66.153846% {
+        opacity: .2;
+        animation-timing-function: cubic-bezier(.29,.5,.58,1)
+    }
+
+    95.384615%,to {
+        opacity: 0
+    }
+}
+
+@keyframes ca3 {
+    0% {
+        transform: scale(1.5,1.5);
+        animation-timing-function: cubic-bezier(.294999,.472482,.574835,1)
+    }
+
+    65.384615%,to {
+        transform: scale(2,2)
+    }
+}
+
+@keyframes cai3 {
+    0% {
+        opacity: .2;
+        animation-timing-function: cubic-bezier(.42,0,.71,.5)
+    }
+
+    31.538462% {
+        opacity: .2;
+        animation-timing-function: cubic-bezier(.29,.5,.58,1)
+    }
+
+    65.384615%,to {
+        opacity: 0
+    }
+}
+
+@keyframes ca4 {
+    0% {
+        transform: scale(1,1);
+        animation-timing-function: cubic-bezier(.41,.145,.58,1)
+    }
+
+    31.538462% {
+        transform: scale(.85,.85);
+        animation-timing-function: cubic-bezier(.42,0,.58,1)
+    }
+
+    61.538462% {
+        transform: scale(1.1,1.1)
+    }
+
+    76.923077%,to {
+        transform: scale(1,1)
+    }
+}
+
+@keyframes cai {
+    0%,93.846154%,to {
+        transform: scale(1,1)
+    }
+
+    11.538462% {
+        transform: scale(1,1);
+        animation-timing-function: cubic-bezier(.42,0,.58,1)
+    }
+
+    46.153846% {
+        transform: scale(.9,.9);
+        animation-timing-function: cubic-bezier(.42,0,.58,1)
+    }
+
+    74.615385% {
+        transform: scale(1.2,1.2)
+    }
+}
