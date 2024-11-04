@@ -1,31 +1,31 @@
+import { useCallback } from 'react';
 import React from 'react';
 
 import styles from './styles.module.scss';
 
 export default function DiagramPreview() {
-    function dotsAndNotes(){
-        let dotBtn = document.querySelectorAll(".jsFDot"),
-            dotNote = document.querySelectorAll(".jsFNote");
+  const dotClickHandler = useCallback((event) => {
+    let dotBtn = document.querySelectorAll(".jsFDot_src-components-DiagramPreview-styles-module");
+    let dotNote = document.querySelectorAll(".jsFNote_src-components-DiagramPreview-styles-module");
 
-        dotBtn.forEach((element) => {
-            element.addEventListener("click", function(){
-                let dotNumber = this.getAttribute("dataDot");
+    const currentDot = event.target.closest('.diagramScreenDot_src-components-DiagramPreview-styles-module');
 
-                dotBtn.forEach((el) => {
-                    el.classList.remove("hidden");
-                });
+    let dotNumber = currentDot.getAttribute("data-dot");
 
-                dotNote.forEach((el) => {
-                    el.classList.remove("active");
-                });
+    dotBtn.forEach((el) => {
+        el.classList.remove("hidden_src-components-DiagramPreview-styles-module");
+    });
 
-                this.classList.add("hidden");
+    dotNote.forEach((el) => {
+        el.classList.remove("active_src-components-DiagramPreview-styles-module");
+    });
 
-                document.querySelector(".jsFNote[data-note='" + dotNumber + "']").classList.add("active");
-            });
-        });
-    }
-    dotsAndNotes();
+    currentDot.classList.add("hidden_src-components-DiagramPreview-styles-module");
+
+    document.querySelector(".jsFNote_src-components-DiagramPreview-styles-module[data-note='" + dotNumber + "']").classList.add("active_src-components-DiagramPreview-styles-module");
+  }, [])
+    
+    
   return (
     <div style={{maxWidth: '958px', margin: '0 auto', padding: '40 0'}}>
         <div className={styles.diagramFeaturesContainer}>
@@ -37,7 +37,7 @@ export default function DiagramPreview() {
                         <img src="https://dhtmlx.com/docs/products/dhtmlxDiagram/images/screens/demo.png?v=2" alt="" className={styles.diagramFeaturesImg} width="1220" height="640" />
                     </picture>
                     <div className={styles.diagramScreenDots}>
-                        <div className={`${styles.diagramScreenDot} ${styles.dot1} ${styles.jsFDot}`} data-dot="1">
+                        <div className={`${styles.diagramScreenDot} ${styles.dot1} ${styles.jsFDot}`} data-dot="1" onClick={dotClickHandler}>
                             <div className={`${styles.diagramScreenDotC} ${styles.f}`}>
                                 <div className={`${styles.diagramScreenDotCi} ${styles.f}`}></div>
                             </div>
@@ -51,7 +51,7 @@ export default function DiagramPreview() {
                                 <div className={`${styles.diagramScreenDotCi} ${styles.fh}`}></div>
                             </div>
                         </div>
-                        <div className={`${styles.diagramScreenDot} ${styles.dot2} ${styles.jsFDot}`} data-dot="2">
+                        <div className={`${styles.diagramScreenDot} ${styles.dot2} ${styles.jsFDot}`} data-dot="2" onClick={dotClickHandler}>
                             <div className={`${styles.diagramScreenDotC} ${styles.f}`}>
                                 <div className={`${styles.diagramScreenDotCi} ${styles.f}`}></div>
                             </div>
@@ -65,7 +65,7 @@ export default function DiagramPreview() {
                                 <div className={`${styles.diagramScreenDotCi} ${styles.fh}`}></div>
                             </div>
                         </div>
-                        <div className={`${styles.diagramScreenDot} ${styles.dot3} ${styles.jsFDot} ${styles.hidden}`} data-dot="3">
+                        <div className={`${styles.diagramScreenDot} ${styles.dot3} ${styles.jsFDot} ${styles.hidden}`} data-dot="3" onClick={dotClickHandler}>
                             <div className={`${styles.diagramScreenDotC} ${styles.f}`}>
                                 <div className={`${styles.diagramScreenDotCi} ${styles.f}`}></div>
                             </div>
@@ -79,7 +79,7 @@ export default function DiagramPreview() {
                                 <div className={`${styles.diagramScreenDotCi} ${styles.fh}`}></div>
                             </div>
                         </div>
-                        <div className={`${styles.diagramScreenDot} ${styles.dot4} ${styles.jsFDot}`} data-dot="4">
+                        <div className={`${styles.diagramScreenDot} ${styles.dot4} ${styles.jsFDot}`} data-dot="4" onClick={dotClickHandler}>
                             <div className={`${styles.diagramScreenDotC} ${styles.f}`}>
                                 <div className={`${styles.diagramScreenDotCi} ${styles.f}`}></div>
                             </div>
@@ -93,7 +93,7 @@ export default function DiagramPreview() {
                                 <div className={`${styles.diagramScreenDotCi} ${styles.fh}`}></div>
                             </div>
                         </div>
-                        <div className={`${styles.diagramScreenDot} ${styles.dot5} ${styles.jsFDot}`} data-dot="5">
+                        <div className={`${styles.diagramScreenDot} ${styles.dot5} ${styles.jsFDot}`} data-dot="5" onClick={dotClickHandler}>
                             <div className={`${styles.diagramScreenDotC} ${styles.f}`}>
                                 <div className={`${styles.diagramScreenDotCi} ${styles.f}`}></div>
                             </div>
@@ -107,7 +107,7 @@ export default function DiagramPreview() {
                                 <div className={`${styles.diagramScreenDotCi} ${styles.fh}`}></div>
                             </div>
                         </div>
-                        <div className={`${styles.diagramScreenDot} ${styles.dot6} ${styles.jsFDot}`} data-dot="6">
+                        <div className={`${styles.diagramScreenDot} ${styles.dot6} ${styles.jsFDot}`} data-dot="6" onClick={dotClickHandler}>
                             <div className={`${styles.diagramScreenDotC} ${styles.f}`}>
                                 <div className={`${styles.diagramScreenDotCi} ${styles.f}`}></div>
                             </div>
@@ -121,7 +121,7 @@ export default function DiagramPreview() {
                                 <div className={`${styles.diagramScreenDotCi} ${styles.fh}`}></div>
                             </div>
                         </div>
-                        <div className={`${styles.diagramScreenDot} ${styles.dot7} ${styles.jsFDot}`} data-dot="7">
+                        <div className={`${styles.diagramScreenDot} ${styles.dot7} ${styles.jsFDot}`} data-dot="7" onClick={dotClickHandler}>
                             <div className={`${styles.diagramScreenDotC} ${styles.f}`}>
                                 <div className={`${styles.diagramScreenDotCi} ${styles.f}`}></div>
                             </div>
@@ -143,7 +143,7 @@ export default function DiagramPreview() {
                     </a>
                     <br />
                     Arrange shapes neatly with a single click via 2 smart algorithms.
-                    <span className={`${styles.diagramScreenNoteArrow, styles.arrow1}`}></span>
+                    <span className={`${styles.diagramScreenNoteArrow} ${styles.arrow1}`}></span>
                 </div>
                 <div className={`${styles.diagramScreenNote} ${styles.note2} ${styles.jsFNote}`} data-note="2">
                     <a href="https://snippet.dhtmlx.com/1p0wemnn?tag=diagram&mode=wide" className={styles.screenNoteHead} target="_blank">
