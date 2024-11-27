@@ -12,7 +12,7 @@ If you are updating Diagram from an older version, check [Migration to Newer Ver
 
 Released on November 27, 2024
 
-- Diagram Editor. An error caused during the shape editing with the Editbar
+- Diagram Editor. An error occurred during the shape editing with the Editbar
 - Diagram Editor. An issue with a shape moving during the navigation on inline editing 
 
 ## Version 6.0.4
