@@ -8,6 +8,12 @@ description: You can learn a new information about DHTMLX JavaScript Diagram lib
 
 If you are updating Diagram from an older version, check [Migration to Newer Version](migration.md) for details.
 
+## Version 6.0.8
+
+Released on December 5, 2024
+
+- The issue with the local trial package during import to frameworks
+
 ## Version 6.0.7
 
 Released on November 27, 2024
