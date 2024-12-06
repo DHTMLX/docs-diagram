@@ -15,7 +15,7 @@ DHTMLX Diagram Editor is compatible with **React**. We have prepared code exampl
 ## Creating a project
 
 :::info
-Before you start to create a new project, install [**Vite**](https://vitejs.dev/) (optional) and [**Node.js**](https://nodejs.org/en/).
+Before you start to create a new project, install [**Vite**](https://vite.dev/) (optional) and [**Node.js**](https://nodejs.org/en/).
 :::
 
 You can create a basic **React** project (this project) or use **React with Vite**. Let's name the project as **my-react-diagram-app**:
