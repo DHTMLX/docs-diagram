@@ -14,8 +14,8 @@ Released on February 4, 2025
 
 ### Fixes
 
-- Diagram. The `itemMouseOver` and `itemMouseOut` events aren't triggered for a selected shape
 - Diagram Editor. An issue with moving a group with items and moving items to/from a group
+- Diagram. The `itemMouseOver` and `itemMouseOut` events aren't triggered for a selected shape
 
 ## Version 6.0.8
 
