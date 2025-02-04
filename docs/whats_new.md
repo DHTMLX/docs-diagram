@@ -8,6 +8,15 @@ description: You can learn a new information about DHTMLX JavaScript Diagram lib
 
 If you are updating Diagram from an older version, check [Migration to Newer Version](migration.md) for details.
 
+## Version 6.0.9 
+
+Released on February 4, 2025
+
+### Fixes
+
+- Diagram Editor. An issue with moving a group with items and moving items to/from a group
+- Diagram. The `itemMouseOver` and `itemMouseOut` events aren't triggered for a selected shape
+
 ## Version 6.0.8
 
 Released on December 5, 2024
