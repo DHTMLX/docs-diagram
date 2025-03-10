@@ -8,6 +8,14 @@ description: You can learn a new information about DHTMLX JavaScript Diagram lib
 
 If you are updating Diagram from an older version, check [Migration to Newer Version](migration.md) for details.
 
+## Version 6.0.10 
+
+Released on March 10, 2025
+
+### Fixes
+
+- Diagram. The issue with adjusting the size of the line shape arrow while editing the line width
+
 ## Version 6.0.9 
 
 Released on February 4, 2025
