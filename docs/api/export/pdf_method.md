@@ -17,12 +17,8 @@ To avoid problems during export, all images for Diagram shapes must be set eithe
 ### Usage
 
 ~~~jsx
-pdf(config?: object): Promise<void>;
+pdf(config?: object): void;
 ~~~
-
-### Returns
-
-A promise of data export
 
 ### Parameters
 
@@ -57,26 +53,20 @@ A promise of data export
 
 ### Example
 
-~~~jsx 
+~~~jsx {7,10-13}
 const diagram = new dhx.Diagram("diagram_container", {
     // config options
 });
 diagram.data.parse(data);
 
 // default export
-diagram.export.pdf()
-    .then(() => console.log("success"))
-    .catch(() => console.log("failure"))
-    .finally(() => console.log("finished"));
+diagram.export.pdf();
 
 // export with config settings
 diagram.export.pdf({
     url: "https://export.dhtmlx.com/diagram/pdf/5.0.0",
     name:"result_pdf"
-})
-    .then(() => console.log("success"))
-    .catch(() => console.log("failure"))
-    .finally(() => console.log("finished"));
+});
 ~~~
 
 ### Details
