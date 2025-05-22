@@ -73,7 +73,7 @@ If you want to use the trial version of Diagram Editor, download the [**trial Di
 #### Installing PRO Diagram Editor via npm and yarn
 
 :::info
-If you already have Diagram Editor under the proprietary license, send your **license number** to the *contact@dhtmlx.com* email to receive a login and a password for a private **npm** as well as a detailed guide on how to install Diagram Editor. Note that a private **npm** is available before the expiration of the proprietary Diagram Editor license.
+You can access the DHTMLX private **npm** directly in the [Client's Area](https://dhtmlx.com/clients/) by generating your login and password for **npm**. A detailed installation guide is also available there. Please note that access to the private **npm** is available only while your proprietary Diagram license is active.
 :::
 
 ## Initializing Diagram Editor
