@@ -8,6 +8,14 @@ description: You can learn a new information about DHTMLX JavaScript Diagram lib
 
 If you are updating Diagram from an older version, check [Migration to Newer Version](migration.md) for details.
 
+## Version 6.0.11 
+
+Released on June 18, 2025
+
+### Fixes
+
+- Diagram Editor. Incorrect shapes moving while zooming in
+
 ## Version 6.0.10 
 
 Released on March 10, 2025

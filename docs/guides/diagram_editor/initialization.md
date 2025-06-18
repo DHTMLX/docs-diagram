@@ -60,20 +60,20 @@ Make sure that you set correct relative paths to these files:
 <link rel="stylesheet" href="../codebase/diagramWithEditor.css">
 ~~~
 
-### Installing Diagram Editor via npm and yarn
+### Installing Diagram Editor via npm or yarn
 
 You can import JavaScript Diagram Editor into your project using the `yarn` or `npm` package manager.
 
-#### Installing trial Diagram Editor via npm and yarn
+#### Installing trial Diagram Editor via npm or yarn
 
 :::info
 If you want to use the trial version of Diagram Editor, download the [**trial Diagram package**](https://dhtmlx.com/docs/products/dhtmlxDiagram/download.shtml) and follow the steps mentioned in the *README* file. Note that the trial Diagram Editor is available 30 days only.
 :::
 
-#### Installing PRO Diagram Editor via npm and yarn
+#### Installing PRO Diagram Editor via npm or yarn
 
 :::info
-If you already have Diagram Editor under the proprietary license, send your **license number** to the *contact@dhtmlx.com* email to receive a login and a password for a private **npm** as well as a detailed guide on how to install Diagram Editor. Note that a private **npm** is available before the expiration of the proprietary Diagram Editor license.
+You can access the DHTMLX private **npm** directly in the [Client's Area](https://dhtmlx.com/clients/) by generating your login and password for **npm**. A detailed installation guide is also available there. Please note that access to the private **npm** is available only while your proprietary Diagram license is active.
 :::
 
 ## Initializing Diagram Editor
