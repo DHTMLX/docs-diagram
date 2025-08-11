@@ -7,7 +7,7 @@ description: You can learn about the Integration with Angular in the documentati
 # Integration with Angular
 
 :::tip
-You should be familiar with the basic concepts and patterns of **Angular** to use this documentation. To refresh your knowledge, please refer to the [**Angular documentation**](https://angular.io/docs).
+You should be familiar with the basic concepts and patterns of **Angular** to use this documentation. To refresh your knowledge, please refer to the [**Angular documentation**](https://angular.dev/overview).
 :::
 
 DHTMLX Diagram Editor is compatible with **Angular**. We have prepared code examples on how to use DHTMLX Diagram Editor with **Angular**. For more information, refer to the corresponding [**Example on GitHub**](https://github.com/DHTMLX/angular-diagram-demo).
@@ -15,7 +15,7 @@ DHTMLX Diagram Editor is compatible with **Angular**. We have prepared code exam
 ## Creating a project
 
 :::info
-Before you start to create a new project, install [**Angular CLI**](https://angular.io/cli) and [**Node.js**](https://nodejs.org/en/).
+Before you start to create a new project, install [**Angular CLI**](https://angular.dev/tools/cli) and [**Node.js**](https://nodejs.org/en/).
 :::
 
 Create a new **my-angular-diagram-app** project using Angular CLI. Run the following command for this purpose:

@@ -7,7 +7,7 @@ description: You can learn about the Integration with React in the documentation
 # Integration with React
 
 :::tip
-You should be familiar with the basic concepts and patterns of [**React**](https://react.dev) to use this documentation. To refresh your knowledge, please refer to the [**React documentation**](https://reactjs.org/docs/getting-started.html).
+You should be familiar with the basic concepts and patterns of [**React**](https://react.dev) to use this documentation. To refresh your knowledge, please refer to the [**React documentation**](https://react.dev/learn).
 :::
 
 DHTMLX Diagram Editor is compatible with **React**. We have prepared code examples of how to use DHTMLX Diagram Editor with **React**. For more information, refer to the corresponding [**Example on GitHub**](https://github.com/DHTMLX/react-diagram-demo).
