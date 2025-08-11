@@ -83,7 +83,7 @@ While loading an image and sending it to the server via the `target` property, n
 - `label` - (optional) specifies a label for the control
 - `labelWidth` - (optional) sets the label width of the control
 - `labelPosition` - (optional) defines the position of a label: *"left"* | *"top"*. *"top"* by default
-- `accept` - (optional) allows specifying the type/extension of the selected file. *"image/*"* by default. [Check details](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/accept#unique_file_type_specifiers)
+- `accept` - (optional) allows specifying the type/extension of the selected file. *"image/*"* by default. [Check details](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/accept)
 - `fieldName` - (optional) sets the file field name in the form data sent to the server. *"file"* by default
 - `autosend` - (optional) enables/disables automatic sending of an added file. *false* by default
 - `params` - (optional) adds extra parameters for sending an XMLHttpRequest
