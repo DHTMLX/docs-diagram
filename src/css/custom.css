@@ -210,3 +210,13 @@ span.token-line.theme-code-block-highlighted-line {
 p {
     line-height: 2;
 }
+
+/* center alignment of images */
+
+.image_to_center {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+    border-radius: 3px;
+}
