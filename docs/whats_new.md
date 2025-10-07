@@ -8,6 +8,30 @@ description: You can learn a new information about DHTMLX JavaScript Diagram lib
 
 If you are updating Diagram from an older version, check [Migration to Newer Version](migration.md) for details.
 
+## Version 6.1
+
+Released on October , 2025
+
+### New functionality
+
+- The ability to create PERT charts from Gantt datasets
+
+### Updates
+
+- The [pdf()](../api/export/pdf_method/)/[png()](../api/export/png_method/) export functions return a promise of data export
+
+### New demo on backend integration
+
+- Multiuser (real-time updated) backend
+
+### New samples
+
+- Diagram. Fishbone Diagram
+- Diagram. Watermark for the exported pdf/png file
+- Diagram. PERT Chart - classic example
+- Diagram. PERT Chart with Gantt 
+- Diagram. PERT Chart with search tasks
+
 ## Version 6.0.11 
 
 Released on June 18, 2025
