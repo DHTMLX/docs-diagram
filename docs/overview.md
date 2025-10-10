@@ -107,11 +107,29 @@ The Mindmap mode is used to represent a core topic or idea surrounded by the bra
 | ![](assets/mindmap_emotions.png)                                                |
 
 The shapes are connected by curved lines and arranged around a central shape of the diagram.
+
 ### Custom shapes
 
 An example of adding a custom template into the mindmap mode of the diagram to create a site map:
 
 <iframe src="https://snippet.dhtmlx.com/do1jwmw1?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
+
+## Diagram in the PERT mode
+
+The PERT mode is used to visualize tasks and projects' sequences and connections between them. It is also useful for identifying the critical path and project planning.
+
+| [Diagram. PERT mode ](https://snippet.dhtmlx.com/8leu8jh1) 			|
+| ----------------------------------------------------------------------|
+| ![](assets/pert_mode.png)                                             |
+
+
+### Integration of PERT Diagram and DHTMLX Gantt 
+
+An example of adding a Gantt chart into the Diagram in the PERT mode with the full integration between them:
+
+| [Diagram. PERT mode with Gantt chart](https://snippet.dhtmlx.com/pplmcp8g) 	|
+| ------------------------------------------------------------------------------|
+| ![](assets/pert_mode_gantt.png)                                             	|
 
 ## Shape search
 

@@ -24,8 +24,16 @@ Tip: Use the name of the necessary shape as a value of the **type** attribute in
 
 <iframe src="https://snippet.dhtmlx.com/3igf1gd5?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="650"></iframe>
 
+- the `"task"` and `"milestone"` types which are the default types of shapes in the "pert" mode of Diagram:
+    - the `"task"` type is a task that has a header and renders dates and duration
+    - the `"milestone"` type is a task without duration that indicates a key point of the project
+    
+To group the shapes of the `"task"` and `"milestone"` types, use the `"project"` type of a shape. [Check the details](/groups/#grouping-shapes-in-the-pert-diagram-mode)  
+
+<iframe src="https://snippet.dhtmlx.com/8leu8jh1?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="650"></iframe>
+
 :::note
-Any of the above shapes can be added into the diagram of any mode ("default", "org", or "mindmap" one).
+Any of the above shapes can be added into the diagram of any mode ("default", "org", "mindmap", "pert").
 :::
 
 ## Setting the type of a shape
@@ -52,7 +60,7 @@ It is also possible to set the default type for all the shapes via the [](../api
 
 ~~~jsx
 const diagram = new dhx.Diagram("diagram_container", {
-    type: "default", // or type: "org", or type: "mindmap" 
+    type: "default", // type: "org" | type: "mindmap" | type: "pert"  
     defaultShapeType: "rectangle"
 });
 diagram.data.parse(data);

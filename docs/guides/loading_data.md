@@ -13,7 +13,7 @@ You can populate DHTMLX Diagram with data in the following ways:
 
 ## Preparing data to load
 
-DHTMLX Diagram takes data in the JSON format. It is an array that contains a set of data objects. There are 5 types of objects:
+DHTMLX Diagram takes data in the JSON format. For the `default`, `org` and `mindmap` Diagram modes it is an array that contains a set of data objects. There are 5 types of objects:
 
 - **shape objects**
 
@@ -31,7 +31,8 @@ const data = [
 ];
 ~~~
 
-The library provides you with [various types of default shapes](../../shapes/default_shapes/) which have both common and specific options. Check the full list of available properties of a shape object in the [API reference](shapes/configuration_properties.md). <br>
+The library provides you with [various types of default shapes](../../shapes/default_shapes/) which have both common and specific options. Check the full list of available properties of a **shape** object in the [API reference](shapes/configuration_properties.md). 
+
 Besides, you may create [your own type of shapes](../../shapes/custom_shape/) and add any custom properties to shape objects.
 
 - **line objects**
@@ -50,7 +51,7 @@ const data = [
 ];
 ~~~
 
-The presence or absence of line objects in the data set depends on the chosen [way of shapes connection](../../lines/#setting-connections-between-shapes). Check the full list of available properties of the line object in the [API reference](lines/configuration_properties.md).
+The presence or absence of line objects in the data set depends on the chosen [way of shapes connection](../../lines/#setting-connections-between-shapes). Check the full list of available properties of the **line** object in the [API reference](lines/configuration_properties.md).
 
 - **line title objects**
 
@@ -68,7 +69,7 @@ const data = [
 ];
 ~~~
 
-Check the full list of available properties of the line title object in the [API reference](line_titles/configuration_properties.md).
+Check the full list of available properties of the **line title** object in the [API reference](line_titles/configuration_properties.md).
 
 - **group objects**
 
@@ -98,7 +99,7 @@ const data = [
 ];
 ~~~
 
-Check the full list of the available properties of a group object in the [API reference](groups/configuration_properties.md).
+Check the full list of the available properties of a **group** object in the [API reference](groups/configuration_properties.md).
 
 - **objects of a swimlane and its cell**
 
@@ -155,7 +156,66 @@ const data = [
 ];
 ~~~
 
-Check the full list of the available configuration properties of the objects of a swimlane and its cells in the [API reference](swimlanes/configuration_properties.md).
+Check the full list of the available configuration properties of the objects of a **swimlane** and its cells in the [API reference](swimlanes/configuration_properties.md).
+
+## Data structure of Diagram in the PERT mode
+
+The data structure of Diagram in the PERT mode coincides with the [data structure of DHTMLX Gantt](https://docs.dhtmlx.com/gantt/desktop__supported_data_formats.html#json) to simplify integration and data exchange between the components. There are `data` (for shapes: "task", "milestone", "project") and `links` (for connections between shapes) arrays.
+
+~~~jsx
+{
+    data: object[]; // an array of shapes (tasks, milestones, projects)
+    links: object[] // an array of connections between the shapes
+};
+~~~
+
+Such a structure allows processing the shapes and their dependencies independently. Check the example below:
+
+~~~jsx
+const dataset = {
+    data: [
+        { id: 1, text: "Project #1", type: "project", parent: null },
+        { id: "1.1", text: "Task #1", parent: 1, type: "task", start_date: new Date(2026, 0, 1), duration: 10 },
+        { id: "1.2", text: "Task #2", parent: 1, type: "task", start_date: new Date(2026, 0, 1), duration: 10 },
+        { id: "2.1", text: "Task #3", parent: null, type: "task", start_date: new Date(2026, 0, 1), duration: 10 },
+        { id: "2.2", text: "Task #4", parent: null, type: "task", start_date: new Date(2026, 0, 1), duration: 10 },
+    ],
+    links: [
+        { id: "line-1", source: "1.1", target: "1.2" },
+        { id: "line-2", source: "1.2", target: "2.1" },
+        { id: "line-3", source: "2.1", target: "2.2" },
+    ]
+}
+~~~
+
+:::info important
+Note that since the ids of items in the data collection of Diagram must be unique, the `$link` prefix is added to the existing id of a link on data loading or adding a new link.
+
+For example:
+
+~~~jsx
+{
+    data: [...],
+    links: [
+        { id: "1" }, // will be available in the diagram as "$link:1"
+    ]
+}
+
+// diagram.data.getItem("$link:1");
+~~~ 
+:::
+
+### Specificity of loading data in the PERT mode
+
+Follow the recommendations below to avoid errors and render Diagram in a correct way:
+
+- **Absence of cyclic dependencies**. There is no support for cycles among tasks, projects, links and mixed elements. In case a cyclic dependency is detected, an exception will appear.
+- **There mustn't be any links between the parent and children**. Direct connections between the parent element (e.g. a project) and its children elements are not allowed. Such connections will be deleted automatically during data processing
+- **Avoid intersecting connections**. Set the number of intersecting links to the minimum, as they may make the diagram more complex and lead to the low-level readability. 
+- **Successive data processing**. Data are processed in the order of their loading, which may affect their arrangement. You should specify the data in the logical order to achieve the best result.
+- **Task sequencing**. Use linear or sequential connections between tasks and projects to keep the diagram clear and avoid visual disorder.
+
+The above rules are intended for creating clean, non-cyclic graphs, suitable for PERT analysis. If data break these rules, Diagram may automatically correct them (for example, by removing unacceptable connections). However, it is better to check the data input beforehand.   
 
 ## External data loading
 
@@ -179,10 +239,10 @@ diagram.data.load("/some/data").then(() => {
 
 ## Loading from a local source
 
-To load data from a local data source, use the [](../api/data_collection/parse_method.md) method. As a parameter you need to pass an array of [predefined data objects](#preparing-data-to-load):
+To load data from a local data source, use the [](../api/data_collection/parse_method.md) method. As parameters, you need to pass a [predefined data set](#preparing-data-to-load) and, optionally, the DataDriver or type of data ("json" (default), "csv", "xml"):
 
 ~~~jsx
-diagram.data.parse(data);
+diagram.data.parse(data, driver);
 ~~~
 
 **Related sample**: [Diagram. Default mode. Wide flowchart](https://snippet.dhtmlx.com/4d4k3o8p)
@@ -199,14 +259,16 @@ editor.parse(data);
 
 ## Saving and restoring state
 
-To save the current state of a diagram, use the [](../api/data_collection/serialize_method.md) method. It converts the data of the diagram into an array of JSON objects.
-Each JSON object contains the configuration of a separate shape.
+To save the current state of a diagram, use the [](../api/data_collection/serialize_method.md) method. Depending on the Diagram type, it converts the data of the diagram into:
+
+- an array of JSON objects, where each object contains the configuration of a separate shape - for the `default`, `org` and `mindmap` Diagram modes
+- an object with the `data` array (for shapes: "task", "milestone", "project") and the `links` array (for connections between shapes) - for the `pert` Diagram mode 
 
 ~~~jsx
 const state = diagram1.data.serialize();
 ~~~
 
-Then you can parse the data stored in the saved state array to a different diagram. For example:
+Using the `serialize()` method, you can export the current diagram data into a different diagram. For example:
 
 ~~~jsx
 // creating a new diagram

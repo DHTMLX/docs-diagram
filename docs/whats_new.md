@@ -14,23 +14,30 @@ Released on October , 2025
 
 ### New functionality
 
-- The ability to create PERT charts from Gantt datasets
+- The ability to create PERT charts from Gantt data sets:
+  - [a new Diagram type: "pert"](/diagram/#diagram-in-the-pert-mode)
+  - [new types of shapes: "task" and "milestone"](/shapes/default_shapes)
+  - [a new group type: "project"](/groups/#grouping-shapes-in-the-pert-diagram-mode) (for grouping tasks and milestones)
 
 ### Updates
 
-- The [pdf()](../api/export/pdf_method/)/[png()](../api/export/png_method/) export functions return a promise of data export
+- DataCollection. Updates for the `"pert"` mode:
+  - the [`parse()`](/api/data_collection/parse_method/) method may take as the first parameter an object with `data` and `links` arrays 
+  - the [`serialize()`](/api/data_collection/serialize_method/) method may return an object with `data` and `links` arrays 
+- Export. The [pdf()](../api/export/pdf_method/)/[png()](../api/export/png_method/) export functions return a promise of data export
 
 ### New demo on backend integration
 
-- Multiuser (real-time updated) backend
+- Multi-user (real-time updated) backend
 
 ### New samples
 
+- Diagram. PERT mode classic
+- Diagram. PERT mode with Gantt 
+- Diagram. PERT mode with search tasks
+- Diagram. PERT mode with Gantt and Window
 - Diagram. Fishbone Diagram
 - Diagram. Watermark for the exported pdf/png file
-- Diagram. PERT Chart - classic example
-- Diagram. PERT Chart with Gantt 
-- Diagram. PERT Chart with search tasks
 
 ## Version 6.0.11 
 

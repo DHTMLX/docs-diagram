@@ -57,7 +57,46 @@ diagram.data.parse(data);
 
 ### Properties
 
-See [the full list of configuration properties of a group object](/groups/configuration_properties/) which allow you to configure the positioning and appearance of the group.
+See [the full list of configuration properties of a `group` object](/groups/configuration_properties/) which allow you to configure the positioning and appearance of the group.
+
+## Grouping shapes in the "pert" Diagram mode
+
+To group the `task` and `milestone` types of shapes in the "pert" mode of the Diagram, use the `project` type of a shape in the data set of a diagram. The `"project"` type serves as a container for tasks and milestones, working as a group. It allows creating PERT charts with various nesting levels and provides visual grouping.
+
+~~~jsx
+const data = [
+    { 
+        "id": "4.2", 
+        "text": "QA Testing", 
+        "type": "project", 
+        "parent": "4", 
+        "start_date": new Date(2026, 1, 18), 
+        "duration": 3, 
+        "progress": 0, 
+        "open": true 
+    },
+    { 
+        "id": "4.2.1", 
+        "text": "Functional Testing", 
+        "type": "task", 
+        "parent": "4.2", 
+        "start_date": new Date(2026, 1, 18), 
+        "duration": 2 
+    },
+    { 
+        "id": "4.2.2", 
+        "text": "Usability Testing", 
+        "type": "task", 
+        "parent": "4.2", 
+        "start_date": new Date(2026, 1, 20), 
+        "duration": 1
+    }
+];
+~~~
+
+### Properties
+
+See [the full list of configuration properties of a `project` object](/groups/configuration_properties/#properties-specific-for-project-shapes) which allow you to configure the positioning and appearance of tasks and milestones in the project.
 
 ## Configuring the group header
 

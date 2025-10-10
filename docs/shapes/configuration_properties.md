@@ -37,7 +37,7 @@ const data = [
 
 Each shape object can include the following properties:
 
-- `type` - (required) the type of the shape (by default: "rectangle" in the default mode, "card" in the org chart mode, "topic" in the mindmap mode)
+- `type` - (required) the type of the shape (by default: "rectangle" in the default mode, "card" in the org chart mode, "topic" in the "mindmap" mode, "task" in the "pert" mode)
 - `id` - (optional) the unique id of a shape
 - `x` - (optional) the x coordinate of the shape position. The property is **required** in the default mode of Diagram
 - `y` - (optional) the y coordinate of the shape position. The property is **required** in the default mode of Diagram
@@ -51,7 +51,9 @@ Each shape object can include the following properties:
 :::note
 The values of the **height** and **width** are calculated automatically for a "text"/"topic" shape, depending on the content of the shape.
 :::
+
 ## Custom properties
+
 ### Usage
 
 ~~~jsx
@@ -410,7 +412,7 @@ When preparing a data set for "img-card" shapes, you can add the following prope
 
 ### Example
 
-~~~jsx {title="Example"}
+~~~jsx 
 const data = [
     {
         "id": "1",
@@ -431,6 +433,91 @@ const data = [
     }
 ];
 ~~~
+
+## Properties specific for "task" shapes
+
+### Usage
+
+~~~jsx
+const data = [
+    // shape object
+    {
+        type: "task";
+        duration: number;
+        start_date: string | Date;
+        end_date?: string | Date;
+        text?: string;
+        parent?: string | number | null;
+        //... common properties
+    },
+    // more shape objects
+]
+~~~
+
+### Description
+
+When preparing a data set for "task" shapes, you can add the following properties to the configuration object of a shape:
+
+- `text` - (optional) the description of a task
+- `start_date` - (required) - the start date of a task
+- `end_date` - (optional) - the end date of a task
+- `duration` - (required) - the duration of a task
+- `parent` - (optional) - the id of the parent project of a task
+
+### Example
+
+~~~jsx 
+const data = [
+    { 
+        "id": "4.2.1", 
+        "text": "Functional Testing", 
+        "type": "task", 
+        "parent": "4.2", 
+        "start_date": new Date(2026, 1, 18) 
+        "duration": 2
+    }
+];
+~~~
+
+## Properties specific for "milestone" shapes
+
+### Usage
+
+~~~jsx
+const data = [
+    // shape object
+    {
+        type: "milestone";
+        text?: string;
+        parent?: string | number | null;
+        //... common properties
+    }
+    // more shape objects
+]
+~~~
+
+### Description
+
+When preparing a data set for "milestone" shapes, you can add the following properties to the configuration object of a shape:
+
+- `text` - (optional) the description of a task
+- `parent` - (optional) - the id of the parent project of a task
+
+### Example
+
+~~~jsx 
+const data = [
+     { 
+        "id": "5.2", 
+        "text": "Product Launch", 
+        "type": "milestone", 
+        "parent": "5", 
+        "start_date": new Date(2026, 2, 1), 
+        "duration": 1
+    }
+];
+~~~
+
 
 **Related articles**:
 
