@@ -8,6 +8,64 @@ description: You can learn a new information about DHTMLX JavaScript Diagram lib
 
 If you are updating Diagram from an older version, check [Migration to Newer Version](migration.md) for details.
 
+## Version 6.0.11 
+
+Released on June 18, 2025
+
+### Fixes
+
+- Diagram Editor. Incorrect shapes moving while zooming in
+
+## Version 6.0.10 
+
+Released on March 10, 2025
+
+### Fixes
+
+- Diagram. The issue with adjusting the size of the line shape arrow while editing the line width
+
+## Version 6.0.9 
+
+Released on February 4, 2025
+
+### Fixes
+
+- Diagram Editor. An issue with moving a group with items and moving items to/from a group
+- Diagram. The `itemMouseOver` and `itemMouseOut` events aren't triggered for a selected shape
+
+## Version 6.0.8
+
+Released on December 5, 2024
+
+- The issue with the local trial package during import to frameworks
+
+## Version 6.0.7
+
+Released on November 27, 2024
+
+- Diagram Editor. An error occurred during the shape editing with the Editbar
+- Diagram Editor. An issue with a shape moving during the navigation on inline editing 
+
+## Version 6.0.4
+
+Released on October 1, 2024
+
+### Fixes
+
+- Diagram Editor. Calling the `destructor()` method throws an error
+
+## Version 6.0.3 
+
+Released on August 28, 2024
+
+### Fixes
+
+- Diagram Editor. Applying different locales for `calendar`, `combobox`, `colorpicker`, `form`, `timepicker` of Editbar
+- Diagram Editor. Adding Diagram Editor in a Layout cell
+- Diagram Editor. The `shapeToolbar` property is not optional for the **default** mode
+- Diagram Editor. Incorrect hover behavior when a custom shape has a preview image
+
+
 ## Version 6.0.2
 
 Released on July 16, 2024

@@ -132,13 +132,18 @@ module.exports = {
     onBrokenLinks: 'warn',
 	onBrokenMarkdownLinks: 'warn',
     onBrokenAnchors: 'warn',
-    //onBrokenLinks: 'ignore', // !!! TODO, make to warn before release 
-    //onBrokenAnchors: 'ignore', // !!! TODO, make to warn before release 
-    onBrokenMarkdownLinks: 'ignore',
+    // onBrokenLinks: 'ignore', // !!! TODO, make to warn before release 
+    // onBrokenAnchors: 'ignore', // !!! TODO, make to warn before release 
+    // onBrokenMarkdownLinks: 'warn', // deprecated in v3.9.1
     favicon: 'img/favicon.ico',
     organizationName: 'DHTMLX', // Usually your GitHub org/user name
     projectName: 'docs-diagram', // Usually your repo name
     trailingSlash: true,
+    markdown: {
+		hooks: {
+			onBrokenMarkdownLinks: 'warn',
+		}
+	},
     themeConfig: {
         /*colorMode: {
             // "light" | "dark"

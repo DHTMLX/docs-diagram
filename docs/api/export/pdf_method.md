@@ -48,6 +48,8 @@ pdf(config?: object): void;
             - `title` - (optional) the document name
             - `pageNumber` - (optional) the current page number
             - `totalPages` - (optional) the total number of pages in the document
+    - `header?: string` - (optional) an HTML template for the header in the exported file
+    - `footer?: string` - (optional) an HTML template for the footer in the exported file
 
 ### Example
 

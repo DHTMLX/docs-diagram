@@ -1,16 +1,16 @@
 ---
-sidebar_label: Integration with React
-title: Integration with React
-description: You can learn about the Integration with React in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
+sidebar_label: Integration with Svelte
+title: Integration with Svelte
+description: You can learn about the Integration with Svelte in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
 
-# Integration with React
+# Integration with Svelte
 
 :::tip
-You should be familiar with the basic concepts and patterns of [**React**](https://react.dev) to use this documentation. To refresh your knowledge, please refer to the [**React documentation**](https://reactjs.org/docs/getting-started.html).
+You should be familiar with the basic concepts and patterns of **Svelte** before reading this documentation. To refresh your knowledge, please refer to the [**Svelte documentation**](https://svelte.dev/).
 :::
 
-DHTMLX Diagram Editor is compatible with **React**. We have prepared code examples of how to use DHTMLX Diagram Editor with **React**. For more information, refer to the corresponding [**Example on GitHub**](https://github.com/DHTMLX/react-diagram-demo).
+DHTMLX Diagram Editor is compatible with **Svelte**. We have prepared code examples on how to use DHTMLX Diagram Editor with **Svelte**. For more information, refer to the corresponding [**Example on GitHub**](https://github.com/DHTMLX/svelte-diagram-demo).
 
 ## Creating a project
 
@@ -18,30 +18,32 @@ DHTMLX Diagram Editor is compatible with **React**. We have prepared code exampl
 Before you start to create a new project, install [**Vite**](https://vite.dev/) (optional) and [**Node.js**](https://nodejs.org/en/).
 :::
 
-You can create a basic **React** project (this project) or use **React with Vite**. Let's name the project as **my-react-diagram-app**:
+To create a **Svelte** JS project, run the following command:
 
 ~~~json
-npx create-react-app my-react-diagram-app
+npm create vite@latest
 ~~~
+
+Select Svelte and JavaScript options while creating the project. Let's name the project as **my-svelte-diagram-app**.
 
 ### Installation of dependencies
 
-Go to the new created app directory:
+Go to the app directory:
 
 ~~~json
-cd my-react-diagram-app
+cd my-svelte-diagram-app
 ~~~
 
-Install dependencies and start the dev server. For this, use a package manager:
+Then you need to install dependencies and run the app. For this, you need to make use of a package manager:
 
-- if you use [**yarn**](https://yarnpkg.com/), run the following commands:
+- if you use [**yarn**](https://yarnpkg.com/), you need to call the following commands:
 
-~~~json
+~~~jsx
 yarn
-yarn start
+yarn start // or yarn dev
 ~~~
 
-- if you use [**npm**](https://www.npmjs.com/), run the following commands:
+- if you use [**npm**](https://www.npmjs.com/), you need to call the following commands:
 
 ~~~json
 npm install
@@ -60,64 +62,69 @@ Download the [**trial Diagram Editor package**](/guides/diagram_editor/initializ
 
 ### Step 2. Component creation
 
-Now you need to create a React component, to add Diagram Editor into the application. Create a new file in the ***src/*** directory and name it ***DiagramEditor.jsx***.
+Now you need to create a Svelte component, to add Diagram Editor into the application. Let's create a new file in the ***src/*** directory and name it ***DiagramEditor.svelte***.
 
-#### Import source files
+#### Importing source files
 
-Open the ***DiagramEditor.jsx*** file and import Diagram Editor source files. Note that:
+Open the ***DiagramEditor.svelte*** file and import Diagram Editor source files. Note that:
 
 - if you use PRO version and install the Diagram Editor package from a local folder, the import paths look like this:
 
-~~~jsx title="DiagramEditor.jsx"
+~~~html title="DiagramEditor.svelte"
+<script>
 import { DiagramEditor } from 'dhx-diagram-package';
 import 'dhx-diagram-package/codebase/diagram.css';
+</script>
 ~~~
 
 Note that depending on the used package, the source files can be minified. In this case make sure that you are importing the CSS file as **diagram.min.css**.
 
-- if you use the trial version of Diagram, specify the following paths:
+- if you use the trial version of Diagram Editor, specify the following paths:
 
-~~~jsx title="DiagramEditor.jsx"
+~~~html title="DiagramEditor.svelte"
+<script>
 import { DiagramEditor } from '@dhx/trial-diagram';
 import '@dhx/trial-diagram/codebase/diagram.min.css';
+</script>
 ~~~
 
-In this tutorial you can see how to configure the **trial** version of Diagram.
+In this tutorial you can see how to configure the **trial** version of Diagram Editor.
 
 #### Set the container and initialize Diagram Editor
 
 To display Diagram Editor on the page, you need to create the container for Diagram Editor, and initialize this component using the corresponding constructor:
 
-~~~jsx {2,6,9-10} title="DiagramEditor.jsx"
-import { useEffect, useRef } from "react";
-import { DiagramEditor } from "@dhx/trial-diagram";
-import "@dhx/trial-diagram/codebase/diagram.min.css"; // include Diagram Editor styles
+~~~html {3,6,10-11,19} title="DiagramEditor.svelte"
+<script>
+    import { onMount, onDestroy } from "svelte";
+    import { DiagramEditor } from "@dhx/trial-diagram";
+    import "@dhx/trial-diagram/codebase/diagram.min.css"
 
-export default function DiagramEditorComponent(props) {
-    let container = useRef(); // initialize container for Diagram Editor
-
-    useEffect(() => {
+    let container; // initialize container for Diagram Editor
+    let diagram_editor;
+    
+    onMount(() => {
         // initialize the Diagram Editor component
-        const diagram_editor = new DiagramEditor(container.current, {});
-
-        return () => {
-            diagram_editor.destructor(); // destruct Diagram Editor 
-        }
+        diagram_editor = new DiagramEditor(container, {});
     });
 
-    return <div ref={container} className="widget"></div>;
-}
+    onDestroy(() => {
+        diagram_editor.destructor(); // destruct Diagram Editor
+    });
+</script>
+
+<div bind:this={container} class="widget"></div>
 ~~~
 
 #### Adding styles
 
 To display Diagram Editor correctly, you need to specify important styles for Diagram Editor and its container in the CSS file of the project:
 
-~~~css title="index.css"
+~~~css title="app.css"
 /* specify styles for initial page */
 html,
 body,
-#root {
+#app { /* make sure that you use the #app root container */
     height: 100%;
     padding: 0;
     margin: 0;
@@ -132,7 +139,7 @@ body,
 
 #### Loading data
 
-To add data into the Diagram Editor, you need to provide a [**data set**](https://github.com/DHTMLX/react-diagram-demo/blob/master/src/data.js). Let's create the ***data.js*** file in the ***src/*** directory and add some data into it:
+To add data into the Diagram Editor, we need to provide a [**data set**](https://github.com/DHTMLX/svelte-diagram-demo/blob/main/src/data.js). Let's create the ***data.js*** file in the ***src/*** directory and add some data into it:
 
 ~~~jsx title="data.js"
 export function getData() {
@@ -160,42 +167,43 @@ export function getData() {
 }
 ~~~
 
-Then open the ***App.js*** file and import data. After this you can pass data into the new created `<DiagramEditor/>` components as **props**:
+Then open the ***App.svelte*** file, import data, and pass it into the newly created `<DiagramEditor/>` components as **props**:
 
-~~~jsx {2,5-6} title="App.js"
-import DiagramEditor from "./DiagramEditor";
-import { getData } from "./data";
+~~~html {3,5,8} title="App.svelte"
+<script>
+    import DiagramEditor from "./DiagramEditor.svelte";
+    import { getData } from "./data.js";
 
-function App() {
-    let data = getData();
-    return <DiagramEditor data={data} />;
-}
+    const data = getData();
+</script>
 
-export default App;
+<DiagramEditor data={data} />
 ~~~
 
-Go to the ***DiagramEditor.jsx*** file and apply the passed **props** to the Diagram Editor via the [`parse()`](api/diagram_editor/editor/methods/parse_method.md) method:
+Go to the ***DiagramEditor.svelte*** file and apply the passed **props** to the Diagram Editor via the [`parse()`](api/diagram_editor/editor/methods/parse_method.md) method:
 
-~~~jsx {5,11} title="DiagramEditor.jsx"
-import { useEffect, useRef } from "react";
-import { DiagramEditor } from "@dhx/trial-diagram";
-import "@dhx/trial-diagram/codebase/diagram.min.css";
+~~~html {6,13} title="DiagramEditor.svelte"
+<script>
+    import { onMount, onDestroy } from "svelte";
+    import { DiagramEditor } from "@dhx/trial-diagram";
+    import "@dhx/trial-diagram/codebase/diagram.min.css"
+    
+    export let data;
 
-export default function DiagramEditorComponent(props) {
-    let container = useRef();
-
-    useEffect(() => {
-        const diagram_editor = new DiagramEditor(container.current, {});
-        
-        diagram_editor.parse(props.data);
-
-        return () => {
-            diagram_editor.destructor();
-        }
+    let container;
+    let diagram_editor;
+    
+    onMount(() => {
+        diagram_editor = new DiagramEditor(container, {});
+        diagram_editor.parse(data);
     });
 
-    return <div ref={container} className="widget"></div>;
-}
+    onDestroy(() => {
+        diagram_editor.destructor();
+    });
+</script>
+
+<div bind:this={container} class="widget"></div>
 ~~~
 
 Now the Diagram Editor component is ready to use. When the element will be added to the page, it will initialize the Diagram Editor with data. You can provide necessary configuration settings as well. Visit our [Diagram Editor API docs](/category/diagram-editor-api/) to check the full list of available properties.
@@ -204,26 +212,32 @@ Now the Diagram Editor component is ready to use. When the element will be added
 
 When a user makes some action in the Diagram Editor, it invokes an event. You can use these events to detect the action and run the desired code for it. See the [full list of events](api/diagram_editor/editor/events/overview.md).
 
-Open ***DiagramEditor.jsx*** and complete the `useEffect()` method in the following way:
+Open ***DiagramEditor.svelte*** and complete the `onMount()` method in the following way:
 
-~~~jsx {5-7} title="DiagramEditor.jsx"
+~~~html {8-11} title="DiagramEditor.svelte"
+<script>
 // ...
-useEffect(() => {
-    const diagram_editor = new DiagramEditor(container.current, {});
+let diagram_editor;
 
-    diagram_editor.events.on("zoomIn", (step) => {
-        console.log("The diagram in the editor is zoomed in. The step is" + step);
+onMount(() => {
+    diagram_editor = new DiagramEditor(container, {})
+
+    diagram_editor.events.on("afterFocusSet", function(cell){
+        console.log("Focus is set on a cell " + diagram_editor.selection.getSelectedCell());
+        console.log(cell);
     });
+});
 
-    return () => {
-        diagram_editor.destructor();
-    }
-}, []);
+onDestroy(() => {
+    diagram_editor.destructor();
+});
+</script>
+
 // ...
 ~~~
 
-After that, you can start the app to see Diagram Editor loaded with data on a page.
+After that, when we start the app, we should see Diagram Editor loaded with data on a page.
 
 ![Diagram Editor initialization](../../assets/trial_diagram.png)
 
-Now you know how to integrate DHTMLX Diagram Editor with React. You can customize the code according to your specific requirements. The final example you can find on [**GitHub**](https://github.com/DHTMLX/react-diagram-demo).
+Now you should have a basic setup for integrating DHTMLX Diagram Editor with Svelte. You can customize the code according to your specific requirements. The final example you can find on [**GitHub**](https://github.com/DHTMLX/svelte-diagram-demo).
