@@ -102,6 +102,42 @@ const data = [
 ];
 ~~~
 
+## Properties specific for links in the "pert" mode
+
+### Description
+
+When preparing a data set for links to load into the diagram in the PERT mode, you can add the following properties to the configuration object of a link:
+
+- `source` - the id of a task that the link will start from
+- `target` - the id of a task that the link will end with
+- `type` - the link type. The available values are:
+    - "0" - "finish_to_start"
+    - "1" - "start_to_start"
+    - "2" - "finish_to_finish"
+    - "3" - "start_to_finish"
+
+### Example
+
+~~~jsx {11-16}
+const dataset = {
+    data: [
+        // configuring a project shape
+        { id: "1", text: "Project #1", type: "project", parent: null },
+        // configuring task shapes
+        { id: "1.1", text: "Task #1", parent: "1", type: "task", start_date: new Date(2026, 0, 1), duration: 10 },
+        { id: "1.2", text: "Task #2", parent: "1", type: "task", start_date: new Date(2026, 0, 1), duration: 10 },
+        { id: "2.1", text: "Task #3", parent: null, type: "task", start_date: new Date(2026, 0, 1), duration: 10 },
+        { id: "2.2", text: "Task #4", parent: null, type: "task", start_date: new Date(2026, 0, 1), duration: 10 }
+    ],
+    links: [
+        // configuring links objects
+        { id: "line-1", source: "1.1", target: "1.2" },
+        { id: "line-2", source: "1.2", target: "2.1" },
+        { id: "line-3", source: "2.1", target: "2.2" }
+    ]
+}
+~~~
+
 **Change log**: The `title` property was deprecated in v6.0
 
 **Related articles**: [Configuring lines](../../lines/)

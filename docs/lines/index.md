@@ -37,6 +37,13 @@ The mode is useful when you need to represent a core topic or idea surrounded by
 The arrangement of child shapes relative to the root shape is defined automatically by the main algorithm.
 To change the default direction of the child shapes, use the [](../api/diagram/typeconfig_property.md) configuration property on initialization of the diagram.
 
+### Links in the PERT mode
+
+The PERT mode of Diagram is intended for rendering sequences of tasks and projects, and connections between them. The `"task"`, `"milestone"` and `"project"` types of shapes are connected by the [`"links"` connectors](/lines/configuration_properties/#properties-specific-for-links-in-the-pert-diagram-mode).
+
+<iframe src="https://snippet.dhtmlx.com/8leu8jh1?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="650"></iframe>
+
+
 ## Setting connections between shapes
 
 To connect shapes in Diagram, you can apply one of the following two ways:
