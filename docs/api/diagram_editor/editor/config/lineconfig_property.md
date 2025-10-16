@@ -21,7 +21,8 @@ lineConfig?: {
     lineType?: "dash" | "line",
     lineDirection?: "backArrow" | "forwardArrow",
     arrowsHidden?: boolean,
-    lineGap?: number
+    lineGap?: number,
+    connectType?: "elbow" | "straight" | "curved" // the "curved" type is used only in the `mindmap` mode
 };
 ~~~
 
@@ -33,6 +34,7 @@ The **lineConfig** object contains the following parameters:
 - `lineDirection` - (optional) the direction of the new connector lines
 - `arrowsHidden` - (optional) defines whether the arrows of the new connector lines should be hidden
 - `lineGap` - (optional) sets the distance to the right-angled bend of a connector line
+- `connectType` - (optional) sets the type of the new connector line: `"elbow"` | `"straight"` | `"curved"` (the **"curved"** type is used only in the **"mindmap"** Diagram mode)
 
 :::note
 The **lineDirection**, **arrowsHidden**, and **lineGap** parameters work only in the default mode of the editor (*type: "default"*)
@@ -66,11 +68,12 @@ const editor = new dhx.DiagramEditor("editor_container", {
 
 The result of applying the **lineGap** property is shown in the image below:
 
-IMAGE HERE
+![](../../../../assets/linegap_config.png)
 
 **Change log**:
 
-- The **lineGap** parameter is added in v5.0 (check the Migration article)
+- The `connectType` parameter is added in v6.1
+- The `lineGap` parameter is added in v5.0 (check the [Migration article](diagram/migration.md/#42---50))
 - Added in v4.2
 
 **Related sample**: [Diagram editor. Setting the default line (connector) type. Try connecting shape A to shape B](https://snippet.dhtmlx.com/22abzn5m)

@@ -21,10 +21,13 @@ Released on October , 2025
 
 ### Updates
 
-- DataCollection. Updates for the `"pert"` mode:
+- DataCollection API. Updates for the `"pert"` mode:
   - the [`parse()`](/api/data_collection/parse_method/) method may take as the first parameter an object with `data` and `links` arrays 
   - the [`serialize()`](/api/data_collection/serialize_method/) method may return an object with `data` and `links` arrays 
-- Export. The [pdf()](../api/export/pdf_method/)/[png()](../api/export/png_method/) export functions return a promise of data export
+- Diagram/Diagram Editor API. The ability to define the connection type for newly created links:
+  - a new `connectType` parameter for the [`lineConfig`](/api/diagram/lineconfig_property/) configuration property of Diagram 
+  - a new `connectType` parameter for the [`lineConfig`](/api/diagram_editor/editor/config/lineconfig_property/) configuration property of Diagram Editor
+- Export API. The [pdf()](/api/export/pdf_method/)/[png()](/api/export/png_method/) export functions return a promise of data export
 
 ### New demo on backend integration
 
