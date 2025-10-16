@@ -13,12 +13,15 @@ description: You can learn about the parse method of data collection in the docu
 ### Usage
 
 ~~~jsx
-parse(data: object[] | { data: object[]; links: object[] }, driver?: object | string): void; 
+parse(
+    data: object[] | { data: object[]; links: object[] } | string,
+    driver?: object | string
+): void;
 ~~~
 
 ### Parameters
 
-- `data: object[] | { data: object[]; links: object[] }` - (required) the data to load. You can load data in any supported data format. The data structure depends on the diagram type:
+- `data: object[] | { data: object[]; links: object[] } | string` - (required) the data to load. You can load data in any supported data format. The data structure depends on the diagram type:
     - for the `default`, `org` and `mindmap` Diagram modes it is set as an array that contains a set of data objects
     ~~~jsx
     data: object[]; // an array of all shapes and connections
