@@ -81,7 +81,7 @@ When preparing a data set for lines to load into the diagram in the default mode
     - `y` - (required) the y coordinate of the point
     - `custom` - (optional) defines whether the point is fixed. If *true*, the position of the point can be changed only after interaction with it
 
-## Example
+### Example
 
 ~~~jsx
 const data = [
@@ -102,19 +102,51 @@ const data = [
 ];
 ~~~
 
-## Properties specific for links in the "pert" mode
+## Properties specific for links in the PERT mode
+
+### Usage
+
+~~~jsx
+const dataset = {
+    data: [...], // an array of shapes (tasks, milestones, projects)
+    links: [
+        // link object
+        {
+            id?: string | number,
+            source: string | number,
+            target: string | number
+        },
+        // more link objects
+    ]
+}
+~~~
 
 ### Description
 
 When preparing a data set for links to load into the diagram in the PERT mode, you can add the following properties to the configuration object of a link:
 
-- `source` - the id of a task that the link will start from
-- `target` - the id of a task that the link will end with
-- `type` - the link type. The available values are:
-    - "0" - "finish_to_start"
-    - "1" - "start_to_start"
-    - "2" - "finish_to_finish"
-    - "3" - "start_to_finish"
+- `id` - (optional) the id of a link connector
+- `source` - (required) the id of a task that the link will start from
+- `target` - (required) the id of a task that the link will end with
+
+Note that only the links of the type "finish" -> "start" are supported. 
+
+:::info important
+Pay attention that since the ids of items in the data collection of Diagram must be unique, the `$link` prefix is added to the existing id of a link on loading data or adding a new link.
+
+For example:
+
+~~~jsx
+{
+    data: [...],
+    links: [
+        { id: "1" }, // will be available in the diagram as "$link:1"
+    ]
+}
+
+// diagram.data.getItem("$link:1");
+~~~ 
+:::
 
 ### Example
 
@@ -138,6 +170,9 @@ const dataset = {
 }
 ~~~
 
-**Change log**: The `title` property was deprecated in v6.0
+**Change log**:
+
+- The `links` type of connectors used in the PERT mode of Diagram are added in v6.1
+- The `title` property of the `line` object was deprecated in v6.0
 
 **Related articles**: [Configuring lines](../../lines/)
