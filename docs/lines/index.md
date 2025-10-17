@@ -39,7 +39,7 @@ To change the default direction of the child shapes, use the [](../api/diagram/t
 
 ### Links in the PERT mode
 
-The PERT mode of Diagram is intended for rendering sequences of tasks and projects, and connections between them. The `"task"`, `"milestone"` and `"project"` types of shapes are connected by the [`"links"` connectors](/lines/configuration_properties/#properties-specific-for-links-in-the-pert-diagram-mode).
+The PERT mode of Diagram is intended for rendering sequences of tasks and projects, and connections between them. The `"task"`, `"milestone"` and `"project"` types of shapes are connected by the [`"links"` connectors](/lines/configuration_properties/#properties-specific-for-links-in-the-pert-mode).
 
 <iframe src="https://snippet.dhtmlx.com/8leu8jh1?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="650"></iframe>
 

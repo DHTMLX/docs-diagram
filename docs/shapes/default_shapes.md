@@ -1,55 +1,66 @@
 ---
 sidebar_label: Basic sets of shapes
 title: Basic sets of shapes
-description: You can learn about the Default Shapes in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
+description: You can learn about the Basic sets of shapes in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
 
 # Basic sets of shapes
 
-The DHTMLX Diagram library provides you with sets of shapes types that you can use to build your diagram. Each mode of Diagram [default](#shapes-in-the-default-mode), [org chart](#shapes-in-the-org-chart-mode) and [mindmap](#shapes-in-the-mindmap-mode) has a *basic set* of shapes types. 
+The DHTMLX Diagram library provides you with sets of shapes' types that you can use to build your diagram. Each Diagram mode: [default](#shapes-in-the-default-mode), [org chart](#shapes-in-the-org-chart-mode), [mindmap](#shapes-in-the-mindmap-mode) and [pert](#shapes-in-the-pert-mode) has a *basic set* of shapes types. 
 
-:::note
-The basic type of shapes is predefined for a particular Diagram mode. However, a shape of any type can be added into the diagram of any mode.
+:::tip
+You can add a shape of any type into a diagram initialized in any mode. Use the name of the necessary shape as a value of the `type` attribute inside the shape object, while [preparing a data set for loading into the diagram](/guides/loading_data/#preparing-data-to-load).
 :::
 
 ## Shapes in the default mode
 
-In the default mode of Diagram, the basic set includes `flow chart` shapes. Use the name of the necessary shape as a value of the `type` attribute inside the shape object, while [preparing a data set for loading into the diagram](/guides/loading_data/#preparing-data-to-load).
+In the default mode of Diagram, the basic set includes **flow chart** shapes. Check the available types of flow chart shapes in the image below:
 
+![](../assets/flowshapes_types.png)
 
-<img
-  src={require('../assets/flowshapes_types.png').default}
-  className="image_to_center"
-  alt="Alternative text"
-/>
+**Related sample**: [Diagram Editor. Default mode. Wide flowchart](https://snippet.dhtmlx.com/4d4k3o8p?mode=wide)
+
+You can group shapes of the Diagram in the default mode. [Check the related guide](/groups/).
 
 ## Shapes in the org chart mode
 
 In the **org chart** mode of Diagram, the basic set includes two types of shapes: `"card"` and `"img-card"`. 
 
-- each shape with the `"card"` type has a text and a colored header line. Shapes located on the same level have headers of identical color
 
-<iframe src="https://snippet.dhtmlx.com/5ign6fyy?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="650"></iframe>
+Each shape with the `"card"` type has a text and a colored header line. Shapes located on the same level have headers of identical color. Examples of "card" shapes are shown in the diagram of the org chart type below:
 
-- the `"img-card"` type can be used for adding shapes with images. Don't forget to provide images for cards via the `img` attribute of the shape object
+![](../assets/orgchart_mode_basic.png)
+
+**Related sample**: [Diagram. Org chart mode. Basic initialization](https://snippet.dhtmlx.com/5ign6fyy?mode=result)
+
+The `"img-card"` type can be used for adding shapes with images. Don't forget to provide images for cards via the `img` attribute of the shape object. The following org chart diagram is built with shapes of the `"img-card"` type:
+
+![](../assets/orgchart_mode_img.png)
+
+**Related sample**: [Diagram editor. Org chart mode. Basic initialization](https://snippet.dhtmlx.com/og4qm3ja?mode=result)
 
 ## Shapes in the mindmap mode
 
-In the **mindmap** mode of Diagram, the `"topic"` type of shapes is the basic one. Each shape has a text and a colored border. The color of the outline depends on the level the shape belongs to.
+In the **mindmap** mode of Diagram, the `"topic"` type of shapes is the basic one. Each shape has a text and a colored border. The color of the outline depends on the level the shape belongs to. Examples of "topic" shapes are given in the diagram of the mindmap type below:
 
-<iframe src="https://snippet.dhtmlx.com/3igf1gd5?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="650"></iframe>
+![](../assets/mindmap_basic.png)
 
-- the `"task"` and `"milestone"` types which are the default types of shapes in the "pert" mode of Diagram:
-    - the `"task"` type is a task that has a header and renders dates and duration
-    - the `"milestone"` type is a task without duration that indicates a key point of the project
+**Related sample**: [Diagram. Mindmap mode. Basic initialization](https://snippet.dhtmlx.com/3igf1gd5?mode=result)
+
+## Shapes in the pert mode
+
+In the **pert** mode of Diagram, the basic types of shapes are the following:
     
-To group the shapes of the `"task"` and `"milestone"` types, use the `"project"` type of a shape. [Check the details](/groups/#grouping-shapes-in-the-pert-diagram-mode)  
+- the `"task"` type is a task that has a header and renders dates and duration
+- the `"milestone"` type is a task without duration that indicates a key point of the project
+- the `"project"` type of a shape is used to group the shapes of the `"task"` and `"milestone"` types. [Check the details](/groups/#grouping-shapes-in-the-pert-diagram-mode)  
 
-<iframe src="https://snippet.dhtmlx.com/8leu8jh1?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="650"></iframe>
+Here is an example of Diagram in the PERT mode that includes the basic types of shapes:
 
-:::note
-Any of the above shapes can be added into the diagram of any mode ("default", "org", "mindmap", "pert").
-:::
+![](../assets/pert_mode_basic_shapes.png)
+
+**Related sample**: [Diagram. PERT mode. Basic initialization](https://snippet.dhtmlx.com/8leu8jh1?mode=result)
+
 
 ## Setting the type of a shape
 
@@ -71,7 +82,7 @@ See [the full list of configuration properties of a shape object](/shapes/config
 
 ### Setting the default shape type
 
-It is also possible to set the default type for all the shapes via the [`defaultShapeType`](../api/diagram/defaultshapetype_property.md) attribute of the diagram config object:
+It is also possible to set the default type for all the shapes via the [`defaultShapeType`](/api/diagram/defaultshapetype_property/) attribute of the diagram config object:
 
 ~~~jsx
 const diagram = new dhx.Diagram("diagram_container", {

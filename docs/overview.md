@@ -123,13 +123,13 @@ The PERT mode is used to visualize tasks and projects' sequences and connections
 | ![](assets/pert_mode.png)                                             |
 
 
-### Integration of PERT Diagram and DHTMLX Gantt 
+### PERT Diagram with DHTMLX Gantt
 
 An example of adding a Gantt chart into the Diagram in the PERT mode with the full integration between them:
 
-| [Diagram. PERT mode with Gantt chart](https://snippet.dhtmlx.com/pplmcp8g) 	|
-| ------------------------------------------------------------------------------|
-| ![](assets/pert_mode_gantt.png)                                             	|
+| [Diagram. PERT Diagram with Gantt chart. Full integration](https://snippet.dhtmlx.com/v4jl9kf7) 	|
+| --------------------------------------------------------------------------------------------------|
+| ![](assets/pert_mode_gantt.png)                                             						|
 
 ## Shape search
 
