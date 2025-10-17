@@ -27,7 +27,7 @@ A promise of data export
 ### Parameters
 
 - `config` - (optional) an object with export settings. You can specify the following settings for export to PDF:
-    - `url?: string` - (optional) the url of the service that executes export and returns an exported file. This setting is optional, you should use it only if you need to specify the path to your local export service. The default value is `https://export.dhtmlx.com/diagram/pdf/5.0.0`
+    - `url?: string` - (optional) the url of the service that executes export and returns an exported file. This setting is optional, you should use it only if you need to specify the path to your local export service. The default value is `https://export.dhtmlx.com/diagram/pdf/6.1.0`
     - `name?: string` - (optional) the name of the exported file
     - `pdf?: object` - (optional) the object of pdf options. Here you can specify the following properties:
         - `scale?: number` - (optional) the scale of the grid rendering (between *0.1* and *2*)
