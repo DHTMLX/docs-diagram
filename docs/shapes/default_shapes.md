@@ -6,7 +6,7 @@ description: You can learn about the Basic sets of shapes in the documentation o
 
 # Basic sets of shapes
 
-The DHTMLX Diagram library provides you with sets of shapes' types that you can use to build your diagram. Each Diagram mode: [default](#shapes-in-the-default-mode), [org chart](#shapes-in-the-org-chart-mode), [mindmap](#shapes-in-the-mindmap-mode) and [pert](#shapes-in-the-pert-mode) has a *basic set* of shapes types. 
+The DHTMLX Diagram library provides you with sets of shapes that you can use to build your diagram. Each Diagram mode: [default](#shapes-in-the-default-mode), [org chart](#shapes-in-the-org-chart-mode), [mindmap](#shapes-in-the-mindmap-mode) and [PERT](#shapes-in-the-pert-mode) has a *basic set* of shapes' types. 
 
 :::tip
 You can add a shape of any type into a diagram initialized in any mode. Use the name of the necessary shape as a value of the `type` attribute inside the shape object, while [preparing a data set for loading into the diagram](/guides/loading_data/#preparing-data-to-load).
@@ -14,7 +14,7 @@ You can add a shape of any type into a diagram initialized in any mode. Use the 
 
 ## Shapes in the default mode
 
-In the default mode of Diagram, the basic set includes **flow chart** shapes. Check the available types of flow chart shapes in the image below:
+In the **default** mode of Diagram, the basic set includes **flow chart** shapes. Check the available types of flow chart shapes:
 
 ![](../assets/flowshapes_types.png)
 
@@ -41,26 +41,25 @@ The `"img-card"` type can be used for adding shapes with images. Don't forget to
 
 ## Shapes in the mindmap mode
 
-In the **mindmap** mode of Diagram, the `"topic"` type of shapes is the basic one. Each shape has a text and a colored border. The color of the outline depends on the level the shape belongs to. Examples of "topic" shapes are given in the diagram of the mindmap type below:
+In the **mindmap** mode of Diagram, the `"topic"` type of shapes is the basic one. Each shape has a text and a colored border. The color of the outline depends on the level the shape belongs to. Examples of "topic" shapes are given in the following diagram of the mindmap type:
 
 ![](../assets/mindmap_basic.png)
 
 **Related sample**: [Diagram. Mindmap mode. Basic initialization](https://snippet.dhtmlx.com/3igf1gd5?mode=result)
 
-## Shapes in the pert mode
+## Shapes in the PERT mode
 
-In the **pert** mode of Diagram, the basic types of shapes are the following:
+The basic types of shapes in the **PERT** mode of Diagram are:
     
-- the `"task"` type is a task that has a header and renders dates and duration
-- the `"milestone"` type is a task without duration that indicates a key point of the project
-- the `"project"` type of a shape is used to group the shapes of the `"task"` and `"milestone"` types. [Check the details](/groups/#grouping-shapes-in-the-pert-diagram-mode)  
+- the `"task"` type - a shape that has a header and renders dates and duration
+- the `"milestone"` type - a shape without duration that indicates a key point of the project
+- the `"project"` type - a container used to group the shapes of the `"task"` and `"milestone"` types. [Check the details](/groups/#grouping-shapes-in-the-pert-diagram-mode)  
 
 Here is an example of Diagram in the PERT mode that includes the basic types of shapes:
 
 ![](../assets/pert_mode_basic_shapes.png)
 
-**Related sample**: [Diagram. PERT mode. Basic initialization](https://snippet.dhtmlx.com/8leu8jh1?mode=result)
-
+**Related sample**: [Diagram. PERT chart. Initialization ](https://snippet.dhtmlx.com/p2tycrvc)
 
 ## Setting the type of a shape
 

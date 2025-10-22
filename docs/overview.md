@@ -118,16 +118,16 @@ An example of adding a custom template into the mindmap mode of the diagram to c
 
 The PERT mode is used to visualize tasks and projects' sequences and connections between them. It is also useful for identifying the critical path and project planning.
 
-| [Diagram. PERT mode ](https://snippet.dhtmlx.com/8leu8jh1) 			|
+| [Diagram. PERT chart. Initialization ](https://snippet.dhtmlx.com/p2tycrvc) 			|
 | ----------------------------------------------------------------------|
 | ![](assets/pert_mode.png)                                             |
 
 
-### PERT Diagram with DHTMLX Gantt
+### PERT Diagram and DHTMLX Gantt
 
-An example of adding a Gantt chart into the Diagram in the PERT mode with the full integration between them:
+An example of integrating the Diagram in the PERT mode and a Gantt chart is given below:
 
-| [Diagram. PERT Diagram with Gantt chart. Full integration](https://snippet.dhtmlx.com/v4jl9kf7) 	|
+| [Diagram and Gantt. PERT chart. Full integration](https://snippet.dhtmlx.com/2v55b4pz) 	|
 | --------------------------------------------------------------------------------------------------|
 | ![](assets/pert_mode_gantt.png)                                             						|
 

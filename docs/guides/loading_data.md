@@ -13,7 +13,7 @@ You can populate DHTMLX Diagram with data in the following ways:
 
 ## Preparing data to load
 
-DHTMLX Diagram takes data in the JSON format. For the `default`, `org` and `mindmap` Diagram modes it is an array that contains a set of data objects. There are 5 types of objects:
+DHTMLX Diagram takes data in the JSON format. For the default, org chart and mindmap Diagram modes it is an array that contains a set of data objects. There are 5 types of objects:
 
 - **shape objects**
 
@@ -169,24 +169,7 @@ The data structure of Diagram in the PERT mode coincides with the [data structur
 };
 ~~~
 
-Such a structure allows processing the shapes and their connections independently. Check the example below:
-
-~~~jsx
-const dataset = {
-    data: [
-        { id: "1", text: "Project #1", type: "project", parent: null },
-        { id: "1.1", text: "Task #1", parent: "1", type: "task", start_date: new Date(2026, 0, 1), duration: 10 },
-        { id: "1.2", text: "Task #2", parent: "1", type: "task", start_date: new Date(2026, 0, 1), duration: 10 },
-        { id: "2.1", text: "Task #3", parent: null, type: "task", start_date: new Date(2026, 0, 1), duration: 10 },
-        { id: "2.2", text: "Task #4", parent: null, type: "task", start_date: new Date(2026, 0, 1), duration: 10 }
-    ],
-    links: [
-        { id: "line-1", source: "1.1", target: "1.2" },
-        { id: "line-2", source: "1.2", target: "2.1" },
-        { id: "line-3", source: "2.1", target: "2.2" }
-    ]
-}
-~~~
+Such a structure allows processing the shapes and their connections independently. 
 
 There are the following types of shapes and connections specific for the Diagram in the PERT mode:
 
@@ -202,7 +185,7 @@ const dataset = {
         { id: "1.2", text: "Task #2", parent: "1", type: "task", start_date: new Date(2026, 0, 1), duration: 10 }
     ],
     links: [
-        // configuring links objects
+        // configuring a link object
         { id: "line-1", source: "1.1", target: "1.2" }
     ]
 }
@@ -240,11 +223,11 @@ Check the full list of the available configuration properties of the **task** ob
 const dataset = {
     data: [
         // configuring a project shape
-        { id: 1, text: "Project #1", type: "project", parent: null },
+        { id: "1", text: "Project #1", type: "project", parent: null },
         // configuring task shapes
-        { id: "1.1", text: "Task #1", parent: 1, type: "task", start_date: new Date(2026, 0, 1), duration: 10 },
+        { id: "1.1", text: "Task #1", parent: "1", type: "task", start_date: new Date(2026, 0, 1), duration: 10 },
         // configuring a milestone shape
-        { id: "1.2", text: "Task #2", parent: 1, type: "milestone", start_date: new Date(2026, 0, 1), duration: 10 }
+        { id: "1.2", text: "Task #2", parent: "1", type: "milestone", start_date: new Date(2026, 0, 1), duration: 10 }
     ],
     links: [
         //  configuring a link object
@@ -330,8 +313,14 @@ In the above example:
 - The element "1.1" is not a project and is rendered as a task.
 - Since the element "1.1.1" links to the parent "1.1" which is not a project, it will be rendered in the wrong place.
 - For the elements "1.1" and "1.1.1" to be rendered in the same project visually:
-    - either assign the id of the parent project of the element "1.1" to the element "1.1.1" (using the `parent: "1"` option)
-    - or use the "project" type instead of the "task" type for the parent task "1.1" 
+    - either assign the id of the parent project of the element "1.1" to the element "1.1.1" (using the `parent: "1"` option):
+    ~~~jsx
+    { id: "1.1.1", type: "task", parent: "1" }
+    ~~~
+    - or use the "project" type instead of the "task" type for the parent element "1.1": 
+    ~~~jsx
+     { id: "1.1", type: "project", parent: "1" }
+    ~~~
 
 ## External data loading
 
@@ -375,16 +364,16 @@ editor.parse(data);
 
 ## Saving and restoring state
 
-To save the current state of a diagram, use the [](../api/data_collection/serialize_method.md) method. Depending on the Diagram type, it converts the data of the diagram into:
+To save the current state of a diagram, use the [](../api/data_collection/serialize_method.md) method. Depending on the Diagram mode, it converts the data of the diagram into:
 
-- an array of JSON objects, where each object contains the configuration of a separate shape - for the `default`, `org` and `mindmap` Diagram modes
-- an object with the `data` array (for shapes: "task", "milestone", "project") and the `links` array (for connections between shapes) - for the `pert` Diagram mode 
+- an array of JSON objects, where each object contains the configuration of a separate shape - for the default, org chart and mindmap Diagram modes
+- an object with the `data` array (for shapes: "task", "milestone", "project") and the `links` array (for connections between shapes) - for the PERT Diagram mode 
 
 ~~~jsx
 const state = diagram1.data.serialize();
 ~~~
 
-Using the `serialize()` method, you can export the current diagram data into a different diagram. For example:
+Then you can parse the data stored in the saved state to a different diagram. For example:
 
 ~~~jsx
 // creating a new diagram

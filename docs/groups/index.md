@@ -59,9 +59,9 @@ diagram.data.parse(data);
 
 See [the full list of configuration properties of a `group` object](/groups/configuration_properties/) which allow you to configure the positioning and appearance of the group.
 
-## Grouping shapes in the "pert" Diagram mode
+## Grouping shapes in the PERT mode
 
-To group the `task` and `milestone` types of shapes in the "pert" mode of the Diagram, use the `project` type of a shape in the data set of a diagram. The `"project"` type serves as a container for tasks and milestones, working as a group. It allows creating PERT charts with various nesting levels and provides visual grouping.
+To group the `task` and `milestone` types of shapes in the PERT mode of the Diagram, use the `project` object in the data set of a diagram. The `"project"` object serves as a container for tasks and milestones, working as a group. It allows creating PERT charts with various nesting levels and provides visual grouping.
 
 ~~~jsx
 const data = [

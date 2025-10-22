@@ -38,7 +38,7 @@ The default types of shapes are:
 - *"rectangle"* - for the diagram in the default mode
 - *"card"*  - for the diagram in the default mode or the org chart mode
 - *"topic"* - for the diagram in the mindmap mode
-- *"task"* - for the diagram in the pert mode
+- *"task"* - for the diagram in the PERT mode
 
 ## Setting the default line type
 
@@ -72,9 +72,9 @@ The `type` and `id` attributes can not be defined in the default configuration o
 
 Check the full list of configuration properties of a [shape](../../../shapes/configuration_properties/) and [line](../../../lines/configuration_properties/).
 
-## Arranging shapes in the "mindmap" mode of Diagram
+## Arranging shapes in the mindmap mode of Diagram
 
-In the "mindmap" mode of Diagram, the arrangement of child shapes relative to the root shape is defined automatically by the main algorithm.
+In the mindmap mode of Diagram, the arrangement of child shapes relative to the root shape is defined automatically by the main algorithm.
 To change the default direction of the child shapes, use the [](../../api/diagram/typeconfig_property.md) configuration property on initialization of the diagram.
 
 :::note
@@ -100,9 +100,9 @@ You can set the mandatory direction for specific child shapes via the `side` att
 
 Other child shapes that are not set in the side option will be arranged automatically according to the main algorithm.
 
-## Setting date format in the "pert" mode of Diagram
+## Setting date format in the PERT mode of Diagram
 
-In the "pert" mode of Diagram, you can specify the necessary format of rendering dates in the shapes of the **task** type. For this, use the `dateFormat` attribute of the [](../../api/diagram/typeconfig_property.md) property:
+In the PERT mode of Diagram, you can specify the necessary format of rendering dates in the shapes of the **task** type. For this, use the `dateFormat` attribute of the [](../../api/diagram/typeconfig_property.md) property:
 
 ~~~jsx {3-5}
 const diagram = new dhx.Diagram("diagram_container", {

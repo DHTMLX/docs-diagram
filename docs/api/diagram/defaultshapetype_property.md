@@ -38,7 +38,7 @@ defaultShapeType: "card"
 defaultShapeType: "topic"
 ~~~
 
-- In the **pert** mode of Diagram (type: "pert")
+- In the **PERT** mode of Diagram (type: "pert")
 
 ~~~jsx
 defaultShapeType: "task" // or "milestone"

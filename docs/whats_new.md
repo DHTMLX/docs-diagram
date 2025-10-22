@@ -14,20 +14,20 @@ Released on October , 2025
 
 ### New functionality
 
-- The ability to create PERT charts from Gantt data sets:
+- The ability to create Diagram PERT charts from Gantt data sets:
   - [a new Diagram type: "pert"](/diagram/#diagram-in-the-pert-mode)
-  - [new types of shapes: "task" and "milestone"](/shapes/default_shapes)
-  - [a new group type: "project"](/groups/#grouping-shapes-in-the-pert-diagram-mode) (for grouping tasks and milestones)
+  - [new types of shapes: "task" and "milestone"](/shapes/default_shapes/#shapes-in-the-pert-mode)
+  - [a new group type: "project"](/groups/#grouping-shapes-in-the-pert-mode) (for grouping tasks and milestones)
 
 ### Updates
 
-- DataCollection API. Updates for the `"pert"` mode:
+- DataCollection API. Updates for the PERT mode:
   - the [`parse()`](/api/data_collection/parse_method/) method may take as the first parameter an object with `data` and `links` arrays 
   - the [`serialize()`](/api/data_collection/serialize_method/) method may return an object with `data` and `links` arrays 
-- Diagram/Diagram Editor API. The ability to define the connection type for newly created links:
+- Diagram/Diagram Editor API. The ability to define the connection type of the lines:
   - a new `connectType` parameter for the [`lineConfig`](/api/diagram/lineconfig_property/) configuration property of Diagram 
   - a new `connectType` parameter for the [`lineConfig`](/api/diagram_editor/editor/config/lineconfig_property/) configuration property of Diagram Editor
-- Export API. The [pdf()](/api/export/pdf_method/)/[png()](/api/export/png_method/) export functions return a promise of data export
+- Export API. The [pdf()](/api/export/pdf_method/) and [png()](/api/export/png_method/) export functions return a promise of data export
 
 ### New demo on backend integration
 
@@ -35,10 +35,15 @@ Released on October , 2025
 
 ### New samples
 
-- Diagram. PERT mode classic
-- Diagram. PERT mode with Gantt 
-- Diagram. PERT mode with search tasks
-- Diagram. PERT mode with Gantt and Window
+- Diagram. PERT chart. Initialization 
+- Diagram. PERT chart. Different datasets
+- Diagram. PERT chart. Filter/search tasks
+- Diagram. PERT chart. Custom sidebar for task information
+- Diagram and Gantt. PERT chart. Initialization  
+- Diagram and Gantt. PERT chart. Full integration
+- Diagram and Gantt. PERT chart. Popup window
+- Diagram and Gantt. PERT chart. Themes
+- Diagram and Gantt. PERT chart. Custom shapes and styling (custom CSS)
 - Diagram. Fishbone Diagram
 - Diagram. Watermark for the exported pdf/png file
 

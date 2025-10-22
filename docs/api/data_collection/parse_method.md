@@ -21,12 +21,12 @@ parse(
 
 ### Parameters
 
-- `data: object[] | { data: object[]; links: object[] } | string` - (required) the data to load. You can load data in any supported data format. The data structure depends on the diagram type:
-    - for the `default`, `org` and `mindmap` Diagram modes it is set as an array that contains a set of data objects
+- `data: object[] | { data: object[]; links: object[] } | string` - (required) the data to load. You can load data in any supported data format. The data structure depends on the diagram mode:
+    - for the default, org chart and mindmap Diagram modes it is set as an array that contains a set of data objects
     ~~~jsx
     data: object[]; // an array of all shapes and connections
     ~~~
-    - for the `pert` Diagram mode it is an object with:
+    - for the PERT Diagram mode it is an object with:
       -  the `data` array (for shapes: "task", "milestone", "project") 
       -  the `links` array (for connections between shapes) 
     ~~~jsx
@@ -39,7 +39,7 @@ parse(
 
 ### Example
 
-- for the `org` type of diagram
+- for the org chart mode of diagram:
 
 ~~~jsx
 const data = [
@@ -72,14 +72,14 @@ const diagram = new dhx.Diagram("diagram_container", {
 diagram.data.parse(data);
 ~~~
 
-- for the `pert` type of diagram
+- for the PERT mode of diagram:
 
 ~~~jsx
 const dataset = {
     data: [
-        { id: 1, text: "Project #1", type: "project", parent: null },
-        { id: "1.1", text: "Task #1", parent: 1, type: "task", start_date: new Date(2026, 0, 1), duration: 10 },
-        { id: "1.2", text: "Task #2", parent: 1, type: "task", start_date: new Date(2026, 0, 1), duration: 10 },
+        { id: "1", text: "Project #1", type: "project", parent: null },
+        { id: "1.1", text: "Task #1", parent: "1", type: "task", start_date: new Date(2026, 0, 1), duration: 10 },
+        { id: "1.2", text: "Task #2", parent: "1", type: "task", start_date: new Date(2026, 0, 1), duration: 10 },
         { id: "2.1", text: "Task #3", parent: null, type: "task", start_date: new Date(2026, 0, 1), duration: 10 },
         { id: "2.2", text: "Task #4", parent: null, type: "task", start_date: new Date(2026, 0, 1), duration: 10 },
     ],
@@ -101,4 +101,4 @@ diagram.data.parse(dataset);
 
 **Related samples**: 
 - [Diagram. Org chart mode. Basic initialization](https://snippet.dhtmlx.com/5ign6fyy)
-- [Diagram. PERT mode](https://snippet.dhtmlx.com/8leu8jh1)
+- [Diagram. PERT chart. Initialization](https://snippet.dhtmlx.com/8leu8jh1)

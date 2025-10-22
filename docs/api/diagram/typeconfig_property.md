@@ -12,14 +12,14 @@ The property does not work in the Editor
 
 ### Description
 
-@short: Optional. An object which provides configuration settings for Diagram in the **"mindmap"** and **"pert"** modes
+@short: Optional. An object which provides configuration settings for Diagram in the mindmap and PERT modes
 
-For Diagram in the **"mindmap"** mode, the `typeConfig` property defines the direction of the shapes. If the property isn't applied, the child shapes will be arranged automatically according to the main algorithm.
+For Diagram in the mindmap mode, the `typeConfig` property defines the direction of the shapes. If the property isn't applied, the child shapes will be arranged automatically according to the main algorithm.
 
 ### Usage
 
 ~~~jsx
-// for the "mindmap" mode
+// for the mindmap mode
 typeConfig?: {
     direction?: "left" | "right";
 }
@@ -32,7 +32,7 @@ typeConfig?: {
     }
 }
 
-// for the "pert" mode
+// for the PERT mode
 typeConfig?: {
     dateFormat?: string; // %d-%m-%Y by default
 } 
@@ -42,21 +42,21 @@ typeConfig?: {
 
 The `typeConfig` object can include one of the following parameters:
 
-- for the **"mindmap"** mode:
+- for the mindmap mode:
     - `direction` - (optional) sets the direction of the graph:
       - *"left"* - puts child shapes of the graph to the left of the root shape
       - *"right"* - puts child shapes of the graph to the right of the root shape
     - `side` - (optional) an object which sets the mandatory direction for the specified child shapes. The object contains a set of *key:value* pairs where *key* is the direction of the shapes (left, right) and *value* is an array with the ids of the shapes
-- for the **"pert"** mode:
+- for the PERT mode:
     - `dateFormat` - (optional) sets the format of rendering dates in the shapes of the **task** type. Affects rendering of dates in the user interface 
 
 :::tip
-You can use either the `direction` attribute or the `side` one for the diagram in the **"mindmap"** mode. Don't use both of them at the same time!
+You can use either the `direction` attribute or the `side` one for the diagram in the mindmap mode. Don't use both of them at the same time!
 :::
 
 ### Example
 
-- for the **"mindmap"** mode:
+- for the mindmap mode:
 
 ~~~jsx {3-5}
 const diagram = new dhx.Diagram("diagram_container", { 
@@ -83,7 +83,7 @@ const diagram = new dhx.Diagram("diagram_container", {
 
 Note that the other child shapes that are not set in the `side` option will be arranged automatically according to the main algorithm.
 
-- for the **"pert"** mode:
+- for the PERT mode:
 
 ~~~jsx {3-5}
 const diagram = new dhx.Diagram("diagram_container", {
@@ -96,7 +96,7 @@ const diagram = new dhx.Diagram("diagram_container", {
 
 **Change log**: 
 
-- The `dateFormat` property for the **"pert"** mode was added in v6.1
+- The `dateFormat` property for the PERT mode was added in v6.1
 - Added in v3.1.
 
 **Related articles**: [Arrangement of shapes in the mindmap mode of Diagram](../../../guides/diagram/configuration/#arranging-shapes-in-the-mindmap-mode-of-diagram)

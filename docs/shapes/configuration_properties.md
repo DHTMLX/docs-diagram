@@ -30,14 +30,14 @@ const data = [
         hidden?: boolean
     },
     // more shape objects
-];
+]
 ~~~
 
 ### Description
 
 Each shape object can include the following properties:
 
-- `type` - (required) the type of the shape (by default: "rectangle" in the default mode, "card" in the org chart mode, "topic" in the "mindmap" mode, "task" in the "pert" mode)
+- `type` - (required) the type of the shape (by default: "rectangle" in the default mode, "card" in the org chart mode, "topic" in the mindmap mode, "task" in the PERT mode)
 - `id` - (optional) the unique id of a shape
 - `x` - (optional) the x coordinate of the shape position. The property is **required** in the default mode of Diagram
 - `y` - (optional) the y coordinate of the shape position. The property is **required** in the default mode of Diagram
@@ -86,7 +86,7 @@ const data = [
         "mail": "kmccoy@gmail.com",
         "photo": "../img/avatar-01.jpg"
     }
-]
+];
 ~~~
 
 ## Properties specific for the default mode
@@ -442,12 +442,12 @@ const data = [
 const data = [
     // shape object
     {
-        type: "task";
-        duration: number;
-        start_date: string | Date;
-        end_date?: string | Date;
-        text?: string;
-        parent?: string | number | null;
+        type: "task",
+        duration: number,
+        start_date: string | Date,
+        end_date?: string | Date,
+        text?: string,
+        parent?: string | number | null
         //... common properties
     },
     // more shape objects
@@ -459,10 +459,10 @@ const data = [
 When preparing a data set for "task" shapes, you can add the following properties to the configuration object of a shape:
 
 - `text` - (optional) the description of a task
-- `start_date` - (required) - the start date of a task
-- `end_date` - (optional) - the end date of a task
-- `duration` - (required) - the duration of a task
-- `parent` - (optional) - the id of the parent project of a task
+- `start_date` - (required) the start date of a task
+- `end_date` - (optional) the end date of a task
+- `duration` - (required) the duration of a task
+- `parent` - (optional) the id of the parent project of a task
 
 ### Example
 
@@ -487,9 +487,9 @@ const data = [
 const data = [
     // shape object
     {
-        type: "milestone";
-        text?: string;
-        parent?: string | number | null;
+        type: "milestone",
+        text?: string,
+        parent?: string | number | null
         //... common properties
     }
     // more shape objects
@@ -501,7 +501,7 @@ const data = [
 When preparing a data set for "milestone" shapes, you can add the following properties to the configuration object of a shape:
 
 - `text` - (optional) the description of a task
-- `parent` - (optional) - the id of the parent project of a task
+- `parent` - (optional) the id of the parent project of a task
 
 ### Example
 

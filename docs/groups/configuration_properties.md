@@ -137,44 +137,48 @@ const data = [
 ];
 ~~~
 
-## Properties specific for "project" shapes
+## Properties specific for "project" object
 
-The "project" type of a shape is used as a container for tasks and milestones. It works as a [group](/diagram/groups/), allows creating PERT charts of various nesting levels and provides visual grouping.
+The "project" object is used as a container for tasks and milestones. It works as a [group](/diagram/groups/), allows creating PERT charts of various nesting levels, and provides visual grouping.
 
 ### Usage
 
 ~~~jsx
-{
-    type: "project";
-    id: string | number;
-    parent?: string | number | null;
-    text?: string; // will set the header.text property
-    open?: boolean;
+const data = [
+    // project object
+    {
+        type: "project",
+        id: string | number,
+        parent?: string | number | null,
+        text?: string, // will set the header.text property
+        open?: boolean,
 
-    // generated automatically
-    x?: number;
-    y?: number;
-    width?: number;
-    height?: number;
-    groupChildren?: (string | number)[];
-    style?: {
-        fill?: string; // "#20B56D08" by default
-        stroke?: string; // "#20B56D33" by default
-        borderStyle?: string; // "dashed" by default
-    };
-    header?: {
-        height?: number; // 40 by default
-        text?: string; // generated automatically by the text property
-        closable?: boolean; // false by default
-        enable?: boolean; // true by default
-        fill?: string; // "inherit" by default
-    };
-}
+        // generated automatically
+        x?: number,
+        y?: number,
+        width?: number,
+        height?: number,
+        groupChildren?: (string | number)[],
+        style?: {
+            fill?: string, // "#20B56D08" by default
+            stroke?: string, // "#20B56D33" by default
+            borderStyle?: string, // "dashed" by default
+        },
+        header?: {
+            height?: number, // 40 by default
+            text?: string, // generated automatically by the text property
+            closable?: boolean, // false by default
+            enable?: boolean, // true by default
+            fill?: string // "inherit" by default
+        }
+    },
+    // more project objects
+]
 ~~~
 
 ### Description
 
-When preparing a data set for "project" shapes, you can add the following properties to the configuration object of a shape:
+When preparing a data set for a "project" object, you can use the following configuration properties:
 
 - `type` - (required) the type of an element, set it to "project"
 - `id` - (optional) the unique id of a project
@@ -182,7 +186,7 @@ When preparing a data set for "project" shapes, you can add the following proper
 - `text` - (optional) the description of a project
 - `open` - (optional) defines whether the project is initialized in the expanded (*true*, default) or collapsed (*false*) state
 
-The properties generated automatically are:
+The properties below are generated automatically. They are calculated during the rendering and shouldn't be specified manually. 
 
 - `x` - (optional) the x coordinate of the project position
 - `y` - (optional) the y coordinate of the project position
@@ -200,7 +204,6 @@ The properties generated automatically are:
     - `enable` - (optional) shows/hides the header of the project; *true* by default
     - `fill` - (optional) the background color of the header 
 
-The properties generated automatically (such as `x`, `y`, `width`, `height`, `groupChildren`, etc.) are calculated during the rendering and shouldn't be specified manually. 
 
 ### Example
 

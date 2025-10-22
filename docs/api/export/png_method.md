@@ -34,7 +34,6 @@ A promise of data export
 
 ### Example
 
-~~~jsx {7,10-13}
 ~~~jsx 
 const diagram = new dhx.Diagram("diagram_container", {
     // config options

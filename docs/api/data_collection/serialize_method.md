@@ -18,16 +18,16 @@ serialize(): object[] | { data: object[]; links: object[] };
 
 ### Returns
 
-Depending on the diagram type, the method returns:
+Depending on the diagram mode, the method returns:
 
-- `object[]` - (for the `default`, `org` and `mindmap` Diagram modes) an array of JSON objects for each item and link from Diagram 
-- `{ data: object[]; links: object[] }` - (for the `pert` Diagram mode) an object with:
+- `object[]` - (for the default, org chart and mindmap Diagram modes) an array of JSON objects for each item and link from Diagram 
+- `{ data: object[]; links: object[] }` - (for the PERT Diagram mode) an object with:
   - the `data` array (for shapes: "task", "milestone", "project") 
   - the `links` array (for connections between shapes)
 
 ### Example
 
-- for the `default` diagram type
+- for the default diagram mode
 
 ~~~jsx {6}
 const diagram = new dhx.Diagram("diagram_container", {
@@ -38,7 +38,7 @@ diagram.data.parse(data);
 const data = diagram.data.serialize(); // -> [{...}, {...}, {...}, {...}]
 ~~~
 
-- for the `pert` diagram type
+- for the PERT diagram mode
 
 ~~~jsx {6}
 const diagram = new dhx.Diagram("diagram_container", {

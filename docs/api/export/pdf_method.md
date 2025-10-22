@@ -71,7 +71,7 @@ diagram.export.pdf()
 
 // export with config settings
 diagram.export.pdf({
-    url: "https://export.dhtmlx.com/diagram/pdf/5.0.0",
+    url: "https://export.dhtmlx.com/diagram/pdf/6.1.0",
     name:"result_pdf"
 })
     .then(() => console.log("success"))

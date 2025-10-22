@@ -27,7 +27,7 @@ const data = [
         stroke?: string
     },
     // more line objects
-];
+]
 ~~~
 
 ### Description
@@ -38,7 +38,7 @@ Each line object can include the following properties:
 - `id` - (optional) the id of a connector
 - `from` - (optional) the id of the parent shape
 - `to` - (optional) the id of the child shape
-- `connectType` - (optional) the type of the connector line: ["straight"](../../lines/#lines-in-the-default-mode), ["elbow"](../../lines/#lines-in-the-org-chart-mode) (the default type in the default/org chart modes), ["curved"](../../lines/#lines-in-the-mindmap-mode) (the default type in the mindmap mode)
+- `connectType` - (optional) the connection type of the line: ["straight"](../../lines/#lines-in-the-default-mode), ["elbow"](../../lines/#lines-in-the-org-chart-mode) (the default type in the default/org chart modes), ["curved"](../../lines/#lines-in-the-mindmap-mode) (the default type in the mindmap mode)
 - `strokeWidth` - (optional) the width of the line, 2 by default
 - `stroke` - (optional) the color of the line; "#2198F3" in the default mode, and "#CCC" in the org chart/mindmap modes by default
 
@@ -167,7 +167,7 @@ const dataset = {
         { id: "line-2", source: "1.2", target: "2.1" },
         { id: "line-3", source: "2.1", target: "2.2" }
     ]
-}
+};
 ~~~
 
 **Change log**:
