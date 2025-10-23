@@ -8,10 +8,10 @@ description: You can learn about the lineConfig property in the documentation of
 
 ### Description
 
-@short: Optional. An object with default configuration for the newly added connector lines 
+@short: Optional. An object with default configuration for the connector lines 
 
 :::info
-The settings will be applied to the new connector lines which are added via the editor
+The `lineType`, `lineDirection` and `arrowsHidden` settings will be applied to the new connector lines which are added via the editor.
 :::
 
 ### Usage
@@ -30,7 +30,7 @@ lineConfig?: {
 
 The **lineConfig** object contains the following parameters:
 
-- `lineType` - (optional) the default type of a connector line. The value is applied, if the line object doesn't contain the "type" property
+- `lineType` - (optional) the default type of the new connector lines. The value is applied, if the line object doesn't contain the "type" property
 - `lineDirection` - (optional) the direction of the new connector lines
 - `arrowsHidden` - (optional) defines whether the arrows of the new connector lines should be hidden
 - `lineGap` - (optional) sets the distance to the right-angled bend of a connector line
