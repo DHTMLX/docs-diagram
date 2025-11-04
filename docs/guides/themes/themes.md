@@ -195,6 +195,7 @@ The default **"light"** theme is configured on the base of the CSS variables whi
 	/* DHTMLX Diagram variables*/
 	--dhx-selected-border: 1px solid var(--dhx-color-primary);
 	--dhx-selected-border-dashed: 1px dashed var(--dhx-color-primary);
+	--dhx-shape-pert-header-background: var(--dhx-gantt-base-colors-primary, #537CFA);
 
 	--dhx-shapebar-item-font-color: #4C4C4C;
 	--dhx-shapebar-item-background: #EEF1F6;
