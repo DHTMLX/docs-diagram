@@ -129,9 +129,11 @@ When preparing a data set for links to load into the diagram in the PERT mode, y
 - `source` - (required) the id of a task that the link will start from
 - `target` - (required) the id of a task that the link will end with
 
-Note that only the links of the type "finish" -> "start" are supported. 
-
 :::info important
+Note that only the links of the `type: "0"` ("finish" -> "start") are supported in the PERT Diagram. All other [types of links used in the DHTMLX Gantt chart](https://docs.dhtmlx.com/gantt/desktop__link_properties.html) will also be processed as `type: "0"`.
+:::
+
+:::tip
 Pay attention that since the ids of items in the data collection of Diagram must be unique, the `$link` prefix is added to the existing id of a link on loading data or adding a new link.
 
 For example:

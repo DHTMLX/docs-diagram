@@ -158,7 +158,15 @@ const data = [
 
 Check the full list of the available configuration properties of the objects of a **swimlane** and its cells in the [API reference](swimlanes/configuration_properties.md).
 
-## Data structure of Diagram in the PERT mode
+## Working with Diagram data in the PERT mode
+
+There are the following peculiarities of working with Diagram in the PERT mode: 
+
+- the data loaded into the Diagram has [the structure of DHTMLX Gantt data](#data-structure-of-diagram-in-the-pert-mode)
+- while working with data in the Diagram, it is processed via [Data Collection](/api/data_collection/) the same as data in other Diagram modes
+- the [exported Diagram data](#saving-and-restoring-state) has the structure of DHTMLX Gantt data 
+
+### Data structure of Diagram in the PERT mode
 
 The data structure of Diagram in the PERT mode coincides with the [data structure of DHTMLX Gantt](https://docs.dhtmlx.com/gantt/desktop__supported_data_formats.html#json) to simplify integration and data exchange between the components. There are `data` (for shapes: "task", "milestone", "project") and `links` (for connections between shapes) arrays:
 
@@ -169,7 +177,7 @@ The data structure of Diagram in the PERT mode coincides with the [data structur
 };
 ~~~
 
-Such a structure allows processing the shapes and their connections independently. 
+Such a structure allows processing the shapes and their connections independently. [Check important notes on working with links](#processing-links).
 
 There are the following types of shapes and connections specific for the Diagram in the PERT mode:
 
@@ -262,7 +270,13 @@ const dataset = {
 
 Check the full list of the available configuration properties of the **link** object in the [API reference](/lines/configuration_properties/#properties-specific-for-links-in-the-pert-mode).
 
+#### Processing links
+
 :::info important
+Note that only the links of the `type: "0"` ("finish" -> "start") are supported by Diagram in the PERT mode. All other [types of links used in the DHTMLX Gantt chart](https://docs.dhtmlx.com/gantt/desktop__link_properties.html) will also be processed as `type: "0"`.
+:::
+
+:::tip
 Note that since the ids of items in the data collection of Diagram must be unique, the `$link` prefix is added to the existing id of a link on loading data or adding a new link.
 
 For example:
@@ -279,7 +293,7 @@ For example:
 ~~~ 
 :::
 
-### Specificity of loading data in the PERT mode
+### Specificity of data loading in the PERT mode
 
 Follow the recommendations below to avoid errors and render Diagram in a correct way:
 
@@ -291,7 +305,9 @@ Follow the recommendations below to avoid errors and render Diagram in a correct
 
 The above rules are intended for creating clean, non-cyclic graphs, suitable for PERT analysis. If data break these rules, Diagram may automatically correct them (for example, by removing unacceptable connections). However, it is better to check the data input beforehand.   
 
-Also note that the Gantt elements with `type: "task"` may have children elements not connected to the parent task visually. Such relations won't be reflected in the Diagram. For such elements to be rendered in the same project visually, you can:
+### Rendering Gantt tasks with not connected children in the Diagram
+
+Note that the Gantt elements with `type: "task"` may have children elements not connected to the parent task visually. Such relations won't be reflected in the Diagram. For such elements to be rendered in the same project visually, you can:
 
 - either assign `type:"project"` to the parent element on loading data into Diagram
 - or assign the *parent project* id of such a task to its children elements
@@ -366,12 +382,14 @@ editor.parse(data);
 
 To save the current state of a diagram, use the [](../api/data_collection/serialize_method.md) method. Depending on the Diagram mode, it converts the data of the diagram into:
 
-- an array of JSON objects, where each object contains the configuration of a separate shape - for the default, org chart and mindmap Diagram modes
-- an object with the `data` array (for shapes: "task", "milestone", "project") and the `links` array (for connections between shapes) - for the PERT Diagram mode 
+- for the default, org chart and mindmap Diagram modes - into an array of JSON objects, where each object contains the configuration of a separate shape
+- for the PERT Diagram mode - into an object with the `data` array (for shapes: "task", "milestone", "project") and the `links` array (for connections between shapes). 
 
 ~~~jsx
 const state = diagram1.data.serialize();
 ~~~
+
+Note that the for PERT Diagram mode the *links* objects in the exported data object will have [the same types as in the DHTMLX Gantt chart](https://docs.dhtmlx.com/gantt/desktop__link_properties.html). It means that if the type of a link in the Diagram data coincides with some of the Gantt links types, it will remain the same during serialization. If the link type isn't specified or set differently (for example, `type: "line"`), it will be converted into `type: "0"`.
 
 Then you can parse the data stored in the saved state to a different diagram. For example:
 
