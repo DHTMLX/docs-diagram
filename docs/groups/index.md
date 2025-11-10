@@ -94,6 +94,8 @@ const data = [
 ];
 ~~~
 
+<iframe src="https://snippet.dhtmlx.com/4h5fi7xd?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="650"></iframe>
+
 ### Properties
 
 See [the full list of configuration properties of a `project` object](/groups/configuration_properties/#properties-specific-for-project-shapes) which allow you to configure the positioning and appearance of tasks and milestones in the project.

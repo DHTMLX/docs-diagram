@@ -137,6 +137,8 @@ const data = [
 ];
 ~~~
 
+**Related article**: [Configuring groups](../../groups/)
+
 ## Properties specific for "project" object
 
 The "project" object is used as a container for tasks and milestones. It works as a [group](/diagram/groups/), allows creating PERT charts of various nesting levels, and provides visual grouping.
@@ -238,4 +240,5 @@ const data = [
 ];
 ~~~
 
-**Related articles**: [Configuring groups](../../groups/)
+**Related article**: [Grouping shapes in the PERT mode](/groups/#grouping-shapes-in-the-pert-mode)
+
