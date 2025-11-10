@@ -71,31 +71,9 @@ editor = new dhx.DiagramEditor("editor_container", {
 
 ### Description
 
-Here is the full list of standard hotkeys that can be overridden:
+The table below describes the actions performed by standard hotkeys and provides key string parameters for those hotkeys that can be overridden:
 
-- "Ctrl+C"
-- "Ctrl+V"
-- "Ctrl+D"
-- "Ctrl+A"
-- "Ctrl+Shift+A"
-- "Ctrl+Z"
-- "Ctrl+Shift+Z"
-- "Alt+Ctrl+C"
-- "Alt+Ctrl+V"
-- "Alt+1"
-- "Alt+2"
-- "Alt+3"
-- "Delete"
-- "Backspace"
-- "Arrow-Left"
-- "Arrow-Right"
-- "Arrow-Up"
-- "Arrow-Down"
-
-[Check the detailed description of the actions performed by standard hotkeys](/guides/diagram_editor/hot_keys/).
-
-
-### Hotkeys Table
+#### Hotkeys Table
 
 | Hotkey combination             | Description                                          | Parameter key string    |
 |--------------------------------|------------------------------------------------------|-------------------------|

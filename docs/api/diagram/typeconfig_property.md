@@ -16,10 +16,13 @@ The property does not work in the Editor
 
 For Diagram in the mindmap mode, the `typeConfig` property defines the direction of the shapes. If the property isn't applied, the child shapes will be arranged automatically according to the main algorithm.
 
+For Diagram in the PERT mode, the `typeConfig` property allows setting the format of rendering dates in the task shapes.
+
 ### Usage
 
+- for the mindmap mode
+
 ~~~jsx
-// for the mindmap mode
 typeConfig?: {
     direction?: "left" | "right";
 }
@@ -31,8 +34,11 @@ typeConfig?: {
         right?: string[]
     }
 }
+~~~
 
-// for the PERT mode
+- for the PERT mode
+
+~~~jsx
 typeConfig?: {
     dateFormat?: string; // %d-%m-%Y by default
 } 

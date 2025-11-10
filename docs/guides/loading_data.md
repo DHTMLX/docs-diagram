@@ -382,8 +382,8 @@ editor.parse(data);
 
 To save the current state of a diagram, use the [](../api/data_collection/serialize_method.md) method. Depending on the Diagram mode, it converts the data of the diagram into:
 
-- for the default, org chart and mindmap Diagram modes - into an array of JSON objects, where each object contains the configuration of a separate shape
-- for the PERT Diagram mode - into an object with the `data` array (for shapes: "task", "milestone", "project") and the `links` array (for connections between shapes). 
+- for the default, org chart and mindmap Diagram modes - into an array of objects, where each object contains the configuration of a separate shape
+- for the PERT Diagram mode - into an object with the `data` array of objects (for shapes: "task", "milestone", "project") and the `links` array of objects (for connections between shapes). 
 
 ~~~jsx
 const state = diagram1.data.serialize();
