@@ -116,20 +116,17 @@ An example of adding a custom template into the mindmap mode of the diagram to c
 
 ## Diagram in the PERT mode
 
-The PERT mode is used to visualize tasks and projects' sequences and connections between them. It is also useful for identifying the critical path and project planning.
+The [PERT mode](/api/diagram/type_property/) is used to visualize tasks and projects' sequences and connections between them. It is also useful for identifying the critical path and project planning. 
 
-| [Diagram. PERT chart. Initialization ](https://snippet.dhtmlx.com/p2tycrvc) 			|
-| ----------------------------------------------------------------------|
-| ![](assets/pert_mode.png)                                             |
+Diagram in the PERT mode [uses the DHTMLX Gantt data structure](/guides/loading_data/#data-structure-of-diagram-in-the-pert-mode), which provides [easy interaction between the components](#integrating-pert-diagram-and-dhtmlx-gantt). On loading a Gantt dataset, a Diagram in the PERT mode automatically arranges tasks and projects based on the connections between them.
 
+<iframe src="https://snippet.dhtmlx.com/4h5fi7xd?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
-### PERT Diagram and DHTMLX Gantt
+### Integrating PERT Diagram and DHTMLX Gantt
 
-An example of integrating the Diagram in the PERT mode and a Gantt chart is given below:
+An example of integrating a Diagram in the PERT mode and a Gantt chart is given below: 
 
-| [Diagram and Gantt. PERT chart. Full integration](https://snippet.dhtmlx.com/2v55b4pz) 	|
-| --------------------------------------------------------------------------------------------------|
-| ![](assets/pert_mode_gantt.png)                                             						|
+<iframe src="https://snippet.dhtmlx.com/gcnx4a9h?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>                                						
 
 ## Shape search
 

@@ -59,7 +59,7 @@ Here is an example of Diagram in the PERT mode that includes the basic types of 
 
 ![](../assets/pert_mode_basic_shapes.png)
 
-**Related sample**: [Diagram. PERT chart. Initialization ](https://snippet.dhtmlx.com/p2tycrvc)
+**Related sample**: [Diagram. PERT chart. Initialization ](https://snippet.dhtmlx.com/4h5fi7xd)
 
 ## Setting the type of a shape
 

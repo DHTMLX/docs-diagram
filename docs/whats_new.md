@@ -19,7 +19,7 @@ Released on November , 2025
     - [new types of shapes: "task" and "milestone"](/shapes/default_shapes/#shapes-in-the-pert-mode)
     - [a new group type: "project"](/groups/#grouping-shapes-in-the-pert-mode) (for grouping tasks and milestones)
 - Diagram Editor. The ability to manage keyboard shortcuts (hotkeys) within the editor:
-    - a new [`hotkeys`](/api/diagram_editor/editor/config/hotkeys_property/) configuration property
+    - a new [`hotkeys`](/api/diagram_editor/editor/config/hotkeys_property/) configuration property allows modifying or switching off the existing hotkeys, as well as adding new ones
 - Diagram Editor. The ability to manage shapes resizing and rotating via a set of new events:
 [`beforeItemResize`](/api/diagram_editor/editor/events/beforeitemresize_event/),
 [`afterItemResize`](/api/diagram_editor/editor/events/afteritemresize_event/),
@@ -45,17 +45,19 @@ Released on November , 2025
 
 ### New samples
 
-- Diagram. PERT chart. Initialization 
-- Diagram. PERT chart. Different datasets
-- Diagram. PERT chart. Filter/search tasks
-- Diagram. PERT chart. Custom sidebar for task information
-- Diagram and Gantt. PERT chart. Initialization  
-- Diagram and Gantt. PERT chart. Full integration
-- Diagram and Gantt. PERT chart. Popup window
-- Diagram and Gantt. PERT chart. Themes
-- Diagram and Gantt. PERT chart. Custom shapes and styling (custom CSS)
-- Diagram. Fishbone Diagram
-- Diagram. Watermark for the exported pdf/png file
+- [Diagram. PERT chart. Initialization](https://snippet.dhtmlx.com/4h5fi7xd) 
+- [Diagram and Gantt. PERT chart. Initialization](https://snippet.dhtmlx.com/409jj9uh)  
+- [Diagram and Gantt. PERT chart. Full integration](https://snippet.dhtmlx.com/gcnx4a9h)
+- [Diagram and Gantt. PERT chart. Popup window](https://snippet.dhtmlx.com/fvfysbdb)
+- [Diagram and Gantt. PERT chart. Custom shapes and styling (custom CSS)](https://snippet.dhtmlx.com/mtk92awx)
+- [Diagram. PERT chart. Different datasets](https://snippet.dhtmlx.com/2j2y8vy6)
+- [Diagram. PERT chart. Filter/search tasks](https://snippet.dhtmlx.com/1b2bmmxk)
+- [Diagram. PERT chart. Custom sidebar for task information](https://snippet.dhtmlx.com/712lsox0)
+- [Diagram. PERT chart. Themes](https://snippet.dhtmlx.com/2e5y5u6m)
+- Diagram. Fishbone Diagram. Causes and solutions
+- Diagram. Fishbone Diagram. Multiple causes
+- [Diagram. Export. Bottom left watermark](https://snippet.dhtmlx.com/d56spdsc)
+- [Diagram. Export. Repeating watermark](https://snippet.dhtmlx.com/emkea55j)
 
 ## Version 6.0.11 
 

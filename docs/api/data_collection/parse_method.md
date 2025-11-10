@@ -101,4 +101,4 @@ diagram.data.parse(dataset);
 
 **Related samples**: 
 - [Diagram. Org chart mode. Basic initialization](https://snippet.dhtmlx.com/5ign6fyy)
-- [Diagram. PERT chart. Initialization](https://snippet.dhtmlx.com/8leu8jh1)
+- [Diagram. PERT chart. Initialization](https://snippet.dhtmlx.com/4h5fi7xd)

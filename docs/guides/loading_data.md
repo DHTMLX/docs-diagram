@@ -162,13 +162,13 @@ Check the full list of the available configuration properties of the objects of 
 
 There are the following peculiarities of working with Diagram in the PERT mode: 
 
-- the data loaded into the Diagram has [the structure of DHTMLX Gantt data](#data-structure-of-diagram-in-the-pert-mode)
+- the [data loaded into the Diagram](#data-structure-of-diagram-in-the-pert-mode) has the structure of DHTMLX Gantt data
 - while working with data in the Diagram, it is processed via [Data Collection](/api/data_collection/) the same as data in other Diagram modes
 - the [exported Diagram data](#saving-and-restoring-state) has the structure of DHTMLX Gantt data 
 
 ### Data structure of Diagram in the PERT mode
 
-The data structure of Diagram in the PERT mode coincides with the [data structure of DHTMLX Gantt](https://docs.dhtmlx.com/gantt/desktop__supported_data_formats.html#json) to simplify integration and data exchange between the components. There are `data` (for shapes: "task", "milestone", "project") and `links` (for connections between shapes) arrays:
+The structure of Diagram data in the PERT mode coincides with the [data structure of DHTMLX Gantt](https://docs.dhtmlx.com/gantt/desktop__supported_data_formats.html#json) to simplify integration and data exchange between the components. When a Gantt dataset is loaded into a PERT Diagram, it automatically arranges tasks and projects based on the connections between them. There are `data` (for shapes: "task", "milestone", "project") and `links` (for connections between shapes) arrays:
 
 ~~~jsx
 {

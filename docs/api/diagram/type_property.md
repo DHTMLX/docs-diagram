@@ -34,7 +34,7 @@ DHTMLX Diagram can be initialized in one of the following modes:
 
 - **type:"pert"** is used to show the sequences of tasks and projects, and visualize connections between them. This type of diagram is also useful in estimating the critical path and project planning
 
-<iframe src="https://snippet.dhtmlx.com/8leu8jh1?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
+<iframe src="https://snippet.dhtmlx.com/4h5fi7xd?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
 **Change log**: 
 
