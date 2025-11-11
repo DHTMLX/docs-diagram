@@ -41,7 +41,7 @@ defaultShapeType: "topic"
 - In the **PERT** mode of Diagram (type: "pert")
 
 ~~~jsx
-defaultShapeType: "task" // or "milestone"
+defaultShapeType: "task"
 ~~~
 
 ### Example

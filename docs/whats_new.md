@@ -56,6 +56,8 @@ Released on November , 2025
 - [Diagram. PERT chart. Filter/search tasks](https://snippet.dhtmlx.com/1b2bmmxk)
 - [Diagram. PERT chart. Custom sidebar for task information](https://snippet.dhtmlx.com/712lsox0)
 - [Diagram. PERT chart. Themes](https://snippet.dhtmlx.com/2e5y5u6m)
+- Diagram Editor. Managing shapes moving, rotating and resizing via events
+- Diagram Editor. Managing hotkeys adding, modifying and disabling via the API
 - Diagram. Fishbone Diagram. Causes and solutions
 - Diagram. Fishbone Diagram. Multiple causes
 - [Diagram. Export. Bottom left watermark](https://snippet.dhtmlx.com/d56spdsc)
