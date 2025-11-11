@@ -33,6 +33,8 @@ Released on November , 2025
 - DataCollection API. Updates for the PERT mode:
     - the [`parse()`](/api/data_collection/parse_method/) method may take as the first parameter an object with `data` and `links` arrays 
     - the [`serialize()`](/api/data_collection/serialize_method/) method may return an object with `data` and `links` arrays 
+- Diagram API. The ability to set the format of rendering dates in the task shapes for the PERT mode:
+    - a new `dateFormat` parameter for the [`typeConfig`](/api/diagram/typeconfig_property/) configuration property
 - Diagram/Diagram Editor API. The ability to define the connection type of the lines:
     - a new `connectType` parameter for the [`lineConfig`](/api/diagram/lineconfig_property/) configuration property of Diagram 
     - a new `connectType` parameter for the [`lineConfig`](/api/diagram_editor/editor/config/lineconfig_property/) configuration property of Diagram Editor
