@@ -27,7 +27,7 @@ const data = [
         stroke?: string
     },
     // more line objects
-];
+]
 ~~~
 
 ### Description
@@ -38,7 +38,7 @@ Each line object can include the following properties:
 - `id` - (optional) the id of a connector
 - `from` - (optional) the id of the parent shape
 - `to` - (optional) the id of the child shape
-- `connectType` - (optional) the type of the connector line: ["straight"](../../lines/#lines-in-the-default-mode), ["elbow"](../../lines/#lines-in-the-org-chart-mode) (the default type in the default/org chart modes), ["curved"](../../lines/#lines-in-the-mindmap-mode) (the default type in the mindmap mode)
+- `connectType` - (optional) the connection type of the line: ["straight"](../../lines/#lines-in-the-default-mode), ["elbow"](../../lines/#lines-in-the-org-chart-mode) (the default type in the default/org chart modes), ["curved"](../../lines/#lines-in-the-mindmap-mode) (the default type in the mindmap mode)
 - `strokeWidth` - (optional) the width of the line, 2 by default
 - `stroke` - (optional) the color of the line; "#2198F3" in the default mode, and "#CCC" in the org chart/mindmap modes by default
 
@@ -81,7 +81,7 @@ When preparing a data set for lines to load into the diagram in the default mode
     - `y` - (required) the y coordinate of the point
     - `custom` - (optional) defines whether the point is fixed. If *true*, the position of the point can be changed only after interaction with it
 
-## Example
+### Example
 
 ~~~jsx
 const data = [
@@ -102,6 +102,79 @@ const data = [
 ];
 ~~~
 
-**Change log**: The `title` property was deprecated in v6.0
+## Properties specific for links in the PERT mode
+
+### Usage
+
+~~~jsx
+const dataset = {
+    data: [...], // an array of shapes (tasks, milestones, projects)
+    links: [
+        // link object
+        {
+            id?: string | number,
+            source: string | number,
+            target: string | number
+        },
+        // more link objects
+    ]
+}
+~~~
+
+### Description
+
+When preparing a data set for links to load into the diagram in the PERT mode, you can add the following properties to the configuration object of a link:
+
+- `id` - (optional) the id of a link connector
+- `source` - (required) the id of a task that the link will start from
+- `target` - (required) the id of a task that the link will end with
+
+:::info important
+Note that only the links of the `type: "0"` ("finish" -> "start") are supported in the PERT Diagram. All other [types of links used in the DHTMLX Gantt chart](https://docs.dhtmlx.com/gantt/desktop__link_properties.html) will also be processed as `type: "0"`.
+:::
+
+:::tip
+Pay attention that since the ids of items in the data collection of Diagram must be unique, the `$link` prefix is added to the existing id of a link on loading data or adding a new link.
+
+For example:
+
+~~~jsx
+{
+    data: [...],
+    links: [
+        { id: "1" }, // will be available in the diagram as "$link:1"
+    ]
+}
+
+// diagram.data.getItem("$link:1");
+~~~ 
+:::
+
+### Example
+
+~~~jsx {11-16}
+const dataset = {
+    data: [
+        // configuring a project shape
+        { id: "1", text: "Project #1", type: "project", parent: null },
+        // configuring task shapes
+        { id: "1.1", text: "Task #1", parent: "1", type: "task", start_date: new Date(2026, 0, 1), duration: 10 },
+        { id: "1.2", text: "Task #2", parent: "1", type: "task", start_date: new Date(2026, 0, 1), duration: 10 },
+        { id: "2.1", text: "Task #3", parent: null, type: "task", start_date: new Date(2026, 0, 1), duration: 10 },
+        { id: "2.2", text: "Task #4", parent: null, type: "task", start_date: new Date(2026, 0, 1), duration: 10 }
+    ],
+    links: [
+        // configuring links objects
+        { id: "line-1", source: "1.1", target: "1.2" },
+        { id: "line-2", source: "1.2", target: "2.1" },
+        { id: "line-3", source: "2.1", target: "2.2" }
+    ]
+};
+~~~
+
+**Change log**:
+
+- The `links` type of connectors used in the PERT mode of Diagram are added in v6.1
+- The `title` property of the `line` object was deprecated in v6.0
 
 **Related articles**: [Configuring lines](../../lines/)

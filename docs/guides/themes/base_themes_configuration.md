@@ -157,3 +157,15 @@ For example:
     dhx.setTheme("dark", node);
 </script>
 ~~~
+
+## Adjusting the look of tasks in the PERT mode
+
+The appearance of tasks of the [Diagram in the PERT chart mode](/diagram/#diagram-in-the-pert-mode) is defined by the `--dhx-shape-pert-header-background` CSS variable. It is specified in the [default](guides/themes.md#light-theme-default) theme in the following way: 
+
+~~~jsx
+--dhx-shape-pert-header-background: var(--dhx-gantt-base-colors-primary, #537CFA);
+~~~
+
+- when Diagram in the PERT chart mode is used together with DHTMLX Gantt, the current color scheme of the Gantt chart will be applied to the Diagram tasks
+- when Diagram is used standalone, the above mentioned CSS variable will be set to the default value, which is `#537CFA`
+

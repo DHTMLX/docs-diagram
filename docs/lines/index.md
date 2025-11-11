@@ -8,7 +8,7 @@ description: You can learn about Lines in the documentation of the DHTMLX JavaSc
 
 ## Overview
 
-The look and the way of lines which connect shapes is defined by the mode you initialize a diagram in: [default](#lines-in-the-default-mode), [org](#lines-in-the-org-chart-mode), or [mindmap](#lines-in-the-mindmap-mode) one.
+The look and feel of the lines which connect shapes is defined by the mode you initialize a diagram in: [default](#lines-in-the-default-mode), [org chart](#lines-in-the-org-chart-mode), [mindmap](#lines-in-the-mindmap-mode) or [PERT](#links-in-the-pert-mode).
 
 ### Lines in the default mode
 
@@ -36,6 +36,13 @@ The mode is useful when you need to represent a core topic or idea surrounded by
 
 The arrangement of child shapes relative to the root shape is defined automatically by the main algorithm.
 To change the default direction of the child shapes, use the [](../api/diagram/typeconfig_property.md) configuration property on initialization of the diagram.
+
+### Links in the PERT mode
+
+The PERT mode of Diagram is intended for rendering sequences of tasks and projects, and connections between them. The `"task"`, `"milestone"` and `"project"` types of shapes are connected by the [`"links"` connectors](/lines/configuration_properties/#properties-specific-for-links-in-the-pert-mode).
+
+<iframe src="https://snippet.dhtmlx.com/4h5fi7xd?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="650"></iframe>
+
 
 ## Setting connections between shapes
 
@@ -67,7 +74,7 @@ The **type** property specified in the line object allows you to specify individ
 See [the full list of configuration properties of a line object](/lines/configuration_properties/).
 :::
 
-- **using the "parent attribute"**
+- **using the "parent" attribute**
 
 :::note
 This way does not work in the default mode of Diagram/Diagram Editor.
@@ -90,7 +97,7 @@ In this case, all the connectors will have the same type.
 
 ### Setting the default line type
 
-You can set a common type for all the connector lines of the diagram via the **lineType** parameter of the [](../api/diagram/lineconfig_property.md) property of the diagram config object:
+You can set a common type for all the connector lines of the diagram via the `lineType` parameter of the [](../api/diagram/lineconfig_property.md) property of the diagram config object:
 
 ~~~jsx
 const diagram = new dhx.Diagram("diagram_container", {
@@ -102,4 +109,24 @@ const diagram = new dhx.Diagram("diagram_container", {
 diagram.data.parse(data);
 ~~~
 
-This value is applied, if the line object doesn't contain the **type** property.
+The value of the `lineType` parameter is applied, if the [line object](/lines/configuration_properties/) doesn't contain the `type` property.
+
+### Setting the connection type of the line
+
+You can specify the connection type for lines of the diagram via the `connectType` parameter of the [](../api/diagram/lineconfig_property.md) property of the diagram config object. It provides the following types:
+
+- "elbow" (the default type for the default and org chart Diagram modes)
+- "straight"
+- "curved" (the default type for the mindmap Diagram mode). Note that the "curved" type of the connector line is used only in the mindmap Diagram mode
+
+~~~jsx
+const diagram = new dhx.Diagram("diagram_container", {
+    type: "default",
+    lineConfig: {
+        connectType: "straight" // "elbow" | "straight" for the default mode
+    }
+});
+diagram.data.parse(data);
+~~~
+
+The value of the `connectType` parameter is applied, if the [line object](/lines/configuration_properties/) doesn't contain the `connectType` property.

@@ -27,6 +27,11 @@ description: You can explore the Combo control of Editbar in the documentation o
     padding?: string | number,
 
     filter?: (item: any, input: string) => boolean,
+    eventHandlers?: {
+        [eventName: string]: {
+            [className: string]: (event: Event, id: string | number) => void | boolean; 
+        };
+    },
     itemHeight?: number | string, // 32 by default
     itemsCount?: boolean | ((count: number) => string),
     listHeight?: number | string, // 224 by default
@@ -75,7 +80,8 @@ Option configuration object inside Combo:
 - `height` - (optional) the height of a control. *"content"* by default
 - `width` - (optional) the width of a control. *"content"* by default
 - `padding` - (optional) sets padding between a cell and a border of a Combo control
-- `filter` - (optional) sets a custom function for filtering Combo options. [Check the details](https://docs.dhtmlx.com/suite/combobox/customization/#custom-filter-for-options).
+- `filter` - (optional) sets a custom function for filtering Combo options. [Check the details](https://docs.dhtmlx.com/suite/combobox/customization/#custom-filter-for-options)
+- `eventHandlers` - (optional) adds event handlers to HTML elements of a custom template of Combo items. [Check the details](https://docs.dhtmlx.com/suite/combobox/api/combobox_eventhandlers_config/)
 - `itemHeight` - (optional) sets the height of a cell in the list of options. *32* by default
 - `itemsCount` - (optional) shows the total number of selected options
 - `listHeight` - (optional) sets the height of the list of options. *224* by default

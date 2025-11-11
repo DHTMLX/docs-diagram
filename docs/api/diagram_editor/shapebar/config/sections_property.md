@@ -28,7 +28,7 @@ The `sections` object can contain a set of *key:value* pairs where:
 - `key` - the name of a section specified by a user
 - `value` - an array which can include:
   - an object with one *key:value* pair for rendering a <span id="basic">basic set of shapes</span>. The list of available pairs is given below:
-    - `{flowShapes: true}` - (optional) displays all available types of the [Flow-chart](../../../../../shapes/default_shapes/#shapes-overview) shapes
+    - `{flowShapes: true}` - (optional) displays all available types of the [Flow-chart](/diagram/shapes/default_shapes/#shapes-in-the-default-mode) shapes
     - `{org: true}` - (optional) displays Org shapes: the "card" and "img-card" shape types
     - `{group: true}` - (optional) displays a basic set of Groups
     - `{swimlane: true}` - (optional) displays a basic set of Swimlanes

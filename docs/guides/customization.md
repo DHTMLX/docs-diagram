@@ -77,6 +77,10 @@ You can create a customized diagram by adding new types of shapes into the diagr
 
 <iframe src="https://snippet.dhtmlx.com/do1jwmw1?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
+### Example in the PERT mode
+
+<iframe src="https://snippet.dhtmlx.com/mtk92awx?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
+
 ## Styling target shapes
 
 While using the org and mindmap charts in the Diagram Editor, you can add a custom style for target items.

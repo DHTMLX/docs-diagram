@@ -13,7 +13,7 @@ You can populate DHTMLX Diagram with data in the following ways:
 
 ## Preparing data to load
 
-DHTMLX Diagram takes data in the JSON format. It is an array that contains a set of data objects. There are 5 types of objects:
+DHTMLX Diagram takes data in the JSON format. For the default, org chart and mindmap Diagram modes it is an array that contains a set of data objects. There are 5 types of objects:
 
 - **shape objects**
 
@@ -31,7 +31,8 @@ const data = [
 ];
 ~~~
 
-The library provides you with [various types of default shapes](../../shapes/default_shapes/) which have both common and specific options. Check the full list of available properties of a shape object in the [API reference](shapes/configuration_properties.md). <br>
+The library provides you with [various types of default shapes](../../shapes/default_shapes/) which have both common and specific options. Check the full list of available properties of a **shape** object in the [API reference](shapes/configuration_properties.md). 
+
 Besides, you may create [your own type of shapes](../../shapes/custom_shape/) and add any custom properties to shape objects.
 
 - **line objects**
@@ -50,7 +51,7 @@ const data = [
 ];
 ~~~
 
-The presence or absence of line objects in the data set depends on the chosen [way of shapes connection](../../lines/#setting-connections-between-shapes). Check the full list of available properties of the line object in the [API reference](lines/configuration_properties.md).
+The presence or absence of line objects in the data set depends on the chosen [way of shapes connection](../../lines/#setting-connections-between-shapes). Check the full list of available properties of the **line** object in the [API reference](lines/configuration_properties.md).
 
 - **line title objects**
 
@@ -68,7 +69,7 @@ const data = [
 ];
 ~~~
 
-Check the full list of available properties of the line title object in the [API reference](line_titles/configuration_properties.md).
+Check the full list of available properties of the **line title** object in the [API reference](line_titles/configuration_properties.md).
 
 - **group objects**
 
@@ -98,7 +99,7 @@ const data = [
 ];
 ~~~
 
-Check the full list of the available properties of a group object in the [API reference](groups/configuration_properties.md).
+Check the full list of the available properties of a **group** object in the [API reference](groups/configuration_properties.md).
 
 - **objects of a swimlane and its cell**
 
@@ -155,7 +156,187 @@ const data = [
 ];
 ~~~
 
-Check the full list of the available configuration properties of the objects of a swimlane and its cells in the [API reference](swimlanes/configuration_properties.md).
+Check the full list of the available configuration properties of the objects of a **swimlane** and its cells in the [API reference](swimlanes/configuration_properties.md).
+
+## Working with Diagram data in the PERT mode
+
+There are the following peculiarities of working with Diagram in the PERT mode: 
+
+- the [data loaded into the Diagram](#data-structure-of-diagram-in-the-pert-mode) has the structure of DHTMLX Gantt data
+- while working with data in the Diagram, it is processed via [Data Collection](/api/data_collection/) the same as data in other Diagram modes
+- the [exported Diagram data](#saving-and-restoring-state) has the structure of DHTMLX Gantt data 
+
+### Data structure of Diagram in the PERT mode
+
+The structure of Diagram data in the PERT mode coincides with the [data structure of DHTMLX Gantt](https://docs.dhtmlx.com/gantt/desktop__supported_data_formats.html#json) to simplify integration and data exchange between the components. When a Gantt dataset is loaded into a PERT Diagram, it automatically arranges tasks and projects based on the connections between them. There are `data` (for shapes: "task", "milestone", "project") and `links` (for connections between shapes) arrays:
+
+~~~jsx
+{
+    data: object[]; // an array of shapes (tasks, milestones, projects)
+    links: object[] // an array of connections between the shapes
+};
+~~~
+
+Such a structure allows processing the shapes and their connections independently. [Check important notes on working with links](#processing-links).
+
+There are the following types of shapes and connections specific for the Diagram in the PERT mode:
+
+- **project objects**
+
+~~~jsx {3-4}
+const dataset = {
+    data: [
+        // configuring a project shape
+        { id: "1", text: "Project #1", type: "project", parent: null },
+        // configuring task shapes
+        { id: "1.1", text: "Task #1", parent: "1", type: "task", start_date: new Date(2026, 0, 1), duration: 10 },
+        { id: "1.2", text: "Task #2", parent: "1", type: "task", start_date: new Date(2026, 0, 1), duration: 10 }
+    ],
+    links: [
+        // configuring a link object
+        { id: "line-1", source: "1.1", target: "1.2" }
+    ]
+}
+~~~
+
+Check the full list of the available configuration properties of the **project** object in the [API reference](groups/configuration_properties.md/#properties-specific-for-project-shapes).
+
+- **task objects**
+
+~~~jsx {5-9}
+const dataset = {
+    data: [
+        // configuring a project shape
+        { id: "1", text: "Project #1", type: "project", parent: null },
+        // configuring task shapes
+        { id: "1.1", text: "Task #1", parent: "1", type: "task", start_date: new Date(2026, 0, 1), duration: 10 },
+        { id: "1.2", text: "Task #2", parent: "1", type: "task", start_date: new Date(2026, 0, 1), duration: 10 },
+        { id: "2.1", text: "Task #3", parent: null, type: "task", start_date: new Date(2026, 0, 1), duration: 10 },
+        { id: "2.2", text: "Task #4", parent: null, type: "task", start_date: new Date(2026, 0, 1), duration: 10 }
+    ],
+    links: [
+        // configuring links objects
+        { id: "line-1", source: "1.1", target: "1.2" },
+        { id: "line-2", source: "1.2", target: "2.1" },
+        { id: "line-3", source: "2.1", target: "2.2" }
+    ]
+}
+~~~
+
+Check the full list of the available configuration properties of the **task** object in the [API reference](shapes/configuration_properties.md/#properties-specific-for-task-shapes).
+
+- **milestone objects**
+
+~~~jsx {7-8}
+const dataset = {
+    data: [
+        // configuring a project shape
+        { id: "1", text: "Project #1", type: "project", parent: null },
+        // configuring task shapes
+        { id: "1.1", text: "Task #1", parent: "1", type: "task", start_date: new Date(2026, 0, 1), duration: 10 },
+        // configuring a milestone shape
+        { id: "1.2", text: "Task #2", parent: "1", type: "milestone", start_date: new Date(2026, 0, 1), duration: 10 }
+    ],
+    links: [
+        //  configuring a link object
+        { id: "line-1", source: "1.1", target: "1.2" }
+    ]
+}
+~~~
+
+Check the full list of the available configuration properties of the **milestone** object in the [API reference](shapes/configuration_properties.md/#properties-specific-for-milestone-shapes).
+
+- **link objects**
+
+~~~jsx {11-16}
+const dataset = {
+    data: [
+        // configuring a project shape
+        { id: "1", text: "Project #1", type: "project", parent: null },
+        // configuring task shapes
+        { id: "1.1", text: "Task #1", parent: "1", type: "task", start_date: new Date(2026, 0, 1), duration: 10 },
+        { id: "1.2", text: "Task #2", parent: "1", type: "task", start_date: new Date(2026, 0, 1), duration: 10 },
+        { id: "2.1", text: "Task #3", parent: null, type: "task", start_date: new Date(2026, 0, 1), duration: 10 },
+        { id: "2.2", text: "Task #4", parent: null, type: "task", start_date: new Date(2026, 0, 1), duration: 10 }
+    ],
+    links: [
+        // configuring links objects
+        { id: "line-1", source: "1.1", target: "1.2" },
+        { id: "line-2", source: "1.2", target: "2.1" },
+        { id: "line-3", source: "2.1", target: "2.2" }
+    ]
+}
+~~~
+
+Check the full list of the available configuration properties of the **link** object in the [API reference](/lines/configuration_properties/#properties-specific-for-links-in-the-pert-mode).
+
+#### Processing links
+
+:::info important
+Note that only the links of the `type: "0"` ("finish" -> "start") are supported by Diagram in the PERT mode. All other [types of links used in the DHTMLX Gantt chart](https://docs.dhtmlx.com/gantt/desktop__link_properties.html) will also be processed as `type: "0"`.
+:::
+
+:::tip
+Note that since the ids of items in the data collection of Diagram must be unique, the `$link` prefix is added to the existing id of a link on loading data or adding a new link.
+
+For example:
+
+~~~jsx
+{
+    data: [...],
+    links: [
+        { id: "1" }, // will be available in the diagram as "$link:1"
+    ]
+}
+
+// diagram.data.getItem("$link:1");
+~~~ 
+:::
+
+### Specificity of data loading in the PERT mode
+
+Follow the recommendations below to avoid errors and render Diagram in a correct way:
+
+- **Absence of cyclic dependencies**. There is no support for cycles among tasks, projects, links and mixed elements. In case a cyclic dependency is detected, an exception will appear.
+- **Links between the parent and children are permitted**. Direct connections between the parent element (e.g. a project) and its children elements are not allowed. Such connections will be deleted automatically during data processing.
+- **Avoid intersecting connections**. Reduce the number of intersecting links to the minimum, as they may make the diagram more complex and lead to the low-level readability. 
+- **Successive data processing**. Data are processed in the order they are coming, which may affect the arrangement of elements. You should specify the data in the logical order to achieve the best result.
+- **Task sequencing**. Use linear or sequential connections between tasks and projects to keep the diagram clear and avoid visual disorder.
+
+The above rules are intended for creating clean, non-cyclic graphs, suitable for PERT analysis. If data break these rules, Diagram may automatically correct them (for example, by removing unacceptable connections). However, it is better to check the data input beforehand.   
+
+### Rendering Gantt tasks with not connected children in the Diagram
+
+Note that the Gantt elements with `type: "task"` may have children elements not connected to the parent task visually. Such relations won't be reflected in the Diagram. For such elements to be rendered in the same project visually, you can:
+
+- either assign `type:"project"` to the parent element on loading data into Diagram
+- or assign the *parent project* id of such a task to its children elements
+
+For example:
+
+~~~jsx
+{
+    data: [
+        { id: "1", type: "project" },
+        { id: "1.1", type: "task", parent: "1" }, 
+        { id: "1.1.1", type: "task", parent: "1.1" } 
+    ]
+}
+~~~
+
+In the above example:
+
+- The element "1.1" is not a project and is rendered as a task.
+- Since the element "1.1.1" links to the parent "1.1" which is not a project, it will be rendered in the wrong place.
+- For the elements "1.1" and "1.1.1" to be rendered in the same project visually:
+    - either assign the id of the parent project of the element "1.1" to the element "1.1.1" (using the `parent: "1"` option):
+    ~~~jsx
+    { id: "1.1.1", type: "task", parent: "1" }
+    ~~~
+    - or use the "project" type instead of the "task" type for the parent element "1.1": 
+    ~~~jsx
+     { id: "1.1", type: "project", parent: "1" }
+    ~~~
 
 ## External data loading
 
@@ -179,10 +360,10 @@ diagram.data.load("/some/data").then(() => {
 
 ## Loading from a local source
 
-To load data from a local data source, use the [](../api/data_collection/parse_method.md) method. As a parameter you need to pass an array of [predefined data objects](#preparing-data-to-load):
+To load data from a local data source, use the [](../api/data_collection/parse_method.md) method. As parameters, you need to pass a [predefined data set](#preparing-data-to-load) and, optionally, the DataDriver or type of data ("json" (default), "csv", "xml"):
 
 ~~~jsx
-diagram.data.parse(data);
+diagram.data.parse(data, driver);
 ~~~
 
 **Related sample**: [Diagram. Default mode. Wide flowchart](https://snippet.dhtmlx.com/4d4k3o8p)
@@ -199,14 +380,18 @@ editor.parse(data);
 
 ## Saving and restoring state
 
-To save the current state of a diagram, use the [](../api/data_collection/serialize_method.md) method. It converts the data of the diagram into an array of JSON objects.
-Each JSON object contains the configuration of a separate shape.
+To save the current state of a diagram, use the [](../api/data_collection/serialize_method.md) method. Depending on the Diagram mode, it converts the data of the diagram into:
+
+- for the default, org chart and mindmap Diagram modes - into an array of objects, where each object contains the configuration of a separate shape
+- for the PERT Diagram mode - into an object with the `data` array of objects (for shapes: "task", "milestone", "project") and the `links` array of objects (for connections between shapes). 
 
 ~~~jsx
 const state = diagram1.data.serialize();
 ~~~
 
-Then you can parse the data stored in the saved state array to a different diagram. For example:
+Note that the for PERT Diagram mode the *links* objects in the exported data object will have [the same types as in the DHTMLX Gantt chart](https://docs.dhtmlx.com/gantt/desktop__link_properties.html). It means that if the type of a link in the Diagram data coincides with some of the Gantt links types, it will remain the same during serialization. If the link type isn't specified or set differently (for example, `type: "line"`), it will be converted into `type: "0"`.
+
+Then you can parse the data stored in the saved state to a different diagram. For example:
 
 ~~~jsx
 // creating a new diagram

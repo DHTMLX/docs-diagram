@@ -8,10 +8,10 @@ description: You can learn about the lineConfig property in the documentation of
 
 ### Description
 
-@short: Optional. An object with default configuration for the newly added connector lines 
+@short: Optional. An object with default configuration for the connector lines 
 
 :::info
-The settings will be applied to the new connector lines which are added via the editor
+The `lineType`, `lineDirection` and `arrowsHidden` settings will be applied to the new connector lines which are added via the editor.
 :::
 
 ### Usage
@@ -21,7 +21,8 @@ lineConfig?: {
     lineType?: "dash" | "line",
     lineDirection?: "backArrow" | "forwardArrow",
     arrowsHidden?: boolean,
-    lineGap?: number
+    lineGap?: number,
+    connectType?: "elbow" | "straight" | "curved" // the "curved" type is used only in the mindmap mode
 };
 ~~~
 
@@ -29,10 +30,11 @@ lineConfig?: {
 
 The **lineConfig** object contains the following parameters:
 
-- `lineType` - (optional) the default type of the new connector lines
+- `lineType` - (optional) the default type of the new connector lines. The value is applied, if the line object doesn't contain the "type" property
 - `lineDirection` - (optional) the direction of the new connector lines
 - `arrowsHidden` - (optional) defines whether the arrows of the new connector lines should be hidden
 - `lineGap` - (optional) sets the distance to the right-angled bend of a connector line
+- `connectType` - (optional) sets the connection type of the lines: `"elbow"` | `"straight"` | `"curved"` (the "curved" type is used only in the mindmap Diagram mode). The value is applied, if the line object doesn't contain the "connectType" property
 
 :::note
 The **lineDirection**, **arrowsHidden**, and **lineGap** parameters work only in the default mode of the editor (*type: "default"*)
@@ -49,16 +51,22 @@ lineConfig: {
 }
 ~~~
 
+The `connectType` parameter has the following default values:
+
+- "elbow" - for the default and org chart modes
+- "curved" - for the mindmap mode (this type is used only in the mindmap mode)
+
 ### Example
 
-~~~jsx {2-7}
+~~~jsx {2-9}
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     lineConfig: {
         lineType: "dash",
         lineDirection: "backArrow",
         arrowsHidden: true,
-        lineGap: 50
+        lineGap: 50,
+        connectType: "straight"
     },
     // other config parameters
 });
@@ -66,11 +74,12 @@ const editor = new dhx.DiagramEditor("editor_container", {
 
 The result of applying the **lineGap** property is shown in the image below:
 
-IMAGE HERE
+![](../../../../assets/linegap_config.png)
 
 **Change log**:
 
-- The **lineGap** parameter is added in v5.0 (check the Migration article)
+- The `connectType` parameter is added in v6.1
+- The `lineGap` parameter is added in v5.0 (check the [Migration article](diagram/migration.md/#42---50))
 - Added in v4.2
 
 **Related sample**: [Diagram editor. Setting the default line (connector) type. Try connecting shape A to shape B](https://snippet.dhtmlx.com/22abzn5m)
