@@ -98,7 +98,7 @@ const data = [
 
 ### Properties
 
-See [the full list of configuration properties of a `project` object](/groups/configuration_properties/#properties-specific-for-project-shapes) which allow you to configure the positioning and appearance of tasks and milestones in the project.
+See [the full list of configuration properties of a `project` object](/groups/configuration_properties/#properties-specific-for-project-object) which allow you to configure the positioning and appearance of tasks and milestones in the project.
 
 ## Configuring the group header
 

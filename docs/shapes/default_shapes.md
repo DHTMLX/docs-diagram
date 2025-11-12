@@ -53,7 +53,7 @@ The basic types of shapes in the **PERT** mode of Diagram are:
     
 - the `"task"` type - a shape that has a header and renders dates and duration
 - the `"milestone"` type - a shape without duration that indicates a key point of the project
-- the `"project"` type - a container used to group the shapes of the `"task"` and `"milestone"` types. [Check the details](/groups/#grouping-shapes-in-the-pert-diagram-mode)  
+- the `"project"` type - a container used to group the shapes of the `"task"` and `"milestone"` types. [Check the details](/groups/#grouping-shapes-in-the-pert-mode)  
 
 Here is an example of Diagram in the PERT mode that includes the basic types of shapes:
 

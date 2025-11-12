@@ -24,7 +24,7 @@ Released on November , 2025
 [`beforeItemResize`](/api/diagram_editor/editor/events/beforeitemresize_event/),
 [`afterItemResize`](/api/diagram_editor/editor/events/afteritemresize_event/),
 [`itemResizeEnd`](/api/diagram_editor/editor/events/itemresizeend_event/),
-[`beforeItemRotate`](/api/diagram_editor/editor/events/befoeitemrotate_event/),
+[`beforeItemRotate`](/api/diagram_editor/editor/events/beforeitemrotate_event/),
 [`afterItemRotate`](/api/diagram_editor/editor/events/afteritemrotate_event/),
 [`itemRotateEnd`](/api/diagram_editor/editor/events/itemrotateend_event/)
 

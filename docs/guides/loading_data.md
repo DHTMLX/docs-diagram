@@ -199,7 +199,7 @@ const dataset = {
 }
 ~~~
 
-Check the full list of the available configuration properties of the **project** object in the [API reference](groups/configuration_properties.md/#properties-specific-for-project-shapes).
+Check the full list of the available configuration properties of the **project** object in the [API reference](groups/configuration_properties.md/#properties-specific-for-project-object).
 
 - **task objects**
 
