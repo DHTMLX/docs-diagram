@@ -45,6 +45,11 @@ Released on November , 2025
 - Diagram Editor. The script error that occurred after hovering over a shape in the Safari browser
 - Diagram Editor. The console warnings that occurred after removing items
 
+### New demo on AI integration
+
+- [DHTMLX Diagram Org Chart AI Builder](https://dhtmlx.com/docs/demo/ai-org-chart-builder/)
+
+
 ### New samples
 
 - [Diagram. PERT chart. Initialization](https://snippet.dhtmlx.com/4h5fi7xd) 
