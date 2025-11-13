@@ -10,14 +10,14 @@ If you are updating Diagram from an older version, check [Migration to Newer Ver
 
 ## Version 6.1
 
-Released on November , 2025
+Released on November 25, 2025
 
 ### New functionality
 
 - The ability to create Diagram PERT charts from Gantt data sets:
-    - [a new Diagram type: "pert"](/diagram/#diagram-in-the-pert-mode)
-    - [new types of shapes: "task" and "milestone"](/shapes/default_shapes/#shapes-in-the-pert-mode)
-    - [a new group type: "project"](/groups/#grouping-shapes-in-the-pert-mode) (for grouping tasks and milestones)
+    - [a new PERT mode](/diagram/#diagram-in-the-pert-mode) set via the [new type: `"pert"` ](/diagram/api/diagram/type_property/)
+    - [new types of shapes: `"task"` and `"milestone"`](/shapes/default_shapes/#shapes-in-the-pert-mode)
+    - [a new group type: `"project"`](/groups/#grouping-shapes-in-the-pert-mode) (for grouping tasks and milestones)
 - Diagram Editor. The ability to manage keyboard shortcuts (hotkeys) within the editor:
     - a new [`hotkeys`](/api/diagram_editor/editor/config/hotkeys_property/) configuration property allows modifying or switching off the existing hotkeys, as well as adding new ones
 - Diagram Editor. The ability to manage shapes resizing and rotating via a set of new events:
@@ -38,7 +38,7 @@ Released on November , 2025
 - Diagram/Diagram Editor API. The ability to define the connection type of the lines:
     - a new `connectType` parameter for the [`lineConfig`](/api/diagram/lineconfig_property/) configuration property of Diagram 
     - a new `connectType` parameter for the [`lineConfig`](/api/diagram_editor/editor/config/lineconfig_property/) configuration property of Diagram Editor
-- Export API. The [pdf()](/api/export/pdf_method/) and [png()](/api/export/png_method/) export functions return a promise of data export
+- Export API. The [`pdf()`](/api/export/pdf_method/) and [`png()`](/api/export/png_method/) export functions return a promise of data export
 
 ### Fixes
 

@@ -16,9 +16,17 @@ description: You can learn about the type property in the documentation of the D
 type: "default" | "org" | "mindmap" | "pert";
 ~~~
 
-### Details
+### Example
 
-DHTMLX Diagram can be initialized in one of the following modes:
+~~~jsx
+const diagram = new dhx.Diagram("diagram_container", {
+    type: "default" // "org" | "mindmap" | "pert"
+});
+~~~
+
+### Diagram modes
+
+DHTMLX Diagram can be initialized in one of the following modes: "default", "org", "mindmap" or "pert". To apply the necessary mode, specify the corresponding value of the **type** property:
 
 - **type:"default"** is used to visualize relations between some entities
 
