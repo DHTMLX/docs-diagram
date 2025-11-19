@@ -111,3 +111,4 @@ const diagram = new dhx.Diagram("diagram_container", {
 
 - [Diagram. Mindmap mode. Direction ("left" | "right")](https://snippet.dhtmlx.com/pzllujx3)
 - [Diagram. Mindmap mode. Custom sides](https://snippet.dhtmlx.com/atto9ckg)
+- [Diagram and Gantt. PERT chart. Full integration](https://snippet.dhtmlx.com/gcnx4a9h)

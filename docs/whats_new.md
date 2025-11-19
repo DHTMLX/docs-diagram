@@ -61,12 +61,13 @@ Released on November 25, 2025
 - [Diagram. PERT chart. Filter/search tasks](https://snippet.dhtmlx.com/1b2bmmxk)
 - [Diagram. PERT chart. Custom sidebar for task information](https://snippet.dhtmlx.com/712lsox0)
 - [Diagram. PERT chart. Themes](https://snippet.dhtmlx.com/2e5y5u6m)
-- [Diagram Editor. Managing moving, rotating and resizing of shapes via events](https://snippet.dhtmlx.com/qldjbbm7)
-- [Diagram Editor. Managing adding, modifying and disabling of hotkeys via API](https://snippet.dhtmlx.com/8ads5dq8)
-- [Diagram Editor. Fishbone Diagram. Causes and solutions](https://snippet.dhtmlx.com/7vhwtiba)
-- [Diagram Editor. Fishbone Diagram. Multiple causes](https://snippet.dhtmlx.com/0dgjwt6u)
 - [Diagram. Export. Bottom-left watermark](https://snippet.dhtmlx.com/d56spdsc)
 - [Diagram. Export. Repeating watermark](https://snippet.dhtmlx.com/emkea55j)
+- [Diagram Editor. Managing shapes' moving, rotating and resizing via events](https://snippet.dhtmlx.com/qldjbbm7)
+- [Diagram Editor. Managing hotkeys' adding, modifying and disabling via API](https://snippet.dhtmlx.com/8ads5dq8)
+- [Diagram Editor. Fishbone Diagram. Causes and solutions](https://snippet.dhtmlx.com/7vhwtiba)
+- [Diagram Editor. Fishbone Diagram. Multiple causes](https://snippet.dhtmlx.com/0dgjwt6u)
+
 
 ## Version 6.0.11 
 

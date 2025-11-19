@@ -61,7 +61,7 @@ See [the full list of configuration properties of a `group` object](/groups/conf
 
 ## Grouping shapes in the PERT mode
 
-To group the `task` and `milestone` types of shapes in the PERT mode of the Diagram, use the `project` object in the data set of a diagram. The `"project"` object serves as a container for tasks and milestones, working as a group. It allows creating PERT charts with various nesting levels and provides visual grouping.
+To group the `"task"` and `"milestone"` types of shapes in the PERT mode of the Diagram, use the `"project"` object in the data set of a diagram. The `"project"` object serves as a container for tasks and milestones, working as a group. It allows creating PERT charts with various nesting levels and provides visual grouping.
 
 ~~~jsx
 const data = [
@@ -98,7 +98,7 @@ const data = [
 
 ### Properties
 
-See [the full list of configuration properties of a `project` object](/groups/configuration_properties/#properties-specific-for-project-object) which allow you to configure the positioning and appearance of tasks and milestones in the project.
+See [the full list of configuration properties of a `"project"` object](/groups/configuration_properties/#properties-specific-for-project-object) which allow you to configure the positioning and appearance of tasks and milestones in the project.
 
 ## Configuring the group header
 

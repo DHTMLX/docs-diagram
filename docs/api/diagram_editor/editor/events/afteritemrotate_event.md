@@ -48,3 +48,7 @@ editor.events.on("afterItemRotate", ({ id, angle }) => {
 
 - [`beforeItemRotate`](/api/diagram_editor/editor/events/beforeitemrotate_event/)
 - [`itemRotateEnd`](/api/diagram_editor/editor/events/itemrotateend_event/)
+
+**Related samples**:
+
+- [Diagram Editor. Managing shapes' moving, rotating and resizing via events](https://snippet.dhtmlx.com/qldjbbm7)

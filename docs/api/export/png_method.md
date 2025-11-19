@@ -57,4 +57,8 @@ diagram.export.png({
 
 **Related articles**:  [Exporting Diagram](../../../guides/data_export/)
 
-**Related samples**: [Diagram. Export. Export diagram](https://snippet.dhtmlx.com/ybpmz0zk)
+**Related samples**: 
+
+- [Diagram. Export. Export diagram](https://snippet.dhtmlx.com/ybpmz0zk)
+- [Diagram. Export. Bottom-left watermark](https://snippet.dhtmlx.com/d56spdsc)
+- [Diagram. Export. Repeating watermark](https://snippet.dhtmlx.com/emkea55j)
