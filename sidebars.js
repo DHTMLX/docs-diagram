@@ -863,7 +863,7 @@ module.exports = {
           link: {
             type: 'generated-index',
             title: "Integrations",
-            keywords: ['angular', 'react', 'vue'],
+            keywords: ['angular', 'react', 'vue', 'svelte'],
             image: '/img/docusaurus.png',
           },
           items: [
@@ -873,8 +873,9 @@ module.exports = {
             "guides/integrations/svelte_integration"
           ],
         },
+        "guides/integrations/ai_integration",
         "guides/touch_support",
-        "guides/using_typescript",    
+        "guides/using_typescript"    
       ]
     },
   ]
