@@ -8,7 +8,7 @@ description: You can learn about the Integrating Diagram with AI in the document
 
 DHTMLX Diagram can be integrated with AI for creating AI-powered diagramming applications. We have prepared an example on how to use DHTMLX Diagram with AI to build an application for creating an org chart out of a request provided in natural language.
 
-The demo app includes such features as text-to-diagram conversion, AI-driven JSON generation, an instant live preview of a ready diagram and an inbuilt code editor for viewing and adjusting the generated JSON data to update the diagram preview on the fly. For more information, refer to the corresponding [Example on GitHub](https://github.com/DHTMLX/diagram-org-chart-builder-ai-demo).
+The [demo app](https://dhtmlx.com/docs/demo/ai-org-chart-builder/) includes such features as text-to-diagram conversion, AI-driven JSON generation, an instant live preview of a ready diagram and an inbuilt code editor for viewing and adjusting the generated JSON data to update the diagram preview on the fly. For more information, refer to the corresponding [GitHub repository](https://github.com/DHTMLX/diagram-org-chart-builder-ai-demo).
 
 ## Project setup
 
