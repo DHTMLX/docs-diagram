@@ -7,6 +7,16 @@ description: You can have an overview of DHTMLX JavaScript Diagram library in th
 
 # DHTMLX Diagram overview
 
+## Approach 1
+
+import DiagramPreview from '@site/src/components/DiagramPreview/index';
+
+<DiagramPreview/>
+
+## Approach 2
+
+<iframe src="https://snippet.dhtmlx.com/ilidi344?mode=result" class="snippet_iframe" width="100%" height="600"></iframe>
+
 DHTMLX Diagram is a client-side chart component that allows you to display relations between some objects, concepts or living beings in a visual form:
 as a scheme, chart, organizational chart, mind map, etc. The diagram makes it easier to present tangled and bulky information in a simple and accessible way.
 
