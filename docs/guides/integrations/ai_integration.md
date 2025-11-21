@@ -57,7 +57,7 @@ Check descriptions of the `.env` file variables below:
 
 - `OPENAI_API_KEY`: (Required) Your secret API key for the AI service.
 - `OPENAI_BASE_URL`: The API endpoint for the AI service. Can be changed to use a proxy or a different provider compatible with the OpenAI API.
-- `CORS_ALLOWED_ORIGINS`: A crucial security setting. This is a comma-separated list of web addresses allowed to connect to your backend server. For production, you **must** change this to your public frontend's URL (e.g., https://myapp.com).
+- `CORS_ALLOWED_ORIGINS`: A crucial security setting. This is a comma-separated list of web addresses allowed to connect to your backend server. For production, you **must** change this to your public frontend's URL (e.g., `https://myapp.com`).
 - `PORT`: (Optional) The port number on which the server will run. Defaults to 3001 if not set.
 
 ### Running the application
@@ -86,6 +86,4 @@ These are the basic steps for transforming a text request into a diagram:
 - At the following stage, the corresponding JSON code is displayed in the code editor below the diagram. The user can fine-tune the code and edit the resulting diagram in real time.
 - Finally, the user can save the generated data in a JSON file or export the diagram to a PDF or PNG file.
 
-## Step-by-step tutorial on building the application
 
-If you want to study the process of creating the application described above, learn more about its structural parts and how they work together, follow the detailed guide [How to Build an AI-Powered Org Chart Builder with DHTMLX]().
