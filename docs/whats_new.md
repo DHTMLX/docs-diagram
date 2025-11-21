@@ -45,7 +45,7 @@ Released on November 25, 2025
 - Diagram Editor. The script error that occurred after hovering over a shape in the Safari browser
 - Diagram Editor. The console warnings that occurred after removing items
 
-### New demo on AI integration
+### New demo on [AI integration](/guides/integrations/ai_integration/)
 
 - [DHTMLX Diagram Org Chart AI Builder](https://dhtmlx.com/docs/demo/ai-org-chart-builder/)
 
@@ -63,6 +63,7 @@ Released on November 25, 2025
 - [Diagram. PERT chart. Themes](https://snippet.dhtmlx.com/2e5y5u6m)
 - [Diagram. Export. Bottom-left watermark](https://snippet.dhtmlx.com/d56spdsc)
 - [Diagram. Export. Repeating watermark](https://snippet.dhtmlx.com/emkea55j)
+- [Diagram. Interactive electrical schematic diagram](https://snippet.dhtmlx.com/cisyixkq)
 - [Diagram Editor. Managing shapes' moving, rotating and resizing via events](https://snippet.dhtmlx.com/qldjbbm7)
 - [Diagram Editor. Managing hotkeys' adding, modifying and disabling via API](https://snippet.dhtmlx.com/8ads5dq8)
 - [Diagram Editor. Fishbone Diagram. Causes and solutions](https://snippet.dhtmlx.com/7vhwtiba)
