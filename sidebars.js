@@ -188,17 +188,23 @@ module.exports = {
                     "api/diagram_editor/editor/events/aftergroupmove_event",
                     "api/diagram_editor/editor/events/afteritemcatch_event",
                     "api/diagram_editor/editor/events/afteritemmove_event",
+                    "api/diagram_editor/editor/events/afteritemresize_event",
+                    "api/diagram_editor/editor/events/afteritemrotate_event",
                     "api/diagram_editor/editor/events/afterlinetitlemove_event",
                     "api/diagram_editor/editor/events/aftershapeiconclick_event",
                     "api/diagram_editor/editor/events/aftershapemove_event",
                     "api/diagram_editor/editor/events/beforegroupmove_event",
                     "api/diagram_editor/editor/events/beforeitemcatch_event",
                     "api/diagram_editor/editor/events/beforeitemmove_event",
+                    "api/diagram_editor/editor/events/beforeitemresize_event",
+                    "api/diagram_editor/editor/events/beforeitemrotate_event",
                     "api/diagram_editor/editor/events/beforelinetitlemove_event",
                     "api/diagram_editor/editor/events/beforeshapeiconclick_event",
                     "api/diagram_editor/editor/events/beforeshapemove_event",
                     "api/diagram_editor/editor/events/groupmoveend_event",
                     "api/diagram_editor/editor/events/itemmoveend_event",
+                    "api/diagram_editor/editor/events/itemresizeend_event",
+                    "api/diagram_editor/editor/events/itemrotateend_event",
                     "api/diagram_editor/editor/events/itemtarget_event",
                     "api/diagram_editor/editor/events/linetitlemoveend_event",
                     "api/diagram_editor/editor/events/shapemoveend_event",
@@ -222,6 +228,7 @@ module.exports = {
                     "api/diagram_editor/editor/config/defaults_property",
                     "api/diagram_editor/editor/config/grid_property",
                     "api/diagram_editor/editor/config/gridstep_property",
+                    "api/diagram_editor/editor/config/hotkeys_property",
                     "api/diagram_editor/editor/config/itemsdraggable_property",
                     "api/diagram_editor/editor/config/lineconfig_property",
                     "api/diagram_editor/editor/config/magnetic_property",
@@ -856,7 +863,7 @@ module.exports = {
           link: {
             type: 'generated-index',
             title: "Integrations",
-            keywords: ['angular', 'react', 'vue'],
+            keywords: ['angular', 'react', 'vue', 'svelte'],
             image: '/img/docusaurus.png',
           },
           items: [
@@ -866,8 +873,9 @@ module.exports = {
             "guides/integrations/svelte_integration"
           ],
         },
+        "guides/integrations/ai_integration",
         "guides/touch_support",
-        "guides/using_typescript",    
+        "guides/using_typescript"    
       ]
     },
   ]

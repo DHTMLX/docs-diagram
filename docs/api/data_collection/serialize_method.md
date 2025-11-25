@@ -8,19 +8,26 @@ description: You can learn about the serialize method of data collection in the 
 
 ### Description
 
-@short: Serializes the diagram data into an array of JSON objects
+@short: Exports the current diagram data 
 
 ### Usage
 
 ~~~jsx
-serialize(): array;
+serialize(): object[] | { data: object[]; links: object[] }; 
 ~~~
 
 ### Returns
 
-The method returns an array of JSON objects for each item and link from Diagram
+Depending on the diagram mode, the method returns:
+
+- `object[]` - (for the default, org chart and mindmap Diagram modes) an array of objects for each item and link from Diagram 
+- `{ data: object[]; links: object[] }` - (for the PERT Diagram mode) an object with:
+  - the `data` array of objects (for shapes: "task", "milestone", "project") 
+  - the `links` array of objects (for connections between shapes)
 
 ### Example
+
+- for the default diagram mode
 
 ~~~jsx {6}
 const diagram = new dhx.Diagram("diagram_container", {
@@ -28,7 +35,20 @@ const diagram = new dhx.Diagram("diagram_container", {
 });
 diagram.data.parse(data);
 
-const data = diagram.data.serialize();
+const data = diagram.data.serialize(); // -> [{...}, {...}, {...}, {...}]
 ~~~
+
+- for the PERT diagram mode
+
+~~~jsx {6}
+const diagram = new dhx.Diagram("diagram_container", {
+    type: "pert"
+});
+diagram.data.parse(dataset);
+
+const dataset = diagram.data.serialize(); // -> { data: [...], links: [...] };
+~~~
+
+Note that for the PERT Diagram mode the *links* objects in the exported data object will have [the same types as in the DHTMLX Gantt chart](https://docs.dhtmlx.com/gantt/desktop__link_properties.html). It means that if the type of a link in the Diagram data coincides with some of the Gantt links types, it will remain the same during serialization. If the link type isn't specified or set differently (for example, `type: "line"`), it will be converted into `type: "0"`.
 
 **Related articles**:  [Saving and restoring state](../../../guides/loading_data/#saving-and-restoring-state)

@@ -60,3 +60,13 @@ editor.events.on("itemMoveEnd", ({ id, coords }) => {
 
 - The `batch` parameter was added in the v6.0
 - The callback function takes an object as a parameter since v6.0
+
+**Related API**:
+
+- [`afterItemMove`](/api/diagram_editor/editor/events/afteritemmove_event/)
+- [`beforeItemMove`](/api/diagram_editor/editor/events/beforeitemmove_event/)
+
+**Related samples**:
+
+- [Diagram Editor. Managing shapes' moving, rotating and resizing via events](https://snippet.dhtmlx.com/qldjbbm7)
+

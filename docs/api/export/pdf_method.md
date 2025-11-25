@@ -17,13 +17,17 @@ To avoid problems during export, all images for Diagram shapes must be set eithe
 ### Usage
 
 ~~~jsx
-pdf(config?: object): void;
+pdf(config?: object): Promise<void>;
 ~~~
+
+### Returns
+
+A promise of data export
 
 ### Parameters
 
 - `config` - (optional) an object with export settings. You can specify the following settings for export to PDF:
-    - `url?: string` - (optional) the url of the service that executes export and returns an exported file. This setting is optional, you should use it only if you need to specify the path to your local export service. The default value is `https://export.dhtmlx.com/diagram/pdf/5.0.0`
+    - `url?: string` - (optional) the url of the service that executes export and returns an exported file. This setting is optional, you should use it only if you need to specify the path to your local export service. The default value is `https://export.dhtmlx.com/diagram/pdf/6.1.0`
     - `name?: string` - (optional) the name of the exported file
     - `pdf?: object` - (optional) the object of pdf options. Here you can specify the following properties:
         - `scale?: number` - (optional) the scale of the grid rendering (between *0.1* and *2*)
@@ -53,20 +57,26 @@ pdf(config?: object): void;
 
 ### Example
 
-~~~jsx {7,10-13}
+~~~jsx 
 const diagram = new dhx.Diagram("diagram_container", {
     // config options
 });
 diagram.data.parse(data);
 
 // default export
-diagram.export.pdf();
+diagram.export.pdf()
+    .then(() => console.log("success"))
+    .catch(() => console.log("failure"))
+    .finally(() => console.log("finished"));
 
 // export with config settings
 diagram.export.pdf({
-    url: "https://export.dhtmlx.com/diagram/pdf/5.0.0",
+    url: "https://export.dhtmlx.com/diagram/pdf/6.1.0",
     name:"result_pdf"
-});
+})
+    .then(() => console.log("success"))
+    .catch(() => console.log("failure"))
+    .finally(() => console.log("finished"));
 ~~~
 
 ### Details
@@ -93,4 +103,8 @@ It is necessary to set sufficient margin for correct display of `headerTemplate`
 
 **Related articles**:  [Exporting Diagram](../../../guides/data_export/)
 
-**Related samples**: [Diagram. Export. Export diagram](https://snippet.dhtmlx.com/ybpmz0zk)
+**Related samples**: 
+
+- [Diagram. Export. Export diagram](https://snippet.dhtmlx.com/ybpmz0zk)
+- [Diagram. Export. Bottom-left watermark](https://snippet.dhtmlx.com/d56spdsc)
+- [Diagram. Export. Repeating watermark](https://snippet.dhtmlx.com/emkea55j)

@@ -137,4 +137,108 @@ const data = [
 ];
 ~~~
 
-**Related articles**: [Configuring groups](../../groups/)
+**Related article**: [Configuring groups](../../groups/)
+
+## Properties specific for "project" object
+
+The "project" object is used as a container for tasks and milestones. It works as a [group](/diagram/groups/), allows creating PERT charts of various nesting levels, and provides visual grouping.
+
+### Usage
+
+~~~jsx
+const data = [
+    // project object
+    {
+        type: "project",
+        id: string | number,
+        parent?: string | number | null,
+        text?: string, // will set the header.text property
+        open?: boolean,
+
+        // generated automatically
+        x?: number,
+        y?: number,
+        width?: number,
+        height?: number,
+        groupChildren?: (string | number)[],
+        style?: {
+            fill?: string, // "#20B56D08" by default
+            stroke?: string, // "#20B56D33" by default
+            borderStyle?: string, // "dashed" by default
+        },
+        header?: {
+            height?: number, // 40 by default
+            text?: string, // generated automatically by the text property
+            closable?: boolean, // false by default
+            enable?: boolean, // true by default
+            fill?: string // "inherit" by default
+        }
+    },
+    // more project objects
+]
+~~~
+
+### Description
+
+When preparing a data set for a "project" object, you can use the following configuration properties:
+
+- `type` - (required) the type of an element, set it to "project"
+- `id` - (optional) the unique id of a project
+- `parent` - (optional) the id of a project parent
+- `text` - (optional) the description of a project
+- `open` - (optional) defines whether the project is initialized in the expanded (*true*, default) or collapsed (*false*) state
+
+The properties below are generated automatically. They are calculated during the rendering and shouldn't be specified manually. 
+
+- `x` - (optional) the x coordinate of the project position
+- `y` - (optional) the y coordinate of the project position
+- `width` - (required) the width of the project, including its header (*position: left/right*)
+- `height` - (required) the height of the project, including its header (*position: top/bottom*)
+- `groupChildren` - (optional) an array with ids of the first-level child items of the project
+- `style` - (optional) an object with the style settings of the project. The object can contain the following attributes:
+    - `fill` - (optional) the background color of the project
+    - `stroke` - (optional) the color of the border of the project
+    - `borderStyle` - (optional) the style of the project border
+- `header` - (optional) an object with configuration attributes of the header of the project. The attributes are:
+    - `height` - (optional) the height of the header, 40 by default
+    - `text` - (optional) the text to be rendered in the header (generated automatically by the `text` property)
+    - `closable` - (optional) shows/hides an icon intended to expand/collapse a group; *false* by default
+    - `enable` - (optional) shows/hides the header of the project; *true* by default
+    - `fill` - (optional) the background color of the header 
+
+
+### Example
+
+~~~jsx 
+const data = [
+    { 
+        "id": "4.2", 
+        "text": "QA Testing", 
+        "type": "project", 
+        "parent": "4", 
+        "start_date": new Date(2026, 1, 18), 
+        "duration": 3, 
+        "progress": 0, 
+        "open": true 
+    },
+    { 
+        "id": "4.2.1", 
+        "text": "Functional Testing", 
+        "type": "task", 
+        "parent": "4.2", 
+        "start_date": new Date(2026, 1, 18), 
+        "duration": 2 
+    },
+    { 
+        "id": "4.2.2", 
+        "text": "Usability Testing", 
+        "type": "task", 
+        "parent": "4.2", 
+        "start_date": new Date(2026, 1, 20), 
+        "duration": 1
+    }
+];
+~~~
+
+**Related article**: [Grouping shapes in the PERT mode](/groups/#grouping-shapes-in-the-pert-mode)
+

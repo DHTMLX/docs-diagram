@@ -11,6 +11,7 @@ description: You can learn about the defaultShapeType property in the documentat
 @short: Optional. The default type of a shape
 
 The value is applied, if the shape object doesn't contain the "type" property
+
 ### Usage
 
 ~~~jsx
@@ -35,6 +36,12 @@ defaultShapeType: "card"
 
 ~~~jsx
 defaultShapeType: "topic"
+~~~
+
+- In the **PERT** mode of Diagram (type: "pert")
+
+~~~jsx
+defaultShapeType: "task"
 ~~~
 
 ### Example

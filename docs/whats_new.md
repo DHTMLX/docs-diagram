@@ -8,6 +8,68 @@ description: You can learn a new information about DHTMLX JavaScript Diagram lib
 
 If you are updating Diagram from an older version, check [Migration to Newer Version](migration.md) for details.
 
+## Version 6.1
+
+Released on November 25, 2025
+
+### New functionality
+
+- The ability to create Diagram PERT charts from Gantt data sets:
+    - [a new PERT mode](/diagram/#diagram-in-the-pert-mode) set via the [new type: `"pert"` ](/diagram/api/diagram/type_property/)
+    - [new types of shapes: `"task"` and `"milestone"`](/shapes/default_shapes/#shapes-in-the-pert-mode)
+    - [a new group type: `"project"`](/groups/#grouping-shapes-in-the-pert-mode) (for grouping tasks and milestones)
+- Diagram Editor. The ability to manage keyboard shortcuts (hotkeys) within the editor:
+    - a new [`hotkeys`](/api/diagram_editor/editor/config/hotkeys_property/) configuration property allows modifying or switching off the existing hotkeys, as well as adding new ones
+- Diagram Editor. The ability to manage shapes resizing and rotating via a set of new events:
+[`beforeItemResize`](/api/diagram_editor/editor/events/beforeitemresize_event/),
+[`afterItemResize`](/api/diagram_editor/editor/events/afteritemresize_event/),
+[`itemResizeEnd`](/api/diagram_editor/editor/events/itemresizeend_event/),
+[`beforeItemRotate`](/api/diagram_editor/editor/events/beforeitemrotate_event/),
+[`afterItemRotate`](/api/diagram_editor/editor/events/afteritemrotate_event/),
+[`itemRotateEnd`](/api/diagram_editor/editor/events/itemrotateend_event/)
+
+### Updates
+
+- DataCollection API. Updates for the PERT mode:
+    - the [`parse()`](/api/data_collection/parse_method/) method may take as the first parameter an object with `data` and `links` arrays 
+    - the [`serialize()`](/api/data_collection/serialize_method/) method may return an object with `data` and `links` arrays 
+- Diagram API. The ability to set the format of rendering dates in the task shapes for the PERT mode:
+    - a new `dateFormat` parameter for the [`typeConfig`](/api/diagram/typeconfig_property/) configuration property
+- Diagram/Diagram Editor API. The ability to define the connection type of the lines:
+    - a new `connectType` parameter for the [`lineConfig`](/api/diagram/lineconfig_property/) configuration property of Diagram 
+    - a new `connectType` parameter for the [`lineConfig`](/api/diagram_editor/editor/config/lineconfig_property/) configuration property of Diagram Editor
+- Export API. The [`pdf()`](/api/export/pdf_method/) and [`png()`](/api/export/png_method/) export functions return a promise of data export
+
+### Fixes
+
+- Diagram Editor. The script error that occurred after hovering over a shape in the Safari browser
+- Diagram Editor. The console warnings that occurred after removing items
+
+### New demo on [AI integration](/guides/integrations/ai_integration/)
+
+- [DHTMLX Diagram Org Chart AI Builder](https://dhtmlx.com/docs/demo/ai-org-chart-builder/)
+
+
+### New samples
+
+- [Diagram. PERT chart. Initialization](https://snippet.dhtmlx.com/4h5fi7xd) 
+- [Diagram and Gantt. PERT chart. Initialization](https://snippet.dhtmlx.com/409jj9uh)  
+- [Diagram and Gantt. PERT chart. Full integration](https://snippet.dhtmlx.com/gcnx4a9h)
+- [Diagram and Gantt. PERT chart. Popup window](https://snippet.dhtmlx.com/fvfysbdb)
+- [Diagram and Gantt. PERT chart. Custom shapes and styling (custom CSS)](https://snippet.dhtmlx.com/mtk92awx)
+- [Diagram. PERT chart. Different datasets](https://snippet.dhtmlx.com/2j2y8vy6)
+- [Diagram. PERT chart. Filter/search tasks](https://snippet.dhtmlx.com/1b2bmmxk)
+- [Diagram. PERT chart. Custom sidebar for task information](https://snippet.dhtmlx.com/712lsox0)
+- [Diagram. PERT chart. Themes](https://snippet.dhtmlx.com/2e5y5u6m)
+- [Diagram. Export. Bottom-left watermark](https://snippet.dhtmlx.com/d56spdsc)
+- [Diagram. Export. Repeating watermark](https://snippet.dhtmlx.com/emkea55j)
+- [Diagram. Interactive electrical schematic diagram](https://snippet.dhtmlx.com/cisyixkq)
+- [Diagram Editor. Managing shapes' moving, rotating and resizing via events](https://snippet.dhtmlx.com/qldjbbm7)
+- [Diagram Editor. Managing hotkeys' adding, modifying and disabling via API](https://snippet.dhtmlx.com/8ads5dq8)
+- [Diagram Editor. Fishbone Diagram. Causes and solutions](https://snippet.dhtmlx.com/7vhwtiba)
+- [Diagram Editor. Fishbone Diagram. Multiple causes](https://snippet.dhtmlx.com/0dgjwt6u)
+
+
 ## Version 6.0.11 
 
 Released on June 18, 2025
