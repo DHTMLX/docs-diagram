@@ -8,6 +8,14 @@ description: You can learn a new information about DHTMLX JavaScript Diagram lib
 
 If you are updating Diagram from an older version, check [Migration to Newer Version](migration.md) for details.
 
+## Version 6.1.1 
+
+Released on February 5, 2026
+
+### Fixes
+
+- Diagram Editor. Inability to scroll the canvas automatically when moving items down and to the right
+
 ## Version 6.1
 
 Released on November 25, 2025
