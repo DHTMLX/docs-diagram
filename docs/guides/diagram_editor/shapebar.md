@@ -21,7 +21,7 @@ The *Groups* and *Swimlanes* sections contain basic sets of the items.
 
 ## Custom sections
 
-To customize the structure of the shapebar, you should use the [`sections`](../../../api/diagram_editor/shapebar/config/sections_property/) property. It allows you to specify your own sections in the necessary order and put the items into the corresponding sections.
+To customize the structure of the shapebar, you should use the [`sections`](/api/diagram_editor/shapebar/config/sections_property/) property. It allows you to specify your own sections in the necessary order and put the items into the corresponding sections.
 
 The `sections` property is an object with a set of *key:value* pairs where `key` is the name of a section and `value` is an array with the list of items which should be rendered in the section.
 
@@ -141,11 +141,11 @@ The library allows you to add several identical items (i.e. items of the same ty
 To do that, you need to:
 
 - create separate objects with different configurations for the items of the necessary type. You can create as many objects as you need
-- use the *names* of the created objects as the *types* of the items and add them into the sections of the shapebar using the [`sections`](../../../api/diagram_editor/shapebar/config/sections_property/) property
+- use the *names* of the created objects as the *types* of the items and add them into the sections of the shapebar using the [`sections`](/api/diagram_editor/shapebar/config/sections_property/) property
 
 ## Setting the preview of shapes
 
-To configure the preview of items rendered in the shapebar of the editor, make use of the [`preview`](../../../api/diagram_editor/shapebar/config/preview_property/) property. It is an object that contains two attributes:
+To configure the preview of items rendered in the shapebar of the editor, make use of the [`preview`](/api/diagram_editor/shapebar/config/preview_property/) property. It is an object that contains two attributes:
 
 - `scale` - (optional) defines the scale of items rendered in the shapebar of the editor, 0.5 by default
 - `gap` - (optional) specifies the space between the items rendered in the shapebar, "6px 8px" by default

@@ -70,16 +70,16 @@ Connector lines with no arrows are aligned "from center to center". They are str
 Connector lines are aligned "from side to side".
 
 :::info
-To add arrows to the lines, specify `forwardArrow: "filled"` or `backArrow: "filled"` in the configuration of a [line object](../../../lines/configuration_properties/).
+To add arrows to the lines, specify `forwardArrow: "filled"` or `backArrow: "filled"` in the configuration of a [line object](/lines/configuration_properties/).
 :::
 
 The connector lines in the "edges" mode can be:
 
-- either straight (if you set the `connectType: "straight"` property of a [line object](../../../lines/configuration_properties/))
+- either straight (if you set the `connectType: "straight"` property of a [line object](/lines/configuration_properties/))
 
 ![](../../assets/edges_straight_mode.png)
 
-- or 90-degree curved (if you set the `connectType: "elbow"` property of a [line object](../../../lines/configuration_properties/))
+- or 90-degree curved (if you set the `connectType: "elbow"` property of a [line object](/lines/configuration_properties/))
 
 ![](../../assets/edges_mode.png)
 
@@ -113,7 +113,7 @@ Shapes are arranged on imaginary circles relative to the central shape, i.e. the
 
 **Related articles**:
 
-- [Configuring autoplacement for shapes](../../../guides/diagram/configuration/#configuring-autoplacement-for-shapes)
-- [Arranging shapes automatically](../../../guides/manipulating_items/#arranging-shapes-automatically)
+- [Configuring autoplacement for shapes](/guides/diagram/configuration/#configuring-autoplacement-for-shapes)
+- [Arranging shapes automatically](/guides/manipulating_items/#arranging-shapes-automatically)
 
 **Related sample**: [Diagram. Default mode. Autoplacement](https://snippet.dhtmlx.com/f3uekgjw)

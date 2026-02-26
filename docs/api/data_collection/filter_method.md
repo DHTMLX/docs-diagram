@@ -77,7 +77,7 @@ To revert the diagram to the initial state, call the `filter()` method without p
 diagram.data.filter();
 ~~~
 
-**Related articles**:  [Filtering items](../../../guides/manipulating_items/#filtering-items)
+**Related articles**:  [Filtering items](/guides/manipulating_items/#filtering-items)
 
 **Related sample**: [Diagram. Data. Filtering shapes](https://snippet.dhtmlx.com/tm43bsgn)
 

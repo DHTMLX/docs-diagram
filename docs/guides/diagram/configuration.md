@@ -70,7 +70,7 @@ The `defaults` object contains a number of `key:value` pairs where the *key* is 
 The `type` and `id` attributes can not be defined in the default configuration of a shape/line
 :::
 
-Check the full list of configuration properties of a [shape](../../../shapes/configuration_properties/) and [line](../../../lines/configuration_properties/).
+Check the full list of configuration properties of a [shape](/shapes/configuration_properties/) and [line](/lines/configuration_properties/).
 
 ## Arranging shapes in the mindmap mode of Diagram
 
@@ -162,7 +162,7 @@ DHTMLX Diagram allows you to specify a toolbar with icons for Diagram shapes to 
 It is possible to activate selection of items in a diagram. You need to make use of the [](../../api/diagram/select_property.md) attribute of the diagram configuration object. Once you've enabled selection in a diagram, you can make use of the Selection object API to [work with the items selection](/guides/manipulating_items/#selecting-items).
 
 :::note
-[The predefined set of events](../../../api/selection/#events) of the selection object can help you to define the way of processing the behavior of the diagram during selecting/unselecting items
+[The predefined set of events](/api/selection/#events) of the selection object can help you to define the way of processing the behavior of the diagram during selecting/unselecting items
 :::
 
 <iframe src="https://snippet.dhtmlx.com/jyoxn5h7?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>

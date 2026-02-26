@@ -46,4 +46,4 @@ diagram.events.on("lineTitleMouseDown", (lineId, titleId, event) => {
 
 **Change log**: Added in v4.1
 
-**Related article**: [Event handling](../../../guides/event_handling/)
+**Related article**: [Event handling](/guides/event_handling/)

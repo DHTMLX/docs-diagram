@@ -44,4 +44,4 @@ diagram.events.on("lineClick", (id) => {
 
 **Change log**: Added in v3.0
 
-**Related article**: [Event handling](../../../guides/event_handling/)
+**Related article**: [Event handling](/guides/event_handling/)

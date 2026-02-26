@@ -72,4 +72,4 @@ The result of applying the **lineGap** property is shown in the image below:
 - The `lineGap` parameter is added in v5.0 (check the [Migration article](diagram/migration.md/#42---50))
 - Added in v4.2
 
-**Related articles**: [Setting connections between shapes](../../../lines/#setting-connections-between-shapes)
+**Related articles**: [Setting connections between shapes](/lines/#setting-connections-between-shapes)

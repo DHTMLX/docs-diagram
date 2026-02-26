@@ -145,6 +145,6 @@ Check [the full list of configuration properties of Editor](/api/diagram_editor/
 
 ## Loading data into Diagram Editor
 
-It is possible to load an [appropriate data set](../../../guides/loading_data/#preparing-data-to-load) into the editor via the [parse()](../../../api/diagram_editor/editor/methods/parse_method/) method of the editor.
+It is possible to load an [appropriate data set](/guides/loading_data/#preparing-data-to-load) into the editor via the [parse()](/api/diagram_editor/editor/methods/parse_method/) method of the editor.
 
 <iframe src="https://snippet.dhtmlx.com/xshe9ut7?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>

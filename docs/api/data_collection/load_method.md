@@ -51,6 +51,6 @@ diagram.data.load("../some/data").then(() => {
 });
 ~~~
 
-**Related articles**:  [Loading and storing data](../../../guides/loading_data/)
+**Related articles**:  [Loading and storing data](/guides/loading_data/)
 
 **Related sample**: [Diagram. Data. Data loading](https://snippet.dhtmlx.com/09isp2d8)

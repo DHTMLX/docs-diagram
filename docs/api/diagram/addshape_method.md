@@ -26,8 +26,8 @@ addShape(
 - `type` - (required) the unique name for the type of a custom shape. The name must differ from the names of default shapes
 - `parameters` - (required) an object with the additional parameters of the **addShape()** method. Here you can specify the following attributes:
     - `template: function` - (required) the function that takes the configuration object of the shape as a parameter and returns either an HTML or SVG template
-    - [`defaults: object`](../../../shapes/custom_shape/) - (optional) the default configuration for a created shape. See [the full list of the configuration properties of a shape](../../../shapes/configuration_properties/)
-    - [`eventHandlers: object`](../../../shapes/custom_shape/#event-handlers-for-custom-shapes) - (optional) adds custom event handlers to HTML elements of the template of a shape. The `eventHandlers` object includes a set of `key:value` pairs, where:
+    - [`defaults: object`](/shapes/custom_shape/) - (optional) the default configuration for a created shape. See [the full list of the configuration properties of a shape](/shapes/configuration_properties/)
+    - [`eventHandlers: object`](/shapes/custom_shape/#event-handlers-for-custom-shapes) - (optional) adds custom event handlers to HTML elements of the template of a shape. The `eventHandlers` object includes a set of `key:value` pairs, where:
         - `key: string` - the name of the event. Note, that at the beginning of the event name the 'on' prefix is used (onclick, onmouseover)
         - `value: object` - an object that contains a **key:value** pair, where 
           - `key` is the CSS class name that the handler will be applied to
@@ -82,7 +82,7 @@ diagram.addShape("personal", {
 
 **Related sample**: [Diagram with Editor. Org chart mode. Customization of cards, editbar and toolbar](https://snippet.dhtmlx.com/vcnt647v)
 
-The example below shows how you can add a custom shape into the Diagram Editor as well as configure the [Shapebar](/guides/diagram_editor/shapebar/) and [Editbar](/guides/diagram_editor/editbar/) panels of the editor. The configuration of a custom shape in the editbar of the Editor is implemented via the [`properties`](../../../api/diagram_editor/editbar/config/properties_property/) property of the Editbar panel.
+The example below shows how you can add a custom shape into the Diagram Editor as well as configure the [Shapebar](/guides/diagram_editor/shapebar/) and [Editbar](/guides/diagram_editor/editbar/) panels of the editor. The configuration of a custom shape in the editbar of the Editor is implemented via the [`properties`](/api/diagram_editor/editbar/config/properties_property/) property of the Editbar panel.
 
 ~~~jsx {34-49} title="Adding a shape into the Diagram Editor"
 const editor = new dhx.DiagramEditor("editor_container", {
@@ -138,7 +138,7 @@ editor.diagram.addShape("network", {
 
 **Change log**: The `properties` attribute is removed in v6.0.
 
-**Related articles**: [Custom Shape](../../../shapes/custom_shape/)
+**Related articles**: [Custom Shape](/shapes/custom_shape/)
 
 **Related samples**:
 

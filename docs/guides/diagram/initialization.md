@@ -136,7 +136,7 @@ const diagram = new dhx.Diagram("diagram_container", {
 });
 ~~~
 
-See [the full list of configuration properties of Diagram](../../../api/diagram/api_overview/#diagram-properties).
+See [the full list of configuration properties of Diagram](/api/diagram/api_overview/#diagram-properties).
 
 **Related sample**:	[Diagram Editor. Default mode. Wide flowchart](https://snippet.dhtmlx.com/4d4k3o8p)	
 
@@ -152,4 +152,4 @@ diagram.paint();
 
 ## Loading data into Diagram
 
-Detailed information on loading data into DHTMLX Diagram is given in the [Loading and Storing Data](../../../guides/loading_data/) article.
+Detailed information on loading data into DHTMLX Diagram is given in the [Loading and Storing Data](/guides/loading_data/) article.

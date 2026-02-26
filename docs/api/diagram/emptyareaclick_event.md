@@ -38,4 +38,4 @@ diagram.events.on("emptyAreaClick", () => {
 });
 ~~~
 
-**Related article**: [Event handling](../../../guides/event_handling/)
+**Related article**: [Event handling](/guides/event_handling/)

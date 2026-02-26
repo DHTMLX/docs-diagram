@@ -50,5 +50,5 @@ DHTMLX Diagram can be initialized in one of the following modes: "default", "org
 
 **Related articles**:
 
-- [Overview](../../../)
-- [How to start with Diagram](../../../guides/diagram/initialization/)
+- [Overview](/)
+- [How to start with Diagram](/guides/diagram/initialization/)

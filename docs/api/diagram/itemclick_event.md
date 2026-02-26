@@ -46,4 +46,4 @@ diagram.events.on("itemClick", (id, event) => {
 
 **Change log**: Added in v4.0
 
-**Related article**: [Event handling](../../../guides/event_handling/)
+**Related article**: [Event handling](/guides/event_handling/)
