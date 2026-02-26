@@ -12,28 +12,28 @@ The DHTMLX Diagram component provides you with Editor that allows you to try and
 
 The interface of the editor initialized in the default mode consists of four functional parts: 
 
-- [toolbar](../guides/diagram_editor/toolbar/)
-- [shapebar](../guides/diagram_editor/shapebar/) 
-- [grid area](../guides/diagram_editor/grid_area/)
-- [editbar](../guides/diagram_editor/editbar/)
+- [toolbar](/guides/diagram_editor/toolbar/)
+- [shapebar](/guides/diagram_editor/shapebar/) 
+- [grid area](/guides/diagram_editor/grid_area/)
+- [editbar](/guides/diagram_editor/editbar/)
 
 To build a diagram, you need either to drag the necessary items from the shapebar or create a copy of the items via the shape toolbar.
 
-You can adjust the attributes of the items via [sidebar options of the editbar](../guides/diagram_editor/editbar/). To accelerate the styling process, use `Alt (Option) + Ctrl (Cmd) + С` combination to copy styles of an item and `Alt (Option) + Ctrl (Cmd) + V` to apply these styles to the chosen items.                                      		
+You can adjust the attributes of the items via [sidebar options of the editbar](/guides/diagram_editor/editbar/). To accelerate the styling process, use `Alt (Option) + Ctrl (Cmd) + С` combination to copy styles of an item and `Alt (Option) + Ctrl (Cmd) + V` to apply these styles to the chosen items.                                      		
 
 ![](assets/default_editor.png) 
 
 **Related sample:** [Diagram Editor. Default mode. Wide flowchart](https://snippet.dhtmlx.com/4d4k3o8p?text=diagram&mode=wide)
 
-You may customize the [shapebar](../guides/diagram_editor/shapebar/) and, if you have added a custom shape, [configure the editbar](/api/diagram_editor/editbar/config/properties_property/) according to the attributes of your shape.
+You may customize the [shapebar](/guides/diagram_editor/shapebar/) and, if you have added a custom shape, [configure the editbar](/api/diagram_editor/editbar/config/properties_property/) according to the attributes of your shape.
 
 ### Editor in the org chart mode
 
 The interface of the editor initialized in the org chart mode consists of three functional parts: 
 
-- [toolbar](../guides/diagram_editor/toolbar/)
-- [grid area](../guides/diagram_editor/grid_area/)
-- [editbar](../guides/diagram_editor/editbar/)
+- [toolbar](/guides/diagram_editor/toolbar/)
+- [grid area](/guides/diagram_editor/grid_area/)
+- [editbar](/guides/diagram_editor/editbar/)
 
 :::note
 Note, the editor in this mode does not have the shapebar
@@ -41,7 +41,7 @@ Note, the editor in this mode does not have the shapebar
 
 To build a diagram in the org chart mode of the editor, you need to select a shape and add a new child for it. You can drag the shapes from one parent item to another. The moved item is being dragged with all its child items.
 
-You can adjust the attributes of the shapes via the available [sidebar options of the editbar](../guides/diagram_editor/editbar/). To accelerate the styling process, use `Alt (Option) + Ctrl (Cmd) + С` combination to copy styles of an item and `Alt (Option) + Ctrl (Cmd) + V` to apply these styles to the chosen items.
+You can adjust the attributes of the shapes via the available [sidebar options of the editbar](/guides/diagram_editor/editbar/). To accelerate the styling process, use `Alt (Option) + Ctrl (Cmd) + С` combination to copy styles of an item and `Alt (Option) + Ctrl (Cmd) + V` to apply these styles to the chosen items.
 
 ![](assets/orgchart_editor_draggable.png)     
 
@@ -62,9 +62,9 @@ The connection between the parent shape and its partner is always horizontal. Al
 
 The interface of the editor initialized in the mindmap mode consists of three parts:
 
-- [toolbar](../guides/diagram_editor/toolbar/)
-- [grid area](../guides/diagram_editor/grid_area/)
-- [editbar](../guides/diagram_editor/editbar/)
+- [toolbar](/guides/diagram_editor/toolbar/)
+- [grid area](/guides/diagram_editor/grid_area/)
+- [editbar](/guides/diagram_editor/editbar/)
 
 :::note
 Note, the editor in this mode does not have the shapebar
@@ -72,7 +72,7 @@ Note, the editor in this mode does not have the shapebar
 
 To build a diagram in the mindmap mode of the editor, you need to select a shape and add a new child for it. You can drag the shapes from one parent item to another. The moved item is being dragged with all its child items.
 
-You can adjust the attributes of the shapes via the available [sidebar options of the editbar](../guides/diagram_editor/editbar/). To accelerate the styling process, use `Alt (Option) + Ctrl (Cmd) + С` combination to copy styles of an item and `Alt (Option) + Ctrl (Cmd) + V` to apply these styles to the chosen items.
+You can adjust the attributes of the shapes via the available [sidebar options of the editbar](/guides/diagram_editor/editbar/). To accelerate the styling process, use `Alt (Option) + Ctrl (Cmd) + С` combination to copy styles of an item and `Alt (Option) + Ctrl (Cmd) + V` to apply these styles to the chosen items.
 
  ![](assets/mindmap_editor_draggable.png)  
 
@@ -82,4 +82,4 @@ If you've added a custom shape to the editor in the mindmap mode, you can [confi
 
 ## What's next
 
-That's all. Now you can start working with diagrams or keep exploring the inner world of JavaScript Diagram and Diagram Editor in the [guides](../guides/overview/).
+That's all. Now you can start working with diagrams or keep exploring the inner world of JavaScript Diagram and Diagram Editor in the [guides](/guides/overview/).

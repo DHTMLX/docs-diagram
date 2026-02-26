@@ -6,7 +6,7 @@ description: You can learn about the sections property of Shapebar in the docume
 
 # sections
 
-The [default sections of the shapebar](guides/diagram_editor/shapebar.md/#default-sections) are: *Shapes*, *Groups*, *Swimlanes*.
+The [default sections of the shapebar](/guides/diagram_editor/shapebar/#default-sections) are: *Shapes*, *Groups*, *Swimlanes*.
 
 Using the **sections** property you can change the structure of the shapebar and display the necessary items.
 
@@ -169,6 +169,6 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 ~~~
 
-**Related article**:  [Shapebar](guides/diagram_editor/shapebar.md/#custom-sections)
+**Related article**:  [Shapebar](/guides/diagram_editor/shapebar/#custom-sections)
 
 **Change log**: Added in v6.0

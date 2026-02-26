@@ -407,7 +407,7 @@ The ***dhx.setTheme()*** method takes the following parameters:
 
 - `theme: string` - (required) the name of the theme. It can be:
     - the name of the Diagram theme: *"light" | "contrast-light" | "dark" | "contrast-dark"*
-    - the name of a [custom theme](guides/themes/custom_theme.md)
+    - the name of a [custom theme](/guides/themes/custom_theme/)
     - *"light"* - by default
 - `container: string | HTMLElement` - (optional) the container to which the theme must be applied. It can be:
     - an HTMLElement

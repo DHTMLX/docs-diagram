@@ -10,7 +10,7 @@ description: You can learn about Lines in the documentation of the DHTMLX JavaSc
 
 Line titles set texts for lines that connect shapes. You can add a text for a line both in the diagram and in the editor by double-clicking on a line or use a toolbar of a line in the editor (click a line to activate). Use double-clicking also for editing line titles both in the diagram and in the editor.
 
-Another way to add a text to a line and manipulate it is to prepare a [data set](guides/loading_data.md/#preparing-data-to-load).
+Another way to add a text to a line and manipulate it is to prepare a [data set](/guides/loading_data/#preparing-data-to-load).
 
 :::note
 LineTitles are available only in the default mode of Diagram/Diagram Editor (type: "default").

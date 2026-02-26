@@ -66,7 +66,7 @@ There is also an org chart mode of Diagram that presents a set of shapes connect
 
 ### Assistant and partner shapes
 
-A parent shape of any level can have assistant or partner items. The assistant and partner shapes can't be parent items. The assistant and partner items can be added in the [editor](./editor_overview/#editor-in-the-org-chart-mode) or by preparing a [data set](guides/loading_data.md/#preparing-data-to-load).
+A parent shape of any level can have assistant or partner items. The assistant and partner shapes can't be parent items. The assistant and partner items can be added in the [editor](/editor_overview/#editor-in-the-org-chart-mode) or by preparing a [data set](/guides/loading_data/#preparing-data-to-load).
 
 In the hierarchical order, the assistant items are displayed between parent and children shapes.
 

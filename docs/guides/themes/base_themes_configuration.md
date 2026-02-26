@@ -8,7 +8,7 @@ description: You can learn how to configure themes in the documentation of the D
 
 ## Configuring all themes
 
-You may notice that CSS variables of the [default](guides/themes.md#light-theme-default) theme include variables of the color scheme:
+You may notice that CSS variables of the [default](/guides/themes/#light-theme-default) theme include variables of the color scheme:
 
 ~~~css
 --dhx-h-primary: 200;
@@ -62,7 +62,7 @@ In addition, values of variables, which are calculated on the base of the primar
 
 ## Configuring a separate theme
 
-If you want to override some color values for a separate [Diagram theme](guides/themes.md), you need to do this in the **'data-dhx-theme'** attribute:
+If you want to override some color values for a separate [Diagram theme](/guides/themes/), you need to do this in the **'data-dhx-theme'** attribute:
 
 ~~~html 
 <style>
@@ -112,7 +112,7 @@ You can manage the appearance of the Shapebar items by redefining the CSS variab
 - `--dhx-shapebar-item-background`
 - `--dhx-shapebar-item-border-color`
 
-The default values of these variables [depend on the applied theme](guides/themes.md).
+The default values of these variables [depend on the applied theme](/guides/themes/).
 
 ### Setting custom CSS variables
 
@@ -160,7 +160,7 @@ For example:
 
 ## Adjusting the look of tasks in the PERT mode
 
-The appearance of tasks of the [Diagram in the PERT chart mode](/diagram/#diagram-in-the-pert-mode) is defined by the `--dhx-shape-pert-header-background` CSS variable. It is specified in the [default](guides/themes.md#light-theme-default) theme in the following way: 
+The appearance of tasks of the [Diagram in the PERT chart mode](/diagram/#diagram-in-the-pert-mode) is defined by the `--dhx-shape-pert-header-background` CSS variable. It is specified in the [default](/guides/themes/#light-theme-default) theme in the following way: 
 
 ~~~jsx
 --dhx-shape-pert-header-background: var(--dhx-gantt-base-colors-primary, #537CFA);

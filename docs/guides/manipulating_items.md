@@ -5,7 +5,7 @@ description: You can learn about manipulating items in the documentation of the 
 ---
 # Manipulating items
 
-You can easily manipulate Diagram items via the [Diagram Editor](../../guides/diagram_editor/initialization/). But in this article we'll explore the examples on how to manipulate the items of DHTMLX Diagram via the component's API. The article contains different sections that cover such questions as:
+You can easily manipulate Diagram items via the [Diagram Editor](/guides/diagram_editor/initialization/). But in this article we'll explore the examples on how to manipulate the items of DHTMLX Diagram via the component's API. The article contains different sections that cover such questions as:
 
 - [how to automatically arrange shapes in the hierarchical order](#arranging-shapes-automatically);
 - how to perform a range of operations over items, in particular:
@@ -165,7 +165,7 @@ const shapeExists = diagram.data.exists("1");
 
 ### Selecting an item
 
-To select items, you need firstly [enable selection](../../guides/diagram/configuration/#enabling-items-selection) for the diagram and then call the [add()](api/selection/add_method.md) method of the `selection` object to select a desired item.
+To select items, you need firstly [enable selection](/guides/diagram/configuration/#enabling-items-selection) for the diagram and then call the [add()](api/selection/add_method.md) method of the `selection` object to select a desired item.
 
 ~~~jsx {8,11-12,15-16}
 // a diagram must be created with the "select:true" option
@@ -326,7 +326,7 @@ diagram.showItem("2.1");
 
 **Related sample**: [Diagram. Scroll content](https://snippet.dhtmlx.com/f970hbym)
 
-You can [read more about scrolling in DHTMLX Diagram](../../guides/diagram/scrolling_diagram/).
+You can [read more about scrolling in DHTMLX Diagram](/guides/diagram/scrolling_diagram/).
 
 ## Finding the necessary item
 

@@ -12,10 +12,10 @@ description: You can learn about the Migration to Newer Versions in the document
 
 The main parts of the Diagram Editor are renamed:
 
-- Left panel -> [Shapebar](guides/diagram_editor/shapebar.md)
-- Right panel -> [Editbar](guides/diagram_editor/editbar.md) is [provided with a flexible configuration](/whats_new/#new-functionality)
+- Left panel -> [Shapebar](/guides/diagram_editor/shapebar/)
+- Right panel -> [Editbar](/guides/diagram_editor/editbar/) is [provided with a flexible configuration](/whats_new/#new-functionality)
 
-The default [Toolbar](guides/diagram_editor/toolbar.md) structure has been modified. It became highly configurable as well, so you can also add custom Toolbar elements.
+The default [Toolbar](/guides/diagram_editor/toolbar/) structure has been modified. It became highly configurable as well, so you can also add custom Toolbar elements.
 
 ### Diagram Editor API
 
@@ -585,7 +585,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 
 To enable/disable a toolbar button you need to specify the value of the control to *true* (by default) or *false*.
 
-See the full list of the available controls in the [Toolbar](../guides/diagram_editor/toolbar/) article.
+See the full list of the available controls in the [Toolbar](/guides/diagram_editor/toolbar/) article.
 
 ## 1.1 -> 2.0
 
@@ -596,11 +596,11 @@ See the full list of the available controls in the [Toolbar](../guides/diagram_e
 ### Changed API
 
 - diagram.addItem -> [diagram.data.add](../api/data_collection/add_method/)
-- diagram.attachEvent -> [diagram.events.on](../guides/event_handling/#attaching-event-listeners)
-- diagram.callEvent -> [diagram.events.fire](../guides/event_handling/#calling-events)
+- diagram.attachEvent -> [diagram.events.on](/guides/event_handling/#attaching-event-listeners)
+- diagram.callEvent -> [diagram.events.fire](/guides/event_handling/#calling-events)
 - diagram.clearAll -> [diagram.data.removeAll](../api/data_collection/removeall_method/)
 - diagram.deleteItem -> [diagram.data.remove](../api/data_collection/remove_method/)
-- diagram.detachEvent -> [diagram.events.detach](../guides/event_handling/#detaching-event-listeners)
+- diagram.detachEvent -> [diagram.events.detach](/guides/event_handling/#detaching-event-listeners)
 - diagram.eachItem -> [diagram.data.map](../api/data_collection/map_method/)
 - diagram.getItem -> [diagram.data.getItem](../api/data_collection/getitem_method/)
 - diagram.getSelectedId -> `diagram.selection.getId`

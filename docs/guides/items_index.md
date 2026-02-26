@@ -24,7 +24,7 @@ After you have learnt the guides, you can check the following API sections to ac
 
 To get more knowledge on how to load, customize, edit items and perform different operations over them, read the guides:
 
-- [Loading and storing data](guides/loading_data.md)
-- [Customizing items](guides/customization.md)
-- [Inline editing](guides/inline_editing.md)
-- [Manipulating items](guides/manipulating_items.md)
+- [Loading and storing data](/guides/loading_data/)
+- [Customizing items](/guides/customization/)
+- [Inline editing](/guides/inline_editing/)
+- [Manipulating items](/guides/manipulating_items/)

@@ -304,4 +304,4 @@ You can provide the desired look and feel for the shapebar with the [`css`](/api
 </style>
 ~~~
 
-You can also [adjust the appearance of shapes](guides/themes/base_themes_configuration.md/#configuring-the-look-of-shapes-in-shapebar) by redefining the default color scheme for a particular theme or use your own CSS variables to manage the color scheme of Shapebar items.
+You can also [adjust the appearance of shapes](/guides/themes/base_themes_configuration/#configuring-the-look-of-shapes-in-shapebar) by redefining the default color scheme for a particular theme or use your own CSS variables to manage the color scheme of Shapebar items.
