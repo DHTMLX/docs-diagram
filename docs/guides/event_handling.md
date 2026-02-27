@@ -46,14 +46,14 @@ Normally, events are called automatically and you don't need to use this method.
 
 ### Diagram events
 
-Check the full list of the Diagram API events in the [API reference](../../api/diagram/api_overview/#diagram-events). 
+Check the full list of the Diagram API events in the [API reference](/api/diagram/api_overview/#diagram-events). 
 
 ### Editor events
 
 The list of the Diagram editor API events is given in the [API section](/api/diagram_editor/editor/events/overview/).
 
 :::note
-In addition to the events of the Diagram editor, you may also apply [events of the diagram object](../../api/diagram/api_overview/#diagram-events) while working in the editor view. For example:
+In addition to the events of the Diagram editor, you may also apply [events of the diagram object](/api/diagram/api_overview/#diagram-events) while working in the editor view. For example:
 :::
 
 ~~~jsx {6-8}
@@ -71,16 +71,16 @@ This way can be also used if you need to apply the events which are listed below
 
 ### CellManager events
 
-Check the full list of the CellManager API events in the [API Reference](../../api/cell_manager/#events). 
+Check the full list of the CellManager API events in the [API Reference](/api/cell_manager/#events). 
 
 ### DataCollection events
 
-Check the full list of the DataCollection API events in the [API Reference](../../api/data_collection/#events).
+Check the full list of the DataCollection API events in the [API Reference](/api/data_collection/#events).
 
 ### InlineEditor events
 
-Check the full list of the InlineEditor API events in the [API Reference](../../api/inline_editor/#events).
+Check the full list of the InlineEditor API events in the [API Reference](/api/inline_editor/#events).
 
 ### Selection events
 
-Check the full list of the Selection API events in the [API Reference](../../api/selection/#events).
+Check the full list of the Selection API events in the [API Reference](/api/selection/#events).

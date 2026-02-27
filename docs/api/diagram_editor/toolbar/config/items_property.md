@@ -28,7 +28,7 @@ The full list of service elements you can see [here](/guides/diagram_editor/tool
 
 ### Configuring items via objects
 
-The `items` property allows you to specify [**Service elements**](/guides/diagram_editor/toolba/#service-elements) and [**Base elements**](/guides/diagram_editor/toolbar/#base-elements) as an array of objects:
+The `items` property allows you to specify [**Service elements**](/guides/diagram_editor/toolbar/#service-elements) and [**Base elements**](/guides/diagram_editor/toolbar/#base-elements) as an array of objects:
 
 ~~~jsx
 items: [ 

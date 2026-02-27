@@ -137,7 +137,7 @@ const data = [
 ];
 ~~~
 
-**Related article**: [Configuring groups](../../groups/)
+**Related article**: [Configuring groups](/groups/)
 
 ## Properties specific for "project" object
 

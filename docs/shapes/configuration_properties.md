@@ -124,8 +124,8 @@ When preparing a data set for shapes to load into the diagram in the default mod
   - `img` - (optional) a path to the image or a base64 image
   - `width` - (optional) the width of the image
   - `height` - (optional) the height of the image
-  - `gap` - (optional) sets the value of the `gap` attribute of the [preview](../../api/diagram_editor/shapebar/config/preview_property/) property for the specified type of a shape
-  - `scale` - (optional) sets the value of the `scale` attribute of the [preview](../../api/diagram_editor/shapebar/config/preview_property/) property for the specified type of a shape
+  - `gap` - (optional) sets the value of the `gap` attribute of the [preview](/api/diagram_editor/shapebar/config/preview_property/) property for the specified type of a shape
+  - `scale` - (optional) sets the value of the `scale` attribute of the [preview](/api/diagram_editor/shapebar/config/preview_property/) property for the specified type of a shape
    :::info
    The **scale** property can't be applied together with the **img**, **width**, **height** properties
    :::

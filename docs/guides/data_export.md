@@ -6,7 +6,7 @@ description: You can learn about exporting Diagram in the documentation of the D
 
 # Exporting Diagram
 
-You can easily export a diagram into the PDF or PNG format via the related [pdf()](../../api/export/pdf_method/)/[png()](../../api/export/png_method/) methods of the Export object:
+You can easily export a diagram into the PDF or PNG format via the related [pdf()](/api/export/pdf_method/)/[png()](/api/export/png_method/) methods of the Export object:
 
 <iframe src="https://snippet.dhtmlx.com/ybpmz0zk?mode=html" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
@@ -14,8 +14,8 @@ To adjust the export settings, pass an object with configuration options to the 
 
 Check the list of available settings:
 
-- for the [pdf()](../../api/export/pdf_method/) method
-- for the [png()](../../api/export/png_method/) method
+- for the [pdf()](/api/export/pdf_method/) method
+- for the [png()](/api/export/png_method/) method
 
 ## Exporting styles
 

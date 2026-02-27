@@ -285,7 +285,7 @@ The method takes as an argument an object with the following parameters:
 
 ## Expanding/collapsing items
 
-You can expand and collapse either a shape that have child shapes or a group/swimlane via the corresponding API methods: [expandItem()](../../api/diagram/expanditem_method/) and [collapseItem()](../../api/diagram/collapseitem_method/).
+You can expand and collapse either a shape that have child shapes or a group/swimlane via the corresponding API methods: [expandItem()](/api/diagram/expanditem_method/) and [collapseItem()](/api/diagram/collapseitem_method/).
 
 Both methods takes two parameters:
 
@@ -378,11 +378,11 @@ The default settings of a group allow you to reorder child items in the group an
 
 If needed you can disable dragging child items to different groups and make it possible to drag the items only within their parent group. In addition, you can adjust the behavior of the borders of the parent group and define whether they should expand when a user is dragging a child item outside the group.
 
-For more details about how to configure the behavior of group items, read the [related article](../../groups/#configuring-the-behavior-of-group-items).
+For more details about how to configure the behavior of group items, read the [related article](/groups/#configuring-the-behavior-of-group-items).
 
 ## Working with swimlane cells
 
-You can manage swimlane cells with the help of the [CellManager API](../../api/cell_manager/). For example, you can add, move, remove cells as rows or columns, validate cells, and much more. 
+You can manage swimlane cells with the help of the [CellManager API](/api/cell_manager/). For example, you can add, move, remove cells as rows or columns, validate cells, and much more. 
 
 Let's take a swimlane of the following configuration:
 
