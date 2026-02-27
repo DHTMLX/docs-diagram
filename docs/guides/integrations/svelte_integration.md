@@ -238,6 +238,6 @@ onDestroy(() => {
 
 After that, when we start the app, we should see Diagram Editor loaded with data on a page.
 
-![Diagram Editor initialization](../../assets/trial_diagram.png)
+![Diagram Editor initialization](/assets/trial_diagram.png)
 
 Now you should have a basic setup for integrating DHTMLX Diagram Editor with Svelte. You can customize the code according to your specific requirements. The final example you can find on [**GitHub**](https://github.com/DHTMLX/svelte-diagram-demo).

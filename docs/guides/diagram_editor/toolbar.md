@@ -8,7 +8,7 @@ description: You can learn about the Toolbar of editor in the documentation of t
 
 Toolbar is a top part of Diagram Editor that helps users to control the editing process.
 
-![](../../assets/diagram-editor-toolbar/scale-default-mode.png)
+![](/assets/diagram-editor-toolbar/scale-default-mode.png)
 
 To configure the Toolbar you can use the following properties:
 
@@ -88,7 +88,7 @@ Toolbar items are represented by **service elements**. You can use and configure
 
     The **file** collection of items looks in the following way:
 
-    ![](../../assets/diagram-editor-toolbar/file-default-mode.png)
+    ![](/assets/diagram-editor-toolbar/file-default-mode.png)
     </details>
 
 - **importJson** - opens a dialog box to import a file in the JSON format
@@ -135,7 +135,7 @@ Toolbar items are represented by **service elements**. You can use and configure
         - selectNone
     ~~~
 
-    ![](../../assets/diagram-editor-toolbar/edit-default-mode.png)
+    ![](/assets/diagram-editor-toolbar/edit-default-mode.png)
 
     In the ***org/mindmap*** modes the **edit** collection of items has the following default structure:
 
@@ -151,7 +151,7 @@ Toolbar items are represented by **service elements**. You can use and configure
         - selectNone
     ~~~
 
-    ![](../../assets/diagram-editor-toolbar/edit-org-mode.png)
+    ![](/assets/diagram-editor-toolbar/edit-org-mode.png)
     </details>
 
 - **undo** - takes a step back in the history of changes
@@ -199,7 +199,7 @@ Toolbar items are represented by **service elements**. You can use and configure
         - zoomOut
     ~~~
 
-    ![](../../assets/diagram-editor-toolbar/view-default-mode.png)
+    ![](/assets/diagram-editor-toolbar/view-default-mode.png)
 
     In the ***org/mindmap*** modes the **view** collection of items has the following default structure:
 
@@ -222,7 +222,7 @@ Toolbar items are represented by **service elements**. You can use and configure
         - zoomOut
     ~~~
 
-    ![](../../assets/diagram-editor-toolbar/view-org-mode.png)
+    ![](/assets/diagram-editor-toolbar/view-org-mode.png)
     </details>
 
 - **theme** - forms a group of service elements for applying themes
@@ -292,7 +292,7 @@ Toolbar items are represented by **service elements**. You can use and configure
             - distributeHorizontal
     ~~~
 
-    ![](../../assets/diagram-editor-toolbar/arrange-default-mode.png)
+    ![](/assets/diagram-editor-toolbar/arrange-default-mode.png)
     </details>
 
 - **layout** - forms a group of service elements to autoplace Diagram Editor elements
@@ -382,7 +382,7 @@ Toolbar items are represented by **service elements**. You can use and configure
     <details>
     The **scale** item looks in the following way:
 
-    ![](../../assets/diagram-editor-toolbar/scale-default-mode.png)
+    ![](/assets/diagram-editor-toolbar/scale-default-mode.png)
     </details>
 
 - [**separator**](https://docs.dhtmlx.com/suite/toolbar/api/api_separator_properties/) - a horizontal (between menu options) or vertical (between toolbar controls) line separating items/groups of items from each other.

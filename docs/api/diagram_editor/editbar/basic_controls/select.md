@@ -8,7 +8,7 @@ description: You can explore the Select control of Editbar in the documentation 
 
 @short: The basic control that represents an advanced select box with a set of options to choose from.
 
-![Select control](../../../../assets/editbar-basic-controls/select.png)
+![Select control](/assets/editbar-basic-controls/select.png)
 
 ## Usage
 

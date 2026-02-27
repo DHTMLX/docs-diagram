@@ -9,7 +9,7 @@ description: You can explore the Line shape control of Editbar in the documentat
 @short: The complex control for displaying and managing connectors
 
 <img
-  src={require('../../../../assets/editbar-complex-controls/lineshape.png').default}
+  src={require('/assets/editbar-complex-controls/lineshape.png').default}
   alt="Line shape control" width='300'
 />
 

@@ -21,7 +21,7 @@ You can try all themes in the example below:
 
 ## Light theme (default)
 
-![](../../assets/light_theme.png)
+![](/assets/light_theme.png)
 
 The default **"light"** theme is configured on the base of the CSS variables which are listed below:
 
@@ -206,7 +206,7 @@ The default **"light"** theme is configured on the base of the CSS variables whi
 
 ## Light high contrast theme
 
-![](../../assets/light_high_contrast_theme.png)
+![](/assets/light_high_contrast_theme.png)
 
 The **"contrast-light"** theme is configured both on the base of the [root CSS variables](#light-theme-default) and the variables which are listed below:
 
@@ -251,7 +251,7 @@ The **"contrast-light"** theme is configured both on the base of the [root CSS v
 
 ## Dark theme
 
-![](../../assets/dark_theme.png)
+![](/assets/dark_theme.png)
 
 The **"dark"** theme is configured both on the base of the [root CSS variables](#light-theme-default) and the variables which are listed below:
 
@@ -314,7 +314,7 @@ The **"dark"** theme is configured both on the base of the [root CSS variables](
 
 ## Dark high contrast theme
 
-![](../../assets/dark_high_contrast_theme.png)
+![](/assets/dark_high_contrast_theme.png)
 
 The **"contrast-dark"** theme is configured both on the base of the [root CSS variables](#light-theme-default) and the variables which are listed below:
 

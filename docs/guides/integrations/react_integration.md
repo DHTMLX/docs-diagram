@@ -224,6 +224,6 @@ useEffect(() => {
 
 After that, you can start the app to see Diagram Editor loaded with data on a page.
 
-![Diagram Editor initialization](../../assets/trial_diagram.png)
+![Diagram Editor initialization](/assets/trial_diagram.png)
 
 Now you know how to integrate DHTMLX Diagram Editor with React. You can customize the code according to your specific requirements. The final example you can find on [**GitHub**](https://github.com/DHTMLX/react-diagram-demo).

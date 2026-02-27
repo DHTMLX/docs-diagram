@@ -10,7 +10,7 @@ Inline editing lets you edit the text content of a diagram item by double-clicki
 
 Inline editing for Lines is enabled only in the default mode of Diagram.
 
-![](../assets/inline_editing.gif)
+![](/assets/inline_editing.gif)
 
 :::note 
 Inline editing does not work for custom shapes.

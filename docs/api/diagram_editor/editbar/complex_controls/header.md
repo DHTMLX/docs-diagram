@@ -9,7 +9,7 @@ description: You can explore the Header control of Editbar in the documentation 
 @short: The complex control for displaying and modifying the header of "group" and "swimlane" elements of the Diagram editor
 
 <img
-  src={require('../../../../assets/editbar-complex-controls/header.png').default}
+  src={require('/assets/editbar-complex-controls/header.png').default}
   alt="Header control" width='300'
 />
 

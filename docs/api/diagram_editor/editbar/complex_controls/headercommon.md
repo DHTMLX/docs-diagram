@@ -9,7 +9,7 @@ description: You can explore the Header common control of Editbar in the documen
 @short: The complex control for for changing visibility, color, and height of the group header
 
 <img
-  src={require('../../../../assets/editbar-complex-controls/headercommon.png').default}
+  src={require('/assets/editbar-complex-controls/headercommon.png').default}
   alt="Header common control" width='300'
 />
 
