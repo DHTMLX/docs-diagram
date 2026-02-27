@@ -165,7 +165,7 @@ const shapeExists = diagram.data.exists("1");
 
 ### Selecting an item
 
-To select items, you need firstly [enable selection](/guides/diagram/configuration/#enabling-items-selection) for the diagram and then call the [add()](api/selection/add_method.md) method of the `selection` object to select a desired item.
+To select items, you need firstly [enable selection](/guides/diagram/configuration/#enabling-items-selection) for the diagram and then call the [add()](/api/selection/add_method/) method of the `selection` object to select a desired item.
 
 ~~~jsx {8,11-12,15-16}
 // a diagram must be created with the "select:true" option

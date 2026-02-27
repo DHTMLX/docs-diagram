@@ -152,7 +152,7 @@ Released on June 24, 2024
 
 - Diagram Editor. Memory leak
 - Diagram Editor. Script error when clicking on vertical and horizontal distribute via Toolbar
-- Diagram. Types issue when calling the [`getSubHeaderCellId()`](api/cell_manager/getsubheadercellid_method.md) method
+- Diagram. Types issue when calling the [`getSubHeaderCellId()`](/api/cell_manager/getsubheadercellid_method/) method
 
 ## Version 6.0
 
@@ -301,10 +301,10 @@ The new release introduces some changes to the `lineGap` property. Check the [Mi
 #### Diagram
 
 - Radial algorithm of [auto-placement of shapes](/guides/diagram/configuration/#configuring-autoplacement-for-shapes):
-    - the `placemode` parameter is added to the [`autoplacement`](api/diagram/autoplacement_property.md) property
-    - the `placemode` parameter is added to the [`autoPlace()`](api/diagram/autoplace_method.md) method
+    - the `placemode` parameter is added to the [`autoplacement`](/api/diagram/autoplacement_property/) property
+    - the `placemode` parameter is added to the [`autoPlace()`](/api/diagram/autoplace_method/) method
 - The ability to set tooltips for toolbar icons:
-    - the `tooltip` parameter of the icon object is added to the [`toolbar`](api/diagram/toolbar_property.md) property
+    - the `tooltip` parameter of the icon object is added to the [`toolbar`](/api/diagram/toolbar_property/) property
 
 #### Diagram Editor
 
@@ -312,13 +312,13 @@ The new release introduces some changes to the `lineGap` property. Check the [Mi
     - the `placemode` parameter is added to the [`autoplacement`](/api/diagram_editor/editor/config/autoplacement_property/) property
     - the **Auto Layout** button of [Toolbar](/guides/diagram_editor/toolbar/) now provides two options for shapes' auto-placement: *Orthogonal* and *Radial*
 - [Snap lines](/guides/diagram_editor/grid_area/#enablingdisabling-snap-lines) for arrangement of shapes in the grid area with greater precision
-- The ability to configure snap lines via the new [`magnetic`](api/diagram_editor/editor/config/magnetic_property.md) property
+- The ability to configure snap lines via the new [`magnetic`](/api/diagram_editor/editor/config/magnetic_property/) property
 - The ability to copy and paste styles of an item(s) via `Alt (Option) + Ctrl (Cmd) + С` => `Alt (Option) + Ctrl (Cmd) + V` (see the **[example](https://snippet.dhtmlx.com/klgvu3jq)**) 
 - The ability to [align and distribute multiple items](/guides/diagram_editor/grid_area/#aligning-multiple-items)
 - Now tooltips will appear when you hover over controls in the personal toolbar of items
 - Extended list of [locale options](/guides/localization/) for localization of tooltips in the per-item toolbar
 - The ability to set tooltips for [custom toolbar icons](/guides/diagram_editor/grid_area/#configuring-the-toolbar-of-an-item):
-    - the `tooltip` parameter of the icon object is added to the [`shapeToolbar`](api/diagram_editor/editor/config/shapetoolbar_property.md) property
+    - the `tooltip` parameter of the icon object is added to the [`shapeToolbar`](/api/diagram_editor/editor/config/shapetoolbar_property/) property
 - Improved design of [Grid area](/guides/diagram_editor/grid_area/). Now the distance between points in the grid area depends on the value of the grid step
 
 ### Fixes

@@ -174,7 +174,7 @@ function App() {
 export default App;
 ~~~
 
-Go to the ***DiagramEditor.jsx*** file and apply the passed **props** to the Diagram Editor via the [`parse()`](api/diagram_editor/editor/methods/parse_method.md) method:
+Go to the ***DiagramEditor.jsx*** file and apply the passed **props** to the Diagram Editor via the [`parse()`](/api/diagram_editor/editor/methods/parse_method/) method:
 
 ~~~jsx {5,11} title="DiagramEditor.jsx"
 import { useEffect, useRef } from "react";
@@ -202,7 +202,7 @@ Now the Diagram Editor component is ready to use. When the element will be added
 
 #### Handling events
 
-When a user makes some action in the Diagram Editor, it invokes an event. You can use these events to detect the action and run the desired code for it. See the [full list of events](api/diagram_editor/editor/events/overview.md).
+When a user makes some action in the Diagram Editor, it invokes an event. You can use these events to detect the action and run the desired code for it. See the [full list of events](/api/diagram_editor/editor/events/overview/).
 
 Open ***DiagramEditor.jsx*** and complete the `useEffect()` method in the following way:
 

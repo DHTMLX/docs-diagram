@@ -20,7 +20,7 @@ parse(data: array): void;
 
 - `data` - (required) the data that should be parsed into the editor
 
-You can load data in any supported data format. See the details in the [](api/data_collection/parse_method.md) article.
+You can load data in any supported data format. See the details in the [](/api/data_collection/parse_method/) article.
 
 ### Example
 

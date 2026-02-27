@@ -18,7 +18,7 @@ parse(items: (object | string)[]): void;
 
 ### Parameters
 
-- `items` - (required) an array of items that is parsed into Toolbar. See the full list of available items [here](api/diagram_editor/toolbar/config/items_property.md)
+- `items` - (required) an array of items that is parsed into Toolbar. See the full list of available items [here](/api/diagram_editor/toolbar/config/items_property/)
 
 ### Example
 

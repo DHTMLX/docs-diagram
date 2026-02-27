@@ -163,7 +163,7 @@ export function getData() {
 }
 ~~~
 
-Then open the ***diagram-editor.component.ts*** file. Import the file with data and apply it using the [`parse()`](api/diagram_editor/editor/methods/parse_method.md) method within the `ngOnInit()` method, as shown below.
+Then open the ***diagram-editor.component.ts*** file. Import the file with data and apply it using the [`parse()`](/api/diagram_editor/editor/methods/parse_method/) method within the `ngOnInit()` method, as shown below.
 
 ~~~jsx {3,19,22} title="diagram-editor.component.ts"
 import { DiagramEditor } from "@dhx/trial-diagram";
@@ -196,11 +196,11 @@ export class DiagramEditorComponent implements OnInit, OnDestroy {
 }
 ~~~
 
-Now the Diagram Editor component is ready to use. When the element will be added to the page, it will initialize the Diagram Editor with data. You can provide necessary configuration settings as well. Visit our [Diagram Editor API docs](/category/diagram-editor-api/) to check the full list of available properties.
+Now the Diagram Editor component is ready to use. When the element will be added to the page, it will initialize the Diagram Editor with data. You can provide necessary configuration settings as well. Visit our [Diagram Editor API docs](/category/diagram-editor-/api/) to check the full list of available properties.
 
 #### Handling events
 
-When a user makes some action in the Diagram Editor, it invokes an event. You can use these events to detect the action and run the desired code for it. See the [full list of events](api/diagram_editor/editor/events/overview.md).
+When a user makes some action in the Diagram Editor, it invokes an event. You can use these events to detect the action and run the desired code for it. See the [full list of events](/api/diagram_editor/editor/events/overview.md).
 
 Open the **diagram-editor.component.ts** file and complete the `ngOnInit()` method as in:
 
