@@ -62,7 +62,7 @@ const diagram = new dhx.Diagram("diagram_container", {
 
 The result of applying the **lineGap** property is shown in the image below:
 
-![](/assets/linegap_config.png)
+![lineGap config](/assets/linegap_config.png)
 
 **Related sample**: [Diagram. Default mode. Activity diagram](https://snippet.dhtmlx.com/a9t2z2dt)
 

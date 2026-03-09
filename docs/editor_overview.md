@@ -21,7 +21,7 @@ To build a diagram, you need either to drag the necessary items from the shapeba
 
 You can adjust the attributes of the items via [sidebar options of the editbar](/guides/diagram_editor/editbar/). To accelerate the styling process, use `Alt (Option) + Ctrl (Cmd) + С` combination to copy styles of an item and `Alt (Option) + Ctrl (Cmd) + V` to apply these styles to the chosen items.                                      		
 
-![](/assets/default_editor.png) 
+![Default editor](/assets/default_editor.png) 
 
 **Related sample:** [Diagram Editor. Default mode. Wide flowchart](https://snippet.dhtmlx.com/4d4k3o8p?text=diagram&mode=wide)
 
@@ -43,7 +43,7 @@ To build a diagram in the org chart mode of the editor, you need to select a sha
 
 You can adjust the attributes of the shapes via the available [sidebar options of the editbar](/guides/diagram_editor/editbar/). To accelerate the styling process, use `Alt (Option) + Ctrl (Cmd) + С` combination to copy styles of an item and `Alt (Option) + Ctrl (Cmd) + V` to apply these styles to the chosen items.
 
-![](/assets/orgchart_editor_draggable.png)     
+![Orgchart editor draggable](/assets/orgchart_editor_draggable.png)     
 
 **Related sample:** [Diagram Editor. Org chart mode. Basic initialization](https://snippet.dhtmlx.com/og4qm3ja?text=diagram&mode=wide)                                             
 
@@ -74,7 +74,7 @@ To build a diagram in the mindmap mode of the editor, you need to select a shape
 
 You can adjust the attributes of the shapes via the available [sidebar options of the editbar](/guides/diagram_editor/editbar/). To accelerate the styling process, use `Alt (Option) + Ctrl (Cmd) + С` combination to copy styles of an item and `Alt (Option) + Ctrl (Cmd) + V` to apply these styles to the chosen items.
 
- ![](/assets/mindmap_editor_draggable.png)  
+ ![Mindmap editor draggable](/assets/mindmap_editor_draggable.png)  
 
  **Related sample:** [Diagram Editor. Mindmap mode. Emotions mind map](https://snippet.dhtmlx.com/lo1vm0e8?text=diagram&mode=wide)                                         
 

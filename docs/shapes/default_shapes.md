@@ -18,11 +18,11 @@ See [the full list of configuration properties of a shape object](/shapes/config
 
 In the **default** mode of Diagram, the basic set includes **flow chart** shapes. Check the available types of flow chart shapes:
 
-![](/assets/flowshapes_types.png)
+![Flow shapes types](/assets/flowshapes_types.png)
 
 There is also the `"text"` item that presents a simple text that can be used in a diagram as a shape and connected with other shapes. 
 
-![](/assets/text_item.png)
+![Text item](/assets/text_item.png)
 
 **Related sample**: [Diagram Editor. Default mode. Wide flowchart](https://snippet.dhtmlx.com/4d4k3o8p)
 
@@ -40,13 +40,13 @@ In the **org chart** mode of Diagram, the basic set includes two types of shapes
 
 Each shape with the `"card"` type has a text and a colored header line. Shapes located on the same level have headers of identical color. Examples of "card" shapes are shown in the diagram of the org chart type below:
 
-![](/assets/orgchart_card_shapes.png)
+![Org chart card shapes](/assets/orgchart_card_shapes.png)
 
 **Related sample**: [Diagram. Org chart mode. Basic initialization](https://snippet.dhtmlx.com/5ign6fyy?mode=result)
 
 The `"img-card"` type can be used for adding shapes with images. Don't forget to provide images for cards via the `img` attribute of the shape object. The following org chart diagram is built with shapes of the `"img-card"` type:
 
-![](/assets/orgchart_imgcard_shapes.png)
+![Orgchart img card shapes](/assets/orgchart_imgcard_shapes.png)
 
 **Related sample**: [Diagram editor. Org chart mode. Basic initialization](https://snippet.dhtmlx.com/og4qm3ja?mode=result)
 
@@ -59,7 +59,7 @@ and [the `"img-card"` shapes](/diagram/shapes/configuration_properties/#properti
 
 In the **mindmap** mode of Diagram, the `"topic"` type of shapes is the basic one. Each shape has a text and a colored border. The color of the outline depends on the level the shape belongs to. Examples of "topic" shapes are given in the following diagram of the mindmap type:
 
-![](/assets/mindmap_basic.png)
+![Mindmap basic](/assets/mindmap_basic.png)
 
 **Related sample**: [Diagram. Mindmap mode. Basic initialization](https://snippet.dhtmlx.com/3igf1gd5)
 
@@ -73,15 +73,15 @@ The basic types of shapes in the **PERT** mode of Diagram are:
     
 - the `"task"` type - a shape that has a header and renders dates and duration:
 
-![](/assets/pert_task_shape.png)
+![Pert task shape](/assets/pert_task_shape.png)
 
 - the `"milestone"` type - a shape without duration that indicates a key point of the project:
 
-![](/assets/pert_milestone_shape.png)
+![Pert milestone shape](/assets/pert_milestone_shape.png)
 
 - the `"project"` type - a container used to [group the shapes of the `"task"` and `"milestone"` types](/groups/#grouping-shapes-in-the-pert-mode): 
 
-![](/assets/pert_project_group.png)
+![Pert project group](/assets/pert_project_group.png)
 
 
 **Related sample**: [Diagram. PERT chart. Initialization ](https://snippet.dhtmlx.com/4h5fi7xd)

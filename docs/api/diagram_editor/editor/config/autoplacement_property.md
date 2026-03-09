@@ -60,7 +60,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 
 Connector lines with no arrows are aligned "from center to center". They are straight and diagonal.
 
-![](/assets/direct_mode.png)
+![Direct mode](/assets/direct_mode.png)
 
 ### "edges" mode
 
@@ -71,14 +71,13 @@ To add arrows to the lines, specify `forwardArrow: "filled"` or `backArrow: "fil
 :::
 
 The connector lines in the "edges" mode can be:
+  - either straight (if you set **connectType: "straight"** property of a [line object](/lines/configuration_properties/))
 
-- either straight (if you set the `connectType: "straight"` property of a [line object](/lines/configuration_properties/))
+![Edges straight mode](/assets/edges_straight_mode.png)
 
-![](/assets/edges_straight_mode.png)
+  - or 90-degree curved (if you set **connectType: "elbow"** property of a [line object](/lines/configuration_properties/))
 
-- or 90-degree curved (if you set the `connectType: "elbow"` property of a [line object](/lines/configuration_properties/))
-
-![](/assets/edges_mode.png)
+![Edges elbow mode](/assets/edges_mode.png)
 
 ## Modes of placement of shapes
 
@@ -88,23 +87,24 @@ Shapes are arranged along vertical and horizontal lines
 
 - **"orthogonal"** arrangement with lines in the **"direct"** mode
 
-![](/assets/direct_ortogonal.png)
+![Orthogonal direct mode](/assets/direct_ortogonal.png)
+
 
 - **"orthogonal"** arrangement with lines in the **"edges"** mode
 
-![](/assets/edges_ortogonal.png)
+![Orthogonal edges mode](/assets/edges_ortogonal.png)
 
 ### "radial" mode
 
-Shapes are arranged on imaginary circles relative to the central shape, i.e. the shape with the most connections
+Shapes are arranged on imaginary circles relative to the central shape, i.e. a shape with the most connections
 
 - **"radial"** arrangement with lines in the **"direct"** mode
 
-![](/assets/direct_radial.png)
+![Radial direct mode](/assets/direct_radial.png)
 
 - **"radial"** arrangement with lines in the **"edges"** mode
 
-![](/assets/edges_radial.png)
+![Radial edges mode](/assets/edges_radial.png)
 
 **Change log**:  
 
