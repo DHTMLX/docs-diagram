@@ -36,7 +36,7 @@ const defaults = {
 };
 ~~~
 
-[See the full list of the shape object properties](../../shapes/configuration_properties/).
+[See the full list of the shape object properties](/shapes/configuration_properties/).
 
 ### Styling lines
 
@@ -63,7 +63,7 @@ Check the example:
 
 ## Defining the shape's template
 
-You can create a customized diagram by adding new types of shapes into the diagram and defining templates for them. For this purpose, use the [](../api/diagram/addshape_method.md) method of the diagram object.
+You can create a customized diagram by adding new types of shapes into the diagram and defining templates for them. For this purpose, use the [`addShape()`](/api/diagram/addshape_method/) method of the diagram object.
 
 ### Example in the default mode
 

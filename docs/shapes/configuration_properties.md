@@ -521,5 +521,5 @@ const data = [
 
 **Related articles**:
 
-- [Default Shapes](../../shapes/default_shapes/)
-- [Custom Shape](../../shapes/custom_shape/)
+- [Default Shapes](/shapes/default_shapes/)
+- [Custom Shape](/shapes/custom_shape/)

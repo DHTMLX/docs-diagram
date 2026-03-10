@@ -152,7 +152,7 @@ properties: {
 
 ## Create and configure custom Editbar controls
 
-You can use the [`controls`](/api/diagram_editor/editbar/config/controls_property.md) property of the Editbar view to create a custom control based on [**Basic controls**](/api/diagram_editor/editbar/basic_controls_overview/) and/or [**Complex controls**](/api/diagram_editor/editbar/complex_controls_overview/).
+You can use the [`controls`](/api/diagram_editor/editbar/config/controls_property/) property of the Editbar view to create a custom control based on [**Basic controls**](/api/diagram_editor/editbar/basic_controls_overview/) and/or [**Complex controls**](/api/diagram_editor/editbar/complex_controls_overview/).
 
 :::warning
 We do not recommend you to use a default control type (refer to the [***Basic controls***](/api/diagram_editor/editbar/basic_controls_overview/) and/or [***Complex controls***](/api/diagram_editor/editbar/complex_controls_overview/)) as the name for a custom control. Use the unique name for each custom control to avoid errors!

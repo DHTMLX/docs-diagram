@@ -69,7 +69,7 @@ The result of applying the **lineGap** property is shown in the image below:
 **Change log**:
 
 - The `connectType` parameter is added in v6.1
-- The `lineGap` parameter is added in v5.0 (check the [Migration article](diagram/migration.md/#42---50))
+- The `lineGap` parameter is added in v5.0 (check the [Migration article](/diagram/migration/#42---50))
 - Added in v4.2
 
 **Related articles**: [Setting connections between shapes](/lines/#setting-connections-between-shapes)

@@ -24,7 +24,7 @@ By default, all css styles included to the Diagram page are sent to the export s
 The library allows you:
 
 - to prevent all styles from being sent to the export service via setting
-the [](../api/diagram/exportstyles_property.md) configuration property of the Diagram object to *false*:
+the [`exportStyles`](/api/diagram/exportstyles_property/) configuration property of the Diagram object to *false*:
 
 ~~~jsx
 const diagram = new dhx.Diagram("diagram_container", { 
@@ -32,7 +32,7 @@ const diagram = new dhx.Diagram("diagram_container", {
 });
 ~~~
 
-- to define a set of styles that you want to be exported via setting absolute paths to the desired styles to the [](../api/diagram/exportstyles_property.md) array:
+- to define a set of styles that you want to be exported via setting absolute paths to the desired styles to the [`exportStyles`](/api/diagram/exportstyles_property/) array:
 
 <iframe src="https://snippet.dhtmlx.com/jm8if6nh?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="650"></iframe>
 

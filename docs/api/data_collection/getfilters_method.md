@@ -24,7 +24,7 @@ getFilters({ permanent?: boolean }): object;
 
 The method returns an object with the applied filters, where:
 - `key` - the id of a filter 
-- `value` - an object with the [**rule** and **config** properties](/api/data_collection/filter_method.md#parameters)
+- `value` - an object with the [**rule** and **config** properties](/api/data_collection/filter_method/#parameters)
 
 ### Example
 

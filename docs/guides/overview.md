@@ -21,8 +21,8 @@ The section details the process of adding DHTMLX Diagram on a page, describes th
 
 The section includes descriptions for all default diagram items (shapes, lines, groups, swimlanes), the way of adding custom shapes, and teaches how to configure the items and set connections between them. 
 
-- [Default shapes](../../shapes/default_shapes/)
-- [Custom shape](../../shapes/custom_shape/)
+- [Default shapes](/shapes/default_shapes/)
+- [Custom shape](/shapes/custom_shape/)
 - [Lines](/lines/)
 - [Groups](/groups/)
 - [Swimlanes](/swimlanes/)

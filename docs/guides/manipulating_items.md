@@ -30,7 +30,7 @@ The library provides you with the ability to implement auto-placement for shapes
 - to place connected shapes in the symmetric order at once;
 - to arrange data loaded in the JSON format or loaded from the server in the hierarchical structure.
 
-To perform the auto-placement, you need to make use of the [](../api/diagram/autoplace_method.md) method. The method can take one parameter:
+To perform the auto-placement, you need to make use of the [`autoPlace()`](/api/diagram/autoplace_method/) method. The method can take one parameter:
 
 - **config** - (*object*) optional, an object with configuration settings of the auto-placement. The object contains two optional properties:
     - **mode** - (*string*) the mode of connecting shapes, "direct" (by default) or "edges"
@@ -59,7 +59,7 @@ diagram.data.parse(data);
 diagram.autoPlace();
 ~~~
 
-There is also the ability to configure settings for the auto-placement by using the [](../api/diagram/autoplacement_property.md) configuration option of Diagram and applying the **autoPlace()** method.
+There is also the ability to configure settings for the auto-placement by using the [`autoplacement`](/api/diagram/autoplacement_property/) configuration option of Diagram and applying the **autoPlace()** method.
 
 :::note
 The **autoPlace()** method works only in the default mode of the diagram and only for shapes.
@@ -67,7 +67,7 @@ The **autoPlace()** method works only in the default mode of the diagram and onl
 
 ## Adding an item
 
-To add a new item into a diagram, apply the [](../api/data_collection/add_method.md) method of the **data** object.
+To add a new item into a diagram, apply the [`add()`](/api/data_collection/add_method/) method of the **data** object.
 
 ~~~jsx
 diagram.data.add({ id: "3.2", text: "New Item", parent: "3" }); 
@@ -79,13 +79,13 @@ For example, we've added a new shape object that has the following attributes:
 - **text** - (*string*) the text to be rendered in a shape
 - **parent** - (*string|number*) the id of the parent shape
 
-You can check all available properties of shape objects in the [API section](../../shapes/configuration_properties/).
+You can check all available properties of shape objects in the [API section](/shapes/configuration_properties/).
 
 **Related sample**: [Diagram. Data. Add/delete item](https://snippet.dhtmlx.com/8wi20uop)
 
 ## Getting an item
 
-You can get the object of an item by passing its id to the [](../api/data_collection/getitem_method.md)  method of the **data** object. For example:
+You can get the object of an item by passing its id to the [`getItem()`](/api/data_collection/getitem_method/) method of the **data** object. For example:
 
 ~~~jsx
 const shape = diagram.data.getItem(1);
@@ -100,7 +100,7 @@ const text = shape.text;
 
 ## Getting the id of an item 
 
-If the id of an item is unknown, you can use the [](../api/data_collection/getid_method.md) method to get it. The method takes the index of the item as a parameter:
+If the id of an item is unknown, you can use the [`getId()`](/api/data_collection/getid_method/) method to get it. The method takes the index of the item as a parameter:
 
 ~~~jsx
 const id = diagram.data.getId(0); // -> returns "1"
@@ -108,7 +108,7 @@ const id = diagram.data.getId(0); // -> returns "1"
 
 ## Getting the index of an item
 
-You can get the index of an item by passing its id to the [](../api/data_collection/getindex_method.md) method:
+You can get the index of an item by passing its id to the [`getIndex()`](/api/data_collection/getindex_method/) method:
 
 ~~~jsx
 const id = diagram.data.getIndex("1"); // -> returns 0
@@ -118,7 +118,7 @@ const id = diagram.data.getIndex("1"); // -> returns 0
 
 ### Deleting a single item
 
-To delete an unnecessary item, make use of the [](../api/data_collection/remove_method.md) method of the **data** object and pass as a parameter the id of the item under question:
+To delete an unnecessary item, make use of the [`remove()`](/api/data_collection/remove_method/) method of the **data** object and pass as a parameter the id of the item under question:
 
 ~~~jsx
 diagram.data.remove("3.2");  
@@ -130,7 +130,7 @@ If the diagram is initialized either in the org or mindmap mode, deleting a shap
 
 ### Deleting all the items
 
-If necessary, you can clear the diagram, by deleting all the items at once. For this, apply the [](../api/data_collection/removeall_method.md) method of the **data** object:
+If necessary, you can clear the diagram, by deleting all the items at once. For this, apply the [`removeAll()`](/api/data_collection/removeall_method/) method of the **data** object:
 
 ~~~jsx
 diagram.data.removeAll();
@@ -140,7 +140,7 @@ diagram.data.removeAll();
 
 ## Updating an item
 
-You can update the look and content of an item with the help of the [](../api/data_collection/update_method.md) method of the **data** object:
+You can update the look and content of an item with the help of the [`update()`](/api/data_collection/update_method/) method of the **data** object:
 
 ~~~jsx
 diagram.data.update("1", { text: "Some new text" });
@@ -155,7 +155,7 @@ As parameters, you need to pass two parameters:
 
 ## Checking existence of the item
 
-You can check whether an item exists in the diagram via the [](../api/data_collection/exists_method.md) method of the **data** collection. The method takes the id of the item as a parameter and returns *true*, if the item exists:
+You can check whether an item exists in the diagram via the [`exists()`](/api/data_collection/exists_method/) method of the **data** collection. The method takes the id of the item as a parameter and returns *true*, if the item exists:
 
 ~~~jsx
 const shapeExists = diagram.data.exists("1");
@@ -165,7 +165,7 @@ const shapeExists = diagram.data.exists("1");
 
 ### Selecting an item
 
-To select items, you need firstly [enable selection](/guides/diagram/configuration/#enabling-items-selection) for the diagram and then call the [add()](/api/selection/add_method/) method of the `selection` object to select a desired item.
+To select items, you need firstly [enable selection](/guides/diagram/configuration/#enabling-items-selection) for the diagram and then call the [`add()`](/api/selection/add_method/) method of the `selection` object to select a desired item.
 
 ~~~jsx {8,11-12,15-16}
 // a diagram must be created with the "select:true" option
@@ -200,7 +200,7 @@ The method returns:
 
 ### Unselecting an item
 
-To remove an item from the selection list, make use of the [](../api/selection/remove_method.md) method of the `selection` object:
+To remove an item from the selection list, make use of the [`remove()`](/api/selection/remove_method/) method of the `selection` object:
 
 ~~~jsx {2}
 console.log(diagram.selection.getIds()); // -> ["1", "2", "3"]
@@ -221,7 +221,7 @@ console.log(diagram.selection.getIds()); // -> []
 
 ### Getting the ids of selected items
 
-You can get the list of ids of the currently selected items with the [](../api/selection/getids_method.md) method of the `selection` object:
+You can get the list of ids of the currently selected items with the [`getIds()`](/api/selection/getids_method/) method of the `selection` object:
 
 ~~~jsx
 const ids = diagram.selection.getIds(); // -> ["1", "1.1" ...] or []
@@ -231,7 +231,7 @@ The method returns an array of ids of selected items and sub-items or an empty a
 
 ### Getting the object of a selected item
 
-You can get the object of a selected item using the [](../api/selection/getitem_method.md) method of the `selection` object. The method may take as an argument an object with the following parameter:
+You can get the object of a selected item using the [`getItem()`](/api/selection/getitem_method/) method of the `selection` object. The method may take as an argument an object with the following parameter:
 
 - `id` - (required) - the id of the item in question
 
@@ -261,7 +261,7 @@ const item = diagram.selection.getItem({ id: "4" });
 
 ### Clearing the selection list
 
-Whenever you need to clear the selection list without invoking events, use the [](../api/selection/clear_method.md) method:
+Whenever you need to clear the selection list without invoking events, use the [`clear()`](/api/selection/clear_method/) method:
 
 ~~~jsx
 diagram.selection.clear();
@@ -269,7 +269,7 @@ diagram.selection.clear();
 
 ### Checking whether an item is selected
 
-There is a way to check the presence of an item in the list of selected Diagram items via API. Use the [](../api/selection/includes_method.md) method of the `selection` object for this purpose:
+There is a way to check the presence of an item in the list of selected Diagram items via API. Use the [`includes()`](/api/selection/includes_method/) method of the `selection` object for this purpose:
 
 ~~~jsx {2-3}
 diagram.selection.getIds(); // -> ["1", "2", "3"]
@@ -318,7 +318,7 @@ diagram.expandItem("main", "left");
 ## Showing the necessary item
 
 In case you have a large diagram with lots of items, DHTMLX Diagram provides you with the possibility to make the desired item visible.
-For this, you need to apply the [](../api/diagram/showitem_method.md) method, which takes the id of an item as a parameter:
+For this, you need to apply the [`showItem()`](/api/diagram/showitem_method/) method, which takes the id of an item as a parameter:
 
 ~~~jsx
 diagram.showItem("2.1");  
@@ -330,7 +330,7 @@ You can [read more about scrolling in DHTMLX Diagram](/guides/diagram/scrolling_
 
 ## Finding the necessary item
 
-You can use the API of the Diagram component to find the necessary item in the diagram. The [](../api/data_collection/find_method.md) method of the **data** collection will help you to perform this task.
+You can use the API of the Diagram component to find the necessary item in the diagram. The [`find()`](/api/data_collection/find_method/) method of the **data** collection will help you to perform this task.
 The method takes the search criteria as a parameter and returns the first object of the shape that matches the specified criteria:
 
 ~~~jsx
@@ -350,7 +350,7 @@ const shape = diagram.data.find((shape) => {
 
 ### Finding all the items that meet the search criteria
 
-You can also find all the items that meet the set criteria via the [](../api/data_collection/findall_method.md) of the **data** collection method. The method takes the same parameters as the **find()** method and returns an array of item objects:
+You can also find all the items that meet the set criteria via the [`findAll()`](/api/data_collection/findall_method/) method of the **data** collection. The method takes the same parameters as the **find()** method and returns an array of item objects:
 
 ~~~jsx
 // searching for shapes by the attribute key
@@ -368,7 +368,7 @@ const shapes = diagram.data.findAll((shapes) => {
 
 ## Filtering items
 
-It is possible to filter the diagram and render only the items that meet the filter criteria via the [](../api/data_collection/filter_method.md) method of the **data** collection. The method will show only the filtered items, hiding the rest of items.
+It is possible to filter the diagram and render only the items that meet the filter criteria via the [`filter()`](/api/data_collection/filter_method/) method of the **data** collection. The method will show only the filtered items, hiding the rest of items.
 
 <iframe src="https://snippet.dhtmlx.com/tm43bsgn?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
@@ -417,19 +417,19 @@ and consider how to operate the cells of the swimlane using the available API me
 
 ### Setting/resetting the active swimlane
 
-To be able to manipulate the cells of a swimlane, you need to set the active swimlane. It can be done either via the [](../api/cell_manager/setswimlane_method.md) method of the cellManager object:
+To be able to manipulate the cells of a swimlane, you need to set the active swimlane. It can be done either via the [`setSwimlane()`](/api/cell_manager/setswimlane_method/) method of the cellManager object:
 
 ~~~jsx
 diagram.cellManager.setSwimlane("main");
 ~~~
 
-or via the [](../api/selection/add_method.md) method of the selection object:
+or via the [`add()`](/api/selection/add_method/) method of the selection object:
 
 ~~~jsx
 diagram.selection.add("main");
 ~~~
 
-After you finish operating the swimlane or its cells, you can apply the [](../api/cell_manager/resetswimlane_method.md) method of the cellManager object to remove selection from the swimlane:
+After you finish operating the swimlane or its cells, you can apply the [`resetSwimlane()`](/api/cell_manager/resetswimlane_method/) method of the cellManager object to remove selection from the swimlane:
 
 ~~~jsx
 diagram.cellManager.resetSwimlane();
@@ -437,7 +437,7 @@ diagram.cellManager.resetSwimlane();
 
 ### Adding a column/row
 
-You can add a set of cells either as a row or column into the swimlane. For this, you should apply the [](../api/cell_manager/add_method.md) method of the cellManager object and pass two parameters to the method: 
+You can add a set of cells either as a row or column into the swimlane. For this, you should apply the [`add()`](/api/cell_manager/add_method/) method of the cellManager object and pass two parameters to the method: 
 - the start index of the position of the cell where a new column/row should be added;
 - the direction of its adding: *"up" | "down"* to add a row, *"left" | "right"* to add a column.
 
@@ -451,7 +451,7 @@ diagram.cellManager.add(0, "left");
 
 ### Removing a column/row
 
-To remove a set of cells either as a row or column from the swimlane, use the [](../api/cell_manager/remove_method.md) method of the cellManager object. The method takes two parameters:
+To remove a set of cells either as a row or column from the swimlane, use the [`remove()`](/api/cell_manager/remove_method/) method of the cellManager object. The method takes two parameters:
 
 - the index of the position from which a column/row should be removed;
 - the type of the item to be removed: *"col" | "row"*
@@ -466,7 +466,7 @@ diagram.cellManager.remove(1, "col");
 
 ### Moving a column/row
 
-It is possible to change the position of a column or row in the swimlane by applying the [](../api/cell_manager/move_method.md) method of the cellManager object. The method allows you to move a column one position right or left, or move a row one position up or down. The method takes two parameters:
+It is possible to change the position of a column or row in the swimlane by applying the [`move()`](/api/cell_manager/move_method/) method of the cellManager object. The method allows you to move a column one position right or left, or move a row one position up or down. The method takes two parameters:
 
 - the index of the current position of the column/row to move
 - the direction of moving the item: *"up" | "down"* to move a row, *"left" | "right"* to move a column
@@ -481,7 +481,7 @@ diagram.cellManager.move(2, "left");
 
 ### Validating cells
 
-You can check whether such actions as adding, removing, or moving cells can be done over the specified cell via the [](../api/cell_manager/validation_method.md) method of the cellManager object:
+You can check whether such actions as adding, removing, or moving cells can be done over the specified cell via the [`validation()`](/api/cell_manager/validation_method/) method of the cellManager object:
 
 ~~~jsx
 // checks whether a cell with index 0 can be moved down
@@ -490,7 +490,7 @@ diagram.cellManager.validation(0, "down", "move"); // true
 
 ### Getting the type of the subheader
 
-To return the type of the subheader of a swimlane, use the [](../api/cell_manager/getsubheadertype_method.md) method of the cellManager object. The method takes the id of a subheader as a parameter: 
+To return the type of the subheader of a swimlane, use the [`getSubHeaderType()`](/api/cell_manager/getsubheadertype_method/) method of the cellManager object. The method takes the id of a subheader as a parameter: 
 
 ~~~jsx
 diagram.cellManager.getSubHeaderType("s1"); // returns "row"
@@ -498,7 +498,7 @@ diagram.cellManager.getSubHeaderType("s1"); // returns "row"
 
 ### Getting the id of a cell
 
-You can get the id of the first cell of a column/row the cell belongs to. It can be done via the [](../api/cell_manager/getcellid_method.md) method of the cellManager object. The method takes two parameters:
+You can get the id of the first cell of a column/row the cell belongs to. It can be done via the [`getCellId()`](/api/cell_manager/getcellid_method/) method of the cellManager object. The method takes two parameters:
 
 - the index of the first cell of a row/column;
 - the type of the item: *"col" | "row"*.
@@ -511,7 +511,7 @@ diagram.cellManager.getCellId(0, "row"); // returns 1
 diagram.cellManager.getCellId(2, "col"); // returns 3
 ~~~
 
-You can also get the id of a cell the subheader belongs to by using the [](../api/cell_manager/getsubheadercellid_method.md) method of the cellManager object. The method takes the id of the subheader of a swimlane as a parameter:
+You can also get the id of a cell the subheader belongs to by using the [`getSubHeaderCellId()`](/api/cell_manager/getsubheadercellid_method/) method of the cellManager object. The method takes the id of the subheader of a swimlane as a parameter:
 
 ~~~jsx
 // return the id of the cell the subheader belongs to
@@ -520,7 +520,7 @@ diagram.cellManager.getSubHeaderCellId("s2"); // returns 4
 
 ### Getting the index of a cell
 
-When you need to get the index of a cell of a swimlane, use the [](../api/cell_manager/getcellindex_method.md) method of the cellManager object. The method takes two parameters:
+When you need to get the index of a cell of a swimlane, use the [`getCellIndex()`](/api/cell_manager/getcellindex_method/) method of the cellManager object. The method takes two parameters:
 
 - the id of a cell;
 - the type of the item: *"col" | "row"*.
@@ -551,7 +551,7 @@ diagram.cellManager.getCellIndex(2, "row"); // returns 0
 diagram.cellManager.getCellIndex(8, "row"); // returns 2
 ~~~
 
-You can also get the index of a cell the subheader belongs to by using the [](../api/cell_manager/getsubheadercellindex_method.md) method of the cellManager object. The method takes the id of the subheader of a swimlane as a parameter:
+You can also get the index of a cell the subheader belongs to by using the [`getSubHeaderCellIndex()`](/api/cell_manager/getsubheadercellindex_method/) method of the cellManager object. The method takes the id of the subheader of a swimlane as a parameter:
 
 ~~~jsx
 // return the index of the cell the subheader belongs to

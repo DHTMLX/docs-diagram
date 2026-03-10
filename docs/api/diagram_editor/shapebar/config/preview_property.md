@@ -54,7 +54,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 
 ### Details
 
-The values of the **gap** and **scale** properties can be redefined for a separate shape via the **gap** and **scale** attributes of the [preview](shapes/configuration_properties.md/#properties-specific-for-the-default-mode) property of the shape object:
+The values of the **gap** and **scale** properties can be redefined for a separate shape via the **gap** and **scale** attributes of the [`preview`](/shapes/configuration_properties/#properties-specific-for-the-default-mode) property of the shape object:
 
 ~~~jsx {14-17}
 const defaults = {
