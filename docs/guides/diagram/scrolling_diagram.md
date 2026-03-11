@@ -10,17 +10,17 @@ By default the component's size is set automatically to fit the content. If nece
 
 ## Scrolling diagram
 
-You can scroll a diagram to the area where the necessary item is situated via the [](/api/diagram/showitem_method/) method of the diagram object.
+You can scroll a diagram to the area where the necessary item is situated via the [`showItem()`](/api/diagram/showitem_method/) method of the diagram object.
 
 <iframe src="https://snippet.dhtmlx.com/d7kvzq4r?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
-As an alternative way, you can scroll to the necessary position on the diagram by using the [](/api/diagram/scrollto_method/) method.
+As an alternative way, you can scroll to the necessary position on the diagram by using the [`scrollTo()`](/api/diagram/scrollto_method/) method.
 
 <iframe src="https://snippet.dhtmlx.com/f970hbym?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
 ## Getting scroll state 
 
-The Diagram API allows you to get the current position of the scroll via the related [](/api/diagram/getscrollstate_method/) method:
+The Diagram API allows you to get the current position of the scroll via the related [`getScrollState()`](/api/diagram/getscrollstate_method/) method:
 
 ~~~jsx
 // returning the initial scroll position
@@ -31,7 +31,7 @@ It returns an object with the horizontal and vertical scroll position.
 
 ## Catching diagram scrolling
 
-You can catch the start of Diagram scrolling using the [](/api/diagram/scroll_event/) event. The handler function takes the position of the scroll as a parameter:
+You can catch the start of Diagram scrolling using the [`scroll`](/api/diagram/scroll_event/) event. The handler function takes the position of the scroll as a parameter:
 
 - **pos** - (*object*) the position of a scroll as an object with x and y attributes
 

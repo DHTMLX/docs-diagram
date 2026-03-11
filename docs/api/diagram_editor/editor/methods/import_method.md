@@ -37,6 +37,6 @@ const editor = new dhx.DiagramEditor("editor_container");
 editor.import(diagram);
 ~~~
 
-You can load data in any supported data format. See the details in the [](/api/data_collection/parse_method/) article.
+You can load data in any supported data format. See the details in the [`parse()`](/api/data_collection/parse_method/) article.
 
 **Related sample**: [Diagram editor. Org chart mode. Live editor](https://snippet.dhtmlx.com/bng7ego7)

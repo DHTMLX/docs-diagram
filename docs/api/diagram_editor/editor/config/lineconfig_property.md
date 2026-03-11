@@ -74,7 +74,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 
 The result of applying the **lineGap** property is shown in the image below:
 
-![](/assets/linegap_config.png)
+![lineGap config](/assets/linegap_config.png)
 
 **Change log**:
 

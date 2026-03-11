@@ -140,7 +140,7 @@ See [the full list of configuration properties of Diagram](/api/diagram/api_over
 
 **Related sample**:	[Diagram Editor. Default mode. Wide flowchart](https://snippet.dhtmlx.com/4d4k3o8p)	
 
-Alternatively, you can get access to some option and set/modify its value via the diagram **config** object. Don't forget to call the [](/api/diagram/paint_method/) method to re-render the diagram with a new configuration:
+Alternatively, you can get access to some option and set/modify its value via the diagram **config** object. Don't forget to call the [`paint()`](/api/diagram/paint_method/) method to re-render the diagram with a new configuration:
 
 ~~~jsx
 const diagram = new dhx.Diagram("diagram_container");
