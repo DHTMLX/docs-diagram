@@ -16,21 +16,21 @@ Refer to the [Editbar configuration](/guides/diagram_editor/editbar/) guide for 
 
 | Name                                                            | Description                                                       	 |
 | :-------------------------------------------------------------- | :------------------------------------------------------------------- |
-| [](api/diagram_editor/editbar/basic_controls/avatar.md)      	  | @getshort(api/diagram_editor/editbar/basic_controls/avatar.md) 	     |
-| [](api/diagram_editor/editbar/basic_controls/button.md)      	  | @getshort(api/diagram_editor/editbar/basic_controls/button.md) 	   	 |
-| [](api/diagram_editor/editbar/basic_controls/checkbox.md)       | @getshort(api/diagram_editor/editbar/basic_controls/checkbox.md) 	 |
-| [](api/diagram_editor/editbar/basic_controls/checkboxgroup.md)  | @getshort(api/diagram_editor/editbar/basic_controls/checkboxgroup.md)|
-| [](api/diagram_editor/editbar/basic_controls/colorpicker.md)	  | @getshort(api/diagram_editor/editbar/basic_controls/colorpicker.md)	 |
-| [](api/diagram_editor/editbar/basic_controls/combo.md)		  | @getshort(api/diagram_editor/editbar/basic_controls/combo.md)		 |
-| [](api/diagram_editor/editbar/basic_controls/container.md)      | @getshort(api/diagram_editor/editbar/basic_controls/container.md)	 |
-| [](api/diagram_editor/editbar/basic_controls/datepicker.md)	  | @getshort(api/diagram_editor/editbar/basic_controls/datepicker.md)   |
-| [](api/diagram_editor/editbar/basic_controls/fieldset.md)		  | @getshort(api/diagram_editor/editbar/basic_controls/fieldset.md)     |
-| [](api/diagram_editor/editbar/basic_controls/input.md)		  | @getshort(api/diagram_editor/editbar/basic_controls/input.md)		 |
-| [](api/diagram_editor/editbar/basic_controls/radiogroup.md)	  | @getshort(api/diagram_editor/editbar/basic_controls/radiogroup.md)	 |
-| [](api/diagram_editor/editbar/basic_controls/select.md)		  | @getshort(api/diagram_editor/editbar/basic_controls/select.md)		 |
-| [](api/diagram_editor/editbar/basic_controls/slider.md)	      | @getshort(api/diagram_editor/editbar/basic_controls/slider.md)		 |
-| [](api/diagram_editor/editbar/basic_controls/spacer.md)		  | @getshort(api/diagram_editor/editbar/basic_controls/spacer.md)		 |
-| [](api/diagram_editor/editbar/basic_controls/textarea.md)		  | @getshort(api/diagram_editor/editbar/basic_controls/textarea.md)	 |
-| [](api/diagram_editor/editbar/basic_controls/timepicker.md)	  | @getshort(api/diagram_editor/editbar/basic_controls/timepicker.md)	 |
-| [](api/diagram_editor/editbar/basic_controls/toggle.md)		  | @getshort(api/diagram_editor/editbar/basic_controls/toggle.md)		 |
-| [](api/diagram_editor/editbar/basic_controls/togglegroup.md)	  | @getshort(api/diagram_editor/editbar/basic_controls/togglegroup.md)	 |
+| [Avatar](/api/diagram_editor/editbar/basic_controls/avatar/)      	  | @getshort(/api/diagram_editor/editbar/basic_controls/avatar.md) 	     |
+| [Button](/api/diagram_editor/editbar/basic_controls/button/)      	  | @getshort(/api/diagram_editor/editbar/basic_controls/button.md) 	   	 |
+| [Checkbox](/api/diagram_editor/editbar/basic_controls/checkbox/)       | @getshort(/api/diagram_editor/editbar/basic_controls/checkbox.md) 	 |
+| [CheckboxGroup](/api/diagram_editor/editbar/basic_controls/checkboxgroup/)  | @getshort(/api/diagram_editor/editbar/basic_controls/checkboxgroup.md)|
+| [Colorpicker](/api/diagram_editor/editbar/basic_controls/colorpicker/)	  | @getshort(/api/diagram_editor/editbar/basic_controls/colorpicker.md)	 |
+| [Combo](/api/diagram_editor/editbar/basic_controls/combo/)		  | @getshort(/api/diagram_editor/editbar/basic_controls/combo.md)		 |
+| [Container](/api/diagram_editor/editbar/basic_controls/container/)      | @getshort(/api/diagram_editor/editbar/basic_controls/container.md)	 |
+| [Datepicker](/api/diagram_editor/editbar/basic_controls/datepicker/)	  | @getshort(/api/diagram_editor/editbar/basic_controls/datepicker.md)   |
+| [Fieldset](/api/diagram_editor/editbar/basic_controls/fieldset/)		  | @getshort(/api/diagram_editor/editbar/basic_controls/fieldset.md)     |
+| [Input](/api/diagram_editor/editbar/basic_controls/input/)		  | @getshort(/api/diagram_editor/editbar/basic_controls/input.md)		 |
+| [RadioGroup](/api/diagram_editor/editbar/basic_controls/radiogroup/)	  | @getshort(/api/diagram_editor/editbar/basic_controls/radiogroup.md)	 |
+| [Select](/api/diagram_editor/editbar/basic_controls/select/)		  | @getshort(/api/diagram_editor/editbar/basic_controls/select.md)		 |
+| [Slider](/api/diagram_editor/editbar/basic_controls/slider/)	      | @getshort(/api/diagram_editor/editbar/basic_controls/slider.md)		 |
+| [Spacer](/api/diagram_editor/editbar/basic_controls/spacer/)		  | @getshort(/api/diagram_editor/editbar/basic_controls/spacer.md)		 |
+| [Textarea](/api/diagram_editor/editbar/basic_controls/textarea/)		  | @getshort(/api/diagram_editor/editbar/basic_controls/textarea.md)	 |
+| [Timepicker](/api/diagram_editor/editbar/basic_controls/timepicker/)	  | @getshort(/api/diagram_editor/editbar/basic_controls/timepicker.md)	 |
+| [Toggle](/api/diagram_editor/editbar/basic_controls/toggle/)		  | @getshort(/api/diagram_editor/editbar/basic_controls/toggle.md)		 |
+| [ToggleGroup](/api/diagram_editor/editbar/basic_controls/togglegroup/)	  | @getshort(/api/diagram_editor/editbar/basic_controls/togglegroup.md)	 |

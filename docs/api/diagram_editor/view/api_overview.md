@@ -10,17 +10,18 @@ A set of APIs that you can use for managing visibility of the Diagram Editor vie
 
 ## View methods overview
 
-| Name                                                           | Description                                                   |
-| :---------------------------------------------------------- | :------------------------------------------------------------ |
-| [](api/diagram_editor/view/methods/hide_method.md)          | @getshort(api/diagram_editor/view/methods/hide_method.md)     |
-| [](api/diagram_editor/view/methods/isvisible_method.md)     | @getshort(api/diagram_editor/view/methods/isvisible_method.md)|
-| [](api/diagram_editor/view/methods/show_method.md)          | @getshort(api/diagram_editor/view/methods/show_method.md)     |
+| Name                                                      | Description                                                       |
+| :----------------------------------------------------- | :------------------------------------------------------------- |
+| [hide()](/api/diagram_editor/view/methods/hide_method/)      | @getshort(/api/diagram_editor/view/methods/hide_method.md)       |
+| [isVisible()](/api/diagram_editor/view/methods/isvisible_method/)| @getshort(/api/diagram_editor/view/methods/isvisible_method.md) |
+| [show()](/api/diagram_editor/view/methods/show_method/)     | @getshort(/api/diagram_editor/view/methods/show_method.md)        |
 
 ## View events overview
 
-| Name                                                          | Description                                                    |
-| :--------------------------------------------------------- | :---------------------------------------------------------- |
-| [](api/diagram_editor/view/events/afterhide_event.md)      | @getshort(api/diagram_editor/view/events/afterhide_event)   |
-| [](api/diagram_editor/view/events/aftershow_event.md)      | @getshort(api/diagram_editor/view/events/aftershow_event)   |
-| [](api/diagram_editor/view/events/beforehide_event.md)     | @getshort(api/diagram_editor/view/events/beforehide_event)  |
-| [](api/diagram_editor/view/events/beforeshow_event.md)     | @getshort(api/diagram_editor/view/events/beforeshow_event)  |
+| Name                                                       | Description                                                       |
+| :--------------------------------------------------------- | :---------------------------------------------------------------- |
+| [afterHide](/api/diagram_editor/view/events/afterhide_event/)      | @getshort(/api/diagram_editor/view/events/afterhide_event)         |
+| [afterShow](/api/diagram_editor/view/events/aftershow_event/)      | @getshort(/api/diagram_editor/view/events/aftershow_event)         |
+| [beforeHide](/api/diagram_editor/view/events/beforehide_event/)     | @getshort(/api/diagram_editor/view/events/beforehide_event)        |
+| [beforeShow](/api/diagram_editor/view/events/beforeshow_event/)     | @getshort(/api/diagram_editor/view/events/beforeshow_event)        |
+

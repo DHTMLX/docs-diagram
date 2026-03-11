@@ -8,6 +8,6 @@ description: You can explore the View methods in the documentation of the DHTMLX
 
 | Name                                                      | Description                                                       |
 | :----------------------------------------------------- | :------------------------------------------------------------- |
-| [](api/diagram_editor/view/methods/hide_method.md)      | @getshort(api/diagram_editor/view/methods/hide_method.md)       |
-| [](api/diagram_editor/view/methods/isvisible_method.md)| @getshort(api/diagram_editor/view/methods/isvisible_method.md) |
-| [](api/diagram_editor/view/methods/show_method.md)     | @getshort(api/diagram_editor/view/methods/show_method.md)        |
+| [hide()](/api/diagram_editor/view/methods/hide_method/)      | @getshort(/api/diagram_editor/view/methods/hide_method.md)       |
+| [isVisible()](/api/diagram_editor/view/methods/isvisible_method/)| @getshort(/api/diagram_editor/view/methods/isvisible_method.md) |
+| [show()](/api/diagram_editor/view/methods/show_method/)     | @getshort(/api/diagram_editor/view/methods/show_method.md)        |
