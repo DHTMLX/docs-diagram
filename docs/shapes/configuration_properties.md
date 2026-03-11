@@ -42,7 +42,7 @@ Each shape object can include the following properties:
 - `x` - (optional) the x coordinate of the shape position. The property is **required** in the default mode of Diagram
 - `y` - (optional) the y coordinate of the shape position. The property is **required** in the default mode of Diagram
 - `text` - (optional) the text to be rendered in a shape
-- `editable` - (optional) enables/disables the ability to edit the text of the shape by double-clicking on it; *true* by default. <br>*The property is not available for a custom shape.*
+- `editable` - (optional) enables/disables the ability to edit the text of the shape by double-clicking on it; *true* by default. <br />*The property is not available for a custom shape.*
 - `height` - (optional) the height of a shape
 - `width` - (optional) the width of a shape
 - `fixed` - (optional) enables/disables movement and resizing of a shape, *false* by default
@@ -72,7 +72,7 @@ const data = [
 
 When preparing a data set for a custom shape, you can add any custom properties to the configuration object of a shape:
 
-- `key` - (optional) a custom property for a custom shape. For details, check the [Custom shape](../custom_shape/) article. <br>*Use unique names as names for custom properties. Overriding the internal properties of the diagram shape object is forbidden as it causes the incorrect work of the diagram and its editor.*
+- `key` - (optional) a custom property for a custom shape. For details, check the [Custom shape](../custom_shape/) article. <br />*Use unique names as names for custom properties. Overriding the internal properties of the diagram shape object is forbidden as it causes the incorrect work of the diagram and its editor.*
 
 ### Example
 
