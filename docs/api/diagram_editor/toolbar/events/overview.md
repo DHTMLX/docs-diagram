@@ -6,7 +6,7 @@ description: You can learn about Toolbar events in the documentation of the DHTM
 
 # Toolbar events overview
 
-You can use the following [**Toolbar**](https://docs.dhtmlx.com/suite/category/toolbar-events/) events of [**Suite 8**](https://docs.dhtmlx.com/suite/):
+You can use the following [**Toolbar**](https://docs.dhtmlx.com/suite/category/toolbar-events/) events of [**Suite**](https://docs.dhtmlx.com/suite/):
 
 | Name                                                                                 | Description                                                        |
 | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------ |
@@ -35,7 +35,7 @@ editor.toolbar.events.on("click", (id, event) => {
 
 # TreeCollection events overview
 
-You can use the following [**TreeCollection**](https://docs.dhtmlx.com/suite/category/treecollection-events/) events of [**Suite 8**](https://docs.dhtmlx.com/suite/):
+You can use the following [**TreeCollection**](https://docs.dhtmlx.com/suite/category/treecollection-events/) events of [**Suite**](https://docs.dhtmlx.com/suite/):
 
 | Name                                                                                                    | Description                                            |
 | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------ |
