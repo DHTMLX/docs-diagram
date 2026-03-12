@@ -10,7 +10,7 @@ DHTMLX Diagram provides a wide range of options for configuration. You can chang
 
 ### Setting the Diagram mode
 
-There are the following Diagram modes you can choose from: **"default"**, **"org"**, **"mindmap"**, **"pert"**. Their detailed description is given in the [Diagram overview](/diagram) article. You can specify the necessary type via the [`type`](/api/diagram/type_property/) configuration option, as follows:
+There are the following Diagram modes you can choose from: **"default"**, **"org"**, **"mindmap"**, **"pert"**. Their detailed description is given in the [Diagram overview](/) article. You can specify the necessary type via the [`type`](/api/diagram/type_property/) configuration option, as follows:
 
 ~~~jsx
 const diagram = new dhx.Diagram("diagram_container", {

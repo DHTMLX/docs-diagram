@@ -58,7 +58,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 ~~~
 
 :::info
-After defining the default settings for the shape/line of separate types, you can either omit these properties or redefine their values while [preparing a data set](/diagram/guides/loading_data/#preparing-data-to-load) for the shapes/lines of these types.
+After defining the default settings for the shape/line of separate types, you can either omit these properties or redefine their values while [preparing a data set](/guides/loading_data/#preparing-data-to-load) for the shapes/lines of these types.
 :::
 
 **Change log**: The ability to set the default configuration for lines was added in v4.2

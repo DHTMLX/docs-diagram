@@ -141,7 +141,7 @@ const data = [
 
 ## Properties specific for "project" object
 
-The "project" object is used as a container for tasks and milestones. It works as a [group](/diagram/groups/), allows creating PERT charts of various nesting levels, and provides visual grouping.
+The "project" object is used as a container for tasks and milestones. It works as a [group](/groups/), allows creating PERT charts of various nesting levels, and provides visual grouping.
 
 ### Usage
 

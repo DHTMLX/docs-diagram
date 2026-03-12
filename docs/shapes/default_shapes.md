@@ -32,7 +32,7 @@ You can group shapes of the Diagram in the default mode. [Check the related guid
 
 ### Properties
 
-Check the configuration properties specific for [shapes in the **default** Diagram mode](/diagram/shapes/configuration_properties/#properties-specific-for-the-default-mode) and [**flow shapes** and the `"text"` item](/diagram/shapes/configuration_properties/#properties-specific-for-text-topic-and-flow-chart-shapes).
+Check the configuration properties specific for [shapes in the **default** Diagram mode](/shapes/configuration_properties/#properties-specific-for-the-default-mode) and [**flow shapes** and the `"text"` item](/shapes/configuration_properties/#properties-specific-for-text-topic-and-flow-chart-shapes).
 
 ## Shapes in the org chart mode
 
@@ -52,8 +52,8 @@ The `"img-card"` type can be used for adding shapes with images. Don't forget to
 
 ### Properties
 
-Check the configuration properties specific for [shapes in the **org chart** Diagram mode](/diagram/shapes/configuration_properties/#properties-specific-for-the-org-chart-mode), [the `"card"` shapes](/diagram/shapes/configuration_properties/#properties-specific-for-card-shapes)
-and [the `"img-card"` shapes](/diagram/shapes/configuration_properties/#properties-specific-for-img-card-shapes).
+Check the configuration properties specific for [shapes in the **org chart** Diagram mode](/shapes/configuration_properties/#properties-specific-for-the-org-chart-mode), [the `"card"` shapes](/shapes/configuration_properties/#properties-specific-for-card-shapes)
+and [the `"img-card"` shapes](/shapes/configuration_properties/#properties-specific-for-img-card-shapes).
 
 ## Shapes in the mindmap mode
 
@@ -65,7 +65,7 @@ In the **mindmap** mode of Diagram, the `"topic"` type of shapes is the basic on
 
 ### Properties
 
-Check the configuration properties specific for [shapes in the **mindmap** Diagram mode](/diagram/shapes/configuration_properties/#properties-specific-for-the-mindmap-mode) and [the `"topic"` shapes](/diagram/shapes/configuration_properties/#properties-specific-for-text-topic-and-flow-chart-shapes).
+Check the configuration properties specific for [shapes in the **mindmap** Diagram mode](/shapes/configuration_properties/#properties-specific-for-the-mindmap-mode) and [the `"topic"` shapes](/shapes/configuration_properties/#properties-specific-for-text-topic-and-flow-chart-shapes).
 
 ## Shapes in the PERT mode
 
@@ -88,7 +88,7 @@ The basic types of shapes in the **PERT** mode of Diagram are:
 
 ### Properties
 
-Check the configuration properties specific for [the `"task"` shapes](/diagram/shapes/configuration_properties/#properties-specific-for-task-shapes), [the `"milestone"` shapes](/diagram/shapes/configuration_properties/#properties-specific-for-milestone-shapes) and [the `"project"` group](/diagram/groups/configuration_properties/#properties-specific-for-project-object).
+Check the configuration properties specific for [the `"task"` shapes](/shapes/configuration_properties/#properties-specific-for-task-shapes), [the `"milestone"` shapes](/shapes/configuration_properties/#properties-specific-for-milestone-shapes) and [the `"project"` group](/groups/configuration_properties/#properties-specific-for-project-object).
 
 ## Setting the type of a shape
 

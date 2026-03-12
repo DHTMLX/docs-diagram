@@ -413,7 +413,7 @@ Due to the modifications in the Diagram editor interface, the locale settings ha
 
 ### Diagram API
 
-The **lineGap** property of Diagram is deprecated and no longer supported. Instead, use the **lineGap** parameter of the [lineConfig](/diagram/api/diagram/lineconfig_property/) property.
+The **lineGap** property of Diagram is deprecated and no longer supported. Instead, use the **lineGap** parameter of the [lineConfig](/api/diagram/lineconfig_property/) property.
 
 ~~~jsx {3} title="Before v5.0"
 const diagram = new dhx.Diagram("diagram_container", { 

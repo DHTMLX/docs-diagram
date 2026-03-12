@@ -23,7 +23,7 @@ Released on November 25, 2025
 ### New functionality
 
 - The ability to create Diagram PERT charts from Gantt data sets:
-    - [a new PERT mode](/diagram/#diagram-in-the-pert-mode) set via the [new type: `"pert"` ](/diagram/api/diagram/type_property/)
+    - [a new PERT mode](/#diagram-in-the-pert-mode) set via the [new type: `"pert"` ](/api/diagram/type_property/)
     - [new types of shapes: `"task"` and `"milestone"`](/shapes/default_shapes/#shapes-in-the-pert-mode)
     - [a new group type: `"project"`](/groups/#grouping-shapes-in-the-pert-mode) (for grouping tasks and milestones)
 - Diagram Editor. The ability to manage keyboard shortcuts (hotkeys) within the editor:
@@ -220,7 +220,7 @@ The new update introduces significant changes in the structure and functionality
     - The `scalePreview` property of Diagram Editor is deprecated and no longer supported
     - The `shapeBarWidth` property of Diagram Editor is deprecated and no longer supported
     - The `shapeSections` property of Diagram Editor is deprecated and no longer supported
-    - The `title` property of [Line](/diagram/lines/configuration_properties/) data is deprecated and no longer supported
+    - The `title` property of [Line](/lines/configuration_properties/) data is deprecated and no longer supported
 
 - #### Methods
 
@@ -258,7 +258,7 @@ Released on July 12, 2023
 
 ### Fixes
 
-- Fix the issue when calling of the [autoPlace()](/diagram/api/diagram/autoplace_method/) method after data parsing caused an error
+- Fix the issue when calling of the [autoPlace()](/api/diagram/autoplace_method/) method after data parsing caused an error
 
 ## Version 5.0.2
 
@@ -268,7 +268,7 @@ Released on May 30, 2023
 
 - Diagram Editor. Fix the issue with custom points not moving during a multi select move
 - Diagram Editor. Fix the impossibility to link a shape to itself
-- Fix the problem with exporting a default diagram without [exportStyles](/diagram/api/diagram/exportstyles_property/)
+- Fix the problem with exporting a default diagram without [exportStyles](/api/diagram/exportstyles_property/)
 - Fix the issue with the promiz.js library that caused an error with the setImmediate() method definition on importing the sources 
 - Fix path formation of the URL in the Export object 
 - Types for export are added
@@ -280,10 +280,10 @@ Released on January 19, 2023
 ### Fixes
   
 - Diagram Editor. Fix the issue which caused lines not always being drawn in their places if data was exported and then loaded again
-    - Now it is possible to define the coordinates for lines in the default mode (new [`points`](/diagram/lines/configuration_properties/#properties-specific-for-the-default-mode) property of the line object)
+    - Now it is possible to define the coordinates for lines in the default mode (new [`points`](/lines/configuration_properties/#properties-specific-for-the-default-mode) property of the line object)
 - Diagram Editor. Fix the issue with dragging of shapes in the grid after changing the zoom level
 - Fix the error thrown after clicking on the "Auto layout" button in the absence of shapes
-- Fix the issue with display of [default settings](/diagram/api/diagram/defaults_property/) after creation of lines via the editor
+- Fix the issue with display of [default settings](/api/diagram/defaults_property/) after creation of lines via the editor
 - Fix the issue with scale of Diagram/Diagram Editor appeared when auto-placing shapes in the "radial" mode
 
 ## Version 5.0

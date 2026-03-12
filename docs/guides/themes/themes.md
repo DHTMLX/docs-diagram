@@ -382,7 +382,7 @@ The **"contrast-dark"** theme is configured both on the base of the [root CSS va
 
 ## Setting themes
 
-To set the necessary theme, be it a [built-in Diagram theme](/diagram/guides/themes/) or a [custom one](/diagram/guides/themes/custom_theme/), use one of the ways described below:
+To set the necessary theme, be it a [built-in Diagram theme](/guides/themes/) or a [custom one](/guides/themes/custom_theme/), use one of the ways described below:
 
 ### Using the ***data-dhx-theme*** attribute
 

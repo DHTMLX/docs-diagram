@@ -160,7 +160,7 @@ For example:
 
 ## Adjusting the look of tasks in the PERT mode
 
-The appearance of tasks of the [Diagram in the PERT chart mode](/diagram/#diagram-in-the-pert-mode) is defined by the `--dhx-shape-pert-header-background` CSS variable. It is specified in the [default](/guides/themes/#light-theme-default) theme in the following way: 
+The appearance of tasks of the [Diagram in the PERT chart mode](/#diagram-in-the-pert-mode) is defined by the `--dhx-shape-pert-header-background` CSS variable. It is specified in the [default](/guides/themes/#light-theme-default) theme in the following way: 
 
 ~~~jsx
 --dhx-shape-pert-header-background: var(--dhx-gantt-base-colors-primary, #537CFA);
