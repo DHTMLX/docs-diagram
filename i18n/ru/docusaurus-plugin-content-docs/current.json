@@ -1,0 +1,254 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.docs.category.What's new and migration": {
+    "message": "What's new and migration",
+    "description": "The label for category 'What's new and migration' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.What's new and migration.link.generated-index.title": {
+    "message": "What's new and migration",
+    "description": "The generated-index page title for category 'What's new and migration' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.API": {
+    "message": "API",
+    "description": "The label for category 'API' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.API.link.generated-index.title": {
+    "message": "API",
+    "description": "The generated-index page title for category 'API' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Diagram API": {
+    "message": "Diagram API",
+    "description": "The label for category 'Diagram API' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Diagram methods": {
+    "message": "Diagram methods",
+    "description": "The label for category 'Diagram methods' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Diagram events": {
+    "message": "Diagram events",
+    "description": "The label for category 'Diagram events' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Diagram properties": {
+    "message": "Diagram properties",
+    "description": "The label for category 'Diagram properties' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Diagram Editor API": {
+    "message": "Diagram Editor API",
+    "description": "The label for category 'Diagram Editor API' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Diagram Editor API.link.generated-index.title": {
+    "message": "Diagram Editor API",
+    "description": "The generated-index page title for category 'Diagram Editor API' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Editor API": {
+    "message": "Editor API",
+    "description": "The label for category 'Editor API' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Editor methods": {
+    "message": "Editor methods",
+    "description": "The label for category 'Editor methods' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Editor events": {
+    "message": "Editor events",
+    "description": "The label for category 'Editor events' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Editor properties": {
+    "message": "Editor properties",
+    "description": "The label for category 'Editor properties' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.History manager API": {
+    "message": "History manager API",
+    "description": "The label for category 'History manager API' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.History manager methods": {
+    "message": "History manager methods",
+    "description": "The label for category 'History manager methods' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.History manager properties": {
+    "message": "History manager properties",
+    "description": "The label for category 'History manager properties' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Copy manager API": {
+    "message": "Copy manager API",
+    "description": "The label for category 'Copy manager API' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Copy manager methods": {
+    "message": "Copy manager methods",
+    "description": "The label for category 'Copy manager methods' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.View API": {
+    "message": "View API",
+    "description": "The label for category 'View API' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.View methods": {
+    "message": "View methods",
+    "description": "The label for category 'View methods' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.View events": {
+    "message": "View events",
+    "description": "The label for category 'View events' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Toolbar API": {
+    "message": "Toolbar API",
+    "description": "The label for category 'Toolbar API' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Toolbar methods": {
+    "message": "Toolbar methods",
+    "description": "The label for category 'Toolbar methods' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Toolbar properties": {
+    "message": "Toolbar properties",
+    "description": "The label for category 'Toolbar properties' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Toolbar properties.link.generated-index.title": {
+    "message": "Toolbar properties",
+    "description": "The generated-index page title for category 'Toolbar properties' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Toolbar events": {
+    "message": "Toolbar events",
+    "description": "The label for category 'Toolbar events' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Editbar API": {
+    "message": "Editbar API",
+    "description": "The label for category 'Editbar API' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Editbar properties": {
+    "message": "Editbar properties",
+    "description": "The label for category 'Editbar properties' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Editbar properties.link.generated-index.title": {
+    "message": "Editbar properties",
+    "description": "The generated-index page title for category 'Editbar properties' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Basic controls": {
+    "message": "Basic controls",
+    "description": "The label for category 'Basic controls' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Complex controls": {
+    "message": "Complex controls",
+    "description": "The label for category 'Complex controls' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Shapebar API": {
+    "message": "Shapebar API",
+    "description": "The label for category 'Shapebar API' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Shapebar properties": {
+    "message": "Shapebar properties",
+    "description": "The label for category 'Shapebar properties' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Shapebar properties.link.generated-index.title": {
+    "message": "Shapebar properties",
+    "description": "The generated-index page title for category 'Shapebar properties' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Items API": {
+    "message": "Items API",
+    "description": "The label for category 'Items API' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Items API.link.generated-index.title": {
+    "message": "Items API",
+    "description": "The generated-index page title for category 'Items API' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Common API": {
+    "message": "Common API",
+    "description": "The label for category 'Common API' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Common API.link.generated-index.title": {
+    "message": "Common API",
+    "description": "The generated-index page title for category 'Common API' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.CellManager API": {
+    "message": "CellManager API",
+    "description": "The label for category 'CellManager API' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.CellManager methods": {
+    "message": "CellManager methods",
+    "description": "The label for category 'CellManager methods' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.CellManager events": {
+    "message": "CellManager events",
+    "description": "The label for category 'CellManager events' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.DataCollection API": {
+    "message": "DataCollection API",
+    "description": "The label for category 'DataCollection API' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.DataCollection methods": {
+    "message": "DataCollection methods",
+    "description": "The label for category 'DataCollection methods' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.DataCollection events": {
+    "message": "DataCollection events",
+    "description": "The label for category 'DataCollection events' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Export methods": {
+    "message": "Export methods",
+    "description": "The label for category 'Export methods' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.InlineEditor events": {
+    "message": "InlineEditor events",
+    "description": "The label for category 'InlineEditor events' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Selection API": {
+    "message": "Selection API",
+    "description": "The label for category 'Selection API' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Selection methods": {
+    "message": "Selection methods",
+    "description": "The label for category 'Selection methods' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Selection events": {
+    "message": "Selection events",
+    "description": "The label for category 'Selection events' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Guides": {
+    "message": "Guides",
+    "description": "The label for category 'Guides' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Diagram": {
+    "message": "Diagram",
+    "description": "The label for category 'Diagram' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Diagram.link.generated-index.title": {
+    "message": "Diagram",
+    "description": "The generated-index page title for category 'Diagram' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Diagram items": {
+    "message": "Diagram items",
+    "description": "The label for category 'Diagram items' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Shapes": {
+    "message": "Shapes",
+    "description": "The label for category 'Shapes' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Shapes.link.generated-index.title": {
+    "message": "Shapes",
+    "description": "The generated-index page title for category 'Shapes' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Diagram Editor": {
+    "message": "Diagram Editor",
+    "description": "The label for category 'Diagram Editor' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Diagram Editor.link.generated-index.title": {
+    "message": "Diagram editor",
+    "description": "The generated-index page title for category 'Diagram Editor' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Themes": {
+    "message": "Themes",
+    "description": "The label for category 'Themes' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Themes.link.generated-index.title": {
+    "message": "Themes",
+    "description": "The generated-index page title for category 'Themes' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Integrations": {
+    "message": "Integrations",
+    "description": "The label for category 'Integrations' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Integrations.link.generated-index.title": {
+    "message": "Integrations",
+    "description": "The generated-index page title for category 'Integrations' in sidebar 'docs'"
+  }
+}
