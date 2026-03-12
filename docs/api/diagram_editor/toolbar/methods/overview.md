@@ -10,7 +10,7 @@ description: You can learn about Toolbar methods in the documentation of the DHT
 Use the [`parse()`](api/diagram_editor/toolbar/methods/parse_method.md) method to manipulate data in Toolbar. 
 :::
 
-You can use the following [**Toolbar**](https://docs.dhtmlx.com/suite/category/toolbar-methods/) methods of [**Suite 8**](https://docs.dhtmlx.com/suite/):
+You can use the following [**Toolbar**](https://docs.dhtmlx.com/suite/category/toolbar-methods/) methods of [**Suite**](https://docs.dhtmlx.com/suite/):
 
 | Name                                                                                  | Description                                                |
 | :------------------------------------------------------------------------------------ | :--------------------------------------------------------- |
@@ -45,7 +45,7 @@ editor.toolbar.disable();
 
 # TreeCollection methods overview
 
-You can use the following [**TreeCollection**](https://docs.dhtmlx.com/suite/category/treecollection-methods/) methods of [**Suite 8**](https://docs.dhtmlx.com/suite/):
+You can use the following [**TreeCollection**](https://docs.dhtmlx.com/suite/category/treecollection-methods/) methods of [**Suite**](https://docs.dhtmlx.com/suite/):
 
 | Name                                                                                        | Description                                                      |
 | ------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
