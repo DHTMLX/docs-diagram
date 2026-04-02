@@ -8,6 +8,16 @@ description: You can learn a new information about DHTMLX JavaScript Diagram lib
 
 If you are updating Diagram from an older version, check [Migration to Newer Version](migration.md) for details.
 
+## Version 6.1.2 
+
+Released on April 2, 2026
+
+### Fixes
+
+- Diagram Editor. The issue with connector creation for shapes with negative coordinates is fixed
+- Diagram Editor. The issue where pressing the Backspace key during inline text editing would delete the shape or the line title is fixed
+- Export. A security vulnerability in PDF/PNG export that allowed arbitrary local file access via HTML injection is fixed through improved sanitization and environment hardening
+
 ## Version 6.1.1 
 
 Released on February 5, 2026
