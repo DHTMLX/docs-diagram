@@ -21,7 +21,7 @@ You can try all themes in the example below:
 
 ## Light theme (default)
 
-![](../../assets/light_theme.png)
+![Light theme](/assets/light_theme.png)
 
 The default **"light"** theme is configured on the base of the CSS variables which are listed below:
 
@@ -206,7 +206,7 @@ The default **"light"** theme is configured on the base of the CSS variables whi
 
 ## Light high contrast theme
 
-![](../../assets/light_high_contrast_theme.png)
+![Light high contrast theme](/assets/light_high_contrast_theme.png)
 
 The **"contrast-light"** theme is configured both on the base of the [root CSS variables](#light-theme-default) and the variables which are listed below:
 
@@ -251,7 +251,7 @@ The **"contrast-light"** theme is configured both on the base of the [root CSS v
 
 ## Dark theme
 
-![](../../assets/dark_theme.png)
+![Dark theme](/assets/dark_theme.png)
 
 The **"dark"** theme is configured both on the base of the [root CSS variables](#light-theme-default) and the variables which are listed below:
 
@@ -314,7 +314,7 @@ The **"dark"** theme is configured both on the base of the [root CSS variables](
 
 ## Dark high contrast theme
 
-![](../../assets/dark_high_contrast_theme.png)
+![Dark high contrast theme](/assets/dark_high_contrast_theme.png)
 
 The **"contrast-dark"** theme is configured both on the base of the [root CSS variables](#light-theme-default) and the variables which are listed below:
 
@@ -382,7 +382,7 @@ The **"contrast-dark"** theme is configured both on the base of the [root CSS va
 
 ## Setting themes
 
-To set the necessary theme, be it a [built-in Diagram theme](diagram/guides/themes.md) or a [custom one](diagram/guides/themes/custom_theme.md), use one of the ways described below:
+To set the necessary theme, be it a [built-in Diagram theme](/guides/themes/) or a [custom one](/guides/themes/custom_theme/), use one of the ways described below:
 
 ### Using the ***data-dhx-theme*** attribute
 
@@ -407,7 +407,7 @@ The ***dhx.setTheme()*** method takes the following parameters:
 
 - `theme: string` - (required) the name of the theme. It can be:
     - the name of the Diagram theme: *"light" | "contrast-light" | "dark" | "contrast-dark"*
-    - the name of a [custom theme](guides/themes/custom_theme.md)
+    - the name of a [custom theme](/guides/themes/custom_theme/)
     - *"light"* - by default
 - `container: string | HTMLElement` - (optional) the container to which the theme must be applied. It can be:
     - an HTMLElement

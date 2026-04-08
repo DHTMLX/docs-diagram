@@ -57,6 +57,6 @@ You must use only absolute paths not relative ones
 
 **Change log**: Added in v3.1
 
-**Related articles**: [Exporting Diagram](../../../guides/data_export/)
+**Related articles**: [Exporting Diagram](/guides/data_export/)
 
 **Related sample**: [Diagram. Export. Export styles](https://snippet.dhtmlx.com/jm8if6nh)

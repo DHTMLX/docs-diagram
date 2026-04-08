@@ -8,7 +8,7 @@ description: You can explore the ToggleGroup control of Editbar in the documenta
 
 @short: The basic control for creating groups of toggle buttons.
 
-![ToggleGroup control](../../../../assets/editbar-basic-controls/togglegroup.png)
+![ToggleGroup control](/assets/editbar-basic-controls/togglegroup.png)
 
 ## Usage
 

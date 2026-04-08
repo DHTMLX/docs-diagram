@@ -8,7 +8,7 @@ description: You can explore the Datepicker control of Editbar in the documentat
 
 @short: The basic control for selecting a date.
 
-![Datepicker control](../../../../assets/editbar-basic-controls/datepicker.png)
+![Datepicker control](/assets/editbar-basic-controls/datepicker.png)
 
 ## Usage
 

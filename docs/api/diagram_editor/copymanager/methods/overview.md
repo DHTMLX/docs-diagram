@@ -8,7 +8,7 @@ description: You can explore the Copy manager methods in the documentation of th
 
 | Name                                                                     | Description                                                                 |
 | :----------------------------------------------------------------- | :--------------------------------------------------------------------- |
-| [](api/diagram_editor/copymanager/methods/copy_method.md)             | @getshort(api/diagram_editor/copymanager/methods/copy_method.md)       |
-| [](api/diagram_editor/copymanager/methods/copystyles_method.md)    | @getshort(api/diagram_editor/copymanager/methods/copystyles_method.md) |
-| [](api/diagram_editor/copymanager/methods/paste_method.md)         | @getshort(api/diagram_editor/copymanager/methods/paste_method.md)      |
-| [](api/diagram_editor/copymanager/methods/pastestyles_method.md)   | @getshort(api/diagram_editor/copymanager/methods/pastestyles_method.md)|
+| [copy()](/api/diagram_editor/copymanager/methods/copy_method/)             | @getshort(/api/diagram_editor/copymanager/methods/copy_method.md)       |
+| [copyStyles()](/api/diagram_editor/copymanager/methods/copystyles_method/)    | @getshort(/api/diagram_editor/copymanager/methods/copystyles_method.md) |
+| [paste()](/api/diagram_editor/copymanager/methods/paste_method/)         | @getshort(/api/diagram_editor/copymanager/methods/paste_method.md)      |
+| [pasteStyles()](/api/diagram_editor/copymanager/methods/pastestyles_method/)   | @getshort(/api/diagram_editor/copymanager/methods/pastestyles_method.md)|

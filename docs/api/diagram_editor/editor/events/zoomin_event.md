@@ -20,7 +20,7 @@ description: You can learn about the zoomIn event of editor in the documentation
 
 The callback of the **zoomIn** event is called with the following parameter:
 
-- `step` - (required) a value that displays the step of the [`scale`](api/diagram_editor/editor/config/scale_property.md) property.
+- `step` - (required) a value that displays the step of the [`scale`](/api/diagram_editor/editor/config/scale_property/) property.
 
 :::info
 For handling the inner events of Diagram Editor you can use the **on()** method.

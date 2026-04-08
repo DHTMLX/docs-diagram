@@ -8,7 +8,7 @@ description: You can explore the Container control of Editbar in the documentati
 
 @short: The basic control for attaching an HTML code.
 
-![Container control](../../../../assets/editbar-basic-controls/container.png)
+![Container control](/assets/editbar-basic-controls/container.png)
 
 ## Usage
 

@@ -18,11 +18,11 @@ You can choose shapes of desired types, link them by suitable connectors and bui
 
 | [Data Planning Model](https://snippet.dhtmlx.com/e6zm6wh1) | [Vertical Decision Tree](https://snippet.dhtmlx.com/t6t8ay80) | [Wide Flowchart](https://snippet.dhtmlx.com/4d4k3o8p) |
 | ---------------------------------------------------------- | ------------------------------------------------------------- | ----------------------------------------------------- |
-| ![](assets/icon_data_planning_model.png)                   | ![](assets/icon_vert_decision_tree.png)                       | ![](assets/icon_wide_diagram.png)                     |
+| ![Data planning model](/assets/icon_data_planning_model.png)                   | ![Vertical decision tree](/assets/icon_vert_decision_tree.png)                       | ![Wide diagram](/assets/icon_wide_diagram.png)                     |
 
 | [Decision Tree](https://snippet.dhtmlx.com/7bn52dl1) | [Activity Diagram](https://snippet.dhtmlx.com/a9t2z2dt) |
 | ---------------------------------------------------- | ------------------------------------------------------- |
-| ![](assets/icon_decision_tree.png)                   | ![](assets/icon_activity.png)                           |
+| ![Decision tree](/assets/icon_decision_tree.png)                   | ![Activity diagram](/assets/icon_activity.png)                           |
 
 ### Custom shapes
 
@@ -30,11 +30,11 @@ You can easily create [your own templates of shapes](/shapes/custom_shape/) and 
 
 | [Life Cycle Diagram](https://snippet.dhtmlx.com/y4k51owl) | [Venn Diagram template](https://snippet.dhtmlx.com/2tzyfois) | [UML Class Diagram template](https://snippet.dhtmlx.com/madymxt5) |
 | --------------------------------------------------------- | --------------------------------------------------- | -------------------------------------------------------- |
-| ![](assets/sticky.png)                                    | ![](assets/venn.png)                                | ![](assets/html.png)                                     |
+| ![Life cycle diagram](/assets/sticky.png)                                    | ![Venn diagram template](/assets/venn.png)                                | ![UML class diagram](/assets/html.png)                                     |
 
 | [Network Diagram template](https://snippet.dhtmlx.com/u1xqyo9w) | [Game levels and locations](https://snippet.dhtmlx.com/1h4j9gb3) |
 | ------------------------------------------------------ | ---------------------------------------------------------------- |
-| ![](assets/network.png)                                | ![](assets/game_levels.png)                                      |
+| ![Network diagram](/assets/network.png)                                | ![Game levels](/assets/game_levels.png)                                      |
 
 ### Groups
 
@@ -42,7 +42,7 @@ You can draw simple or more complicated schemes by grouping shapes in different 
 
 | [Diagram Editor. Default mode. Virtual private cloud architecture](https://snippet.dhtmlx.com/0hf8ahrb) |
 | ------------------------------------------------------------------------------------------------ |
-| ![](assets/virtual_cloud.png)                                                                    |
+| ![Virtual cloud](/assets/virtual_cloud.png)                                                                    |
 
 ### Swimlanes
 
@@ -50,7 +50,7 @@ Usage of swimlanes of the DHTMLX Diagram library lets you represent any process 
 
 | [Diagram. Default mode. Swimlane template](https://snippet.dhtmlx.com/z6x5m3gb) |
 | ------------------------------------------------------------------------------- |
-| ![](assets/swimlane.png)                                                        |
+| ![Swimlanes](/assets/swimlane.png)                                                        |
 
 ### Line titles
 
@@ -66,13 +66,13 @@ There is also an org chart mode of Diagram that presents a set of shapes connect
 
 ### Assistant and partner shapes
 
-A parent shape of any level can have assistant or partner items. The assistant and partner shapes can't be parent items. The assistant and partner items can be added in the [editor](./editor_overview/#editor-in-the-org-chart-mode) or by preparing a [data set](guides/loading_data.md/#preparing-data-to-load).
+A parent shape of any level can have assistant or partner items. The assistant and partner shapes can't be parent items. The assistant and partner items can be added in the [editor](/editor_overview/#editor-in-the-org-chart-mode) or by preparing a [data set](/guides/loading_data/#preparing-data-to-load).
 
 In the hierarchical order, the assistant items are displayed between parent and children shapes.
 
 | [Diagram editor. Org chart mode. Basic initialization](https://snippet.dhtmlx.com/og4qm3ja) |
 | ------------------------------------------------------------------------------------------- |
-| ![](assets/orgchart_with_assistant.png)                                                     |
+| ![Org chart with assistant](/assets/orgchart_with_assistant.png)                                                     |
 
 The connection between parent shape and its partner items is always horizontal. Also, the connections between parent shape and all its children become horizontal when you add the partner item for a parent, even if the connections were vertical before.
 
@@ -84,11 +84,11 @@ Here are examples of how the connections of parent shapes look like with one, tw
 
 | One partner                               | Two  partners                              |
 | ----------------------------------------- | ------------------------------------------ |
-| ![](assets/orgchart_with_one_partner.png) | ![](assets/orgchart_with_two_partners.png) |
+| ![Org chart with one partner](/assets/orgchart_with_one_partner.png) | ![Org chart with two partners](/assets/orgchart_with_two_partners.png) |
 
 | Three partners                               | Four partners                               |
 | -------------------------------------------- | ------------------------------------------- |
-| ![](assets/orgchart_with_three_partners.png) | ![](assets/orgchart_with_four_partners.png) |
+| ![Org chart with three partners](/assets/orgchart_with_three_partners.png) | ![Org chart with four partners](/assets/orgchart_with_four_partners.png) |
 
 ### Custom shapes
 
@@ -96,7 +96,7 @@ An example of adding custom shapes for creating a diagram to present the hierarc
 
 | [Diagram Editor. Org chart mode. Medical hierarchy diagram template](https://snippet.dhtmlx.com/8fubjmlz) |
 | -------------------------------------------------------------------------------------------------- |
-| ![](assets/medical_hierarchy_overview.png)                                                         |
+| ![Medical hierarchy overview](/assets/medical_hierarchy_overview.png)                                                         |
 
 ## Diagram in the mindmap mode
 
@@ -104,7 +104,7 @@ The Mindmap mode is used to represent a core topic or idea surrounded by the bra
 
 | [Diagram. Mindmap mode. Emotions mind map](https://snippet.dhtmlx.com/twd25ww1) |
 | ------------------------------------------------------------------------------- |
-| ![](assets/mindmap_emotions.png)                                                |
+| ![Emotions mind map](/assets/mindmap_emotions.png)                                                |
 
 The shapes are connected by curved lines and arranged around a central shape of the diagram.
 
@@ -143,4 +143,4 @@ You can apply the zoom template to your diagram to be able to change its appeara
 
 ## What's next
 
-Now you can learn about using DHTMLX Diagram Editor in your application. Read the [Diagram Editor overview](editor_overview.md) to get more about this tool.
+Now you can learn about using DHTMLX Diagram Editor in your application. Read the [Diagram Editor overview](/editor_overview/) to get more about this tool.

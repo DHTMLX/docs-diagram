@@ -8,7 +8,7 @@ description: You can explore the Toggle control of Editbar in the documentation 
 
 @short: The basic control that represents a special button which can change its state from the pressed to the unpressed one when clicked.
 
-![Toggle control](../../../../assets/editbar-basic-controls/toggle.png)
+![Toggle control](/assets/editbar-basic-controls/toggle.png)
 
 ## Usage
 

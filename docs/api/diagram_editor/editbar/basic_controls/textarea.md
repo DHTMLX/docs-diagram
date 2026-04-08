@@ -8,7 +8,7 @@ description: You can explore the Textarea control of Editbar in the documentatio
 
 @short: The basic control for entering a simple multi-line text.
 
-![Textarea control](../../../../assets/editbar-basic-controls/textarea.png)
+![Textarea control](/assets/editbar-basic-controls/textarea.png)
 
 ## Usage
 

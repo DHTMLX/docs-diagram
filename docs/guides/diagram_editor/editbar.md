@@ -6,9 +6,9 @@ description: You can learn about the Editbar of editor in the documentation of t
 
 # Editbar
 
-You can configure Editbar controls for each Diagram element separately and for a [group of elements](/guides/items_index) taking into account various conditions. For this purpose, use the Editbar [`properties`](api/diagram_editor/editbar/config/properties_property.md) config.
+You can configure Editbar controls for each Diagram element separately and for a [group of elements](/guides/items_index) taking into account various conditions. For this purpose, use the Editbar [`properties`](/api/diagram_editor/editbar/config/properties_property/) config.
 
-If you want to configure Editbar controls for an individual [shape](/category/shapes), you need to specify the corresponding **shape type** within the [`properties`](api/diagram_editor/editbar/config/properties_property.md) config as shown in the example below:
+If you want to configure Editbar controls for an individual [shape](/category/shapes), you need to specify the corresponding **shape type** within the [`properties`](/api/diagram_editor/editbar/config/properties_property/) config as shown in the example below:
 
 ~~~jsx {6-9}
 const editor = new dhx.DiagramEditor("editor_container", {
@@ -27,7 +27,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 ~~~
 
-To configure a [group of elements](/guides/items_index), you need to use the following service properties within the [`properties`](api/diagram_editor/editbar/config/properties_property.md) config:
+To configure a [group of elements](/guides/items_index), you need to use the following service properties within the [`properties`](/api/diagram_editor/editbar/config/properties_property/) config:
 
 - [`$default`](#configure-editbar-for-the-grid-area) - allows configuring Editbar controls if no elements are selected, or more than one element is selected
 - [`$shape`](#configure-editbar-for-shapes) - allows configuring Editbar controls for [all shapes including custom shapes](/category/shapes)
@@ -152,12 +152,12 @@ properties: {
 
 ## Create and configure custom Editbar controls
 
-You can use the [`controls`](api/diagram_editor/editbar/config/controls_property.md) property of the Editbar view to create a custom control based on [**Basic controls**](api/diagram_editor/editbar/basic_controls_overview.md) and/or [**Complex controls**](api/diagram_editor/editbar/complex_controls_overview.md).
+You can use the [`controls`](/api/diagram_editor/editbar/config/controls_property/) property of the Editbar view to create a custom control based on [**Basic controls**](/api/diagram_editor/editbar/basic_controls_overview/) and/or [**Complex controls**](/api/diagram_editor/editbar/complex_controls_overview/).
 
 :::warning
-We do not recommend you to use a default control type (refer to the [***Basic controls***](api/diagram_editor/editbar/basic_controls_overview.md) and/or [***Complex controls***](api/diagram_editor/editbar/complex_controls_overview.md)) as the name for a custom control. Use the unique name for each custom control to avoid errors!
+We do not recommend you to use a default control type (refer to the [***Basic controls***](/api/diagram_editor/editbar/basic_controls_overview/) and/or [***Complex controls***](/api/diagram_editor/editbar/complex_controls_overview/)) as the name for a custom control. Use the unique name for each custom control to avoid errors!
 :::
 
-After creating a custom control, you need to apply it to the needed Diagram element via the [`properties`](api/diagram_editor/editbar/config/properties_property.md) property.
+After creating a custom control, you need to apply it to the needed Diagram element via the [`properties`](/api/diagram_editor/editbar/config/properties_property/) property.
 
 <iframe src="https://snippet.dhtmlx.com/w8mrh3ay?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>

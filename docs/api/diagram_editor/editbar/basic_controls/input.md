@@ -8,7 +8,7 @@ description: You can explore the Input control of Editbar in the documentation o
 
 @short: The basic input field control for typing some text inside.
 
-![Input control](../../../../assets/editbar-basic-controls/input.png)
+![Input control](/assets/editbar-basic-controls/input.png)
 
 ## Usage
 

@@ -10,7 +10,7 @@ Inline editing lets you edit the text content of a diagram item by double-clicki
 
 Inline editing for Lines is enabled only in the default mode of Diagram.
 
-![](../assets/inline_editing.gif)
+![Inline editing](/assets/inline_editing.gif)
 
 :::note 
 Inline editing does not work for custom shapes.
@@ -106,4 +106,4 @@ const data = [
 
 ## API events
 
-The library includes a set of helpful [API events](../../api/inline_editor/) which you can use to control the behavior of the editor on its opening/closing, as well as to control the process of editing the text of the items.
+The library includes a set of helpful [API events](/api/inline_editor/) which you can use to control the behavior of the editor on its opening/closing, as well as to control the process of editing the text of the items.

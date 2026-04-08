@@ -11,9 +11,9 @@ description: You can learn about the controls property of Editbar in the documen
 @short: Optional. A set of configurations that defines one or several custom controls
 
 :::info
-The `controls` property allows you to create custom **Editbar** controls based on [**Basic controls**](api/diagram_editor/editbar/basic_controls_overview.md) and/or [**Complex controls**](api/diagram_editor/editbar/complex_controls_overview.md). Use the [`properties`](api/diagram_editor/editbar/config/properties_property.md) property to apply the custom control(s) to the needed elements (shapes, groups, swimlanes, etc.).
+The `controls` property allows you to create custom **Editbar** controls based on [**Basic controls**](/api/diagram_editor/editbar/basic_controls_overview/) and/or [**Complex controls**](/api/diagram_editor/editbar/complex_controls_overview/). Use the [`properties`](/api/diagram_editor/editbar/config/properties_property/) property to apply the custom control(s) to the needed elements (shapes, groups, swimlanes, etc.).
 
-Refer to the [**Editbar configuration**](guides/diagram_editor/editbar.md) guide for more information about configuring!
+Refer to the [**Editbar configuration**](/guides/diagram_editor/editbar/) guide for more information about configuring!
 :::
 
 :::important
@@ -31,7 +31,7 @@ controls?: {
 ### Parameters
 
 - `type` - the type name of a custom control
-    - `object` - the configuration object of a new control based on [**Basic controls**](api/diagram_editor/editbar/basic_controls_overview.md) and/or [**Complex controls**](api/diagram_editor/editbar/complex_controls_overview.md)
+    - `object` - the configuration object of a new control based on [**Basic controls**](/api/diagram_editor/editbar/basic_controls_overview/) and/or [**Complex controls**](/api/diagram_editor/editbar/complex_controls_overview/)
 
 ~~~jsx
 controls: {
@@ -78,6 +78,6 @@ const editor = new dhx.DiagramEditor("editor_container", {
 
 **Change log**: The property was added in v6.0
 
-**Related article:** [**Editbar configuration**](guides/diagram_editor/editbar.md)
+**Related article:** [**Editbar configuration**](/guides/diagram_editor/editbar/)
 
 **Related sample:** [Diagram Editor. Default mode. PERT сhart with the legend](https://snippet.dhtmlx.com/w8mrh3ay?mode=wide)

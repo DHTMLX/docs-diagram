@@ -12,11 +12,11 @@ description: You can learn about the properties property of Editbar in the docum
 
 :::info
 The `properties` config allows you to do the following:
-- modify Editbar controls for all or individual Diagram elements based on [**Basic controls**](api/diagram_editor/editbar/basic_controls_overview.md) and/or [**Complex controls**](api/diagram_editor/editbar/complex_controls_overview.md)
-- apply custom Editbar control(s) defined via the [`controls`](api/diagram_editor/editbar/config/controls_property.md) property to Diagram elements
+- modify Editbar controls for all or individual Diagram elements based on [**Basic controls**](/api/diagram_editor/editbar/basic_controls_overview/) and/or [**Complex controls**](/api/diagram_editor/editbar/complex_controls_overview/)
+- apply custom Editbar control(s) defined via the [`controls`](/api/diagram_editor/editbar/config/controls_property/) property to Diagram elements
 - specify conditions for applying an Editbar control (custom or default) to Diagram elements
 
-Refer to the [**Editbar configuration**](guides/diagram_editor/editbar.md) guide for more information about configuring!
+Refer to the [**Editbar configuration**](/guides/diagram_editor/editbar/) guide for more information about configuring!
 :::
 
 ### Usage
@@ -53,12 +53,12 @@ properties: {
 
 You can also configure Editbar controls for a separate group of Diagram elements. There are the following service properties to configure groups:
 
-- [`$default`](guides/diagram_editor/editbar.md#configure-editbar-for-the-grid-area) - allows configuring Editbar controls if no elements are selected, or more than one element is selected
-- [`$shape`](guides/diagram_editor/editbar.md#configure-editbar-for-shapes) - allows configuring Editbar controls for all shapes including custom shapes
-- [`$group`](guides/diagram_editor/editbar.md#configure-editbar-for-group-elements) - allows configuring Editbar controls for all elements with the "group" type
-- [`$swimlane`](guides/diagram_editor/editbar.md#configure-editbar-for-swimlanes) - allows configuring Editbar controls for all elements with the "swimlane" type
-- [`$line`](guides/diagram_editor/editbar.md#configure-editbar-for-lines) - allows configuring Editbar controls for all elements with the "line" type
-- [`$lineTitle`](guides/diagram_editor/editbar.md#configure-editbar-for-line-titles) - allows configuring Editbar controls for all elements with the "lineTitle" type
+- [`$default`](/guides/diagram_editor/editbar/#configure-editbar-for-the-grid-area) - allows configuring Editbar controls if no elements are selected, or more than one element is selected
+- [`$shape`](/guides/diagram_editor/editbar/#configure-editbar-for-shapes) - allows configuring Editbar controls for all shapes including custom shapes
+- [`$group`](/guides/diagram_editor/editbar/#configure-editbar-for-group-elements) - allows configuring Editbar controls for all elements with the "group" type
+- [`$swimlane`](/guides/diagram_editor/editbar/#configure-editbar-for-swimlanes) - allows configuring Editbar controls for all elements with the "swimlane" type
+- [`$line`](/guides/diagram_editor/editbar/#configure-editbar-for-lines) - allows configuring Editbar controls for all elements with the "line" type
+- [`$lineTitle`](/guides/diagram_editor/editbar/#configure-editbar-for-line-titles) - allows configuring Editbar controls for all elements with the "lineTitle" type
 
 ~~~jsx
 properties: {
@@ -126,6 +126,6 @@ const editor = new dhx.DiagramEditor("editor_container", {
 
 **Change log**: The property was added in v6.0
 
-**Related article:** [**Editbar configuration**](guides/diagram_editor/editbar.md)
+**Related article:** [**Editbar configuration**](/guides/diagram_editor/editbar/)
 
 **Related sample:** [Diagram Editor. Default mode. Customization of editbar. Added shape counter](https://snippet.dhtmlx.com/ealq0m4l?mode=wide)

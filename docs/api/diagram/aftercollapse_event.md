@@ -44,4 +44,4 @@ diagram.events.on("afterCollapse", (id, dir) => {
 
 **Change log**: The **dir** parameter was added in v3.1
 
-**Related article**: [Event handling](../../../guides/event_handling/)
+**Related article**: [Event handling](/guides/event_handling/)

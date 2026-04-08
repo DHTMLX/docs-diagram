@@ -69,5 +69,5 @@ editor.diagram.events.on("beforeUnSelect", ({ id }) => {
 
 **Related articles**:  
 
-- [diagram.config.select](../../../api/diagram/select_property/)
-- [Selecting items](../../../guides/manipulating_items/#selecting-items)
+- [diagram.config.select](/api/diagram/select_property/)
+- [Selecting items](/guides/manipulating_items/#selecting-items)

@@ -62,14 +62,14 @@ const diagram = new dhx.Diagram("diagram_container", {
 
 The result of applying the **lineGap** property is shown in the image below:
 
-![](../../assets/linegap_config.png)
+![lineGap config](/assets/linegap_config.png)
 
 **Related sample**: [Diagram. Default mode. Activity diagram](https://snippet.dhtmlx.com/a9t2z2dt)
 
 **Change log**:
 
 - The `connectType` parameter is added in v6.1
-- The `lineGap` parameter is added in v5.0 (check the [Migration article](diagram/migration.md/#42---50))
+- The `lineGap` parameter is added in v5.0 (check the [Migration article](/migration/#42---50))
 - Added in v4.2
 
-**Related articles**: [Setting connections between shapes](../../../lines/#setting-connections-between-shapes)
+**Related articles**: [Setting connections between shapes](/lines/#setting-connections-between-shapes)

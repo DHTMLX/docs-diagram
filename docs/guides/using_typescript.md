@@ -12,7 +12,7 @@ Starting from v3.1, the library of DHTMLX Diagram provides the ability to use Ty
 You can try out the functionality directly in our <a href="https://snippet.dhtmlx.com/ybpmz0zk"  target="_blank">Snippet Tool</a>.
 :::
 
-![](../assets/typescript.png)
+![Typescript](/assets/typescript.png)
 
 ## Advantages of using TypeScript
 

@@ -120,9 +120,9 @@ layout: [
 ]
 ~~~
 
-![](../assets/swimlane_cells.png)
+![Swimlane cells](/assets/swimlane_cells.png)
 
-If needed you can group a range of cells and remove a border(s) between them. To do this, choose any cell from the range and replace unique numbers of the cell(s) from the range with the number of this cell.<br>
+If needed you can group a range of cells and remove a border(s) between them. To do this, choose any cell from the range and replace unique numbers of the cell(s) from the range with the number of this cell.<br />
 Here is an example of grouping first two cells placed in the first row:
 
 ~~~jsx
@@ -134,7 +134,7 @@ layout: [
 
 The result will look like this:
 
-![](../assets/swimlane_merge_cell_row.png)
+![Swimlane merge cell row](/assets/swimlane_merge_cell_row.png)
 
 Here is an example of grouping the cells placed in the second column:
 
@@ -147,7 +147,7 @@ layout: [
 
 The result:
 
-![](../assets/swimlane_merge_cell_col.png)
+![Swimlane merge cell column](/assets/swimlane_merge_cell_col.png)
 
 **Related sample**:	[Diagram editor. Default mode. Configuring columns and rows in swimlanes](https://snippet.dhtmlx.com/uzx5ulal)
 

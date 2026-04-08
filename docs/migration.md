@@ -12,10 +12,10 @@ description: You can learn about the Migration to Newer Versions in the document
 
 The main parts of the Diagram Editor are renamed:
 
-- Left panel -> [Shapebar](guides/diagram_editor/shapebar.md)
-- Right panel -> [Editbar](guides/diagram_editor/editbar.md) is [provided with a flexible configuration](/whats_new/#new-functionality)
+- Left panel -> [Shapebar](/guides/diagram_editor/shapebar/)
+- Right panel -> [Editbar](/guides/diagram_editor/editbar/) is [provided with a flexible configuration](/whats_new/#new-functionality)
 
-The default [Toolbar](guides/diagram_editor/toolbar.md) structure has been modified. It became highly configurable as well, so you can also add custom Toolbar elements.
+The default [Toolbar](/guides/diagram_editor/toolbar/) structure has been modified. It became highly configurable as well, so you can also add custom Toolbar elements.
 
 ### Diagram Editor API
 
@@ -38,7 +38,7 @@ Check the related API overview guides to explore the new possibilities of managi
 
 #### Deprecated methods
 
-- The `setViewMode()` method of Diagram Editor is deprecated and no longer supported. Instead, use the [`show()`](../api/diagram_editor/view/methods/show_method/)/[`hide()`](../api/diagram_editor/view/methods/hide_method/) methods of the `view` object.
+- The `setViewMode()` method of Diagram Editor is deprecated and no longer supported. Instead, use the [`show()`](/api/diagram_editor/view/methods/show_method/)/[`hide()`](/api/diagram_editor/view/methods/hide_method/) methods of the `view` object.
 
 ~~~jsx {4} title="Before v6.0"
 const editor = new dhx.DiagramEditor("editor_container");
@@ -413,7 +413,7 @@ Due to the modifications in the Diagram editor interface, the locale settings ha
 
 ### Diagram API
 
-The **lineGap** property of Diagram is deprecated and no longer supported. Instead, use the **lineGap** parameter of the [lineConfig](diagram/api/diagram/lineconfig_property.md) property.
+The **lineGap** property of Diagram is deprecated and no longer supported. Instead, use the **lineGap** parameter of the [lineConfig](/api/diagram/lineconfig_property/) property.
 
 ~~~jsx {3} title="Before v5.0"
 const diagram = new dhx.Diagram("diagram_container", { 
@@ -459,7 +459,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 
 In v4.2, the **defaultLinkType** property is deprecated. 
 
-Starting from v4.2, you need to apply the new [lineConfig](../api/diagram/lineconfig_property/) property to specify the default type for connector lines.
+Starting from v4.2, you need to apply the new [lineConfig](/api/diagram/lineconfig_property/) property to specify the default type for connector lines.
 
 ~~~jsx title="Before v4.2"
 const diagram = new dhx.Diagram("diagram_container", { 
@@ -510,7 +510,7 @@ Besides, it became possible to specify other basic sets of items via the related
 
 ### API
 
-The **shapeHover** event has been deprecated in v4.0. Starting with v4.0, use the new [itemMouseOver](../api/diagram/itemmouseover_event/) event instead.
+The **shapeHover** event has been deprecated in v4.0. Starting with v4.0, use the new [itemMouseOver](/api/diagram/itemmouseover_event/) event instead.
 
 ~~~jsx title="Before v4.0"
 diagram.events.on("shapeHover", (id,e) => {
@@ -585,7 +585,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 
 To enable/disable a toolbar button you need to specify the value of the control to *true* (by default) or *false*.
 
-See the full list of the available controls in the [Toolbar](../guides/diagram_editor/toolbar/) article.
+See the full list of the available controls in the [Toolbar](/guides/diagram_editor/toolbar/) article.
 
 ## 1.1 -> 2.0
 
@@ -595,18 +595,18 @@ See the full list of the available controls in the [Toolbar](../guides/diagram_e
 
 ### Changed API
 
-- diagram.addItem -> [diagram.data.add](../api/data_collection/add_method/)
-- diagram.attachEvent -> [diagram.events.on](../guides/event_handling/#attaching-event-listeners)
-- diagram.callEvent -> [diagram.events.fire](../guides/event_handling/#calling-events)
-- diagram.clearAll -> [diagram.data.removeAll](../api/data_collection/removeall_method/)
-- diagram.deleteItem -> [diagram.data.remove](../api/data_collection/remove_method/)
-- diagram.detachEvent -> [diagram.events.detach](../guides/event_handling/#detaching-event-listeners)
-- diagram.eachItem -> [diagram.data.map](../api/data_collection/map_method/)
-- diagram.getItem -> [diagram.data.getItem](../api/data_collection/getitem_method/)
+- diagram.addItem -> [diagram.data.add](/api/data_collection/add_method/)
+- diagram.attachEvent -> [diagram.events.on](/guides/event_handling/#attaching-event-listeners)
+- diagram.callEvent -> [diagram.events.fire](/guides/event_handling/#calling-events)
+- diagram.clearAll -> [diagram.data.removeAll](/api/data_collection/removeall_method/)
+- diagram.deleteItem -> [diagram.data.remove](/api/data_collection/remove_method/)
+- diagram.detachEvent -> [diagram.events.detach](/guides/event_handling/#detaching-event-listeners)
+- diagram.eachItem -> [diagram.data.map](/api/data_collection/map_method/)
+- diagram.getItem -> [diagram.data.getItem](/api/data_collection/getitem_method/)
 - diagram.getSelectedId -> `diagram.selection.getId`
-- diagram.load -> [diagram.data.load](../api/data_collection/load_method/) 
-- diagram.parse -> [diagram.data.parse](../api/data_collection/parse_method/)
-- diagram.selectItem -> [diagram.selection.add](../api/selection/add_method/)
-- diagram.serialize -> [diagram.data.serialize](../api/data_collection/serialize_method/)
-- diagram.unselectItem -> [diagram.selection.remove](../api/selection/remove_method/)
-- diagram.updateItem -> [diagram.data.update](../api/data_collection/update_method/) 
+- diagram.load -> [diagram.data.load](/api/data_collection/load_method/) 
+- diagram.parse -> [diagram.data.parse](/api/data_collection/parse_method/)
+- diagram.selectItem -> [diagram.selection.add](/api/selection/add_method/)
+- diagram.serialize -> [diagram.data.serialize](/api/data_collection/serialize_method/)
+- diagram.unselectItem -> [diagram.selection.remove](/api/selection/remove_method/)
+- diagram.updateItem -> [diagram.data.update](/api/data_collection/update_method/) 

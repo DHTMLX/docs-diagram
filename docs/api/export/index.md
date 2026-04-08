@@ -11,5 +11,5 @@ The API methods of the **diagram.export** object allow you to export data from t
 
 | Name                         | Description                         |
 | :--------------------------- | :---------------------------------- |
-| [](api/export/pdf_method.md) | @getshort(api/export/pdf_method.md) |
-| [](api/export/png_method.md) | @getshort(api/export/png_method.md) |
+| [pdf()](/api/export/pdf_method/) | @getshort(/api/export/pdf_method.md) |
+| [png()](/api/export/png_method/) | @getshort(/api/export/png_method.md) |

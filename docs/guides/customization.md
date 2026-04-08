@@ -36,7 +36,7 @@ const defaults = {
 };
 ~~~
 
-[See the full list of the shape object properties](../../shapes/configuration_properties/).
+[See the full list of the shape object properties](/shapes/configuration_properties/).
 
 ### Styling lines
 
@@ -55,7 +55,7 @@ const data = [
 ];
 ~~~
 
-[See the full list of the line object properties](../../lines/configuration_properties/).
+[See the full list of the line object properties](/lines/configuration_properties/).
 
 Check the example:
 
@@ -63,7 +63,7 @@ Check the example:
 
 ## Defining the shape's template
 
-You can create a customized diagram by adding new types of shapes into the diagram and defining templates for them. For this purpose, use the [](../api/diagram/addshape_method.md) method of the diagram object.
+You can create a customized diagram by adding new types of shapes into the diagram and defining templates for them. For this purpose, use the [`addShape()`](/api/diagram/addshape_method/) method of the diagram object.
 
 ### Example in the default mode
 
@@ -104,13 +104,13 @@ The stylization doesn't work with the parent item of the moved item and with the
 
 ### Styling the group
 
-To specify a custom style for a group, you can use the `style` property of the [group object](../../groups/configuration_properties/). For example:
+To specify a custom style for a group, you can use the `style` property of the [group object](/groups/configuration_properties/). For example:
 
 <iframe src="https://snippet.dhtmlx.com/pdkgis8g?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
 ### Styling the group header
 
-You can change the default style of the group header via the attributes of the `header` property of the [group object](../../groups/configuration_properties/).
+You can change the default style of the group header via the attributes of the `header` property of the [group object](/groups/configuration_properties/).
 
 <iframe src="https://snippet.dhtmlx.com/0hf8ahrb?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="650"></iframe>
 
@@ -118,7 +118,7 @@ You can change the default style of the group header via the attributes of the `
 
 ### Styling the swimlane
 
-You can customize the `strokeWidth`, `stroke`, and `fill` settings of a swimlane via the `style` property of the [swimlane object](../../swimlanes/configuration_properties/#properties-of-a-swimlane):
+You can customize the `strokeWidth`, `stroke`, and `fill` settings of a swimlane via the `style` property of the [swimlane object](/swimlanes/configuration_properties/#properties-of-a-swimlane):
 
 ~~~jsx
 const data = [
@@ -148,7 +148,7 @@ const data = [
 
 ### Styling the swimlane headers/sub-headers
 
-The `header`, `subHeaderRows`, and `subHeaderCols` properties of a [swimlane object](../../swimlanes/configuration_properties/#properties-of-a-swimlane) include sets of additional attributes for customizing the header and subheaders of the swimlane.
+The `header`, `subHeaderRows`, and `subHeaderCols` properties of a [swimlane object](/swimlanes/configuration_properties/#properties-of-a-swimlane) include sets of additional attributes for customizing the header and subheaders of the swimlane.
 
 For example, you can change the background colors of the top subheaders of the swimlane via the `subHeaderCols` property:
 
@@ -196,7 +196,7 @@ Check the full example:
 
 ### Styling swimlane cells
 
-If you need to customize a separate cell of the swimlane, use the `style` property of the [swimlane cell object](../../swimlanes/configuration_properties/#properties-of-a-swimlane-cell) (`type:"$sgroup"`).
+If you need to customize a separate cell of the swimlane, use the `style` property of the [swimlane cell object](/swimlanes/configuration_properties/#properties-of-a-swimlane-cell) (`type:"$sgroup"`).
 
 ~~~jsx
 const data = [

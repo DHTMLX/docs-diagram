@@ -20,7 +20,7 @@ description: You can learn about the zoomOut event of editor in the documentatio
 
 The callback of the **zoomOut** event is called with the following parameter:
 
-- `step` - (required) a value that displays the change step of the [`scale`](api/diagram_editor/editor/config/scale_property.md) property.
+- `step` - (required) a value that displays the change step of the [`scale`](/api/diagram_editor/editor/config/scale_property/) property.
 
 :::info
 For handling the inner events of Diagram Editor you can use the **on()** method.

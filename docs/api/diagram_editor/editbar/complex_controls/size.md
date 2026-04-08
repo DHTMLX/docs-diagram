@@ -9,7 +9,7 @@ description: You can explore the Size control of Editbar in the documentation of
 @short: The complex control for managing width and height of the Diagram elements
 
 <img
-  src={require('../../../../assets/editbar-complex-controls/size.png').default}
+  src={require('/assets/editbar-complex-controls/size.png').default}
   alt="Size control" width='300'
 />
 

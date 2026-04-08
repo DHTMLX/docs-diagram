@@ -20,7 +20,7 @@ defaults?: {
 
 ### Parameters
 
-The `defaults` property is an object which includes a set of `key:value` pairs where *key* is a type of a shape or line and *value* is an object with a set of configuration settings of the [shape](../../../shapes/configuration_properties/) or [line](../../../lines/configuration_properties/) correspondingly.
+The `defaults` property is an object which includes a set of `key:value` pairs where *key* is a type of a shape or line and *value* is an object with a set of configuration settings of the [shape](/shapes/configuration_properties/) or [line](/lines/configuration_properties/) correspondingly.
 
 :::note 
 There is no possibility to define `type` and `id` in the default configuration of a shape/line
@@ -58,7 +58,7 @@ const diagram = new dhx.Diagram("diagram_container", {
 ~~~
 
 :::note
-After defining the default settings for the shapes/lines of separate types, you can either omit these properties or redefine their values while [preparing a data set](../../../guides/loading_data/#preparing-data-to-load) for the shapes/lines of these types.
+After defining the default settings for the shapes/lines of separate types, you can either omit these properties or redefine their values while [preparing a data set](/guides/loading_data/#preparing-data-to-load) for the shapes/lines of these types.
 :::
 
 **Change log**: The ability to set the default configuration for lines is added in v4.2
@@ -66,4 +66,4 @@ After defining the default settings for the shapes/lines of separate types, you 
 **Related articles**:
 
 - [Setting the default configuration of a shape](/guides/diagram/configuration/#setting-the-default-configuration-of-a-shape)
-- [Setting the preview of shapes](../../../guides/diagram_editor/shapebar/#setting-the-preview-of-shapes)
+- [Setting the preview of shapes](/guides/diagram_editor/shapebar/#setting-the-preview-of-shapes)

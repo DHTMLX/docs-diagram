@@ -8,7 +8,7 @@ description: You can explore the Button control of Editbar in the documentation 
 
 @short: The basic button control that can have an icon.
 
-![Button control](../../../../assets/editbar-basic-controls/button.png)
+![Button control](/assets/editbar-basic-controls/button.png)
 
 ## Usage
 

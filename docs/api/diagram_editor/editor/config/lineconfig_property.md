@@ -74,12 +74,12 @@ const editor = new dhx.DiagramEditor("editor_container", {
 
 The result of applying the **lineGap** property is shown in the image below:
 
-![](../../../../assets/linegap_config.png)
+![lineGap config](/assets/linegap_config.png)
 
 **Change log**:
 
 - The `connectType` parameter is added in v6.1
-- The `lineGap` parameter is added in v5.0 (check the [Migration article](diagram/migration.md/#42---50))
+- The `lineGap` parameter is added in v5.0 (check the [Migration article](/migration/#42---50))
 - Added in v4.2
 
 **Related sample**: [Diagram editor. Setting the default line (connector) type. Try connecting shape A to shape B](https://snippet.dhtmlx.com/22abzn5m)

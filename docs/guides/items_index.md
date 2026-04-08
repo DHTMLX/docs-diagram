@@ -16,15 +16,15 @@ import {useCurrentSidebarCategory} from '@docusaurus/theme-common';
 After you have learnt the guides, you can check the following API sections to accelerate the development process:
 
 - [Items API properties](category/items-api.md)
-- [DataCollection API](api/data_collection.md) (allows adding, removing, filtering data items (such as shapes, lines, line titles, groups, swimlanes), etc.)
-- [CellManager API](api/cell_manager.md) (allows adding, removing, moving swimlane cells, etc.)
-- [Selection API](api/selection.md)
-- [Diagram API](api/diagram/api_overview.md)
-- [Diagram Editor API](api/diagram_editor/editor/api_overview.md)
+- [DataCollection API](/api/data_collection/) (allows adding, removing, filtering data items (such as shapes, lines, line titles, groups, swimlanes), etc.)
+- [CellManager API](/api/cell_manager/) (allows adding, removing, moving swimlane cells, etc.)
+- [Selection API](/api/selection/)
+- [Diagram API](/api/diagram/api_overview/)
+- [Diagram Editor API](/api/diagram_editor/editor/api_overview/)
 
 To get more knowledge on how to load, customize, edit items and perform different operations over them, read the guides:
 
-- [Loading and storing data](guides/loading_data.md)
-- [Customizing items](guides/customization.md)
-- [Inline editing](guides/inline_editing.md)
-- [Manipulating items](guides/manipulating_items.md)
+- [Loading and storing data](/guides/loading_data/)
+- [Customizing items](/guides/customization/)
+- [Inline editing](/guides/inline_editing/)
+- [Manipulating items](/guides/manipulating_items/)

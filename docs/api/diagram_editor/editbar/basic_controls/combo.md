@@ -8,7 +8,7 @@ description: You can explore the Combo control of Editbar in the documentation o
 
 @short: The basic input control that represents an advanced editable select box with a set of options.
 
-![Combo control](../../../../assets/editbar-basic-controls/combo.png)
+![Combo control](/assets/editbar-basic-controls/combo.png)
 
 ## Usage
 
