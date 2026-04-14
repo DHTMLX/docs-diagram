@@ -882,8 +882,8 @@ module.exports = {
             keywords: ['mcp', 'ai', 'ai tools','ai integration'],
           },
           items: [
-            "guides/ai_integrations/ai_integration_demo",
-            "guides/ai_integrations/ai_tools"
+            "guides/ai-integrations/mcp-server",
+            "guides/ai-integrations/ai-demo"    
           ],
         },
         "guides/touch_support",
