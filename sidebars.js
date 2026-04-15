@@ -873,7 +873,19 @@ module.exports = {
             "guides/integrations/svelte_integration"
           ],
         },
-        "guides/integrations/ai_integration",
+        {
+          type: "category",
+          label: "AI Integrations",
+          link: {
+            type: 'generated-index',
+            title: "AI Integrations",
+            keywords: ['mcp', 'ai', 'ai tools','ai integration'],
+          },
+          items: [
+            "guides/ai-integrations/mcp-server",
+            "guides/ai-integrations/ai-demo"    
+          ],
+        },
         "guides/touch_support",
         "guides/using_typescript"    
       ]
