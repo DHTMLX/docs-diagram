@@ -31,7 +31,7 @@ The MCP server indexes the full DHTMLX Diagram documentation. Common scenarios w
 - Configuring auto-layout options for org chart and hierarchical diagram arrangements using the [diagram configuration](/guides/diagram/configuration/).
 - Loading diagram data and serializing it back with the available [data methods](/guides/loading_data/).
 - Handling [Diagram and Editor events](/guides/event_handling/) to respond to user interactions.
-- Exploring [TypeScript support](/guides/using_typescript/) and framework integration for React, Vue, and Angular.
+- Exploring [TypeScript support](/guides/using_typescript/) and framework integration for React, Vue, Angular and Svelte.
 
 ## How DHTMLX MCP server works
 
@@ -77,7 +77,7 @@ To configure it manually, add the following entry to your `mcp.json`:
 ### Cursor setup
 
 :::info
-Step-by-step MCP setup instructions for Cursor can be found in the [official documentation](https://cursor.com/en-US/docs/mcp).
+You can find step-by-step MCP setup instructions for Cursor in the [official documentation](https://cursor.com/en-US/docs/mcp).
 :::
 
 Follow the steps below to connect the DHTMLX MCP server to Cursor:
@@ -176,7 +176,7 @@ Note that MCP integration with ChatGPT may result in slower response times. For 
 
 ### Other tools
 
-Most modern AI coding tools (including Windsurf, Cline, and Continue.dev) surface MCP under names such as "Model Context Protocol", "Context Sources", or "Custom integrations" in their settings. Add `https://docs.dhtmlx.com/mcp` as the source URL.
+Most modern AI coding tools (including Windsurf, Cline, Continue.dev, etc.) surface MCP under names such as "Model Context Protocol", "Context Sources", or "Custom integrations" in their settings. Add `https://docs.dhtmlx.com/mcp` as the source URL.
 
 ## Privacy and data handling
 
