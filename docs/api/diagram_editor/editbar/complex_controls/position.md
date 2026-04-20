@@ -9,7 +9,7 @@ description: You can explore the Position control of Editbar in the documentatio
 @short: The complex control for configuring the shape offset from the predefined algorithm on the X and Y axis
 
 <img
-  src={require('../../../../assets/editbar-complex-controls/position.png').default}
+  src={require('/assets/editbar-complex-controls/position.png').default}
   alt="Position control" width='300'
 />
 

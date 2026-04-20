@@ -8,7 +8,7 @@ description: You can explore the Avatar control of Editbar in the documentation 
 
 @short: The basic control for uploading of images.
 
-![Avatar control](../../../../assets/editbar-basic-controls/avatar.png)
+![Avatar control](/assets/editbar-basic-controls/avatar.png)
 
 ## Usage
 

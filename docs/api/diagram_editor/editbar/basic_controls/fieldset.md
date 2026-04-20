@@ -8,7 +8,7 @@ description: You can explore the Fieldset control of Editbar in the documentatio
 
 @short: The basic control for creating complex controls with the help of the [`controls`](/api/diagram_editor/editbar/config/controls_property/) or the [`properties`](/api/diagram_editor/editbar/config/properties_property/) Editbar configuration options.
 
-![Fieldset control](../../../../assets/editbar-basic-controls/fieldset.png)
+![Fieldset control](/assets/editbar-basic-controls/fieldset.png)
 
 ## Usage
 

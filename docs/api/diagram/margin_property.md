@@ -25,8 +25,8 @@ margin?: {
 
 The **margin** object can include the following parameters:
 
-- `itemX` - (optional) horizontal space between two shapes (only for [type: "org" | "mindmap"](../../../api/diagram/type_property/))
-- `itemY` - (optional) vertical space between two shapes (only for [type: "org" | "mindmap"](../../../api/diagram/type_property/))
+- `itemX` - (optional) horizontal space between two shapes (only for [type: "org" | "mindmap"](/api/diagram/type_property/))
+- `itemY` - (optional) vertical space between two shapes (only for [type: "org" | "mindmap"](/api/diagram/type_property/))
 - `x` - (optional) horizontal space between the start of a diagram and the first item
 - `y` - (optional) vertical space between the start of a diagram and the first item
 

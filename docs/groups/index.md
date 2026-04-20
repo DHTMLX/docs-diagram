@@ -161,7 +161,7 @@ The **exitArea** property defines the behavior of the first-level children of th
 
 The *"unbound"* and *"boundBorderExtension"* values of the **groupBehavior** attribute allows you to define whether the child items can be moved out of the group, and to make the group borders expand when a user is trying to drag an item outside. If needed you can also disable the ability to drag items outside the group via the *"boundNoBorderExtension"* value.
 
-![](../assets/group_behavior.gif)
+![Group behavior](/assets/group_behavior.gif)
 
 If *groupBehavior: "boundNoBorderExtension" | "boundBorderExtension"* is set, you can specify the padding between the group and the edge of the item when moving the item inside the group. For this purpose, use the **padding** attribute:
 

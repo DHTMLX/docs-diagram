@@ -180,7 +180,7 @@ Then open the ***App.svelte*** file, import data, and pass it into the newly cre
 <DiagramEditor data={data} />
 ~~~
 
-Go to the ***DiagramEditor.svelte*** file and apply the passed **props** to the Diagram Editor via the [`parse()`](api/diagram_editor/editor/methods/parse_method.md) method:
+Go to the ***DiagramEditor.svelte*** file and apply the passed **props** to the Diagram Editor via the [`parse()`](/api/diagram_editor/editor/methods/parse_method/) method:
 
 ~~~html {6,13} title="DiagramEditor.svelte"
 <script>
@@ -210,7 +210,7 @@ Now the Diagram Editor component is ready to use. When the element will be added
 
 #### Handling events
 
-When a user makes some action in the Diagram Editor, it invokes an event. You can use these events to detect the action and run the desired code for it. See the [full list of events](api/diagram_editor/editor/events/overview.md).
+When a user makes some action in the Diagram Editor, it invokes an event. You can use these events to detect the action and run the desired code for it. See the [full list of events](/api/diagram_editor/editor/events/overview/).
 
 Open ***DiagramEditor.svelte*** and complete the `onMount()` method in the following way:
 
@@ -238,6 +238,6 @@ onDestroy(() => {
 
 After that, when we start the app, we should see Diagram Editor loaded with data on a page.
 
-![Diagram Editor initialization](../../assets/trial_diagram.png)
+![Diagram Editor initialization](/assets/trial_diagram.png)
 
 Now you should have a basic setup for integrating DHTMLX Diagram Editor with Svelte. You can customize the code according to your specific requirements. The final example you can find on [**GitHub**](https://github.com/DHTMLX/svelte-diagram-demo).

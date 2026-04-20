@@ -8,7 +8,7 @@ description: You can explore the RadioGroup control of Editbar in the documentat
 
 @short: The basic control for creating groups of Radio buttons.
 
-![RadioGroup control](../../../../assets/editbar-basic-controls/radiogroup.png)
+![RadioGroup control](/assets/editbar-basic-controls/radiogroup.png)
 
 ## Usage
 

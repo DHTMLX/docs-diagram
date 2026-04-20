@@ -25,7 +25,7 @@ description: You can learn about the afterSelect event in the documentation of t
 The callback of the event is called with an object with the following parameters:
 
 - `id` - the id of the selected item
-- `join` - the applied [mode of selection](../../../api/selection/add_method/#parameters)
+- `join` - the applied [mode of selection](/api/selection/add_method/#parameters)
 - `batch` - the list of selected items
 
 ### Example
@@ -65,5 +65,5 @@ editor.diagram.events.on("afterSelect", ({ id }) => {
 
 **Related articles**:  
 
-- [diagram.config.select](../../../api/diagram/select_property/)
-- [Selecting items](../../../guides/manipulating_items/#selecting-items)
+- [diagram.config.select](/api/diagram/select_property/)
+- [Selecting items](/guides/manipulating_items/#selecting-items)

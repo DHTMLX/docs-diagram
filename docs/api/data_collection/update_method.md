@@ -39,4 +39,4 @@ diagram.data.parse(data);
 diagram.data.update(123, { text:"New text" });
 ~~~
 
-**Related articles**:  [Updating an item](../../../guides/manipulating_items/#updating-an-item)
+**Related articles**:  [Updating an item](/guides/manipulating_items/#updating-an-item)

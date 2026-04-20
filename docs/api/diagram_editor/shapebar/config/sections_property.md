@@ -6,7 +6,7 @@ description: You can learn about the sections property of Shapebar in the docume
 
 # sections
 
-The [default sections of the shapebar](guides/diagram_editor/shapebar.md/#default-sections) are: *Shapes*, *Groups*, *Swimlanes*.
+The [default sections of the shapebar](/guides/diagram_editor/shapebar/#default-sections) are: *Shapes*, *Groups*, *Swimlanes*.
 
 Using the **sections** property you can change the structure of the shapebar and display the necessary items.
 
@@ -28,7 +28,7 @@ The `sections` object can contain a set of *key:value* pairs where:
 - `key` - the name of a section specified by a user
 - `value` - an array which can include:
   - an object with one *key:value* pair for rendering a <span id="basic">basic set of shapes</span>. The list of available pairs is given below:
-    - `{flowShapes: true}` - (optional) displays all available types of the [Flow-chart](/diagram/shapes/default_shapes/#shapes-in-the-default-mode) shapes
+    - `{flowShapes: true}` - (optional) displays all available types of the [Flow-chart](/shapes/default_shapes/#shapes-in-the-default-mode) shapes
     - `{org: true}` - (optional) displays Org shapes: the "card" and "img-card" shape types
     - `{group: true}` - (optional) displays a basic set of Groups
     - `{swimlane: true}` - (optional) displays a basic set of Swimlanes
@@ -169,6 +169,6 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 ~~~
 
-**Related article**:  [Shapebar](guides/diagram_editor/shapebar.md/#custom-sections)
+**Related article**:  [Shapebar](/guides/diagram_editor/shapebar/#custom-sections)
 
 **Change log**: Added in v6.0

@@ -12,18 +12,18 @@ A set of APIs that you can use when working with selection of the Diagram items.
 
 | Name                                 | Description                                 |
 | :----------------------------------- | :------------------------------------------ |
-| [](api/selection/add_method.md)      | @getshort(api/selection/add_method.md)      |
-| [](api/selection/clear_method.md)    | @getshort(api/selection/clear_method.md)    |
-| [](api/selection/getids_method.md)   | @getshort(api/selection/getids_method.md)   |
-| [](api/selection/getitem_method.md)  | @getshort(api/selection/getitem_method.md)  |
-| [](api/selection/includes_method.md) | @getshort(api/selection/includes_method.md) |
-| [](api/selection/remove_method.md)   | @getshort(api/selection/remove_method.md)   |
+| [add()](../selection/add_method/)       | @getshort(../selection/add_method.md)       |
+| [clear()](../selection/clear_method/)     | @getshort(../selection/clear_method.md)     |
+| [getIds()](../selection/getids_method/)    | @getshort(../selection/getids_method.md)    |
+| [getItem()](../selection/getitem_method/)   | @getshort(../selection/getitem_method.md)   |
+| [includes()](../selection/includes_method/)  | @getshort(../selection/includes_method.md)  |
+| [remove()](../selection/remove_method/)    | @getshort(../selection/remove_method.md)    |
 
 ## Events
 
-| Name                                      | Description                                      |
-| :---------------------------------------- | :----------------------------------------------- |
-| [](api/selection/afterselect_event.md)    | @getshort(api/selection/afterselect_event.md)    |
-| [](api/selection/afterunselect_event.md)  | @getshort(api/selection/afterunselect_event.md)  |
-| [](api/selection/beforeselect_event.md)   | @getshort(api/selection/beforeselect_event.md)   |
-| [](api/selection/beforeunselect_event.md) | @getshort(api/selection/beforeunselect_event.md) |
+| Name                                     | Description                                     |
+| :--------------------------------------- | :---------------------------------------------- |
+| [afterSelect](../selection/afterselect_event/)    | @getshort(../selection/afterselect_event.md)    |
+| [afterUnSelect](../selection/afterunselect_event/)  | @getshort(../selection/afterunselect_event.md)  |
+| [beforeSelect](../selection/beforeselect_event/)   | @getshort(../selection/beforeselect_event.md)   |
+| [beforeUnSelect](../selection/beforeunselect_event/) | @getshort(../selection/beforeunselect_event.md) |

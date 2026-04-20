@@ -25,7 +25,7 @@ description: You can learn about the beforeSelect event in the documentation of 
 The callback of the event is called with an object with the following parameters:
 
 - `id` - the id of the item to select
-- `join` - the applied [mode of selection](../../../api/selection/add_method/#parameters)
+- `join` - the applied [mode of selection](/api/selection/add_method/#parameters)
 - `batch` - the list of items to select
 
 ### Returns
@@ -71,5 +71,5 @@ editor.diagram.events.on("beforeSelect", ({ id }) => {
 
 **Related articles**:  
 
-- [diagram.config.select](../../../api/diagram/select_property/)
-- [Selecting items](../../../guides/manipulating_items/#selecting-items)
+- [diagram.config.select](/api/diagram/select_property/)
+- [Selecting items](/guides/manipulating_items/#selecting-items)

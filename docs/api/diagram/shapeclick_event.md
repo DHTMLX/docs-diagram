@@ -42,4 +42,4 @@ diagram.events.on("shapeClick", (id) => {
 });
 ~~~
 
-**Related article**: [Event handling](../../../guides/event_handling/)
+**Related article**: [Event handling](/guides/event_handling/)

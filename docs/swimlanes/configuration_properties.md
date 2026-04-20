@@ -240,7 +240,7 @@ The configuration properties of a swimlane cell are given below:
     - `groupBehavior` - (optional) the behavior of the child item of the cell when the user is moving it out of the cell: 
         - *"unbound"* (by default) - the user can move an item into or outside the cell
         - *"boundNoBorderExtension"* - the user can move an item into the cell but cannot drag the item outside the cell if the item has been dropped inside the cell. The item won't expand the borders of the cell when trying to drag the item outside the cell
-    - `padding` - (optional) defines the padding between the cell and the edge of the item when moving the item inside the cell. <br> 
+    - `padding` - (optional) defines the padding between the cell and the edge of the item when moving the item inside the cell. <br /> 
     :::tip
     The **padding** attribute is available if *groupBehavior: "boundNoBorderExtension"*
     :::
@@ -277,11 +277,11 @@ const data = [
 ];
 ~~~
 
-**Related articles**: [Configuring swimlanes](../../swimlanes/)
+**Related articles**: [Configuring swimlanes](/swimlanes/)
 
 **Related samples**:
 
 - [Diagram. Default mode. Game levels and locations](https://snippet.dhtmlx.com/1h4j9gb3?tag=diagram&mode=wide)
 - [Diagram. Default mode. Swimlane template](https://snippet.dhtmlx.com/z6x5m3gb?tag=diagram&mode=wide)
 - [Diagram. Default mode. Waterfall diagram template](https://snippet.dhtmlx.com/k5vlvj8i?tag=diagram&mode=wide)
-- [Diagram. Default mode. Eisenhower matrix example](https://snippet.dhtmlx.com/yfvccvc4?mode=wide)<br>Read the details in the [How to Build a JavaScript Eisenhower Matrix with DHTMLX](https://dhtmlx.com/blog/build-javascript-eisenhower-matrix-dhtmlx/) article
+- [Diagram. Default mode. Eisenhower matrix example](https://snippet.dhtmlx.com/yfvccvc4?mode=wide)<br />Read the details in the [How to Build a JavaScript Eisenhower Matrix with DHTMLX](https://dhtmlx.com/blog/build-javascript-eisenhower-matrix-dhtmlx/) article

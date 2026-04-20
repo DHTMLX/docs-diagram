@@ -55,7 +55,7 @@ diagram.export.png({
     .finally(() => console.log("finished"));
 ~~~
 
-**Related articles**:  [Exporting Diagram](../../../guides/data_export/)
+**Related articles**:  [Exporting Diagram](/guides/data_export/)
 
 **Related samples**: 
 

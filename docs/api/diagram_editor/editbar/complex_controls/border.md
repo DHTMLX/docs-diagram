@@ -9,7 +9,7 @@ description: You can explore the Border control of Editbar in the documentation 
 @short: The complex control for displaying and modifying borders of a Diagram element
 
 <img
-  src={require('../../../../assets/editbar-complex-controls/border.png').default}
+  src={require('/assets/editbar-complex-controls/border.png').default}
   alt="Border control" width='300'
 />
 

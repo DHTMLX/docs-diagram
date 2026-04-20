@@ -8,7 +8,7 @@ description: You can explore the Timepicker control of Editbar in the documentat
 
 @short: The basic control for selecting a time value either by moving handles along track bars or by entering hour and minutes values directly into related inputs.
 
-![Timepicker control](../../../../assets/editbar-basic-controls/timepicker.png)
+![Timepicker control](/assets/editbar-basic-controls/timepicker.png)
 
 ## Usage
 

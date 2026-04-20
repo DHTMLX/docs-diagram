@@ -8,7 +8,7 @@ description: You can explore the Selection events in the documentation of the DH
 
 | Name                                     | Description                                     |
 | :--------------------------------------- | :---------------------------------------------- |
-| [](../selection/afterselect_event.md)    | @getshort(../selection/afterselect_event.md)    |
-| [](../selection/afterunselect_event.md)  | @getshort(../selection/afterunselect_event.md)  |
-| [](../selection/beforeselect_event.md)   | @getshort(../selection/beforeselect_event.md)   |
-| [](../selection/beforeunselect_event.md) | @getshort(../selection/beforeunselect_event.md) |
+| [afterSelect](../../selection/afterselect_event/)    | @getshort(../selection/afterselect_event.md)    |
+| [afterUnSelect](../../selection/afterunselect_event/)  | @getshort(../selection/afterunselect_event.md)  |
+| [beforeSelect](../../selection/beforeselect_event/)   | @getshort(../selection/beforeselect_event.md)   |
+| [beforeUnSelect](../../selection/beforeunselect_event/) | @getshort(../selection/beforeunselect_event.md) |

@@ -9,7 +9,7 @@ description: You can explore the Pointer view control of Editbar in the document
 @short: The complex control for displaying and managing the connector arrows
 
 <img
-  src={require('../../../../assets/editbar-complex-controls/pointerview.png').default}
+  src={require('/assets/editbar-complex-controls/pointerview.png').default}
   alt="Pointer view control" width='300'
 />
 

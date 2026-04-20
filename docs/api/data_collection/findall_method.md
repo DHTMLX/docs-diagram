@@ -51,4 +51,4 @@ const shapes = diagram.data.findAll(function (shapes) {
 });
 ~~~
 
-**Related articles**:  [Finding the necessary item](../../../guides/manipulating_items/#finding-the-necessary-item)
+**Related articles**:  [Finding the necessary item](/guides/manipulating_items/#finding-the-necessary-item)

@@ -14,7 +14,7 @@ The look and feel of the lines which connect shapes is defined by the mode you i
 
 In the default mode of Diagram, various shapes can be connected by ["straight" (by default) or "elbow"](/lines/configuration_properties/) lines in the necessary sequence to make up a scheme of a particular process.
 
-To add a text for a line in the default mode of Diagram/Diagram Editor, use the `text` property of the [lineTitle](../line_titles) object.
+To add a text for a line in the default mode of Diagram/Diagram Editor, use the `text` property of the [`lineTitle`](/line_titles/) object.
 
 <iframe src="https://snippet.dhtmlx.com/e6zm6wh1?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="650"></iframe>
 
@@ -35,7 +35,7 @@ The mindmap mode of Diagram is used to render one more kind of a hierarchical di
 The mode is useful when you need to represent a core topic or idea surrounded by the branches of the subtopics.
 
 The arrangement of child shapes relative to the root shape is defined automatically by the main algorithm.
-To change the default direction of the child shapes, use the [](../api/diagram/typeconfig_property.md) configuration property on initialization of the diagram.
+To change the default direction of the child shapes, use the [`typeConfig`](/api/diagram/typeconfig_property/) configuration property on initialization of the diagram.
 
 ### Links in the PERT mode
 
@@ -97,7 +97,7 @@ In this case, all the connectors will have the same type.
 
 ### Setting the default line type
 
-You can set a common type for all the connector lines of the diagram via the `lineType` parameter of the [](../api/diagram/lineconfig_property.md) property of the diagram config object:
+You can set a common type for all the connector lines of the diagram via the `lineType` parameter of the [`lineConfig`](/api/diagram/lineconfig_property/) property of the diagram config object:
 
 ~~~jsx
 const diagram = new dhx.Diagram("diagram_container", {
@@ -113,7 +113,7 @@ The value of the `lineType` parameter is applied, if the [line object](/lines/co
 
 ### Setting the connection type of the line
 
-You can specify the connection type for lines of the diagram via the `connectType` parameter of the [](../api/diagram/lineconfig_property.md) property of the diagram config object. It provides the following types:
+You can specify the connection type for lines of the diagram via the `connectType` parameter of the [`lineConfig`](/api/diagram/lineconfig_property/) property of the diagram config object. It provides the following types:
 
 - "elbow" (the default type for the default and org chart Diagram modes)
 - "straight"

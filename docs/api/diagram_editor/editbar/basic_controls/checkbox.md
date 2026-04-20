@@ -8,7 +8,7 @@ description: You can explore the Checkbox control of Editbar in the documentatio
 
 @short: The basic control for displaying the specified value or change it to the opposite one.
 
-![Checkbox control](../../../../assets/editbar-basic-controls/checkbox.png)
+![Checkbox control](/assets/editbar-basic-controls/checkbox.png)
 
 ## Usage
 

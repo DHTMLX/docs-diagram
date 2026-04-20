@@ -130,6 +130,16 @@ module.exports = {
     tagline: 'DHTMLX JavaScript Diagram Docs',
     url: 'https://docs.dhtmlx.com',
     baseUrl: '/diagram/',
+    i18n: {
+        defaultLocale: 'en',
+        locales: ['en', 'de', 'ru', 'zh', 'ko'],
+        localeConfigs: {
+            zh: {
+                htmlLang: 'zh-CN',
+                label: '中文'
+            },
+        }
+    },
     onBrokenLinks: 'warn',
 	onBrokenMarkdownLinks: 'warn',
     onBrokenAnchors: 'warn',
@@ -217,6 +227,10 @@ module.exports = {
                     href: 'https://dhtmlx.com/docs/products/dhtmlxDiagram/download.shtml',
                     position: 'right',
                 },
+                {
+                    type: 'localeDropdown',
+                    position: 'right',
+                }
             ],
         },
         footer: {

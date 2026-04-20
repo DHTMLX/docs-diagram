@@ -105,7 +105,7 @@ const diagram = new dhx.Diagram("diagram_container", {
 - The `dateFormat` property for the PERT mode was added in v6.1
 - Added in v3.1.
 
-**Related articles**: [Arrangement of shapes in the mindmap mode of Diagram](../../../guides/diagram/configuration/#arranging-shapes-in-the-mindmap-mode-of-diagram)
+**Related articles**: [Arrangement of shapes in the mindmap mode of Diagram](/guides/diagram/configuration/#arranging-shapes-in-the-mindmap-mode-of-diagram)
 
 **Related samples**:
 

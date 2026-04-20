@@ -101,7 +101,7 @@ It is necessary to set sufficient margin for correct display of `headerTemplate`
 | "A5"      | (5.83in x 8.27in)  |
 | "A6"      | (4.13in x 5.83in)  |
 
-**Related articles**:  [Exporting Diagram](../../../guides/data_export/)
+**Related articles**:  [Exporting Diagram](/guides/data_export/)
 
 **Related samples**: 
 

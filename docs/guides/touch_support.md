@@ -6,7 +6,7 @@ description: You can learn about touch support in the documentation of the DHTML
 
 # Touch support
 
-![](../assets/touch_support.png)
+![Touch support](/assets/touch_support.png)
 
 Since version 4.2 and upper, the DHTMLX Diagram library provides the built-in Touch support that should work out of the box.
 

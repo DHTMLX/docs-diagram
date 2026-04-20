@@ -9,7 +9,7 @@ description: You can explore the Arrange control of Editbar in the documentation
 @short: The complex control for editing width, height, rotation angle, x and y properties of a Diagram element
 
 <img
-  src={require('../../../../assets/editbar-complex-controls/arrange.png').default}
+  src={require('/assets/editbar-complex-controls/arrange.png').default}
   alt="Arrange control" width='300'
 />
 

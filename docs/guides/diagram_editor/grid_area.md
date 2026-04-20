@@ -20,7 +20,7 @@ Distance between points in the Grid area depends on the value of the [grid step]
 
 You can drag shapes from the shapebar into the grid area to place them at the desired positions and connect them.
 
-![](../../assets/default_shape_toolbar.png)
+![Default shape toolbar](/assets/default_shape_toolbar.png)
 
 When you click on any shape, it becomes editable and gets personal interface elements:
 
@@ -41,9 +41,9 @@ You can drag shapes to place them at the desired positions relative to the root 
 
 You can drag shapes from one parent item to another. The moved item is dragged with all its children.
 
-![](../../assets/orgchart_shape_toolbar_vertical.png)
+![Orgchart shape toolbar vertical](/assets/orgchart_shape_toolbar_vertical.png)
 
-![](../../assets/orgchart_shape_toolbar_horizontal.png)
+![Orgchart shape toolbar horizontal](/assets/orgchart_shape_toolbar_horizontal.png)
 
 When you click on any shape, it becomes editable and gets personal interface elements:
 
@@ -67,7 +67,7 @@ Double-click the text of a shape to edit it.
 
 You can drag shapes to place them at the desired positions relative to the root shape, or drag the root shape to move the whole diagram. If you drag the parent shape, the shape will be moved with all its child shapes. To add a new shape, select a shape and add a new child for it. The shapes can be dragged from one parent item to another. The moved item is dragged with all its children.
 
-![](../../assets/mindmap_toolbar_of_shape.png)
+![Mindmap toolbar elements](/assets/mindmap_toolbar_of_shape.png)
 
 When you click on any shape, it becomes editable and gets personal interface elements:
 
@@ -85,17 +85,17 @@ Double-click the text of a shape to edit it.
 
 In the default mode, you can set links to other shapes, adjust their position and form, as well as add text to the line and delete unnecessary links.
 
-![](../../assets/line_with_toolbar.png)
+![Line with toolbar](/assets/line_with_toolbar.png)
 
 In the default mode, you can also add a text to the line by double-clicking on it. Click the text to define its direction or delete it. Double-click the text to edit it.
 
-![](../../assets/line_with_text.png)
+![Line with text](/assets/line_with_text.png)
 
 ## Managing groups
 
 You can drag groups from the shapebar into the grid area to place them at the desired positions. You can put several shapes or other groups into a group and move them as a unit, copy, or delete.
 
-![](../../assets/group_toolbar.png)
+![Group toolbar](/assets/group_toolbar.png)
 
 When you click on any group, it becomes editable and gets personal interface elements:
 
@@ -110,7 +110,7 @@ Double-click the text in the header of the group to edit it.
 
 You can drag a swimlane from the shapebar into the grid area to place it at the desired position.
 
-![](../../assets/swimlane_toolbar.png)
+![Swimlane toolbar](/assets/swimlane_toolbar.png)
 
 When you click on any swimlane, it becomes editable and gets personal interface elements:
 
@@ -123,17 +123,17 @@ When you click on any swimlane, it becomes editable and gets personal interface 
 
 Besides, there are the abilities to add, move, or remove columns or rows of the swimlane via the options of the context menu. The context menu will appear after the user clicks on the icon of a swimlane subheader.
 
-![](../../assets/swimlane_contextmenu.png)
+![Swimlane context menu](/assets/swimlane_contextmenu.png)
 
 Note, that some options of moving the first/last columns and rows are deactivated by internal settings of a swimlane.
 
 ## Editing attributes of an item
 
-After selecting an item in the grid area, you can update its attributes [via the sidebar options in the editbar of the editor](../../../guides/diagram_editor/editbar/).
+After selecting an item in the grid area, you can update its attributes [via the sidebar options in the editbar of the editor](/guides/diagram_editor/editbar/).
 
 ## Configuring the toolbar of an item
 
-You can customize the personal toolbar of shapes, groups, swimlanes according to your needs via the [shapeToolbar](../../../api/diagram_editor/editor/config/shapetoolbar_property/) property of the editor.
+You can customize the personal toolbar of shapes, groups, swimlanes according to your needs via the [shapeToolbar](/api/diagram_editor/editor/config/shapetoolbar_property/) property of the editor.
 
 ## Enabling/disabling snap lines
 
@@ -143,7 +143,7 @@ The feature is available only in the default mode of Editor
 
 From v5.0, the Grid area is equipped with snap lines which will simplify the process of placing shapes symmetrically to each other.
 
-If you need to change the width and color of the lines, or to hide them at all, use the [magnetic](../../../api/diagram_editor/editor/config/magnetic_property/) property of Editor.
+If you need to change the width and color of the lines, or to hide them at all, use the [magnetic](/api/diagram_editor/editor/config/magnetic_property/) property of Editor.
 
 ## Manipulating multiple items
 
@@ -178,4 +178,4 @@ From v5.0, you can align or distribute a group of items by selecting them and cl
 | **Align vertical centers**        | Align items to the center along the y-axis |
 | **Align bottom**                  | Align items to the bottom along the y-axis |
 
-![](../../assets/editor/group_align_and_distribution.gif)
+![Group align and distribution](/assets/editor/group_align_and_distribution.gif)

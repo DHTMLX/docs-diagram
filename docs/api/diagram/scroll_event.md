@@ -41,5 +41,5 @@ diagram.events.on("scroll", () => {
 
 **Related articles**:
 
-- [Scrolling Diagram](../../../guides/diagram/scrolling_diagram/)
-- [Event handling](../../../guides/event_handling/)
+- [Scrolling Diagram](/guides/diagram/scrolling_diagram/)
+- [Event handling](/guides/event_handling/)

@@ -97,7 +97,7 @@ const diagram = new dhx.Diagram("diagram_container", {
 diagram.data.parse(dataset);
 ~~~
 
-**Related articles**:  [Loading and storing data](../../../guides/loading_data/)
+**Related articles**:  [Loading and storing data](/guides/loading_data/)
 
 **Related samples**: 
 - [Diagram. Org chart mode. Basic initialization](https://snippet.dhtmlx.com/5ign6fyy)

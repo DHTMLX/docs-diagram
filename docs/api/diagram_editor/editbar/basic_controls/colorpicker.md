@@ -8,7 +8,7 @@ description: You can explore the Colorpicker control of Editbar in the documenta
 
 @short: The basic control for selecting a color.
 
-![Colorpicker control](../../../../assets/editbar-basic-controls/colorpicker.png)
+![Colorpicker control](/assets/editbar-basic-controls/colorpicker.png)
 
 ## Usage
 

@@ -8,7 +8,7 @@ description: You can explore the Slider control of Editbar in the documentation 
 
 @short: The basic control for selecting a numeric value by moving a thumb along a line with a fixed set of options.
 
-![Slider control](../../../../assets/editbar-basic-controls/slider.png)
+![Slider control](/assets/editbar-basic-controls/slider.png)
 
 ## Usage
 

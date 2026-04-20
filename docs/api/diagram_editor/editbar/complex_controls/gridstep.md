@@ -9,7 +9,7 @@ description: You can explore the Grid step control of Editbar in the documentati
 @short: The complex control for displaying and modifying a grid step of the Diagram editor
 
 <img
-  src={require('../../../../assets/editbar-complex-controls/gridstep.png').default}
+  src={require('/assets/editbar-complex-controls/gridstep.png').default}
   alt="Gridstep control" width='300'
 />
 

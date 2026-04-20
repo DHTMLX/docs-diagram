@@ -34,7 +34,7 @@ diagram.selection.clear();
 
 **Related articles**:  
 
-- [diagram.config.select](../../../api/diagram/select_property/)
-- [Selecting items](../../../guides/manipulating_items/#selecting-items)
+- [diagram.config.select](/api/diagram/select_property/)
+- [Selecting items](/guides/manipulating_items/#selecting-items)
 
 **Related sample**: [Diagram. Selection. Item selection](https://snippet.dhtmlx.com/jyoxn5h7)

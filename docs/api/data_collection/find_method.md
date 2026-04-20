@@ -49,6 +49,6 @@ const shape = diagram.data.find((shape) => {
 });
 ~~~
 
-**Related articles**:  [Finding the necessary item](../../../guides/manipulating_items/#finding-the-necessary-item)
+**Related articles**:  [Finding the necessary item](/guides/manipulating_items/#finding-the-necessary-item)
 
 **Related sample**: [Diagram. Data. Finding necessary shape](https://snippet.dhtmlx.com/sete9z73)

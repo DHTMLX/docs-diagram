@@ -12,9 +12,9 @@ The API set for controlling the process of editing the text of items by double-c
 
 | Name                                               | Description                                               |
 | :------------------------------------------------- | :-------------------------------------------------------- |
-| [](api/inline_editor/aftereditorclose_event.md)    | @getshort(api/inline_editor/aftereditorclose_event.md)    |
-| [](api/inline_editor/aftereditorediting_event.md)  | @getshort(api/inline_editor/aftereditorediting_event.md)  |
-| [](api/inline_editor/aftereditoropen_event.md)     | @getshort(api/inline_editor/aftereditoropen_event.md)     |
-| [](api/inline_editor/beforeeditorclose_event.md)   | @getshort(api/inline_editor/beforeeditorclose_event.md)   |
-| [](api/inline_editor/beforeeditorediting_event.md) | @getshort(api/inline_editor/beforeeditorediting_event.md) |
-| [](api/inline_editor/beforeeditoropen_event.md)    | @getshort(api/inline_editor/beforeeditoropen_event.md)    |
+| [afterEditorClose](/api/inline_editor/aftereditorclose_event/)    | @getshort(/api/inline_editor/aftereditorclose_event.md)    |
+| [afterEditorEditing](/api/inline_editor/aftereditorediting_event/)  | @getshort(/api/inline_editor/aftereditorediting_event.md)  |
+| [afterEditorOpen](/api/inline_editor/aftereditoropen_event/)     | @getshort(/api/inline_editor/aftereditoropen_event.md)     |
+| [beforeEditorClose](/api/inline_editor/beforeeditorclose_event/)   | @getshort(/api/inline_editor/beforeeditorclose_event.md)   |
+| [beforeEditorEditing](/api/inline_editor/beforeeditorediting_event/)| @getshort(/api/inline_editor/beforeeditorediting_event.md) |
+| [beforeEditorOpen](/api/inline_editor/beforeeditoropen_event/)    | @getshort(/api/inline_editor/beforeeditoropen_event.md)    |

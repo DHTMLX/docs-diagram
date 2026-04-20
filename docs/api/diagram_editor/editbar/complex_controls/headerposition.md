@@ -9,7 +9,7 @@ description: You can explore the Header position control of Editbar in the docum
 @short: The complex control for changing position of the group header
 
 <img
-  src={require('../../../../assets/editbar-complex-controls/headerposition.png').default}
+  src={require('/assets/editbar-complex-controls/headerposition.png').default}
   alt="Header position control" width='300'
 />
 

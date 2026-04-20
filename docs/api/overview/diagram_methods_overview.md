@@ -8,13 +8,13 @@ description: You can explore the Diagram methods in the documentation of the DHT
 
 | Name                                    | Description                                    |
 | :-------------------------------------- | :--------------------------------------------- |
-| [](../diagram/addshape_method.md)       | @getshort(../diagram/addshape_method.md)       |
-| [](../diagram/autoplace_method.md)      | @getshort(../diagram/autoplace_method.md)      |
-| [](../diagram/collapseitem_method.md)   | @getshort(../diagram/collapseitem_method.md)   |
-| [](../diagram/destructor_method.md)     | @getshort(../diagram/destructor_method.md)     |
-| [](../diagram/expanditem_method.md)     | @getshort(../diagram/expanditem_method.md)     |
-| [](../diagram/getscrollstate_method.md) | @getshort(../diagram/getscrollstate_method.md) |
-| [](../diagram/locate_method.md)         | @getshort(../diagram/locate_method.md)         |
-| [](../diagram/paint_method.md)          | @getshort(../diagram/paint_method.md)          |
-| [](../diagram/scrollto_method.md)       | @getshort(../diagram/scrollto_method.md)       |
-| [](../diagram/showitem_method.md)       | @getshort(../diagram/showitem_method.md)       |
+| [addShape()](../../diagram/addshape_method/)       | @getshort(../diagram/addshape_method.md)       |
+| [autoPlace()](../../diagram/autoplace_method/)      | @getshort(../diagram/autoplace_method.md)      |
+| [collapseItem()](../../diagram/collapseitem_method/)   | @getshort(../diagram/collapseitem_method.md)   |
+| [destructor()](../../diagram/destructor_method/)     | @getshort(../diagram/destructor_method.md)     |
+| [expandItem()](../../diagram/expanditem_method/)     | @getshort(../diagram/expanditem_method.md)     |
+| [getScrollState()](../../diagram/getscrollstate_method/) | @getshort(../diagram/getscrollstate_method.md) |
+| [locate()](../../diagram/locate_method/)         | @getshort(../diagram/locate_method.md)         |
+| [paint()](../../diagram/paint_method/)          | @getshort(../diagram/paint_method.md)          |
+| [scrollTo()](../../diagram/scrollto_method/)       | @getshort(../diagram/scrollto_method.md)       |
+| [showItem()](../../diagram/showitem_method/)       | @getshort(../diagram/showitem_method.md)       |

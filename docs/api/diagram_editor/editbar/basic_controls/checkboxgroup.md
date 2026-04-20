@@ -8,7 +8,7 @@ description: You can explore the CheckboxGroup control of Editbar in the documen
 
 @short: The basic control for creating groups of checkboxes.
 
-![CheckboxGroup control](../../../../assets/editbar-basic-controls/checkboxgroup.png)
+![CheckboxGroup control](/assets/editbar-basic-controls/checkboxgroup.png)
 
 ## Usage
 

@@ -163,7 +163,7 @@ export function getData() {
 }
 ~~~
 
-Then open the ***diagram-editor.component.ts*** file. Import the file with data and apply it using the [`parse()`](api/diagram_editor/editor/methods/parse_method.md) method within the `ngOnInit()` method, as shown below.
+Then open the ***diagram-editor.component.ts*** file. Import the file with data and apply it using the [`parse()`](/api/diagram_editor/editor/methods/parse_method/) method within the `ngOnInit()` method, as shown below.
 
 ~~~jsx {3,19,22} title="diagram-editor.component.ts"
 import { DiagramEditor } from "@dhx/trial-diagram";
@@ -200,7 +200,7 @@ Now the Diagram Editor component is ready to use. When the element will be added
 
 #### Handling events
 
-When a user makes some action in the Diagram Editor, it invokes an event. You can use these events to detect the action and run the desired code for it. See the [full list of events](api/diagram_editor/editor/events/overview.md).
+When a user makes some action in the Diagram Editor, it invokes an event. You can use these events to detect the action and run the desired code for it. See the [full list of events](/api/diagram_editor/editor/events/overview/).
 
 Open the **diagram-editor.component.ts** file and complete the `ngOnInit()` method as in:
 
@@ -264,6 +264,6 @@ platformBrowserDynamic()
 
 After that, you can start the app to see Diagram Editor loaded with data on a page.
 
-![Diagram Editor initialization](../../assets/trial_diagram.png)
+![Diagram Editor initialization](/assets/trial_diagram.png)
 
 Now you know how to integrate DHTMLX Diagram Editor with Angular. You can customize the code according to your specific requirements. The final example you can find on [**GitHub**](https://github.com/DHTMLX/angular-diagram-demo).

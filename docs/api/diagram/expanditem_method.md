@@ -51,4 +51,4 @@ diagram.expandItem("main", "left");
 
 **Change log**: The **dir** parameter was added in v3.1
 
-**Related articles**: [Expanding/collapsing items](../../../guides/manipulating_items/#expandingcollapsing-items)
+**Related articles**: [Expanding/collapsing items](/guides/manipulating_items/#expandingcollapsing-items)

@@ -45,4 +45,4 @@ diagram.events.on("beforeCellsRemove", (swimlaneId) => {
 
 **Change log**: Added in v4.0
 
-**Related articles**: [Configuring Swimlanes](../../../swimlanes/)
+**Related articles**: [Configuring Swimlanes](/swimlanes/)

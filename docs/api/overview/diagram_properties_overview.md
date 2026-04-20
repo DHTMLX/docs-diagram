@@ -8,14 +8,14 @@ description: You can explore the Diagram properties in the documentation of the 
 
 | Name                                        | Description                                        |
 | :------------------------------------------ | :------------------------------------------------- |
-| [](../diagram/autoplacement_property.md)    | @getshort(../diagram/autoplacement_property.md)    |
-| [](../diagram/defaults_property.md)         | @getshort(../diagram/defaults_property.md)         |
-| [](../diagram/defaultshapetype_property.md) | @getshort(../diagram/defaultshapetype_property.md) |
-| [](../diagram/exportstyles_property.md)     | @getshort(../diagram/exportstyles_property.md)     |
-| [](../diagram/lineconfig_property.md)       | @getshort(../diagram/lineconfig_property.md)       |
-| [](../diagram/margin_property.md)           | @getshort(../diagram/margin_property.md)           |
-| [](../diagram/scale_property.md)            | @getshort(../diagram/scale_property.md)            |
-| [](../diagram/select_property.md)           | @getshort(../diagram/select_property.md)           |
-| [](../diagram/toolbar_property.md)          | @getshort(../diagram/toolbar_property.md)          |
-| [](../diagram/type_property.md)             | @getshort(../diagram/type_property.md)             |
-| [](../diagram/typeconfig_property.md)       | @getshort(../diagram/typeconfig_property.md)       |
+| [autoplacement](../../diagram/autoplacement_property/)    | @getshort(../diagram/autoplacement_property.md)    |
+| [defaults](../../diagram/defaults_property/)         | @getshort(../diagram/defaults_property.md)         |
+| [defaultShapeType](../../diagram/defaultshapetype_property/) | @getshort(../diagram/defaultshapetype_property.md) |
+| [exportStyles](../../diagram/exportstyles_property/)     | @getshort(../diagram/exportstyles_property.md)     |
+| [lineConfig](../../diagram/lineconfig_property/)       | @getshort(../diagram/lineconfig_property.md)       |
+| [margin](../../diagram/margin_property/)           | @getshort(../diagram/margin_property.md)           |
+| [scale](../../diagram/scale_property/)            | @getshort(../diagram/scale_property.md)            |
+| [select](../../diagram/select_property/)           | @getshort(../diagram/select_property.md)           |
+| [toolbar](../../diagram/toolbar_property/)          | @getshort(../diagram/toolbar_property.md)          |
+| [type](../../diagram/type_property/)             | @getshort(../diagram/type_property.md)             |
+| [typeConfig](../../diagram/typeconfig_property/)       | @getshort(../diagram/typeconfig_property.md)       |

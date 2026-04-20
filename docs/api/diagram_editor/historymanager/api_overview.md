@@ -20,17 +20,18 @@ editor.history.redo(); // restores an action that has been reverted by the Undo 
 
 | Name                                                           | Description                                                        |
 | :---------------------------------------------------------- | :----------------------------------------------------------------- |
-| [](api/diagram_editor/historymanager/methods/add_method.md) | @getshort(api/diagram_editor/historymanager/methods/add_method.md) |
-| [](api/diagram_editor/historymanager/methods/disable_method.md) | @getshort(api/diagram_editor/historymanager/methods/disable_method.md) |
-| [](api/diagram_editor/historymanager/methods/enable_method.md) | @getshort(api/diagram_editor/historymanager/methods/enable_method.md) |
-| [](api/diagram_editor/historymanager/methods/isredo_method.md) | @getshort(api/diagram_editor/historymanager/methods/isredo_method.md) |
-| [](api/diagram_editor/historymanager/methods/isundo_method.md) | @getshort(api/diagram_editor/historymanager/methods/isundo_method.md) |
-| [](api/diagram_editor/historymanager/methods/redo_method.md) | @getshort(api/diagram_editor/historymanager/methods/redo_method.md) |
-| [](api/diagram_editor/historymanager/methods/reset_method.md) | @getshort(api/diagram_editor/historymanager/methods/reset_method.md) |
-| [](api/diagram_editor/historymanager/methods/undo_method.md) | @getshort(api/diagram_editor/historymanager/methods/undo_method.md) |
+| [add()](/api/diagram_editor/historymanager/methods/add_method/) | @getshort(/api/diagram_editor/historymanager/methods/add_method.md) |
+| [disable()](/api/diagram_editor/historymanager/methods/disable_method/) | @getshort(/api/diagram_editor/historymanager/methods/disable_method.md) |
+| [enable()](/api/diagram_editor/historymanager/methods/enable_method/) | @getshort(/api/diagram_editor/historymanager/methods/enable_method.md) |
+| [isRedo()](/api/diagram_editor/historymanager/methods/isredo_method/) | @getshort(/api/diagram_editor/historymanager/methods/isredo_method.md) |
+| [isUndo()](/api/diagram_editor/historymanager/methods/isundo_method/) | @getshort(/api/diagram_editor/historymanager/methods/isundo_method.md) |
+| [redo()](/api/diagram_editor/historymanager/methods/redo_method/) | @getshort(/api/diagram_editor/historymanager/methods/redo_method.md) |
+| [reset()](/api/diagram_editor/historymanager/methods/reset_method/) | @getshort(/api/diagram_editor/historymanager/methods/reset_method.md) |
+| [undo()](/api/diagram_editor/historymanager/methods/undo_method/) | @getshort(/api/diagram_editor/historymanager/methods/undo_method.md) |
+
 
 ## History manager properties overview
 
-| Name                                                           | Description                                                        |
-| :---------------------------------------------------------- | :----------------------------------------------------------------- |
-| [](api/diagram_editor/historymanager/config/savedelay_property.md) | @getshort(api/diagram_editor/historymanager/config/savedelay_property.md) |
+| Name                                                               | Description                                                               |
+| :----------------------------------------------------------------- | :------------------------------------------------------------------------ |
+| [saveDelay](/api/diagram_editor/historymanager/config/savedelay_property/) | @getshort(/api/diagram_editor/historymanager/config/savedelay_property.md) |

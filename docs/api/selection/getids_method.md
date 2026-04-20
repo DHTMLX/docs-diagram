@@ -37,7 +37,7 @@ const ids = diagram.selection.getIds(); // -> ["1", "1.1", ...] or []
 
 **Related articles**:  
 
-- [diagram.config.select](../../../api/diagram/select_property/)
-- [Selecting items](../../../guides/manipulating_items/#selecting-items)
+- [diagram.config.select](/api/diagram/select_property/)
+- [Selecting items](/guides/manipulating_items/#selecting-items)
 
 **Related samples**: [Diagram. Selection. Item selection](https://snippet.dhtmlx.com/jyoxn5h7)

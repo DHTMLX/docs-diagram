@@ -52,7 +52,7 @@ filter(
 - `config` - (optional) an object which defines the parameters of filtering. The object may contain the following properties:
   - `id` - (optional) the id of the filter
   - `add` - (optional) defines whether each next filtering will be applied to the already filtered data (<i>true</i>), or to the initial data (<i>false</i>, default)
-  - `permanent` - (optional) *true* to make the current filter permanent. It will be applied even if the next filtering doesn't have the `add:true` property in its configuration object. Such a filter can be removed just with the [***resetFilter***()](api/data_collection/resetfilter_method.md) method
+  - `permanent` - (optional) *true* to make the current filter permanent. It will be applied even if the next filtering doesn't have the `add:true` property in its configuration object. Such a filter can be removed just with the [***resetFilter***()](/api/data_collection/resetfilter_method/) method
 
 ### Example
 
@@ -77,7 +77,7 @@ To revert the diagram to the initial state, call the `filter()` method without p
 diagram.data.filter();
 ~~~
 
-**Related articles**:  [Filtering items](../../../guides/manipulating_items/#filtering-items)
+**Related articles**:  [Filtering items](/guides/manipulating_items/#filtering-items)
 
 **Related sample**: [Diagram. Data. Filtering shapes](https://snippet.dhtmlx.com/tm43bsgn)
 
