@@ -16,11 +16,13 @@ The `autoplacement` property works only in the default mode of the diagram and o
 
 ### Usage
 
-~~~jsx
+~~~ts
 autoplacement?: {
-    mode?: "direct" | "edges",
-    graphPadding?: number,
-    placeMode?: "orthogonal" | "radial"
+    mode?: "direct" | "edges", // "direct" by default
+    graphPadding?: number, // 200 by default
+    placeMode?: "orthogonal" | "radial", // "orthogonal" by default
+    itemPadding?: number, // 20 by default
+    levelPadding?: number // 20 by default
 };
 ~~~
 
@@ -28,9 +30,11 @@ autoplacement?: {
 
 The `autoplacement` object has the following parameters:
 
-- `mode` - (optional) the mode of connecting shapes, "direct" (by default) or "edges"
+- `mode` - (optional) the mode of connecting shapes, *"direct"* (by default) or *"edges"*
 - `graphPadding` - (optional) sets the distance between two or more unconnected diagrams, *"200"* by default
-- `placeMode` - (optional) sets the mode of placement of shapes, "orthogonal" (by default) or "radial"
+- `placeMode` - (optional) sets the mode of placement of shapes, *"orthogonal"* (by default) or *"radial"*
+- `itemPadding` - (optional) minimal padding between items. *20* by default
+- `levelPadding` - (optional) minimal padding between hierarchy levels. *20* by default
 
 ### Default config
 
@@ -38,7 +42,9 @@ The `autoplacement` object has the following parameters:
 autoplacement: {
     mode: "direct",
     graphPadding: 200,
-    placeMode: "orthogonal"
+    placeMode: "orthogonal",
+    itemPadding: 20, 
+    levelPadding: 20 
 }
 ~~~
 
@@ -47,7 +53,10 @@ autoplacement: {
 ~~~jsx
 const diagram = new dhx.Diagram("diagram_container", {
     autoplacement: {
-        mode: "edges",
+        placeMode:"radial",
+        mode: "direct",
+        itemPadding: 0,
+        levelPadding: 0,
         graphPadding: 100
     }
 });
@@ -109,11 +118,14 @@ Shapes are arranged on imaginary circles relative to the central shape, i.e. the
 
 ![](../../assets/edges_radial.png)
 
-**Change log**: The `placeMode` parameter is added in v5.0
+**Change log**: 
+
+- The `itemPadding` and `levelPadding` parameters are added in v6.1.3
+- The `placeMode` parameter is added in v5.0
 
 **Related articles**:
 
 - [Configuring autoplacement for shapes](../../../guides/diagram/configuration/#configuring-autoplacement-for-shapes)
 - [Arranging shapes automatically](../../../guides/manipulating_items/#arranging-shapes-automatically)
 
-**Related sample**: [Diagram. Default mode. Autoplacement](https://snippet.dhtmlx.com/f3uekgjw)
+**Related sample**: [Diagram. Default mode. Radial autoplacement with padding options](https://snippet.dhtmlx.com/q3wer7f0)

@@ -30,12 +30,14 @@ The library provides you with the ability to implement auto-placement for shapes
 - to place connected shapes in the symmetric order at once;
 - to arrange data loaded in the JSON format or loaded from the server in the hierarchical structure.
 
-To perform the auto-placement, you need to make use of the [](../api/diagram/autoplace_method.md) method. The method can take one parameter:
+To perform the auto-placement, you need to make use of the [`autoPlace()`](/api/diagram/autoplace_method/) method. The method can take one parameter:
 
-- **config** - (*object*) optional, an object with configuration settings of the auto-placement. The object contains two optional properties:
-    - **mode** - (*string*) the mode of connecting shapes, "direct" (by default) or "edges"
-    - **graphPadding** - (*number*) sets the distance between unconnected diagrams, *"200"* by default
-    - **placeMode** - (*string*) sets the mode of placement of shapes, "orthogonal" (by default) or "radial"
+- **config** - (*object*) optional, an object with configuration settings of the auto-placement. The object can contain the following properties:
+    - **mode** - (*string*) the mode of connecting shapes, *"direct"* (by default) or *"edges"*
+    - **graphPadding** - (*number*) sets the distance between unconnected diagrams, *200* by default
+    - **placeMode** - (*string*) sets the mode of placement of shapes, *"orthogonal"* (by default) or *"radial"*
+    - **itemPadding** - (*number*) minimal padding between items, *20* by default
+    - **levelPadding** - (*number*) minimal padding between hierarchy levels, *20* by default
 
 ~~~jsx
 const diagram = new dhx.Diagram("diagram_container");
@@ -44,7 +46,9 @@ diagram.data.parse(data);
 diagram.autoPlace({
     mode: "edges",
     graphPadding: 100,
-    placeMode: "radial"
+    placeMode: "radial",
+    itemPadding: 0,
+    levelPadding: 0
 });
 ~~~
 
@@ -59,10 +63,10 @@ diagram.data.parse(data);
 diagram.autoPlace();
 ~~~
 
-There is also the ability to configure settings for the auto-placement by using the [](../api/diagram/autoplacement_property.md) configuration option of Diagram and applying the **autoPlace()** method.
+There is also the ability to configure settings for the auto-placement by using the [`autoplacement`](/api/diagram/autoplacement_property/) configuration option of Diagram and applying the **autoPlace()** method.
 
 :::note
-The **autoPlace()** method works only in the default mode of the diagram and only for shapes.
+The `autoPlace()` method works only in the default mode of the diagram and only for shapes.
 :::
 
 ## Adding an item

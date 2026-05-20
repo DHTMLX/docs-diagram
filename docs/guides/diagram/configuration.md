@@ -121,27 +121,34 @@ You can specify the position of a diagram on a page and set margins for shapes i
 
 ## Configuring autoplacement for shapes
 
-The DHTMLX Diagram library lets you configure settings for arranging connected shapes of Diagram in the hierarchical structure automatically. You can specify the [](../../api/diagram/autoplacement_property.md) property in the configuration object of Diagram and configure the mode of connecting shapes and distance between unconnected diagrams:
+The DHTMLX Diagram library lets you configure settings for arranging connected shapes of Diagram in the hierarchical structure automatically. You can specify the [`autoplacement`](/api/diagram/autoplacement_property/) property in the configuration object of Diagram and configure the mode of connecting shapes and distance between unconnected diagrams:
 
 ~~~jsx
 const diagram = new dhx.Diagram("diagram_container", {
     autoplacement: {
         mode: "edges",
         graphPadding: 100,
-        placeMode: "radial"
+        placeMode: "radial",
+        itemPadding: 0,
+        levelPadding: 0
     }
 });
+
+diagram.data.parse(data);
+
 diagram.autoPlace();
 ~~~
 
-The property can contain three options:
+The property can contain the following options:
 
-- **mode** - (*string*) optional, the mode of connecting shapes, "direct" (by default) or "edges"
-- **graphPadding** - (*number*) optional, sets the distance between unconnected diagrams, "200" by default
-- **placeMode** - (*string*) sets the mode of placement of shapes, "orthogonal" (by default) or "radial"
+- **mode** - (*string*) optional, the mode of connecting shapes, *"direct"* (by default) or *"edges"*
+- **graphPadding** - (*number*) optional, sets the distance between unconnected diagrams, *200* by default
+- **placeMode** - (*string*) optional, sets the mode of placement of shapes, *"orthogonal"* (by default) or *"radial"*
+- **itemPadding** - (*number*) optional, minimal padding between items, *20* by default
+- **levelPadding** - (*number*) optional, minimal padding between hierarchy levels, *20* by default
 
 :::note
-The autoplacement will be applied only after the [](../../api/diagram/autoplace_method.md) method is applied. The autoplacement does not work if you use groups or swimlanes.
+The autoplacement will be applied only after the [`autoPlace()`](/api/diagram/autoplace_method/) method is applied. The autoplacement does not work if you use groups or swimlanes.
 :::
 
 ## Adjusting the Diagram scale
