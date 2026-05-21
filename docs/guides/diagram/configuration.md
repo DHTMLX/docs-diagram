@@ -129,8 +129,8 @@ const diagram = new dhx.Diagram("diagram_container", {
         mode: "edges",
         graphPadding: 100,
         placeMode: "radial",
-        itemPadding: 0,
-        levelPadding: 0
+        itemPadding: 10,
+        levelPadding: 10
     }
 });
 
@@ -141,15 +141,19 @@ diagram.autoPlace();
 
 The property can contain the following options:
 
-- **mode** - (*string*) optional, the mode of connecting shapes, *"direct"* (by default) or *"edges"*
-- **graphPadding** - (*number*) optional, sets the distance between unconnected diagrams, *200* by default
-- **placeMode** - (*string*) optional, sets the mode of placement of shapes, *"orthogonal"* (by default) or *"radial"*
-- **itemPadding** - (*number*) optional, minimal padding between items, *20* by default
-- **levelPadding** - (*number*) optional, minimal padding between hierarchy levels, *20* by default
+- `mode` - (*string*) optional, the mode of connecting shapes, *"direct"* (by default) or *"edges"*
+- `graphPadding` - (*number*) optional, sets the distance between unconnected diagrams, *200* by default
+- `placeMode` - (*string*) optional, sets the mode of placement of shapes, *"orthogonal"* (by default) or *"radial"*
+- `itemPadding` - (*number*) optional, minimal padding between items (the minimal value is *1*), *20* by default
+- `levelPadding` - (*number*) optional, minimal padding between hierarchy levels (the minimal value is *1*), *20* by default
 
 :::note
-The autoplacement will be applied only after the [`autoPlace()`](/api/diagram/autoplace_method/) method is applied. The autoplacement does not work if you use groups or swimlanes.
+Autoplacement will be applied only after the [`autoPlace()`](/api/diagram/autoplace_method/) method is applied. It works only in the default mode of the diagram and only for shapes. Autoplacement does not work if you use groups or swimlanes.
 :::
+
+![Radial autoplacement with padding options](../../assets/radial_autoplacement.png)
+
+**Related sample**: [Diagram. Default mode. Radial autoplacement with padding options](https://snippet.dhtmlx.com/huut0l1s)
 
 ## Adjusting the Diagram scale
 

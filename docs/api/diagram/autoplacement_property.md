@@ -11,7 +11,9 @@ description: You can learn about the autoplacement property in the documentation
 @short: Optional. An object with configuration settings for auto-placement of shapes
 
 :::info
-The `autoplacement` property works only in the default mode of the diagram and only for shapes
+The `autoplacement` property works only in the default mode of the diagram and only for shapes. It does not work if you use groups or swimlanes.
+
+Autoplacement will be applied only after the [`autoPlace()`](/api/diagram/autoplace_method/) method is applied. 
 :::
 
 ### Usage
@@ -31,10 +33,10 @@ autoplacement?: {
 The `autoplacement` object has the following parameters:
 
 - `mode` - (optional) the mode of connecting shapes, *"direct"* (by default) or *"edges"*
-- `graphPadding` - (optional) sets the distance between two or more unconnected diagrams, *"200"* by default
+- `graphPadding` - (optional) sets the distance between two or more unconnected diagrams, *200* by default
 - `placeMode` - (optional) sets the mode of placement of shapes, *"orthogonal"* (by default) or *"radial"*
-- `itemPadding` - (optional) minimal padding between items. *20* by default
-- `levelPadding` - (optional) minimal padding between hierarchy levels. *20* by default
+- `itemPadding` - (optional) minimal padding between items (the minimal value is *1*), *20* by default
+- `levelPadding` - (optional) minimal padding between hierarchy levels (the minimal value is *1*), *20* by default
 
 ### Default config
 
@@ -53,10 +55,10 @@ autoplacement: {
 ~~~jsx
 const diagram = new dhx.Diagram("diagram_container", {
     autoplacement: {
-        placeMode:"radial",
+        placeMode: "radial",
         mode: "direct",
-        itemPadding: 0,
-        levelPadding: 0,
+        itemPadding: 10,
+        levelPadding: 10,
         graphPadding: 100
     }
 });
@@ -128,4 +130,7 @@ Shapes are arranged on imaginary circles relative to the central shape, i.e. the
 - [Configuring autoplacement for shapes](../../../guides/diagram/configuration/#configuring-autoplacement-for-shapes)
 - [Arranging shapes automatically](../../../guides/manipulating_items/#arranging-shapes-automatically)
 
-**Related sample**: [Diagram. Default mode. Radial autoplacement with padding options](https://snippet.dhtmlx.com/q3wer7f0)
+**Related sample**: 
+
+- [Diagram. Default mode. Radial autoplacement with padding options](https://snippet.dhtmlx.com/huut0l1s)
+- [Diagram. Default mode. Arranging a generated radial dataset with autoplacement](https://snippet.dhtmlx.com/rwsime82)

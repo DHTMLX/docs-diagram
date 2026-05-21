@@ -11,7 +11,7 @@ description: You can learn about the autoplacement property of editor in the doc
 @short: Optional. An object with configuration settings for auto-placement of shapes
 
 :::info
-The `autoplacement` property works only in the default mode of the editor (`type:"default"`) and only for shapes
+The `autoplacement` property works only in the default mode of the editor and only for shapes. It does not work if you use groups or swimlanes.
 :::
 
 ### Usage
@@ -33,8 +33,8 @@ The `autoplacement` object has the following parameters:
 - `mode` - (optional) the mode of connecting shapes, *"direct"* (by default) or *"edges"*
 - `graphPadding` - (optional) sets the distance between unconnected diagrams, *200* by default
 - `placeMode` - (optional) sets the mode of placement of shapes, *"orthogonal"* (by default) or *"radial"*
-- `itemPadding` - (optional) minimal padding between items. *20* by default
-- `levelPadding` - (optional) minimal padding between hierarchy levels. *20* by default
+- `itemPadding` - (optional) minimal padding between items (the minimal value is *1*), *20* by default
+- `levelPadding` - (optional) minimal padding between hierarchy levels (the minimal value is *1*), *20* by default
 
 ### Default config
 
@@ -55,8 +55,8 @@ const editor = new dhx.DiagramEditor("editor_container", {
     autoplacement: {
         placeMode: "radial",
         mode: "direct",
-        itemPadding: 0,
-        levelPadding: 0,
+        itemPadding: 10,
+        levelPadding: 10,
         graphPadding: 100
     }
 });
@@ -119,7 +119,7 @@ Shapes are arranged on imaginary circles relative to the central shape, i.e. the
 **Change log**:  
 
 - The `itemPadding` and `levelPadding` parameters are added in v6.1.3
-- The **placeMode** parameter is added in v5.0
-- The **autoplacement** property is added in v3.0
+- The `placeMode` parameter is added in v5.0
+- The `autoplacement` property is added in v3.0
 
 **Related sample**: [Diagram editor. Default mode. Radial auto layout algorithm](https://snippet.dhtmlx.com/f0cespbk)

@@ -7,7 +7,7 @@ description: You can learn about the autoPlace method in the documentation of th
 # autoPlace()
 
 :::info
-The **autoPlace()** method works only in the default mode of the diagram and only for shapes
+The `autoPlace()` method works only in the default mode of the diagram and only for shapes
 :::
 
 ### Description
@@ -26,8 +26,8 @@ autoPlace(config?: object): void;
     - `mode` - (optional) the mode of connecting shapes, *"direct"* (by default) or *"edges"*
     - `graphPadding` - (optional) sets the distance between unconnected diagrams, *200* by default
     - `placeMode` - (optional) sets the mode of placement of shapes, *"orthogonal"* (by default) or *"radial"*
-    - `itemPadding` - (optional) minimal padding between items, *20* by default
-    - `levelPadding` - (optional) minimal padding between hierarchy levels, *20* by default
+    - `itemPadding` - (optional) minimal padding between items (the minimal value is *1*), *20* by default
+    - `levelPadding` - (optional) minimal padding between hierarchy levels (the minimal value is *1*), *20* by default
 
 ### Example
 
@@ -52,6 +52,10 @@ Connector lines with no arrows are aligned "from center to center"; they are str
 ### "edges" mode
 
 Connector lines are aligned "from side to side".
+
+:::note
+If `fromSide` and `toSide` are set on a link, the autoplacement algorithm will preserve those values but will not use them during placement calculation. The key properties that define links are `from` and `to`, while `fromSide` and `toSide` are calculated automatically by the algorithm.
+:::
 
 :::info 
 To add arrows to the lines, specify **forwardArrow: "filled"** or **backArrow: "filled"** in the configuration of a [line object](../../../lines/configuration_properties/).
@@ -96,11 +100,12 @@ Shapes are arranged on imaginary circles relative to the central shape, i.e. a s
 
 **Change log**:
 
+- The `itemPadding` and `levelPadding` parameters are added in v6.1.3
 - The **placeMode** parameter is added in v5.0
 - The **autoplacement** property is added in v3.0
 
 **Related articles**: [Arranging shapes automatically](../../../guides/manipulating_items/#arranging-shapes-automatically)
 
 **Related sample**: 
-- [Diagram. Default mode. Radial autoplacement with padding options](https://snippet.dhtmlx.com/q3wer7f0)
+- [Diagram. Default mode. Radial autoplacement with padding options](https://snippet.dhtmlx.com/huut0l1s)
 - [Diagram. Default mode. Autoplacement](https://snippet.dhtmlx.com/f3uekgjw)

@@ -5,7 +5,11 @@ description: You can learn about manipulating items in the documentation of the 
 ---
 # Manipulating items
 
-You can easily manipulate Diagram items via the [Diagram Editor](../../guides/diagram_editor/initialization/). But in this article we'll explore the examples on how to manipulate the items of DHTMLX Diagram via the component's API. The article contains different sections that cover such questions as:
+You can easily manipulate Diagram items via the [Diagram Editor](../../guides/diagram_editor/initialization/). But in this article we'll explore the examples on how to manipulate the items of DHTMLX Diagram via the component's API. 
+
+## Overview
+
+The article contains different sections that cover such questions as:
 
 - [how to automatically arrange shapes in the hierarchical order](#arranging-shapes-automatically);
 - how to perform a range of operations over items, in particular:
@@ -32,12 +36,16 @@ The library provides you with the ability to implement auto-placement for shapes
 
 To perform the auto-placement, you need to make use of the [`autoPlace()`](/api/diagram/autoplace_method/) method. The method can take one parameter:
 
-- **config** - (*object*) optional, an object with configuration settings of the auto-placement. The object can contain the following properties:
-    - **mode** - (*string*) the mode of connecting shapes, *"direct"* (by default) or *"edges"*
-    - **graphPadding** - (*number*) sets the distance between unconnected diagrams, *200* by default
-    - **placeMode** - (*string*) sets the mode of placement of shapes, *"orthogonal"* (by default) or *"radial"*
-    - **itemPadding** - (*number*) minimal padding between items, *20* by default
-    - **levelPadding** - (*number*) minimal padding between hierarchy levels, *20* by default
+- `config` - (*object*) optional, an object with configuration settings of the auto-placement. The object can contain the following properties:
+    - `mode` - (*string*) optional, the mode of connecting shapes, *"direct"* (by default) or *"edges"*
+    - `graphPadding` - (*number*) optional, sets the distance between unconnected diagrams, *200* by default
+    - `placeMode` - (*string*) optional, sets the mode of placement of shapes, *"orthogonal"* (by default) or *"radial"*
+    - `itemPadding` - (*number*) optional, minimal padding between items (the minimal value is *1*), *20* by default
+    - `levelPadding` - (*number*) optional, minimal padding between hierarchy levels (the minimal value is *1*), *20* by default
+
+:::note
+The `autoPlace()` method works only in the default mode of the diagram and only for shapes. The autoplacement does not work if you use groups or swimlanes.
+:::
 
 ~~~jsx
 const diagram = new dhx.Diagram("diagram_container");
@@ -47,8 +55,8 @@ diagram.autoPlace({
     mode: "edges",
     graphPadding: 100,
     placeMode: "radial",
-    itemPadding: 0,
-    levelPadding: 0
+    itemPadding: 10,
+    levelPadding: 10
 });
 ~~~
 
@@ -63,11 +71,29 @@ diagram.data.parse(data);
 diagram.autoPlace();
 ~~~
 
-There is also the ability to configure settings for the auto-placement by using the [`autoplacement`](/api/diagram/autoplacement_property/) configuration option of Diagram and applying the **autoPlace()** method.
+There is also the ability to configure settings for the auto-placement by using the [`autoplacement`](/api/diagram/autoplacement_property/) configuration option of Diagram and applying the `autoPlace()` method. The example below demonstrates how to generate and arrange a radial dataset using autoplacement.
 
-:::note
-The `autoPlace()` method works only in the default mode of the diagram and only for shapes.
-:::
+~~~jsx
+const diagram = new dhx.Diagram("diagram_container", {
+    scale: 0.3,
+    autoplacement: {
+        placeMode: "radial",
+        mode: "direct" 
+    }
+});
+
+diagram.data.parse(getNodes(120, 5));
+
+diagram.autoPlace({
+    itemPadding: 10,
+    levelPadding: 10,
+    graphPadding: 100,
+});
+~~~
+
+![Autoplacement with a generated radial dataset](../assets/radial_datasets_generator.png)
+
+**Related sample:** [Diagram. Default mode. Arranging a generated radial dataset with autoplacement](https://snippet.dhtmlx.com/rwsime82)
 
 ## Adding an item
 
