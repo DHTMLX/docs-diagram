@@ -14,12 +14,12 @@ Released on May 21, 2026
 
 ### Updates
 
-- Diagram / Diagram Editor. Improvements in the autoplacement logic. Added the ability to control spacing between shapes and levels via new `itemPadding` and `levelPadding` properties in the `autoPlace()` Diagram method and the `autoplacement` configuration object
+- Diagram / Diagram Editor. Improvements in the autoplacement logic. Added the ability to control spacing between shapes and levels via new `itemPadding` and `levelPadding` properties in the [`autoPlace()`](/api/diagram/autoplace_method/) Diagram method and the [`autoplacement`](/api/diagram/autoplacement_property/) configuration object
 
 ### Fixes
 
 - Diagram. Fixed the issue where applying autoplacement resulted in incorrect distances between shapes
-- Diagram. Fixed the issue where calling `autoPlace()` ignored `fromSide` and `toSide` link values, ensuring the diagram structure remains consistent
+- Diagram. Fixed the issue where calling [`autoPlace()`](/api/diagram/autoplace_method/) ignored [`fromSide` and `toSide`](/lines/configuration_properties/) link values, ensuring the diagram structure remains consistent
 - Diagram. The `Radial` autoplacement algorithm was refactored to fix the issue with critically large distances between shapes, providing a more compact layout
 
 ## Version 6.1.2 
