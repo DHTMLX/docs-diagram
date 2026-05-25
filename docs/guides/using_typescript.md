@@ -21,3 +21,7 @@ Why we suggest that you use DHTMLX Diagram with TypeScript?
 The main benefit of TypeScript is that it lets you know exactly what type of data APIs of the DHTMLX Diagram library expect.
 
 The way of building an application becomes more intelligent as checking the types together with autocompletion allow you to avoid potential mistakes as well as to code without constantly using the documentation.
+
+## JSDoc hints
+
+DHTMLX Diagram type definitions ship with JSDoc annotations covering the full API surface. As you write code in your IDE, you get inline documentation for every method, property, and event, including parameter types, return values, and usage examples, without ever opening a browser. Hover over any part of the Diagram API to see the details right in the editor.
