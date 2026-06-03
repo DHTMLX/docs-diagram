@@ -131,7 +131,6 @@ module.exports = {
     url: 'https://docs.dhtmlx.com',
     baseUrl: '/diagram/',
     onBrokenLinks: 'warn',
-	onBrokenMarkdownLinks: 'warn',
     onBrokenAnchors: 'warn',
     // onBrokenLinks: 'ignore', // !!! TODO, make to warn before release 
     // onBrokenAnchors: 'ignore', // !!! TODO, make to warn before release 
@@ -146,6 +145,14 @@ module.exports = {
 		}
 	},
     themeConfig: {
+        image: 'img/og-default-diagram.png',
+        metadata: [
+            { property: 'og:type', content: 'website' },
+            { property: 'og:site_name', content: 'DHTMLX Diagram Docs' },
+            { property: 'og:locale', content: 'en_US' },
+            { name: 'twitter:card', content: 'summary_large_image' },
+            { name: 'twitter:site', content: '@dhtmlx' }
+        ],
         /*colorMode: {
             // "light" | "dark"
             defaultMode: 'light',
