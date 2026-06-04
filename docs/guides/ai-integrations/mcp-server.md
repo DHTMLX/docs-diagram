@@ -1,7 +1,7 @@
 ---
 sidebar_label: DHTMLX MCP server
 title:  Using DHTMLX MCP server with AI coding assistants
-description: Access live DHTMLX Diagram documentation in AI coding assistants via the DHTMLX MCP server. Setup guides for Claude Code, Cursor, Gemini CLI, and ChatGPT.
+description: Connect AI coding assistants to live DHTMLX Diagram documentation via the MCP server. Covers shapes, swimlanes, org charts, the Diagram Editor, and more.
 ---
 
 # Using DHTMLX MCP server with AI coding assistants
@@ -28,7 +28,7 @@ The MCP server indexes the full DHTMLX Diagram documentation. Common scenarios w
 - Generating ready-to-run Diagram code based on a description.
 - Exploring [Editor](/guides/diagram_editor/initialization/) configuration options, toolbar controls, and event handling.
 - Checking [export](/guides/data_export/) options and understanding how to produce PDF or PNG output.
-- Configuring auto-layout options for org chart and hierarchical diagram arrangements using the [diagram configuration](/guides/diagram/configuration/).
+- Configuring auto-layout options for default-mode diagrams using the [diagram configuration](/guides/diagram/configuration/).
 - Loading diagram data and serializing it back with the available [data methods](/guides/loading_data/).
 - Handling [Diagram and Editor events](/guides/event_handling/) to respond to user interactions.
 - Exploring [TypeScript support](/guides/using_typescript/) and framework integration for React, Vue, Angular and Svelte.
@@ -215,7 +215,7 @@ How do I change the default text style and background color for all shapes in DH
 **Configuring the editor**
 
 ~~~
-How do I configure auto-layout for an org chart in DHTMLX Diagram Editor?
+How do I use autoPlace() to automatically arrange shapes in DHTMLX Diagram?
 ~~~
 ~~~
 I want to enable inline editing for shape text in DHTMLX Diagram.
