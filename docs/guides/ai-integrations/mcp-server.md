@@ -199,6 +199,9 @@ I want to build an org chart from a JSON data set in DHTMLX Diagram. How do I co
 ~~~
 How do I create a flowchart with decision nodes and multiple links in DHTMLX Diagram?
 ~~~
+~~~
+How do I use autoPlace() to automatically arrange shapes in DHTMLX Diagram?
+~~~
 
 **Working with shapes**
 
@@ -214,9 +217,6 @@ How do I change the default text style and background color for all shapes in DH
 
 **Configuring the editor**
 
-~~~
-How do I use autoPlace() to automatically arrange shapes in DHTMLX Diagram?
-~~~
 ~~~
 I want to enable inline editing for shape text in DHTMLX Diagram.
 ~~~
