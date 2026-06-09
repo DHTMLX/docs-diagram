@@ -61,7 +61,7 @@ The fastest way to add the DHTMLX MCP server to Claude Code is through the CLI:
 claude mcp add --transport http dhtmlx-mcp https://docs.dhtmlx.com/mcp
 ~~~
 
-To configure it manually, add the following entry to your `mcp.json`:
+To configure it manually, add the following entry to your `.mcp.json`:
 
 ~~~json
 {
@@ -97,33 +97,9 @@ Follow the steps below to connect the DHTMLX MCP server to Cursor:
 }
 ~~~
 
-### Gemini CLI setup
+### Google Antigravity
 
-:::info
-A full walkthrough for adding MCP servers to Gemini CLI is available in the [official documentation](https://geminicli.com/docs/tools/mcp-server/).
-:::
-
-To connect DHTMLX MCP server to Gemini via the CLI, use:
-
-~~~bash
-gemini mcp add --transport http dhtmlx-mcp https://docs.dhtmlx.com/mcp
-~~~
-
-Alternatively, open `~/.gemini/settings.json` and add:
-
-~~~json
-{
-  "mcpServers": {
-    "dhtmlx-mcp": {
-      "url": "https://docs.dhtmlx.com/mcp"
-    }
-  }
-}
-~~~
-
-Restart Gemini CLI after saving the file.
-
-### Antigravity (Google) setup
+#### Antigravity 2.0
 
 :::info
 Refer to the [official documentation](https://antigravity.google/docs/mcp) for full details on MCP server integration in Antigravity.
@@ -143,6 +119,31 @@ dhtmlx-mcp
 ~~~
 https://docs.dhtmlx.com/mcp
 ~~~
+
+#### Antigravity CLI
+
+:::info
+Check the [related guide](https://antigravity.google/docs/gcli-migration#mcp-config-formatting-changes) to learn about migration from Gemini CLI to Antigravity CLI.
+:::
+
+To connect the DHTMLX MCP server to Antigravity CLI, create `mcp_config.json` in one of these locations:
+
+- Global: `~/.gemini/config/mcp_config.json`
+- Workspace: `.agents/mcp_config.json`
+
+Add the following configuration:
+
+~~~json
+{
+  "mcpServers": {
+    "dhtmlx-mcp": {
+      "serverUrl": "https://docs.dhtmlx.com/mcp"
+    }
+  }
+}
+~~~
+
+Then run `agy` in the terminal.
 
 ### ChatGPT setup
 
