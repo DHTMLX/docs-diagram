@@ -27,3 +27,16 @@ In this section you will find a set of standard hotkeys you can use while creati
 | `Delete` (`Del`), `Backspace`  | Deletes an item(s)                                   | `"delete"`, `"backspace"` |
 | `Arrow-Left`, `Arrow-Right`, `Arrow-Up`, `Arrow-Down`| Moves the selected items       | `"arrowLeft"`, `"arrowRight"`, `"arrowUp"`, `"arrowDown"` |
 | `Ctrl+Mousewheel` (Win), `CMD+Mousewheel` (macOS)| Increases/decreases the scale value | (Not directly a `hotkeys` parameter key) |
+| `Ctrl+Enter` (Win), `CMD+Enter` (macOS) | Opens the inline text editor for the selected element. Works as an alternative to double-clicking. Applicable only to shapes with an editable `text` property. | `"ctrl+enter"` |
+
+## Inline text editor shortcuts
+
+The following hotkeys are available when the [inline text editor](/guides/inline_editing/) is active. They cannot be configured via the `hotkeys` property.
+
+| Hotkey | Description |
+|--------|-------------|
+| `Ctrl+Enter` (Win), `CMD+Enter` (macOS) | Opens the inline text editor for the selected element. Works as an alternative to double-clicking. Applicable only to shapes with an editable `text` property. |
+| `Shift+Enter` | Inserts a line break (`\n`) while keeping the editor open. |
+| `Delete` (`Del`), `Backspace` | Deletes the character at the cursor position. Does not delete the element itself. |
+| `Enter` | Confirms the current text and closes the editor. Because the editor applies changes dynamically as you type, pressing Enter marks a successful completion of editing. |
+| `Escape` | Discards all unsaved changes and closes the editor, restoring the element's text to the value it had before editing began. |
