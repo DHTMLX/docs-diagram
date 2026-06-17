@@ -104,6 +104,18 @@ const data = [
 ];
 ~~~
 
+## Keyboard shortcuts
+
+The inline text editor supports the following keyboard shortcuts:
+
+| Hotkey | Description |
+|--------|-------------|
+| `Ctrl+Enter` (Win), `CMD+Enter` (macOS) | Opens the inline text editor for the selected element. Works as an alternative to double-clicking. Applicable only to shapes with an editable `text` property. |
+| `Shift+Enter` | Inserts a line break (`\n`) while keeping the editor open. |
+| `Delete` (`Del`), `Backspace` | Deletes the character at the cursor position. Does not delete the element itself. |
+| `Enter` | Confirms the current text and closes the editor. Because the editor applies changes dynamically as you type, pressing Enter marks a successful completion of editing. |
+| `Escape` | Discards all unsaved changes and closes the editor, restoring the element's text to the value it had before editing began. |
+
 ## API events
 
 The library includes a set of helpful [API events](../../api/inline_editor/) which you can use to control the behavior of the editor on its opening/closing, as well as to control the process of editing the text of the items.
