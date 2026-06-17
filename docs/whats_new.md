@@ -8,6 +8,21 @@ description: You can learn a new information about DHTMLX JavaScript Diagram lib
 
 If you are updating Diagram from an older version, check [Migration to Newer Version](migration.md) for details.
 
+## Version 6.1.5
+
+Released on June 17, 2026
+
+### Updates
+
+- Diagram Editor. Improved text editing experience with new keyboard shortcuts: **Ctrl+Enter** to start editing, **Shift+Enter** for new lines, **Enter** to confirm, and **Escape** to discard changes.
+
+### Fixes
+
+- Diagram Editor. Fixed the issue where lines passing through swimlane groups were not selectable.
+- Diagram Editor. Added auto-scroll functionality when dragging connection lines to shapes outside the current screen view.
+- Diagram Editor. Fixed the bug that caused a shape to be deleted while editing its text.
+- Diagram. Fixed a Safari-specific bug where lines with the `backArrow: "filled"` property were not rendered correctly.
+
 ## Version 6.1.3 
 
 Released on May 21, 2026
