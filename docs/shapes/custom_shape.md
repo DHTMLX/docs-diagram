@@ -14,7 +14,7 @@ Let's imagine, you want to create a new `networkCard` shape which should render 
 
 To do that, you need to take the following steps:
 
-1\. Apply the [](../api/diagram/addshape_method.md) method to add a unique name for your shape (*"networkCard"* in our case) and provide a template for it:
+1\. Apply the [](api/diagram/addshape_method.md) method to add a unique name for your shape (*"networkCard"* in our case) and provide a template for it:
 
 ~~~jsx
 diagram.addShape("networkCard", {
@@ -41,7 +41,7 @@ The **defaults** attribute is used to define the default configuration of a "net
 2\. Use the unique name of the shape as a value of the **type** attribute inside the shape object while preparing a data set for loading into the diagram.
 
 :::note
-The data object of a custom shape can contain any [configuration properties](/shapes/configuration_properties/) including custom ones.
+The data object of a custom shape can contain any [configuration properties](shapes/configuration_properties.md) including custom ones.
 :::
 
 ~~~jsx
@@ -64,7 +64,7 @@ Thus, the *"Network Card"* text value will be replaced with the *"Remote expert 
 
 ## Event handlers for custom shapes
 
-You may need to add handlers to the events occurred when the user interacts with custom shapes. It can be done by adding event handlers to HTML elements of the template of a shape via the **eventHandlers** attribute of the [](../api/diagram/addshape_method.md) method. 
+You may need to add handlers to the events occurred when the user interacts with custom shapes. It can be done by adding event handlers to HTML elements of the template of a shape via the **eventHandlers** attribute of the [](api/diagram/addshape_method.md) method. 
 
 In the example below, a context menu will be opened after the user clicks on the icon with the **toggle_container** class:
 

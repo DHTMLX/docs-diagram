@@ -12,7 +12,7 @@ as a scheme, chart, organizational chart, mind map, etc. The diagram makes it ea
 
 ## Diagram in the default mode
 
-DHTMLX Diagram provides the possibility to make various diagrams using a [predefined set of shapes](/shapes/default_shapes/) and [connectors](/lines), and experiment with their look and feel.
+DHTMLX Diagram provides the possibility to make various diagrams using a [predefined set of shapes](shapes/default_shapes.md) and [connectors](/lines/), and experiment with their look and feel.
 
 You can choose shapes of desired types, link them by suitable connectors and build any type of a diagram that will show the sequence of some operations making up a particular process, like this:
 
@@ -26,7 +26,7 @@ You can choose shapes of desired types, link them by suitable connectors and bui
 
 ### Custom shapes
 
-You can easily create [your own templates of shapes](/shapes/custom_shape/) and use them to design any diagram you need. For example, it is possible to create such famous types of custom diagrams as:
+You can easily create [your own templates of shapes](shapes/custom_shape.md) and use them to design any diagram you need. For example, it is possible to create such famous types of custom diagrams as:
 
 | [Life Cycle Diagram](https://snippet.dhtmlx.com/y4k51owl) | [Venn Diagram template](https://snippet.dhtmlx.com/2tzyfois) | [UML Class Diagram template](https://snippet.dhtmlx.com/madymxt5) |
 | --------------------------------------------------------- | --------------------------------------------------- | -------------------------------------------------------- |
@@ -66,7 +66,7 @@ There is also an org chart mode of Diagram that presents a set of shapes connect
 
 ### Assistant and partner shapes
 
-A parent shape of any level can have assistant or partner items. The assistant and partner shapes can't be parent items. The assistant and partner items can be added in the [editor](./editor_overview/#editor-in-the-org-chart-mode) or by preparing a [data set](guides/loading_data.md/#preparing-data-to-load).
+A parent shape of any level can have assistant or partner items. The assistant and partner shapes can't be parent items. The assistant and partner items can be added in the [editor](editor_overview.md#editor-in-the-org-chart-mode) or by preparing a [data set](guides/loading_data.md#preparing-data-to-load).
 
 In the hierarchical order, the assistant items are displayed between parent and children shapes.
 
@@ -116,9 +116,9 @@ An example of adding a custom template into the mindmap mode of the diagram to c
 
 ## Diagram in the PERT mode
 
-The [PERT mode](/api/diagram/type_property/) is used to visualize tasks and projects' sequences and connections between them. It is also useful for identifying the critical path and project planning. 
+The [PERT mode](api/diagram/type_property.md) is used to visualize tasks and projects' sequences and connections between them. It is also useful for identifying the critical path and project planning. 
 
-Diagram in the PERT mode [uses the DHTMLX Gantt data structure](/guides/loading_data/#data-structure-of-diagram-in-the-pert-mode), which provides [easy interaction between the components](#integrating-pert-diagram-and-dhtmlx-gantt). On loading a Gantt dataset, a Diagram in the PERT mode automatically arranges tasks and projects based on the connections between them.
+Diagram in the PERT mode [uses the DHTMLX Gantt data structure](guides/loading_data.md#data-structure-of-diagram-in-the-pert-mode), which provides [easy interaction between the components](#integrating-pert-diagram-and-dhtmlx-gantt). On loading a Gantt dataset, a Diagram in the PERT mode automatically arranges tasks and projects based on the connections between them.
 
 <iframe src="https://snippet.dhtmlx.com/4h5fi7xd?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 

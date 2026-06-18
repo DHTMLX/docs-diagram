@@ -18,17 +18,17 @@ items?: (object | string)[];
 
 ### Configuring items via strings
 
-The `items` property allows you to specify [**Service elements**](guides/diagram_editor/toolbar.md/#service-elements) as an array of strings:
+The `items` property allows you to specify [**Service elements**](guides/diagram_editor/toolbar.md#service-elements) as an array of strings:
 
 ~~~jsx
 items: [ "file", "edit", "view", "arrange", "spacer", "scale" ];
 ~~~
 
-The full list of service elements you can see [here](guides/diagram_editor/toolbar.md/#service-elements).
+The full list of service elements you can see [here](guides/diagram_editor/toolbar.md#service-elements).
 
 ### Configuring items via objects
 
-The `items` property allows you to specify [**Service elements**](guides/diagram_editor/toolbar.md/#service-elements) and [**Base elements**](guides/diagram_editor/toolbar.md/#base-elements) as an array of objects:
+The `items` property allows you to specify [**Service elements**](guides/diagram_editor/toolbar.md#service-elements) and [**Base elements**](guides/diagram_editor/toolbar.md#base-elements) as an array of objects:
 
 ~~~jsx
 items: [ 
@@ -50,7 +50,7 @@ items: [
 
 #### Parameters
 
-For all [**service elements**](guides/diagram_editor/toolbar.md/#service-elements), excluding `separator` / `spacer` / `scale`, you can specify an object with the following parameters:
+For all [**service elements**](guides/diagram_editor/toolbar.md#service-elements), excluding `separator` / `spacer` / `scale`, you can specify an object with the following parameters:
 
 - `type` - (required) - the type of a service element. The full list of service element types you can see [here](guides/diagram_editor/toolbar.md)
 - `id` - (optional) - the ID of a service element. By default, the ID of a service element includes **$** and the **type** of the service element: **$file**

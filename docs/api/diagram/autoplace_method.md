@@ -58,15 +58,15 @@ If `fromSide` and `toSide` are set on a link, the autoplacement algorithm will p
 :::
 
 :::info 
-To add arrows to the lines, specify **forwardArrow: "filled"** or **backArrow: "filled"** in the configuration of a [line object](../../../lines/configuration_properties/).
+To add arrows to the lines, specify **forwardArrow: "filled"** or **backArrow: "filled"** in the configuration of a [line object](lines/configuration_properties.md).
 :::
 
 The connector lines in the "edges" mode can be:
-  - either straight (if you set **connectType: "straight"** property of a [line object](../../../lines/configuration_properties/))
+  - either straight (if you set **connectType: "straight"** property of a [line object](lines/configuration_properties.md))
 
 ![](/img/edges_straight_mode.png)
 
-  - or 90-degree curved (if you set **connectType: "elbow"** property of a [line object](../../../lines/configuration_properties/))
+  - or 90-degree curved (if you set **connectType: "elbow"** property of a [line object](lines/configuration_properties.md))
 
 ![](/img/edges_mode.png)
 
@@ -104,7 +104,7 @@ Shapes are arranged on imaginary circles relative to the central shape, i.e. a s
 - The **placeMode** parameter is added in v5.0
 - The **autoplacement** property is added in v3.0
 
-**Related articles**: [Arranging shapes automatically](../../../guides/manipulating_items/#arranging-shapes-automatically)
+**Related articles**: [Arranging shapes automatically](guides/manipulating_items.md#arranging-shapes-automatically)
 
 **Related sample**: 
 - [Diagram. Default mode. Radial autoplacement with padding options](https://snippet.dhtmlx.com/huut0l1s)

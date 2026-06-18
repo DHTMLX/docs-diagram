@@ -72,7 +72,7 @@ const data = [
 
 When preparing a data set for a custom shape, you can add any custom properties to the configuration object of a shape:
 
-- `key` - (optional) a custom property for a custom shape. For details, check the [Custom shape](../custom_shape/) article. <br>*Use unique names as names for custom properties. Overriding the internal properties of the diagram shape object is forbidden as it causes the incorrect work of the diagram and its editor.*
+- `key` - (optional) a custom property for a custom shape. For details, check the [Custom shape](shapes/custom_shape.md) article. <br>*Use unique names as names for custom properties. Overriding the internal properties of the diagram shape object is forbidden as it causes the incorrect work of the diagram and its editor.*
 
 ### Example
 
@@ -120,12 +120,12 @@ const data = [
 When preparing a data set for shapes to load into the diagram in the default mode, you can add the following properties to the configuration object of a shape:
 
 - `angle` - (optional) the angle of shape rotation
-- `preview` - (optional) either a path to the image/a base64 image or an object with settings [to configure the shape preview displayed in the shapebar of the editor](/guides/diagram_editor/shapebar/#setting-the-preview-of-shapes). As an object, the property can contain a set of optional properties:
+- `preview` - (optional) either a path to the image/a base64 image or an object with settings [to configure the shape preview displayed in the shapebar of the editor](guides/diagram_editor/shapebar.md#setting-the-preview-of-shapes). As an object, the property can contain a set of optional properties:
   - `img` - (optional) a path to the image or a base64 image
   - `width` - (optional) the width of the image
   - `height` - (optional) the height of the image
-  - `gap` - (optional) sets the value of the `gap` attribute of the [preview](../../api/diagram_editor/shapebar/config/preview_property/) property for the specified type of a shape
-  - `scale` - (optional) sets the value of the `scale` attribute of the [preview](../../api/diagram_editor/shapebar/config/preview_property/) property for the specified type of a shape
+  - `gap` - (optional) sets the value of the `gap` attribute of the [preview](api/diagram_editor/shapebar/config/preview_property.md) property for the specified type of a shape
+  - `scale` - (optional) sets the value of the `scale` attribute of the [preview](api/diagram_editor/shapebar/config/preview_property.md) property for the specified type of a shape
    :::info
    The **scale** property can't be applied together with the **img**, **width**, **height** properties
    :::
@@ -521,5 +521,5 @@ const data = [
 
 **Related articles**:
 
-- [Default Shapes](../../shapes/default_shapes/)
-- [Custom Shape](../../shapes/custom_shape/)
+- [Default Shapes](shapes/default_shapes.md)
+- [Custom Shape](shapes/custom_shape.md)

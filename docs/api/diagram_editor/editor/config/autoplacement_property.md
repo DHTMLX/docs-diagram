@@ -77,16 +77,16 @@ Connector lines with no arrows are aligned "from center to center". They are str
 Connector lines are aligned "from side to side".
 
 :::info
-To add arrows to the lines, specify `forwardArrow: "filled"` or `backArrow: "filled"` in the configuration of a [line object](/lines/configuration_properties/).
+To add arrows to the lines, specify `forwardArrow: "filled"` or `backArrow: "filled"` in the configuration of a [line object](lines/configuration_properties.md).
 :::
 
 The connector lines in the "edges" mode can be:
 
-- either straight (if you set the `connectType: "straight"` property of a [line object](/lines/configuration_properties/))
+- either straight (if you set the `connectType: "straight"` property of a [line object](lines/configuration_properties.md))
 
 ![](/img/edges_straight_mode.png)
 
-- or 90-degree curved (if you set the `connectType: "elbow"` property of a [line object](/lines/configuration_properties/))
+- or 90-degree curved (if you set the `connectType: "elbow"` property of a [line object](lines/configuration_properties.md))
 
 ![](/img/edges_mode.png)
 

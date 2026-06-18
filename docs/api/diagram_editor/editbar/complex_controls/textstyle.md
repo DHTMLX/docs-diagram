@@ -57,12 +57,12 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ### Service properties
 
-- `$properties` - (optional) allows you to override values of [basic controls](/api/diagram_editor/editbar/basic_controls_overview) within a complex control. You can configure the following elements of the **Text style** control based on the basic controls:
-    - `fontSize` - ([combo](/api/diagram_editor/editbar/basic_controls/combo)) sets the font size
-    - `lineHeight` - ([input](/api/diagram_editor/editbar/basic_controls/input)) sets the line height
-    - `fontColor` - ([colorpicker](/api/diagram_editor/editbar/basic_controls/colorpicker)) sets the font color
-    - `fontWeight` - ([toggle](/api/diagram_editor/editbar/basic_controls/toggle)) sets the font weight
-    - `fontStyle` - ([toggle](/api/diagram_editor/editbar/basic_controls/toggle)) sets the font style
+- `$properties` - (optional) allows you to override values of [basic controls](api/diagram_editor/editbar/basic_controls_overview.md) within a complex control. You can configure the following elements of the **Text style** control based on the basic controls:
+    - `fontSize` - ([combo](api/diagram_editor/editbar/basic_controls/combo.md)) sets the font size
+    - `lineHeight` - ([input](api/diagram_editor/editbar/basic_controls/input.md)) sets the line height
+    - `fontColor` - ([colorpicker](api/diagram_editor/editbar/basic_controls/colorpicker.md)) sets the font color
+    - `fontWeight` - ([toggle](api/diagram_editor/editbar/basic_controls/toggle.md)) sets the font weight
+    - `fontStyle` - ([toggle](api/diagram_editor/editbar/basic_controls/toggle.md)) sets the font style
 
 ## Example
 

@@ -6,7 +6,7 @@ description: You can explore the Fieldset control of Editbar in the documentatio
 
 # Fieldset
 
-@short: The basic control for creating complex controls with the help of the [`controls`](/api/diagram_editor/editbar/config/controls_property/) or the [`properties`](/api/diagram_editor/editbar/config/properties_property/) Editbar configuration options.
+@short: The basic control for creating complex controls with the help of the [`controls`](api/diagram_editor/editbar/config/controls_property.md) or the [`properties`](api/diagram_editor/editbar/config/properties_property.md) Editbar configuration options.
 
 ![Fieldset control](/img/editbar-basic-controls/fieldset.png)
 

@@ -11,7 +11,7 @@ Grid area is an area intended for editing a diagram. You can easily add new item
 In this section you will find what interface elements are available for each diagram item depending on the mode the editor is initialized in. The section also explains how to facilitate ease of designing a diagram by using keyboard shortcuts or operating several selected items at once.
 
 :::note
-Distance between points in the Grid area depends on the value of the [grid step](/api/diagram_editor/editor/config/gridstep_property/)
+Distance between points in the Grid area depends on the value of the [grid step](api/diagram_editor/editor/config/gridstep_property.md)
 :::
 
 ## Managing shapes
@@ -129,11 +129,11 @@ Note, that some options of moving the first/last columns and rows are deactivate
 
 ## Editing attributes of an item
 
-After selecting an item in the grid area, you can update its attributes [via the sidebar options in the editbar of the editor](../../../guides/diagram_editor/editbar/).
+After selecting an item in the grid area, you can update its attributes [via the sidebar options in the editbar of the editor](guides/diagram_editor/editbar.md).
 
 ## Configuring the toolbar of an item
 
-You can customize the personal toolbar of shapes, groups, swimlanes according to your needs via the [shapeToolbar](../../../api/diagram_editor/editor/config/shapetoolbar_property/) property of the editor.
+You can customize the personal toolbar of shapes, groups, swimlanes according to your needs via the [shapeToolbar](api/diagram_editor/editor/config/shapetoolbar_property.md) property of the editor.
 
 ## Enabling/disabling snap lines
 
@@ -143,7 +143,7 @@ The feature is available only in the default mode of Editor
 
 From v5.0, the Grid area is equipped with snap lines which will simplify the process of placing shapes symmetrically to each other.
 
-If you need to change the width and color of the lines, or to hide them at all, use the [magnetic](../../../api/diagram_editor/editor/config/magnetic_property/) property of Editor.
+If you need to change the width and color of the lines, or to hide them at all, use the [magnetic](api/diagram_editor/editor/config/magnetic_property.md) property of Editor.
 
 ## Manipulating multiple items
 

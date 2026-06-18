@@ -19,8 +19,8 @@ To configure the Toolbar you can use the following properties:
     - `"pointer"` - activates a Toolbar item when a user hovers the mouse pointer over it
 
 - [`items`](api/diagram_editor/toolbar/config/items_property.md) - the array of [**items**](#service-elements) (controls) arranged on Toolbar. There are 2 ways how to configure Toolbar items:
-    - [**Configuring Items via Strings**](api/diagram_editor/toolbar/config/items_property.md/#configuring-items-via-strings)
-    - [**Configuring Items via Objects**](api/diagram_editor/toolbar/config/items_property.md/#configuring-items-via-objects)
+    - [**Configuring Items via Strings**](api/diagram_editor/toolbar/config/items_property.md#configuring-items-via-strings)
+    - [**Configuring Items via Objects**](api/diagram_editor/toolbar/config/items_property.md#configuring-items-via-objects)
 
 ~~~jsx {9-40}
 const editor = new dhx.DiagramEditor("editor_container", {
@@ -391,7 +391,7 @@ Toolbar items are represented by **service elements**. You can use and configure
 
 ## Base elements
 
-Besides [**Service elements**](#service-elements), you can also specify and configure the following **Base elements** using the [object](api/diagram_editor/toolbar/config/items_property.md/#configuring-items-via-objects) approach:
+Besides [**Service elements**](#service-elements), you can also specify and configure the following **Base elements** using the [object](api/diagram_editor/toolbar/config/items_property.md#configuring-items-via-objects) approach:
 
 - [Button](https://docs.dhtmlx.com/suite/toolbar/button/)
 - [Custom HTML](https://docs.dhtmlx.com/suite/toolbar/customhtmlbutton/)

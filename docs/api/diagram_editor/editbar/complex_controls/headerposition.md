@@ -61,8 +61,8 @@ The **Header position** control is available only for **group** and **swimlane**
 
 ### Service properties
 
-- `$properties` - (optional) allows you to override values of [basic controls](/api/diagram_editor/editbar/basic_controls_overview) within a complex control. You can configure the following element of the **Header position** control based on the basic controls:
-    - `position` - ([toggleGroup](/api/diagram_editor/editbar/basic_controls/togglegroup)) - sets a position of the group header
+- `$properties` - (optional) allows you to override values of [basic controls](api/diagram_editor/editbar/basic_controls_overview.md) within a complex control. You can configure the following element of the **Header position** control based on the basic controls:
+    - `position` - ([toggleGroup](api/diagram_editor/editbar/basic_controls/togglegroup.md)) - sets a position of the group header
 
 ## Example
 

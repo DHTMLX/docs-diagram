@@ -72,8 +72,8 @@ editor.events.on("beforeItemMove", ({ id, coords }) => {
 
 **Related API**:
 
-- [`afterItemMove`](/api/diagram_editor/editor/events/afteritemmove_event/)
-- [`itemMoveEnd`](/api/diagram_editor/editor/events/itemmoveend_event/)
+- [`afterItemMove`](api/diagram_editor/editor/events/afteritemmove_event.md)
+- [`itemMoveEnd`](api/diagram_editor/editor/events/itemmoveend_event.md)
 
 **Related samples**:
 

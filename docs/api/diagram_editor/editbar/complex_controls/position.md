@@ -61,9 +61,9 @@ The **Position** control is available only for the **shape** element in the *org
 
 ### Service properties
 
-- `$properties` - (optional) allows you to override values of [basic controls](/api/diagram_editor/editbar/basic_controls_overview)) within a complex control. You can configure the following elements of the **Position** control based on the basic controls:
-    - `dx` - ([input](/api/diagram_editor/editbar/basic_controls/input)) sets the shape offset from the predefined algorithm on the x-axis
-    - `dy` - ([input](/api/diagram_editor/editbar/basic_controls/input)) sets the shape offset from the predefined algorithm on the y-axis
+- `$properties` - (optional) allows you to override values of [basic controls](api/diagram_editor/editbar/basic_controls_overview.md)) within a complex control. You can configure the following elements of the **Position** control based on the basic controls:
+    - `dx` - ([input](api/diagram_editor/editbar/basic_controls/input.md)) sets the shape offset from the predefined algorithm on the x-axis
+    - `dy` - ([input](api/diagram_editor/editbar/basic_controls/input.md)) sets the shape offset from the predefined algorithm on the y-axis
 
 ## Example
 

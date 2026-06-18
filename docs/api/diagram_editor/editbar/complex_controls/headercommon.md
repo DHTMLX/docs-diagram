@@ -61,10 +61,10 @@ The **Header common** control is available only for **group** and **swimlane** e
 
 ### Service properties
 
-- `$properties` - (optional) allows you to override values of [basic controls](/api/diagram_editor/editbar/basic_controls_overview) within a complex control. You can configure the following elements of the **Header common** control based on the basic controls:
-    - `enable` - ([toggle](/api/diagram_editor/editbar/basic_controls/toggle)) toggles the group header visibility
-    - `fill` - ([colorpicker](/api/diagram_editor/editbar/basic_controls/colorpicker)) sets the group header background color
-    - `height` - ([input](/api/diagram_editor/editbar/basic_controls/input)) sets the group header height (px)
+- `$properties` - (optional) allows you to override values of [basic controls](api/diagram_editor/editbar/basic_controls_overview.md) within a complex control. You can configure the following elements of the **Header common** control based on the basic controls:
+    - `enable` - ([toggle](api/diagram_editor/editbar/basic_controls/toggle.md)) toggles the group header visibility
+    - `fill` - ([colorpicker](api/diagram_editor/editbar/basic_controls/colorpicker.md)) sets the group header background color
+    - `height` - ([input](api/diagram_editor/editbar/basic_controls/input.md)) sets the group header height (px)
 
 ## Example
 

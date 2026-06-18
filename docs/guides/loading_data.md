@@ -31,9 +31,9 @@ const data = [
 ];
 ~~~
 
-The library provides you with [various types of default shapes](../../shapes/default_shapes/) which have both common and specific options. Check the full list of available properties of a **shape** object in the [API reference](shapes/configuration_properties.md). 
+The library provides you with [various types of default shapes](shapes/default_shapes.md) which have both common and specific options. Check the full list of available properties of a **shape** object in the [API reference](shapes/configuration_properties.md). 
 
-Besides, you may create [your own type of shapes](../../shapes/custom_shape/) and add any custom properties to shape objects.
+Besides, you may create [your own type of shapes](shapes/custom_shape.md) and add any custom properties to shape objects.
 
 - **line objects**
 
@@ -51,7 +51,7 @@ const data = [
 ];
 ~~~
 
-The presence or absence of line objects in the data set depends on the chosen [way of shapes connection](../../lines/#setting-connections-between-shapes). Check the full list of available properties of the **line** object in the [API reference](lines/configuration_properties.md).
+The presence or absence of line objects in the data set depends on the chosen [way of shapes connection](/lines/#setting-connections-between-shapes). Check the full list of available properties of the **line** object in the [API reference](lines/configuration_properties.md).
 
 - **line title objects**
 
@@ -199,7 +199,7 @@ const dataset = {
 }
 ~~~
 
-Check the full list of the available configuration properties of the **project** object in the [API reference](groups/configuration_properties.md/#properties-specific-for-project-object).
+Check the full list of the available configuration properties of the **project** object in the [API reference](groups/configuration_properties.md#properties-specific-for-project-object).
 
 - **task objects**
 
@@ -223,7 +223,7 @@ const dataset = {
 }
 ~~~
 
-Check the full list of the available configuration properties of the **task** object in the [API reference](shapes/configuration_properties.md/#properties-specific-for-task-shapes).
+Check the full list of the available configuration properties of the **task** object in the [API reference](shapes/configuration_properties.md#properties-specific-for-task-shapes).
 
 - **milestone objects**
 
@@ -244,7 +244,7 @@ const dataset = {
 }
 ~~~
 
-Check the full list of the available configuration properties of the **milestone** object in the [API reference](shapes/configuration_properties.md/#properties-specific-for-milestone-shapes).
+Check the full list of the available configuration properties of the **milestone** object in the [API reference](shapes/configuration_properties.md#properties-specific-for-milestone-shapes).
 
 - **link objects**
 
@@ -268,7 +268,7 @@ const dataset = {
 }
 ~~~
 
-Check the full list of the available configuration properties of the **link** object in the [API reference](/lines/configuration_properties/#properties-specific-for-links-in-the-pert-mode).
+Check the full list of the available configuration properties of the **link** object in the [API reference](lines/configuration_properties.md#properties-specific-for-links-in-the-pert-mode).
 
 #### Processing links
 
@@ -340,7 +340,7 @@ In the above example:
 
 ## External data loading
 
-To load data from an external file, make use of the [](../api/data_collection/load_method.md) method. It takes the URL of the file with data as a parameter:
+To load data from an external file, make use of the [](api/data_collection/load_method.md) method. It takes the URL of the file with data as a parameter:
 
 ~~~jsx
 diagram.data.load("../common/data.json");
@@ -360,7 +360,7 @@ diagram.data.load("/some/data").then(() => {
 
 ## Loading from a local source
 
-To load data from a local data source, use the [](../api/data_collection/parse_method.md) method. As parameters, you need to pass a [predefined data set](#preparing-data-to-load) and, optionally, the DataDriver or type of data ("json" (default), "csv", "xml"):
+To load data from a local data source, use the [](api/data_collection/parse_method.md) method. As parameters, you need to pass a [predefined data set](#preparing-data-to-load) and, optionally, the DataDriver or type of data ("json" (default), "csv", "xml"):
 
 ~~~jsx
 diagram.data.parse(data, driver);
@@ -370,7 +370,7 @@ diagram.data.parse(data, driver);
 
 ### Loading data into the editor
 
-To load a data set into the editor, use the [parse()](/api/diagram_editor/editor/methods/parse_method/) method of the editor.
+To load a data set into the editor, use the [parse()](api/diagram_editor/editor/methods/parse_method.md) method of the editor.
 
 ~~~jsx
 editor.parse(data);
@@ -380,7 +380,7 @@ editor.parse(data);
 
 ## Saving and restoring state
 
-To save the current state of a diagram, use the [](../api/data_collection/serialize_method.md) method. Depending on the Diagram mode, it converts the data of the diagram into:
+To save the current state of a diagram, use the [](api/data_collection/serialize_method.md) method. Depending on the Diagram mode, it converts the data of the diagram into:
 
 - for the default, org chart and mindmap Diagram modes - into an array of objects, where each object contains the configuration of a separate shape
 - for the PERT Diagram mode - into an object with the `data` array of objects (for shapes: "task", "milestone", "project") and the `links` array of objects (for connections between shapes). 
@@ -402,7 +402,7 @@ diagram2.data.parse(state);
 
 ## Importing data into the editor
 
-When you use a diagram together with an editor, you can import data from the diagram into the editor via the [import()](/api/diagram_editor/editor/methods/import_method/) method of the editor object:
+When you use a diagram together with an editor, you can import data from the diagram into the editor via the [import()](api/diagram_editor/editor/methods/import_method.md) method of the editor object:
 
 ~~~jsx
 function runEditor() {

@@ -13,7 +13,7 @@ description: You can learn about the Migration to Newer Versions in the document
 The main parts of the Diagram Editor are renamed:
 
 - Left panel -> [Shapebar](guides/diagram_editor/shapebar.md)
-- Right panel -> [Editbar](guides/diagram_editor/editbar.md) is [provided with a flexible configuration](/whats_new/#new-functionality)
+- Right panel -> [Editbar](guides/diagram_editor/editbar.md) is [provided with a flexible configuration](whats_new.md#new-functionality)
 
 The default [Toolbar](guides/diagram_editor/toolbar.md) structure has been modified. It became highly configurable as well, so you can also add custom Toolbar elements.
 
@@ -31,14 +31,14 @@ view?: {
 
 Check the related API overview guides to explore the new possibilities of managing panels:
 
-- [View API overview](/api/diagram_editor/view/api_overview/)
-- [Toolbar API overview](/api/diagram_editor/toolbar/api_overview/)
-- [Shapebar API overview](/api/diagram_editor/shapebar/api_overview/)
-- [Editbar API overview](/api/diagram_editor/editbar/api_overview/)
+- [View API overview](api/diagram_editor/view/api_overview.md)
+- [Toolbar API overview](api/diagram_editor/toolbar/api_overview.md)
+- [Shapebar API overview](api/diagram_editor/shapebar/api_overview.md)
+- [Editbar API overview](api/diagram_editor/editbar/api_overview.md)
 
 #### Deprecated methods
 
-- The `setViewMode()` method of Diagram Editor is deprecated and no longer supported. Instead, use the [`show()`](../api/diagram_editor/view/methods/show_method/)/[`hide()`](../api/diagram_editor/view/methods/hide_method/) methods of the `view` object.
+- The `setViewMode()` method of Diagram Editor is deprecated and no longer supported. Instead, use the [`show()`](api/diagram_editor/view/methods/show_method.md)/[`hide()`](api/diagram_editor/view/methods/hide_method.md) methods of the `view` object.
 
 ~~~jsx {4} title="Before v6.0"
 const editor = new dhx.DiagramEditor("editor_container");
@@ -71,7 +71,7 @@ Instead, use the following syntax:
 editor.diagram.config.margin.x = 40; 
 ~~~
 
-- The `editMode` property of Diagram Editor is deprecated and no longer supported. Instead, use the corresponding property of the `view` object ([toolbar](/api/diagram_editor/toolbar/api_overview/), [shapebar](/api/diagram_editor/shapebar/api_overview/), [editbar](/api/diagram_editor/editbar/api_overview/)).
+- The `editMode` property of Diagram Editor is deprecated and no longer supported. Instead, use the corresponding property of the `view` object ([toolbar](api/diagram_editor/toolbar/api_overview.md), [shapebar](api/diagram_editor/shapebar/api_overview.md), [editbar](api/diagram_editor/editbar/api_overview.md)).
 
 ~~~jsx {2} title="Before v6.0"
 const editor = new dhx.DiagramEditor("editor_container", {
@@ -89,7 +89,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 ~~~
 
-- The `controls` property of Diagram Editor is deprecated and no longer supported. Instead, use the [`items`](/api/diagram_editor/toolbar/config/items_property/) property of the `view.toolbar` configuration.
+- The `controls` property of Diagram Editor is deprecated and no longer supported. Instead, use the [`items`](api/diagram_editor/toolbar/config/items_property.md) property of the `view.toolbar` configuration.
 
 ~~~jsx {2-4} title="Before v6.0"
 const editor = new dhx.DiagramEditor("editor_container", {
@@ -109,7 +109,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 ~~~
 
-- The `shapeBarWidth` property of Diagram Editor is deprecated and no longer supported. Instead, use the [`width`](/api/diagram_editor/shapebar/config/width_property/) property of the `view.shapebar` configuration.
+- The `shapeBarWidth` property of Diagram Editor is deprecated and no longer supported. Instead, use the [`width`](api/diagram_editor/shapebar/config/width_property.md) property of the `view.shapebar` configuration.
 
 ~~~jsx {2} title="Before v6.0"
 const editor = new dhx.DiagramEditor("editor_container", {
@@ -128,7 +128,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 ~~~
 
-- The `shapeSections` property of Diagram Editor is deprecated and no longer supported. Instead, use the [`sections`](/api/diagram_editor/shapebar/config/sections_property/) property of the `view.shapebar` configuration.
+- The `shapeSections` property of Diagram Editor is deprecated and no longer supported. Instead, use the [`sections`](api/diagram_editor/shapebar/config/sections_property.md) property of the `view.shapebar` configuration.
 
 ~~~jsx {2-7} title="Before v6.0"
 const editor = new dhx.DiagramEditor("editor_container", {
@@ -157,7 +157,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 ~~~
 
-- The `gapPreview` property of Diagram Editor is deprecated and no longer supported. Instead, use the `gap` property of the [`preview`](/api/diagram_editor/shapebar/config/preview_property/) object of the `view.shapebar` configuration.
+- The `gapPreview` property of Diagram Editor is deprecated and no longer supported. Instead, use the `gap` property of the [`preview`](api/diagram_editor/shapebar/config/preview_property.md) object of the `view.shapebar` configuration.
 
 ~~~jsx {2} title="Before v6.0"
 const editor = new dhx.DiagramEditor("editor_container", {
@@ -179,7 +179,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 ~~~
 
-- The `scalePreview` property of Diagram Editor is deprecated and no longer supported. Instead, use the `scale` property of the [`preview`](/api/diagram_editor/shapebar/config/preview_property/) object of the `view.shapebar` configuration.
+- The `scalePreview` property of Diagram Editor is deprecated and no longer supported. Instead, use the `scale` property of the [`preview`](api/diagram_editor/shapebar/config/preview_property.md) object of the `view.shapebar` configuration.
 
 ~~~jsx {2} title="Before v6.0"
 const editor = new dhx.DiagramEditor("editor_container", {
@@ -210,14 +210,14 @@ editor.toolbar.events.on("click", id => console.log(id));
 ~~~
 
 :::note
-The names of the [service elements](/guides/diagram_editor/toolbar/#service-elements) ids start from the `$` symbol.
+The names of the [service elements](guides/diagram_editor/toolbar.md#service-elements) ids start from the `$` symbol.
 :::
 
 - The `changeGridStep` event of Diagram Editor is deprecated and no longer supported.
 
 ### Diagram API
 
-- The `properties` property of the [`addShape`](/api/diagram/addshape_method/) method is deprecated and no longer used. The configuration of a custom shape in the editbar of the Editor is implemented via the [`properties`](/api/diagram_editor/editbar/config/properties_property/) property of the Editbar panel:
+- The `properties` property of the [`addShape`](api/diagram/addshape_method.md) method is deprecated and no longer used. The configuration of a custom shape in the editbar of the Editor is implemented via the [`properties`](api/diagram_editor/editbar/config/properties_property.md) property of the Editbar panel:
 
 ~~~jsx {13-16} title="Before v6.0"
 const editor = new dhx.DiagramEditor("editor_container", { 
@@ -293,7 +293,7 @@ editor.diagram.addShape("network", {
 
 ### Diagram Selection API
 
-- The `getId()` method of the Selection object of Diagram is deprecated and no longer supported. Instead you can use the [`getIds()`](/api/selection/getids_method/) and [`getItem()`](/api/selection/getitem_method/) methods of the Selection object. Check the examples below:
+- The `getId()` method of the Selection object of Diagram is deprecated and no longer supported. Instead you can use the [`getIds()`](api/selection/getids_method.md) and [`getItem()`](api/selection/getitem_method.md) methods of the Selection object. Check the examples below:
 
 ~~~jsx {7} title="Before v6.0"
 // diagram must be created with the "select:true" option
@@ -319,11 +319,11 @@ id = diagram.selection.getItem().id;
 
 ### Shape properties
 
-The usage of the `text` property of the [Shape configuration object](/shapes/configuration_properties/) is limited to the string value only. Its usage as an array of string values while configuring a custom shape is deprecated and no longer supported.
+The usage of the `text` property of the [Shape configuration object](shapes/configuration_properties.md) is limited to the string value only. Its usage as an array of string values while configuring a custom shape is deprecated and no longer supported.
 
 ### Line titles
 
-The titles of Lines are moved from the `line` objects to the common data structure on the same level with Lines and defined as [`lineTitles`](../line_titles/) objects.
+The titles of Lines are moved from the `line` objects to the common data structure on the same level with Lines and defined as [`lineTitles`](/line_titles/) objects.
 
 Before v6.0 titles of lines have been specified inside the `line` object as follows:
 
@@ -403,17 +403,17 @@ const data = [
 ];
 ~~~
 
-Check the details in the LineTitles [API](/line_titles/configuration_properties/) and [guides](/line_titles/).
+Check the details in the LineTitles [API](line_titles/configuration_properties.md) and [guides](/line_titles/).
 
 ### Localization
 
-Due to the modifications in the Diagram editor interface, the locale settings have been updated. Check the [Localization guides](/guides/localization/) for details.
+Due to the modifications in the Diagram editor interface, the locale settings have been updated. Check the [Localization guides](guides/localization.md) for details.
 
 ## 4.2 -> 5.0
 
 ### Diagram API
 
-The **lineGap** property of Diagram is deprecated and no longer supported. Instead, use the **lineGap** parameter of the [lineConfig](diagram/api/diagram/lineconfig_property.md) property.
+The **lineGap** property of Diagram is deprecated and no longer supported. Instead, use the **lineGap** parameter of the [lineConfig](api/diagram/lineconfig_property.md) property.
 
 ~~~jsx {3} title="Before v5.0"
 const diagram = new dhx.Diagram("diagram_container", { 
@@ -459,7 +459,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 
 In v4.2, the **defaultLinkType** property is deprecated. 
 
-Starting from v4.2, you need to apply the new [lineConfig](../api/diagram/lineconfig_property/) property to specify the default type for connector lines.
+Starting from v4.2, you need to apply the new [lineConfig](api/diagram/lineconfig_property.md) property to specify the default type for connector lines.
 
 ~~~jsx title="Before v4.2"
 const diagram = new dhx.Diagram("diagram_container", { 
@@ -510,7 +510,7 @@ Besides, it became possible to specify other basic sets of items via the related
 
 ### API
 
-The **shapeHover** event has been deprecated in v4.0. Starting with v4.0, use the new [itemMouseOver](../api/diagram/itemmouseover_event/) event instead.
+The **shapeHover** event has been deprecated in v4.0. Starting with v4.0, use the new [itemMouseOver](api/diagram/itemmouseover_event.md) event instead.
 
 ~~~jsx title="Before v4.0"
 diagram.events.on("shapeHover", (id,e) => {
@@ -585,7 +585,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 
 To enable/disable a toolbar button you need to specify the value of the control to *true* (by default) or *false*.
 
-See the full list of the available controls in the [Toolbar](../guides/diagram_editor/toolbar/) article.
+See the full list of the available controls in the [Toolbar](guides/diagram_editor/toolbar.md) article.
 
 ## 1.1 -> 2.0
 
@@ -595,18 +595,18 @@ See the full list of the available controls in the [Toolbar](../guides/diagram_e
 
 ### Changed API
 
-- diagram.addItem -> [diagram.data.add](../api/data_collection/add_method/)
-- diagram.attachEvent -> [diagram.events.on](../guides/event_handling/#attaching-event-listeners)
-- diagram.callEvent -> [diagram.events.fire](../guides/event_handling/#calling-events)
-- diagram.clearAll -> [diagram.data.removeAll](../api/data_collection/removeall_method/)
-- diagram.deleteItem -> [diagram.data.remove](../api/data_collection/remove_method/)
-- diagram.detachEvent -> [diagram.events.detach](../guides/event_handling/#detaching-event-listeners)
-- diagram.eachItem -> [diagram.data.map](../api/data_collection/map_method/)
-- diagram.getItem -> [diagram.data.getItem](../api/data_collection/getitem_method/)
+- diagram.addItem -> [diagram.data.add](api/data_collection/add_method.md)
+- diagram.attachEvent -> [diagram.events.on](guides/event_handling.md#attaching-event-listeners)
+- diagram.callEvent -> [diagram.events.fire](guides/event_handling.md#calling-events)
+- diagram.clearAll -> [diagram.data.removeAll](api/data_collection/removeall_method.md)
+- diagram.deleteItem -> [diagram.data.remove](api/data_collection/remove_method.md)
+- diagram.detachEvent -> [diagram.events.detach](guides/event_handling.md#detaching-event-listeners)
+- diagram.eachItem -> [diagram.data.map](api/data_collection/map_method.md)
+- diagram.getItem -> [diagram.data.getItem](api/data_collection/getitem_method.md)
 - diagram.getSelectedId -> `diagram.selection.getId`
-- diagram.load -> [diagram.data.load](../api/data_collection/load_method/) 
-- diagram.parse -> [diagram.data.parse](../api/data_collection/parse_method/)
-- diagram.selectItem -> [diagram.selection.add](../api/selection/add_method/)
-- diagram.serialize -> [diagram.data.serialize](../api/data_collection/serialize_method/)
-- diagram.unselectItem -> [diagram.selection.remove](../api/selection/remove_method/)
-- diagram.updateItem -> [diagram.data.update](../api/data_collection/update_method/) 
+- diagram.load -> [diagram.data.load](api/data_collection/load_method.md) 
+- diagram.parse -> [diagram.data.parse](api/data_collection/parse_method.md)
+- diagram.selectItem -> [diagram.selection.add](api/selection/add_method.md)
+- diagram.serialize -> [diagram.data.serialize](api/data_collection/serialize_method.md)
+- diagram.unselectItem -> [diagram.selection.remove](api/selection/remove_method.md)
+- diagram.updateItem -> [diagram.data.update](api/data_collection/update_method.md) 

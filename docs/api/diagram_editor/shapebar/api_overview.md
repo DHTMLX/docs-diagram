@@ -6,7 +6,7 @@ description: You can check a Shapebar overview in the documentation of the DHTML
 
 # Shapebar API overview
 
-[Shapebar](/guides/diagram_editor/shapebar/) is a part of the Diagram Editor that renders previews of Diagram items (shapes, groups and swimlanes). Use the `shapebar` property of the [`view`](/api/diagram_editor/editor/config/view_property/) configuration object to show, hide and configure the Shapebar. There are two ways of initialization you can choose from:
+[Shapebar](guides/diagram_editor/shapebar.md) is a part of the Diagram Editor that renders previews of Diagram items (shapes, groups and swimlanes). Use the `shapebar` property of the [`view`](api/diagram_editor/editor/config/view_property.md) configuration object to show, hide and configure the Shapebar. There are two ways of initialization you can choose from:
 
 - creating the default Shapebar by using the `shapebar:true` setting:
 

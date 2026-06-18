@@ -70,8 +70,8 @@ editor.events.on("beforeItemResize", ({ id, width, height }) => {
 
 **Related API**:
 
-- [`afterItemResize`](/api/diagram_editor/editor/events/afteritemresize_event/)
-- [`itemResizeEnd`](/api/diagram_editor/editor/events/itemresizeend_event/)
+- [`afterItemResize`](api/diagram_editor/editor/events/afteritemresize_event.md)
+- [`itemResizeEnd`](api/diagram_editor/editor/events/itemresizeend_event.md)
 
 **Related samples**:
 

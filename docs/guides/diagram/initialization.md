@@ -127,7 +127,7 @@ layout.getCell("diagram").attach(diagram);
 
 ### Configuration properties
 
-To change the [configuration of a diagram](/guides/diagram/configuration/), you can specify the desired property in the config object passed as a second parameter of the constructor function. 
+To change the [configuration of a diagram](guides/diagram/configuration.md), you can specify the desired property in the config object passed as a second parameter of the constructor function. 
 
 ~~~jsx
 const diagram = new dhx.Diagram("diagram_container", {
@@ -136,11 +136,11 @@ const diagram = new dhx.Diagram("diagram_container", {
 });
 ~~~
 
-See [the full list of configuration properties of Diagram](../../../api/diagram/api_overview/#diagram-properties).
+See [the full list of configuration properties of Diagram](api/diagram/api_overview.md#diagram-properties).
 
 **Related sample**:	[Diagram Editor. Default mode. Wide flowchart](https://snippet.dhtmlx.com/4d4k3o8p)	
 
-Alternatively, you can get access to some option and set/modify its value via the diagram **config** object. Don't forget to call the [](../../api/diagram/paint_method.md) method to re-render the diagram with a new configuration:
+Alternatively, you can get access to some option and set/modify its value via the diagram **config** object. Don't forget to call the [](api/diagram/paint_method.md) method to re-render the diagram with a new configuration:
 
 ~~~jsx
 const diagram = new dhx.Diagram("diagram_container");
@@ -152,4 +152,4 @@ diagram.paint();
 
 ## Loading data into Diagram
 
-Detailed information on loading data into DHTMLX Diagram is given in the [Loading and Storing Data](../../../guides/loading_data/) article.
+Detailed information on loading data into DHTMLX Diagram is given in the [Loading and Storing Data](guides/loading_data.md) article.

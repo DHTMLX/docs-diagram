@@ -61,9 +61,9 @@ The **Size** control is available only for the **shape**, **group** and **swimla
 
 ### Service properties
 
-- `$properties` - (optional) allows you to override values of [basic controls](/api/diagram_editor/editbar/basic_controls_overview) within a complex control. You can configure the following elements of the **Size** control based on the basic controls:
-    - `width` - ([input](/api/diagram_editor/editbar/basic_controls/input)) sets the Diagram element width (px)
-    - `height` - ([input](/api/diagram_editor/editbar/basic_controls/input)) sets the Diagram element height (px)
+- `$properties` - (optional) allows you to override values of [basic controls](api/diagram_editor/editbar/basic_controls_overview.md) within a complex control. You can configure the following elements of the **Size** control based on the basic controls:
+    - `width` - ([input](api/diagram_editor/editbar/basic_controls/input.md)) sets the Diagram element width (px)
+    - `height` - ([input](api/diagram_editor/editbar/basic_controls/input.md)) sets the Diagram element height (px)
 
 ## Example
 

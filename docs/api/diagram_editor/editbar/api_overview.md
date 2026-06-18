@@ -6,7 +6,7 @@ description: You can check a Editbar overview in the documentation of the DHTMLX
 
 # Editbar API overview
 
-[Editbar](/guides/diagram_editor/editbar/) is a part of the Diagram Editor that contains controls for managing Diagram items (shapes, lines, groups, etc). Use the `editbar` property of the [`view`](/api/diagram_editor/editor/config/view_property/) configuration object to show, hide and configure the Editbar. There are two ways of initialization you can choose from:
+[Editbar](guides/diagram_editor/editbar.md) is a part of the Diagram Editor that contains controls for managing Diagram items (shapes, lines, groups, etc). Use the `editbar` property of the [`view`](api/diagram_editor/editor/config/view_property.md) configuration object to show, hide and configure the Editbar. There are two ways of initialization you can choose from:
 
 - creating the default Editbar by using the `editbar:true` setting:
 

@@ -61,10 +61,10 @@ The **Border** control is not available for the **lineTitle** element.
 
 ### Service properties
 
-- `$properties` - (optional) allows you to override values of [basic controls](/api/diagram_editor/editbar/basic_controls_overview) within a complex control. You can configure the following elements of the **Border** control based on the basic controls:
-    - `stroke` - ([colorpicker](/api/diagram_editor/editbar/basic_controls/colorpicker)) sets the border color
-    - `strokeType` - ([combo](/api/diagram_editor/editbar/basic_controls/combo)) sets the border type
-    - `strokeWidth` - ([input](/api/diagram_editor/editbar/basic_controls/input)) sets the border width
+- `$properties` - (optional) allows you to override values of [basic controls](api/diagram_editor/editbar/basic_controls_overview.md) within a complex control. You can configure the following elements of the **Border** control based on the basic controls:
+    - `stroke` - ([colorpicker](api/diagram_editor/editbar/basic_controls/colorpicker.md)) sets the border color
+    - `strokeType` - ([combo](api/diagram_editor/editbar/basic_controls/combo.md)) sets the border type
+    - `strokeWidth` - ([input](api/diagram_editor/editbar/basic_controls/input.md)) sets the border width
 
 ## Example
 
