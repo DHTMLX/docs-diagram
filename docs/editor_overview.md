@@ -4,6 +4,8 @@ title: Editor Overview
 description: You can have an overview of DHTMLX JavaScript Diagram library in the documentation. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # DHTMLX Diagram Editor overview
 
 The DHTMLX Diagram component provides you with Editor that allows you to try and apply your designer skills in building neat and nice-looking diagrams.
@@ -21,7 +23,7 @@ To build a diagram, you need either to drag the necessary items from the shapeba
 
 You can adjust the attributes of the items via [sidebar options of the editbar](../guides/diagram_editor/editbar/). To accelerate the styling process, use `Alt (Option) + Ctrl (Cmd) + С` combination to copy styles of an item and `Alt (Option) + Ctrl (Cmd) + V` to apply these styles to the chosen items.                                      		
 
-![](assets/default_editor.png) 
+![](/img/default_editor.png) 
 
 **Related sample:** [Diagram Editor. Default mode. Wide flowchart](https://snippet.dhtmlx.com/4d4k3o8p?text=diagram&mode=wide)
 
@@ -43,7 +45,7 @@ To build a diagram in the org chart mode of the editor, you need to select a sha
 
 You can adjust the attributes of the shapes via the available [sidebar options of the editbar](../guides/diagram_editor/editbar/). To accelerate the styling process, use `Alt (Option) + Ctrl (Cmd) + С` combination to copy styles of an item and `Alt (Option) + Ctrl (Cmd) + V` to apply these styles to the chosen items.
 
-![](assets/orgchart_editor_draggable.png)     
+![](/img/orgchart_editor_draggable.png)     
 
 **Related sample:** [Diagram Editor. Org chart mode. Basic initialization](https://snippet.dhtmlx.com/og4qm3ja?text=diagram&mode=wide)                                             
 
@@ -52,7 +54,7 @@ If you've added a custom shape to the editor in the org chart mode, you can [con
 You can add the **assistant** or **partner** items for a parent shape of any level. The assistant or partner items can't be the parent items.
 
 <img
-  src={require('./assets/orgchart_editor_assistant.png').default}
+  src={useBaseUrl('/img/orgchart_editor_assistant.png')}
   alt="Org chart editor assistant" width='600'
 />
 
@@ -74,7 +76,7 @@ To build a diagram in the mindmap mode of the editor, you need to select a shape
 
 You can adjust the attributes of the shapes via the available [sidebar options of the editbar](../guides/diagram_editor/editbar/). To accelerate the styling process, use `Alt (Option) + Ctrl (Cmd) + С` combination to copy styles of an item and `Alt (Option) + Ctrl (Cmd) + V` to apply these styles to the chosen items.
 
- ![](assets/mindmap_editor_draggable.png)  
+ ![](/img/mindmap_editor_draggable.png)  
 
  **Related sample:** [Diagram Editor. Mindmap mode. Emotions mind map](https://snippet.dhtmlx.com/lo1vm0e8?text=diagram&mode=wide)                                         
 

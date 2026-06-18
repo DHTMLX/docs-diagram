@@ -4,12 +4,14 @@ title: Editbar Complex Controls - Text align
 description: You can explore the Text align control of Editbar in the documentation of the the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # Text align
 
 @short: The complex control for managing the text alignment within the Diagram elements
 
 <img
-  src={require('../../../../assets/editbar-complex-controls/textalign.png').default}
+  src={useBaseUrl('/img/editbar-complex-controls/textalign.png')}
   alt="Text align control" width='300'
 />
 

@@ -47,7 +47,7 @@ diagram.autoPlace({
 
 Connector lines with no arrows are aligned "from center to center"; they are straight and diagonal.
 
-![](../../assets/direct_mode.png)
+![](/img/direct_mode.png)
 
 ### "edges" mode
 
@@ -64,11 +64,11 @@ To add arrows to the lines, specify **forwardArrow: "filled"** or **backArrow: "
 The connector lines in the "edges" mode can be:
   - either straight (if you set **connectType: "straight"** property of a [line object](../../../lines/configuration_properties/))
 
-![](../../assets/edges_straight_mode.png)
+![](/img/edges_straight_mode.png)
 
   - or 90-degree curved (if you set **connectType: "elbow"** property of a [line object](../../../lines/configuration_properties/))
 
-![](../../assets/edges_mode.png)
+![](/img/edges_mode.png)
 
 ## Modes of placement of shapes
 
@@ -78,12 +78,12 @@ Shapes are arranged along vertical and horizontal lines
 
 - **"orthogonal"** arrangement with lines in the **"direct"** mode
 
-![](../../assets/direct_ortogonal.png)
+![](/img/direct_ortogonal.png)
 
 
 - **"orthogonal"** arrangement with lines in the **"edges"** mode
 
-![](../../assets/edges_ortogonal.png)
+![](/img/edges_ortogonal.png)
 
 ### "radial" mode
 
@@ -91,11 +91,11 @@ Shapes are arranged on imaginary circles relative to the central shape, i.e. a s
 
 - **"radial"** arrangement with lines in the **"direct"** mode
 
-![](../../assets/direct_radial.png)
+![](/img/direct_radial.png)
 
 - **"radial"** arrangement with lines in the **"edges"** mode
 
-![](../../assets/edges_radial.png)
+![](/img/edges_radial.png)
 
 
 **Change log**:

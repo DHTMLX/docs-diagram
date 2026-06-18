@@ -4,12 +4,14 @@ title: Editbar Complex Controls - Text style
 description: You can explore the Text style control of Editbar in the documentation of the the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # Text style
 
 @short: The complex control for managing the text style within the Diagram elements
 
 <img
-  src={require('../../../../assets/editbar-complex-controls/textstyle.png').default}
+  src={useBaseUrl('/img/editbar-complex-controls/textstyle.png')}
   alt="Text style control" width='300'
 />
 

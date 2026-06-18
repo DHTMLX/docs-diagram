@@ -4,12 +4,14 @@ title: Editbar Complex Controls - Header
 description: You can explore the Header control of Editbar in the documentation of the the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # Header
 
 @short: The complex control for displaying and modifying the header of "group" and "swimlane" elements of the Diagram editor
 
 <img
-  src={require('../../../../assets/editbar-complex-controls/header.png').default}
+  src={useBaseUrl('/img/editbar-complex-controls/header.png')}
   alt="Header control" width='300'
 />
 

@@ -4,12 +4,14 @@ title: Editbar Complex Controls - Header position
 description: You can explore the Header position control of Editbar in the documentation of the the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # Header position
 
 @short: The complex control for changing position of the group header
 
 <img
-  src={require('../../../../assets/editbar-complex-controls/headerposition.png').default}
+  src={useBaseUrl('/img/editbar-complex-controls/headerposition.png')}
   alt="Header position control" width='300'
 />
 

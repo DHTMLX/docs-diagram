@@ -4,12 +4,14 @@ title: Editbar Complex Controls - Border
 description: You can explore the Border control of Editbar in the documentation of the the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # Border
 
 @short: The complex control for displaying and modifying borders of a Diagram element
 
 <img
-  src={require('../../../../assets/editbar-complex-controls/border.png').default}
+  src={useBaseUrl('/img/editbar-complex-controls/border.png')}
   alt="Border control" width='300'
 />
 

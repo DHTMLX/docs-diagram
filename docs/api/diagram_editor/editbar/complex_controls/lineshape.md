@@ -4,12 +4,14 @@ title: Editbar Complex Controls - Line shape
 description: You can explore the Line shape control of Editbar in the documentation of the the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # Line shape
 
 @short: The complex control for displaying and managing connectors
 
 <img
-  src={require('../../../../assets/editbar-complex-controls/lineshape.png').default}
+  src={useBaseUrl('/img/editbar-complex-controls/lineshape.png')}
   alt="Line shape control" width='300'
 />
 

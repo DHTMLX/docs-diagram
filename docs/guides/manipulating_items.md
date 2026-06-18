@@ -91,7 +91,7 @@ diagram.autoPlace({
 });
 ~~~
 
-![Autoplacement with a generated radial dataset](../assets/radial_datasets_generator.png)
+![Autoplacement with a generated radial dataset](/img/radial_datasets_generator.png)
 
 **Related sample:** [Diagram. Default mode. Arranging a generated radial dataset with autoplacement](https://snippet.dhtmlx.com/rwsime82)
 

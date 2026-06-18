@@ -4,12 +4,14 @@ title: Editbar Complex Controls - Pointer view
 description: You can explore the Pointer view control of Editbar in the documentation of the the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # Pointer view
 
 @short: The complex control for displaying and managing the connector arrows
 
 <img
-  src={require('../../../../assets/editbar-complex-controls/pointerview.png').default}
+  src={useBaseUrl('/img/editbar-complex-controls/pointerview.png')}
   alt="Pointer view control" width='300'
 />
 

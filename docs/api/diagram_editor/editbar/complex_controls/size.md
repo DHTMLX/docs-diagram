@@ -4,12 +4,14 @@ title: Editbar Complex Controls - Size
 description: You can explore the Size control of Editbar in the documentation of the the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # Size
 
 @short: The complex control for managing width and height of the Diagram elements
 
 <img
-  src={require('../../../../assets/editbar-complex-controls/size.png').default}
+  src={useBaseUrl('/img/editbar-complex-controls/size.png')}
   alt="Size control" width='300'
 />
 

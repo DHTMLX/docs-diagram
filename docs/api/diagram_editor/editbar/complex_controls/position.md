@@ -4,12 +4,14 @@ title: Editbar Complex Controls - Position
 description: You can explore the Position control of Editbar in the documentation of the the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # Position
 
 @short: The complex control for configuring the shape offset from the predefined algorithm on the X and Y axis
 
 <img
-  src={require('../../../../assets/editbar-complex-controls/position.png').default}
+  src={useBaseUrl('/img/editbar-complex-controls/position.png')}
   alt="Position control" width='300'
 />
 

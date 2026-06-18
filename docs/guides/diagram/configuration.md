@@ -151,7 +151,7 @@ The property can contain the following options:
 Autoplacement will be applied only after the [`autoPlace()`](/api/diagram/autoplace_method/) method is applied. It works only in the default mode of the diagram and only for shapes. Autoplacement does not work if you use groups or swimlanes.
 :::
 
-![Radial autoplacement with padding options](../../assets/radial_autoplacement.png)
+![Radial autoplacement with padding options](/img/radial_autoplacement.png)
 
 **Related sample**: [Diagram. Default mode. Radial autoplacement with padding options](https://snippet.dhtmlx.com/huut0l1s)
 

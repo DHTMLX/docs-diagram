@@ -4,12 +4,14 @@ title: Editbar Complex Controls - Header common
 description: You can explore the Header common control of Editbar in the documentation of the the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # Header common
 
 @short: The complex control for for changing visibility, color, and height of the group header
 
 <img
-  src={require('../../../../assets/editbar-complex-controls/headercommon.png').default}
+  src={useBaseUrl('/img/editbar-complex-controls/headercommon.png')}
   alt="Header common control" width='300'
 />
 
