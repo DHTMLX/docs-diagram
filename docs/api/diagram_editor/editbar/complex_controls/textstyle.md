@@ -43,16 +43,16 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ### Basic properties
 
-- `type` - (required) the type of a control. Set it to *"textStyle"*
+- `type` - (required) the type of a control. Set it to `"textStyle"`
 - `hidden` - (optional) defines whether the control is hidden. *false* by default
 - `disabled` - (optional) defines whether the control is enabled (*false*) or disabled (*true*). *false* by default
 - `css` - (optional) adds style classes to the control
-- `width` - (optional) the width of the control. *"content"* by default
-- `height` - (optional) the height of the control. *"content"* by default
+- `width` - (optional) the width of the control. `"content"` by default
+- `height` - (optional) the height of the control. `"content"` by default
 - `padding` - (optional) sets the padding for the content inside the control group. *"0 16px"* by default
 - `label` - (optional) specifies a label for the control
-- `labelAlignment` - (optional) defines the position of the label. *"left"* by default
-- `align` - (optional) sets the alignment of controls inside the control group. *"between"* by default
+- `labelAlignment` - (optional) defines the position of the label. `"left"` by default
+- `align` - (optional) sets the alignment of controls inside the control group. `"between"` by default
 - `compact` - (optional) specifies the compact mode, removes indents and frame. *false* by default
 
 ### Service properties

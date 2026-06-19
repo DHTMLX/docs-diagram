@@ -160,7 +160,7 @@ export function getData() {
 }
 ~~~
 
-Then open the ***App.js*** file and import data. After this you can pass data into the new created `<DiagramEditor/>` components as **props**:
+Then open the ***App.js*** file and import data. After this you can pass data into the new created `<DiagramEditor/>` components as `props`:
 
 ~~~jsx {2,5-6} title="App.js"
 import DiagramEditor from "./DiagramEditor";
@@ -174,7 +174,7 @@ function App() {
 export default App;
 ~~~
 
-Go to the ***DiagramEditor.jsx*** file and apply the passed **props** to the Diagram Editor via the [`parse()`](api/diagram_editor/editor/methods/parse_method.md) method:
+Go to the ***DiagramEditor.jsx*** file and apply the passed `props` to the Diagram Editor via the [`parse()`](api/diagram_editor/editor/methods/parse_method.md) method:
 
 ~~~jsx {5,11} title="DiagramEditor.jsx"
 import { useEffect, useRef } from "react";

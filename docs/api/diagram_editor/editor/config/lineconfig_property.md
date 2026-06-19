@@ -28,16 +28,16 @@ lineConfig?: {
 
 ### Parameters
 
-The **lineConfig** object contains the following parameters:
+The `lineConfig` object contains the following parameters:
 
-- `lineType` - (optional) the default type of the new connector lines. The value is applied, if the line object doesn't contain the "type" property
+- `lineType` - (optional) the default type of the new connector lines. The value is applied, if the line object doesn't contain the `"type"` property
 - `lineDirection` - (optional) the direction of the new connector lines
 - `arrowsHidden` - (optional) defines whether the arrows of the new connector lines should be hidden
 - `lineGap` - (optional) sets the distance to the right-angled bend of a connector line
-- `connectType` - (optional) sets the connection type of the lines: `"elbow"` | `"straight"` | `"curved"` (the "curved" type is used only in the mindmap Diagram mode). The value is applied, if the line object doesn't contain the "connectType" property
+- `connectType` - (optional) sets the connection type of the lines: `"elbow"` | `"straight"` | `"curved"` (the `"curved"` type is used only in the mindmap Diagram mode). The value is applied, if the line object doesn't contain the `"connectType"` property
 
 :::note
-The **lineDirection**, **arrowsHidden**, and **lineGap** parameters work only in the default mode of the editor (*type: "default"*)
+The `lineDirection`, `arrowsHidden`, and `lineGap` parameters work only in the default mode of the editor (*type: `"default"`*)
 :::
 
 ### Default config
@@ -53,8 +53,8 @@ lineConfig: {
 
 The `connectType` parameter has the following default values:
 
-- "elbow" - for the default and org chart modes
-- "curved" - for the mindmap mode (this type is used only in the mindmap mode)
+- `"elbow"` - for the default and org chart modes
+- `"curved"` - for the mindmap mode (this type is used only in the mindmap mode)
 
 ### Example
 
@@ -72,7 +72,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 ~~~
 
-The result of applying the **lineGap** property is shown in the image below:
+The result of applying the `lineGap` property is shown in the image below:
 
 ![](/img/linegap_config.png)
 

@@ -10,7 +10,7 @@ description: You can learn about the defaultLinkType property in the documentati
 
 @short: Optional. The default type of a connector line
 
-The value is applied, if the line object doesn't contain the "type" property
+The value is applied, if the line object doesn't contain the `"type"` property
 
 ### Usage
 

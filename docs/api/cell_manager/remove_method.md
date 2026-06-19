@@ -7,7 +7,7 @@ description: You can learn about the remove method of Cell Manager in the docume
 # remove()
 
 :::info
-The **remove()** method is automatically validated by the system. The cell won't be removed if it is not possible according to the structure of the swimlane.
+The `remove()` method is automatically validated by the system. The cell won't be removed if it is not possible according to the structure of the swimlane.
 :::
 
 ### Description

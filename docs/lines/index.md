@@ -24,7 +24,7 @@ The org chart mode of Diagram represents an organizational chart that contains a
 
 <iframe src="https://snippet.dhtmlx.com/98tzmzpg?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="650"></iframe>
 
-It is possible to define vertical direction of connecting shapes for the parent shape via the **dir: "vertical"** configuration attribute of the shape object.
+It is possible to define vertical direction of connecting shapes for the parent shape via the `dir: "vertical"` configuration attribute of the shape object.
 
 ### Lines in the mindmap mode
 
@@ -68,19 +68,19 @@ const data = [
 ];
 ~~~
 
-The **type** property specified in the line object allows you to specify individual type for a separate line.
+The `type` property specified in the line object allows you to specify individual type for a separate line.
 
 :::note
 See [the full list of configuration properties of a line object](lines/configuration_properties.md).
 :::
 
-- **using the "parent" attribute**
+- **using the `"parent"` attribute**
 
 :::note
 This way does not work in the default mode of Diagram/Diagram Editor.
 :::
 
-You can specify the **parent** property in the configuration object of the shape and set the id of its parent shape as the value:
+You can specify the `parent` property in the configuration object of the shape and set the id of its parent shape as the value:
 
 ~~~jsx
 const data = [
@@ -115,9 +115,9 @@ The value of the `lineType` parameter is applied, if the [line object](lines/con
 
 You can specify the connection type for lines of the diagram via the `connectType` parameter of the [](api/diagram/lineconfig_property.md) property of the diagram config object. It provides the following types:
 
-- "elbow" (the default type for the default and org chart Diagram modes)
-- "straight"
-- "curved" (the default type for the mindmap Diagram mode). Note that the "curved" type of the connector line is used only in the mindmap Diagram mode
+- `"elbow"` (the default type for the default and org chart Diagram modes)
+- `"straight"`
+- `"curved"` (the default type for the mindmap Diagram mode). Note that the `"curved"` type of the connector line is used only in the mindmap Diagram mode
 
 ~~~jsx
 const diagram = new dhx.Diagram("diagram_container", {

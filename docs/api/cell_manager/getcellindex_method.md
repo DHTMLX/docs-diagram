@@ -22,7 +22,7 @@ getCellIndex(
 ### Parameters
 
 - `cellId` - (required) the id of a cell
-- `type` - (required) the type of direction to count the index: "row" | "col"
+- `type` - (required) the type of direction to count the index: `"row"` | `"col"`
 
 ### Returns
 

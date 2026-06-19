@@ -51,7 +51,7 @@ You can adjust the attributes of the shapes via the available [sidebar options o
 
 If you've added a custom shape to the editor in the org chart mode, you can [configure the editbar](api/diagram_editor/editbar/config/properties_property.md) to be able to edit custom properties of the shape.
 
-You can add the **assistant** or **partner** items for a parent shape of any level. The assistant or partner items can't be the parent items.
+You can add the `assistant` or `partner` items for a parent shape of any level. The assistant or partner items can't be the parent items.
 
 <img
   src={useBaseUrl('/img/orgchart_editor_assistant.png')}

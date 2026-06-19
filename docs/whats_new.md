@@ -171,7 +171,7 @@ Released on August 28, 2024
 
 - Diagram Editor. Applying different locales for `calendar`, `combobox`, `colorpicker`, `form`, `timepicker` of Editbar
 - Diagram Editor. Adding Diagram Editor in a Layout cell
-- Diagram Editor. The `shapeToolbar` property is not optional for the **default** mode
+- Diagram Editor. The `shapeToolbar` property is not optional for the `default` mode
 - Diagram Editor. Incorrect hover behavior when a custom shape has a preview image
 
 
@@ -277,17 +277,17 @@ The new update introduces significant changes in the structure and functionality
 - Diagram Editor. Fix a console error caused by clicking the "Import data" button for a second time after data import and not selecting a file
 - Diagram Editor. Fix blocking of a new shape adding
 - Diagram Editor. Fix copying of lines while selecting elements manually
-- Diagram Editor. Fix dragging when the root shape is close to the child one in the **mindmap/org** modes
+- Diagram Editor. Fix dragging when the root shape is close to the child one in the `mindmap`/`org` modes
 - Diagram Editor. Fix incorrect selection behavior that required an additional click for selecting a shape with the Shift key
 - Diagram Editor. Fix moving a group and a swimlane together
 - Diagram Editor. Fix removing of unused lines/connectors
-- Diagram Editor. Fix the ability to move items of different parents to the target item (for the **org/mindmap** modes)
+- Diagram Editor. Fix the ability to move items of different parents to the target item (for the `org`/`mindmap` modes)
 - Diagram Editor. Fix the ability to set default values for the Shapebar elements
 - Diagram Editor. Fix the appearance of connectors on hovering moved items above any shape
-- Diagram Editor. Fix the impossibility to remove selected items via menu in the **mindmap/org** modes
+- Diagram Editor. Fix the impossibility to remove selected items via menu in the `mindmap`/`org` modes
 - Diagram Editor. Fix the issue with data import working just once
 - Diagram Editor. Improve performance during the connector movement
-- Diagram Editor. Limit the recording of actions during the connector movement in the **historyManager**
+- Diagram Editor. Limit the recording of actions during the connector movement in the `historyManager`
 - Diagram Editor. Optimize the logic of searching for the nearest connector
 - Fix the localization with complex widgets
 
@@ -323,7 +323,7 @@ Released on January 19, 2023
 - Diagram Editor. Fix the issue with dragging of shapes in the grid after changing the zoom level
 - Fix the error thrown after clicking on the "Auto layout" button in the absence of shapes
 - Fix the issue with display of [default settings](api/diagram/defaults_property.md) after creation of lines via the editor
-- Fix the issue with scale of Diagram/Diagram Editor appeared when auto-placing shapes in the "radial" mode
+- Fix the issue with scale of Diagram/Diagram Editor appeared when auto-placing shapes in the `"radial"` mode
 
 ## Version 5.0
 

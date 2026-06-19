@@ -21,7 +21,7 @@ resetFilter({
 
 ### Parameters
 
-- `config` - (optional) specifies the parameters of resetting the active filters. If the config isn't specified or it is empty, all the filters except for those that have the ***permanent*** property in the configuration object will be reset. Can contain the following properties:
+- `config` - (optional) specifies the parameters of resetting the active filters. If the config isn't specified or it is empty, all the filters except for those that have the `permanent` property in the configuration object will be reset. Can contain the following properties:
     - `id` - (optional) the id of the filter to reset
     - `permanent` - (optional) *true* to reset all the active filters, including those that have the `permanent:true` setting in their config
 

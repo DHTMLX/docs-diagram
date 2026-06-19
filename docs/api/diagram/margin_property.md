@@ -23,7 +23,7 @@ margin?: {
 
 ### Parameters
 
-The **margin** object can include the following parameters:
+The `margin` object can include the following parameters:
 
 - `itemX` - (optional) horizontal space between two shapes (only for [type: "org" | "mindmap"](api/diagram/type_property.md))
 - `itemY` - (optional) vertical space between two shapes (only for [type: "org" | "mindmap"](api/diagram/type_property.md))

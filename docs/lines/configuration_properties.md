@@ -70,8 +70,8 @@ const data = [
 
 When preparing a data set for lines to load into the diagram in the default mode, you can add the following properties to the configuration object of a line:
 
-- `forwardArrow` - (optional) sets a forward arrow connector and defines the type of the arrow ("filled" by default)
-- `backArrow` - (optional) sets a back arrow connector and defines the type of the arrow ("filled" by default)
+- `forwardArrow` - (optional) sets a forward arrow connector and defines the type of the arrow (`"filled"` by default)
+- `backArrow` - (optional) sets a back arrow connector and defines the type of the arrow (`"filled"` by default)
 - `fromSide` - (optional) the side of the shape from which connection will start ("*top*", "*bottom*", "*left*","*right*", "*center*")
 - `toSide` - (optional) the side of the shape to which a different shape will be attached ("*top*", "*bottom*", "*left*", "*right*", "*center*")
 - `cornersRadius` - (optional) the radius of rounding corners of a connector

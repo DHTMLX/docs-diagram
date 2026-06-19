@@ -33,14 +33,14 @@ The callback of the event is called with an object with the following parameters
 - `x` - the new X-coordinate of the item
 - `y` - the new Y-coordinate of the item
 - `dir` - the direction of the resize operation:
-	- **"n"** - north
-    - **"ne"** - north-east
-    - **"e"** - east
-    - **"se"** - south-east
-    - **"s"** - south
-    - **"sw"** - south-west
-    - **"w"** - west
-    - **"nw"** - north-west
+	- `"n"` - north
+    - `"ne"` - north-east
+    - `"e"` - east
+    - `"se"` - south-east
+    - `"s"` - south
+    - `"sw"` - south-west
+    - `"w"` - west
+    - `"nw"` - north-west
 
 ### Example
 

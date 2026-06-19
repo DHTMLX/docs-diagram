@@ -16,7 +16,7 @@ See [the full list of configuration properties of a shape object](shapes/configu
 
 ## Shapes in the default mode
 
-In the **default** mode of Diagram, the basic set includes **flow chart** shapes. Check the available types of flow chart shapes:
+In the `default` mode of Diagram, the basic set includes **flow chart** shapes. Check the available types of flow chart shapes:
 
 ![](/img/flowshapes_types.png)
 
@@ -32,13 +32,13 @@ You can group shapes of the Diagram in the default mode. [Check the related guid
 
 ### Properties
 
-Check the configuration properties specific for [shapes in the **default** Diagram mode](shapes/configuration_properties.md#properties-specific-for-the-default-mode) and [**flow shapes** and the `"text"` item](shapes/configuration_properties.md#properties-specific-for-text-topic-and-flow-chart-shapes).
+Check the configuration properties specific for [shapes in the `default` Diagram mode](shapes/configuration_properties.md#properties-specific-for-the-default-mode) and [**flow shapes** and the `"text"` item](shapes/configuration_properties.md#properties-specific-for-text-topic-and-flow-chart-shapes).
 
 ## Shapes in the org chart mode
 
 In the **org chart** mode of Diagram, the basic set includes two types of shapes: `"card"` and `"img-card"`. 
 
-Each shape with the `"card"` type has a text and a colored header line. Shapes located on the same level have headers of identical color. Examples of "card" shapes are shown in the diagram of the org chart type below:
+Each shape with the `"card"` type has a text and a colored header line. Shapes located on the same level have headers of identical color. Examples of `"card"` shapes are shown in the diagram of the org chart type below:
 
 ![](/img/orgchart_card_shapes.png)
 
@@ -57,7 +57,7 @@ and [the `"img-card"` shapes](shapes/configuration_properties.md#properties-spec
 
 ## Shapes in the mindmap mode
 
-In the **mindmap** mode of Diagram, the `"topic"` type of shapes is the basic one. Each shape has a text and a colored border. The color of the outline depends on the level the shape belongs to. Examples of "topic" shapes are given in the following diagram of the mindmap type:
+In the `mindmap` mode of Diagram, the `"topic"` type of shapes is the basic one. Each shape has a text and a colored border. The color of the outline depends on the level the shape belongs to. Examples of `"topic"` shapes are given in the following diagram of the mindmap type:
 
 ![](/img/mindmap_basic.png)
 
@@ -65,7 +65,7 @@ In the **mindmap** mode of Diagram, the `"topic"` type of shapes is the basic on
 
 ### Properties
 
-Check the configuration properties specific for [shapes in the **mindmap** Diagram mode](shapes/configuration_properties.md#properties-specific-for-the-mindmap-mode) and [the `"topic"` shapes](shapes/configuration_properties.md#properties-specific-for-text-topic-and-flow-chart-shapes).
+Check the configuration properties specific for [shapes in the `mindmap` Diagram mode](shapes/configuration_properties.md#properties-specific-for-the-mindmap-mode) and [the `"topic"` shapes](shapes/configuration_properties.md#properties-specific-for-text-topic-and-flow-chart-shapes).
 
 ## Shapes in the PERT mode
 

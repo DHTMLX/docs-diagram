@@ -56,31 +56,31 @@ description: You can explore the Datepicker control of Editbar in the documentat
 
 ### Basic properties
 
-- `type` - (required) the type of a control. Set it to *"datepicker"*
+- `type` - (required) the type of a control. Set it to `"datepicker"`
 - `key` - (optional) the name of the specified/modified property or the path to it in the object of a Diagram item 
 - `wrap` - (optional) allows displaying the external wrapping. *false* by default
 - `css` - (optional) adds style classes to a control string
 - `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*). *false* by default
 - `hidden` - (optional) defines whether a control is hidden. *false* by default
-- `height` - (optional) the height of a control. *"content"* by default
-- `width` - (optional) the width of a control. *"content"* by default
+- `height` - (optional) the height of a control. `"content"` by default
+- `width` - (optional) the width of a control. `"content"` by default
 - `padding` - (optional) sets padding between a cell and a border of a Datepicker control
 - `date` - (optional) defines the date that will be opened when the calendar is created
 - `dateFormat` - (optional) defines the format of dates in the calendar. *"%d/%m/%y"* by default. The date format must include delimiters (space or symbol), otherwise an error will be thrown
 - `disabledDates` - (optional) allows disabling some date intervals, day labels are dimmed
 - `icon` - (optional) the CSS class of an icon from the used icon font
 - `mark` - (optional) allows adding a CSS class to specific days
-- `mode` - (optional) specifies the mode of displaying a calendar: *"calendar"* | *"month"* | *"year"*. *"calendar"* by default
+- `mode` - (optional) specifies the mode of displaying a calendar: `"calendar"` | `"month"` | `"year"`. `"calendar"` by default
 - `placeholder` - (optional) a tip for the input
 - `thisMonthOnly` - (optional) hides dates of the previous/next months relative to the currently displayed one
 - `timeFormat` - (optional) defines the time format of a timepicker, 12-hour or 24-hour: *12* | *24*. *24* by default
 - `timePicker` - (optional) adds a timepicker into a calendar. *false* by default
-- `valueFormat` - (optional) defines the format of the value that will be returned while getting the current value of the control: *"string"* | *"Date"*. *"string"* by default
+- `valueFormat` - (optional) defines the format of the value that will be returned while getting the current value of the control: `"string"` | `"Date"`. `"string"` by default
 - `weekNumbers` - (optional) defines whether to show the numbers of weeks, *false* by default
-- `weekStart` - (optional) sets the starting day of the week: *"saturday"* | *"monday"* | *"sunday"*. *"sunday"* by default
+- `weekStart` - (optional) sets the starting day of the week: `"saturday"` | `"monday"` | `"sunday"`. `"sunday"` by default
 - `label` - (optional) specifies a label for the control
 - `labelWidth` - (optional) sets the label width of the control
-- `labelPosition` - (optional) defines the position of a label: *"left"* | *"top"*. *"top"* by default
+- `labelPosition` - (optional) defines the position of a label: `"left"` | `"top"`. `"top"` by default
 
 ### Service properties and methods
 

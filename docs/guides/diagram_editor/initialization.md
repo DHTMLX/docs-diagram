@@ -84,7 +84,7 @@ You can initialize a Diagram Editor in a container, in the document body, or in 
 
 To initialize Diagram Editor in a container, use the `dhx.DiagramEditor` constructor and pass the following two parameters to the constructor function:
 
-- a container to place Diagram Editor into, let's give it the *"editor_container"* id:
+- a container to place Diagram Editor into, let's give it the `"editor_container"` id:
 
 ~~~html title="index.html"
 <div id="editor_container"></div>

@@ -56,20 +56,20 @@ Option configuration object inside Select:
 
 #### Basic properties
 
-- `type` - (required) the type of a control. Set it to *"select"*
+- `type` - (required) the type of a control. Set it to `"select"`
 - `options` - (required) an array of Select options, each option can be set as a *string* or as an *object* with a set of `key:value` pairs - [attributes of options and their values](#option-properties)
 - `key` - (optional) the name of the specified/modified property or the path to it in the object of a Diagram item 
 - `wrap` - (optional) allows displaying the external wrapping. *false* by default
 - `css` - (optional) adds style classes to a control
 - `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*). *false* by default
 - `hidden` - (boolean) defines whether a Select is hidden. *false* by default
-- `height` - (optional) the height of a control. *"content"* by default
-- `width` - (optional) the width of a control. *"content"* by default
+- `height` - (optional) the height of a control. `"content"` by default
+- `width` - (optional) the width of a control. `"content"` by default
 - `padding` - (optional) sets padding between a cell and a border of a Select control
 - `icon` - (optional) the CSS class of an [icon](https://docs.dhtmlx.com/suite/helpers/icon/) from the used icon font
 - `label` - (optional) specifies a label for the control
 - `labelWidth` - (optional) sets the label width of the control
-- `labelPosition` - (optional) defines the position of a label: *"left"* | *"top"*. *"top"* by default
+- `labelPosition` - (optional) defines the position of a label: `"left"` | `"top"`. `"top"` by default
 
 #### Service properties and methods
 

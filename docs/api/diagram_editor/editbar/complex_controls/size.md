@@ -16,7 +16,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 />
 
 :::info
-The **Size** control is available only for the **shape**, **group** and **swimlane** elements of the Diagram editor.
+The **Size** control is available only for the `shape`, `group` and `swimlane` elements of the Diagram editor.
 :::
 
 ## Usage
@@ -47,16 +47,16 @@ The **Size** control is available only for the **shape**, **group** and **swimla
 
 ### Basic properties
 
-- `type` - (required) the type of a control. Set it to *"size"*
+- `type` - (required) the type of a control. Set it to `"size"`
 - `hidden` - (optional) defines whether the control is hidden. *false* by default
 - `disabled` - (optional) defines whether the control is enabled (*false*) or disabled (*true*). *false* by default
 - `css` - (optional) adds style classes to the control
-- `width` - (optional) the width of the control. *"content"* by default
-- `height` - (optional) the height of the control. *"content"* by default
+- `width` - (optional) the width of the control. `"content"` by default
+- `height` - (optional) the height of the control. `"content"` by default
 - `padding` - (optional) sets the padding for the content inside the control group. *"0 16px"* by default
 - `label` - (optional) specifies a label for the control
-- `labelAlignment` - (optional) defines the position of the label. *"left"* by default
-- `align` - (optional) sets the alignment of controls inside the control group. *"start"* by default
+- `labelAlignment` - (optional) defines the position of the label. `"left"` by default
+- `align` - (optional) sets the alignment of controls inside the control group. `"start"` by default
 - `compact` - (optional) specifies the compact mode, removes indents and frame. *false* by default
 
 ### Service properties

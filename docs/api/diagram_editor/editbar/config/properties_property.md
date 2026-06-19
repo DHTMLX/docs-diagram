@@ -38,7 +38,7 @@ properties?: {
         - `item` - (optional) the object of the selected element
         - `editor` - (required) the object of the Diagram editor
 
-You can configure Editbar controls for a separate Diagram element, for instance **rectangle**, **circle**, **card** etc.:
+You can configure Editbar controls for a separate Diagram element, for instance `rectangle`, `circle`, `card` etc.:
 
 ~~~jsx
 properties: {

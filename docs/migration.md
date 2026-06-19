@@ -374,7 +374,7 @@ const data = [
 ]
 ~~~
 
-From v6.0 line titles are defined in separate objects with the **"lineTitle"** type. The `lineTitle` object has the following configuration properties:
+From v6.0 line titles are defined in separate objects with the `"lineTitle"` type. The `lineTitle` object has the following configuration properties:
 
 ~~~jsx title="From v6.0"
 const data = [
@@ -413,7 +413,7 @@ Due to the modifications in the Diagram editor interface, the locale settings ha
 
 ### Diagram API
 
-The **lineGap** property of Diagram is deprecated and no longer supported. Instead, use the **lineGap** parameter of the [lineConfig](api/diagram/lineconfig_property.md) property.
+The `lineGap` property of Diagram is deprecated and no longer supported. Instead, use the `lineGap` parameter of the [lineConfig](api/diagram/lineconfig_property.md) property.
 
 ~~~jsx {3} title="Before v5.0"
 const diagram = new dhx.Diagram("diagram_container", { 
@@ -434,7 +434,7 @@ const diagram = new dhx.Diagram("diagram_container", {
 
 ### Editor API
 
-The **lineGap** property of Diagram Editor is deprecated and no longer supported. Instead, use the **lineGap** parameter inside the `lineConfig` property.
+The `lineGap` property of Diagram Editor is deprecated and no longer supported. Instead, use the `lineGap` parameter inside the `lineConfig` property.
 
 ~~~jsx {3} title="Before v5.0"
 const editor = new dhx.DiagramEditor("editor_container", {
@@ -457,7 +457,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 
 ### Diagram API
 
-In v4.2, the **defaultLinkType** property is deprecated. 
+In v4.2, the `defaultLinkType` property is deprecated. 
 
 Starting from v4.2, you need to apply the new [lineConfig](api/diagram/lineconfig_property.md) property to specify the default type for connector lines.
 
@@ -510,7 +510,7 @@ Besides, it became possible to specify other basic sets of items via the related
 
 ### API
 
-The **shapeHover** event has been deprecated in v4.0. Starting with v4.0, use the new [itemMouseOver](api/diagram/itemmouseover_event.md) event instead.
+The `shapeHover` event has been deprecated in v4.0. Starting with v4.0, use the new [itemMouseOver](api/diagram/itemmouseover_event.md) event instead.
 
 ~~~jsx title="Before v4.0"
 diagram.events.on("shapeHover", (id,e) => {
@@ -532,7 +532,7 @@ editor.diagram.events.on("itemMouseOver", (id, event) => {
 
 ### Editor API
 
-The **shapeMove** event of the editor object has been deprecated in v3.1. Starting with v3.1, use the new **BeforeShapeMove** and **AfterShapeMove** events instead.
+The `shapeMove` event of the editor object has been deprecated in v3.1. Starting with v3.1, use the new `BeforeShapeMove` and `AfterShapeMove` events instead.
 
 ~~~jsx title="Before v3.1"
 editor.events.on("shapeMove", () => {
@@ -559,7 +559,7 @@ editor.events.on("AfterShapeMove", (e) => {
 
 The way of creating custom shapes has been changed, simplified and improved.
 
-Starting from v3.0, in order to create your own types of shapes, the new **addShape** method should be used instead of the *diagram.flowShapes* object. The method provides you with the ability to create HTML templates that will work in different browsers. Besides, the method allows creating and editing custom shapes in Diagram Editor.
+Starting from v3.0, in order to create your own types of shapes, the new `addShape` method should be used instead of the *diagram.flowShapes* object. The method provides you with the ability to create HTML templates that will work in different browsers. Besides, the method allows creating and editing custom shapes in Diagram Editor.
 
 Despite the *diagram.flowShapes* object has been deprecated, it will still continue working.
 
@@ -567,7 +567,7 @@ Despite the *diagram.flowShapes* object has been deprecated, it will still conti
 
 Before version 3.0 you were able to show/hide toolbar buttons in Diagram Editor via the related *showApply, showReset, showExport* configuration properties of the Editor.
 
-In the version 3.0 these properties are deprecated and removed. Instead, the **controls** config property that contains a set of *control_name:value* pairs is added. Thus, the properties are replaced with:
+In the version 3.0 these properties are deprecated and removed. Instead, the `controls` config property that contains a set of *control_name:value* pairs is added. Thus, the properties are replaced with:
 
 - showApply -> controls.apply
 - showReset -> controls.reset

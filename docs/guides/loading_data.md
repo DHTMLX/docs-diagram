@@ -31,7 +31,7 @@ const data = [
 ];
 ~~~
 
-The library provides you with [various types of default shapes](shapes/default_shapes.md) which have both common and specific options. Check the full list of available properties of a **shape** object in the [API reference](shapes/configuration_properties.md). 
+The library provides you with [various types of default shapes](shapes/default_shapes.md) which have both common and specific options. Check the full list of available properties of a `shape` object in the [API reference](shapes/configuration_properties.md). 
 
 Besides, you may create [your own type of shapes](shapes/custom_shape.md) and add any custom properties to shape objects.
 
@@ -51,7 +51,7 @@ const data = [
 ];
 ~~~
 
-The presence or absence of line objects in the data set depends on the chosen [way of shapes connection](/lines/#setting-connections-between-shapes). Check the full list of available properties of the **line** object in the [API reference](lines/configuration_properties.md).
+The presence or absence of line objects in the data set depends on the chosen [way of shapes connection](/lines/#setting-connections-between-shapes). Check the full list of available properties of the `line` object in the [API reference](lines/configuration_properties.md).
 
 - **line title objects**
 
@@ -99,7 +99,7 @@ const data = [
 ];
 ~~~
 
-Check the full list of the available properties of a **group** object in the [API reference](groups/configuration_properties.md).
+Check the full list of the available properties of a `group` object in the [API reference](groups/configuration_properties.md).
 
 - **objects of a swimlane and its cell**
 
@@ -156,7 +156,7 @@ const data = [
 ];
 ~~~
 
-Check the full list of the available configuration properties of the objects of a **swimlane** and its cells in the [API reference](swimlanes/configuration_properties.md).
+Check the full list of the available configuration properties of the objects of a `swimlane` and its cells in the [API reference](swimlanes/configuration_properties.md).
 
 ## Working with Diagram data in the PERT mode
 
@@ -199,7 +199,7 @@ const dataset = {
 }
 ~~~
 
-Check the full list of the available configuration properties of the **project** object in the [API reference](groups/configuration_properties.md#properties-specific-for-project-object).
+Check the full list of the available configuration properties of the `project` object in the [API reference](groups/configuration_properties.md#properties-specific-for-project-object).
 
 - **task objects**
 
@@ -223,7 +223,7 @@ const dataset = {
 }
 ~~~
 
-Check the full list of the available configuration properties of the **task** object in the [API reference](shapes/configuration_properties.md#properties-specific-for-task-shapes).
+Check the full list of the available configuration properties of the `task` object in the [API reference](shapes/configuration_properties.md#properties-specific-for-task-shapes).
 
 - **milestone objects**
 
@@ -244,7 +244,7 @@ const dataset = {
 }
 ~~~
 
-Check the full list of the available configuration properties of the **milestone** object in the [API reference](shapes/configuration_properties.md#properties-specific-for-milestone-shapes).
+Check the full list of the available configuration properties of the `milestone` object in the [API reference](shapes/configuration_properties.md#properties-specific-for-milestone-shapes).
 
 - **link objects**
 
@@ -268,7 +268,7 @@ const dataset = {
 }
 ~~~
 
-Check the full list of the available configuration properties of the **link** object in the [API reference](lines/configuration_properties.md#properties-specific-for-links-in-the-pert-mode).
+Check the full list of the available configuration properties of the `link` object in the [API reference](lines/configuration_properties.md#properties-specific-for-links-in-the-pert-mode).
 
 #### Processing links
 
@@ -333,7 +333,7 @@ In the above example:
     ~~~jsx
     { id: "1.1.1", type: "task", parent: "1" }
     ~~~
-    - or use the "project" type instead of the "task" type for the parent element "1.1": 
+    - or use the `"project"` type instead of the `"task"` type for the parent element "1.1": 
     ~~~jsx
      { id: "1.1", type: "project", parent: "1" }
     ~~~
@@ -383,7 +383,7 @@ editor.parse(data);
 To save the current state of a diagram, use the [](api/data_collection/serialize_method.md) method. Depending on the Diagram mode, it converts the data of the diagram into:
 
 - for the default, org chart and mindmap Diagram modes - into an array of objects, where each object contains the configuration of a separate shape
-- for the PERT Diagram mode - into an object with the `data` array of objects (for shapes: "task", "milestone", "project") and the `links` array of objects (for connections between shapes). 
+- for the PERT Diagram mode - into an object with the `data` array of objects (for shapes: `"task"`, `"milestone"`, `"project"`) and the `links` array of objects (for connections between shapes). 
 
 ~~~jsx
 const state = diagram1.data.serialize();

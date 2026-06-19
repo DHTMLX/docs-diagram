@@ -22,7 +22,7 @@ Depending on the diagram mode, the method returns:
 
 - `object[]` - (for the default, org chart and mindmap Diagram modes) an array of objects for each item and link from Diagram 
 - `{ data: object[]; links: object[] }` - (for the PERT Diagram mode) an object with:
-  - the `data` array of objects (for shapes: "task", "milestone", "project") 
+  - the `data` array of objects (for shapes: `"task"`, `"milestone"`, `"project"`) 
   - the `links` array of objects (for connections between shapes)
 
 ### Example
@@ -49,6 +49,6 @@ diagram.data.parse(dataset);
 const dataset = diagram.data.serialize(); // -> { data: [...], links: [...] };
 ~~~
 
-Note that for the PERT Diagram mode the *links* objects in the exported data object will have [the same types as in the DHTMLX Gantt chart](https://docs.dhtmlx.com/gantt/desktop__link_properties.html). It means that if the type of a link in the Diagram data coincides with some of the Gantt links types, it will remain the same during serialization. If the link type isn't specified or set differently (for example, `type: "line"`), it will be converted into `type: "0"`.
+Note that for the PERT Diagram mode the `links` objects in the exported data object will have [the same types as in the DHTMLX Gantt chart](https://docs.dhtmlx.com/gantt/desktop__link_properties.html). It means that if the type of a link in the Diagram data coincides with some of the Gantt links types, it will remain the same during serialization. If the link type isn't specified or set differently (for example, `type: "line"`), it will be converted into `type: "0"`.
 
 **Related articles**:  [Saving and restoring state](guides/loading_data.md#saving-and-restoring-state)

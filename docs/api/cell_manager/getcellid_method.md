@@ -22,7 +22,7 @@ getCellId(
 ### Parameters
 
 - `cellIndex` - (required) the start index of a cell in a layout. The count of the index starts from 0
-- `type` - (required) the type of direction to count the index: "row" | "col"
+- `type` - (required) the type of direction to count the index: `"row"` | `"col"`
 
 ### Returns
 

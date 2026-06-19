@@ -10,7 +10,7 @@ DHTMLX Diagram provides a wide range of options for configuration. You can chang
 
 ### Setting the Diagram mode
 
-There are the following Diagram modes you can choose from: **"default"**, **"org"**, **"mindmap"**, **"pert"**. Their detailed description is given in the [Diagram overview](/) article. You can specify the necessary type via the [type](api/diagram/type_property.md) configuration option, as follows:
+There are the following Diagram modes you can choose from: `"default"`, `"org"`, `"mindmap"`, `"pert"`. Their detailed description is given in the [Diagram overview](/) article. You can specify the necessary type via the [type](api/diagram/type_property.md) configuration option, as follows:
 
 ~~~jsx
 const diagram = new dhx.Diagram("diagram_container", {
@@ -35,10 +35,10 @@ This value will be applied, if the configuration object of the shape doesn't con
 
 The default types of shapes are:
 
-- *"rectangle"* - for the diagram in the default mode
-- *"card"*  - for the diagram in the default mode or the org chart mode
-- *"topic"* - for the diagram in the mindmap mode
-- *"task"* - for the diagram in the PERT mode
+- `"rectangle"` - for the diagram in the default mode
+- `"card"`  - for the diagram in the default mode or the org chart mode
+- `"topic"` - for the diagram in the mindmap mode
+- `"task"` - for the diagram in the PERT mode
 
 ## Setting the default line type
 
@@ -102,7 +102,7 @@ Other child shapes that are not set in the side option will be arranged automati
 
 ## Setting date format in the PERT mode of Diagram
 
-In the PERT mode of Diagram, you can specify the necessary format of rendering dates in the shapes of the **task** type. For this, use the `dateFormat` attribute of the [](api/diagram/typeconfig_property.md) property:
+In the PERT mode of Diagram, you can specify the necessary format of rendering dates in the shapes of the `task` type. For this, use the `dateFormat` attribute of the [](api/diagram/typeconfig_property.md) property:
 
 ~~~jsx {3-5}
 const diagram = new dhx.Diagram("diagram_container", {
@@ -141,9 +141,9 @@ diagram.autoPlace();
 
 The property can contain the following options:
 
-- `mode` - (*string*) optional, the mode of connecting shapes, *"direct"* (by default) or *"edges"*
+- `mode` - (*string*) optional, the mode of connecting shapes, `"direct"` (by default) or `"edges"`
 - `graphPadding` - (*number*) optional, sets the distance between unconnected diagrams, *200* by default
-- `placeMode` - (*string*) optional, sets the mode of placement of shapes, *"orthogonal"* (by default) or *"radial"*
+- `placeMode` - (*string*) optional, sets the mode of placement of shapes, `"orthogonal"` (by default) or `"radial"`
 - `itemPadding` - (*number*) optional, minimal padding between items (the minimal value is *1*), *20* by default
 - `levelPadding` - (*number*) optional, minimal padding between hierarchy levels (the minimal value is *1*), *20* by default
 

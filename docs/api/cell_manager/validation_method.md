@@ -23,8 +23,8 @@ validation(
 ### Parameters
 
 - `cellIndex` - (required) the start index of a cell in a layout. The count of the index starts from 0
-- `dir` - (required) the direction of the action: "up" | "down" | "left" | "right"
-- `action` - (required) the type of the action: "move" | "remove" | "add"
+- `dir` - (required) the direction of the action: `"up"` | `"down"` | `"left"` | `"right"`
+- `action` - (required) the type of the action: `"move"` | `"remove"` | `"add"`
 
 ### Returns
 

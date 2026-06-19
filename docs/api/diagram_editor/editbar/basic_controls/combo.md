@@ -70,15 +70,15 @@ Option configuration object inside Combo:
 
 #### Basic properties
 
-- `type` - (required) the type of a control. Set it to *"combo"*
+- `type` - (required) the type of a control. Set it to `"combo"`
 - `options` - (required) an array of Combo options, each option can be set as a *string* or as an *object* with a set of `key:value` pairs - [attributes of options and their values](#option-properties) 
 - `key` - (optional) the name of the specified/modified property or the path to it in the object of a Diagram item 
 - `wrap` - (optional) allows displaying the external wrapping. *false* by default
 - `css` - (optional) adds style classes to a control
 - `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*). *false* by default
 - `hidden` - (optional) defines whether a combo is hidden. *false* by default
-- `height` - (optional) the height of a control. *"content"* by default
-- `width` - (optional) the width of a control. *"content"* by default
+- `height` - (optional) the height of a control. `"content"` by default
+- `width` - (optional) the width of a control. `"content"` by default
 - `padding` - (optional) sets padding between a cell and a border of a Combo control
 - `filter` - (optional) sets a custom function for filtering Combo options. [Check the details](https://docs.dhtmlx.com/suite/combobox/customization/#custom-filter-for-options)
 - `eventHandlers` - (optional) adds event handlers to HTML elements of a custom template of Combo items. [Check the details](https://docs.dhtmlx.com/suite/combobox/api/combobox_eventhandlers_config/)
@@ -92,7 +92,7 @@ Option configuration object inside Combo:
 - `template` - (optional) sets a template of displaying options in the popup list
 - `virtual` - (optional) enables dynamic loading of data on scrolling the list of options. *false* by default
 - `label` - (optional) specifies a label for a control
-- `labelPosition` - (optional) defines the position of a label: *"left"* | *"top"*. *"top"* by default
+- `labelPosition` - (optional) defines the position of a label: `"left"` | `"top"`. `"top"` by default
 - `labelWidth` - (optional) sets the width of the label of a control
 
 #### Service properties and methods

@@ -11,7 +11,7 @@ description: You can learn about the remove method of data collection in the doc
 @short: Deletes the specified item from the diagram
 
 :::note
-If the diagram is initialized in the org (*type: "org"*) or mindmap (*type: "mindmap"*) mode, deleting a shape will remove the link to this shape and all child shapes as well
+If the diagram is initialized in the org (`type: "org"`) or mindmap (`type: "mindmap"`) mode, deleting a shape will remove the link to this shape and all child shapes as well
 :::
 
 ### Usage

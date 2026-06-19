@@ -8,10 +8,10 @@ description: You can learn about event handling in the documentation of the DHTM
 
 ## Attaching event listeners
 
-You can add any user-defined handler to any of the available events. To do this, use the **diagram.events.on()** method with the following parameters:
+You can add any user-defined handler to any of the available events. To do this, use the `diagram.events.on()` method with the following parameters:
 
-- **name** - (*string*) the name of the event
-- **handler** - (*function*) the handler function
+- `name` - (*string*) the name of the event
+- `handler` - (*function*) the handler function
 
 ~~~jsx
 diagram.events.on("ShapeClick", (id) => {
@@ -23,7 +23,7 @@ You can attach several handlers to the same event and all of them will be execut
 
 ## Detaching event listeners
 
-To detach events, use **diagram.events.detach()** method:
+To detach events, use `diagram.events.detach()` method:
 
 ~~~jsx
 diagram.events.on("CustomEvent", args);
@@ -33,7 +33,7 @@ diagram.events.detach("CustomEvent");
 
 ## Calling events
 
-To call events, use the **diagram.events.fire()**.
+To call events, use the `diagram.events.fire()`.
 
 ~~~jsx
 diagram.events.fire("CustomEvent", args);

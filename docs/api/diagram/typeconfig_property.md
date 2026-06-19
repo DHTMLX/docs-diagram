@@ -50,11 +50,11 @@ The `typeConfig` object can include one of the following parameters:
 
 - for the mindmap mode:
     - `direction` - (optional) sets the direction of the graph:
-      - *"left"* - puts child shapes of the graph to the left of the root shape
-      - *"right"* - puts child shapes of the graph to the right of the root shape
+      - `"left"` - puts child shapes of the graph to the left of the root shape
+      - `"right"` - puts child shapes of the graph to the right of the root shape
     - `side` - (optional) an object which sets the mandatory direction for the specified child shapes. The object contains a set of *key:value* pairs where *key* is the direction of the shapes (left, right) and *value* is an array with the ids of the shapes
 - for the PERT mode:
-    - `dateFormat` - (optional) sets the format of rendering dates in the shapes of the **task** type. Affects rendering of dates in the user interface 
+    - `dateFormat` - (optional) sets the format of rendering dates in the shapes of the `task` type. Affects rendering of dates in the user interface 
 
 :::tip
 You can use either the `direction` attribute or the `side` one for the diagram in the mindmap mode. Don't use both of them at the same time!

@@ -9,7 +9,7 @@ description: You can learn about the Shapebar of editor in the documentation of 
 Shapebar is a part of the editor that renders previews of Diagram items. You can choose the necessary items and drag them from the shapebar into the grid area.
 
 :::note 
-The shapebar is available only in the editor initialized in the default mode (type: "default").
+The shapebar is available only in the editor initialized in the default mode (type: `"default"`).
 :::
 
 ## Default sections

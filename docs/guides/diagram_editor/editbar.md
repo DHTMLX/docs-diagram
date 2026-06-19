@@ -31,10 +31,10 @@ To configure a [group of elements](guides/items_index.md), you need to use the f
 
 - [`$default`](#configure-editbar-for-the-grid-area) - allows configuring Editbar controls if no elements are selected, or more than one element is selected
 - [`$shape`](#configure-editbar-for-shapes) - allows configuring Editbar controls for [all shapes including custom shapes](/category/shapes)
-- [`$group`](#configure-editbar-for-group-elements) - allows configuring Editbar controls for all elements with the [**group**](/groups/) type
-- [`$swimlane`](#configure-editbar-for-swimlanes) - allows configuring Editbar controls for all elements with the [**swimlane**](/swimlanes/) type
-- [`$line`](#configure-editbar-for-lines) allows configuring Editbar controls for all elements with the [**line**](/lines/) type
-- [`$lineTitle`](#configure-editbar-for-line-titles) - allows configuring Editbar controls for all elements with the [**lineTitle**](/line_titles/) type
+- [`$group`](#configure-editbar-for-group-elements) - allows configuring Editbar controls for all elements with the [`group`](/groups/) type
+- [`$swimlane`](#configure-editbar-for-swimlanes) - allows configuring Editbar controls for all elements with the [`swimlane`](/swimlanes/) type
+- [`$line`](#configure-editbar-for-lines) allows configuring Editbar controls for all elements with the [`line`](/lines/) type
+- [`$lineTitle`](#configure-editbar-for-line-titles) - allows configuring Editbar controls for all elements with the [`lineTitle`](/line_titles/) type
 
 <iframe src="https://snippet.dhtmlx.com/ealq0m4l?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
@@ -79,7 +79,7 @@ properties: {
 
 ## Configure Editbar for group elements
 
-The `$group` service property allows configuring Editbar controls for all elements with the [**group**](/groups/) type.
+The `$group` service property allows configuring Editbar controls for all elements with the [`group`](/groups/) type.
 
 ~~~jsx
 properties: {
@@ -97,7 +97,7 @@ properties: {
 
 ## Configure Editbar for swimlanes
 
-The `$swimlane` service property allows configuring Editbar controls for all elements with the [**swimlane**](/swimlanes/) type.
+The `$swimlane` service property allows configuring Editbar controls for all elements with the [`swimlane`](/swimlanes/) type.
 
 ~~~jsx
 properties: {
@@ -115,7 +115,7 @@ properties: {
 
 ## Configure Editbar for lines
 
-The `$line` service property allows configuring Editbar controls for all elements with the [**line**](/lines/) type.
+The `$line` service property allows configuring Editbar controls for all elements with the [`line`](/lines/) type.
 
 ~~~jsx
 properties: {
@@ -133,7 +133,7 @@ properties: {
 
 ## Configure Editbar for line titles
 
-The `$lineTitle` service property allows configuring Editbar controls for all elements with the [**lineTitle**](/line_titles/) type.
+The `$lineTitle` service property allows configuring Editbar controls for all elements with the [`lineTitle`](/line_titles/) type.
 
 ~~~jsx
 properties: {

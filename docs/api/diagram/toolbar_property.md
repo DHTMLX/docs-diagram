@@ -27,7 +27,7 @@ toolbar?: [
 
 ### Parameters
 
-The **toolbar** array includes a set of icon objects. Each icon object can have the following parameters:
+The `toolbar` array includes a set of icon objects. Each icon object can have the following parameters:
 
 - `id` - (required) the id of the icon
 - `content` - (required) the content of the icon. It can contain an HTML element with the name of the icon class
@@ -67,7 +67,7 @@ const diagram = new dhx.Diagram("diagram_container", {
 
 **Change log**:
 
-- The **tooltip** parameter is added in v5.0
+- The `tooltip` parameter is added in v5.0
 
 **Related articles**:
 

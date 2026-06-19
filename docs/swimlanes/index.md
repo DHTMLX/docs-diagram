@@ -11,7 +11,7 @@ description: You can learn about Swimlanes in the documentation of the DHTMLX Ja
 A swimlane represents a rectangular element of Diagram that consists of cells (or lanes) arranged vertically or horizontally. Each cell (*type: "$sgroup"*) can include child items such as shapes, or groups.
 
 :::note
-Swimlanes are available only in the default mode of Diagram/Diagram Editor (type: "default").
+Swimlanes are available only in the default mode of Diagram/Diagram Editor (type: `"default"`).
 :::
 
 <iframe src="https://snippet.dhtmlx.com/z6x5m3gb?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="700"></iframe>
@@ -22,7 +22,7 @@ Swimlanes will help you to visualize any process (be it a business process, manu
 
 ## Creating swimlanes
 
-To create a swimlane, you need to specify **type: "$swimlane"**  and define the structure of the swimlane layout inside the swimlane object while preparing a data set to load into the diagram:
+To create a swimlane, you need to specify `type: "$swimlane"`  and define the structure of the swimlane layout inside the swimlane object while preparing a data set to load into the diagram:
 
 ~~~jsx
 const data = [
@@ -80,7 +80,7 @@ Check [the full list of configuration properties of a swimlane object](swimlanes
 
 ## Configuring a swimlane cell
 
-When you initialize a swimlane on the page, the id of a swimlane cell is generated automatically as well as its configuration. To change the default configuration of the cell, create an object of the cell which must include the **type: "$sgroup"** and **id** attributes, and specify the necessary configuration settings there:
+When you initialize a swimlane on the page, the id of a swimlane cell is generated automatically as well as its configuration. To change the default configuration of the cell, create an object of the cell which must include the `type: "$sgroup"` and `id` attributes, and specify the necessary configuration settings there:
 
 ~~~jsx
 const data = [
@@ -153,7 +153,7 @@ The result:
 
 ## Sizes of a swimlane and its cells
 
-The size of the swimlane is defined by the **width** and **height** configuration attributes of the swimlane.
+The size of the swimlane is defined by the `width` and `height` configuration attributes of the swimlane.
 
 ~~~jsx
 const data = [

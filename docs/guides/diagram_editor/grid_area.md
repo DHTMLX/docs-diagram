@@ -25,13 +25,13 @@ You can drag shapes from the shapebar into the grid area to place them at the de
 When you click on any shape, it becomes editable and gets personal interface elements:
 
 - a toolbar with controls:
-    - *"copy"* - to create a copy of the shape (except for the shape placed inside a group or a swimlane)
-    - *"connect"* - to activate the mode for setting connections to a different shape
-    - *"remove"* - to delete the selected shape
+    - `"copy"` - to create a copy of the shape (except for the shape placed inside a group or a swimlane)
+    - `"connect"` - to activate the mode for setting connections to a different shape
+    - `"remove"` - to delete the selected shape
 - resizing handles (pull the handles of the editable shape to change its sizes)
 - a rotate icon (press the icon to rotate the shape)
 
-When the connection mode is enabled for a shape, you can set links to other shapes, adjust their position and form, as well as delete unnecessary links via the "remove" toolbar control.
+When the connection mode is enabled for a shape, you can set links to other shapes, adjust their position and form, as well as delete unnecessary links via the `"remove"` toolbar control.
 
 Double-click the text of a shape to edit it.
 
@@ -48,18 +48,18 @@ You can drag shapes from one parent item to another. The moved item is dragged w
 When you click on any shape, it becomes editable and gets personal interface elements:
 
 - a toolbar that may include the following controls:
-    - *"add"* - to add a new child for the selected shape
+    - `"add"` - to add a new child for the selected shape
     - *"add assistant"* - to add an assistant for the selected shape
     - *"add partner"*  - to add a partner for the selected shape
     - *"align vertically"* - to arrange children of the shape vertically
     - *"align horizontally"* - to arrange children of the shape horizontally
-    - *"remove"* - to delete the selected shape (except for the root one) with its children
+    - `"remove"` - to delete the selected shape (except for the root one) with its children
 - resizing handles (pull the handles of the editable shape to change its sizes)
 - an icon to collapse/expand child shapes (if there are any)
 
 When you click on an assistant or partner shape, it becomes editable and gets personal interface elements:
 
-- *"remove"* - to delete the selected shape
+- `"remove"` - to delete the selected shape
 
 Double-click the text of a shape to edit it.
 
@@ -72,10 +72,10 @@ You can drag shapes to place them at the desired positions relative to the root 
 When you click on any shape, it becomes editable and gets personal interface elements:
 
 - a toolbar with controls:
-    - *"add"* - to add a new child for the selected shape (except for the root one)
-    - *"addLeft"* - to add a new child to the left of the root shape
-    - *"addRight"* - to add a new child to the right of the root shape
-    - *"remove"* - to delete the selected shape (except for the root one) with its children
+    - `"add"` - to add a new child for the selected shape (except for the root one)
+    - `"addLeft"` - to add a new child to the left of the root shape
+    - `"addRight"` - to add a new child to the right of the root shape
+    - `"remove"` - to delete the selected shape (except for the root one) with its children
 - resizing handles (pull the handles of the editable shape to change its sizes)
 - an icon to collapse/expand child shapes
 
@@ -100,8 +100,8 @@ You can drag groups from the shapebar into the grid area to place them at the de
 When you click on any group, it becomes editable and gets personal interface elements:
 
 - a toolbar with controls:
-    - *"copy"* - to create a copy of the group (except for the group placed inside another group or a swimlane);
-    - *"remove"* - to delete the selected group;
+    - `"copy"` - to create a copy of the group (except for the group placed inside another group or a swimlane);
+    - `"remove"` - to delete the selected group;
 - resizing handles (pull the handles of the editable group to change its sizes).
 
 Double-click the text in the header of the group to edit it.
@@ -115,10 +115,10 @@ You can drag a swimlane from the shapebar into the grid area to place it at the 
 When you click on any swimlane, it becomes editable and gets personal interface elements:
 
 - a toolbar with controls:
-    - *"addRowLast"* - to add a new row at the end of the swimlane
-    - *"addColumnLast"* - to add a new column at the end of the swimlane
-    - *"copy"* - to create a copy of the swimlane
-    - *"remove"* - to delete the selected swimlane
+    - `"addRowLast"` - to add a new row at the end of the swimlane
+    - `"addColumnLast"` - to add a new column at the end of the swimlane
+    - `"copy"` - to create a copy of the swimlane
+    - `"remove"` - to delete the selected swimlane
 - resizing handles (pull the handles of the editable swimlane to change its sizes)
 
 Besides, there are the abilities to add, move, or remove columns or rows of the swimlane via the options of the context menu. The context menu will appear after the user clicks on the icon of a swimlane subheader.

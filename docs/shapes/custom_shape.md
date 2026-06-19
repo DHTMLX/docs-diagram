@@ -36,9 +36,9 @@ diagram.addShape("networkCard", {
 });
 ~~~
 
-The **defaults** attribute is used to define the default configuration of a "networkCard" shape. The values of the specified properties can be changed in the configuration objects of separate shapes if needed.
+The `defaults` attribute is used to define the default configuration of a `"networkCard"` shape. The values of the specified properties can be changed in the configuration objects of separate shapes if needed.
 
-2\. Use the unique name of the shape as a value of the **type** attribute inside the shape object while preparing a data set for loading into the diagram.
+2\. Use the unique name of the shape as a value of the `type` attribute inside the shape object while preparing a data set for loading into the diagram.
 
 :::note
 The data object of a custom shape can contain any [configuration properties](shapes/configuration_properties.md) including custom ones.
@@ -64,17 +64,17 @@ Thus, the *"Network Card"* text value will be replaced with the *"Remote expert 
 
 ## Event handlers for custom shapes
 
-You may need to add handlers to the events occurred when the user interacts with custom shapes. It can be done by adding event handlers to HTML elements of the template of a shape via the **eventHandlers** attribute of the [](api/diagram/addshape_method.md) method. 
+You may need to add handlers to the events occurred when the user interacts with custom shapes. It can be done by adding event handlers to HTML elements of the template of a shape via the `eventHandlers` attribute of the [](api/diagram/addshape_method.md) method. 
 
-In the example below, a context menu will be opened after the user clicks on the icon with the **toggle_container** class:
+In the example below, a context menu will be opened after the user clicks on the icon with the `toggle_container` class:
 
 <iframe src="https://snippet.dhtmlx.com/8fubjmlz?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="550"></iframe>
 
-The **eventHandlers** object includes a set of *key:value* pairs, where:
+The `eventHandlers` object includes a set of *key:value* pairs, where:
 
-- *key* - the name of the event. Note, that at the beginning of the event name the **'on'** prefix is used (onclick, onmouseover).
+- *key* - the name of the event. Note, that at the beginning of the event name the `'on'` prefix is used (onclick, onmouseover).
 - *value* - an object that contains a *key:value* pair, where *key* is the css class name that the handler will be applied to and *value* is a function that takes two parameters:
-	- **event** - an event object
-	- **shape** - the shape object
+	- `event` - an event object
+	- `shape` - the shape object
 
 *We recommend that you use different CSS classes for different custom shapes.*

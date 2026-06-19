@@ -18,7 +18,7 @@ description: You can explore the Spacer control of Editbar in the documentation 
 
 ## Description
 
-- `type` - (required) the type of a control. Set it to *"spacer"*
+- `type` - (required) the type of a control. Set it to `"spacer"`
 
 ## Example
 

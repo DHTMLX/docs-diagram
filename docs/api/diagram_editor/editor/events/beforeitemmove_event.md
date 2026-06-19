@@ -11,7 +11,7 @@ description: You can learn about the beforeItemMove event of editor in the docum
 @short: Fires before an item is moved
 
 :::note
-The event doesn't work with the **line** object.
+The event doesn't work with the `line` object.
 
 The event fires just for the target element despite the number of selected elements. The ids of dragged elements are provided in the `batch` parameter of the callback function.
 :::
@@ -43,7 +43,7 @@ The callback of the event is called with an object with the following parameters
 The callback returns `false` to prevent the item from being moved; otherwise, `true`
 
 :::info
-For handling the inner Diagram Editor events you can use the **on()** method.
+For handling the inner Diagram Editor events you can use the `on()` method.
 :::
 
 ### Example

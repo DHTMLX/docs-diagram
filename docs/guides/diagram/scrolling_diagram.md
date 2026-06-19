@@ -33,7 +33,7 @@ It returns an object with the horizontal and vertical scroll position.
 
 You can catch the start of Diagram scrolling using the [](api/diagram/scroll_event.md) event. The handler function takes the position of the scroll as a parameter:
 
-- **pos** - (*object*) the position of a scroll as an object with x and y attributes
+- `pos` - (*object*) the position of a scroll as an object with x and y attributes
 
 ~~~jsx
 diagram.events.on("Scroll", (position) => {

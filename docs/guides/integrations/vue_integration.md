@@ -169,7 +169,7 @@ export function getData() {
 }
 ~~~
 
-Then open the ***App.vue*** file, import data, and initialize it via the inner `data()` method. After this you can pass data into the new created `<DiagramEditor/>` component as **props**:
+Then open the ***App.vue*** file, import data, and initialize it via the inner `data()` method. After this you can pass data into the new created `<DiagramEditor/>` component as `props`:
 
 ~~~html {3,7-9,14} title="App.vue"
 <script>
@@ -190,7 +190,7 @@ export default {
 
 ~~~
 
-Go to the ***DiagramEditor.vue*** file and apply the passed **props** to the Diagram Editor via the [`parse()`](api/diagram_editor/editor/methods/parse_method.md) method:
+Go to the ***DiagramEditor.vue*** file and apply the passed `props` to the Diagram Editor via the [`parse()`](api/diagram_editor/editor/methods/parse_method.md) method:
 
 ~~~html {6,10} title="DiagramEditor.vue"
 <script>

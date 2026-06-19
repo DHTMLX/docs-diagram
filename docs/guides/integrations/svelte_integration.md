@@ -167,7 +167,7 @@ export function getData() {
 }
 ~~~
 
-Then open the ***App.svelte*** file, import data, and pass it into the newly created `<DiagramEditor/>` components as **props**:
+Then open the ***App.svelte*** file, import data, and pass it into the newly created `<DiagramEditor/>` components as `props`:
 
 ~~~html {3,5,8} title="App.svelte"
 <script>
@@ -180,7 +180,7 @@ Then open the ***App.svelte*** file, import data, and pass it into the newly cre
 <DiagramEditor data={data} />
 ~~~
 
-Go to the ***DiagramEditor.svelte*** file and apply the passed **props** to the Diagram Editor via the [`parse()`](api/diagram_editor/editor/methods/parse_method.md) method:
+Go to the ***DiagramEditor.svelte*** file and apply the passed `props` to the Diagram Editor via the [`parse()`](api/diagram_editor/editor/methods/parse_method.md) method:
 
 ~~~html {6,13} title="DiagramEditor.svelte"
 <script>

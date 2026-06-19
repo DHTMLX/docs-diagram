@@ -22,14 +22,14 @@ lineConfig?: {
 
 ### Parameters
 
-The **lineConfig** object contains the following parameters:
+The `lineConfig` object contains the following parameters:
 
-- `lineType` - (optional) the default type of a connector line. The value is applied, if the line object doesn't contain the "type" property
+- `lineType` - (optional) the default type of a connector line. The value is applied, if the line object doesn't contain the `"type"` property
 - `lineGap` - (optional) sets the distance to the right-angled bend of a connector line
-- `connectType` - (optional) sets the connection type of the lines: `"elbow"` | `"straight"` | `"curved"` (the "curved" type is used only in the mindmap Diagram mode). The value is applied, if the line object doesn't contain the "connectType" property
+- `connectType` - (optional) sets the connection type of the lines: `"elbow"` | `"straight"` | `"curved"` (the `"curved"` type is used only in the mindmap Diagram mode). The value is applied, if the line object doesn't contain the `"connectType"` property
 
 :::info
-The values of the **lineType** and **connectType** settings will be applied, if the line object doesn't contain the identical ones.
+The values of the `lineType` and `connectType` settings will be applied, if the line object doesn't contain the identical ones.
 :::
 
 ### Default config
@@ -43,8 +43,8 @@ lineConfig: {
 
 The `connectType` parameter has the following default values:
 
-- "elbow" - for the default and org chart Diagram modes
-- "curved" - for the mindmap Diagram mode (this type is used only in the mindmap Diagram mode)
+- `"elbow"` - for the default and org chart Diagram modes
+- `"curved"` - for the mindmap Diagram mode (this type is used only in the mindmap Diagram mode)
 
 ### Example
 
@@ -60,7 +60,7 @@ const diagram = new dhx.Diagram("diagram_container", {
 });
 ~~~
 
-The result of applying the **lineGap** property is shown in the image below:
+The result of applying the `lineGap` property is shown in the image below:
 
 ![](/img/linegap_config.png)
 

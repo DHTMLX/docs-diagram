@@ -8,7 +8,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # Header
 
-@short: The complex control for displaying and modifying the header of "group" and "swimlane" elements of the Diagram editor
+@short: The complex control for displaying and modifying the header of `"group"` and `"swimlane"` elements of the Diagram editor
 
 <img
   src={useBaseUrl('/img/editbar-complex-controls/header.png')}
@@ -16,7 +16,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 />
 
 :::info
-The **Header** control is available only for **group** and **swimlane** elements in the *default* mode of the Diagram editor.
+The **Header** control is available only for `group` and `swimlane` elements in the *default* mode of the Diagram editor.
 :::
 
 ## Usage
@@ -44,16 +44,16 @@ The **Header** control is available only for **group** and **swimlane** elements
 
 ### Basic properties
 
-- `type` - (required) the type of a control. Set it to *"header"*
+- `type` - (required) the type of a control. Set it to `"header"`
 - `hidden` - (optional) defines whether the control is hidden. *false* by default
 - `disabled` - (optional) defines whether the control is enabled (*false*) or disabled (*true*). *false* by default
 - `css` - (optional) adds style classes to the control
-- `width` - (optional) the width of the control. *"content"* by default
-- `height` - (optional) the height of the control. *"content"* by default
+- `width` - (optional) the width of the control. `"content"` by default
+- `height` - (optional) the height of the control. `"content"` by default
 - `padding` - (optional) sets the padding for the content inside the control group. *"0 16px"* by default
 - `label` - (optional) specifies a label for the control
-- `labelAlignment` - (optional) defines the position of the label. *"left"* by default
-- `align` - (optional) sets the alignment of controls inside the control group. *"start"* by default
+- `labelAlignment` - (optional) defines the position of the label. `"left"` by default
+- `align` - (optional) sets the alignment of controls inside the control group. `"start"` by default
 - `compact` - (optional) specifies the compact mode, removes indents and frames. *false* by default
 
 ## Example

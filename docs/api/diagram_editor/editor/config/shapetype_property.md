@@ -10,7 +10,7 @@ description: You can learn about the shapeType property of editor in the documen
 
 @short: Optional. The type of the items
 
-This value is applied, if the shape object doesn't contain the "type" property
+This value is applied, if the shape object doesn't contain the `"type"` property
 
 ### Usage
 
@@ -20,19 +20,19 @@ shapeType?: string;
 
 ### Default config
 
-In the default mode of Editor (type: "default"):
+In the default mode of Editor (type: `"default"`):
 
 ~~~jsx
 shapeType: "rectangle"
 ~~~
 
-In the org chart mode of Editor (type: "card"):
+In the org chart mode of Editor (type: `"card"`):
 
 ~~~jsx
 shapeType: "card"
 ~~~
 
-In the mindmap mode of Editor (type: "topic"):
+In the mindmap mode of Editor (type: `"topic"`):
 
 ~~~jsx
 shapeType: "topic"

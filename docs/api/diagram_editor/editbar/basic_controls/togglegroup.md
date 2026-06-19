@@ -60,7 +60,7 @@ The objects with the `toggle` configuration inside the control can be used both 
 
 #### Basic properties
 
-- `type` - (required) the type of a control. Set it to *"toggleGroup"*
+- `type` - (required) the type of a control. Set it to `"toggleGroup"`
 - `key` - (optional) the name of the specified/modified property or the path to it in the object of a Diagram item 
 - `options` - (required) an array of ToggleGroup options, each option is set as an *object* with a set of `key:value` pairs - [attributes of options and their values](#toggle-properties)
 - `hidden` - (optional) defines whether a ToggleGroup is hidden. *false* by default
@@ -68,8 +68,8 @@ The objects with the `toggle` configuration inside the control can be used both 
 - `full` - (optional) defines whether the ToggleGroup will be extended to the width specified by the `width` property. *false* by default
 - `gap` - (optional) sets an offset between the elements (buttons) of an option. *0* by default
 - `css` - (optional) adds style classes to a control
-- `width` - (optional) the width of a control. *"content"* by default
-- `height` - (optional) the height of a control. *"content"* by default
+- `width` - (optional) the width of a control. `"content"` by default
+- `height` - (optional) the height of a control. `"content"` by default
 - `padding` - (optional) sets padding between a cell and a border of the ToggleGroup control
 
 #### Service properties and methods

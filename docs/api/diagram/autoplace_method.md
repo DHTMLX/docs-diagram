@@ -23,9 +23,9 @@ autoPlace(config?: object): void;
 ### Parameters
 
 - `config` - (optional) an object with configuration settings of the autoplacement. If not specified, the default settings will be applied. Here you can specify the following parameters:
-    - `mode` - (optional) the mode of connecting shapes, *"direct"* (by default) or *"edges"*
+    - `mode` - (optional) the mode of connecting shapes, `"direct"` (by default) or `"edges"`
     - `graphPadding` - (optional) sets the distance between unconnected diagrams, *200* by default
-    - `placeMode` - (optional) sets the mode of placement of shapes, *"orthogonal"* (by default) or *"radial"*
+    - `placeMode` - (optional) sets the mode of placement of shapes, `"orthogonal"` (by default) or `"radial"`
     - `itemPadding` - (optional) minimal padding between items (the minimal value is *1*), *20* by default
     - `levelPadding` - (optional) minimal padding between hierarchy levels (the minimal value is *1*), *20* by default
 
@@ -58,15 +58,15 @@ If `fromSide` and `toSide` are set on a link, the autoplacement algorithm will p
 :::
 
 :::info 
-To add arrows to the lines, specify **forwardArrow: "filled"** or **backArrow: "filled"** in the configuration of a [line object](lines/configuration_properties.md).
+To add arrows to the lines, specify `forwardArrow: "filled"` or `backArrow: "filled"` in the configuration of a [line object](lines/configuration_properties.md).
 :::
 
-The connector lines in the "edges" mode can be:
-  - either straight (if you set **connectType: "straight"** property of a [line object](lines/configuration_properties.md))
+The connector lines in the `"edges"` mode can be:
+  - either straight (if you set `connectType: "straight"` property of a [line object](lines/configuration_properties.md))
 
 ![](/img/edges_straight_mode.png)
 
-  - or 90-degree curved (if you set **connectType: "elbow"** property of a [line object](lines/configuration_properties.md))
+  - or 90-degree curved (if you set `connectType: "elbow"` property of a [line object](lines/configuration_properties.md))
 
 ![](/img/edges_mode.png)
 
@@ -76,12 +76,12 @@ The connector lines in the "edges" mode can be:
 
 Shapes are arranged along vertical and horizontal lines
 
-- **"orthogonal"** arrangement with lines in the **"direct"** mode
+- `"orthogonal"` arrangement with lines in the `"direct"` mode
 
 ![](/img/direct_ortogonal.png)
 
 
-- **"orthogonal"** arrangement with lines in the **"edges"** mode
+- `"orthogonal"` arrangement with lines in the `"edges"` mode
 
 ![](/img/edges_ortogonal.png)
 
@@ -89,11 +89,11 @@ Shapes are arranged along vertical and horizontal lines
 
 Shapes are arranged on imaginary circles relative to the central shape, i.e. a shape with the most connections
 
-- **"radial"** arrangement with lines in the **"direct"** mode
+- `"radial"` arrangement with lines in the `"direct"` mode
 
 ![](/img/direct_radial.png)
 
-- **"radial"** arrangement with lines in the **"edges"** mode
+- `"radial"` arrangement with lines in the `"edges"` mode
 
 ![](/img/edges_radial.png)
 
@@ -101,8 +101,8 @@ Shapes are arranged on imaginary circles relative to the central shape, i.e. a s
 **Change log**:
 
 - The `itemPadding` and `levelPadding` parameters are added in v6.1.3
-- The **placeMode** parameter is added in v5.0
-- The **autoplacement** property is added in v3.0
+- The `placeMode` parameter is added in v5.0
+- The `autoplacement` property is added in v3.0
 
 **Related articles**: [Arranging shapes automatically](guides/manipulating_items.md#arranging-shapes-automatically)
 

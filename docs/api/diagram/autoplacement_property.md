@@ -32,9 +32,9 @@ autoplacement?: {
 
 The `autoplacement` object has the following parameters:
 
-- `mode` - (optional) the mode of connecting shapes, *"direct"* (by default) or *"edges"*
+- `mode` - (optional) the mode of connecting shapes, `"direct"` (by default) or `"edges"`
 - `graphPadding` - (optional) sets the distance between two or more unconnected diagrams, *200* by default
-- `placeMode` - (optional) sets the mode of placement of shapes, *"orthogonal"* (by default) or *"radial"*
+- `placeMode` - (optional) sets the mode of placement of shapes, `"orthogonal"` (by default) or `"radial"`
 - `itemPadding` - (optional) minimal padding between items (the minimal value is *1*), *20* by default
 - `levelPadding` - (optional) minimal padding between hierarchy levels (the minimal value is *1*), *20* by default
 
@@ -84,7 +84,7 @@ Connector lines are aligned "from side to side".
 To add arrows to the lines, specify `forwardArrow: "filled"` or `backArrow: "filled"` in the configuration of a [line object](lines/configuration_properties.md).
 :::
 
-The connector lines in the "edges" mode can be:
+The connector lines in the `"edges"` mode can be:
 
 - either straight (if you set the `connectType: "straight"` property of a [line object](lines/configuration_properties.md))
 
@@ -100,11 +100,11 @@ The connector lines in the "edges" mode can be:
 
 Shapes are arranged along vertical and horizontal lines
 
-- **"orthogonal"** arrangement with lines in the **"direct"** mode
+- `"orthogonal"` arrangement with lines in the `"direct"` mode
 
 ![](/img/direct_ortogonal.png)
 
-- **"orthogonal"** arrangement with lines in the **"edges"** mode
+- `"orthogonal"` arrangement with lines in the `"edges"` mode
 
 ![](/img/edges_ortogonal.png)
 
@@ -112,11 +112,11 @@ Shapes are arranged along vertical and horizontal lines
 
 Shapes are arranged on imaginary circles relative to the central shape, i.e. the shape with the most connections
 
-- **"radial"** arrangement with lines in the **"direct"** mode
+- `"radial"` arrangement with lines in the `"direct"` mode
 
 ![](/img/direct_radial.png)
 
-- **"radial"** arrangement with lines in the **"edges"** mode
+- `"radial"` arrangement with lines in the `"edges"` mode
 
 ![](/img/edges_radial.png)
 

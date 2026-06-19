@@ -27,7 +27,7 @@ parse(
     data: object[]; // an array of all shapes and connections
     ~~~
     - for the PERT Diagram mode it is an object with:
-      -  the `data` array (for shapes: "task", "milestone", "project") 
+      -  the `data` array (for shapes: `"task"`, `"milestone"`, `"project"`) 
       -  the `links` array (for connections between shapes) 
     ~~~jsx
     {
@@ -35,7 +35,7 @@ parse(
         links: object[] // an array of connections between the shapes
     };
     ~~~
-- `driver` - (optional) DataDriver or type of data ("json", "csv", "xml"), "json" by default
+- `driver` - (optional) `DataDriver` or type of data (`"json"`, `"csv"`, `"xml"`), `"json"` by default
 
 ### Example
 

@@ -26,27 +26,27 @@ const diagram = new dhx.Diagram("diagram_container", {
 
 ### Diagram modes
 
-DHTMLX Diagram can be initialized in one of the following modes: "default", "org", "mindmap" or "pert". To apply the necessary mode, specify the corresponding value of the **type** property:
+DHTMLX Diagram can be initialized in one of the following modes: `"default"`, `"org"`, `"mindmap"` or `"pert"`. To apply the necessary mode, specify the corresponding value of the `type` property:
 
-- **type:"default"** is used to visualize relations between some entities
+- `type:"default"` is used to visualize relations between some entities
 
 <iframe src="https://snippet.dhtmlx.com/f3uekgjw?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
-- **type:"org"** is used to show the structure of a group of people by presenting their relations in a hierarchical order
+- `type:"org"` is used to show the structure of a group of people by presenting their relations in a hierarchical order
 
 <iframe src="https://snippet.dhtmlx.com/5ign6fyy?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
-- **type:"mindmap"** is used to arrange information on some topic by representing the main concept surrounded by associated ideas
+- `type:"mindmap"` is used to arrange information on some topic by representing the main concept surrounded by associated ideas
 
 <iframe src="https://snippet.dhtmlx.com/twd25ww1?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
-- **type:"pert"** is used to show the sequences of tasks and projects, and visualize connections between them. This type of diagram is also useful in estimating the critical path and project planning
+- `type:"pert"` is used to show the sequences of tasks and projects, and visualize connections between them. This type of diagram is also useful in estimating the critical path and project planning
 
 <iframe src="https://snippet.dhtmlx.com/4h5fi7xd?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
 **Change log**: 
 
-- The **"pert"** type was added in v6.1
+- The `"pert"` type was added in v6.1
 
 **Related articles**:
 
