@@ -340,7 +340,7 @@ In the above example:
 
 ## External data loading
 
-To load data from an external file, make use of the [](api/data_collection/load_method.md) method. It takes the URL of the file with data as a parameter:
+To load data from an external file, make use of the [`load()`](api/data_collection/load_method.md) method. It takes the URL of the file with data as a parameter:
 
 ~~~jsx
 diagram.data.load("../common/data.json");
@@ -360,7 +360,7 @@ diagram.data.load("/some/data").then(() => {
 
 ## Loading from a local source
 
-To load data from a local data source, use the [](api/data_collection/parse_method.md) method. As parameters, you need to pass a [predefined data set](#preparing-data-to-load) and, optionally, the DataDriver or type of data ("json" (default), "csv", "xml"):
+To load data from a local data source, use the [`parse()`](api/data_collection/parse_method.md) method. As parameters, you need to pass a [predefined data set](#preparing-data-to-load) and, optionally, the DataDriver or type of data ("json" (default), "csv", "xml"):
 
 ~~~jsx
 diagram.data.parse(data, driver);
@@ -380,7 +380,7 @@ editor.parse(data);
 
 ## Saving and restoring state
 
-To save the current state of a diagram, use the [](api/data_collection/serialize_method.md) method. Depending on the Diagram mode, it converts the data of the diagram into:
+To save the current state of a diagram, use the [`serialize()`](api/data_collection/serialize_method.md) method. Depending on the Diagram mode, it converts the data of the diagram into:
 
 - for the default, org chart and mindmap Diagram modes - into an array of objects, where each object contains the configuration of a separate shape
 - for the PERT Diagram mode - into an object with the `data` array of objects (for shapes: `"task"`, `"milestone"`, `"project"`) and the `links` array of objects (for connections between shapes). 

@@ -21,7 +21,7 @@ diagram.data.parse(data);
 
 ### Setting the default shape type
 
-It is possible to set the default type for all the shapes via the [](api/diagram/defaultshapetype_property.md) attribute of the diagram configuration object:
+It is possible to set the default type for all the shapes via the [`defaultShapeType`](api/diagram/defaultshapetype_property.md) attribute of the diagram configuration object:
 
 ~~~jsx {3}
 const diagram = new dhx.Diagram("diagram_container", {
@@ -42,7 +42,7 @@ The default types of shapes are:
 
 ## Setting the default line type
 
-You can set a common type for all the connector lines of the diagram via the `lineType` parameter of the [](api/diagram/lineconfig_property.md) property of the diagram configuration object:
+You can set a common type for all the connector lines of the diagram via the `lineType` parameter of the [`lineConfig`](api/diagram/lineconfig_property.md) property of the diagram configuration object:
 
 ~~~jsx {3-5}
 const diagram = new dhx.Diagram("diagram_container", {
@@ -60,7 +60,7 @@ This value is applied, if the line object doesn't contain the `type` property.
 
 There is a great possibility to escape operating with a big data set while preparing it for loading into the diagram. You can specify the default configuration for all shapes and lines of the necessary types and, therefore, reduce the amount of records in your code.
 
-For this purpose, use the [](api/diagram/defaults_property.md) property of the diagram configuration object:
+For this purpose, use the [`defaults`](api/diagram/defaults_property.md) property of the diagram configuration object:
 
 <iframe src="https://snippet.dhtmlx.com/7bn52dl1?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
@@ -75,7 +75,7 @@ Check the full list of configuration properties of a [shape](shapes/configuratio
 ## Arranging shapes in the mindmap mode of Diagram
 
 In the mindmap mode of Diagram, the arrangement of child shapes relative to the root shape is defined automatically by the main algorithm.
-To change the default direction of the child shapes, use the [](api/diagram/typeconfig_property.md) configuration property on initialization of the diagram.
+To change the default direction of the child shapes, use the [`typeConfig`](api/diagram/typeconfig_property.md) configuration property on initialization of the diagram.
 
 :::note
 The `typeConfig` configuration property is not available in the Diagram Editor
@@ -88,13 +88,13 @@ The property allows you to:
 
 ### Setting direction for all child shapes
 
-To set the child shapes to the right/left of the root shape, use the `direction` attribute of the [](api/diagram/typeconfig_property.md) property:
+To set the child shapes to the right/left of the root shape, use the `direction` attribute of the [`typeConfig`](api/diagram/typeconfig_property.md) property:
 
 <iframe src="https://snippet.dhtmlx.com/pzllujx3?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
 ### Setting direction for individual child shape
 
-You can set the mandatory direction for specific child shapes via the `side` attribute of the [](api/diagram/typeconfig_property.md) property. The attribute is an object that contains a set of `key:value` pairs where *key* is the direction of the shapes (left, right) and *value* is an array with the ids of the shapes.
+You can set the mandatory direction for specific child shapes via the `side` attribute of the [`typeConfig`](api/diagram/typeconfig_property.md) property. The attribute is an object that contains a set of `key:value` pairs where *key* is the direction of the shapes (left, right) and *value* is an array with the ids of the shapes.
 
 <iframe src="https://snippet.dhtmlx.com/atto9ckg?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
@@ -102,7 +102,7 @@ Other child shapes that are not set in the side option will be arranged automati
 
 ## Setting date format in the PERT mode of Diagram
 
-In the PERT mode of Diagram, you can specify the necessary format of rendering dates in the shapes of the `task` type. For this, use the `dateFormat` attribute of the [](api/diagram/typeconfig_property.md) property:
+In the PERT mode of Diagram, you can specify the necessary format of rendering dates in the shapes of the `task` type. For this, use the `dateFormat` attribute of the [`typeConfig`](api/diagram/typeconfig_property.md) property:
 
 ~~~jsx {3-5}
 const diagram = new dhx.Diagram("diagram_container", {
@@ -115,7 +115,7 @@ const diagram = new dhx.Diagram("diagram_container", {
 
 ## Positioning Diagram and shapes
 
-You can specify the position of a diagram on a page and set margins for shapes inside the [](api/diagram/margin_property.md) attribute of the diagram configuration object:
+You can specify the position of a diagram on a page and set margins for shapes inside the [`margin`](api/diagram/margin_property.md) attribute of the diagram configuration object:
 
 <iframe src="https://snippet.dhtmlx.com/bwe9vm6i?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
@@ -157,20 +157,20 @@ Autoplacement will be applied only after the [`autoPlace()`](api/diagram/autopla
 
 ## Adjusting the Diagram scale
 
-If necessary, you can scale a diagram to fit your application. It can be done with the help of the [](api/diagram/scale_property.md) option.
+If necessary, you can scale a diagram to fit your application. It can be done with the help of the [`scale`](api/diagram/scale_property.md) option.
 By default, its value is set to 1. So, to zoom in on a diagram, set the option to a value larger than 1 and to zoom out - smaller than 1, correspondingly.
 
 <iframe src="https://snippet.dhtmlx.com/9h89c3gl?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
 ## Setting toolbar for shapes
 
-DHTMLX Diagram allows you to specify a toolbar with icons for Diagram shapes to simplify interaction with them. You can enable the shape toolbar via the [](api/diagram/toolbar_property.md) option of the diagram configuration object:
+DHTMLX Diagram allows you to specify a toolbar with icons for Diagram shapes to simplify interaction with them. You can enable the shape toolbar via the [`toolbar`](api/diagram/toolbar_property.md) option of the diagram configuration object:
 
 <iframe src="https://snippet.dhtmlx.com/4if395hd?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
 ## Enabling items selection
 
-It is possible to activate selection of items in a diagram. You need to make use of the [](api/diagram/select_property.md) attribute of the diagram configuration object. Once you've enabled selection in a diagram, you can make use of the Selection object API to [work with the items selection](guides/manipulating_items.md#selecting-items).
+It is possible to activate selection of items in a diagram. You need to make use of the [`select`](api/diagram/select_property.md) attribute of the diagram configuration object. Once you've enabled selection in a diagram, you can make use of the Selection object API to [work with the items selection](guides/manipulating_items.md#selecting-items).
 
 :::note
 [The predefined set of events](/api/selection/#events) of the selection object can help you to define the way of processing the behavior of the diagram during selecting/unselecting items
