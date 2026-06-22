@@ -7,7 +7,7 @@ description: You can learn about the move method of Cell Manager in the document
 # move()
 
 :::info
-The **move()** method is automatically validated by the system. The cell won't be moved if it is not possible according to the structure of the swimlane.
+The `move()` method is automatically validated by the system. The cell won't be moved if it is not possible according to the structure of the swimlane.
 :::
 
 ### Description
@@ -26,7 +26,7 @@ move(
 ### Parameters
 
 - `cellIndex` - (required) the start index of a cell in a layout. The count of the index starts from 0
-- `dir` - (required) the direction of the action: "up" | "down" | "left" | "right"
+- `dir` - (required) the direction of the action: `"up"` | `"down"` | `"left"` | `"right"`
 
 ### Example
 
@@ -44,4 +44,4 @@ diagram.cellManager.move(0, "down"); // moves cells as rows
 
 **Change log**: Added in v4.0
 
-**Related articles**: [Configuring Swimlanes](../../../swimlanes/)
+**Related articles**: [Configuring Swimlanes](/swimlanes/)

@@ -18,12 +18,12 @@ description: You can learn about the zoomIn event of editor in the documentation
 
 ### Parameters
 
-The callback of the **zoomIn** event is called with the following parameter:
+The callback of the `zoomIn` event is called with the following parameter:
 
 - `step` - (required) a value that displays the step of the [`scale`](api/diagram_editor/editor/config/scale_property.md) property.
 
 :::info
-For handling the inner events of Diagram Editor you can use the **on()** method.
+For handling the inner events of Diagram Editor you can use the `on()` method.
 :::
 
 ### Example
@@ -40,4 +40,4 @@ editor.events.on("zoomIn", (step) => {
 });
 ~~~
 
-**Change log**: The ***step*** parameter was added in v6.0
+**Change log**: The `step` parameter was added in v6.0

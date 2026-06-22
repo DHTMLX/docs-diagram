@@ -6,7 +6,7 @@ description: You can learn about the Editbar of editor in the documentation of t
 
 # Editbar
 
-You can configure Editbar controls for each Diagram element separately and for a [group of elements](/guides/items_index) taking into account various conditions. For this purpose, use the Editbar [`properties`](api/diagram_editor/editbar/config/properties_property.md) config.
+You can configure Editbar controls for each Diagram element separately and for a [group of elements](guides/items_index.md) taking into account various conditions. For this purpose, use the Editbar [`properties`](api/diagram_editor/editbar/config/properties_property.md) config.
 
 If you want to configure Editbar controls for an individual [shape](/category/shapes), you need to specify the corresponding **shape type** within the [`properties`](api/diagram_editor/editbar/config/properties_property.md) config as shown in the example below:
 
@@ -27,14 +27,14 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 ~~~
 
-To configure a [group of elements](/guides/items_index), you need to use the following service properties within the [`properties`](api/diagram_editor/editbar/config/properties_property.md) config:
+To configure a [group of elements](guides/items_index.md), you need to use the following service properties within the [`properties`](api/diagram_editor/editbar/config/properties_property.md) config:
 
 - [`$default`](#configure-editbar-for-the-grid-area) - allows configuring Editbar controls if no elements are selected, or more than one element is selected
 - [`$shape`](#configure-editbar-for-shapes) - allows configuring Editbar controls for [all shapes including custom shapes](/category/shapes)
-- [`$group`](#configure-editbar-for-group-elements) - allows configuring Editbar controls for all elements with the [**group**](/groups/) type
-- [`$swimlane`](#configure-editbar-for-swimlanes) - allows configuring Editbar controls for all elements with the [**swimlane**](/swimlanes/) type
-- [`$line`](#configure-editbar-for-lines) allows configuring Editbar controls for all elements with the [**line**](/lines/) type
-- [`$lineTitle`](#configure-editbar-for-line-titles) - allows configuring Editbar controls for all elements with the [**lineTitle**](/line_titles/) type
+- [`$group`](#configure-editbar-for-group-elements) - allows configuring Editbar controls for all elements with the [`group`](/groups/) type
+- [`$swimlane`](#configure-editbar-for-swimlanes) - allows configuring Editbar controls for all elements with the [`swimlane`](/swimlanes/) type
+- [`$line`](#configure-editbar-for-lines) allows configuring Editbar controls for all elements with the [`line`](/lines/) type
+- [`$lineTitle`](#configure-editbar-for-line-titles) - allows configuring Editbar controls for all elements with the [`lineTitle`](/line_titles/) type
 
 <iframe src="https://snippet.dhtmlx.com/ealq0m4l?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
@@ -54,7 +54,7 @@ properties: {
 }
 ~~~
 
-**Related complex controls:** [Grid step](/api/diagram_editor/editbar/complex_controls/gridstep/), [Border](/api/diagram_editor/editbar/complex_controls/border/), [Arrange](/api/diagram_editor/editbar/complex_controls/arrange/)
+**Related complex controls:** [Grid step](api/diagram_editor/editbar/complex_controls/gridstep.md), [Border](api/diagram_editor/editbar/complex_controls/border.md), [Arrange](api/diagram_editor/editbar/complex_controls/arrange.md)
 
 ## Configure Editbar for shapes
 
@@ -75,11 +75,11 @@ properties: {
 }
 ~~~
 
-**Related complex controls:** [Border](/api/diagram_editor/editbar/complex_controls/border/), [Arrange](/api/diagram_editor/editbar/complex_controls/arrange/), [Position](/api/diagram_editor/editbar/complex_controls/position/), [Size](/api/diagram_editor/editbar/complex_controls/size/), [Text align](/api/diagram_editor/editbar/complex_controls/textalign/), [Text style](/api/diagram_editor/editbar/complex_controls/textstyle/)
+**Related complex controls:** [Border](api/diagram_editor/editbar/complex_controls/border.md), [Arrange](api/diagram_editor/editbar/complex_controls/arrange.md), [Position](api/diagram_editor/editbar/complex_controls/position.md), [Size](api/diagram_editor/editbar/complex_controls/size.md), [Text align](api/diagram_editor/editbar/complex_controls/textalign.md), [Text style](api/diagram_editor/editbar/complex_controls/textstyle.md)
 
 ## Configure Editbar for group elements
 
-The `$group` service property allows configuring Editbar controls for all elements with the [**group**](/groups/) type.
+The `$group` service property allows configuring Editbar controls for all elements with the [`group`](/groups/) type.
 
 ~~~jsx
 properties: {
@@ -93,11 +93,11 @@ properties: {
 }
 ~~~
 
-**Related complex controls:** [Border](/api/diagram_editor/editbar/complex_controls/border/), [Arrange](/api/diagram_editor/editbar/complex_controls/arrange/), [Header](/api/diagram_editor/editbar/complex_controls/header/), [Header common](/api/diagram_editor/editbar/complex_controls/headercommon/), [Header position](/api/diagram_editor/editbar/complex_controls/headerposition/), [Size](/api/diagram_editor/editbar/complex_controls/size/), [Text align](/api/diagram_editor/editbar/complex_controls/textalign/), [Text style](/api/diagram_editor/editbar/complex_controls/textstyle/)
+**Related complex controls:** [Border](api/diagram_editor/editbar/complex_controls/border.md), [Arrange](api/diagram_editor/editbar/complex_controls/arrange.md), [Header](api/diagram_editor/editbar/complex_controls/header.md), [Header common](api/diagram_editor/editbar/complex_controls/headercommon.md), [Header position](api/diagram_editor/editbar/complex_controls/headerposition.md), [Size](api/diagram_editor/editbar/complex_controls/size.md), [Text align](api/diagram_editor/editbar/complex_controls/textalign.md), [Text style](api/diagram_editor/editbar/complex_controls/textstyle.md)
 
 ## Configure Editbar for swimlanes
 
-The `$swimlane` service property allows configuring Editbar controls for all elements with the [**swimlane**](/swimlanes/) type.
+The `$swimlane` service property allows configuring Editbar controls for all elements with the [`swimlane`](/swimlanes/) type.
 
 ~~~jsx
 properties: {
@@ -111,11 +111,11 @@ properties: {
 }
 ~~~
 
-**Related complex controls:** [Border](/api/diagram_editor/editbar/complex_controls/border/), [Arrange](/api/diagram_editor/editbar/complex_controls/arrange/), [Header](/api/diagram_editor/editbar/complex_controls/header/), [Header common](/api/diagram_editor/editbar/complex_controls/headercommon/), [Header position](/api/diagram_editor/editbar/complex_controls/headerposition/), [Size](/api/diagram_editor/editbar/complex_controls/size/), [Text align](/api/diagram_editor/editbar/complex_controls/textalign/), [Text style](/api/diagram_editor/editbar/complex_controls/textstyle/)
+**Related complex controls:** [Border](api/diagram_editor/editbar/complex_controls/border.md), [Arrange](api/diagram_editor/editbar/complex_controls/arrange.md), [Header](api/diagram_editor/editbar/complex_controls/header.md), [Header common](api/diagram_editor/editbar/complex_controls/headercommon.md), [Header position](api/diagram_editor/editbar/complex_controls/headerposition.md), [Size](api/diagram_editor/editbar/complex_controls/size.md), [Text align](api/diagram_editor/editbar/complex_controls/textalign.md), [Text style](api/diagram_editor/editbar/complex_controls/textstyle.md)
 
 ## Configure Editbar for lines
 
-The `$line` service property allows configuring Editbar controls for all elements with the [**line**](/lines/) type.
+The `$line` service property allows configuring Editbar controls for all elements with the [`line`](/lines/) type.
 
 ~~~jsx
 properties: {
@@ -129,11 +129,11 @@ properties: {
 }
 ~~~
 
-**Related complex controls:** [Border](/api/diagram_editor/editbar/complex_controls/border/), [Line shape](/api/diagram_editor/editbar/complex_controls/lineshape/), [Pointer view](/api/diagram_editor/editbar/complex_controls/pointerview/)
+**Related complex controls:** [Border](api/diagram_editor/editbar/complex_controls/border.md), [Line shape](api/diagram_editor/editbar/complex_controls/lineshape.md), [Pointer view](api/diagram_editor/editbar/complex_controls/pointerview.md)
 
 ## Configure Editbar for line titles
 
-The `$lineTitle` service property allows configuring Editbar controls for all elements with the [**lineTitle**](/line_titles/) type.
+The `$lineTitle` service property allows configuring Editbar controls for all elements with the [`lineTitle`](/line_titles/) type.
 
 ~~~jsx
 properties: {
@@ -148,7 +148,7 @@ properties: {
 }
 ~~~
 
-**Related complex controls:**  [Text align](/api/diagram_editor/editbar/complex_controls/textalign/), [Text style](/api/diagram_editor/editbar/complex_controls/textstyle/)
+**Related complex controls:**  [Text align](api/diagram_editor/editbar/complex_controls/textalign.md), [Text style](api/diagram_editor/editbar/complex_controls/textstyle.md)
 
 ## Create and configure custom Editbar controls
 

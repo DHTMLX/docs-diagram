@@ -106,7 +106,7 @@ Each swimlane object can include the following configuration properties:
 - `fixed` - (optional) enables/disables the ability to move and resize the swimlane; *false* by default
 - `open` - (optional) defines whether the swimlane is initialized in the expanded (*true*, default) or collapsed (*false*) state
 :::tip
-The **open** property works when a **header** is initialized with the **closable** attribute
+The `open` property works when a `header` is initialized with the `closable` attribute
 :::
 - `style` - (optional) an object with the style settings of the swimlane. The object can contain the following attributes:
     - `strokeWidth` - (optional) the width of the swimlane border, 1 by default
@@ -118,28 +118,28 @@ The **open** property works when a **header** is initialized with the **closable
     - `text` - (optional) the text to be rendered in the header
     - `fontSize` - (optional) the size of the font in pixels, 14 by default
     - `lineHeight` - (optional) the height of a line, 14 by default
-    - `textAlign` - (optional) the alignment of text in the header: "left", "center"(default), "right"
-    - `textVerticalAlign` - (optional) the vertical alignment of text in the header: "top", "center"(default), "bottom"
-    - `fontStyle` - (optional) the style of the text font: "normal" (default), "italic", "oblique"
+    - `textAlign` - (optional) the alignment of text in the header: `"left"`, `"center"`(default), `"right"`
+    - `textVerticalAlign` - (optional) the vertical alignment of text in the header: `"top"`, `"center"`(default), `"bottom"`
+    - `fontStyle` - (optional) the style of the text font: `"normal"` (default), `"italic"`, `"oblique"`
     - `fontColor` - (optional) the color of the text font, "#4C4C4C" by default
-    - `fontWeight` - (optional) the text font weight, possible values are: "normal", "bold", "bolder", "lighter", values "100"-"900", where "400" is the same as normal, and "600"+ is the boldest font; "500" by default
+    - `fontWeight` - (optional) the text font weight, possible values are: `"normal"`, `"bold"`, `"bolder"`, `"lighter"`, values `"100"`-`"900"`, where `"400"` is the same as normal, and `"600"`+ is the boldest font; `"500"` by default
     - `iconColor` - (optional) the color of the icon of the header, "#808080" by default
-    - `position` - (optional) the positioning of the group header: "top" (default) | "bottom" | "left" | "right"
+    - `position` - (optional) the positioning of the group header: `"top"` (default) | `"bottom"` | `"left"` | `"right"`
     - `editable` - (optional) enables/disables the ability to edit the text of the header by double-clicking on it; *true* by default
     - `closable` - (optional) shows/hides an icon intended to expand/collapse a swimlane; *false* by default
     - `enable` - (optional) shows/hides the header of the group; *true* by default
 - `subHeaderRows` - (optional) an object with configuration settings of the left/right subheaders of the swimlane. The object have the following attributes:
     - `height` - (optional) the height of the subheaders, 40 by default
-    - `position` - (optional) the positioning of the subheaders: "left" | "right"
+    - `position` - (optional) the positioning of the subheaders: `"left"` | `"right"`
     - `enable` - (optional) shows/hides the subheaders of the group; *true* by default
     - `fill` - (optional) the background color of the subheaders
     - `fontSize` - (optional) the size of the font in pixels, 14 by default
     - `lineHeight` - (optional) the height of a line, 14 by default
-    - `textAlign` - (optional) the alignment of text in the subheaders: "left", "center"(default), "right"
-    - `textVerticalAlign` - (optional) the vertical alignment of text in the subheaders: "top", "center"(default), "bottom"
-    - `fontStyle` - (optional) the style of the text font: "normal" (default), "italic", "oblique"
+    - `textAlign` - (optional) the alignment of text in the subheaders: `"left"`, `"center"`(default), `"right"`
+    - `textVerticalAlign` - (optional) the vertical alignment of text in the subheaders: `"top"`, `"center"`(default), `"bottom"`
+    - `fontStyle` - (optional) the style of the text font: `"normal"` (default), `"italic"`, `"oblique"`
     - `fontColor` - (optional) the color of the text font, "#4C4C4C" by default
-    - `fontWeight` - (optional) the text font weight, possible values are: "normal", "bold", "bolder", "lighter", values "100"-"900", where "400" is the same as normal, and "600"+ is the boldest font; "500" by default
+    - `fontWeight` - (optional) the text font weight, possible values are: `"normal"`, `"bold"`, `"bolder"`, `"lighter"`, values `"100"`-`"900"`, where `"400"` is the same as normal, and `"600"`+ is the boldest font; `"500"` by default
     - `iconColor` - (optional) the color of the icon of the subheaders, "#808080" by default
     - `editable` - (optional) enables/disables the ability to edit the text of the subheaders by double-clicking; *true* by default
     - `headers` - (optional) an array of subheaders objects. Each object may contain the following properties:
@@ -148,16 +148,16 @@ The **open** property works when a **header** is initialized with the **closable
         - `fill` - (optional) the background color of the subheader
         - `fontSize` - (optional) the size of the font in pixels, 14 by default
         - `lineHeight` - (optional) the height of a line, 14 by default
-        - `textAlign` - (optional) the alignment of text in the subheader: "left", "center"(default), "right"
-        - `textVerticalAlign` - (optional) the vertical alignment of text in the subheader: "top", "center"(default), "bottom"
-        - `fontStyle` - (optional) the style of the text font: "normal" (default), "italic", "oblique"
+        - `textAlign` - (optional) the alignment of text in the subheader: `"left"`, `"center"`(default), `"right"`
+        - `textVerticalAlign` - (optional) the vertical alignment of text in the subheader: `"top"`, `"center"`(default), `"bottom"`
+        - `fontStyle` - (optional) the style of the text font: `"normal"` (default), `"italic"`, `"oblique"`
         - `fontColor` - (optional) the color of the text font, "#4C4C4C" by default
-        - `fontWeight` - (optional) the text font weight, possible values are: "normal", "bold", "bolder", "lighter", values "100"-"900", where "400" is the same as normal, and "600"+ is the boldest font; "500" by default
+        - `fontWeight` - (optional) the text font weight, possible values are: `"normal"`, `"bold"`, `"bolder"`, `"lighter"`, values `"100"`-`"900"`, where `"400"` is the same as normal, and `"600"`+ is the boldest font; `"500"` by default
         - `iconColor` - (optional) the color of the icon of the subheader, "#808080" by default
         - `editable` - (optional) enables/disables the ability to edit the text of the subheader by double-clicking on it; *true* by default
 - `subHeaderCols` - (optional) an object with configuration settings of the top/bottom subheaders of the swimlane. The object have the following attribute:
-    - `position` - (optional) the positioning of the subheaders: "top" | "bottom"
-    - the other attributes of **subHeaderCols** are the same as the attributes of **subHeaderRows** (check the details above)
+    - `position` - (optional) the positioning of the subheaders: `"top"` | `"bottom"`
+    - the other attributes of `subHeaderCols` are the same as the attributes of `subHeaderRows` (check the details above)
 - `key` - (optional) your own property with your own logic to be implemented under the hood
 
 ### Example
@@ -235,14 +235,14 @@ The configuration properties of a swimlane cell are given below:
 - `style` - (optional) an object with the style settings of the cell. The object can contain the following properties:
     - `fill` - (optional) the background color of the cell
     - `overFill` - (optional) the background color of the cell when the user is holding the item and moving it into/outside the cell *providing that no less than 75% of the item's area is inside the cell*
-    - `partiallyFill` - (optional) the background color of the cell when the user is holding the item and moving it into/outside the cell *providing that 75% of the item's area or more is out of the cell and other settings are not defined via the **exitArea** attribute*
+    - `partiallyFill` - (optional) the background color of the cell when the user is holding the item and moving it into/outside the cell *providing that 75% of the item's area or more is out of the cell and other settings are not defined via the `exitArea` attribute*
 - `exitArea` - (optional) an object with the settings which will be applied to the item when the user is dragging it out of the cell (*is applied only to the first-level children of the cell*). The object can contain the following attributes:
     - `groupBehavior` - (optional) the behavior of the child item of the cell when the user is moving it out of the cell: 
-        - *"unbound"* (by default) - the user can move an item into or outside the cell
-        - *"boundNoBorderExtension"* - the user can move an item into the cell but cannot drag the item outside the cell if the item has been dropped inside the cell. The item won't expand the borders of the cell when trying to drag the item outside the cell
+        - `"unbound"` (by default) - the user can move an item into or outside the cell
+        - `"boundNoBorderExtension"` - the user can move an item into the cell but cannot drag the item outside the cell if the item has been dropped inside the cell. The item won't expand the borders of the cell when trying to drag the item outside the cell
     - `padding` - (optional) defines the padding between the cell and the edge of the item when moving the item inside the cell. <br> 
     :::tip
-    The **padding** attribute is available if *groupBehavior: "boundNoBorderExtension"*
+    The `padding` attribute is available if *groupBehavior: `"boundNoBorderExtension"`*
     :::
 
 ### Example
@@ -277,7 +277,7 @@ const data = [
 ];
 ~~~
 
-**Related articles**: [Configuring swimlanes](../../swimlanes/)
+**Related articles**: [Configuring swimlanes](/swimlanes/)
 
 **Related samples**:
 

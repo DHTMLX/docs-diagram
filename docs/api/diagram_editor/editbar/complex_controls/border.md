@@ -4,17 +4,19 @@ title: Editbar Complex Controls - Border
 description: You can explore the Border control of Editbar in the documentation of the the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # Border
 
 @short: The complex control for displaying and modifying borders of a Diagram element
 
 <img
-  src={require('../../../../assets/editbar-complex-controls/border.png').default}
+  src={useBaseUrl('/img/editbar-complex-controls/border.png')}
   alt="Border control" width='300'
 />
 
 :::info
-The **Border** control is not available for the **lineTitle** element.
+The **Border** control is not available for the `lineTitle` element.
 :::
 
 ## Usage
@@ -45,24 +47,24 @@ The **Border** control is not available for the **lineTitle** element.
 
 ### Basic properties
 
-- `type` - (required) the type of a control. Set it to *"border"*
+- `type` - (required) the type of a control. Set it to `"border"`
 - `hidden` - (optional) defines whether the control is hidden. *false* by default
 - `disabled` - (optional) defines whether the control is enabled (*false*) or disabled (*true*). *false* by default
 - `css` - (optional) adds style classes to the control
-- `width` - (optional) the width of the control. *"content"* by default
-- `height` - (optional) the height of the control. *"content"* by default
+- `width` - (optional) the width of the control. `"content"` by default
+- `height` - (optional) the height of the control. `"content"` by default
 - `padding` - (optional) sets the padding for the content inside the control group. *"0 16px"* by default
 - `label` - (optional) specifies a label for the control
-- `labelAlignment` - (optional) defines the position of the label. *"left"* by default
-- `align` - (optional) sets the alignment of controls inside the control group. *"between"* by default
+- `labelAlignment` - (optional) defines the position of the label. `"left"` by default
+- `align` - (optional) sets the alignment of controls inside the control group. `"between"` by default
 - `compact` - (optional) specifies the compact mode, removes indents and frame. *false* by default
 
 ### Service properties
 
-- `$properties` - (optional) allows you to override values of [basic controls](/api/diagram_editor/editbar/basic_controls_overview) within a complex control. You can configure the following elements of the **Border** control based on the basic controls:
-    - `stroke` - ([colorpicker](/api/diagram_editor/editbar/basic_controls/colorpicker)) sets the border color
-    - `strokeType` - ([combo](/api/diagram_editor/editbar/basic_controls/combo)) sets the border type
-    - `strokeWidth` - ([input](/api/diagram_editor/editbar/basic_controls/input)) sets the border width
+- `$properties` - (optional) allows you to override values of [basic controls](api/diagram_editor/editbar/basic_controls_overview.md) within a complex control. You can configure the following elements of the **Border** control based on the basic controls:
+    - `stroke` - ([colorpicker](api/diagram_editor/editbar/basic_controls/colorpicker.md)) sets the border color
+    - `strokeType` - ([combo](api/diagram_editor/editbar/basic_controls/combo.md)) sets the border type
+    - `strokeWidth` - ([input](api/diagram_editor/editbar/basic_controls/input.md)) sets the border width
 
 ## Example
 

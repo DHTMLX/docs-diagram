@@ -24,7 +24,7 @@ afterCollapse: (
 The callback of the event takes the following parameters:
 
 - `id` - (required) the id of an item which has been collapsed
-- `dir` - (optional) the side the children were hidden in relation to the parent shape ("left" or "right" for *type:"topic"*, otherwise - undefined)
+- `dir` - (optional) the side the children were hidden in relation to the parent shape (`"left"` or `"right"` for *type:`"topic"`*, otherwise - undefined)
 
 ### Example
 
@@ -42,6 +42,6 @@ diagram.events.on("afterCollapse", (id, dir) => {
 });
 ~~~
 
-**Change log**: The **dir** parameter was added in v3.1
+**Change log**: The `dir` parameter was added in v3.1
 
-**Related article**: [Event handling](../../../guides/event_handling/)
+**Related article**: [Event handling](guides/event_handling.md)

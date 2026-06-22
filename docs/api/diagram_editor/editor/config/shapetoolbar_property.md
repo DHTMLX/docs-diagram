@@ -22,9 +22,9 @@ As an array, the `shapeToolbar` property can include:
 
 - a *boolean* value - to show/hide the default toolbar
 - string values with the names of the toolbar controls. The sequence the values are put in the array defines the order the controls will be displayed in the toolbar. The available values are:
-    - in the default mode: *"copy"* | *"connect"* | *"remove"* | *"addRowLast"* | *"addColumnLast"*
-    - in the org chart mode: *"add"* | *"horizontal"* | *"vertical"* | *"remove"*
-    - in the mindmap mode: *"add"* | *"addLeft"* | *"addRight"* | *"remove"*
+    - in the default mode: `"copy"` | `"connect"` | `"remove"` | `"addRowLast"` | `"addColumnLast"`
+    - in the org chart mode: `"add"` | `"horizontal"` | `"vertical"` | `"remove"`
+    - in the mindmap mode: `"add"` | `"addLeft"` | `"addRight"` | `"remove"`
 - a set of icon objects. Each icon object can have the following properties:
     - `id: string` -  (required) the id of an icon. Note, that the usage of the default names of the toolbar controls as ids of new controls is prohibited
     - `content: string` - (required) the content of the icon. It can contain an HTML element with the name of the icon class
@@ -84,6 +84,6 @@ const editor = new dhx.DiagramEditor("editor_container", {
 
 **Change log:** The `tooltip` parameter of the icon object is added in v5.0
 
-**Related articles**: [Grid Area](/guides/diagram_editor/grid_area/#configuring-the-toolbar-of-an-item)
+**Related articles**: [Grid Area](guides/diagram_editor/grid_area.md#configuring-the-toolbar-of-an-item)
 
 **Relate sample**: [Diagram Editor. Org chart mode. Shape toolbar configuration](https://snippet.dhtmlx.com/b2agwets)

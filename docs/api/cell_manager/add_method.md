@@ -7,7 +7,7 @@ description: You can learn about the add method of Cell Manager in the documenta
 # add()
 
 :::info
-The **add()** method is automatically validated by the system. The cell won't be added if it is not possible according to the structure of the swimlane.
+The `add()` method is automatically validated by the system. The cell won't be added if it is not possible according to the structure of the swimlane.
 :::
 
 ### Description
@@ -26,7 +26,7 @@ add(
 ### Parameters
 
 - `cellIndex` - (required) the start index of a cell in a layout. The count of the index starts from 0
-- `dir` - (required) the direction of the action: "up" | "down" | "left" | "right"
+- `dir` - (required) the direction of the action: `"up"` | `"down"` | `"left"` | `"right"`
 
 ### Example
 
@@ -44,4 +44,4 @@ diagram.cellManager.add(0, "down"); // adds cells as rows
 
 **Change log**: Added in v4.0
 
-**Related articles**: [Configuring Swimlanes](../../../swimlanes/)
+**Related articles**: [Configuring Swimlanes](/swimlanes/)

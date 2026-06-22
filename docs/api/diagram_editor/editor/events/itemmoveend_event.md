@@ -11,7 +11,7 @@ description: You can learn about the itemMoveEnd event of editor in the document
 @short: Fires after an item is moved
 
 :::note
-The event doesn't work with the **line** object.
+The event doesn't work with the `line` object.
 
 The event fires just for the target element despite the number of selected elements. The ids of dragged elements are provided in the `batch` parameter of the callback function.
 :::
@@ -63,8 +63,8 @@ editor.events.on("itemMoveEnd", ({ id, coords }) => {
 
 **Related API**:
 
-- [`afterItemMove`](/api/diagram_editor/editor/events/afteritemmove_event/)
-- [`beforeItemMove`](/api/diagram_editor/editor/events/beforeitemmove_event/)
+- [`afterItemMove`](api/diagram_editor/editor/events/afteritemmove_event.md)
+- [`beforeItemMove`](api/diagram_editor/editor/events/beforeitemmove_event.md)
 
 **Related samples**:
 

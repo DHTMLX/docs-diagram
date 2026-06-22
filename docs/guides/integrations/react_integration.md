@@ -56,7 +56,7 @@ Now you should get the DHTMLX Diagram Editor source code. First of all, stop the
 
 ### Step 1. Package installation
 
-Download the [**trial Diagram Editor package**](/guides/diagram_editor/initialization/#installing-diagram-editor-via-npm-or-yarn) and follow steps mentioned in the README file. Note that trial Diagram Editor is available 30 days only.
+Download the [**trial Diagram Editor package**](guides/diagram_editor/initialization.md#installing-diagram-editor-via-npm-or-yarn) and follow steps mentioned in the README file. Note that trial Diagram Editor is available 30 days only.
 
 ### Step 2. Component creation
 
@@ -160,7 +160,7 @@ export function getData() {
 }
 ~~~
 
-Then open the ***App.js*** file and import data. After this you can pass data into the new created `<DiagramEditor/>` components as **props**:
+Then open the ***App.js*** file and import data. After this you can pass data into the new created `<DiagramEditor/>` components as `props`:
 
 ~~~jsx {2,5-6} title="App.js"
 import DiagramEditor from "./DiagramEditor";
@@ -174,7 +174,7 @@ function App() {
 export default App;
 ~~~
 
-Go to the ***DiagramEditor.jsx*** file and apply the passed **props** to the Diagram Editor via the [`parse()`](api/diagram_editor/editor/methods/parse_method.md) method:
+Go to the ***DiagramEditor.jsx*** file and apply the passed `props` to the Diagram Editor via the [`parse()`](api/diagram_editor/editor/methods/parse_method.md) method:
 
 ~~~jsx {5,11} title="DiagramEditor.jsx"
 import { useEffect, useRef } from "react";
@@ -224,6 +224,6 @@ useEffect(() => {
 
 After that, you can start the app to see Diagram Editor loaded with data on a page.
 
-![Diagram Editor initialization](../../assets/trial_diagram.png)
+![Diagram Editor initialization](/img/trial_diagram.png)
 
 Now you know how to integrate DHTMLX Diagram Editor with React. You can customize the code according to your specific requirements. The final example you can find on [**GitHub**](https://github.com/DHTMLX/react-diagram-demo).

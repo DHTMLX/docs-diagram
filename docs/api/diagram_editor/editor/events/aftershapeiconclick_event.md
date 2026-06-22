@@ -27,7 +27,7 @@ The callback of the event is called with the following parameters:
 - `shape` - an object with the item configuration
 
 :::info
-For handling the inner Diagram Editor events you can use the **on()** method.
+For handling the inner Diagram Editor events you can use the `on()` method.
 :::
 
 ### Example

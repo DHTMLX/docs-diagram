@@ -22,7 +22,7 @@ getSubHeaderType(subheaderId: string): "row" | "col" | undefined;
 
 ### Returns
 
-The method returns the type of the subheader of the swimlane: "row" | "col" | undefined
+The method returns the type of the subheader of the swimlane: `"row"` | `"col"` | undefined
 
 ### Example
 
@@ -42,4 +42,4 @@ diagram.cellManager.getSubHeaderType("sub01"); // -> "row"
 
 **Change log**: Added in v4.0
 
-**Related articles**: [Configuring Swimlanes](../../../swimlanes/)
+**Related articles**: [Configuring Swimlanes](/swimlanes/)

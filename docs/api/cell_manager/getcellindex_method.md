@@ -22,7 +22,7 @@ getCellIndex(
 ### Parameters
 
 - `cellId` - (required) the id of a cell
-- `type` - (required) the type of direction to count the index: "row" | "col"
+- `type` - (required) the type of direction to count the index: `"row"` | `"col"`
 
 ### Returns
 
@@ -46,4 +46,4 @@ diagram.cellManager.getCellIndex("r01", "row"); // -> 0
 
 **Change log**: Added in v4.0
 
-**Related articles**: [Configuring Swimlanes](../../../swimlanes/)
+**Related articles**: [Configuring Swimlanes](/swimlanes/)

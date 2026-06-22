@@ -11,7 +11,7 @@ description: You can learn about the hide method of view in the documentation of
 @short: Hides Toolbar, Editbar, and Shapebar views of Diagram Editor.
 
 :::info
-If you need to hide the **Toolbar**, **Editbar**, and **Shapebar** view separately, call the `hide()` method with the corresponding parameter. To hide all these elements, call the `hide()` method without parameters.
+If you need to hide the `Toolbar`, `Editbar`, and `Shapebar` view separately, call the `hide()` method with the corresponding parameter. To hide all these elements, call the `hide()` method without parameters.
 :::
 
 ### Usage

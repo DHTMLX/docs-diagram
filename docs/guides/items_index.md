@@ -16,9 +16,9 @@ import {useCurrentSidebarCategory} from '@docusaurus/theme-common';
 After you have learnt the guides, you can check the following API sections to accelerate the development process:
 
 - [Items API properties](category/items-api.md)
-- [DataCollection API](api/data_collection.md) (allows adding, removing, filtering data items (such as shapes, lines, line titles, groups, swimlanes), etc.)
-- [CellManager API](api/cell_manager.md) (allows adding, removing, moving swimlane cells, etc.)
-- [Selection API](api/selection.md)
+- [DataCollection API](/api/data_collection/) (allows adding, removing, filtering data items (such as shapes, lines, line titles, groups, swimlanes), etc.)
+- [CellManager API](/api/cell_manager/) (allows adding, removing, moving swimlane cells, etc.)
+- [Selection API](/api/selection/)
 - [Diagram API](api/diagram/api_overview.md)
 - [Diagram Editor API](api/diagram_editor/editor/api_overview.md)
 

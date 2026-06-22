@@ -58,7 +58,7 @@ Now you should get the DHTMLX Diagram Editor source code. First of all, stop the
 
 ### Step 1. Package installation
 
-Download the [**trial Diagram Editor package**](/guides/diagram_editor/initialization/#installing-diagram-editor-via-npm-or-yarn) and follow steps mentioned in the README file. Note that trial Diagram Editor is available 30 days only.
+Download the [**trial Diagram Editor package**](guides/diagram_editor/initialization.md#installing-diagram-editor-via-npm-or-yarn) and follow steps mentioned in the README file. Note that trial Diagram Editor is available 30 days only.
 
 ### Step 2. Component creation
 
@@ -167,7 +167,7 @@ export function getData() {
 }
 ~~~
 
-Then open the ***App.svelte*** file, import data, and pass it into the newly created `<DiagramEditor/>` components as **props**:
+Then open the ***App.svelte*** file, import data, and pass it into the newly created `<DiagramEditor/>` components as `props`:
 
 ~~~html {3,5,8} title="App.svelte"
 <script>
@@ -180,7 +180,7 @@ Then open the ***App.svelte*** file, import data, and pass it into the newly cre
 <DiagramEditor data={data} />
 ~~~
 
-Go to the ***DiagramEditor.svelte*** file and apply the passed **props** to the Diagram Editor via the [`parse()`](api/diagram_editor/editor/methods/parse_method.md) method:
+Go to the ***DiagramEditor.svelte*** file and apply the passed `props` to the Diagram Editor via the [`parse()`](api/diagram_editor/editor/methods/parse_method.md) method:
 
 ~~~html {6,13} title="DiagramEditor.svelte"
 <script>
@@ -238,6 +238,6 @@ onDestroy(() => {
 
 After that, when we start the app, we should see Diagram Editor loaded with data on a page.
 
-![Diagram Editor initialization](../../assets/trial_diagram.png)
+![Diagram Editor initialization](/img/trial_diagram.png)
 
 Now you should have a basic setup for integrating DHTMLX Diagram Editor with Svelte. You can customize the code according to your specific requirements. The final example you can find on [**GitHub**](https://github.com/DHTMLX/svelte-diagram-demo).

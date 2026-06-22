@@ -6,9 +6,9 @@ description: You can explore the Fieldset control of Editbar in the documentatio
 
 # Fieldset
 
-@short: The basic control for creating complex controls with the help of the [`controls`](/api/diagram_editor/editbar/config/controls_property/) or the [`properties`](/api/diagram_editor/editbar/config/properties_property/) Editbar configuration options.
+@short: The basic control for creating complex controls with the help of the [`controls`](api/diagram_editor/editbar/config/controls_property.md) or the [`properties`](api/diagram_editor/editbar/config/properties_property.md) Editbar configuration options.
 
-![Fieldset control](../../../../assets/editbar-basic-controls/fieldset.png)
+![Fieldset control](/img/editbar-basic-controls/fieldset.png)
 
 ## Usage
 
@@ -54,17 +54,17 @@ The `rows` and `cols` properties may include an array of objects of the specifie
 
 ### Basic properties
 
-- `type` - (required) the type of a control. Set it to *"fieldset"*
+- `type` - (required) the type of a control. Set it to `"fieldset"`
 - `compact` - (optional) specifies the compact mode, removes indents and frame. *false* by default
 - `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*). *false* by default
 - `hidden` - (optional) defines whether a control is hidden. *false* by default
 - `css` - (optional) the name of a CSS class(es) applied to the control group
-- `width` - (optional) sets the width of the control group. *"content"* by default
-- `height` - (optional) sets the height of the control group. *"content"* by default
+- `width` - (optional) sets the width of the control group. `"content"` by default
+- `height` - (optional) sets the height of the control group. `"content"` by default
 - `padding` - (optional) sets the padding for the content inside the control group
-- `align` - (optional) sets the alignment of controls inside the control group. *"start"* by default
+- `align` - (optional) sets the alignment of controls inside the control group. `"start"` by default
 - `label` - (optional) specifies a label for a control
-- `labelAlignment` - (optional) defines the position of the label: *"left"* | *"right"* | *"center"*. *"left"* by default
+- `labelAlignment` - (optional) defines the position of the label: `"left"` | `"right"` | `"center"`. `"left"` by default
 - `rows` - (optional) arranges controls inside the control group vertically
 - `cols` - (optional) arranges controls inside the control group horizontally
 

@@ -21,8 +21,8 @@ load(
 
 ### Parameters
 
-- `url` - (required) the URL of an external file or DataProxy with the URL configured
-- `driver` - (optional) DataDriver or type of data ("json", "csv", "xml"), "json" by default
+- `url` - (required) the URL of an external file or `DataProxy` with the URL configured
+- `driver` - (optional) `DataDriver` or type of data (`"json"`, `"csv"`, `"xml"`), `"json"` by default
 
 ### Returns
 
@@ -51,6 +51,6 @@ diagram.data.load("../some/data").then(() => {
 });
 ~~~
 
-**Related articles**:  [Loading and storing data](../../../guides/loading_data/)
+**Related articles**:  [Loading and storing data](guides/loading_data.md)
 
 **Related sample**: [Diagram. Data. Data loading](https://snippet.dhtmlx.com/09isp2d8)

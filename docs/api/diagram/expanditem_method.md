@@ -22,9 +22,9 @@ expandItem(
 ### Parameters
 
 - `id` - (required) the ID of the item
-- `dir` - (optional) defines the side the children will be shown in relation to the root shape: **"left"**, **"right"**
+- `dir` - (optional) defines the side the children will be shown in relation to the root shape: `"left"`, `"right"`
   :::note
-  The **dir** parameter can be used only when the diagram is initialized in the mindmap mode (*type:"mindmap"*)
+  The `dir` parameter can be used only when the diagram is initialized in the mindmap mode (*type:`"mindmap"`*)
   :::
 
 ### Example
@@ -49,6 +49,6 @@ diagram.data.parse(data);
 diagram.expandItem("main", "left");
 ~~~
 
-**Change log**: The **dir** parameter was added in v3.1
+**Change log**: The `dir` parameter was added in v3.1
 
-**Related articles**: [Expanding/collapsing items](../../../guides/manipulating_items/#expandingcollapsing-items)
+**Related articles**: [Expanding/collapsing items](guides/manipulating_items.md#expandingcollapsing-items)

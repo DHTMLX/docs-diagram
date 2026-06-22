@@ -11,7 +11,7 @@ description: You can learn about the copy method of copy manager in the document
 @short: Copies selected elements or elements specified by ids
 
 :::note
-The `copy()` method works only if the Diagram Editor is initialized in the **default** mode.
+The `copy()` method works only if the Diagram Editor is initialized in the `default` mode.
 :::
 
 ### Usage

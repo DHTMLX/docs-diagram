@@ -10,7 +10,7 @@ description: You can learn about the defaultLinkType property in the documentati
 
 @short: Optional. The default type of a connector line
 
-The value is applied, if the line object doesn't contain the "type" property
+The value is applied, if the line object doesn't contain the `"type"` property
 
 ### Usage
 
@@ -32,4 +32,4 @@ const diagram = new dhx.Diagram("diagram_container", {
 });
 ~~~
 
-**Related articles**: [Setting connections between shapes](../../../lines/#setting-connections-between-shapes)
+**Related articles**: [Setting connections between shapes](/lines/#setting-connections-between-shapes)

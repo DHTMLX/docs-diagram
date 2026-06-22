@@ -33,7 +33,7 @@ The callback of the event is called with an object with the following parameters
     - `y` - the vertical position of the text element, moving from top to bottom
 
 :::info
-For handling the inner Diagram Editor events you can use the **on()** method.
+For handling the inner Diagram Editor events you can use the `on()` method.
 :::
 
 ### Example

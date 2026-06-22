@@ -33,14 +33,14 @@ The callback of the event is called with an object with the following parameters
 - `x` - the final X-coordinate of the item
 - `y` - the final Y-coordinate of the item
 - `dir` - the direction of the resize operation:
-	- **"n"** - north
-    - **"ne"** - north-east
-    - **"e"** - east
-    - **"se"** - south-east
-    - **"s"** - south
-    - **"sw"** - south-west
-    - **"w"** - west
-    - **"nw"** - north-west
+	- `"n"` - north
+    - `"ne"` - north-east
+    - `"e"` - east
+    - `"se"` - south-east
+    - `"s"` - south
+    - `"sw"` - south-west
+    - `"w"` - west
+    - `"nw"` - north-west
 
 
 ### Example
@@ -68,8 +68,8 @@ editor.events.on("itemResizeEnd", ({ id, width, height }) => {
 
 **Related API**:
 
-- [`beforeItemResize`](/api/diagram_editor/editor/events/beforeitemresize_event/)
-- [`afterItemResize`](/api/diagram_editor/editor/events/afteritemresize_event/)
+- [`beforeItemResize`](api/diagram_editor/editor/events/beforeitemresize_event.md)
+- [`afterItemResize`](api/diagram_editor/editor/events/afteritemresize_event.md)
 
 **Related samples**:
 

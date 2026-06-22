@@ -8,7 +8,7 @@ description: You can explore the Colorpicker control of Editbar in the documenta
 
 @short: The basic control for selecting a color.
 
-![Colorpicker control](../../../../assets/editbar-basic-controls/colorpicker.png)
+![Colorpicker control](/img/editbar-basic-controls/colorpicker.png)
 
 ## Usage
 
@@ -51,25 +51,25 @@ description: You can explore the Colorpicker control of Editbar in the documenta
 
 ### Basic properties
 
-- `type` - (required) the type of a control. Set it to *"colorpicker"*
+- `type` - (required) the type of a control. Set it to `"colorpicker"`
 - `key` - (optional) the name of the specified/modified property or the path to it in the object of a Diagram item 
 - `wrap` - (optional) allows displaying the external wrapping. *false* by default
 - `css` - (optional) adds style classes to a control
 - `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*). *false* by default
 - `hidden` - (optional) defines whether a control is hidden. *false* by default
-- `height` - (optional) the height of a control. *"content"* by default
-- `width` - (optional) the width of a control. *"content"* by default
+- `height` - (optional) the height of a control. `"content"` by default
+- `width` - (optional) the width of a control. `"content"` by default
 - `padding` - (optional) sets padding between a cell and a border of a Colorpicker control
 - `customColors` - (optional) shows a section with custom colors in the bottom part of the Colorpicker
 - `grayShades` - (optional) defines whether the section with gray shades is displayed in the palette. *true* by default
 - `icon` - (optional) the CSS class of an icon from the used icon font
-- `mode` - (optional) the mode of a control: *"palette"* | *"picker"*. *"palette"* by default
+- `mode` - (optional) the mode of a control: `"palette"` | `"picker"`. `"palette"` by default
 - `palette` - (optional) contains arrays of colors you want to be shown in a colorpicker
 - `paletteOnly` - (optional) defines whether Colorpicker is shown only in the palette mode. *false* by default
 - `pickerOnly` - (optional) defines whether Colorpicker is shown only in the picker mode. *false* by default
 - `placeholder` - (optional) a tip for the input
 - `label` - (optional) specifies a label for a control
-- `labelPosition` - (optional) defines the position of a label: *"left"* | *"top"*. *"top"* by default
+- `labelPosition` - (optional) defines the position of a label: `"left"` | `"top"`. `"top"` by default
 - `labelWidth` - (optional) sets the width of the label of a control
 
 ### Service properties and methods
