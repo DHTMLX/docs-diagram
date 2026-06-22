@@ -17,7 +17,7 @@ description: You can learn about the shapeResize event of editor in the document
 ~~~
 
 :::info
-For handling the inner Diagram Editor events you can use the **on()** method.
+For handling the inner Diagram Editor events you can use the `on()` method.
 :::
 
 ### Example

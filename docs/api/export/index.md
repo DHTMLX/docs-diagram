@@ -6,7 +6,7 @@ description: You can have an overview of diagram export methods in the documenta
 
 # Export methods overview
 
-The API methods of the **diagram.export** object allow you to export data from the Diagram or Diagram Editor.
+The API methods of the `diagram.export` object allow you to export data from the Diagram or Diagram Editor.
 ## Methods
 
 | Name                         | Description                         |

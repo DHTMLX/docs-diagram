@@ -34,4 +34,4 @@ diagram.cellManager.resetSwimlane(); // resets active swimlane
 
 **Change log**: Added in v4.0
 
-**Related articles**: [Configuring Swimlanes](../../../swimlanes/)
+**Related articles**: [Configuring Swimlanes](/swimlanes/)

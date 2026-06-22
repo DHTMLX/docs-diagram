@@ -11,7 +11,7 @@ description: You can learn about the beforeItemCatch event of editor in the docu
 @short: Fires before an item is caught
 
 :::info
-The event works only in the **org chart** and **mindmap** modes of Diagram, the ***itemsDraggable*** property must be set to `true`.
+The event works only in the **org chart** and `mindmap` modes of Diagram, the `itemsDraggable` property must be set to `true`.
 :::
 
 ### Usage
@@ -39,7 +39,7 @@ The callback of the event is called with an object with the following parameters
 The callback returns `false` to prevent the item from being caught; otherwise, `true`
 
 :::info
-For handling the inner Diagram Editor events you can use the **on()** method.
+For handling the inner Diagram Editor events you can use the `on()` method.
 :::
 
 ### Example

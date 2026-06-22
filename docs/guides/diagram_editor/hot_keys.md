@@ -6,7 +6,7 @@ description: You can learn about the Hotkeys of editor in the documentation of t
 
 # Hotkey list
 
-In this section you will find a set of standard hotkeys you can use while creating a diagram in the editor, descriptions of the actions performed by these hotkeys and key string parameters for those hotkeys that can be overridden. Apply the [`hotkeys`](/api/diagram_editor/editor/config/hotkeys_property/) property for managing keyboard hotkeys within the editor.
+In this section you will find a set of standard hotkeys you can use while creating a diagram in the editor, descriptions of the actions performed by these hotkeys and key string parameters for those hotkeys that can be overridden. Apply the [`hotkeys`](api/diagram_editor/editor/config/hotkeys_property.md) property for managing keyboard hotkeys within the editor.
 
 | Hotkey combination             | Description                                          | Parameter key string    |
 |--------------------------------|------------------------------------------------------|-------------------------|
@@ -31,7 +31,7 @@ In this section you will find a set of standard hotkeys you can use while creati
 
 ## Inline text editor shortcuts
 
-The following hotkeys are available when the [inline text editor](/guides/inline_editing/) is active. They cannot be configured via the `hotkeys` property.
+The following hotkeys are available when the [inline text editor](guides/inline_editing.md) is active. They cannot be configured via the `hotkeys` property.
 
 | Hotkey | Description |
 |--------|-------------|

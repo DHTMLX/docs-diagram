@@ -6,9 +6,9 @@ description: Connect AI coding assistants to live DHTMLX Diagram documentation v
 
 # Using DHTMLX MCP server with AI coding assistants
 
-Building diagram applications requires precise control over shapes, connections, layout, and editor configuration. When an AI tool generates [DHTMLX Diagram](/diagram/) code from outdated training data, the result is mismatched APIs, missing properties, and configuration options that no longer exist.
+Building diagram applications requires precise control over shapes, connections, layout, and editor configuration. When an AI tool generates [DHTMLX Diagram](/) code from outdated training data, the result is mismatched APIs, missing properties, and configuration options that no longer exist.
 
-The DHTMLX Model Context Protocol (MCP) server solves this by giving AI tools direct access to the live Diagram documentation. Whether you are working with [swimlanes](/swimlanes/), [custom shapes](/shapes/custom_shape/), the [Diagram Editor](/guides/diagram_editor/initialization/), or any other part of the library, the assistant retrieves the current reference material before generating a response.
+The DHTMLX Model Context Protocol (MCP) server solves this by giving AI tools direct access to the live Diagram documentation. Whether you are working with [swimlanes](/swimlanes/), [custom shapes](shapes/custom_shape.md), the [Diagram Editor](guides/diagram_editor/initialization.md), or any other part of the library, the assistant retrieves the current reference material before generating a response.
 
 **MCP endpoint**
 
@@ -24,14 +24,14 @@ The DHTMLX MCP server covers all major DHTMLX products, not only DHTMLX Diagram.
 
 The MCP server indexes the full DHTMLX Diagram documentation. Common scenarios where the MCP server is useful:
 
-- Looking up the current API for [shapes](/shapes/default_shapes/), [lines](/lines/), [groups](/groups/), or [swimlanes](/swimlanes/).
+- Looking up the current API for [shapes](shapes/default_shapes.md), [lines](/lines/), [groups](/groups/), or [swimlanes](/swimlanes/).
 - Generating ready-to-run Diagram code based on a description.
-- Exploring [Editor](/guides/diagram_editor/initialization/) configuration options, toolbar controls, and event handling.
-- Checking [export](/guides/data_export/) options and understanding how to produce PDF or PNG output.
-- Configuring auto-layout options for default-mode diagrams using the [diagram configuration](/guides/diagram/configuration/).
-- Loading diagram data and serializing it back with the available [data methods](/guides/loading_data/).
-- Handling [Diagram and Editor events](/guides/event_handling/) to respond to user interactions.
-- Exploring [TypeScript support](/guides/using_typescript/) and framework integration for React, Vue, Angular and Svelte.
+- Exploring [Editor](guides/diagram_editor/initialization.md) configuration options, toolbar controls, and event handling.
+- Checking [export](guides/data_export.md) options and understanding how to produce PDF or PNG output.
+- Configuring auto-layout options for default-mode diagrams using the [diagram configuration](guides/diagram/configuration.md).
+- Loading diagram data and serializing it back with the available [data methods](guides/loading_data.md).
+- Handling [Diagram and Editor events](guides/event_handling.md) to respond to user interactions.
+- Exploring [TypeScript support](guides/using_typescript.md) and framework integration for React, Vue, Angular and Svelte.
 
 ## How DHTMLX MCP server works
 

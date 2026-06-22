@@ -47,8 +47,8 @@ editor.events.on("itemRotateEnd", ({ id, angle }) => {
 
 **Related API**:
 
-- [`beforeItemRotate`](/api/diagram_editor/editor/events/beforeitemrotate_event/)
-- [`afterItemRotate`](/api/diagram_editor/editor/events/afteritemrotate_event/)
+- [`beforeItemRotate`](api/diagram_editor/editor/events/beforeitemrotate_event.md)
+- [`afterItemRotate`](api/diagram_editor/editor/events/afteritemrotate_event.md)
 
 **Related samples**:
 

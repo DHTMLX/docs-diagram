@@ -7,7 +7,7 @@ description: You can learn about the remove method of Cell Manager in the docume
 # remove()
 
 :::info
-The **remove()** method is automatically validated by the system. The cell won't be removed if it is not possible according to the structure of the swimlane.
+The `remove()` method is automatically validated by the system. The cell won't be removed if it is not possible according to the structure of the swimlane.
 :::
 
 ### Description
@@ -44,4 +44,4 @@ diagram.cellManager.remove(0, "row"); // removes cells as rows
 
 **Change log**: Added in v4.0
 
-**Related articles**: [Configuring Swimlanes](../../../swimlanes/)
+**Related articles**: [Configuring Swimlanes](/swimlanes/)

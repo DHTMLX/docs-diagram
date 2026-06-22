@@ -8,13 +8,13 @@ description: You can explore the Diagram methods in the documentation of the DHT
 
 | Name                                    | Description                                    |
 | :-------------------------------------- | :--------------------------------------------- |
-| [](../diagram/addshape_method.md)       | @getshort(../diagram/addshape_method.md)       |
-| [](../diagram/autoplace_method.md)      | @getshort(../diagram/autoplace_method.md)      |
-| [](../diagram/collapseitem_method.md)   | @getshort(../diagram/collapseitem_method.md)   |
-| [](../diagram/destructor_method.md)     | @getshort(../diagram/destructor_method.md)     |
-| [](../diagram/expanditem_method.md)     | @getshort(../diagram/expanditem_method.md)     |
-| [](../diagram/getscrollstate_method.md) | @getshort(../diagram/getscrollstate_method.md) |
-| [](../diagram/locate_method.md)         | @getshort(../diagram/locate_method.md)         |
-| [](../diagram/paint_method.md)          | @getshort(../diagram/paint_method.md)          |
-| [](../diagram/scrollto_method.md)       | @getshort(../diagram/scrollto_method.md)       |
-| [](../diagram/showitem_method.md)       | @getshort(../diagram/showitem_method.md)       |
+| [](api/diagram/addshape_method.md)       | @getshort(../diagram/addshape_method.md)       |
+| [](api/diagram/autoplace_method.md)      | @getshort(../diagram/autoplace_method.md)      |
+| [](api/diagram/collapseitem_method.md)   | @getshort(../diagram/collapseitem_method.md)   |
+| [](api/diagram/destructor_method.md)     | @getshort(../diagram/destructor_method.md)     |
+| [](api/diagram/expanditem_method.md)     | @getshort(../diagram/expanditem_method.md)     |
+| [](api/diagram/getscrollstate_method.md) | @getshort(../diagram/getscrollstate_method.md) |
+| [](api/diagram/locate_method.md)         | @getshort(../diagram/locate_method.md)         |
+| [](api/diagram/paint_method.md)          | @getshort(../diagram/paint_method.md)          |
+| [](api/diagram/scrollto_method.md)       | @getshort(../diagram/scrollto_method.md)       |
+| [](api/diagram/showitem_method.md)       | @getshort(../diagram/showitem_method.md)       |

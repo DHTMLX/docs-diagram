@@ -11,7 +11,7 @@ Grid area is an area intended for editing a diagram. You can easily add new item
 In this section you will find what interface elements are available for each diagram item depending on the mode the editor is initialized in. The section also explains how to facilitate ease of designing a diagram by using keyboard shortcuts or operating several selected items at once.
 
 :::note
-Distance between points in the Grid area depends on the value of the [grid step](/api/diagram_editor/editor/config/gridstep_property/)
+Distance between points in the Grid area depends on the value of the [grid step](api/diagram_editor/editor/config/gridstep_property.md)
 :::
 
 ## Managing shapes
@@ -20,18 +20,18 @@ Distance between points in the Grid area depends on the value of the [grid step]
 
 You can drag shapes from the shapebar into the grid area to place them at the desired positions and connect them.
 
-![](../../assets/default_shape_toolbar.png)
+![](/img/default_shape_toolbar.png)
 
 When you click on any shape, it becomes editable and gets personal interface elements:
 
 - a toolbar with controls:
-    - *"copy"* - to create a copy of the shape (except for the shape placed inside a group or a swimlane)
-    - *"connect"* - to activate the mode for setting connections to a different shape
-    - *"remove"* - to delete the selected shape
+    - `"copy"` - to create a copy of the shape (except for the shape placed inside a group or a swimlane)
+    - `"connect"` - to activate the mode for setting connections to a different shape
+    - `"remove"` - to delete the selected shape
 - resizing handles (pull the handles of the editable shape to change its sizes)
 - a rotate icon (press the icon to rotate the shape)
 
-When the connection mode is enabled for a shape, you can set links to other shapes, adjust their position and form, as well as delete unnecessary links via the "remove" toolbar control.
+When the connection mode is enabled for a shape, you can set links to other shapes, adjust their position and form, as well as delete unnecessary links via the `"remove"` toolbar control.
 
 Double-click the text of a shape to edit it.
 
@@ -41,25 +41,25 @@ You can drag shapes to place them at the desired positions relative to the root 
 
 You can drag shapes from one parent item to another. The moved item is dragged with all its children.
 
-![](../../assets/orgchart_shape_toolbar_vertical.png)
+![](/img/orgchart_shape_toolbar_vertical.png)
 
-![](../../assets/orgchart_shape_toolbar_horizontal.png)
+![](/img/orgchart_shape_toolbar_horizontal.png)
 
 When you click on any shape, it becomes editable and gets personal interface elements:
 
 - a toolbar that may include the following controls:
-    - *"add"* - to add a new child for the selected shape
+    - `"add"` - to add a new child for the selected shape
     - *"add assistant"* - to add an assistant for the selected shape
     - *"add partner"*  - to add a partner for the selected shape
     - *"align vertically"* - to arrange children of the shape vertically
     - *"align horizontally"* - to arrange children of the shape horizontally
-    - *"remove"* - to delete the selected shape (except for the root one) with its children
+    - `"remove"` - to delete the selected shape (except for the root one) with its children
 - resizing handles (pull the handles of the editable shape to change its sizes)
 - an icon to collapse/expand child shapes (if there are any)
 
 When you click on an assistant or partner shape, it becomes editable and gets personal interface elements:
 
-- *"remove"* - to delete the selected shape
+- `"remove"` - to delete the selected shape
 
 Double-click the text of a shape to edit it.
 
@@ -67,15 +67,15 @@ Double-click the text of a shape to edit it.
 
 You can drag shapes to place them at the desired positions relative to the root shape, or drag the root shape to move the whole diagram. If you drag the parent shape, the shape will be moved with all its child shapes. To add a new shape, select a shape and add a new child for it. The shapes can be dragged from one parent item to another. The moved item is dragged with all its children.
 
-![](../../assets/mindmap_toolbar_of_shape.png)
+![](/img/mindmap_toolbar_of_shape.png)
 
 When you click on any shape, it becomes editable and gets personal interface elements:
 
 - a toolbar with controls:
-    - *"add"* - to add a new child for the selected shape (except for the root one)
-    - *"addLeft"* - to add a new child to the left of the root shape
-    - *"addRight"* - to add a new child to the right of the root shape
-    - *"remove"* - to delete the selected shape (except for the root one) with its children
+    - `"add"` - to add a new child for the selected shape (except for the root one)
+    - `"addLeft"` - to add a new child to the left of the root shape
+    - `"addRight"` - to add a new child to the right of the root shape
+    - `"remove"` - to delete the selected shape (except for the root one) with its children
 - resizing handles (pull the handles of the editable shape to change its sizes)
 - an icon to collapse/expand child shapes
 
@@ -85,23 +85,23 @@ Double-click the text of a shape to edit it.
 
 In the default mode, you can set links to other shapes, adjust their position and form, as well as add text to the line and delete unnecessary links.
 
-![](../../assets/line_with_toolbar.png)
+![](/img/line_with_toolbar.png)
 
 In the default mode, you can also add a text to the line by double-clicking on it. Click the text to define its direction or delete it. Double-click the text to edit it.
 
-![](../../assets/line_with_text.png)
+![](/img/line_with_text.png)
 
 ## Managing groups
 
 You can drag groups from the shapebar into the grid area to place them at the desired positions. You can put several shapes or other groups into a group and move them as a unit, copy, or delete.
 
-![](../../assets/group_toolbar.png)
+![](/img/group_toolbar.png)
 
 When you click on any group, it becomes editable and gets personal interface elements:
 
 - a toolbar with controls:
-    - *"copy"* - to create a copy of the group (except for the group placed inside another group or a swimlane);
-    - *"remove"* - to delete the selected group;
+    - `"copy"` - to create a copy of the group (except for the group placed inside another group or a swimlane);
+    - `"remove"` - to delete the selected group;
 - resizing handles (pull the handles of the editable group to change its sizes).
 
 Double-click the text in the header of the group to edit it.
@@ -110,30 +110,30 @@ Double-click the text in the header of the group to edit it.
 
 You can drag a swimlane from the shapebar into the grid area to place it at the desired position.
 
-![](../../assets/swimlane_toolbar.png)
+![](/img/swimlane_toolbar.png)
 
 When you click on any swimlane, it becomes editable and gets personal interface elements:
 
 - a toolbar with controls:
-    - *"addRowLast"* - to add a new row at the end of the swimlane
-    - *"addColumnLast"* - to add a new column at the end of the swimlane
-    - *"copy"* - to create a copy of the swimlane
-    - *"remove"* - to delete the selected swimlane
+    - `"addRowLast"` - to add a new row at the end of the swimlane
+    - `"addColumnLast"` - to add a new column at the end of the swimlane
+    - `"copy"` - to create a copy of the swimlane
+    - `"remove"` - to delete the selected swimlane
 - resizing handles (pull the handles of the editable swimlane to change its sizes)
 
 Besides, there are the abilities to add, move, or remove columns or rows of the swimlane via the options of the context menu. The context menu will appear after the user clicks on the icon of a swimlane subheader.
 
-![](../../assets/swimlane_contextmenu.png)
+![](/img/swimlane_contextmenu.png)
 
 Note, that some options of moving the first/last columns and rows are deactivated by internal settings of a swimlane.
 
 ## Editing attributes of an item
 
-After selecting an item in the grid area, you can update its attributes [via the sidebar options in the editbar of the editor](../../../guides/diagram_editor/editbar/).
+After selecting an item in the grid area, you can update its attributes [via the sidebar options in the editbar of the editor](guides/diagram_editor/editbar.md).
 
 ## Configuring the toolbar of an item
 
-You can customize the personal toolbar of shapes, groups, swimlanes according to your needs via the [shapeToolbar](../../../api/diagram_editor/editor/config/shapetoolbar_property/) property of the editor.
+You can customize the personal toolbar of shapes, groups, swimlanes according to your needs via the [shapeToolbar](api/diagram_editor/editor/config/shapetoolbar_property.md) property of the editor.
 
 ## Enabling/disabling snap lines
 
@@ -143,7 +143,7 @@ The feature is available only in the default mode of Editor
 
 From v5.0, the Grid area is equipped with snap lines which will simplify the process of placing shapes symmetrically to each other.
 
-If you need to change the width and color of the lines, or to hide them at all, use the [magnetic](../../../api/diagram_editor/editor/config/magnetic_property/) property of Editor.
+If you need to change the width and color of the lines, or to hide them at all, use the [magnetic](api/diagram_editor/editor/config/magnetic_property.md) property of Editor.
 
 ## Manipulating multiple items
 
@@ -178,4 +178,4 @@ From v5.0, you can align or distribute a group of items by selecting them and cl
 | **Align vertical centers**        | Align items to the center along the y-axis |
 | **Align bottom**                  | Align items to the bottom along the y-axis |
 
-![](../../assets/editor/group_align_and_distribution.gif)
+![](/img/editor/group_align_and_distribution.gif)

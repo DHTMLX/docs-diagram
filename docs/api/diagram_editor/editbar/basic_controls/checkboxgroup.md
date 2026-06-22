@@ -8,7 +8,7 @@ description: You can explore the CheckboxGroup control of Editbar in the documen
 
 @short: The basic control for creating groups of checkboxes.
 
-![CheckboxGroup control](../../../../assets/editbar-basic-controls/checkboxgroup.png)
+![CheckboxGroup control](/img/editbar-basic-controls/checkboxgroup.png)
 
 ## Usage
 
@@ -71,7 +71,7 @@ The objects with the `checkbox` configuration inside the control can be used bot
 
 #### Basic properties
 
-- `type` - (required) the type of a control. Set it to *"checkboxGroup"*
+- `type` - (required) the type of a control. Set it to `"checkboxGroup"`
 - `key` - (optional) the name of the specified/modified property or the path to it in the object of a Diagram item 
 - `wrap` - (optional) allows displaying the external wrapping. *false* by default
 - `options` - (required) an object with options of a CheckboxGroup. The object can contain the following attributes:
@@ -84,12 +84,12 @@ The objects with the `checkbox` configuration inside the control can be used bot
 - `css` - (optional) adds style classes to a control
 - `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*). *false* by default
 - `hidden` - (boolean) defines whether a CheckboxGroup is hidden. *false* by default
-- `height` - (optional) the height of a control. *"content"* by default
-- `width` - (optional) the width of a control. *"content"* by default
+- `height` - (optional) the height of a control. `"content"` by default
+- `width` - (optional) the width of a control. `"content"` by default
 - `padding` - (optional) sets padding between a cell and a border of a CheckboxGroup control
 - `label` - (optional) specifies a label for the control
 - `labelWidth` - (optional) sets the label width of the control
-- `labelPosition` - (optional) defines the position of a label: *"left"* | *"top"*. *"top"* by default
+- `labelPosition` - (optional) defines the position of a label: `"left"` | `"top"`. `"top"` by default
 
 #### Service properties and methods
 
@@ -127,8 +127,8 @@ Note that it's highly not recommended to redefine the service properties and met
 - `css` - (optional) adds style classes to a control
 - `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*). *false* by default
 - `hidden` - (optional) defines whether a checkbox is hidden. *false* by default
-- `height` - (optional) the height of a control. *"content"* by default
-- `width` - (optional) the width of a control. *"content"* by default
+- `height` - (optional) the height of a control. `"content"` by default
+- `width` - (optional) the width of a control. `"content"` by default
 - `padding` - (optional) sets padding between a cell and a border of a Checkbox control
 
 ## Example

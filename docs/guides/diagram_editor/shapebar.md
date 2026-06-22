@@ -9,7 +9,7 @@ description: You can learn about the Shapebar of editor in the documentation of 
 Shapebar is a part of the editor that renders previews of Diagram items. You can choose the necessary items and drag them from the shapebar into the grid area.
 
 :::note 
-The shapebar is available only in the editor initialized in the default mode (type: "default").
+The shapebar is available only in the editor initialized in the default mode (type: `"default"`).
 :::
 
 ## Default sections
@@ -21,7 +21,7 @@ The *Groups* and *Swimlanes* sections contain basic sets of the items.
 
 ## Custom sections
 
-To customize the structure of the shapebar, you should use the [`sections`](../../../api/diagram_editor/shapebar/config/sections_property/) property. It allows you to specify your own sections in the necessary order and put the items into the corresponding sections.
+To customize the structure of the shapebar, you should use the [`sections`](api/diagram_editor/shapebar/config/sections_property.md) property. It allows you to specify your own sections in the necessary order and put the items into the corresponding sections.
 
 The `sections` property is an object with a set of *key:value* pairs where `key` is the name of a section and `value` is an array with the list of items which should be rendered in the section.
 
@@ -141,11 +141,11 @@ The library allows you to add several identical items (i.e. items of the same ty
 To do that, you need to:
 
 - create separate objects with different configurations for the items of the necessary type. You can create as many objects as you need
-- use the *names* of the created objects as the *types* of the items and add them into the sections of the shapebar using the [`sections`](../../../api/diagram_editor/shapebar/config/sections_property/) property
+- use the *names* of the created objects as the *types* of the items and add them into the sections of the shapebar using the [`sections`](api/diagram_editor/shapebar/config/sections_property.md) property
 
 ## Setting the preview of shapes
 
-To configure the preview of items rendered in the shapebar of the editor, make use of the [`preview`](../../../api/diagram_editor/shapebar/config/preview_property/) property. It is an object that contains two attributes:
+To configure the preview of items rendered in the shapebar of the editor, make use of the [`preview`](api/diagram_editor/shapebar/config/preview_property.md) property. It is an object that contains two attributes:
 
 - `scale` - (optional) defines the scale of items rendered in the shapebar of the editor, 0.5 by default
 - `gap` - (optional) specifies the space between the items rendered in the shapebar, "6px 8px" by default
@@ -167,12 +167,12 @@ const editor = new dhx.DiagramEditor("editor_container", {
 
 ### Customizing a shape preview
 
-To customize the appearance of a particular shape, you can apply the [preview](/shapes/configuration_properties/#properties-specific-for-the-default-mode) configuration property of a shape object.
+To customize the appearance of a particular shape, you can apply the [preview](shapes/configuration_properties.md#properties-specific-for-the-default-mode) configuration property of a shape object.
 
 The property can be applied in two cases:
 
-- when setting the default configuration of a default shape via the [`defaults`](/api/diagram_editor/editor/config/defaults_property/) property of the editor object
-- when setting the default configuration of a custom shape via the `defaults` attribute of the [`addShape()`](/api/diagram/addshape_method/) method
+- when setting the default configuration of a default shape via the [`defaults`](api/diagram_editor/editor/config/defaults_property.md) property of the editor object
+- when setting the default configuration of a custom shape via the `defaults` attribute of the [`addShape()`](api/diagram/addshape_method.md) method
 
 Let's consider three examples of configuring a shape preview:
 
@@ -252,7 +252,7 @@ editor.diagram.addShape("personalCard", {
 
 ## Setting the width of shapebar
 
-The default width of the shapebar is 300. You can change it and set any other width via the [`width`](/api/diagram_editor/shapebar/config/width_property/) property, e.g.:
+The default width of the shapebar is 300. You can change it and set any other width via the [`width`](api/diagram_editor/shapebar/config/width_property.md) property, e.g.:
 
 ~~~jsx
 const editor = new dhx.DiagramEditor("editor_container", {
@@ -267,7 +267,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 
 ## Showing/hiding the Shapebar  
 
-Whenever you need to control the visibility of a shapebar, you can use the [`show`](/api/diagram_editor/shapebar/config/show_property/) property. It allows you to hide the shapebar with particular settings on initialization of the Diagram Editor and show it later, when needed. By default the shapebar is shown.
+Whenever you need to control the visibility of a shapebar, you can use the [`show`](api/diagram_editor/shapebar/config/show_property.md) property. It allows you to hide the shapebar with particular settings on initialization of the Diagram Editor and show it later, when needed. By default the shapebar is shown.
 
 ~~~jsx
 const editor = new dhx.DiagramEditor("editor_container", {
@@ -282,7 +282,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 
 ## Shapebar and shapes appearance
 
-You can provide the desired look and feel for the shapebar with the [`css`](/api/diagram_editor/shapebar/config/css_property/) property. It allows specifying custom CSS classes to stylize items presentation in the shapebar in your own way.
+You can provide the desired look and feel for the shapebar with the [`css`](api/diagram_editor/shapebar/config/css_property.md) property. It allows specifying custom CSS classes to stylize items presentation in the shapebar in your own way.
 
 ~~~html {6}
 <script>
@@ -304,4 +304,4 @@ You can provide the desired look and feel for the shapebar with the [`css`](/api
 </style>
 ~~~
 
-You can also [adjust the appearance of shapes](guides/themes/base_themes_configuration.md/#configuring-the-look-of-shapes-in-shapebar) by redefining the default color scheme for a particular theme or use your own CSS variables to manage the color scheme of Shapebar items.
+You can also [adjust the appearance of shapes](guides/themes/base_themes_configuration.md#configuring-the-look-of-shapes-in-shapebar) by redefining the default color scheme for a particular theme or use your own CSS variables to manage the color scheme of Shapebar items.

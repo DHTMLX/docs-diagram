@@ -8,7 +8,7 @@ description: You can explore the RadioGroup control of Editbar in the documentat
 
 @short: The basic control for creating groups of Radio buttons.
 
-![RadioGroup control](../../../../assets/editbar-basic-controls/radiogroup.png)
+![RadioGroup control](/img/editbar-basic-controls/radiogroup.png)
 
 ## Usage
 
@@ -69,7 +69,7 @@ Radio button configuration object inside RadioGroup:
 
 #### Basic properties
 
-- `type` - (required) the type of a control. Set it to "radioGroup"
+- `type` - (required) the type of a control. Set it to `"radioGroup"`
 - `key` - (optional) the name of the specified/modified property or the path to it in the object of a Diagram item 
 - `wrap` - (optional) allows displaying the external wrapping. *false* by default
 - `options` - (required) an object with options of a RadioGroup. The object can contain the following attributes:
@@ -82,12 +82,12 @@ Radio button configuration object inside RadioGroup:
 - `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*). *false* by default
 - `hidden` - (boolean) defines whether a RadioGroup is hidden. *false* by default
 - `css` - (optional) adds style classes to a control
-- `height` - (optional) the height of a control. *"content"* by default
-- `width` - (optional) the width of a control. *"content"* by default
+- `height` - (optional) the height of a control. `"content"` by default
+- `width` - (optional) the width of a control. `"content"` by default
 - `padding` - (optional) sets padding between a cell and a border of a RadioGroup control
 - `label` - (optional) specifies a label for the control
 - `labelWidth` - (optional) sets the label width of the control
-- `labelPosition` - (optional) defines the position of a label: *"left"* | *"top"*. *"top"* by default
+- `labelPosition` - (optional) defines the position of a label: `"left"` | `"top"`. `"top"` by default
 
 #### Service properties and methods
 
@@ -124,8 +124,8 @@ Note that it's highly not recommended to redefine the service properties and met
 - `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*). *false* by default
 - `hidden` - (optional) defines whether a radio button is hidden. *false* by default
 - `css` - (optional) adds style classes to a control
-- `height` - (optional) the height of a control. *"content"* by default
-- `width` - (optional) the width of a control. *"content"* by default
+- `height` - (optional) the height of a control. `"content"` by default
+- `width` - (optional) the width of a control. `"content"` by default
 - `padding` - (optional) sets padding between a cell and a border of a radio button control
 
 ## Example

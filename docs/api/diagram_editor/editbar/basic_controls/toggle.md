@@ -8,7 +8,7 @@ description: You can explore the Toggle control of Editbar in the documentation 
 
 @short: The basic control that represents a special button which can change its state from the pressed to the unpressed one when clicked.
 
-![Toggle control](../../../../assets/editbar-basic-controls/toggle.png)
+![Toggle control](/img/editbar-basic-controls/toggle.png)
 
 ## Usage
 
@@ -46,7 +46,7 @@ The control can be used both with the *boolean* value and the *string* one, if t
 
 ### Basic properties
 
-- `type` - (required) the type of a control. Set it to *"toggle"*
+- `type` - (required) the type of a control. Set it to `"toggle"`
 - `key` - (optional) the name of the specified/modified property or the path to it in the object of a Diagram item  
 - `hidden` - (optional) defines whether a control is hidden. *false* by default
 - `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*). *false* by default
@@ -57,8 +57,8 @@ The control can be used both with the *boolean* value and the *string* one, if t
 - `offIcon` - (optional) sets the CSS class of an icon that will be rendered in the unselected (unpressed) state of the toggle
 - `value` - (optional) specifies the value in the selected (pressed) state. If not defined, the control is used with the *boolean* value 
 - `css` - (optional) adds style classes to a control
-- `width` - (optional) the width of a control. *"content"* by default
-- `height` - (optional) the height of a control. *"content"* by default
+- `width` - (optional) the width of a control. `"content"` by default
+- `height` - (optional) the height of a control. `"content"` by default
 - `padding` - (optional) sets padding between a cell and a border of the Toggle control
 
 ### Service properties and methods

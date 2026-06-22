@@ -25,7 +25,7 @@ change: (
 The callback of the event takes the following parameters:
 
 - `id` - (optional) the id of the changed item
-- `status` - (optional) the status of the change: "add", "update", "delete", "load"
+- `status` - (optional) the status of the change: `"add"`, `"update"`, `"delete"`, `"load"`
 - `updatedItem` - (optional) the object of the changed item
 
 :::info

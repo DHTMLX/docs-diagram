@@ -38,10 +38,10 @@ Color values are specified in the [HSL](https://developer.mozilla.org/en-US/docs
 
 - *hue* is a degree on the color wheel from 0 to 360. 0 is red, 120 is green, 240 is blue;
 - *saturation* is a percentage value; 0% means completely unsaturated (gray) and 100% is completely saturated;
-- *lightness* is a percentage value; 100% is white, 0% is black, and 50% is "normal".
+- *lightness* is a percentage value; 100% is white, 0% is black, and 50% is `"normal"`.
 :::
 
-Due to the use of these CSS variables, color scheme is calculated automatically. It means, that if you change some value for the variable from the color scheme in the root, values for the *"contrast-light"*, *"dark"*, and *"contrast-dark"* themes will be recalculated automatically in real time. 
+Due to the use of these CSS variables, color scheme is calculated automatically. It means, that if you change some value for the variable from the color scheme in the root, values for the `"contrast-light"`, `"dark"`, and `"contrast-dark"` themes will be recalculated automatically in real time. 
 
 For instance, you can override the primary colors for all Diagram themes at once in the following way:
 
@@ -62,7 +62,7 @@ In addition, values of variables, which are calculated on the base of the primar
 
 ## Configuring a separate theme
 
-If you want to override some color values for a separate [Diagram theme](guides/themes.md), you need to do this in the **'data-dhx-theme'** attribute:
+If you want to override some color values for a separate [Diagram theme](guides/themes.md), you need to do this in the `'data-dhx-theme'` attribute:
 
 ~~~html 
 <style>
@@ -160,7 +160,7 @@ For example:
 
 ## Adjusting the look of tasks in the PERT mode
 
-The appearance of tasks of the [Diagram in the PERT chart mode](/diagram/#diagram-in-the-pert-mode) is defined by the `--dhx-shape-pert-header-background` CSS variable. It is specified in the [default](guides/themes.md#light-theme-default) theme in the following way: 
+The appearance of tasks of the [Diagram in the PERT chart mode](/#diagram-in-the-pert-mode) is defined by the `--dhx-shape-pert-header-background` CSS variable. It is specified in the [default](guides/themes.md#light-theme-default) theme in the following way: 
 
 ~~~jsx
 --dhx-shape-pert-header-background: var(--dhx-gantt-base-colors-primary, #537CFA);

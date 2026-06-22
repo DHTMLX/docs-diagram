@@ -37,7 +37,7 @@ const data = [
 
 Each shape object can include the following properties:
 
-- `type` - (required) the type of the shape (by default: "rectangle" in the default mode, "card" in the org chart mode, "topic" in the mindmap mode, "task" in the PERT mode)
+- `type` - (required) the type of the shape (by default: `"rectangle"` in the default mode, `"card"` in the org chart mode, `"topic"` in the mindmap mode, `"task"` in the PERT mode)
 - `id` - (optional) the unique id of a shape
 - `x` - (optional) the x coordinate of the shape position. The property is **required** in the default mode of Diagram
 - `y` - (optional) the y coordinate of the shape position. The property is **required** in the default mode of Diagram
@@ -49,7 +49,7 @@ Each shape object can include the following properties:
 - `hidden` - (optional) defines, whether a shape will be hidden
 
 :::note
-The values of the **height** and **width** are calculated automatically for a "text"/"topic" shape, depending on the content of the shape.
+The values of the `height` and `width` are calculated automatically for a `"text"`/`"topic"` shape, depending on the content of the shape.
 :::
 
 ## Custom properties
@@ -72,7 +72,7 @@ const data = [
 
 When preparing a data set for a custom shape, you can add any custom properties to the configuration object of a shape:
 
-- `key` - (optional) a custom property for a custom shape. For details, check the [Custom shape](../custom_shape/) article. <br>*Use unique names as names for custom properties. Overriding the internal properties of the diagram shape object is forbidden as it causes the incorrect work of the diagram and its editor.*
+- `key` - (optional) a custom property for a custom shape. For details, check the [Custom shape](shapes/custom_shape.md) article. <br>*Use unique names as names for custom properties. Overriding the internal properties of the diagram shape object is forbidden as it causes the incorrect work of the diagram and its editor.*
 
 ### Example
 
@@ -120,14 +120,14 @@ const data = [
 When preparing a data set for shapes to load into the diagram in the default mode, you can add the following properties to the configuration object of a shape:
 
 - `angle` - (optional) the angle of shape rotation
-- `preview` - (optional) either a path to the image/a base64 image or an object with settings [to configure the shape preview displayed in the shapebar of the editor](/guides/diagram_editor/shapebar/#setting-the-preview-of-shapes). As an object, the property can contain a set of optional properties:
+- `preview` - (optional) either a path to the image/a base64 image or an object with settings [to configure the shape preview displayed in the shapebar of the editor](guides/diagram_editor/shapebar.md#setting-the-preview-of-shapes). As an object, the property can contain a set of optional properties:
   - `img` - (optional) a path to the image or a base64 image
   - `width` - (optional) the width of the image
   - `height` - (optional) the height of the image
-  - `gap` - (optional) sets the value of the `gap` attribute of the [preview](../../api/diagram_editor/shapebar/config/preview_property/) property for the specified type of a shape
-  - `scale` - (optional) sets the value of the `scale` attribute of the [preview](../../api/diagram_editor/shapebar/config/preview_property/) property for the specified type of a shape
+  - `gap` - (optional) sets the value of the `gap` attribute of the [preview](api/diagram_editor/shapebar/config/preview_property.md) property for the specified type of a shape
+  - `scale` - (optional) sets the value of the `scale` attribute of the [preview](api/diagram_editor/shapebar/config/preview_property.md) property for the specified type of a shape
    :::info
-   The **scale** property can't be applied together with the **img**, **width**, **height** properties
+   The `scale` property can't be applied together with the `img`, `width`, `height` properties
    :::
 
 ### Example
@@ -169,7 +169,7 @@ When preparing a data set for shapes to load into the diagram in the org chart m
 - `parent` - (optional) the id of the parent shape
 - `dx` - (optional) the left offset of the shape
 - `dy` - (optional) the top offset of the shape
-- `dir` - (optional) the direction of shapes connecting. To connect shapes vertically, set the attribute to the "vertical" value
+- `dir` - (optional) the direction of shapes connecting. To connect shapes vertically, set the attribute to the `"vertical"` value
 - `open` - (optional) defines, whether the child items of the current shape will be shown; *true* by default
 - `assistant` - (optional) defines, whether the shape is an assistant item for the parent shape
 - `partner` - (optional) defines, whether the shape is a partner item for the parent shape
@@ -311,19 +311,19 @@ const data = [
 
 ### Description
 
-When preparing a data set for "text", "topic" and flow chart shapes, you can add the following properties to the configuration object of a shape:
+When preparing a data set for `"text"`, `"topic"` and flow chart shapes, you can add the following properties to the configuration object of a shape:
 
 - `fill` - (optional) the color of the shape
 - `stroke` - (optional) the color of the shape outline
 - `strokeWidth` - (optional) the width of the shape outline, 1 by default
-- `strokeType` - (optional) the type of the stroke outline, "line" (default), "dash" for a dashed line
+- `strokeType` - (optional) the type of the stroke outline, `"line"` (default), `"dash"` for a dashed line
 - `strokeDash` - (optional) the pattern of dashes and spaces for a dashed outline
 - `fontColor` - (optional) the color of the text font
-- `fontStyle` - (optional) the style of the text font, can be "normal" (default), "italic" or "oblique"
-- `fontWeight` - (optional) the text font weight, possible values are: "normal" (default), "bold", "bolder", "lighter", values "100"-"900", where "400" is the same as normal, and "600"+ is the boldest font
+- `fontStyle` - (optional) the style of the text font, can be `"normal"` (default), `"italic"` or `"oblique"`
+- `fontWeight` - (optional) the text font weight, possible values are: `"normal"` (default), `"bold"`, `"bolder"`, `"lighter"`, values `"100"`-`"900"`, where `"400"` is the same as normal, and `"600"`+ is the boldest font
 - `fontSize` - (optional) the size of the font in pixels, 14 by default
-- `textAlign` - (optional) the alignment of text in a shape: "left", "center"(default), "right"
-- `textVerticalAlign` - (optional) the vertical alignment of text in a shape:"top","center"(default),"bottom"
+- `textAlign` - (optional) the alignment of text in a shape: `"left"`, `"center"`(default), `"right"`
+- `textVerticalAlign` - (optional) the vertical alignment of text in a shape:`"top"`,`"center"`(default),`"bottom"`
 - `lineHeight` - (optional) the height of a line, 14 by default
 
 ### Example
@@ -362,7 +362,7 @@ const data = [
 
 ### Description
 
-When preparing a data set for "card" shapes, you can add the following properties to the configuration object of a shape:
+When preparing a data set for `"card"` shapes, you can add the following properties to the configuration object of a shape:
 
 - `headerColor` - (optional) the color of the header of the shape
 
@@ -404,7 +404,7 @@ const data = [
 
 ### Description
 
-When preparing a data set for "img-card" shapes, you can add the following properties to the configuration object of a shape:
+When preparing a data set for `"img-card"` shapes, you can add the following properties to the configuration object of a shape:
 
 - `img` - (optional) the image of a shape
 - `title` - (optional) the title of a shape
@@ -456,7 +456,7 @@ const data = [
 
 ### Description
 
-When preparing a data set for "task" shapes, you can add the following properties to the configuration object of a shape:
+When preparing a data set for `"task"` shapes, you can add the following properties to the configuration object of a shape:
 
 - `text` - (optional) the description of a task
 - `start_date` - (required) the start date of a task
@@ -498,7 +498,7 @@ const data = [
 
 ### Description
 
-When preparing a data set for "milestone" shapes, you can add the following properties to the configuration object of a shape:
+When preparing a data set for `"milestone"` shapes, you can add the following properties to the configuration object of a shape:
 
 - `text` - (optional) the description of a task
 - `parent` - (optional) the id of the parent project of a task
@@ -521,5 +521,5 @@ const data = [
 
 **Related articles**:
 
-- [Default Shapes](../../shapes/default_shapes/)
-- [Custom Shape](../../shapes/custom_shape/)
+- [Default Shapes](shapes/default_shapes.md)
+- [Custom Shape](shapes/custom_shape.md)

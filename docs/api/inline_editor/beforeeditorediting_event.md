@@ -55,5 +55,5 @@ diagram.events.on("beforeEditorEditing", (value, id, key, subId) => {
 
 **Change log**:
 
-- The **subHeaderId** parameter has been changed to **subId** in v4.1
+- The `subHeaderId` parameter has been changed to `subId` in v4.1
 - Added in v4.0

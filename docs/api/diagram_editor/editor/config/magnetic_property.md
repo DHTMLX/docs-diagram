@@ -7,7 +7,7 @@ description: You can learn about the magnetic property of editor in the document
 # magnetic
 
 :::info
-The **magnetic** property works only in the **default mode** of the editor (`type: "default"`)
+The `magnetic` property works only in the `default` mode of the editor (`type: "default"`)
 :::
 
 ### Description
@@ -46,7 +46,7 @@ magnetic: {
 
 ### Parameters
 
-As an object, the **magnetic** property can include the following parameters:
+As an object, the `magnetic` property can include the following parameters:
 
 - `show` - (optional) enables/disables snap lines when moving a shape
 - `lineWidth` - (optional) the width of snap lines (2 by default)
@@ -65,4 +65,4 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 ~~~
 
-**Change log**: The ***show*** parameter was added in v6.0
+**Change log**: The `show` parameter was added in v6.0

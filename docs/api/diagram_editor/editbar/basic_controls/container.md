@@ -8,7 +8,7 @@ description: You can explore the Container control of Editbar in the documentati
 
 @short: The basic control for attaching an HTML code.
 
-![Container control](../../../../assets/editbar-basic-controls/container.png)
+![Container control](/img/editbar-basic-controls/container.png)
 
 ## Usage
 
@@ -39,18 +39,18 @@ description: You can explore the Container control of Editbar in the documentati
 
 ### Basic properties
 
-- `type` - (required) the type of a control. Set it to *"container"*
+- `type` - (required) the type of a control. Set it to `"container"`
 - `html` - (required) the HTML content of a control
 - `wrap` - (optional) allows displaying the external wrapping. *false* by default
 - `css` - (optional) adds style classes to a control string
 - `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*). *false* by default
 - `hidden` - (optional) defines whether a control is hidden. *false* by default
-- `height` - (optional) the height of a control. *"content"* by default
-- `width` - (optional) the width of a control. *"content"* by default
+- `height` - (optional) the height of a control. `"content"` by default
+- `width` - (optional) the width of a control. `"content"` by default
 - `padding` - (optional) sets padding between a cell and a border of a control
 - `label` - (optional) specifies a label for the control
 - `labelWidth` - (optional) sets the label width of the control
-- `labelPosition` - (optional) defines the position of a label: *"left"* | *"top"*. *"top"* by default
+- `labelPosition` - (optional) defines the position of a label: `"left"` | `"top"`. `"top"` by default
 
 #### Service properties and methods
 

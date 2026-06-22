@@ -8,7 +8,7 @@ description: You can explore the Slider control of Editbar in the documentation 
 
 @short: The basic control for selecting a numeric value by moving a thumb along a line with a fixed set of options.
 
-![Slider control](../../../../assets/editbar-basic-controls/slider.png)
+![Slider control](/img/editbar-basic-controls/slider.png)
 
 ## Usage
 
@@ -53,20 +53,20 @@ description: You can explore the Slider control of Editbar in the documentation 
 
 ### Basic properties
 
-- `type` - (required) the type of a control. Set it to *"slider"*
+- `type` - (required) the type of a control. Set it to `"slider"`
 - `key` - (optional) the name of the specified/modified property or the path to it in the object of a Diagram item 
 - `wrap` - (optional) allows displaying the external wrapping. *false* by default
 - `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*). *false* by default
 - `hidden` - (optional) defines whether a control is hidden. *false* by default
 - `css` - (optional) adds style classes to a control
-- `height` - (optional) the height of a control. *"content"* by default
-- `width` - (optional) the width of a control. *"content"* by default
+- `height` - (optional) the height of a control. `"content"` by default
+- `width` - (optional) the width of a control. `"content"` by default
 - `padding` - (optional) sets padding between a cell and a border of a slider control
 - `inverse` - (optional) enables/disables the inverse slider mode. *false* by default
 - `majorTick` - (optional) sets interval of rendering numeric values on the slider scale
 - `max` - (optional) the maximal value of slider. *100* by default
 - `min` - (optional) the minimal value of slider. *0* by default
-- `mode` - (optional) the direction of the slider scale. *"horizontal"* by default
+- `mode` - (optional) the direction of the slider scale. `"horizontal"` by default
 - `range` - (optional) enables/disables the possibility to select a range of values on the slider. *false* by default
 - `step` - (optional) the step the slider thumb will be moved with. *1* by default
 - `tick` - (optional) sets the interval of steps for rendering the slider scale

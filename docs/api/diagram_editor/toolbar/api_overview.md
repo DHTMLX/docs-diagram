@@ -6,7 +6,7 @@ description: You can check a Toolbar overview in the documentation of the DHTMLX
 
 # Toolbar API overview
 
-[Toolbar](/guides/diagram_editor/toolbar/) is a part of the Diagram Editor that helps users to control the editing process. Use the `toolbar` property of the [`view`](/api/diagram_editor/editor/config/view_property/) configuration object to show, hide and configure the Toolbar. There are two ways of initialization you can choose from:
+[Toolbar](guides/diagram_editor/toolbar.md) is a part of the Diagram Editor that helps users to control the editing process. Use the `toolbar` property of the [`view`](api/diagram_editor/editor/config/view_property.md) configuration object to show, hide and configure the Toolbar. There are two ways of initialization you can choose from:
 
 - creating the default Toolbar by using the `toolbar:true` setting:
 
@@ -39,7 +39,7 @@ Check the related API sections to explore the available methods, properties and 
 
 ## Toolbar methods
 
-- [List of Toolbar methods](/api/diagram_editor/toolbar/methods/overview/)
+- [List of Toolbar methods](api/diagram_editor/toolbar/methods/overview.md)
 
 ## Toolbar properties
 
@@ -47,4 +47,4 @@ Check the related API sections to explore the available methods, properties and 
 
 ## Toolbar events
 
-- [List of Toolbar events](/api/diagram_editor/toolbar/events/overview/)
+- [List of Toolbar events](api/diagram_editor/toolbar/events/overview.md)

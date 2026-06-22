@@ -4,17 +4,19 @@ title: Editbar Complex Controls - Arrange
 description: You can explore the Arrange control of Editbar in the documentation of the the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # Arrange
 
 @short: The complex control for editing width, height, rotation angle, x and y properties of a Diagram element
 
 <img
-  src={require('../../../../assets/editbar-complex-controls/arrange.png').default}
+  src={useBaseUrl('/img/editbar-complex-controls/arrange.png')}
   alt="Arrange control" width='300'
 />
 
 :::info
-The **Arrange** control is available for all elements (excluding the **line** and **lineTitle** elements) in the *default* mode of the Diagram editor.
+The **Arrange** control is available for all elements (excluding the `line` and `lineTitle` elements) in the *default* mode of the Diagram editor.
 :::
 
 ## Usage
@@ -45,26 +47,26 @@ The **Arrange** control is available for all elements (excluding the **line** an
 
 ### Basic properties
 
-- `type` - (required) the type of a control. Set it to *"arrange"*
+- `type` - (required) the type of a control. Set it to `"arrange"`
 - `hidden` - (optional) defines whether the control is hidden. *false* by default
 - `disabled` - (optional) defines whether the control is enabled (*false*) or disabled (*true*)
 - `css` - (optional) adds style classes to the control
-- `width` - (optional) the width of the control. *"content"* by default
-- `height` - (optional) the height of the control. *"content"* by default
+- `width` - (optional) the width of the control. `"content"` by default
+- `height` - (optional) the height of the control. `"content"` by default
 - `padding` - (optional) sets the padding for the content inside the control group. *"0 16px"* by default
 - `label` - (optional) specifies a label for the control
-- `labelAlignment` - (optional) defines the position of the control label. *"left"* by default
-- `align` - (optional) sets the alignment of controls inside the control group. *"start"* by default
+- `labelAlignment` - (optional) defines the position of the control label. `"left"` by default
+- `align` - (optional) sets the alignment of controls inside the control group. `"start"` by default
 - `compact` - (optional) specifies the compact mode, removes indents and frame. *false* by default
 
 ### Service properties
 
-- `$properties` - (optional) allows you to override values of [basic controls](/api/diagram_editor/editbar/basic_controls_overview/) within a complex control. You can configure the following elements of the **Arrange** control based on the basic controls:
-    - `x` - ([input](/api/diagram_editor/editbar/basic_controls/input)) sets the Diagram element position on the x-axis
-    - `y` - ([input](/api/diagram_editor/editbar/basic_controls/input)) sets the Diagram element position on the y-axis
-    - `width` - ([input](/api/diagram_editor/editbar/basic_controls/input)) sets the Diagram element width (px)
-    - `height` - ([input](/api/diagram_editor/editbar/basic_controls/input)) sets the Diagram element height (px)
-    - `angle` - ([input](/api/diagram_editor/editbar/basic_controls/input)) sets the Diagram element rotation angle
+- `$properties` - (optional) allows you to override values of [basic controls](api/diagram_editor/editbar/basic_controls_overview.md) within a complex control. You can configure the following elements of the **Arrange** control based on the basic controls:
+    - `x` - ([input](api/diagram_editor/editbar/basic_controls/input.md)) sets the Diagram element position on the x-axis
+    - `y` - ([input](api/diagram_editor/editbar/basic_controls/input.md)) sets the Diagram element position on the y-axis
+    - `width` - ([input](api/diagram_editor/editbar/basic_controls/input.md)) sets the Diagram element width (px)
+    - `height` - ([input](api/diagram_editor/editbar/basic_controls/input.md)) sets the Diagram element height (px)
+    - `angle` - ([input](api/diagram_editor/editbar/basic_controls/input.md)) sets the Diagram element rotation angle
 
 ## Example
 

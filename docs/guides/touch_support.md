@@ -6,7 +6,7 @@ description: You can learn about touch support in the documentation of the DHTML
 
 # Touch support
 
-![](../assets/touch_support.png)
+![](/img/touch_support.png)
 
 Since version 4.2 and upper, the DHTMLX Diagram library provides the built-in Touch support that should work out of the box.
 
@@ -16,5 +16,5 @@ Thus, the click events (fire on clicking, double clicking an item) will continue
 Touch support enables recognition for the following touch gestures:
 
 - **Double Tap** - to edit the text of a shape/group/swimlane; to create and edit the text of a connector line
-- **Press, Hold, and Drag** - to call blockSelection and select several items
+- **Press, Hold, and Drag** - to call `blockSelection` and select several items
 - **Drag** - to drag a shape/group/swimlane; to drag a shape/text/group/swimlane from the left panel of the editor
