@@ -22,7 +22,7 @@ const data = [
         parent: string | number, 
 
         distance?: number, // 50 by default
-        autoPosition?: boolean, // true by default
+        autoPosition?: boolean, // false by default
         editable?: boolean, // true by default
         fixed?: boolean, // false by default
         hidden?: boolean, // false by default
@@ -32,7 +32,7 @@ const data = [
         lineHeight?: string | number, // 14 by default
         fontStyle?: "normal" | "italic" | "oblique", // "normal" by default
         fontColor?: string, // "#4C4C4C" by default
-        fontWeight?: string, // "500" by default
+        fontWeight?: string, // "normal" by default
         textAlign?: "center" | "left" | "right" // "center" by default
     },
     // more line objects
@@ -48,7 +48,7 @@ Each line title object can include the following properties:
 - `parent` - (required) the id of the line to display the title for
 - `text` - (required) the text of the line title
 - `distance` - (optional) specifies the distance to the point of displaying the title on the line in the range from 0 to 100, 50 by default
-- `autoPosition` - (optional) defines the direction of the text, if set to *true* - the direction of the text is the same as that of the line, *false* - the direction of the text is always horizontal, *true* by default
+- `autoPosition` - (optional) defines the direction of the text, if set to *true* - the direction of the text is the same as that of the line, *false* - the direction of the text is always horizontal, *false* by default
 - `editable` - (optional) enables/disables the ability to edit the text of the item by double-clicking on it, *true* by default
 - `fixed` - (optional) enables/disables the ability to fix the text of the item with the specified `distance` value, *false* by default
 - `hidden` - (optional) defines whether the text will be hidden, *false* by default 
@@ -57,7 +57,7 @@ Each line title object can include the following properties:
 - `lineHeight` - (optional) the height of the text line, 14 by default
 - `fontStyle` - (optional) the style of the text font: `"normal"` (default), `"italic"`, `"oblique"`
 - `fontColor` - (optional) the color of the text font, "#4C4C4C" by default
-- `fontWeight` - (optional) the text font weight, possible values are: `"normal"`, `"bold"`, `"bolder"`, `"lighter"`; values `"100"`-`"900"`, where `"400"` is the same as normal, and `"600"`+ is the boldest font; `"500"` by default
+- `fontWeight` - (optional) the text font weight, possible values are: `"normal"`, `"bold"`, `"bolder"`, `"lighter"`; values `"100"`-`"900"`, where `"400"` is the same as normal, and `"600"`+ is the boldest font; `"normal"` by default
 - `textAlign` - (optional) the alignment of the text: `"center"`(default), `"left"`, `"right"`
 
 ### Example
