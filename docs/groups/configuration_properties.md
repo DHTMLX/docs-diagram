@@ -27,7 +27,7 @@ const data = [
         fixed?: boolean, // false by default
         style?: {
             strokeWidth?: number, // 1 by default
-            stroke?: string, // "#DEDEDE" by default
+            stroke?: string, // "#B8C6D6" by default
             fill?: string,
             overFill?: string,
             partiallyFill?: string
@@ -78,7 +78,7 @@ The `open` property works when a `header` is initialized with the `closable` att
 - `fixed` - (optional) enables/disables the ability to move and resize the group; *false* by default
 - `style` - (optional) an object with the style settings of the group. The object can contain the following attributes:
     - `strokeWidth` - (optional) the width of the group border, 1 by default
-    - `stroke` - (optional) the color of the border of the group, "#DEDEDE" by default
+    - `stroke` - (optional) the color of the border of the group, "#B8C6D6" by default
     - `fill` - (optional) the background color of the group
     - `overFill` - (optional) the background color of the group when the user is holding the item and moving it into/outside the group *providing that the whole item is inside the group*
     - `partiallyFill` - (optional) the background color of the group when the user is holding the item and moving it into/outside the group *providing that a part of the item is out of the group and other settings are not defined via the `exitArea` attribute*
@@ -162,14 +162,14 @@ const data = [
         height?: number,
         groupChildren?: (string | number)[],
         style?: {
-            fill?: string, // "#20B56D08" by default
-            stroke?: string, // "#20B56D33" by default
+            fill?: string, // "#20B56D0F" by default
+            stroke?: string, // "#20B56D66" by default
             borderStyle?: string, // "dashed" by default
         },
         header?: {
-            height?: number, // 40 by default
+            height?: number, // 64 by default
             text?: string, // generated automatically by the text property
-            closable?: boolean, // false by default
+            closable?: boolean, // true by default
             enable?: boolean, // true by default
             fill?: string // "inherit" by default
         }
@@ -200,9 +200,9 @@ The properties below are generated automatically. They are calculated during the
     - `stroke` - (optional) the color of the border of the project
     - `borderStyle` - (optional) the style of the project border
 - `header` - (optional) an object with configuration attributes of the header of the project. The attributes are:
-    - `height` - (optional) the height of the header, 40 by default
+    - `height` - (optional) the height of the header, 64 by default
     - `text` - (optional) the text to be rendered in the header (generated automatically by the `text` property)
-    - `closable` - (optional) shows/hides an icon intended to expand/collapse a group; *false* by default
+    - `closable` - (optional) shows/hides an icon intended to expand/collapse a group; *true* by default
     - `enable` - (optional) shows/hides the header of the project; *true* by default
     - `fill` - (optional) the background color of the header 
 
