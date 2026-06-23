@@ -40,7 +40,7 @@ Each line object can include the following properties:
 - `to` - (optional) the id of the child shape
 - `connectType` - (optional) the connection type of the line: ["straight"](/lines/#lines-in-the-default-mode), ["elbow"](/lines/#lines-in-the-org-chart-mode) (the default type in the default/org chart modes), ["curved"](/lines/#lines-in-the-mindmap-mode) (the default type in the mindmap mode)
 - `strokeWidth` - (optional) the width of the line, 2 by default
-- `stroke` - (optional) the color of the line; "#2198F3" in the default mode, and "#CCC" in the org chart/mindmap modes by default
+- `stroke` - (optional) the color of the line; "#2196F3" in the default mode, and "#CCC" in the org chart/mindmap modes by default
 
 ## Properties specific for the default mode
 
@@ -51,8 +51,8 @@ const data = [
     // line object
     {
         // ... common properties
-        forwardArrow?: string, // "filled" by default
-        backArrow?: string, // "filled" by default
+        forwardArrow?: string, // "none" by default
+        backArrow?: string, // "none" by default
         fromSide?: "top" | "bottom" | "left" | "right" | "center",
         toSide?: "top" | "bottom" | "left" | "right" | "center",
         cornersRadius?: number,
@@ -70,8 +70,8 @@ const data = [
 
 When preparing a data set for lines to load into the diagram in the default mode, you can add the following properties to the configuration object of a line:
 
-- `forwardArrow` - (optional) sets a forward arrow connector and defines the type of the arrow (`"filled"` by default)
-- `backArrow` - (optional) sets a back arrow connector and defines the type of the arrow (`"filled"` by default)
+- `forwardArrow` - (optional) sets a forward arrow connector and defines the type of the arrow (`"none"` by default)
+- `backArrow` - (optional) sets a back arrow connector and defines the type of the arrow (`"none"` by default)
 - `fromSide` - (optional) the side of the shape from which connection will start ("*top*", "*bottom*", "*left*","*right*", "*center*")
 - `toSide` - (optional) the side of the shape to which a different shape will be attached ("*top*", "*bottom*", "*left*", "*right*", "*center*")
 - `cornersRadius` - (optional) the radius of rounding corners of a connector

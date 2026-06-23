@@ -110,7 +110,7 @@ The `open` property works when a `header` is initialized with the `closable` att
 :::
 - `style` - (optional) an object with the style settings of the swimlane. The object can contain the following attributes:
     - `strokeWidth` - (optional) the width of the swimlane border, 1 by default
-    - `stroke` - (optional) the color of the border of the swimlane, "#DEDEDE" by default
+    - `stroke` - (optional) the color of the border of the swimlane, "#B8C6D6" by default
     - `fill` - (optional) the background color for all cells of the swimlane
 - `header` - (optional) an object with configuration attributes of the header of the swimlane. The attributes are:
     - `height` - (optional) the height of the header, 40 by default
