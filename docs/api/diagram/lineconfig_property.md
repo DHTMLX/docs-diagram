@@ -14,7 +14,9 @@ description: You can learn about the lineConfig property in the documentation of
 
 ~~~jsx
 lineConfig?: {
-    lineType?: "dash" | "line",
+    lineType?: "line" | "dash" | "none",
+    arrowsHidden?: boolean,
+    lineDirection?: "forwardArrow" | "backArrow",
     lineGap?: number,
     connectType?: "elbow" | "straight" | "curved" // the "curved" type is used only in the mindmap mode
 };
@@ -24,7 +26,9 @@ lineConfig?: {
 
 The `lineConfig` object contains the following parameters:
 
-- `lineType` - (optional) the default type of a connector line. The value is applied, if the line object doesn't contain the `"type"` property
+- `lineType` - (optional) the default type of a connector line: `"line"` | `"dash"` | `"none"`. The value is applied, if the line object doesn't contain the `"type"` property
+- `arrowsHidden` - (optional) hides the arrow heads on the connector lines
+- `lineDirection` - (optional) defines which end of the line carries an arrow: `"forwardArrow"` | `"backArrow"`
 - `lineGap` - (optional) sets the distance to the right-angled bend of a connector line
 - `connectType` - (optional) sets the connection type of the lines: `"elbow"` | `"straight"` | `"curved"` (the `"curved"` type is used only in the mindmap Diagram mode). The value is applied, if the line object doesn't contain the `"connectType"` property
 
@@ -37,6 +41,8 @@ The values of the `lineType` and `connectType` settings will be applied, if the 
 ~~~jsx
 lineConfig: {
     lineType: "line",
+    lineDirection: "forwardArrow",
+    arrowsHidden: false,
     lineGap: 10
 }
 ~~~

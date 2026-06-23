@@ -19,7 +19,7 @@ description: You can learn about the afterItemResize event of editor in the docu
     height: number,
     x: number,
     y: number,
-    dir: "n" | "ne" | "e" | "se" | "s" | "sw" | "w" | "ne"
+    dir: "n" | "ne" | "e" | "se" | "s" | "sw" | "w" | "nw"
 }) => void;
 ~~~
 
