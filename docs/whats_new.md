@@ -8,20 +8,28 @@ description: You can learn a new information about DHTMLX JavaScript Diagram lib
 
 If you are updating Diagram from an older version, check [Migration to Newer Version](migration.md) for details.
 
+## Version 6.1.6
+
+Released on July 1, 2026
+
+### Fixes
+
+- Diagram. Fixed an error occurred when loading data into the Diagram via `ShapeCollection` (`DataCollection`) in the `mindmap` mode
+
 ## Version 6.1.5
 
 Released on June 17, 2026
 
 ### Updates
 
-- Diagram Editor. Improved text editing experience with new keyboard shortcuts: **Ctrl+Enter** to start editing, **Shift+Enter** for new lines, **Enter** to confirm, and **Escape** to discard changes.
+- Diagram Editor. Improved text editing experience with new keyboard shortcuts: <kbd>Ctrl</kbd>+<kbd>Enter</kbd> to start editing, <kbd>Shift</kbd>+<kbd>Enter</kbd> for new lines, <kbd>Enter</kbd> to confirm, and <kbd>Escape</kbd> to discard changes
 
 ### Fixes
 
-- Diagram Editor. Fixed the issue where lines passing through swimlane groups were not selectable.
+- Diagram Editor. Fixed the issue where lines passing through swimlane groups were not selectable
 - Diagram Editor. Added auto-scroll functionality when dragging connection lines to shapes outside the current screen view.
-- Diagram Editor. Fixed the bug that caused a shape to be deleted while editing its text.
-- Diagram. Fixed a Safari-specific bug where lines with the `backArrow: "filled"` property were not rendered correctly.
+- Diagram Editor. Fixed the bug that caused a shape to be deleted while editing its text
+- Diagram. Fixed a Safari-specific bug where lines with the `backArrow: "filled"` property were not rendered correctly
 
 ## Version 6.1.3 
 
@@ -44,7 +52,7 @@ Released on April 2, 2026
 ### Fixes
 
 - Diagram Editor. The issue with connector creation for shapes with negative coordinates is fixed
-- Diagram Editor. The issue where pressing the Backspace key during inline text editing would delete the shape or the line title is fixed
+- Diagram Editor. The issue where pressing the <kbd>Backspace</kbd> key during inline text editing would delete the shape or the line title is fixed
 - Export. A security vulnerability in PDF/PNG export that allowed arbitrary local file access via HTML injection is fixed through improved sanitization and environment hardening
 
 ## Version 6.1.1 
@@ -278,7 +286,7 @@ The new update introduces significant changes in the structure and functionality
 - Diagram Editor. Fix blocking of a new shape adding
 - Diagram Editor. Fix copying of lines while selecting elements manually
 - Diagram Editor. Fix dragging when the root shape is close to the child one in the `mindmap`/`org` modes
-- Diagram Editor. Fix incorrect selection behavior that required an additional click for selecting a shape with the Shift key
+- Diagram Editor. Fix incorrect selection behavior that required an additional click for selecting a shape with the <kbd>Shift</kbd> key
 - Diagram Editor. Fix moving a group and a swimlane together
 - Diagram Editor. Fix removing of unused lines/connectors
 - Diagram Editor. Fix the ability to move items of different parents to the target item (for the `org`/`mindmap` modes)
@@ -352,7 +360,7 @@ The new release introduces some changes to the `lineGap` property. Check the [Mi
     - the **Auto Layout** button of [Toolbar](guides/diagram_editor/toolbar.md) now provides two options for shapes' auto-placement: *Orthogonal* and *Radial*
 - [Snap lines](guides/diagram_editor/grid_area.md#enablingdisabling-snap-lines) for arrangement of shapes in the grid area with greater precision
 - The ability to configure snap lines via the new [`magnetic`](api/diagram_editor/editor/config/magnetic_property.md) property
-- The ability to copy and paste styles of an item(s) via `Alt (Option) + Ctrl (Cmd) + С` => `Alt (Option) + Ctrl (Cmd) + V` (see the **[example](https://snippet.dhtmlx.com/klgvu3jq)**) 
+- The ability to copy and paste styles of an item(s) via <kbd>Alt</kbd> (<kbd>Option</kbd>) + <kbd>Ctrl</kbd> (<kbd>Cmd</kbd>) + <kbd>С</kbd> => <kbd>Alt</kbd> (<kbd>Option</kbd>) + <kbd>Ctrl</kbd> (<kbd>Cmd</kbd>) + <kbd>V</kbd> (see the **[example](https://snippet.dhtmlx.com/klgvu3jq)**) 
 - The ability to [align and distribute multiple items](guides/diagram_editor/grid_area.md#aligning-multiple-items)
 - Now tooltips will appear when you hover over controls in the personal toolbar of items
 - Extended list of [locale options](guides/localization.md) for localization of tooltips in the per-item toolbar
@@ -515,7 +523,7 @@ Released on April 15, 2021
 - Fix the issue with tracking the shape parameters in the right panel of the editor which is initialized in the default mode
 - Fix the issue with removing focus from the shape in the default mode of the editor
 - Fix the issue with setting connectors between the shapes in the necessary order when the editor is initialized in the default mode
-- Fix the incorrect work of the "Ctrl+A" combination in the org chart mode of the editor
+- Fix the incorrect work of the <kbd>Ctrl</kbd>+<kbd>A</kbd> combination in the org chart mode of the editor
 - Fix the issue that caused the shapes to be pasted without connectors when the connected shapes are copied
 - Now there is no the ability to remove the root shape from the editor using keyboard navigation when the editor is initialized in the org chart mode
 
