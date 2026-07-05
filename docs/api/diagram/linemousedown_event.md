@@ -15,7 +15,8 @@ description: You can learn about the lineMouseDown event in the documentation of
 ~~~jsx
 lineMouseDown: (
     id: string | number, 
-    event: MouseEvent
+    event: MouseEvent, 
+    position?: object
 ) => void;
 ~~~
 
@@ -25,6 +26,7 @@ The callback of the event takes the following parameters:
 
 - `id` - (required) the id of a connector line
 - `event` - (required) a native HTML event object
+- `position` - (optional) an object with the `x` and `y` coordinates of the pointer relative to the diagram container
 
 ### Example
 

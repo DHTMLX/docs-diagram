@@ -13,12 +13,16 @@ description: You can learn about the showItem method in the documentation of the
 ### Usage
 
 ~~~jsx
-showItem(id: string | number): void;
+showItem(
+    id: string | number, 
+    dir?: "left" | "right"
+): void;
 ~~~
 
 ### Parameters
 
 - `id` - (required) the **ID** of the target item
+- `dir` - (optional) the branch direction to expand when showing an item under a collapsed mindmap root: `"left"` | `"right"`
 
 ### Example
 

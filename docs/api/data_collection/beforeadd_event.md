@@ -13,14 +13,20 @@ description: You can learn about the beforeAdd event of data collection in the d
 ### Usage
 
 ~~~jsx
-beforeAdd: (newItem: object) => boolean | void;
+beforeAdd: (
+    newItem: object, 
+    batch: object[], 
+    index: number
+) => boolean | void;
 ~~~
 
 ### Parameters
 
-The callback of the event takes the following parameter:
+The callback of the event takes the following parameters:
 
 - `newItem` - (required) the object of an added item
+- `batch` - (required) an array of all items added within the same operation
+- `index` - (required) the index the item is added at
 
 ### Returns
 

@@ -26,7 +26,7 @@ margin?: {
 The `margin` object can include the following parameters:
 
 - `itemX` - (optional) horizontal space between two shapes (only for [type: "org" | "mindmap"](api/diagram/type_property.md))
-- `itemY` - (optional) vertical space between two shapes (only for [type: "org" | "mindmap"](api/diagram/type_property.md))
+- `itemY` - (optional) vertical space between two shapes (only for [type: "org" | "mindmap"](api/diagram/type_property.md)). Defaults to `20` for the mindmap mode and to `40` for the other modes
 - `x` - (optional) horizontal space between the start of a diagram and the first item
 - `y` - (optional) vertical space between the start of a diagram and the first item
 
@@ -35,9 +35,12 @@ The `margin` object can include the following parameters:
 ~~~jsx
 margin: {
     x: 40, y: 40,
-    itemX: 40, itemY: 40
+    itemX: 40,
+    itemY: 40 // 20 for the mindmap mode
 }
 ~~~
+
+The `itemY` parameter defaults to `20` for [type: "mindmap"](api/diagram/type_property.md) and to `40` for the other Diagram modes.
 
 ### Example
 

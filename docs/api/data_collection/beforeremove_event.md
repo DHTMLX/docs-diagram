@@ -13,14 +13,20 @@ description: You can learn about the beforeRemove event of data collection in th
 ### Usage
 
 ~~~jsx
-beforeRemove: (removedItem: any) => boolean | void;
+beforeRemove: (
+    removedItem: object, 
+    batch: object[], 
+    index: number
+) => boolean | void;
 ~~~
 
 ### Parameters
 
-The callback of the event takes the following parameter:
+The callback of the event takes the following parameters:
 
 - `removedItem` - (required)  the object of an item to remove
+- `batch` - (required) an array of all items removed within the same operation
+- `index` - (required) the index the item is removed from
 
 ### Returns
 

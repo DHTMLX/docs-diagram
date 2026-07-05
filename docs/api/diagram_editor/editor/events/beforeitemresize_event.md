@@ -19,7 +19,7 @@ description: You can learn about the beforeItemResize event of editor in the doc
     height: number,
     x: number,
     y: number,
-    dir: "n" | "ne" | "e" | "se" | "s" | "sw" | "w" | "ne"
+    dir: "n" | "ne" | "e" | "se" | "s" | "sw" | "w" | "nw"
 }) => boolean | void;
 ~~~
 

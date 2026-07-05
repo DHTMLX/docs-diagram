@@ -12,7 +12,7 @@ The look and feel of the lines which connect shapes is defined by the mode you i
 
 ### Lines in the default mode
 
-In the default mode of Diagram, various shapes can be connected by ["straight" (by default) or "elbow"](lines/configuration_properties.md) lines in the necessary sequence to make up a scheme of a particular process.
+In the default mode of Diagram, various shapes can be connected by ["elbow" (by default) or "straight"](lines/configuration_properties.md) lines in the necessary sequence to make up a scheme of a particular process.
 
 To add a text for a line in the default mode of Diagram/Diagram Editor, use the `text` property of the [lineTitle](/line_titles/) object.
 

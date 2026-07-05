@@ -47,8 +47,8 @@ const diagram = new dhx.Diagram("diagram_container", {
 diagram.data.parse(data);
 
 // attaching a handler to the event
-diagram.events.on("beforeEditorEditing", (value, id, key, subId) => {
-    console.log(value, id, key, subId);
+diagram.events.on("beforeEditorEditing", (value, currentValue, id, key, subId) => {
+    console.log(value, currentValue, id, key, subId);
     return true;
 });
 ~~~
