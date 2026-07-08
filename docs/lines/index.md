@@ -1,5 +1,5 @@
 ---
-sidebar_label: Lines 
+sidebar_label: Lines
 title: Lines
 description: You can learn about Lines in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
@@ -14,7 +14,7 @@ The look and feel of the lines which connect shapes is defined by the mode you i
 
 In the default mode of Diagram, various shapes can be connected by ["straight" (by default) or "elbow"](lines/configuration_properties.md) lines in the necessary sequence to make up a scheme of a particular process.
 
-To add a text for a line in the default mode of Diagram/Diagram Editor, use the `text` property of the [lineTitle](/line_titles/) object.
+To add text to a line in the default mode of Diagram/Diagram Editor, use the `text` property of the [lineTitle](/line_titles/) object.
 
 <iframe src="https://snippet.dhtmlx.com/e6zm6wh1?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="650"></iframe>
 
@@ -24,7 +24,7 @@ The org chart mode of Diagram represents an organizational chart that contains a
 
 <iframe src="https://snippet.dhtmlx.com/98tzmzpg?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="650"></iframe>
 
-It is possible to define vertical direction of connecting shapes for the parent shape via the `dir: "vertical"` configuration attribute of the shape object.
+You can define the vertical direction of connecting shapes for the parent shape via the `dir: "vertical"` configuration attribute of the shape object.
 
 ### Lines in the mindmap mode
 
@@ -46,7 +46,7 @@ The PERT mode of Diagram is intended for rendering sequences of tasks and projec
 
 ## Setting connections between shapes
 
-To connect shapes in Diagram, you can apply one of the following two ways:
+To connect shapes in Diagram, you can use one of the following two ways:
 
 - **using line objects**
 
@@ -68,7 +68,7 @@ const data = [
 ];
 ~~~
 
-The `type` property specified in the line object allows you to specify individual type for a separate line.
+The `type` property in the line object lets you set an individual type for each line.
 
 :::note
 See [the full list of configuration properties of a line object](lines/configuration_properties.md).
