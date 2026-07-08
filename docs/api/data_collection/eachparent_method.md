@@ -14,8 +14,8 @@ description: You can learn about the eachParent method of data collection in the
 
 ~~~jsx
 eachParent(
-    id: string | number, 
-    callback: function, 
+    id: string | number,
+    callback: function,
     self?: boolean
 ): void
 ~~~

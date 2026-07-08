@@ -14,7 +14,7 @@ description: You can learn about the load method of data collection in the docum
 
 ~~~jsx
 load(
-    url: string | object, 
+    url: string | object,
     driver?: object | string
 ): promise;
 ~~~
