@@ -14,8 +14,8 @@ description: You can learn about the beforeEditorOpen event in the documentation
 
 ~~~jsx
 beforeEditorOpen: (
-    id: string | number, 
-    key: string, 
+    id: string | number,
+    key: string,
     subId?: string
 ) => boolean | void;
 ~~~

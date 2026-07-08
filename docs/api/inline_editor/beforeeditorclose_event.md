@@ -14,8 +14,8 @@ description: You can learn about the beforeEditorClose event in the documentatio
 
 ~~~jsx
 beforeEditorClose: (
-    id: string | number, 
-    key: string, 
+    id: string | number,
+    key: string,
     subId?: string
 ) => boolean | void;
 ~~~

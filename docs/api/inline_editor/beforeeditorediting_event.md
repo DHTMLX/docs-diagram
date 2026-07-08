@@ -14,10 +14,10 @@ description: You can learn about the beforeEditorEditing event in the documentat
 
 ~~~jsx
 beforeEditorEditing: (
-    value: string, 
-    currentValue: string, 
-    id: string | number, 
-    key: string, 
+    value: string,
+    currentValue: string,
+    id: string | number,
+    key: string,
     subId?: string
 ) => boolean | void;
 ~~~

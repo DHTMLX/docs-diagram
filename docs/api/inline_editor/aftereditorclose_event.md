@@ -14,8 +14,8 @@ description: You can learn about the afterEditorClose event in the documentation
 
 ~~~jsx
 afterEditorClose: (
-    id: string | number, 
-    key: string, 
+    id: string | number,
+    key: string,
     subId?: string
 ) => void;
 ~~~
