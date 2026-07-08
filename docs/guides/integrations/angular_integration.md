@@ -25,7 +25,7 @@ ng new my-angular-diagram-app
 ~~~
 
 :::note
-If you want to follow this guide, disable Server-Side Rendering (SSR) and Static Site Generation (SSG/Prerendering) when creating new Angular app!
+If you want to follow this guide, disable Server-Side Rendering (SSR) and Static Site Generation (SSG/Prerendering) when creating a new Angular app!
 :::
 
 The command above installs all the necessary tools, so you don't need to run any additional commands.
@@ -53,11 +53,11 @@ Now you should get the DHTMLX Diagram Editor source code. First of all, stop the
 
 ### Step 1. Package installation
 
-Download the [**trial Diagram package**](guides/diagram_editor/initialization.md#installing-diagram-editor-via-npm-or-yarn) and follow steps mentioned in the README file. Note that trial Diagram Editor is available 30 days only.
-  
+Download the [**trial Diagram package**](guides/diagram_editor/initialization.md#installing-diagram-editor-via-npm-or-yarn) and follow the steps mentioned in the README file. Note that the trial Diagram Editor is available for 30 days only.
+
 ### Step 2. Component creation
 
-Now you need to create an Angular component, to add Diagram Editor into the application. Create  the **diagram-editor** folder in the **src/app/** directory, add a new file into it and name it **diagram-editor.component.ts**. Then complete the steps described below.
+Now you need to create an Angular component to add Diagram Editor into the application. Create the **diagram-editor** folder in the **src/app/** directory, add a new file into it and name it **diagram-editor.component.ts**. Then complete the steps described below.
 
 #### Import source files
 
@@ -173,7 +173,7 @@ import { Component, ElementRef, OnInit, ViewChild, OnDestroy, ViewEncapsulation 
 
 @Component({
     encapsulation: ViewEncapsulation.None,
-    selector: 'diagram-editor', 
+    selector: 'diagram-editor',
     styleUrls: ['./diagram-editor.component.css'],
     template: `<div #container class = "widget"></div>`
 })
@@ -186,7 +186,7 @@ export class DiagramEditorComponent implements OnInit, OnDestroy {
     ngOnInit() {
         const data = getData(); // initialize data property
         this._diagram_editor = new DiagramEditor( this.editor_container.nativeElement, { type: "default" } as IDefaultEditorConfig);
-        
+
         this._diagram_editor.parse(data);
     }
 
@@ -196,7 +196,7 @@ export class DiagramEditorComponent implements OnInit, OnDestroy {
 }
 ~~~
 
-Now the Diagram Editor component is ready to use. When the element will be added to the page, it will initialize the Diagram Editor with data. You can provide necessary configuration settings as well. Visit our [Diagram Editor API docs](/category/diagram-editor-api/) to check the full list of available properties.
+Now the Diagram Editor component is ready to use. When the element is added to the page, it will initialize the Diagram Editor with data. You can provide necessary configuration settings as well. Visit our [Diagram Editor API docs](/category/diagram-editor-api/) to check the full list of available properties.
 
 #### Handling events
 
@@ -228,7 +228,7 @@ import { Component } from "@angular/core";
 
 @Component({
     selector: "app-root",
-    template: `<diagram-editor/>` // a template created in the "diagram-editor.component.ts" file 
+    template: `<diagram-editor/>` // a template created in the "diagram-editor.component.ts" file
 })
 export class AppComponent {
     name = "";
@@ -266,4 +266,4 @@ After that, you can start the app to see Diagram Editor loaded with data on a pa
 
 ![Diagram Editor initialization](/img/trial_diagram.png)
 
-Now you know how to integrate DHTMLX Diagram Editor with Angular. You can customize the code according to your specific requirements. The final example you can find on [**GitHub**](https://github.com/DHTMLX/angular-diagram-demo).
+Now you know how to integrate DHTMLX Diagram Editor with Angular. You can customize the code according to your specific requirements. You can find the final example on [**GitHub**](https://github.com/DHTMLX/angular-diagram-demo).

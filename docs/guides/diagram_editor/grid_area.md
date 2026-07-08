@@ -1,14 +1,14 @@
 ---
-sidebar_label: Grid area 
+sidebar_label: Grid area
 title: Editor Guides - Grid Area
 description: You can learn about the Grid Area of editor in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
 
 # Grid area
 
-Grid area is an area intended for editing a diagram. You can easily add new items, change their appearance and positioning, or remove them.
+Grid area is an area intended for editing a diagram. You can add new items, change their appearance and positioning, or remove them.
 
-In this section you will find what interface elements are available for each diagram item depending on the mode the editor is initialized in. The section also explains how to facilitate ease of designing a diagram by using keyboard shortcuts or operating several selected items at once.
+In this section you will find what interface elements are available for each diagram item depending on the mode the editor is initialized in. The section also explains how to simplify designing a diagram by using keyboard shortcuts or operating several selected items at once.
 
 :::note
 Distance between points in the Grid area depends on the value of the [grid step](api/diagram_editor/editor/config/gridstep_property.md)
@@ -121,11 +121,11 @@ When you click on any swimlane, it becomes editable and gets personal interface 
     - `"remove"` - to delete the selected swimlane
 - resizing handles (pull the handles of the editable swimlane to change its sizes)
 
-Besides, there are the abilities to add, move, or remove columns or rows of the swimlane via the options of the context menu. The context menu will appear after the user clicks on the icon of a swimlane subheader.
+You can also add, move, or remove columns or rows of the swimlane via the context menu options. The context menu will appear after the user clicks on the icon of a swimlane subheader.
 
 ![](/img/swimlane_contextmenu.png)
 
-Note, that some options of moving the first/last columns and rows are deactivated by internal settings of a swimlane.
+Note that some options of moving the first/last columns and rows are deactivated by internal settings of a swimlane.
 
 ## Editing attributes of an item
 
@@ -147,7 +147,7 @@ If you need to change the width and color of the lines, or to hide them at all, 
 
 ## Manipulating multiple items
 
-It is possible to select several diagram items via hovering them over with the left mouse button pressed. You can also select necessary items using keyboard shortcuts - Shift+Left Click.
+You can select several diagram items by hovering over them with the left mouse button pressed. You can also select necessary items using keyboard shortcuts - Shift+Left Click.
 
 You can operate all the selected items at once, namely:
 

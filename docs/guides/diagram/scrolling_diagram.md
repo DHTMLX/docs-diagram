@@ -6,7 +6,7 @@ description: You can learn about scrolling Diagram in the documentation of the D
 
 # Scrolling Diagram
 
-By default the component's size is set automatically to fit the content. If necessary, the component will take the size of the HTML container and render horizontal and vertical inner scrolls to fit the content.
+By default, the component's size is set automatically to fit the content. If necessary, the component will take the size of the HTML container and render horizontal and vertical inner scrolls to fit the content.
 
 ## Scrolling diagram
 
@@ -14,11 +14,11 @@ You can scroll a diagram to the area where the necessary item is situated via th
 
 <iframe src="https://snippet.dhtmlx.com/d7kvzq4r?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
-As an alternative way, you can scroll to the necessary position on the diagram by using the [`scrollTo()`](api/diagram/scrollto_method.md) method.
+Alternatively, you can scroll to the necessary position on the diagram by using the [`scrollTo()`](api/diagram/scrollto_method.md) method.
 
 <iframe src="https://snippet.dhtmlx.com/f970hbym?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
-## Getting scroll state 
+## Getting scroll state
 
 The Diagram API allows you to get the current position of the scroll via the related [`getScrollState()`](api/diagram/getscrollstate_method.md) method:
 

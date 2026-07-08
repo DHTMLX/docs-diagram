@@ -4,7 +4,7 @@ title: Building AI-powered Diagram
 description: Step-by-step guide to running the DHTMLX Diagram AI demo. Text-to-diagram org chart generation using the OpenAI API, with a live preview and JSON editor.
 ---
 
-# Building AI-powered Diagram  
+# Building AI-powered Diagram
 
 DHTMLX Diagram can be integrated with AI for creating AI-powered diagramming applications. We have prepared an example on how to use DHTMLX Diagram with AI to build an application for creating an org chart out of a request provided in natural language.
 
@@ -18,7 +18,7 @@ To download the project, clone the repository by using the following command:
 git clone diagram-org-chart-builder-ai-demo
 ~~~
 
-and then go the project repository via the command below:
+and then go to the project repository via the command below:
 
 ~~~jsx
 cd diagram-org-chart-builder-ai-demo
@@ -26,7 +26,7 @@ cd diagram-org-chart-builder-ai-demo
 
 ### Installing dependencies
 
-To install dependencies and run the app, you need to make use of a package manager. To install the demo app described in this guide, you should use [npm](https://www.npmjs.com/) by calling the following command:
+To install dependencies and run the app, you need a package manager. This guide uses [npm](https://www.npmjs.com/) — install the demo app by calling the following command:
 
 ~~~jsx
 npm install
@@ -34,7 +34,7 @@ npm install
 
 ### Adjusting environment variables
 
-Then you need to configure the environment variables. For this, create a new file named `.env` inside the **diagram-org-chart-builder-ai-demo** directory by copying the content of the `env.sample` file. 
+Then you need to configure the environment variables. For this, create a new file named `.env` inside the **diagram-org-chart-builder-ai-demo** directory by copying the content of the `env.sample` file.
 The newly created `.env` file will store your keys and configuration. Fill in the required values provided below:
 
 ~~~jsx title="diagram-org-chart-builder-ai-demo/.env"
@@ -71,7 +71,7 @@ npm start // this is the required start command
 You should see the output below in your terminal:
 
 ~~~jsx
-Server started on port 3001. 
+Server started on port 3001.
 ~~~
 
 Then open the web browser and navigate to: `http://localhost:3001` to see the application ready to generate diagrams.
@@ -83,7 +83,7 @@ These are the basic steps for transforming a text request into a diagram:
 - First, the user enters a text description of the diagram in plain terms, for example: "A diagram with a top manager and five departments each having two employees".
 - Then the prompt is sent to the backend, where the AI service generates a structured JSON configuration based on the request.
 - After that the frontend gets the resulting data and renders an interactive DHTMLX diagram instantly.
-- At the following stage, the corresponding JSON code is displayed in the code editor below the diagram. The user can fine-tune the code and edit the resulting diagram in real time.
+- Next, the corresponding JSON code is displayed in the code editor below the diagram. The user can fine-tune the code and edit the resulting diagram in real time.
 - Finally, the user can save the generated data in a JSON file or export the diagram to a PDF or PNG file.
 
 

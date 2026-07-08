@@ -6,14 +6,14 @@ description: You can learn about diagram items in the documentation of the DHTML
 
 # Diagram items
 
-The next guides introduce you to all available types of Diagram items, and discuss peculiarities on their configuration.
+The following guides introduce all available types of Diagram items and discuss the specifics of their configuration.
 
 import DocCardList from '@theme/DocCardList';
 import {useCurrentSidebarCategory} from '@docusaurus/theme-common';
 
 <DocCardList items={useCurrentSidebarCategory().items}/>
 
-After you have learnt the guides, you can check the following API sections to accelerate the development process:
+After you have read the guides, you can check the following API sections to accelerate the development process:
 
 - [Items API properties](category/items-api.md)
 - [DataCollection API](/api/data_collection/) (allows adding, removing, filtering data items (such as shapes, lines, line titles, groups, swimlanes), etc.)
@@ -22,7 +22,7 @@ After you have learnt the guides, you can check the following API sections to ac
 - [Diagram API](api/diagram/api_overview.md)
 - [Diagram Editor API](api/diagram_editor/editor/api_overview.md)
 
-To get more knowledge on how to load, customize, edit items and perform different operations over them, read the guides:
+To learn how to load, customize, and edit items and perform various operations on them, read the guides:
 
 - [Loading and storing data](guides/loading_data.md)
 - [Customizing items](guides/customization.md)

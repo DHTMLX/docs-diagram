@@ -24,7 +24,7 @@ To create a **Svelte** JS project, run the following command:
 npm create vite@latest
 ~~~
 
-Select Svelte and JavaScript options while creating the project. Let's name the project as **my-svelte-diagram-app**.
+Select Svelte and JavaScript options while creating the project. Let's name the project **my-svelte-diagram-app**.
 
 ### Installation of dependencies
 
@@ -34,7 +34,7 @@ Go to the app directory:
 cd my-svelte-diagram-app
 ~~~
 
-Then you need to install dependencies and run the app. For this, you need to make use of a package manager:
+Then you need to install dependencies and run the app. For this, you need to use a package manager:
 
 - if you use [**yarn**](https://yarnpkg.com/), you need to call the following commands:
 
@@ -58,11 +58,11 @@ Now you should get the DHTMLX Diagram Editor source code. First of all, stop the
 
 ### Step 1. Package installation
 
-Download the [**trial Diagram Editor package**](guides/diagram_editor/initialization.md#installing-diagram-editor-via-npm-or-yarn) and follow steps mentioned in the README file. Note that trial Diagram Editor is available 30 days only.
+Download the [**trial Diagram Editor package**](guides/diagram_editor/initialization.md#installing-diagram-editor-via-npm-or-yarn) and follow the steps mentioned in the README file. Note that the trial Diagram Editor is available for 30 days only.
 
 ### Step 2. Component creation
 
-Now you need to create a Svelte component, to add Diagram Editor into the application. Let's create a new file in the ***src/*** directory and name it ***DiagramEditor.svelte***.
+Now you need to create a Svelte component to add Diagram Editor into the application. Let's create a new file in the ***src/*** directory and name it ***DiagramEditor.svelte***.
 
 #### Importing source files
 
@@ -102,7 +102,7 @@ To display Diagram Editor on the page, you need to create the container for Diag
 
     let container; // initialize container for Diagram Editor
     let diagram_editor;
-    
+
     onMount(() => {
         // initialize the Diagram Editor component
         diagram_editor = new DiagramEditor(container, {});
@@ -187,12 +187,12 @@ Go to the ***DiagramEditor.svelte*** file and apply the passed `props` to the Di
     import { onMount, onDestroy } from "svelte";
     import { DiagramEditor } from "@dhx/trial-diagram";
     import "@dhx/trial-diagram/codebase/diagram.min.css"
-    
+
     export let data;
 
     let container;
     let diagram_editor;
-    
+
     onMount(() => {
         diagram_editor = new DiagramEditor(container, {});
         diagram_editor.parse(data);
@@ -206,7 +206,7 @@ Go to the ***DiagramEditor.svelte*** file and apply the passed `props` to the Di
 <div bind:this={container} class="widget"></div>
 ~~~
 
-Now the Diagram Editor component is ready to use. When the element will be added to the page, it will initialize the Diagram Editor with data. You can provide necessary configuration settings as well. Visit our [Diagram Editor API docs](/category/diagram-editor-api/) to check the full list of available properties.
+Now the Diagram Editor component is ready to use. When the element is added to the page, it will initialize the Diagram Editor with data. You can provide necessary configuration settings as well. Visit our [Diagram Editor API docs](/category/diagram-editor-api/) to check the full list of available properties.
 
 #### Handling events
 
@@ -240,4 +240,4 @@ After that, when we start the app, we should see Diagram Editor loaded with data
 
 ![Diagram Editor initialization](/img/trial_diagram.png)
 
-Now you should have a basic setup for integrating DHTMLX Diagram Editor with Svelte. You can customize the code according to your specific requirements. The final example you can find on [**GitHub**](https://github.com/DHTMLX/svelte-diagram-demo).
+Now you should have a basic setup for integrating DHTMLX Diagram Editor with Svelte. You can customize the code according to your specific requirements. You can find the final example on [**GitHub**](https://github.com/DHTMLX/svelte-diagram-demo).
