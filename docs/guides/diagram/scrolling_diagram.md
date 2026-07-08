@@ -37,6 +37,6 @@ You can catch the start of Diagram scrolling using the [`scroll`](api/diagram/sc
 
 ~~~jsx
 diagram.events.on("Scroll", (position) => {
-    alert("The diagram has been scrolled:" position);
+    alert("The diagram has been scrolled:" + position);
 });
 ~~~
