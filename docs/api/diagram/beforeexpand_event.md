@@ -14,7 +14,7 @@ description: You can learn about the beforeExpand event in the documentation of 
 
 ~~~jsx
 beforeExpand: (
-    id: string | number, 
+    id: string | number,
     dir?: string
 ) => boolean | void;
 ~~~
@@ -23,7 +23,7 @@ beforeExpand: (
 
 The callback of the event takes the following parameters:
 
-- `id` - (required) the id of an item 
+- `id` - (required) the id of an item
 - `dir` - (optional) the side the children will be shown in relation to the parent shape (`"left"` or `"right"` for *type:`"topic"`*, otherwise - undefined)
 
 ### Returns

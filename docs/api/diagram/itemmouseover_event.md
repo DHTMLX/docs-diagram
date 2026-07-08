@@ -14,7 +14,7 @@ description: You can learn about the itemMouseOver event in the documentation of
 
 ~~~jsx
 itemMouseOver: (
-    id: string | number, 
+    id: string | number,
     event: MouseEvent
 ) => void;
 ~~~

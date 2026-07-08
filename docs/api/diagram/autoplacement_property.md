@@ -1,5 +1,5 @@
 ---
-sidebar_label: autoplacement 
+sidebar_label: autoplacement
 title: autoplacement Property
 description: You can learn about the autoplacement property in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
@@ -13,7 +13,7 @@ description: You can learn about the autoplacement property in the documentation
 :::info
 The `autoplacement` property works only in the default mode of the diagram and only for shapes. It does not work if you use groups or swimlanes.
 
-Autoplacement will be applied only after the [`autoPlace()`](api/diagram/autoplace_method.md) method is applied. 
+Autoplacement will be applied only after the [`autoPlace()`](api/diagram/autoplace_method.md) method is applied.
 :::
 
 ### Usage
@@ -45,8 +45,8 @@ autoplacement: {
     mode: "direct",
     graphPadding: 200,
     placeMode: "orthogonal",
-    itemPadding: 20, 
-    levelPadding: 20 
+    itemPadding: 20,
+    levelPadding: 20
 }
 ~~~
 
@@ -74,7 +74,7 @@ diagram.autoPlace();
 
 Connector lines with no arrows are aligned "from center to center". They are straight and diagonal.
 
-![](/img/direct_mode.png) 
+![](/img/direct_mode.png)
 
 ### "edges" mode
 
@@ -120,7 +120,7 @@ Shapes are arranged on imaginary circles relative to the central shape, i.e. the
 
 ![](/img/edges_radial.png)
 
-**Change log**: 
+**Change log**:
 
 - The `itemPadding` and `levelPadding` parameters are added in v6.1.3
 - The `placeMode` parameter is added in v5.0
@@ -130,7 +130,7 @@ Shapes are arranged on imaginary circles relative to the central shape, i.e. the
 - [Configuring autoplacement for shapes](guides/diagram/configuration.md#configuring-autoplacement-for-shapes)
 - [Arranging shapes automatically](guides/manipulating_items.md#arranging-shapes-automatically)
 
-**Related sample**: 
+**Related sample**:
 
 - [Diagram. Default mode. Radial autoplacement with padding options](https://snippet.dhtmlx.com/huut0l1s)
 - [Diagram. Default mode. Arranging a generated radial dataset with autoplacement](https://snippet.dhtmlx.com/rwsime82)

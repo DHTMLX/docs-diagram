@@ -35,7 +35,7 @@ exportStyles: true
 Set the `exportStyles` property to *false* to prevent all styles from being sent to the export service:
 
 ~~~jsx
-const diagram = new dhx.Diagram("diagram_container", { 
+const diagram = new dhx.Diagram("diagram_container", {
     exportStyles: false
 });
 ~~~
@@ -43,7 +43,7 @@ const diagram = new dhx.Diagram("diagram_container", {
 Or define a set of styles you want to be exported. For that, you need to set string values with the absolute paths to the desired styles to the `exportStyles` array:
 
 ~~~jsx
-const diagram = new dhx.Diagram("diagram_container", { 
+const diagram = new dhx.Diagram("diagram_container", {
     exportStyles:[
         "https://mySite.com/exportStyle.css",
         "https://mySite.com/secondExportStyle.css"

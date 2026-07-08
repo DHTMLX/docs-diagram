@@ -43,7 +43,7 @@ margin: {
 
 ~~~jsx
 const diagram = new dhx.Diagram("diagram_container", {
-    type: "org", 
+    type: "org",
     margin: {
         x: 20, y: 20,
         itemX: 50, itemY: 50

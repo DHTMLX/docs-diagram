@@ -14,7 +14,7 @@ description: You can learn about the lineClick event in the documentation of the
 
 ~~~jsx
 lineClick: (
-    id: string | number, 
+    id: string | number,
     event: MouseEvent
 ) => void;
 ~~~
