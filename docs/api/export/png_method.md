@@ -4,7 +4,7 @@ title: png Method
 description: You can learn about the png method in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
 
-# png
+# png()
 
 ### Description
 
@@ -34,7 +34,7 @@ A promise of data export
 
 ### Example
 
-~~~jsx 
+~~~jsx
 const diagram = new dhx.Diagram("diagram_container", {
     // config options
 });
@@ -57,7 +57,7 @@ diagram.export.png({
 
 **Related articles**:  [Exporting Diagram](guides/data_export.md)
 
-**Related samples**: 
+**Related samples**:
 
 - [Diagram. Export. Export diagram](https://snippet.dhtmlx.com/ybpmz0zk)
 - [Diagram. Export. Bottom-left watermark](https://snippet.dhtmlx.com/d56spdsc)

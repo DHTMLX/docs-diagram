@@ -57,7 +57,7 @@ A promise of data export
 
 ### Example
 
-~~~jsx 
+~~~jsx
 const diagram = new dhx.Diagram("diagram_container", {
     // config options
 });
@@ -82,7 +82,7 @@ diagram.export.pdf({
 ### Details
 
 :::info
-It is necessary to set sufficient margin for correct display of `headerTemplate`/`footerTemplate`.
+Set a sufficient margin for correct display of `headerTemplate`/`footerTemplate`.
 :::
 
 ## List of formats
@@ -103,7 +103,7 @@ It is necessary to set sufficient margin for correct display of `headerTemplate`
 
 **Related articles**:  [Exporting Diagram](guides/data_export.md)
 
-**Related samples**: 
+**Related samples**:
 
 - [Diagram. Export. Export diagram](https://snippet.dhtmlx.com/ybpmz0zk)
 - [Diagram. Export. Bottom-left watermark](https://snippet.dhtmlx.com/d56spdsc)
