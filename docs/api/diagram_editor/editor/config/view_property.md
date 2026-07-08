@@ -51,7 +51,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
         },
         editbar: false
     }
-    // other configurations 
+    // other configurations
 });
 ~~~
 

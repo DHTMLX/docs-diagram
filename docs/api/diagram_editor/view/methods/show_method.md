@@ -33,10 +33,10 @@ const editor = new dhx.DiagramEditor("editor_container", {
     type: "default"
 });
 
-// shows the Shapebar view 
-editor.view.show("shapebar"); 
+// shows the Shapebar view
+editor.view.show("shapebar");
 
-// shows Shapebar, Editbar, and Toolbar 
+// shows Shapebar, Editbar, and Toolbar
 editor.view.show();
 ~~~
 

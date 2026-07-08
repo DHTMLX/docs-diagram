@@ -43,7 +43,7 @@ const data = [
         "type": "rectangle",
         "text": "Shape 2"
     },
- 
+
     // connector line
     {
         "id": "ab",
@@ -53,7 +53,7 @@ const data = [
     },
 ];
 
-const editor = new dhx.DiagramEditor("editor_container"); 
+const editor = new dhx.DiagramEditor("editor_container");
 editor.parse(data);
 ~~~
 

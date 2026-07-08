@@ -14,9 +14,9 @@ description: You can learn about the lineTitleMoveEnd event of editor in the doc
 
 ~~~jsx
 "lineTitleMoveEnd": ({
-    event: PointerEvent, 
-    lineId: string | number, 
-    titleId: string | number, 
+    event: PointerEvent,
+    lineId: string | number,
+    titleId: string | number,
     coords: obj
 }) => void;
 ~~~

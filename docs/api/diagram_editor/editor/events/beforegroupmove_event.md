@@ -18,10 +18,10 @@ The event fires just for the target element despite the number of selected eleme
 
 ~~~jsx
 "beforeGroupMove": ({
-    id: string | number, 
+    id: string | number,
     batch: (string | number)[],
     coords: object,
-    event: PointerEvent 
+    event: PointerEvent
 }) => boolean | void;
 ~~~
 
@@ -35,7 +35,7 @@ The callback of the event is called with an object with the following parameters
     - `x` - the horizontal position of the group/swimlane, moving from left to right
     - `y` - the vertical position of the group/swimlane, moving from top to bottom
   - `event` - an event object
-  
+
 ### Returns
 
 The callback returns `false` to prevent the group or swimlane from being moved; otherwise, `true`
@@ -56,7 +56,7 @@ editor.parse(data);
 editor.events.on("beforeGroupMove", ({ id, coords }) => {
     console.log(`
         Group ${id} is at the position:
-            x: ${coords.x} 
+            x: ${coords.x}
             y: ${coords.y}
     `);
     return true;

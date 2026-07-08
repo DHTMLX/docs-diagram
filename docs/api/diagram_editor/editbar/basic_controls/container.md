@@ -1,6 +1,6 @@
 ---
 sidebar_label: Container
-title: Editbar Basic Controls - Container 
+title: Editbar Basic Controls - Container
 description: You can explore the Container control of Editbar in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
@@ -17,7 +17,7 @@ description: You can explore the Container control of Editbar in the documentati
     type: "container",
     html: HTMLElement | string,
     wrap?: boolean, // false by default
-    
+
     css?: string,
     disabled?: boolean, // false by default
     hidden?: boolean, // false by default
@@ -55,7 +55,7 @@ description: You can explore the Container control of Editbar in the documentati
 #### Service properties and methods
 
 :::warning
-Note that it's highly not recommended to redefine the service properties and methods for the default types of controls, since it may cause breaks in their functionality. 
+Note that we strongly recommend not redefining the service properties and methods for the default types of controls, since it may cause breaks in their functionality.
 :::
 
 - `$layout` - (optional) - a callback function that allows setting the structure of a control. Returns the configuration of the [Container](https://docs.dhtmlx.com/suite/form/container/) Form control. Called with the following parameter:

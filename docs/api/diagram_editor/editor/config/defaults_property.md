@@ -63,7 +63,7 @@ After defining the default settings for the shape/line of separate types, you ca
 
 **Change log**: The ability to set the default configuration for lines was added in v4.2
 
-**Related articles**:  
+**Related articles**:
 
 - [Setting the default configuration of a shape](guides/diagram/configuration.md#setting-the-default-configuration-of-a-shape)
 - [Setting the preview of shapes](guides/diagram_editor/shapebar.md#setting-the-preview-of-shapes)

@@ -1,6 +1,6 @@
 ---
 sidebar_label: Textarea
-title: Editbar Basic Controls - Textarea 
+title: Editbar Basic Controls - Textarea
 description: You can explore the Textarea control of Editbar in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
@@ -17,7 +17,7 @@ description: You can explore the Textarea control of Editbar in the documentatio
     type: "textarea",
     key?: string | string[],
     wrap?: boolean, // false by default
-    
+
     css?: string,
     disabled?: boolean, // false by default
     hidden?: boolean, // false by default
@@ -27,7 +27,7 @@ description: You can explore the Textarea control of Editbar in the documentatio
 
     maxlength?: number | string,
     minlength?: number | string,
-    placeholder?: string, 
+    placeholder?: string,
     readOnly?: boolean, // false by default
 
     // for `wrap:true` check the label properties for the Fieldset
@@ -35,7 +35,7 @@ description: You can explore the Textarea control of Editbar in the documentatio
     labelWidth?: string | number,
     labelPosition?: "left" | "top", // "top" by default
 
-    // service properties and methods 
+    // service properties and methods
     $on?: { [eventName: string]: function },
     $handler?: function,
     $setValue?: function,
@@ -48,7 +48,7 @@ description: You can explore the Textarea control of Editbar in the documentatio
 ### Basic properties
 
 - `type` - (required) the type of a control. Set it to `"textarea"`
-- `key` - (optional) the name of the specified/modified property or the path to it in the object of a Diagram item 
+- `key` - (optional) the name of the specified/modified property or the path to it in the object of a Diagram item
 - `wrap` - (optional) allows displaying the external wrapping. *false* by default
 - `css` - (optional) adds style classes to a control
 - `hidden` - (optional) defines whether a control is hidden. *false* by default
@@ -67,7 +67,7 @@ description: You can explore the Textarea control of Editbar in the documentatio
 ### Service properties and methods
 
 :::warning
-Note that it's highly not recommended to redefine the service properties and methods for the default types of controls, since it may cause breaks in their functionality. 
+Note that we strongly recommend not redefining the service properties and methods for the default types of controls, since it may cause breaks in their functionality.
 :::
 
 - `$on` - (optional) - allows setting an event listener. The object has the following properties:
@@ -75,12 +75,12 @@ Note that it's highly not recommended to redefine the service properties and met
         - `object` - an object with the following properties:
             - `control` - the [Textarea](https://docs.dhtmlx.com/suite/form/textarea/) Form control
             - `editor` - the object of the Diagram Editor
-            - `id` - the id of a Diagram item 
+            - `id` - the id of a Diagram item
         - `arguments` - (optional) - the [original event arguments](https://docs.dhtmlx.com/suite/category/form-textarea-events/)
 - `$handler` - (optional) - a callback function that allows handling actions on firing the `change` and `input` events of the [Textarea](https://docs.dhtmlx.com/suite/form/textarea/) Form control and the `change` event of DataCollection. Called with the following parameter:
     - `object` - an object with the following properties:
-        - `id` - the id of a Diagram item 
-        - `key` - the name of the specified/modified property or the path to it in the object of a Diagram item 
+        - `id` - the id of a Diagram item
+        - `key` - the name of the specified/modified property or the path to it in the object of a Diagram item
         - `editor` - the object of the Diagram Editor
         - `control` - the object of the [Textarea](https://docs.dhtmlx.com/suite/form/textarea/) Form control the component is built on
         - `value` - the new value of the [Textarea](https://docs.dhtmlx.com/suite/form/textarea/) Form control
@@ -88,7 +88,7 @@ Note that it's highly not recommended to redefine the service properties and met
     - `object` - an object with the following properties:
         - `editor` - the object of the Diagram Editor
         - `control` - the object of the [Textarea](https://docs.dhtmlx.com/suite/form/textarea/) Form control the component is built on
-        - `value` - the value of a Diagram item 
+        - `value` - the value of a Diagram item
 - `$layout` - (optional) - a callback function that allows setting the structure of a control. Returns the configuration of the [Textarea](https://docs.dhtmlx.com/suite/form/textarea/) Form control. Called with the following parameter:
     - `object` - the configuration of a control without service properties
 

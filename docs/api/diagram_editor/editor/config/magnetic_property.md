@@ -31,7 +31,7 @@ magnetic?: {
 ### Default config
 
 ~~~jsx
-magnetic: true 
+magnetic: true
 ~~~
 
 The magnetic mode is enabled with the following configuration:

@@ -8,7 +8,7 @@ description: You can learn about the lineConfig property in the documentation of
 
 ### Description
 
-@short: Optional. An object with default configuration for the connector lines 
+@short: Optional. An object with default configuration for the connector lines
 
 :::info
 The `lineType`, `lineDirection` and `arrowsHidden` settings will be applied to the new connector lines which are added via the editor.

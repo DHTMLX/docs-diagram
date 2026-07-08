@@ -14,7 +14,7 @@ description: You can learn about the beforeItemResize event of editor in the doc
 
 ~~~jsx
 "beforeItemResize": ({
-    id: string | number, 
+    id: string | number,
     width: number,
     height: number,
     x: number,

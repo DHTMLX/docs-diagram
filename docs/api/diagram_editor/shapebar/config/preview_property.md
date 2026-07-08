@@ -60,12 +60,12 @@ The values of the `gap` and `scale` properties can be redefined for a separate s
 const defaults = {
     rectangle: {
         preview: {
-            scale: 0.72, 
+            scale: 0.72,
             gap: 8
         }
     }
 }
- 
+
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {
@@ -76,7 +76,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
             }
         }
     },
-    defaults        
+    defaults
 });
 ~~~
 

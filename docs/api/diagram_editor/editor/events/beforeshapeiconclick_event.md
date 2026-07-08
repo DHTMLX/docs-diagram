@@ -14,7 +14,7 @@ description: You can learn about the beforeShapeIconClick event of editor in the
 
 ~~~jsx
 "beforeShapeIconClick": (
-    iconId: string, 
+    iconId: string,
     shape: object
 ) => boolean | void;
 ~~~

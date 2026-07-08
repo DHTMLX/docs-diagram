@@ -1,6 +1,6 @@
 ---
 sidebar_label: History manager API overview
-title: History manager API overview 
+title: History manager API overview
 description: You can check a History manager overview in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
 
@@ -9,7 +9,7 @@ description: You can check a History manager overview in the documentation of th
 A set of APIs that you can use for managing the history of actions in the Diagram Editor. Use the `history` keyword to access the History manager via the `editor` object:
 
 ~~~jsx {5}
-const editor = new dhx.DiagramEditor("editor_container", { 
+const editor = new dhx.DiagramEditor("editor_container", {
     type: "default" // only default
 });
 // ...

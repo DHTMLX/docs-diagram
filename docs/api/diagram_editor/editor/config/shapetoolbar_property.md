@@ -1,5 +1,5 @@
 ---
-sidebar_label: shapeToolbar 
+sidebar_label: shapeToolbar
 title: shapeToolbar Property of Editor
 description: You can learn about the shapeToolbar property of editor in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
@@ -26,7 +26,7 @@ As an array, the `shapeToolbar` property can include:
     - in the org chart mode: `"add"` | `"horizontal"` | `"vertical"` | `"remove"`
     - in the mindmap mode: `"add"` | `"addLeft"` | `"addRight"` | `"remove"`
 - a set of icon objects. Each icon object can have the following properties:
-    - `id: string` -  (required) the id of an icon. Note, that the usage of the default names of the toolbar controls as ids of new controls is prohibited
+    - `id: string` -  (required) the id of an icon. Note that using the default names of the toolbar controls as ids of new controls is prohibited
     - `content: string` - (required) the content of the icon. It can contain an HTML element with the name of the icon class
     - `check: function` - (optional) checks whether the icon should be applied to the shape. The function takes a shape object and returns *true*, if the icon will be rendered for this shape
     - `css: function` - (optional) the function which returns the name(s) of CSS class(es) that should be applied to the shape
@@ -65,7 +65,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 
 ### Redefining the default toolbar for certain items
 
-You may need to provide some items with a specific toolbar controls, while other items will have the default one. In this case you should enable the default toolbar by specifying the *true* value in the `shapeToolbar` array and add the necessary icon object that will contain a check function defining what shape the icon will be applied for.  
+You may need to provide some items with a specific toolbar controls, while other items will have the default one. In this case you should enable the default toolbar by specifying the *true* value in the `shapeToolbar` array and add the necessary icon object that will contain a check function defining what shape the icon will be applied for.
 
 ~~~jsx title="Setting the download icon for items with the start type"
 const editor = new dhx.DiagramEditor("editor_container", {

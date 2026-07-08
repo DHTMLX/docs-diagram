@@ -18,7 +18,7 @@ The event fires just for the target element despite the number of selected eleme
 
 ~~~jsx
 "groupMoveEnd": ({
-    id: string | number, 
+    id: string | number,
     batch: (string | number)[],
     coords: object,
     event: PointerEvent,
@@ -51,8 +51,8 @@ editor.parse(data);
 // attaching a handler to the event
 editor.events.on("groupMoveEnd", ({ id, coords }) => {
     console.log(`
-        Group ${id} is at the position: 
-            x: ${coords.x} 
+        Group ${id} is at the position:
+            x: ${coords.x}
             y: ${coords.y}
     `);
 });

@@ -54,8 +54,8 @@ editor.parse(data);
 // attaching a handler to the event
 editor.events.on("itemResizeEnd", ({ id, width, height }) => {
     console.log(`
-        The item ${id} finished resizing: 
-            the final width: ${width} 
+        The item ${id} finished resizing:
+            the final width: ${width}
             the final height: ${height}
     `);
     // Here you can save the new dimensions of the item on the server

@@ -1,7 +1,7 @@
 ---
 sidebar_label: Header
-title: Editbar Complex Controls - Header 
-description: You can explore the Header control of Editbar in the documentation of the the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+title: Editbar Complex Controls - Header
+description: You can explore the Header control of Editbar in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -65,9 +65,9 @@ const editor= new dhx.DiagramEditor("editor_container", {
         editbar: {
             properties: {
                 $group: [
-                    { 
-                        type: "header", 
-                        label: "Group header style" 
+                    {
+                        type: "header",
+                        label: "Group header style"
                     }
                 ]
             }

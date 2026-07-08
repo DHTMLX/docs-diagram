@@ -20,7 +20,7 @@ The event doesn't work with the *parent item of a moved item* and with a *moved 
 
 ~~~jsx
 "itemTarget": ({
-    id: string | number, 
+    id: string | number,
     targetId: string | number,
     batch: (string | number)[],
     event: PointerEvent
