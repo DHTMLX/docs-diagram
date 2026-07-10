@@ -14,7 +14,7 @@ description: You can learn about the afterItemResize event of editor in the docu
 
 ~~~jsx
 "afterItemResize": ({
-    id: string | number, 
+    id: string | number,
     width: number,
     height: number,
     x: number,
@@ -53,8 +53,8 @@ editor.parse(data);
 // attaching a handler to the event
 editor.events.on("afterItemResize", ({ id, width, height }) => {
     console.log(`
-        The item ${id} has been resized: 
-            width: ${width} 
+        The item ${id} has been resized:
+            width: ${width}
             height: ${height}
     `);
 });

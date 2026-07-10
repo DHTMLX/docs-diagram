@@ -1,12 +1,12 @@
 ---
-sidebar_label: Customizing items 
+sidebar_label: Customizing items
 title: Customizing Items
 description: You can learn about customizing items in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
 
 # Customizing items
 
-You can easily modify the appearance of diagram items by using various [configuration properties](/category/items-api/) inside their objects. Besides, you can change the look and feel of the diagram according to your needs by creating custom shapes of the desired appearance.
+You can modify the appearance of diagram items by using various [configuration properties](/category/items-api/) inside their objects. You can also change the look and feel of the diagram by creating custom shapes.
 
 ## Styling shapes and lines via the configuration properties
 
@@ -40,7 +40,7 @@ const defaults = {
 
 ### Styling lines
 
-To change the look of connector lines, use the necessary configuration properties inside the line object. 
+To change the look of connector lines, use the necessary configuration properties inside the line object.
 
 ~~~jsx
 const data = [
@@ -86,7 +86,7 @@ You can create a customized diagram by adding new types of shapes into the diagr
 While using the org and mindmap charts in the Diagram Editor, you can add a custom style for target items.
 
 :::note
-The stylization doesn't work with the parent item of the moved item and with the moved item with the property `giveItem: false`
+The stylization doesn't apply to the parent of the moved item, or to a moved item that has `giveItem: false`
 :::
 
 ~~~jsx

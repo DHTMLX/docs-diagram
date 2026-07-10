@@ -18,7 +18,7 @@ The method can't be used to change the *id* or *type* of the item
 
 ~~~jsx
 update(
-    id: string | number, 
+    id: string | number,
     newItem: object
 ): void;
 ~~~

@@ -8,21 +8,21 @@ description: You can learn about the serialize method of data collection in the 
 
 ### Description
 
-@short: Exports the current diagram data 
+@short: Exports the current diagram data
 
 ### Usage
 
 ~~~jsx
-serialize(): object[] | { data: object[]; links: object[] }; 
+serialize(): object[] | { data: object[]; links: object[] };
 ~~~
 
 ### Returns
 
 Depending on the diagram mode, the method returns:
 
-- `object[]` - (for the default, org chart and mindmap Diagram modes) an array of objects for each item and link from Diagram 
+- `object[]` - (for the default, org chart and mindmap Diagram modes) an array of objects for each item and link from Diagram
 - `{ data: object[]; links: object[] }` - (for the PERT Diagram mode) an object with:
-  - the `data` array of objects (for shapes: `"task"`, `"milestone"`, `"project"`) 
+  - the `data` array of objects (for shapes: `"task"`, `"milestone"`, `"project"`)
   - the `links` array of objects (for connections between shapes)
 
 ### Example

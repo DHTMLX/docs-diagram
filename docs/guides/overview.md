@@ -6,12 +6,12 @@ description: You can study JavaScript diagram guides in the documentation of the
 
 # Guides overview
 
-The guidance information explores in detail how to create a diagram of any complexity using DHTMLX Diagram.
-The documentation is segmented into task-oriented manuals which discuss the principles of building and configuring a diagram, the ways of editing its items. The guides embody a lot of tools to assist in actual use of DHTMLX Diagram: examples of usage, illustrations, animated images.
+These guides explain in detail how to create a diagram of any complexity using DHTMLX Diagram.
+The documentation is divided into task-oriented manuals that discuss the principles of building and configuring a diagram and the ways of editing its items. The guides include many aids to help you use DHTMLX Diagram: usage examples, illustrations, and animated images.
 
 ## Diagram
 
-The section details the process of adding DHTMLX Diagram on a page, describes the features of Diagram configuration, explains the way of scrolling a large diagram.
+This section details how to add DHTMLX Diagram to a page, describes Diagram configuration, and explains how to scroll a large diagram.
 
 - [How to start with Diagram](guides/diagram/initialization.md)
 - [Diagram configuration](guides/diagram/configuration.md)
@@ -19,7 +19,7 @@ The section details the process of adding DHTMLX Diagram on a page, describes th
 
 ## Diagram items
 
-The section includes descriptions for all default diagram items (shapes, lines, groups, swimlanes), the way of adding custom shapes, and teaches how to configure the items and set connections between them. 
+This section describes all default diagram items (shapes, lines, groups, swimlanes), shows how to add custom shapes, and teaches how to configure the items and set connections between them.
 
 - [Default shapes](shapes/default_shapes.md)
 - [Custom shape](shapes/custom_shape.md)
@@ -29,11 +29,11 @@ The section includes descriptions for all default diagram items (shapes, lines, 
 
 ## Diagram Editor
 
-Learn how to initialize Diagram Editor - a great tool which significantly accelerates the process of designing your diagram.
+Learn how to initialize Diagram Editor, a tool that speeds up designing your diagram.
 
 - [How to start with Diagram Editor](guides/diagram_editor/initialization.md)
 
-The guides give you a broad overview of all parts of the interface of the editor and their settings, present examples of customization of the interface elements you may have at your disposal.
+The guides give a broad overview of all parts of the editor interface and their settings, and present customization examples for the interface elements.
 
 - [Toolbar](guides/diagram_editor/toolbar.md)
 - [Shapebar](guides/diagram_editor/shapebar.md)
@@ -47,20 +47,20 @@ Read the articles to learn the ways of loading data into the Diagram, serializin
 - [Loading and storing data](guides/loading_data.md)
 - [Exporting Diagram](guides/data_export.md)
 
-With the following articles you will be able to create a fully customized diagram and breath life into it: operate the diagram and its items via the API, attach handlers to the necessary events.
+The following articles help you create a fully customized diagram: operate the diagram and its items via the API and attach handlers to the necessary events.
 
 - [Manipulating items](guides/manipulating_items.md)
 - [Customizing items](guides/customization.md)
 - [Event handling](guides/event_handling.md)
 
-Learn how to adapt the diagram to various languages and easily edit the text elements.
+Learn how to adapt the diagram to various languages and edit the text elements.
 
 - [Localization](guides/localization.md)
 - [Inline Editing](guides/inline_editing.md)
 
 ## Integration guides
 
-The articles give you examples of usage a Diagram with different client-side frameworks.
+The articles give you examples of using Diagram with different client-side frameworks.
 
 - [Integration with Angular](guides/integrations/angular_integration.md)
 - [Integration with React](guides/integrations/react_integration.md)
@@ -68,7 +68,7 @@ The articles give you examples of usage a Diagram with different client-side fra
 
 ## Touch support
 
-You can easily create responsive web applications using DHTMLX Diagram due to built-in touch support. Check out how UI widgets work on touch devices in the [Touch support](guides/touch_support.md) guide.
+You can create responsive web applications with DHTMLX Diagram thanks to built-in touch support. Check out how UI widgets work on touch devices in the [Touch support](guides/touch_support.md) guide.
 
 ## TypeScript support
 

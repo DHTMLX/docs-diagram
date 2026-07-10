@@ -14,7 +14,7 @@ description: You can learn about the expandItem method in the documentation of t
 
 ~~~jsx
 expandItem(
-    id: string | number, 
+    id: string | number,
     dir?: string
 ): void;
 ~~~

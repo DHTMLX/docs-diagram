@@ -14,7 +14,7 @@ description: You can learn about the filter method of data collection in the doc
 
 ~~~jsx
 filter(
-    rule?: function, 
+    rule?: function,
     config?: {
         id?: string,
         add?: boolean,

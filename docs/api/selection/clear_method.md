@@ -20,8 +20,8 @@ clear(): void;
 
 ~~~jsx {8}
 // a diagram must be created with the "select:true" option
-const diagram = new dhx.Diagram("diagram_container", { 
-    select: true 
+const diagram = new dhx.Diagram("diagram_container", {
+    select: true
 });
 // loading data
 diagram.data.parse(data);
@@ -32,7 +32,7 @@ diagram.selection.clear();
 
 **Change log**: Added in v6.0
 
-**Related articles**:  
+**Related articles**:
 
 - [diagram.config.select](api/diagram/select_property.md)
 - [Selecting items](guides/manipulating_items.md#selecting-items)

@@ -14,7 +14,7 @@ description: You can learn about the itemMouseOut event in the documentation of 
 
 ~~~jsx
 itemMouseOut: (
-    id: string | number, 
+    id: string | number,
     event: MouseEvent
 ) => void;
 ~~~

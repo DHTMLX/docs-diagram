@@ -19,21 +19,21 @@ diagram.events.on("ShapeClick", (id) => {
 });
 ~~~
 
-You can attach several handlers to the same event and all of them will be executed. If some of handlers return *false*, the related operations will be blocked. Event handlers are processed in the same order that they are attached.
+You can attach several handlers to the same event and all of them will be executed. If some of the handlers return *false*, the related operations will be blocked. Event handlers are processed in the same order that they are attached.
 
 ## Detaching event listeners
 
-To detach events, use `diagram.events.detach()` method:
+To detach events, use the `diagram.events.detach()` method:
 
 ~~~jsx
 diagram.events.on("CustomEvent", args);
- 
+
 diagram.events.detach("CustomEvent");
 ~~~
 
 ## Calling events
 
-To call events, use the `diagram.events.fire()`.
+To call events, use the `diagram.events.fire()` method.
 
 ~~~jsx
 diagram.events.fire("CustomEvent", args);
@@ -46,7 +46,7 @@ Normally, events are called automatically and you don't need to use this method.
 
 ### Diagram events
 
-Check the full list of the Diagram API events in the [API reference](api/diagram/api_overview.md#diagram-events). 
+Check the full list of the Diagram API events in the [API reference](api/diagram/api_overview.md#diagram-events).
 
 ### Editor events
 
@@ -67,11 +67,11 @@ editor.diagram.events.on("ShapeClick", (id) => {
 });
 ~~~
 
-This way can be also used if you need to apply the events which are listed below.
+This way can also be used if you need to apply the events which are listed below.
 
 ### CellManager events
 
-Check the full list of the CellManager API events in the [API Reference](/api/cell_manager/#events). 
+Check the full list of the CellManager API events in the [API Reference](/api/cell_manager/#events).
 
 ### DataCollection events
 

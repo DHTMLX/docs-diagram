@@ -14,7 +14,7 @@ description: You can learn about the shapeClick event in the documentation of th
 
 ~~~jsx
 shapeClick: (
-    id: string | number, 
+    id: string | number,
     event: MouseEvent
 ) => void;
 ~~~

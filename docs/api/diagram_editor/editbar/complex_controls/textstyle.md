@@ -1,7 +1,7 @@
 ---
 sidebar_label: Text style
-title: Editbar Complex Controls - Text style 
-description: You can explore the Text style control of Editbar in the documentation of the the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+title: Editbar Complex Controls - Text style
+description: You can explore the Text style control of Editbar in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

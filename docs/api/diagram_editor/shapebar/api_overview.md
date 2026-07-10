@@ -1,6 +1,6 @@
 ---
 sidebar_label: Shapebar API overview
-title: Shapebar API overview 
+title: Shapebar API overview
 description: You can check a Shapebar overview in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
 
@@ -36,7 +36,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
             },
             sections: {
                 "Swimlane": [{ swimlane: true }],
-                "Groups": [{ group: true }],   
+                "Groups": [{ group: true }],
                 "Flowchart shapes": [{ flowShapes: true }],
                 "Org shapes, text, topic": [{ org: true }, "text", "topic"]
             }

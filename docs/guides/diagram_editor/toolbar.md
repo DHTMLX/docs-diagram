@@ -6,7 +6,7 @@ description: You can learn about the Toolbar of editor in the documentation of t
 
 # Toolbar
 
-Toolbar is a top part of Diagram Editor that helps users to control the editing process.
+Toolbar is a top part of Diagram Editor that helps users control the editing process.
 
 ![](/img/diagram-editor-toolbar/scale-default-mode.png)
 
@@ -257,11 +257,11 @@ Toolbar items are represented by **service elements**. You can use and configure
 
 - `resizePoints` - shows/hides the **resize points**
 
-- `magnetic` - turns on/of the `magnetic` functionality
+- `magnetic` - turns on/off the `magnetic` functionality
 
-- `zoomIn` - decreases the scale value by 0.05 (5%)
+- `zoomIn` - increases the scale value by 0.05 (5%)
 
-- `zoomOut` - increases the scale value by 0.05 (5%)
+- `zoomOut` - decreases the scale value by 0.05 (5%)
 
 <hr>
 
@@ -360,7 +360,7 @@ Toolbar items are represented by **service elements**. You can use and configure
 
 - `alignVerticalBottom` - aligns elements vertically at the bottom
 
-- `distribute` - forms a group of service elements for distributing of the Diagram Editor elements
+- `distribute` - forms a group of service elements for distributing the Diagram Editor elements
 
     <details>
     The `distribute` item has the following structure:
@@ -416,7 +416,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
         toolbar: {
             items: [
                 {
-                    type: "button", 
+                    type: "button",
                     value: "Best button"
                 }
             ]

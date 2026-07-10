@@ -1,7 +1,7 @@
 ---
 sidebar_label: What's new
 title: What's New
-description: You can learn a new information about DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
+description: You can learn new information about DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
 
 # What's new
@@ -31,7 +31,7 @@ Released on June 17, 2026
 - Diagram Editor. Fixed the bug that caused a shape to be deleted while editing its text
 - Diagram. Fixed a Safari-specific bug where lines with the `backArrow: "filled"` property were not rendered correctly
 
-## Version 6.1.3 
+## Version 6.1.3
 
 Released on May 21, 2026
 
@@ -45,7 +45,7 @@ Released on May 21, 2026
 - Diagram. Fixed the issue where calling [`autoPlace()`](api/diagram/autoplace_method.md) ignored [`fromSide` and `toSide`](lines/configuration_properties.md) link values, ensuring the diagram structure remains consistent
 - Diagram. The `Radial` autoplacement algorithm was refactored to fix the issue with critically large distances between shapes, providing a more compact layout
 
-## Version 6.1.2 
+## Version 6.1.2
 
 Released on April 2, 2026
 
@@ -55,7 +55,7 @@ Released on April 2, 2026
 - Diagram Editor. The issue where pressing the <kbd>Backspace</kbd> key during inline text editing would delete the shape or the line title is fixed
 - Export. A security vulnerability in PDF/PNG export that allowed arbitrary local file access via HTML injection is fixed through improved sanitization and environment hardening
 
-## Version 6.1.1 
+## Version 6.1.1
 
 Released on February 5, 2026
 
@@ -86,12 +86,12 @@ Released on November 25, 2025
 ### Updates
 
 - DataCollection API. Updates for the PERT mode:
-    - the [`parse()`](api/data_collection/parse_method.md) method may take as the first parameter an object with `data` and `links` arrays 
-    - the [`serialize()`](api/data_collection/serialize_method.md) method may return an object with `data` and `links` arrays 
+    - the [`parse()`](api/data_collection/parse_method.md) method may take as the first parameter an object with `data` and `links` arrays
+    - the [`serialize()`](api/data_collection/serialize_method.md) method may return an object with `data` and `links` arrays
 - Diagram API. The ability to set the format of rendering dates in the task shapes for the PERT mode:
     - a new `dateFormat` parameter for the [`typeConfig`](api/diagram/typeconfig_property.md) configuration property
 - Diagram/Diagram Editor API. The ability to define the connection type of the lines:
-    - a new `connectType` parameter for the [`lineConfig`](api/diagram/lineconfig_property.md) configuration property of Diagram 
+    - a new `connectType` parameter for the [`lineConfig`](api/diagram/lineconfig_property.md) configuration property of Diagram
     - a new `connectType` parameter for the [`lineConfig`](api/diagram_editor/editor/config/lineconfig_property.md) configuration property of Diagram Editor
 - Export API. The [`pdf()`](api/export/pdf_method.md) and [`png()`](api/export/png_method.md) export functions return a promise of data export
 
@@ -107,8 +107,8 @@ Released on November 25, 2025
 
 ### New samples
 
-- [Diagram. PERT chart. Initialization](https://snippet.dhtmlx.com/4h5fi7xd) 
-- [Diagram and Gantt. PERT chart. Initialization](https://snippet.dhtmlx.com/409jj9uh)  
+- [Diagram. PERT chart. Initialization](https://snippet.dhtmlx.com/4h5fi7xd)
+- [Diagram and Gantt. PERT chart. Initialization](https://snippet.dhtmlx.com/409jj9uh)
 - [Diagram and Gantt. PERT chart. Full integration](https://snippet.dhtmlx.com/gcnx4a9h)
 - [Diagram and Gantt. PERT chart. Popup window](https://snippet.dhtmlx.com/fvfysbdb)
 - [Diagram and Gantt. PERT chart. Custom shapes and styling (custom CSS)](https://snippet.dhtmlx.com/mtk92awx)
@@ -125,7 +125,7 @@ Released on November 25, 2025
 - [Diagram Editor. Fishbone Diagram. Multiple causes](https://snippet.dhtmlx.com/0dgjwt6u)
 
 
-## Version 6.0.11 
+## Version 6.0.11
 
 Released on June 18, 2025
 
@@ -133,7 +133,7 @@ Released on June 18, 2025
 
 - Diagram Editor. Incorrect shapes moving while zooming in
 
-## Version 6.0.10 
+## Version 6.0.10
 
 Released on March 10, 2025
 
@@ -141,7 +141,7 @@ Released on March 10, 2025
 
 - Diagram. The issue with adjusting the size of the line shape arrow while editing the line width
 
-## Version 6.0.9 
+## Version 6.0.9
 
 Released on February 4, 2025
 
@@ -161,7 +161,7 @@ Released on December 5, 2024
 Released on November 27, 2024
 
 - Diagram Editor. An error occurred during the shape editing with the Editbar
-- Diagram Editor. An issue with a shape moving during the navigation on inline editing 
+- Diagram Editor. An issue with a shape moving during the navigation on inline editing
 
 ## Version 6.0.4
 
@@ -171,7 +171,7 @@ Released on October 1, 2024
 
 - Diagram Editor. Calling the `destructor()` method throws an error
 
-## Version 6.0.3 
+## Version 6.0.3
 
 Released on August 28, 2024
 
@@ -212,7 +212,7 @@ The new update introduces significant changes in the structure and functionality
 ### New functionality
 
 - Restructuring of Diagram Editor: providing the ability to interact with its parts and manage their visibility with the [`view`](api/diagram_editor/editor/config/view_property.md) property that includes the following configurations:
-    - [Toolbar](guides/diagram_editor/toolbar.md) - a top part of Diagram Editor that helps users to control the editing process (see [API overview](api/diagram_editor/toolbar/api_overview.md))
+    - [Toolbar](guides/diagram_editor/toolbar.md) - a top part of Diagram Editor that helps users control the editing process (see [API overview](api/diagram_editor/toolbar/api_overview.md))
     - [Shapebar](guides/diagram_editor/shapebar.md) - (former Left panel) a part of Diagram Editor that renders previews of Diagram items (see [API overview](api/diagram_editor/shapebar/api_overview.md))
     - [Editbar](guides/diagram_editor/editbar.md) - (former Right panel) a part of Diagram Editor that allows users to edit Diagram items (see [API overview](api/diagram_editor/editbar/api_overview.md)). You can perform the following actions:
         - sets of predefined [Basic controls](api/diagram_editor/editbar/basic_controls_overview.md) and [Complex controls](api/diagram_editor/editbar/complex_controls_overview.md)
@@ -316,8 +316,8 @@ Released on May 30, 2023
 - Diagram Editor. Fix the issue with custom points not moving during a multi select move
 - Diagram Editor. Fix the impossibility to link a shape to itself
 - Fix the problem with exporting a default diagram without [exportStyles](api/diagram/exportstyles_property.md)
-- Fix the issue with the promiz.js library that caused an error with the setImmediate() method definition on importing the sources 
-- Fix path formation of the URL in the Export object 
+- Fix the issue with the promiz.js library that caused an error with the setImmediate() method definition on importing the sources
+- Fix path formation of the URL in the Export object
 - Types for export are added
 
 ## Version 5.0.1
@@ -325,7 +325,7 @@ Released on May 30, 2023
 Released on January 19, 2023
 
 ### Fixes
-  
+
 - Diagram Editor. Fix the issue which caused lines not always being drawn in their places if data was exported and then loaded again
     - Now it is possible to define the coordinates for lines in the default mode (new [`points`](lines/configuration_properties.md#properties-specific-for-the-default-mode) property of the line object)
 - Diagram Editor. Fix the issue with dragging of shapes in the grid after changing the zoom level
@@ -360,7 +360,7 @@ The new release introduces some changes to the `lineGap` property. Check the [Mi
     - the **Auto Layout** button of [Toolbar](guides/diagram_editor/toolbar.md) now provides two options for shapes' auto-placement: *Orthogonal* and *Radial*
 - [Snap lines](guides/diagram_editor/grid_area.md#enablingdisabling-snap-lines) for arrangement of shapes in the grid area with greater precision
 - The ability to configure snap lines via the new [`magnetic`](api/diagram_editor/editor/config/magnetic_property.md) property
-- The ability to copy and paste styles of an item(s) via <kbd>Alt</kbd> (<kbd>Option</kbd>) + <kbd>Ctrl</kbd> (<kbd>Cmd</kbd>) + <kbd>С</kbd> => <kbd>Alt</kbd> (<kbd>Option</kbd>) + <kbd>Ctrl</kbd> (<kbd>Cmd</kbd>) + <kbd>V</kbd> (see the **[example](https://snippet.dhtmlx.com/klgvu3jq)**) 
+- The ability to copy and paste styles of an item(s) via <kbd>Alt</kbd> (<kbd>Option</kbd>) + <kbd>Ctrl</kbd> (<kbd>Cmd</kbd>) + <kbd>С</kbd> => <kbd>Alt</kbd> (<kbd>Option</kbd>) + <kbd>Ctrl</kbd> (<kbd>Cmd</kbd>) + <kbd>V</kbd> (see the **[example](https://snippet.dhtmlx.com/klgvu3jq)**)
 - The ability to [align and distribute multiple items](guides/diagram_editor/grid_area.md#aligning-multiple-items)
 - Now tooltips will appear when you hover over controls in the personal toolbar of items
 - Extended list of [locale options](guides/localization.md) for localization of tooltips in the per-item toolbar
@@ -500,7 +500,7 @@ Released on April 15, 2021
 - The ability to customize the personal toolbars for editing items in the [grid area](guides/diagram_editor/grid_area.md) via the [shapeToolbar](api/diagram_editor/editor/config/shapetoolbar_property.md) property of the Editor object
 - New events of the Editor object: [BeforeShapeIconClick](api/diagram_editor/editor/events/beforeshapeiconclick_event.md) and [AfterShapeIconClick](api/diagram_editor/editor/events/aftershapeiconclick_event.md), [BeforeShapeMove](api/diagram_editor/editor/events/beforeshapemove_event.md) and [AfterShapeMove](api/diagram_editor/editor/events/aftershapeiconclick_event.md)
 - The ability to cancel sending CSS styles to the export service via the [exportStyles](api/diagram/exportstyles_property.md) configuration option of the diagram object
-  
+
 ### Updates
 
 - The [type](api/diagram/type_property.md) configuration property of the diagram object is updated: new "default" and "mindmap" values are added
@@ -534,7 +534,7 @@ Released on January 27, 2021
 ### Fixes
 
 - Fix the incorrect behavior of the shape selected in the Editor, which is initialized in the default mode, when working with the input field on the page
-- Fix the issue that caused a collapsed/expanded item not to work with its parent 
+- Fix the issue that caused a collapsed/expanded item not to work with its parent
 - Fix the incorrect work of the [showItem()](api/diagram/showitem_method.md) method when the child item is hidden
 
 ## Version 3.0.3
@@ -577,7 +577,7 @@ The new update introduces some changes and improvements. Check the [Migration](m
 - New [autoPlace()](api/diagram/autoplace_method.md) method and [autoplacement](api/diagram/autoplacement_property.md) property are added for [auto-arranging connected shapes](guides/manipulating_items.md#arranging-shapes-automatically) in the hierarchical structure
 - [Ability to set the default configuration of a shape](guides/diagram/configuration.md#setting-the-default-configuration-of-a-shape) via the `defaults` property when initializing [Diagram](api/diagram/defaults_property.md) or [Diagram Editor](api/diagram_editor/editor/config/defaults_property.md)
 - The [addShape()](api/diagram/addshape_method.md) method for [creating custom shapes](shapes/custom_shape.md) in Diagram and Diagram Editor is added
-- New properties of the Editor object: `controls`, [defaults](api/diagram_editor/editor/config/defaults_property.md), `shapeSections`, `shapeBarWidth`, `scalePreview`, [scale](api/diagram_editor/editor/config/scale_property.md), `gapPreview` 
+- New properties of the Editor object: `controls`, [defaults](api/diagram_editor/editor/config/defaults_property.md), `shapeSections`, `shapeBarWidth`, `scalePreview`, [scale](api/diagram_editor/editor/config/scale_property.md), `gapPreview`
 - The *Grid Step* sidebar option is added to the [right panel of the Editor](guides/diagram_editor/editbar.md)
 - Ability to hide/show any toolbar buttons of the Editor as well as the *Grid Step* sidebar option via the `controls` property of the Editor object
 - Ability [to configure sidebar options for editing attributes of the custom shapes in the right panel of the editor](guides/diagram_editor/editbar.md) via the `properties` attribute of the [addShape()](api/diagram/addshape_method.md) method
@@ -585,7 +585,7 @@ The new update introduces some changes and improvements. Check the [Migration](m
 - [Possibility to customize the appearance of shapes rendered in the left panel of the Editor](guides/diagram_editor/shapebar.md) via the [preview](shapes/configuration_properties.md#properties-specific-for-the-default-mode) property of the shape object
 - Ability [to select, copy, paste, delete, move several shapes in the Editor](guides/diagram_editor/grid_area.md#manipulating-multiple-items)
 - Ability [to select and delete several connector lines](guides/diagram_editor/grid_area.md#manipulating-multiple-items) in the editor which is initialized in the default mode
-- Ability to import data from a JSON file to the Editor via the ["Import Data"](guides/diagram_editor/toolbar.md) button of the toolbar 
+- Ability to import data from a JSON file to the Editor via the ["Import Data"](guides/diagram_editor/toolbar.md) button of the toolbar
 - The [destructor()](api/diagram/destructor_method.md) method is added
 
 ### Updates
@@ -667,10 +667,10 @@ The API structure was totally reorganized and improved to simplify work with it.
 - Ability to [find necessary shapes](guides/manipulating_items.md#finding-the-necessary-item)
 - Ability to [filter shapes by specified criteria](guides/manipulating_items.md#filtering-items)
 - Ability to [add a toolbar with icons for shapes](guides/diagram/configuration.md#setting-toolbar-for-shapes) to simplify interaction with them
-- Enhanced performance 
+- Enhanced performance
 - Ability to adjust to any HTML container and built-in auto-sizing
 
-## Version 1.1 
+## Version 1.1
 
 Released on December 5, 2017
 
@@ -684,7 +684,7 @@ Released on December 5, 2017
 
 - [Extended API](api/diagram/api_overview.md): new methods, properties and events
 
-## Version 1.0 
+## Version 1.0
 
 Released on September 29, 2017
 

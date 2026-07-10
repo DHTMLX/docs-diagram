@@ -16,7 +16,7 @@ If a double-click is done over a swimlane, the event will be fired on the cell o
 
 ~~~jsx
 itemDblClick: (
-    id: string | number, 
+    id: string | number,
     event: MouseEvent
 ) => void;
 ~~~

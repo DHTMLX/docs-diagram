@@ -46,7 +46,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
         shapebar: {
             sections: {
                 "Swimlane": [{ swimlane: true }],
-                "Groups": [{ group: true }],   
+                "Groups": [{ group: true }],
                 "Flowchart shapes": [{ flowShapes: true }],
                 "Org shapes, text, topic": [{ org: true }, "text", "topic"]
             }

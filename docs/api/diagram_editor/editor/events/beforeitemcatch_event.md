@@ -18,7 +18,7 @@ The event works only in the **org chart** and `mindmap` modes of Diagram, the `i
 
 ~~~jsx
 "beforeItemCatch": ({
-    id: string | number, 
+    id: string | number,
     targetId: string | number,
     batch: (string | number)[],
     event: PointerEvent
@@ -31,7 +31,7 @@ The callback of the event is called with an object with the following parameters
 
   - `id` - the id of the moved item
   - `targetId` - the id of the target item
-  - `batch` - an array of moved elements' ids 
+  - `batch` - an array of moved elements' ids
   - `event` - an event object
 
 ### Returns
@@ -67,7 +67,7 @@ editor.events.on("beforeItemCatch", ({ id, targetId }) => {
 });
 ~~~
 
-**Change log**:  
+**Change log**:
 
 - The `batch` parameter was added in the v6.0
 - The callback function takes an object as a parameter since v6.0

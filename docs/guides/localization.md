@@ -6,7 +6,7 @@ description: You can learn about the Localization in the documentation of the DH
 
 # Localization
 
-It is possible to localize the interface of the Diagram editor into a desired language. For this, you need to provide the corresponding locale settings via the `dhx.i18n.setLocale()` method.
+You can localize the interface of the Diagram editor into any language. For this, you need to provide the corresponding locale settings via the `dhx.i18n.setLocale()` method.
 The method takes two parameters: the diagram container and an object that contains rules of localization for a particular country.
 
 ~~~jsx

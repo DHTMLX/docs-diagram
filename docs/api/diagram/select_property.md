@@ -25,12 +25,12 @@ select: false
 ### Example
 
 ~~~jsx
-const diagram = new dhx.Diagram("diagram_container", { 
+const diagram = new dhx.Diagram("diagram_container", {
     select: true
 });
 ~~~
 
 **Related articles**:
 
-- [Enabling items selection](guides/diagram/configuration.md#enabling-items-selection) 
+- [Enabling items selection](guides/diagram/configuration.md#enabling-items-selection)
 - [Selecting items](guides/manipulating_items.md#selecting-items)

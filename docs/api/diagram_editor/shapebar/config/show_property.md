@@ -19,7 +19,7 @@ show?: boolean;
 ### Default config
 
 ~~~jsx
-show: true 
+show: true
 ~~~
 
 ### Example

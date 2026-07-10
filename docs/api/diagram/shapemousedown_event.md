@@ -14,7 +14,7 @@ description: You can learn about the shapeMouseDown event in the documentation o
 
 ~~~jsx
 shapeMouseDown: (
-    id: string | number, 
+    id: string | number,
     event: MouseEvent
 ) => void;
 ~~~

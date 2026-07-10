@@ -1,12 +1,12 @@
 ---
-sidebar_label: Initialization 
+sidebar_label: Initialization
 title: Initialization
 description: You can learn how to start with Diagram in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
 
 # Diagram initialization
 
-In this article we will discuss the stages of adding DHTMLX Diagram on a page. This process presupposes several simple steps:
+In this article, we will discuss the stages of adding DHTMLX Diagram to a page. This process involves several simple steps:
 
 - [Download the DHTMLX Diagram package](https://dhtmlx.com/docs/products/dhtmlxDiagram/download.shtml) and unpack it into a folder of your project
 - [Include the DHTMLX Diagram source files on a page](#including-required-code-files)
@@ -17,7 +17,7 @@ In this article we will discuss the stages of adding DHTMLX Diagram on a page. T
 <!DOCTYPE html>
 <html>
 <head>
-    <script type="text/javascript" src="codebase/diagram.js"></script>	
+    <script type="text/javascript" src="codebase/diagram.js"></script>
     <link rel="stylesheet" href="codebase/diagram.css">
 </head>
 
@@ -25,7 +25,7 @@ In this article we will discuss the stages of adding DHTMLX Diagram on a page. T
     <div id="diagram_container"></div>
     <script>
         // preparing diagram data
-        const data = [ 
+        const data = [
             { id: 1, x: 100, y: 40, text: "Start", type: "start", height: 50 },
             { id: 2, x: 100, y: 170, text: "Operation 1", type: "output" },
             { id: 3, x: 100, y: 300, text: "Operation 2", type: "input" },
@@ -56,13 +56,13 @@ To create Diagram, you need to include 2 source files on your page:
 Make sure that you set correct relative paths to these files:
 
 ~~~html
-<script type="text/javascript" src="../codebase/diagram.js"></script>	
+<script type="text/javascript" src="../codebase/diagram.js"></script>
 <link rel="stylesheet" href="../codebase/diagram.css">
 ~~~
 
-The structure of DHTMLX Diagram package is the following: 
+The structure of DHTMLX Diagram package is the following:
 
-- **sources** - the source code files of the library. The files are not minified and easy-to-read. The package is mostly intended to be used for component's debugging
+- **sources** - the source code files of the library. The files are not minified and are easy to read. The package is mostly intended to be used for component's debugging
 
 :::note
 Note that the **Trial** version of the Diagram library doesn't contain the sources folder.
@@ -98,7 +98,7 @@ const diagram = new dhx.Diagram("diagram_container", {
 
 ### Initialization in the document body
 
-It is possible to skip setting a container for Diagram and to add it right into the document's body:
+You can skip setting a container for Diagram and add it directly into the document body:
 
 ~~~jsx
 const diagram = new dhx.Diagram(document.body, {
@@ -127,7 +127,7 @@ layout.getCell("diagram").attach(diagram);
 
 ### Configuration properties
 
-To change the [configuration of a diagram](guides/diagram/configuration.md), you can specify the desired property in the config object passed as a second parameter of the constructor function. 
+To change the [configuration of a diagram](guides/diagram/configuration.md), you can specify the desired property in the config object passed as a second parameter of the constructor function.
 
 ~~~jsx
 const diagram = new dhx.Diagram("diagram_container", {
@@ -138,7 +138,7 @@ const diagram = new dhx.Diagram("diagram_container", {
 
 See [the full list of configuration properties of Diagram](api/diagram/api_overview.md#diagram-properties).
 
-**Related sample**:	[Diagram Editor. Default mode. Wide flowchart](https://snippet.dhtmlx.com/4d4k3o8p)	
+**Related sample**:	[Diagram Editor. Default mode. Wide flowchart](https://snippet.dhtmlx.com/4d4k3o8p)
 
 Alternatively, you can get access to some option and set/modify its value via the diagram `config` object. Don't forget to call the [`paint()`](api/diagram/paint_method.md) method to re-render the diagram with a new configuration:
 

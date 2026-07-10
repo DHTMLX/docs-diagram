@@ -24,8 +24,8 @@ The method returns the list of ids of selected items as an array
 
 ~~~jsx {8}
 // a diagram must be created with the "select:true" option
-const diagram = new dhx.Diagram("diagram_container", { 
-    select: true 
+const diagram = new dhx.Diagram("diagram_container", {
+    select: true
 });
 // loading data
 diagram.data.parse(data);
@@ -35,7 +35,7 @@ const ids = diagram.selection.getIds(); // -> ["1", "1.1", ...] or []
 
 **Change log**: Added in v6.0
 
-**Related articles**:  
+**Related articles**:
 
 - [diagram.config.select](api/diagram/select_property.md)
 - [Selecting items](guides/manipulating_items.md#selecting-items)

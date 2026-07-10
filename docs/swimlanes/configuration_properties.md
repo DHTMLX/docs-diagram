@@ -1,5 +1,5 @@
 ---
-sidebar_label: Swimlane properties 
+sidebar_label: Swimlane properties
 title: Swimlane and Swimlane Cell Properties
 description: You can learn about the Swimlane and Swimlane cell properties in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
@@ -7,7 +7,7 @@ description: You can learn about the Swimlane and Swimlane cell properties in th
 # Swimlane and swimlane cell properties
 
 :::note
-While specifying color values of the item, use the HEX format.
+Specify color values in the HEX format.
 :::
 
 ## Properties of a swimlane
@@ -124,14 +124,14 @@ The `open` property works when a `header` is initialized with the `closable` att
     - `fontColor` - (optional) the color of the text font, "#4C4C4C" by default
     - `fontWeight` - (optional) the text font weight, possible values are: `"normal"`, `"bold"`, `"bolder"`, `"lighter"`, values `"100"`-`"900"`, where `"400"` is the same as normal, and `"600"`+ is the boldest font; `"500"` by default
     - `iconColor` - (optional) the color of the icon of the header, "#808080" by default
-    - `position` - (optional) the positioning of the group header: `"top"` (default) | `"bottom"` | `"left"` | `"right"`
+    - `position` - (optional) the positioning of the swimlane header: `"top"` (default) | `"bottom"` | `"left"` | `"right"`
     - `editable` - (optional) enables/disables the ability to edit the text of the header by double-clicking on it; *true* by default
     - `closable` - (optional) shows/hides an icon intended to expand/collapse a swimlane; *false* by default
-    - `enable` - (optional) shows/hides the header of the group; *true* by default
-- `subHeaderRows` - (optional) an object with configuration settings of the left/right subheaders of the swimlane. The object have the following attributes:
+    - `enable` - (optional) shows/hides the header of the swimlane; *true* by default
+- `subHeaderRows` - (optional) an object with configuration settings of the left/right subheaders of the swimlane. The object has the following attributes:
     - `height` - (optional) the height of the subheaders, 40 by default
     - `position` - (optional) the positioning of the subheaders: `"left"` | `"right"`
-    - `enable` - (optional) shows/hides the subheaders of the group; *true* by default
+    - `enable` - (optional) shows/hides the subheaders of the swimlane; *true* by default
     - `fill` - (optional) the background color of the subheaders
     - `fontSize` - (optional) the size of the font in pixels, 14 by default
     - `lineHeight` - (optional) the height of a line, 14 by default
@@ -155,10 +155,10 @@ The `open` property works when a `header` is initialized with the `closable` att
         - `fontWeight` - (optional) the text font weight, possible values are: `"normal"`, `"bold"`, `"bolder"`, `"lighter"`, values `"100"`-`"900"`, where `"400"` is the same as normal, and `"600"`+ is the boldest font; `"500"` by default
         - `iconColor` - (optional) the color of the icon of the subheader, "#808080" by default
         - `editable` - (optional) enables/disables the ability to edit the text of the subheader by double-clicking on it; *true* by default
-- `subHeaderCols` - (optional) an object with configuration settings of the top/bottom subheaders of the swimlane. The object have the following attribute:
+- `subHeaderCols` - (optional) an object with configuration settings of the top/bottom subheaders of the swimlane. The object has the following attribute:
     - `position` - (optional) the positioning of the subheaders: `"top"` | `"bottom"`
     - the other attributes of `subHeaderCols` are the same as the attributes of `subHeaderRows` (check the details above)
-- `key` - (optional) your own property with your own logic to be implemented under the hood
+- `key` - (optional) a custom property with your own logic, implemented under the hood
 
 ### Example
 
@@ -234,15 +234,15 @@ The configuration properties of a swimlane cell are given below:
 - `groupChildren` - (optional) an array with ids of the first-level child items of a cell
 - `style` - (optional) an object with the style settings of the cell. The object can contain the following properties:
     - `fill` - (optional) the background color of the cell
-    - `overFill` - (optional) the background color of the cell when the user is holding the item and moving it into/outside the cell *providing that no less than 75% of the item's area is inside the cell*
-    - `partiallyFill` - (optional) the background color of the cell when the user is holding the item and moving it into/outside the cell *providing that 75% of the item's area or more is out of the cell and other settings are not defined via the `exitArea` attribute*
+    - `overFill` - (optional) the background color of the cell when the user is holding the item and moving it into/outside the cell *provided that no less than 75% of the item's area is inside the cell*
+    - `partiallyFill` - (optional) the background color of the cell when the user is holding the item and moving it into/outside the cell *provided that 75% of the item's area or more is out of the cell and other settings are not defined via the `exitArea` attribute*
 - `exitArea` - (optional) an object with the settings which will be applied to the item when the user is dragging it out of the cell (*is applied only to the first-level children of the cell*). The object can contain the following attributes:
-    - `groupBehavior` - (optional) the behavior of the child item of the cell when the user is moving it out of the cell: 
+    - `groupBehavior` - (optional) the behavior of the child item of the cell when the user is moving it out of the cell:
         - `"unbound"` (by default) - the user can move an item into or outside the cell
-        - `"boundNoBorderExtension"` - the user can move an item into the cell but cannot drag the item outside the cell if the item has been dropped inside the cell. The item won't expand the borders of the cell when trying to drag the item outside the cell
-    - `padding` - (optional) defines the padding between the cell and the edge of the item when moving the item inside the cell. <br> 
+        - `"boundNoBorderExtension"` - the user can move an item into the cell but cannot drag the item outside the cell if the item has been dropped inside the cell. The item won't expand the borders of the cell when the user tries to drag the item outside the cell
+    - `padding` - (optional) defines the padding between the cell and the edge of the item when moving the item inside the cell. <br>
     :::tip
-    The `padding` attribute is available if *groupBehavior: `"boundNoBorderExtension"`*
+    The `padding` attribute is available if `groupBehavior` is set to `"boundNoBorderExtension"`
     :::
 
 ### Example

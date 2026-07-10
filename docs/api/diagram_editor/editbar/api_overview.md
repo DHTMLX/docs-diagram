@@ -1,7 +1,7 @@
 ---
 sidebar_label: Editbar API overview
-title: Editbar API overview 
-description: You can check a Editbar overview in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
+title: Editbar API overview
+description: You can check an Editbar overview in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
 
 # Editbar API overview

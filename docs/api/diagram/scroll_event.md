@@ -26,9 +26,9 @@ The callback of the event takes the following parameter:
 
 ~~~jsx {10-12}
 // initializing Diagram
-const diagram = new dhx.Diagram("diagram_container", { 
-    type: "org", 
-    scroll: true         
+const diagram = new dhx.Diagram("diagram_container", {
+    type: "org",
+    scroll: true
 });
 // loading data
 diagram.data.parse(data);

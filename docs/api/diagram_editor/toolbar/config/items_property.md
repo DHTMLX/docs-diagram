@@ -31,7 +31,7 @@ The full list of service elements you can see [here](guides/diagram_editor/toolb
 The `items` property allows you to specify [**Service elements**](guides/diagram_editor/toolbar.md#service-elements) and [**Base elements**](guides/diagram_editor/toolbar.md#base-elements) as an array of objects:
 
 ~~~jsx
-items: [ 
+items: [
     {
         type: string,
         id?: string,
@@ -44,7 +44,7 @@ items: [
         items?: (string | object)[],
         checkIcon?: (editor: object) => string,
         handler?: (editor: object, event: Event) => void
-    }, {...} 
+    }, {...}
 ];
 ~~~
 
@@ -82,8 +82,8 @@ const editor = new dhx.DiagramEditor("editor_container", {
             css: "custom_css",
             navigationType: "pointer",
             items: [
-                "file", 
-                "spacer", 
+                "file",
+                "spacer",
                 "scale"
             ]
         }

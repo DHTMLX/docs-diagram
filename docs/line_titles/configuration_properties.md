@@ -1,13 +1,13 @@
 ---
-sidebar_label: LineTitle properties 
+sidebar_label: LineTitle properties
 title: LineTitle Properties
 description: You can learn about the LineTitle properties in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
 
 # LineTitle properties
 
-:::note 
-While specifying color values of the item, use the HEX format.
+:::note
+Specify color values in the HEX format.
 :::
 
 ### Usage
@@ -19,7 +19,7 @@ const data = [
         type: "lineTitle",
         id?: string | number,
         text: string,
-        parent: string | number, 
+        parent: string | number,
 
         distance?: number, // 50 by default
         autoPosition?: boolean, // true by default
@@ -51,7 +51,7 @@ Each line title object can include the following properties:
 - `autoPosition` - (optional) defines the direction of the text, if set to *true* - the direction of the text is the same as that of the line, *false* - the direction of the text is always horizontal, *true* by default
 - `editable` - (optional) enables/disables the ability to edit the text of the item by double-clicking on it, *true* by default
 - `fixed` - (optional) enables/disables the ability to fix the text of the item with the specified `distance` value, *false* by default
-- `hidden` - (optional) defines whether the text will be hidden, *false* by default 
+- `hidden` - (optional) defines whether the text will be hidden, *false* by default
 - `fill` - (optional) the background color of the line title item
 - `fontSize` - (optional) the size of the font, 14 by default
 - `lineHeight` - (optional) the height of the text line, 14 by default

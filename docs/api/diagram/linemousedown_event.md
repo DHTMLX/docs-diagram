@@ -14,7 +14,7 @@ description: You can learn about the lineMouseDown event in the documentation of
 
 ~~~jsx
 lineMouseDown: (
-    id: string | number, 
+    id: string | number,
     event: MouseEvent
 ) => void;
 ~~~

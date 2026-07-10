@@ -8,7 +8,7 @@ description: You can learn about the filter event of data collection in the docu
 
 ### Description
 
-@short: fires after filtering a data collection 
+@short: fires after filtering a data collection
 
 ### Usage
 

@@ -34,7 +34,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 
 // hides the Shapebar view
-editor.view.hide("shapebar"); 
+editor.view.hide("shapebar");
 
 // hides Shapebar, Editbar, and Toolbar
 editor.view.hide();

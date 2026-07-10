@@ -14,7 +14,7 @@ description: You can learn about the afterUnSelect event in the documentation of
 
 ~~~jsx
 "afterUnSelect": ({
-    id: string | number, 
+    id: string | number,
     batch: (string | number)[]
 }) => void;
 ~~~
@@ -23,16 +23,16 @@ description: You can learn about the afterUnSelect event in the documentation of
 
 The callback of the event is called with an object with the following parameters:
 
-- `id` - the id of the unselected item 
+- `id` - the id of the unselected item
 - `batch` - the list of unselected items
 
 ### Example
 
 ~~~jsx {9-12}
 // initializing Diagram
-const diagram = new dhx.Diagram("diagram_container", { 
-    type: "org", 
-    select: true        
+const diagram = new dhx.Diagram("diagram_container", {
+    type: "org",
+    select: true
 });
 // loading data
 diagram.data.parse(data);
@@ -47,7 +47,7 @@ Here's an example of attaching an event handler to the event for the Diagram Edi
 
 ~~~jsx {8-11}
 // initializing Diagram editor
-const editor = new dhx.DiagramEditor("editor_container", {  
+const editor = new dhx.DiagramEditor("editor_container", {
     // config options
 });
 // loading data into the editor
@@ -61,7 +61,7 @@ editor.diagram.events.on("afterUnSelect", ({ id }) => {
 
 **Change log**: Updated in v6.0
 
-**Related articles**:  
+**Related articles**:
 
 - [diagram.config.select](api/diagram/select_property.md)
 - [Selecting items](guides/manipulating_items.md#selecting-items)

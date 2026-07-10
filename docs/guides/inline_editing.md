@@ -1,5 +1,5 @@
 ---
-sidebar_label: Inline editing 
+sidebar_label: Inline editing
 title: Inline Editing
 description: You can learn about inline editing in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
@@ -12,11 +12,11 @@ Inline editing for Lines is enabled only in the default mode of Diagram.
 
 ![](/img/inline_editing.gif)
 
-:::note 
+:::note
 Inline editing does not work for custom shapes.
 :::
 
-The functionality is enabled by default. To disable inline editing, you should use the `editable` property of the element, which you want to make uneditable, and set its value to *false*.
+The functionality is enabled by default. To disable inline editing, set the `editable` property of the element you want to make uneditable to *false*.
 
 You can find examples of disabling inline editing for diagram items below:
 
@@ -35,10 +35,10 @@ const data = [
         "to": "shape_2"
     },
     // configuring a line title
-    {   
-        "id": "title_1", 
+    {
+        "id": "title_1",
         "type": "lineTitle",
-        "parent": "line_1", 
+        "parent": "line_1",
         "text": "Some text",
         "editable": false // disables inline editing of the text item of a line
     }
@@ -56,7 +56,7 @@ const data = [
 #### Groups
 
 ~~~jsx title="Disabling the ability to edit the text content of the header of a group"
-const data = [    
+const data = [
     {
         "type": "$group",
         "id": 1,
@@ -84,7 +84,7 @@ const data = [
         "header": {
             "closable": true,
             "text": "Waterfall diagram template",
-            // disables inline editing for the header 
+            // disables inline editing for the header
             "editable": false
         },
         "layout": [

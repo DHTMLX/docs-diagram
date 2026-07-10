@@ -8,7 +8,7 @@ description: You can learn about the getFilters method of data collection in the
 
 ### Description
 
-@short: Returns an object with the applied filters 
+@short: Returns an object with the applied filters
 
 ### Usage
 
@@ -23,7 +23,7 @@ getFilters({ permanent?: boolean }): object;
 ### Returns
 
 The method returns an object with the applied filters, where:
-- `key` - the id of a filter 
+- `key` - the id of a filter
 - `value` - an object with the [`rule` and `config` properties](api/data_collection/filter_method.md#parameters)
 
 ### Example
@@ -33,7 +33,7 @@ const diagram = new dhx.Diagram("diagram_container", {
     // configuration settings
 });
 diagram.data.parse(data);
-    
+
 const filters = diagram.data.getFilters(); // gets all the applied filters
 console.log(filters);
 ~~~

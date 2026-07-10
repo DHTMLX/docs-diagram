@@ -41,7 +41,7 @@ Color values are specified in the [HSL](https://developer.mozilla.org/en-US/docs
 - *lightness* is a percentage value; 100% is white, 0% is black, and 50% is `"normal"`.
 :::
 
-Due to the use of these CSS variables, color scheme is calculated automatically. It means, that if you change some value for the variable from the color scheme in the root, values for the `"contrast-light"`, `"dark"`, and `"contrast-dark"` themes will be recalculated automatically in real time. 
+Thanks to these CSS variables, the color scheme is calculated automatically. This means that if you change a value of a color-scheme variable in the root, values for the `"contrast-light"`, `"dark"`, and `"contrast-dark"` themes will be recalculated automatically in real time.
 
 For instance, you can override the primary colors for all Diagram themes at once in the following way:
 
@@ -64,7 +64,7 @@ In addition, values of variables, which are calculated on the base of the primar
 
 If you want to override some color values for a separate [Diagram theme](guides/themes.md), you need to do this in the `'data-dhx-theme'` attribute:
 
-~~~html 
+~~~html
 <style>
     [data-dhx-theme='light'] {
         /* border */
@@ -97,7 +97,7 @@ If you want to override some color values for a separate [Diagram theme](guides/
     const diagram = new dhx.Diagram("diagram_container", {
         type: "default",
     });
-    
+
     dhx.setTheme("light");
 </script>
 ~~~
@@ -116,7 +116,7 @@ The default values of these variables [depend on the applied theme](guides/theme
 
 ### Setting custom CSS variables
 
-It is also possible to adjust the look and feel of the Shapebar items by using your own CSS variables. For this, you should define a custom CSS variable and specify it as a value of the necessary property in the `defaults` configuration option.
+You can also adjust the look and feel of the Shapebar items by using your own CSS variables. For this, you should define a custom CSS variable and specify it as a value of the necessary property in the `defaults` configuration option.
 
 :::note
 The value of the variable will be assigned to a Shapebar item when it is selected and won't be redefined on the change of a theme.
@@ -160,12 +160,12 @@ For example:
 
 ## Adjusting the look of tasks in the PERT mode
 
-The appearance of tasks of the [Diagram in the PERT chart mode](/#diagram-in-the-pert-mode) is defined by the `--dhx-shape-pert-header-background` CSS variable. It is specified in the [default](guides/themes.md#light-theme-default) theme in the following way: 
+The appearance of tasks of the [Diagram in the PERT chart mode](/#diagram-in-the-pert-mode) is defined by the `--dhx-shape-pert-header-background` CSS variable. It is specified in the [default](guides/themes.md#light-theme-default) theme in the following way:
 
 ~~~jsx
 --dhx-shape-pert-header-background: var(--dhx-gantt-base-colors-primary, #537CFA);
 ~~~
 
 - when Diagram in the PERT chart mode is used together with DHTMLX Gantt, the current color scheme of the Gantt chart will be applied to the Diagram tasks
-- when Diagram is used standalone, the above mentioned CSS variable will be set to the default value, which is `#537CFA`
+- when Diagram is used standalone, the above-mentioned CSS variable will be set to the default value, which is `#537CFA`
 

@@ -14,7 +14,7 @@ description: You can learn about the lineDblClick event in the documentation of 
 
 ~~~jsx
 lineDblClick: (
-    id: string | number, 
+    id: string | number,
     event: MouseEvent
 ) => void;
 ~~~

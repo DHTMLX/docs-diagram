@@ -14,8 +14,8 @@ description: You can learn about the beforeSubmenuOpen event in the documentatio
 
 ~~~jsx
 beforeSubmenuOpen: (
-    id: string | number, 
-    event: MouseEvent, 
+    id: string | number,
+    event: MouseEvent,
     subHeaderId?: string
 ) => boolean | void;
 ~~~

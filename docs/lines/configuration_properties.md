@@ -1,5 +1,5 @@
 ---
-sidebar_label: Line properties 
+sidebar_label: Line properties
 title: Line Properties
 description: You can learn about the Line properties in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
@@ -7,7 +7,7 @@ description: You can learn about the Line properties in the documentation of the
 # Line properties
 
 :::note
-While specifying color values of the item, use the HEX format.
+Specify color values in the HEX format.
 :::
 
 ## Common properties
@@ -18,7 +18,7 @@ While specifying color values of the item, use the HEX format.
 const data = [
     // line object
     {
-        type: "line" | "dash", 
+        type: "line" | "dash",
         id?: string | number,
         from?: string | number,
         to?: string | number,
@@ -147,7 +147,7 @@ For example:
 }
 
 // diagram.data.getItem("$link:1");
-~~~ 
+~~~
 :::
 
 ### Example
@@ -174,7 +174,7 @@ const dataset = {
 
 **Change log**:
 
-- The `links` type of connectors used in the PERT mode of Diagram are added in v6.1
+- The `links` type of connectors used in the PERT mode of Diagram was added in v6.1
 - The `title` property of the `line` object was deprecated in v6.0
 
 **Related articles**: [Configuring lines](/lines/)

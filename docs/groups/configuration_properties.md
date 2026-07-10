@@ -1,13 +1,13 @@
 ---
-sidebar_label: Group properties 
+sidebar_label: Group properties
 title: Group Properties
 description: You can learn about the Group properties in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
 
 # Group properties
 
-:::note 
-While specifying color values of the item, use the HEX format.
+:::note
+Specify color values in the HEX format.
 :::
 
 ### Usage
@@ -34,7 +34,7 @@ const data = [
         },
         exitArea?: {
             // "unbound" by default
-            groupBehavior?: "unbound" | "boundNoBorderExtension" | "boundBorderExtension", 
+            groupBehavior?: "unbound" | "boundNoBorderExtension" | "boundBorderExtension",
             padding?: number
         },
         header?: {
@@ -71,25 +71,25 @@ A group object contains a list of configuration properties which allow you to co
 - `width` - (required) the width of the group, including its header (*position: left/right*)
 - `height` - (required) the height of the group, including its header (*position: top/bottom*)
 - `groupChildren` - (optional) an array with ids of the first-level child items of the group
-- `open` - (optional) - defines whether the group is initialized in the expanded (*true*, default) or collapsed (*false*) state
+- `open` - (optional) defines whether the group is initialized in the expanded (*true*, default) or collapsed (*false*) state
 :::tip
 The `open` property works when a `header` is initialized with the `closable` attribute
-::: 
+:::
 - `fixed` - (optional) enables/disables the ability to move and resize the group; *false* by default
 - `style` - (optional) an object with the style settings of the group. The object can contain the following attributes:
     - `strokeWidth` - (optional) the width of the group border, 1 by default
     - `stroke` - (optional) the color of the border of the group, "#DEDEDE" by default
     - `fill` - (optional) the background color of the group
-    - `overFill` - (optional) the background color of the group when the user is holding the item and moving it into/outside the group *providing that the whole item is inside the group*
-    - `partiallyFill` - (optional) the background color of the group when the user is holding the item and moving it into/outside the group *providing that a part of the item is out of the group and other settings are not defined via the `exitArea` attribute*
+    - `overFill` - (optional) the background color of the group when the user is holding the item and moving it into/outside the group *provided that the whole item is inside the group*
+    - `partiallyFill` - (optional) the background color of the group when the user is holding the item and moving it into/outside the group *provided that a part of the item is out of the group and other settings are not defined via the `exitArea` attribute*
 - `exitArea` - (optional) an object with the settings which will be applied to the item when the user is dragging it out of the group (*is applied only to the first-level children of the group*). The object can contain the following attributes:
-    - `groupBehavior` - (optional) the behavior of the child item of the group when the user is moving it out of the group: 
+    - `groupBehavior` - (optional) the behavior of the child item of the group when the user is moving it out of the group:
         - `"unbound"` (by default) - the user can move an item into or outside the group
-        - `"boundNoBorderExtension"` - the user can move an item into the group but cannot drag the item outside the group if the item has been dropped inside the group. The item won't expand the borders of the group when trying to drag the item outside the group
-        - *"boundBorderExtension"* - the user can move an item into the group but cannot drag the item outside the group if the item has been dropped inside the group. The item will expand the borders of the group when trying to drag the item outside the group <br>**Related sample**: [Diagram editor. Default mode. Groups and shapes interaction](https://snippet.dhtmlx.com/4gxy38ek)
-    - `padding` - (optional) defines the padding between the group and the edge of the item when moving the item inside the group 
+        - `"boundNoBorderExtension"` - the user can move an item into the group but cannot drag the item outside the group if the item has been dropped inside the group. The item won't expand the borders of the group when the user tries to drag the item outside the group
+        - `"boundBorderExtension"` - the user can move an item into the group but cannot drag the item outside the group if the item has been dropped inside the group. The item will expand the borders of the group when the user tries to drag the item outside the group <br>**Related sample**: [Diagram editor. Default mode. Groups and shapes interaction](https://snippet.dhtmlx.com/4gxy38ek)
+    - `padding` - (optional) defines the padding between the group and the edge of the item when moving the item inside the group
     :::tip
-    The `padding` attribute is available if *groupBehavior: `"boundNoBorderExtension"` | `"boundBorderExtension"`*
+    The `padding` attribute is available if `groupBehavior` is set to `"boundNoBorderExtension"` or `"boundBorderExtension"`
     :::
 - `header` - (optional) an object with configuration attributes of the header of the group. The attributes are:
     - `height` - (optional) the height of the header, 40 by default
@@ -106,13 +106,13 @@ The `open` property works when a `header` is initialized with the `closable` att
     - `position` - (optional) the positioning of the group header: `"top"` (default) | `"bottom"` | `"left"` | `"right"`
     - `editable` - (optional) enables/disables the ability to edit the text of the header by double-clicking on it; *true* by default
     - `closable` - (optional) shows/hides an icon intended to expand/collapse a group; *false* by default
-    - `enable` - (optional) shows/hides the header of the group; *true* by default 
-- `key` - (optional) your own property with your own logic to be implemented under the hood
+    - `enable` - (optional) shows/hides the header of the group; *true* by default
+- `key` - (optional) a custom property with your own logic, implemented under the hood
 
 ### Example
 
 ~~~jsx
-const data = [    
+const data = [
     {
         type: "$group",
         id: 1,
@@ -188,7 +188,7 @@ When preparing a data set for a `"project"` object, you can use the following co
 - `text` - (optional) the description of a project
 - `open` - (optional) defines whether the project is initialized in the expanded (*true*, default) or collapsed (*false*) state
 
-The properties below are generated automatically. They are calculated during the rendering and shouldn't be specified manually. 
+The properties below are generated automatically. They are calculated during rendering and shouldn't be specified manually.
 
 - `x` - (optional) the x coordinate of the project position
 - `y` - (optional) the y coordinate of the project position
@@ -204,37 +204,37 @@ The properties below are generated automatically. They are calculated during the
     - `text` - (optional) the text to be rendered in the header (generated automatically by the `text` property)
     - `closable` - (optional) shows/hides an icon intended to expand/collapse a group; *false* by default
     - `enable` - (optional) shows/hides the header of the project; *true* by default
-    - `fill` - (optional) the background color of the header 
+    - `fill` - (optional) the background color of the header
 
 
 ### Example
 
-~~~jsx 
+~~~jsx
 const data = [
-    { 
-        "id": "4.2", 
-        "text": "QA Testing", 
-        "type": "project", 
-        "parent": "4", 
-        "start_date": new Date(2026, 1, 18), 
-        "duration": 3, 
-        "progress": 0, 
-        "open": true 
+    {
+        "id": "4.2",
+        "text": "QA Testing",
+        "type": "project",
+        "parent": "4",
+        "start_date": new Date(2026, 1, 18),
+        "duration": 3,
+        "progress": 0,
+        "open": true
     },
-    { 
-        "id": "4.2.1", 
-        "text": "Functional Testing", 
-        "type": "task", 
-        "parent": "4.2", 
-        "start_date": new Date(2026, 1, 18), 
-        "duration": 2 
+    {
+        "id": "4.2.1",
+        "text": "Functional Testing",
+        "type": "task",
+        "parent": "4.2",
+        "start_date": new Date(2026, 1, 18),
+        "duration": 2
     },
-    { 
-        "id": "4.2.2", 
-        "text": "Usability Testing", 
-        "type": "task", 
-        "parent": "4.2", 
-        "start_date": new Date(2026, 1, 20), 
+    {
+        "id": "4.2.2",
+        "text": "Usability Testing",
+        "type": "task",
+        "parent": "4.2",
+        "start_date": new Date(2026, 1, 20),
         "duration": 1
     }
 ];

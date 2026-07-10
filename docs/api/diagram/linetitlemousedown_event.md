@@ -13,9 +13,9 @@ description: You can learn about the lineTitleMouseDown event in the documentati
 ### Usage
 
 ~~~jsx
-lineTitleMouseDown: ( 
-    lineId: string | number, 
-    titleId: string | number, 
+lineTitleMouseDown: (
+    lineId: string | number,
+    titleId: string | number,
     event: MouseEvent
 ) => void;
 ~~~

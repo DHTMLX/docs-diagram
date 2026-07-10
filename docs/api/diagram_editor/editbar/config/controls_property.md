@@ -60,7 +60,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
             },
             controls: {
                 // create the "estimate" custom control
-                estimate: { 
+                estimate: {
                     type: "fieldset",
                     label: "Time estimate",
                     rows: [

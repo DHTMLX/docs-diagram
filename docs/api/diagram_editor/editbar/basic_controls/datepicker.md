@@ -1,6 +1,6 @@
 ---
 sidebar_label: Datepicker
-title: Editbar Basic Controls - Datepicker 
+title: Editbar Basic Controls - Datepicker
 description: You can explore the Datepicker control of Editbar in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
@@ -39,12 +39,12 @@ description: You can explore the Datepicker control of Editbar in the documentat
     weekNumbers?: boolean, // false by default
     weekStart?: "saturday" | "sunday" | "monday", // "sunday" by default
 
-    // for `wrap:true` check the label properties for the Fieldset 
+    // for `wrap:true` check the label properties for the Fieldset
     label?: string,
     labelWidth?: string | number,
     labelPosition?: "left" | "top", // "top" by default
 
-    // service properties and methods 
+    // service properties and methods
     $on?: { [eventName: string]: function },
     $handler?: function,
     $setValue?: function,
@@ -57,7 +57,7 @@ description: You can explore the Datepicker control of Editbar in the documentat
 ### Basic properties
 
 - `type` - (required) the type of a control. Set it to `"datepicker"`
-- `key` - (optional) the name of the specified/modified property or the path to it in the object of a Diagram item 
+- `key` - (optional) the name of the specified/modified property or the path to it in the object of a Diagram item
 - `wrap` - (optional) allows displaying the external wrapping. *false* by default
 - `css` - (optional) adds style classes to a control string
 - `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*). *false* by default
@@ -85,7 +85,7 @@ description: You can explore the Datepicker control of Editbar in the documentat
 ### Service properties and methods
 
 :::warning
-Note that it's highly not recommended to redefine the service properties and methods for the default types of controls, since it may cause breaks in their functionality. 
+Note that we strongly recommend not redefining the service properties and methods for the default types of controls, since it may cause breaks in their functionality.
 :::
 
 - `$on` - (optional) - allows setting an event listener. The object has the following properties:
@@ -93,12 +93,12 @@ Note that it's highly not recommended to redefine the service properties and met
         - `object` - an object with the following properties:
             - `control` - the [Datepicker](https://docs.dhtmlx.com/suite/form/calendar/) Form control
             - `editor` - the object of the Diagram Editor
-            - `id` - the id of a Diagram item 
+            - `id` - the id of a Diagram item
         - `arguments` - (optional) - the [original event arguments](https://docs.dhtmlx.com/suite/category/form-datepicker-events/)
 - `$handler` - (optional) - a callback function that allows handling actions on firing the `change` and `input` events of a form control and the `change` event of DataCollection. Called with the following parameter:
     - `object` - an object with the following properties:
-        - `id` - the id of a Diagram item 
-        - `key` - the name of the specified/modified property or the path to it in the object of a Diagram item 
+        - `id` - the id of a Diagram item
+        - `key` - the name of the specified/modified property or the path to it in the object of a Diagram item
         - `editor` - the object of the Diagram Editor
         - `control` - the object of the [Datepicker](https://docs.dhtmlx.com/suite/form/calendar/) Form control the component is built on
         - `value` - the new value of the [Datepicker](https://docs.dhtmlx.com/suite/form/calendar/) Form control
@@ -106,7 +106,7 @@ Note that it's highly not recommended to redefine the service properties and met
     - `object` - an object with the following properties:
         - `editor` - the object of the Diagram Editor
         - `control` - the object of the [Datepicker](https://docs.dhtmlx.com/suite/form/calendar/) Form control the component is built on
-        - `value` - the value of a Diagram item 
+        - `value` - the value of a Diagram item
 - `$layout` - (optional) - a callback function that allows setting the structure of a control. Returns the configuration of the [Datepicker](https://docs.dhtmlx.com/suite/form/calendar/) Form control. Called with the following parameter:
     - `object` - the configuration of a control without service properties
 

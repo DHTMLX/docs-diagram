@@ -14,7 +14,7 @@ description: You can learn about the afterExpand event in the documentation of t
 
 ~~~jsx
 afterExpand: (
-    id: string | number, 
+    id: string | number,
     dir?: string
 ) => void;
 ~~~

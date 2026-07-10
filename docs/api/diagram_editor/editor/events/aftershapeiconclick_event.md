@@ -14,7 +14,7 @@ description: You can learn about the afterShapeIconClick event of editor in the 
 
 ~~~jsx
 "afterShapeIconClick": (
-    iconId: string, 
+    iconId: string,
     shape: object
 ) => void;
 ~~~
