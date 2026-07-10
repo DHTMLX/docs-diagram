@@ -177,4 +177,4 @@ const dataset = {
 - The `links` type of connectors used in the PERT mode of Diagram was added in v6.1
 - The `title` property of the `line` object was deprecated in v6.0
 
-**Related articles**: [Configuring lines](/lines/)
+**Related article**: [Configuring lines](/lines/)

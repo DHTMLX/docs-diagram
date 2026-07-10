@@ -69,6 +69,6 @@ editor.events.on("afterItemResize", ({ id, width, height }) => {
 - [`beforeItemResize`](api/diagram_editor/editor/events/beforeitemresize_event.md)
 - [`itemResizeEnd`](api/diagram_editor/editor/events/itemresizeend_event.md)
 
-**Related samples**:
+**Related sample**:
 
 - [Diagram Editor. Managing shapes' moving, rotating and resizing via events](https://snippet.dhtmlx.com/qldjbbm7)

@@ -130,7 +130,7 @@ Shapes are arranged on imaginary circles relative to the central shape, i.e. the
 - [Configuring autoplacement for shapes](guides/diagram/configuration.md#configuring-autoplacement-for-shapes)
 - [Arranging shapes automatically](guides/manipulating_items.md#arranging-shapes-automatically)
 
-**Related sample**:
+**Related samples**:
 
 - [Diagram. Default mode. Radial autoplacement with padding options](https://snippet.dhtmlx.com/huut0l1s)
 - [Diagram. Default mode. Arranging a generated radial dataset with autoplacement](https://snippet.dhtmlx.com/rwsime82)

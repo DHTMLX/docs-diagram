@@ -99,6 +99,6 @@ The table below describes the actions performed by standard hotkeys and provides
 
 - The `hotkeys` property is added in v6.1
 
-**Related samples**:
+**Related sample**:
 
 - [Diagram Editor. Managing hotkeys' adding, modifying and disabling via API](https://snippet.dhtmlx.com/8ads5dq8)

@@ -52,4 +52,4 @@ const diagram = new dhx.Diagram("diagram_container", {
 });
 ~~~
 
-**Related articles**: [Setting the type of a shape](shapes/default_shapes.md#setting-the-type-of-a-shape)
+**Related article**: [Setting the type of a shape](shapes/default_shapes.md#setting-the-type-of-a-shape)

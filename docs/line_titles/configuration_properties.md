@@ -76,4 +76,4 @@ const data = [
 ];
 ~~~
 
-**Related articles**: [Configuring line titles](/line_titles/)
+**Related article**: [Configuring line titles](/line_titles/)

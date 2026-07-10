@@ -101,7 +101,7 @@ Set a sufficient margin for correct display of `headerTemplate`/`footerTemplate`
 | `"A5"`      | (5.83in x 8.27in)  |
 | `"A6"`      | (4.13in x 5.83in)  |
 
-**Related articles**:  [Exporting Diagram](guides/data_export.md)
+**Related article**:  [Exporting Diagram](guides/data_export.md)
 
 **Related samples**:
 

@@ -49,6 +49,6 @@ diagram.data.add({ type: "card", id: "3.2", text: "New Item" });
 diagram.data.add({ type: "line",  from: "3", to: "3.2" });
 ~~~
 
-**Related articles**:  [Adding an item](guides/manipulating_items.md#adding-an-item)
+**Related article**:  [Adding an item](guides/manipulating_items.md#adding-an-item)
 
 **Related sample**: [Diagram. Data. Add/delete item](https://snippet.dhtmlx.com/8wi20uop)

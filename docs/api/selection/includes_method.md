@@ -50,4 +50,4 @@ diagram.selection.includes({ id: "4" }) // returns false
 - [diagram.config.select](api/diagram/select_property.md)
 - [Selecting items](guides/manipulating_items.md#selecting-items)
 
-**Related samples**: [Diagram. Selection. Item selection](https://snippet.dhtmlx.com/jyoxn5h7)
+**Related sample**: [Diagram. Selection. Item selection](https://snippet.dhtmlx.com/jyoxn5h7)

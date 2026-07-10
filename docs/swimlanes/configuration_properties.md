@@ -277,7 +277,7 @@ const data = [
 ];
 ~~~
 
-**Related articles**: [Configuring swimlanes](/swimlanes/)
+**Related article**: [Configuring swimlanes](/swimlanes/)
 
 **Related samples**:
 

@@ -138,7 +138,7 @@ editor.diagram.addShape("network", {
 
 **Change log**: The `properties` attribute is removed in v6.0.
 
-**Related articles**: [Custom Shape](shapes/custom_shape.md)
+**Related article**: [Custom Shape](shapes/custom_shape.md)
 
 **Related samples**:
 

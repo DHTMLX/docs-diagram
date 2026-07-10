@@ -75,6 +75,6 @@ editor.events.on("beforeItemMove", ({ id, coords }) => {
 - [`afterItemMove`](api/diagram_editor/editor/events/afteritemmove_event.md)
 - [`itemMoveEnd`](api/diagram_editor/editor/events/itemmoveend_event.md)
 
-**Related samples**:
+**Related sample**:
 
 - [Diagram Editor. Managing shapes' moving, rotating and resizing via events](https://snippet.dhtmlx.com/qldjbbm7)
