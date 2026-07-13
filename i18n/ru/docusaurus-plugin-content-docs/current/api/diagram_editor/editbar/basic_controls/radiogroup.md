@@ -96,25 +96,25 @@ description: Изучите элемент управления RadioGroup па�
 :::
 
 - `$on` - (опциональный) - позволяет задать обработчик события. Объект содержит следующие свойства:
-    - `eventName`  - функция обратного вызова, которая вызывается со следующими параметрами:
+    - `eventName`  - колбек, который вызывается со следующими параметрами:
         - `object` - объект со следующими свойствами:
             - `control` - элемент управления Form [RadioGroup](https://docs.dhtmlx.com/suite/form/radiogroup/)
             - `editor` - объект Diagram Editor
             - `id` - идентификатор элемента Diagram
         - `arguments` - (опциональный) - [исходные аргументы события](https://docs.dhtmlx.com/suite/category/form-radiogroup-events/)
-- `$handler` - (опциональный) - функция обратного вызова, позволяющая обрабатывать действия при возникновении события `change` элемента управления Form [RadioGroup](https://docs.dhtmlx.com/suite/form/radiogroup/) и события `change` DataCollection. Вызывается со следующим параметром:
+- `$handler` - (опциональный) - колбек, позволяющий обрабатывать действия при возникновении события `change` элемента управления Form [RadioGroup](https://docs.dhtmlx.com/suite/form/radiogroup/) и события `change` DataCollection. Вызывается со следующим параметром:
     - `object` - объект со следующими свойствами:
         - `id` - идентификатор элемента Diagram
         - `key` - имя указанного/изменяемого свойства или путь к нему в объекте элемента Diagram
         - `editor` - объект Diagram Editor
         - `control` - объект элемента управления Form [RadioGroup](https://docs.dhtmlx.com/suite/form/radiogroup/), на основе которого построен компонент
         - `value` - новое значение элемента управления Form [RadioGroup](https://docs.dhtmlx.com/suite/form/radiogroup/)
-- `$setValue` - (опциональный) - функция обратного вызова, позволяющая задавать значение элемента управления Form [RadioGroup](https://docs.dhtmlx.com/suite/form/radiogroup/) при инициализации элемента управления и при изменении значения в DataCollection. Вызывается со следующим параметром:
+- `$setValue` - (опциональный) - колбек, позволяющий задавать значение элемента управления Form [RadioGroup](https://docs.dhtmlx.com/suite/form/radiogroup/) при инициализации элемента управления и при изменении значения в DataCollection. Вызывается со следующим параметром:
     - `object` - объект со следующими свойствами:
         - `editor` - объект Diagram Editor
         - `control` - объект элемента управления Form [RadioGroup](https://docs.dhtmlx.com/suite/form/radiogroup/), на основе которого построен компонент
         - `value` - значение элемента Diagram
-- `$layout` - (опциональный) - функция обратного вызова, позволяющая задавать структуру элемента управления. Возвращает конфигурацию элемента управления Form [RadioGroup](https://docs.dhtmlx.com/suite/form/radiogroup/). Вызывается со следующим параметром:
+- `$layout` - (опциональный) - колбек, позволяющий задавать структуру элемента управления. Возвращает конфигурацию элемента управления Form [RadioGroup](https://docs.dhtmlx.com/suite/form/radiogroup/). Вызывается со следующим параметром:
     - `object` - конфигурация элемента управления без служебных свойств
 
 ### Свойства радиокнопки {#radio-button-properties}

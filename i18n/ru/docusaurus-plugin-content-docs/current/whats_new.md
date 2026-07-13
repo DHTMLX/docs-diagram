@@ -236,7 +236,7 @@ description: Узнайте о новых возможностях библио�
 - Diagram Editor. Обновлены [локали](guides/localization.md)
 - Diagram Editor. Расширен список [горячих клавиш](guides/diagram_editor/hot_keys.md)
 - Diagram Editor. Улучшено поведение элементов Shapebar при перетаскивании их на сетку, а также их внешний вид
-- Diagram Editor. Функция обратного вызова событий [`zoomIn`](api/diagram_editor/editor/events/zoomin_event.md) / [`zoomOut`](api/diagram_editor/editor/events/zoomout_event.md) вызывается с параметром `step`
+- Diagram Editor. Колбек событий [`zoomIn`](api/diagram_editor/editor/events/zoomin_event.md) / [`zoomOut`](api/diagram_editor/editor/events/zoomout_event.md) вызывается с параметром `step`
 - Diagram Editor. Расширена функциональность параметра конфигурации [`magnetic`](api/diagram_editor/editor/config/magnetic_property.md)
 - Diagram Editor. Обновлены [события](api/diagram_editor/editor/events/overview.md) перемещения объекта Editor:
 [`afterGroupMove`](api/diagram_editor/editor/events/aftergroupmove_event.md),

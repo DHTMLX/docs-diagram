@@ -79,25 +79,25 @@ description: Вы можете изучить элемент управлени�
 :::
 
 - `$on` - (опционально) - позволяет задать обработчик события. Объект содержит следующие свойства:
-    - `eventName`  - функция обратного вызова, которая вызывается со следующими параметрами:
+    - `eventName`  - колбек, который вызывается со следующими параметрами:
         - `object` - объект со следующими свойствами:
             - `control` - элемент управления [ToggleGroup](https://docs.dhtmlx.com/suite/form/togglegroup/) компонента Form
             - `editor` - объект Diagram Editor
             - `id` - идентификатор элемента Diagram
         - `arguments` - (опционально) - [исходные аргументы события](https://docs.dhtmlx.com/suite/category/form-togglegroup-events/)
-- `$handler` - (опционально) - функция обратного вызова, которая позволяет обрабатывать действия при возникновении события `change` элемента управления [ToggleGroup](https://docs.dhtmlx.com/suite/form/togglegroup/) компонента Form и события `change` DataCollection. Вызывается со следующим параметром:
+- `$handler` - (опционально) - колбек, который позволяет обрабатывать действия при возникновении события `change` элемента управления [ToggleGroup](https://docs.dhtmlx.com/suite/form/togglegroup/) компонента Form и события `change` DataCollection. Вызывается со следующим параметром:
     - `object` - объект со следующими свойствами:
         - `id` - идентификатор элемента Diagram
         - `key` - имя указанного/изменяемого свойства или путь к нему в объекте элемента Diagram
         - `editor` - объект Diagram Editor
         - `control` - объект элемента управления [ToggleGroup](https://docs.dhtmlx.com/suite/form/togglegroup/) компонента Form, на основе которого построен компонент
         - `value` - новое значение элемента управления [ToggleGroup](https://docs.dhtmlx.com/suite/form/togglegroup/) компонента Form
-- `$setValue` - (опционально) - функция обратного вызова, которая позволяет задавать значение элемента управления [ToggleGroup](https://docs.dhtmlx.com/suite/form/togglegroup/) компонента Form при инициализации элемента управления и при изменении значения в DataCollection. Вызывается со следующим параметром:
+- `$setValue` - (опционально) - колбек, который позволяет задавать значение элемента управления [ToggleGroup](https://docs.dhtmlx.com/suite/form/togglegroup/) компонента Form при инициализации элемента управления и при изменении значения в DataCollection. Вызывается со следующим параметром:
     - `object` - объект со следующими свойствами:
         - `editor` - объект Diagram Editor
         - `control` - объект элемента управления [ToggleGroup](https://docs.dhtmlx.com/suite/form/togglegroup/) компонента Form, на основе которого построен компонент
         - `value` - значение элемента Diagram
-- `$layout` - (опционально) - функция обратного вызова, которая позволяет задавать структуру элемента управления. Возвращает конфигурацию элемента управления [ToggleGroup](https://docs.dhtmlx.com/suite/form/togglegroup/) компонента Form. Вызывается со следующим параметром:
+- `$layout` - (опционально) - колбек, который позволяет задавать структуру элемента управления. Возвращает конфигурацию элемента управления [ToggleGroup](https://docs.dhtmlx.com/suite/form/togglegroup/) компонента Form. Вызывается со следующим параметром:
     - `object` - конфигурация элемента управления без служебных свойств
 
 ### Свойства Toggle {#toggle-properties}

@@ -73,25 +73,25 @@ description: Изучите элемент управления Timepicker па�
 :::
 
 - `$on` - (необязательный) - позволяет задать обработчик события. Объект содержит следующие свойства:
-    - `eventName`  - функция обратного вызова, которая вызывается со следующими параметрами:
+    - `eventName`  - колбек, который вызывается со следующими параметрами:
         - `object` - объект со следующими свойствами:
             - `control` - элемент управления [Timepicker](https://docs.dhtmlx.com/suite/form/timepicker/) Form
             - `editor` - объект Diagram Editor
             - `id` - id элемента Diagram
         - `arguments` - (необязательный) - [исходные аргументы события](https://docs.dhtmlx.com/suite/category/form-timepicker-events/)
-- `$handler` - (необязательный) - функция обратного вызова, которая позволяет обрабатывать действия при возникновении событий `change` и `input` элемента управления [Timepicker](https://docs.dhtmlx.com/suite/form/timepicker/) Form и события `change` DataCollection. Вызывается со следующим параметром:
+- `$handler` - (необязательный) - колбек, который позволяет обрабатывать действия при возникновении событий `change` и `input` элемента управления [Timepicker](https://docs.dhtmlx.com/suite/form/timepicker/) Form и события `change` DataCollection. Вызывается со следующим параметром:
     - `object` - объект со следующими свойствами:
         - `id` - id элемента Diagram
         - `key` - имя задаваемого/изменяемого свойства или путь к нему в объекте элемента Diagram
         - `editor` - объект Diagram Editor
         - `control` - объект элемента управления [Timepicker](https://docs.dhtmlx.com/suite/form/timepicker/) Form, на основе которого построен компонент
         - `value` - новое значение элемента управления [Timepicker](https://docs.dhtmlx.com/suite/form/timepicker/) Form
-- `$setValue` - (необязательный) - функция обратного вызова, которая позволяет задавать значение элемента управления [Timepicker](https://docs.dhtmlx.com/suite/form/timepicker/) Form при инициализации элемента управления и при изменении значения в DataCollection. Вызывается со следующим параметром:
+- `$setValue` - (необязательный) - колбек, который позволяет задавать значение элемента управления [Timepicker](https://docs.dhtmlx.com/suite/form/timepicker/) Form при инициализации элемента управления и при изменении значения в DataCollection. Вызывается со следующим параметром:
     - `object` - объект со следующими свойствами:
         - `editor` - объект Diagram Editor
         - `control` - объект элемента управления [Timepicker](https://docs.dhtmlx.com/suite/form/timepicker/) Form, на основе которого построен компонент
         - `value` - значение элемента Diagram
-- `$layout` - (необязательный) - функция обратного вызова, которая позволяет задавать структуру элемента управления. Возвращает конфигурацию элемента управления [Timepicker](https://docs.dhtmlx.com/suite/form/timepicker/) Form. Вызывается со следующим параметром:
+- `$layout` - (необязательный) - колбек, который позволяет задавать структуру элемента управления. Возвращает конфигурацию элемента управления [Timepicker](https://docs.dhtmlx.com/suite/form/timepicker/) Form. Вызывается со следующим параметром:
     - `object` - конфигурация элемента управления без служебных свойств
 
 ## Пример {#example}
