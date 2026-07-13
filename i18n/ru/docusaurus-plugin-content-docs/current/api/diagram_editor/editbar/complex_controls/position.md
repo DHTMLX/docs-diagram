@@ -1,0 +1,88 @@
+---
+sidebar_label: Position
+title: Сложные элементы управления Editbar - Position
+description: Вы можете изучить элемент управления Position компонента Editbar в документации библиотеки DHTMLX JavaScript Diagram. Ознакомьтесь с руководствами для разработчиков и справочником API, попробуйте примеры кода и живые демонстрации, а также загрузите бесплатную 30-дневную пробную версию DHTMLX Suite.
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+# Position
+
+@short: Комплексный элемент управления для настройки смещения фигуры относительно предустановленного алгоритма по осям X и Y
+
+<img
+  src={useBaseUrl('/img/editbar-complex-controls/position.png')}
+  alt="Position control" width='300'
+/>
+
+:::info
+Элемент управления **Position** доступен только для элемента `shape` в режимах *org* или *mindmap* в Diagram Editor.
+:::
+
+## Использование {#usage}
+
+~~~jsx
+{
+    type: "position",
+
+    hidden?: boolean, // false по умолчанию
+    disabled?: boolean, // false по умолчанию
+
+    css?: string,
+    width?: string | number | "content", // "content" по умолчанию
+    height?: string | number | "content", // "content" по умолчанию
+    padding?: string | number, // "0 16px" по умолчанию
+
+    label?: string,
+    labelAlignment?: "left" | "right" | "center", // "left" по умолчанию
+    align?: "start" | "center" | "end" | "between" | "around" | "evenly", // "start" по умолчанию
+    compact?: boolean, // false по умолчанию
+
+    // Служебные свойства
+    $properties?: object
+}
+~~~
+
+## Описание {#description}
+
+### Базовые свойства {#basic-properties}
+
+- `type` - (обязательный) тип элемента управления. Установите значение `"position"`
+- `hidden` - (опциональный) определяет, скрыт ли элемент управления. *false* по умолчанию
+- `disabled` - (опциональный) определяет, включен (*false*) или отключен (*true*) элемент управления. *false* по умолчанию
+- `css` - (опциональный) добавляет CSS-классы к элементу управления
+- `width` - (опциональный) ширина элемента управления. `"content"` по умолчанию
+- `height` - (опциональный) высота элемента управления. `"content"` по умолчанию
+- `padding` - (опциональный) задаёт отступы для содержимого внутри группы элементов управления. *"0 16px"* по умолчанию
+- `label` - (опциональный) задаёт подпись для элемента управления
+- `labelAlignment` - (опциональный) определяет положение подписи. `"left"` по умолчанию
+- `align` - (опциональный) задаёт выравнивание элементов управления внутри группы. `"start"` по умолчанию
+- `compact` - (опциональный) задаёт компактный режим, убирает отступы и рамку. *false* по умолчанию
+
+### Служебные свойства {#service-properties}
+
+- `$properties` - (опциональный) позволяет переопределить значения [базовых элементов управления](api/diagram_editor/editbar/basic_controls_overview.md)) внутри сложного элемента управления. Вы можете настроить следующие элементы **Position** на основе базовых элементов управления:
+    - `dx` - ([input](api/diagram_editor/editbar/basic_controls/input.md)) задаёт смещение фигуры относительно предустановленного алгоритма по оси X
+    - `dy` - ([input](api/diagram_editor/editbar/basic_controls/input.md)) задаёт смещение фигуры относительно предустановленного алгоритма по оси Y
+
+## Пример {#example}
+
+~~~jsx {6-13}
+const editor= new dhx.DiagramEditor("editor_container", {
+    type: "mindmap",
+    view: {
+        editbar: {
+            properties: {
+                $shape: [
+                    {
+                        type: "position",
+                        $properties: {
+                            dx: { disabled: true }
+                        }
+                    }
+                ]
+            }
+        }
+    }
+});
+~~~
