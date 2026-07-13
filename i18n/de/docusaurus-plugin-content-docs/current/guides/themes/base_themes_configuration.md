@@ -8,7 +8,7 @@ description: Sie können in der Dokumentation der DHTMLX JavaScript Diagram-Bibl
 
 ## Konfigurieren aller Themes {#configuring-all-themes}
 
-Ihnen wird vielleicht auffallen, dass die CSS-Variablen des [Standard](guides/themes.md#light-theme-default)-Themes Variablen des Farbschemas enthalten:
+Ihnen wird vielleicht auffallen, dass die CSS-Variablen des [Standard](themes.md#light-theme-default)-Themes Variablen des Farbschemas enthalten:
 
 ~~~css
 --dhx-h-primary: 200;
@@ -62,7 +62,7 @@ Außerdem werden Werte von Variablen, die auf Basis der Primärfarbe berechnet w
 
 ## Konfigurieren eines einzelnen Themes {#configuring-a-separate-theme}
 
-Wenn Sie einige Farbwerte für ein einzelnes [Diagram-Theme](guides/themes.md) überschreiben möchten, müssen Sie dies im Attribut `'data-dhx-theme'` tun:
+Wenn Sie einige Farbwerte für ein einzelnes [Diagram-Theme](themes.md) überschreiben möchten, müssen Sie dies im Attribut `'data-dhx-theme'` tun:
 
 ~~~html
 <style>
@@ -112,7 +112,7 @@ Sie können das Erscheinungsbild der Shapebar-Elemente verwalten, indem Sie die 
 - `--dhx-shapebar-item-background`
 - `--dhx-shapebar-item-border-color`
 
-Die Standardwerte dieser Variablen [hängen vom angewendeten Theme ab](guides/themes.md).
+Die Standardwerte dieser Variablen [hängen vom angewendeten Theme ab](themes.md).
 
 ### Festlegen benutzerdefinierter CSS-Variablen {#setting-custom-css-variables}
 
@@ -160,7 +160,7 @@ Zum Beispiel:
 
 ## Anpassen des Erscheinungsbilds von Tasks im PERT-Modus {#adjusting-the-look-of-tasks-in-the-pert-mode}
 
-Das Erscheinungsbild der Tasks des [Diagram im PERT-Diagrammmodus](/#diagram-in-the-pert-mode) wird durch die CSS-Variable `--dhx-shape-pert-header-background` definiert. Sie wird im [Standard](guides/themes.md#light-theme-default)-Theme wie folgt festgelegt:
+Das Erscheinungsbild der Tasks des [Diagram im PERT-Diagrammmodus](/#diagram-in-the-pert-mode) wird durch die CSS-Variable `--dhx-shape-pert-header-background` definiert. Sie wird im [Standard](themes.md#light-theme-default)-Theme wie folgt festgelegt:
 
 ~~~jsx
 --dhx-shape-pert-header-background: var(--dhx-gantt-base-colors-primary, #537CFA);

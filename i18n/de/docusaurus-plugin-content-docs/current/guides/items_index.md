@@ -15,7 +15,7 @@ import {useCurrentSidebarCategory} from '@docusaurus/theme-common';
 
 Nachdem Sie die Anleitungen gelesen haben, können Sie die folgenden API-Abschnitte durchsehen, um den Entwicklungsprozess zu beschleunigen:
 
-- [Eigenschaften der Element-API](category/items-api.md)
+- [Eigenschaften der Element-API](/category/items-api/)
 - [DataCollection-API](/api/data_collection/) (ermöglicht das Hinzufügen, Entfernen und Filtern von Datenelementen (wie Shapes, Lines, Line Titles, Groups, Swimlanes) usw.)
 - [CellManager-API](/api/cell_manager/) (ermöglicht das Hinzufügen, Entfernen und Verschieben von Swimlane-Zellen usw.)
 - [Selection-API](/api/selection/)
