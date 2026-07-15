@@ -33,6 +33,6 @@ const state = diagram.getScrollState();
 // diagram.scrollTo( state.x, state.y );
 ~~~
 
-**Related articles**: [Scrolling Diagram](guides/diagram/scrolling_diagram.md)
+**Related article**: [Scrolling Diagram](guides/diagram/scrolling_diagram.md)
 
 **Related sample**: [Diagram. Scroll content](https://snippet.dhtmlx.com/f970hbym)

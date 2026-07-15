@@ -43,4 +43,4 @@ const shape = diagram.data.getItem(123);
 const text = shape.text;
 ~~~
 
-**Related articles**:  [Getting an item](guides/manipulating_items.md#getting-an-item)
+**Related article**:  [Getting an item](guides/manipulating_items.md#getting-an-item)

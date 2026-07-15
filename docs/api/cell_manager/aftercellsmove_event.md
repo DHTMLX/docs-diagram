@@ -40,4 +40,4 @@ diagram.events.on("afterCellsMove", (swimlaneId) => {
 
 **Change log**: Added in v4.0
 
-**Related articles**: [Configuring Swimlanes](/swimlanes/)
+**Related article**: [Configuring Swimlanes](/swimlanes/)
