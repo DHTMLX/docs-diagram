@@ -1,5 +1,5 @@
 ---
-sidebar_label: hotkeys 
+sidebar_label: hotkeys
 title: hotkeys Property of Editor
 description: You can learn about the hotkeys property of editor in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
@@ -16,7 +16,7 @@ You can completely disable all hotkeys, disable specific combinations, or overri
 Please note that enabling or disabling default hotkeys will also affect their visibility as tooltips or labels in the editor's Toolbar.
 :::
 
-### Usage 
+### Usage
 
 ~~~jsx
 hotkeys?:
@@ -99,6 +99,6 @@ The table below describes the actions performed by standard hotkeys and provides
 
 - The `hotkeys` property is added in v6.1
 
-**Related samples**:
+**Related sample**:
 
 - [Diagram Editor. Managing hotkeys' adding, modifying and disabling via API](https://snippet.dhtmlx.com/8ads5dq8)

@@ -20,7 +20,7 @@ The event fires just for the target element despite the number of selected eleme
 
 ~~~jsx
 "itemMoveEnd": ({
-    id: string | number, 
+    id: string | number,
     batch: (string | number)[],
     coords: object,
     event: PointerEvent
@@ -49,8 +49,8 @@ editor.parse(data);
 // attaching a handler to the event
 editor.events.on("itemMoveEnd", ({ id, coords }) => {
     console.log(`
-        Item ${id} is at the position: 
-            x: ${coords.x} 
+        Item ${id} is at the position:
+            x: ${coords.x}
             y: ${coords.y}
     `);
 });
@@ -66,7 +66,7 @@ editor.events.on("itemMoveEnd", ({ id, coords }) => {
 - [`afterItemMove`](api/diagram_editor/editor/events/afteritemmove_event.md)
 - [`beforeItemMove`](api/diagram_editor/editor/events/beforeitemmove_event.md)
 
-**Related samples**:
+**Related sample**:
 
 - [Diagram Editor. Managing shapes' moving, rotating and resizing via events](https://snippet.dhtmlx.com/qldjbbm7)
 

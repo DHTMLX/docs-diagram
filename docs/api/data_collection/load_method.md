@@ -14,7 +14,7 @@ description: You can learn about the load method of data collection in the docum
 
 ~~~jsx
 load(
-    url: string | object, 
+    url: string | object,
     driver?: object | string
 ): promise;
 ~~~
@@ -51,6 +51,6 @@ diagram.data.load("../some/data").then(() => {
 });
 ~~~
 
-**Related articles**:  [Loading and storing data](guides/loading_data.md)
+**Related article**:  [Loading and storing data](guides/loading_data.md)
 
 **Related sample**: [Diagram. Data. Data loading](https://snippet.dhtmlx.com/09isp2d8)

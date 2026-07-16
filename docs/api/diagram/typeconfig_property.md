@@ -6,7 +6,7 @@ description: You can learn about the typeConfig property in the documentation of
 
 # typeConfig
 
-:::info 
+:::info
 The property does not work in the Editor
 :::
 
@@ -41,7 +41,7 @@ typeConfig?: {
 ~~~jsx
 typeConfig?: {
     dateFormat?: string; // %d-%m-%Y by default
-} 
+}
 ~~~
 
 ### Parameters
@@ -54,7 +54,7 @@ The `typeConfig` object can include one of the following parameters:
       - `"right"` - puts child shapes of the graph to the right of the root shape
     - `side` - (optional) an object which sets the mandatory direction for the specified child shapes. The object contains a set of *key:value* pairs where *key* is the direction of the shapes (left, right) and *value* is an array with the ids of the shapes
 - for the PERT mode:
-    - `dateFormat` - (optional) sets the format of rendering dates in the shapes of the `task` type. Affects rendering of dates in the user interface 
+    - `dateFormat` - (optional) sets the format of rendering dates in the shapes of the `task` type. Affects rendering of dates in the user interface
 
 :::tip
 You can use either the `direction` attribute or the `side` one for the diagram in the mindmap mode. Don't use both of them at the same time!
@@ -65,7 +65,7 @@ You can use either the `direction` attribute or the `side` one for the diagram i
 - for the mindmap mode:
 
 ~~~jsx {3-5}
-const diagram = new dhx.Diagram("diagram_container", { 
+const diagram = new dhx.Diagram("diagram_container", {
     type: "mindmap",
     typeConfig: {
         direction: "right"
@@ -76,7 +76,7 @@ const diagram = new dhx.Diagram("diagram_container", {
 or
 
 ~~~jsx {3-8}
-const diagram = new dhx.Diagram("diagram_container", { 
+const diagram = new dhx.Diagram("diagram_container", {
     type: "mindmap",
     typeConfig: {
         side: {
@@ -100,12 +100,12 @@ const diagram = new dhx.Diagram("diagram_container", {
 });
 ~~~
 
-**Change log**: 
+**Change log**:
 
 - The `dateFormat` property for the PERT mode was added in v6.1
 - Added in v3.1.
 
-**Related articles**: [Arrangement of shapes in the mindmap mode of Diagram](guides/diagram/configuration.md#arranging-shapes-in-the-mindmap-mode-of-diagram)
+**Related article**: [Arrangement of shapes in the mindmap mode of Diagram](guides/diagram/configuration.md#arranging-shapes-in-the-mindmap-mode-of-diagram)
 
 **Related samples**:
 

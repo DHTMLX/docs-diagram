@@ -32,8 +32,8 @@ The method returns `true` if the element is in the selected list, otherwise `fal
 
 ~~~jsx {9-10}
 // a diagram must be created with the "select:true" option
-const diagram = new dhx.Diagram("diagram_container", { 
-    select: true 
+const diagram = new dhx.Diagram("diagram_container", {
+    select: true
 });
 // loading data
 diagram.data.parse(data);
@@ -45,9 +45,9 @@ diagram.selection.includes({ id: "4" }) // returns false
 
 **Change log**: Added in v6.0
 
-**Related articles**:  
+**Related articles**:
 
 - [diagram.config.select](api/diagram/select_property.md)
 - [Selecting items](guides/manipulating_items.md#selecting-items)
 
-**Related samples**: [Diagram. Selection. Item selection](https://snippet.dhtmlx.com/jyoxn5h7)
+**Related sample**: [Diagram. Selection. Item selection](https://snippet.dhtmlx.com/jyoxn5h7)

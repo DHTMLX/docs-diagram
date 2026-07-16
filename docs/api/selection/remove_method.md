@@ -36,8 +36,8 @@ The method returns `true` if unselection of an item or the list cleanup has been
 
 ~~~jsx {9}
 // a diagram must be created with the "select:true" option
-const diagram = new dhx.Diagram("diagram_container", { 
-    select: true 
+const diagram = new dhx.Diagram("diagram_container", {
+    select: true
 });
 // loading data
 diagram.data.parse(data);
@@ -51,15 +51,15 @@ When called without arguments, the method clears the selection list:
 
 ~~~jsx {9-10}
 // a diagram must be created with the "select:true" option
-const diagram = new dhx.Diagram("diagram_container", { 
-    select: true 
+const diagram = new dhx.Diagram("diagram_container", {
+    select: true
 });
 // loading data
 diagram.data.parse(data);
 
 console.log(diagram.selection.getIds()); // -> ["1", "2", "3"]
 // removes all the items from the selection list
-diagram.selection.remove(); 
+diagram.selection.remove();
 console.log(diagram.selection.getIds()); // -> []
 ~~~
 
@@ -70,4 +70,4 @@ console.log(diagram.selection.getIds()); // -> []
 - [diagram.config.select](api/diagram/select_property.md)
 - [Selecting items](guides/manipulating_items.md#selecting-items)
 
-**Related samples**: [Diagram. Selection. Item selection](https://snippet.dhtmlx.com/jyoxn5h7)
+**Related sample**: [Diagram. Selection. Item selection](https://snippet.dhtmlx.com/jyoxn5h7)

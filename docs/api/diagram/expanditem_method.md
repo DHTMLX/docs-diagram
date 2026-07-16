@@ -14,7 +14,7 @@ description: You can learn about the expandItem method in the documentation of t
 
 ~~~jsx
 expandItem(
-    id: string | number, 
+    id: string | number,
     dir?: string
 ): void;
 ~~~
@@ -51,4 +51,4 @@ diagram.expandItem("main", "left");
 
 **Change log**: The `dir` parameter was added in v3.1
 
-**Related articles**: [Expanding/collapsing items](guides/manipulating_items.md#expandingcollapsing-items)
+**Related article**: [Expanding/collapsing items](guides/manipulating_items.md#expandingcollapsing-items)

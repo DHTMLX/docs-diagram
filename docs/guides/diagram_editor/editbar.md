@@ -33,7 +33,7 @@ To configure a [group of elements](guides/items_index.md), you need to use the f
 - [`$shape`](#configure-editbar-for-shapes) - allows configuring Editbar controls for [all shapes including custom shapes](/category/shapes)
 - [`$group`](#configure-editbar-for-group-elements) - allows configuring Editbar controls for all elements with the [`group`](/groups/) type
 - [`$swimlane`](#configure-editbar-for-swimlanes) - allows configuring Editbar controls for all elements with the [`swimlane`](/swimlanes/) type
-- [`$line`](#configure-editbar-for-lines) allows configuring Editbar controls for all elements with the [`line`](/lines/) type
+- [`$line`](#configure-editbar-for-lines) - allows configuring Editbar controls for all elements with the [`line`](/lines/) type
 - [`$lineTitle`](#configure-editbar-for-line-titles) - allows configuring Editbar controls for all elements with the [`lineTitle`](/line_titles/) type
 
 <iframe src="https://snippet.dhtmlx.com/ealq0m4l?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
@@ -84,10 +84,10 @@ The `$group` service property allows configuring Editbar controls for all elemen
 ~~~jsx
 properties: {
     $group: [
-        { 
-            type: "header", 
+        {
+            type: "header",
             label: "Group header style",
-            // ... 
+            // ...
         }
     ]
 }
@@ -102,10 +102,10 @@ The `$swimlane` service property allows configuring Editbar controls for all ele
 ~~~jsx
 properties: {
     $swimlane: [
-        { 
-            type: "header", 
+        {
+            type: "header",
             label: "Swimlane header style",
-            // ... 
+            // ...
         }
     ]
 }
@@ -155,7 +155,7 @@ properties: {
 You can use the [`controls`](api/diagram_editor/editbar/config/controls_property.md) property of the Editbar view to create a custom control based on [**Basic controls**](api/diagram_editor/editbar/basic_controls_overview.md) and/or [**Complex controls**](api/diagram_editor/editbar/complex_controls_overview.md).
 
 :::warning
-We do not recommend you to use a default control type (refer to the [***Basic controls***](api/diagram_editor/editbar/basic_controls_overview.md) and/or [***Complex controls***](api/diagram_editor/editbar/complex_controls_overview.md)) as the name for a custom control. Use the unique name for each custom control to avoid errors!
+We do not recommend using a default control type (refer to the [***Basic controls***](api/diagram_editor/editbar/basic_controls_overview.md) and/or [***Complex controls***](api/diagram_editor/editbar/complex_controls_overview.md)) as the name for a custom control. Use a unique name for each custom control to avoid errors!
 :::
 
 After creating a custom control, you need to apply it to the needed Diagram element via the [`properties`](api/diagram_editor/editbar/config/properties_property.md) property.

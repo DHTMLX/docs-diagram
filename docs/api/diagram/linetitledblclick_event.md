@@ -14,8 +14,8 @@ description: You can learn about the lineTitleDblClick event in the documentatio
 
 ~~~jsx
 lineTitleDblClick: (
-    lineId: string | number, 
-    titleId: string | number, 
+    lineId: string | number,
+    titleId: string | number,
     event: MouseEvent
 ) => void;
 ~~~

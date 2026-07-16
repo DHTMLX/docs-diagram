@@ -6,12 +6,12 @@ description: You can learn how to create a custom theme in the documentation of 
 
 # Custom theme
 
-If the base Diagram themes don't fit your project, you can configure your own color theme. 
+If the base Diagram themes don't fit your project, you can configure your own color theme.
 Check the **custom light** and **custom dark** themes in the snippet below:
 
 <iframe src="https://snippet.dhtmlx.com/9twmlfus?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
-To make a custom theme of your own, you need to override the values of the internal CSS variables as follows:
+To make a custom theme, override the values of the internal CSS variables as follows:
 
 ~~~html
 <style>
@@ -71,7 +71,7 @@ To make a custom theme of your own, you need to override the values of the inter
     const diagram = new dhx.Diagram("diagram_container", {
         type: "default",
     });
-    
+
     dhx.setTheme("custom-theme-dark");
 </script>
 ~~~

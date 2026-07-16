@@ -1,10 +1,10 @@
 ---
 sidebar_label: Button
-title: Editbar Basic Controls - Button 
+title: Editbar Basic Controls - Button
 description: You can explore the Button control of Editbar in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
-# Button 
+# Button
 
 @short: The basic button control that can have an icon.
 
@@ -16,7 +16,7 @@ description: You can explore the Button control of Editbar in the documentation 
 {
     type: "button",
     text?: string,
-    
+
     css?: string,
     disabled?: boolean, // false by default
     hidden?: boolean, // false by default
@@ -32,7 +32,7 @@ description: You can explore the Button control of Editbar in the documentation 
     size?: "small" | "medium", // "medium" by default
     view?: "flat" | "link", // "flat" by default
 
-    // service properties and methods 
+    // service properties and methods
     $on?: { [eventName: string]: function },
     $layout?: function
 }
@@ -60,7 +60,7 @@ description: You can explore the Button control of Editbar in the documentation 
 ### Service properties and methods
 
 :::warning
-Note that it's highly not recommended to redefine the service properties and methods for the default types of controls, since it may cause breaks in their functionality. 
+Note that we strongly recommend not redefining the service properties and methods for the default types of controls, since it may cause breaks in their functionality.
 :::
 
 - `$on` - (optional) - allows setting an event listener. The object has the following properties:
@@ -68,7 +68,7 @@ Note that it's highly not recommended to redefine the service properties and met
         - `object` - an object with the following properties:
             - `control` - the [Button](https://docs.dhtmlx.com/suite/form/button/) Form control
             - `editor` - the object of the Diagram Editor
-            - `id` - the id of a Diagram item 
+            - `id` - the id of a Diagram item
         - `arguments` - (optional) - the [original event arguments](https://docs.dhtmlx.com/suite/category/form-button-events/)
 - `$layout` - (optional) - a callback function that allows setting the structure of a control. Returns the configuration of the [Button](https://docs.dhtmlx.com/suite/form/button/) Form control. Called with the following parameter:
     - `object` - the configuration of a control without service properties

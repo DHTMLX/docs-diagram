@@ -14,8 +14,8 @@ description: You can learn about the lineTitleClick event in the documentation o
 
 ~~~jsx
 lineTitleClick: (
-    lineId: string | number, 
-    titleId: string | number, 
+    lineId: string | number,
+    titleId: string | number,
     event: MouseEvent
 ) => void;
 ~~~

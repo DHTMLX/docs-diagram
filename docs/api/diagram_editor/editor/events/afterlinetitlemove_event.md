@@ -14,9 +14,9 @@ description: You can learn about the afterLineTitleMove event of editor in the d
 
 ~~~jsx
 "afterLineTitleMove": ({
-    event: PointerEvent, 
-    lineId: string | number, 
-    titleId: string | number, 
+    event: PointerEvent,
+    lineId: string | number,
+    titleId: string | number,
     coords: object
 }) => void;
 ~~~

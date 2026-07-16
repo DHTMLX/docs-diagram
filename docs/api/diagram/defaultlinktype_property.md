@@ -21,15 +21,15 @@ defaultLinkType?: "line" | "dash";
 ### Default config
 
 ~~~jsx
-defaultLinkType: "line" 
+defaultLinkType: "line"
 ~~~
 
 ### Example
 
 ~~~jsx
-const diagram = new dhx.Diagram("diagram_container", { 
+const diagram = new dhx.Diagram("diagram_container", {
     defaultLinkType: "dash"
 });
 ~~~
 
-**Related articles**: [Setting connections between shapes](/lines/#setting-connections-between-shapes)
+**Related article**: [Setting connections between shapes](/lines/#setting-connections-between-shapes)

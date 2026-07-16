@@ -22,8 +22,8 @@ defaults?: {
 
 The `defaults` property is an object which includes a set of `key:value` pairs where *key* is a type of a shape or line and *value* is an object with a set of configuration settings of the [shape](shapes/configuration_properties.md) or [line](lines/configuration_properties.md) correspondingly.
 
-:::note 
-There is no possibility to define `type` and `id` in the default configuration of a shape/line
+:::note
+You cannot define `type` and `id` in the default configuration of a shape/line
 :::
 
 ### Example

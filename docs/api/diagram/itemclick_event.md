@@ -16,7 +16,7 @@ If a click is done over a swimlane, the event will be fired on the cell of the s
 
 ~~~jsx
 itemClick: (
-    id: string | number, 
+    id: string | number,
     event: MouseEvent
 ) => void;
 ~~~

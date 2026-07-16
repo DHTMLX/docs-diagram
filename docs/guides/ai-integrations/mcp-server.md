@@ -115,7 +115,7 @@ These are the steps to complete for connecting DHTMLX MCP server with Google Ant
 ~~~
 dhtmlx-mcp
 ~~~
-- URL: 
+- URL:
 ~~~
 https://docs.dhtmlx.com/mcp
 ~~~
@@ -158,11 +158,11 @@ Follow these steps to connect DHTMLX MCP server to ChatGPT:
 3. Enable **Developer mode**
 4. Return to the **Apps & Connectors** screen and click "Create"
 5. Configure the connector:
-- Name: 
+- Name:
 ~~~
 dhtmlx-mcp
 ~~~
-- URL: 
+- URL:
 ~~~
 https://docs.dhtmlx.com/mcp
 ~~~

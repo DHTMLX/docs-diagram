@@ -57,7 +57,7 @@ Connector lines are aligned "from side to side".
 If `fromSide` and `toSide` are set on a link, the autoplacement algorithm will preserve those values but will not use them during placement calculation. The key properties that define links are `from` and `to`, while `fromSide` and `toSide` are calculated automatically by the algorithm.
 :::
 
-:::info 
+:::info
 To add arrows to the lines, specify `forwardArrow: "filled"` or `backArrow: "filled"` in the configuration of a [line object](lines/configuration_properties.md).
 :::
 
@@ -104,8 +104,8 @@ Shapes are arranged on imaginary circles relative to the central shape, i.e. a s
 - The `placeMode` parameter is added in v5.0
 - The `autoplacement` property is added in v3.0
 
-**Related articles**: [Arranging shapes automatically](guides/manipulating_items.md#arranging-shapes-automatically)
+**Related article**: [Arranging shapes automatically](guides/manipulating_items.md#arranging-shapes-automatically)
 
-**Related sample**: 
+**Related samples**:
 - [Diagram. Default mode. Radial autoplacement with padding options](https://snippet.dhtmlx.com/huut0l1s)
 - [Diagram. Default mode. Autoplacement](https://snippet.dhtmlx.com/f3uekgjw)

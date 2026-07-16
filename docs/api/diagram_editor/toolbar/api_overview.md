@@ -1,12 +1,12 @@
 ---
 sidebar_label: Toolbar API overview
-title: Toolbar API overview 
+title: Toolbar API overview
 description: You can check a Toolbar overview in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
 
 # Toolbar API overview
 
-[Toolbar](guides/diagram_editor/toolbar.md) is a part of the Diagram Editor that helps users to control the editing process. Use the `toolbar` property of the [`view`](api/diagram_editor/editor/config/view_property.md) configuration object to show, hide and configure the Toolbar. There are two ways of initialization you can choose from:
+[Toolbar](guides/diagram_editor/toolbar.md) is a part of the Diagram Editor that helps users control the editing process. Use the `toolbar` property of the [`view`](api/diagram_editor/editor/config/view_property.md) configuration object to show, hide and configure the Toolbar. There are two ways of initialization you can choose from:
 
 - creating the default Toolbar by using the `toolbar:true` setting:
 

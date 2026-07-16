@@ -14,7 +14,7 @@ description: You can learn about the change event of data collection in the docu
 
 ~~~jsx
 change: (
-    id?: string, 
+    id?: string,
     status?: "add" | "update" | "delete" | "load"
     updatedItem?: object
 ) => void;

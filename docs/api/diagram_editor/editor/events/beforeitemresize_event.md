@@ -14,7 +14,7 @@ description: You can learn about the beforeItemResize event of editor in the doc
 
 ~~~jsx
 "beforeItemResize": ({
-    id: string | number, 
+    id: string | number,
     width: number,
     height: number,
     x: number,
@@ -73,6 +73,6 @@ editor.events.on("beforeItemResize", ({ id, width, height }) => {
 - [`afterItemResize`](api/diagram_editor/editor/events/afteritemresize_event.md)
 - [`itemResizeEnd`](api/diagram_editor/editor/events/itemresizeend_event.md)
 
-**Related samples**:
+**Related sample**:
 
 - [Diagram Editor. Managing shapes' moving, rotating and resizing via events](https://snippet.dhtmlx.com/qldjbbm7)

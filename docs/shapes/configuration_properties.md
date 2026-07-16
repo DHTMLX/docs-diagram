@@ -1,13 +1,13 @@
 ---
-sidebar_label: Shape properties 
+sidebar_label: Shape properties
 title: Shape Properties
 description: You can learn about the Shape properties in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
 
 # Shape properties
 
-:::note 
-While specifying color values of the item, use the HEX format.
+:::note
+Specify color values in the HEX format.
 :::
 
 ## Common properties
@@ -18,7 +18,7 @@ While specifying color values of the item, use the HEX format.
 const data = [
     // shape object
     {
-        type: string, 
+        type: string,
         id?: string | number,
         x?: number, // required in the default mode of Diagram
         y?: number, // required in the default mode of Diagram
@@ -46,7 +46,7 @@ Each shape object can include the following properties:
 - `height` - (optional) the height of a shape
 - `width` - (optional) the width of a shape
 - `fixed` - (optional) enables/disables movement and resizing of a shape, *false* by default
-- `hidden` - (optional) defines, whether a shape will be hidden
+- `hidden` - (optional) defines whether a shape will be hidden
 
 :::note
 The values of the `height` and `width` are calculated automatically for a `"text"`/`"topic"` shape, depending on the content of the shape.
@@ -170,11 +170,11 @@ When preparing a data set for shapes to load into the diagram in the org chart m
 - `dx` - (optional) the left offset of the shape
 - `dy` - (optional) the top offset of the shape
 - `dir` - (optional) the direction of shapes connecting. To connect shapes vertically, set the attribute to the `"vertical"` value
-- `open` - (optional) defines, whether the child items of the current shape will be shown; *true* by default
-- `assistant` - (optional) defines, whether the shape is an assistant item for the parent shape
-- `partner` - (optional) defines, whether the shape is a partner item for the parent shape
-- `catchItem` - (optional) defines, whether the item can catch the moving item
-- `giveItem` - (optional) defines, whether the item can be moved
+- `open` - (optional) defines whether the child items of the current shape will be shown; *true* by default
+- `assistant` - (optional) defines whether the shape is an assistant item for the parent shape
+- `partner` - (optional) defines whether the shape is a partner item for the parent shape
+- `catchItem` - (optional) defines whether the item can catch the moving item
+- `giveItem` - (optional) defines whether the item can be moved
 
 ### Example
 
@@ -238,12 +238,12 @@ When preparing a data set for shapes to load into the diagram in the mindmap mod
 - `parent` - (optional) the id of the parent shape
 - `dx` - (optional) the left offset of the shape
 - `dy` - (optional) the top offset of the shape
-- `open` - (optional) defines, whether the child items of the current shape will be shown; *true* by default
+- `open` - (optional) defines whether the child items of the current shape will be shown; *true* by default
 - `openDir` - (optional) shows/hides the child items of the root shape. The object takes two attributes:
     - `left` - (optional) shows/hides the child items to the left of the root shape
     - `right` - (optional) shows/hides the child items to the right of the root shape
-- `catchItem` - (optional) defines, whether the item can catch the moving item
-- `giveItem` - (optional) defines, whether the item can be moved
+- `catchItem` - (optional) defines whether the item can catch the moving item
+- `giveItem` - (optional) defines whether the item can be moved
 
 **Related sample**: [Diagram editor. Mindmap mode. Emotions mind map](https://snippet.dhtmlx.com/lo1vm0e8)
 
@@ -273,7 +273,7 @@ const data = [
         id: "3",
         text: "3",
         parent: "1",
-        catchItem: false 
+        catchItem: false
     },
     {
         id: "4",
@@ -412,7 +412,7 @@ When preparing a data set for `"img-card"` shapes, you can add the following pro
 
 ### Example
 
-~~~jsx 
+~~~jsx
 const data = [
     {
         "id": "1",
@@ -429,7 +429,7 @@ const data = [
         "title": "Emma Lynch",
         "img": "../img/avatar-02.png",
         "parent": "1",
-        "headerColor": "#5874CD" 
+        "headerColor": "#5874CD"
     }
 ];
 ~~~
@@ -466,14 +466,14 @@ When preparing a data set for `"task"` shapes, you can add the following propert
 
 ### Example
 
-~~~jsx 
+~~~jsx
 const data = [
-    { 
-        "id": "4.2.1", 
-        "text": "Functional Testing", 
-        "type": "task", 
-        "parent": "4.2", 
-        "start_date": new Date(2026, 1, 18) 
+    {
+        "id": "4.2.1",
+        "text": "Functional Testing",
+        "type": "task",
+        "parent": "4.2",
+        "start_date": new Date(2026, 1, 18),
         "duration": 2
     }
 ];
@@ -505,14 +505,14 @@ When preparing a data set for `"milestone"` shapes, you can add the following pr
 
 ### Example
 
-~~~jsx 
+~~~jsx
 const data = [
-     { 
-        "id": "5.2", 
-        "text": "Product Launch", 
-        "type": "milestone", 
-        "parent": "5", 
-        "start_date": new Date(2026, 2, 1), 
+     {
+        "id": "5.2",
+        "text": "Product Launch",
+        "type": "milestone",
+        "parent": "5",
+        "start_date": new Date(2026, 2, 1),
         "duration": 1
     }
 ];

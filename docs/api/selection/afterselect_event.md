@@ -1,7 +1,7 @@
 ---
 sidebar_label: afterSelect
 title: afterSelect Event of Selection
-description: You can learn about the afterSelect event in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.xt
+description: You can learn about the afterSelect event in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
 
 # afterSelect
@@ -14,7 +14,7 @@ description: You can learn about the afterSelect event in the documentation of t
 
 ~~~jsx
 "afterSelect": ({
-    id: string | number, 
+    id: string | number,
     join: boolean,
     batch: (string | number)[]
 }) => void;
@@ -32,7 +32,7 @@ The callback of the event is called with an object with the following parameters
 
 ~~~jsx {9-12}
 // initializing Diagram
-const diagram = new dhx.Diagram("diagram_container", {  
+const diagram = new dhx.Diagram("diagram_container", {
     select: true,
     // other config options
 });
@@ -49,7 +49,7 @@ Here's an example of attaching an event handler to the event for the Diagram Edi
 
 ~~~jsx {8-11}
 // initializing Diagram editor
-const editor = new dhx.DiagramEditor("editor_container", {  
+const editor = new dhx.DiagramEditor("editor_container", {
     // config options
 });
 // loading data into the editor
@@ -63,7 +63,7 @@ editor.diagram.events.on("afterSelect", ({ id }) => {
 
 **Change log**: Updated in v6.0
 
-**Related articles**:  
+**Related articles**:
 
 - [diagram.config.select](api/diagram/select_property.md)
 - [Selecting items](guides/manipulating_items.md#selecting-items)

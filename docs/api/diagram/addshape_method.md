@@ -1,10 +1,10 @@
 ---
-sidebar_label: addShape() 
+sidebar_label: addShape()
 title: addShape Method
 description: You can learn about the addShape method in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
 
-# addShape() 
+# addShape()
 
 ### Description
 
@@ -14,9 +14,9 @@ The `addShape()` method can be used both in the diagram and in the editor. [Chec
 
 ### Usage
 
-~~~jsx 
+~~~jsx
 addShape(
-    type: string, 
+    type: string,
     parameters: object
 ): void;
 ~~~
@@ -28,15 +28,15 @@ addShape(
     - `template: function` - (required) the function that takes the configuration object of the shape as a parameter and returns either an HTML or SVG template
     - [`defaults: object`](shapes/custom_shape.md) - (optional) the default configuration for a created shape. See [the full list of the configuration properties of a shape](shapes/configuration_properties.md)
     - [`eventHandlers: object`](shapes/custom_shape.md#event-handlers-for-custom-shapes) - (optional) adds custom event handlers to HTML elements of the template of a shape. The `eventHandlers` object includes a set of `key:value` pairs, where:
-        - `key: string` - the name of the event. Note, that at the beginning of the event name the 'on' prefix is used (onclick, onmouseover)
-        - `value: object` - an object that contains a `key:value` pair, where 
+        - `key: string` - the name of the event. Note that the 'on' prefix is used at the beginning of the event name (onclick, onmouseover)
+        - `value: object` - an object that contains a `key:value` pair, where
           - `key` is the CSS class name that the handler will be applied to
           - `value` is a function that takes two parameters:
             - `event: object` - (required) an event object
             - `shape: object` - (required) the shape object
-         
+
         :::tip
-        **Note**, we recommend that you use different CSS classes for different custom shapes when initializing custom event handlers.
+        We recommend that you use different CSS classes for different custom shapes when initializing custom event handlers.
         :::
 
 ### Example
@@ -65,7 +65,7 @@ diagram.addShape("personal", {
                 </div>
             </div>
         </div>
-    `), 
+    `),
     defaults: {
         height: 115, width: 330,
         name: "Name and First name",
@@ -138,7 +138,7 @@ editor.diagram.addShape("network", {
 
 **Change log**: The `properties` attribute is removed in v6.0.
 
-**Related articles**: [Custom Shape](shapes/custom_shape.md)
+**Related article**: [Custom Shape](shapes/custom_shape.md)
 
 **Related samples**:
 

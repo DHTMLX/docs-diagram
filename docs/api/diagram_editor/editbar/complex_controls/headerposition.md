@@ -1,7 +1,7 @@
 ---
 sidebar_label: Header position
-title: Editbar Complex Controls - Header position 
-description: You can explore the Header position control of Editbar in the documentation of the the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+title: Editbar Complex Controls - Header position
+description: You can explore the Header position control of Editbar in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -37,7 +37,7 @@ The **Header position** control is available only for `group` and `swimlane` ele
     labelAlignment?: "left" | "right" | "center", // "left" by default
     align?: "start" | "center" | "end" | "between" | "around" | "evenly", // "start" by default
     compact?: boolean, // false by default
-   
+
     // Service properties
     $properties?: object
 }

@@ -18,7 +18,7 @@ The method can't be used to change the *id* or *type* of the item
 
 ~~~jsx
 update(
-    id: string | number, 
+    id: string | number,
     newItem: object
 ): void;
 ~~~
@@ -39,4 +39,4 @@ diagram.data.parse(data);
 diagram.data.update(123, { text:"New text" });
 ~~~
 
-**Related articles**:  [Updating an item](guides/manipulating_items.md#updating-an-item)
+**Related article**:  [Updating an item](guides/manipulating_items.md#updating-an-item)

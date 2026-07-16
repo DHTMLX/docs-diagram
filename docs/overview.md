@@ -1,6 +1,6 @@
 ---
-sidebar_label: Diagram overview 
-title: Diagram Overview 
+sidebar_label: Diagram overview
+title: Diagram Overview
 slug: /
 description: You can have an overview of DHTMLX JavaScript Diagram library in the documentation. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
@@ -26,7 +26,7 @@ You can choose shapes of desired types, link them by suitable connectors and bui
 
 ### Custom shapes
 
-You can easily create [your own templates of shapes](shapes/custom_shape.md) and use them to design any diagram you need. For example, it is possible to create such famous types of custom diagrams as:
+You can create [your own templates of shapes](shapes/custom_shape.md) and use them to design any diagram you need. For example, you can create such well-known custom diagrams as:
 
 | [Life Cycle Diagram](https://snippet.dhtmlx.com/y4k51owl) | [Venn Diagram template](https://snippet.dhtmlx.com/2tzyfois) | [UML Class Diagram template](https://snippet.dhtmlx.com/madymxt5) |
 | --------------------------------------------------------- | --------------------------------------------------- | -------------------------------------------------------- |
@@ -38,7 +38,7 @@ You can easily create [your own templates of shapes](shapes/custom_shape.md) and
 
 ### Groups
 
-You can draw simple or more complicated schemes by grouping shapes in different ways with the help of such an element of Diagram as a group. It is possible to create as one-level groups as nested groups, to configure their appearance and behavior. Check the details in the [Groups](/groups/) article.
+You can draw simple or more complicated schemes by grouping shapes in different ways with the help of such an element of Diagram as a group. You can create both one-level and nested groups, and configure their appearance and behavior. Check the details in the [Groups](/groups/) article.
 
 | [Diagram Editor. Default mode. Virtual private cloud architecture](https://snippet.dhtmlx.com/0hf8ahrb) |
 | ------------------------------------------------------------------------------------------------ |
@@ -46,7 +46,7 @@ You can draw simple or more complicated schemes by grouping shapes in different 
 
 ### Swimlanes
 
-Usage of swimlanes of the DHTMLX Diagram library lets you represent any process (be it a business process, manufacturing or service one, and any other processes) or its separate parts from start to finish. Check the details in the [Swimlanes](/swimlanes/) article.
+Swimlanes in the DHTMLX Diagram library let you represent any process (business, manufacturing, service, or any other) or its separate parts from start to finish. Check the details in the [Swimlanes](/swimlanes/) article.
 
 | [Diagram. Default mode. Swimlane template](https://snippet.dhtmlx.com/z6x5m3gb) |
 | ------------------------------------------------------------------------------- |
@@ -54,7 +54,7 @@ Usage of swimlanes of the DHTMLX Diagram library lets you represent any process 
 
 ### Line titles
 
-The titles of Lines are enabled in the default mode of Diagram. You can add the text by double-clicking on a line. Use double-clicking also for editing the text. Check the details in the [LineTitles](/line_titles/) article.
+Line titles are enabled in the default mode of Diagram. You can add text by double-clicking on a line. You can also use double-clicking to edit the text. Check the details in the [LineTitles](/line_titles/) article.
 
 <iframe src="https://snippet.dhtmlx.com/e6zm6wh1?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
@@ -80,7 +80,7 @@ The partner shapes are very useful for building a family tree.
 
 **Related sample**: [Diagram editor. Org chart mode. Family tree](https://snippet.dhtmlx.com/5pfybpmz)
 
-Here are examples of how the connections of parent shapes look like with one, two, three, and four partners.
+Here are examples of how the connections of parent shapes look with one, two, three, and four partners.
 
 | One partner                               | Two  partners                              |
 | ----------------------------------------- | ------------------------------------------ |
@@ -116,7 +116,7 @@ An example of adding a custom template into the mindmap mode of the diagram to c
 
 ## Diagram in the PERT mode
 
-The [PERT mode](api/diagram/type_property.md) is used to visualize tasks and projects' sequences and connections between them. It is also useful for identifying the critical path and project planning. 
+The [PERT mode](api/diagram/type_property.md) is used to visualize tasks and projects' sequences and connections between them. It is also useful for identifying the critical path and project planning.
 
 Diagram in the PERT mode [uses the DHTMLX Gantt data structure](guides/loading_data.md#data-structure-of-diagram-in-the-pert-mode), which provides [easy interaction between the components](#integrating-pert-diagram-and-dhtmlx-gantt). On loading a Gantt dataset, a Diagram in the PERT mode automatically arranges tasks and projects based on the connections between them.
 
@@ -124,23 +124,23 @@ Diagram in the PERT mode [uses the DHTMLX Gantt data structure](guides/loading_d
 
 ### Integrating PERT Diagram and DHTMLX Gantt
 
-An example of integrating a Diagram in the PERT mode and a Gantt chart is given below: 
+An example of integrating a Diagram in the PERT mode and a Gantt chart is given below:
 
-<iframe src="https://snippet.dhtmlx.com/gcnx4a9h?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>                                						
+<iframe src="https://snippet.dhtmlx.com/gcnx4a9h?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
 ## Shape search
 
-DHTMLX Diagram provides you with a set of API that you can apply in order to make working with a Diagram more convenient.
-For example, you can implement a feature of searching a shape on request that helps you to simplify work with large diagrams.
+DHTMLX Diagram provides you with a set of API that you can apply to make working with a Diagram more convenient.
+For example, you can implement a shape search feature that helps you simplify work with large diagrams.
 
 <iframe src="https://snippet.dhtmlx.com/d7kvzq4r?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
 ## Diagram scale
 
-You can apply the zoom template to your diagram to be able to change its appearance via zooming the diagram in or out. Besides, you can make it possible to user to get the detailed information on the selected shape.
+You can apply the zoom template to your diagram to change its appearance by zooming in or out. You can also let the user get detailed information on the selected shape.
 
 <iframe src="https://snippet.dhtmlx.com/09o8t3o2?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
 ## What's next
 
-Now you can learn about using DHTMLX Diagram Editor in your application. Read the [Diagram Editor overview](editor_overview.md) to get more about this tool.
+Now you can learn about using DHTMLX Diagram Editor in your application. Read the [Diagram Editor overview](editor_overview.md) to learn more about this tool.

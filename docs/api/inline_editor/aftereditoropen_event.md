@@ -14,8 +14,8 @@ description: You can learn about the afterEditorOpen event in the documentation 
 
 ~~~jsx
 afterEditorOpen: (
-    id: string | number, 
-    key: string, 
+    id: string | number,
+    key: string,
     subId?: string
 ) => void;
 ~~~

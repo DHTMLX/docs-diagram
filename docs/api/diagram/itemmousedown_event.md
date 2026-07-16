@@ -16,7 +16,7 @@ If a pointing device button is pressed while the pointer is over a swimlane, the
 
 ~~~jsx
 itemMouseDown: (
-    id: string | number, 
+    id: string | number,
     event: MouseEvent
 ) => void;
 ~~~

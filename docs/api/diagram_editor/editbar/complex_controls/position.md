@@ -1,7 +1,7 @@
 ---
 sidebar_label: Position
-title: Editbar Complex Controls - Position 
-description: You can explore the Position control of Editbar in the documentation of the the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+title: Editbar Complex Controls - Position
+description: You can explore the Position control of Editbar in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -36,7 +36,7 @@ The **Position** control is available only for the `shape` element in the *org* 
     label?: string,
     labelAlignment?: "left" | "right" | "center", // "left" by default
     align?: "start" | "center" | "end" | "between" | "around" | "evenly", // "start" by default
-    compact?: boolean, // false by default 
+    compact?: boolean, // false by default
 
     // Service properties
     $properties?: object

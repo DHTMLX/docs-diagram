@@ -34,33 +34,33 @@ The method returns the object of the specified item, if it is in the selection l
 
 ### Example
 
-~~~jsx {9-11,13-15,17-19} 
+~~~jsx {9-11,13-15,17-19}
 // a diagram must be created with the "select:true" option
-const diagram = new dhx.Diagram("diagram_container", { 
-    select: true 
+const diagram = new dhx.Diagram("diagram_container", {
+    select: true
 });
 // loading data
 diagram.data.parse(data);
 
 console.log(diagram.selection.getIds()); // -> ["1", "2", "3"]
 // getting the last selected item
-const item = diagram.selection.getItem(); 
+const item = diagram.selection.getItem();
 // -> {id: "3", text: "Technical Director", title: "Jerry Wagner"}
 
 // getting the selected item by id
-const item = diagram.selection.getItem({ id: "1" }); 
+const item = diagram.selection.getItem({ id: "1" });
 // -> {id: "1", text: "Chairman & CEO", title: "Henry Bennett"}
 
 // trying to get an item which is not in the selection list
-const item = diagram.selection.getItem({ id: "4" }); 
+const item = diagram.selection.getItem({ id: "4" });
 // -> returns undefined, since there is no item with the specified id in the selection list
 ~~~
 
 **Change log**: Updated in v6.0
 
-**Related articles**:  
+**Related articles**:
 
 - [diagram.config.select](api/diagram/select_property.md)
 - [Selecting items](guides/manipulating_items.md#selecting-items)
 
-**Related samples**: [Diagram. Selection. Item selection](https://snippet.dhtmlx.com/jyoxn5h7)
+**Related sample**: [Diagram. Selection. Item selection](https://snippet.dhtmlx.com/jyoxn5h7)

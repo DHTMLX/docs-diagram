@@ -6,13 +6,13 @@ description: You can learn about the Basic sets of shapes in the documentation o
 
 # Basic sets of shapes
 
-The DHTMLX Diagram library provides you with sets of shapes that you can use to build your diagram. Each Diagram mode: [default](#shapes-in-the-default-mode), [org chart](#shapes-in-the-org-chart-mode), [mindmap](#shapes-in-the-mindmap-mode) and [PERT](#shapes-in-the-pert-mode) has a *basic set* of shapes' types. 
+The DHTMLX Diagram library provides you with sets of shapes that you can use to build your diagram. Each Diagram mode: [default](#shapes-in-the-default-mode), [org chart](#shapes-in-the-org-chart-mode), [mindmap](#shapes-in-the-mindmap-mode) and [PERT](#shapes-in-the-pert-mode) has a *basic set* of shapes' types.
 
 :::tip
 You can add a shape of any type into a diagram initialized in any mode. Use the name of the necessary shape as a value of the `type` attribute inside the shape object, while [preparing a data set for loading into the diagram](guides/loading_data.md#preparing-data-to-load).
 :::
 
-See [the full list of configuration properties of a shape object](shapes/configuration_properties.md). 
+See [the full list of configuration properties of a shape object](shapes/configuration_properties.md).
 
 ## Shapes in the default mode
 
@@ -20,7 +20,7 @@ In the `default` mode of Diagram, the basic set includes **flow chart** shapes. 
 
 ![](/img/flowshapes_types.png)
 
-There is also the `"text"` item that presents a simple text that can be used in a diagram as a shape and connected with other shapes. 
+There is also the `"text"` item that represents simple text that can be used in a diagram as a shape and connected to other shapes.
 
 ![](/img/text_item.png)
 
@@ -36,7 +36,7 @@ Check the configuration properties specific for [shapes in the `default` Diagram
 
 ## Shapes in the org chart mode
 
-In the **org chart** mode of Diagram, the basic set includes two types of shapes: `"card"` and `"img-card"`. 
+In the **org chart** mode of Diagram, the basic set includes two types of shapes: `"card"` and `"img-card"`.
 
 Each shape with the `"card"` type has a text and a colored header line. Shapes located on the same level have headers of identical color. Examples of `"card"` shapes are shown in the diagram of the org chart type below:
 
@@ -70,7 +70,7 @@ Check the configuration properties specific for [shapes in the `mindmap` Diagram
 ## Shapes in the PERT mode
 
 The basic types of shapes in the **PERT** mode of Diagram are:
-    
+
 - the `"task"` type - a shape that has a header and renders dates and duration:
 
 ![](/img/pert_task_shape.png)
@@ -79,7 +79,7 @@ The basic types of shapes in the **PERT** mode of Diagram are:
 
 ![](/img/pert_milestone_shape.png)
 
-- the `"project"` type - a container used to [group the shapes of the `"task"` and `"milestone"` types](/groups/#grouping-shapes-in-the-pert-mode): 
+- the `"project"` type - a container used to [group the shapes of the `"task"` and `"milestone"` types](/groups/#grouping-shapes-in-the-pert-mode):
 
 ![](/img/pert_project_group.png)
 
@@ -110,11 +110,11 @@ See [the full list of configuration properties of a shape object](shapes/configu
 
 ### Setting the default shape type
 
-It is also possible to set the default type for all the shapes via the [`defaultShapeType`](api/diagram/defaultshapetype_property.md) attribute of the diagram config object:
+You can also set the default type for all the shapes via the [`defaultShapeType`](api/diagram/defaultshapetype_property.md) attribute of the diagram config object:
 
 ~~~jsx
 const diagram = new dhx.Diagram("diagram_container", {
-    type: "default", // type: "org" | type: "mindmap" | type: "pert"  
+    type: "default", // type: "org" | type: "mindmap" | type: "pert"
     defaultShapeType: "rectangle"
 });
 diagram.data.parse(data);

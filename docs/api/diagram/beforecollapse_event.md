@@ -14,7 +14,7 @@ description: You can learn about the beforeCollapse event in the documentation o
 
 ~~~jsx
 beforeCollapse: (
-    id: string | number, 
+    id: string | number,
     dir?: string
 ) => boolean | void;
 ~~~

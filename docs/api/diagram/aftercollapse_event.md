@@ -14,7 +14,7 @@ description: You can learn about the afterCollapse event in the documentation of
 
 ~~~jsx
 afterCollapse: (
-    id: string | number, 
+    id: string | number,
     dir?: string
 ) => void;
 ~~~

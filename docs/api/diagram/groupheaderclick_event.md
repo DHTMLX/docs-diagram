@@ -17,7 +17,7 @@ If a click is done over a header of a swimlane, the event will be fired on the s
 ~~~jsx
 groupHeaderClick: (
     id: string | number,
-    event: MouseEvent, 
+    event: MouseEvent,
     subHeaderId?: string
 ) => void;
 ~~~

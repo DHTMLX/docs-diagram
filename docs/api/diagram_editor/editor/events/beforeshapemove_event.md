@@ -18,7 +18,7 @@ The event fires just for the target element despite the number of selected eleme
 
 ~~~jsx
 "beforeShapeMove": ({
-    id: string | number, 
+    id: string | number,
     batch: (string | number)[],
     coords: object,
     event: PointerEvent

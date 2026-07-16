@@ -1,5 +1,5 @@
 ---
-sidebar_label: toolbar 
+sidebar_label: toolbar
 title: toolbar Property
 description: You can learn about the toolbar property in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
@@ -38,7 +38,7 @@ The `toolbar` array includes a set of icon objects. Each icon object can have th
 ### Example
 
 ~~~jsx
-const diagram = new dhx.Diagram("diagram_container", { 
+const diagram = new dhx.Diagram("diagram_container", {
     type: "org",
     select: true,
     // setting a toolbar with buttons for items

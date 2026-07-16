@@ -6,7 +6,7 @@ description: You can learn about exporting Diagram in the documentation of the D
 
 # Exporting Diagram
 
-You can easily export a diagram into the PDF or PNG format via the related [pdf()](api/export/pdf_method.md)/[png()](api/export/png_method.md) methods of the Export object:
+You can export a diagram into the PDF or PNG format via the related [pdf()](api/export/pdf_method.md)/[png()](api/export/png_method.md) methods of the Export object:
 
 <iframe src="https://snippet.dhtmlx.com/ybpmz0zk?mode=html" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
@@ -19,23 +19,23 @@ Check the list of available settings:
 
 ## Exporting styles
 
-By default, all css styles included to the Diagram page are sent to the export service when exporting the diagram. As a result, the size of the request increases that can cause the request to fail.
+By default, all CSS styles included on the Diagram page are sent to the export service. As a result, the request size increases, which can cause it to fail.
 
 The library allows you:
 
-- to prevent all styles from being sent to the export service via setting
+- to prevent all styles from being sent to the export service by setting
 the [`exportStyles`](api/diagram/exportstyles_property.md) configuration property of the Diagram object to *false*:
 
 ~~~jsx
-const diagram = new dhx.Diagram("diagram_container", { 
+const diagram = new dhx.Diagram("diagram_container", {
     exportStyles: false
 });
 ~~~
 
-- to define a set of styles that you want to be exported via setting absolute paths to the desired styles to the [`exportStyles`](api/diagram/exportstyles_property.md) array:
+- to define a set of styles that you want to be exported by setting absolute paths to the desired styles in the [`exportStyles`](api/diagram/exportstyles_property.md) array:
 
 <iframe src="https://snippet.dhtmlx.com/jm8if6nh?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="650"></iframe>
 
 :::note
-**Note**, that you must use only absolute paths not relative ones.
+You must use only absolute paths, not relative ones.
 :::

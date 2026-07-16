@@ -30,7 +30,7 @@ findAll(rule: function): array;
 
 ### Returns
 
-The method returns an array of matching item objects 
+The method returns an array of matching item objects
 
 ### Example
 
@@ -51,4 +51,4 @@ const shapes = diagram.data.findAll(function (shapes) {
 });
 ~~~
 
-**Related articles**:  [Finding the necessary item](guides/manipulating_items.md#finding-the-necessary-item)
+**Related article**:  [Finding the necessary item](guides/manipulating_items.md#finding-the-necessary-item)

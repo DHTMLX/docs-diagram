@@ -14,7 +14,7 @@ description: You can learn about the beforeUnSelect event in the documentation o
 
 ~~~jsx
 "beforeUnSelect": ({
-    id: string | number, 
+    id: string | number,
     batch: (string | number)[]
 }) => void | boolean;
 ~~~
@@ -34,9 +34,9 @@ Return `false` to prevent an item from being unselected; otherwise, `true`
 
 ~~~jsx {9-13}
 // initializing Diagram
-const diagram = new dhx.Diagram("diagram_container", { 
-    type: "org", 
-    select: true        
+const diagram = new dhx.Diagram("diagram_container", {
+    type: "org",
+    select: true
 });
 // loading data
 diagram.data.parse(data);
@@ -52,7 +52,7 @@ Here's an example of attaching an event handler to the event for the Diagram Edi
 
 ~~~jsx {8-12}
 // initializing Diagram editor
-const editor = new dhx.DiagramEditor("editor_container", {  
+const editor = new dhx.DiagramEditor("editor_container", {
     // config options
 });
 // loading data into the editor
@@ -67,7 +67,7 @@ editor.diagram.events.on("beforeUnSelect", ({ id }) => {
 
 **Change log**: Updated in v6.0
 
-**Related articles**:  
+**Related articles**:
 
 - [diagram.config.select](api/diagram/select_property.md)
 - [Selecting items](guides/manipulating_items.md#selecting-items)

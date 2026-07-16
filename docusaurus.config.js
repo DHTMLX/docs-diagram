@@ -134,6 +134,17 @@ const onAfterDataTransformation = (data) => {
 };
 
 module.exports = {
+    i18n: {
+        defaultLocale: 'en',
+        locales: ['en', 'ru', 'de', 'zh', 'ko'],
+        localeConfigs: {
+            en: { label: 'English', htmlLang: 'en-US' },
+            ru: { label: 'Русский', htmlLang: 'ru' },
+            de: { label: 'Deutsch', htmlLang: 'de' },
+            zh: { label: '简体中文', htmlLang: 'zh-CN' },
+            ko: { label: '한국어', htmlLang: 'ko' },
+        },
+    },
     title: 'DHTMLX JavaScript Diagram Docs',
     tagline: 'DHTMLX JavaScript Diagram Docs',
     url: 'https://docs.dhtmlx.com',
@@ -232,7 +243,12 @@ module.exports = {
                     href: 'https://dhtmlx.com/docs/products/dhtmlxDiagram/download.shtml',
                     position: 'right',
                 },
-            ],
+            
+          {
+            type: 'localeDropdown',
+            position: 'right',
+          },
+        ],
         },
         footer: {
             style: 'dark',

@@ -51,7 +51,7 @@ editor.setViewMode("preview"); // "preview" or "edit"
 const editor = new dhx.DiagramEditor("editor_container");
 editor.parse(data);
 
-editor.view.hide("shapebar"); 
+editor.view.hide("shapebar");
 editor.view.hide("editbar");
 ~~~
 
@@ -68,7 +68,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 Instead, use the following syntax:
 
 ~~~jsx title="From v6.0"
-editor.diagram.config.margin.x = 40; 
+editor.diagram.config.margin.x = 40;
 ~~~
 
 - The `editMode` property of Diagram Editor is deprecated and no longer supported. Instead, use the corresponding property of the `view` object ([toolbar](api/diagram_editor/toolbar/api_overview.md), [shapebar](api/diagram_editor/shapebar/api_overview.md), [editbar](api/diagram_editor/editbar/api_overview.md)).
@@ -93,7 +93,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 
 ~~~jsx {2-4} title="Before v6.0"
 const editor = new dhx.DiagramEditor("editor_container", {
-    controls: { 
+    controls: {
         // ...
     }
 });
@@ -134,7 +134,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 const editor = new dhx.DiagramEditor("editor_container", {
     shapeSections: {
         "Swimlane": [{ swimlane: true }],
-        "Groups": [{ group: true }],   
+        "Groups": [{ group: true }],
         "Flowchart shapes": [{ flowShapes: true }],
         "Org shapes, text, topic": [{ org: true }, "text", "topic"]
     }
@@ -148,7 +148,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
         shapebar: {
             sections: {
                 "Swimlane": [{ swimlane: true }],
-                "Groups": [{ group: true }],   
+                "Groups": [{ group: true }],
                 "Flowchart shapes": [{ flowShapes: true }],
                 "Org shapes, text, topic": [{ org: true }, "text", "topic"]
             }
@@ -220,8 +220,8 @@ The names of the [service elements](guides/diagram_editor/toolbar.md#service-ele
 - The `properties` property of the [`addShape`](api/diagram/addshape_method.md) method is deprecated and no longer used. The configuration of a custom shape in the editbar of the Editor is implemented via the [`properties`](api/diagram_editor/editbar/config/properties_property.md) property of the Editbar panel:
 
 ~~~jsx {13-16} title="Before v6.0"
-const editor = new dhx.DiagramEditor("editor_container", { 
-    type: "default"  
+const editor = new dhx.DiagramEditor("editor_container", {
+    type: "default"
 });
 editor.parse(data);
 
@@ -236,7 +236,7 @@ editor.diagram.addShape("network", {
         { type:"arrange" },
         { type:"size" }
     ]
-});   
+});
 ~~~
 
 ~~~jsx {14-27} title="From v6.0"
@@ -293,12 +293,12 @@ editor.diagram.addShape("network", {
 
 ### Diagram Selection API
 
-- The `getId()` method of the Selection object of Diagram is deprecated and no longer supported. Instead you can use the [`getIds()`](api/selection/getids_method.md) and [`getItem()`](api/selection/getitem_method.md) methods of the Selection object. Check the examples below:
+- The `getId()` method of the Selection object of Diagram is deprecated and no longer supported. Instead, you can use the [`getIds()`](api/selection/getids_method.md) and [`getItem()`](api/selection/getitem_method.md) methods of the Selection object. Check the examples below:
 
 ~~~jsx {7} title="Before v6.0"
 // diagram must be created with the "select:true" option
-const diagram = new dhx.Diagram("diagram_container", { 
-    select: true 
+const diagram = new dhx.Diagram("diagram_container", {
+    select: true
 });
 diagram.data.parse(data);
 
@@ -307,8 +307,8 @@ const id = diagram.selection.getId(); // -> "2"
 
 ~~~jsx {7-11} title="From v6.0"
 // a diagram must be created with the "select:true" option
-const diagram = new dhx.Diagram("diagram_container", { 
-    select: true 
+const diagram = new dhx.Diagram("diagram_container", {
+    select: true
 });
 diagram.data.parse(data);
 
@@ -323,9 +323,9 @@ The usage of the `text` property of the [Shape configuration object](shapes/conf
 
 ### Line titles
 
-The titles of Lines are moved from the `line` objects to the common data structure on the same level with Lines and defined as [`lineTitles`](/line_titles/) objects.
+Line titles are moved from the `line` objects to the common data structure at the same level as lines and defined as [`lineTitles`](/line_titles/) objects.
 
-Before v6.0 titles of lines have been specified inside the `line` object as follows:
+Before v6.0, line titles were specified inside the `line` object as follows:
 
 ~~~jsx title="Before v6.0"
 const data = [
@@ -383,7 +383,7 @@ const data = [
         type: "lineTitle",
         id?: string | number,
         text: string,
-        parent: string | number, 
+        parent: string | number,
 
         distance?: number, // 50 by default
         autoPosition?: boolean, // true by default
@@ -416,14 +416,14 @@ Due to the modifications in the Diagram editor interface, the locale settings ha
 The `lineGap` property of Diagram is deprecated and no longer supported. Instead, use the `lineGap` parameter of the [lineConfig](api/diagram/lineconfig_property.md) property.
 
 ~~~jsx {3} title="Before v5.0"
-const diagram = new dhx.Diagram("diagram_container", { 
+const diagram = new dhx.Diagram("diagram_container", {
     type: "default",
     lineGap: 30
 });
 ~~~
 
 ~~~jsx {3-5} title="From v5.0"
-const diagram = new dhx.Diagram("diagram_container", { 
+const diagram = new dhx.Diagram("diagram_container", {
     type: "default",
     lineConfig: {
         lineGap: 30
@@ -457,18 +457,18 @@ const editor = new dhx.DiagramEditor("editor_container", {
 
 ### Diagram API
 
-In v4.2, the `defaultLinkType` property is deprecated. 
+In v4.2, the `defaultLinkType` property is deprecated.
 
 Starting from v4.2, you need to apply the new [lineConfig](api/diagram/lineconfig_property.md) property to specify the default type for connector lines.
 
 ~~~jsx title="Before v4.2"
-const diagram = new dhx.Diagram("diagram_container", { 
+const diagram = new dhx.Diagram("diagram_container", {
     defaultLinkType: "dash"
 });
 ~~~
 
 ~~~jsx {2-4} title="From v4.2"
-const diagram = new dhx.Diagram("diagram_container", { 
+const diagram = new dhx.Diagram("diagram_container", {
     lineConfig: {
         lineType: "dash",
     },
@@ -559,15 +559,15 @@ editor.events.on("AfterShapeMove", (e) => {
 
 The way of creating custom shapes has been changed, simplified and improved.
 
-Starting from v3.0, in order to create your own types of shapes, the new `addShape` method should be used instead of the *diagram.flowShapes* object. The method provides you with the ability to create HTML templates that will work in different browsers. Besides, the method allows creating and editing custom shapes in Diagram Editor.
+Starting from v3.0, to create your own types of shapes, the new `addShape` method should be used instead of the *diagram.flowShapes* object. The method provides you with the ability to create HTML templates that will work in different browsers. Besides, the method allows creating and editing custom shapes in Diagram Editor.
 
-Despite the *diagram.flowShapes* object has been deprecated, it will still continue working.
+Although the *diagram.flowShapes* object has been deprecated, it will continue to work.
 
 ### Toolbar buttons in Editor
 
-Before version 3.0 you were able to show/hide toolbar buttons in Diagram Editor via the related *showApply, showReset, showExport* configuration properties of the Editor.
+Before version 3.0, you were able to show/hide toolbar buttons in Diagram Editor via the related *showApply, showReset, showExport* configuration properties of the Editor.
 
-In the version 3.0 these properties are deprecated and removed. Instead, the `controls` config property that contains a set of *control_name:value* pairs is added. Thus, the properties are replaced with:
+In version 3.0, these properties are deprecated and removed. Instead, the `controls` config property that contains a set of *control_name:value* pairs is added. Thus, the properties are replaced with:
 
 - showApply -> controls.apply
 - showReset -> controls.reset
@@ -575,7 +575,7 @@ In the version 3.0 these properties are deprecated and removed. Instead, the `co
 
 ~~~jsx
 const editor = new dhx.DiagramEditor("editor_container", {
-    controls: { 
+    controls: {
         apply: false,
         reset: false,
         export: true
@@ -604,9 +604,9 @@ See the full list of the available controls in the [Toolbar](guides/diagram_edit
 - diagram.eachItem -> [diagram.data.map](api/data_collection/map_method.md)
 - diagram.getItem -> [diagram.data.getItem](api/data_collection/getitem_method.md)
 - diagram.getSelectedId -> `diagram.selection.getId`
-- diagram.load -> [diagram.data.load](api/data_collection/load_method.md) 
+- diagram.load -> [diagram.data.load](api/data_collection/load_method.md)
 - diagram.parse -> [diagram.data.parse](api/data_collection/parse_method.md)
 - diagram.selectItem -> [diagram.selection.add](api/selection/add_method.md)
 - diagram.serialize -> [diagram.data.serialize](api/data_collection/serialize_method.md)
 - diagram.unselectItem -> [diagram.selection.remove](api/selection/remove_method.md)
-- diagram.updateItem -> [diagram.data.update](api/data_collection/update_method.md) 
+- diagram.updateItem -> [diagram.data.update](api/data_collection/update_method.md)

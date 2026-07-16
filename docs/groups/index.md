@@ -8,7 +8,7 @@ description: You can learn about Groups in the documentation of the DHTMLX JavaS
 
 ## Group overview
 
-A group is a separate kind of the Diagram items. You can draw simple or more complicated schemes by grouping shapes or other groups in different ways. It is possible to create as one-level groups as nested groups, to configure their appearance and behavior.
+A group is a separate kind of Diagram item. You can draw simple or more complicated schemes by grouping shapes or other groups in different ways. You can create both one-level and nested groups, and configure their appearance and behavior.
 
 :::note
 Groups are available only in the default mode of Diagram/Diagram Editor (type: `"default"`).
@@ -65,30 +65,30 @@ To group the `"task"` and `"milestone"` types of shapes in the PERT mode of the 
 
 ~~~jsx
 const data = [
-    { 
-        "id": "4.2", 
-        "text": "QA Testing", 
-        "type": "project", 
-        "parent": "4", 
-        "start_date": new Date(2026, 1, 18), 
-        "duration": 3, 
-        "progress": 0, 
-        "open": true 
+    {
+        "id": "4.2",
+        "text": "QA Testing",
+        "type": "project",
+        "parent": "4",
+        "start_date": new Date(2026, 1, 18),
+        "duration": 3,
+        "progress": 0,
+        "open": true
     },
-    { 
-        "id": "4.2.1", 
-        "text": "Functional Testing", 
-        "type": "task", 
-        "parent": "4.2", 
-        "start_date": new Date(2026, 1, 18), 
-        "duration": 2 
+    {
+        "id": "4.2.1",
+        "text": "Functional Testing",
+        "type": "task",
+        "parent": "4.2",
+        "start_date": new Date(2026, 1, 18),
+        "duration": 2
     },
-    { 
-        "id": "4.2.2", 
-        "text": "Usability Testing", 
-        "type": "task", 
-        "parent": "4.2", 
-        "start_date": new Date(2026, 1, 20), 
+    {
+        "id": "4.2.2",
+        "text": "Usability Testing",
+        "type": "task",
+        "parent": "4.2",
+        "start_date": new Date(2026, 1, 20),
         "duration": 1
     }
 ];
@@ -107,8 +107,8 @@ The header of the group is disabled by default. To create a group with the heade
 ~~~jsx
 const data = [
     {
-        type: "$group", 
-        id: 1, 
+        type: "$group",
+        id: 1,
         width: 400,
         height: 200,
         x: 0,
@@ -118,7 +118,7 @@ const data = [
 ];
 ~~~
 
-The property contains a lot of attributes which allow you to easily adjust the configuration of the group header.
+The property contains several attributes which allow you to easily adjust the configuration of the group header.
 For example, you can define the height of the header and its position, specify the text for your header and adjust its settings.
 
 <iframe src="https://snippet.dhtmlx.com/6hunrja8?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="470"></iframe>
@@ -127,13 +127,13 @@ Check [the full list of API properties of the group object](groups/configuration
 
 ### A header icon
 
-To be able to collapse/expand a group, you need to enable the `closable` attribute of the [header](groups/configuration_properties.md) property. As a result, an icon, which allows a user to expand/collapse a group, will be added to the header.
+To collapse or expand a group, enable the `closable` attribute of the [header](groups/configuration_properties.md) property. As a result, an icon, which allows a user to expand/collapse a group, will be added to the header.
 
 ~~~jsx
 const data = [
     {
-        type: "$group", 
-        id: 1, 
+        type: "$group",
+        id: 1,
         width: 400,
         height: 200,
         x: 0,
@@ -151,7 +151,7 @@ You can change the color of the icon via the `iconColor` attribute of the [group
 ## Configuring the behavior of group items
 
 By default, you can drag any child item of the group out of the group and drag it into another group.
-To change the behavior of the group items you need to use the `groupBehavior` and `padding` attributes of the `exitArea` property of the [group object](groups/configuration_properties.md).
+To change how the group items behave, use the `groupBehavior` and `padding` attributes of the `exitArea` property of the [group object](groups/configuration_properties.md).
 
 :::note
 The `exitArea` property defines the behavior of the first-level children of the configurable group only.
@@ -159,11 +159,11 @@ The `exitArea` property defines the behavior of the first-level children of the 
 
 <iframe src="https://snippet.dhtmlx.com/4gxy38ek?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="550"></iframe>
 
-The `"unbound"` and `"boundBorderExtension"` values of the `groupBehavior` attribute allows you to define whether the child items can be moved out of the group, and to make the group borders expand when a user is trying to drag an item outside. If needed you can also disable the ability to drag items outside the group via the `"boundNoBorderExtension"` value.
+The `"unbound"` and `"boundBorderExtension"` values of the `groupBehavior` attribute allow you to define whether the child items can be moved out of the group, and to make the group borders expand when a user is trying to drag an item outside. If needed, you can also disable the ability to drag items outside the group via the `"boundNoBorderExtension"` value.
 
 ![](/img/group_behavior.gif)
 
-If *groupBehavior: `"boundNoBorderExtension"` | `"boundBorderExtension"`* is set, you can specify the padding between the group and the edge of the item when moving the item inside the group. For this purpose, use the `padding` attribute:
+If `groupBehavior` is set to `"boundNoBorderExtension"` or `"boundBorderExtension"`, you can specify the padding between the group and the edge of the item when moving the item inside the group. For this purpose, use the `padding` attribute:
 
 ~~~jsx
 const data = [

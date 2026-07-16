@@ -1,5 +1,5 @@
 ---
-sidebar_label: autoplacement 
+sidebar_label: autoplacement
 title: autoplacement Property of Editor
 description: You can learn about the autoplacement property of editor in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
@@ -116,7 +116,7 @@ Shapes are arranged on imaginary circles relative to the central shape, i.e. the
 
 ![](/img/edges_radial.png)
 
-**Change log**:  
+**Change log**:
 
 - The `itemPadding` and `levelPadding` parameters are added in v6.1.3
 - The `placeMode` parameter is added in v5.0

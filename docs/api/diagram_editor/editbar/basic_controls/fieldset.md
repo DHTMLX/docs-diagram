@@ -1,6 +1,6 @@
 ---
 sidebar_label: Fieldset
-title: Editbar Basic Controls - Fieldset 
+title: Editbar Basic Controls - Fieldset
 description: You can explore the Fieldset control of Editbar in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
@@ -71,7 +71,7 @@ The `rows` and `cols` properties may include an array of objects of the specifie
 #### Service properties and methods
 
 :::warning
-Note that it's highly not recommended to redefine the service properties and methods for the default types of controls, since it may cause breaks in their functionality. 
+Note that we strongly recommend not redefining the service properties and methods for the default types of controls, since it may cause breaks in their functionality.
 :::
 
 - `$layout` - (optional) - a callback function that allows setting the structure of a control. Returns the configuration of the [Fieldset](https://docs.dhtmlx.com/suite/form/fieldset/) Form control. Called with the following parameter:

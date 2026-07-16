@@ -1,5 +1,5 @@
 ---
-sidebar_label: Loading and storing data 
+sidebar_label: Loading and storing data
 title: Loading and Storing data
 description: You can learn about loading and storing data of editor in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
@@ -31,9 +31,9 @@ const data = [
 ];
 ~~~
 
-The library provides you with [various types of default shapes](shapes/default_shapes.md) which have both common and specific options. Check the full list of available properties of a `shape` object in the [API reference](shapes/configuration_properties.md). 
+The library provides you with [various types of default shapes](shapes/default_shapes.md) which have both common and specific options. Check the full list of available properties of a `shape` object in the [API reference](shapes/configuration_properties.md).
 
-Besides, you may create [your own type of shapes](shapes/custom_shape.md) and add any custom properties to shape objects.
+You can also create [your own type of shapes](shapes/custom_shape.md) and add any custom properties to shape objects.
 
 - **line objects**
 
@@ -74,7 +74,7 @@ Check the full list of available properties of the **line title** object in the 
 - **group objects**
 
 ~~~jsx
-const data = [    
+const data = [
     {
         "type": "$group",
         "id": 1,
@@ -160,11 +160,11 @@ Check the full list of the available configuration properties of the objects of 
 
 ## Working with Diagram data in the PERT mode
 
-There are the following peculiarities of working with Diagram in the PERT mode: 
+Working with Diagram in the PERT mode has the following peculiarities:
 
 - the [data loaded into the Diagram](#data-structure-of-diagram-in-the-pert-mode) has the structure of DHTMLX Gantt data
 - while working with data in the Diagram, it is processed via [Data Collection](/api/data_collection/) the same as data in other Diagram modes
-- the [exported Diagram data](#saving-and-restoring-state) has the structure of DHTMLX Gantt data 
+- the [exported Diagram data](#saving-and-restoring-state) has the structure of DHTMLX Gantt data
 
 ### Data structure of Diagram in the PERT mode
 
@@ -179,7 +179,7 @@ The structure of Diagram data in the PERT mode coincides with the [data structur
 
 Such a structure allows processing the shapes and their connections independently. [Check important notes on working with links](#processing-links).
 
-There are the following types of shapes and connections specific for the Diagram in the PERT mode:
+The Diagram in the PERT mode supports the following types of shapes and connections:
 
 - **project objects**
 
@@ -290,7 +290,7 @@ For example:
 }
 
 // diagram.data.getItem("$link:1");
-~~~ 
+~~~
 :::
 
 ### Specificity of data loading in the PERT mode
@@ -298,19 +298,19 @@ For example:
 Follow the recommendations below to avoid errors and render Diagram in a correct way:
 
 - **Absence of cyclic dependencies**. There is no support for cycles among tasks, projects, links and mixed elements. In case a cyclic dependency is detected, an exception will appear.
-- **Links between the parent and children are permitted**. Direct connections between the parent element (e.g. a project) and its children elements are not allowed. Such connections will be deleted automatically during data processing.
-- **Avoid intersecting connections**. Reduce the number of intersecting links to the minimum, as they may make the diagram more complex and lead to the low-level readability. 
-- **Successive data processing**. Data are processed in the order they are coming, which may affect the arrangement of elements. You should specify the data in the logical order to achieve the best result.
+- **Links between the parent and children are not permitted**. Direct connections between the parent element (e.g. a project) and its child elements are not allowed. Such connections will be deleted automatically during data processing.
+- **Avoid intersecting connections**. Reduce the number of intersecting links to the minimum, as they may make the diagram more complex and reduce its readability.
+- **Successive data processing**. Data are processed in the order they arrive, which may affect the arrangement of elements. You should specify the data in a logical order to achieve the best result.
 - **Task sequencing**. Use linear or sequential connections between tasks and projects to keep the diagram clear and avoid visual disorder.
 
-The above rules are intended for creating clean, non-cyclic graphs, suitable for PERT analysis. If data break these rules, Diagram may automatically correct them (for example, by removing unacceptable connections). However, it is better to check the data input beforehand.   
+The above rules are intended for creating clean, non-cyclic graphs, suitable for PERT analysis. If data break these rules, Diagram may automatically correct them (for example, by removing unacceptable connections). However, it is better to check the data input beforehand.
 
 ### Rendering Gantt tasks with not connected children in the Diagram
 
-Note that the Gantt elements with `type: "task"` may have children elements not connected to the parent task visually. Such relations won't be reflected in the Diagram. For such elements to be rendered in the same project visually, you can:
+Note that the Gantt elements with `type: "task"` may have child elements not connected to the parent task visually. Such relations won't be reflected in the Diagram. For such elements to be rendered in the same project visually, you can:
 
 - either assign `type:"project"` to the parent element on loading data into Diagram
-- or assign the *parent project* id of such a task to its children elements
+- or assign the *parent project* id of such a task to its child elements
 
 For example:
 
@@ -318,8 +318,8 @@ For example:
 {
     data: [
         { id: "1", type: "project" },
-        { id: "1.1", type: "task", parent: "1" }, 
-        { id: "1.1.1", type: "task", parent: "1.1" } 
+        { id: "1.1", type: "task", parent: "1" },
+        { id: "1.1.1", type: "task", parent: "1.1" }
     ]
 }
 ~~~
@@ -333,7 +333,7 @@ In the above example:
     ~~~jsx
     { id: "1.1.1", type: "task", parent: "1" }
     ~~~
-    - or use the `"project"` type instead of the `"task"` type for the parent element "1.1": 
+    - or use the `"project"` type instead of the `"task"` type for the parent element "1.1":
     ~~~jsx
      { id: "1.1", type: "project", parent: "1" }
     ~~~
@@ -383,13 +383,13 @@ editor.parse(data);
 To save the current state of a diagram, use the [`serialize()`](api/data_collection/serialize_method.md) method. Depending on the Diagram mode, it converts the data of the diagram into:
 
 - for the default, org chart and mindmap Diagram modes - into an array of objects, where each object contains the configuration of a separate shape
-- for the PERT Diagram mode - into an object with the `data` array of objects (for shapes: `"task"`, `"milestone"`, `"project"`) and the `links` array of objects (for connections between shapes). 
+- for the PERT Diagram mode - into an object with the `data` array of objects (for shapes: `"task"`, `"milestone"`, `"project"`) and the `links` array of objects (for connections between shapes).
 
 ~~~jsx
 const state = diagram1.data.serialize();
 ~~~
 
-Note that the for PERT Diagram mode the *links* objects in the exported data object will have [the same types as in the DHTMLX Gantt chart](https://docs.dhtmlx.com/gantt/desktop__link_properties.html). It means that if the type of a link in the Diagram data coincides with some of the Gantt links types, it will remain the same during serialization. If the link type isn't specified or set differently (for example, `type: "line"`), it will be converted into `type: "0"`.
+Note that for the PERT Diagram mode, the *links* objects in the exported data object will have [the same types as in the DHTMLX Gantt chart](https://docs.dhtmlx.com/gantt/desktop__link_properties.html). It means that if the type of a link in the Diagram data coincides with some of the Gantt links types, it will remain the same during serialization. If the link type isn't specified or set differently (for example, `type: "line"`), it will be converted into `type: "0"`.
 
 Then you can parse the data stored in the saved state to a different diagram. For example:
 

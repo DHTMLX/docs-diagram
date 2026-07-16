@@ -26,7 +26,7 @@ npm create vue@latest
 
 This command installs and executes `create-vue`, the official **Vue** project scaffolding tool. Check the details in the [Vue.js Quick Start](https://vuejs.org/guide/quick-start.html#creating-a-vue-application).
 
-Let's name the project as **my-vue-diagram-app**.
+Let's name the project **my-vue-diagram-app**.
 
 ### Installation of dependencies
 
@@ -60,11 +60,11 @@ Now you should get the DHTMLX Diagram Editor source code. First of all, stop the
 
 ### Step 1. Package installation
 
-Download the [**trial Diagram Editor package**](guides/diagram_editor/initialization.md#installing-diagram-editor-via-npm-or-yarn) and follow steps mentioned in the README file. Note that trial Diagram Editor is available 30 days only.
+Download the [**trial Diagram Editor package**](guides/diagram_editor/initialization.md#installing-diagram-editor-via-npm-or-yarn) and follow the steps mentioned in the README file. Note that the trial Diagram Editor is available for 30 days only.
 
 ### Step 2. Component creation
 
-Now you need to create a Vue component, to add Diagram Editor into the application. Create a new file in the ***src/components/*** directory and name it ***DiagramEditor.vue***.
+Now you need to create a Vue component to add Diagram Editor into the application. Create a new file in the ***src/components/*** directory and name it ***DiagramEditor.vue***.
 
 #### Import source files
 
@@ -169,7 +169,7 @@ export function getData() {
 }
 ~~~
 
-Then open the ***App.vue*** file, import data, and initialize it via the inner `data()` method. After this you can pass data into the new created `<DiagramEditor/>` component as `props`:
+Then open the ***App.vue*** file, import data, and initialize it via the inner `data()` method. After this, you can pass data into the newly created `<DiagramEditor/>` component as `props`:
 
 ~~~html {3,7-9,14} title="App.vue"
 <script>
@@ -216,7 +216,7 @@ export default {
 </template>
 ~~~
 
-Now the Diagram Editor component is ready to use. When the element will be added to the page, it will initialize the Diagram Editor with data. You can provide necessary configuration settings as well. Visit our [Diagram Editor API docs](/category/diagram-editor-api/) to check the full list of available properties.
+Now the Diagram Editor component is ready to use. When the element is added to the page, it will initialize the Diagram Editor with data. You can provide necessary configuration settings as well. Visit our [Diagram Editor API docs](/category/diagram-editor-api/) to check the full list of available properties.
 
 #### Handling events
 
@@ -237,7 +237,7 @@ export default {
         });
     }
     //...
-}   
+}
 </script>
 
 //...
@@ -247,4 +247,4 @@ After that, you can start the app to see Diagram Editor loaded with data on a pa
 
 ![Diagram Editor initialization](/img/trial_diagram.png)
 
-Now you know how to integrate DHTMLX Diagram Editor with Vue. You can customize the code according to your specific requirements. The final example you can find on [**GitHub**](https://github.com/DHTMLX/vue-diagram-demo).
+Now you know how to integrate DHTMLX Diagram Editor with Vue. You can customize the code according to your specific requirements. You can find the final example on [**GitHub**](https://github.com/DHTMLX/vue-diagram-demo).

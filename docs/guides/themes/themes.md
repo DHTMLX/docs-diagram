@@ -44,8 +44,8 @@ The default `"light"` theme is configured on the base of the CSS variables which
 	/* font */
 	--dhx-font-family: "Roboto", Arial, Tahoma, Verdana, sans-serif;
 
-	--dhx-font-weight-regular: 400; 
-	--dhx-font-weight-medium: 500; 
+	--dhx-font-weight-regular: 400;
+	--dhx-font-weight-medium: 500;
 	--dhx-font-weight-bold: 700;
 
 	--dhx-font-size-small: 12px;
@@ -238,7 +238,7 @@ The `"contrast-light"` theme is configured both on the base of the [root CSS var
 	--dhx-s-grid-header-background: var(--dhx-background-secondary);
 	--dhx-s-grid-selection-background: var(--dhx-color-gray-700);
 	/* end DHTMLX Grid service variables*/
-	
+
 	/* DHTMLX Calendar service variables*/
 	--dhx-s-calendar-muffled: .8;
 	/* end DHTMLX Calendar service variables*/
@@ -295,7 +295,7 @@ The `"dark"` theme is configured both on the base of the [root CSS variables](#l
 	--dhx-s-grid-header-background: #212329;
 	--dhx-s-grid-selection-background: var(--dhx-color-gray-100);
 	/* end DHTMLX Grid service variables*/
-	
+
 	/* DHTMLX Calendar service variables*/
 	--dhx-s-calendar-muffled: .6;
 	/* end DHTMLX Calendar service variables*/
@@ -382,7 +382,7 @@ The `"contrast-dark"` theme is configured both on the base of the [root CSS vari
 
 ## Setting themes
 
-To set the necessary theme, be it a [built-in Diagram theme](diagram/guides/themes.md) or a [custom one](guides/themes/custom_theme.md), use one of the ways described below:
+To set the necessary theme, be it a [built-in Diagram theme](guides/themes.md) or a [custom one](guides/themes/custom_theme.md), use one of the ways described below:
 
 ### Using the data-dhx-theme attribute
 
@@ -416,7 +416,7 @@ The `dhx.setTheme()` method takes the following parameters:
 
 Below you'll find the examples of the `dhx.setTheme()` method usage:
 
-- applying a theme either to the body or to the container 
+- applying a theme either to the body or to the container
 
 ~~~html {8-11}
 <div id="editor_container"></div>
@@ -426,10 +426,10 @@ Below you'll find the examples of the `dhx.setTheme()` method usage:
     const editor = new dhx.DiagramEditor("editor_container", {
         type: "default"
     });
-    dhx.setTheme("dark"); //applies the "dark" theme to the body 
+    dhx.setTheme("dark"); //applies the "dark" theme to the body
     //or
     //applies the "dark" theme to the container with the "editor_container" id
-    dhx.setTheme("dark", "editor_container"); 
+    dhx.setTheme("dark", "editor_container");
 </script>
 ~~~
 

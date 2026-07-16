@@ -14,7 +14,7 @@ description: You can learn about the filter method of data collection in the doc
 
 ~~~jsx
 filter(
-    rule?: function, 
+    rule?: function,
     config?: {
         id?: string,
         add?: boolean,
@@ -77,7 +77,7 @@ To revert the diagram to the initial state, call the `filter()` method without p
 diagram.data.filter();
 ~~~
 
-**Related articles**:  [Filtering items](guides/manipulating_items.md#filtering-items)
+**Related article**:  [Filtering items](guides/manipulating_items.md#filtering-items)
 
 **Related sample**: [Diagram. Data. Filtering shapes](https://snippet.dhtmlx.com/tm43bsgn)
 

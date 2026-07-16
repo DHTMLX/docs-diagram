@@ -27,8 +27,8 @@ parse(
     data: object[]; // an array of all shapes and connections
     ~~~
     - for the PERT Diagram mode it is an object with:
-      -  the `data` array (for shapes: `"task"`, `"milestone"`, `"project"`) 
-      -  the `links` array (for connections between shapes) 
+      -  the `data` array (for shapes: `"task"`, `"milestone"`, `"project"`)
+      -  the `links` array (for connections between shapes)
     ~~~jsx
     {
         data: object[]; // an array of shapes (tasks, milestones, projects)
@@ -65,8 +65,8 @@ const data = [
     { id: "1-3", from: "1", to: "3", type: "line" }
 ];
 
-const diagram = new dhx.Diagram("diagram_container", { 
-    type: "org" 
+const diagram = new dhx.Diagram("diagram_container", {
+    type: "org"
 });
 
 diagram.data.parse(data);
@@ -97,8 +97,8 @@ const diagram = new dhx.Diagram("diagram_container", {
 diagram.data.parse(dataset);
 ~~~
 
-**Related articles**:  [Loading and storing data](guides/loading_data.md)
+**Related article**:  [Loading and storing data](guides/loading_data.md)
 
-**Related samples**: 
+**Related samples**:
 - [Diagram. Org chart mode. Basic initialization](https://snippet.dhtmlx.com/5ign6fyy)
 - [Diagram. PERT chart. Initialization](https://snippet.dhtmlx.com/4h5fi7xd)

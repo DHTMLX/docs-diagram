@@ -8,15 +8,15 @@ description: You can learn about the afterEditorEditing event in the documentati
 
 ### Description
 
-@short: Fires after the text value of an item is edited via the inline editor  
+@short: Fires after the text value of an item is edited via the inline editor
 
 ### Usage
 
 ~~~jsx
 afterEditorEditing: (
-    value: string, 
-    id: string | number, 
-    key: string, 
+    value: string,
+    id: string | number,
+    key: string,
     subId?: string
 ) => void;
 ~~~

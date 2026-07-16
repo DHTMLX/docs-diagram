@@ -44,7 +44,7 @@ DHTMLX Diagram can be initialized in one of the following modes: `"default"`, `"
 
 <iframe src="https://snippet.dhtmlx.com/4h5fi7xd?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
-**Change log**: 
+**Change log**:
 
 - The `"pert"` type was added in v6.1
 

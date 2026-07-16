@@ -1,5 +1,5 @@
 ---
-sidebar_label: Configuration 
+sidebar_label: Configuration
 title: Diagram Configuration
 description: You can learn about the Diagram Configuration in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
@@ -10,7 +10,7 @@ DHTMLX Diagram provides a wide range of options for configuration. You can chang
 
 ### Setting the Diagram mode
 
-There are the following Diagram modes you can choose from: `"default"`, `"org"`, `"mindmap"`, `"pert"`. Their detailed description is given in the [Diagram overview](/) article. You can specify the necessary type via the [type](api/diagram/type_property.md) configuration option, as follows:
+You can choose from the following Diagram modes: `"default"`, `"org"`, `"mindmap"`, `"pert"`. Their detailed description is given in the [Diagram overview](/) article. You can specify the necessary type via the [type](api/diagram/type_property.md) configuration option, as follows:
 
 ~~~jsx
 const diagram = new dhx.Diagram("diagram_container", {
@@ -21,11 +21,11 @@ diagram.data.parse(data);
 
 ### Setting the default shape type
 
-It is possible to set the default type for all the shapes via the [`defaultShapeType`](api/diagram/defaultshapetype_property.md) attribute of the diagram configuration object:
+You can set the default type for all the shapes via the [`defaultShapeType`](api/diagram/defaultshapetype_property.md) attribute of the diagram configuration object:
 
 ~~~jsx {3}
 const diagram = new dhx.Diagram("diagram_container", {
-    type: "default", // or type: "org", or type: "mindmap" 
+    type: "default", // or type: "org", or type: "mindmap"
     defaultShapeType: "rectangle"
 });
 diagram.data.parse(data);
@@ -58,7 +58,7 @@ This value is applied, if the line object doesn't contain the `type` property.
 
 ## Setting the default configuration of a shape
 
-There is a great possibility to escape operating with a big data set while preparing it for loading into the diagram. You can specify the default configuration for all shapes and lines of the necessary types and, therefore, reduce the amount of records in your code.
+You can avoid working with a large data set while preparing it for loading into the diagram. You can specify the default configuration for all shapes and lines of the necessary types and, therefore, reduce the number of records in your code.
 
 For this purpose, use the [`defaults`](api/diagram/defaults_property.md) property of the diagram configuration object:
 
@@ -170,7 +170,7 @@ DHTMLX Diagram allows you to specify a toolbar with icons for Diagram shapes to 
 
 ## Enabling items selection
 
-It is possible to activate selection of items in a diagram. You need to make use of the [`select`](api/diagram/select_property.md) attribute of the diagram configuration object. Once you've enabled selection in a diagram, you can make use of the Selection object API to [work with the items selection](guides/manipulating_items.md#selecting-items).
+You can activate selection of items in a diagram via the [`select`](api/diagram/select_property.md) attribute of the diagram configuration object. Once you've enabled selection in a diagram, you can use the Selection object API to [work with the items selection](guides/manipulating_items.md#selecting-items).
 
 :::note
 [The predefined set of events](/api/selection/#events) of the selection object can help you to define the way of processing the behavior of the diagram during selecting/unselecting items

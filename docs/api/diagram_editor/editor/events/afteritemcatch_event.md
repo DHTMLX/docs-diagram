@@ -18,7 +18,7 @@ The event works only in the **org chart** and `mindmap` modes of Diagram, the `i
 
 ~~~jsx
 "afterItemCatch": ({
-    id: string | number, 
+    id: string | number,
     targetId: string | number,
     batch: (string | number)[],
     event: PointerEvent
@@ -31,7 +31,7 @@ The callback of the event is called with an object with the following parameters
 
   - `id` - the id of the moved item
   - `targetId` - the id of the target item
-  - `batch` - an array of moved elements' ids 
+  - `batch` - an array of moved elements' ids
   - `event` - an event object
 
 ### Example

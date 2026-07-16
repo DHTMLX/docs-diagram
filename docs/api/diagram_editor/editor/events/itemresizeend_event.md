@@ -54,8 +54,8 @@ editor.parse(data);
 // attaching a handler to the event
 editor.events.on("itemResizeEnd", ({ id, width, height }) => {
     console.log(`
-        The item ${id} finished resizing: 
-            the final width: ${width} 
+        The item ${id} finished resizing:
+            the final width: ${width}
             the final height: ${height}
     `);
     // Here you can save the new dimensions of the item on the server
@@ -71,6 +71,6 @@ editor.events.on("itemResizeEnd", ({ id, width, height }) => {
 - [`beforeItemResize`](api/diagram_editor/editor/events/beforeitemresize_event.md)
 - [`afterItemResize`](api/diagram_editor/editor/events/afteritemresize_event.md)
 
-**Related samples**:
+**Related sample**:
 
 - [Diagram Editor. Managing shapes' moving, rotating and resizing via events](https://snippet.dhtmlx.com/qldjbbm7)

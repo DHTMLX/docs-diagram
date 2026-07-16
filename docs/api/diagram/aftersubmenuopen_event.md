@@ -14,8 +14,8 @@ description: You can learn about the afterSubmenuOpen event in the documentation
 
 ~~~jsx
 afterSubmenuOpen: (
-    id: string | number, 
-    event: MouseEvent, 
+    id: string | number,
+    event: MouseEvent,
     subHeaderId?: string
 ) => void;
 ~~~

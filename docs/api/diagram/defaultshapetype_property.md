@@ -47,9 +47,9 @@ defaultShapeType: "task"
 ### Example
 
 ~~~jsx
-const diagram = new dhx.Diagram("diagram_container", { 
+const diagram = new dhx.Diagram("diagram_container", {
     defaultShapeType: "img-card"
 });
 ~~~
 
-**Related articles**: [Setting the type of a shape](shapes/default_shapes.md#setting-the-type-of-a-shape)
+**Related article**: [Setting the type of a shape](shapes/default_shapes.md#setting-the-type-of-a-shape)

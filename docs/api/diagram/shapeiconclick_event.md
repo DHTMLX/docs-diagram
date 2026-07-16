@@ -14,7 +14,7 @@ description: You can learn about the shapeIconClick event in the documentation o
 
 ~~~jsx
 "shapeIconClick": (
-    id: string | number, 
+    id: string | number,
     event: MouseEvent
 ) => void;
 ~~~

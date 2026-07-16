@@ -33,14 +33,14 @@ The method takes as an argument an object with the following parameters:
 The method returns:
 
 - `true` if the element hadn't been in the selection list and was successfully added into it
-- `false` if the element wasn't added into the selection list by some reason, e.g. an element had already been added to the selection list
+- `false` if the element wasn't added into the selection list for some reason, e.g. an element had already been added to the selection list
 
 ### Example
 
 ~~~jsx {8,11-12,15-16}
 // a diagram must be created with the "select:true" option
-const diagram = new dhx.Diagram("diagram_container", { 
-    select: true 
+const diagram = new dhx.Diagram("diagram_container", {
+    select: true
 });
 // loading data
 diagram.data.parse(data);
@@ -49,19 +49,19 @@ diagram.selection.add({ id: "1" }); // -> returns true if the item has been sele
 console.log(diagram.selection.getIds()); // -> ["1"]
 
 // adds the item with the id:"2" to the already selected items
-diagram.selection.add({ id: "2", join: true }); 
+diagram.selection.add({ id: "2", join: true });
 console.log(diagram.selection.getIds()); // -> ["1", "2"]
 
 // removes the previously selected items and adds the item with the id:"3"
-diagram.selection.add({ id: "3" }); 
+diagram.selection.add({ id: "3" });
 console.log(diagram.selection.getIds()); // -> ["3"]
 ~~~
 
 **Change log**: Updated in v6.0
 
-**Related articles**:  
+**Related articles**:
 
 - [diagram.config.select](api/diagram/select_property.md)
 - [Selecting items](guides/manipulating_items.md#selecting-items)
 
-**Related samples**: [Diagram. Selection. Item selection](https://snippet.dhtmlx.com/jyoxn5h7)
+**Related sample**: [Diagram. Selection. Item selection](https://snippet.dhtmlx.com/jyoxn5h7)
