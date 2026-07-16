@@ -8,7 +8,7 @@ description: 您可以在 DHTMLX JavaScript Diagram 库的文档中了解如何�
 
 ## 配置所有主题 {#configuring-all-themes}
 
-您可能会注意到，[默认](themes.md#light-theme-default)主题的 CSS 变量包含配色方案的变量：
+您可能会注意到，[默认](guides/themes.md#light-theme-default)主题的 CSS 变量包含配色方案的变量：
 
 ~~~css
 --dhx-h-primary: 200;
@@ -62,7 +62,7 @@ description: 您可以在 DHTMLX JavaScript Diagram 库的文档中了解如何�
 
 ## 配置单个主题 {#configuring-a-separate-theme}
 
-如果您想为某个单独的 [Diagram 主题](themes.md) 覆盖部分颜色值，需要在 `'data-dhx-theme'` 属性中进行设置：
+如果您想为某个单独的 [Diagram 主题](guides/themes.md) 覆盖部分颜色值，需要在 `'data-dhx-theme'` 属性中进行设置：
 
 ~~~html
 <style>
@@ -112,7 +112,7 @@ description: 您可以在 DHTMLX JavaScript Diagram 库的文档中了解如何�
 - `--dhx-shapebar-item-background`
 - `--dhx-shapebar-item-border-color`
 
-这些变量的默认值[取决于所应用的主题](themes.md)。
+这些变量的默认值[取决于所应用的主题](guides/themes.md)。
 
 ### 设置自定义 CSS 变量 {#setting-custom-css-variables}
 
@@ -160,7 +160,7 @@ description: 您可以在 DHTMLX JavaScript Diagram 库的文档中了解如何�
 
 ## 调整 PERT 模式下任务的外观 {#adjusting-the-look-of-tasks-in-the-pert-mode}
 
-[PERT 图模式下 Diagram 中](/#diagram-in-the-pert-mode)任务的外观由 `--dhx-shape-pert-header-background` CSS 变量定义。该变量在[默认](themes.md#light-theme-default)主题中的指定方式如下：
+[PERT 图模式下 Diagram 中](/#diagram-in-the-pert-mode)任务的外观由 `--dhx-shape-pert-header-background` CSS 变量定义。该变量在[默认](guides/themes.md#light-theme-default)主题中的指定方式如下：
 
 ~~~jsx
 --dhx-shape-pert-header-background: var(--dhx-gantt-base-colors-primary, #537CFA);

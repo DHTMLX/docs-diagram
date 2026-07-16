@@ -382,7 +382,7 @@ description: Из документации библиотеки DHTMLX JavaScrip
 
 ## Настройка тем {#setting-themes}
 
-Чтобы задать нужную тему — [встроенную тему Diagram](themes.md) или [пользовательскую](guides/themes/custom_theme.md), — используйте один из способов, описанных ниже:
+Чтобы задать нужную тему — [встроенную тему Diagram](guides/themes.md) или [пользовательскую](guides/themes/custom_theme.md), — используйте один из способов, описанных ниже:
 
 ### Использование атрибута data-dhx-theme {#using-the-data-dhx-theme-attribute}
 

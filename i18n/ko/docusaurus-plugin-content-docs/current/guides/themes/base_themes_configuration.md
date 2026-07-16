@@ -8,7 +8,7 @@ description: DHTMLX JavaScript Diagram 라이브러리 문서에서 테마를 �
 
 ## 모든 테마 구성 {#configuring-all-themes}
 
-[기본](themes.md#light-theme-default) 테마의 CSS 변수에는 색상 구성표(color scheme) 변수가 포함되어 있음을 확인할 수 있습니다.
+[기본](guides/themes.md#light-theme-default) 테마의 CSS 변수에는 색상 구성표(color scheme) 변수가 포함되어 있음을 확인할 수 있습니다.
 
 ~~~css
 --dhx-h-primary: 200;
@@ -62,7 +62,7 @@ description: DHTMLX JavaScript Diagram 라이브러리 문서에서 테마를 �
 
 ## 개별 테마 구성 {#configuring-a-separate-theme}
 
-특정 [Diagram 테마](themes.md)의 색상 값을 재정의하려면 `'data-dhx-theme'` 속성에서 이를 수행해야 합니다.
+특정 [Diagram 테마](guides/themes.md)의 색상 값을 재정의하려면 `'data-dhx-theme'` 속성에서 이를 수행해야 합니다.
 
 ~~~html
 <style>
@@ -112,7 +112,7 @@ description: DHTMLX JavaScript Diagram 라이브러리 문서에서 테마를 �
 - `--dhx-shapebar-item-background`
 - `--dhx-shapebar-item-border-color`
 
-이러한 변수의 기본값은 [적용된 테마에 따라 달라집니다](themes.md).
+이러한 변수의 기본값은 [적용된 테마에 따라 달라집니다](guides/themes.md).
 
 ### 사용자 지정 CSS 변수 설정 {#setting-custom-css-variables}
 
@@ -160,7 +160,7 @@ description: DHTMLX JavaScript Diagram 라이브러리 문서에서 테마를 �
 
 ## PERT 모드에서 작업 모양 조정 {#adjusting-the-look-of-tasks-in-the-pert-mode}
 
-[PERT 차트 모드의 Diagram](/#diagram-in-the-pert-mode)에서 작업의 모양은 `--dhx-shape-pert-header-background` CSS 변수로 정의됩니다. 이 변수는 [기본](themes.md#light-theme-default) 테마에서 다음과 같이 지정됩니다.
+[PERT 차트 모드의 Diagram](/#diagram-in-the-pert-mode)에서 작업의 모양은 `--dhx-shape-pert-header-background` CSS 변수로 정의됩니다. 이 변수는 [기본](guides/themes.md#light-theme-default) 테마에서 다음과 같이 지정됩니다.
 
 ~~~jsx
 --dhx-shape-pert-header-background: var(--dhx-gantt-base-colors-primary, #537CFA);

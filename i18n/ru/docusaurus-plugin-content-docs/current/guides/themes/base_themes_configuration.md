@@ -8,7 +8,7 @@ description: Из документации библиотеки DHTMLX JavaScrip
 
 ## Настройка всех тем {#configuring-all-themes}
 
-Вы могли заметить, что CSS-переменные темы [по умолчанию](themes.md#light-theme-default) включают переменные цветовой схемы:
+Вы могли заметить, что CSS-переменные темы [по умолчанию](guides/themes.md#light-theme-default) включают переменные цветовой схемы:
 
 ~~~css
 --dhx-h-primary: 200;
@@ -62,7 +62,7 @@ description: Из документации библиотеки DHTMLX JavaScrip
 
 ## Настройка отдельной темы {#configuring-a-separate-theme}
 
-Если вы хотите переопределить некоторые значения цвета для отдельной [темы Diagram](themes.md), сделайте это в атрибуте `'data-dhx-theme'`:
+Если вы хотите переопределить некоторые значения цвета для отдельной [темы Diagram](guides/themes.md), сделайте это в атрибуте `'data-dhx-theme'`:
 
 ~~~html
 <style>
@@ -112,7 +112,7 @@ description: Из документации библиотеки DHTMLX JavaScrip
 - `--dhx-shapebar-item-background`
 - `--dhx-shapebar-item-border-color`
 
-Значения этих переменных по умолчанию [зависят от применяемой темы](themes.md).
+Значения этих переменных по умолчанию [зависят от применяемой темы](guides/themes.md).
 
 ### Настройка пользовательских CSS-переменных {#setting-custom-css-variables}
 
@@ -160,7 +160,7 @@ description: Из документации библиотеки DHTMLX JavaScrip
 
 ## Настройка внешнего вида задач в режиме PERT {#adjusting-the-look-of-tasks-in-the-pert-mode}
 
-Внешний вид задач [Diagram в режиме PERT-диаграммы](/#diagram-in-the-pert-mode) определяется CSS-переменной `--dhx-shape-pert-header-background`. Она задаётся в теме [по умолчанию](themes.md#light-theme-default) следующим образом:
+Внешний вид задач [Diagram в режиме PERT-диаграммы](/#diagram-in-the-pert-mode) определяется CSS-переменной `--dhx-shape-pert-header-background`. Она задаётся в теме [по умолчанию](guides/themes.md#light-theme-default) следующим образом:
 
 ~~~jsx
 --dhx-shape-pert-header-background: var(--dhx-gantt-base-colors-primary, #537CFA);

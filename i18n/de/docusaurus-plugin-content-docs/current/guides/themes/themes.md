@@ -382,7 +382,7 @@ Das Theme `"contrast-dark"` wird sowohl auf Basis der [CSS-Root-Variablen](#ligh
 
 ## Themes festlegen {#setting-themes}
 
-Um das gewünschte Theme festzulegen – sei es ein [integriertes Diagram-Theme](themes.md) oder ein [benutzerdefiniertes](guides/themes/custom_theme.md) – verwenden Sie eine der unten beschriebenen Methoden:
+Um das gewünschte Theme festzulegen – sei es ein [integriertes Diagram-Theme](guides/themes.md) oder ein [benutzerdefiniertes](guides/themes/custom_theme.md) – verwenden Sie eine der unten beschriebenen Methoden:
 
 ### Verwendung des Attributs data-dhx-theme {#using-the-data-dhx-theme-attribute}
 

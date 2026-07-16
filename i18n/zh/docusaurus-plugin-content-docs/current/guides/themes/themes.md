@@ -382,7 +382,7 @@ Diagram 主题是根据国际标准开发的。高对比度主题对视力障碍
 
 ## 设置主题 {#setting-themes}
 
-要设置所需的主题，无论是[内置 Diagram 主题](themes.md)还是[自定义主题](guides/themes/custom_theme.md)，都可以使用以下方式之一：
+要设置所需的主题，无论是[内置 Diagram 主题](guides/themes.md)还是[自定义主题](guides/themes/custom_theme.md)，都可以使用以下方式之一：
 
 ### 使用 data-dhx-theme 属性 {#using-the-data-dhx-theme-attribute}
 

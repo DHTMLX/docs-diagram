@@ -382,7 +382,7 @@ Diagram 테마는 국제 표준에 따라 개발되었습니다. 고대비 테�
 
 ## 테마 설정 {#setting-themes}
 
-필요한 테마를 설정하려면, [기본 제공 Diagram 테마](themes.md)든 [사용자 지정 테마](guides/themes/custom_theme.md)든 아래 설명된 방법 중 하나를 사용하세요.
+필요한 테마를 설정하려면, [기본 제공 Diagram 테마](guides/themes.md)든 [사용자 지정 테마](guides/themes/custom_theme.md)든 아래 설명된 방법 중 하나를 사용하세요.
 
 ### data-dhx-theme 속성 사용 {#using-the-data-dhx-theme-attribute}
 
