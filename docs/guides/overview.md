@@ -66,6 +66,12 @@ The articles give you examples of using Diagram with different client-side frame
 - [Integration with React](guides/integrations/react_integration.md)
 - [Integration with Vue.js](guides/integrations/vue_integration.md)
 
+## AI integrations
+
+Connect an AI coding assistant to live DHTMLX Diagram documentation so it generates code from the current API instead of outdated training data.
+
+- [DHTMLX MCP server](guides/ai-integrations/mcp-server.md)
+
 ## Touch support
 
 You can create responsive web applications with DHTMLX Diagram thanks to built-in touch support. Check out how UI widgets work on touch devices in the [Touch support](guides/touch_support.md) guide.

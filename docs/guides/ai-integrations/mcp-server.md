@@ -1,14 +1,14 @@
 ---
 sidebar_label: DHTMLX MCP server
-title:  Using DHTMLX MCP server with AI coding assistants
-description: Connect AI coding assistants to live DHTMLX Diagram documentation via the MCP server. Covers shapes, swimlanes, org charts, the Diagram Editor, and more.
+title: DHTMLX Diagram MCP server for shapes and connectors
+description: Point an AI assistant at the MCP server and it finds current DHTMLX Diagram docs on shapes, swimlanes, org charts, and the Diagram Editor.
 ---
 
-# Using DHTMLX MCP server with AI coding assistants
+# DHTMLX Diagram MCP server: a live check on shape and connector APIs
 
-Building diagram applications requires precise control over shapes, connections, layout, and editor configuration. When an AI tool generates [DHTMLX Diagram](/) code from outdated training data, the result is mismatched APIs, missing properties, and configuration options that no longer exist.
+[DHTMLX Diagram](/) tracks a lot at once: shape geometry, connector routing, layout rules, and whatever the editor is configured to allow. Outdated training data catches an AI tool off guard here, producing shape properties the library renamed, connector methods that moved, or layout options that no longer ship with it.
 
-The DHTMLX Model Context Protocol (MCP) server solves this by giving AI tools direct access to the live Diagram documentation. Whether you are working with [swimlanes](/swimlanes/), [custom shapes](shapes/custom_shape.md), the [Diagram Editor](guides/diagram_editor/initialization.md), or any other part of the library, the assistant retrieves the current reference material before generating a response.
+The DHTMLX MCP server exists precisely for this: it puts the current Diagram documentation in front of the assistant before a single shape gets drawn. Whether you are working with [swimlanes](/swimlanes/), [custom shapes](shapes/custom_shape.md), the [Diagram Editor](guides/diagram_editor/initialization.md), or any other part of the library, the assistant retrieves the current reference material before generating a response.
 
 **MCP endpoint**
 
@@ -20,9 +20,9 @@ https://docs.dhtmlx.com/mcp
 The DHTMLX MCP server covers all major DHTMLX products, not only DHTMLX Diagram. The same endpoint and configuration steps apply regardless of which component you are working with.
 :::
 
-## Where MCP server helps with Diagram
+## Diagram work the MCP server speeds up
 
-The MCP server indexes the full DHTMLX Diagram documentation. Common scenarios where the MCP server is useful:
+DHTMLX Diagram's documentation lives in the MCP server's index. Developers query it for things such as:
 
 - Looking up the current API for [shapes](shapes/default_shapes.md), [lines](/lines/), [groups](/groups/), or [swimlanes](/swimlanes/).
 - Generating ready-to-run Diagram code based on a description.
@@ -33,13 +33,13 @@ The MCP server indexes the full DHTMLX Diagram documentation. Common scenarios w
 - Handling [Diagram and Editor events](guides/event_handling.md) to respond to user interactions.
 - Exploring [TypeScript support](guides/using_typescript.md) and framework integration for React, Vue, Angular and Svelte.
 
-## How DHTMLX MCP server works
+## Inside a Diagram MCP server request
 
-The server combines a Retrieval-Augmented Generation (RAG) pipeline with MCP so that AI assistants can query documentation on demand rather than relying solely on training data.
+Under the DHTMLX Diagram MCP server sit two separate workflows, *Search* and *Inference*, and the assistant chooses between them based on the request. Both draw on the same Retrieval-Augmented Generation (RAG) index built from the documentation. *Search* is the one that hands the assistant reference pages to work from; *Inference* skips that step and answers the question itself.
 
-For example, when you ask *"How do I configure a swimlane diagram with custom cell headers?"*, the assistant sends the prompt via the MCP endpoint. The server matches it against the swimlanes documentation, retrieves the relevant reference pages, and returns them as context. The assistant then generates code based on the current API rather than a training snapshot.
+For example, ask *"How do I configure a swimlane diagram with custom cell headers?"* and the assistant sends that one to *Search*: it matches the swimlanes documentation, hands back the reference pages, and the assistant writes the configuration from them rather than from memory. A prompt with a single factual answer, like which method controls auto-layout, is one the assistant can route to *Inference* instead, which reads the same kind of pages and returns the answer on its own.
 
-## Connecting AI tools to Diagram
+## Bringing the MCP server into your AI tool
 
 AI development tools typically support MCP through a CLI command or a JSON configuration file. In both cases the core step is registering the server URL:
 
@@ -148,7 +148,7 @@ Then run `agy` in the terminal.
 ### ChatGPT setup
 
 :::info
-See the [official documentation](https://developers.openai.com/api/docs/guides/tools-connectors-mcp) for the complete guide on connecting MCP servers to ChatGPT.
+See the [official documentation](https://help.openai.com/en/articles/12584461-developer-mode-and-mcp-apps-in-chatgpt) for the complete guide on connecting MCP servers to ChatGPT.
 :::
 
 Follow these steps to connect DHTMLX MCP server to ChatGPT:
@@ -169,25 +169,25 @@ https://docs.dhtmlx.com/mcp
 - Authentication: `No authentication`
 6. Click **Create**
 
-Once connected, ChatGPT will retrieve Diagram documentation when answering questions during your conversations.
+Once connected, ChatGPT retrieves Diagram documentation when answering questions during your conversations.
 
-:::note
-Note that MCP integration with ChatGPT may result in slower response times. For a faster experience, consider one of the other tools listed on this page.
+:::info
+For intensive coding workflows, other MCP-aware tools may be more efficient.
 :::
 
 ### Other tools
 
 Most modern AI coding tools (including Windsurf, Cline, Continue.dev, etc.) surface MCP under names such as "Model Context Protocol", "Context Sources", or "Custom integrations" in their settings. Add `https://docs.dhtmlx.com/mcp` as the source URL.
 
-## Privacy and data handling
+## The privacy side of the MCP server
 
 The DHTMLX MCP server is a cloud-only service that runs remotely, leaves your local environment untouched, and stores no personal user data. Queries may be logged for debugging and service improvement purposes.
 
 Teams that require stricter privacy guarantees can request a commercial deployment with query logging disabled. Contact us at `info@dhtmlx.com` for details.
 
-## Example prompts for Diagram with AI
+## Prompts for common Diagram tasks
 
-Once the MCP server is connected, phrase your prompts around a concrete goal so the assistant knows which part of the Diagram API to look up. The prompts below are organized by the task type. You can copy and adapt them as needed.
+Vague prompts get vague retrieval. Say which Diagram feature you're after (a shape, the editor, export) and the assistant knows exactly where to look; the groups below sort examples by feature.
 
 **Creating diagrams**
 
@@ -234,7 +234,7 @@ How do I export a DHTMLX Diagram to a PNG file?
 What format does DHTMLX Diagram use for serialized data, and how do I reload it?
 ~~~
 
-## Tips for effective Diagram prompts
+## Writing prompts the MCP server can act on
 
 - **Name the API surface.** Distinguish between the diagram instance and the editor, for example: "in the DHTMLX Diagram Editor" vs. "on the diagram object". The server retrieves more relevant docs when the target is clear.
 - **Include the shape type.** Prompts like "a swimlane shape" or "a custom shape with HTML content" retrieve the correct reference pages faster than generic "a shape".

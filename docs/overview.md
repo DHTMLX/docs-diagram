@@ -143,4 +143,4 @@ You can apply the zoom template to your diagram to change its appearance by zoom
 
 ## What's next
 
-Now you can learn about using DHTMLX Diagram Editor in your application. Read the [Diagram Editor overview](editor_overview.md) to learn more about this tool.
+Now you can learn about using DHTMLX Diagram Editor in your application. Read the [Diagram Editor overview](editor_overview.md) to learn more about this tool. If you build with an AI coding assistant, connect it to the live documentation through the [DHTMLX MCP server](guides/ai-integrations/mcp-server.md).
