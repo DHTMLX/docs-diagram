@@ -41,7 +41,7 @@ For example, ask *"How do I configure a swimlane diagram with custom cell header
 
 ## Bringing the MCP server into your AI tool
 
-AI development tools typically support MCP through a CLI command or a JSON configuration file. In both cases the core step is registering the server URL:
+Every tool below reaches the same MCP endpoint through a different door: type a CLI flag into one, paste a JSON block into the next. Register it once per tool, and the connection carries over to every Diagram project you open there:
 
 ~~~
 https://docs.dhtmlx.com/mcp
@@ -77,7 +77,7 @@ To configure it manually, add the following entry to your `.mcp.json`:
 ### Cursor setup
 
 :::info
-You can find step-by-step MCP setup instructions for Cursor in the [official documentation](https://cursor.com/en-US/docs/mcp).
+Cursor's [official documentation](https://cursor.com/en-US/docs/mcp) walks through every MCP configuration option.
 :::
 
 Follow the steps below to connect the DHTMLX MCP server to Cursor:
@@ -102,7 +102,7 @@ Follow the steps below to connect the DHTMLX MCP server to Cursor:
 #### Antigravity 2.0
 
 :::info
-Refer to the [official documentation](https://antigravity.google/docs/mcp) for full details on MCP server integration in Antigravity.
+Antigravity's [official documentation](https://antigravity.google/docs/mcp) covers MCP server integration in full.
 :::
 
 These are the steps to complete for connecting DHTMLX MCP server with Google Antigravity:
@@ -123,7 +123,7 @@ https://docs.dhtmlx.com/mcp
 #### Antigravity CLI
 
 :::info
-Check the [related guide](https://antigravity.google/docs/gcli-migration#mcp-config-formatting-changes) to learn about migration from Gemini CLI to Antigravity CLI.
+Migrating from Gemini CLI to Antigravity CLI? The [related guide](https://antigravity.google/docs/gcli-migration#mcp-config-formatting-changes) covers the change.
 :::
 
 To connect the DHTMLX MCP server to Antigravity CLI, create `mcp_config.json` in one of these locations:
@@ -148,7 +148,7 @@ Then run `agy` in the terminal.
 ### ChatGPT setup
 
 :::info
-See the [official documentation](https://help.openai.com/en/articles/12584461-developer-mode-and-mcp-apps-in-chatgpt) for the complete guide on connecting MCP servers to ChatGPT.
+The [official documentation](https://help.openai.com/en/articles/12584461-developer-mode-and-mcp-apps-in-chatgpt) covers every step of connecting an MCP server to ChatGPT.
 :::
 
 Follow these steps to connect DHTMLX MCP server to ChatGPT:
