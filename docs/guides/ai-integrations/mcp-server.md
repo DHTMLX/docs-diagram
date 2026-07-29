@@ -181,9 +181,11 @@ Most modern AI coding tools (including Windsurf, Cline, Continue.dev, etc.) surf
 
 ## The privacy side of the MCP server
 
-The DHTMLX MCP server is a cloud-only service that runs remotely, leaves your local environment untouched, and stores no personal user data. Queries may be logged for debugging and service improvement purposes.
+Nothing about this runs on your machine: the DHTMLX MCP server operates entirely as a remote service, and it keeps no copy of your personal data.
 
-Teams that require stricter privacy guarantees can request a commercial deployment with query logging disabled. Contact us at `info@dhtmlx.com` for details.
+Debugging and service improvements are the only reasons the server logs a query.
+
+Prefer logging off entirely? A commercial deployment supports that. Set it up through `info@dhtmlx.com`.
 
 ## Prompts for common Diagram tasks
 
