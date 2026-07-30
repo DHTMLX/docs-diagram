@@ -6,7 +6,7 @@ description: Point an AI assistant at the MCP server and it finds current DHTMLX
 
 # DHTMLX Diagram MCP server: a live check on shape and connector APIs
 
-[DHTMLX Diagram](/) tracks a lot at once: shape geometry, connector routing, layout rules, and whatever the editor is configured to allow. Outdated training data catches an AI tool off guard here, producing shape properties the library renamed, connector methods that moved, or layout options that no longer ship with it.
+[DHTMLX Diagram](/) gives you real control over [shape geometry](shapes/configuration_properties.md), [connector routing](/lines/), and [layout rules](guides/diagram/configuration.md), plus any options the editor is configured to allow. Does the generated code reflect current shape properties, connector methods, and layout options, or does it reflect the state of an earlier training snapshot?
 
 The DHTMLX MCP server exists precisely for this: it puts the current Diagram documentation in front of the assistant before a single shape gets drawn. Whether you are working with [swimlanes](/swimlanes/), [custom shapes](shapes/custom_shape.md), the [Diagram Editor](guides/diagram_editor/initialization.md), or any other part of the library, the assistant retrieves the current reference material before generating a response.
 
