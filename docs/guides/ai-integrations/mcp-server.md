@@ -1,16 +1,16 @@
 ---
 sidebar_label: DHTMLX MCP server
-title: DHTMLX Diagram MCP server for shapes and connectors
+title: DHTMLX Diagram MCP server for shapes and connector APIs
 description: Point an AI assistant at the MCP server and it finds current DHTMLX Diagram docs on shapes, swimlanes, org charts, and the Diagram Editor.
 ---
 
-# DHTMLX Diagram MCP server: a live check on shape and connector APIs
+# DHTMLX Diagram MCP server: shapes, connectors, and editor APIs
 
 [DHTMLX Diagram](/) gives you real control over [shape geometry](shapes/configuration_properties.md), [connector routing](/lines/), and [layout rules](guides/diagram/configuration.md), plus any options the editor is configured to allow. Does the generated code reflect current shape properties, connector methods, and layout options, or does it reflect the state of an earlier training snapshot?
 
 The DHTMLX MCP server exists precisely for this: it puts the current Diagram documentation in front of the assistant before a single shape gets drawn. Whether you are working with [swimlanes](/swimlanes/), [custom shapes](shapes/custom_shape.md), the [Diagram Editor](guides/diagram_editor/initialization.md), or any other part of the library, the assistant retrieves the current reference material before generating a response.
 
-**MCP endpoint**
+### MCP endpoint
 
 ~~~
 https://docs.dhtmlx.com/mcp
@@ -35,9 +35,16 @@ DHTMLX Diagram's documentation lives in the MCP server's index. Developers query
 
 ## Inside a Diagram MCP server request
 
-Under the DHTMLX Diagram MCP server sit two separate workflows, *Search* and *Inference*, and the assistant chooses between them based on the request. Both draw on the same Retrieval-Augmented Generation (RAG) index built from the documentation. *Search* is the one that hands the assistant reference pages to work from; *Inference* skips that step and answers the question itself.
+The DHTMLX MCP server runs a Retrieval-Augmented Generation (RAG) pipeline over the Model Context Protocol (MCP), routing each query to one of two workflows: *Search*, which retrieves matching reference pages for the assistant to work from, or *Inference*, which reads those pages and returns a finished answer directly. Here's how that plays out for the prompt *"How do I configure a swimlane diagram with custom cell headers?"*:
 
-For example, ask *"How do I configure a swimlane diagram with custom cell headers?"* and the assistant sends that one to *Search*: it matches the swimlanes documentation, hands back the reference pages, and the assistant writes the configuration from them rather than from memory. A prompt with a single factual answer, like which method controls auto-layout, is one the assistant can route to *Inference* instead, which reads the same kind of pages and returns the answer on its own.
+1. The assistant sends the query through MCP.
+2. The server matches it to the swimlanes documentation.
+3. Since the answer requires generated code, it routes to *Search* (a narrower factual question, like which method controls auto-layout, would go to *Inference*).
+4. *Search* pulls the matching pages from a vector index built on the current Diagram docs.
+5. Those pages return to the assistant as context.
+6. The assistant writes the swimlane configuration from that context rather than from memory.
+
+This keeps generated Diagram code aligned with the documentation as it stands today, not a training-time snapshot.
 
 ## Bringing the MCP server into your AI tool
 
