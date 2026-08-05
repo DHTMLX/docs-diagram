@@ -8,6 +8,22 @@ description: You can learn new information about DHTMLX JavaScript Diagram libra
 
 If you are updating Diagram from an older version, check [Migration to Newer Version](migration.md) for details.
 
+## Version 6.1.7
+
+Released on August 5, 2026
+
+### Fixes
+
+- Diagram Editor. Fixed the issue where connection lines lost their visual controls after moving a shape into a group or a swimlane
+- Diagram Editor. Fixed the snapping of new connectors to connection points on rotated shapes
+- Diagram Editor. Fixed the issue where connection lines would break or displace when rotating a shape inside a group
+- Diagram Editor. Fixed the behavior of `dhx_slide` sliders to ensure they work correctly when both horizontal and vertical sliders are displayed
+- Diagram Editor. Fixed the visibility of `dhx_slide` elements at zoom levels other than 100%
+- Diagram Editor. Fixed the positioning of the line preview placeholder to correctly align with the connection point
+- Diagram Editor. Fixed the issue where collapsed Shapebar sections would automatically expand upon clicking the diagram area
+- Diagram. Fixed the issue where a default `true` value in a custom shape's property would override an explicit `false` value
+- Diagram. Fixed the issue where clicking the scrollbar would clear the current selection of elements
+
 ## Version 6.1.6
 
 Released on July 1, 2026
