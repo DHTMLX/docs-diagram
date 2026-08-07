@@ -50,7 +50,7 @@ This keeps generated Diagram code aligned with the documentation as it stands to
 
 ## Bringing the MCP server into your AI tool
 
-Every tool below reaches the same MCP endpoint through a different door: type a CLI flag into one, paste a JSON block into the next. Register it once per tool, and the connection carries over to every Diagram project you open there:
+Each tool below connects to the same MCP endpoint using its own method: a CLI flag for some, a JSON configuration block for others. Register it once per tool, and the connection carries over to every Diagram project you open there:
 
 ~~~
 https://docs.dhtmlx.com/mcp
@@ -198,7 +198,7 @@ Prefer logging off entirely? A commercial deployment supports that. Set it up th
 
 ## Prompts for common Diagram tasks
 
-Vague prompts get vague retrieval. Say which Diagram feature you're after (a shape, the editor, export) and the assistant knows exactly where to look; the groups below sort examples by feature.
+A prompt that names the specific Diagram feature you need (a shape, the editor, export) retrieves more relevant results than a vague one. The groups below sort examples by feature.
 
 **Creating diagrams**
 
