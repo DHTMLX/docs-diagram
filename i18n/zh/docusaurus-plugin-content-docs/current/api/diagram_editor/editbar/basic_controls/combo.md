@@ -88,7 +88,7 @@ Combo 内部的选项配置对象：
 - `multiselection` -（可选）在 Combo 中启用多选功能。默认值为 *false*
 - `placeholder` -（可选）在 Combo 的输入框中设置占位符
 - `readOnly` -（可选）使 Combo 变为只读（只能从列表中选择选项，不能在输入框中输入文字）。默认值为 *false*
-- `selectAllButton` -（可选）定义是否显示“全选”按钮。默认值为 *false*
+- `selectAllButton` -（可选）定义是否显示"全选"按钮。默认值为 *false*
 - `template` -（可选）设置弹出列表中选项的显示模板
 - `virtual` -（可选）在滚动选项列表时启用数据的动态加载。默认值为 *false*
 - `label` -（可选）为控件指定标签

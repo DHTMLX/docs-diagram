@@ -6,9 +6,9 @@ description: Point an AI assistant at the MCP server and it finds current DHTMLX
 
 # DHTMLX Diagram MCP server: shapes, connectors, and editor APIs
 
-[DHTMLX Diagram](/) gives you real control over [shape geometry](shapes/configuration_properties.md), [connector routing](/lines/), and [layout rules](guides/diagram/configuration.md), plus any options the editor is configured to allow. Does the generated code reflect current shape properties, connector methods, and layout options, or does it reflect the state of an earlier training snapshot?
+[DHTMLX Diagram](/) gives you real control over [shape geometry](/shapes/configuration_properties), [connector routing](/lines/), and [layout rules](/guides/diagram/configuration), plus any options the editor is configured to allow. Does the generated code reflect current shape properties, connector methods, and layout options, or does it reflect the state of an earlier training snapshot?
 
-The DHTMLX MCP server exists precisely for this: it puts the current Diagram documentation in front of the assistant before a single shape gets drawn. Whether you are working with [swimlanes](/swimlanes/), [custom shapes](shapes/custom_shape.md), the [Diagram Editor](guides/diagram_editor/initialization.md), or any other part of the library, the assistant retrieves the current reference material before generating a response.
+The DHTMLX MCP server exists precisely for this: it puts the current Diagram documentation in front of the assistant before a single shape gets drawn. Whether you are working with [swimlanes](/swimlanes/), [custom shapes](/shapes/custom_shape), the [Diagram Editor](/guides/diagram_editor/initialization), or any other part of the library, the assistant retrieves the current reference material before generating a response.
 
 ### MCP endpoint
 
@@ -24,14 +24,14 @@ The DHTMLX MCP server covers all major DHTMLX products, not only DHTMLX Diagram.
 
 DHTMLX Diagram's documentation lives in the MCP server's index. Developers query it for things such as:
 
-- Looking up the current API for [shapes](shapes/default_shapes.md), [lines](/lines/), [groups](/groups/), or [swimlanes](/swimlanes/).
+- Looking up the current API for [shapes](/shapes/default_shapes), [lines](/lines/), [groups](/groups/), or [swimlanes](/swimlanes/).
 - Generating ready-to-run Diagram code based on a description.
-- Exploring [Editor](guides/diagram_editor/initialization.md) configuration options, toolbar controls, and event handling.
-- Checking [export](guides/data_export.md) options and understanding how to produce PDF or PNG output.
-- Configuring auto-layout options for default-mode diagrams using the [diagram configuration](guides/diagram/configuration.md).
-- Loading diagram data and serializing it back with the available [data methods](guides/loading_data.md).
-- Handling [Diagram and Editor events](guides/event_handling.md) to respond to user interactions.
-- Exploring [TypeScript support](guides/using_typescript.md) and framework integration for React, Vue, Angular and Svelte.
+- Exploring [Editor](/guides/diagram_editor/initialization) configuration options, toolbar controls, and event handling.
+- Checking [export](/guides/data_export) options and understanding how to produce PDF or PNG output.
+- Configuring auto-layout options for default-mode diagrams using the [diagram configuration](/guides/diagram/configuration).
+- Loading diagram data and serializing it back with the available [data methods](/guides/loading_data).
+- Handling [Diagram and Editor events](/guides/event_handling) to respond to user interactions.
+- Exploring [TypeScript support](/guides/using_typescript) and framework integration for React, Vue, Angular and Svelte.
 
 ## Inside a Diagram MCP server request
 

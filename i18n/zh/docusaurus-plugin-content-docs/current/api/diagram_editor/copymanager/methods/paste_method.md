@@ -8,7 +8,7 @@ description: 您可以在 DHTMLX JavaScript Diagram 库的文档中了解 Copy m
 
 ### 描述 {#description}
 
-@short: 创建与通过 “copy()” 方法传递的元素相同的新元素
+@short: 创建与通过 "copy()" 方法传递的元素相同的新元素
 
 :::note
 仅当 Diagram Editor 以 `default` 模式初始化时，`paste()` 方法才能正常工作。

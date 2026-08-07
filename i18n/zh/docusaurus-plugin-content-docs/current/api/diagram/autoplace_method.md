@@ -45,13 +45,13 @@ diagram.autoPlace({
 
 ### "direct" 模式 {#direct-mode}
 
-无箭头连接线按“从中心到中心”对齐；线条为直线且呈对角线状。
+无箭头连接线按"从中心到中心"对齐；线条为直线且呈对角线状。
 
 ![](/img/direct_mode.png)
 
 ### "edges" 模式 {#edges-mode}
 
-连接线按“从边到边”对齐。
+连接线按"从边到边"对齐。
 
 :::note
 如果在连接线上设置了 `fromSide` 和 `toSide`，自动布局算法将保留这些值，但在计算排列时不会使用它们。定义连接线的关键属性是 `from` 和 `to`，而 `fromSide` 和 `toSide` 由算法自动计算。
