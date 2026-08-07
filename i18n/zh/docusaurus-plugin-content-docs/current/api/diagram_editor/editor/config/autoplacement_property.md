@@ -68,13 +68,13 @@ editor.parse(data);
 
 ### "direct" 模式 {#direct-mode}
 
-无箭头的连接线按“从中心到中心”对齐，呈直线和对角线状。
+无箭头的连接线按"从中心到中心"对齐，呈直线和对角线状。
 
 ![](/img/direct_mode.png)
 
 ### "edges" 模式 {#edges-mode}
 
-连接线按“从边到边”的方式对齐。
+连接线按"从边到边"的方式对齐。
 
 :::info
 若要为线条添加箭头，请在[线条对象](lines/configuration_properties.md)的配置中指定 `forwardArrow: "filled"` 或 `backArrow: "filled"`。

@@ -8,7 +8,7 @@ description: 您可以在 DHTMLX JavaScript Diagram 库的文档中了解编辑�
 
 ### 描述 {#description}
 
-@short: 在点击“缩小”按钮或调用 `zoomOut()` 方法后触发
+@short: 在点击"缩小"按钮或调用 `zoomOut()` 方法后触发
 
 ### 用法 {#usage}
 

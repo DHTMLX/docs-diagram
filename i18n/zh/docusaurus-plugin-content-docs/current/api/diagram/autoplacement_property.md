@@ -72,13 +72,13 @@ diagram.autoPlace();
 
 ### "direct" 模式 {#direct-mode}
 
-无箭头连接线按“从中心到中心”对齐。线条为直线且呈对角线状。
+无箭头连接线按"从中心到中心"对齐。线条为直线且呈对角线状。
 
 ![](/img/direct_mode.png)
 
 ### "edges" 模式 {#edges-mode}
 
-连接线按“从边到边”对齐。
+连接线按"从边到边"对齐。
 
 :::info
 要为线条添加箭头，请在[线对象](lines/configuration_properties.md)的配置中指定 `forwardArrow: "filled"` 或 `backArrow: "filled"`。

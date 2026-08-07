@@ -139,9 +139,9 @@ const data = [
 
 **相关文章**：[配置 Group](/groups/)
 
-## “项目”对象特有的属性 {#properties-specific-for-project-object}
+## "项目"对象特有的属性 {#properties-specific-for-project-object}
 
-“项目”对象用作任务和里程碑的容器，其工作方式类似于 [group](/groups/)，支持创建具有多种嵌套级别的 PERT 图表，并提供可视化分组。
+"项目"对象用作任务和里程碑的容器，其工作方式类似于 [group](/groups/)，支持创建具有多种嵌套级别的 PERT 图表，并提供可视化分组。
 
 ### 用法 {#usage-1}
 

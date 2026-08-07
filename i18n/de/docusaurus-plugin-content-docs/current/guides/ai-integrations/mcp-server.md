@@ -8,7 +8,7 @@ description: Verbinden Sie KI-Coding-Assistenten über den MCP-Server mit der ak
 
 Der Aufbau von Diagrammanwendungen erfordert präzise Kontrolle über Formen, Verbindungen, Layout und Editor-Konfiguration. Wenn ein KI-Tool anhand veralteter Trainingsdaten Code für [DHTMLX Diagram](/) generiert, entstehen inkompatible APIs, fehlende Eigenschaften und Konfigurationsoptionen, die es nicht mehr gibt.
 
-Der DHTMLX Model Context Protocol (MCP)-Server löst dieses Problem, indem er KI-Tools direkten Zugriff auf die aktuelle Diagram-Dokumentation gibt. Egal, ob Sie mit [Swimlanes](/swimlanes/), [benutzerdefinierten Formen](shapes/custom_shape.md), dem [Diagram Editor](guides/diagram_editor/initialization.md) oder einem anderen Teil der Bibliothek arbeiten – der Assistent ruft das aktuelle Referenzmaterial ab, bevor er eine Antwort generiert.
+Der DHTMLX Model Context Protocol (MCP)-Server löst dieses Problem, indem er KI-Tools direkten Zugriff auf die aktuelle Diagram-Dokumentation gibt. Egal, ob Sie mit [Swimlanes](/swimlanes/), [benutzerdefinierten Formen](/shapes/custom_shape), dem [Diagram Editor](/guides/diagram_editor/initialization) oder einem anderen Teil der Bibliothek arbeiten – der Assistent ruft das aktuelle Referenzmaterial ab, bevor er eine Antwort generiert.
 
 **MCP-Endpunkt**
 
@@ -24,14 +24,14 @@ Der DHTMLX MCP-Server deckt alle wichtigen DHTMLX-Produkte ab, nicht nur DHTMLX 
 
 Der MCP-Server indiziert die vollständige DHTMLX-Diagram-Dokumentation. Häufige Szenarien, in denen der MCP-Server nützlich ist:
 
-- Nachschlagen der aktuellen API für [Formen](shapes/default_shapes.md), [Linien](/lines/), [Gruppen](/groups/) oder [Swimlanes](/swimlanes/).
+- Nachschlagen der aktuellen API für [Formen](/shapes/default_shapes), [Linien](/lines/), [Gruppen](/groups/) oder [Swimlanes](/swimlanes/).
 - Generieren von sofort lauffähigem Diagram-Code auf Grundlage einer Beschreibung.
-- Erkunden von [Editor](guides/diagram_editor/initialization.md)-Konfigurationsoptionen, Toolbar-Steuerelementen und Event-Handling.
-- Prüfen der [Export](guides/data_export.md)-Optionen und Verstehen, wie PDF- oder PNG-Ausgaben erzeugt werden.
-- Konfigurieren von Auto-Layout-Optionen für Diagramme im Standardmodus mithilfe der [Diagram-Konfiguration](guides/diagram/configuration.md).
-- Laden von Diagrammdaten und deren Serialisierung mithilfe der verfügbaren [Datenmethoden](guides/loading_data.md).
-- Verarbeiten von [Diagram- und Editor-Events](guides/event_handling.md), um auf Benutzerinteraktionen zu reagieren.
-- Erkunden der [TypeScript-Unterstützung](guides/using_typescript.md) und der Framework-Integration für React, Vue, Angular und Svelte.
+- Erkunden von [Editor](/guides/diagram_editor/initialization)-Konfigurationsoptionen, Toolbar-Steuerelementen und Event-Handling.
+- Prüfen der [Export](/guides/data_export)-Optionen und Verstehen, wie PDF- oder PNG-Ausgaben erzeugt werden.
+- Konfigurieren von Auto-Layout-Optionen für Diagramme im Standardmodus mithilfe der [Diagram-Konfiguration](/guides/diagram/configuration).
+- Laden von Diagrammdaten und deren Serialisierung mithilfe der verfügbaren [Datenmethoden](/guides/loading_data).
+- Verarbeiten von [Diagram- und Editor-Events](/guides/event_handling), um auf Benutzerinteraktionen zu reagieren.
+- Erkunden der [TypeScript-Unterstützung](/guides/using_typescript) und der Framework-Integration für React, Vue, Angular und Svelte.
 
 ## Wie der DHTMLX MCP-Server funktioniert {#how-dhtmlx-mcp-server-works}
 

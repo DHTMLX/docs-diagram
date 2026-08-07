@@ -70,7 +70,7 @@ description: 您可以在此了解 DHTMLX JavaScript Diagram 库的最新资讯�
 ### 新功能 {#new-functionality}
 
 - 支持根据 Gantt 数据集创建 Diagram PERT 图：
-    - [新的 PERT 模式](/#diagram-in-the-pert-mode)，通过[新增类型：`"pert"`](api/diagram/type_property.md)设置
+    - [新的 PERT 模式](/#diagram-in-the-pert-mode)，通过[新增类型：`"pert"`](/api/diagram/type_property)设置
     - [新增形状类型：`"task"` 和 `"milestone"`](shapes/default_shapes.md#shapes-in-the-pert-mode)
     - [新增分组类型：`"project"`](/groups/#grouping-shapes-in-the-pert-mode)（用于对任务和里程碑进行分组）
 - Diagram Editor。支持在编辑器内管理键盘快捷键（热键）：
@@ -494,7 +494,7 @@ description: 您可以在此了解 DHTMLX JavaScript Diagram 库的最新资讯�
 ### 新功能 {#new-functionality}
 
 - [TypeScript 支持](guides/using_typescript.md)
-- DHTMLX Diagram 新增思维导图模式（[type:"mindmap"](api/diagram/type_property.md)）
+- DHTMLX Diagram 新增思维导图模式（[type:"mindmap"](/api/diagram/type_property)）
 - 支持通过图表对象的 [typeConfig](api/diagram/typeconfig_property.md) 配置属性[配置 Diagram 思维导图模式中子形状相对于根形状的方向](guides/diagram/configuration.md#arranging-shapes-in-the-mindmap-mode-of-diagram)
 - 支持通过 [addShape()](api/diagram/addshape_method.md) 方法的 "eventHandlers" 属性[为自定义形状添加自定义事件处理程序](shapes/custom_shape.md#event-handlers-for-custom-shapes)
 - 支持通过 Editor 对象的 [shapeToolbar](api/diagram_editor/editor/config/shapetoolbar_property.md) 属性自定义[网格区域](guides/diagram_editor/grid_area.md)中用于编辑项目的个人工具栏
@@ -503,7 +503,7 @@ description: 您可以在此了解 DHTMLX JavaScript Diagram 库的最新资讯�
 
 ### 更新 {#updates}
 
-- 更新了图表对象的 [type](api/diagram/type_property.md) 配置属性：新增了 "default" 和 "mindmap" 取值
+- 更新了图表对象的 [type](/api/diagram/type_property) 配置属性：新增了 "default" 和 "mindmap" 取值
 - 更新了 [collapseItem()](api/diagram/collapseitem_method.md) 和 [expandItem()](api/diagram/expanditem_method.md) 方法：新增了第二个参数 "dir"
 - 更新了 [beforeCollapse](api/diagram/beforecollapse_event.md)、[afterCollapse](api/diagram/aftercollapse_event.md)、[beforeExpand](api/diagram/beforeexpand_event.md) 和 [afterExpand](api/diagram/afterexpand_event.md) 事件：新增了第二个参数 "dir"
 

@@ -28,7 +28,7 @@ addShape(
     - `template: function` - （必需）该函数以形状的配置对象作为参数，并返回 HTML 或 SVG 模板
     - [`defaults: object`](shapes/custom_shape.md) - （可选）已创建形状的默认配置。请参阅[形状配置属性的完整列表](shapes/configuration_properties.md)
     - [`eventHandlers: object`](shapes/custom_shape.md#event-handlers-for-custom-shapes) - （可选）为形状模板的 HTML 元素添加自定义事件处理程序。`eventHandlers` 对象包含一组 `key:value` 键值对，其中：
-        - `key: string` - 事件的名称。请注意，事件名称的开头使用 “on” 前缀（onclick、onmouseover）
+        - `key: string` - 事件的名称。请注意，事件名称的开头使用 "on" 前缀（onclick、onmouseover）
         - `value: object` - 一个包含 `key:value` 键值对的对象，其中
           - `key` 是将应用该处理程序的 CSS 类名
           - `value` 是一个接受两个参数的函数：

@@ -8,7 +8,7 @@ description: MCP 서버를 통해 AI 코딩 어시스턴트를 실시간 DHTMLX 
 
 다이어그램 애플리케이션을 구축하려면 도형, 연결, 레이아웃, 에디터 구성에 대한 정밀한 제어가 필요합니다. AI 도구가 오래된 학습 데이터를 기반으로 [DHTMLX Diagram](/) 코드를 생성하면 API가 일치하지 않거나 속성이 누락되거나 더 이상 존재하지 않는 구성 옵션이 사용되는 결과가 발생합니다.
 
-DHTMLX Model Context Protocol(MCP) 서버는 AI 도구에 실시간 Diagram 문서에 대한 직접적인 액세스 권한을 부여하여 이 문제를 해결합니다. [스윔레인](/swimlanes/), [커스텀 도형](shapes/custom_shape.md), [Diagram Editor](guides/diagram_editor/initialization.md) 또는 라이브러리의 다른 어떤 부분을 다루든, 어시스턴트는 응답을 생성하기 전에 최신 참조 자료를 가져옵니다.
+DHTMLX Model Context Protocol(MCP) 서버는 AI 도구에 실시간 Diagram 문서에 대한 직접적인 액세스 권한을 부여하여 이 문제를 해결합니다. [스윔레인](/swimlanes/), [커스텀 도형](/shapes/custom_shape), [Diagram Editor](/guides/diagram_editor/initialization) 또는 라이브러리의 다른 어떤 부분을 다루든, 어시스턴트는 응답을 생성하기 전에 최신 참조 자료를 가져옵니다.
 
 **MCP 엔드포인트**
 
@@ -24,14 +24,14 @@ DHTMLX MCP 서버는 DHTMLX Diagram뿐만 아니라 모든 주요 DHTMLX 제품�
 
 MCP 서버는 전체 DHTMLX Diagram 문서를 인덱싱합니다. MCP 서버가 유용하게 사용되는 일반적인 시나리오는 다음과 같습니다.
 
-- [도형](shapes/default_shapes.md), [선](/lines/), [그룹](/groups/), [스윔레인](/swimlanes/)의 최신 API 조회.
+- [도형](/shapes/default_shapes), [선](/lines/), [그룹](/groups/), [스윔레인](/swimlanes/)의 최신 API 조회.
 - 설명을 기반으로 즉시 실행 가능한 Diagram 코드를 생성.
-- [Editor](guides/diagram_editor/initialization.md) 구성 옵션, 툴바 컨트롤, 이벤트 처리 방식 탐색.
-- [내보내기](guides/data_export.md) 옵션을 확인하고 PDF 또는 PNG 출력을 생성하는 방법을 이해.
-- [다이어그램 구성](guides/diagram/configuration.md)을 사용하여 기본 모드 다이어그램의 자동 레이아웃 옵션을 구성.
-- 사용 가능한 [데이터 메서드](guides/loading_data.md)를 사용하여 다이어그램 데이터를 로드하고 다시 직렬화.
-- 사용자 상호작용에 대응하기 위해 [Diagram 및 Editor 이벤트](guides/event_handling.md)를 처리.
-- React, Vue, Angular, Svelte에 대한 [TypeScript 지원](guides/using_typescript.md) 및 프레임워크 통합 탐색.
+- [Editor](/guides/diagram_editor/initialization) 구성 옵션, 툴바 컨트롤, 이벤트 처리 방식 탐색.
+- [내보내기](/guides/data_export) 옵션을 확인하고 PDF 또는 PNG 출력을 생성하는 방법을 이해.
+- [다이어그램 구성](/guides/diagram/configuration)을 사용하여 기본 모드 다이어그램의 자동 레이아웃 옵션을 구성.
+- 사용 가능한 [데이터 메서드](/guides/loading_data)를 사용하여 다이어그램 데이터를 로드하고 다시 직렬화.
+- 사용자 상호작용에 대응하기 위해 [Diagram 및 Editor 이벤트](/guides/event_handling)를 처리.
+- React, Vue, Angular, Svelte에 대한 [TypeScript 지원](/guides/using_typescript) 및 프레임워크 통합 탐색.
 
 ## DHTMLX MCP 서버의 작동 방식 {#how-dhtmlx-mcp-server-works}
 
