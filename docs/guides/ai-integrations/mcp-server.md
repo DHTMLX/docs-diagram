@@ -35,16 +35,18 @@ DHTMLX Diagram's documentation lives in the MCP server's index. Developers query
 
 ## Inside a Diagram MCP server request
 
-The DHTMLX MCP server runs a Retrieval-Augmented Generation (RAG) pipeline over the Model Context Protocol (MCP), routing each query to one of two workflows: *Search*, which retrieves matching reference pages for the assistant to work from, or *Inference*, which reads those pages and returns a finished answer directly. Here's how that plays out for the prompt *"How do I configure a swimlane diagram with custom cell headers?"*:
+The DHTMLX MCP server runs a Retrieval-Augmented Generation (RAG) pipeline over the Model Context Protocol (MCP), routing each query to one of two workflows: *Search*, which retrieves matching reference pages for the assistant to work from, or *Inference*, which reads those pages and returns a finished answer directly. Which part of a request actually needs Diagram's documentation? The assistant extracts just that piece first and handles the rest on its own.
 
-1. The assistant sends the query through MCP.
-2. The server matches it to the swimlanes documentation.
+Here's how that plays out for the prompt *"How do I build a DHTMLX Diagram org chart that pulls employee records from my internal HR API and auto-arranges them by department?"*:
+
+1. The assistant picks out the part that needs documentation: how to configure auto-layout for an org chart built from a JSON dataset.
+2. The server matches it to the diagram configuration documentation.
 3. Since the answer requires generated code, it routes to *Search* (a narrower factual question, like which method controls auto-layout, would go to *Inference*).
 4. *Search* pulls the matching pages from a vector index built on the current Diagram docs.
 5. Those pages return to the assistant as context.
-6. The assistant writes the swimlane configuration from that context rather than from memory.
+6. The assistant configures the auto-layout using that context, then writes the HR API fetch logic from its own knowledge instead of guessing at the Diagram API.
 
-This keeps generated Diagram code aligned with the documentation as it stands today, not a training-time snapshot.
+This keeps generated Diagram code aligned with the documentation as it stands today.
 
 ## Bringing the MCP server into your AI tool
 
