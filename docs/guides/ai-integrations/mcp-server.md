@@ -6,7 +6,7 @@ description: Point an AI assistant at the MCP server and it finds current DHTMLX
 
 # DHTMLX Diagram MCP server: shapes, connectors, and editor APIs
 
-[DHTMLX Diagram](/) gives you real control over [shape geometry](/shapes/configuration_properties), [connector routing](/lines/), and [layout rules](/guides/diagram/configuration), plus any options the editor is configured to allow. Does the generated code reflect current shape properties, connector methods, and layout options, or does it reflect the state of an earlier training snapshot?
+[DHTMLX Diagram](/) gives you real control over [shape geometry](/shapes/configuration_properties), [connector routing](/lines/), and [layout rules](/guides/diagram/configuration), plus any options the editor is configured to allow. Generated code needs to reflect current shape properties, connector methods, and layout options, not the state of an earlier training snapshot.
 
 The DHTMLX MCP server exists precisely for this: it puts the current Diagram documentation in front of the assistant before a single shape gets drawn. Whether you are working with [swimlanes](/swimlanes/), [custom shapes](/shapes/custom_shape), the [Diagram Editor](/guides/diagram_editor/initialization), or any other part of the library, the assistant retrieves the current reference material before generating a response.
 
@@ -35,7 +35,7 @@ DHTMLX Diagram's documentation lives in the MCP server's index. Developers query
 
 ## Inside a Diagram MCP server request
 
-The DHTMLX MCP server runs a Retrieval-Augmented Generation (RAG) pipeline over the Model Context Protocol (MCP), routing each query to one of two workflows: *Search*, which retrieves matching reference pages for the assistant to work from, or *Inference*, which reads those pages and returns a finished answer directly. Which part of a request actually needs Diagram's documentation? The assistant extracts just that piece first and handles the rest on its own.
+The DHTMLX MCP server runs a Retrieval-Augmented Generation (RAG) pipeline over the Model Context Protocol (MCP), routing each query to one of two workflows: *Search*, which retrieves matching reference pages for the assistant to work from, or *Inference*, which reads those pages and returns a finished answer directly. Only part of a request actually needs Diagram's documentation, and the assistant extracts just that piece first, handling the rest on its own.
 
 Here's how that plays out for the prompt *"How do I build a DHTMLX Diagram org chart that pulls employee records from my internal HR API and auto-arranges them by department?"*:
 
