@@ -143,4 +143,4 @@ Sie können die Zoom-Vorlage auf Ihr Diagramm anwenden, um dessen Erscheinungsbi
 
 ## Wie geht es weiter {#whats-next}
 
-Jetzt können Sie sich mit der Verwendung von DHTMLX Diagram Editor in Ihrer Anwendung vertraut machen. Lesen Sie die [Diagram-Editor-Übersicht](editor_overview.md), um mehr über dieses Tool zu erfahren.
+Jetzt können Sie sich mit der Verwendung von DHTMLX Diagram Editor in Ihrer Anwendung vertraut machen. Lesen Sie die [Diagram-Editor-Übersicht](editor_overview.md), um mehr über dieses Tool zu erfahren. Wenn Sie mit einem KI-Coding-Assistenten entwickeln, verbinden Sie ihn über den [DHTMLX MCP-Server](guides/ai-integrations/mcp-server.md) mit der Live-Dokumentation.

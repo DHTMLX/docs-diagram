@@ -66,6 +66,12 @@ description: 您可以在 DHTMLX JavaScript Diagram 库的文档中学习 JavaSc
 - [与 React 集成](guides/integrations/react_integration.md)
 - [与 Vue.js 集成](guides/integrations/vue_integration.md)
 
+## AI 集成 {#ai-integrations}
+
+将 AI 编程助手连接到实时的 DHTMLX Diagram 文档，使其根据当前 API 生成代码，而非依赖过时的训练数据。
+
+- [DHTMLX MCP 服务器](guides/ai-integrations/mcp-server.md)
+
 ## 触控支持 {#touch-support}
 
 得益于内置的触控支持，您可以使用 DHTMLX Diagram 创建响应式 Web 应用程序。请在 [触控支持](guides/touch_support.md) 指南中查看 UI 部件在触控设备上的工作方式。

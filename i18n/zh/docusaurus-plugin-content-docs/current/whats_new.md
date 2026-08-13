@@ -8,6 +8,22 @@ description: 您可以在此了解 DHTMLX JavaScript Diagram 库的最新资讯�
 
 如果您正在将 Diagram 从旧版本升级，请查看 [迁移到新版本](migration.md) 了解详细信息。
 
+## 版本 6.1.7 {#version-617}
+
+2026 年 8 月 5 日发布
+
+### 修复 {#fixes}
+
+- Diagram Editor。修复了将形状移动到组或泳道中后，连接线丢失可视化控件的问题
+- Diagram Editor。修复了新连接线吸附到旋转形状连接点的问题
+- Diagram Editor。修复了在组内旋转形状时连接线断开或错位的问题
+- Diagram Editor。修复了 `dhx_slide` 滑块的行为，确保在同时显示水平和垂直滑块时能够正常工作
+- Diagram Editor。修复了缩放比例不为 100% 时 `dhx_slide` 元素的可见性问题
+- Diagram Editor。修复了线条预览占位符的位置，使其与连接点正确对齐
+- Diagram Editor。修复了点击 Diagram 区域时已折叠的形状栏分区会自动展开的问题
+- Diagram。修复了自定义形状属性中默认值 `true` 会覆盖显式设置的 `false` 值的问题
+- Diagram。修复了点击滚动条会清除当前所选元素的问题
+
 ## 版本 6.1.6 {#version-616}
 
 2026 年 7 月 1 日发布

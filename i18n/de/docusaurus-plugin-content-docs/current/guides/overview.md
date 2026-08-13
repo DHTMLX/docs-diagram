@@ -65,6 +65,12 @@ Die Artikel zeigen Ihnen Beispiele für die Verwendung von Diagram mit verschied
 - [Integration mit React](guides/integrations/react_integration.md)
 - [Integration mit Vue.js](guides/integrations/vue_integration.md)
 
+## KI-Integrationen {#ai-integrations}
+
+Verbinden Sie einen KI-Coding-Assistenten mit der Live-Dokumentation von DHTMLX Diagram, damit er Code auf Basis der aktuellen API statt veralteter Trainingsdaten generiert.
+
+- [DHTMLX MCP-Server](guides/ai-integrations/mcp-server.md)
+
 ## Touch-Unterstützung {#touch-support}
 
 Dank der integrierten Touch-Unterstützung können Sie mit DHTMLX Diagram responsive Webanwendungen erstellen. Erfahren Sie in der Anleitung [Touch-Unterstützung](guides/touch_support.md), wie UI-Widgets auf Touch-Geräten funktionieren.

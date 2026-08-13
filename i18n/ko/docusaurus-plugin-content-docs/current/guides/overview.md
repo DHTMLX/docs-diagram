@@ -66,6 +66,12 @@ Diagram을 다양한 언어에 맞게 조정하고 텍스트 요소를 편집하
 - [React와의 통합](guides/integrations/react_integration.md)
 - [Vue.js와의 통합](guides/integrations/vue_integration.md)
 
+## AI 통합 {#ai-integrations}
+
+AI 코딩 어시스턴트를 최신 DHTMLX Diagram 문서와 연결하면 오래된 학습 데이터가 아닌 최신 API를 기반으로 코드를 생성합니다.
+
+- [DHTMLX MCP 서버](guides/ai-integrations/mcp-server.md)
+
 ## 터치 지원 {#touch-support}
 
 DHTMLX Diagram에 내장된 터치 지원 덕분에 반응형 웹 애플리케이션을 만들 수 있습니다. 터치 디바이스에서 UI 위젯이 어떻게 작동하는지 [터치 지원](guides/touch_support.md) 가이드에서 확인해 보세요.
