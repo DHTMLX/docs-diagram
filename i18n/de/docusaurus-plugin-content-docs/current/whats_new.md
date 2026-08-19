@@ -8,11 +8,27 @@ description: Erfahren Sie Neuigkeiten zur JavaScript-Bibliothek DHTMLX Diagram. 
 
 Wenn Sie Diagram von einer älteren Version aktualisieren, finden Sie Details unter [Migration zu einer neueren Version](migration.md).
 
+## Version 6.1.7 {#version-617}
+
+Veröffentlicht am 5. August 2026
+
+### Fehlerbehebungen {#fixes}
+
+- Diagram Editor. Behoben: Verbindungslinien verloren ihre visuellen Steuerelemente, nachdem ein Shape in eine Gruppe oder eine Swimlane verschoben wurde
+- Diagram Editor. Behoben: das Einrasten neuer Konnektoren an Verbindungspunkten auf gedrehten Shapes
+- Diagram Editor. Behoben: Verbindungslinien wurden beim Drehen eines Shapes innerhalb einer Gruppe unterbrochen oder verschoben
+- Diagram Editor. Behoben: das Verhalten der `dhx_slide`-Schieberegler, sodass diese korrekt funktionieren, wenn sowohl horizontale als auch vertikale Schieberegler angezeigt werden
+- Diagram Editor. Behoben: die Sichtbarkeit von `dhx_slide`-Elementen bei Zoomstufen ungleich 100 %
+- Diagram Editor. Behoben: die Positionierung des Vorschau-Platzhalters der Linie, sodass er korrekt am Verbindungspunkt ausgerichtet wird
+- Diagram Editor. Behoben: Eingeklappte Shapebar-Abschnitte wurden beim Klicken in den Diagrammbereich automatisch ausgeklappt
+- Diagram. Behoben: Ein Standardwert `true` in einer Eigenschaft eines benutzerdefinierten Shapes überschrieb einen explizit festgelegten `false`-Wert
+- Diagram. Behoben: Ein Klick auf die Scrollbar hob die aktuelle Auswahl der Elemente auf
+
 ## Version 6.1.6 {#version-616}
 
 Veröffentlicht am 1. Juli 2026
 
-### Fehlerbehebungen {#fixes}
+### Fehlerbehebungen {#fixes-1}
 
 - Diagram. Ein Fehler behoben, der beim Laden von Daten in Diagram über `ShapeCollection` (`DataCollection`) im `mindmap`-Modus auftrat
 
@@ -24,7 +40,7 @@ Veröffentlicht am 17. Juni 2026
 
 - Diagram Editor. Verbesserte Texteditierung mit neuen Tastenkombinationen: <kbd>Ctrl</kbd>+<kbd>Enter</kbd> zum Starten der Bearbeitung, <kbd>Shift</kbd>+<kbd>Enter</kbd> für neue Zeilen, <kbd>Enter</kbd> zum Bestätigen und <kbd>Escape</kbd> zum Verwerfen von Änderungen
 
-### Fehlerbehebungen {#fixes-1}
+### Fehlerbehebungen {#fixes-2}
 
 - Diagram Editor. Behoben: Linien, die durch Swimlane-Gruppen verliefen, waren nicht auswählbar
 - Diagram Editor. Automatisches Scrollen hinzugefügt, wenn Verbindungslinien auf Shapes außerhalb des aktuellen Bildschirmbereichs gezogen werden.
@@ -39,7 +55,7 @@ Veröffentlicht am 21. Mai 2026
 
 - Diagram / Diagram Editor. Verbesserungen an der Autoplatzierungslogik. Die Möglichkeit hinzugefügt, den Abstand zwischen Shapes und Ebenen über die neuen Eigenschaften `itemPadding` und `levelPadding` in der Diagram-Methode [`autoPlace()`](api/diagram/autoplace_method.md) und im Konfigurationsobjekt [`autoplacement`](api/diagram/autoplacement_property.md) zu steuern
 
-### Fehlerbehebungen {#fixes-2}
+### Fehlerbehebungen {#fixes-3}
 
 - Diagram. Behoben: Die Anwendung der Autoplatzierung führte zu falschen Abständen zwischen Shapes
 - Diagram. Behoben: Der Aufruf von [`autoPlace()`](api/diagram/autoplace_method.md) ignorierte die Linienwerte [`fromSide` und `toSide`](lines/configuration_properties.md), wodurch nun die Konsistenz der Diagrammstruktur gewährleistet ist
@@ -49,7 +65,7 @@ Veröffentlicht am 21. Mai 2026
 
 Veröffentlicht am 2. April 2026
 
-### Fehlerbehebungen {#fixes-3}
+### Fehlerbehebungen {#fixes-4}
 
 - Diagram Editor. Das Problem bei der Erstellung von Konnektoren für Shapes mit negativen Koordinaten ist behoben
 - Diagram Editor. Das Problem, dass das Drücken der Taste <kbd>Backspace</kbd> während der Inline-Textbearbeitung das Shape oder den Linientitel löschte, ist behoben
@@ -59,7 +75,7 @@ Veröffentlicht am 2. April 2026
 
 Veröffentlicht am 5. Februar 2026
 
-### Fehlerbehebungen {#fixes-4}
+### Fehlerbehebungen {#fixes-5}
 
 - Diagram Editor. Unmöglichkeit, die Zeichenfläche beim Verschieben von Elementen nach unten und rechts automatisch zu scrollen
 
@@ -95,7 +111,7 @@ Veröffentlicht am 25. November 2025
     - ein neuer Parameter `connectType` für die Konfigurationseigenschaft [`lineConfig`](api/diagram_editor/editor/config/lineconfig_property.md) von Diagram Editor
 - Export-API. Die Exportfunktionen [`pdf()`](api/export/pdf_method.md) und [`png()`](api/export/png_method.md) geben nun ein Promise des Datenexports zurück
 
-### Fehlerbehebungen {#fixes-5}
+### Fehlerbehebungen {#fixes-6}
 
 - Diagram Editor. Der Skriptfehler, der nach dem Hovern über ein Shape im Safari-Browser auftrat
 - Diagram Editor. Die Konsolenwarnungen, die nach dem Entfernen von Elementen auftraten
@@ -129,7 +145,7 @@ Veröffentlicht am 25. November 2025
 
 Veröffentlicht am 18. Juni 2025
 
-### Fehlerbehebungen {#fixes-6}
+### Fehlerbehebungen {#fixes-7}
 
 - Diagram Editor. Fehlerhaftes Verschieben von Shapes beim Zoomen
 
@@ -137,7 +153,7 @@ Veröffentlicht am 18. Juni 2025
 
 Veröffentlicht am 10. März 2025
 
-### Fehlerbehebungen {#fixes-7}
+### Fehlerbehebungen {#fixes-8}
 
 - Diagram. Das Problem mit der Anpassung der Pfeilgröße der Linien-Shape beim Bearbeiten der Linienbreite
 
@@ -145,7 +161,7 @@ Veröffentlicht am 10. März 2025
 
 Veröffentlicht am 4. Februar 2025
 
-### Fehlerbehebungen {#fixes-8}
+### Fehlerbehebungen {#fixes-9}
 
 - Diagram Editor. Ein Problem beim Verschieben einer Gruppe mit Elementen sowie beim Verschieben von Elementen in bzw. aus einer Gruppe
 - Diagram. Die Events `itemMouseOver` und `itemMouseOut` werden für ein ausgewähltes Shape nicht ausgelöst
@@ -167,7 +183,7 @@ Veröffentlicht am 27. November 2024
 
 Veröffentlicht am 1. Oktober 2024
 
-### Fehlerbehebungen {#fixes-9}
+### Fehlerbehebungen {#fixes-10}
 
 - Diagram Editor. Der Aufruf der Methode `destructor()` löst einen Fehler aus
 
@@ -175,7 +191,7 @@ Veröffentlicht am 1. Oktober 2024
 
 Veröffentlicht am 28. August 2024
 
-### Fehlerbehebungen {#fixes-10}
+### Fehlerbehebungen {#fixes-11}
 
 - Diagram Editor. Anwendung unterschiedlicher Locales für `calendar`, `combobox`, `colorpicker`, `form`, `timepicker` der Editbar
 - Diagram Editor. Hinzufügen von Diagram Editor in eine Layout-Zelle
@@ -187,7 +203,7 @@ Veröffentlicht am 28. August 2024
 
 Veröffentlicht am 16. Juli 2024
 
-### Fehlerbehebungen {#fixes-11}
+### Fehlerbehebungen {#fixes-12}
 
 - Diagram. Autoplatzierung. Ein Shape verbirgt sich unter einem anderen Shape
 
@@ -195,7 +211,7 @@ Veröffentlicht am 16. Juli 2024
 
 Veröffentlicht am 24. Juni 2024
 
-### Fehlerbehebungen {#fixes-12}
+### Fehlerbehebungen {#fixes-13}
 
 - Diagram Editor. Speicherleck
 - Diagram Editor. Skriptfehler beim Klicken auf vertikale und horizontale Verteilung über die Toolbar
@@ -277,7 +293,7 @@ Das neue Update führt bedeutende Änderungen an der Struktur und Funktionalitä
     - Die folgenden Events von Diagram Editor sind veraltet und werden nicht mehr unterstützt, da es keine entsprechenden Schaltflächen mehr in der Toolbar gibt: `resetButton`, `applyButton`, `visibility`, `exportData`, `importData`, `autoLayout`
     - Das Event `changeGridStep` von Diagram Editor ist veraltet und wird nicht mehr unterstützt
 
-### Fehlerbehebungen {#fixes-13}
+### Fehlerbehebungen {#fixes-14}
 
 - Diagram Editor. Behebt einen Konsolenfehler, der durch das erneute Klicken auf die Schaltfläche „Daten importieren" nach einem Datenimport ohne Dateiauswahl verursacht wurde
 - Diagram Editor. Behebt die Blockierung beim Hinzufügen eines neuen Shapes
@@ -300,7 +316,7 @@ Das neue Update führt bedeutende Änderungen an der Struktur und Funktionalitä
 
 Veröffentlicht am 12. Juli 2023
 
-### Fehlerbehebungen {#fixes-14}
+### Fehlerbehebungen {#fixes-15}
 
 - Behebt das Problem, dass der Aufruf der Methode [autoPlace()](api/diagram/autoplace_method.md) nach dem Daten-Parsing einen Fehler verursachte
 
@@ -308,7 +324,7 @@ Veröffentlicht am 12. Juli 2023
 
 Veröffentlicht am 30. Mai 2023
 
-### Fehlerbehebungen {#fixes-15}
+### Fehlerbehebungen {#fixes-16}
 
 - Diagram Editor. Behebt das Problem, dass benutzerdefinierte Punkte sich bei einer Mehrfachauswahl-Verschiebung nicht mitbewegten
 - Diagram Editor. Behebt die Unmöglichkeit, ein Shape mit sich selbst zu verknüpfen
@@ -321,7 +337,7 @@ Veröffentlicht am 30. Mai 2023
 
 Veröffentlicht am 19. Januar 2023
 
-### Fehlerbehebungen {#fixes-16}
+### Fehlerbehebungen {#fixes-17}
 
 - Diagram Editor. Behebt das Problem, dass Linien nicht immer an ihrer Position gezeichnet wurden, wenn Daten exportiert und anschließend erneut geladen wurden
     - Nun ist es möglich, die Koordinaten für Linien im `default`-Modus festzulegen (neue Eigenschaft [`points`](lines/configuration_properties.md#properties-specific-for-the-default-mode) des Linienobjekts)
@@ -365,7 +381,7 @@ Die neue Version führt einige Änderungen an der Eigenschaft `lineGap` ein. Wei
     - der Parameter `tooltip` des Symbolobjekts wurde zur Eigenschaft [`shapeToolbar`](api/diagram_editor/editor/config/shapetoolbar_property.md) hinzugefügt
 - Verbessertes Design des [Rasterbereichs](guides/diagram_editor/grid_area.md). Nun hängt der Abstand zwischen den Punkten im Rasterbereich vom Wert der Rasterschrittweite ab
 
-### Fehlerbehebungen {#fixes-17}
+### Fehlerbehebungen {#fixes-18}
 
 - Behebt das Problem, dass ein Ladesymbol nach dem Laden einer Datei nicht aus dem rechten Panel des Editors verschwand
 
@@ -424,7 +440,7 @@ Veröffentlicht am 7. Dezember 2021
 - Aktualisierte Events der [Selection-API](/api/selection/#events): Der Parameter *subId* wurde hinzugefügt
 - Der Standardtyp des Shapes im `default`-Modus wurde in [*"rectangle"*](shapes/configuration_properties.md#common-properties) geändert
 
-### Fehlerbehebungen {#fixes-18}
+### Fehlerbehebungen {#fixes-19}
 
 - Die Leistung wurde für alle Diagrammtypen verbessert
 - Behebung der fehlerhaften Funktion der Schaltflächen *Rückgängig/Wiederholen* in der Toolbar des Editors
@@ -433,7 +449,7 @@ Veröffentlicht am 7. Dezember 2021
 
 Veröffentlicht am 16. September 2021
 
-### Fehlerbehebungen {#fixes-19}
+### Fehlerbehebungen {#fixes-20}
 
 - Behebt die Anzeige von Konnektoren beim Drehen des Shapes
 - Behebt die minifizierten Stile des Diagramms
@@ -477,7 +493,7 @@ Veröffentlicht am 7. September 2021
 - Aktualisierte Events des Editor-Objekts: [beforeShapeMove](api/diagram_editor/editor/events/beforeshapemove_event.md) und [afterShapeMove](api/diagram_editor/editor/events/aftershapemove_event.md)
 - Aktualisierte Struktur der Shape-Collection-API
 
-### Fehlerbehebungen {#fixes-20}
+### Fehlerbehebungen {#fixes-21}
 
 - Behebt die fehlerhafte Funktion der TypeScript-Typdefinitionen im Editor
 - Behebt das Problem, dass die gedrückte Toolbar-Schaltfläche im Editor, der sich innerhalb eines HTML-Formulars befindet, das Absenden des Formulars auslöste
@@ -504,7 +520,7 @@ Veröffentlicht am 15. April 2021
 - Die Methoden [collapseItem()](api/diagram/collapseitem_method.md) und [expandItem()](api/diagram/expanditem_method.md) wurden aktualisiert: der zweite Parameter "dir" wurde hinzugefügt
 - Die Events [beforeCollapse](api/diagram/beforecollapse_event.md), [afterCollapse](api/diagram/aftercollapse_event.md), [beforeExpand](api/diagram/beforeexpand_event.md) und [afterExpand](api/diagram/afterexpand_event.md) wurden aktualisiert: der zweite Parameter "dir" wurde hinzugefügt
 
-### Fehlerbehebungen {#fixes-21}
+### Fehlerbehebungen {#fixes-22}
 
 - Behebt das Problem mit dem Auswahlmodul für alle Typen von DHTMLX Diagram
 - Behebt das Problem mit dem Scrollen des Diagramms, das im `default`-Modus initialisiert wurde, bei Anwendung der Methode "showItem()" auf das skalierte Diagramm
@@ -528,7 +544,7 @@ Veröffentlicht am 15. April 2021
 
 Veröffentlicht am 27. Januar 2021
 
-### Fehlerbehebungen {#fixes-22}
+### Fehlerbehebungen {#fixes-23}
 
 - Behebt das fehlerhafte Verhalten des im Editor ausgewählten Shapes, der im `default`-Modus initialisiert wurde, bei der Arbeit mit dem Eingabefeld auf der Seite
 - Behebt das Problem, dass ein eingeklapptes/ausgeklapptes Element nicht mit seinem übergeordneten Element funktionierte
@@ -538,7 +554,7 @@ Veröffentlicht am 27. Januar 2021
 
 Veröffentlicht am 23. Dezember 2020
 
-### Fehlerbehebungen {#fixes-23}
+### Fehlerbehebungen {#fixes-24}
 
 - Behebt das Problem mit dem Diagram-Exportdienst
 
@@ -546,7 +562,7 @@ Veröffentlicht am 23. Dezember 2020
 
 Veröffentlicht am 14. Juli 2020
 
-### Fehlerbehebungen {#fixes-24}
+### Fehlerbehebungen {#fixes-25}
 
 - Behebt das Problem beim Importieren von Daten aus JSON in den Editor, der im Org-Chart-Modus initialisiert wurde
 - Behebt die fehlerhafte Funktion der Methode [addShape()](api/diagram/addshape_method.md) bei der Konfiguration des rechten Panels des Editors
@@ -556,7 +572,7 @@ Veröffentlicht am 14. Juli 2020
 
 Veröffentlicht am 29. Mai 2020
 
-### Fehlerbehebungen {#fixes-25}
+### Fehlerbehebungen {#fixes-26}
 
 - Behebt das Problem mit der Methode [autoPlace()](api/diagram/autoplace_method.md)
 - Behebt das Problem mit den PNG/PDF-Exportmodulen
@@ -598,7 +614,7 @@ Das neue Update führt einige Änderungen und Verbesserungen ein. Weitere Inform
 
 Veröffentlicht am 30. Dezember 2019
 
-### Fehlerbehebungen {#fixes-26}
+### Fehlerbehebungen {#fixes-27}
 
 - Problem mit der IE-Unterstützung für den Bildlader im Diagram Editor
 
@@ -613,7 +629,7 @@ Veröffentlicht am 27. November 2019
 - Die Möglichkeit, Daten aus dem Diagram Editor über die Schaltfläche „Daten exportieren" der [Toolbar](guides/diagram_editor/toolbar.md) in das JSON-Format zu exportieren
 - Die Option [showExport](migration.md#toolbar-buttons-in-editor) und das Event `exportData` wurden in Diagram Editor hinzugefügt
 
-### Fehlerbehebungen {#fixes-27}
+### Fehlerbehebungen {#fixes-28}
 
 - Behebt das Problem beim Exportieren eines Diagramms in die Formate PDF und PNG
 - Behebt die fehlerhafte Funktion der Mausereignisse
@@ -625,7 +641,7 @@ Veröffentlicht am 27. November 2019
 
 Veröffentlicht am 11. Oktober 2019
 
-### Fehlerbehebungen {#fixes-28}
+### Fehlerbehebungen {#fixes-29}
 - Probleme mit einer img-card im IE
 
 ## Version 2.1 {#version-21}

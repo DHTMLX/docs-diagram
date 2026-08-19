@@ -142,4 +142,4 @@ DHTMLX Diagram 为您提供了一套 API，可用于让使用 Diagram 的过程�
 
 ## 下一步 {#whats-next}
 
-现在，您可以了解如何在应用程序中使用 DHTMLX Diagram Editor。请阅读 [Diagram Editor 概述](editor_overview.md)，以详细了解此工具。
+现在，您可以了解如何在应用程序中使用 DHTMLX Diagram Editor。请阅读 [Diagram Editor 概述](editor_overview.md)，以详细了解此工具。如果您使用 AI 编程助手进行开发，可以通过 [DHTMLX MCP 服务器](guides/ai-integrations/mcp-server.md) 将其连接到实时文档。
