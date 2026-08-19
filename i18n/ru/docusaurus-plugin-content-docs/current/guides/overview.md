@@ -66,6 +66,12 @@ description: Вы можете изучить руководства по JavaSc
 - [Интеграция с React](guides/integrations/react_integration.md)
 - [Интеграция с Vue.js](guides/integrations/vue_integration.md)
 
+## Интеграции с ИИ {#ai-integrations}
+
+Подключите ИИ-ассистента для написания кода к актуальной документации DHTMLX Diagram, чтобы он генерировал код на основе текущего API, а не на основе устаревших данных обучения.
+
+- [MCP-сервер DHTMLX](guides/ai-integrations/mcp-server.md)
+
 ## Поддержка сенсорного управления {#touch-support}
 
 Вы можете создавать адаптивные веб-приложения с помощью DHTMLX Diagram благодаря встроенной поддержке сенсорного управления. Узнайте, как UI-виджеты работают на сенсорных устройствах, в руководстве [Поддержка сенсорного управления](guides/touch_support.md).

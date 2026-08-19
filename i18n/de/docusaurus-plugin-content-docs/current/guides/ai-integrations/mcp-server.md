@@ -1,16 +1,16 @@
 ---
 sidebar_label: DHTMLX MCP-Server
-title:  Verwendung des DHTMLX MCP-Servers mit KI-Coding-Assistenten
-description: Verbinden Sie KI-Coding-Assistenten über den MCP-Server mit der aktuellen DHTMLX-Diagram-Dokumentation. Behandelt Formen, Swimlanes, Organigramme, den Diagram Editor und mehr.
+title: DHTMLX Diagram MCP-Server für Formen- und Verbindungs-APIs
+description: Richten Sie einen KI-Assistenten auf den MCP-Server aus, und er findet die aktuelle DHTMLX-Diagram-Dokumentation zu Formen, Swimlanes, Organigrammen und dem Diagram Editor.
 ---
 
-# Verwendung des DHTMLX MCP-Servers mit KI-Coding-Assistenten
+# DHTMLX Diagram MCP-Server: Formen, Verbindungen und Editor-APIs {#dhtmlx-diagram-mcp-server-shapes-connectors-and-editor-apis}
 
-Der Aufbau von Diagrammanwendungen erfordert präzise Kontrolle über Formen, Verbindungen, Layout und Editor-Konfiguration. Wenn ein KI-Tool anhand veralteter Trainingsdaten Code für [DHTMLX Diagram](/) generiert, entstehen inkompatible APIs, fehlende Eigenschaften und Konfigurationsoptionen, die es nicht mehr gibt.
+[DHTMLX Diagram](/) gibt Ihnen echte Kontrolle über [Formgeometrie](/shapes/configuration_properties), [Verbindungs-Routing](/lines/) und [Layout-Regeln](/guides/diagram/configuration) sowie über jede Option, die der Editor zulässt. Generierter Code muss die aktuellen Formeigenschaften, Verbindungsmethoden und Layout-Optionen widerspiegeln – nicht den Stand eines früheren Trainings-Snapshots.
 
-Der DHTMLX Model Context Protocol (MCP)-Server löst dieses Problem, indem er KI-Tools direkten Zugriff auf die aktuelle Diagram-Dokumentation gibt. Egal, ob Sie mit [Swimlanes](/swimlanes/), [benutzerdefinierten Formen](/shapes/custom_shape), dem [Diagram Editor](/guides/diagram_editor/initialization) oder einem anderen Teil der Bibliothek arbeiten – der Assistent ruft das aktuelle Referenzmaterial ab, bevor er eine Antwort generiert.
+Genau dafür gibt es den DHTMLX MCP-Server: Er stellt dem Assistenten die aktuelle Diagram-Dokumentation bereit, noch bevor auch nur eine einzige Form gezeichnet wird. Egal, ob Sie mit [Swimlanes](/swimlanes/), [benutzerdefinierten Formen](/shapes/custom_shape), dem [Diagram Editor](/guides/diagram_editor/initialization) oder einem anderen Teil der Bibliothek arbeiten – der Assistent ruft das aktuelle Referenzmaterial ab, bevor er eine Antwort generiert.
 
-**MCP-Endpunkt**
+### MCP-Endpunkt {#mcp-endpoint}
 
 ~~~
 https://docs.dhtmlx.com/mcp
@@ -20,9 +20,9 @@ https://docs.dhtmlx.com/mcp
 Der DHTMLX MCP-Server deckt alle wichtigen DHTMLX-Produkte ab, nicht nur DHTMLX Diagram. Derselbe Endpunkt und dieselben Konfigurationsschritte gelten unabhängig davon, mit welcher Komponente Sie arbeiten.
 :::
 
-## Wo der MCP-Server bei Diagram hilft {#where-mcp-server-helps-with-diagram}
+## Diagram-Aufgaben, die der MCP-Server beschleunigt {#diagram-work-the-mcp-server-speeds-up}
 
-Der MCP-Server indiziert die vollständige DHTMLX-Diagram-Dokumentation. Häufige Szenarien, in denen der MCP-Server nützlich ist:
+Die Dokumentation von DHTMLX Diagram ist im Index des MCP-Servers erfasst. Entwickler fragen ihn zum Beispiel für Folgendes ab:
 
 - Nachschlagen der aktuellen API für [Formen](/shapes/default_shapes), [Linien](/lines/), [Gruppen](/groups/) oder [Swimlanes](/swimlanes/).
 - Generieren von sofort lauffähigem Diagram-Code auf Grundlage einer Beschreibung.
@@ -33,15 +33,24 @@ Der MCP-Server indiziert die vollständige DHTMLX-Diagram-Dokumentation. Häufig
 - Verarbeiten von [Diagram- und Editor-Events](/guides/event_handling), um auf Benutzerinteraktionen zu reagieren.
 - Erkunden der [TypeScript-Unterstützung](/guides/using_typescript) und der Framework-Integration für React, Vue, Angular und Svelte.
 
-## Wie der DHTMLX MCP-Server funktioniert {#how-dhtmlx-mcp-server-works}
+## Innerhalb einer Diagram-MCP-Server-Anfrage {#inside-a-diagram-mcp-server-request}
 
-Der Server kombiniert eine Retrieval-Augmented-Generation-(RAG)-Pipeline mit MCP, sodass KI-Assistenten die Dokumentation bei Bedarf abfragen können, anstatt sich ausschließlich auf Trainingsdaten zu verlassen.
+Der DHTMLX MCP-Server führt eine Retrieval-Augmented-Generation-(RAG)-Pipeline über das Model Context Protocol (MCP) aus und leitet jede Anfrage an einen von zwei Workflows weiter: *Search*, der passende Referenzseiten abruft, mit denen der Assistent weiterarbeitet, oder *Inference*, der diese Seiten liest und direkt eine fertige Antwort liefert. Nur ein Teil einer Anfrage benötigt tatsächlich die Diagram-Dokumentation, und der Assistent extrahiert zunächst genau diesen Teil – den Rest übernimmt er selbst.
 
-Wenn Sie zum Beispiel fragen: *„Wie konfiguriere ich ein Swimlane-Diagramm mit benutzerdefinierten Zellenüberschriften?“*, sendet der Assistent den Prompt über den MCP-Endpunkt. Der Server gleicht ihn mit der Swimlanes-Dokumentation ab, ruft die relevanten Referenzseiten ab und gibt sie als Kontext zurück. Der Assistent generiert daraufhin Code auf Grundlage der aktuellen API und nicht anhand eines Trainings-Snapshots.
+So läuft das für den Prompt *„Wie baue ich mit DHTMLX Diagram ein Organigramm, das Mitarbeiterdaten aus meiner internen HR-API bezieht und automatisch nach Abteilung anordnet?“* ab:
 
-## KI-Tools mit Diagram verbinden {#connecting-ai-tools-to-diagram}
+1. Der Assistent identifiziert den Teil, der Dokumentation erfordert: wie das Auto-Layout für ein aus einem JSON-Datensatz erstelltes Organigramm konfiguriert wird.
+2. Der Server gleicht ihn mit der Dokumentation zur Diagram-Konfiguration ab.
+3. Da die Antwort generierten Code erfordert, wird die Anfrage an *Search* weitergeleitet (eine engere Sachfrage – etwa welche Methode das Auto-Layout steuert – würde an *Inference* gehen).
+4. *Search* ruft die passenden Seiten aus einem Vektorindex ab, der auf der aktuellen Diagram-Dokumentation basiert.
+5. Diese Seiten gehen als Kontext an den Assistenten zurück.
+6. Der Assistent konfiguriert das Auto-Layout anhand dieses Kontexts und schreibt die Logik für den HR-API-Abruf anschließend aus eigenem Wissen, statt bei der Diagram-API zu raten.
 
-KI-Entwicklungstools unterstützen MCP in der Regel über einen CLI-Befehl oder eine JSON-Konfigurationsdatei. In beiden Fällen besteht der zentrale Schritt darin, die Server-URL zu registrieren:
+So bleibt generierter Diagram-Code stets mit dem aktuellen Stand der Dokumentation im Einklang.
+
+## Den MCP-Server in Ihr KI-Tool einbinden {#bringing-the-mcp-server-into-your-ai-tool}
+
+Jedes der folgenden Tools verbindet sich auf seine eigene Weise mit demselben MCP-Endpunkt: bei einigen über ein CLI-Flag, bei anderen über einen JSON-Konfigurationsblock. Registrieren Sie den Server einmal pro Tool – die Verbindung gilt danach für jedes Diagram-Projekt, das Sie dort öffnen:
 
 ~~~
 https://docs.dhtmlx.com/mcp
@@ -77,7 +86,7 @@ Um ihn manuell zu konfigurieren, fügen Sie den folgenden Eintrag zu Ihrer `.mcp
 ### Cursor-Einrichtung {#cursor-setup}
 
 :::info
-Schrittweise Anleitungen zur MCP-Einrichtung für Cursor finden Sie in der [offiziellen Dokumentation](https://cursor.com/en-US/docs/mcp).
+Die [offizielle Dokumentation](https://cursor.com/en-US/docs/mcp) von Cursor behandelt jede MCP-Konfigurationsoption.
 :::
 
 Folgen Sie den nachstehenden Schritten, um den DHTMLX MCP-Server mit Cursor zu verbinden:
@@ -102,7 +111,7 @@ Folgen Sie den nachstehenden Schritten, um den DHTMLX MCP-Server mit Cursor zu v
 #### Antigravity 2.0 {#antigravity-20}
 
 :::info
-Weitere Details zur MCP-Server-Integration in Antigravity finden Sie in der [offiziellen Dokumentation](https://antigravity.google/docs/mcp).
+Die [offizielle Dokumentation](https://antigravity.google/docs/mcp) von Antigravity behandelt die MCP-Server-Integration vollständig.
 :::
 
 Führen Sie die folgenden Schritte aus, um den DHTMLX MCP-Server mit Google Antigravity zu verbinden:
@@ -123,7 +132,7 @@ https://docs.dhtmlx.com/mcp
 #### Antigravity CLI {#antigravity-cli}
 
 :::info
-Weitere Informationen zur Migration von Gemini CLI zu Antigravity CLI finden Sie im [zugehörigen Leitfaden](https://antigravity.google/docs/gcli-migration#mcp-config-formatting-changes).
+Sie migrieren von Gemini CLI zu Antigravity CLI? Der [zugehörige Leitfaden](https://antigravity.google/docs/gcli-migration#mcp-config-formatting-changes) beschreibt die Änderung.
 :::
 
 Um den DHTMLX MCP-Server mit Antigravity CLI zu verbinden, erstellen Sie `mcp_config.json` an einem der folgenden Speicherorte:
@@ -148,7 +157,7 @@ Führen Sie anschließend `agy` im Terminal aus.
 ### ChatGPT-Einrichtung {#chatgpt-setup}
 
 :::info
-Die vollständige Anleitung zum Verbinden von MCP-Servern mit ChatGPT finden Sie in der [offiziellen Dokumentation](https://developers.openai.com/api/docs/guides/tools-connectors-mcp).
+Die [offizielle Dokumentation](https://help.openai.com/en/articles/12584461-developer-mode-and-mcp-apps-in-chatgpt) behandelt jeden Schritt der Verbindung eines MCP-Servers mit ChatGPT.
 :::
 
 Folgen Sie diesen Schritten, um den DHTMLX MCP-Server mit ChatGPT zu verbinden:
@@ -171,23 +180,25 @@ https://docs.dhtmlx.com/mcp
 
 Sobald die Verbindung besteht, ruft ChatGPT die Diagram-Dokumentation ab, wenn es während Ihrer Unterhaltungen Fragen beantwortet.
 
-:::note
-Beachten Sie, dass die MCP-Integration mit ChatGPT zu langsameren Antwortzeiten führen kann. Für eine schnellere Erfahrung sollten Sie eines der anderen auf dieser Seite aufgeführten Tools in Betracht ziehen.
+:::info
+Für intensive Coding-Workflows können andere MCP-fähige Tools effizienter sein.
 :::
 
 ### Weitere Tools {#other-tools}
 
 Die meisten modernen KI-Coding-Tools (darunter Windsurf, Cline, Continue.dev usw.) zeigen MCP in ihren Einstellungen unter Bezeichnungen wie „Model Context Protocol“, „Context Sources“ oder „Custom integrations“ an. Fügen Sie `https://docs.dhtmlx.com/mcp` als Quell-URL hinzu.
 
-## Datenschutz und Datenverarbeitung {#privacy-and-data-handling}
+## Datenschutz beim MCP-Server {#the-privacy-side-of-the-mcp-server}
 
-Der DHTMLX MCP-Server ist ein reiner Cloud-Dienst, der remote ausgeführt wird, Ihre lokale Umgebung unverändert lässt und keine persönlichen Nutzerdaten speichert. Abfragen können zu Zwecken der Fehlerbehebung und Serviceverbesserung protokolliert werden.
+Nichts davon läuft auf Ihrem Rechner: Der DHTMLX MCP-Server arbeitet vollständig als Remote-Dienst und speichert keine Kopie Ihrer persönlichen Daten.
 
-Teams, die strengere Datenschutzgarantien benötigen, können ein kommerzielles Deployment mit deaktivierter Abfrageprotokollierung anfragen. Kontaktieren Sie uns für Details unter `info@dhtmlx.com`.
+Der Server protokolliert Abfragen ausschließlich zur Fehlerbehebung und Serviceverbesserung.
 
-## Beispiel-Prompts für Diagram mit KI {#example-prompts-for-diagram-with-ai}
+Möchten Sie die Protokollierung lieber vollständig deaktivieren? Ein kommerzielles Deployment ermöglicht das. Richten Sie es über `info@dhtmlx.com` ein.
 
-Sobald der MCP-Server verbunden ist, formulieren Sie Ihre Prompts rund um ein konkretes Ziel, damit der Assistent weiß, welchen Teil der Diagram-API er nachschlagen soll. Die folgenden Prompts sind nach Aufgabentyp gegliedert. Sie können sie nach Bedarf kopieren und anpassen.
+## Prompts für gängige Diagram-Aufgaben {#prompts-for-common-diagram-tasks}
+
+Ein Prompt, der die konkrete Diagram-Funktion benennt, die Sie benötigen (eine Form, den Editor, den Export), liefert relevantere Ergebnisse als ein vager Prompt. Die folgenden Gruppen ordnen Beispiele nach Funktion.
 
 **Diagramme erstellen**
 
@@ -234,7 +245,7 @@ How do I export a DHTMLX Diagram to a PNG file?
 What format does DHTMLX Diagram use for serialized data, and how do I reload it?
 ~~~
 
-## Tipps für effektive Diagram-Prompts {#tips-for-effective-diagram-prompts}
+## Prompts formulieren, die der MCP-Server verarbeiten kann {#writing-prompts-the-mcp-server-can-act-on}
 
 - **Benennen Sie die API-Oberfläche.** Unterscheiden Sie zwischen der Diagramminstanz und dem Editor, zum Beispiel: „in the DHTMLX Diagram Editor“ vs. „on the diagram object“. Der Server ruft relevantere Dokumentation ab, wenn das Ziel eindeutig ist.
 - **Geben Sie den Formtyp an.** Prompts wie „a swimlane shape“ oder „a custom shape with HTML content“ rufen die passenden Referenzseiten schneller ab als das allgemeine „a shape“.

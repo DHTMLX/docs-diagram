@@ -143,4 +143,4 @@ DHTMLX Diagram은 Diagram 작업을 더 편리하게 만들기 위해 적용할 
 
 ## 다음 단계 {#whats-next}
 
-이제 애플리케이션에서 DHTMLX Diagram Editor를 사용하는 방법을 알아볼 수 있습니다. 이 도구에 대해 자세히 알아보려면 [Diagram Editor 개요](editor_overview.md)를 읽어보십시오.
+이제 애플리케이션에서 DHTMLX Diagram Editor를 사용하는 방법을 알아볼 수 있습니다. 이 도구에 대해 자세히 알아보려면 [Diagram Editor 개요](editor_overview.md)를 읽어보십시오. AI 코딩 어시스턴트로 개발하는 경우, [DHTMLX MCP 서버](guides/ai-integrations/mcp-server.md)를 통해 최신 문서에 연결하십시오.
