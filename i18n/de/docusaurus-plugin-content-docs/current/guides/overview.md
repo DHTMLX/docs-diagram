@@ -28,7 +28,7 @@ Dieser Abschnitt beschreibt alle Standard-Diagrammelemente (Shapes, Lines, Group
 
 ## Diagram Editor
 
-Erfahren Sie, wie Sie Diagram Editor initialisieren – ein Tool, das die Gestaltung Ihres Diagramms beschleunigt.
+Erfahren Sie, wie Sie Diagram Editor initialisieren, ein Tool, das die Gestaltung Ihres Diagramms beschleunigt.
 
 - [Erste Schritte mit Diagram Editor](guides/diagram_editor/initialization.md)
 

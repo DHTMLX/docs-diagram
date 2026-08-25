@@ -26,7 +26,7 @@ cd diagram-org-chart-builder-ai-demo
 
 ### Installieren der Abhängigkeiten {#installing-dependencies}
 
-Um die Abhängigkeiten zu installieren und die Anwendung auszuführen, benötigen Sie einen Paketmanager. In dieser Anleitung wird [npm](https://www.npmjs.com/) verwendet — installieren Sie die Demo-App, indem Sie den folgenden Befehl aufrufen:
+Um die Abhängigkeiten zu installieren und die Anwendung auszuführen, benötigen Sie einen Paketmanager. In dieser Anleitung wird [npm](https://www.npmjs.com/) verwendet. Installieren Sie die Demo-App, indem Sie den folgenden Befehl aufrufen:
 
 ~~~jsx
 npm install
