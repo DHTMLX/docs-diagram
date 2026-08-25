@@ -14,7 +14,8 @@ const AT_NOTATION_KEYS = {
 
 const COMPONENTS_PATH = '@site/src/components';
 
-let components = { Disqus: "Disqus" };
+// let components = { Disqus: "Disqus" };
+let components = {};
 let metaDescription = '';
 
 const wrapDataWithComponent = (data, componentName) => {
@@ -90,8 +91,16 @@ const readFile = (workingDir, filePath) => {
 const onEmptyLinkMatch = (data, { key, fullMatch, dir }) => {
     const filePath = fullMatch.substring(fullMatch.indexOf('(') + 1, fullMatch.length - 1);
     if (filePath.indexOf('.md') !== -1 || filePath.indexOf('.mdx') !== -1 || filePath.indexOf('.') === -1) {
-        const data = readFile(dir, filePath);
-        return data ? `[${/.*sidebar_label: (.+)/g.exec(data)[1]}]${fullMatch.match(/\(\D+\)/g)[0]}` : fullMatch;
+        // Links are written root-relative (e.g. api/diagram/x.md), so resolve
+        // the target from the docs root rather than the page's own directory.
+        const fileContent = readFile(path.join(__dirname, 'docs'), filePath);
+        if (!fileContent) return fullMatch;
+        const labelMatch = /sidebar_label: (.+)/.exec(fileContent);
+        if (!labelMatch) return fullMatch;
+        // Emit a root-absolute href without the .md/.mdx extension, matching how
+        // normalizeMarkdownMdLinks rewrites ordinary links.
+        const href = '/' + filePath.replace(/^\.?\/+/, '').replace(/\.(md|mdx)(?=$|#)/, '');
+        return `[${labelMatch[1].trim()}](${href})`;
     }
     return fullMatch;
 };
@@ -104,7 +113,7 @@ const onAfterDataTransformation = (data) => {
         const imports = `import { ${allAvailableComponents.join(', ')} } from '${COMPONENTS_PATH}';\n\n`;
         const isTitles = /---((?:\r?\n|\r)|.)+?---/.test(transformedData);
         transformedData = isTitles
-            ? (transformedData.replace(/^(---((?:\s*\n)|.)+?---)/, `$1\n\n${imports}`) + "\n\n<Disqus />")
+            ? (transformedData.replace(/^(---((?:\s*\n)|.)+?---)/, `$1\n\n${imports}`))
             : imports + transformedData;
     }
 
@@ -118,28 +127,51 @@ const onAfterDataTransformation = (data) => {
         });
     }
 
-    components = { Disqus: "Disqus" };
+    // components = { Disqus: "Disqus" };
     metaDescription = '';
 
     return transformedData;
 };
 
 module.exports = {
+    i18n: {
+        defaultLocale: 'en',
+        locales: ['en', 'ru', 'de', 'zh', 'ko'],
+        localeConfigs: {
+            en: { label: 'English', htmlLang: 'en-US' },
+            ru: { label: 'Русский', htmlLang: 'ru' },
+            de: { label: 'Deutsch', htmlLang: 'de' },
+            zh: { label: '简体中文', htmlLang: 'zh-CN' },
+            ko: { label: '한국어', htmlLang: 'ko' },
+        },
+    },
     title: 'DHTMLX JavaScript Diagram Docs',
     tagline: 'DHTMLX JavaScript Diagram Docs',
     url: 'https://docs.dhtmlx.com',
     baseUrl: '/diagram/',
     onBrokenLinks: 'warn',
-	onBrokenMarkdownLinks: 'warn',
     onBrokenAnchors: 'warn',
-    //onBrokenLinks: 'ignore', // !!! TODO, make to warn before release 
-    //onBrokenAnchors: 'ignore', // !!! TODO, make to warn before release 
-    onBrokenMarkdownLinks: 'ignore',
+    // onBrokenLinks: 'ignore', // !!! TODO, make to warn before release 
+    // onBrokenAnchors: 'ignore', // !!! TODO, make to warn before release 
+    // onBrokenMarkdownLinks: 'warn', // deprecated in v3.9.1
     favicon: 'img/favicon.ico',
     organizationName: 'DHTMLX', // Usually your GitHub org/user name
     projectName: 'docs-diagram', // Usually your repo name
     trailingSlash: true,
+    markdown: {
+		hooks: {
+			onBrokenMarkdownLinks: 'warn',
+		}
+	},
     themeConfig: {
+        image: 'img/og-default-diagram.png',
+        metadata: [
+            { property: 'og:type', content: 'website' },
+            { property: 'og:site_name', content: 'DHTMLX Diagram Docs' },
+            { property: 'og:locale', content: 'en_US' },
+            { name: 'twitter:card', content: 'summary_large_image' },
+            { name: 'twitter:site', content: '@dhtmlx' }
+        ],
         /*colorMode: {
             // "light" | "dark"
             defaultMode: 'light',
@@ -211,7 +243,12 @@ module.exports = {
                     href: 'https://dhtmlx.com/docs/products/dhtmlxDiagram/download.shtml',
                     position: 'right',
                 },
-            ],
+            
+          {
+            type: 'localeDropdown',
+            position: 'right',
+          },
+        ],
         },
         footer: {
             style: 'dark',

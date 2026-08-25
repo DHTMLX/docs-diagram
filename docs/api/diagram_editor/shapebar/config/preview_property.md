@@ -54,18 +54,18 @@ const editor = new dhx.DiagramEditor("editor_container", {
 
 ### Details
 
-The values of the **gap** and **scale** properties can be redefined for a separate shape via the **gap** and **scale** attributes of the [preview](shapes/configuration_properties.md/#properties-specific-for-the-default-mode) property of the shape object:
+The values of the `gap` and `scale` properties can be redefined for a separate shape via the `gap` and `scale` attributes of the [preview](shapes/configuration_properties.md#properties-specific-for-the-default-mode) property of the shape object:
 
 ~~~jsx {14-17}
 const defaults = {
     rectangle: {
         preview: {
-            scale: 0.72, 
+            scale: 0.72,
             gap: 8
         }
     }
 }
- 
+
 const editor = new dhx.DiagramEditor("editor_container", {
     type: "default",
     view: {
@@ -76,10 +76,10 @@ const editor = new dhx.DiagramEditor("editor_container", {
             }
         }
     },
-    defaults        
+    defaults
 });
 ~~~
 
-**Related article**: [Shapebar](guides/diagram_editor/shapebar.md/#setting-the-preview-of-shapes)
+**Related article**: [Shapebar](guides/diagram_editor/shapebar.md#setting-the-preview-of-shapes)
 
 **Change log**: Added in v6.0

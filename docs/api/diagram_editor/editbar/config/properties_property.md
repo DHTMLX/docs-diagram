@@ -23,7 +23,7 @@ Refer to the [**Editbar configuration**](guides/diagram_editor/editbar.md) guide
 
 ~~~jsx
 properties?: {
-    [type: string]: object[] | function, // custom configurations for controls applied to Diagram elements 
+    [type: string]: object[] | function, // custom configurations for controls applied to Diagram elements
 };
 ~~~
 
@@ -38,7 +38,7 @@ properties?: {
         - `item` - (optional) the object of the selected element
         - `editor` - (required) the object of the Diagram editor
 
-You can configure Editbar controls for a separate Diagram element, for instance **rectangle**, **circle**, **card** etc.:
+You can configure Editbar controls for a separate Diagram element, for instance `rectangle`, `circle`, `card` etc.:
 
 ~~~jsx
 properties: {
@@ -62,9 +62,9 @@ You can also configure Editbar controls for a separate group of Diagram elements
 
 ~~~jsx
 properties: {
-    $default: [], 
-    $shape: [], 
-    $group: [], 
+    $default: [],
+    $shape: [],
+    $group: [],
     $swimlane: [],
     $line: [],
     $lineTitle: [],

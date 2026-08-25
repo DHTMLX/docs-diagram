@@ -14,8 +14,8 @@ description: You can learn about the beforeEditorClose event in the documentatio
 
 ~~~jsx
 beforeEditorClose: (
-    id: string | number, 
-    key: string, 
+    id: string | number,
+    key: string,
     subId?: string
 ) => boolean | void;
 ~~~
@@ -51,5 +51,5 @@ diagram.events.on("beforeEditorClose", (id, key, subId) => {
 
 **Change log**:
 
-- The **subHeaderId** parameter has been changed to **subId** in v4.1
+- The `subHeaderId` parameter has been changed to `subId` in v4.1
 - Added in v4.0

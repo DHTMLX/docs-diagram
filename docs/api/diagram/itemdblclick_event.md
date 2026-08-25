@@ -16,7 +16,7 @@ If a double-click is done over a swimlane, the event will be fired on the cell o
 
 ~~~jsx
 itemDblClick: (
-    id: string | number, 
+    id: string | number,
     event: MouseEvent
 ) => void;
 ~~~
@@ -46,4 +46,4 @@ diagram.events.on("itemDblClick", (id, event) => {
 
 **Change log**: Added in v4.0
 
-**Related article**: [Event handling](../../../guides/event_handling/)
+**Related article**: [Event handling](guides/event_handling.md)

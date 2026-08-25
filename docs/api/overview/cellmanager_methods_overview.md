@@ -8,14 +8,14 @@ description: You can explore the CellManager methods in the documentation of the
 
 | Name                                                | Description                                                |
 | :-------------------------------------------------- | :--------------------------------------------------------- |
-| [](../cell_manager/add_method.md)                   | @getshort(../cell_manager/add_method.md)                   |
-| [](../cell_manager/getcellid_method.md)             | @getshort(../cell_manager/getcellid_method.md)             |
-| [](../cell_manager/getcellindex_method.md)          | @getshort(../cell_manager/getcellindex_method.md)          |
-| [](../cell_manager/getsubheadercellid_method.md)    | @getshort(../cell_manager/getsubheadercellid_method.md)    |
-| [](../cell_manager/getsubheadercellindex_method.md) | @getshort(../cell_manager/getsubheadercellindex_method.md) |
-| [](../cell_manager/getsubheadertype_method.md)      | @getshort(../cell_manager/getsubheadertype_method.md)      |
-| [](../cell_manager/move_method.md)                  | @getshort(../cell_manager/move_method.md)                  |
-| [](../cell_manager/remove_method.md)                | @getshort(../cell_manager/remove_method.md)                |
-| [](../cell_manager/resetswimlane_method.md)         | @getshort(../cell_manager/resetswimlane_method.md)         |
-| [](../cell_manager/setswimlane_method.md)           | @getshort(../cell_manager/setswimlane_method.md)           |
-| [](../cell_manager/validation_method.md)            | @getshort(../cell_manager/validation_method.md)            |
+| [](api/cell_manager/add_method.md)                   | @getshort(../cell_manager/add_method.md)                   |
+| [](api/cell_manager/getcellid_method.md)             | @getshort(../cell_manager/getcellid_method.md)             |
+| [](api/cell_manager/getcellindex_method.md)          | @getshort(../cell_manager/getcellindex_method.md)          |
+| [](api/cell_manager/getsubheadercellid_method.md)    | @getshort(../cell_manager/getsubheadercellid_method.md)    |
+| [](api/cell_manager/getsubheadercellindex_method.md) | @getshort(../cell_manager/getsubheadercellindex_method.md) |
+| [](api/cell_manager/getsubheadertype_method.md)      | @getshort(../cell_manager/getsubheadertype_method.md)      |
+| [](api/cell_manager/move_method.md)                  | @getshort(../cell_manager/move_method.md)                  |
+| [](api/cell_manager/remove_method.md)                | @getshort(../cell_manager/remove_method.md)                |
+| [](api/cell_manager/resetswimlane_method.md)         | @getshort(../cell_manager/resetswimlane_method.md)         |
+| [](api/cell_manager/setswimlane_method.md)           | @getshort(../cell_manager/setswimlane_method.md)           |
+| [](api/cell_manager/validation_method.md)            | @getshort(../cell_manager/validation_method.md)            |

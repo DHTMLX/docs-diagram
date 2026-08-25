@@ -7,7 +7,7 @@ description: You can learn about the autoPlace method in the documentation of th
 # autoPlace()
 
 :::info
-The **autoPlace()** method works only in the default mode of the diagram and only for shapes
+The `autoPlace()` method works only in the default mode of the diagram and only for shapes
 :::
 
 ### Description
@@ -16,16 +16,18 @@ The **autoPlace()** method works only in the default mode of the diagram and onl
 
 ### Usage
 
-~~~jsx
+~~~ts
 autoPlace(config?: object): void;
 ~~~
 
 ### Parameters
 
 - `config` - (optional) an object with configuration settings of the autoplacement. If not specified, the default settings will be applied. Here you can specify the following parameters:
-    - `mode` - (optional) the mode of connecting shapes, "direct" (by default) or "edges"
-    - `graphPadding` - (optional) sets the distance between unconnected diagrams, 200 by default
-    - `placeMode` - (optional) sets the mode of placement of shapes, "orthogonal" (by default) or "radial"
+    - `mode` - (optional) the mode of connecting shapes, `"direct"` (by default) or `"edges"`
+    - `graphPadding` - (optional) sets the distance between unconnected diagrams, *200* by default
+    - `placeMode` - (optional) sets the mode of placement of shapes, `"orthogonal"` (by default) or `"radial"`
+    - `itemPadding` - (optional) minimal padding between items (the minimal value is *1*), *20* by default
+    - `levelPadding` - (optional) minimal padding between hierarchy levels (the minimal value is *1*), *20* by default
 
 ### Example
 
@@ -45,24 +47,28 @@ diagram.autoPlace({
 
 Connector lines with no arrows are aligned "from center to center"; they are straight and diagonal.
 
-![](../../assets/direct_mode.png)
+![](/img/direct_mode.png)
 
 ### "edges" mode
 
 Connector lines are aligned "from side to side".
 
-:::info 
-To add arrows to the lines, specify **forwardArrow: "filled"** or **backArrow: "filled"** in the configuration of a [line object](../../../lines/configuration_properties/).
+:::note
+If `fromSide` and `toSide` are set on a link, the autoplacement algorithm will preserve those values but will not use them during placement calculation. The key properties that define links are `from` and `to`, while `fromSide` and `toSide` are calculated automatically by the algorithm.
 :::
 
-The connector lines in the "edges" mode can be:
-  - either straight (if you set **connectType: "straight"** property of a [line object](../../../lines/configuration_properties/))
+:::info
+To add arrows to the lines, specify `forwardArrow: "filled"` or `backArrow: "filled"` in the configuration of a [line object](lines/configuration_properties.md).
+:::
 
-![](../../assets/edges_straight_mode.png)
+The connector lines in the `"edges"` mode can be:
+  - either straight (if you set `connectType: "straight"` property of a [line object](lines/configuration_properties.md))
 
-  - or 90-degree curved (if you set **connectType: "elbow"** property of a [line object](../../../lines/configuration_properties/))
+![](/img/edges_straight_mode.png)
 
-![](../../assets/edges_mode.png)
+  - or 90-degree curved (if you set `connectType: "elbow"` property of a [line object](lines/configuration_properties.md))
+
+![](/img/edges_mode.png)
 
 ## Modes of placement of shapes
 
@@ -70,33 +76,36 @@ The connector lines in the "edges" mode can be:
 
 Shapes are arranged along vertical and horizontal lines
 
-- **"orthogonal"** arrangement with lines in the **"direct"** mode
+- `"orthogonal"` arrangement with lines in the `"direct"` mode
 
-![](../../assets/direct_ortogonal.png)
+![](/img/direct_ortogonal.png)
 
 
-- **"orthogonal"** arrangement with lines in the **"edges"** mode
+- `"orthogonal"` arrangement with lines in the `"edges"` mode
 
-![](../../assets/edges_ortogonal.png)
+![](/img/edges_ortogonal.png)
 
 ### "radial" mode
 
 Shapes are arranged on imaginary circles relative to the central shape, i.e. a shape with the most connections
 
-- **"radial"** arrangement with lines in the **"direct"** mode
+- `"radial"` arrangement with lines in the `"direct"` mode
 
-![](../../assets/direct_radial.png)
+![](/img/direct_radial.png)
 
-- **"radial"** arrangement with lines in the **"edges"** mode
+- `"radial"` arrangement with lines in the `"edges"` mode
 
-![](../../assets/edges_radial.png)
+![](/img/edges_radial.png)
 
 
 **Change log**:
 
-- The **placeMode** parameter is added in v5.0
-- The **autoplacement** property is added in v3.0
+- The `itemPadding` and `levelPadding` parameters are added in v6.1.3
+- The `placeMode` parameter is added in v5.0
+- The `autoplacement` property is added in v3.0
 
-**Related articles**: [Arranging shapes automatically](../../../guides/manipulating_items/#arranging-shapes-automatically)
+**Related article**: [Arranging shapes automatically](guides/manipulating_items.md#arranging-shapes-automatically)
 
-**Related sample**: [Diagram. Default mode. Autoplacement](https://snippet.dhtmlx.com/f3uekgjw)
+**Related samples**:
+- [Diagram. Default mode. Radial autoplacement with padding options](https://snippet.dhtmlx.com/huut0l1s)
+- [Diagram. Default mode. Autoplacement](https://snippet.dhtmlx.com/f3uekgjw)

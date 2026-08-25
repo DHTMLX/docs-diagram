@@ -14,8 +14,8 @@ description: You can learn about the beforeSubmenuOpen event in the documentatio
 
 ~~~jsx
 beforeSubmenuOpen: (
-    id: string | number, 
-    event: MouseEvent, 
+    id: string | number,
+    event: MouseEvent,
     subHeaderId?: string
 ) => boolean | void;
 ~~~
@@ -51,4 +51,4 @@ diagram.events.on("beforeSubmenuOpen", (id, event, subheaderId) => {
 
 **Change log**: Added in v4.0
 
-**Related article**: [Event handling](../../../guides/event_handling/)
+**Related article**: [Event handling](guides/event_handling.md)

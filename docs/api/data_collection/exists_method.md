@@ -32,5 +32,5 @@ const diagram = new dhx.Diagram("diagram_container", {
 });
 diagram.data.parse(data);
 
-const shape = diagram.data.exists("1"); 
+const shape = diagram.data.exists("1");
 ~~~

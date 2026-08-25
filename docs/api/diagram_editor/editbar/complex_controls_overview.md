@@ -6,7 +6,7 @@ description: You can learn about the Complex controls of Editbar in the document
 
 # Complex controls
 
-You can use complex controls of Editbar standalone or create complex controls on their base. Below you'll find the list of complex controls. Check the corresponding section to view the detailed description of configuration properties for each control.
+You can use complex controls of Editbar to configure the Editbar for Diagram items. Below you'll find the list of complex controls. Check the corresponding section to view the detailed description of configuration properties for each control.
 
 :::info
 Refer to the [Editbar configuration](guides/diagram_editor/editbar.md) guide for more information about configuring!

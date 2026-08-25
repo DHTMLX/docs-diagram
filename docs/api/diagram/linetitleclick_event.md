@@ -14,8 +14,8 @@ description: You can learn about the lineTitleClick event in the documentation o
 
 ~~~jsx
 lineTitleClick: (
-    lineId: string | number, 
-    titleId: string | number, 
+    lineId: string | number,
+    titleId: string | number,
     event: MouseEvent
 ) => void;
 ~~~
@@ -46,4 +46,4 @@ diagram.events.on("lineTitleClick", (lineId, titleId, event) => {
 
 **Change log**: Added in v4.1
 
-**Related article**: [Event handling](../../../guides/event_handling/)
+**Related article**: [Event handling](guides/event_handling.md)

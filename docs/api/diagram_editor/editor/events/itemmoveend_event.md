@@ -11,7 +11,7 @@ description: You can learn about the itemMoveEnd event of editor in the document
 @short: Fires after an item is moved
 
 :::note
-The event doesn't work with the **line** object.
+The event doesn't work with the `line` object.
 
 The event fires just for the target element despite the number of selected elements. The ids of dragged elements are provided in the `batch` parameter of the callback function.
 :::
@@ -20,7 +20,7 @@ The event fires just for the target element despite the number of selected eleme
 
 ~~~jsx
 "itemMoveEnd": ({
-    id: string | number, 
+    id: string | number,
     batch: (string | number)[],
     coords: object,
     event: PointerEvent
@@ -49,8 +49,8 @@ editor.parse(data);
 // attaching a handler to the event
 editor.events.on("itemMoveEnd", ({ id, coords }) => {
     console.log(`
-        Item ${id} is at the position: 
-            x: ${coords.x} 
+        Item ${id} is at the position:
+            x: ${coords.x}
             y: ${coords.y}
     `);
 });
@@ -60,3 +60,13 @@ editor.events.on("itemMoveEnd", ({ id, coords }) => {
 
 - The `batch` parameter was added in the v6.0
 - The callback function takes an object as a parameter since v6.0
+
+**Related API**:
+
+- [`afterItemMove`](api/diagram_editor/editor/events/afteritemmove_event.md)
+- [`beforeItemMove`](api/diagram_editor/editor/events/beforeitemmove_event.md)
+
+**Related sample**:
+
+- [Diagram Editor. Managing shapes' moving, rotating and resizing via events](https://snippet.dhtmlx.com/qldjbbm7)
+

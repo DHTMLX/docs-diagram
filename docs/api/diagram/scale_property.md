@@ -25,7 +25,7 @@ scale: 1
 ### Example
 
 ~~~jsx
-const diagram = new dhx.Diagram("diagram_container", { 
+const diagram = new dhx.Diagram("diagram_container", {
     scale: 0.7
 });
 ~~~

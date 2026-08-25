@@ -17,7 +17,12 @@ module.exports = (context, options) => {
         module: {
           rules: [
             {
-              include: [path.resolve(siteDir, 'docs')],
+              include: [
+                path.resolve(siteDir, 'docs'),
+                // Translated docs live under i18n/<locale>/docusaurus-plugin-content-docs/current/
+                // and must go through the same notation transformer as the English docs.
+                /[/\\]i18n[/\\][^/\\]+[/\\]docusaurus-plugin-content-docs[/\\]current[/\\]/,
+              ],
               test: /(\.mdx?)$/,
               use: [
                 {

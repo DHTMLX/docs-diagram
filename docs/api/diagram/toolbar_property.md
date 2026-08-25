@@ -1,5 +1,5 @@
 ---
-sidebar_label: toolbar 
+sidebar_label: toolbar
 title: toolbar Property
 description: You can learn about the toolbar property in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
@@ -27,7 +27,7 @@ toolbar?: [
 
 ### Parameters
 
-The **toolbar** array includes a set of icon objects. Each icon object can have the following parameters:
+The `toolbar` array includes a set of icon objects. Each icon object can have the following parameters:
 
 - `id` - (required) the id of the icon
 - `content` - (required) the content of the icon. It can contain an HTML element with the name of the icon class
@@ -38,7 +38,7 @@ The **toolbar** array includes a set of icon objects. Each icon object can have 
 ### Example
 
 ~~~jsx
-const diagram = new dhx.Diagram("diagram_container", { 
+const diagram = new dhx.Diagram("diagram_container", {
     type: "org",
     select: true,
     // setting a toolbar with buttons for items
@@ -67,11 +67,11 @@ const diagram = new dhx.Diagram("diagram_container", {
 
 **Change log**:
 
-- The **tooltip** parameter is added in v5.0
+- The `tooltip` parameter is added in v5.0
 
 **Related articles**:
 
-- [Setting toolbar for shapes](/guides/diagram/configuration/#setting-toolbar-for-shapes)
+- [Setting toolbar for shapes](guides/diagram/configuration.md#setting-toolbar-for-shapes)
 - [Default icons](https://docs.dhtmlx.com/suite/helpers/icon/)
 
 **Related sample**: [Diagram. Configuration. Shape toolbar](https://snippet.dhtmlx.com/4if395hd)

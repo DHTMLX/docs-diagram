@@ -14,8 +14,8 @@ description: You can learn about the afterSubmenuOpen event in the documentation
 
 ~~~jsx
 afterSubmenuOpen: (
-    id: string | number, 
-    event: MouseEvent, 
+    id: string | number,
+    event: MouseEvent,
     subHeaderId?: string
 ) => void;
 ~~~
@@ -46,4 +46,4 @@ diagram.events.on("afterSubmenuOpen", (id, event, subheaderId) => {
 
 **Change log**: Added in v4.0
 
-**Related article**: [Event handling](../../../guides/event_handling/)
+**Related article**: [Event handling](guides/event_handling.md)

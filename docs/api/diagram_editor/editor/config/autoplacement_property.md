@@ -1,5 +1,5 @@
 ---
-sidebar_label: autoplacement 
+sidebar_label: autoplacement
 title: autoplacement Property of Editor
 description: You can learn about the autoplacement property of editor in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
@@ -11,16 +11,18 @@ description: You can learn about the autoplacement property of editor in the doc
 @short: Optional. An object with configuration settings for auto-placement of shapes
 
 :::info
-The `autoplacement` property works only in the default mode of the editor (`type:"default"`) and only for shapes
+The `autoplacement` property works only in the default mode of the editor and only for shapes. It does not work if you use groups or swimlanes.
 :::
 
 ### Usage
 
-~~~jsx
+~~~ts
 autoplacement?: {
-    mode?: "direct" | "edges",
-    graphPadding?: number,
-    placeMode?: "orthogonal" | "radial"
+    mode?: "direct" | "edges", // "direct" by default
+    graphPadding?: number, // 200 by default
+    placeMode?: "orthogonal" | "radial", // "orthogonal" by default
+    itemPadding?: number, // 20 by default
+    levelPadding?: number // 20 by default
 };
 ~~~
 
@@ -28,9 +30,11 @@ autoplacement?: {
 
 The `autoplacement` object has the following parameters:
 
-- `mode` - (optional) the mode of connecting shapes, "direct" (by default) or "edges"
-- `graphPadding` - (optional) sets the distance between unconnected diagrams, *"200"* by default
-- `placeMode` - (optional) sets the mode of placement of shapes, "orthogonal" (by default) or "radial"
+- `mode` - (optional) the mode of connecting shapes, `"direct"` (by default) or `"edges"`
+- `graphPadding` - (optional) sets the distance between unconnected diagrams, *200* by default
+- `placeMode` - (optional) sets the mode of placement of shapes, `"orthogonal"` (by default) or `"radial"`
+- `itemPadding` - (optional) minimal padding between items (the minimal value is *1*), *20* by default
+- `levelPadding` - (optional) minimal padding between hierarchy levels (the minimal value is *1*), *20* by default
 
 ### Default config
 
@@ -38,7 +42,9 @@ The `autoplacement` object has the following parameters:
 autoplacement: {
     mode: "direct",
     graphPadding: 200,
-    placeMode: "orthogonal"
+    placeMode: "orthogonal",
+    itemPadding: 20,
+    levelPadding: 20
 }
 ~~~
 
@@ -47,11 +53,15 @@ autoplacement: {
 ~~~jsx
 const editor = new dhx.DiagramEditor("editor_container", {
     autoplacement: {
-        graphPadding: 100,
-        mode: "edges",
-        placeMode: "radial"
+        placeMode: "radial",
+        mode: "direct",
+        itemPadding: 10,
+        levelPadding: 10,
+        graphPadding: 100
     }
 });
+
+editor.parse(data);
 ~~~
 
 ## Modes of connecting shapes
@@ -60,25 +70,25 @@ const editor = new dhx.DiagramEditor("editor_container", {
 
 Connector lines with no arrows are aligned "from center to center". They are straight and diagonal.
 
-![](../../../../assets/direct_mode.png)
+![](/img/direct_mode.png)
 
 ### "edges" mode
 
 Connector lines are aligned "from side to side".
 
 :::info
-To add arrows to the lines, specify `forwardArrow: "filled"` or `backArrow: "filled"` in the configuration of a [line object](/lines/configuration_properties/).
+To add arrows to the lines, specify `forwardArrow: "filled"` or `backArrow: "filled"` in the configuration of a [line object](lines/configuration_properties.md).
 :::
 
-The connector lines in the "edges" mode can be:
+The connector lines in the `"edges"` mode can be:
 
-- either straight (if you set the `connectType: "straight"` property of a [line object](/lines/configuration_properties/))
+- either straight (if you set the `connectType: "straight"` property of a [line object](lines/configuration_properties.md))
 
-![](../../../../assets/edges_straight_mode.png)
+![](/img/edges_straight_mode.png)
 
-- or 90-degree curved (if you set the `connectType: "elbow"` property of a [line object](/lines/configuration_properties/))
+- or 90-degree curved (if you set the `connectType: "elbow"` property of a [line object](lines/configuration_properties.md))
 
-![](../../../../assets/edges_mode.png)
+![](/img/edges_mode.png)
 
 ## Modes of placement of shapes
 
@@ -86,29 +96,30 @@ The connector lines in the "edges" mode can be:
 
 Shapes are arranged along vertical and horizontal lines
 
-- **"orthogonal"** arrangement with lines in the **"direct"** mode
+- `"orthogonal"` arrangement with lines in the `"direct"` mode
 
-![](../../../../assets/direct_ortogonal.png)
+![](/img/direct_ortogonal.png)
 
-- **"orthogonal"** arrangement with lines in the **"edges"** mode
+- `"orthogonal"` arrangement with lines in the `"edges"` mode
 
-![](../../../../assets/edges_ortogonal.png)
+![](/img/edges_ortogonal.png)
 
 ### "radial" mode
 
 Shapes are arranged on imaginary circles relative to the central shape, i.e. the shape with the most connections
 
-- **"radial"** arrangement with lines in the **"direct"** mode
+- `"radial"` arrangement with lines in the `"direct"` mode
 
-![](../../../../assets/direct_radial.png)
+![](/img/direct_radial.png)
 
-- **"radial"** arrangement with lines in the **"edges"** mode
+- `"radial"` arrangement with lines in the `"edges"` mode
 
-![](../../../../assets/edges_radial.png)
+![](/img/edges_radial.png)
 
-**Change log**:  
+**Change log**:
 
-- The **placeMode** parameter is added in v5.0
-- The **autoplacement** property is added in v3.0
+- The `itemPadding` and `levelPadding` parameters are added in v6.1.3
+- The `placeMode` parameter is added in v5.0
+- The `autoplacement` property is added in v3.0
 
-**Related sample**: [Diagram. Default mode. Autoplacement](https://snippet.dhtmlx.com/f3uekgjw)
+**Related sample**: [Diagram editor. Default mode. Radial auto layout algorithm](https://snippet.dhtmlx.com/f0cespbk)

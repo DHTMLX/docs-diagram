@@ -17,7 +17,7 @@ If a click is done over a header of a swimlane, the event will be fired on the s
 ~~~jsx
 groupHeaderClick: (
     id: string | number,
-    event: MouseEvent, 
+    event: MouseEvent,
     subHeaderId?: string
 ) => void;
 ~~~
@@ -48,4 +48,4 @@ diagram.events.on("groupHeaderClick", (id, event, subheaderId) => {
 
 **Change log**: Added in v4.0
 
-**Related article**: [Event handling](../../../guides/event_handling/)
+**Related article**: [Event handling](guides/event_handling.md)

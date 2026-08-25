@@ -14,10 +14,10 @@ description: You can learn about the beforeEditorEditing event in the documentat
 
 ~~~jsx
 beforeEditorEditing: (
-    value: string, 
-    currentValue: string, 
-    id: string | number, 
-    key: string, 
+    value: string,
+    currentValue: string,
+    id: string | number,
+    key: string,
     subId?: string
 ) => boolean | void;
 ~~~
@@ -55,5 +55,5 @@ diagram.events.on("beforeEditorEditing", (value, id, key, subId) => {
 
 **Change log**:
 
-- The **subHeaderId** parameter has been changed to **subId** in v4.1
+- The `subHeaderId` parameter has been changed to `subId` in v4.1
 - Added in v4.0

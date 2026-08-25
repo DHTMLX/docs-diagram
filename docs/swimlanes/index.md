@@ -1,5 +1,5 @@
 ---
-sidebar_label: Swimlanes 
+sidebar_label: Swimlanes
 title: Swimlanes
 description: You can learn about Swimlanes in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
@@ -8,21 +8,21 @@ description: You can learn about Swimlanes in the documentation of the DHTMLX Ja
 
 ## Swimlane overview
 
-A swimlane represents a rectangular element of Diagram that consists of cells (or lanes) arranged vertically or horizontally. Each cell (*type: "$sgroup"*) can include child items such as shapes, or groups.
+A swimlane represents a rectangular element of Diagram that consists of cells (or lanes) arranged vertically or horizontally. Each cell (*type: "$sgroup"*) can include child items such as shapes or groups.
 
 :::note
-Swimlanes are available only in the default mode of Diagram/Diagram Editor (type: "default").
+Swimlanes are available only in the default mode of Diagram/Diagram Editor (type: `"default"`).
 :::
 
 <iframe src="https://snippet.dhtmlx.com/z6x5m3gb?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="700"></iframe>
 
 <iframe src="https://snippet.dhtmlx.com/k5vlvj8i?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="700"></iframe>
 
-Swimlanes will help you to visualize any process (be it a business process, manufacturing or service one, and any other processes) or its separate parts from start to finish.
+Swimlanes will help you visualize any process (business, manufacturing, service, or any other) or its separate parts from start to finish.
 
 ## Creating swimlanes
 
-To create a swimlane, you need to specify **type: "$swimlane"**  and define the structure of the swimlane layout inside the swimlane object while preparing a data set to load into the diagram:
+To create a swimlane, you need to specify `type: "$swimlane"`  and define the structure of the swimlane layout inside the swimlane object while preparing a data set to load into the diagram:
 
 ~~~jsx
 const data = [
@@ -32,7 +32,7 @@ const data = [
         height: 500,
         width: 850,
         // the layout of a swimlane should contain at least one cell
-        layout: [ 
+        layout: [
             [1] // the cell with id:"1" and type:"$sgroup"
         ]
     }
@@ -43,13 +43,13 @@ const diagram = new dhx.Diagram("diagram_container");
 diagram.data.parse(data);
 ~~~
 
-The code example above presents the simplest configuration of a swimlane with default settings (i.e. without a header and subheader).
+The code example above shows the simplest configuration of a swimlane with default settings (i.e. without a header and subheader).
 
 ### Swimlane structure
 
-The structure of a swimlane can be rather different. It is defined via the [layout](/swimlanes/configuration_properties/) configuration property of the swimlane object. The property allows you to arrange the cells of a swimlane into rows and columns.
+The structure of a swimlane can be rather different. It is defined via the [layout](swimlanes/configuration_properties.md) configuration property of the swimlane object. The property allows you to arrange the cells of a swimlane into rows and columns.
 
-All you need to do is specify an array with a matrix as a value of the property. The matrix can be either an array:  
+All you need to do is specify an array with a matrix as a value of the property. The matrix can be either an array:
 
 ~~~jsx
 // a swimlane with 3 columns
@@ -64,23 +64,23 @@ or a set of arrays separated by commas:
 // a swimlane with 2 rows and 3 columns
 layout: [
     [1, 2, 3],
-    [4, 5, 6] 
+    [4, 5, 6]
 ]
 ~~~
 
 where:
 
-- each cell in the layout have a unique number;
+- each cell in the layout has a unique number;
 - the number of arrays defines the number of rows (if there are several arrays, the number of cells must be equal in all the arrays);
 - the number of cells in the array defines the number of columns.
 
 ### Properties of a swimlane object
 
-Check [the full list of configuration properties of a swimlane object](/swimlanes/configuration_properties/) to be able to create various swimlanes with different settings depending on your needs.
+Check [the full list of configuration properties of a swimlane object](swimlanes/configuration_properties.md) to be able to create various swimlanes with different settings depending on your needs.
 
 ## Configuring a swimlane cell
 
-When you initialize a swimlane on the page, the id of a swimlane cell is generated automatically as well as its configuration. To change the default configuration of the cell, create an object of the cell which must include the **type: "$sgroup"** and **id** attributes, and specify the necessary configuration settings there:
+When you initialize a swimlane on the page, the id of a swimlane cell is generated automatically as well as its configuration. To change the default configuration of the cell, create an object of the cell which must include the `type: "$sgroup"` and `id` attributes, and specify the necessary configuration settings there:
 
 ~~~jsx
 const data = [
@@ -90,7 +90,7 @@ const data = [
         id: "main",
         height: 500,
         width: 850,
-        layout: [ 
+        layout: [
             [1, 2, 3]
         ]
     },
@@ -107,7 +107,7 @@ const data = [
 
 ### Properties of a cell object
 
-Check [the full list of configuration properties of a swimlane cell](/swimlanes/configuration_properties/#properties-of-a-swimlane-cell).
+Check [the full list of configuration properties of a swimlane cell](swimlanes/configuration_properties.md#properties-of-a-swimlane-cell).
 
 ## Grouping cells
 
@@ -116,25 +116,25 @@ When you specify a unique number for each cell, all the cells will be rendered w
 ~~~jsx
 layout: [
     [1, 2, 3],
-    [4, 5, 6] 
+    [4, 5, 6]
 ]
 ~~~
 
-![](../assets/swimlane_cells.png)
+![](/img/swimlane_cells.png)
 
-If needed you can group a range of cells and remove a border(s) between them. To do this, choose any cell from the range and replace unique numbers of the cell(s) from the range with the number of this cell.<br>
+If needed, you can group a range of cells and remove the border(s) between them. To do this, choose any cell from the range and replace unique numbers of the cell(s) from the range with the number of this cell.<br>
 Here is an example of grouping first two cells placed in the first row:
 
 ~~~jsx
 layout: [
     [1, 1, 3],
-    [4, 5, 6] 
+    [4, 5, 6]
 ]
 ~~~
 
 The result will look like this:
 
-![](../assets/swimlane_merge_cell_row.png)
+![](/img/swimlane_merge_cell_row.png)
 
 Here is an example of grouping the cells placed in the second column:
 
@@ -147,23 +147,23 @@ layout: [
 
 The result:
 
-![](../assets/swimlane_merge_cell_col.png)
+![](/img/swimlane_merge_cell_col.png)
 
 **Related sample**:	[Diagram editor. Default mode. Configuring columns and rows in swimlanes](https://snippet.dhtmlx.com/uzx5ulal)
 
 ## Sizes of a swimlane and its cells
 
-The size of the swimlane is defined by the **width** and **height** configuration attributes of the swimlane.
+The size of the swimlane is defined by the `width` and `height` configuration attributes of the swimlane.
 
 ~~~jsx
 const data = [
     // configuring a swimlane
     {
         type: "$swimlane",
-        id: "main"
+        id: "main",
         height: 500,
         width: 850,
-        layout: [ 
+        layout: [
             [1, 2, 3]
         ]
     }
@@ -181,9 +181,9 @@ const data = [
         id: "main",
         height: 500,
         width: 830,
-        layout: [ 
+        layout: [
             // 3 columns
-            [1, 2, 3] 
+            [1, 2, 3]
         ],
         header: {
             position: "left",
@@ -211,7 +211,7 @@ const data = [
         id: "main",
         height: 500,
         width: 830,
-        layout: [ 
+        layout: [
             // 2 rows
             [1, 2, 3],
             [4, 5, 6]

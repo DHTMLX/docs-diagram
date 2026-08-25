@@ -14,7 +14,7 @@ description: You can learn about the beforeSelect event in the documentation of 
 
 ~~~jsx
 "beforeSelect": ({
-    id: string | number, 
+    id: string | number,
     join: boolean,
     batch: (string | number)[]
 }) => boolean | void;
@@ -25,7 +25,7 @@ description: You can learn about the beforeSelect event in the documentation of 
 The callback of the event is called with an object with the following parameters:
 
 - `id` - the id of the item to select
-- `join` - the applied [mode of selection](../../../api/selection/add_method/#parameters)
+- `join` - the applied [mode of selection](api/selection/add_method.md#parameters)
 - `batch` - the list of items to select
 
 ### Returns
@@ -36,9 +36,9 @@ Return `false` to prevent an item from being selected; otherwise, `true`
 
 ~~~jsx {9-13}
 // initializing Diagram
-const diagram = new dhx.Diagram("diagram_container", { 
-    type: "org", 
-    select: true        
+const diagram = new dhx.Diagram("diagram_container", {
+    type: "org",
+    select: true
 });
 // loading data
 diagram.data.parse(data);
@@ -54,7 +54,7 @@ Here's an example of attaching an event handler to the event for the Diagram Edi
 
 ~~~jsx {8-12}
 // initializing Diagram editor
-const editor = new dhx.DiagramEditor("editor_container", {  
+const editor = new dhx.DiagramEditor("editor_container", {
     // config options
 });
 // loading data into the editor
@@ -69,7 +69,7 @@ editor.diagram.events.on("beforeSelect", ({ id }) => {
 
 **Change log**: Updated in v6.0
 
-**Related articles**:  
+**Related articles**:
 
-- [diagram.config.select](../../../api/diagram/select_property/)
-- [Selecting items](../../../guides/manipulating_items/#selecting-items)
+- [diagram.config.select](api/diagram/select_property.md)
+- [Selecting items](guides/manipulating_items.md#selecting-items)

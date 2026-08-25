@@ -1,12 +1,12 @@
 ---
-sidebar_label: Customizing items 
+sidebar_label: Customizing items
 title: Customizing Items
 description: You can learn about customizing items in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
 
 # Customizing items
 
-You can easily modify the appearance of diagram items by using various [configuration properties](/category/items-api/) inside their objects. Besides, you can change the look and feel of the diagram according to your needs by creating custom shapes of the desired appearance.
+You can modify the appearance of diagram items by using various [configuration properties](/category/items-api/) inside their objects. You can also change the look and feel of the diagram by creating custom shapes.
 
 ## Styling shapes and lines via the configuration properties
 
@@ -16,7 +16,7 @@ A shape object provides a wide range of properties that you can use to modify th
 
 <iframe src="https://snippet.dhtmlx.com/a9t2z2dt?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="700"></iframe>
 
-A good way to style all the shapes of the same type at once is to specify the styling settings for the shapes via the [`defaults`](/api/diagram/defaults_property/) property of the diagram:
+A good way to style all the shapes of the same type at once is to specify the styling settings for the shapes via the [`defaults`](api/diagram/defaults_property.md) property of the diagram:
 
 ~~~jsx
 const defaults = {
@@ -36,11 +36,11 @@ const defaults = {
 };
 ~~~
 
-[See the full list of the shape object properties](../../shapes/configuration_properties/).
+[See the full list of the shape object properties](shapes/configuration_properties.md).
 
 ### Styling lines
 
-To change the look of connector lines, use the necessary configuration properties inside the line object. 
+To change the look of connector lines, use the necessary configuration properties inside the line object.
 
 ~~~jsx
 const data = [
@@ -55,7 +55,7 @@ const data = [
 ];
 ~~~
 
-[See the full list of the line object properties](../../lines/configuration_properties/).
+[See the full list of the line object properties](lines/configuration_properties.md).
 
 Check the example:
 
@@ -63,7 +63,7 @@ Check the example:
 
 ## Defining the shape's template
 
-You can create a customized diagram by adding new types of shapes into the diagram and defining templates for them. For this purpose, use the [](../api/diagram/addshape_method.md) method of the diagram object.
+You can create a customized diagram by adding new types of shapes into the diagram and defining templates for them. For this purpose, use the [`addShape()`](api/diagram/addshape_method.md) method of the diagram object.
 
 ### Example in the default mode
 
@@ -77,12 +77,16 @@ You can create a customized diagram by adding new types of shapes into the diagr
 
 <iframe src="https://snippet.dhtmlx.com/do1jwmw1?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
+### Example in the PERT mode
+
+<iframe src="https://snippet.dhtmlx.com/mtk92awx?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
+
 ## Styling target shapes
 
 While using the org and mindmap charts in the Diagram Editor, you can add a custom style for target items.
 
 :::note
-The stylization doesn't work with the parent item of the moved item and with the moved item with the property `giveItem: false`
+The stylization doesn't apply to the parent of the moved item, or to a moved item that has `giveItem: false`
 :::
 
 ~~~jsx
@@ -100,13 +104,13 @@ The stylization doesn't work with the parent item of the moved item and with the
 
 ### Styling the group
 
-To specify a custom style for a group, you can use the `style` property of the [group object](../../groups/configuration_properties/). For example:
+To specify a custom style for a group, you can use the `style` property of the [group object](groups/configuration_properties.md). For example:
 
 <iframe src="https://snippet.dhtmlx.com/pdkgis8g?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
 ### Styling the group header
 
-You can change the default style of the group header via the attributes of the `header` property of the [group object](../../groups/configuration_properties/).
+You can change the default style of the group header via the attributes of the `header` property of the [group object](groups/configuration_properties.md).
 
 <iframe src="https://snippet.dhtmlx.com/0hf8ahrb?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="650"></iframe>
 
@@ -114,7 +118,7 @@ You can change the default style of the group header via the attributes of the `
 
 ### Styling the swimlane
 
-You can customize the `strokeWidth`, `stroke`, and `fill` settings of a swimlane via the `style` property of the [swimlane object](../../swimlanes/configuration_properties/#properties-of-a-swimlane):
+You can customize the `strokeWidth`, `stroke`, and `fill` settings of a swimlane via the `style` property of the [swimlane object](swimlanes/configuration_properties.md#properties-of-a-swimlane):
 
 ~~~jsx
 const data = [
@@ -144,7 +148,7 @@ const data = [
 
 ### Styling the swimlane headers/sub-headers
 
-The `header`, `subHeaderRows`, and `subHeaderCols` properties of a [swimlane object](../../swimlanes/configuration_properties/#properties-of-a-swimlane) include sets of additional attributes for customizing the header and subheaders of the swimlane.
+The `header`, `subHeaderRows`, and `subHeaderCols` properties of a [swimlane object](swimlanes/configuration_properties.md#properties-of-a-swimlane) include sets of additional attributes for customizing the header and subheaders of the swimlane.
 
 For example, you can change the background colors of the top subheaders of the swimlane via the `subHeaderCols` property:
 
@@ -192,7 +196,7 @@ Check the full example:
 
 ### Styling swimlane cells
 
-If you need to customize a separate cell of the swimlane, use the `style` property of the [swimlane cell object](../../swimlanes/configuration_properties/#properties-of-a-swimlane-cell) (`type:"$sgroup"`).
+If you need to customize a separate cell of the swimlane, use the `style` property of the [swimlane cell object](swimlanes/configuration_properties.md#properties-of-a-swimlane-cell) (`type:"$sgroup"`).
 
 ~~~jsx
 const data = [

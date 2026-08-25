@@ -18,7 +18,7 @@ The event fires just for the target element despite the number of selected eleme
 
 ~~~jsx
 "afterShapeMove": ({
-    id: string | number, 
+    id: string | number,
     batch: (string | number)[],
     coords: object,
     event: PointerEvent,
@@ -37,7 +37,7 @@ The callback of the event is called with an object with the following parameters
   - `event` - an event object
 
 :::info
-For handling the inner Diagram Editor events you can use the **on()** method.
+For handling the inner Diagram Editor events you can use the `on()` method.
 :::
 
 ### Example
@@ -52,7 +52,7 @@ editor.parse(data);
 editor.events.on("afterShapeMove", ({ id, coords }) => {
     console.log(`
         Shape ${id} is at the position:
-            x: ${coords.x} 
+            x: ${coords.x}
             y: ${coords.y}
     `);
 });

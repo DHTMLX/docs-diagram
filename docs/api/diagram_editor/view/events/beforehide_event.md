@@ -18,12 +18,12 @@ description: You can learn about the beforeHide event of View in the Diagram Edi
 
 ### Parameters
 
-The callback of the **beforeHide** event is called with the following parameter:
+The callback of the `beforeHide` event is called with the following parameter:
 
 - `view` - (required) a view that will be hidden. Refer to the [`view`](api/diagram_editor/editor/config/view_property.md) property for details.
 
 :::info
-For handling the inner events of Diagram Editor you can use the **on()** method.
+For handling the inner events of Diagram Editor you can use the `on()` method.
 :::
 
 ### Example

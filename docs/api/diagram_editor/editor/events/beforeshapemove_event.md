@@ -18,7 +18,7 @@ The event fires just for the target element despite the number of selected eleme
 
 ~~~jsx
 "beforeShapeMove": ({
-    id: string | number, 
+    id: string | number,
     batch: (string | number)[],
     coords: object,
     event: PointerEvent
@@ -41,7 +41,7 @@ The callback of the event is called with an object with the following parameters
 The callback returns `false` to prevent the shape from being moved; otherwise, `true`
 
 :::info
-For handling the inner Diagram Editor events you can use the **on()** method.
+For handling the inner Diagram Editor events you can use the `on()` method.
 :::
 
 ### Example

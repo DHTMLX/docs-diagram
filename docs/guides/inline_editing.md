@@ -1,5 +1,5 @@
 ---
-sidebar_label: Inline editing 
+sidebar_label: Inline editing
 title: Inline Editing
 description: You can learn about inline editing in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Diagram.
 ---
@@ -10,13 +10,13 @@ Inline editing lets you edit the text content of a diagram item by double-clicki
 
 Inline editing for Lines is enabled only in the default mode of Diagram.
 
-![](../assets/inline_editing.gif)
+![](/img/inline_editing.gif)
 
-:::note 
+:::note
 Inline editing does not work for custom shapes.
 :::
 
-The functionality is enabled by default. To disable inline editing, you should use the `editable` property of the element, which you want to make uneditable, and set its value to *false*.
+The functionality is enabled by default. To disable inline editing, set the `editable` property of the element you want to make uneditable to *false*.
 
 You can find examples of disabling inline editing for diagram items below:
 
@@ -35,10 +35,10 @@ const data = [
         "to": "shape_2"
     },
     // configuring a line title
-    {   
-        "id": "title_1", 
+    {
+        "id": "title_1",
         "type": "lineTitle",
-        "parent": "line_1", 
+        "parent": "line_1",
         "text": "Some text",
         "editable": false // disables inline editing of the text item of a line
     }
@@ -56,7 +56,7 @@ const data = [
 #### Groups
 
 ~~~jsx title="Disabling the ability to edit the text content of the header of a group"
-const data = [    
+const data = [
     {
         "type": "$group",
         "id": 1,
@@ -84,7 +84,7 @@ const data = [
         "header": {
             "closable": true,
             "text": "Waterfall diagram template",
-            // disables inline editing for the header 
+            // disables inline editing for the header
             "editable": false
         },
         "layout": [
@@ -104,6 +104,18 @@ const data = [
 ];
 ~~~
 
+## Keyboard shortcuts
+
+The inline text editor supports the following keyboard shortcuts:
+
+| Hotkey | Description |
+|--------|-------------|
+| `Ctrl+Enter` (Win), `CMD+Enter` (macOS) | Opens the inline text editor for the selected element. Works as an alternative to double-clicking. Applicable only to shapes with an editable `text` property. |
+| `Shift+Enter` | Inserts a line break (`\n`) while keeping the editor open. |
+| `Delete` (`Del`), `Backspace` | Deletes the character at the cursor position. Does not delete the element itself. |
+| `Enter` | Confirms the current text and closes the editor. Because the editor applies changes dynamically as you type, pressing Enter marks a successful completion of editing. |
+| `Escape` | Discards all unsaved changes and closes the editor, restoring the element's text to the value it had before editing began. |
+
 ## API events
 
-The library includes a set of helpful [API events](../../api/inline_editor/) which you can use to control the behavior of the editor on its opening/closing, as well as to control the process of editing the text of the items.
+The library includes a set of helpful [API events](/api/inline_editor/) which you can use to control the behavior of the editor on its opening/closing, as well as to control the process of editing the text of the items.

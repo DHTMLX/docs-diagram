@@ -14,7 +14,7 @@ description: You can learn about the beforeShapeIconClick event of editor in the
 
 ~~~jsx
 "beforeShapeIconClick": (
-    iconId: string, 
+    iconId: string,
     shape: object
 ) => boolean | void;
 ~~~
@@ -31,7 +31,7 @@ The callback of the event is called with the following parameters:
 The callback returns `false` to prevent the toolbar control from being clicked; otherwise, `true`
 
 :::info
-For handling the inner Diagram Editor events you can use the **on()** method.
+For handling the inner Diagram Editor events you can use the `on()` method.
 :::
 
 ### Example

@@ -14,9 +14,9 @@ description: You can learn about the afterLineTitleMove event of editor in the d
 
 ~~~jsx
 "afterLineTitleMove": ({
-    event: PointerEvent, 
-    lineId: string | number, 
-    titleId: string | number, 
+    event: PointerEvent,
+    lineId: string | number,
+    titleId: string | number,
     coords: object
 }) => void;
 ~~~
@@ -33,7 +33,7 @@ The callback of the event is called with an object with the following parameters
     - `y` - the vertical position of the text element, moving from top to bottom
 
 :::info
-For handling the inner Diagram Editor events you can use the **on()** method.
+For handling the inner Diagram Editor events you can use the `on()` method.
 :::
 
 ### Example

@@ -14,7 +14,7 @@ description: You can learn about the shapeClick event in the documentation of th
 
 ~~~jsx
 shapeClick: (
-    id: string | number, 
+    id: string | number,
     event: MouseEvent
 ) => void;
 ~~~
@@ -42,4 +42,4 @@ diagram.events.on("shapeClick", (id) => {
 });
 ~~~
 
-**Related article**: [Event handling](../../../guides/event_handling/)
+**Related article**: [Event handling](guides/event_handling.md)

@@ -15,7 +15,7 @@ description: You can learn about the copy method of data collection in the docum
 ~~~jsx
 copy(
     id: string | number | array,
-    index: number, 
+    index: number,
     target?: object
 ): string | number | array;
 ~~~

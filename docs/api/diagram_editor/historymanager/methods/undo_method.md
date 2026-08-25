@@ -18,12 +18,12 @@ undo(first?: boolean): void;
 
 ### Parameters
 
-- `first` - (optional) *true* to revert all the history of changes 
+- `first` - (optional) *true* to revert all the history of changes
 
 ### Example
 
 ~~~jsx {5}
-const editor = new dhx.DiagramEditor("editor_container", { 
+const editor = new dhx.DiagramEditor("editor_container", {
     type: "default"
 });
 // ...

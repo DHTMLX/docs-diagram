@@ -14,7 +14,7 @@ description: You can learn about the itemMouseOver event in the documentation of
 
 ~~~jsx
 itemMouseOver: (
-    id: string | number, 
+    id: string | number,
     event: MouseEvent
 ) => void;
 ~~~
@@ -44,4 +44,4 @@ diagram.events.on("itemMouseOver", (id, event) => {
 
 **Change log**: Added in v4.0
 
-**Related article**: [Event handling](../../../guides/event_handling/)
+**Related article**: [Event handling](guides/event_handling.md)

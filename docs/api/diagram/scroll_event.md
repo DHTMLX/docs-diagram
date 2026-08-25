@@ -26,9 +26,9 @@ The callback of the event takes the following parameter:
 
 ~~~jsx {10-12}
 // initializing Diagram
-const diagram = new dhx.Diagram("diagram_container", { 
-    type: "org", 
-    scroll: true         
+const diagram = new dhx.Diagram("diagram_container", {
+    type: "org",
+    scroll: true
 });
 // loading data
 diagram.data.parse(data);
@@ -41,5 +41,5 @@ diagram.events.on("scroll", () => {
 
 **Related articles**:
 
-- [Scrolling Diagram](../../../guides/diagram/scrolling_diagram/)
-- [Event handling](../../../guides/event_handling/)
+- [Scrolling Diagram](guides/diagram/scrolling_diagram.md)
+- [Event handling](guides/event_handling.md)

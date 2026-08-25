@@ -18,20 +18,20 @@ items?: (object | string)[];
 
 ### Configuring items via strings
 
-The `items` property allows you to specify [**Service elements**](guides/diagram_editor/toolbar.md/#service-elements) as an array of strings:
+The `items` property allows you to specify [**Service elements**](guides/diagram_editor/toolbar.md#service-elements) as an array of strings:
 
 ~~~jsx
 items: [ "file", "edit", "view", "arrange", "spacer", "scale" ];
 ~~~
 
-The full list of service elements you can see [here](guides/diagram_editor/toolbar.md/#service-elements).
+The full list of service elements you can see [here](guides/diagram_editor/toolbar.md#service-elements).
 
 ### Configuring items via objects
 
-The `items` property allows you to specify [**Service elements**](guides/diagram_editor/toolbar.md/#service-elements) and [**Base elements**](guides/diagram_editor/toolbar.md/#base-elements) as an array of objects:
+The `items` property allows you to specify [**Service elements**](guides/diagram_editor/toolbar.md#service-elements) and [**Base elements**](guides/diagram_editor/toolbar.md#base-elements) as an array of objects:
 
 ~~~jsx
-items: [ 
+items: [
     {
         type: string,
         id?: string,
@@ -44,16 +44,16 @@ items: [
         items?: (string | object)[],
         checkIcon?: (editor: object) => string,
         handler?: (editor: object, event: Event) => void
-    }, {...} 
+    }, {...}
 ];
 ~~~
 
 #### Parameters
 
-For all [**service elements**](guides/diagram_editor/toolbar.md/#service-elements), excluding `separator` / `spacer` / `scale`, you can specify an object with the following parameters:
+For all [**service elements**](guides/diagram_editor/toolbar.md#service-elements), excluding `separator` / `spacer` / `scale`, you can specify an object with the following parameters:
 
 - `type` - (required) - the type of a service element. The full list of service element types you can see [here](guides/diagram_editor/toolbar.md)
-- `id` - (optional) - the ID of a service element. By default, the ID of a service element includes **$** and the **type** of the service element: **$file**
+- `id` - (optional) - the ID of a service element. By default, the ID of a service element includes `$` and the `type` of the service element: `$file`
 - `value` - (optional) - the label of a service element
 - `hotkey` - (optional) - the hot key combination label of a service element
 - `icon` - (optional) - the css class of a service element icon
@@ -63,7 +63,7 @@ For all [**service elements**](guides/diagram_editor/toolbar.md/#service-element
 - `items` - (optional) - defines the structure of the child elements
 - `checkIcon` - (optional) - the handler that returns the icon css class. It is called with the following argument:
     - `editor` - the Diagram Editor object
-- `handler` - (optional) - the handler that runs when the ***click*** or ***inputChange*** events occurs. It is called with the following arguments:
+- `handler` - (optional) - the handler that runs when the `click` or `inputChange` events occurs. It is called with the following arguments:
     - `editor` - the Diagram Editor object
     - `event` - a [native event](https://developer.mozilla.org/en-US/docs/Web/API/Event)
 
@@ -82,8 +82,8 @@ const editor = new dhx.DiagramEditor("editor_container", {
             css: "custom_css",
             navigationType: "pointer",
             items: [
-                "file", 
-                "spacer", 
+                "file",
+                "spacer",
                 "scale"
             ]
         }
@@ -141,6 +141,6 @@ const editor = new dhx.DiagramEditor("editor_container", {
 
 **Change log**: Added in v6.0
 
-**Related articles**:  [Toolbar configuration](guides/diagram_editor/toolbar.md)
+**Related article**:  [Toolbar configuration](guides/diagram_editor/toolbar.md)
 
 **Related sample**: [Diagram Editor. Default mode. Customization of toolbar. Added search by shapes ](https://snippet.dhtmlx.com/846cz71r)

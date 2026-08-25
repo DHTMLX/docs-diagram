@@ -14,7 +14,7 @@ description: You can learn about the lineClick event in the documentation of the
 
 ~~~jsx
 lineClick: (
-    id: string | number, 
+    id: string | number,
     event: MouseEvent
 ) => void;
 ~~~
@@ -44,4 +44,4 @@ diagram.events.on("lineClick", (id) => {
 
 **Change log**: Added in v3.0
 
-**Related article**: [Event handling](../../../guides/event_handling/)
+**Related article**: [Event handling](guides/event_handling.md)

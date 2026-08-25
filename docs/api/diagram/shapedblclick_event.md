@@ -14,7 +14,7 @@ description: You can learn about the shapeDblClick event in the documentation of
 
 ~~~jsx
 shapeDblClick: (
-    id: string | number, 
+    id: string | number,
     event: MouseEvent
 ) => void;
 ~~~
@@ -42,4 +42,4 @@ diagram.events.on("shapeDblClick", (id) => {
 });
 ~~~
 
-**Related article**: [Event handling](../../../guides/event_handling/)
+**Related article**: [Event handling](guides/event_handling.md)

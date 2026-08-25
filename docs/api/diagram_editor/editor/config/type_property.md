@@ -20,20 +20,20 @@ type?: "default" | "org" | "mindmap";
 
 Diagram Editor can be initialized in one of three modes:
 
-- **type:"default"** is used to visualize relations between some entities
+- `type:"default"` is used to visualize relations between some entities
 
 <iframe src="https://snippet.dhtmlx.com/xshe9ut7?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
-- **type:"org"** is used to show the structure of a group of people by presenting their relations in a hierarchical order
+- `type:"org"` is used to show the structure of a group of people by presenting their relations in a hierarchical order
 
 <iframe src="https://snippet.dhtmlx.com/og4qm3ja?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
-- **type:"mindmap"** is used to arrange information on some topic by representing the main concept surrounded by associated ideas
+- `type:"mindmap"` is used to arrange information on some topic by representing the main concept surrounded by associated ideas
 
 <iframe src="https://snippet.dhtmlx.com/lo1vm0e8?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
 **Related articles**:
 
-- [Overview](/editor_overview)
-- [How to start with Diagram Editor](/guides/diagram_editor/initialization/)
+- [Overview](editor_overview.md)
+- [How to start with Diagram Editor](guides/diagram_editor/initialization.md)
 

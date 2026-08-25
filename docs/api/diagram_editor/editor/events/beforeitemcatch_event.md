@@ -11,14 +11,14 @@ description: You can learn about the beforeItemCatch event of editor in the docu
 @short: Fires before an item is caught
 
 :::info
-The event works only in the **org chart** and **mindmap** modes of Diagram, the ***itemsDraggable*** property must be set to `true`.
+The event works only in the **org chart** and `mindmap` modes of Diagram, the `itemsDraggable` property must be set to `true`.
 :::
 
 ### Usage
 
 ~~~jsx
 "beforeItemCatch": ({
-    id: string | number, 
+    id: string | number,
     targetId: string | number,
     batch: (string | number)[],
     event: PointerEvent
@@ -31,7 +31,7 @@ The callback of the event is called with an object with the following parameters
 
   - `id` - the id of the moved item
   - `targetId` - the id of the target item
-  - `batch` - an array of moved elements' ids 
+  - `batch` - an array of moved elements' ids
   - `event` - an event object
 
 ### Returns
@@ -39,7 +39,7 @@ The callback of the event is called with an object with the following parameters
 The callback returns `false` to prevent the item from being caught; otherwise, `true`
 
 :::info
-For handling the inner Diagram Editor events you can use the **on()** method.
+For handling the inner Diagram Editor events you can use the `on()` method.
 :::
 
 ### Example
@@ -67,7 +67,7 @@ editor.events.on("beforeItemCatch", ({ id, targetId }) => {
 });
 ~~~
 
-**Change log**:  
+**Change log**:
 
 - The `batch` parameter was added in the v6.0
 - The callback function takes an object as a parameter since v6.0

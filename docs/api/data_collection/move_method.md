@@ -14,8 +14,8 @@ description: You can learn about the move method of data collection in the docum
 
 ~~~jsx
 move(
-    id: string | number | array, 
-    index: number, 
+    id: string | number | array,
+    index: number,
     target?: object
 ): string | number | array;
 ~~~

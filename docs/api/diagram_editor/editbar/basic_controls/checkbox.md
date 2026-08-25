@@ -1,6 +1,6 @@
 ---
 sidebar_label: Checkbox
-title: Editbar Basic Controls - Checkbox 
+title: Editbar Basic Controls - Checkbox
 description: You can explore the Checkbox control of Editbar in the documentation of the DHTMLX JavaScript Diagram library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
@@ -8,7 +8,7 @@ description: You can explore the Checkbox control of Editbar in the documentatio
 
 @short: The basic control for displaying the specified value or change it to the opposite one.
 
-![Checkbox control](../../../../assets/editbar-basic-controls/checkbox.png)
+![Checkbox control](/img/editbar-basic-controls/checkbox.png)
 
 ## Usage
 
@@ -30,7 +30,7 @@ description: You can explore the Checkbox control of Editbar in the documentatio
     labelWidth?: string | number,
     labelPosition?: "left" | "top", // "top" by default
 
-    // service properties and methods 
+    // service properties and methods
     $on?: { [eventName: string]: function },
     $handler?: function,
     $setValue?: function,
@@ -44,24 +44,24 @@ The control can be used both with the *boolean* value and the *string* one, if t
 
 ### Basic properties
 
-- `type` - (required) the type of a control. Set it to *"checkbox"*
+- `type` - (required) the type of a control. Set it to `"checkbox"`
 - `key` - (optional) the name of the specified/modified property or the path to it in the object of a Diagram item
 - `text` - (optional) the text value of a control. It's placed to the right of the control
 - `value` - (optional) the value of a checkbox
 - `css` - (optional) adds style classes to a control
 - `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*). *false* by default
 - `hidden` - (optional) defines whether a checkbox is hidden. *false* by default
-- `height` - (optional) the height of a control. *"content"* by default
-- `width` - (optional) the width of a control. *"content"* by default
+- `height` - (optional) the height of a control. `"content"` by default
+- `width` - (optional) the width of a control. `"content"` by default
 - `padding` - (optional) sets padding between a cell and a border of a Checkbox control
 - `label` - (optional) specifies a label for a control
-- `labelPosition` - (optional) defines the position of a label: *"left"* | *"top"*. *"top"* by default
+- `labelPosition` - (optional) defines the position of a label: `"left"` | `"top"`. `"top"` by default
 - `labelWidth` - (optional) sets the width of the label of a control
 
 ### Service properties and methods
 
 :::warning
-Note that it's highly not recommended to redefine the service properties and methods for the default types of controls, since it may cause breaks in their functionality. 
+Note that we strongly recommend not redefining the service properties and methods for the default types of controls, since it may cause breaks in their functionality.
 :::
 
 - `$on` - (optional) - allows setting an event listener. The object has the following properties:
@@ -69,12 +69,12 @@ Note that it's highly not recommended to redefine the service properties and met
         - `object` - an object with the following properties:
             - `control` - the [Checkbox](https://docs.dhtmlx.com/suite/form/checkbox/) Form control
             - `editor` - the object of the Diagram Editor
-            - `id` - the id of a Diagram item 
+            - `id` - the id of a Diagram item
         - `arguments` - (optional) - the [original event arguments](https://docs.dhtmlx.com/suite/category/form-checkbox-events/)
 - `$handler` - (optional) - a callback function that allows handling actions on firing the `change` event of the [Checkbox](https://docs.dhtmlx.com/suite/form/checkbox/) Form control and the `change` event of DataCollection. Called with the following parameter:
     - `object` - an object with the following properties:
-        - `id` - the id of a Diagram item 
-        - `key` - the name of the specified/modified property or the path to it in the object of a Diagram item 
+        - `id` - the id of a Diagram item
+        - `key` - the name of the specified/modified property or the path to it in the object of a Diagram item
         - `editor` - the object of the Diagram Editor
         - `control` - the object of the [Checkbox](https://docs.dhtmlx.com/suite/form/checkbox/) Form control the component is built on
         - `value` - the new value of the [Checkbox](https://docs.dhtmlx.com/suite/form/checkbox/) Form control
@@ -82,7 +82,7 @@ Note that it's highly not recommended to redefine the service properties and met
     - `object` - an object with the following properties:
         - `editor` - the object of the Diagram Editor
         - `control` - the object of the [Checkbox](https://docs.dhtmlx.com/suite/form/checkbox/) Form control the component is built on
-        - `value` - the value of a Diagram item 
+        - `value` - the value of a Diagram item
 - `$layout` - (optional) - a callback function that allows setting the structure of a control. Returns the configuration of the [Checkbox](https://docs.dhtmlx.com/suite/form/checkbox/) Form control. Called with the following parameter:
     - `object` - the configuration of a control without service properties
 

@@ -14,7 +14,7 @@ description: You can learn about the shapeIconClick event in the documentation o
 
 ~~~jsx
 "shapeIconClick": (
-    id: string | number, 
+    id: string | number,
     event: MouseEvent
 ) => void;
 ~~~
@@ -70,6 +70,6 @@ diagram.events.on("shapeIconClick", function (action) {
 });
 ~~~
 
-**Related article**: [Event handling](../../../guides/event_handling/)
+**Related article**: [Event handling](guides/event_handling.md)
 
 **Related sample**: [Diagram. Configuration. Shape toolbar](https://snippet.dhtmlx.com/4if395hd)

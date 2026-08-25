@@ -11,7 +11,7 @@ description: You can learn about the afterItemMove event of editor in the docume
 @short: Fires when an item is moved one grid step
 
 :::note
-The event doesn't work with the **line** object.
+The event doesn't work with the `line` object.
 
 The event fires just for the target element despite the number of selected elements. The ids of dragged elements are provided in the `batch` parameter of the callback function.
 :::
@@ -20,7 +20,7 @@ The event fires just for the target element despite the number of selected eleme
 
 ~~~jsx
 "afterItemMove": ({
-    id: string | number, 
+    id: string | number,
     batch: (string | number)[],
     coords: object,
     event: PointerEvent
@@ -39,7 +39,7 @@ The callback of the event is called with an object with the following parameters
 - `event` - an event object
 
 :::info
-For handling the inner Diagram Editor events you can use the **on()** method.
+For handling the inner Diagram Editor events you can use the `on()` method.
 :::
 
 ### Example
@@ -53,8 +53,8 @@ editor.parse(data);
 // attaching a handler to the event
 editor.events.on("afterItemMove", ({ id, coords }) => {
     console.log(`
-        Item ${id} is at the position: 
-            x: ${coords.x} 
+        Item ${id} is at the position:
+            x: ${coords.x}
             y: ${coords.y}
     `);
 });
@@ -64,3 +64,12 @@ editor.events.on("afterItemMove", ({ id, coords }) => {
 
 - The `batch` parameter was added in the v6.0
 - The callback function takes an object as a parameter since v6.0
+
+**Related API**:
+
+- [`beforeItemMove`](api/diagram_editor/editor/events/beforeitemmove_event.md)
+- [`itemMoveEnd`](api/diagram_editor/editor/events/itemmoveend_event.md)
+
+**Related sample**:
+
+- [Diagram Editor. Managing shapes' moving, rotating and resizing via events](https://snippet.dhtmlx.com/qldjbbm7)

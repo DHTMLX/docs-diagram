@@ -10,7 +10,11 @@ const MD_BOLD_TEXT_REGEXP = /\*\*(.+?)\*\*/g;
 
 // [text](<route><.md>#<route>) or [text](<route>/<route><.md>)
 // e.g. '[autoWidth](grid/configuration.md#autowidthforcolumns)'
-const MD_LINK_REGEXP = /(\[.+?\])\(([^\s]+?)(\.md)([^\s]*?)\)/g;
+// The URL/anchor groups exclude ')' so a match cannot run past the link's own
+// closing paren into an adjacent link. This matters for languages without spaces
+// between inline links (e.g. Chinese), where '[a](x.md)[b](y.md)' would otherwise
+// be captured as a single over-greedy match and mis-rewritten.
+const MD_LINK_REGEXP = /(\[.+?\])\(([^\s)]+?)(\.md)([^\s)]*?)\)/g;
 
 // @<text>:
 // e.g. '@short:' or '@short: sends a DELETE request to the server'
