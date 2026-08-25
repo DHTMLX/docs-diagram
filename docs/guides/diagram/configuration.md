@@ -158,7 +158,7 @@ Autoplacement will be applied only after the [`autoPlace()`](api/diagram/autopla
 ## Adjusting the Diagram scale
 
 If necessary, you can scale a diagram to fit your application. It can be done with the help of the [`scale`](api/diagram/scale_property.md) option.
-By default, its value is set to 1. So, to zoom in on a diagram, set the option to a value larger than 1 and to zoom out - smaller than 1, correspondingly.
+By default, its value is set to 1. So, to zoom in on a diagram, set the option to a value larger than 1, and to zoom out, set it to a value smaller than 1.
 
 <iframe src="https://snippet.dhtmlx.com/9h89c3gl?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 

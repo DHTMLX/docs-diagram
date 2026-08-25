@@ -6,7 +6,7 @@ description: In der Dokumentation der DHTMLX-JavaScript-Diagram-Bibliothek erfah
 
 # Grundlegende Formensätze
 
-Die DHTMLX-Diagram-Bibliothek bietet Ihnen Formensätze, mit denen Sie Ihr Diagramm erstellen können. Jeder Diagram-Modus – [Standard](#shapes-in-the-default-mode), [Organigramm](#shapes-in-the-org-chart-mode), [Mindmap](#shapes-in-the-mindmap-mode) und [PERT](#shapes-in-the-pert-mode) – verfügt über einen *Basissatz* von Formtypen.
+Die DHTMLX-Diagram-Bibliothek bietet Ihnen Formensätze, mit denen Sie Ihr Diagramm erstellen können. Jeder Diagram-Modus, also [Standard](#shapes-in-the-default-mode), [Organigramm](#shapes-in-the-org-chart-mode), [Mindmap](#shapes-in-the-mindmap-mode) und [PERT](#shapes-in-the-pert-mode), verfügt über einen *Basissatz* von Formtypen.
 
 :::tip
 Sie können eine Form eines beliebigen Typs in ein Diagramm einfügen, das in einem beliebigen Modus initialisiert wurde. Verwenden Sie den Namen der gewünschten Form als Wert des Attributs `type` innerhalb des Formobjekts, während Sie [einen Datensatz zum Laden in das Diagramm vorbereiten](guides/loading_data.md#preparing-data-to-load).

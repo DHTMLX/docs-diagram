@@ -6,9 +6,9 @@ description: Richten Sie einen KI-Assistenten auf den MCP-Server aus, und er fin
 
 # DHTMLX Diagram MCP-Server: Formen, Verbindungen und Editor-APIs {#dhtmlx-diagram-mcp-server-shapes-connectors-and-editor-apis}
 
-[DHTMLX Diagram](/) gibt Ihnen echte Kontrolle über [Formgeometrie](/shapes/configuration_properties), [Verbindungs-Routing](/lines/) und [Layout-Regeln](/guides/diagram/configuration) sowie über jede Option, die der Editor zulässt. Generierter Code muss die aktuellen Formeigenschaften, Verbindungsmethoden und Layout-Optionen widerspiegeln – nicht den Stand eines früheren Trainings-Snapshots.
+[DHTMLX Diagram](/) gibt Ihnen echte Kontrolle über [Formgeometrie](/shapes/configuration_properties), [Verbindungs-Routing](/lines/) und [Layout-Regeln](/guides/diagram/configuration) sowie über jede Option, die der Editor zulässt. Generierter Code muss die aktuellen Formeigenschaften, Verbindungsmethoden und Layout-Optionen widerspiegeln, nicht den Stand eines früheren Trainings-Snapshots.
 
-Genau dafür gibt es den DHTMLX MCP-Server: Er stellt dem Assistenten die aktuelle Diagram-Dokumentation bereit, noch bevor auch nur eine einzige Form gezeichnet wird. Egal, ob Sie mit [Swimlanes](/swimlanes/), [benutzerdefinierten Formen](/shapes/custom_shape), dem [Diagram Editor](/guides/diagram_editor/initialization) oder einem anderen Teil der Bibliothek arbeiten – der Assistent ruft das aktuelle Referenzmaterial ab, bevor er eine Antwort generiert.
+Genau dafür gibt es den DHTMLX MCP-Server: Er stellt dem Assistenten die aktuelle Diagram-Dokumentation bereit, noch bevor auch nur eine einzige Form gezeichnet wird. Egal, ob Sie mit [Swimlanes](/swimlanes/), [benutzerdefinierten Formen](/shapes/custom_shape), dem [Diagram Editor](/guides/diagram_editor/initialization) oder einem anderen Teil der Bibliothek arbeiten: Der Assistent ruft das aktuelle Referenzmaterial ab, bevor er eine Antwort generiert.
 
 ### MCP-Endpunkt {#mcp-endpoint}
 
@@ -35,13 +35,13 @@ Die Dokumentation von DHTMLX Diagram ist im Index des MCP-Servers erfasst. Entwi
 
 ## Innerhalb einer Diagram-MCP-Server-Anfrage {#inside-a-diagram-mcp-server-request}
 
-Der DHTMLX MCP-Server führt eine Retrieval-Augmented-Generation-(RAG)-Pipeline über das Model Context Protocol (MCP) aus und leitet jede Anfrage an einen von zwei Workflows weiter: *Search*, der passende Referenzseiten abruft, mit denen der Assistent weiterarbeitet, oder *Inference*, der diese Seiten liest und direkt eine fertige Antwort liefert. Nur ein Teil einer Anfrage benötigt tatsächlich die Diagram-Dokumentation, und der Assistent extrahiert zunächst genau diesen Teil – den Rest übernimmt er selbst.
+Der DHTMLX MCP-Server führt eine Retrieval-Augmented-Generation-(RAG)-Pipeline über das Model Context Protocol (MCP) aus und leitet jede Anfrage an einen von zwei Workflows weiter: *Search*, der passende Referenzseiten abruft, mit denen der Assistent weiterarbeitet, oder *Inference*, der diese Seiten liest und direkt eine fertige Antwort liefert. Nur ein Teil einer Anfrage benötigt tatsächlich die Diagram-Dokumentation, und der Assistent extrahiert zunächst genau diesen Teil, während er den Rest selbst übernimmt.
 
 So läuft das für den Prompt *„Wie baue ich mit DHTMLX Diagram ein Organigramm, das Mitarbeiterdaten aus meiner internen HR-API bezieht und automatisch nach Abteilung anordnet?“* ab:
 
 1. Der Assistent identifiziert den Teil, der Dokumentation erfordert: wie das Auto-Layout für ein aus einem JSON-Datensatz erstelltes Organigramm konfiguriert wird.
 2. Der Server gleicht ihn mit der Dokumentation zur Diagram-Konfiguration ab.
-3. Da die Antwort generierten Code erfordert, wird die Anfrage an *Search* weitergeleitet (eine engere Sachfrage – etwa welche Methode das Auto-Layout steuert – würde an *Inference* gehen).
+3. Da die Antwort generierten Code erfordert, wird die Anfrage an *Search* weitergeleitet (eine engere Sachfrage, etwa welche Methode das Auto-Layout steuert, würde an *Inference* gehen).
 4. *Search* ruft die passenden Seiten aus einem Vektorindex ab, der auf der aktuellen Diagram-Dokumentation basiert.
 5. Diese Seiten gehen als Kontext an den Assistenten zurück.
 6. Der Assistent konfiguriert das Auto-Layout anhand dieses Kontexts und schreibt die Logik für den HR-API-Abruf anschließend aus eigenem Wissen, statt bei der Diagram-API zu raten.
@@ -50,7 +50,7 @@ So bleibt generierter Diagram-Code stets mit dem aktuellen Stand der Dokumentati
 
 ## Den MCP-Server in Ihr KI-Tool einbinden {#bringing-the-mcp-server-into-your-ai-tool}
 
-Jedes der folgenden Tools verbindet sich auf seine eigene Weise mit demselben MCP-Endpunkt: bei einigen über ein CLI-Flag, bei anderen über einen JSON-Konfigurationsblock. Registrieren Sie den Server einmal pro Tool – die Verbindung gilt danach für jedes Diagram-Projekt, das Sie dort öffnen:
+Jedes der folgenden Tools verbindet sich auf seine eigene Weise mit demselben MCP-Endpunkt: bei einigen über ein CLI-Flag, bei anderen über einen JSON-Konfigurationsblock. Registrieren Sie den Server einmal pro Tool, und die Verbindung gilt danach für jedes Diagram-Projekt, das Sie dort öffnen:
 
 ~~~
 https://docs.dhtmlx.com/mcp
