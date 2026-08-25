@@ -410,19 +410,19 @@ Check [Basic controls API](api/diagram_editor/editbar/basic_controls_overview.md
     - `eventName`  - a callback function which is called with the following parameters:
         - `object` - an object with the following properties:
             - `control` - the Form control 
-            - `editor` - the object of the Diagram Editor
+            - `editor` - the object of the [Diagram Editor](api/diagram_editor/editor/api_overview.md)
             - `id` - the id of a Diagram item 
         - `arguments` - (optional) - the [original event arguments](https://docs.dhtmlx.com/suite/category/form-avatar-events/)
 - `$handler` - (optional) - a callback function that allows handling actions on firing the `change` event of the Form or the `input` event of the Form control. The callback is not called if the new value of the control is equal to the current value of the related property of a Diagram item. Called with the following parameter:
     - `object` - an object with the following properties:
         - `id` - the id of a Diagram item 
         - `key` - the name of the specified/modified property in the object of a Diagram item 
-        - `editor` - the object of the Diagram Editor
+        - `editor` - the object of the [Diagram Editor](api/diagram_editor/editor/api_overview.md)
         - `control` - the object of the Form control the component is built on
         - `value` - the new value of the Form control
 - `$setValue` - (optional) - a callback function that allows setting the value of the Form control on initialization of a control and on changing the value in DataCollection. The callback is not called if the control already displays the current value of the related property of a Diagram item. Called with the following parameter:
     - `object` - an object with the following properties:
-        - `editor` - the object of the Diagram Editor
+        - `editor` - the object of the [Diagram Editor](api/diagram_editor/editor/api_overview.md)
         - `control` - the object of the Form control the component is built on
         - `value` - the value of a Diagram item 
 - `$layout` - (optional) - a callback function that allows setting the structure of a control. Returns the configuration of the Form control. Called with the following parameter:
@@ -559,25 +559,66 @@ In the above example a text with an image appears in the Editbar when there is n
 There is a possibility to create an Editbar that will dynamically change depending on certain conditions, e.g.:
 the selected shape type, absence of selected items, the properties of the selected item. 
 
-To make a dynamic Editbar that will change *depending on the properties of a selected shape*, you need to specify a function as a value of the property that defines either the [type of a shape](/shapes/default_shapes/) or a [group of items](guides/items_index.md) within the [`properties`](api/diagram_editor/editbar/config/properties_property.md) configuration object.
+For this purpose, you need to specify a function instead of an array of controls within the [`properties`](api/diagram_editor/editbar/config/properties_property.md) config. The default Editbar configuration is built in the same way: the built-in `$shape` property is specified as a function that returns different sets of controls depending on the type of a selected item, e.g. for the `text` and `img-card` shapes. Note that the default configuration isn't the same for all the [modes of the editor](api/diagram_editor/editor/config/type_property.md): the `default`, `org` and `mindmap` modes have their own sets of controls.
 
-Such a function must return an array with the configurations of controls. It is called with the following parameter:
+Follow the steps described below to make your own dynamic Editbar.
+
+### Step 1. Choosing the property to configure
+
+A function can be set as a value of any property within the [`properties`](api/diagram_editor/editbar/config/properties_property.md) config, namely:
+
+- a [group of elements](#configuring-controls-for-diagram-elements), i.e. `$shape`, `$group`, `$swimlane`, `$line`, `$lineTitle`
+- the [type of a particular shape](/shapes/default_shapes/), e.g. `rectangle`, `circle`, `card`
+- the `$default` property. Note that in this case the `item` parameter is *undefined*, since the `$default` configuration is applied when there is no selected item. Use the `editor` parameter to check the current state of the editor, e.g. the [`getIds()`](api/selection/getids_method.md) method of Selection returns the ids of the selected items, which allows distinguishing the absence of selection from the selection of several items
+
+The [priority of the properties](#configuring-controls-for-diagram-elements) stays the same as for the arrays of controls: the configuration set for the type of a shape is applied, while the configuration of the group this shape belongs to is ignored.
+
+### Step 2. Specifying a function
+
+The function must return an array with the configurations of controls. It is called with the following parameter:
 
 - `object` - an object with the following properties:
     - `item` - the object of the selected Diagram item
-    - `editor` - the object of the Diagram Editor
+    - `editor` - the object of the [Diagram Editor](api/diagram_editor/editor/api_overview.md)
 
 The `item` parameter allows checking the type and the properties of the selected item, while the `editor` parameter gives access to the state of the whole editor, e.g. to the data and the selection of the Diagram via `editor.diagram`.
 
-The function is called each time the Editbar rebuilds its set of controls, namely:
+Check the example below:
 
-- on selecting a Diagram item
-- on unselecting an item or selecting more than one item, when the `$default` configuration is applied
-- after loading data into the Diagram or removing all the data
+~~~jsx {6-22}
+const editor = new dhx.DiagramEditor("editor_container", {
+    type: "default",
+    view: {
+        editbar: {
+            properties: {
+                // a function for the type of a particular shape
+                rectangle: ({ item }) => {
+                    const controls = [{ type: "arrange" }, { type: "border" }];
+                    if (item.hasOwnProperty("text")) {
+                        controls.push({ type: "textStyle" });
+                    }
+                    return controls;
+                },
+                // a function for the $default property
+                $default: ({ editor }) => {
+                    const selected = editor.diagram.selection.getIds();
+                    // more than one element is selected or the Diagram contains no data
+                    if (selected.length > 1 || !editor.diagram.data.getLength()) {
+                        return [{ type: "gridStep", readOnly: true }];
+                    }
+                    return [{ type: "gridStep" }];
+                },
+            }
+        }
+    }
+});
+~~~
 
-Modifying the properties of the selected item doesn't rebuild the Editbar. In this case the already rendered controls only refresh their values via the [`$setValue`](#redefining-service-properties-of-custom-controls-based-on-basic-controls) service property. If a new set of controls is expected, you need to select the item anew, e.g. by selecting another element and then the needed one again.
+In the above example the set of controls for the **rectangle** shape is extended with the **Text style** control if the shape contains the `text` property, while the **Grid step** control of the grid area is rendered in the readonly mode when more than one element is selected or the Diagram contains no data. The state of the editor is checked via the [`getIds()`](api/selection/getids_method.md) method of Selection and the [`getLength()`](https://docs.dhtmlx.com/suite/data_collection/api/datacollection_getlength_method/) method of DataCollection.
 
-Here's an example:
+### Step 3. Setting the conditions for rendering controls
+
+Inside the function you can check the type and the properties of a selected item and return the set of controls that meets the necessary conditions:
 
 ~~~jsx {7-25}
 const editor = new dhx.DiagramEditor("editor_container", {
@@ -618,44 +659,15 @@ The `hasOwnProperty()` method checks whether an item has a certain property spec
 - if there is the `text` property in the item object, the **Textarea** control will be used
 - if there is the `img` property in the item object, the **Avatar** control will be used
 
-A function can be set as a value of any property within the [`properties`](api/diagram_editor/editbar/config/properties_property.md) config, not only of the `$shape` one. Thus, you can specify a function for:
+### Step 4. Checking when the Editbar is rebuilt
 
-- a [group of elements](#configuring-controls-for-diagram-elements), i.e. `$shape`, `$group`, `$swimlane`, `$line`, `$lineTitle`
-- the [type of a particular shape](/shapes/default_shapes/), e.g. `rectangle`, `circle`, `card`
-- the `$default` property. Note that in this case the `item` parameter is *undefined*, since the `$default` configuration is applied when there is no selected item. Use the `editor` parameter to check the state of the editor
+The function is called each time the Editbar rebuilds its set of controls, namely:
 
-Check the example below:
+- on selecting a Diagram item
+- on unselecting an item or selecting more than one item, when the `$default` configuration is applied
+- after loading data into the Diagram or removing all the data
 
-~~~jsx {6-20}
-const editor = new dhx.DiagramEditor("editor_container", {
-    type: "default",
-    view: {
-        editbar: {
-            properties: {
-                // a function for the type of a particular shape
-                rectangle: ({ item }) => {
-                    const controls = [{ type: "arrange" }, { type: "border" }];
-                    if (item.hasOwnProperty("text")) {
-                        controls.push({ type: "textStyle" });
-                    }
-                    return controls;
-                },
-                // a function for the $default property
-                $default: ({ editor }) => {
-                    if (!editor.diagram.data.getLength()) {
-                        return [{ type: "gridStep", readOnly: true }];
-                    }
-                    return [{ type: "gridStep" }];
-                },
-            }
-        }
-    }
-});
-~~~
-
-In the above example the set of controls for the **rectangle** shape is extended with the **Text style** control if the shape contains the `text` property, while the **Grid step** control of the grid area is rendered in the readonly mode until the Diagram gets any data.
-
-The default Editbar configuration is built in the same way: the built-in `$shape` property is specified as a function that returns different sets of controls depending on the type of a selected item, e.g. for the `text` and `img-card` shapes. Note that the default configuration isn't the same for all the [modes of the editor](api/diagram_editor/editor/config/type_property.md): the `default`, `org` and `mindmap` modes have their own sets of controls.
+Modifying the properties of the selected item doesn't rebuild the Editbar. In this case the already rendered controls only refresh their values via the [`$setValue`](#redefining-service-properties-of-custom-controls-based-on-basic-controls) service property. If a new set of controls is expected, you need to select the item anew, e.g. by selecting another element and then the needed one again.
 
 ## Setting the width of Editbar
 
