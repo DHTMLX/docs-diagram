@@ -25,7 +25,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 ~~~
 
-- configuring Editbar by specifying it as an object with [a set of properties](/category/editbar-properties/):
+- configure Editbar by specifying it as an object with [a set of properties](/category/editbar-properties/):
 
 ~~~jsx
 const editor = new dhx.DiagramEditor("editor_container", {
@@ -69,7 +69,7 @@ You can [configure the default Editbar controls](#configuring-controls-for-diagr
 
 You can configure Editbar controls for each Diagram element separately and for a [group of elements](guides/items_index.md) taking into account various conditions, such as the type of the item, absence of selected items, selection of more than one element, etc. For this purpose, use the Editbar [`properties`](api/diagram_editor/editbar/config/properties_property.md) config. 
 
-The `properties` config is an object that presents all available properties of an Editbar control. When you redefine this configuration option, it is important to specify the **type** of an Editbar control or of the group it belongs to. Redefining of any other properties is optional. The details are given below. 
+The `properties` config is an object where a key is the type of a Diagram element or the group it belongs to, and a value is an array with the configurations of controls. When you redefine this configuration option, it is important to specify the **type** of an Editbar control. Redefining of any other properties is optional. The details are given below. 
 
 There are two ways of defining controls of Editbar:
 
@@ -123,6 +123,8 @@ The configuration you specify for a property replaces the default configuration 
 
 ### Redefining properties of controls
 
+The controls take the configs of the DHTMLX Form controls they are based on. Thus, the `hidden` and `disabled` configs suit both basic and complex controls, while the `readOnly` config suits the basic ones. Check the [Basic controls](api/diagram_editor/editbar/basic_controls_overview.md) and [Complex controls](api/diagram_editor/editbar/complex_controls_overview.md) API to learn the full list of configs of each control.
+
 #### Basic controls
 
 A basic control addresses a property of the selected item via the `key` config, while the `wrap` config renders the control inside a fieldset with the specified label.
@@ -152,7 +154,7 @@ In the above example the Editbar renders the **Colorpicker** control that addres
 Complex controls based on the *basic* controls can be redefined with the service property `$properties`. 
 
 :::warning
-Note that it's highly not recommended to redefine the service properties and methods for the default types of controls, since it may cause breaks in their functionality. 
+Note that redefining the service properties and methods for the default types of controls isn't recommended, since it may cause breaks in their functionality. 
 :::
 
 Check the example:
@@ -190,7 +192,7 @@ Complex controls can also [include other *complex* controls](#custom-controls-th
 
 The `$default` service property allows configuring Editbar controls if no elements are selected, or more than one element is selected. The Editbar applies the same configuration when the diagram contains no data, as well as after loading new data or removing all the data.
 
-Since no item is selected in this case, use the `$default` configuration for the controls that modify the settings of the editor and not the properties of a Diagram item. The built-in [**Grid step**](api/diagram_editor/editbar/complex_controls/gridstep.md) control is a control of this kind: it displays and modifies the [`gridStep`](api/diagram_editor/editor/config/gridstep_property.md) config of the editor.
+Since the Editbar has no item to edit in these cases, use the `$default` configuration for the controls that modify the settings of the editor and not the properties of a Diagram item. The built-in [**Grid step**](api/diagram_editor/editbar/complex_controls/gridstep.md) control is a control of this kind: it displays and modifies the [`gridStep`](api/diagram_editor/editor/config/gridstep_property.md) config of the editor.
 
 ~~~jsx {6-11}
 const editor = new dhx.DiagramEditor("editor_container", {
@@ -210,7 +212,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 ~~~
 
-In the above example the **Grid step** control in the readonly mode is used when there aren't or more than one selected elements. 
+In the above example the Editbar renders the **Grid step** control in the readonly mode when there are no selected elements or more than one element is selected. 
 
 :::warning
 Within the `$default` configuration, the controls that address the properties of a Diagram item, e.g. **Border** or **Arrange**, render without values, and the changes you make in them have no effect, since there is no item to apply them to.
@@ -542,9 +544,11 @@ In the above example:
 - the **Name** control is a custom control based on the basic **Input** control
 - both controls are applied to all shapes (the *$shape* group type) 
 
+A custom control inherits the configuration of the control specified in its `type` property, including the `key` config and the service properties. The configs that you specify for a custom control redefine the inherited ones.
+
 **Related sample:** [Diagram Editor. Default mode. PERT сhart with the legend](https://snippet.dhtmlx.com/w8mrh3ay?mode=js)
 
-### Redefining service properties of custom controls based on basic controls
+### Service properties of custom controls
 
 Custom controls based on basic ones can have *service* properties and methods in their configuration. The names of such properties start with `$`. 
 
@@ -636,7 +640,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 ~~~
 
-The `$handler` service property of the custom **Name** control defines that on firing the `change` and `input` events of the [**Input**](https://docs.dhtmlx.com/suite/form/input/) Form control the corresponding field is updated in the diagram data collection and the new value is set for the control. 
+The `$handler` service property of the custom **Name** control defines that on firing the `change` and `input` events of the [**Input**](https://docs.dhtmlx.com/suite/form/input/) Form control the Editbar updates the `text` property of a Diagram item and sets the new value for the control. The **Name** control gets the `text` key from the **Input** control it is based on. 
 
 ### Custom controls that include complex controls
 
@@ -704,7 +708,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 });
 ~~~
 
-In the above example a text with an image appears in the Editbar when there is no Diagram items selected (the `$default` group type is specified).
+In the above example a text with an image appears in the Editbar when there are no selected Diagram items (the `$default` group type is specified).
 
 ## Creating a dynamic Editbar
 
@@ -807,7 +811,7 @@ In the above example the `$shape` property is specified as a function that provi
 
 The `hasOwnProperty()` method checks whether an item has a certain property specified as an argument of this method. If it does, a particular control is used for rendering/modifying this property. For example:
 
-- if there is the `title` property in the item object,  the **Input** control will be used 
+- if there is the `title` property in the item object, the **Input** control will be used 
 - if there is the `text` property in the item object, the **Textarea** control will be used
 - if there is the `img` property in the item object, the **Avatar** control will be used
 
@@ -819,7 +823,7 @@ The Editbar calls the function each time it rebuilds its set of controls, namely
 - on unselecting an item or selecting more than one item, when the `$default` configuration is applied
 - after loading data into the Diagram or removing all the data
 
-Modifying the properties of the selected item doesn't rebuild the Editbar. In this case the already rendered controls only refresh their values via the [`$setValue`](#redefining-service-properties-of-custom-controls-based-on-basic-controls) service property. To get a new set of controls, select the item anew, e.g. by selecting another element and then the needed one again.
+Modifying the properties of the selected item doesn't rebuild the Editbar. In this case the already rendered controls only refresh their values via the [`$setValue`](#service-properties-of-custom-controls) service property. To get a new set of controls, select the item anew, e.g. by selecting another element and then the needed one again.
 
 ## Setting the width of Editbar
 
@@ -838,7 +842,7 @@ const editor = new dhx.DiagramEditor("editor_container", {
 
 ## Showing/hiding the Editbar
 
-Whenever you need to control the visibility of the Editbar, you can use the [`show`](api/diagram_editor/editbar/config/show_property.md) property. It allows you to hide the Editbar with particular settings on initialization of the Diagram Editor and show it later, when needed. By default the Editbar is shown.
+Whenever you need to control the visibility of the Editbar, you can use the [`show`](api/diagram_editor/editbar/config/show_property.md) property. It allows you to hide the Editbar with particular settings on initialization of the Diagram Editor and show it later, when needed. By default, the Editbar is shown.
 
 ~~~jsx
 const editor = new dhx.DiagramEditor("editor_container", {
