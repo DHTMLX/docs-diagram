@@ -4,11 +4,11 @@
     "description": "The label for version current"
   },
   "sidebar.docs.category.What's new and migration": {
-    "message": "What's new and migration",
+    "message": "新特性和迁移",
     "description": "The label for category 'What's new and migration' in sidebar 'docs'"
   },
   "sidebar.docs.category.What's new and migration.link.generated-index.title": {
-    "message": "What's new and migration",
+    "message": "新特性和迁移",
     "description": "The generated-index page title for category 'What's new and migration' in sidebar 'docs'"
   },
   "sidebar.docs.category.API": {
@@ -24,15 +24,15 @@
     "description": "The label for category 'Diagram API' in sidebar 'docs'"
   },
   "sidebar.docs.category.Diagram methods": {
-    "message": "Diagram methods",
+    "message": "Diagram 方法",
     "description": "The label for category 'Diagram methods' in sidebar 'docs'"
   },
   "sidebar.docs.category.Diagram events": {
-    "message": "Diagram events",
+    "message": "Diagram 事件",
     "description": "The label for category 'Diagram events' in sidebar 'docs'"
   },
   "sidebar.docs.category.Diagram properties": {
-    "message": "Diagram properties",
+    "message": "Diagram 属性",
     "description": "The label for category 'Diagram properties' in sidebar 'docs'"
   },
   "sidebar.docs.category.Diagram Editor API": {
@@ -48,15 +48,15 @@
     "description": "The label for category 'Editor API' in sidebar 'docs'"
   },
   "sidebar.docs.category.Editor methods": {
-    "message": "Editor methods",
+    "message": "Editor 方法",
     "description": "The label for category 'Editor methods' in sidebar 'docs'"
   },
   "sidebar.docs.category.Editor events": {
-    "message": "Editor events",
+    "message": "Editor 事件",
     "description": "The label for category 'Editor events' in sidebar 'docs'"
   },
   "sidebar.docs.category.Editor properties": {
-    "message": "Editor properties",
+    "message": "Editor 属性",
     "description": "The label for category 'Editor properties' in sidebar 'docs'"
   },
   "sidebar.docs.category.History manager API": {
@@ -64,11 +64,11 @@
     "description": "The label for category 'History manager API' in sidebar 'docs'"
   },
   "sidebar.docs.category.History manager methods": {
-    "message": "History manager methods",
+    "message": "History manager 方法",
     "description": "The label for category 'History manager methods' in sidebar 'docs'"
   },
   "sidebar.docs.category.History manager properties": {
-    "message": "History manager properties",
+    "message": "History manager 属性",
     "description": "The label for category 'History manager properties' in sidebar 'docs'"
   },
   "sidebar.docs.category.Copy manager API": {
@@ -76,7 +76,7 @@
     "description": "The label for category 'Copy manager API' in sidebar 'docs'"
   },
   "sidebar.docs.category.Copy manager methods": {
-    "message": "Copy manager methods",
+    "message": "Copy manager 方法",
     "description": "The label for category 'Copy manager methods' in sidebar 'docs'"
   },
   "sidebar.docs.category.View API": {
@@ -84,11 +84,11 @@
     "description": "The label for category 'View API' in sidebar 'docs'"
   },
   "sidebar.docs.category.View methods": {
-    "message": "View methods",
+    "message": "View 方法",
     "description": "The label for category 'View methods' in sidebar 'docs'"
   },
   "sidebar.docs.category.View events": {
-    "message": "View events",
+    "message": "View 事件",
     "description": "The label for category 'View events' in sidebar 'docs'"
   },
   "sidebar.docs.category.Toolbar API": {
@@ -96,19 +96,19 @@
     "description": "The label for category 'Toolbar API' in sidebar 'docs'"
   },
   "sidebar.docs.category.Toolbar methods": {
-    "message": "Toolbar methods",
+    "message": "Toolbar 方法",
     "description": "The label for category 'Toolbar methods' in sidebar 'docs'"
   },
   "sidebar.docs.category.Toolbar properties": {
-    "message": "Toolbar properties",
+    "message": "Toolbar 属性",
     "description": "The label for category 'Toolbar properties' in sidebar 'docs'"
   },
   "sidebar.docs.category.Toolbar properties.link.generated-index.title": {
-    "message": "Toolbar properties",
+    "message": "Toolbar 属性",
     "description": "The generated-index page title for category 'Toolbar properties' in sidebar 'docs'"
   },
   "sidebar.docs.category.Toolbar events": {
-    "message": "Toolbar events",
+    "message": "Toolbar 事件",
     "description": "The label for category 'Toolbar events' in sidebar 'docs'"
   },
   "sidebar.docs.category.Editbar API": {
@@ -116,19 +116,19 @@
     "description": "The label for category 'Editbar API' in sidebar 'docs'"
   },
   "sidebar.docs.category.Editbar properties": {
-    "message": "Editbar properties",
+    "message": "Editbar 属性",
     "description": "The label for category 'Editbar properties' in sidebar 'docs'"
   },
   "sidebar.docs.category.Editbar properties.link.generated-index.title": {
-    "message": "Editbar properties",
+    "message": "Editbar 属性",
     "description": "The generated-index page title for category 'Editbar properties' in sidebar 'docs'"
   },
   "sidebar.docs.category.Basic controls": {
-    "message": "Basic controls",
+    "message": "基本控件",
     "description": "The label for category 'Basic controls' in sidebar 'docs'"
   },
   "sidebar.docs.category.Complex controls": {
-    "message": "Complex controls",
+    "message": "复杂控件",
     "description": "The label for category 'Complex controls' in sidebar 'docs'"
   },
   "sidebar.docs.category.Shapebar API": {
@@ -136,27 +136,27 @@
     "description": "The label for category 'Shapebar API' in sidebar 'docs'"
   },
   "sidebar.docs.category.Shapebar properties": {
-    "message": "Shapebar properties",
+    "message": "Shapebar 属性",
     "description": "The label for category 'Shapebar properties' in sidebar 'docs'"
   },
   "sidebar.docs.category.Shapebar properties.link.generated-index.title": {
-    "message": "Shapebar properties",
+    "message": "Shapebar 属性",
     "description": "The generated-index page title for category 'Shapebar properties' in sidebar 'docs'"
   },
   "sidebar.docs.category.Items API": {
-    "message": "Items API",
+    "message": "项目 API",
     "description": "The label for category 'Items API' in sidebar 'docs'"
   },
   "sidebar.docs.category.Items API.link.generated-index.title": {
-    "message": "Items API",
+    "message": "项目 API",
     "description": "The generated-index page title for category 'Items API' in sidebar 'docs'"
   },
   "sidebar.docs.category.Common API": {
-    "message": "Common API",
+    "message": "通用 API",
     "description": "The label for category 'Common API' in sidebar 'docs'"
   },
   "sidebar.docs.category.Common API.link.generated-index.title": {
-    "message": "Common API",
+    "message": "通用 API",
     "description": "The generated-index page title for category 'Common API' in sidebar 'docs'"
   },
   "sidebar.docs.category.CellManager API": {
@@ -164,11 +164,11 @@
     "description": "The label for category 'CellManager API' in sidebar 'docs'"
   },
   "sidebar.docs.category.CellManager methods": {
-    "message": "CellManager methods",
+    "message": "CellManager 方法",
     "description": "The label for category 'CellManager methods' in sidebar 'docs'"
   },
   "sidebar.docs.category.CellManager events": {
-    "message": "CellManager events",
+    "message": "CellManager 事件",
     "description": "The label for category 'CellManager events' in sidebar 'docs'"
   },
   "sidebar.docs.category.DataCollection API": {
@@ -176,19 +176,19 @@
     "description": "The label for category 'DataCollection API' in sidebar 'docs'"
   },
   "sidebar.docs.category.DataCollection methods": {
-    "message": "DataCollection methods",
+    "message": "DataCollection 方法",
     "description": "The label for category 'DataCollection methods' in sidebar 'docs'"
   },
   "sidebar.docs.category.DataCollection events": {
-    "message": "DataCollection events",
+    "message": "DataCollection 事件",
     "description": "The label for category 'DataCollection events' in sidebar 'docs'"
   },
   "sidebar.docs.category.Export methods": {
-    "message": "Export methods",
+    "message": "导出方法",
     "description": "The label for category 'Export methods' in sidebar 'docs'"
   },
   "sidebar.docs.category.InlineEditor events": {
-    "message": "InlineEditor events",
+    "message": "InlineEditor 事件",
     "description": "The label for category 'InlineEditor events' in sidebar 'docs'"
   },
   "sidebar.docs.category.Selection API": {
@@ -196,15 +196,15 @@
     "description": "The label for category 'Selection API' in sidebar 'docs'"
   },
   "sidebar.docs.category.Selection methods": {
-    "message": "Selection methods",
+    "message": "Selection 方法",
     "description": "The label for category 'Selection methods' in sidebar 'docs'"
   },
   "sidebar.docs.category.Selection events": {
-    "message": "Selection events",
+    "message": "Selection 事件",
     "description": "The label for category 'Selection events' in sidebar 'docs'"
   },
   "sidebar.docs.category.Guides": {
-    "message": "Guides",
+    "message": "指南",
     "description": "The label for category 'Guides' in sidebar 'docs'"
   },
   "sidebar.docs.category.Diagram": {
@@ -216,15 +216,15 @@
     "description": "The generated-index page title for category 'Diagram' in sidebar 'docs'"
   },
   "sidebar.docs.category.Diagram items": {
-    "message": "Diagram items",
+    "message": "Diagram 项目",
     "description": "The label for category 'Diagram items' in sidebar 'docs'"
   },
   "sidebar.docs.category.Shapes": {
-    "message": "Shapes",
+    "message": "形状",
     "description": "The label for category 'Shapes' in sidebar 'docs'"
   },
   "sidebar.docs.category.Shapes.link.generated-index.title": {
-    "message": "Shapes",
+    "message": "形状",
     "description": "The generated-index page title for category 'Shapes' in sidebar 'docs'"
   },
   "sidebar.docs.category.Diagram Editor": {
@@ -232,31 +232,31 @@
     "description": "The label for category 'Diagram Editor' in sidebar 'docs'"
   },
   "sidebar.docs.category.Diagram Editor.link.generated-index.title": {
-    "message": "Diagram editor",
+    "message": "Diagram Editor",
     "description": "The generated-index page title for category 'Diagram Editor' in sidebar 'docs'"
   },
   "sidebar.docs.category.Themes": {
-    "message": "Themes",
+    "message": "主题",
     "description": "The label for category 'Themes' in sidebar 'docs'"
   },
   "sidebar.docs.category.Themes.link.generated-index.title": {
-    "message": "Themes",
+    "message": "主题",
     "description": "The generated-index page title for category 'Themes' in sidebar 'docs'"
   },
   "sidebar.docs.category.Integrations": {
-    "message": "Integrations",
+    "message": "集成",
     "description": "The label for category 'Integrations' in sidebar 'docs'"
   },
   "sidebar.docs.category.Integrations.link.generated-index.title": {
-    "message": "Integrations",
+    "message": "集成",
     "description": "The generated-index page title for category 'Integrations' in sidebar 'docs'"
   },
   "sidebar.docs.category.AI Integrations": {
-    "message": "AI Integrations",
+    "message": "AI 集成",
     "description": "The label for category 'AI Integrations' in sidebar 'docs'"
   },
   "sidebar.docs.category.AI Integrations.link.generated-index.title": {
-    "message": "AI Integrations",
+    "message": "AI 集成",
     "description": "The generated-index page title for category 'AI Integrations' in sidebar 'docs'"
   }
 }
