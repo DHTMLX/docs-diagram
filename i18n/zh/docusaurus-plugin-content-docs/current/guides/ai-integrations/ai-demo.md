@@ -26,7 +26,7 @@ cd diagram-org-chart-builder-ai-demo
 
 ### 安装依赖 {#installing-dependencies}
 
-要安装依赖并运行应用程序，您需要一个包管理器。本指南使用 [npm](https://www.npmjs.com/) —— 通过调用以下命令安装演示应用：
+要安装依赖并运行应用程序，您需要一个包管理器。本指南使用 [npm](https://www.npmjs.com/)。通过调用以下命令安装演示应用：
 
 ~~~jsx
 npm install

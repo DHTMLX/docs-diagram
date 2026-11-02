@@ -82,7 +82,7 @@ Sie können Diagram in einem Container, im Dokument-Body oder in einer Layout-Ze
 
 Um Diagram in einem Container zu initialisieren, verwenden Sie den Konstruktor `dhx.Diagram` und übergeben Sie der Konstruktorfunktion die folgenden zwei Parameter:
 
-- einen Container, in den Diagram platziert wird – geben wir ihm die ID `"diagram_container"`:
+- einen Container, in den Diagram platziert wird; geben wir ihm die ID `"diagram_container"`:
 
 ~~~html title="index.html"
 <div id="diagram_container"></div>

@@ -26,7 +26,7 @@ cd diagram-org-chart-builder-ai-demo
 
 ### Installing dependencies
 
-To install dependencies and run the app, you need a package manager. This guide uses [npm](https://www.npmjs.com/) — install the demo app by calling the following command:
+To install dependencies and run the app, you need a package manager. This guide uses [npm](https://www.npmjs.com/). Install the demo app by calling the following command:
 
 ~~~jsx
 npm install

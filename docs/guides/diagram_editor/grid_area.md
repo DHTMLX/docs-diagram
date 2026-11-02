@@ -147,7 +147,7 @@ If you need to change the width and color of the lines, or to hide them at all, 
 
 ## Manipulating multiple items
 
-You can select several diagram items by hovering over them with the left mouse button pressed. You can also select necessary items using keyboard shortcuts - Shift+Left Click.
+You can select several diagram items by hovering over them with the left mouse button pressed. You can also select necessary items using keyboard shortcuts: Shift+Left Click.
 
 You can operate all the selected items at once, namely:
 

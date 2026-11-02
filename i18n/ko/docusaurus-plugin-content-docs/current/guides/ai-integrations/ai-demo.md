@@ -26,7 +26,7 @@ cd diagram-org-chart-builder-ai-demo
 
 ### 종속성 설치하기 {#installing-dependencies}
 
-종속성을 설치하고 앱을 실행하려면 패키지 관리자가 필요합니다. 이 가이드에서는 [npm](https://www.npmjs.com/)을 사용합니다 — 다음 명령어를 호출하여 데모 앱을 설치하세요:
+종속성을 설치하고 앱을 실행하려면 패키지 관리자가 필요합니다. 이 가이드에서는 [npm](https://www.npmjs.com/)을 사용합니다. 다음 명령어를 호출하여 데모 앱을 설치하세요:
 
 ~~~jsx
 npm install
