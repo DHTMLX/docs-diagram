@@ -1,26 +1,26 @@
 {
   "title": {
-    "message": "JavaScript Diagram Documentation",
+    "message": "JavaScript Diagram 文档",
     "description": "The title in the navbar"
   },
   "logo.alt": {
-    "message": "DHTMLX Diagram Documentation",
+    "message": "DHTMLX Diagram 文档",
     "description": "The alt text of navbar logo"
   },
   "item.label.Examples": {
-    "message": "Examples",
+    "message": "示例",
     "description": "Navbar item with label Examples"
   },
   "item.label.Forum": {
-    "message": "Forum",
+    "message": "论坛",
     "description": "Navbar item with label Forum"
   },
   "item.label.Support": {
-    "message": "Support",
+    "message": "支持",
     "description": "Navbar item with label Support"
   },
   "item.label.Download": {
-    "message": "Download",
+    "message": "下载",
     "description": "Navbar item with label Download"
   }
 }

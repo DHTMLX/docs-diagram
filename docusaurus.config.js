@@ -260,6 +260,11 @@ module.exports = {
                             position: 'right',
                         },
                         {
+                            label: 'Product page',
+                            href: 'https://dhtmlx.com/docs/products/dhtmlxDiagram/',
+                            position: 'right',
+                        },
+                        {
                             label: 'Examples',
                             href: 'https://snippet.dhtmlx.com/xdvi4fek?tag=diagram',
                             position: 'right',

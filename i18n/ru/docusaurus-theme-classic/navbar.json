@@ -1,26 +1,26 @@
 {
   "title": {
-    "message": "JavaScript Diagram Documentation",
+    "message": "Документация JavaScript Diagram",
     "description": "The title in the navbar"
   },
   "logo.alt": {
-    "message": "DHTMLX Diagram Documentation",
+    "message": "Документация DHTMLX Diagram",
     "description": "The alt text of navbar logo"
   },
   "item.label.Examples": {
-    "message": "Examples",
+    "message": "Примеры",
     "description": "Navbar item with label Examples"
   },
   "item.label.Forum": {
-    "message": "Forum",
+    "message": "Форум",
     "description": "Navbar item with label Forum"
   },
   "item.label.Support": {
-    "message": "Support",
+    "message": "Поддержка",
     "description": "Navbar item with label Support"
   },
   "item.label.Download": {
-    "message": "Download",
+    "message": "Скачать",
     "description": "Navbar item with label Download"
   }
 }

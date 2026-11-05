@@ -1,14 +1,14 @@
 {
   "title": {
-    "message": "JavaScript Diagram Documentation",
+    "message": "JavaScript Diagram Dokumentation",
     "description": "The title in the navbar"
   },
   "logo.alt": {
-    "message": "DHTMLX Diagram Documentation",
+    "message": "DHTMLX Diagram Dokumentation",
     "description": "The alt text of navbar logo"
   },
   "item.label.Examples": {
-    "message": "Examples",
+    "message": "Beispiele",
     "description": "Navbar item with label Examples"
   },
   "item.label.Forum": {
