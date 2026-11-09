@@ -717,7 +717,9 @@ The **Name** control inherits the `text` key from the **Input** control it is ba
 
 ### Custom controls that perform actions
 
-The controls that perform actions need the [`$on`](#service-properties-of-controls) service property. For example, the basic [**Button**](api/diagram_editor/editbar/basic_controls/button.md) control renders a button that does nothing until you specify a listener of the `click` event for it. You can set `$on` right within the `properties` config, as shown in the [Button](api/diagram_editor/editbar/basic_controls/button.md#example) example, or create a custom control to reuse the button for several groups of elements:
+The controls that perform actions need the [`$on`](#service-properties-of-controls) service property. For example, the basic [**Button**](api/diagram_editor/editbar/basic_controls/button.md) control renders a button that does nothing until you specify a listener of the `click` event for it.
+
+You can set `$on` right within the `properties` config, as shown in the [Button](api/diagram_editor/editbar/basic_controls/button.md#example) example (note that redefining the service properties of the default types of controls may break their functionality). You can also create a custom control to reuse the button for several groups of elements:
 
 ~~~jsx {13-21}
 const editor = new dhx.DiagramEditor("editor_container", {
